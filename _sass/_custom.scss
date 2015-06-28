@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+// Custom things
+
+* {
+  scrollbar-face-color: #367CD2;
+  scrollbar-shadow-color: #FFFFFF;
+  scrollbar-highlight-color: #FFFFFF;
+  scrollbar-3dlight-color: #FFFFFF;
+  scrollbar-darkshadow-color: #FFFFFF;
+  scrollbar-track-color: #FFFFFF;
+  scrollbar-arrow-color: #FFFFFF;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #7f8c8d;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+// Selection colors:
+::selection {
+  background: #0096cc;
+  color: white;
+}
+
+::moz-selection {
+  background: #0096cc;
+  color: white;
+}
+
+
+// Thin fonts
+header, h1 {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+.h2.post-title {
+  // font-family: "Open Sans";
+}
+
+// Better blockquote
+blockquote {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+
+  p {
+    //font-size: 20pt;
+  }
+
+  footer {
+    //font-size: 1.1rem;
+  }
+}
+
+// HR width and gap
+hr {
+  width: 30%;
+  margin-top: 40pt;
+  margin-bottom: 40pt;
+}
+
+// Dropcap
+.dropcap {
+  font-size: 80px;
+  float: left;
+  padding: 0px;
+  line-height: 0px;
+  margin-top: 45px;
+  margin-right: .45rem;
+  height: 38px;
+}
+
+// Code highlighting
+.highlight {
+  background-color: white;
+}
+
+// Pagination buttons
+.pagination {
+  a, .disabled {
+    border-radius: 30pt;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  a {
+    color: #0096cc;
+    border-color: #0096cc;
+  }
+}
+
+.pagination a:hover {
+  background: #0096cc;
+  color: white;
+}
+
+// Figure related stuff
+
+figure {
+  text-align: center;
+  
+  figcaption {
+    text-align: center;
+    font-family: roboto;
+    padding-top: 20pt;
+    color: #ADADAD;
+    font-size: 15pt;
+  }
+}
+
+// Table
+table {
+  margin-top: 20pt;
+  padding-top: 20pt;
+  padding-bottom: 20pt;
+  margin-bottom: 20pt;
+  border-style: solid;
+  border-width: 1pt;
+  border-right: transparent;
+  border-left: transparent;
+  font-family: "Roboto";
+  border-color: #737373;
+
+  thead {
+    font-family: open sans;
+
+    tr th {
+      border-bottom: 0pt;
+    }
+  }
+
+  tbody tr td {
+    border-top: 0pt;
+  }
+}
+
+// Footer
+.footer {
+  a {
+    color: gray;
+  }
+}
