@@ -9,7 +9,7 @@ categories: articles
 
 <span class="dropcap">G</span>etting CUDA to work with python on Windows is really frustrating. Its not exactly hard, but is sure irritating when you start doing it. If you have ever tried it, you might be knowing that many possible combinations of *compilers*, *cuda toolkit*, *python* etc. don't work.
 
-This post describe the steps that I followed for a working setup of theano working with GPU acceleration and PyCUDA for general access to GPU from python. Hopefully, it will help if you haven't found the sweet spot yet.
+This post describes the steps that I followed for a working setup of theano working with GPU acceleration and PyCUDA for general access to GPU from python. Hopefully, it will help if you haven't found the sweet spot yet.
 
 ## Setting up
 
