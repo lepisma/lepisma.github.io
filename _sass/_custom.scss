@@ -2,36 +2,6 @@
 
 // Custom things
 
-* {
-  scrollbar-face-color: #367CD2;
-  scrollbar-shadow-color: #FFFFFF;
-  scrollbar-highlight-color: #FFFFFF;
-  scrollbar-3dlight-color: #FFFFFF;
-  scrollbar-darkshadow-color: #FFFFFF;
-  scrollbar-track-color: #FFFFFF;
-  scrollbar-arrow-color: #FFFFFF;
-}
-
-/* Let's get this party started */
-::-webkit-scrollbar {
-  width: 10px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-// Handle
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #7f8c8d;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-
 
 // Selection colors:
 ::selection {
@@ -88,9 +58,9 @@ hr {
 }
 
 // Code highlighting
-.highlight {
-  background-color: white;
-}
+// .highlight {
+//   background-color: white;
+// }
 
 // Pagination buttons
 .pagination {
