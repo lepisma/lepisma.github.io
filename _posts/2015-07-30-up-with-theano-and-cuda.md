@@ -153,6 +153,6 @@ multiply_them(
 print dest-a*b
 ```
 
-Seeing a array of zeros ? Its working fine then.
+Seeing an array of zeros ? Its working fine then.
 
 Hopefully, this should give you a working *pythonish* CUDA setup using the latest versions of VS, Windows, Python etc.
