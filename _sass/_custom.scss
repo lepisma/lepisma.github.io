@@ -2,48 +2,111 @@
 
 // Custom things
 
+// Pallete;
+$back: white;
+$textlight: #7B7B7B;
+$textdark: black;
+$accent: #0096cc;
 
 // Selection colors:
 ::selection {
-  background: #0096cc;
+  background: $accent;
   color: white;
 }
 
 ::moz-selection {
-  background: #0096cc;
+  background: $accent;
   color: white;
 }
 
+// link style
+p a, li a {
+  color: $textdark;
+  text-decoration: underline;
 
-// Thin fonts
-header, h1 {
-  font-family: "Roboto";
-  font-weight: 100;
+  &:hover {
+    color: $textdark;
+  }
 }
 
-.h2.post-title {
-  // font-family: "Open Sans";
+// Nav according to about me
+.site-title {
+  font-size: 16px;
+}
+
+.site-header nav a {
+  font-size: 12px;
+  font-family: open sans;
+  font-weight: bold;
+  color: $textlight;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $accent;
+    border: none;
+  }
+}
+
+// Override sizes
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+p, li {
+  font-size: 15px;
+}
+
+// Fonts
+header, h1, h2, h3, h4, h5, .post-title {
+  font-family: "Merriweather";
+  font-weight: normal;
+}
+
+// make lower level headings italic 
+h2, h3, h4, h5, h6 {
+  font-style: italic;
+}
+
+.post-link .post-title {
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.post-summary {
+  color: $textlight;
+  font-style: italic;
+  font-size: 20px;
 }
 
 // Better blockquote
 blockquote {
-  padding-top: 0pt;
-  padding-bottom: 0pt;
-
-  p {
-    //font-size: 20pt;
-  }
-
-  footer {
-    //font-size: 1.1rem;
-  }
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 // HR width and gap
 hr {
   width: 30%;
-  margin-top: 40pt;
-  margin-bottom: 40pt;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 // Dropcap
@@ -58,26 +121,31 @@ hr {
 }
 
 // Code highlighting
-// .highlight {
-//   background-color: white;
-// }
+.highlight {
+  background-color: $back;
+
+  pre {
+    font-size: 15px;
+    overflow-x: auto;
+  }
+}
 
 // Pagination buttons
 .pagination {
   a, .disabled {
-    border-radius: 30pt;
-    border-style: solid;
+    border-radius: 6px;
+    border-style: dashed;
     border-width: 1px;
   }
 
   a {
-    color: #0096cc;
-    border-color: #0096cc;
+    color: $accent;
+    border-color: $accent;
   }
 }
 
 .pagination a:hover {
-  background: #0096cc;
+  background: $accent;
   color: white;
 }
 
@@ -88,29 +156,27 @@ figure {
   
   figcaption {
     text-align: center;
-    font-family: roboto;
-    padding-top: 20pt;
-    color: #ADADAD;
-    font-size: 15pt;
+    padding-top: 30px;
+    color: $textlight;
+    font-size: 15px;
   }
 }
 
 // Table
 table {
-  margin-top: 20pt;
-  padding-top: 20pt;
-  padding-bottom: 20pt;
-  margin-bottom: 20pt;
+
+  font-size: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   border-style: solid;
-  border-width: 1pt;
+  border-width: 1px;
   border-right: transparent;
   border-left: transparent;
-  font-family: "Roboto";
-  border-color: #737373;
+  border-color: $textlight;
 
   thead {
-    font-family: open sans;
-
     tr th {
       border-bottom: 0pt;
     }
@@ -124,6 +190,6 @@ table {
 // Footer
 .footer {
   a {
-    color: gray;
+    color: $textlight;
   }
 }
