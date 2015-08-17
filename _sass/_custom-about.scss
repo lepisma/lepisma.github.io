@@ -24,7 +24,7 @@ body {
 
 #nav {
   margin: 32px;
-
+  
   #name {
     font-size: 16px;
     color: $textlight;
@@ -33,14 +33,18 @@ body {
   .navlink {
     font-family: open sans;
     font-weight: bold;
-    color: $textlight;
     margin-left: 20px;
     font-size: 12px;
     text-transform: uppercase;
     cursor: pointer;
 
-    &:hover {
-      color: $accent;
+    a {
+      text-decoration: none;
+      color: $textlight;
+
+      &:hover {
+        color: $accent;
+      }
     }
   }
 }
@@ -79,7 +83,7 @@ body {
   font-style: italic;
 }
 
-a {
+p a, li a {
   color: $textdark;
 
   &:hover {
