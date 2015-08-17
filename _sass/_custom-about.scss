@@ -1,0 +1,88 @@
+// About me page style
+
+// Pallete;
+$back: white;
+$textlight: #7B7B7B;
+$textdark: black;
+$accent: #0096cc;
+
+
+// Code starts here
+::selection {
+  background: $accent; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: $accent; /* Gecko Browsers */
+  color: white;
+}
+
+body {
+  background: $back;
+  font-family: Merriweather;
+}
+
+#nav {
+  margin: 32px;
+
+  #name {
+    font-size: 16px;
+    color: $textlight;
+  }
+
+  .navlink {
+    font-family: open sans;
+    font-weight: bold;
+    color: $textlight;
+    margin-left: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+
+#sidebar {
+  text-align: right;
+
+  .sidelink {
+    text-transform: uppercase;
+    color: $textlight;
+    cursor: pointer;
+
+    &.active {
+      color: $textdark;
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.panel {
+  display: none;
+}
+
+#map {
+  height: 200px;
+}
+
+.emph-quote {
+  font-size: 20px;
+  color: $textlight;
+  font-style: italic;
+}
+
+a {
+  color: $textdark;
+
+  &:hover {
+    color: $textdark;
+  }
+}
