@@ -21,7 +21,7 @@ Few general guidelines and clarifications for interpreting the comparison given 
   - Groups and collab support
   - Editor support. Word, OpenOffice etc.
 
-|  | Mendeley | Zotero | Qiqqa | Readcube | Colwiz
+ . | . | Mendeley | Zotero | Qiqqa | Readcube | Colwiz
 --- | --- | --- | --- | --- | --- | ---
 1 | Export/Import | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★★★
 2 | PDF handling | ★★★★☆ | ★★☆☆☆ | ★★★★★ | ★★★★☆ | ★★★☆☆
