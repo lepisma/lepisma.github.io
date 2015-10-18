@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Choosing your Research Manager
-summary: Review of popular open source reference management tools.
+summary: Review of popular free reference management tools.
 category: articles
 ---
 
