@@ -28,7 +28,7 @@ img {
 
 .site-wrap {
   min-height: 100%;
-  margin-bottom: -120px;
+  margin-bottom: -12px;
 }
 
 .site-wrap:after {
@@ -37,7 +37,7 @@ img {
 }
 
 .footer, .site-wrap:after {
-  height: 120px;
+  height: 12px;
 }
 
 body {
@@ -161,23 +161,12 @@ table {
   color: #333;
 }
 
-.post-footer {
-  @extend .italic;
-
-  margin-top: .75rem;
-  text-align: center;
-}
-
-.post-footer .avatar {
-  margin: 2rem 0;
-  width: 100px;
-  border-radius: 50%;
-}
-
 .pagination,
 .button {
+  font-style: italic;
   font-size: 1rem;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  border-radius: 100px;
+  font-family: serif;
   font-weight: 300;
   text-align: center;
 }
@@ -487,25 +476,12 @@ h6,
 }
 
 .share-page {
-  font-size:  0.65em;  
+  font-size:  0.65em;
   padding: 2em 0 0 0;
 }
 
 .share-page div {
   font-size: 1.3em;
-}
-
-footer {
-  border-top: thin solid #f3f3f3;
-}
-
-footer,
-footer .wrap {
-  color: #7a7a7a;
-  background-color: #fafafa;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 300;
-  clear: both;
 }
 
 footer:after {

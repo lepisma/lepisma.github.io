@@ -7,6 +7,7 @@ $back: white;
 $textlight: #7B7B7B;
 $textdark: black;
 $accent: #9b59b6;
+$accent-dark: purple;
 
 // Selection colors:
 ::selection {
@@ -194,7 +195,5 @@ table {
 
 // Footer
 .footer {
-  a {
-    color: $textlight;
-  }
+  background: $accent-dark;
 }

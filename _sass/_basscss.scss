@@ -9,6 +9,12 @@
   MIT License http://opensource.org/licenses/MIT
 
 */
+
+// Palette
+$accent: #9b59b6;
+$accent-dark: purple;
+
+
 body, button, input, select, textarea, pre {
   margin: 0;
 }
@@ -678,11 +684,11 @@ body {
 }
 
 a {
-  color: #0096cc;
+  color: $accent;
   text-decoration: none;
 }
 a:hover {
-  color: #007199;
+  color: $accent-dark;
 }
 
 .button {
@@ -698,11 +704,11 @@ a:hover {
 
 .button-blue {
   color: #fff;
-  background-color: #0096cc;
+  background-color: $accent;
 }
 .button-blue:hover {
   color: #fff;
-  background-color: #004b66;
+  background-color: $accent-dark;
 }
 
 .button-gray {
@@ -724,7 +730,7 @@ a:hover {
 .form-light .textarea:focus,
 .form-light .select:focus {
   outline: none;
-  border-color: #0096cc;
+  border-color: $accent;
   box-shadow: 0 0 0.125rem rgba(0, 150, 204, 0.5);
 }
 .form-light .radio input,
