@@ -4,7 +4,7 @@
 $back: white;
 $textlight: #7B7B7B;
 $textdark: black;
-$accent: #0096cc;
+$accent: #9b59b6;
 
 
 // Code starts here
@@ -17,6 +17,11 @@ $accent: #0096cc;
   color: white;
 }
 
+// Loading bar
+.pace .pace-progress {
+    background: $accent !important;
+}
+
 body {
   background: $back;
   font-family: Merriweather;
@@ -24,7 +29,7 @@ body {
 
 #nav {
   margin: 32px;
-  
+
   #name {
     font-size: 16px;
     color: $textlight;

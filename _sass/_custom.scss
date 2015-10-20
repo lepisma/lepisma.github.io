@@ -29,6 +29,11 @@ p a, li a {
   }
 }
 
+// Loading bar
+.pace .pace-progress {
+    background: $accent !important;
+}
+
 // Nav according to about me
 .site-title {
   font-size: 16px;
