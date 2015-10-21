@@ -197,3 +197,74 @@ table {
 .footer {
   background: $accent-dark;
 }
+
+// Contact form
+
+#contact-overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: black;
+  opacity: 0.5;
+  z-index: 50;
+  cursor: url(../assets/images/close_2.png), default;
+}
+
+#contact-form {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 10px;
+  background: white;
+  transform: translateY(-50%);
+}
+
+#contact-controls {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: -55px;
+  transform: translateY(-50%) rotate(-90deg);
+  display: inline-flex;
+
+  .contact-btns {
+    a {
+      color: white;
+    }
+
+    background-color: $accent;
+    color: white;
+    padding: 5px;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 21px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $accent-dark !important;
+      color: white !important;
+      border-color: $accent-dark !important;
+    }
+  }
+
+  #rss-btn {
+    border-bottom-left-radius: 5px;
+  }
+
+  #contact-btn {
+    background: white;
+    color: $accent;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-right-radius: 5px;
+  }
+}

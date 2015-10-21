@@ -14,7 +14,7 @@ google_analytics:
 disqus_shortname:
 
 # Contact pane
-contact_form: false
+contact_form: true
 
 # Build settings
 markdown:     redcarpet

@@ -699,7 +699,7 @@ a:hover {
 }
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 150, 204, 0.5);
+  box-shadow: 0 0 0 2px white, 0 0 1px 4px $accent;
 }
 
 .button-blue {
@@ -709,6 +709,18 @@ a:hover {
 .button-blue:hover {
   color: #fff;
   background-color: $accent-dark;
+}
+
+.button-hollow {
+  color: $accent;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+.button-hollow:hover {
+  color: white;
+  background-color: $accent-dark;
+  border-color: $accent-dark;
 }
 
 .button-gray {
