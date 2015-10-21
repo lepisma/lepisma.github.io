@@ -2,28 +2,9 @@
 
 
 $(window).load(function() {
-
-    // Side menu
-    $(".sidelink").click(function() {
-        hidePanels();
-        clearActive();
-        var currentDiv = $(this).index();
-        $(this).addClass("active");
-        $(".panel").eq(currentDiv).fadeIn();
+    $("#notify").typed({
+        strings: ["This page is under construction", "Come back later."],
+        typeSpeed: 0,
+        loop: true
     });
-    
-    function hidePanels() {
-        $(".panel").each(function() {
-            $(this).hide();
-        });
-    }
-
-    function clearActive() {
-        $(".sidelink").each(function() {
-            $(this).removeClass("active");
-        });
-    }
-
-    // Load main div
-    $(".panel").eq(0).fadeIn();
 });
