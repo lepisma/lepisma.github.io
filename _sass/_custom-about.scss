@@ -4,8 +4,8 @@
 $back: white;
 $textlight: #7B7B7B;
 $textdark: black;
-$accent: #9b59b6;
-$accent-dark: purple;
+$accent: #002642;
+$accent-dark: #00151C;
 
 
 // Code starts here
@@ -24,7 +24,6 @@ $accent-dark: purple;
 }
 
 body {
-  background: #424242;
   font-family: Merriweather;
 }
 
@@ -33,8 +32,6 @@ body {
   left: 10%;
   top: 50%;
   transform: translateY(-50%);
-
-  color: white;
   font-family: "Open Sans Light";
 }
 
