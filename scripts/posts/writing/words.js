@@ -35,7 +35,6 @@ d3.csv("/scripts/posts/writing/words.csv", function(error, data) {
   data.forEach(function(d) {
     d.x = +d.x;
     d.y = +d.y;
-    console.log(d);
   });
 
   // don't want dots overlapping axis, so add in buffer to data domain
