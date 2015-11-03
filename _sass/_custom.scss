@@ -85,7 +85,7 @@ header, h1, h2, h3, h4, h5, .post-title {
   font-weight: normal;
 }
 
-// make lower level headings italic 
+// make lower level headings italic
 h2, h3, h4, h5, h6 {
   font-style: italic;
 }
@@ -104,8 +104,23 @@ h2, h3, h4, h5, h6 {
 
 // Better blockquote
 blockquote {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-left: none;
+
+  &::before{
+    color: $accent;
+    content: open-quote;
+    font-size: 2em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  p {
+    display: inline;
+    font-size: 22px;
+  }
 }
 
 // HR width and gap
