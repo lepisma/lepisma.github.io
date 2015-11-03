@@ -4,7 +4,7 @@ email:       abhinav.tushar.vs@gmail.com
 author:      Abhinav Tushar
 description: "Personal Blog"
 baseurl:     ""
-url:         "http://lepisma.github.io/"
+url:         "https://lepisma.github.io/"
 
 # Google analytics
 google_analytics:
