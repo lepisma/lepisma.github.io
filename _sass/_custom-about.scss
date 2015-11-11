@@ -8,6 +8,31 @@ $accent: #002642;
 $accent-dark: #00151C;
 
 
+// Load fonts
+@font-face {
+    font-family: "Bebas Neue Regular";
+    src:
+    url("../assets/fonts/BebasNeue Regular.otf");
+}
+
+@font-face {
+    font-family: "Bebas Neue Bold";
+    src:
+    url("../assets/fonts/BebasNeue Bold.otf");
+}
+
+@font-face {
+    font-family: "Fira Sans Light";
+    src:
+    url("../assets/fonts/FiraSans-Light.otf");
+}
+
+@font-face {
+    font-family: "Fira Sans Thin";
+    src:
+    url("../assets/fonts/FiraSans-Thin.otf");
+}
+
 // Code starts here
 ::selection {
   background: $accent; /* WebKit/Blink Browsers */
@@ -23,38 +48,136 @@ $accent-dark: #00151C;
     background: $accent !important;
 }
 
-body {
-  font-family: Merriweather;
-}
-
-#notice {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: "Open Sans Light";
-}
-
 // Blinking cursor
+.typed-cursor {
+    display: none;
+}
+/* .typed-cursor{ */
+/*     opacity: 1; */
+/*     -webkit-animation: blink 0.7s infinite; */
+/*     -moz-animation: blink 0.7s infinite; */
+/*     animation: blink 0.7s infinite; */
+/* } */
+/* @keyframes blink{ */
+/*     0% { opacity:1; } */
+/*     50% { opacity:0; } */
+/*     100% { opacity:1; } */
+/* } */
+/* @-webkit-keyframes blink{ */
+/*     0% { opacity:1; } */
+/*     50% { opacity:0; } */
+/*     100% { opacity:1; } */
+/* } */
+/* @-moz-keyframes blink{ */
+/*     0% { opacity:1; } */
+/*     50% { opacity:0; } */
+/*     100% { opacity:1; } */
+/* } */
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+body {
+    line-height: initial;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+// Main content here
+
+#main-panel {
+    position: relative;
+    width: 40%;
+    left: 20%;
+
+    #main-head-block {
+        height: 10px;
+        width: 100%;
+        background-color: $accent;
+    }
+
+    #main-head {
+        font-family: "Bebas Neue Bold";
+        #name {
+            float: left;
+            font-size: 82px;
+        }
+        #links {
+            float: right;
+            text-align: right;
+            letter-spacing: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        margin-top: 15px;
+        color: #BFBFBF;
+
+        &:after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+    }
+
+    #main-content {
+        margin-top: 90px;
+
+        #main-title {
+            font-family: "Bebas Neue Regular";
+            font-size: 30px;
+            text-align: center;
+        }
+        #main-subtitle {
+            font-size: 64px;
+            text-align: right;
+            line-height: 0.8;
+            font-family: "Fira Sans Thin";
+            margin-bottom: 50px;
+            margin-top: 30px;
+            opacity: 0;
+        }
+        #main-text {
+            font-family: "Fira Sans Light";
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 2px;
+            text-align: justify;
+            opacity: 0;
+            a {
+                font-family: "Open Sans";
+                font-weight: 800;
+            }
+        }
+
+        .sidenote {
+            opacity: 0;
+            margin-right: -400px;
+            margin-bottom: 50px;
+            position: absolute;
+            font-family: "Merriweather";
+            font-size: 13px;
+            right: 0;
+            color: #CCCCCC;
+            top: auto;
+            width: 300px;
+            border-style: solid;
+            border-width: 0px;
+            border-color: #CCCCCC;
+            border-left-width: 1px;
+            padding: 20px;
+            .sidenote-title {
+                font-size: 18px;
+                font-style: italic;
+                margin-bottom: 6px;
+            }
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+
+    #main-foot-block {
+        height: 60px;
+        background-color: $accent;
+    }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+hr {
+    width: 80%;
 }
