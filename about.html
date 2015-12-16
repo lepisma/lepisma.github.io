@@ -3,35 +3,155 @@ layout: about
 permalink: /about/
 ---
 
-<div id="main-panel">
-    <div id="main-head-block">
+<div class="container">
+    <div class="row">
+        <div class="seven columns" id="menu">
+            <ul>
+                <li>
+                    <a href="#interests">Interests</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#misc">Miscellaneous</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div id="main-head">
-        <div id="name">
-            at
-        </div>
-        <div id="links">
-            <a href="https://github.com/lepisma" target="_blank">github</a><br><a href="/">blog</a><br><a href="mailto:abhinav.tushar.vs@gmail.com">email</a><br>more
-        </div>
-    </div>
-    <div id="main-content">
-
-        <div id="main-title">
-            .
-        </div>
-        <div class="sidenote">
-            <div class="sidenote-title">
-                Or, do something more useful
+    <div class="row">
+        <div class="seven columns">
+            <!-- Header  -->
+            <div id="main-head-block">
             </div>
-            <br>
-            <iframe width="100%" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/38128127&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <div id="main-head">
+                <div id="name">
+                    abhinav<br>tushar
+                </div>
+                <div id="links">
+                    <a href="https://github.com/lepisma" target="_blank">github</a><br><a href="/">blog</a><br><a href="mailto:abhinav.tushar.vs@gmail.com">email</a><br><a href="#contact" id="links-btn">more</a>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div id="main-content">
+                <div class="section">
+                    <div class="section-title">
+                        Hi
+                    </div>
+                    <div class="section-text">
+                        <p>
+                            I am an undergraduate (final year) student majoring in Electrical Engineering at <a href="http://www.iitr.ac.in">Indian Institute of Technology, Roorkee</a> and am interested in general machine intelligence and learning (along with other things, see below).
+                        </p>
+                        <p>
+                            Since you are here, you might be interested in checking out my <a href="/">blog posts</a>. A few projects are open sourced <a href="https://github.com/lepisma" target="_blank">here</a>. Contact me via <a href="https://twitter.com/AbhinavTushar" target="_blank">twitter</a> or email <a href="mailto:abhinav.tushar.vs@gmail.com">me</a>.
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="section row" id="interests">
+                    <div class="section-media four columns">
+                        <img src="{{ site.baseurl }}/assets/images/gun.gif">
+                    </div>
+                    <div class="section-info eight columns">
+                        <div class="section-title ">
+                            Interests
+                        </div>
+                        <div class="section-text">
+                            <p>
+                                I am broadly interested in computational sciences and the way they help in explaining physical and natural phenomena including human intelligence and group behavior. Narrowing down, I am into Machine Learning methods including Deep Learning and Evolutionary heuristics.
+                            </p>
+                            <p>
+                                I am equally fascinated by data and simulation based exploration of complex systems. Its interesting how tiny interactions generate almost magical behavior. Check out a small exploration in small world networks <a href="https://lepisma.github.io/spreading-idea">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section row" id="projects">
+                    <div class="section-media four columns">
+                        <img src="{{ site.baseurl }}/assets/images/falcon.jpg">
+                    </div>
+                    <div class="section-info eight columns">
+                        <div class="section-title ">
+                            Projects
+                        </div>
+                        <div class="section-text">
+                            <p>
+                                Many of my programming projects are on <a href="https://github.com/lepisma">github/lepisma</a>. A few explorations can be scrambled from my <a href="/">blog</a>.
+                            </p>
+                            <p>
+                                Few of the pet projects I have recently been involved in are
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/lepisma/blackbird">blackbird</a>
+                                        <p>
+                                            Exploratory music player that uses a vector representation generated from siamese LSTM network capturing listening preferences and acoustic similarities.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="">pipwin</a>
+                                        <p>
+                                            Complements <kbd>pip</kbd> on Windows by downloading prebuilt binaries.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                I like to use Python, Julia, Emacs (<a href="https://github.com/syl20bnr/spacemacs/">spacemacs</a> highly recommended) and Jupyter Notebooks (check out <a href="https://github.com/lepisma/gotham-ipython">gotham</a> color scheme) a lot. Also JavaScript, with HTML/CSS, for UI related things and visualizations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section row" id="misc">
+                    <div class="section-media four columns">
+                        <img src="{{ site.baseurl }}/assets/images/all.jpg">
+                    </div>
+                    <div class="section-info eight columns">
+                        <div class="section-title ">
+                            Miscellaneous
+                        </div>
+                        <div class="section-text">
+                            <p>
+                                I listen to <a href="http://www.last.fm/user/AbhinavTushar">music</a> religiously and occasionally sketch. Also I try to maintain a list of my recent readings, which are mostly non-fiction, on <a href="https://www.goodreads.com/user/show/26452234-abhinav-tushar">goodreads</a>. Few of my talks and presentations are on <a href="https://speakerdeck.com/lepisma">speakerdeck</a>.
+                            </p>
+                            <p>
+                                Other than these, I am concerned about matters related to Science, Art, Environment, Humans and their interactions. Interested in topics ranging from night sky to ethics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section row" id="contact">
+                    <div class="section-media four columns">
+                        <img src="{{ site.baseurl }}/assets/images/phone.jpg">
+                    </div>
+                    <div class="section-info eight columns">
+                        <div class="section-title ">
+                            Contact
+                        </div>
+                        <div class="section-text">
+                            <p>
+                                Reach me via <a href="mailto:abhinav.tushar.vs@gmail.com">email</a>. If you are freaked out about privacy (which is totally justified given you know your category; chart below), here is a protonmail <a href="mailto:lepisma@protonmail.ch">account</a>. Or just ask for my public key.
+                            </p>
+                            <div>
+                                <a href="https://xkcd.com/1269/"><img src="{{ site.baseurl }}/assets/images/pri.png"></a>
+                                Source: <a href="https://xkcd.com/1269/">xkcd</a>
+                            </div>
+                            <br>
+                            <p>
+                                My twitter account is <a href="https://twitter.com/AbhinavTushar">@AbhinavTushar</a>. For the sake of completeness, here is my <a href="https://www.linkedin.com/in/abhinavtushar">linkedin</a> profile and here is <a href="https://www.facebook.com/abhinav.tushar.9">facebook</a> one.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <br>
-        <br>
-        <div id="main-subtitle">
-            In the<br>Meantime
-        </div>
-        <div id="main-text">
-            Checkout my <a href="/">blog</a> posts. A few projects are open sourced <a href="https://github.com/lepisma" target="_blank">here</a>. Or contact me on <a href="https://twitter.com/AbhinavTushar" target="_blank">twitter</a> or email <a href="mailto:abhinav.tushar.vs@gmail.com">me</a>.
-        </div>
+    </div>
 </div>
