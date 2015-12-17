@@ -10,27 +10,9 @@ $accent-dark: #00151C;
 
 // Load fonts
 @font-face {
-    font-family: "Bebas Neue Regular";
-    src:
-    url("../assets/fonts/BebasNeue Regular.otf");
-}
-
-@font-face {
     font-family: "Bebas Neue Bold";
     src:
     url("../assets/fonts/BebasNeue Bold.otf");
-}
-
-@font-face {
-    font-family: "Fira Sans Light";
-    src:
-    url("../assets/fonts/FiraSans-Light.otf");
-}
-
-@font-face {
-    font-family: "Fira Sans Thin";
-    src:
-    url("../assets/fonts/FiraSans-Thin.otf");
 }
 
 // Code starts here
@@ -148,12 +130,12 @@ a {
             img {
                 width: 100%;
             }
-            font-family: "Fira Sans Light";
+            font-family: "Fira Sans";
+            font-weight: 300;
             font-size: 12px;
             line-height: 2;
             text-align: justify;
             a {
-                font-family: "Merriweather";
                 text-decoration: underline;
             }
         }

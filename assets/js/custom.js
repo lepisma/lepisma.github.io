@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
     // Header effect
-    $("header .measure a").textillate({in: {effect: 'fadeInDownBig', sync: true}});
+    $("header .measure a").textillate({in: {effect: "fadeInDownBig", sync: true}});
 
     // Contact button
     $("#contact-btn").click(function(){
@@ -18,4 +18,4 @@ $(document).ready(function(){
 var toggleContact = function(){
     $("#contact-overlay").fadeToggle(100);
     $("#contact-form").slideToggle(100);
-}
+};
