@@ -30,6 +30,11 @@ p a, li a {
   }
 }
 
+// Justify text
+p {
+    text-align: justify;
+}
+
 // Loading bar
 .pace .pace-progress {
     background: $accent !important;
