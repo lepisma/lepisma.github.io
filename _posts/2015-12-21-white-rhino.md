@@ -10,7 +10,7 @@ categories: articles
 <img src="/images/posts/rhino/head.jpg" style="float:right">
 </figure>
 
-<span class="dropcap">I</span>n case you didn't know *"there are only 3 northern white rhinos left on the planet"*. There were 5 since I started counting. One died [earlier this year](http://edition.cnn.com/2015/07/29/world/northern-rhino-dies/). Another one, [last month](http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/). It's closer relative, southern white rhino, is relatively safe as of this writing but you never know. Rhinos are ominously popular targets for poachers. Along with Bengal Tiger (skin) and Elephant (teeth), this animal (horns) is one of the first ones that comes to mind when I hear *poaching*.
+<span class="dropcap">I</span>n case you didn't know *"there are only 3 northern white rhinos left on the planet"*. There were 5 since I started counting. One died [earlier this year](http://edition.cnn.com/2015/07/29/world/northern-rhino-dies/). Another one, [last month](http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/). It's closer relative, southern white rhino, is relatively safe as of this writing but you never know. Rhinos are ominously popular targets for poachers. Along with Bengal Tiger (skin) and Elephant (teeth), this animal (horns) is one of the first that comes to mind when I hear *poaching*.
 
 Where exactly do the horns go? Having no direct marketing channel, illegal items are slightly harder to sell (in the usual sense). Although you can create a market out of thin air, most of the cases require external factors. How about a bit of *human irrationality* ?
 
@@ -65,24 +65,22 @@ What is **50%** here?
 
 Good research is reproducible research. Given an array of results, access to research documentations and methodologies, a person should be able to get to the same conclusions as published.
 
-*Once done, there are more critical questions. These should be up in the order, but most of the times Q1 and Q2 hit it right.*
+*Once done, there is a more critical question. This should be up in the order, but most of the times Q1 and Q2 hit it right.*
 #####3. Is the process fair?
 
 Now since the documented methods are providing the expected results, is the method actually performing a fair test?
 
 For example if you want to compare two toothpastes, you will want to have few basic things like:
 
-- Two randomly divided groups
+- Two *randomly* divided groups
 - Doubly blinded experiment
 - No confounding variables etc.
 
-#####4. Are the results significant?
-
-Is the research using sufficient sample size? Are the numbers compared properly using established statistical tests? etc.
+Also, is the research using sufficient sample size? Are the numbers compared properly using established statistical tests? etc.
 
 ---
 
-If you see the previous statement (about domestic violence) as a research outcome (which is the only reason you should be believing it), then you can immediately identify what might be wrong in the experiment (spoiler: *everything*). And when statements like this start to frame the basis of judgments, you know the channel of knowledge generation and communication is severely damaged. I have heard so many people (due to own their personal reasons) around me agreeing on similar issues like *"media torturing and twisting facts"*. Yet, shockingly small number of people criticize these incidences of quackery with similar enthusiasm.
+If you see the previous statement (about domestic violence) as a research outcome (which is the only reason you should be believing it), then you can immediately identify what might be wrong in the experiment (spoiler: *everything*). When you are communicating via a proper scientific channel, you are automatically bound to go ahead only when the results are conclusive. But when statements like this start to frame the basis of judgments, you know the channel of knowledge generation and communication is severely damaged. I have heard so many people (due to their own personal reasons) around me agreeing on similar issues like *"media torturing and twisting facts"*. Yet, shockingly small number of people criticize these incidences of quackery with similar enthusiasm.
 
 <blockquote>
 <p>
@@ -115,3 +113,8 @@ And sadly,
 <figure>
 <img src="/images/posts/rhino/back.jpg">
 </figure>
+
+
+#### Edit
+
+Thanks [Gopal Sharma](mailto:gopalsharma1193@gmail.com) for suggesting ammendments to the list and other fixes.
