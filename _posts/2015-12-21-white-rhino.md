@@ -117,4 +117,4 @@ And sadly,
 
 #### Edit
 
-Thanks [Gopal Sharma](mailto:gopalsharma1193@gmail.com) for suggesting ammendments to the list and other fixes.
+Thanks [Gopal Sharma](mailto:gopalsharma1193@gmail.com) for suggesting ammendments to the list and other [fixes](https://github.com/lepisma/lepisma.github.io/commit/c7aede536fbd2306e6172ccf35499b17e9807518).
