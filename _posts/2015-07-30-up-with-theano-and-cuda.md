@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Up and running with Theano (GPU) + PyCUDA on Windows
-date: 2015-07-30
 summary: Setting up Theano with CUDA acceleration and PyCUDA on Windows.
 categories: articles
 ---

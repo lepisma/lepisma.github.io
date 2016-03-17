@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Flesh and Metal
-date: 2014-07-29
 summary: Opinion on cyborg developments
 category: articles
 ---

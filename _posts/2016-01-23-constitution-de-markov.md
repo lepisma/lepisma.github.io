@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Constitution De Markov
-date: 2016-01-23
 summary: Nonsense Constitutional Wisdom
 categories: articles
 ---

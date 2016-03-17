@@ -1,7 +1,6 @@
 ---
 layout: post
 title: White Rhinos, irrationality and other tales
-date: 2015-12-21
 summary: Human rationality, and the lack of it.
 categories: articles
 ---

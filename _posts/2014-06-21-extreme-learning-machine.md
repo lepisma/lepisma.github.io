@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Extreme Learning Machines with Julia
-date: 2014-06-21
 summary: A guide on ELMs using Julia language.
 categories: articles
 ---

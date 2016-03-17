@@ -179,7 +179,7 @@ hr {
 
 figure {
   text-align: center;
-  
+
   figcaption {
     text-align: center;
     padding-top: 30px;
@@ -250,9 +250,10 @@ table {
   z-index: 100;
   position: fixed;
   top: 50%;
-  left: -55px;
+  left: 100px;
   transform: translateY(-50%) rotate(-90deg);
   display: inline-flex;
+  transform-origin: 0px 100px;
 
   .contact-btns {
     a {
@@ -278,11 +279,15 @@ table {
 
   #rss-btn {
     border-bottom-left-radius: 5px;
+    border-style: solid;
+    border-color: $accent;
+    border-width: 1px;
   }
 
   #contact-btn {
     background: white;
     color: $accent;
+    border-color: $accent;
     border-style: solid;
     border-width: 1px;
     border-bottom-right-radius: 5px;

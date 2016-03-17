@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Neural Turing Machines for dummies"
+title: Neural Turing Machines for dummies
 category: articles
 summary: A very basic intro to NTMs
 ---
