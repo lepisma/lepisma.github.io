@@ -65,34 +65,33 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
-}
-
-h3 {
   font-size: 36px;
 }
 
-h4 {
+h3 {
   font-size: 30px;
 }
 
-h5 {
+h4 {
   font-size: 24px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
 p, li {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 // Fonts
-header, h1, h2, h3, h4, h5, .post-title {
+header, h1, h2, h3, h4, h5, h6, .post-title {
   font-family: "Merriweather";
   font-weight: normal;
-}
-
-// make lower level headings italic
-h2, h3, h4, h5, h6 {
-  font-style: italic;
 }
 
 .post-link .post-title {

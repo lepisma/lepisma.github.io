@@ -5,7 +5,8 @@ summary: Mathematics and Computation, as we are taught.
 category: articles
 ---
 
-<span class="dropcap">M</span>any of us who do calculus using computers know the alternatives we have for differentiation.
+<span class="dropcap">M</span>any of us who do calculus using computers know the
+alternatives we have for differentiation.
 
 The usual approach is to go for either of these
 
@@ -13,14 +14,20 @@ The usual approach is to go for either of these
 - Symbolic
 - Automatic differentiation
 
-Since, numerical methods (finite difference) are the most *thought after* methods when people think about computers and differentiation, we don't actually try other stuff.
-Forget symbolic, forget finite difference (and don't even think about automatic), we have a course on *Power System Analysis*, which is a bit computational in nature and we use a more **traditional** method.
+Since, numerical methods (finite difference) are the most *thought after*
+methods when people think about computers and differentiation, we don't actually
+try other stuff. Forget symbolic, forget finite difference (and don't even think
+about automatic), we have a course on *Power System Analysis*, which is a bit
+computational in nature and we use a more **traditional** method.
 
-##Hand calculus
+## Hand calculus
 
-The problem we have is to find solutions of non-linear equations (load-flow equations) that give the values of voltages and power factors for a power transmission system.
-Idea is to use Newton's method and move towards the solution.
-Guess what, we find the Jacobian by hand and then *program the expressions*. Although this is perfectly fine, but this screws the whole idea of using computers.
+The problem we have is to find solutions of non-linear equations (load-flow
+equations) that give the values of voltages and power factors for a power
+transmission system. Idea is to use Newton's method and move towards the
+solution. Guess what, we find the Jacobian *by hand* and then *program the
+expressions*. Although this is perfectly fine, but this screws the whole idea of
+using computers.
 
 The situation is exactly as in the image below.
 
@@ -28,17 +35,24 @@ The situation is exactly as in the image below.
 <img src="/images/posts/rowing/dog.jpg">
 </figure>
 
-You are a dog, your brain is optimized to judge movements, still you will do the calculations just because this is *the* analytical way.
-
-This is the perfect **what the hell !** moment.
-
-This is how you **row a steamer**.
+You are a dog, your brain is optimized to judge movements, still you will do the
+calculations just because this is *the* analytical way. This is the perfect
+*what the hell !* moment. This is how you *row a steamer*.
 
 ---
 
-It's not about this particular subject, almost everywhere, our course syllabuses are optimized for least efficient use of computers (if used anywhere). Obviously, you can switch over to your weapon of choice, but a lot depends on what the barrack relies on.
+It's not about this particular subject, almost everywhere, our course syllabuses
+are optimized for least efficient use of computers (if used anywhere).
+Obviously, you can switch over to your weapon of choice, but a lot depends on
+what the barrack relies on.
 
-Consider AD (Automatic differentiation). You won't find a cooler method to do gradient computation. If you use Python, there is already an excellent library [ad](https://pypi.python.org/pypi/ad). And most of the people in machine learning community (extensive users of gradient computation) already favor AD (see [Theano](https://github.com/Theano/Theano), [kayak](https://github.com/HIPS/Kayak) etc.) over the more error prone Symbolic and finite diff methods.
+Consider AD (Automatic differentiation). You won't find a cooler method to do
+gradient computation. If you use Python, there is already an excellent library
+[ad](https://pypi.python.org/pypi/ad). And most of the people in machine
+learning community (extensive users of gradient computation) already favor AD
+(see [Theano](https://github.com/Theano/Theano),
+[kayak](https://github.com/HIPS/Kayak) etc.) over the more error prone Symbolic
+and finite diff methods.
 
 I don't see such spirit for power use of computers in our academia.
 
@@ -46,13 +60,14 @@ The arguments people usually give here are :
 
 > "You need to learn the Mathematics first."
 
-Ah, you are already assume teaching Calculus **in** Mathematics was a waste of time.
+Ah, you are already assume teaching Calculus **in** Mathematics was a waste of
+time.
 
 > "You will learn nothing if you use functions directly."
 
 C'mon, you were going to teach us finite difference stuff, weren't you ?
 Or wait, you did teach that, but that was erratic pen-paper stuff right ?
 
-Computers are not vanity stuff. They are not disconnected from Science. Hate it or love it, Computation is not a projection of Mathematics on Computers, **it is Mathematics**.
-
-Creating engineers, we are ! With this in mind ➮ **Ignorance is bliss**
+Computers are not vanity stuff. They are not disconnected from Science. Hate it
+or love it, Computation is not a projection of Mathematics on Computers, **it is
+Mathematics**.

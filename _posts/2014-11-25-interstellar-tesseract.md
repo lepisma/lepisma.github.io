@@ -2,14 +2,20 @@
 layout: post
 title: The Interstellar's Tesseract
 category: articles
-summary: .
+summary: Movie ramble
 ---
   
-<span class="dropcap">J</span>ust watched [Interstellar](http://www.imdb.com/title/tt0816692) and boy ! It was beauty.
+<span class="dropcap">J</span>ust watched
+[Interstellar](http://www.imdb.com/title/tt0816692) and boy ! It was beauty.
 
-From flawlessly getting away with the paradoxes every sci fi movie (specially related to time travel) faces, to the *[celebrated](http://www.wired.com/2014/10/astrophysics-interstellar-black-hole/)* black hole visualisation, everything was a work of art.
+From flawlessly getting away with the paradoxes every sci fi movie (specially
+related to time travel) faces, to the
+*[celebrated](http://www.wired.com/2014/10/astrophysics-interstellar-black-hole/)*
+black hole visualisation, everything was a work of art.
 
-I was just wondering if we can help the lower dimensional people (If there are any) using a similar relay for our understandings of the worlds. But before that, we need to understand how the tesseract worked in the movie **[spoilers following]**.
+I was just wondering if we can help the lower dimensional people (If there are
+any) using a similar relay for our understandings of the worlds. But before
+that, we need to understand how the tesseract worked in the movie.
 
 ---
 
@@ -23,22 +29,30 @@ I was just wondering if we can help the lower dimensional people (If there are a
 <figcaption>Cooper in Tesseract</figcaption>
 </figure>
 
-First thing first, this **Tesseract** is not an infinity stone. Die Marvel !
+First thing first, this Tesseract is not an infinity stone. Die Marvel !
 
 From wikipedia,
 
-> In geometry, the tesseract is the four-dimensional analog of the cube (4-cube hypercube); the tesseract is to the cube as the cube is to the square.
+> In geometry, the tesseract is the four-dimensional analog of the cube (4-cube
+> hypercube); the tesseract is to the cube as the cube is to the square.
 
-Pretty much sums it up. As you can project a cube on a two dimensional space to get a square, similarly you can project a tesseract on 3. But the results aren't very intuitive, see image below.
+Pretty much sums it up. As you can project a cube on a two dimensional space to
+get a square, similarly you can project a tesseract on 3. But the results aren't
+very intuitive, see image below.
 
 <figure>
 	<img src="/images/posts/interstellar/hyper.gif">
 	<figcaption>3D projection of a 4D hypercube</figcaption>
 </figure>
     
-In the movie, the higher civilization (referred as ***they***) made a tesseract for Cooper to access time as a physical dimension so as to transfer the quantum data from black hole to Murph via gravitational leaks.
+In the movie, the higher civilization (referred as **they**) made a tesseract
+for Cooper to access time as a physical dimension so as to transfer the quantum
+data from black hole to Murph via gravitational leaks.
 
-A quick hit of instinct might make you fall for the traditional time loop as seen in many sci fi movie. Time seems a locked dimension in normal space. But see it this way, as seen from *outside* the **time**, there is no relevance of past or present or future. Its yet another dimension.
+A quick hit of instinct might make you fall for the traditional time loop as
+seen in many sci fi movie. Time seems a locked dimension in normal space. But
+see it this way, as seen from *outside* the **time**, there is no relevance of
+past or present or future. Its yet another dimension.
 
 <blockquote>
 <p>
@@ -46,50 +60,74 @@ A quick hit of instinct might make you fall for the traditional time loop as see
 </p>
 <footer>
 <cite title="Brand">Brand</cite>
-<footer>
+</footer>
 </blockquote>
 
-Counterintuitive, these might seem. But its nice, intuition isn't fun (nor is helpful, talk *Quantum mech* if you want a debate).
+Counterintuitive, these might seem. But its nice, intuition isn't fun (nor is
+helpful, talk *Quantum mech* if you want a debate).
 
-What (hypothetically) if we ourselves are on some higher dimension bandwagon and are treating someone's time as our space ?
+What (hypothetically) if we ourselves are on some higher dimension bandwagon and
+are treating someone's time as our space ?
 
 *"How would a lower (or higher) dimensional space be like ? No, that's not possible."*
 
-If you were born on a gas giant, you would have asked
-
-> How can life be on terrestrial planets ?
+If you were born on a gas giant, you would have asked *"How can life be on terrestrial planets ?"*.
 
 ---
 
 ## Flatlanders
 
-Maybe an organism (a disc) is in 2 dimensional space, moving ahead in x-direction. A time space diagram for it will be
+Maybe an organism (a disc) is in 2 dimensional space, moving ahead in
+x-direction. A time space diagram for it will be
 
 <figure>
 <img src="/images/posts/interstellar/st.png">
 </figure>
 
-The disc is pissed off with its life, (yes it has a developed mind to have a sense of time and presence) and speculates about time travel. But here we are, seeing this whole thing as a slant cylinder. It has no meaning for us, its just there, disc's time is our space.
+The disc is pissed off with its life, (yes it has a developed mind to have a
+sense of time and presence) and speculates about time travel. But here we are,
+seeing this whole thing as a slant cylinder. It has no meaning for us, its just
+there, disc's time is our space.
 
-What if you want to share the *Interstellar* experience with it ? You would make the disc *see* time as a physical dimension. You will make a hypercube for it. As **they** did.
+What if you want to share the *Interstellar* experience with it ? You would make
+the disc *see* time as a physical dimension. You will make a hypercube for it.
+As **they** did.
 
-The most important part in the movie was to recognise the importance of gravitational leak across dimensions, the method of transfer that can be understood by any *n-dimensional* organism. You would grant access to the disc to create gravitational anomalies in its 3 dimensions (2 space + 1 time), And an **Interstellar** event will happen in the flatland.
+The most important part in the movie was to recognise the importance of
+gravitational leak across dimensions, the method of transfer that can be
+understood by any *n-dimensional* organism. You would grant access to the disc
+to create gravitational anomalies in its 3 dimensions (2 space + 1 time), And an
+*Interstellar* event will happen in the flatland.
 
-A really amazing piece of work by Edwin Abbott Abbott explains the life of two dimensional beings in his famous [Flatland](http://www.amazon.com/Flatland-Romance-Dimensions-Thrift-Editions/dp/048627263X).
+A really amazing piece of work by Edwin Abbott Abbott explains the life of two
+dimensional beings in his famous
+[Flatland](http://www.amazon.com/Flatland-Romance-Dimensions-Thrift-Editions/dp/048627263X).
 
 ---
 
-It all seems so immaterial to even have the need to *be*. Evolution is taking us places, creating organisms more adept to their environments, but on a scale that has no meaning (probably).
+It all seems so immaterial to even have the need to *be*. Evolution is taking us
+places, creating organisms more adept to their environments, but on a scale that
+has no meaning (probably). I wonder, if one day, the unexplained gravitational
+phenomenon in our universe might lead us to some realization. The singularity,
+the dark forces, existence of multiverses, everything will be explainable after
+we *really* understand gravity.
 
-I wonder, if one day, the unexplained gravitational phenomenon in our universe might lead us to some realization. The singularity, the dark forces, existence of multiverses, everything will be explainable after we *really* understand gravity.
-
-In the movie, the (dumb) textbooks said that the Apollo mission was faked. People always connect scientific advancements with the other side that has personal benefits attached to them. Everyone goes mad when you spend a bit on an exploration where there is, apparently, no immediate benefit.
+In the movie, the (dumb) textbooks said that the Apollo mission was faked.
+People always connect scientific advancements with the other side that has
+personal benefits attached to them. Everyone goes mad when you spend a bit on an
+exploration where there is, apparently, no immediate benefit.
 
 But, humans are explorers, its inside all of us. Survival instinct, they say.
 
 <blockquote>
 <p>
-"We've always defined ourselves by the ability to overcome the impossible. And we count these moments. These moments when we dare to aim higher, to break barriers, to reach for the stars, to make the unknown known. We count these moments as our proudest achievements. But we lost all that. Or perhaps we've just forgotten that we are still pioneers. And we've barely begun. And that our greatest accomplishments cannot be behind us, because our destiny lies above us."
+"We've always defined ourselves by the ability to overcome the impossible. And
+we count these moments. These moments when we dare to aim higher, to break
+barriers, to reach for the stars, to make the unknown known. We count these
+moments as our proudest achievements. But we lost all that. Or perhaps we've
+just forgotten that we are still pioneers. And we've barely begun. And that our
+greatest accomplishments cannot be behind us, because our destiny lies above
+us."
 </p>
 <footer>
 <cite title="Cooper">
