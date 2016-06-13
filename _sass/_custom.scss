@@ -148,11 +148,8 @@ hr {
 // Code highlighting
 .highlight {
   background-color: $back;
-
-  pre {
-    font-size: 15px;
-    overflow-x: auto;
-  }
+  font-size: 14px;
+  overflow-x: auto;
 }
 
 // Pagination buttons
