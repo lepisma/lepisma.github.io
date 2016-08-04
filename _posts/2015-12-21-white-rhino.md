@@ -90,8 +90,8 @@ testings, these are not exactly valid for *any* research.
 No, not what you are being told. What the numbers *actually* mean? Here is a
 case.
 
-**In a test on N (N/2, N/2) people, product A performed 50% better than product
-B (assume an effect).**
+"In a test on N (N/2, N/2) people, product A performed 50% better than product
+B (assume an effect)."
 
 What is **50%** here?
 
