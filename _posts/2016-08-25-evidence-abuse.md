@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Abusing Evidences: Drought, Deluge and Disregard'
+title: 'Abusing Evidence: Drought, Deluge and Disregard'
 summary: Gray Scripts of Popular Science Journalism
 category: articles
 ---
@@ -52,7 +52,7 @@ not the right way"*, ever heard this work?
 
 Things boil down to poor journalism and communication. Information communication
 is how you learn about things and use them to make arguments. Poor examples of
-communication almost always mishandle evidences. I will mention 3 major cases
+communication almost always mishandle evidence. I will mention 3 major cases
 here that I repeatedly face.
 
 Before I begin, I want to specifically focus on the point that the topic of my
@@ -257,7 +257,7 @@ sender), despite my respect for the concern of the sender:
    general disagreement, which is pretty much known (specially for the original
    content creator).
 
-#### Evidences
+#### Evidence
 
 <figure>
 <a href="https://xkcd.com/925/">
@@ -266,19 +266,19 @@ sender), despite my respect for the concern of the sender:
 <figcaption><a href="https://xkcd.com/925/">xkcd - 925</a></figcaption>
 </figure>
 
-Evidences keep wild information mutations in check. Its not so much about
+Evidence keeps wild information mutations in check. Its not so much about
 actually putting up the citation before passing the message. Citations can also
 be successfully abstracted. More important is to ensure that there is no drought of
 evidence. Ensure that there are sufficient amount of them before passing on
 information, or creating a higher level abstraction. And ensure that the receiver
-bears the same comfort and responsibility with evidences.
+bears the same comfort and responsibility with evidence.
 
-Evidences, not to be confused with observations, tie the whole model building
+Evidence, not to be confused with observations, ties the whole model building
 process together. Absence of them allows you to do mix and match, exaggerations,
 misinterpretations and misjudgments.
 
 I mean, what would have been wrong if the message would be circulating without
-the issues we talked about. Heeding to evidences would have kept the facts in
+the issues we talked about. Heeding to evidence would have kept the facts in
 check (like whether Pineal gland or
 [SCN](https://en.wikipedia.org/wiki/Suprachiasmatic_nucleus) is known as the
 'clock'), would have included the required uncertainty of results, and even then
@@ -322,18 +322,18 @@ frameborder="0" allowfullscreen class="video-iframe"></iframe>
 
 <br>
 
-Its different from the first situation. You ask for evidences and the first guy
+Its different from the first situation. You ask for evidence and the first guy
 will realize the lack and would go on the defensive. This case will throw
 so many of them, however shallow, you will get almost convinced of the argument
-because you can't gather enough time to accept / refute them. The evidences
-feel so solid on the surface, your mind will be confused whether they are
+because you can't gather enough time to accept / refute them. The evidence
+feels so solid on the surface, your mind will be confused whether they are
 actually refutable if I do a web search with my *'limited'* knowledge. Finally you
 succumb to *"better be safe than sorry"*.
 
 You can almost feel the shades of gray here. Promotion of science in the way
 science intends is great, right? Look at all the T.V. programs, all the news
 articles, everything helps people to accept science in their daily lives. Look
-again and you can see an almost exuberant insincerity for evidences spilling
+again and you can see an almost exuberant insincerity for evidence spilling
 from the mouths of promoters. Of course not all of them.
 
 #### Pseudo Science
@@ -345,7 +345,7 @@ that was shared. If you actually read that link, you might have already reached
 See how the content itself is similar to the melatonin message, but the
 presentation is different. Obviously, this link will also
 get to its level of Whatsapp forward, but its all pro-science in the article. This
-one is trying hard to stand on the shoulders of giants. Evidences, references,
+one is trying hard to stand on the shoulders of giants. Evidence, references,
 articles, numbers, bio-photons? food value? bio-information from sun? Microwave
 ban in Russia? dioxins? Most of the times, these get convincing because of the
 jargons, our fear to look beyond them and cherry picked exaggerations from
@@ -360,7 +360,7 @@ and
 (I have linked microwave specific results),
 follow whatever points you can find against any argument. This is important, not
 because I am convincing you to go against the original argument, but because in
-cases with a deluge of superficial evidences, you will most like fail to notice
+cases with a deluge of superficial evidence, you will most like fail to notice
 the *'taken out-of-context'* information, which you can learn when you hear the
 counter arguments. Hell, I don't even want to link so many articles debunking
 this. It would be sad. And ironic. You might say well, how do you know which
@@ -416,7 +416,7 @@ A few people who are good at conjuring the 'other' uses are:
    public image and the inner scientist. *Vectors of disease*
 
 The only people who are willing to listen fall in type 2. And they need access
-to real consolidated evidence. A truckload of evidences is used most of the time
+to real consolidated evidence. A truckload of evidence is used most of the time
 when you are not sure about whether any of them is right (independent of whether
 the thing is actually right or wrong). A gross misinterpretation of scientific
 method and communication.
@@ -424,7 +424,7 @@ method and communication.
 Consider the sources you are getting your information from. The sources which
 support one pseudo-science are, by design, going to support other
 pseudo-sciences if they feel like. See if you can find meaningless diversions
-and misinterpretation of the evidences. Real bold scientific claims don't come
+and misinterpretation of the evidence. Real bold scientific claims don't come
 in a *Buzzfeed* list. They don't devoid you of your ability to reach the
 original research. They welcome it. Their basic hypothesis is clear and
 analyzable. And they don't mix inconsistent web sources to create a coherent
@@ -568,12 +568,12 @@ source should give you freedom to exercise your freedom. I remember a student
 talking in my undergraduate university mess to someone that our ancient wisdom
 tells to not sleep with your head pointing north pole (a myth promoted by *some*
 alternate med guys and traditionalists). Whats the issue? He is killing the
-spirit of evidences by choosing a framework that disregards them. Also he is
+spirit of evidence by choosing a framework that disregards them. Also he is
 hurting himself by choosing a B.Tech. in Electrical Engineering while apparently
 having spent the time sleeping when someone was teaching about magnetic dipoles
 in high school.
 
-The point is, if something tends to make you disregard the evidences by putting
+The point is, if something tends to make you disregard the evidence by putting
 on a faith-face or shoving your own moral fragility deep inside you, you say
 
 > Aye, I got this covered! I am the king of xenophobes, but balance my biases
@@ -593,12 +593,12 @@ a damn. Sure, you can argue that there is nothing presently 'that' harmful done
 by these issues (though I disagree). But, boy! you will be sorry then because no
 one will be able to question the conspiracy of silence when it hits you.
 
-First, look for evidences and the acceptance they receive in the content you got.
+First, look for evidence and the acceptance it receives in the content you got.
 Second, see if the 'science' overwhelms you to a point where you risk accepting it as
 granted. Third, check if somebody is sneaking a leash over how you are going to
 analyze contents.
 
-More than abuses to evidences, these are abuses to our sanity
+More than abuses to evidence, these are abuses to our sanity
 and intellect as a population. Even if melatonin saves you from cancer, even if
 microwave oven gives you cancer or even when the cult fictions are the ultimate
 facts, the point stays. Final verdict can't be used to prove the righteousness
