@@ -142,7 +142,7 @@ Oh, and you can also find pretty damn sure articles that say its a miraculous
 thing against cancer. We will talk about those cases in section 2.
 
 How do you communicate a research which is not strongly established? Obviously
-you factor in the risk and play it safe by saying that *"thing X, might lead to
+you factor in the risk and play it safe by saying that *"thing X might lead to
 cancer"*. *Might*, because scientists are not sure. *Might*, because the
 explosive mutability of information can't be controlled. *Might*, because you
 really understand the uncertainties and are willing to go an extra mile to
@@ -626,3 +626,7 @@ for making our lives easier.
 </a>
 <figcaption><a href="https://xkcd.com/882/">xkcd - 882</a></figcaption>
 </figure>
+
+##### Edits
+
+- Changed *evidences* to *evidence*. Thanks [Rushil Nagda](https://m.facebook.com/rushil.nagda).
