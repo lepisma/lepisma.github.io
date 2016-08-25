@@ -575,8 +575,9 @@ in high school.
 
 The point is, if something tends to make you disregard the evidences by putting
 on a faith-face or shoving your own moral fragility deep inside you, you say
-"Aye, I got this covered! I am the king of xenophobes, but balance my biases
-before making decisions". 
+
+> Aye, I got this covered! I am the king of xenophobes, but balance my biases
+> before making decisions.
 
 ---
 
@@ -589,7 +590,7 @@ up talking with people who just want to drink tea. Look around yourself, throw
 pebbles in water. See what floats, what sinks. Try to foresee the long term
 effects if circulations like these keep on going unrestrained by a few who give
 a damn. Sure, you can argue that there is nothing presently 'that' harmful done
-by these issues (though I disagree), but, boy! you will be sorry then because no
+by these issues (though I disagree). But, boy! you will be sorry then because no
 one will be able to question the conspiracy of silence when it hits you.
 
 First, look for evidences and the acceptance they receive in the content you got.
