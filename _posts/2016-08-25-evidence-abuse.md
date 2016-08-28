@@ -41,10 +41,10 @@ Some cases are easy to argue against. You just roll your eyes. Some are
 not-so-easy. Let me give a general sense of what type of content I am talking
 about. Consider vegetarian and non-vegetarian eating habits. Simplest of the
 arguments will split opinions among factions. The neutrals are easy to get
-baptized to either side. Only when you give enough time the fog begins to clear.
-Till then, the arguments go on like meteor shower. Never hitting anything. Its
-not necessary that one side is ultimately right and other is wrong. But, there
-is something special about the ways the bad arguments work here, which makes it
+baptized to either side. Only when you give enough time, the fog begins to clear.
+Till then, the arguments go on like meteor showers. Never hitting anything. Its
+not necessary that one side is ultimately right and other is wrong. But there
+is something special about the ways bad arguments work here, which makes it
 easy to know who is putting real arguments and who is shuffling flip-flops.
 Meanwhile the flip-flop guy isn't aware of things and has trust on the points of
 virtue of his / her cause. This makes it hard. *"Hey you are being good, but its
@@ -106,7 +106,7 @@ Must read and share this miraculous physiology God designed inside man... ðŸ˜ŠðŸ
 </blockquote>
 
 Is there anything wrong here? If you are careful, you might find a few mistakes.
-But, someone sent you this with good intentions. Honestly, I am happy someone
+But someone sent you this with good intentions. Honestly, I am happy someone
 other than my parents (ok, the sender was not one of my parents) give a damn
 about when I put my head on pillow. And this message has no side effects and
 isn't really wrong, isn't it?
@@ -136,7 +136,7 @@ Mail me papers. Convince me. At least an *in-vivo* trial that concludes it as a
 cure for cancer. Even, many of the quacks (I know a few) use 'maybe' when
 talking melatonin and cancer connection, because otherwise whats stopping them
 from solving the whole world's cancer with a
-[cheap over-the-counter medicine](https://duckduckgo.com/?t=lm&q=buy+melatonin+online)?
+[cheap, over-the-counter medicine](https://duckduckgo.com/?t=lm&q=buy+melatonin+online)?
 
 Oh, and you can also find pretty damn sure articles that say its a miraculous
 thing against cancer. We will talk about those cases in section 2.
@@ -146,7 +146,7 @@ you factor in the risk and play it safe by saying that *"thing X might lead to
 cancer"*. *Might*, because scientists are not sure. *Might*, because the
 explosive mutability of information can't be controlled. *Might*, because you
 really understand the uncertainties and are willing to go an extra mile to
-shackle the chains around us. But, we say
+shackle the chains around us. But we say
 
 > "Hey kiddo! We simplify things so people get it, get it?"
 
@@ -160,8 +160,8 @@ shackle the chains around us. But, we say
 </figure>
 
 No one can know everything. So we use a few tricks. We learn how to utilize
-sources and do reasoning. In fact this is what we are taught in schools,
-everything else, you learn on the go. We work on coarse models of the world when
+sources and do reasoning. In fact this is what we are taught in schools.
+Everything else, you learn on the go. We work on coarse models of the world when
 we can't understand or afford a finer one.
 
 The model we use are made of bricks of a certain kind of framework that you
@@ -172,14 +172,14 @@ observational errors.
 
 Consider climate change. Established observations
 [say](http://climate.nasa.gov/vital-signs/global-temperature/) that the
-temperature is increasing globally over the years. Assume we have to understand and
+temperature is increasing globally over the years. Say we have to understand and
 communicate this observation to the masses. We start by creating a model that
 explains the observation. Now the analysts choose their weapon of choice and
 create models with various levels of abstractions. Some go with hard atmospheric
 sciences, some believe we are in a simulation and go with that, some work using
 human morality and some with religion.
 
-Next onto communication. Most of the frameworks have certain techniques to
+Next, onto communication. Most of the frameworks have certain techniques to
 abstract away their finest models so as to reach a wider audience. A common
 method is used by religions in many practical cases which reduces their model
 abstractions to simple human morality. When a writer tries to tell people about
@@ -205,7 +205,7 @@ you see that there are many models, within a framework, competing to explain
 observations using certain sub-frameworks. The original model creator warns you
 about these. The assumptions are laid bare and the competing ideas are visible
 to naked eyes. The person responsible for popularizing the model passes these
-on faithfully in a higher abstraction level. The results are not statistically
+on faithfully to a higher abstraction level. The results are not statistically
 significant? No issue. *"Mate, the scientists tried to compare this. The results
 are slightly negative but more inconclusive. Though its nice to be safe"*.
 
@@ -253,7 +253,7 @@ sender), despite my respect for the concern of the sender:
    us from common old age death causes. Cancer too, yes.
    
 4. **Absolute facts**: I can believe this message lies on the side where researchers
-   are certain about cancer effect, but then the reader should get hint for the
+   are certain about cancer effect, but then the reader should get hints for the
    general disagreement, which is pretty much known (specially for the original
    content creator).
 
@@ -267,14 +267,14 @@ sender), despite my respect for the concern of the sender:
 </figure>
 
 Evidence keeps wild information mutations in check. Its not so much about
-actually putting up the citation before passing the message. Citations can also
+actually putting up the citations before passing the message. Citations can also
 be successfully abstracted. More important is to ensure that there is no drought of
 evidence. Ensure that there are sufficient amount of them before passing on
 information, or creating a higher level abstraction. And ensure that the receiver
 bears the same comfort and responsibility with evidence.
 
 Evidence, not to be confused with observations, ties the whole model building
-process together. Absence of them allows you to do mix and match, exaggerations,
+process together. Absence of evidence allows you to do mix and match, exaggerations,
 misinterpretations and misjudgments.
 
 I mean, what would have been wrong if the message would be circulating without
@@ -301,18 +301,18 @@ people, I can safely say, A Hell Lot!
 </figure>
 
 I was recently involved in a facebook discussion about effects of microwave on
-food items. The issue included bad effects of microwave on food and carcinogenic
+food items. The issues included bad effects of microwave on food and carcinogenic
 quality of plastic + microwave interaction. Without touching the topic, let me
 tell you the state of the final facebook post. There are around 20 citations
 floating around. Many of which are not going to affect the arguments. Sadly, the
 original link shared was enough to convince most of us that its good science.
 Citations, references, geeky words, what else do you need? I am sure not more
 than 5 (not sure about the number) guys actually went through, or needed to look
-on the citations. Also, I can assure you, many adventurous people who opened the
-main link came out convinced that they are dealing with science. To put it
+at the citations. Also, I can assure you, many adventurous people who opened the
+main link came out convinced that they were dealing with science. To put it
 straight, many of us believe that there is no such thing as poor science.
 
-Let John Oliver [explain](https://youtu.be/0Rnq1NpHdmw) to you what kind of
+Let John Oliver [explain](https://youtu.be/0Rnq1NpHdmw) you what kind of
 cases I am talking about.
 
 <div class="video-wrapper">
@@ -332,8 +332,8 @@ succumb to *"better be safe than sorry"*.
 
 You can almost feel the shades of gray here. Promotion of science in the way
 science intends is great, right? Look at all the T.V. programs, all the news
-articles, everything helps people to accept science in their daily lives. Look
-again and you can see an almost exuberant insincerity for evidence spilling
+articles, everything is helping people to accept science in their daily lives. Look
+again, and you can see an almost exuberant insincerity for evidence spilling
 from the mouths of promoters. Of course not all of them.
 
 #### Pseudo Science
@@ -344,7 +344,7 @@ that was shared. If you actually read that link, you might have already reached
 [this article](http://articles.mercola.com/sites/articles/archive/2010/05/18/microwave-hazards.aspx).
 See how the content itself is similar to the melatonin message, but the
 presentation is different. Obviously, this link will also
-get to its level of Whatsapp forward, but its all pro-science in the article. This
+get to its level of WhatsApp forward, but its all pro-science in the article. This
 one is trying hard to stand on the shoulders of giants. Evidence, references,
 articles, numbers, bio-photons? food value? bio-information from sun? Microwave
 ban in Russia? dioxins? Most of the times, these get convincing because of the
@@ -361,14 +361,14 @@ and
 follow whatever points you can find against any argument. This is important, not
 because I am convincing you to go against the original argument, but because in
 cases with a deluge of superficial evidence, you will most like fail to notice
-the *'taken out-of-context'* information, which you can learn when you hear the
-counter arguments. Hell, I don't even want to link so many articles debunking
+the *'taken out-of-context'* information, which you can learn only when you hear the
+counter arguments. Hell! I don't even want to link so many articles debunking
 this. It would be sad. And ironic. You might say well, how do you know which
 links are right, which links are wrong? I don't. You can never accept any
 content just as it is. But, you can have a prior belief about certain kind of
 content which makes you focus your skepticism where its most needed. Go on, read
 all the links you find. I am assured, after a while you can tell whether an
-article has higher chance of pseudo-science just by looking at its CSS. Its like
+article has a higher chance of pseudo-science just by looking at its CSS. Its like
 finding your perfect life partner. A beautiful breeze will touch you and put a
 smile on your face (No kidding!).
 
@@ -387,7 +387,7 @@ Consider homeopathy. Something that's still pretty much established because peop
 didn't try, or weren't able to go through the 'science' thrown at them.
 In case you are missing out, please read the
 [basic principle](https://en.wikipedia.org/wiki/Homeopathic_dilutions) of
-homeopathy. Same thing. Many of us claim its the real thing, without actually
+homeopathy. Same case. Many of us claim its the real thing, without actually
 knowing how and why, just because we were somehow 'convinced' of its
 sciency-ness.
 
@@ -453,11 +453,11 @@ Explore the tweet above (basically the linked image). Come back later. Look,
 what arguments can be put here to favour both sides. Colgate told not to rub
 abrasives on your teeth. Later they tried incorporating
 [activated charcoal](https://en.wikipedia.org/wiki/Activated_carbon) in their
-products in a form *they* find better. On the other side, baba tells us about
+products in a form *they* found better. On the other side, baba tells us about
 this hypocrisy that companies regularly employ to sell stuff. Obviously, both
 arguments are good and bad in different ways.
 
-Anyways, I see this promoting two things
+Anyways, I see this message promoting two things
 
 1. There is a reason higher than scientific method to decide against or in favor
    of a product. In this case, ethnocentrism, nationalism and other
@@ -481,7 +481,7 @@ amputate my head as if I don't give a damn about who controls my thoughts and
 stories. I live in a country that has *earned* its independence and I know what
 emotions you can stir when you invoke nationalistic ideas. Talk about eternal
 cultural superiority, shout national slogans, appeal to ancient science and you
-get an army of martyrs without cause ready to sabotage the people who ask "why".
+get an army of martyrs without cause, ready to sabotage the people who ask "why".
 
 The questions people need answers to are innocent. They aren't against anything,
 as presumed by the preachers. They are just questions. But the techniques of
@@ -528,12 +528,13 @@ or some local store. In case you have read it too, please send me a pic for
 inclusion). Is this a good reason? Since I am not touching anything sensitive,
 we can get neutral and reasonable answers for this particular advertisement. Its
 no. You can have certain tendencies, but you don't make decisions using them.
+
 The models we talked about, there can be many kinds that work. There are many
 lapses in almost all the backing frameworks. Some accept the lapses, make way
 for other models to move in action. *Morality* and *Science* complement each other
 real good this way. Some don't. And mainly the ones with most number of
 deficiencies in term of framework capabilities. These framework claim to be
-absolutely complete and purer than anything other. Complete. Right from the
+absolutely complete and purer than anything other. Complete. Right from their
 inception to the present time, despite the popular knowledge that they visibly
 mutate by piggybacking on badges of modern scientific developments (like quantum
 physics, mail me if you want to know the secrets of the universe; I wonder what
@@ -590,7 +591,7 @@ up talking with people who just want to drink tea. Look around yourself, throw
 pebbles in water. See what floats, what sinks. Try to foresee the long term
 effects if circulations like these keep on going unrestrained by a few who give
 a damn. Sure, you can argue that there is nothing presently 'that' harmful done
-by these issues (though I disagree). But, boy! you will be sorry then because no
+by these issues (though I disagree). But, boy! You will be sorry then because no
 one will be able to question the conspiracy of silence when it hits you.
 
 First, look for evidence and the acceptance it receives in the content you got.
@@ -600,7 +601,7 @@ analyze contents.
 
 More than abuses to evidence, these are abuses to our sanity
 and intellect as a population. Even if melatonin saves you from cancer, even if
-microwave oven gives you cancer or even when the cult fictions are the ultimate
+microwave oven gives you cancer or even if the cult fictions are the ultimate
 facts, the point stays. Final verdict can't be used to prove the righteousness
 of fickle arguments.
 
@@ -608,9 +609,9 @@ of fickle arguments.
 - Scientists[1] say, this leads[2] to[3] that[4]. References.
 - This, because [*insert your cult leader's wet dream*]
 
-Ask yourself, if these content passes through you unchecked, will you be able to
+Ask yourself, if these contents pass through you unchecked, will you be able to
 shed the guilt of depriving kids of genuine 'curiosity'? Guilt of fooling people
-into believing they are 'Scientists'? Guilt of closing your eyes to the truth
+into believing they are 'scientists'? Guilt of closing your eyes to the truth
 just because you are too lazy and want to be spoon fed by some know-it-all? Or
 maybe its all meaningless and you already are in a cult with mechanisms for
 redemption in place.
