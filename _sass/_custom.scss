@@ -312,6 +312,7 @@ table {
   transform: translateY(-50%);
 }
 
+@media (min-width: 1000px) {
 #contact-controls {
   z-index: 100;
   position: fixed;
@@ -358,4 +359,5 @@ table {
     border-width: 1px;
     border-bottom-right-radius: 5px;
   }
+}
 }
