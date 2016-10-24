@@ -2,8 +2,8 @@
 
 // Pallete;
 $back: white;
-$text-light: #7B7B7B;
-$text-dark: black;
+$textlight: #7B7B7B;
+$textdark: black;
 $accent: #002642;
 $accent-dark: #00151C;
 
@@ -13,6 +13,61 @@ $accent-dark: #00151C;
     font-family: "Bebas Neue Bold";
     src:
     url("../assets/fonts/BebasNeue Bold.otf");
+}
+
+@mixin text-underline-crop($background) {
+    text-shadow:  .03em 0 $background,
+    -.03em 0 $background,
+    0 .03em $background,
+    0 -.03em $background,
+    .06em 0 $background,
+    -.06em 0 $background,
+    .09em 0 $background,
+    -.09em 0 $background,
+    .12em 0 $background,
+    -.12em 0 $background,
+    .15em 0 $background,
+    -.15em 0 $background;
+}
+
+@mixin text-background($color-bg, $color-text) {
+    background-image: linear-gradient($color-text, $color-text);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position:  0% 95%;
+}
+
+@mixin text-selection($selection) {
+    &::selection {
+        @include text-underline-crop($selection);
+        background: $selection;
+    }
+
+    &::-moz-selection {
+        @include text-underline-crop($selection);
+        background: $selection;
+    }
+}
+
+@mixin link-underline($background, $text, $selection){
+    @include text-underline-crop($background);
+    @include text-background($background, $text);
+    @include text-selection($selection);
+
+    color: $text;
+    text-decoration: none;
+
+    *,
+    *:after,
+    &:after,
+    *:before,
+    &:before {
+        text-shadow: none;
+    }
+
+    &:visited {
+        color: $text;
+    }
 }
 
 // Code starts here
@@ -38,7 +93,7 @@ a {
     text-decoration: none;
     color: $accent;
     &:hover {
-        color: $text-light;
+        color: $textlight;
     }
 }
 
@@ -52,7 +107,7 @@ a {
 #main-head {
     font-family: "Bebas Neue Bold";
     margin-top: 15px;
-    color: $text-light;
+    color: $textlight;
     #name {
         float: left;
         font-size: 26px;
@@ -135,9 +190,8 @@ a {
             font-weight: 300;
             font-size: 12px;
             line-height: 2;
-            text-align: justify;
             a {
-                text-decoration: underline;
+                @include link-underline(#fff, #333, $textlight);
             }
         }
     }
