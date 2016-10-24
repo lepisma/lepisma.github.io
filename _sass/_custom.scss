@@ -85,9 +85,8 @@ p a, li a {
   }
 }
 
-// Justify text
-p {
-  text-align: justify;
+.measure {
+    max-width: 45rem;
 }
 
 // Loading bar
