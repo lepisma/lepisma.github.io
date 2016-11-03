@@ -191,7 +191,7 @@ a {
             font-size: 12px;
             line-height: 2;
             a {
-                @include link-underline(#fff, #333, $textlight);
+                @include link-underline(#fff, #333, $accent);
             }
         }
     }

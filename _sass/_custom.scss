@@ -78,7 +78,7 @@ $accent-dark: #00151C;
 // link style
 p a, li a {
   color: $textdark;
-  @include link-underline(#fff, #333, $textlight);
+  @include link-underline(#fff, #333, $accent);
 
   &:hover {
     color: $textdark;
@@ -206,6 +206,15 @@ hr {
   line-height: 0px;
   margin-top: 27px;
   margin-right: .3rem;
+}
+
+// Side notes
+aside {
+    font-size: 12px;
+    color: #555;
+    position: absolute;
+    left: 60rem;
+    width: 200px;
 }
 
 // Code highlighting
