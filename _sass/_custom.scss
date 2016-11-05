@@ -159,7 +159,7 @@ header, .post-title {
 }
 
 .post-link .post-title {
-  font-size: 42px;
+  font-size: 28px;
   font-weight: normal;
   font-style: normal;
 }
@@ -167,7 +167,16 @@ header, .post-title {
 .post-summary {
   color: $textlight;
   font-style: italic;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.posts .post {
+  padding-bottom: 1.33em;
+  margin-bottom: 0.75em;
+}
+
+.pagination a, .pagination .disabled {
+  padding: 0.5em 1.5em;
 }
 
 // Better blockquote
@@ -337,11 +346,11 @@ table {
     background-color: $accent;
     color: white;
     padding: 5px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 13px;
+    padding-left: 13px;
     font-family: serif;
     font-style: italic;
-    font-size: 21px;
+    font-size: 18px;
     cursor: pointer;
 
     &:hover {
