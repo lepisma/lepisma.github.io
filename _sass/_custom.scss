@@ -2,8 +2,16 @@
 
 // Custom things
 
+// Pallete
+$back: #fff;
+$textlight: #7b7b7b;
+$gray: #333;
+$textdark: #000;
+$accent: #002642;
+$accent-dark: #00151c;
+
 @mixin text-underline-crop($background) {
-  text-shadow:  .03em 0 $background,
+  text-shadow: .03em 0 $background,
   -.03em 0 $background,
   0 .03em $background,
   0 -.03em $background,
@@ -21,7 +29,7 @@
   background-image: linear-gradient($color-text, $color-text);
   background-size: 1px 1px;
   background-repeat: repeat-x;
-  background-position:  0% 95%;
+  background-position: 0% 95%;
 }
 
 @mixin text-selection($selection) {
@@ -31,12 +39,12 @@
   }
 
   &::-moz-selection {
-  @include text-underline-crop($selection);
-  background: $selection;
+    @include text-underline-crop($selection);
+    background: $selection;
   }
 }
 
-@mixin link-underline($background, $text, $selection){
+@mixin link-underline($background, $text, $selection) {
   @include text-underline-crop($background);
   @include text-background($background, $text);
   @include text-selection($selection);
@@ -57,28 +65,21 @@
   }
 }
 
-// Pallete;
-$back: white;
-$textlight: #7B7B7B;
-$textdark: black;
-$accent: #002642;
-$accent-dark: #00151C;
-
 // Selection colors:
 ::selection {
   background: $accent;
-  color: white;
+  color: $back;
 }
 
 ::moz-selection {
   background: $accent;
-  color: white;
+  color: $back;
 }
 
 // link style
 p a, li a {
+  @include link-underline($back, $gray, $accent);
   color: $textdark;
-  @include link-underline(#fff, #333, $accent);
 
   &:hover {
     color: $textdark;
@@ -87,15 +88,15 @@ p a, li a {
 
 // Main column positioning
 @media (min-width: 1000px) {
-    .wrap .measure {
-        margin-left: 5em;
-        max-width: 45rem;
-    }
+  .wrap .measure {
+    margin-left: 5em;
+    max-width: 45rem;
+  }
 }
 
 // Loading bar
 .pace .pace-progress {
-  background: $accent !important;
+  background-color: $accent !important;
 }
 
 // Nav according to about me
@@ -105,15 +106,14 @@ p a, li a {
 
 .site-header nav a {
   font-size: 12px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: bold;
   color: $textlight;
-  font-size: 12px;
   text-transform: uppercase;
 
   &:hover {
+    border: 0;
     color: $accent;
-    border: none;
   }
 }
 
@@ -148,13 +148,13 @@ p, li {
 
 // Fonts
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-style: italic;
   font-weight: normal;
 }
 
 header, .post-title {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-weight: normal;
 }
 
@@ -172,26 +172,26 @@ header, .post-title {
 
 .posts .post {
   padding-bottom: 1.33em;
-  margin-bottom: 0.75em;
+  margin-bottom: .75em;
 }
 
 .pagination a, .pagination .disabled {
-  padding: 0.5em 1.5em;
+  padding: .5em 1.5em;
 }
 
 // Better blockquote
 blockquote {
-  padding: 0px;
-  quotes: "\201C""\201D""\2018""\2019";
+  padding: 0;
+  quotes: '\201C''\201D''\2018''\2019';
   border-left: none;
 
   &::before{
     color: $accent;
     content: open-quote;
     font-size: 2em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
   }
 
   p {
@@ -211,19 +211,19 @@ hr {
 .dropcap {
   font-size: 45px;
   float: left;
-  padding: 0px;
-  line-height: 0px;
+  padding: 0;
+  line-height: 0;
   margin-top: 27px;
   margin-right: .3rem;
 }
 
 // Side notes
 aside {
-    font-size: 12px;
-    color: #555;
-    position: absolute;
-    left: 60rem;
-    width: 200px;
+  font-size: 12px;
+  color: $gray;
+  position: absolute;
+  left: 60rem;
+  width: 200px;
 }
 
 // Code highlighting
@@ -249,7 +249,7 @@ aside {
 
 .pagination a:hover {
   background: $accent;
-  color: white;
+  color: $back;
 }
 
 // Figure related stuff
@@ -268,12 +268,11 @@ figure {
 // Mathjax
 
 .MathJax_Display {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 // Table
 table {
-
   font-size: 15px;
   margin-top: 20px;
   padding-top: 20px;
@@ -287,12 +286,12 @@ table {
 
   thead {
     tr th {
-      border-bottom: 0pt;
+      border-bottom: 0;
     }
   }
 
   tbody tr td {
-    border-top: 0pt;
+    border-top: 0;
   }
 }
 
@@ -306,14 +305,14 @@ table {
 #contact-overlay {
   display: none;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: black;
-  opacity: 0.5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $textdark;
+  opacity: .5;
   z-index: 50;
-  cursor: url(../assets/images/close_2.png), default;
+  cursor: url('../assets/images/close_2.png'), default;
 }
 
 #contact-form {
@@ -324,8 +323,8 @@ table {
   padding: 50px;
   width: 100%;
   text-align: center;
-  box-shadow: 0px 0px 10px;
-  background: white;
+  box-shadow: 0 0 10px;
+  background: $back;
   transform: translateY(-50%);
 }
 
@@ -336,15 +335,15 @@ table {
   left: 99px;
   transform: translateY(-50%) rotate(-90deg);
   display: inline-flex;
-  transform-origin: 0px 100px;
+  transform-origin: 0 100px;
 
   .contact-btns {
     a {
-      color: white;
+      color: $back;
     }
 
     background-color: $accent;
-    color: white;
+    color: $back;
     padding: 5px;
     padding-right: 13px;
     padding-left: 13px;
@@ -355,7 +354,7 @@ table {
 
     &:hover {
       background-color: $accent-dark !important;
-      color: white !important;
+      color: $back !important;
       border-color: $accent-dark !important;
     }
   }
@@ -368,7 +367,7 @@ table {
   }
 
   #contact-btn {
-    background: white;
+    background: $back;
     color: $accent;
     border-color: $accent;
     border-style: solid;
@@ -381,5 +380,24 @@ table {
 @media (max-width: 1000px) {
   #contact-controls {
     display: none !important;
+  }
+}
+
+// Blog archive
+
+.archive-container {
+  margin-top: 80px;
+}
+
+.archive-listing {
+  margin: 40px 0;
+
+  .archive-date {
+    font-variant: small-caps;
+    color: $textlight;
+  }
+
+  .archive-title {
+    font-size: 25px;
   }
 }

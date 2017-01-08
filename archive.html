@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h2>Blog archive</h2>
+
+  <div class="archive-container">
+    <ul>
+    {% for post in site.posts %}
+    <li class="archive-listing">
+      <div class="archive-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="archive-link">
+        <div class="archive-title">{{ post.title }}</div>
+      </a>
+    </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

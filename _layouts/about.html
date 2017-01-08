@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>about | abhinav tushar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About me, Abhinav Tushar">
-    <meta name="author" content="Abhinav Tushar">
+    <meta name="description" content="About me, {{ site.author }}">
+    <meta name="author" content="{{ site.author }}">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pace.css" type="text/css">
@@ -23,9 +23,9 @@
     <script src="{{ site.baseurl }}/assets/js/pace.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/about.js"></script>
   </head>
-<body>
-  <div class="site-wrap">
-    {{ content }}
-  </div>
-</body>
+  <body>
+    <div class="site-wrap">
+      {{ content }}
+    </div>
+  </body>
 </html>

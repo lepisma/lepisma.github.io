@@ -1,25 +1,27 @@
 # Site settings
-title:       abhinav tushar
-email:       abhinav.tushar.vs@gmail.com
-author:      Abhinav Tushar
-description: "Personal Blog"
-baseurl:     ""
-url:         "https://lepisma.github.io/"
+title: abhinav tushar
+email: abhinav.tushar.vs@gmail.com
+author: Abhinav Tushar
+description: Personal Blog
+baseurl: ""
+url: https://lepisma.github.io/
 
-# Google analytics
-google_analytics:
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
+links:
+  twitter: https://twitter.com/AbhinavTushar
+  github: https://github.com/lepisma
+  lastfm: https://last.fm/user/AbhinavTushar
+  speakerdeck: https://speakerdeck.com/lepisma
+  goodreads: https://www.goodreads.com/user/show/26452234-abhinav-tushar
+  protonmail: lepisma@protonmail.com
+  keybase: https://keybase.io/lepisma
 
 # Contact pane
 contact_form: true
 
 # Build settings
-markdown:     kramdown
-permalink:    pretty
-paginate:     10
+markdown: kramdown
+permalink: pretty
+paginate: 5
 sass:
   compressed: true
 gems:
