@@ -10,6 +10,8 @@ $textdark: #000;
 $accent: #002642;
 $accent-dark: #00151c;
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 @mixin text-underline-crop($background) {
   text-shadow: .03em 0 $background,
   -.03em 0 $background,
@@ -233,6 +235,11 @@ aside {
   background-color: $back;
   font-size: 14px;
   overflow-x: auto;
+  line-height: 22px;
+
+  code {
+    font-family: 'Source Code Pro';
+  }
 }
 
 // Pagination buttons
