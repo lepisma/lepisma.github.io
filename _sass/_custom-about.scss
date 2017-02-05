@@ -3,6 +3,7 @@
 // Pallete;
 $back: #fff;
 $textlight: #7b7b7b;
+$back-gray: rgb(239, 239, 239);
 $gray: #333;
 $textdark: #000;
 $accent: #002642;
@@ -86,10 +87,6 @@ $accent-dark: #00151c;
   background-color: $accent !important;
 }
 
-hr {
-  width: 80%;
-}
-
 a {
   color: $accent;
   text-decoration: none;
@@ -102,7 +99,7 @@ a {
 // HEADER -----------------------
 #main-head-block {
   background-color: $accent;
-  height: 10px;
+  height: 5px;
   width: 100%;
 }
 
@@ -113,13 +110,13 @@ a {
 
   #name {
     float: left;
-    font-size: 26px;
-    line-height: 1.3em;
+    font-size: 40px;
+    line-height: 1.2em;
   }
 
   #links {
     float: right;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 8px;
     line-height: 1.3em;
     margin-top: 5px;
@@ -133,43 +130,6 @@ a {
   }
 }
 
-
-#menu {
-  z-index: 1;
-  display: none;
-  background: $back;
-  height: 40px;
-  position: fixed;
-  font-family: 'Merriweather';
-  font-size: 13px;
-  font-style: italic;
-
-  ul {
-    list-style: none;
-    background: $back;
-
-    li {
-      display: inline-block;
-    }
-
-    a {
-      display: block;
-      padding: 5px;
-      padding-left: 25px;
-      padding-right: 25px;
-      text-align: center;
-      -webkit-transition: .5s all ease-out;
-      -moz-transition: .5s all ease-out;
-      transition: .5s all ease-out;
-      border-top: 3px solid white;
-    }
-
-    li.active a {
-      border-top: 3px solid $accent-dark;
-    }
-  }
-}
-
 // MAIN -----------------------
 
 #main-content {
@@ -180,17 +140,22 @@ a {
 
     .section-media {
       padding-top: 50px;
-
       img {
         width: 100%;
+      }
+
+      @media (max-width: 550px) {
+        img {
+          display: none;
+        }
       }
     }
 
     .section-title {
-      font-family: 'Merriweather';
-      font-style: italic;
-      font-size: 20px;
-      margin-bottom: 15px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 20px;
     }
 
     .section-text {
@@ -199,13 +164,16 @@ a {
         width: 100%;
       }
 
-      font-family: "Fira Sans";
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 2;
+      font-family: 'Open Sans';
+      color: $gray;
+      font-size: 18px;
 
       a {
         @include link-underline($back, $gray, $accent);
+
+        &:hover {
+          background-color: $back-gray;
+        }
       }
     }
   }

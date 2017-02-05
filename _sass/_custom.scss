@@ -5,6 +5,7 @@
 // Pallete
 $back: #fff;
 $textlight: #7b7b7b;
+$back-gray: rgb(239, 239, 239);
 $gray: #333;
 $textdark: #000;
 $accent: #002642;
@@ -84,6 +85,7 @@ p a, li a {
   color: $textdark;
 
   &:hover {
+    background-color: $back-gray;
     color: $textdark;
   }
 }
