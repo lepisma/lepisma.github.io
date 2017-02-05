@@ -178,3 +178,12 @@ a {
     }
   }
 }
+
+footer {
+  height: 30px;
+  background-color: $back-gray;
+  border-width: 0;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+}
