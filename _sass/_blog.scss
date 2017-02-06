@@ -1,92 +1,15 @@
-@charset "UTF-8";
-
 // Custom things
 
-// Pallete
-$back: #fff;
-$textlight: #7b7b7b;
-$back-gray: rgb(239, 239, 239);
-$gray: #333;
-$textdark: #000;
-$accent: #002642;
-$accent-dark: #00151c;
-
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-@mixin text-underline-crop($background) {
-  text-shadow: .03em 0 $background,
-  -.03em 0 $background,
-  0 .03em $background,
-  0 -.03em $background,
-  .06em 0 $background,
-  -.06em 0 $background,
-  .09em 0 $background,
-  -.09em 0 $background,
-  .12em 0 $background,
-  -.12em 0 $background,
-  .15em 0 $background,
-  -.15em 0 $background;
-}
-
-@mixin text-background($color-bg, $color-text) {
-  background-image: linear-gradient($color-text, $color-text);
-  background-size: 1px 1px;
-  background-repeat: repeat-x;
-  background-position: 0% 95%;
-}
-
-@mixin text-selection($selection) {
-  &::selection {
-    @include text-underline-crop($selection);
-    background: $selection;
-  }
-
-  &::-moz-selection {
-    @include text-underline-crop($selection);
-    background: $selection;
-  }
-}
-
-@mixin link-underline($background, $text, $selection) {
-  @include text-underline-crop($background);
-  @include text-background($background, $text);
-  @include text-selection($selection);
-
-  color: $text;
-  text-decoration: none;
-
-  *,
-  *:after,
-  &:after,
-  *:before,
-  &:before {
-    text-shadow: none;
-  }
-
-  &:visited {
-    color: $text;
-  }
-}
-
-// Selection colors:
-::selection {
-  background: $accent;
-  color: $back;
-}
-
-::moz-selection {
-  background: $accent;
-  color: $back;
-}
+@import 'commons';
 
 // link style
-p a, li a {
-  @include link-underline($back, $gray, $accent);
-  color: $textdark;
+p a,
+li a {
+  @include link-underline($back-white, $text-dark, $accent);
+  color: $text-dark;
 
   &:hover {
-    background-color: $back-gray;
-    color: $textdark;
+    background-color: $back-light;
   }
 }
 
@@ -112,7 +35,7 @@ p a, li a {
   font-size: 12px;
   font-family: 'Open Sans';
   font-weight: bold;
-  color: $textlight;
+  color: $text-light;
   text-transform: uppercase;
 
   &:hover {
@@ -146,8 +69,9 @@ h6 {
   font-size: 18px;
 }
 
-p, li {
-  font-size: 14px;
+p,
+li {
+  font-size: 16px;
 }
 
 // Fonts
@@ -155,11 +79,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora';
   font-style: italic;
   font-weight: normal;
-  margin-top: 60px;
   margin-bottom: 30px;
+  margin-top: 60px;
 }
 
-header, .post-title {
+header,
+.post-title {
   font-family: 'Merriweather';
   font-weight: normal;
 }
@@ -171,7 +96,7 @@ header, .post-title {
 }
 
 .post-summary {
-  color: $textlight;
+  color: $text-light;
   font-style: italic;
   font-size: 16px;
 }
@@ -215,26 +140,17 @@ hr {
 
 // Dropcap
 .dropcap {
-  font-size: 45px;
+  font-size: 55px;
   float: left;
   padding: 0;
-  line-height: 0;
-  margin-top: 27px;
+  line-height: 0.1;
+  margin-top: 30px;
   margin-right: .3rem;
-}
-
-// Side notes
-aside {
-  font-size: 12px;
-  color: $gray;
-  position: absolute;
-  left: 60rem;
-  width: 200px;
 }
 
 // Code highlighting
 .highlight {
-  background-color: $back;
+  background-color: $back-white;
   font-size: 14px;
   overflow-x: auto;
   line-height: 22px;
@@ -260,7 +176,7 @@ aside {
 
 .pagination a:hover {
   background: $accent;
-  color: $back;
+  color: $back-white;
 }
 
 // Figure related stuff
@@ -271,15 +187,14 @@ figure {
   figcaption {
     text-align: center;
     padding-top: 30px;
-    color: $textlight;
+    color: $text-light;
     font-size: 15px;
   }
 }
 
 // Mathjax
-
 .MathJax_Display {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 // Table
@@ -293,7 +208,7 @@ table {
   border-width: 1px;
   border-right: transparent;
   border-left: transparent;
-  border-color: $textlight;
+  border-color: $text-light;
 
   thead {
     tr th {
@@ -320,7 +235,7 @@ table {
   left: 0;
   right: 0;
   bottom: 0;
-  background: $textdark;
+  background: $text-dark;
   opacity: .5;
   z-index: 50;
   cursor: url('../assets/images/close_2.png'), default;
@@ -335,7 +250,7 @@ table {
   width: 100%;
   text-align: center;
   box-shadow: 0 0 10px;
-  background: $back;
+  background: $back-white;
   transform: translateY(-50%);
 
   h4 {
@@ -354,11 +269,11 @@ table {
 
   .contact-btns {
     a {
-      color: $back;
+      color: $back-white;
     }
 
     background-color: $accent;
-    color: $back;
+    color: $back-white;
     padding: 5px;
     padding-right: 13px;
     padding-left: 13px;
@@ -369,7 +284,7 @@ table {
 
     &:hover {
       background-color: $accent-dark !important;
-      color: $back !important;
+      color: $back-white !important;
       border-color: $accent-dark !important;
     }
   }
@@ -382,7 +297,7 @@ table {
   }
 
   #contact-btn {
-    background: $back;
+    background: $back-white;
     color: $accent;
     border-color: $accent;
     border-style: solid;
@@ -409,7 +324,7 @@ table {
 
   .archive-date {
     font-variant: small-caps;
-    color: $textlight;
+    color: $text-light;
   }
 
   .archive-title {

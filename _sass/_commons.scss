@@ -1,0 +1,94 @@
+// Common mixins and variables
+
+// Shades
+$c1: #000;
+$c2: #333;
+$c3: #7b7b7b;
+$c4: #c8c8c8;
+$c5: #efefef;
+$c6: #fff;
+
+$accent: #002642;
+$accent-dark: #00151c;
+
+$back-white: $c6;
+$back-light: $c5;
+$back-medium: $c4;
+
+$text-light: $c3;
+$text-medium: $c2;
+$text-dark: $c1;
+
+// Fonts
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url('../assets/fonts/BebasNeue Bold.otf');
+}
+
+@mixin text-underline-crop($background) {
+  text-shadow: .03em 0 $background,
+  -.03em 0 $background,
+  0 .03em $background,
+  0 -.03em $background,
+  .06em 0 $background,
+  -.06em 0 $background,
+  .09em 0 $background,
+  -.09em 0 $background,
+  .12em 0 $background,
+  -.12em 0 $background,
+  .15em 0 $background,
+  -.15em 0 $background;
+}
+
+@mixin text-background($color-bg, $color-text) {
+  background-image: linear-gradient($color-text, $color-text);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+}
+
+@mixin text-selection($selection) {
+  &::selection {
+    @include text-underline-crop($selection);
+    background: $selection;
+    color: $back-white;
+  }
+
+  &::-moz-selection {
+    @include text-underline-crop($selection);
+    background: $selection;
+    color: $back-white;
+  }
+}
+
+@mixin link-underline($background, $text, $selection) {
+  @include text-underline-crop($background);
+  @include text-background($background, $text);
+  @include text-selection($selection);
+
+  color: $text;
+  text-decoration: none;
+
+  *,
+  *:after,
+  &:after,
+  *:before,
+  &:before {
+    text-shadow: none;
+  }
+
+  &:visited {
+    color: $text;
+  }
+}
+
+// Selection colors:
+*::selection {
+  background: $accent;
+  color: $back-white;
+}
+
+*::-moz-selection {
+  background: $accent;
+  color: $back-white;
+}
