@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/lepisma
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lepisma.github.io
+  * I am lepisma (https://keybase.io/lepisma) on keybase.
+  * I have a public key with fingerprint 35BC 55FC 941B 2F30 6B18  0521 AF10 101F 24C4 4C69
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b66f210f0f430ea12e6904f6d5987d60cb1158b41a9c9c1d197ee4a58168e89b0a",
+            "fingerprint": "35bc55fc941b2f306b180521af10101f24c44c69",
+            "host": "keybase.io",
+            "key_id": "af10101f24c44c69",
+            "kid": "0101b66f210f0f430ea12e6904f6d5987d60cb1158b41a9c9c1d197ee4a58168e89b0a",
+            "uid": "00cb09c43abd5fea41d2527739146019",
+            "username": "lepisma"
+        },
+        "service": {
+            "hostname": "lepisma.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486592969,
+    "expire_in": 157680000,
+    "prev": "c01410dd0ea6e73417abb11f21e7f9855d7dd78feea34133efeb576acc077dc8",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtkntQVFUcxxcKExPdRSlnBKwbjgUE9+x9Ew+ZESfQ5KVAzMB2H+fCRfbB7mVR
+dwgGEKKcAgtlIgmYABtG2Ul0aBxH46GQ02sCRSyYoFA3cbRW6Amdq/VHM/3Z+efM
++f2+v8/v9/vOaQh4ROfr06vXbwob2qn4XL4l6HJaWiZcmGCV9mMxLmwvfHDBYgk6
+VNNeRcJiMBzgQKBp2QhwGZdJAoc8MEKaw0mZliiOZSQaFwUAKFYgAc+JnAgkwDEQ
+kjzFApqFLCfgPBaJyYqlANptdsWiIixBCSJFySJHAsEoEzgtABanjICXgdZRNpIi
+SYo0hwoLrQ6tAg0n8A4YpVhRDD1MD8b7D/3/PHfpQxwS45xIErwgUTLkSSAZKSPD
+EBwgaRxofUsd0G7hzRCpi6FNcZh5rDwSQ0GnIkLNV22RfwuiChS1sFR4uJPNblWt
+orUYpQtV1eaI0crV/TZNXwYF098kk6BYJOQlqnBCu0OxWrAYgJSiqmhoQLI0xRk5
+movE4D6bYocmRVNQDM3i6Gh9oBMhRRzkkQCXJOQMDRmCBAwvIEOQY5CROZaiJEaS
+GFaGkEdJgoAyFBCFF0WcYSSRxbTlSixWBEdUlS9AUIdSYOHVUjvEylfV+wY/qvPx
+1a3w89W+mW6Vv/6fv1cxvXZZqRg97dq+eg01XKhufyLx5XXf3ciaetzeNxHumiQ8
+ddmftLmek/qfcWSnpO7MXDwX+vnQ4tz8YNAr89H9hxMWC9Kbtv1pm+lOjnjaezs2
+baMpLaG+IuT2zBHvL2H+W5787Tpe536s7cBJw5VT+qcu60ZqRg9bMvs6j3ekppOx
++Q3Nnp7w2okTV276BtYdHTlNXE9qeHG8tquq751Xx801fHtm0uzB7tTkSy1DuYnT
+eZFrXjjQHOHJn07+/WK4d8dS8LffrG78sNXQ9kbvD69VlQ3oqnrHspwn7GnkQks0
+/3XKrrlDNYbA3faBqczcAbGnKPxm6GxES+3cwldxhHltw/HIss5jH43/mnLxTk3e
+4B33lqhr5GbPqDu+7kYj+57TdPI+EWHsTvfofjRnh+g3nO+ZORLfUXz29a2H6mt6
+4+KL0t8ym8srrQlBkyFjhk+LArZ5U5fPuK22n66dWmGo9NY9+8WglPt80e4dlBTQ
+WpmTsSTneQ36wOS3u++vu9dQFF1dFZc74nfXVps6377yvF9NyPfn7u3JcLdtnOwa
+zt115iVx093PwoKaUt6M9/84LmpuQ0lhKyncql3f3vxzGV6y1B+bke3OH18OX7kv
+efyDzoXE9XuujurG5KPz75/9Y4rYmrXZmVN9NZQ7Ft8z7OqqXnNBnVUPdjRVBHsu
+VVzofndgsDFpodf15V8=
+=uVVE
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lepisma
+
+==================================================================
