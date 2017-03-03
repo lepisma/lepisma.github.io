@@ -34,8 +34,7 @@ certain communicated opinions. It gets hard to convince people about a general
 sense of blackness or whiteness. In every argument, you can easily weasel out
 solid points for your favour. And if people have even a single point in favour,
 they are willing to stick it with their sense of identity and refuse to accept
-any change. (I need an ego deflation session,
-[mail me](mailto:abhinav.tushar.vs@gmail.com))
+any change. (I need an ego deflation session, mail me)
 
 Some cases are easy to argue against. You just roll your eyes. Some are
 not-so-easy. Let me give a general sense of what type of content I am talking
