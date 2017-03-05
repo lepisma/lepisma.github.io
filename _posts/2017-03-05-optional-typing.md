@@ -207,7 +207,7 @@ not sure if this is a recommended practice).
 
 ## Final thoughts
 
-Static type checking in python is not *that* popular if as compared to JS.
+Static type checking in python is not *that* popular as compared to JS.
 But JS community is particularly
 [well known](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.yehrvien7) to
 quickly get hands on new technologies. The python community is somewhat
