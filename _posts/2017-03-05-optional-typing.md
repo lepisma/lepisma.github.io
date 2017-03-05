@@ -197,9 +197,9 @@ Typing is something that feels like it comes attached with performance benefits.
 But using mypy for around a month now has convinced me that just the
 documentation part is reason enough to use it here and there. It helps keep
 track of tiny things like whether I am passing `str` or a `stream` when a
-function works on a file. This itself has reduced the load on variable naming.
-Also, if you are not writing a hackish script, it does help to put barriers at
-places to frame the program.
+function works on a file. This itself has reduced the load on variable naming
+for me a lot. Also, if you are not writing a hackish script, it does help to put
+barriers at places to frame the program.
 
 Most importantly, it really is non-intrusive and purely optional. You could use
 hints wherever needed and skip where is it unnecessary and verbose (though I am
@@ -231,7 +231,7 @@ like [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped). But
 this really is a reflection of how popular type hinting is. If not many are
 going to use it, there will always be lesser stubs in there.
 
-Of course your IDE / editor need to support on-the-fly type checking to actually
+Of course your IDE / editor needs to support on-the-fly type checking to actually
 be helpful. Emacs has [flycheck](http://www.flycheck.org/en/latest/) which has an
 [extension](https://github.com/lbolla/emacs-flycheck-mypy) for adding mypy as a
 checker. PyCharm
