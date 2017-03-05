@@ -167,7 +167,6 @@ Coordinate = Tuple[float, float]
 
 def minimum_trip_distance(cities: Dict[str, Coordinate]) -> float:
     pass
-
 ```
 
 Notice the nice name of the type which helps in identifying the associated
