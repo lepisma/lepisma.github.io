@@ -88,7 +88,7 @@ a {
       font-size: 18px;
 
       a {
-        @include link-underline($back-white, $text-medium, $accent);
+        @include link-underline($back-white, $text-medium);
 
         &:hover {
           background-color: $back-light;

@@ -51,20 +51,18 @@ $text-dark: $c1;
   &::selection {
     @include text-underline-crop($selection);
     background: $selection;
-    color: $back-white;
   }
 
   &::-moz-selection {
     @include text-underline-crop($selection);
     background: $selection;
-    color: $back-white;
   }
 }
 
-@mixin link-underline($background, $text, $selection) {
+@mixin link-underline($background, $text) {
   @include text-underline-crop($background);
   @include text-background($background, $text);
-  @include text-selection($selection);
+  @include text-selection($back-medium);
 
   color: $text;
   text-decoration: none;
@@ -84,11 +82,9 @@ $text-dark: $c1;
 
 // Selection colors:
 *::selection {
-  background: $accent;
-  color: $back-white;
+  background: $back-medium;
 }
 
 *::-moz-selection {
-  background: $accent;
-  color: $back-white;
+  background: $back-medium;
 }

@@ -5,7 +5,7 @@
 // link style
 p a,
 li a {
-  @include link-underline($back-white, $text-dark, $accent);
+  @include link-underline($back-white, $text-dark);
   color: $text-dark;
 
   &:hover {
