@@ -159,6 +159,11 @@ hr {
   }
 }
 
+code {
+  color: $accent-dark;
+  font-family: 'Source Code Pro';
+}
+
 // Pagination buttons
 .pagination {
   a, .disabled {
