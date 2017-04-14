@@ -72,8 +72,8 @@ a {
 
     .section-title {
       font-family: 'Roboto';
-      font-weight: 700;
       font-size: 30px;
+      font-weight: 700;
       margin-bottom: 20px;
     }
 
@@ -83,8 +83,8 @@ a {
         width: 100%;
       }
 
-      font-family: 'Open Sans';
       color: $text-medium;
+      font-family: 'Open Sans';
       font-size: 18px;
 
       a {
@@ -101,9 +101,9 @@ a {
 
 footer {
   background-color: $back-light;
-  border-width: 0;
-  border-top-width: 1px;
-  border-style: solid;
   border-color: $back-medium;
+  border-style: solid;
+  border-top-width: 1px;
+  border-width: 0;
   height: 30px;
 }

@@ -1,10 +1,8 @@
 ---
-# The scss file which include files from _sass/
+# Blog styles
 ---
 
-@charset "utf-8";
-
-@import "basscss";
-@import "main";
-// @import "solarized-light";
-@import "blog";
+@import 'basscss';
+@import 'main';
+@import 'pyg';
+@import 'blog';

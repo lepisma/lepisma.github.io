@@ -9,8 +9,8 @@ li a {
   color: $text-dark;
 
   &:hover {
-    background-color: $back-light;
     @include link-underline($back-light, $text-dark);
+    background-color: $back-light;
   }
 }
 
@@ -33,10 +33,10 @@ li a {
 }
 
 .site-header nav a {
-  font-size: 12px;
-  font-family: 'Open Sans';
-  font-weight: bold;
   color: $text-light;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
 
   &:hover {
@@ -76,7 +76,12 @@ li {
 }
 
 // Fonts
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Lora';
   font-style: italic;
   font-weight: normal;
@@ -92,32 +97,33 @@ header,
 
 .post-link .post-title {
   font-size: 28px;
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
 }
 
 .post-summary {
   color: $text-light;
-  font-style: italic;
   font-size: 16px;
+  font-style: italic;
 }
 
 .posts .post {
-  padding-bottom: 1.33em;
   margin-bottom: .75em;
+  padding-bottom: 1.33em;
 }
 
-.pagination a, .pagination .disabled {
+.pagination a,
+.pagination .disabled {
   padding: .5em 1.5em;
 }
 
 // Better blockquote
 blockquote {
+  border-left: 0;
   padding: 0;
   quotes: '\201C''\201D''\2018''\2019';
-  border-left: none;
 
-  &::before{
+  &::before {
     color: $accent;
     content: open-quote;
     font-size: 2em;
@@ -134,26 +140,26 @@ blockquote {
 
 // HR width and gap
 hr {
-  width: 30%;
-  margin-top: 50px;
   margin-bottom: 50px;
+  margin-top: 50px;
+  width: 30%;
 }
 
 // Dropcap
 .dropcap {
-  font-size: 55px;
   float: left;
-  padding: 0;
-  line-height: 0.1;
-  margin-top: 30px;
+  font-size: 55px;
+  line-height: .1;
   margin-right: .3rem;
+  margin-top: 30px;
+  padding: 0;
 }
 
 // Code highlighting
 .highlight {
   font-size: 14px;
-  overflow-x: auto;
   line-height: 22px;
+  overflow-x: auto;
 
   code {
     font-family: 'Source Code Pro';
@@ -165,39 +171,41 @@ hr {
 }
 
 code {
-  color: $accent-dark;
   font-family: 'Source Code Pro';
 }
 
 // Pagination buttons
 .pagination {
-  a, .disabled {
-    border-radius: 6px;
-    border-style: dashed;
+  font-size: 12px;
+
+  a,
+  .disabled {
+    border-radius: 2px;
+    border-style: solid;
     border-width: 1px;
   }
 
   a {
-    color: $accent;
     border-color: $accent;
+    color: $accent;
+    padding: 10px 20px;
+
+    &:hover {
+      background: $accent;
+      color: $back-white;
+    }
   }
 }
 
-.pagination a:hover {
-  background: $accent;
-  color: $back-white;
-}
-
 // Figure related stuff
-
 figure {
   text-align: center;
 
   figcaption {
-    text-align: center;
-    padding-top: 30px;
     color: $text-light;
     font-size: 15px;
+    padding-top: 30px;
+    text-align: center;
   }
 }
 
@@ -208,21 +216,19 @@ figure {
 
 // Table
 table {
-  font-size: 15px;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  border-color: $text-light;
+  border-left: transparent;
+  border-right: transparent;
   border-style: solid;
   border-width: 1px;
-  border-right: transparent;
-  border-left: transparent;
-  border-color: $text-light;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 
-  thead {
-    tr th {
-      border-bottom: 0;
-    }
+  thead tr th {
+    border-bottom: 0;
   }
 
   tbody tr td {
@@ -235,95 +241,7 @@ table {
   background: $accent-dark;
 }
 
-// Contact form
-
-#contact-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $text-dark;
-  opacity: .5;
-  z-index: 50;
-  cursor: url('../assets/images/close_2.png'), default;
-}
-
-#contact-form {
-  display: none;
-  z-index: 100;
-  position: fixed;
-  top: 50%;
-  padding: 30px 0px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 0 10px;
-  background: $back-white;
-  transform: translateY(-50%);
-
-  h4 {
-    margin-top: 0px;
-  }
-}
-
-#contact-controls {
-  z-index: 100;
-  position: fixed;
-  top: 50%;
-  left: 99px;
-  transform: translateY(-50%) rotate(-90deg);
-  display: inline-flex;
-  transform-origin: 0 100px;
-
-  .contact-btns {
-    a {
-      color: $back-white;
-    }
-
-    background-color: $accent;
-    color: $back-white;
-    padding: 5px;
-    padding-right: 13px;
-    padding-left: 13px;
-    font-family: serif;
-    font-style: italic;
-    font-size: 18px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $accent-dark !important;
-      color: $back-white !important;
-      border-color: $accent-dark !important;
-    }
-  }
-
-  #rss-btn {
-    border-bottom-left-radius: 5px;
-    border-style: solid;
-    border-color: $accent;
-    border-width: 1px;
-  }
-
-  #contact-btn {
-    background: $back-white;
-    color: $accent;
-    border-color: $accent;
-    border-style: solid;
-    border-width: 1px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
-// Hide control in small screens
-@media (max-width: 1000px) {
-  #contact-controls {
-    display: none !important;
-  }
-}
-
 // Blog archive
-
 .archive-container {
   margin-top: 80px;
 }
@@ -332,74 +250,11 @@ table {
   margin: 40px 0;
 
   .archive-date {
-    font-variant: small-caps;
     color: $text-light;
+    font-variant: small-caps;
   }
 
   .archive-title {
     font-size: 25px;
   }
 }
-
-// stuff
-.highlight .hll { background-color: #ffffcc }
-.highlight .c { color: #0099FF; font-style: italic } /* Comment */
-.highlight .err { color: #AA0000; background-color: #FFAAAA } /* Error */
-.highlight .k { color: #006699; font-weight: bold } /* Keyword */
-.highlight .o { color: #555555 } /* Operator */
-.highlight .cm { color: #0099FF; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #009999 } /* Comment.Preproc */
-.highlight .c1 { color: #0099FF; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #0099FF; font-weight: bold; font-style: italic } /* Comment.Special */
-.highlight .gd { background-color: #FFCCCC; border: 1px solid #CC0000 } /* Generic.Deleted */
-.highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #FF0000 } /* Generic.Error */
-.highlight .gh { color: #003300; font-weight: bold } /* Generic.Heading */
-.highlight .gi { background-color: #CCFFCC; border: 1px solid #00CC00 } /* Generic.Inserted */
-.highlight .go { color: #AAAAAA } /* Generic.Output */
-.highlight .gp { color: #000099; font-weight: bold } /* Generic.Prompt */
-.highlight .gs { font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #003300; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #99CC66 } /* Generic.Traceback */
-.highlight .kc { color: #006699; font-weight: bold } /* Keyword.Constant */
-.highlight .kd { color: #006699; font-weight: bold } /* Keyword.Declaration */
-.highlight .kn { color: #006699; font-weight: bold } /* Keyword.Namespace */
-.highlight .kp { color: #006699 } /* Keyword.Pseudo */
-.highlight .kr { color: #006699; font-weight: bold } /* Keyword.Reserved */
-.highlight .kt { color: #007788; font-weight: bold } /* Keyword.Type */
-.highlight .m { color: #FF6600 } /* Literal.Number */
-.highlight .s { color: #CC3300 } /* Literal.String */
-.highlight .na { color: #330099 } /* Name.Attribute */
-.highlight .nb { color: #336666 } /* Name.Builtin */
-.highlight .nc { color: #00AA88; font-weight: bold } /* Name.Class */
-.highlight .no { color: #336600 } /* Name.Constant */
-.highlight .nd { color: #9999FF } /* Name.Decorator */
-.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.highlight .ne { color: #CC0000; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #CC00FF } /* Name.Function */
-.highlight .nl { color: #9999FF } /* Name.Label */
-.highlight .nn { color: #00CCFF; font-weight: bold } /* Name.Namespace */
-.highlight .nt { color: #330099; font-weight: bold } /* Name.Tag */
-.highlight .nv { color: #003333 } /* Name.Variable */
-.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
-.highlight .w { color: #bbbbbb } /* Text.Whitespace */
-.highlight .mf { color: #FF6600 } /* Literal.Number.Float */
-.highlight .mh { color: #FF6600 } /* Literal.Number.Hex */
-.highlight .mi { color: #FF6600 } /* Literal.Number.Integer */
-.highlight .mo { color: #FF6600 } /* Literal.Number.Oct */
-.highlight .sb { color: #CC3300 } /* Literal.String.Backtick */
-.highlight .sc { color: #CC3300 } /* Literal.String.Char */
-.highlight .sd { color: #CC3300; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #CC3300 } /* Literal.String.Double */
-.highlight .se { color: #CC3300; font-weight: bold } /* Literal.String.Escape */
-.highlight .sh { color: #CC3300 } /* Literal.String.Heredoc */
-.highlight .si { color: #AA0000 } /* Literal.String.Interpol */
-.highlight .sx { color: #CC3300 } /* Literal.String.Other */
-.highlight .sr { color: #33AAAA } /* Literal.String.Regex */
-.highlight .s1 { color: #CC3300 } /* Literal.String.Single */
-.highlight .ss { color: #FFCC33 } /* Literal.String.Symbol */
-.highlight .bp { color: #336666 } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #003333 } /* Name.Variable.Class */
-.highlight .vg { color: #003333 } /* Name.Variable.Global */
-.highlight .vi { color: #003333 } /* Name.Variable.Instance */
-.highlight .il { color: #FF6600 } /* Literal.Number.Integer.Long */
