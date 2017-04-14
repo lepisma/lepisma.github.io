@@ -10,6 +10,7 @@ li a {
 
   &:hover {
     background-color: $back-light;
+    @include link-underline($back-light, $text-dark);
   }
 }
 
