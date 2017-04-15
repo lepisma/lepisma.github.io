@@ -157,21 +157,28 @@ hr {
 
 // Code highlighting
 .highlight {
+  border-radius: 5px;
+  font-family: 'Source Code Pro';
   font-size: 14px;
   line-height: 22px;
   overflow-x: auto;
 
-  code {
-    font-family: 'Source Code Pro';
-  }
-
+  // Fix for parens
   .p {
     font-size: 14px;
+  }
+
+  code {
+    padding: 0;
   }
 }
 
 code {
+  background: $code-background;
+  border-radius: 5px;
+  color: $code-foreground;
   font-family: 'Source Code Pro';
+  padding: 0 5px;
 }
 
 // Pagination buttons
