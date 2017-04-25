@@ -103,7 +103,32 @@ footer {
   background-color: $back-light;
   border-color: $back-medium;
   border-style: solid;
-  border-top-width: 1px;
   border-width: 0;
-  height: 30px;
+  border-top-width: 1px;
+
+  .container {
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+    .foot-note {
+      color: $text-light;
+      font-family: 'Bebas Neue Bold';
+    }
+
+    hr {
+      margin: 10px 0;
+    }
+
+    .badges {
+      align-items: center;
+      display: flex;
+      filter: grayscale(100%);
+      flex-direction: row;
+      margin-top: 20px;
+
+      a:nth-child(n+2) {
+        margin: 0 20px;
+      }
+    }
+  }
 }
