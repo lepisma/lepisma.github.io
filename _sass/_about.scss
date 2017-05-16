@@ -31,6 +31,8 @@ a {
   -webkit-transition: color 1s;
 
   &:hover {
+    transition: color 0s;
+    -webkit-transition: color 0s;
     color: $text-light;
   }
 
