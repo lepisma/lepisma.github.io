@@ -24,14 +24,30 @@ a {
 }
 
 #main-head {
-  color: $text-light;
+  color: $back-medium;
   font-family: 'Bebas Neue Bold';
   margin-top: 15px;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+
+  &:hover {
+    color: $text-light;
+  }
+
+  #avatar {
+    float: left;
+
+    img {
+      border-radius: 5px;
+      height: 87px;
+    }
+  }
 
   #name {
     float: left;
     font-size: 40px;
     line-height: 1.2em;
+    margin-left: 10px;
   }
 
   #links {
