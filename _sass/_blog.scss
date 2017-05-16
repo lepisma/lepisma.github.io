@@ -138,11 +138,16 @@ blockquote {
   }
 }
 
-// HR width and gap
 hr {
+  background-image: -webkit-linear-gradient(left, $back-light, $text-light, $back-light);
+  background-image: -moz-linear-gradient(left, $back-light, $text-light, $back-light);
+  background-image: -ms-linear-gradient(left, $back-light, $text-light, $back-light);
+  background-image: -o-linear-gradient(left, $back-light, $text-light, $back-light);
+  border: 0;
+  height: 1px;
   margin-bottom: 50px;
   margin-top: 50px;
-  width: 30%;
+  width: 80%;
 }
 
 // Dropcap
@@ -240,6 +245,30 @@ table {
 
   tbody tr td {
     border-top: 0;
+  }
+}
+
+// Aside
+aside {
+  background-color: $code-background;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 20px;
+
+  &::before {
+    content: 'aside';
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+  }
+
+  .aside-title {
+    font-family: 'Lora';
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
   }
 }
 
