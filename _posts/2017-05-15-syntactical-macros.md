@@ -238,10 +238,10 @@ causality of the opposite side) and they keep gaining traction since its easier
 to get started and get going. To focus on the real problem we are solving. But
 sometimes, its good to just lay back and play around with the words till they
 entertain us on a very personal level. None of what I said is something new
-which other's haven't already said about Lisp. The new thing, is just my
-personal realization of these facts. I don't actually believe now that I am
-seeking anything like performance (`Hy` has certain overheads, although
-`common-lisp` is crazy fast if used properly) or better productivity (though
-this is looking like a very visible long term side effect) with any of the Lisp
-variants I am using/going to use but just pure beauty. Probably it will stay
-that way for a long time.
+which others haven't already said about Lisp. The new thing, is just my personal
+realization of these facts. I don't actually believe now that I am seeking
+anything like performance (`Hy` has certain overheads, although `common-lisp` is
+crazy fast if used properly) or better productivity (though this is looking like
+a very visible long term side effect) with any of the Lisp variants I am
+using/going to use but just pure beauty. Probably it will stay that way for a
+long time.
