@@ -27,13 +27,13 @@ a {
   color: $back-medium;
   font-family: 'Bebas Neue Bold';
   margin-top: 15px;
-  transition: color 1s;
-  -webkit-transition: color 1s;
+  -webkit-transition: color 4s;
+  transition: color 4s;
 
   &:hover {
-    transition: color 0s;
-    -webkit-transition: color 0s;
     color: $text-light;
+    -webkit-transition: color 1s;
+    transition: color 1s;
   }
 
   #avatar {
