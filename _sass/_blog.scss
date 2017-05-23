@@ -127,11 +127,6 @@ header,
   padding-bottom: 1.33em;
 }
 
-.pagination a,
-.pagination .disabled {
-  padding: .5em 1.5em;
-}
-
 // Better blockquote
 blockquote {
   border-left: 0;
@@ -207,15 +202,15 @@ code {
 
   a,
   .disabled {
-    border-radius: 2px;
+    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+    padding: 10px 20px;
   }
 
   a {
     border-color: $accent;
     color: $accent;
-    padding: 10px 20px;
 
     &:hover {
       background: $accent;
