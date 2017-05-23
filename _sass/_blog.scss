@@ -30,6 +30,21 @@ li a {
 // Nav according to about me
 .site-title {
   font-size: 16px;
+
+  span {
+    display: none !important;
+  }
+
+  ul {
+    display: block !important;
+    list-style: none;
+    padding: 0;
+
+    img {
+      border-radius: 2px;
+      max-width: 35px;
+    }
+  }
 }
 
 .site-header nav a {
