@@ -15,9 +15,6 @@ links:
   protonmail: "http://www.google.com/recaptcha/mailhide/d?k=01NVJUzT0e9SIORBtXMwhALg==&c=mHrHE3EkS-j9YfYpcxgN9odQALvtwLhnC8CDvjU8U6g="
   keybase: https://keybase.io/lepisma
 
-# Contact pane
-contact_form: true
-
 # Build settings
 markdown: kramdown
 permalink: pretty
