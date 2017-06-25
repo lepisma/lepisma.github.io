@@ -48,6 +48,11 @@ marginal histograms along the axis. No doubt the \\( x \\) and \\( y \\)
 marginals are similar. This is not because of the data but because of the way
 both axis values are derived, resulting in a non-exact symmetry.
 
+<figure>
+<div id="diffs-lfm"></div>
+<figcaption>Time map with marginals</figcaption>
+</figure>
+
 Think about a point in top left corner. This refers to an event which was
 preceded by another event shortly but is followed by the next event after a long
 time gap. The opposite happens with point in bottom right. Because adjacent
@@ -58,11 +63,6 @@ you are displaying another data dimension using color / size of the circles
 [blog](https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales),
 where we see points colored according to the time of day), the two dimensions
 here just add to the visual clutter.
-
-<figure>
-<div id="diffs-lfm"></div>
-<figcaption>Time map with marginals</figcaption>
-</figure>
 
 ---
 
