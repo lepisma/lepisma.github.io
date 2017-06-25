@@ -35,9 +35,9 @@ for the *not that useful* tick labels in this whole post,
 </figure>
 
 Each dot here is a listen. The \\( x \\) value being the time difference between
-it and the previous listen, \\( y \\) being the difference with next listen. Not
-much pattern here. Note that the plot is log scaled (thus the moire in lower
-values) which helps us understand the diffs at multiple scales.
+it and the previous listen, \\( y \\) being the difference with next listen.
+Note that the plot is log scaled (thus the repeated pattern in lower values)
+which helps us understand the diffs at multiple scales.
 
 Another important point is the *almost* symmetry along \\( x = y \\) line. When
 you use the *pre-event* and *post-event* time diffs of each event as \\( x \\)
@@ -123,9 +123,9 @@ below.
 - Making sense of a histogram in log scale (the kind I used, with uniform bins
   over log scaled data; You can have non-uniform, log scaled bins too. I haven't
   tried that) is tricky. The bins and density don't exactly go as you would
-  think. Additionally you would see moire pattern in the beginning and smoothing
-  in the end. More rigorous analysis should be done to derive something other
-  than qualitative meanings from these.
+  think. Additionally you would see repeated pattern (exposing the discrete
+  values) in the beginning and smoothing in the end. More rigorous analysis
+  should be done to derive something other than qualitative meanings from these.
 - Add to it the number-of-bins problem. Plots above
   use
   [Freedman-Diaconis rule](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule) to
