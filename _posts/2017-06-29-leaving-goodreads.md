@@ -13,7 +13,7 @@ good is the product itself. It looks like no one is developing it any more.
 Rightly so if maybe the users are satisfied.
 
 Its search doesn't provide what you expect from all modern search interfaces.
-Try turning on infinite scroll in you shelves and keep going down only to learn
+Try turning on infinite scroll in your shelves and keep going down only to learn
 about *random sampling*. Oh and the clutter in the default setting of your feed.
 Everything and more made me switch to a scheme where my reading data is more
 bare, accessible and manageable without the noise.
