@@ -5,14 +5,14 @@ summary: Better than Good
 category: articles
 ---
 
-<span class="dropcap">G</span>oodreads feel like a project with a lost focus. I
+<span class="dropcap">G</span>oodreads feels like a project with a lost focus. I
 can list a dozen (about right) things that don't justify the prefix of the
 project's name. Don't get me wrong here. The content there is really good. The
 collections, lists people make, *most* reviews, they all are good. What's not
 good is the product itself. It looks like no one is developing it any more.
 Rightly so if maybe the users are satisfied.
 
-The search doesn't provide what you expect from all modern search interfaces.
+Its search doesn't provide what you expect from all modern search interfaces.
 Try turning on infinite scroll in you shelves and keep going down only to learn
 about *random sampling*. Oh and the clutter in the default setting of your feed.
 Everything and more made me switch to a scheme where my reading data is more
