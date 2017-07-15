@@ -68,9 +68,10 @@ just go through the words, nesting and order.
 S-expressions in Lisp
 </div>
 
-Everything is a list (possibly recursive). When interpreted as data, they refer
-to themselves, when interpreted as code, the first item is something (a
-function, macro) to be applied on the rest.
+Lisp code is represented as a list of items (possibly recursive) which can be
+interpreted both as data and code. When interpreted as data, they refer to
+themselves, when interpreted as code, the first item is something (a function,
+macro) to be applied on the rest.
 
 </aside>
 
