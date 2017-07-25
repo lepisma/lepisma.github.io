@@ -150,8 +150,8 @@ footer {
       flex-direction: row;
       margin-top: 20px;
 
-      a:nth-child(n+2) {
-        margin: 0 20px;
+      a {
+        margin-right: 15px;
       }
     }
   }
