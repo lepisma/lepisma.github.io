@@ -237,21 +237,21 @@ devouring another piece of information or throwing paper planes out of windows.
 The message I mentioned has following *non-factoid* issues that hurt me (sorry
 sender), despite my respect for the concern of the sender:
 
-1. **Swapping of model back end**: A model must be passed on as it was created. We
+1. *Swapping of model back end*: A model must be passed on as it was created. We
    can't mix and match things to suite the prejudices of audience or ourselves.
    Like in this case, some non-creationist atheist (like me) can get pissed off
    and avoid reading the content altogether.
    
-2. **Term abuse, Vaccine**: I remember a guy in train preaching people (college
+2. *Term abuse, Vaccine*: I remember a guy in train preaching people (college
    juniors) that Newton's law of gravitation is wrong and you can't use that.
    Apparently, someone didn't use the right set of words while explaining him
    the idea that theories have certain limits, assumptions and validity over
    scale. And Newton's law is not really adequate for some specific needs.
    
-3. **Misinterpretation of data**: Dying at 30 from T.B. saves
+3. *Misinterpretation of data*: Dying at 30 from T.B. saves
    us from common old age death causes. Cancer too, yes.
    
-4. **Absolute facts**: I can believe this message lies on the side where researchers
+4. *Absolute facts*: I can believe this message lies on the side where researchers
    are certain about cancer effect, but then the reader should get hints for the
    general disagreement, which is pretty much known (specially for the original
    content creator).
@@ -408,10 +408,10 @@ use you can conjure out of thin air for them.
 
 A few people who are good at conjuring the 'other' uses are:
 
-1. **Quacks**: Promoting their method of treatment, wellness etc. *The doctors*
-2. **Simple innocent beings**: Afraid, distressed by the hammer of 'science'.
+1. *Quacks*: Promoting their method of treatment, wellness etc. *The doctors*
+2. *Simple innocent beings*: Afraid, distressed by the hammer of 'science'.
    *The patients*
-3. **Wannabe scientists**: Don't care much about the real thing if it serves the
+3. *Wannabe scientists*: Don't care much about the real thing if it serves the
    public image and the inner scientist. *Vectors of disease*
 
 The only people who are willing to listen fall in type 2. And they need access
