@@ -129,18 +129,10 @@ header,
 
 // Better blockquote
 blockquote {
-  border-left: 0;
-  padding: 0;
-  quotes: '\201C''\201D''\2018''\2019';
-
-  &::before {
-    color: $accent;
-    content: open-quote;
-    font-size: 2em;
-    line-height: .1em;
-    margin-right: .25em;
-    vertical-align: -.4em;
-  }
+  border-width: 4px;
+  border-color: $back-light;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   p {
     display: inline;
