@@ -273,6 +273,16 @@ aside {
     font-style: italic;
     margin-bottom: 10px;
   }
+
+  a {
+    @include link-underline($code-background, $text-dark);
+    color: $text-dark;
+
+    &:hover {
+      @include link-underline($back-medium, $text-dark);
+      background-color: $back-medium;
+    }
+  }
 }
 
 // Footer
