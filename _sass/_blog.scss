@@ -3,6 +3,7 @@
 @import 'commons';
 
 // link style
+figcaption a,
 p a,
 li a {
   @include link-underline($back-white, $text-dark);
