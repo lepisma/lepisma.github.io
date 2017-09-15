@@ -1,6 +1,6 @@
 # Site settings
 title: abhinav tushar
-email: "http://www.google.com/recaptcha/mailhide/d?k=01W7yEHzyTvX_53exlt1qAuA==&c=O0AuJ2jg76zNyKQn-yopyNqo14LwVT9bzsCV1TKL_po="
+email: https://spamty.eu/mail/v4/523/4tWg0Jz3Naf7d0b78b/
 author: Abhinav Tushar
 description: Personal Blog
 baseurl: ""
@@ -10,7 +10,7 @@ links:
   twitter: https://twitter.com/AbhinavTushar
   github: https://github.com/lepisma
   lastfm: https://last.fm/user/AbhinavTushar
-  protonmail: "http://www.google.com/recaptcha/mailhide/d?k=01NVJUzT0e9SIORBtXMwhALg==&c=mHrHE3EkS-j9YfYpcxgN9odQALvtwLhnC8CDvjU8U6g="
+  protonmail: https://spamty.eu/mail/v4/524/MsKhLU2xUJb042f97f/
   keybase: https://keybase.io/lepisma
 
 # Build settings
