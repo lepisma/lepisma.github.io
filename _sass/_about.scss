@@ -95,9 +95,9 @@ a {
     }
 
     .section-title {
-      font-family: 'Roboto';
+      font-family: 'et-book';
+      font-style: italic;
       font-size: 30px;
-      font-weight: 700;
       margin-bottom: 20px;
     }
 
@@ -108,11 +108,12 @@ a {
       }
 
       color: $text-medium;
-      font-family: 'Open Sans';
+      font-family: 'et-book';
       font-size: 18px;
 
       a {
         @include link-underline($back-white, $text-medium);
+        border-radius: 2px;
 
         &:hover {
           background-color: $back-light;

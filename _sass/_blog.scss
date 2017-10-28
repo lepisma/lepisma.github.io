@@ -8,6 +8,7 @@ p a,
 li a {
   @include link-underline($back-white, $text-dark);
   color: $text-dark;
+  border-radius: 2px;
 
   &:hover {
     @include link-underline($back-light, $text-dark);
