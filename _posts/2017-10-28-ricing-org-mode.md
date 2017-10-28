@@ -134,3 +134,6 @@ highlights look bad. Install
 [org-pretty-table-mode](https://github.com/Fuco1/org-pretty-table) for getting
 beautiful table borders. Other stuff like latex (`org-latex-toggle-fragment`)
 and image previews (`org-image-toggle-inline`) come bundled in with org.
+
+[Here](https://github.com/lepisma/rogue/tree/75ab1c3422b409f41daa4c003b931e869eed0914)
+is the snapshot of my Emacs dotfiles with config related to this post.
