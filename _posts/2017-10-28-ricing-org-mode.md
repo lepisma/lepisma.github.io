@@ -19,7 +19,7 @@ thing actually looks like.
 
 Following screencast shows the setup in action.
 <br>
-<video width="720" controls="controls">
+<video width="100%" controls="controls">
   <source src="https://u.teknik.io/5Vy1T.mp4" type="video/mp4">
 </video>
 <br>
