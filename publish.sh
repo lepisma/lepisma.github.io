@@ -10,5 +10,5 @@ rm -r _*
 rm about.html archive.html
 git add .
 git commit -m "Publish ${SHA}"
-git push origin master
+git push origin master --force
 git checkout source
