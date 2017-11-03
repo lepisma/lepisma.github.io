@@ -3,6 +3,7 @@
 SHA=$(git rev-parse --verify HEAD)
 
 git checkout master
+git merge source
 bundle exec jekyll build
 rm -r _*
 rm about.html Gemfile* _config.yml about.html archive.html
