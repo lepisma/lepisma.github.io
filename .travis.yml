@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.4
+env:
+  global:
+    - ENCRYPTION_LABEL: "e989bcc4212c"
+script: bash ./travis-deploy.sh
