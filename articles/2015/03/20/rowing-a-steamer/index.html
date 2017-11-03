@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>
-    abhinav tushar
+    Rowing a Steamer &#8211; abhinav tushar
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal Blog">
+  <meta name="description" content="Mathematics and Computation, as we are taught.">
   <meta name="author" content="Abhinav Tushar">
-  
-  <link rel="canonical" href="https://lepisma.github.io//404.html">
+  <meta name="keywords" content="articles">
+  <link rel="canonical" href="https://lepisma.github.io//articles/2015/03/20/rowing-a-steamer/">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/pace.css" type="text/css">
@@ -56,16 +56,16 @@
 
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="abhinav tushar">
+  <meta property="og:title" content="Rowing a Steamer">
   <meta property="og:description" content="Personal Blog">
-  <meta property="og:url" content="https://lepisma.github.io//404.html">
+  <meta property="og:url" content="https://lepisma.github.io//articles/2015/03/20/rowing-a-steamer/">
   <meta property="og:site_name" content="abhinav tushar">
 
-  <meta name="twitter:url" content="https://lepisma.github.io//404.html">
-  <meta name="twitter:title" content="abhinav tushar">
+  <meta name="twitter:url" content="https://lepisma.github.io//articles/2015/03/20/rowing-a-steamer/">
+  <meta name="twitter:title" content="Rowing a Steamer">
   <meta name="twitter:description" content="Personal Blog">
 
-  <meta itemprop="name" content="abhinav tushar">
+  <meta itemprop="name" content="Rowing a Steamer">
   <meta itemprop="description" content="Personal Blog">
 </head>
 
@@ -92,23 +92,91 @@
 
       <div class="post p2 p-responsive wrap" role="main">
         <div class="measure">
-          <div class="post">
-  <header class="post-header">
-    <h1 class="h2"></h1>
-  </header>
-  <article class="post-content">
-    <h1>
-  404
-</h1>
+          
 
-Sorry, the page you are trying to visit doesn't exist.
 
-<div class="mt3">
-  <a href="/" class="button button-blue button-small">Take me home</a>
+<div class="post-header mb2">
+  <h1>Rowing a Steamer</h1>
+  <span class="post-meta">Mar 20, 2015</span><br>
+  
+  <span class="post-meta small">2 minute read</span>
 </div>
 
-  </article>
-</div>
+<article class="post-content">
+  <p><span class="dropcap">M</span>any of us who do calculus using computers know the
+alternatives we have for differentiation.</p>
+
+<p>The usual approach is to go for either of these</p>
+
+<ul>
+  <li>Numerical</li>
+  <li>Symbolic</li>
+  <li>Automatic differentiation</li>
+</ul>
+
+<p>Since, numerical methods (finite difference) are the most <em>thought after</em>
+methods when people think about computers and differentiation, we don’t actually
+try other stuff. Forget symbolic, forget finite difference (and don’t even think
+about automatic), we have a course on <em>Power System Analysis</em>, which is a bit
+computational in nature and we use a more <strong>traditional</strong> method.</p>
+
+<h2 id="hand-calculus">Hand calculus</h2>
+
+<p>The problem we have is to find solutions of non-linear equations (load-flow
+equations) that give the values of voltages and power factors for a power
+transmission system. Idea is to use Newton’s method and move towards the
+solution. Guess what, we find the Jacobian <em>by hand</em> and then <em>program the
+expressions</em>. Although this is perfectly fine, but this screws the whole idea of
+using computers.</p>
+
+<p>The situation is exactly as in the image below.</p>
+
+<figure>
+<img src="/images/posts/rowing/dog.jpg" />
+</figure>
+
+<p>You are a dog, your brain is optimized to judge movements, still you will do the
+calculations just because this is <em>the</em> analytical way. This is the perfect
+<em>what the hell !</em> moment. This is how you <em>row a steamer</em>.</p>
+
+<hr />
+
+<p>It’s not about this particular subject, almost everywhere, our course syllabuses
+are optimized for least efficient use of computers (if used anywhere).
+Obviously, you can switch over to your weapon of choice, but a lot depends on
+what the barrack relies on.</p>
+
+<p>Consider AD (Automatic differentiation). You won’t find a cooler method to do
+gradient computation. If you use Python, there is already an excellent library
+<a href="https://pypi.python.org/pypi/ad">ad</a>. And most of the people in machine
+learning community (extensive users of gradient computation) already favor AD
+(see <a href="https://github.com/Theano/Theano">Theano</a>,
+<a href="https://github.com/HIPS/Kayak">kayak</a> etc.) over the more error prone Symbolic
+and finite diff methods.</p>
+
+<p>I don’t see such spirit for power use of computers in our academia.</p>
+
+<p>The arguments people usually give here are :</p>
+
+<blockquote>
+  <p>“You need to learn the Mathematics first.”</p>
+</blockquote>
+
+<p>Ah, you are already assume teaching Calculus <strong>in</strong> Mathematics was a waste of
+time.</p>
+
+<blockquote>
+  <p>“You will learn nothing if you use functions directly.”</p>
+</blockquote>
+
+<p>C’mon, you were going to teach us finite difference stuff, weren’t you ?
+Or wait, you did teach that, but that was erratic pen-paper stuff right ?</p>
+
+<p>Computers are not vanity stuff. They are not disconnected from Science. Hate it
+or love it, Computation is not a projection of Mathematics on Computers, <strong>it is
+Mathematics</strong>.</p>
+
+</article>
 
         </div>
       </div>

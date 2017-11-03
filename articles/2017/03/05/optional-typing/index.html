@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Optional typing &#8211; abhinav tushar
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experiences with static type checking">
+  <meta name="author" content="Abhinav Tushar">
+  <meta name="keywords" content="articles">
+  <link rel="canonical" href="https://lepisma.github.io//articles/2017/03/05/optional-typing/">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/pace.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/blog.css" type="text/css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/assets/js/pace.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="/assets/js/lightbox.min.js"></script>
+  <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
+  <script src="/assets/js/jquery.textillate.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Optional typing">
+  <meta property="og:description" content="Personal Blog">
+  <meta property="og:url" content="https://lepisma.github.io//articles/2017/03/05/optional-typing/">
+  <meta property="og:site_name" content="abhinav tushar">
+
+  <meta name="twitter:url" content="https://lepisma.github.io//articles/2017/03/05/optional-typing/">
+  <meta name="twitter:title" content="Optional typing">
+  <meta name="twitter:description" content="Personal Blog">
+
+  <meta itemprop="name" content="Optional typing">
+  <meta itemprop="description" content="Personal Blog">
+</head>
+
+  <body>
+    <div class="site-wrap">
+      <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="/" class="site-title">
+        <img src="/assets/images/avatar32.png">
+      </a>
+      <nav class="site-nav right">
+        <a href="/">home</a>
+<a href="/feed.xml">feed</a>
+<a href="/archive">archive</a>
+<a href="/about/">about</a>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+          
+
+
+<div class="post-header mb2">
+  <h1>Optional typing</h1>
+  <span class="post-meta">Mar 5, 2017</span><br>
+  
+  <span class="post-meta small">9 minute read</span>
+</div>
+
+<article class="post-content">
+  <p><span class="dropcap">I</span> recently
+tried <a href="https://www.typescriptlang.org/">TypeScript</a> for a project. Essentially,
+it is a <a href="https://en.wikipedia.org/wiki/Gradual_typing">gradually typed</a> superset
+of JavaScript. Originally intended for learning, the switch immediately felt
+empowering. Not that TypeScript is necessarily better (haven’t used it enough to
+say that) but for a long time python user like me, (pushed) optional type
+annotations is refreshing.</p>
+
+<p>Python is one of the popular dynamic typed languages. Not specifying data types
+like <code class="highlighter-rouge">int</code>, <code class="highlighter-rouge">string</code> allows for simpler programming and faster prototyping,
+making it easy to learn. Its not just about being simple
+though, <a href="https://en.wikipedia.org/wiki/Duck_typing">duck typed</a> languages have
+their share of benefits which are regularly exploited by the users.</p>
+
+<p>Recent python versions have been pushing through a new change. Python now
+provides type hinting support using a now
+stable <a href="https://docs.python.org/3.6/library/typing.html#module-typing">typing</a>
+module. I never really cared about types in Python because, well, thats what I
+probably have been avoiding by using Python all along. But this is slowly
+changing as I use static typing more and more.</p>
+
+<h2 id="reading-your-own-code">Reading your own code</h2>
+
+<p>I enjoy cricket and Emacs. So wrote up a
+package, <a href="https://github.com/lepisma/cricbuzz.el">cricbuzz.el</a>, for displaying
+cricket scores in Emacs. It basically is a web scraper
+for <a href="https://www.cricbuzz.com/">cricbuzz.com</a>. Occasionally, there are changes
+to the web page structure and I have to do a little bit of tweaking.
+It was broken recently and I had to fix it a few months back. Here is one of the
+changes I did</p>
+
+<div class="language-elisp highlighter-rouge"><pre class="highlight"><code> <span class="nb">-</span>  <span class="p">(</span><span class="k">let*</span> <span class="p">((</span><span class="nv">header-node</span> <span class="p">(</span><span class="nb">first</span> <span class="nv">data-nodes</span><span class="p">))</span>
+ <span class="nb">-</span>         <span class="p">(</span><span class="nv">col-size</span> <span class="p">(</span><span class="nb">length</span> <span class="nv">header-node</span><span class="p">))</span>
+ <span class="nb">-</span>         <span class="p">(</span><span class="nv">row-nodes</span> <span class="p">(</span><span class="nb">cdr</span> <span class="nv">data-nodes</span><span class="p">))</span>
+ <span class="nb">+</span>  <span class="p">(</span><span class="k">let*</span> <span class="p">((</span><span class="nv">header-node</span> <span class="p">(</span><span class="nb">second</span> <span class="nv">data-nodes</span><span class="p">))</span>
+ <span class="nb">+</span>         <span class="p">(</span><span class="nv">col-size</span> <span class="p">(</span><span class="nb">length</span> <span class="p">(</span><span class="nv">-remove-item</span> <span class="s">" "</span> <span class="nv">header-node</span><span class="p">)))</span>
+ <span class="nb">+</span>         <span class="p">(</span><span class="nv">row-nodes</span> <span class="p">(</span><span class="nb">cdr</span> <span class="p">(</span><span class="nb">cdr</span> <span class="nv">data-nodes</span><span class="p">)))</span>
+</code></pre>
+</div>
+
+<p>I don’t know what changed in the variable <code class="highlighter-rouge">data-nodes</code>. Don’t even know what it
+holds. The only thing I know is that it contains html elements parsed to
+form S-expressions and contains structured data scraped from the website.
+The fix works for now but this thing will bug me badly again when something
+changes. Knowing that enforcing a structure in html is hard, the point here is that it is
+important to know what the symbols contain in your code. This is really helpful
+for maintaining the code over a long period of time, or when there are too many
+pieces to keep track of.</p>
+
+<p>There are two things really that are usually done to solve these issues:</p>
+
+<ol>
+  <li>Documenting functions, variables</li>
+  <li>Using helpful names</li>
+</ol>
+
+<p>Helpful names are helpful. But they can get weird. There are understandable
+limits to them. Documentations, specially function docs are more helpful.
+Usually you add data types for the arguments in the docstring too. Like this
+(numpy style):</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">noot_noot</span><span class="p">(</span><span class="n">pingu</span><span class="p">,</span> <span class="n">n_noots</span><span class="p">):</span>
+    <span class="s">"""
+    
+    Parameters
+    ----------
+    pingu : Pingu
+        A pingu object
+    n_noots : int
+        Number of times to noot
+    """</span>
+
+    <span class="k">pass</span>
+</code></pre>
+</div>
+
+<p>This helps in knowing what is going to happen in the function. This also gets
+parsed by a documentation generator
+like <a href="http://www.sphinx-doc.org/en/stable/">sphinx</a> so the types specified in
+here end up being useful. But they still are pretty passive. There is no way
+anyone could stop you from writing this</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">noot_noot</span><span class="p">(</span><span class="n">Pingu</span><span class="p">(),</span> <span class="mf">1.3</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Not until runtime that is.</p>
+
+<p>Notice the function again. The definition line itself is pretty much self
+explanatory (thanks to variable naming). There are many similar cases in
+practice which need <em>just a little bit</em> of hint about data types to clarify their
+tasks. “Type hinting” fills in this sweet spot and at the same time flags logical
+bugs like passing <code class="highlighter-rouge">float</code> where <code class="highlighter-rouge">int</code> is expected.</p>
+
+<h2 id="type-hinting">Type Hinting</h2>
+
+<p>Type hinting is the idea of adding annotations about data type for variables,
+function arguments etc. These are usually parsed and checked before runtime
+and usually are similar in spirit to something like automatic spell-checkers.
+Doing this helps in marking inconsistencies in variables which flow around here
+and there. I came to know about type hinting from JavaScript. There
+is <a href="https://flowtype.org/">flow</a> which lets you add hints in plain JS without
+much intrusion and strip them off using something
+like <a href="https://flowtype.org/docs/running.html">babel</a> in the compilation step.</p>
+
+<p>Here is a sample taken from flow’s homepage.</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="c1">// @flow</span>
+<span class="kd">function</span> <span class="nx">bar</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="err">:</span> <span class="nx">string</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">x</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">bar</span><span class="p">(</span><span class="s1">'Hello, world!'</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>You drop hints when needed and running <code class="highlighter-rouge">flow</code> gives you the error it detects</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>3:   return x.length;
+            ^^^^^^^^ number. This type is incompatible with the expected return type of
+2: function bar(x): string {
+                    ^^^^^^ string
+</code></pre>
+</div>
+
+<p>Then there is TypeScript which behaves more like a superset of JS but with
+the same idea. Your development process gets assisted by static types and then
+the code gets converted to plain JS and runs <em>like a duck</em>.</p>
+
+<h2 id="mypy">mypy</h2>
+
+<p>Although not that popular, Python has in-language support for adding type hints
+which can be checked by something like <a href="http://mypy-lang.org/">mypy</a>. What this
+means for our example is that you could do something like the following:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">noot_noot</span><span class="p">(</span><span class="n">pingu</span><span class="p">:</span> <span class="n">Pingu</span><span class="p">,</span> <span class="n">n_noots</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+    <span class="k">pass</span>
+    
+<span class="n">noot_noot</span><span class="p">(</span><span class="n">Pingu</span><span class="p">(),</span> <span class="mf">1.3</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>This time, running mypy gives the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Argument 2 to "noot_noot" has incompatible type "float"; expected "int"
+</code></pre>
+</div>
+
+<p>Running this code itself will not give any error if there is nothing in
+<code class="highlighter-rouge">noot_noot</code> which relies on <code class="highlighter-rouge">n_noots</code> not being a float (for example
+<code class="highlighter-rouge">range(n_noots)</code>). This is <em>just</em> handy for something as trivial as this. But
+gets really useful when you have a lot of structured data going in and out of
+things.
+The <a href="https://docs.python.org/3/library/typing.html#module-typing">typing</a> module
+provides many primitives to build tailored types. For example, if my program
+works with geographical coordinates (a pair of numbers) of cities (string), I
+could do something like the following:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Tuple</span>
+
+<span class="n">Coordinate</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">minimum_trip_distance</span><span class="p">(</span><span class="n">cities</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Coordinate</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">pass</span>
+</code></pre>
+</div>
+
+<p>Notice the nice name of the type which helps in identifying the associated
+object. We know whenever there is <code class="highlighter-rouge">Coordinate</code> that its going to be pair of
+floats and not
+more. mypy’s support for types can be seen in
+its <a href="http://mypy.readthedocs.io/en/latest/kinds_of_types.html">doc</a>.</p>
+
+<p>Here are a few reasons other than the already helpful type checking to use these
+hints:</p>
+
+<ol>
+  <li>Its not really much to write and actually saves keystrokes as compared to
+writing unnecessary and passive documentation strings.</li>
+  <li>It avoids runtime overheads as compared to defining a logical type using a
+dummy class.</li>
+</ol>
+
+<p>There are concerns about the readability of code as such when using hints as it
+goes against python’s philosophy. I feel like readability should not be judged
+by how it looks to a non-programmer but to a python programmer. Its easier for
+me to read that a function takes coordinates (which is known to be a pair of numbers
+since I decided to read the code dealing with geography) rather than an argument
+described solely by its name and / or docstring.</p>
+
+<h2 id="keeping-it-optional">Keeping it Optional</h2>
+
+<p>Typing is something that feels like it comes attached with performance benefits.
+But using mypy for around a month now has convinced me that just the
+documentation part is reason enough to use it here and there. It helps keep
+track of tiny things like whether I am passing <code class="highlighter-rouge">str</code> or a <code class="highlighter-rouge">stream</code> when a
+function works on a file. This itself has reduced the load on variable naming
+for me a lot. Also, if you are not writing a hackish script, it does help to put
+barriers at places to frame the program.</p>
+
+<p>Most importantly, it really is non-intrusive and purely optional. You could use
+hints wherever needed and skip where is it unnecessary and verbose (though I am
+not sure if this is a recommended practice).</p>
+
+<h2 id="final-thoughts">Final thoughts</h2>
+
+<p>Static type checking in python is not <em>that</em> popular as compared to JS.
+But JS community is particularly
+<a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.yehrvien7">well known</a> to
+quickly get hands on new technologies. The python community is somewhat
+different. The users have different expectations from the language and the
+language has molded itself to be easy for the users. To elaborate on this: you
+won’t
+see <a href="https://docs.python.org/3/whatsnew/3.6.html#whatsnew36-pep498">f-strings</a>
+getting hugely popular right away because:</p>
+
+<ul>
+  <li>the users don’t care about it if the older ways are working (<code class="highlighter-rouge">format()</code> or
+similar in this case)</li>
+  <li>packages / libraries supporting <a href="https://babeljs.io/">babel</a>-ish ideas are not
+that common to find in python. Even if you are <em>living on the edge</em> kind of
+person, you can’t just go on your way that easily. (Though I would blame the
+v2-v3 divide for this)</li>
+</ul>
+
+<p>Other than that, support for 3rd party modules is not that extensive as of now.
+There is <a href="https://github.com/python/typeshed/">typeshed</a> but doesn’t compare to
+something
+like <a href="https://github.com/DefinitelyTyped/DefinitelyTyped">DefinitelyTyped</a>. But
+this really is a reflection of how popular type hinting is. If not many are
+going to use it, there will always be lesser stubs in there.</p>
+
+<p>Of course your IDE / editor needs to support on-the-fly type checking to actually
+be helpful. Emacs has <a href="http://www.flycheck.org/en/latest/">flycheck</a> which has an
+<a href="https://github.com/lbolla/emacs-flycheck-mypy">extension</a> for adding mypy as a
+checker. PyCharm
+also
+<a href="https://www.jetbrains.com/help/pycharm/2016.3/type-hinting-in-pycharm.html">supports</a> it.</p>
+
+</article>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+</footer>
+
+  </body>
+</html>
