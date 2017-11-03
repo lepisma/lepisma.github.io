@@ -4,7 +4,6 @@ set -e
 SHA=$(git rev-parse --verify HEAD)
 
 git checkout master
-git merge source
 bundle exec jekyll build
 yes | cp -r _site/* ./
 rm -r _*

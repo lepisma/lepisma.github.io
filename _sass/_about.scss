@@ -1,0 +1,151 @@
+// About me page style
+
+@import 'commons';
+
+// Loading bar
+.pace .pace-progress {
+  background-color: $accent !important;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-light;
+  }
+}
+
+// HEADER -----------------------
+#main-head-block {
+  background-color: $accent;
+  height: 5px;
+  width: 100%;
+}
+
+#main-head {
+  color: $text-light;
+  font-family: 'Bebas Neue Bold';
+  margin-top: 15px;
+
+  #avatar {
+    float: left;
+
+    img {
+      border-radius: 5px;
+      height: 87px;
+    }
+  }
+
+  #name {
+    float: left;
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-left: 10px;
+  }
+
+  #links {
+    float: right;
+    font-size: 16px;
+    letter-spacing: 8px;
+    line-height: 1.3em;
+    margin-top: 5px;
+    text-align: right;
+  }
+
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+// MAIN -----------------------
+@media (min-width: 1000px) {
+  .container {
+    margin-left: 164px;
+  }
+}
+
+#main-content {
+  margin-top: 90px;
+
+  .section {
+    margin-bottom: 40px;
+
+    .section-media {
+      padding-top: 50px;
+      img {
+        width: 100%;
+      }
+
+      @media (max-width: 550px) {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .section-title {
+      font-family: 'et-book';
+      font-style: italic;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+
+      img {
+        width: 100%;
+      }
+
+      color: $text-medium;
+      font-family: 'et-book';
+      font-size: 18px;
+
+      a {
+        @include link-underline($back-white, $text-medium);
+        border-radius: 2px;
+
+        &:hover {
+          background-color: $back-light;
+          @include link-underline($back-light, $text-medium);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $back-light;
+  border-color: $back-medium;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px;
+
+  .container {
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+    .foot-note {
+      color: $text-light;
+      font-family: 'Bebas Neue Bold';
+    }
+
+    hr {
+      margin: 10px 0;
+    }
+
+    .badges {
+      align-items: center;
+      display: flex;
+      filter: grayscale(100%);
+      flex-direction: row;
+      margin-top: 20px;
+
+      a {
+        margin-right: 15px;
+      }
+    }
+  }
+}
