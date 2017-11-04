@@ -13,16 +13,24 @@ processor like interface. The aim is to recreate a
 I submitted on /r/unixporn some time back. Shown below is a demo of what the
 thing actually looks like.
 
-<figure>
-  <img src="/images/posts/org-rice/demo.png">
-</figure>
+<aside>
+<div class="aside-title">
+In action
+</div>
 
+<p>
 Following screencast shows the setup in action.
+</p>
 <br>
+
 <video width="100%" controls="controls">
   <source src="https://u.teknik.io/5Vy1T.mp4" type="video/mp4">
 </video>
-<br>
+</aside>
+
+<figure>
+  <img src="/images/posts/org-rice/demo.png">
+</figure>
 
 The look is inspired from the style used by [Edward
 Tufte](https://edwardtufte.github.io/et-book) in his books. A replication of the

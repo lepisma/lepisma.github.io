@@ -261,6 +261,10 @@ aside {
   margin: 20px 0;
   padding: 20px;
 
+  p {
+    font-size: 14px;
+  }
+
   &::before {
     content: 'aside';
     font-family: 'Merriweather';
