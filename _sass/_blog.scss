@@ -287,6 +287,20 @@ aside {
   }
 }
 
+@media (min-width: 1280px) {
+  aside {
+    float: right;
+    clear: right;
+    background-color: $back-white;
+    max-width: 45% !important;
+    margin-right: -52%;
+
+    &::before {
+      content: '';
+    }
+  }
+}
+
 // Footer
 .footer {
   background: $accent-dark;
