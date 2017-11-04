@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("../assets/fonts/BebasNeue Bold.otf"); }
+@font-face {
+  font-family: "et-book";
+  src: url("../assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("../assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../assets/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "et-book";
+  src: url("../assets/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("../assets/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("../assets/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("../assets/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "et-book";
+  src: url("../assets/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("../assets/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("../assets/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("../assets/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+*::selection {
+  background: #c8c8c8; }
+
+*::-moz-selection {
+  background: #c8c8c8; }
+
+.pace .pace-progress {
+  background-color: #002642 !important; }
+
+a {
+  color: #002642;
+  text-decoration: none; }
+  a:hover {
+    color: #7b7b7b; }
+
+#main-head-block {
+  background-color: #002642;
+  height: 5px;
+  width: 100%; }
+
+#main-head {
+  color: #7b7b7b;
+  font-family: 'Bebas Neue Bold';
+  margin-top: 15px; }
+  #main-head #avatar {
+    float: left; }
+    #main-head #avatar img {
+      border-radius: 5px;
+      height: 87px; }
+  #main-head #name {
+    float: left;
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-left: 10px; }
+  #main-head #links {
+    float: right;
+    font-size: 16px;
+    letter-spacing: 8px;
+    line-height: 1.3em;
+    margin-top: 5px;
+    text-align: right; }
+  #main-head:after {
+    clear: both;
+    content: '';
+    display: block; }
+
+@media (min-width: 1000px) {
+  .container {
+    margin-left: 164px; } }
+#main-content {
+  margin-top: 90px; }
+  #main-content .section {
+    margin-bottom: 40px; }
+    #main-content .section .section-media {
+      padding-top: 50px; }
+      #main-content .section .section-media img {
+        width: 100%; }
+      @media (max-width: 550px) {
+        #main-content .section .section-media img {
+          display: none; } }
+    #main-content .section .section-title {
+      font-family: 'et-book';
+      font-style: italic;
+      font-size: 30px;
+      margin-bottom: 20px; }
+    #main-content .section .section-text {
+      color: #333;
+      font-family: 'et-book';
+      font-size: 18px; }
+      #main-content .section .section-text img {
+        width: 100%; }
+      #main-content .section .section-text a {
+        text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+        background-image: linear-gradient(#333, #333);
+        background-size: 1px 1px;
+        background-repeat: repeat-x;
+        background-position: 0% 95%;
+        color: #333;
+        text-decoration: none;
+        border-radius: 2px; }
+        #main-content .section .section-text a::selection {
+          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+          background: #c8c8c8; }
+        #main-content .section .section-text a::-moz-selection {
+          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+          background: #c8c8c8; }
+        #main-content .section .section-text a *,
+        #main-content .section .section-text a *:after, #main-content .section .section-text a:after,
+        #main-content .section .section-text a *:before, #main-content .section .section-text a:before {
+          text-shadow: none; }
+        #main-content .section .section-text a:visited {
+          color: #333; }
+        #main-content .section .section-text a:hover {
+          background-color: #efefef;
+          text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+          background-image: linear-gradient(#333, #333);
+          background-size: 1px 1px;
+          background-repeat: repeat-x;
+          background-position: 0% 95%;
+          color: #333;
+          text-decoration: none; }
+          #main-content .section .section-text a:hover::selection {
+            text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+            background: #c8c8c8; }
+          #main-content .section .section-text a:hover::-moz-selection {
+            text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+            background: #c8c8c8; }
+          #main-content .section .section-text a:hover *,
+          #main-content .section .section-text a:hover *:after, #main-content .section .section-text a:hover:after,
+          #main-content .section .section-text a:hover *:before, #main-content .section .section-text a:hover:before {
+            text-shadow: none; }
+          #main-content .section .section-text a:hover:visited {
+            color: #333; }
+
+footer {
+  background-color: #efefef;
+  border-color: #c8c8c8;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px; }
+  footer .container {
+    padding-bottom: 20px;
+    padding-top: 30px; }
+    footer .container .foot-note {
+      color: #7b7b7b;
+      font-family: 'Bebas Neue Bold'; }
+    footer .container hr {
+      margin: 10px 0; }
+    footer .container .badges {
+      align-items: center;
+      display: flex;
+      filter: grayscale(100%);
+      flex-direction: row;
+      margin-top: 20px; }
+      footer .container .badges a {
+        margin-right: 15px; }
