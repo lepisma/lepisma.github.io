@@ -265,6 +265,14 @@ aside {
     font-size: 14px;
   }
 
+  pre {
+    border-radius: 5px;
+    font-family: 'Fira Mono';
+    font-size: 12px;
+    overflow-x: auto;
+    background: $code-background;
+  }
+
   &::before {
     content: 'aside';
     font-family: 'Merriweather';

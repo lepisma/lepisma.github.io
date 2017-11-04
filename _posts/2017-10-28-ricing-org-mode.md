@@ -21,7 +21,6 @@ In action
 <p>
 Following screencast shows the setup in action.
 </p>
-<br>
 
 <video width="100%" controls="controls">
   <source src="https://u.teknik.io/5Vy1T.mp4" type="video/mp4">
