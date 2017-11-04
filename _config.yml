@@ -17,6 +17,7 @@ links:
 markdown: kramdown
 permalink: pretty
 paginate: 5
+excerpt_separator: "<!--more-->"
 sass:
   compressed: true
 plugins:
