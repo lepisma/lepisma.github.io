@@ -12,13 +12,13 @@ lives are written by our genetic code*. Along with the *connectome*, I believe
 the idea defines the whole life of an individual.
 
 Meanwhile in the reading, the book showed me a beautiful empirical law. The
-**Zipf's law**. When George Kingsley Zipf was playing with classic literary
+*Zipf's law*. When George Kingsley Zipf was playing with classic literary
 works, he discovered a pattern in the frequency distribution of words.
 
-+ The **second** most used word has **half** the frequency as compared to first
++ The *second* most used word has *half* the frequency as compared to first
   most frequent word.
 
-+ The **third** most used word has **one third** the frequency as compared to
++ The *third* most used word has *one third* the frequency as compared to
   the first most frequent word and so on. . .
 
 This is Zipf's law. Now the amazing bit. Since then, the Zipfian (the frequency
@@ -35,7 +35,7 @@ path of least effort and this explains the relation between *variations* and
 Seeing such a pattern in human languages led me to search if this works for
 computer languages. Although I didn't expect anything, since the structure of
 human and computer languages aren't exactly same, but I gave it a try. Similar
-to words in human language, I took **keywords** in computer languages, since
+to words in human language, I took *keywords* in computer languages, since
 variable names and other things aren't as frequent as keywords. Saying that, I
 do realize that this is not exactly the way this should be done, but it should
 work as a crude approximation.
@@ -45,7 +45,7 @@ software projects along with the approx Zipfian distribution. The projects here
 are dominated by (almost) one single language and are large projects as far as
 lines of code are considered, this *might* be better for finding such patterns.
 
-##### Linux kernel
+### Linux kernel
 
 The language of the project is predominantly C. I ran the frequency analysis for
 C/C++ language keywords.
@@ -55,7 +55,7 @@ C/C++ language keywords.
 src="/images/posts/zipf/linux.png"> </a>
 </figure>
 
-##### FreeBSD
+### FreeBSD
 
 The language again is mostly C/C++, did the same analysis here.
 
@@ -64,7 +64,7 @@ The language again is mostly C/C++, did the same analysis here.
 src="/images/posts/zipf/bsd.png"> </a>
 </figure>
 
-##### Bootstrap
+### Bootstrap
 
 Javascript
 
@@ -73,7 +73,7 @@ Javascript
 src="/images/posts/zipf/bootstrap.png"> </a>
 </figure>
 
-##### Shogun
+### Shogun
 
 C++
 
@@ -82,7 +82,7 @@ C++
 src="/images/posts/zipf/shogun.png"> </a>
 </figure>
 
-##### OpenCV
+### OpenCV
 
 C++
 
@@ -96,17 +96,16 @@ of least effort or anything else. Although there is high probability that these
 are not representatives of Zipf's law, but nevertheless, its fun to see
 something like this.
 
----
+<aside markdown="1">
+<div class="aside-title">A note on the script I used</div>
 
-**A note on the script I used**
-
-*The script is [here](https://github.com/lepisma/zipf) and is just a "kind-of-works" thing.
-A more rigorous analysis can be done, since the script neglected many things.*
-
----
+The script is [here](https://github.com/lepisma/zipf) and is just a
+kind-of-works thing. A more rigorous analysis can be done, since the script
+neglected many things.
+</aside>
 
 There are many power laws in nature that tend to line up observations in a
-specific order. Individually, things don't show up, but on a **crowdish** scale,
+specific order. Individually, things don't show up, but on a *crowdish* scale,
 the patterns begin to emerge, consider population, species, social networks,
 crowd behavior, star clusters, sub atomic particles . . . everywhere.
 
@@ -128,5 +127,5 @@ to lower prices online. Thus, the primary value of the internet to consumers
 comes from releasing new sources of value by providing access to products in the
 long tail."*
 
-Anyways, the exciting thing about living in current time is that we have data.
+Anyway, the exciting thing about living in current time is that we have data.
 Much more than what Zipf had.

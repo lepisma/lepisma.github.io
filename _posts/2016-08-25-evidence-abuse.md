@@ -67,7 +67,6 @@ regularly. So don't take things here as absolute truths, but opinions of sort.
 <a href="https://xkcd.com/285/">
 <img src="/images/posts/evidence/wikipedian_protester.png">
 </a>
-<figcaption><a href="https://xkcd.com/285/">xkcd - 285</a></figcaption>
 </figure>
 
 One of my relative forwarded the following message to me.
@@ -149,13 +148,12 @@ shackle the chains around us. But we say
 
 > "Hey kiddo! We simplify things so people get it, get it?"
 
-#### Simplification.
+### Simplification.
 
 <figure>
 <a href="https://xkcd.com/547/">
 <img src="/images/posts/evidence/simple.png">
 </a>
-<figcaption><a href="https://xkcd.com/547/">xkcd - 547</a></figcaption>
 </figure>
 
 No one can know everything. So we use a few tricks. We learn how to utilize
@@ -256,13 +254,12 @@ sender), despite my respect for the concern of the sender:
    general disagreement, which is pretty much known (specially for the original
    content creator).
 
-#### Evidence
+### Evidence
 
 <figure>
 <a href="https://xkcd.com/925/">
 <img src="/images/posts/evidence/cell_phones.png">
 </a>
-<figcaption><a href="https://xkcd.com/925/">xkcd - 925</a></figcaption>
 </figure>
 
 Evidence keeps wild information mutations in check. Its not so much about
@@ -288,7 +285,7 @@ Wikipedia since the information provided is complete and absolute? How many
 irrational nostalgic sentiments about healthy life of yesterdays have been
 fueled again? How many people have been convinced that every move we make, is
 against the grand scheme of someone's God? In my personal experiences with
-people, I can safely say, A Hell Lot!
+people, I can safely say, a hell lot!
 
 ## 2. Deluge
 
@@ -296,7 +293,6 @@ people, I can safely say, A Hell Lot!
 <a href="https://xkcd.com/906/">
 <img src="/images/posts/evidence/citations.png">
 </a>
-<figcaption><a href="https://xkcd.com/906/">xkcd - 906</a></figcaption>
 </figure>
 
 I was recently involved in a facebook discussion about effects of microwave on
@@ -311,6 +307,7 @@ at the citations. Also, I can assure you, many adventurous people who opened the
 main link came out convinced that they were dealing with science. To put it
 straight, many of us believe that there is no such thing as poor science.
 
+<aside markdown="1">
 Let John Oliver [explain](https://youtu.be/0Rnq1NpHdmw) you what kind of
 cases I am talking about.
 
@@ -318,8 +315,7 @@ cases I am talking about.
 <iframe src="https://www.youtube.com/embed/0Rnq1NpHdmw"
 frameborder="0" allowfullscreen class="video-iframe"></iframe>
 </div>
-
-<br>
+</aside>
 
 Its different from the first situation. You ask for evidence and the first guy
 will realize the lack and would go on the defensive. This case will throw
@@ -335,7 +331,7 @@ articles, everything is helping people to accept science in their daily lives. L
 again, and you can see an almost exuberant insincerity for evidence spilling
 from the mouths of promoters. Of course not all of them.
 
-#### Pseudo Science
+### Pseudo Science
 
 Take that microwave oven case. Here is the
 [link](http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145)
@@ -379,7 +375,6 @@ a pinch of skepticism and the house of cards is destroyed.
 <a href="https://xkcd.com/765/">
 <img src="/images/posts/evidence/dilution.png">
 </a>
-<figcaption><a href="https://xkcd.com/765/">xkcd - 765</a></figcaption>
 </figure>
 
 Consider homeopathy. Something that's still pretty much established because people
@@ -432,8 +427,8 @@ model of their liking.
 Of course, there are issues when you attack these sources. I already mentioned
 the grayness of these arguments. You will definitely be able to find patches of
 truth in the information provided and will wonder why I am being so diligent
-with my attacks. I don't need theories with doubtful validity claiming *"17 life
-energies from sun that gives you food"* to convince me of Sun's role. Just a
+with my attacks. I don't need theories with doubtful validity claiming '*17 life
+energies from sun that gives you food*' to convince me of Sun's role. Just a
 simple reminder of photosynthesis will do.
 
 ## 3. Disregard
@@ -456,7 +451,7 @@ products in a form *they* found better. On the other side, baba tells us about
 this hypocrisy that companies regularly employ to sell stuff. Obviously, both
 arguments are good and bad in different ways.
 
-Anyways, I see this message promoting two things
+Anyway, I see this message promoting two things
 
 1. There is a reason higher than scientific method to decide against or in favor
    of a product. In this case, ethnocentrism, nationalism and other
@@ -491,7 +486,6 @@ about evidence, because they are talking much above these petty issues.
 <a href="https://xkcd.com/154/">
 <img src="/images/posts/evidence/beliefs.jpg">
 </a>
-<figcaption><a href="https://xkcd.com/154/">xkcd - 154</a></figcaption>
 </figure>
 
 Advertisements do this all the time. They look for what sells and target
@@ -516,7 +510,7 @@ weird set of priorities. Because your product decisions don't tie to and create 
 identity. Because a demagogue can't yell a battle cry, right or wrong, and take
 control of your life decisions.
 
-#### Cults
+### Cults
 
 I have absolutely no problem with product promotion based on actual quality.
 But, we know a few entities that tend to differ here. I saw a roadside banner
@@ -543,7 +537,6 @@ would have happened if they had to popularize their ideas before 1920s).
 <a href="https://xkcd.com/1102/">
 <img src="/images/posts/evidence/fastest_growing.png">
 </a>
-<figcaption><a href="https://xkcd.com/1102/">xkcd - 1102</a></figcaption>
 </figure>
 
 Cults like these feed on your personal prejudices. You might be a properly
@@ -580,6 +573,16 @@ on a faith-face or shoving your own moral fragility deep inside you, you say
 > before making decisions.
 
 ---
+<aside markdown="1">
+Another comic to balance the amount of text. Thanks [xkcd](https://www.xkcd.com)
+for making our lives easier.
+
+<figure>
+<a href="https://xkcd.com/882/">
+<img src="/images/posts/evidence/significant.png">
+</a>
+</figure>
+</aside>
 
 Call me paranoid with [SIWOTI syndrome](https://xkcd.com/386/). I am over
 touching everything. Maybe I live among jerks and am butthurt. Maybe I just have
@@ -615,18 +618,6 @@ just because you are too lazy and want to be spoon fed by some know-it-all? Or
 maybe its all meaningless and you already are in a cult with mechanisms for
 redemption in place.
 
----
-
-Another comic to balance the amount of text. Thanks [xkcd](https://www.xkcd.com)
-for making our lives easier.
-
-<figure>
-<a href="https://xkcd.com/882/">
-<img src="/images/posts/evidence/significant.png">
-</a>
-<figcaption><a href="https://xkcd.com/882/">xkcd - 882</a></figcaption>
-</figure>
-
 ##### Edits
 
-- Changed *evidences* to *evidence*. Thanks [Rushil Nagda](https://m.facebook.com/rushil.nagda).
+1. Changed 'evidences' to 'evidence'. Thanks Rushil Nagda.

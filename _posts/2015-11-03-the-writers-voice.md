@@ -42,9 +42,9 @@ vectors gathered from classic literary works.
 There are many ways to see text as a time series. I will use a pretty basic and
 intuitive technique with word embeddings.
 
-#### Word Embeddings
+### Word Embeddings
 
-Word embeddings provide projections of **words** from any language to some
+Word embeddings provide projections of *words* from any language to some
 \\(N\\) dimensional mathematical space. In simple terms, it provides a vector
 for each word it has seen. The vector is learned in relation to the context in
 which it appears. A popular method uses Continuous Bag of Words and Skip-gram
@@ -67,7 +67,7 @@ semantic connections (hover on dots).
 <div id="words">
 </div>
 
-#### Cramming text
+### Cramming text
 
 After training an embedding model (with \\(100\\) dimensions) and computing
 vectors for each word in a book, we are left with a matrix of size \\(N\_{w}
@@ -82,17 +82,11 @@ better way is to create anchor points in the number space directly.
 
 A simple K-means clustering with \\(4\\) centers provide us the anchor points
 and now the matrices are of size \\(N\_{s} \times 4\\). Below is the graph for
-**The Sign of the Four**  by Arthur Conan Doyle.
+*The Sign of the Four*  by Arthur Conan Doyle.
 
-<div>
-    <a href="https://plot.ly/~lepisma/190/" target="_blank" title="Anchor point
-    similarities" style="display: block; text-align: center;"><img
-    src="https://plot.ly/~lepisma/190.png" alt="Anchor point similarities"
-    style="max-width: 100%;width: 1099px;"  width="1099"
-    onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="lepisma:190"  src="https://plot.ly/embed.js"
-    async></script>
-</div>
+<figure>
+<img src="/images/posts/voice/anchors.png">
+</figure>
 
 The smooth lines are generated after using a gaussian filter and they more or
 less capture the essence of the flow.
@@ -103,8 +97,6 @@ Once we have set of comparable signals for each book, next step is to do actual
 comparison. A simple way would be to extract some sort of features from these
 time series or directly apply techniques to learn from the series. But, lets try
 something more crude and direct.
-
-#### Dynamic Time Warping
 
 <blockquote>
 <p>
@@ -124,14 +116,14 @@ invariant of length and positions of peaks and valleys in signals. The
 [pseudo code](https://en.wikipedia.org/wiki/Dynamic_time_warping#Implementation)
 on Wikipedia should get you started.
 
-#### Distances to coordinates
+### Distances to coordinates
 
 Once we get the distances, we get 2D cartesian coordinates using
 [Multi Dimensional Scaling (MDS)](https://en.wikipedia.org/wiki/Multidimensional_scaling).
 Although we won't talk about this here, MDS is a cool thing to look for in data
 visualization.
 
-Anyways, here is the scatterplot of \\(24\\) classic books.
+Anyway, here is the scatterplot of \\(24\\) classic books.
 
 <div id="scatter">
 </div>

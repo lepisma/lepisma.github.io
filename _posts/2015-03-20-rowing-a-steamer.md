@@ -18,7 +18,7 @@ Since, numerical methods (finite difference) are the most *thought after*
 methods when people think about computers and differentiation, we don't actually
 try other stuff. Forget symbolic, forget finite difference (and don't even think
 about automatic), we have a course on *Power System Analysis*, which is a bit
-computational in nature and we use a more **traditional** method.
+computational in nature and we use a more *traditional* method.
 
 ## Hand calculus
 
@@ -54,20 +54,18 @@ learning community (extensive users of gradient computation) already favor AD
 [kayak](https://github.com/HIPS/Kayak) etc.) over the more error prone Symbolic
 and finite diff methods.
 
-I don't see such spirit for power use of computers in our academia.
-
-The arguments people usually give here are :
+I don't see such spirit for power use of computers in our academia. The
+arguments people usually give here are :
 
 > "You need to learn the Mathematics first."
 
-Ah, you are already assume teaching Calculus **in** Mathematics was a waste of
+Ah, you are already assume teaching Calculus *in* Mathematics was a waste of
 time.
 
 > "You will learn nothing if you use functions directly."
 
-C'mon, you were going to teach us finite difference stuff, weren't you ?
-Or wait, you did teach that, but that was erratic pen-paper stuff right ?
-
-Computers are not vanity stuff. They are not disconnected from Science. Hate it
-or love it, Computation is not a projection of Mathematics on Computers, **it is
-Mathematics**.
+C'mon, you were going to teach us finite difference stuff, weren't you ? Or
+wait, you did teach that, but that was erratic pen-paper stuff right? Computers
+are not vanity stuff. They are not disconnected from Science. Hate it or love
+it, Computation is not a projection of Mathematics on Computers, *it is
+Mathematics*.

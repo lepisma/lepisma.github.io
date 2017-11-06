@@ -23,16 +23,16 @@ quantum mechanics and general relativity have a playoff.
 
 ## The Firewall
 
-Black hole firewall is a recent thing (2012-13).
-[Read here](http://arxiv.org/pdf/1207.3123v4.pdf). If you don't have much
-motivation to read the paper, here it is,
+Black hole firewall is a recent thing (2012-13). [Read
+here](http://arxiv.org/pdf/1207.3123v4.pdf). According to *Hawking process*,
+black holes radiate and evaporate as a result of quantum fluctuation, which is a
+well established fact now in modern Physics.
 
-> It is one of the coolest way of winning over the debate about the entry of
-> Cooper in the black hole in the recent movie
-> [Interstellar](http://www.imdb.com/title/tt0816692/) (if you are having any).
-
-According to **Hawking process**, black holes radiate and evaporate as a result
-of quantum fluctuation, which is a well established fact now in modern Physics.
+<aside markdown="1"> If you don't have much motivation to read the paper, here
+it is. Firewalls are one of the coolest way of winning over the debate about the
+entry of Cooper in the black hole in the recent movie
+[Interstellar](http://www.imdb.com/title/tt0816692/) (if you are having any).
+</aside>
 
 <figure>
 <img src="/images/posts/firewall/hawkrad.png">
@@ -42,7 +42,7 @@ But, here is the thing, if, accidentally, your water bottle gets sucked in a
 black hole, and if the black hole evaporates after few years, you loose
 information! This is the information paradox. The violation of the second law.
 Many believe its okay to have this loss. But, an interesting solution came when
-information was supposed to escape from black holes. **Firewall**.
+information was supposed to escape from black holes. *Firewall*.
 
 Firewalls are literal *firewalls* of energy on the surface of black holes. This
 happens due to the breaking of entanglement of particles in black hole
@@ -74,14 +74,14 @@ than that, it is the theory of information, about what has happened and what can
 happen. Prick it, and the whole Universe's history will change.
 
 The second law governs what will happen and thus gives a direction for movement
-in the time dimension. Assuming **now** is only a construct of human brain which
+in the time dimension. Assuming *now* is only a construct of human brain which
 itself is due to the second law, it is fascinating to look at the true nature of
-time. Is there an inverse which leads to undoing things, unrolling the usual ?
-Is it possible that time is and always was a two way street ?
+time. Is there an inverse which leads to undoing things, unrolling the usual?
+Is it possible that time is and always was a two way street?
 
-**Time** is exciting ! Especially *right now*, when there are questions raised
-on the second law, and **time** itself is feeling elusive (no pun intended).
+*Time* is exciting! Especially *right now*, when there are questions raised
+on the second law, and *time* itself is feeling elusive (no pun intended).
 
-*Does the entropy always increase ? Or is it just a convex function of time ?*
+*Does the entropy always increase ? Or is it just a convex function of time?*
 
 I hope, we will learn the answers someday, or maybe we already have.

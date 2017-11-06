@@ -9,8 +9,8 @@ categories: articles
 <img src="/images/posts/rhino/head.jpg" style="float:right">
 </figure>
 
-<span class="dropcap">I</span>n case you didn't know *"there are only 3 northern
-white rhinos left on the planet"*. There were 5 since I started counting. One
+<span class="dropcap">I</span>n case you didn't know '*there are only 3 northern
+white rhinos left on the planet*'. There were 5 since I started counting. One
 died
 [earlier this year](http://edition.cnn.com/2015/07/29/world/northern-rhino-dies/).
 Another one,
@@ -29,10 +29,8 @@ One of the reasons why Rhinoceros hunting has recently gathered pace is due to a
 weird outburst of horn demands from Vietnam. Apparently, there was a
 [guy](http://qz.com/82302/theres-a-country-that-will-pay-300000-per-rhino-horn-to-cure-cancer-and-hangovers-and-its-wiping-out-rhinos/)
 who was cured from terminal cancer using rhinoceros horns and people weren't
-able to stop the tendency of *"inferring from a sample size of 1"* to outgrow
+able to stop the tendency of '*inferring from a sample size of 1*' to outgrow
 their rationality.
-
----
 
 This brings up an important issue. Not that other reasons for dwindling wildlife
 are not so important, but because *this* specific reason is prevalent in every
@@ -43,7 +41,7 @@ other area to an extent you would probably always underestimate.
 Recently, I got home, started watching TV, and one thing i noticed is that *our
 situation, in India, isn't drastically different from Vietnam*. I have seen
 traditional Chinese medicine usually getting the heat for promoting irrational
-cultural beliefs (sadly, many involving endangered species). Are we any better ?
+cultural beliefs (sadly, many involving endangered species). Are we any better?
 
 Natural remedies are inspiring. And to be very clear, I have a space of respect
 for them (I mean, why not?). But I never quite understand the *point of view* of
@@ -62,7 +60,7 @@ statements like this (not disclosing the source)
 
 Now, its not about the people who can *cure* homosexuality, the one who can tell
 we are going to die in future, the one who can guarantee 700% reduction in fat
-or the realists with a conservative 100%. It is about how **we** see these
+or the realists with a conservative 100%. It is about how *we* see these
 events and infer. I will be willing to believe the given statement if the person
 who is promoting this *knowledge* can answer following questions affirmatively.
 
@@ -76,7 +74,7 @@ likelihood you were taught nothing about death, risk, statistics, and the
 science of what will kill or cure you.
 </p>
 <footer>
-<cite title="Bad Science">Ben Goldacre - "Bad Science" (2008)</cite>
+<cite title="Bad Science">Ben Goldacre - Bad Science (2008)</cite>
 </footer>
 </blockquote>
 
@@ -85,7 +83,7 @@ things) I believe we should be asking to judge the conclusions of a research.
 Since researches on medicine and likes involve comparison and statistical
 testings, these are not exactly valid for *any* research.
 
-##### 1. What do the numbers mean?
+#### 1. What do the numbers mean?
 
 No, not what you are being told. What the numbers *actually* mean? Here is a
 case.
@@ -93,14 +91,14 @@ case.
 "In a test on N (N/2, N/2) people, product A performed 50% better than product
 B (assume an effect)."
 
-What is **50%** here?
+What is *50%* here?
 
 - Is there a performance metric which bumps 50% more for A guys (first N/2, say)
   than for B guys (next N/2)?
 - Is it a mean (max, median) of that metric for groups?
 - Or, is it slightly quirky like "it worked for 50% more guys"?
 
-##### 2. Can I reproduce the numbers?
+#### 2. Can I reproduce the numbers?
 
 Good research is reproducible research. Given an array of results, access to
 research documentations and methodologies, a person should be able to get to the
@@ -109,7 +107,7 @@ same conclusions as published.
 *Once done, there is a more critical question. This should be up in the order,
 but most of the times Q1 and Q2 hit it right.*
 
-##### 3. Is the process fair?
+#### 3. Is the process fair?
 
 Now since the documented methods are providing the expected results, is the
 method actually performing a fair test?
@@ -134,7 +132,7 @@ are automatically bound to go ahead only when the results are conclusive. But
 when statements like this start to frame the basis of judgments, you know the
 channel of knowledge generation and communication is severely damaged. I have
 heard so many people (due to their own personal reasons) around me agreeing on
-similar issues like *"media torturing and twisting facts"*. Yet, shockingly
+similar issues like '*media torturing and twisting facts*'. Yet, shockingly
 small number of people criticize these incidences of quackery with similar
 enthusiasm.
 
@@ -151,8 +149,8 @@ one particular direction or another.
 
 Many argue that its important to use dumbed down logic to reach a mass audience.
 But, there is a difference between *dumbed down* and *simplified*. One misleads
-people in thinking **they know the actual thing** while the other make them
-realize **what they don't know**.
+people in thinking *they know the actual thing* while the other make them
+realize *what they don't know*.
 
 The major problems with the propagators are probably not the numerous questions
 raised, but the ones unanswered because their claims are *unfalsifiable*. This
@@ -160,8 +158,8 @@ approach is not a sane way to do any Science. Most of the claimed success is due
 to the confounding variables covering the obvious observations like *eating
 healthy helps*. Others left are weeded out in a huge placebo storm.
 
-Many a times, you **can't avoid** irrationality. But, sometimes you **can't
-afford**. There is a huge responsibility on you when you are touching dead
+Many a times, you *can't avoid* irrationality. But, sometimes you *can't
+afford*. There is a huge responsibility on you when you are touching dead
 serious topics involving lives, deaths and crowd emotions. We can't afford
 statements like *"AIDS can be cured through yoga"*, but while we can, lets ask
 if these statements have enough evidences to answer the questions.
@@ -171,7 +169,7 @@ if these statements have enough evidences to answer the questions.
 Before finishing, I would strongly recommend reading
 [Bad Science](https://www.goodreads.com/book/show/3272165-bad-science) by Ben
 Goldacre (the quotes in this post are directly taken from there), specially the
-chapter *"The Doctor Will Sue You Now"* if you are on a tight schedule. The
+chapter '*The Doctor Will Sue You Now*' if you are on a tight schedule. The
 story in the chapter explains the exact conundrum here with amazing precision
 and is downright serious.
 
@@ -184,15 +182,13 @@ initiating a *hate debate* against any of the specific ideas mentioned.
    for me.
 3. Maybe I am just ashamed of what our species has done to rhinos.
 
-And sadly, *the rhinoceros count is not the only thing thats going down*
+And sadly, the rhinoceros count is not the only thing thats going down.
 
 <figure>
 <img src="/images/posts/rhino/back.jpg">
 </figure>
 
+##### Edits
 
-##### Edit
-
-Thanks [Gopal Sharma](mailto:gopalsharma1193@gmail.com) for suggesting
-ammendments to the list and other
-[fixes](https://github.com/lepisma/lepisma.github.io/commit/c7aede536fbd2306e6172ccf35499b17e9807518).
+1. Thanks Gopal Sharma for suggesting ammendments to the list and other
+   [fixes](https://github.com/lepisma/lepisma.github.io/commit/c7aede536fbd2306e6172ccf35499b17e9807518).

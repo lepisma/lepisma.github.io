@@ -20,7 +20,7 @@ to make a comparison table according to my needs.
 Few general guidelines and clarifications for interpreting the comparison given
 here:
 
-- This list is not exhaustive (obviously) and only includes few **free** dektop
+- This list is not exhaustive (obviously) and only includes few *free* dektop
   softwares. Although [Endnote](http://endnote.com),
   [Papers](http://www.papersapp.com) etc. offer free trials, I don't feel like
   comparing them, since 1 or 2 months aren't useful unless you actually buy the
@@ -34,13 +34,13 @@ here:
   - Groups and collab support
   - Editor support. Word, OpenOffice etc.
 
- . | . | Mendeley | Zotero | Qiqqa | Readcube | Colwiz
---- | --- | --- | --- | --- | --- | ---
-1 | Export/Import | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★★★
-2 | PDF handling | ★★★★☆ | ★★☆☆☆ | ★★★★★ | ★★★★☆ | ★★★☆☆
-3 | Publication search and import | ★★★★☆ | ★★★☆☆ | ★★☆☆☆ | ★★★☆☆ | ★★★★★
-4 | User Interface | ★★★★☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★ | ★★★★☆
-5 | Cloud and sync | ★★★★★ | ★★★☆☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★
+ _ | Mendeley | Zotero | Qiqqa | Readcube | Colwiz
+--- | --- | --- | --- | --- | ---
+Export/Import | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★☆☆ | ★★★★★
+PDF handling | ★★★★☆ | ★★☆☆☆ | ★★★★★ | ★★★★☆ | ★★★☆☆
+Publication search and import | ★★★★☆ | ★★★☆☆ | ★★☆☆☆ | ★★★☆☆ | ★★★★★
+User Interface | ★★★★☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★ | ★★★★☆
+Cloud and sync | ★★★★★ | ★★★☆☆ | ★★★☆☆ | ★★★☆☆ | ★★★★★
 
 **Export/Import** ratings are based mostly on BibTeX support and clipboard ease.
 
@@ -51,11 +51,11 @@ in-app import).
 **Cloud and sync** ratings are based on the web interface, space provided and
 sync capabilities.
 
-### Remarks
+## Remarks
 
 - For hardcore reference management, Mendeley is a powerhouse, no doubt. But,
-  you can't grab pdfs while searching from Mendeley desktop ! **Bummer** ! Isn't
-  it? Though, its the only bummer.
+  you can't grab pdfs while searching from Mendeley desktop! Bummer! Isn't it?
+  Though, its the only bummer.
 
 - Zotero doesn't have internal PDF reader, so no thing as such (since I am left
   with chrome). In fact, Zotero Standalone (desktop version) doesn't feel much
@@ -65,7 +65,7 @@ sync capabilities.
 
 - Qiqqa will surprise you. The UI is pretty basic (feels retro, actually) and
   has no gimmicks. But, the overall PDF handling, including annotation,
-  searching, OCR etc., is *really*, ***really*** powerful. Online search is
+  searching, OCR etc., is really, *really* powerful. Online search is
   awkward, it uses an internal web browser for that, which doesn't feel
   intuitive.
 
@@ -75,7 +75,7 @@ sync capabilities.
 
 ---
 
-Now, if you bring other features (that **you** might need) in consideration, the
+Now, if you bring other features (that *you* might need) in consideration, the
 equations will change. Mendeley and Zotero have tonnes of advanced features, it
 all depends on what you need, you might want light reference management with
 more reading/discovery, or hardcore reference management.

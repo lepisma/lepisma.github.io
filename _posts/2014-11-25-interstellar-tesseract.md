@@ -6,18 +6,15 @@ summary: Movie ramble
 ---
   
 <span class="dropcap">J</span>ust watched
-[Interstellar](http://www.imdb.com/title/tt0816692) and boy ! It was beauty.
-
-From flawlessly getting away with the paradoxes every sci fi movie (specially
-related to time travel) faces, to the
+[Interstellar](http://www.imdb.com/title/tt0816692) and boy! It was beauty. From
+flawlessly getting away with the paradoxes every sci fi movie (specially related
+to time travel) faces, to the
 *[celebrated](http://www.wired.com/2014/10/astrophysics-interstellar-black-hole/)*
 black hole visualisation, everything was a work of art.
 
 I was just wondering if we can help the lower dimensional people (If there are
 any) using a similar relay for our understandings of the worlds. But before
 that, we need to understand how the tesseract worked in the movie.
-
----
 
 ## Tesseract
 
@@ -29,9 +26,8 @@ that, we need to understand how the tesseract worked in the movie.
 <figcaption>Cooper in Tesseract</figcaption>
 </figure>
 
-First thing first, this Tesseract is not an infinity stone. Die Marvel !
-
-From wikipedia,
+First thing first, this Tesseract is not an infinity stone. Die Marvel! From
+wikipedia,
 
 > In geometry, the tesseract is the four-dimensional analog of the cube (4-cube
 > hypercube); the tesseract is to the cube as the cube is to the square.
@@ -45,13 +41,13 @@ very intuitive, see image below.
 	<figcaption>3D projection of a 4D hypercube</figcaption>
 </figure>
     
-In the movie, the higher civilization (referred as **they**) made a tesseract
+In the movie, the higher civilization (referred as 'they') made a tesseract
 for Cooper to access time as a physical dimension so as to transfer the quantum
 data from black hole to Murph via gravitational leaks.
 
 A quick hit of instinct might make you fall for the traditional time loop as
 seen in many sci fi movie. Time seems a locked dimension in normal space. But
-see it this way, as seen from *outside* the **time**, there is no relevance of
+see it this way, as seen from *outside* the *time*, there is no relevance of
 past or present or future. Its yet another dimension.
 
 <blockquote>
@@ -64,14 +60,13 @@ past or present or future. Its yet another dimension.
 </blockquote>
 
 Counterintuitive, these might seem. But its nice, intuition isn't fun (nor is
-helpful, talk *Quantum mech* if you want a debate).
+helpful, talk *Quantum mech* if you want a debate). What (hypothetically) if we
+ourselves are on some higher dimension bandwagon and are treating someone's time
+as our space ?
 
-What (hypothetically) if we ourselves are on some higher dimension bandwagon and
-are treating someone's time as our space ?
-
-*"How would a lower (or higher) dimensional space be like ? No, that's not possible."*
-
-If you were born on a gas giant, you would have asked *"How can life be on terrestrial planets ?"*.
+*"How would a lower (or higher) dimensional space be like? No, that's not
+possible."* If you were born on a gas giant, you would have asked *"How can life
+be on terrestrial planets ?"*.
 
 ---
 
@@ -84,6 +79,12 @@ x-direction. A time space diagram for it will be
 <img src="/images/posts/interstellar/st.png">
 </figure>
 
+<aside markdown="1">
+A really amazing piece of work by Edwin Abbott Abbott explains the life of two
+dimensional beings in his famous
+[Flatland](http://www.amazon.com/Flatland-Romance-Dimensions-Thrift-Editions/dp/048627263X).
+</aside>
+
 The disc is pissed off with its life, (yes it has a developed mind to have a
 sense of time and presence) and speculates about time travel. But here we are,
 seeing this whole thing as a slant cylinder. It has no meaning for us, its just
@@ -91,17 +92,13 @@ there, disc's time is our space.
 
 What if you want to share the *Interstellar* experience with it ? You would make
 the disc *see* time as a physical dimension. You will make a hypercube for it.
-As **they** did.
+As *they* did.
 
 The most important part in the movie was to recognise the importance of
 gravitational leak across dimensions, the method of transfer that can be
 understood by any *n-dimensional* organism. You would grant access to the disc
 to create gravitational anomalies in its 3 dimensions (2 space + 1 time), And an
 *Interstellar* event will happen in the flatland.
-
-A really amazing piece of work by Edwin Abbott Abbott explains the life of two
-dimensional beings in his famous
-[Flatland](http://www.amazon.com/Flatland-Romance-Dimensions-Thrift-Editions/dp/048627263X).
 
 ---
 

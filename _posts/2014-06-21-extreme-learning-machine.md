@@ -11,9 +11,9 @@ potential machine learning candidate after a long hiatus.
 
 Modern and complex neural networks have come to the front, led by those dubbed
 [Deep Learning Networks](http://en.wikipedia.org/wiki/Deep_learning). Deep
-Learning algos are hot these days, thanks to the media, just head over to
-[datatau](http://www.datatau.com/) and you will know what I mean *(Btw, No !
-I am not saying that they aren't worth the hype)*.
+Learning algos are hot these days, thanks to the media. Just head over to
+[datatau](http://www.datatau.com/) and you will know what I mean *(btw I am not
+saying that they aren't worth the hype)*.
 
 DL networks are basically networks with very deep (many) hidden layers in neural
 nets. One major problem with them is (as expected) of speed. Deeper hidden
@@ -21,30 +21,26 @@ layers lead to deadly slow training time and the risk of overfitting. But recent
 works by [Hinton](http://www.cs.toronto.edu/~hinton/) and others in unsupervised
 feature learning have given a hefty lift to deep learning.
 
-## Reservoirs !
+## Reservoirs
 
 But, this post is not about Deep Learning. Its about a different concept. A
 network that avoids the murky computation.
 
-Recently, I came across the concept of
-[Reservoir computing](http://en.wikipedia.org/wiki/Reservoir_computing), which
-(in a very simple way) refers to a construct where the input are connected
-**randomly** to higher level of abstraction (see it as a hidden layer of higher
-level) and output can be tapped from those nodes and the training problem
-reduces to calculating the connection (weights) of tapping nodes to output.
+Recently, I came across the concept of [Reservoir
+computing](http://en.wikipedia.org/wiki/Reservoir_computing), which (in a very
+simple way) refers to a construct where the input are connected *randomly* to
+higher level of abstraction (see it as a hidden layer of higher level) and
+output can be tapped from those nodes and the training problem reduces to
+calculating the connection (weights) of tapping nodes to output. This avoids the
+major bottleneck, *iterative tuning of weights of input to higher level*.
 
-This avoids the major bottleneck, *iterative tuning of weights of input to
-higher level*.
+Well, does this thing even work? *Yes, farely well !*
 
-Well ! does this thing even work ?? *YES, farely well !*
-
-There is a concept known as **Liquid State Machine**, and a relatively better
-known **Echo State Network** which is used for training
-[Recurrent Neural Nets](http://en.wikipedia.org/wiki/Recurrent_neural_network).
-Both of them are based on reservoir computing.
-
-On the lines of reservoir computing and very similar in concept is the topic of
-this post,  **Extreme Learning Machine**.
+There is a concept known as *Liquid State Machine*, and a relatively better
+known *Echo State Network* which is used for training [Recurrent Neural
+Nets](http://en.wikipedia.org/wiki/Recurrent_neural_network). Both of them are
+based on reservoir computing. On the lines of reservoir computing and very
+similar in concept is the topic of this post, *Extreme Learning Machine*.
 
 ## Extreme Learning
 
@@ -52,7 +48,7 @@ Extreme learning machine (ELM) is a modification of single layer feedforward
 network (SLFN) where learning is quite similar to the reservoir topic discussed
 above.
 
-Given below is a simple **SLFN** with 3 inputs and 1 output which computes the
+Given below is a simple *SLFN* with 3 inputs and 1 output which computes the
 weighted sum of hidden nodes.
 
 <figure>
@@ -69,7 +65,7 @@ Where \\(h\_{i}\\) is the activation of \\(i^{th}\\) hidden neuron computed usin
 
 $$h\_{i} = f(\sum\_{j} (w\_{i, j} \times x\_{j}) + b\_{i})$$
 
-Here, \\(f\\) is the activation function like **sigmoid**, **tanh** etc.,
+Here, \\(f\\) is the activation function like *sigmoid*, *tanh* etc.,
 \\(x\_{j}\\) is the \\(j^{th}\\) input, \\(w\_{i, j}\\) is the connection weight
 from \\(j^{th}\\) input to \\(i^{th}\\) hidden neuron and \\(b\_{i}\\) is the
 bias term.
@@ -83,39 +79,39 @@ while \\(\mathbf{H}\\) is the activation matrix computed using
 
 $$\mathbf{H} = f(\mathbf{W} \times \mathbf{X} + B)$$
 
-with \\(\mathbf{W}\\) (without the " **'** ") is matrix of weights from input to
+with \\(\mathbf{W}\\) (without the '**'**') is matrix of weights from input to
 hidden layer.
 
-Now, being different from usual **SLFN**, the **ELM** doesn't tune
-\\(\mathbf{W}\\) using backprop or any other iterative method, instead
-\\(\mathbf{W}\\) is randomly generated. This gives us a pool of higher level
-input abstractions in the hidden layer, out of which, ones fitting to training
-data can be found by adjusting hidden to output weights by solving a simple
-matrix equation.
+Now, being different from usual SLFN, the ELM doesn't tune \\(\mathbf{W}\\)
+using backprop or any other iterative method, instead \\(\mathbf{W}\\) is
+randomly generated. This gives us a pool of higher level input abstractions in
+the hidden layer, out of which, ones fitting to training data can be found by
+adjusting hidden to output weights by solving a simple matrix equation.
 
 $$\mathbf{Y} = \mathbf{W}' \times \mathbf{H}$$
 
 Now, given a training data with \\(\mathbf{X}\\) as input and \\(\mathbf{Y}\\)
-as output, the **ELM** training process takes the following steps
+as output, the ELM training process takes the following steps
 
 - Generate \\(\mathbf{W}\\)
 - Find \\(\mathbf{H}\\)
 - Solve \\(\mathbf{Y} = \mathbf{W}' \times \mathbf{H}\\) for \\(\mathbf{W}'\\)
 
-The value of \\(\mathbf{W}'\\) can be calculated simply using **psuedo
-(Moore-Penrose)** inverse which is usually available as a function that goes by
-the name **pinv** most of the scientific computation environment including
-**Matlab** and Python's **numpy.linalg**.
+<aside markdown="1">
+Mathematically inclined readers can refer to
+[this](http://www3.ntu.edu.sg/home/EGBHuang/pdf/ELM_IJCNN2004.PDF) paper. More
+details about *ELMs* can be found [here](http://www.ntu.edu.sg/home/egbhuang/)
+</aside>
+
+The value of \\(\mathbf{W}'\\) can be calculated simply using *psuedo
+(Moore-Penrose)* inverse which is usually available as a function that goes by
+the name *pinv* most of the scientific computation environment including
+Matlab and Python's `numpy.linalg`.
 
 $$\mathbf{W}' = \mathbf{Y} \times pinv(\mathbf{H})$$
 
 This inverse can also be computed using regularized inverse for better
 generalization.
-
-*Mathematically inclined readers can refer to
-[this](http://www3.ntu.edu.sg/home/EGBHuang/pdf/ELM_IJCNN2004.PDF) paper*
-
----
 
 ## Performance
 
@@ -125,7 +121,7 @@ Lets test out the thing.
   <p>
     I happen to believe that we don't need slow languages
   </p>
-  <footer><cite title="Jeff Bezanson, Co-creator, Julia">Jeff Bezanson,
+  <footer><cite title="Jeff Bezanson. Co-creator, Julia">Jeff Bezanson.
   Co-creator, Julia</cite></footer>
 </blockquote>
 
@@ -137,9 +133,9 @@ for scientific computing. Kinds of
 [DataFrames](https://github.com/JuliaStats/DataFrames.jl),
 [Gadfly](https://github.com/dcjones/Gadfly.jl) and
 [IJulia](https://github.com/JuliaLang/IJulia.jl) will make you feel at home,
-whether you are coming from **R**, scientific **Python** or **Matlab / Octave**.
+whether you are coming from *R*, scientific *Python* or *Matlab / Octave*.
 
-And what you get? **Speed**, raw and visible! Calling C or fortran from python
+And what you get? *Speed*, raw and visible! Calling C or fortran from python
 or R doesn't feel great, especially if you can avoid that.
 
 Coming back to testing. While trying out julia, I coded a simple
@@ -166,7 +162,7 @@ import ELM, ANN;
 Since, both libraries have few functions with same names, so its better to use
 `import` rather than `using`.
 
-#### Reading data
+### Reading data
 
 ~~~ julia
 Pkg.add("DataFrames");
@@ -191,7 +187,7 @@ head(dat)
 Last column is either 0 or 1 and tells us about the result of banknote
 authentication.
 
-#### Scaling columns
+### Scaling columns
 
 Scaling all attributes to a similar scale makes sure that one attribute doesn't
 overshadow others.
@@ -213,7 +209,7 @@ train_rows = shuffle([1:length(dat[end])] .> n_test);
 dat_train, dat_test = dat[train_rows, :], dat[!train_rows, :];
 ~~~
 
-#### Training
+### Training
 
 Lets create the models for training.
 
@@ -225,11 +221,11 @@ elm = ELM.ExtremeLearningMachine(10);
 #10 hidden neurons
 ~~~
 
-Although ELM is also given 10 neurons, but since **ELMs** select from a *pool*,
+Although ELM is also given 10 neurons, but since ELMs select from a *pool*,
 its better to give more options. But, whatever, the ultimate aim is to find the
 difference in training time of both when they provide almost similar accuracy.
 
-Like Matlab, you can time your code in julia using **tic()** and **toc()**
+Like Matlab, you can time your code in julia using `tic()` and `toc()`
 functions. Before that, let us make functions for calculating accuracy.(Both
 libraries return values in different ways)
 
@@ -264,10 +260,10 @@ Back to training. After a bit of experimentation, following approach (basically,
 the choice of epochs in ANN) provides similar accuracy and a result that clearly
 shows the difference.
 
-**A word of caution** : Since julia uses JIT compilation, it needs a bit of warm
+*A word of caution* : Since julia uses JIT compilation, it needs a bit of warm
 up. So, the first call to functions doesn't show the actual speed of julia.
 
-#### ANN
+### ANN
 
 ~~~ julia
 tic(); ANN.fit!(ann, array(dat_train[1:end-1]), array(dat_train[end]), epochs =
@@ -275,21 +271,17 @@ tic(); ANN.fit!(ann, array(dat_train[1:end-1]), array(dat_train[end]), epochs =
 accu(ann, array(dat_test[1:end-1]), array(dat_test[end]))
 ~~~
 
-##### Results
-
 ~~~ julia
 elapsed time: 0.238218045 seconds
 0.9708029197080292
 ~~~
 
-#### ELM
+### ELM
 
 ~~~ julia
 tic(); ELM.fit!(elm, dat_train[1:end-1], dat_train[end]); toc()
 accu(elm, dat_test)
 ~~~
-
-##### Results
 
 ~~~ julia
 elapsed time: 0.003801902 seconds
@@ -298,41 +290,38 @@ elapsed time: 0.003801902 seconds
 
 ### WUT?
 
-Assuming both models give same accuracy, the training of **ELM** is around
-**60x** faster than **ANN**!! (Which kind of isn't actually surprising since the
+Assuming both models give same accuracy, the training of *ELM* is around
+*60x* faster than *ANN*! (Which kind of isn't actually surprising since the
 hidden connections are untouched).
-
-More details about **ELMs** can be found
-[here](http://www.ntu.edu.sg/home/egbhuang/)
 
 ---
 
-##### Edit 1
-As pointed out by
-[Jeremy Gore](https://plus.google.com/u/0/103300068135975617187), the current
-code throws error due to changes in Julia version. The original post was tested
-and written for Julia v0.2. I will update the post to meet the updated Julia
-standards after I get free from a few things I am currently in.
+##### Edits
 
-##### Edit 2
-The library (and this post) is updated to work with newer Julia versions (tested
-on v0.3.3) with added support for DataFrames.
+1. As pointed out by Jeremy Gore, the current code throws error due to changes in
+  Julia version. The original post was tested and written for Julia v0.2. I will
+  update the post to meet the updated Julia standards after I get free from a
+  few things I am currently in.
 
-##### Edit 3
-I thought to include my personal thoughts (which have also changed since I first
-wrote the post) on ELMs since there are unbelievably large amount of
-misconceptions popping everywhere on the internet.
+2. The library (and this post) is updated to work with newer Julia versions
+   (tested on v0.3.3) with added support for DataFrames.
 
-- As it is obvious, there is just one hidden layer and the whole ideas centers
-  around creating random projections of input to finally solve a linear equation
-  problem. This *can not be justified* as a solution for hard and complex
-  problems of the class currently tackled beautifully by deep learning methods.
+3. I thought to include my personal thoughts (which have also changed since I
+   first wrote the post) on ELMs since there are unbelievably large amount of
+   misconceptions popping everywhere on the internet.
 
-- Talking about the originality of the concept of *random projections*, I
-  personally am not a science historian (at least not right now) and would
-  prefer the reader to do his/her own research.
+   - As it is obvious, there is just one hidden layer and the whole ideas
+     centers around creating random projections of input to finally solve a
+     linear equation problem. This *can not be justified* as a solution for hard
+     and complex problems of the class currently tackled beautifully by deep
+     learning methods.
 
-- The main thing that looked promising to me here was the idea that tapping from
-  random projections **can solve** *a class of problems*. This might not be
-  charming enough for anyone else, or even me at a different spot in space-time,
-  but anyways, I did a simple comparison and posted the stuff here.
+   - Talking about the originality of the concept of *random projections*, I
+     personally am not a science historian (at least not right now) and would
+     prefer the reader to do his/her own research.
+
+   - The main thing that looked promising to me here was the idea that tapping
+     from random projections can solve *a class of problems*. This might not be
+     charming enough for anyone else, or even me at a different spot in
+     space-time, but anyways, I did a simple comparison and posted the stuff
+     here.

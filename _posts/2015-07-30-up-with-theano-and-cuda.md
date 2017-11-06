@@ -17,12 +17,12 @@ Hopefully, it will help if you haven't found the sweet spot yet.
 
 ## Setting up
 
-Starting with my machine, it is a **Pavilion DV6 7012tx** Laptop with Nvidia
-GeForce GT **630m** card. Right now its running **Windows 10 x64**. If you are
+Starting with my machine, it is a *Pavilion DV6 7012tx* Laptop with Nvidia
+GeForce GT 630m card. Right now its running *Windows 10 x64*. If you are
 already having `cygwin` or `mingw` based `gcc` in place, you might want to
 remove that since our scientific python stack will provide that.
 
-#### 1. Install Visual Studio
+### 1. Install Visual Studio
 
 This is needed to get Nvidia's CUDA compiler (`nvcc`) working. For choosing the
 version, go to the latest
@@ -40,12 +40,12 @@ depending on your Visual Studio version) to `PATH` for theano since we will
 define this explicitly in `.theanorc`, but it is better to do this as many other
 tools might be using it.
 
-#### 2. Install CUDA toolkit
+### 2. Install CUDA toolkit
 
 This should be easy, get the latest CUDA and install it. Keep the samples while
 installing, they are nice for checking if things are working fine.
 
-#### 3. Setup Python
+### 3. Setup Python
 
 This is where most of the trouble is. Its easy to get lost while setting up
 vanilla python for theano specially since you also are setting up `gcc` and
@@ -72,9 +72,9 @@ Once you install Anaconda, install additional dependencies.
 conda install mingw libpython
 ~~~
 
-#### 4. Install theano
+### 4. Install theano
 
-Install theano using `pip install theano` and create a **.theanorc** file in
+Install theano using `pip install theano` and create a `.theanorc` file in
 your `HOME` directory with following contents.
 
 ~~~
@@ -88,9 +88,9 @@ compiler_bindir=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin
 ~~~
 
 Make sure to change the path `C:\Anaconda\libs` according to your Anaconda
-install directory and **compiler_bindir** to the path with `cl.exe` in it.
+install directory and `compiler_bindir` to the path with `cl.exe` in it.
 
-#### 5. Install PyCUDA
+### 5. Install PyCUDA
 
 Best way to install PyCUDA is to get the Unofficial Windows Binaries by
 Christoph Gohlke [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/).
@@ -103,10 +103,7 @@ pip install pipwin
 pipwin install pycuda
 ~~~
 
-#### 6. Testing it out
-
-
-##### Theano
+### 6. Test it out
 
 A very basic test is to simply import theano.
 
@@ -160,10 +157,8 @@ Result is [ 1.23178029  1.61879349  1.52278066 ...,  2.20771813  2.29967761
 Used the gpu
 ~~~
 
-##### PyCUDA
-
-Here is a quick test snippet from the PyCUDA web page
-[here](http://documen.tician.de/pycuda/index.html)
+For PyCUDA, here is a quick test snippet from their [web
+page](http://documen.tician.de/pycuda/index.html)
 
 ~~~ python
 import pycuda.autoinit

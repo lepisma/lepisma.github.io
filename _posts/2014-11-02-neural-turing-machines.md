@@ -6,13 +6,14 @@ summary: A very basic intro to NTMs
 ---
 
 <span class="dropcap">R</span>ecently, DeepMind (Oops !
-[**Google** DeepMind](http://deepmind.com/)) revealed a paper titled *"Neural
-Turing Machines"*. Interesting name.
+[*Google* DeepMind](http://deepmind.com/)) revealed a paper titled '*Neural
+Turing Machines*'. Interesting name.
 
 So, whats the deal here ? Basically, simple Neural Networks follow the following
 steps in their working lifetime :
 
-- **Learning using a given training data**
+- Learning using a given training data
+- Prediction on new data
 
 Suppose the idea is to make an animal image classifier. So, this step involves
 feeding the network with tagged images of various animals so that the network
@@ -22,15 +23,13 @@ can learn what is what.
 <img src="/images/posts/ntm/animals.jpg">
 </figure>
 
-- **Prediction on new data**
-
 After training, we can feed an unknown image to the network and it will spit out
 its name to the best of its knowledge.
 
 So far so good. What if we have a video and want to know whether an animal is
 running or jumping or walking (assuming it can't just stand still) ? If I give
 you an image (a shot from video) of it with its four feet on the ground, can you
-say anything ? Maybe not.
+say anything? Maybe not.
 
 <figure>
 <img src="/images/posts/ntm/horse.jpg">
@@ -38,22 +37,17 @@ say anything ? Maybe not.
 
 We need to know what the animal was doing before this image was captured. If the
 previous image had all its four legs in air, we can, with high probability, say
-that it is jumping, not walking.
+that it is jumping, not walking. We just used our *memory*! If we can somehow
+store the last few sequence of actions, we can understand temporal patterns.
 
-Whoa ! We just used our **memory** ! If we can somehow store the last few
-sequence of actions, we can understand temporal patterns.
-
-And *it is important* ! Just remember how handy the pronouns are, if someone
-says " **Pluto** is not a planet " and then says, " ***It's*** back ! " how
-could you have figured out what **it** is ? By the way, are you listening a song
-right now ?
+And *it is important*. Just remember how handy the pronouns are, if someone says
+"*Pluto* is not a planet" and then says, "*It's* back!" how could you have
+figured out what *it* is? By the way, are you listening a song right now?
 
 > *We understand sequences, not snapshots.*
 
----
-
 Now there already is a kind of network that tries to store states, the
-**Recurrent Neural Networks** (RNN).
+*Recurrent Neural Networks* (RNN).
 
 RNNs have feedback connections to make activation flow in loops (read
 [wikipedia](http://www.wikiwand.com/en/Recurrent_neural_network)). This makes
@@ -74,8 +68,8 @@ it.
 </figure>
 
 In the above image, the controller is the actual neural network and it performs
-read and write on the memory via its read / write *heads*. (This structure
-results in the additional - *Turing Machine*)
+read and write on the memory via its read/write *heads*. (This structure results
+in the additional - '*Turing Machine*')
 
 The network can read and write to the memory by using a weight vector to control
 the amount of *attention* given to a place (content) in memory and is able to
@@ -84,6 +78,6 @@ between the controller (the network) and the memory is beautifully explained in
 the paper itself.
 
 The paper can be found on arXiv [here](http://arxiv.org/abs/1410.5401). It
-contains details on how to do read and write operations on the **external**
-memory from the controller, how the memory addressing works, and also a lot of
+contains details on how to do read and write operations on the *external* memory
+from the controller, how the memory addressing works, and also a lot of
 interesting experimental results using NTM.

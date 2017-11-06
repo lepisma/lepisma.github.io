@@ -31,7 +31,7 @@ From
 >to campaign for arms control and the peaceful, international use of nuclear
 >power after World War II.
 
-**Inspiration** is not a positive word in science, neither is it negative, it is
+*Inspiration* is not a positive word in science, neither is it negative, it is
 neutral and like all other neutral words, it has both use cases. And its not
 unethical to be inspired by a *villain* unless what you do of it is
 *villainous*.
@@ -43,8 +43,8 @@ Formally, a cyborg is
 > a fictional or hypothetical person whose physical abilities are extended
 > beyond normal human limitations by mechanical elements built into the body.
 
-It seems to me, one of the goals of cyborg development is to make **flesh** and
-**metal** interchangeable. Seeing the recent developments, this convergence is
+It seems to me, one of the goals of cyborg development is to make *flesh* and
+*metal* interchangeable. Seeing the recent developments, this convergence is
 bound to happen, at least partially.
 
 <figure>
@@ -56,7 +56,7 @@ biological machines can be imitated using our traditional techniques, involving
 computational unit and actuators.
 
 Also the other way round, traditional machines will be using the goodness of
-biological systems as is visible by this
+biological systems as is visible in this
 [bio-bots](http://news.illinois.edu/news/12/1115bio-bots_RashidBashir.html)
 project. An explanatory video is
 [here](https://www.youtube.com/watch?v=skCzl7FlM34).
@@ -64,7 +64,7 @@ project. An explanatory video is
 ---
 
 Let us take the most amazing sensory unit in any (relatively advanced)
-biological machine, the **vision** unit.
+biological machine, the *vision* unit.
 
 From the classy [LeNet](http://yann.lecun.com/exdb/lenet/), demonstrating the
 power of Convolutional Networks, to
@@ -74,9 +74,9 @@ by Microsoft, your instincts will make you believe that
 *[the Singularity is Near](https://www.goodreads.com/book/show/83518.The_Singularity_is_Near)*.
 
 A noteworthy example here is of Jens Neumann, also referred sometimes as the
-patient **Alpha**. Neumann lost his sight completely, but he got it partially
+patient *Alpha*. Neumann lost his sight completely, but he got it partially
 restored by one of the landmark *cyborgee* experiments involving a camera
-*wired* to the visual cortex of brain (2002, about 12 years ago !). Although
+*wired* to the visual cortex of brain (2002, about 12 years ago!). Although
 this experience was brief for Neumann, but it must have been divine.
 
 <figure>
@@ -86,11 +86,11 @@ this experience was brief for Neumann, but it must have been divine.
 
 The researches in the field of Artificial Vision are important, and positive.
 People are making attempts to understand the brain. Boundary between
-**Neuroscience** and **Artificial Intelligence** is blurring.
+*Neuroscience* and *Artificial Intelligence* is blurring.
 
 But, the study of brain is not without issues.
 Consider the [Roboroach](https://backyardbrains.com/products/roboroach) project.
-In this project, a **Cockroach** is stimulated via the antenna to move left or
+In this project, a *Cockroach* is stimulated via the antenna to move left or
 right as commanded by an app.
 
 <figure>
@@ -100,9 +100,9 @@ right as commanded by an app.
 
 To most of us, there is nothing bad here.
 But here is a nice read.
-The **Ethics**
+The *Ethics*
 [statement](http://wiki.backyardbrains.com/Ethical_Issues_Regarding_Using_Invertebrates_in_Education)
-by **Backyard Brains**, the group behind Roboroach. They are (at current stage)
+by *Backyard Brains*, the group behind Roboroach. They are (at current stage)
 mostly right from my personal point of views. But the page is a must read to
 understand what issues are present when experimenters try to test things on
 biological organisms.
@@ -135,16 +135,16 @@ said that their robot, the
 people were skeptical. When Google acquired 8 robotics companies in 6 months,
 people were skeptical. But wait ! When recently, the Roboroach guys experimented
 with wired Scorpions, here is what I
-[got](http://www.popularmechanics.com/science/health/nueroscience/the-robo-scorpion-is-coming-and-no-one-is-safe-17035113?click=pm_latest).
+[got](http://www.popularmechanics.com/science/health/nueroscience/the-robo-scorpion-is-coming-and-no-one-is-safe-17035113).
 
-> "The Robo-Scorpion is Coming and **No One is Safe**"
+> "The Robo-Scorpion is Coming and No One is Safe"
 
 Without digging specifically here, I believe there are loopholes in science
 journalism. When I was in school, I heard more people talking about a black hole
 that will gulp down the whole Earth, if the
-**[LHC](http://en.wikipedia.org/wiki/Large_Hadron_Collider)** is made to run.
+*[LHC](http://en.wikipedia.org/wiki/Large_Hadron_Collider)* is made to run.
 And only one or two guys actually knew the meaning of *Boson* (hoping that they
-might have come across *Higgs Boson* in the news articles) !
+might have come across *Higgs Boson* in the news articles)!
 
 Some might say that they are not wrong, the journalists, the kids, the common
 people. Its just the *essential* premonition about the future technologies
@@ -154,8 +154,8 @@ of the leftovers in our genes from our ancestors, for whom war had an important
 survival value.
 
 I believe that many times the fault is in the interpretations. There are, and
-will always be people who use technology for *Bad Science*. But, there are
-people who work for the love for science and technology, and even if their
+will always be people who use technology for *bad science*. But, there are
+people who work for the love of science and technology, and even if their
 theories are not for the direct (positive) use by humans or other organisms,
 their intent is.
 
@@ -168,5 +168,5 @@ A.C. Clarke said it rightly
 
 > "It has yet to be proven that intelligence has any survival value."
 
-Intelligence wont take you long, understanding will.
-Until the people are right by heart, there is nothing wrong with cyborgs.
+Intelligence wont take you long, understanding will. As long as the people are
+right by heart, there is nothing wrong with cyborgs.

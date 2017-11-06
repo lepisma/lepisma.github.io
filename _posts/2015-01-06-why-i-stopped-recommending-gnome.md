@@ -31,13 +31,12 @@ After few years, I got inclined to use Linux as my full time OS, and then it all
 began, starting from Ubuntu.
 
 Whenever I try to make my thoughts flexible about things like *respecting others
-opinion*, first thing I say to myself is
-
-> Ubuntu is also good, don't make a biased opinion.
+opinion*, first thing I say to myself is "*Ubuntu is also good, don't make a
+biased opinion*".
 
 But I never got over it. Ubuntu has never worked on my machine for more than ~15
 days (even Arch was stabler). So, I never got my hands on unity much. Then came
-Mint, but *you can't just get off your genes*, and crash cycles again set in.
+Mint, but you can't just get off your genes, and crash cycles again set in.
 After this I just kept hopping over and over,
 
 - Fedora
@@ -96,7 +95,7 @@ crude things, wallpapers, colors etc.
 <figcaption>GNOME</figcaption>
 </figure>
 
-Even though the first face of settings is comparable to KDE's but the **depth**
+Even though the first face of settings is comparable to KDE's but the *depth*
 is where the difference lies.
 
 The ease of modification in KDE (and even Xfce for that matter) is a whole level
@@ -118,6 +117,6 @@ exceptionally beautifully. KDE and Xfce do this equally well.
 
 Its easy to make a command line interface, the symbol of heavy customization
 potential. Equally easy is to go the other side and make a simple and *clean*
-interface with *big buttons*. But only a few realize that there is **not** a
+interface with *big buttons*. But only a few realize that there is *not* a
 trade-off here (at least not as much as people think of). Being a huge fan of
 its UI, I wish GNOME will get over this someday.

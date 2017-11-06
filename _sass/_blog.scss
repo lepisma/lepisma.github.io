@@ -3,6 +3,7 @@
 @import 'commons';
 
 // link style
+aside a,
 figcaption a,
 p a,
 li a {
@@ -118,10 +119,16 @@ header,
   font-weight: normal;
 }
 
-.post-summary {
-  color: $text-light;
+.post-summary, .post-intro {
+  color: $text-medium;
   font-size: 16px;
   font-style: italic;
+}
+
+article .post-intro {
+  font-family: 'et-book';
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .posts .post {
@@ -286,16 +293,6 @@ aside {
     font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
-  }
-
-  a {
-    @include link-underline($code-background, $text-dark);
-    color: $text-dark;
-
-    &:hover {
-      @include link-underline($back-medium, $text-dark);
-      background-color: $back-medium;
-    }
   }
 }
 

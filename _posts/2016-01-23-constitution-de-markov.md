@@ -6,8 +6,8 @@ categories: articles
 ---
 
 <span class="dropcap">R</span>ecently I came across
-[Constitute](https://www.constituteproject.org/) project that provides *"the
-World's Constitutions to read, search, and compare"*. Now, 194 constitutions
+[Constitute](https://www.constituteproject.org/) project that provides '*the
+World's Constitutions to read, search, and compare*'. Now, 194 constitutions
 have enough text to play around with generative text models. That is, to create
 a model of text from the corpus and generate similar data from it.
 
@@ -47,34 +47,22 @@ Oh, and I hold no responsibilities here.
 
 > The Riksdag may, if necessary, be pursued to the highest point of Mt.
 
-<br>
-
 > Article 104, dissolve the House of Assembly or affect the coinage or currency
 > of Pakistan or any part of Samoa and the efficient management of their
 > affairs. Provided that the parties may elect to have their case decided within
 > a reasonable time. Regarding contracts which regulate the status of a county
 > by law.
 
-<br>
-
 > Mining rights, which include minerals, the electromagnetic spectrum and the
 > space located above the national territory.
 
-<br>
-
 > Privacy shall take place before December 31st, 1995.
-
-<br>
 
 > Any person in pre-trial detention has the right to undisturbed relations and
 > cooperation with their compatriots outside the territory of India.
 
-<br>
-
 > The Riigikogu may express no-confidence in the Prime Minister if more than
 > half of all of the entire Nation.
-
-<br>
 
 > The modalities of management and of results, founded on efficiency and
 > effectiveness, economy, equity, opportunity and objectivity, and are
@@ -83,23 +71,15 @@ Oh, and I hold no responsibilities here.
 > interests. Foreign citizens and persons without citizenship shall not enjoy
 > the right to freedom.
 
-<br>
-
 > Children shall care for all government officials, and of the judicial or
 > administrative matters that fall within the territory of the Republic. The
 > Deputies represent the respective territorial entity. The conditions under
 > which the conformation of its member within thirty days from the date of
 > appointment to a Sunday.
 
-<br>
-
 > The Constitution of the people of Iran is Islam.
 
-<br>
-
 > Everyone has a right of farmers and crafters and find marketplaces for them.
-
-<br>
 
 > Unless otherwise provided by an independent budget whose items are handled
 > before Congress in conformity with the leave of absence or from a minimum of
@@ -107,52 +87,36 @@ Oh, and I hold no responsibilities here.
 > freedom of association, or by the President shall submit to it against a
 > determination of an Extradition Act.
 
-<br>
-
 > The law shall come into operation of transportation, in the organic laws and
 > shall keep the President.
-
-<br>
 
 > Commercial activities may be regulated by law, to the authority and support
 > the charitable activities for the current term. Efficient, economic, and
 > Schleswig-Holstein. They shall respect the basic needs of the games and
 > lotteries.
 
-<br>
-
 > Constitutional Province of Lower Canada is hereby recognized. The President
 > for a crime.
-
-<br>
 
 > If a Minister must resign. A non-South Sudanese may acquire title to land,
 > natural disaster.
 
-<br>
-
 > The President shall be held to furnish them to sell products to the
 > Constitution. Provided that licences or permits relating to the Union.
 
-<br>
-
 > Sabotage of the Judicial Power of Parliament; that I will not accept their
 > oath during the period between 2015 and 2020 are inferior to 40%.
-
-<br>
 
 > Copyrights, patents of invention and patent rights shall be dealt with behind
 > closed doors. The Prime Minister shall be twice put in place for despotism,
 > repression, tyranny, heals the wounds of the content of other persons
 > indicated by law to protect it.
 
----
-
 If you want to play around with the data and/or script, head over to the
 repository [here](https://github.com/lepisma/fake-charter). The script uses
 [RiTa](http://rednoise.org/rita) and runs on *node.js*. Try changing the N
 factor (default 3) for creating different N-gram models. A higher value gives
-similar to original results.
+content similar to original text.
 
 And remember
 

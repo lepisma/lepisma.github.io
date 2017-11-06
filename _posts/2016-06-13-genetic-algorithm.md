@@ -20,13 +20,13 @@ Earlier, due to the reducible design, I used to consider Genetic Algorithm (GA) 
 more general technique as compared to many other evolutionary methods. But then,
 this might not be what we mean when we want a generally *applicable* method.
 A simplistic representation embodying the general principle, like
-"**mutation** in population" for population based heuristics, is what I was
+'*mutation* in population' for population based heuristics, is what I was
 looking for instead. GA is, in essence, much more powerful if used in
 specialized setting with knowledge of the problem. I will go over this
 proposition later.
 
 Genetic Algorithm faces a lot of criticism. Criticism from researchers are
-*usually* constructive. For example there has been a lot of 'debate **and** work'
+*usually* constructive. For example there has been a lot of 'debate *and* work'
 on the role of crossover in GAs. But I have also seen the users and learners
 frowning at few of its aspects without going through what it is that GA really
 does.
@@ -110,7 +110,7 @@ nice example. Consider following lisp sexpr:
 ~~~ elisp
 (defun test-function (fn x)
     "Evaluate negative of slope of function at x"
-    (let (dx 0.01)
+    (let ((dx 0.01))
         (* -1
             (/ (-
                 (fn (+ x dx))
@@ -135,7 +135,7 @@ the final output. Consider the numerator chunk.
 
 This generates an important template for good solutions if you want a quantity
 like slope. In GA terminology, this template consisting of some form of fixed
-structure and spaces for variations is called **schema**. This schema has a
+structure and spaces for variations is called *schema*. This schema has a
 fitness associated with it which is the average of fitness of all solutions
 matching this template. For the above template, the fitness is good since most
 of the variations around the template will result in some simple operation on
@@ -199,7 +199,7 @@ of GA
 The problem Skiena is addressing is important. The operators are not intuitive
 at all for general problems and add on the burden of the user. Well, you do get
 good performance than other methods in different cases. But my opinion is to
-*respect* [the full fledged] GA for its help *"in context"* of a certain class of
+*respect* [the full fledged] GA for its help *in context* of a certain class of
 problem, not as a go-to general purpose optimizer (for which you would be better
 started by programming a simple and quick disruptive method).
 
@@ -208,7 +208,7 @@ bit string representation of 3-4 parameters, you might like a form of schemata
 which break the string at the junctions of the numbers for crossovers. Or in
 some cases you might want to group few bits of strings and evolve them
 separately. You can try inspirations from *speciation*. You can create *artificial
-islands*. You can try some weird animal group behaviour. They all are good **if**
+islands*. You can try some weird animal group behaviour. They all are good *if*
 your problem needs them and the effects are reflected in the evolution of
 solutions. Otherwise, they are another set of instances of misjudgment of the
 method.

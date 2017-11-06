@@ -5,13 +5,13 @@ summary: Programming music with Clojure
 category: articles
 ---
 
-> The writer knows **shit** about music composition. So, no questions on chords,
+> The writer knows *shit* about music composition. So, no questions on chords,
 > scales or any other music jargon. Please.
 
 <span class="dropcap">W</span>hen I was younger, I came to know about
 algorithmic (and mathematical) music composition through an awesome piece of
 work by Carl McTague that goes by the name
-[**6 Integers**](http://www.mctague.org/carl/music/computer/pieces/6_integers/).
+[*6 Integers*](http://www.mctague.org/carl/music/computer/pieces/6_integers/).
 
 Don't know what exactly happened at that time, but I started hunting for these
 stuff recently and my searches pointed to a hugely popular tool for real-time
@@ -114,8 +114,8 @@ close to be called good, it does put the power of overtone on show.
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197347055&amp;color=111111&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 <br>
 
-Here is one that uses strings. **The Messenger** by *Linkin Park*. Pretty basic
-chords, but kind of gets things right.
+Here is one that uses strings. *The Messenger* by *Linkin Park*. Pretty basic
+chords, but kind of gets nearby.
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no"
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197342369&amp;color=111111&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
@@ -123,8 +123,6 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/19
 
 Once you start programming music, Its addictive. I don't know if the composition
 means anything to anyone, but it sure is fun to do.
-
----
 
 I didn't mention it before, there are bands that compose using Overtone.
 Do check them out, specially [Meta-eX](http://meta-ex.com/).
