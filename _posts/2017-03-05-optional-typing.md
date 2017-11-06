@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Optional typing
-summary: Experiences with static type checking
 tags: programming python
 ---
+
+<p class="post-intro" markdown="1">
+My experiences with static type checking. More specifically, I try to argue
+how a dynamic typed language can get help from optional (gradual) typing
+using mypy as example.
+</p>
+<!--more-->
 
 <span class="dropcap">I</span> recently
 tried [TypeScript](https://www.typescriptlang.org/) for a project. Essentially,

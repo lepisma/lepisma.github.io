@@ -1,9 +1,14 @@
 ---
 layout: post
 title: Extreme Learning Machines with Julia
-summary: A guide on ELMs using Julia language
 tags: exploration ml
 ---
+
+<p class="post-intro" markdown="1">
+Simple comparison of training time and performance of Extreme Learning Machines
+and regular feed forward network using Julia language.
+</p>
+<!--more-->
 
 <span class="dropcap">W</span>ith the advent of powerful computation techniques,
 there has been increasing interest back in the good old neural networks as major

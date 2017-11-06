@@ -1,9 +1,14 @@
 ---
 layout: post
 title: The Beauty of Syntactical Macros
-summary: On the importance of code as first class citizen
 tags: programming lisp
 ---
+
+<p class="post-intro" markdown="1">
+On the importance of code as first class citizen after my first 'got it' moment
+with a Lisp.
+</p>
+<!--more-->
 
 <span class="dropcap">I</span>f you think about it, most of what we communicate
 can be compiled down to something that is quite *literal*, which is to say that

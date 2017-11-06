@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Computer Programs and Zipf's law
-summary: Zipfian distribution in computer language keywords.
 tags: exploration
 ---
+
+<p class="post-intro" markdown="1">
+Exploration of software projects with large code base looking at keyword
+frequency distributions. Surprisingly (or not so surprisingly) they roughly
+follow the famous Zipfian distribution.
+</p>
+<!--more-->
 
 <span class="dropcap">I</span> was reading a book on genomics named
 *[The Violinist's Thumb](https://www.goodreads.com/book/show/13521382-the-violinist-s-thumb)*

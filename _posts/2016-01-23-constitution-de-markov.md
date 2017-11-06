@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Constitution De Markov
-summary: Nonsense Constitutional Wisdom
+summary: Nonsense Constitutional Wisdom from a markov chain.
 tags: exploration
 ---
 

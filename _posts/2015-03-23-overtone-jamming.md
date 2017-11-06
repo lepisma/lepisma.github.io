@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overtone Jamming
-summary: Programming music with Clojure
+summary: Programming music with Clojure.
 tags: ramble
 ---
 

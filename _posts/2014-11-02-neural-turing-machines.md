@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neural Turing Machines for dummies
-summary: A very basic intro to NTMs
+summary: A very basic intro to NTMs.
 tags: ml
 ---
 

@@ -1,9 +1,16 @@
 ---
 layout: post
 title: Simpler time map plots
-summary: One dimensional qualitative time maps
 tags: exploration
 ---
+
+<p class="post-intro" markdown="1">
+Proposing a one dimensional version of [time
+map](https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales)
+plots which doesn't lose any information displayed in most cases and is cleaner
+to understand.
+</p>
+<!--more-->
 
 <span class="dropcap">B</span>ehavior of time series is tricky to judge from
 simple plots. The process generating the series can have multiple underlying

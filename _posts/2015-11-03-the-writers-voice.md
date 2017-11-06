@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Writers' Voice
-summary: Comparing flow of writing styles with DTW.
 tags: ml exploration
 ---
 
@@ -26,6 +25,12 @@ tags: ml exploration
 }
 
 </style>
+
+<p class="post-intro" markdown="1">
+Exploring a new way to compare storytelling in classics by comparing changing
+signals in a word embedding space using dynamic time warping.
+</p>
+<!--more-->
 
 <span class="dropcap">I</span>f you are a fanatic reader of a particular author,
 you can immediately identify whether a given (unknown) text is written by

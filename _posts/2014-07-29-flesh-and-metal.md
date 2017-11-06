@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flesh and Metal
-summary: Opinion on cyborg developments
+summary: Opinion on cyborg developments.
 tags: ramble
 ---
 

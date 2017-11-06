@@ -1,9 +1,14 @@
 ---
 layout: post
 title: White Rhinos, irrationality and other tales
-summary: Human rationality, and the lack of it.
 tags: ramble skepticism
 ---
+
+<p class="post-intro" markdown="1">
+White rhinos are down to a few just because irrational persuasions are
+effective. Everywhere. Something that might help? Identifying lies.
+</p>
+<!--more-->
 
 <figure>
 <img src="/images/posts/rhino/head.jpg" style="float:right">

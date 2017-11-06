@@ -1,9 +1,15 @@
 ---
 layout: post
 title: What is it that Genetic Algorithm does ?
-summary: When to use Genetic Algorithm
 tags: ml
 ---
+
+<p class="post-intro" markdown="1">
+Genetic Algorithms face a ton of criticism. Rather than being a general purpose
+optimizer, I believe GA is more suited to specific processes with a sensible
+meaning to what evolution means there.
+</p>
+<!--more-->
 
 <span class="dropcap">B</span>eing interested in heuristic optimization methods,
 one thing I notice a lot is *confusion* in the applicability and efficiency of

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ricing up Org mode
+summary: Word processor-ish setup for Emacs Org-mode.
 tags: org-mode emacs ricing ux
 ---
 

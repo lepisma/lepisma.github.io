@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Abusing Evidence: Drought, Deluge and Disregard'
-summary: Gray Scripts of Popular Science Journalism
 tags: ramble skepticism
 ---
 
@@ -23,6 +22,13 @@ tags: ramble skepticism
 }
 
 </style>
+
+<p class="post-intro" markdown="1">
+Three recent events. Each trying to push psuedo-science using different
+approaches. But with a common element of grayness in how they discuss topics
+related to science.
+</p>
+<!--more-->
 
 > Warning: This post contains strong language at places. Its also long.
 

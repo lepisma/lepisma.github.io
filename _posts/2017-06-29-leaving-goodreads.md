@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leaving goodreads
-summary: Better than Good
+summary: Better than Good.
 tags: personal ramble emacs org-mode
 ---
 

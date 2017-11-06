@@ -1,9 +1,15 @@
 ---
 layout: post
 title: Why I Stopped Recommending GNOME
-summary: My experiences with GNOME and other DEs
 tags: ux
 ---
+
+<p class="post-intro" markdown="1">
+Approachability and potential of customization are important parts of a user
+interface. GNOME feels weaker now in this department as compared to other
+desktop environments.
+</p>
+<!--more-->
 
 <span class="dropcap">F</span>edora (12 I guess) was my first Linux distro. I
 didn't use Linux based stuff much back then but the change from the Luna theme
