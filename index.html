@@ -18,7 +18,7 @@ layout: default
         <p class="post-summary">
           {{ post.summary }}
         </p>
-      {% else %}
+      {% elsif post.excerpt %}
         {{ post.excerpt }}
       {% endif %}
     </div>
