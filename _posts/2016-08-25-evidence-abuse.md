@@ -314,7 +314,7 @@ main link came out convinced that they were dealing with science. To put it
 straight, many of us believe that there is no such thing as poor science.
 
 <aside markdown="1">
-Let John Oliver [explain](https://youtu.be/0Rnq1NpHdmw) you what kind of
+Let John Oliver [explain](https://youtu.be/0Rnq1NpHdmw) to you what kind of
 cases I am talking about.
 
 <div class="video-wrapper">
