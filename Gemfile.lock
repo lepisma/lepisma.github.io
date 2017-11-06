@@ -118,6 +118,8 @@ GEM
     jekyll-sitemap (1.1.1)
       jekyll (~> 3.3)
     jekyll-swiss (0.4.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-theme-architect (0.1.0)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -181,6 +183,7 @@ GEM
     net-dns (0.8.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    nuggets (1.5.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.14.0)
@@ -214,6 +217,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate
+  jekyll-tagging
 
 RUBY VERSION
    ruby 2.4.2p198
