@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Computer Programs and Zipf's law
-category: articles
 summary: Zipfian distribution in computer language keywords.
+tags: exploration
 ---
 
 <span class="dropcap">I</span> was reading a book on genomics named

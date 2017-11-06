@@ -2,7 +2,7 @@
 layout: post
 title: Flesh and Metal
 summary: Opinion on cyborg developments
-category: articles
+tags: ramble
 ---
 
 <span class="dropcap">I</span>t isn't long before we get to see

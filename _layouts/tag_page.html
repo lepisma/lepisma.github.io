@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <a href="/archive" class="btn">
+    <i class="archive-back fa fa-angle-double-left" aria-hidden="true"></i>
+    <span class="">{{ page.tag }}</span>
+  </a>
+
+  <div class="archive-container">
+    <ul class="archive-listing">
+      {% for post in page.posts %}
+      <li class="archive-list-item">
+        <div class="archive-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <a href="{{ post.url }}" class="archive-link">
+          <div class="archive-title">{{ post.title }}</div>
+        </a>
+        <div class="post-tags">
+          {{ post | tags | remove: "," }}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

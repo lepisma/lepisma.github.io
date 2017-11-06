@@ -2,7 +2,7 @@
 layout: post
 title: White Rhinos, irrationality and other tales
 summary: Human rationality, and the lack of it.
-categories: articles
+tags: ramble skepticism
 ---
 
 <figure>

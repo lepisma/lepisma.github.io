@@ -2,7 +2,7 @@
 layout: post
 title: Constitution De Markov
 summary: Nonsense Constitutional Wisdom
-categories: articles
+tags: exploration
 ---
 
 <span class="dropcap">R</span>ecently I came across

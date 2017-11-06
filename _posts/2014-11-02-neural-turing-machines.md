@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Neural Turing Machines for dummies
-category: articles
 summary: A very basic intro to NTMs
+tags: ml
 ---
 
 <span class="dropcap">R</span>ecently, DeepMind (Oops !

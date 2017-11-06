@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Ricing up Org mode
-summary: Word processor-ish setup for Org mode
-category: articles
+tags: org-mode emacs ricing ux
 ---
 
 <span class="dropcap">T</span>his is a short post pulling in [my

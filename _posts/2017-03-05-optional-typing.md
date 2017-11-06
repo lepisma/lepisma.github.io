@@ -2,7 +2,7 @@
 layout: post
 title: Optional typing
 summary: Experiences with static type checking
-category: articles
+tags: programming python
 ---
 
 <span class="dropcap">I</span> recently

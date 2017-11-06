@@ -2,7 +2,7 @@
 layout: post
 title: The Beauty of Syntactical Macros
 summary: On the importance of code as first class citizen
-category: articles
+tags: programming lisp
 ---
 
 <span class="dropcap">I</span>f you think about it, most of what we communicate

@@ -2,7 +2,7 @@
 layout: post
 title: 'Abusing Evidence: Drought, Deluge and Disregard'
 summary: Gray Scripts of Popular Science Journalism
-category: articles
+tags: ramble skepticism
 ---
 
 <style>

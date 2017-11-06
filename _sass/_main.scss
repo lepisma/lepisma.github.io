@@ -153,40 +153,6 @@ table {
   color: #333;
 }
 
-.pagination,
-.button {
-  font-style: italic;
-  font-size: 1rem;
-  border-radius: 100px;
-  font-family: serif;
-  font-weight: 300;
-  text-align: center;
-}
-
-.pagination a, .pagination .disabled {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background: #fafafa;
-  border-radius: 0.1875em;
-  border: 1px solid #f3f3f3;
-  color: #333333;
-  padding: 1em 1.5em;
-}
-
-.pagination .disabled {
-  opacity: 0.5;
-}
-
-.pagination a:hover, .pagination a:focus {
-  background: white;
-  color: #477dca;
-}
-
-.pagination a:active {
-  background: #f7f7f7;
-}
-
 .wrap .measure {
   margin: 0 auto;
 }
@@ -200,24 +166,6 @@ table {
   padding: .25em 0;
   color: #7a7a7a;
   font-style: italic;
-}
-
-.pagination .button {
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.button-disabled {
-  opacity: 0.55;
-  background-color: #999;
-}
-
-.button-disabled:hover,
-.button-disabled:active,
-.button-disabled:focus {
-  cursor: not-allowed;
-  background-color: #999;
 }
 
 form {
@@ -430,15 +378,6 @@ h6,
     margin-bottom: .666em;
     padding-bottom: 0;
   }
-}
-
-.share-page {
-  font-size:  0.65em;
-  padding: 2em 0 0 0;
-}
-
-.share-page div {
-  font-size: 1.3em;
 }
 
 footer:after {

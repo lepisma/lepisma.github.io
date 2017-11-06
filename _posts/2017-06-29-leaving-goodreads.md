@@ -2,7 +2,7 @@
 layout: post
 title: Leaving goodreads
 summary: Better than Good
-category: articles
+tags: personal ramble emacs org-mode
 ---
 
 <span class="dropcap">G</span>oodreads feels like a project with a lost focus. I

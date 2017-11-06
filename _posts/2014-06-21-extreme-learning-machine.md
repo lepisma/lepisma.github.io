@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Extreme Learning Machines with Julia
-summary: A guide on ELMs using Julia language.
-categories: articles
+summary: A guide on ELMs using Julia language
+tags: exploration ml
 ---
 
 <span class="dropcap">W</span>ith the advent of powerful computation techniques,

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Firewall Paradox and revisiting the Law of Information
-category: articles
 summary: Firewalls and the horizon of black holes.
+tags: physics
 ---
 
 <span class="dropcap">I</span>t's been another year in the life of our fellow

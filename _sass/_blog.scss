@@ -17,6 +17,14 @@ li a {
   }
 }
 
+.btn {
+  @include button(4px, 14px, 7px);
+}
+
+.btn.disabled {
+  color: $text-light;
+}
+
 // Main column positioning
 @media (min-width: 1000px) {
   .wrap .measure {
@@ -107,33 +115,10 @@ h6 {
   margin-top: 60px;
 }
 
-header,
-.post-title {
-  font-family: 'Merriweather';
-  font-weight: normal;
-}
-
-.post-link .post-title {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.post-summary, .post-intro {
-  color: $text-medium;
-  font-size: 16px;
-  font-style: italic;
-}
-
 article .post-intro {
   font-family: 'et-book';
   font-size: 18px;
   margin-bottom: 40px;
-}
-
-.posts .post {
-  margin-bottom: .75em;
-  padding-bottom: 1.33em;
 }
 
 // Better blockquote
@@ -195,29 +180,6 @@ code {
   color: $code-foreground;
   font-family: 'Fira Mono';
   padding: 0 5px;
-}
-
-// Pagination buttons
-.pagination {
-  font-size: 12px;
-
-  a,
-  .disabled {
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px 20px;
-  }
-
-  a {
-    border-color: $accent;
-    color: $accent;
-
-    &:hover {
-      background: $accent;
-      color: $back-white;
-    }
-  }
 }
 
 // Figure related stuff
@@ -315,12 +277,56 @@ aside {
   background: $accent-dark;
 }
 
-// Blog archive
+// Blog archive and other listings
+header,
+.post-title {
+  font-family: 'Merriweather';
+  font-weight: normal;
+}
+
+.post-link .post-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.post-header {
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .post-tags {
+    margin-bottom: 10px;
+  }
+}
+
+.post-summary, .post-intro {
+  color: $text-medium;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.posts .post {
+  margin-bottom: .75em;
+  padding-bottom: 1.33em;
+
+  .post-date {
+    color: $text-light;
+    font-variant: small-caps;
+    font-size: 16px;
+  }
+}
+
 .archive-container {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .archive-listing {
+  list-style: none;
+}
+
+.archive-list-item {
   margin: 40px 0;
 
   .archive-date {
@@ -330,5 +336,23 @@ aside {
 
   .archive-title {
     font-size: 25px;
+    line-height: 1.2em;
   }
+
+  .post-tags {
+    margin-top: 5px;
+  }
+}
+
+// Tags
+@mixin tag() {
+  @include button(2px, 12px, 4px);
+  font-family: 'Fira Mono';
+  line-height: 2.5em;
+  white-space: nowrap;
+}
+
+.post-tags a,
+#tag-cloud a {
+  @include tag;
 }

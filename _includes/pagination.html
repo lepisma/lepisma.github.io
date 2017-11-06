@@ -2,19 +2,19 @@
   <div class="left">
     {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
-        <a class="pagination-item" href="{{ site.baseurl }}/">Newer</a>
+        <a class="btn" href="{{ site.baseurl }}/"><i class="fa fa-angle-left" aria-hidden="true"></i> Newer</a>
       {% else %}
-        <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.previous_page}}/">Newer</a>
+        <a class="btn" href="{{ site.baseurl }}/page{{paginator.previous_page}}/"><i class="fa fa-angle-left" aria-hidden="true"></i> Newer</a>
       {% endif %}
     {% else %}
-      <span class="pagination-item disabled">Newer</span>
+      <span class="btn disabled"><i class="fa fa-angle-left" aria-hidden="true"></i> Newer</span>
     {% endif %}
   </div>
   <div class="right">
     {% if paginator.next_page %}
-      <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.next_page}}/">Older</a>
+      <a class="btn" href="{{ site.baseurl }}/page{{paginator.next_page}}/">Older <i class="fa fa-angle-right" aria-hidden="true"></i></a>
     {% else %}
-      <span class="pagination-item disabled">Older</span>
+      <span class="btn disabled">Older <i class="fa fa-angle-right" aria-hidden="true"></i></span>
     {% endif %}
   </div>
 </div>

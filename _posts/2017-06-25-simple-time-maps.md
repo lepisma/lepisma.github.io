@@ -2,7 +2,7 @@
 layout: post
 title: Simpler time map plots
 summary: One dimensional qualitative time maps
-category: articles
+tags: exploration
 ---
 
 <span class="dropcap">B</span>ehavior of time series is tricky to judge from

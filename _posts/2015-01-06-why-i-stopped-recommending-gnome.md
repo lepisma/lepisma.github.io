@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Why I Stopped Recommending GNOME
-category: articles
 summary: My experiences with GNOME and other DEs
+tags: ux
 ---
 
 <span class="dropcap">F</span>edora (12 I guess) was my first Linux distro. I

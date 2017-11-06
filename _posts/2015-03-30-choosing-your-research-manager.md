@@ -2,7 +2,7 @@
 layout: post
 title: Choosing your Research Manager
 summary: Review of popular free reference management tools.
-category: articles
+tags: tooling
 ---
 
 <span class="dropcap">I</span>n the beginning you will save PDFs in a folder,

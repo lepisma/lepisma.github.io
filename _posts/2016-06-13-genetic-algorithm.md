@@ -2,7 +2,7 @@
 layout: post
 title: What is it that Genetic Algorithm does ?
 summary: When to use Genetic Algorithm
-category: articles
+tags: ml
 ---
 
 <span class="dropcap">B</span>eing interested in heuristic optimization methods,

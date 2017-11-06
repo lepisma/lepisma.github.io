@@ -2,7 +2,7 @@
 layout: post
 title: Overtone Jamming
 summary: Programming music with Clojure
-category: articles
+tags: ramble
 ---
 
 > The writer knows *shit* about music composition. So, no questions on chords,

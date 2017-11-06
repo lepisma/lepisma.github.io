@@ -2,7 +2,7 @@
 layout: post
 title: Rowing a Steamer
 summary: Mathematics and Computation, as we are taught.
-category: articles
+tags: ramble
 ---
 
 <span class="dropcap">M</span>any of us who do calculus using computers know the

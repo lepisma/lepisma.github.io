@@ -1,8 +1,8 @@
 ---
 layout: post
 title: The Interstellar's Tesseract
-category: articles
 summary: Movie ramble
+tags: ramble
 ---
   
 <span class="dropcap">J</span>ust watched

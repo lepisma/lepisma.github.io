@@ -7,17 +7,20 @@ layout: default
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post">
-      <p class="post-meta small">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
         <h3 class="h2 post-title">{{ post.title }}</h3>
       </a>
-      <p class="post-summary">
-        {% if post.summary %}
-        {{ post.summary }}
-        {% else %}
+      <div class="post-tags">
+        {{ post | tags | remove: "," }}
+      </div>
+      {% if post.summary %}
+        <p class="post-summary">
+          {{ post.summary }}
+        </p>
+      {% else %}
         {{ post.excerpt }}
-        {% endif %}
-      </p>
+      {% endif %}
     </div>
     {% endfor %}
   </div>
