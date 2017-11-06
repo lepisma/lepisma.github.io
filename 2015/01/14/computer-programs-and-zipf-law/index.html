@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Computer Programs and Zipf's law &#8211; abhinav tushar
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Blog">
+  <meta name="author" content="Abhinav Tushar">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="http://localhost:4000/2015/01/14/computer-programs-and-zipf-law/">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/pace.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/blog.css" type="text/css">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/assets/js/pace.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="/assets/js/lightbox.min.js"></script>
+  <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
+  <script src="/assets/js/jquery.textillate.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Computer Programs and Zipf's law">
+  <meta property="og:description" content="Personal Blog">
+  <meta property="og:url" content="http://localhost:4000/2015/01/14/computer-programs-and-zipf-law/">
+  <meta property="og:site_name" content="abhinav tushar">
+
+  <meta name="twitter:url" content="http://localhost:4000/2015/01/14/computer-programs-and-zipf-law/">
+  <meta name="twitter:title" content="Computer Programs and Zipf's law">
+  <meta name="twitter:description" content="Personal Blog">
+
+  <meta itemprop="name" content="Computer Programs and Zipf's law">
+  <meta itemprop="description" content="Personal Blog">
+</head>
+
+  <body>
+    <div class="site-wrap">
+      <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <span class="site-title">
+        <a href="/">
+          <img src="/assets/images/avatar32.png">
+        </a>
+      </span>
+      <nav class="site-nav right">
+        <a href="/">home</a>
+<a href="/feed.xml">feed</a>
+<a href="/archive">archive</a>
+<a href="/about/">about</a>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+          
+
+
+<div class="post-header mb2">
+  <h1>Computer Programs and Zipf's law</h1>
+  <div class="post-tags">
+    <a href="/archive/exploration/" rel="tag">exploration</a>
+  </div>
+  <span class="post-meta small">Jan 14, 2015</span><br>
+  <span class="post-meta small">4 minute read</span>
+</div>
+
+<article class="post-content">
+  <p class="post-intro">
+Exploration of software projects with large code base looking at keyword
+frequency distributions. Surprisingly (or not so surprisingly) they roughly
+follow the famous Zipfian distribution.
+</p>
+<!--more-->
+
+<p><span class="dropcap">I</span> was reading a book on genomics named
+<em><a href="https://www.goodreads.com/book/show/13521382-the-violinist-s-thumb">The Violinist’s Thumb</a></em>
+when I got the idea behind this post. The basic idea of the book is <em>how our
+lives are written by our genetic code</em>. Along with the <em>connectome</em>, I believe
+the idea defines the whole life of an individual.</p>
+
+<p>Meanwhile in the reading, the book showed me a beautiful empirical law. The
+<em>Zipf’s law</em>. When George Kingsley Zipf was playing with classic literary
+works, he discovered a pattern in the frequency distribution of words.</p>
+
+<ul>
+  <li>
+    <p>The <em>second</em> most used word has <em>half</em> the frequency as compared to first
+most frequent word.</p>
+  </li>
+  <li>
+    <p>The <em>third</em> most used word has <em>one third</em> the frequency as compared to
+the first most frequent word and so on. . .</p>
+  </li>
+</ul>
+
+<p>This is Zipf’s law. Now the amazing bit. Since then, the Zipfian (the frequency
+distribution following Zipf’s law) distribution has been seen in music,
+<a href="http://io9.com/the-mysterious-law-that-governs-the-size-of-your-city-1479244159">city population</a>,
+mass extinctions, earthquakes and even DNA.</p>
+
+<p>Originally, the explanation Zipf gave for the phenomenon was the
+<a href="https://en.wikipedia.org/wiki/Principle_of_least_effort">Principle of least effort</a>.
+According to Zipf, the principle governs the transfer of information via the
+path of least effort and this explains the relation between <em>variations</em> and
+<em>repetitions</em>.</p>
+
+<p>Seeing such a pattern in human languages led me to search if this works for
+computer languages. Although I didn’t expect anything, since the structure of
+human and computer languages aren’t exactly same, but I gave it a try. Similar
+to words in human language, I took <em>keywords</em> in computer languages, since
+variable names and other things aren’t as frequent as keywords. Saying that, I
+do realize that this is not exactly the way this should be done, but it should
+work as a crude approximation.</p>
+
+<p>Below are the plots of keyword frequencies (few top keywords) for various
+software projects along with the approx Zipfian distribution. The projects here
+are dominated by (almost) one single language and are large projects as far as
+lines of code are considered, this <em>might</em> be better for finding such patterns.</p>
+
+<h3 id="linux-kernel">Linux kernel</h3>
+
+<p>The language of the project is predominantly C. I ran the frequency analysis for
+C/C++ language keywords.</p>
+
+<figure>
+<a href="/images/posts/zipf/linux.png" data-lightbox="linux"> <img src="/images/posts/zipf/linux.png" /> </a>
+</figure>
+
+<h3 id="freebsd">FreeBSD</h3>
+
+<p>The language again is mostly C/C++, did the same analysis here.</p>
+
+<figure>
+<a href="/images/posts/zipf/bsd.png" data-lightbox="bsd"> <img src="/images/posts/zipf/bsd.png" /> </a>
+</figure>
+
+<h3 id="bootstrap">Bootstrap</h3>
+
+<p>Javascript</p>
+
+<figure>
+<a href="/images/posts/zipf/bootstrap.png" data-lightbox="bootstrap"> <img src="/images/posts/zipf/bootstrap.png" /> </a>
+</figure>
+
+<h3 id="shogun">Shogun</h3>
+
+<p>C++</p>
+
+<figure>
+<a href="/images/posts/zipf/shogun.png" data-lightbox="shogun"> <img src="/images/posts/zipf/shogun.png" /> </a>
+</figure>
+
+<h3 id="opencv">OpenCV</h3>
+
+<p>C++</p>
+
+<figure>
+<a href="/images/posts/zipf/cv.png" data-lightbox="cv"> <img src="/images/posts/zipf/cv.png" /> </a>
+</figure>
+
+<p>Ah! I don’t know if I can declare this, but the distributions look nice. The law
+of least effort or anything else. Although there is high probability that these
+are not representatives of Zipf’s law, but nevertheless, its fun to see
+something like this.</p>
+
+<aside>
+  <div class="aside-title">A note on the script I used</div>
+
+  <p>The script is <a href="https://github.com/lepisma/zipf">here</a> and is just a
+kind-of-works thing. A more rigorous analysis can be done, since the script
+neglected many things.</p>
+</aside>
+
+<p>There are many power laws in nature that tend to line up observations in a
+specific order. Individually, things don’t show up, but on a <em>crowdish</em> scale,
+the patterns begin to emerge, consider population, species, social networks,
+crowd behavior, star clusters, sub atomic particles . . . everywhere.</p>
+
+<p>This feels like toy mathematics, like knot theory, but there are serious
+implications, and there maybe more. Here is an excerpt from the Wikipedia
+article on <a href="http://en.wikipedia.org/wiki/Long_tail">long tail</a></p>
+
+<p><em>“In his Wired article, Chris Anderson cites earlier research [17] by Erik
+Brynjolfsson, Yu (Jeffrey) Hu, and Michael D. Smith, who first used a log-linear
+curve on an XY graph to describe the relationship between Amazon.com sales and
+sales ranking. They found that a large proportion of Amazon.com’s book sales
+come from obscure books that were not available in brick-and-mortar stores. They
+then quantified the potential value of the long tail to consumers. In an article
+published in 2003, these authors showed that, while most of the discussion about
+the value of the Internet to consumers has revolved around lower prices,
+consumer benefit (a.k.a. consumer surplus) from access to increased product
+variety in online book stores is ten times larger than their benefit from access
+to lower prices online. Thus, the primary value of the internet to consumers
+comes from releasing new sources of value by providing access to products in the
+long tail.”</em></p>
+
+<p>Anyway, the exciting thing about living in current time is that we have data.
+Much more than what Zipf had.</p>
+
+</article>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+</footer>
+
+  </body>
+</html>

@@ -3,8 +3,8 @@
   <channel>
     <title>abhinav tushar</title>
     <description>Personal Blog</description>
-    <link>https://lepisma.github.io//</link>
-    <atom:link href="https://lepisma.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Ricing up Org mode</title>
@@ -157,13 +157,20 @@ and image previews (&lt;code class=&quot;highlighter-rouge&quot;&gt;org-image-to
 is the snapshot of my Emacs dotfiles with config related to this post.&lt;/p&gt;
 </description>
         <pubDate>Sat, 28 Oct 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2017/10/28/ricing-org-mode/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/10/28/ricing-org-mode/</guid>
+        <link>http://localhost:4000/2017/10/28/ricing-org-mode/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/28/ricing-org-mode/</guid>
       </item>
     
       <item>
         <title>The point of keyboarding</title>
-        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; recently switched to a tiling window manager and
+        <description>&lt;p class=&quot;post-intro&quot;&gt;
+Asking myself whats important in the keyboard vs mouse debate. Is it really just
+the matter of speed or is it more fundamentally connected to what these devices
+represent? I believe its the cost of attention that matters.
+&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; recently switched to a tiling window manager and
 gave in some more estate to &lt;em&gt;keyboarding&lt;/em&gt;. Not many useful things happen if I
 click around in my desktop now (unless, of course, there is a browser window
 open).&lt;/p&gt;
@@ -365,8 +372,8 @@ potential created by the similarity of inner and outer representation. And its
 this smoothness, rather than speed, which really clicks me.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Aug 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2017/08/25/keyboard/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/08/25/keyboard/</guid>
+        <link>http://localhost:4000/2017/08/25/keyboard/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/25/keyboard/</guid>
       </item>
     
       <item>
@@ -415,13 +422,21 @@ experimenting with it but I believe it would fit right in with my needs and
 would quickly become what I want it to be.&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Jun 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2017/06/29/leaving-goodreads/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/06/29/leaving-goodreads/</guid>
+        <link>http://localhost:4000/2017/06/29/leaving-goodreads/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/29/leaving-goodreads/</guid>
       </item>
     
       <item>
         <title>Simpler time map plots</title>
-        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;B&lt;/span&gt;ehavior of time series is tricky to judge from
+        <description>&lt;p class=&quot;post-intro&quot;&gt;
+Proposing a one dimensional version of &lt;a href=&quot;https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales&quot;&gt;time
+map&lt;/a&gt;
+plots which doesn’t lose any information displayed in most cases and is cleaner
+to understand.
+&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;B&lt;/span&gt;ehavior of time series is tricky to judge from
 simple plots. The process generating the series can have multiple underlying
 mechanics and simple plots make it hard to discern these. Sometime back I read
 about
@@ -576,13 +591,19 @@ time map follows the same idea.&lt;/p&gt;
 &lt;/script&gt;
 </description>
         <pubDate>Sun, 25 Jun 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2017/06/25/simple-time-maps/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/06/25/simple-time-maps/</guid>
+        <link>http://localhost:4000/2017/06/25/simple-time-maps/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/25/simple-time-maps/</guid>
       </item>
     
       <item>
         <title>The Beauty of Syntactical Macros</title>
-        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;f you think about it, most of what we communicate
+        <description>&lt;p class=&quot;post-intro&quot;&gt;
+On the importance of code as first class citizen after my first ‘got it’ moment
+with a Lisp.
+&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt;f you think about it, most of what we communicate
 can be compiled down to something that is quite &lt;em&gt;literal&lt;/em&gt;, which is to say that
 a Hollywood AI robot
 (like &lt;a href=&quot;http://terminator.wikia.com/wiki/T-800_(The_Terminator)&quot;&gt;T-800&lt;/a&gt;) can read
@@ -831,8 +852,8 @@ using/going to use but just pure beauty. Probably it will stay that way for a
 long time.&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 May 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2017/05/15/syntactical-macros/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/05/15/syntactical-macros/</guid>
+        <link>http://localhost:4000/2017/05/15/syntactical-macros/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/15/syntactical-macros/</guid>
       </item>
     
       <item>
@@ -855,7 +876,7 @@ something in the details that touches you. Something that comes after you start
 working on it. An &lt;em&gt;in-chore&lt;/em&gt; challenge that stimulates. Many of these are things
 you do for a living or something that you &lt;em&gt;have to do&lt;/em&gt;. The second type touches you
 directly on a more personal level. All your personal projects which start with a
-“&lt;em&gt;this will be pretty slick&lt;/em&gt;” realizations come here.&lt;/p&gt;
+‘&lt;em&gt;this will be pretty slick&lt;/em&gt;’ realizations come here.&lt;/p&gt;
 
 &lt;p&gt;To start with, the first type tasks usually come with implicit deadlines
 and are usually well structured in the sense that you can take 10 minutes and
@@ -864,7 +885,7 @@ in a direct point of entry, either the deadline, or the concrete plan. The
 second type pulls you in because of its personal appeal.&lt;/p&gt;
 
 &lt;p&gt;As far as turn offs are considered. The first type, being drier to you as a
-whole, just needs a “&lt;em&gt;nothing stimulating left to do&lt;/em&gt;” state. For the second
+whole, just needs a ‘&lt;em&gt;nothing stimulating left to do&lt;/em&gt;’ state. For the second
 one, the appeal gets attenuated and the starting realization starts to look
 meager in magnitude than a &lt;em&gt;newer&lt;/em&gt; idea. Both of these deteriorate the overall
 quality of outcome. In first case its because the work is mostly done near deadline.
@@ -940,13 +961,20 @@ projects under &lt;code class=&quot;highlighter-rouge&quot;&gt;active&lt;/code&g
 &lt;p&gt;This should work better. Probably.&lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Mar 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2017/03/15/projects/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/03/15/projects/</guid>
+        <link>http://localhost:4000/2017/03/15/projects/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/15/projects/</guid>
       </item>
     
       <item>
         <title>Optional typing</title>
-        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; recently
+        <description>&lt;p class=&quot;post-intro&quot;&gt;
+My experiences with static type checking. More specifically, I try to argue
+how a dynamic typed language can get help from optional (gradual) typing
+using mypy as example.
+&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;I&lt;/span&gt; recently
 tried &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; for a project. Essentially,
 it is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Gradual_typing&quot;&gt;gradually typed&lt;/a&gt; superset
 of JavaScript. Originally intended for learning, the switch immediately felt
@@ -1185,13 +1213,20 @@ also
 &lt;a href=&quot;https://www.jetbrains.com/help/pycharm/2016.3/type-hinting-in-pycharm.html&quot;&gt;supports&lt;/a&gt; it.&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Mar 2017 00:00:00 -0500</pubDate>
-        <link>https://lepisma.github.io//articles/2017/03/05/optional-typing/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2017/03/05/optional-typing/</guid>
+        <link>http://localhost:4000/2017/03/05/optional-typing/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/05/optional-typing/</guid>
       </item>
     
       <item>
         <title>Cheap polyglot notebooks</title>
-        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;Studio v1.0
+        <description>&lt;p class=&quot;post-intro&quot;&gt;
+As compared to json based jupyter notebooks, Emacs org-mode provides a much more
+readable and lighter notebook with multiple language support using org-babel.
+Just like RMarkdown, but in Emacs.
+&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;R&lt;/span&gt;Studio v1.0
 is &lt;a href=&quot;https://blog.rstudio.org/2016/11/01/announcing-rstudio-v1-0/&quot;&gt;released&lt;/a&gt;. One
 of the key features is
 the &lt;a href=&quot;http://rmarkdown.rstudio.com/r_notebooks.html&quot;&gt;notebook&lt;/a&gt;. Yes, there is
@@ -1344,7 +1379,7 @@ imaginable. And these integrate deeply with your usual Emacs + Org-mode workflow
 
 &lt;hr /&gt;
 
-&lt;p&gt;Org files are not “the” polyglot notebooks. They don’t solve everything and of
+&lt;p&gt;Org files are not ‘the’ polyglot notebooks. They don’t solve everything and of
 course not everyone uses Emacs. They are limited in many aspects, for example
 visualizations. But they let you do a few things in a &lt;em&gt;notebookish&lt;/em&gt; manner which
 would have been a mess otherwise.&lt;/p&gt;
@@ -1361,8 +1396,8 @@ try these &lt;a href=&quot;https://github.com/dfeich/org-babel-examples&quot;&gt
 the notebook I used.&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 Nov 2016 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2016/11/02/org-babel/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2016/11/02/org-babel/</guid>
+        <link>http://localhost:4000/2016/11/02/org-babel/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/02/org-babel/</guid>
       </item>
     
       <item>
@@ -1385,6 +1420,13 @@ the notebook I used.&lt;/p&gt;
 }
 
 &lt;/style&gt;
+
+&lt;p class=&quot;post-intro&quot;&gt;
+Three recent events. Each trying to push psuedo-science using different
+approaches. But with a common element of grayness in how they discuss topics
+related to science.
+&lt;/p&gt;
+&lt;!--more--&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Warning: This post contains strong language at places. Its also long.&lt;/p&gt;
@@ -1431,7 +1473,6 @@ regularly. So don’t take things here as absolute truths, but opinions of sort.
 &lt;a href=&quot;https://xkcd.com/285/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/wikipedian_protester.png&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/285/&quot;&gt;xkcd - 285&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;One of my relative forwarded the following message to me.&lt;/p&gt;
@@ -1515,13 +1556,12 @@ shackle the chains around us. But we say&lt;/p&gt;
   &lt;p&gt;“Hey kiddo! We simplify things so people get it, get it?”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;simplification&quot;&gt;Simplification.&lt;/h4&gt;
+&lt;h3 id=&quot;simplification&quot;&gt;Simplification.&lt;/h3&gt;
 
 &lt;figure&gt;
 &lt;a href=&quot;https://xkcd.com/547/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/simple.png&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/547/&quot;&gt;xkcd - 547&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;No one can know everything. So we use a few tricks. We learn how to utilize
@@ -1631,13 +1671,12 @@ content creator).&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;evidence&quot;&gt;Evidence&lt;/h4&gt;
+&lt;h3 id=&quot;evidence&quot;&gt;Evidence&lt;/h3&gt;
 
 &lt;figure&gt;
 &lt;a href=&quot;https://xkcd.com/925/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/cell_phones.png&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/925/&quot;&gt;xkcd - 925&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Evidence keeps wild information mutations in check. Its not so much about
@@ -1663,7 +1702,7 @@ Wikipedia since the information provided is complete and absolute? How many
 irrational nostalgic sentiments about healthy life of yesterdays have been
 fueled again? How many people have been convinced that every move we make, is
 against the grand scheme of someone’s God? In my personal experiences with
-people, I can safely say, A Hell Lot!&lt;/p&gt;
+people, I can safely say, a hell lot!&lt;/p&gt;
 
 &lt;h2 id=&quot;2-deluge&quot;&gt;2. Deluge&lt;/h2&gt;
 
@@ -1671,7 +1710,6 @@ people, I can safely say, A Hell Lot!&lt;/p&gt;
 &lt;a href=&quot;https://xkcd.com/906/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/citations.png&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/906/&quot;&gt;xkcd - 906&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;I was recently involved in a facebook discussion about effects of microwave on
@@ -1686,14 +1724,14 @@ at the citations. Also, I can assure you, many adventurous people who opened the
 main link came out convinced that they were dealing with science. To put it
 straight, many of us believe that there is no such thing as poor science.&lt;/p&gt;
 
-&lt;p&gt;Let John Oliver &lt;a href=&quot;https://youtu.be/0Rnq1NpHdmw&quot;&gt;explain&lt;/a&gt; you what kind of
+&lt;aside&gt;
+  &lt;p&gt;Let John Oliver &lt;a href=&quot;https://youtu.be/0Rnq1NpHdmw&quot;&gt;explain&lt;/a&gt; you what kind of
 cases I am talking about.&lt;/p&gt;
 
-&lt;div class=&quot;video-wrapper&quot;&gt;
+  &lt;div class=&quot;video-wrapper&quot;&gt;
 &lt;iframe src=&quot;https://www.youtube.com/embed/0Rnq1NpHdmw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; class=&quot;video-iframe&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;Its different from the first situation. You ask for evidence and the first guy
 will realize the lack and would go on the defensive. This case will throw
@@ -1709,7 +1747,7 @@ articles, everything is helping people to accept science in their daily lives. L
 again, and you can see an almost exuberant insincerity for evidence spilling
 from the mouths of promoters. Of course not all of them.&lt;/p&gt;
 
-&lt;h4 id=&quot;pseudo-science&quot;&gt;Pseudo Science&lt;/h4&gt;
+&lt;h3 id=&quot;pseudo-science&quot;&gt;Pseudo Science&lt;/h3&gt;
 
 &lt;p&gt;Take that microwave oven case. Here is the
 &lt;a href=&quot;http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145&quot;&gt;link&lt;/a&gt;
@@ -1753,7 +1791,6 @@ a pinch of skepticism and the house of cards is destroyed.&lt;/p&gt;
 &lt;a href=&quot;https://xkcd.com/765/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/dilution.png&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/765/&quot;&gt;xkcd - 765&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Consider homeopathy. Something that’s still pretty much established because people
@@ -1808,8 +1845,8 @@ model of their liking.&lt;/p&gt;
 &lt;p&gt;Of course, there are issues when you attack these sources. I already mentioned
 the grayness of these arguments. You will definitely be able to find patches of
 truth in the information provided and will wonder why I am being so diligent
-with my attacks. I don’t need theories with doubtful validity claiming &lt;em&gt;“17 life
-energies from sun that gives you food”&lt;/em&gt; to convince me of Sun’s role. Just a
+with my attacks. I don’t need theories with doubtful validity claiming ‘&lt;em&gt;17 life
+energies from sun that gives you food&lt;/em&gt;’ to convince me of Sun’s role. Just a
 simple reminder of photosynthesis will do.&lt;/p&gt;
 
 &lt;h2 id=&quot;3-disregard&quot;&gt;3. Disregard&lt;/h2&gt;
@@ -1830,7 +1867,7 @@ products in a form &lt;em&gt;they&lt;/em&gt; found better. On the other side, ba
 this hypocrisy that companies regularly employ to sell stuff. Obviously, both
 arguments are good and bad in different ways.&lt;/p&gt;
 
-&lt;p&gt;Anyways, I see this message promoting two things&lt;/p&gt;
+&lt;p&gt;Anyway, I see this message promoting two things&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -1870,7 +1907,6 @@ about evidence, because they are talking much above these petty issues.&lt;/p&gt
 &lt;a href=&quot;https://xkcd.com/154/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/beliefs.jpg&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/154/&quot;&gt;xkcd - 154&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Advertisements do this all the time. They look for what sells and target
@@ -1897,7 +1933,7 @@ weird set of priorities. Because your product decisions don’t tie to and creat
 identity. Because a demagogue can’t yell a battle cry, right or wrong, and take
 control of your life decisions.&lt;/p&gt;
 
-&lt;h4 id=&quot;cults&quot;&gt;Cults&lt;/h4&gt;
+&lt;h3 id=&quot;cults&quot;&gt;Cults&lt;/h3&gt;
 
 &lt;p&gt;I have absolutely no problem with product promotion based on actual quality.
 But, we know a few entities that tend to differ here. I saw a roadside banner
@@ -1924,7 +1960,6 @@ would have happened if they had to popularize their ideas before 1920s).&lt;/p&g
 &lt;a href=&quot;https://xkcd.com/1102/&quot;&gt;
 &lt;img src=&quot;/images/posts/evidence/fastest_growing.png&quot; /&gt;
 &lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/1102/&quot;&gt;xkcd - 1102&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Cults like these feed on your personal prejudices. You might be a properly
@@ -1963,6 +1998,16 @@ before making decisions.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
+&lt;aside&gt;
+  &lt;p&gt;Another comic to balance the amount of text. Thanks &lt;a href=&quot;https://www.xkcd.com&quot;&gt;xkcd&lt;/a&gt;
+for making our lives easier.&lt;/p&gt;
+
+  &lt;figure&gt;
+&lt;a href=&quot;https://xkcd.com/882/&quot;&gt;
+&lt;img src=&quot;/images/posts/evidence/significant.png&quot; /&gt;
+&lt;/a&gt;
+&lt;/figure&gt;
+&lt;/aside&gt;
 
 &lt;p&gt;Call me paranoid with &lt;a href=&quot;https://xkcd.com/386/&quot;&gt;SIWOTI syndrome&lt;/a&gt;. I am over
 touching everything. Maybe I live among jerks and am butthurt. Maybe I just have
@@ -2000,32 +2045,27 @@ just because you are too lazy and want to be spoon fed by some know-it-all? Or
 maybe its all meaningless and you already are in a cult with mechanisms for
 redemption in place.&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;Another comic to balance the amount of text. Thanks &lt;a href=&quot;https://www.xkcd.com&quot;&gt;xkcd&lt;/a&gt;
-for making our lives easier.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/882/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/significant.png&quot; /&gt;
-&lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/882/&quot;&gt;xkcd - 882&lt;/a&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
 &lt;h5 id=&quot;edits&quot;&gt;Edits&lt;/h5&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Changed &lt;em&gt;evidences&lt;/em&gt; to &lt;em&gt;evidence&lt;/em&gt;. Thanks &lt;a href=&quot;https://m.facebook.com/rushil.nagda&quot;&gt;Rushil Nagda&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Changed ‘evidences’ to ‘evidence’. Thanks Rushil Nagda.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Thu, 25 Aug 2016 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2016/08/25/evidence-abuse/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2016/08/25/evidence-abuse/</guid>
+        <link>http://localhost:4000/2016/08/25/evidence-abuse/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/08/25/evidence-abuse/</guid>
       </item>
     
       <item>
         <title>What is it that Genetic Algorithm does ?</title>
-        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;B&lt;/span&gt;eing interested in heuristic optimization methods,
+        <description>&lt;p class=&quot;post-intro&quot;&gt;
+Genetic Algorithms face a ton of criticism. Rather than being a general purpose
+optimizer, I believe GA is more suited to specific processes with a sensible
+meaning to what evolution means there.
+&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;B&lt;/span&gt;eing interested in heuristic optimization methods,
 one thing I notice a lot is &lt;em&gt;confusion&lt;/em&gt; in the applicability and efficiency of
 the methods. Mind you, I am not expert enough to resolve the doubts, but have an
 opinion which might help in &lt;em&gt;‘some’&lt;/em&gt; situations. Ask around for methods to do
@@ -2040,13 +2080,13 @@ third glance and they are different again!&lt;/p&gt;
 more general technique as compared to many other evolutionary methods. But then,
 this might not be what we mean when we want a generally &lt;em&gt;applicable&lt;/em&gt; method.
 A simplistic representation embodying the general principle, like
-“&lt;strong&gt;mutation&lt;/strong&gt; in population” for population based heuristics, is what I was
+‘&lt;em&gt;mutation&lt;/em&gt; in population’ for population based heuristics, is what I was
 looking for instead. GA is, in essence, much more powerful if used in
 specialized setting with knowledge of the problem. I will go over this
 proposition later.&lt;/p&gt;
 
 &lt;p&gt;Genetic Algorithm faces a lot of criticism. Criticism from researchers are
-&lt;em&gt;usually&lt;/em&gt; constructive. For example there has been a lot of ‘debate &lt;strong&gt;and&lt;/strong&gt; work’
+&lt;em&gt;usually&lt;/em&gt; constructive. For example there has been a lot of ‘debate &lt;em&gt;and&lt;/em&gt; work’
 on the role of crossover in GAs. But I have also seen the users and learners
 frowning at few of its aspects without going through what it is that GA really
 does.&lt;/p&gt;
@@ -2133,7 +2173,7 @@ nice example. Consider following lisp sexpr:&lt;/p&gt;
 
 &lt;div class=&quot;language-elisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defun&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;test-function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;s&quot;&gt;&quot;Evaluate negative of slope of function at x&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;-1&lt;/span&gt;
             &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt;
                 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
@@ -2159,7 +2199,7 @@ the final output. Consider the numerator chunk.&lt;/p&gt;
 
 &lt;p&gt;This generates an important template for good solutions if you want a quantity
 like slope. In GA terminology, this template consisting of some form of fixed
-structure and spaces for variations is called &lt;strong&gt;schema&lt;/strong&gt;. This schema has a
+structure and spaces for variations is called &lt;em&gt;schema&lt;/em&gt;. This schema has a
 fitness associated with it which is the average of fitness of all solutions
 matching this template. For the above template, the fitness is good since most
 of the variations around the template will result in some simple operation on
@@ -2225,7 +2265,7 @@ level of complexity between you and your problem.&lt;/p&gt;
 &lt;p&gt;The problem Skiena is addressing is important. The operators are not intuitive
 at all for general problems and add on the burden of the user. Well, you do get
 good performance than other methods in different cases. But my opinion is to
-&lt;em&gt;respect&lt;/em&gt; [the full fledged] GA for its help &lt;em&gt;“in context”&lt;/em&gt; of a certain class of
+&lt;em&gt;respect&lt;/em&gt; [the full fledged] GA for its help &lt;em&gt;in context&lt;/em&gt; of a certain class of
 problem, not as a go-to general purpose optimizer (for which you would be better
 started by programming a simple and quick disruptive method).&lt;/p&gt;
 
@@ -2234,14 +2274,14 @@ bit string representation of 3-4 parameters, you might like a form of schemata
 which break the string at the junctions of the numbers for crossovers. Or in
 some cases you might want to group few bits of strings and evolve them
 separately. You can try inspirations from &lt;em&gt;speciation&lt;/em&gt;. You can create &lt;em&gt;artificial
-islands&lt;/em&gt;. You can try some weird animal group behaviour. They all are good &lt;strong&gt;if&lt;/strong&gt;
+islands&lt;/em&gt;. You can try some weird animal group behaviour. They all are good &lt;em&gt;if&lt;/em&gt;
 your problem needs them and the effects are reflected in the evolution of
 solutions. Otherwise, they are another set of instances of misjudgment of the
 method.&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Jun 2016 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//articles/2016/06/13/genetic-algorithm/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//articles/2016/06/13/genetic-algorithm/</guid>
+        <link>http://localhost:4000/2016/06/13/genetic-algorithm/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/13/genetic-algorithm/</guid>
       </item>
     
   </channel>

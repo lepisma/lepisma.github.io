@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Neural Turing Machines for dummies &#8211; abhinav tushar
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A very basic intro to NTMs.">
+  <meta name="author" content="Abhinav Tushar">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="http://localhost:4000/2014/11/02/neural-turing-machines/">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/pace.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/blog.css" type="text/css">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/assets/js/pace.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="/assets/js/lightbox.min.js"></script>
+  <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
+  <script src="/assets/js/jquery.textillate.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Neural Turing Machines for dummies">
+  <meta property="og:description" content="Personal Blog">
+  <meta property="og:url" content="http://localhost:4000/2014/11/02/neural-turing-machines/">
+  <meta property="og:site_name" content="abhinav tushar">
+
+  <meta name="twitter:url" content="http://localhost:4000/2014/11/02/neural-turing-machines/">
+  <meta name="twitter:title" content="Neural Turing Machines for dummies">
+  <meta name="twitter:description" content="Personal Blog">
+
+  <meta itemprop="name" content="Neural Turing Machines for dummies">
+  <meta itemprop="description" content="Personal Blog">
+</head>
+
+  <body>
+    <div class="site-wrap">
+      <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <span class="site-title">
+        <a href="/">
+          <img src="/assets/images/avatar32.png">
+        </a>
+      </span>
+      <nav class="site-nav right">
+        <a href="/">home</a>
+<a href="/feed.xml">feed</a>
+<a href="/archive">archive</a>
+<a href="/about/">about</a>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+          
+
+
+<div class="post-header mb2">
+  <h1>Neural Turing Machines for dummies</h1>
+  <div class="post-tags">
+    <a href="/archive/ml/" rel="tag">ml</a>
+  </div>
+  <span class="post-meta small">Nov 2, 2014</span><br>
+  <span class="post-meta small">3 minute read</span>
+</div>
+
+<article class="post-content">
+  <p><span class="dropcap">R</span>ecently, DeepMind (Oops !
+<a href="http://deepmind.com/"><em>Google</em> DeepMind</a>) revealed a paper titled ‘<em>Neural
+Turing Machines</em>’. Interesting name.</p>
+
+<p>So, whats the deal here ? Basically, simple Neural Networks follow the following
+steps in their working lifetime :</p>
+
+<ul>
+  <li>Learning using a given training data</li>
+  <li>Prediction on new data</li>
+</ul>
+
+<p>Suppose the idea is to make an animal image classifier. So, this step involves
+feeding the network with tagged images of various animals so that the network
+can learn what is what.</p>
+
+<figure>
+<img src="/images/posts/ntm/animals.jpg" />
+</figure>
+
+<p>After training, we can feed an unknown image to the network and it will spit out
+its name to the best of its knowledge.</p>
+
+<p>So far so good. What if we have a video and want to know whether an animal is
+running or jumping or walking (assuming it can’t just stand still) ? If I give
+you an image (a shot from video) of it with its four feet on the ground, can you
+say anything? Maybe not.</p>
+
+<figure>
+<img src="/images/posts/ntm/horse.jpg" />
+</figure>
+
+<p>We need to know what the animal was doing before this image was captured. If the
+previous image had all its four legs in air, we can, with high probability, say
+that it is jumping, not walking. We just used our <em>memory</em>! If we can somehow
+store the last few sequence of actions, we can understand temporal patterns.</p>
+
+<p>And <em>it is important</em>. Just remember how handy the pronouns are, if someone says
+“<em>Pluto</em> is not a planet” and then says, “<em>It’s</em> back!” how could you have
+figured out what <em>it</em> is? By the way, are you listening a song right now?</p>
+
+<blockquote>
+  <p><em>We understand sequences, not snapshots.</em></p>
+</blockquote>
+
+<p>Now there already is a kind of network that tries to store states, the
+<em>Recurrent Neural Networks</em> (RNN).</p>
+
+<p>RNNs have feedback connections to make activation flow in loops (read
+<a href="http://www.wikiwand.com/en/Recurrent_neural_network">wikipedia</a>). This makes
+the system form a memory representation for current state of the network. Now
+the output of the network depends on current input as well as previous inputs
+which are helping the network to attain a state value. This helps it to be used
+in places where there are memory uses in understanding patterns.</p>
+
+<h2 id="ntm">NTM</h2>
+
+<p>A Neural Turing Machine (NTM) also tries to form a memory system, but it
+actually creates a separate memory outside the network (amazingly simple
+structure to look at), and the network does <em>read</em> and  <em>write</em> operations on
+it.</p>
+
+<figure>
+<img src="/images/posts/ntm/ntm.png" />
+</figure>
+
+<p>In the above image, the controller is the actual neural network and it performs
+read and write on the memory via its read/write <em>heads</em>. (This structure results
+in the additional - ‘<em>Turing Machine</em>’)</p>
+
+<p>The network can read and write to the memory by using a weight vector to control
+the amount of <em>attention</em> given to a place (content) in memory and is able to
+perform tasks of temporal nature. The exact method of implementing the interface
+between the controller (the network) and the memory is beautifully explained in
+the paper itself.</p>
+
+<p>The paper can be found on arXiv <a href="http://arxiv.org/abs/1410.5401">here</a>. It
+contains details on how to do read and write operations on the <em>external</em> memory
+from the controller, how the memory addressing works, and also a lot of
+interesting experimental results using NTM.</p>
+
+</article>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+</footer>
+
+  </body>
+</html>
