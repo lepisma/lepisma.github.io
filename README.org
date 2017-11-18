@@ -2,13 +2,13 @@
 
 Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.github.io][blog]].
 
+#+name: push
 #+BEGIN_SRC bash :exports none :results none
-# Push source to source
 git push
 #+END_SRC
 
+#+name: deploy
 #+BEGIN_SRC bash :exports none :results none
-# Deploy
 bundle exec jekyll build
 ./deploy.sh
 #+END_SRC
