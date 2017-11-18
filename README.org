@@ -8,7 +8,7 @@ git push
 #+END_SRC
 
 #+name: deploy
-#+BEGIN_SRC bash :exports none :results none
+#+BEGIN_SRC bash :exports none :results none :async
 bundle exec jekyll build
 ./deploy.sh
 #+END_SRC
