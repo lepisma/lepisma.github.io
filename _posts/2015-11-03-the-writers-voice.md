@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Writers' Voice
-tags: ml exploration
+tags: ml exploration viz
 ---
 
 <script src="https://d3js.org/d3.v3.min.js"></script>

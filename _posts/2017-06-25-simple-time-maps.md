@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simpler time map plots
-tags: exploration
+tags: exploration viz
 ---
 
 <p class="post-intro" markdown="1">
