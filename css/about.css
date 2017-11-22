@@ -85,18 +85,18 @@ a {
       font-size: 30px;
       margin-bottom: 20px; }
     #main-content .section .section-text {
-      color: #333;
+      color: #222;
       font-family: 'et-book';
       font-size: 18px; }
       #main-content .section .section-text img {
         width: 100%; }
       #main-content .section .section-text a {
         text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
-        background-image: linear-gradient(#333, #333);
+        background-image: linear-gradient(#222, #222);
         background-size: 1px 1px;
         background-repeat: repeat-x;
         background-position: 0% 95%;
-        color: #333;
+        color: #222;
         text-decoration: none;
         border-radius: 2px; }
         #main-content .section .section-text a::selection {
@@ -110,15 +110,15 @@ a {
         #main-content .section .section-text a *:before, #main-content .section .section-text a:before {
           text-shadow: none; }
         #main-content .section .section-text a:visited {
-          color: #333; }
+          color: #222; }
         #main-content .section .section-text a:hover {
           background-color: #efefef;
           text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
-          background-image: linear-gradient(#333, #333);
+          background-image: linear-gradient(#222, #222);
           background-size: 1px 1px;
           background-repeat: repeat-x;
           background-position: 0% 95%;
-          color: #333;
+          color: #222;
           text-decoration: none; }
           #main-content .section .section-text a:hover::selection {
             text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
@@ -131,7 +131,7 @@ a {
           #main-content .section .section-text a:hover *:before, #main-content .section .section-text a:hover:before {
             text-shadow: none; }
           #main-content .section .section-text a:hover:visited {
-            color: #333; }
+            color: #222; }
 
 footer {
   background-color: #efefef;

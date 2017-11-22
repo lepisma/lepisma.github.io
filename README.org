@@ -2,13 +2,16 @@
 
 Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.github.io][blog]].
 
-#+name: push
+#+name: om-push
 #+BEGIN_SRC bash :exports none :results none
 git push
 #+END_SRC
 
-#+name: deploy
+#+name: om-deploy
 #+BEGIN_SRC bash :exports none :results none :async
 bundle exec jekyll build
 ./deploy.sh
 #+END_SRC
+
+#+RESULTS: om-deploy
+: 9e866fea7bc35dd01cd9ae7bbc44836d
