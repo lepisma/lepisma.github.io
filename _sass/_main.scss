@@ -50,7 +50,7 @@ body {
 }
 
 .site-header a {
-  color: #333;
+  color: #222;
   font-weight: 300;
 }
 
@@ -101,14 +101,14 @@ table {
         padding: 12px;
         line-height: 1.2;
         vertical-align: top;
-        border-top: 1px solid #333;
+        border-top: 1px solid #222;
       }
     }
   }
   // Bottom align for column headings
   > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #222;
   }
   // Remove top border from thead by default
   > caption + thead,
@@ -123,7 +123,7 @@ table {
   }
   // Account for multiple tbody instances
   > tbody + tbody {
-    border-top: 2px solid #333;
+    border-top: 2px solid #222;
   }
 }
 
@@ -150,7 +150,7 @@ table {
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: #333;
+  color: #222;
 }
 
 .wrap .measure {
@@ -179,7 +179,7 @@ textarea.input {
 p {
   font-weight: 300;
   line-height: 1.5;
-  color: #333;
+  color: #222;
 }
 
 abbr {
@@ -282,14 +282,14 @@ h6,
   }
 
   .posts .post {
-    margin-bottom: 1.333em;
+    margin-bottom: 1.222em;
     padding-bottom: 0.666em;
     border-bottom: thin solid #f3f3f3;
   }
 
   .posts .post:last-child {
     border-bottom: none;
-    margin-bottom: .333em;
+    margin-bottom: .222em;
     padding-bottom: 0;
   }
 }
@@ -334,7 +334,7 @@ h6,
     float: left;
     text-align: center;
     margin-top: 0.666em;
-    margin-bottom: 1.333em;
+    margin-bottom: 1.222em;
   }
 }
 
@@ -369,7 +369,7 @@ h6,
 
   .posts .post {
     margin-bottom: 2.666em;
-    padding-bottom: 1.333em;
+    padding-bottom: 1.222em;
     border-bottom: thin solid #f3f3f3;
   }
 
