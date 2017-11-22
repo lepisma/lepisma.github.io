@@ -242,14 +242,6 @@ aside {
     background: $code-background;
   }
 
-  &::before {
-    content: 'aside';
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-variant: small-caps;
-    letter-spacing: 3px;
-  }
-
   .aside-title {
     font-family: 'et-book';
     font-size: 20px;
