@@ -1,6 +1,6 @@
 # Site settings
 title: abhinav tushar
-email: https://spamty.eu/mail/v4/523/4tWg0Jz3Naf7d0b78b/
+email: https://lepisma.github.io/about#contact
 author: Abhinav Tushar
 description: Personal Blog
 baseurl: ""
@@ -9,7 +9,6 @@ url: https://lepisma.github.io/
 links:
   github: https://github.com/lepisma
   lastfm: https://last.fm/user/AbhinavTushar
-  protonmail: https://spamty.eu/mail/v4/524/MsKhLU2xUJb042f97f/
   keybase: https://keybase.io/lepisma
 
 # Build settings
