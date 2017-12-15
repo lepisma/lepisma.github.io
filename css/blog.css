@@ -936,7 +936,7 @@ footer:after {
 /* Style */
 .highlight {
   color: #2c3e50;
-  background-color: #ecf0f1; }
+  background-color: #efefef; }
 
 .highlight .c {
   color: #7f8c8d; }
@@ -1394,7 +1394,7 @@ hr {
     padding: 0; }
 
 code {
-  background: #ecf0f1;
+  background: #efefef;
   border-radius: 5px;
   color: #2c3e50;
   font-family: 'Fira Mono';
@@ -1429,7 +1429,7 @@ table {
     border-top: 0; }
 
 aside {
-  background-color: #ecf0f1;
+  background-color: #efefef;
   border-radius: 5px;
   font-size: 14px;
   margin: 20px 0;
@@ -1441,7 +1441,7 @@ aside {
     font-family: 'Fira Mono';
     font-size: 12px;
     overflow-x: auto;
-    background: #ecf0f1; }
+    background: #efefef; }
   aside .aside-title {
     font-family: 'et-book';
     font-size: 20px;

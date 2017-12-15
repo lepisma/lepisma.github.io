@@ -76,7 +76,7 @@ a {
       padding-top: 50px; }
       #main-content .section .section-media img {
         width: 100%; }
-      @media (max-width: 550px) {
+      @media (max-width: 720px) {
         #main-content .section .section-media img {
           display: none; } }
     #main-content .section .section-title {
@@ -132,6 +132,15 @@ a {
             text-shadow: none; }
           #main-content .section .section-text a:hover:visited {
             color: #222; }
+
+.highlight {
+  background-color: #efefef;
+  border-radius: 5px;
+  font-family: 'Fira Mono';
+  font-size: 14px;
+  line-height: 22px;
+  overflow-x: auto;
+  padding: 10px; }
 
 footer {
   background-color: #efefef;
