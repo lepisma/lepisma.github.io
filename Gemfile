@@ -2,5 +2,9 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "github-pages"
-gem "jekyll-paginate"
-gem "jekyll-tagging"
+
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-tagging"
+  gem 'jekyll-livereload'
+end

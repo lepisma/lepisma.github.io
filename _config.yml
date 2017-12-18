@@ -12,6 +12,7 @@ links:
   keybase: https://keybase.io/lepisma
 
 # Build settings
+livereload: true
 markdown: kramdown
 permalink: pretty
 paginate: 5
