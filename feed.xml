@@ -14,16 +14,16 @@ languages with varying paradigms. As of now, I have attempted the days
 (problems) &lt;a href=&quot;https://github.com/lepisma/advent-of-code&quot;&gt;intermittently&lt;/a&gt; and have
 not been changing languages that often too, mostly employing Common Lisp. One
 side effect of that has been a chance to have a deeper look into the CL’s
-package ecosystem. Coming to the Lisp side from Emacs Lisp, I like having nifty
-packages.&lt;/p&gt;
+package ecosystem.&lt;/p&gt;
 
-&lt;p&gt;On first sight, you will notice that a lot of Common Lisp packages are old.
-Really old. It feels like you don’t have a lot of options. I actually started a
-github project for collecting various handy macros/functions I use (or have
-seen) in Emacs Lisp, Racket, Clojure etc. In the process, what I found was that
-many of these are already present in CL. They are just spread out over lots of
-packages (with lot of duplication). An interesting set of Lisp macros that I
-have recently started to like is one that provides shortcuts for expressing λ
+&lt;p&gt;Coming to the Lisp side from Emacs Lisp, I like having nifty packages. On first
+sight, you will notice that a lot of Common Lisp packages are old. Really old.
+It feels like you don’t have a lot of options. I actually started a github
+project for collecting various handy macros/functions I use (or have seen) in
+Emacs Lisp, Racket, Clojure etc. In the process, what I found was that many of
+these are already present in CL. They are just spread out over lots of packages
+(with lot of duplication). An interesting set of Lisp macros that I have
+recently started to like is one that provides shortcuts for expressing λ
 functions. In this post, I try to knot up the options in Common Lisp for these
 little beauties.&lt;/p&gt;
 
