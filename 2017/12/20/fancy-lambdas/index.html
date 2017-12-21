@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Fancy Little Lisp λs &#8211; abhinav tushar
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exploring sugared λ functions in Common Lisp">
+  <meta name="author" content="Abhinav Tushar">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="https://lepisma.github.io//2017/12/20/fancy-lambdas/">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/pace.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/lightbox.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/blog.css" type="text/css">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/assets/js/pace.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="/assets/js/lightbox.min.js"></script>
+  <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
+  <script src="/assets/js/jquery.textillate.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Fancy Little Lisp λs">
+  <meta property="og:description" content="Personal Blog">
+  <meta property="og:url" content="https://lepisma.github.io//2017/12/20/fancy-lambdas/">
+  <meta property="og:site_name" content="abhinav tushar">
+
+  <meta name="twitter:url" content="https://lepisma.github.io//2017/12/20/fancy-lambdas/">
+  <meta name="twitter:title" content="Fancy Little Lisp λs">
+  <meta name="twitter:description" content="Personal Blog">
+
+  <meta itemprop="name" content="Fancy Little Lisp λs">
+  <meta itemprop="description" content="Personal Blog">
+</head>
+
+  <body>
+    <div class="site-wrap">
+      <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <span class="site-title">
+        <a href="/">
+          <img src="/assets/images/avatar32.png">
+        </a>
+      </span>
+      <nav class="site-nav right">
+        <a href="/">home</a>
+<a href="/feed.xml">feed</a>
+<a href="/archive">archive</a>
+<a href="/about/">about</a>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+          
+
+
+<div class="post-header mb2">
+  <h1>Fancy Little Lisp λs</h1>
+  <div class="post-tags">
+    <a href="/archive/lisp/" rel="tag">lisp</a> <a href="/archive/programming/" rel="tag">programming</a>
+  </div>
+  <span class="post-meta small">Dec 20, 2017</span><br>
+  <span class="post-meta small">11 minute read</span>
+</div>
+
+<article class="post-content">
+  <p><span class="dropcap">T</span>his year, I am trying to get my hands on <a href="https://adventofcode.com/">Advent
+of Code</a>. One of my aims is to try out programming
+languages with varying paradigms. As of now, I have attempted the days
+(problems) <a href="https://github.com/lepisma/advent-of-code">intermittently</a> and have
+not been changing languages that often too, mostly employing Common Lisp. One
+side effect of that has been a chance to have a deeper look into the CL’s
+package ecosystem. Coming to the Lisp side from Emacs Lisp, I like having nifty
+packages.</p>
+
+<p>On first sight, you will notice that a lot of Common Lisp packages are old.
+Really old. It feels like you don’t have a lot of options. I actually started a
+github project for collecting various handy macros/functions I use (or have
+seen) in Emacs Lisp, Racket, Clojure etc. In the process, what I found was that
+many of these are already present in CL. They are just spread out over lots of
+packages (with lot of duplication). An interesting set of Lisp macros that I
+have recently started to like is one that provides shortcuts for expressing λ
+functions. In this post, I try to knot up the options in Common Lisp for these
+little beauties.</p>
+
+<hr />
+
+<p>Working in Lisp (or any language with functional inclinations) makes you use a
+lot of partially applied functions. Consider a list of numbers that you want to
+increment by 1. In Common Lisp this would be something like:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="nv">n</span><span class="p">))</span> <span class="o">'</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">lambda</code> in the middle really is just creating a partially applied version
+of the function <code class="highlighter-rouge">#'+</code> with the first argument set to 1. Now, writing this much
+code (<code class="highlighter-rouge">(lambda (n) (+ 1 n))</code>) for a simple function can get really boring. In
+this specific case, since we already have a unary function <code class="highlighter-rouge">#'1+</code>, we can get
+rid of the boilerplate like this:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">mapcar</span> <span class="nf">#'</span><span class="nb">1+</span> <span class="o">'</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>But, in general, you need to use the full <code class="highlighter-rouge">lambda</code> form. Some Lisps, like
+<a href="https://hylang.org">hy</a> provide a shorter name like <code class="highlighter-rouge">fn</code> which is neat, but
+given that we have macros in hand there can be much cleaner solutions.</p>
+
+<h2 id="cut">Cut</h2>
+
+<p>One of the solutions I first came across is the <code class="highlighter-rouge">-cut</code> macro in Emacs Lisp from
+<a href="https://github.com/magnars/dash.el#-cut-rest-params">dash.el</a>. This has its
+origin in <a href="https://srfi.schemers.org/srfi-26/srfi-26.html">SRFI-26</a> where a one
+line description says <em>Notation for Specializing Parameters without Currying</em>.</p>
+
+<aside>
+  <div class="aside-title">
+Currying
+</div>
+  <p>Currying is a process of converting an <em>n-ary</em> function into a chain of
+<em>unary</em> ones. This is different from what <em>cut</em>’s specification says. Cut
+returns a single new function with arbitrary positions filled in. Currying
+returns a chain which can then be applied sequentially to arguments. Here is an
+example of what currying does in <a href="https://racket-lang.org/">Racket</a>:</p>
+
+  <div class="language-racket highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">expt</span> <span class="mi">2</span> <span class="mi">5</span><span class="p">)</span>
+<span class="c1">;; 32</span>
+
+<span class="p">(</span><span class="nf">curry</span> <span class="nv">expt</span><span class="p">)</span>
+<span class="c1">;; #&lt;procedure:curried&gt;</span>
+
+<span class="p">((</span><span class="nf">curry</span> <span class="nv">expt</span><span class="p">)</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1">;; #&lt;procedure:curried&gt;</span>
+
+<span class="p">(((</span><span class="nf">curry</span> <span class="nv">expt</span><span class="p">)</span> <span class="mi">2</span><span class="p">)</span> <span class="mi">5</span><span class="p">)</span>
+<span class="c1">;; 32</span>
+</code></pre>
+  </div>
+</aside>
+
+<p>In Common Lisp we have <a href="http://quickdocs.org/cl-cut/">cl-cut</a> which follows
+Scheme’s cut specification more completely (as compared to dash in elisp). If
+you want to (say) replace <code class="highlighter-rouge">?</code> with <code class="highlighter-rouge">!</code> in a list of strings, a cut based
+solution would be:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; cut is from cl-cut</span>
+<span class="c1">;; replace-all is from cl-strings</span>
+<span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="nv">cut</span> <span class="nv">replace-all</span> <span class="nv">&lt;&gt;</span> <span class="s">"?"</span> <span class="s">"!"</span><span class="p">)</span> <span class="nv">items</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Compare that with the full λ version:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">s</span><span class="p">)</span> <span class="p">(</span><span class="nv">replace-all</span> <span class="nv">s</span> <span class="s">"?"</span> <span class="s">"!"</span><span class="p">))</span> <span class="nv">items</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Not a lot different, but why complicate things if there are shorter ways? Just
+like in functions, anonymity in arguments helps when the effective <em>name</em> is
+clear from context. Cut also allows expressing multiple arguments and λs with
+<code class="highlighter-rouge">&amp;rest</code>:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; Replace ? with different string in different items</span>
+<span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="nv">cut</span> <span class="nv">replace-all</span> <span class="nv">&lt;&gt;</span> <span class="s">"?"</span> <span class="nv">&lt;&gt;</span><span class="p">)</span> <span class="nv">items</span> <span class="nv">replacements</span><span class="p">)</span>
+
+<span class="c1">;; Taken from http://quickdocs.org/cl-cut/</span>
+<span class="p">(</span><span class="nv">cut</span> <span class="nb">list</span> <span class="mi">1</span> <span class="nv">&lt;&gt;</span> <span class="mi">3</span> <span class="nv">&lt;...&gt;</span><span class="p">)</span>
+<span class="c1">;; is equivalent to the following</span>
+<span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">x2</span> <span class="k">&amp;rest</span> <span class="nv">xs</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">apply</span> <span class="nf">#'</span><span class="nb">list</span> <span class="mi">1</span> <span class="nv">x2</span> <span class="mi">3</span> <span class="nv">xs</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>One decision made in cut is to only allow <code class="highlighter-rouge">&lt;&gt;</code> in flat positions, i.e. the
+placeholder <code class="highlighter-rouge">&lt;&gt;</code> can not be hidden inside parentheses like in the following case:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; This doesn't work</span>
+<span class="p">(</span><span class="nb">funcall</span> <span class="p">(</span><span class="nv">cut</span> <span class="nb">+</span> <span class="mi">2</span> <span class="p">(</span><span class="nb">*</span> <span class="nv">&lt;&gt;</span> <span class="mi">3</span><span class="p">))</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">;; &lt;&gt; inside lists are not detected while generating the argument list</span>
+<span class="c1">;; (macroexpand '(cut + 2 (* &lt;&gt; 3))) gives</span>
+<span class="p">(</span><span class="k">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">2</span> <span class="p">(</span><span class="nb">*</span> <span class="nv">&lt;&gt;</span> <span class="mi">3</span><span class="p">)))</span>
+</code></pre>
+</div>
+
+<p>Sometimes this nesting is needed. For example, if you are converting a list of
+temperature given in °F to °C, you might want to be able to write something like:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="nv">cut</span> <span class="nb">*</span> <span class="p">(</span><span class="nb">/</span> <span class="mi">5</span> <span class="mi">9</span><span class="p">)</span> <span class="p">(</span><span class="nb">-</span> <span class="nv">&lt;&gt;</span> <span class="mi">32</span><span class="p">))</span> <span class="nv">temperatures</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>If you need only unary functions, a simple solution is to make an anaphoric
+version of λ which captures <code class="highlighter-rouge">&lt;&gt;</code>:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">acut</span> <span class="p">(</span><span class="k">&amp;rest</span> <span class="nv">body</span><span class="p">)</span>
+  <span class="o">`</span><span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">&lt;&gt;</span><span class="p">)</span> <span class="o">,</span><span class="nv">body</span><span class="p">))</span>
+
+<span class="c1">;; This works now</span>
+<span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="nv">acut</span> <span class="nb">*</span> <span class="p">(</span><span class="nb">/</span> <span class="mi">5</span> <span class="mi">9</span><span class="p">)</span> <span class="p">(</span><span class="nb">-</span> <span class="nv">&lt;&gt;</span> <span class="mi">32</span><span class="p">))</span> <span class="nv">temperatures</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h2 id="xi">Xi</h2>
+
+<p>This is another fancy way of creating λs that I came to know from
+<a href="https://hylang.org">hy</a>. Although its name is going to be changed in <a href="https://github.com/hylang/hy/blob/862732ff2a96b811d9b1f077843cd89bb1049099/hy/extra/anaphoric.hy#L114">a
+while</a>,
+according to <a href="http://docs.hylang.org/en/stable/extra/anaphoric.html#xi">current stable
+docs</a>, its usage is
+like this:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; (require [hy.extra.anaphoric [*]])</span>
+<span class="p">(</span><span class="nv">xi</span> <span class="nb">-</span> <span class="nv">x1</span> <span class="nv">x2</span><span class="p">)</span>
+<span class="c1">;; This is equivalent to</span>
+<span class="p">(</span><span class="nv">fn</span> <span class="nv">[x1</span> <span class="nv">x2]</span> <span class="p">(</span><span class="nb">-</span> <span class="nv">x1</span> <span class="nv">x2</span><span class="p">))</span> <span class="c1">; Not that `lambda` is called `fn` in Hy</span>
+</code></pre>
+</div>
+
+<p>The important thing to notice is that <code class="highlighter-rouge">xi</code> supports positional arguments (and
+also nesting) by using the number in the placeholders <code class="highlighter-rouge">x1</code>, <code class="highlighter-rouge">x2</code> etc. For
+example, consider the following snippet:</p>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; Hy</span>
+<span class="p">((</span><span class="nv">xi</span> <span class="nb">-</span> <span class="p">(</span><span class="nb">+</span> <span class="nv">x1</span> <span class="nv">x2</span><span class="p">)</span> <span class="nv">x3</span><span class="p">)</span> <span class="mi">2</span> <span class="mi">5</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">;; -3</span>
+<span class="p">((</span><span class="nv">xi</span> <span class="nb">-</span> <span class="p">(</span><span class="nb">+</span> <span class="nv">x2</span> <span class="nv">x3</span><span class="p">)</span> <span class="nv">x1</span><span class="p">)</span> <span class="mi">2</span> <span class="mi">5</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">;; 13</span>
+</code></pre>
+</div>
+
+<p>Xi really is inspired by Clojure’s <a href="https://clojure.org/guides/learn/functions#_anonymous_functions">anonymous function
+syntax</a> which
+is pretty powerful:</p>
+
+<div class="language-clojure highlighter-rouge"><pre class="highlight"><code><span class="o">#</span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="n">%</span><span class="p">)</span><span class="w">         </span><span class="c1">;; % acts similar to &lt;&gt; in cut
+</span><span class="o">#</span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">%1</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">%3</span><span class="w"> </span><span class="n">%2</span><span class="p">))</span><span class="w"> </span><span class="c1">;; We have nesting and positional arguments (%i)
+</span><span class="o">#</span><span class="p">(</span><span class="nf">some-fun</span><span class="w"> </span><span class="n">%</span><span class="w"> </span><span class="n">%</span><span class="o">&amp;</span><span class="p">)</span><span class="w">  </span><span class="c1">;; We have &amp;rest (as %&amp;) too
+</span></code></pre>
+</div>
+
+<p>Closest looking syntax for this in Common Lisp (at least from what I found out)
+is of the <code class="highlighter-rouge">#L</code> reader macro from
+<a href="https://common-lisp.net/project/bese/docs/arnesi/html/api/function_005FIT.BESE.ARNESI_003A_003ASHARPL-READER.html">arnesi</a>
+and <code class="highlighter-rouge">^</code> macro from
+<a href="https://github.com/cl21/cl21/blob/master/doc/Reader_Macros.markdown#-3">CL21</a>.
+Using <code class="highlighter-rouge">#L</code>, the above examples in clojure translates to the following Common
+Lisp code</p>
+
+<aside>
+  <div class="aside-title">
+arnesi
+</div>
+  <p>Arnesi is not recommended for use though. The <a href="http://quickdocs.org/arnesi/">version on
+quicklisp</a> is an unmaintained fork and suggests
+switching to newer libraries.</p>
+</aside>
+
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; Need to enable sharp-l reader macro</span>
+<span class="c1">;; (arnesi:enable-sharp-l-syntax)</span>
+<span class="err">#</span><span class="nv">L</span><span class="p">(</span><span class="nb">+</span> <span class="mi">10</span> <span class="nv">!1</span><span class="p">)</span>         <span class="c1">;; !i for position i</span>
+<span class="err">#</span><span class="nv">L</span><span class="p">(</span><span class="nb">-</span> <span class="nv">!1</span> <span class="p">(</span><span class="nb">+</span> <span class="nv">!3</span> <span class="nv">!2</span><span class="p">))</span>
+                    <span class="c1">;; No &amp;rest arguments here</span>
+</code></pre>
+</div>
+
+<p>In CL21, you have:</p>
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="nv">^</span><span class="p">(</span><span class="nb">+</span> <span class="mi">10</span> <span class="nv">%</span><span class="p">)</span>
+<span class="nv">^</span><span class="p">(</span><span class="nb">-</span> <span class="nv">%1</span> <span class="p">(</span><span class="nb">+</span> <span class="nv">%3</span> <span class="nv">%2</span><span class="p">))</span>
+                    <span class="c1">;; Don't know if &amp;rest is supported yet</span>
+</code></pre>
+</div>
+
+<p>Another option is
+<a href="http://quickdocs.org/positional-lambda/">positional-lambda</a> where Clojure’s
+examples go like the following:</p>
+<div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nv">plambda</span> <span class="p">(</span><span class="nb">+</span> <span class="mi">10</span> <span class="ss">:1</span><span class="p">))</span>            <span class="c1">;; :i for position i</span>
+<span class="p">(</span><span class="nv">plambda</span> <span class="p">(</span><span class="nb">-</span> <span class="ss">:1</span> <span class="p">(</span><span class="nb">+</span> <span class="ss">:3</span> <span class="ss">:2</span><span class="p">)))</span>
+<span class="p">(</span><span class="nv">plambda</span> <span class="p">(</span><span class="nv">some-fun</span> <span class="ss">:1</span> <span class="ss">:rest</span><span class="p">))</span>  <span class="c1">;; &amp;rest is supported</span>
+</code></pre>
+</div>
+
+<hr />
+
+<p>Although using complicated λs signals that you better reconsider your decision
+of <em>not</em> creating dedicated functions, these fancier variants are pretty useful.</p>
+
+<p>Here is a listing of Common Lisp packages mentioned in this post and some other
+which are similar in the sense that they allow creating/manipulating functions:</p>
+
+<ul>
+  <li>
+    <p><a href="http://quickdocs.org/cl-cut/">cl-cut</a> for <code class="highlighter-rouge">cut</code> (and <code class="highlighter-rouge">cute</code>) syntax from
+<a href="https://srfi.schemers.org/srfi-26/srfi-26.html">SRFI-26</a></p>
+
+    <p><a href="http://quickdocs.org/cl-cut/"><img src="http://quickdocs.org/badge/cl-cut.svg" alt="quickdocs-cl-cut" /></a></p>
+  </li>
+  <li>
+    <p><a href="http://quickdocs.org/arnesi/">arnesi</a> for the <code class="highlighter-rouge">#L</code> reader macro.</p>
+
+    <p><a href="http://quickdocs.org/arnesi/"><img src="http://quickdocs.org/badge/arnesi.svg" alt="quickdocs-arnesi" /></a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/cl21/cl21">CL21</a> for the <code class="highlighter-rouge">^</code> macro. Not on quicklisp main
+repos but can be installed using ql. Instructions on project’s page.</p>
+  </li>
+  <li>
+    <p><a href="http://quickdocs.org/positional-lambda/">positional-lambda</a> for <code class="highlighter-rouge">plambda</code>
+macro.</p>
+
+    <p><a href="http://quickdocs.org/positional-lambda/"><img src="http://quickdocs.org/badge/positional-lambda.svg" alt="quickdocs-positional-lambda" /></a></p>
+  </li>
+  <li>
+    <p>There is also <code class="highlighter-rouge">#`-reader</code> in <a href="https://github.com/vseloved/rutils">rutils</a>
+providing Clojure-ish but slightly limited shorthands</p>
+
+    <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="err">#</span><span class="o">`</span><span class="p">(</span><span class="nb">+</span> <span class="mi">2</span> <span class="nv">%</span><span class="p">)</span> <span class="c1">; =&gt; (lambda (&amp;optional x y) (+ 2 x)) </span>
+<span class="err">#</span><span class="o">`</span><span class="p">((</span><span class="nb">print</span> <span class="nv">%</span><span class="p">)</span> <span class="p">(</span><span class="nb">1+</span> <span class="nv">%</span><span class="p">))</span> <span class="c1">; =&gt; (lambda (&amp;optional x) (print x) (1+ x))</span>
+<span class="err">#</span><span class="o">`</span><span class="p">(</span><span class="nb">+</span> <span class="nv">%</span> <span class="nv">%%</span><span class="p">)</span> <span class="c1">; =&gt; (lambda (&amp;optional x y) (+ x y)) </span>
+</code></pre>
+    </div>
+
+    <p><a href="http://quickdocs.org/rutils/"><img src="http://quickdocs.org/badge/rutils.svg" alt="quickdocs-rutils" /></a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/cbaggers/fn">fn</a> provides another set of shorthands for
+λs. Examples from github page:</p>
+
+    <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nv">fn*</span> <span class="p">(</span><span class="nb">subseq</span> <span class="nv">_@</span> <span class="mi">0</span> <span class="mi">2</span><span class="p">))</span> <span class="c1">; =&gt;  (lambda (&amp;rest _@) (subseq _@ 0 2))</span>
+<span class="c1">;; with reader macros for fn* forms too</span>
+<span class="err">λ</span><span class="p">(</span><span class="nb">+</span> <span class="nv">_</span> <span class="nv">_1</span><span class="p">)</span> <span class="c1">; =&gt;  (lambda (_ _1) (+ _ _1))</span>
+</code></pre>
+    </div>
+
+    <p><a href="http://quickdocs.org/fn/"><img src="http://quickdocs.org/badge/fn.svg" alt="quickdocs-fn" /></a></p>
+  </li>
+  <li>
+    <p><a href="https://eschulte.github.io/curry-compose-reader-macros/">curry-compose-reader-macros</a>
+provides shorthand reader macros for currying and composing functions. A few
+examples from the github page:</p>
+
+    <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="c1">;; partial application `curry'</span>
+<span class="p">(</span><span class="nb">mapcar</span> <span class="nv">{+</span> <span class="nv">1}</span> <span class="o">'</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">))</span> <span class="c1">; =&gt; (2 3 4 5)</span>
+<span class="c1">;; function composition</span>
+<span class="p">(</span><span class="nb">mapcar</span> <span class="nv">[#</span><span class="ss">'list</span> <span class="nv">{*</span> <span class="nv">2}]</span> <span class="o">'</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">))</span> <span class="c1">; =&gt; ((2) (4) (6) (8))</span>
+<span class="c1">;; function split and join</span>
+<span class="p">(</span><span class="nb">mapcar</span> <span class="err">«</span><span class="nb">list</span> <span class="nv">{*</span> <span class="nv">2}</span> <span class="nv">{*</span> <span class="nv">3}</span><span class="err">»</span> <span class="o">'</span><span class="p">(</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">))</span> <span class="c1">; =&gt; ((2 3) (4 6) (6 9) (8 12))</span>
+</code></pre>
+    </div>
+
+    <p><a href="http://quickdocs.org/curry-compose-reader-macros/"><img src="http://quickdocs.org/badge/curry-compose-reader-macros.svg" alt="quickdocs-curry-compose-reader-macros" /></a></p>
+  </li>
+  <li>
+    <p><a href="http://www.cliki.net/curly">curly</a> has two reader macros for currying and
+composition. Examples from homepage</p>
+
+    <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="ss">'[foo</span> <span class="nv">bar</span> <span class="nb">*</span> <span class="nv">baz]</span> <span class="c1">; =&gt; (lambda (#:g2709) (foo bar #:g2709 baz))</span>
+
+<span class="ss">'{foo</span> <span class="p">(</span><span class="nv">bar</span> <span class="mi">16</span><span class="p">)</span> <span class="p">(</span><span class="nv">baz</span> <span class="mi">23</span> <span class="nb">*</span> <span class="mi">42</span><span class="p">)</span> <span class="nv">quux}</span>
+<span class="c1">;; =&gt; (lambda (#:g2724) (foo (bar 16 (baz 23 (quux #:g2724) 42)))</span>
+</code></pre>
+    </div>
+
+    <p><a href="http://quickdocs.org/curly/"><img src="http://quickdocs.org/badge/curly.svg" alt="quickdocs-curly" /></a></p>
+  </li>
+</ul>
+
+</article>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+</footer>
+
+  </body>
+</html>

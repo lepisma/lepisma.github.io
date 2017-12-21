@@ -7,6 +7,313 @@
     <atom:link href="https://lepisma.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Fancy Little Lisp λs</title>
+        <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;his year, I am trying to get my hands on &lt;a href=&quot;https://adventofcode.com/&quot;&gt;Advent
+of Code&lt;/a&gt;. One of my aims is to try out programming
+languages with varying paradigms. As of now, I have attempted the days
+(problems) &lt;a href=&quot;https://github.com/lepisma/advent-of-code&quot;&gt;intermittently&lt;/a&gt; and have
+not been changing languages that often too, mostly employing Common Lisp. One
+side effect of that has been a chance to have a deeper look into the CL’s
+package ecosystem. Coming to the Lisp side from Emacs Lisp, I like having nifty
+packages.&lt;/p&gt;
+
+&lt;p&gt;On first sight, you will notice that a lot of Common Lisp packages are old.
+Really old. It feels like you don’t have a lot of options. I actually started a
+github project for collecting various handy macros/functions I use (or have
+seen) in Emacs Lisp, Racket, Clojure etc. In the process, what I found was that
+many of these are already present in CL. They are just spread out over lots of
+packages (with lot of duplication). An interesting set of Lisp macros that I
+have recently started to like is one that provides shortcuts for expressing λ
+functions. In this post, I try to knot up the options in Common Lisp for these
+little beauties.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Working in Lisp (or any language with functional inclinations) makes you use a
+lot of partially applied functions. Consider a list of numbers that you want to
+increment by 1. In Common Lisp this would be something like:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;lambda&lt;/code&gt; in the middle really is just creating a partially applied version
+of the function &lt;code class=&quot;highlighter-rouge&quot;&gt;#'+&lt;/code&gt; with the first argument set to 1. Now, writing this much
+code (&lt;code class=&quot;highlighter-rouge&quot;&gt;(lambda (n) (+ 1 n))&lt;/code&gt;) for a simple function can get really boring. In
+this specific case, since we already have a unary function &lt;code class=&quot;highlighter-rouge&quot;&gt;#'1+&lt;/code&gt;, we can get
+rid of the boilerplate like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;1+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But, in general, you need to use the full &lt;code class=&quot;highlighter-rouge&quot;&gt;lambda&lt;/code&gt; form. Some Lisps, like
+&lt;a href=&quot;https://hylang.org&quot;&gt;hy&lt;/a&gt; provide a shorter name like &lt;code class=&quot;highlighter-rouge&quot;&gt;fn&lt;/code&gt; which is neat, but
+given that we have macros in hand there can be much cleaner solutions.&lt;/p&gt;
+
+&lt;h2 id=&quot;cut&quot;&gt;Cut&lt;/h2&gt;
+
+&lt;p&gt;One of the solutions I first came across is the &lt;code class=&quot;highlighter-rouge&quot;&gt;-cut&lt;/code&gt; macro in Emacs Lisp from
+&lt;a href=&quot;https://github.com/magnars/dash.el#-cut-rest-params&quot;&gt;dash.el&lt;/a&gt;. This has its
+origin in &lt;a href=&quot;https://srfi.schemers.org/srfi-26/srfi-26.html&quot;&gt;SRFI-26&lt;/a&gt; where a one
+line description says &lt;em&gt;Notation for Specializing Parameters without Currying&lt;/em&gt;.&lt;/p&gt;
+
+&lt;aside&gt;
+  &lt;div class=&quot;aside-title&quot;&gt;
+Currying
+&lt;/div&gt;
+  &lt;p&gt;Currying is a process of converting an &lt;em&gt;n-ary&lt;/em&gt; function into a chain of
+&lt;em&gt;unary&lt;/em&gt; ones. This is different from what &lt;em&gt;cut&lt;/em&gt;’s specification says. Cut
+returns a single new function with arbitrary positions filled in. Currying
+returns a chain which can then be applied sequentially to arguments. Here is an
+example of what currying does in &lt;a href=&quot;https://racket-lang.org/&quot;&gt;Racket&lt;/a&gt;:&lt;/p&gt;
+
+  &lt;div class=&quot;language-racket highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;expt&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; 32&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;curry&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;expt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; #&amp;lt;procedure:curried&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;curry&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;expt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; #&amp;lt;procedure:curried&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;curry&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;expt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; 32&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;In Common Lisp we have &lt;a href=&quot;http://quickdocs.org/cl-cut/&quot;&gt;cl-cut&lt;/a&gt; which follows
+Scheme’s cut specification more completely (as compared to dash in elisp). If
+you want to (say) replace &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; in a list of strings, a cut based
+solution would be:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; cut is from cl-cut&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; replace-all is from cl-strings&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;replace-all&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;?&quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Compare that with the full λ version:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;replace-all&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;?&quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Not a lot different, but why complicate things if there are shorter ways? Just
+like in functions, anonymity in arguments helps when the effective &lt;em&gt;name&lt;/em&gt; is
+clear from context. Cut also allows expressing multiple arguments and λs with
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;rest&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; Replace ? with different string in different items&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;replace-all&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;?&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;replacements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;;; Taken from http://quickdocs.org/cl-cut/&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;...&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; is equivalent to the following&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;rest&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;xs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;xs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One decision made in cut is to only allow &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;gt;&lt;/code&gt; in flat positions, i.e. the
+placeholder &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;gt;&lt;/code&gt; can not be hidden inside parentheses like in the following case:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; This doesn't work&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;funcall&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;;; &amp;lt;&amp;gt; inside lists are not detected while generating the argument list&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; (macroexpand '(cut + 2 (* &amp;lt;&amp;gt; 3))) gives&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sometimes this nesting is needed. For example, if you are converting a list of
+temperature given in °F to °C, you might want to be able to write something like:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;temperatures&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you need only unary functions, a simple solution is to make an anaphoric
+version of λ which captures &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defmacro&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;acut&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;&amp;amp;rest&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;;; This works now&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;acut&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;temperatures&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;xi&quot;&gt;Xi&lt;/h2&gt;
+
+&lt;p&gt;This is another fancy way of creating λs that I came to know from
+&lt;a href=&quot;https://hylang.org&quot;&gt;hy&lt;/a&gt;. Although its name is going to be changed in &lt;a href=&quot;https://github.com/hylang/hy/blob/862732ff2a96b811d9b1f077843cd89bb1049099/hy/extra/anaphoric.hy#L114&quot;&gt;a
+while&lt;/a&gt;,
+according to &lt;a href=&quot;http://docs.hylang.org/en/stable/extra/anaphoric.html#xi&quot;&gt;current stable
+docs&lt;/a&gt;, its usage is
+like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; (require [hy.extra.anaphoric [*]])&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;xi&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; This is equivalent to&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;[x1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x2]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; Not that `lambda` is called `fn` in Hy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The important thing to notice is that &lt;code class=&quot;highlighter-rouge&quot;&gt;xi&lt;/code&gt; supports positional arguments (and
+also nesting) by using the number in the placeholders &lt;code class=&quot;highlighter-rouge&quot;&gt;x1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;x2&lt;/code&gt; etc. For
+example, consider the following snippet:&lt;/p&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; Hy&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;xi&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;;; -3&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;xi&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x2&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;;; 13&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Xi really is inspired by Clojure’s &lt;a href=&quot;https://clojure.org/guides/learn/functions#_anonymous_functions&quot;&gt;anonymous function
+syntax&lt;/a&gt; which
+is pretty powerful:&lt;/p&gt;
+
+&lt;div class=&quot;language-clojure highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;         &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;;; % acts similar to &amp;lt;&amp;gt; in cut
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;;; We have nesting and positional arguments (%i)
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;some-fun&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;;; We have &amp;amp;rest (as %&amp;amp;) too
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Closest looking syntax for this in Common Lisp (at least from what I found out)
+is of the &lt;code class=&quot;highlighter-rouge&quot;&gt;#L&lt;/code&gt; reader macro from
+&lt;a href=&quot;https://common-lisp.net/project/bese/docs/arnesi/html/api/function_005FIT.BESE.ARNESI_003A_003ASHARPL-READER.html&quot;&gt;arnesi&lt;/a&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; macro from
+&lt;a href=&quot;https://github.com/cl21/cl21/blob/master/doc/Reader_Macros.markdown#-3&quot;&gt;CL21&lt;/a&gt;.
+Using &lt;code class=&quot;highlighter-rouge&quot;&gt;#L&lt;/code&gt;, the above examples in clojure translates to the following Common
+Lisp code&lt;/p&gt;
+
+&lt;aside&gt;
+  &lt;div class=&quot;aside-title&quot;&gt;
+arnesi
+&lt;/div&gt;
+  &lt;p&gt;Arnesi is not recommended for use though. The &lt;a href=&quot;http://quickdocs.org/arnesi/&quot;&gt;version on
+quicklisp&lt;/a&gt; is an unmaintained fork and suggests
+switching to newer libraries.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; Need to enable sharp-l reader macro&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; (arnesi:enable-sharp-l-syntax)&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;!1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;;; !i for position i&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;!1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;!3&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;!2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+                    &lt;span class=&quot;c1&quot;&gt;;; No &amp;amp;rest arguments here&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In CL21, you have:&lt;/p&gt;
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%3&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+                    &lt;span class=&quot;c1&quot;&gt;;; Don't know if &amp;amp;rest is supported yet&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Another option is
+&lt;a href=&quot;http://quickdocs.org/positional-lambda/&quot;&gt;positional-lambda&lt;/a&gt; where Clojure’s
+examples go like the following:&lt;/p&gt;
+&lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;plambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;;; :i for position i&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;plambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:3&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;plambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;some-fun&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:1&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:rest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;;; &amp;amp;rest is supported&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Although using complicated λs signals that you better reconsider your decision
+of &lt;em&gt;not&lt;/em&gt; creating dedicated functions, these fancier variants are pretty useful.&lt;/p&gt;
+
+&lt;p&gt;Here is a listing of Common Lisp packages mentioned in this post and some other
+which are similar in the sense that they allow creating/manipulating functions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/cl-cut/&quot;&gt;cl-cut&lt;/a&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;cut&lt;/code&gt; (and &lt;code class=&quot;highlighter-rouge&quot;&gt;cute&lt;/code&gt;) syntax from
+&lt;a href=&quot;https://srfi.schemers.org/srfi-26/srfi-26.html&quot;&gt;SRFI-26&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/cl-cut/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/cl-cut.svg&quot; alt=&quot;quickdocs-cl-cut&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/arnesi/&quot;&gt;arnesi&lt;/a&gt; for the &lt;code class=&quot;highlighter-rouge&quot;&gt;#L&lt;/code&gt; reader macro.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/arnesi/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/arnesi.svg&quot; alt=&quot;quickdocs-arnesi&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/cl21/cl21&quot;&gt;CL21&lt;/a&gt; for the &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; macro. Not on quicklisp main
+repos but can be installed using ql. Instructions on project’s page.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/positional-lambda/&quot;&gt;positional-lambda&lt;/a&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;plambda&lt;/code&gt;
+macro.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/positional-lambda/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/positional-lambda.svg&quot; alt=&quot;quickdocs-positional-lambda&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There is also &lt;code class=&quot;highlighter-rouge&quot;&gt;#`-reader&lt;/code&gt; in &lt;a href=&quot;https://github.com/vseloved/rutils&quot;&gt;rutils&lt;/a&gt;
+providing Clojure-ish but slightly limited shorthands&lt;/p&gt;
+
+    &lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; (lambda (&amp;amp;optional x y) (+ 2 x)) &lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;1+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; (lambda (&amp;amp;optional x) (print x) (1+ x))&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; (lambda (&amp;amp;optional x y) (+ x y)) &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/rutils/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/rutils.svg&quot; alt=&quot;quickdocs-rutils&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/cbaggers/fn&quot;&gt;fn&lt;/a&gt; provides another set of shorthands for
+λs. Examples from github page:&lt;/p&gt;
+
+    &lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;subseq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;_@&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt;  (lambda (&amp;amp;rest _@) (subseq _@ 0 2))&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; with reader macros for fn* forms too&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;λ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt;  (lambda (_ _1) (+ _ _1))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/fn/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/fn.svg&quot; alt=&quot;quickdocs-fn&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://eschulte.github.io/curry-compose-reader-macros/&quot;&gt;curry-compose-reader-macros&lt;/a&gt;
+provides shorthand reader macros for currying and composing functions. A few
+examples from the github page:&lt;/p&gt;
+
+    &lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; partial application `curry'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;{+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;1}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; (2 3 4 5)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; function composition&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;[#&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;'list&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;{*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;2}]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; ((2) (4) (6) (8))&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; function split and join&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mapcar&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;«&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;{*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;2}&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;{*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;3}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;»&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; ((2 3) (4 6) (6 9) (8 12))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/curry-compose-reader-macros/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/curry-compose-reader-macros.svg&quot; alt=&quot;quickdocs-curry-compose-reader-macros&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.cliki.net/curly&quot;&gt;curly&lt;/a&gt; has two reader macros for currying and
+composition. Examples from homepage&lt;/p&gt;
+
+    &lt;div class=&quot;language-common-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ss&quot;&gt;'[foo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;baz]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;; =&amp;gt; (lambda (#:g2709) (foo bar #:g2709 baz))&lt;/span&gt;
+
+&lt;span class=&quot;ss&quot;&gt;'{foo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;baz&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;quux}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;;; =&amp;gt; (lambda (#:g2724) (foo (bar 16 (baz 23 (quux #:g2724) 42)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/curly/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/curly.svg&quot; alt=&quot;quickdocs-curly&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 20 Dec 2017 00:00:00 -0500</pubDate>
+        <link>https://lepisma.github.io//2017/12/20/fancy-lambdas/</link>
+        <guid isPermaLink="true">https://lepisma.github.io//2017/12/20/fancy-lambdas/</guid>
+      </item>
+    
+      <item>
         <title>Ricing up Org mode</title>
         <description>&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;T&lt;/span&gt;his is a short post pulling in &lt;a href=&quot;https://www.reddit.com/r/unixporn/comments/73vwpa/stumpwm_light_colors_with_purple_accent/dnvqwt8/?context=1&quot;&gt;my
 comment&lt;/a&gt;
@@ -2054,234 +2361,6 @@ redemption in place.&lt;/p&gt;
         <pubDate>Thu, 25 Aug 2016 00:00:00 -0400</pubDate>
         <link>https://lepisma.github.io//2016/08/25/evidence-abuse/</link>
         <guid isPermaLink="true">https://lepisma.github.io//2016/08/25/evidence-abuse/</guid>
-      </item>
-    
-      <item>
-        <title>What is it that Genetic Algorithm does ?</title>
-        <description>&lt;p class=&quot;post-intro&quot;&gt;
-Genetic Algorithms face a ton of criticism. Rather than being a general purpose
-optimizer, I believe GA is more suited to specific processes with a sensible
-meaning to what evolution means there.
-&lt;/p&gt;
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;span class=&quot;dropcap&quot;&gt;B&lt;/span&gt;eing interested in heuristic optimization methods,
-one thing I notice a lot is &lt;em&gt;confusion&lt;/em&gt; in the applicability and efficiency of
-the methods. Mind you, I am not expert enough to resolve the doubts, but have an
-opinion which might help in &lt;em&gt;‘some’&lt;/em&gt; situations. Ask around for methods to do
-derivative free optimization and you will stop keeping the count after a while.
-Specifically in the category of metaheuristics; &lt;em&gt;Cuckoo Search&lt;/em&gt;, &lt;em&gt;Genetic
-Algorithm&lt;/em&gt;, &lt;em&gt;Stimulated Annealing&lt;/em&gt;, &lt;em&gt;Tabu Search&lt;/em&gt; etc. etc. But there is an issue.
-Give the algorithms a first glance and you will feel they are different. Give
-them a second glance and many of them will start to cluster in groups. Give a
-third glance and they are different again!&lt;/p&gt;
-
-&lt;p&gt;Earlier, due to the reducible design, I used to consider Genetic Algorithm (GA) as a
-more general technique as compared to many other evolutionary methods. But then,
-this might not be what we mean when we want a generally &lt;em&gt;applicable&lt;/em&gt; method.
-A simplistic representation embodying the general principle, like
-‘&lt;em&gt;mutation&lt;/em&gt; in population’ for population based heuristics, is what I was
-looking for instead. GA is, in essence, much more powerful if used in
-specialized setting with knowledge of the problem. I will go over this
-proposition later.&lt;/p&gt;
-
-&lt;p&gt;Genetic Algorithm faces a lot of criticism. Criticism from researchers are
-&lt;em&gt;usually&lt;/em&gt; constructive. For example there has been a lot of ‘debate &lt;em&gt;and&lt;/em&gt; work’
-on the role of crossover in GAs. But I have also seen the users and learners
-frowning at few of its aspects without going through what it is that GA really
-does.&lt;/p&gt;
-
-&lt;h2 id=&quot;fundamental-ideas&quot;&gt;Fundamental ideas&lt;/h2&gt;
-
-&lt;p&gt;The main source of inspiration for GA is sexual reproduction. The core ideas
-including mate selection, gene crossover and mutation are all faithfully (to a
-certain level of abstraction) incorporated in it. But there are vital differences
-between the role of sexual reproduction and our needs from GA, a topic covering
-the meaning of &lt;em&gt;fitness functions&lt;/em&gt; and its population aggregate. Let us leave
-the way fitness is used in traditional GA and focus on the two &lt;em&gt;major&lt;/em&gt;
-operations.&lt;/p&gt;
-
-&lt;h3 id=&quot;mutation&quot;&gt;Mutation&lt;/h3&gt;
-
-&lt;p&gt;This is simply what every other random search algorithm does. Slight change from
-the current solution. Using a bit string solution representation like
-\(0100100\), a simple point mutation along with fitness based selection
-procedure essentially is the hill climb algorithm. Change bits, evaluate the new
-positions and shift the population towards the better fitness. This case is
-stronger with situations including \(N\to\infty\) (larger population size,
-\(N\)), higher rate of mutation, elite individuals etc.&lt;/p&gt;
-
-&lt;p&gt;Mutation coupled with a population and selection procedure results in a nice
-global optimizer. Even more important is the ease of understanding the word
-&lt;em&gt;“mutation”&lt;/em&gt; with respect to the problem representation. Use bit strings or
-direct real values or other symbols, mutation means what it means.&lt;/p&gt;
-
-&lt;h3 id=&quot;crossover&quot;&gt;Crossover&lt;/h3&gt;
-
-&lt;p&gt;In a common representation, a crossover operation swaps sections of solution
-strings from two mating parents. Now, this needs a little bit of digging. What
-purpose copying a snippet of gene from parents to children could have? &lt;em&gt;To inherit
- and move around some specific &lt;strong&gt;chunks&lt;/strong&gt; of functional properties&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;A topic of debate among researchers is whether crossover actually has some
-theoretical advantage and meaning for the problems. Some arguments reduce
-crossover as a fancy form of mutation, while some arguments support its usage
-separately.&lt;/p&gt;
-
-&lt;p&gt;Without going into the arguments, its better to stick to the
-fundamentals of crossover and, as a user, exploit its basics. &lt;em&gt;It maintains
-chunks of properties among the population and across generations.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In GA, you can represent the solution as &lt;em&gt;chromosomes&lt;/em&gt; in multiple ways. A
-common method to represent real number parameters is to use direct value
-encoding. Let the fitness function simply be \(f(a)\). For crossing over
-individuals in this form, there are blending and interpolation techniques for
-numbers. While mating two solutions, \(a_{1}\) and \(a_{2}\), a simple
-\(\alpha\) blending gives&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_{3} = \alpha a_{1} + (1-\alpha) a_{2}&lt;/script&gt;
-
-&lt;p&gt;Now, here is what the wikipedia
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Differential_evolution&quot;&gt;page&lt;/a&gt; on Differential
-Evolution (DE) says&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;DE optimizes a problem by maintaining a population of candidate solutions and
-creating new candidate solutions by combining existing ones according to its
-simple formulae, and then keeping whichever candidate solution has the best
-score or fitness on the optimization problem at hand.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Is there an identity crisis here?&lt;/p&gt;
-
-&lt;h2 id=&quot;fundamental-ideas-again&quot;&gt;Fundamental ideas, again&lt;/h2&gt;
-
-&lt;p&gt;Look, everything works. Some variations are better and there are theoretical and
-empirical results backing them up. But then sometimes I feel it is unfair to
-throw any problem at GA assuming it as a general purpose optimizer. Back to the
-proposition made in the beginning of the post and the main question of the post.
-I really like to think the answer to be something on the following lines&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;GA provides a framework for manipulation of a structure made from &lt;strong&gt;symbols&lt;/strong&gt;
-to achieve a desired behaviour in decently low time.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Many variations of GA stick to this idea.
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Genetic_programming&quot;&gt;Genetic Programming&lt;/a&gt; is a
-nice example. Consider following lisp sexpr:&lt;/p&gt;
-
-&lt;div class=&quot;language-elisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;defun&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;test-function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;Evaluate negative of slope of function at x&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;-1&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The function is approximating the (-ve of) slope of another function by calculating&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;- \frac{fn(x + \Delta x) - fn(x - \Delta x)}{2 \times \Delta x}&lt;/script&gt;
-
-&lt;p&gt;The tree structure of operations has usable chunks which are essential to get
-the final output. Consider the numerator chunk.&lt;/p&gt;
-
-&lt;div class=&quot;language-elisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; ...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;;; ...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This generates an important template for good solutions if you want a quantity
-like slope. In GA terminology, this template consisting of some form of fixed
-structure and spaces for variations is called &lt;em&gt;schema&lt;/em&gt;. This schema has a
-fitness associated with it which is the average of fitness of all solutions
-matching this template. For the above template, the fitness is good since most
-of the variations around the template will result in some simple operation on
-the difference of function values. This is better than a case, say, where the
-template is a sum of function values at two neighbouring points.&lt;/p&gt;
-
-&lt;p&gt;The
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Holland%27s_schema_theorem&quot;&gt;fundamental theorem of GA&lt;/a&gt;
-says that the &lt;em&gt;power&lt;/em&gt; of GA comes from increasing the population fraction of
-schemata with smaller fixed parts and better fitness over generations. The
-better schemata survive the operations and live on.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Now here is a case. I was using the traditional value encoded form of GA for a
-global optimization at some point in my undergraduate life. I kept the approach
-somewhat similar to Matlab’s. Value encoding, elite individuals, gaussian mutation,
-simulated binary crossover and tournament selection. It did whatever it was
-meant to. But then I started to fiddle around a bit with parameters and switches
-(whether to use this operation, that selection criteria etc.) and realized that
-I am doing what can be called
-&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Cargo_cult_science&quot;&gt;cargo cult&lt;/a&gt; tuning&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Consider the following fitness surface and value encoding. Considering crossover
-as extrapolations along some dimension, you can see two kind of results of
-mating. One better, one worse. That’s fine, it happens in real crossovers too.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/images/posts/ga/surf.png&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;But the point is, user can’t seem to understand and extract the &lt;em&gt;power&lt;/em&gt; of
-GA here. What are the schemata getting passed on? Where the crossover points
-are? More importantly, what can I do to improve performance?&lt;/p&gt;
-
-&lt;p&gt;In my opinion, its better to use a method whose &lt;em&gt;knobs&lt;/em&gt; (parameters etc.)
-correspond to the problem in hand and which &lt;em&gt;really&lt;/em&gt; pass on the essence of the
-&lt;em&gt;operations&lt;/em&gt; as some connectable effects on the problem. And then judge the
-algorithm, in case a judgment is to be made.&lt;/p&gt;
-
-&lt;p&gt;Last year, Randy Olson
-&lt;a href=&quot;http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/&quot;&gt;blogged&lt;/a&gt;
-about solving a Travelling Salesman Problem (TSP) with Genetic Algorithm. TSP
-solutions have chunks of continuous paths which can be locally optimal.
-Debugging makes sense here because the operations are intuitive. Also consider
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies&quot;&gt;NEAT&lt;/a&gt;,
-which &lt;em&gt;evolves&lt;/em&gt; neural network structures. Same idea. Manipulation of symbols
-and &lt;em&gt;actual&lt;/em&gt; implications of crossovers (of chunk of structural trees lets say)
-etc. Similar is the case with many examples which use Genetic Programming. There
-are cases where a genetic approach actually provides easier implementation and
-better results than other methods.&lt;/p&gt;
-
-&lt;p&gt;I found this piece of criticism by
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Steven_Skiena&quot;&gt;Steven Skiena&lt;/a&gt; on Wikipedia page
-of GA&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;[I]t is quite unnatural to model applications in terms of genetic operators
-like mutation and crossover on bit strings. The pseudobiology adds another
-level of complexity between you and your problem.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The problem Skiena is addressing is important. The operators are not intuitive
-at all for general problems and add on the burden of the user. Well, you do get
-good performance than other methods in different cases. But my opinion is to
-&lt;em&gt;respect&lt;/em&gt; [the full fledged] GA for its help &lt;em&gt;in context&lt;/em&gt; of a certain class of
-problem, not as a go-to general purpose optimizer (for which you would be better
-started by programming a simple and quick disruptive method).&lt;/p&gt;
-
-&lt;p&gt;Your problem can have some allowed set of schemata. For example, if you have a
-bit string representation of 3-4 parameters, you might like a form of schemata
-which break the string at the junctions of the numbers for crossovers. Or in
-some cases you might want to group few bits of strings and evolve them
-separately. You can try inspirations from &lt;em&gt;speciation&lt;/em&gt;. You can create &lt;em&gt;artificial
-islands&lt;/em&gt;. You can try some weird animal group behaviour. They all are good &lt;em&gt;if&lt;/em&gt;
-your problem needs them and the effects are reflected in the evolution of
-solutions. Otherwise, they are another set of instances of misjudgment of the
-method.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Jun 2016 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2016/06/13/genetic-algorithm/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2016/06/13/genetic-algorithm/</guid>
       </item>
     
   </channel>
