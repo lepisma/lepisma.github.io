@@ -238,7 +238,7 @@ temperature given in °F to °C, you might want to be able to write something li
 version of λ which captures <code class="highlighter-rouge">&lt;&gt;</code>:</p>
 
 <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="p">(</span><span class="nb">defmacro</span> <span class="nv">acut</span> <span class="p">(</span><span class="k">&amp;rest</span> <span class="nv">body</span><span class="p">)</span>
-  <span class="o">`</span><span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">&lt;&gt;</span><span class="p">)</span> <span class="o">,</span><span class="nv">body</span><span class="p">))</span>
+  <span class="o">`</span><span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">&lt;&gt;</span><span class="p">)</span> <span class="o">,@</span><span class="nv">body</span><span class="p">))</span>
 
 <span class="c1">;; This works now</span>
 <span class="p">(</span><span class="nb">mapcar</span> <span class="p">(</span><span class="nv">acut</span> <span class="nb">*</span> <span class="p">(</span><span class="nb">/</span> <span class="mi">5</span> <span class="mi">9</span><span class="p">)</span> <span class="p">(</span><span class="nb">-</span> <span class="nv">&lt;&gt;</span> <span class="mi">32</span><span class="p">))</span> <span class="nv">temperatures</span><span class="p">)</span>
