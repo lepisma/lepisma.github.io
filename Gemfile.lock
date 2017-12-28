@@ -177,6 +177,8 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
+    katex (0.3.0)
+      execjs (~> 2.7)
     kramdown (1.13.2)
     liquid (4.0.0)
     listen (3.0.6)
@@ -227,9 +229,10 @@ DEPENDENCIES
   jekyll-livereload
   jekyll-paginate
   jekyll-tagging
+  katex
 
 RUBY VERSION
-   ruby 2.4.2p198
+   ruby 2.4.3p205
 
 BUNDLED WITH
    1.16.0
