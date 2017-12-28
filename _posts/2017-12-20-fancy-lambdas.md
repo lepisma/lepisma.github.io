@@ -136,7 +136,7 @@ version of λ which captures `<>`:
 
 ```common-lisp
 (defmacro acut (&rest body)
-  `(lambda (<>) ,body))
+  `(lambda (<>) ,@body))
 
 ;; This works now
 (mapcar (acut * (/ 5 9) (- <> 32)) temperatures)
