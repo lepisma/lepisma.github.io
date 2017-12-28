@@ -7,5 +7,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-tagging"
   gem "jekyll-livereload"
-  gem "katex"
+  gem "jekyll-katex"
 end
