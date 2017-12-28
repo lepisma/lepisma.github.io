@@ -1,4 +1,5 @@
 require 'tempfile'
+require 'katex'
 
 module Jekyll
   class SympyBlock < Liquid::Block
@@ -27,7 +28,7 @@ module Jekyll
         tmp.write(lines.join("\n"))
 
         output = `python -c "#{lines.join("\n")}"`
-        "$$ #{output} $$"
+        Katex.render output
       end
     end
 
