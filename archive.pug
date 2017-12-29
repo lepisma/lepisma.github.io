@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+.home
+  h2 Blog archive
+  #tag-cloud
+    | {{ site | tag_cloud }}
+
+  .archive-container
+    ul.archive-listing
+      | {% for post in site.posts %}
+      li.archive-list-item
+        .archive-date
+          | {{ post.date | date: "%b %-d, %Y" }}
+          a.archive-link(href="{{ post.url | prepend: site.baseurl }}")
+            .archive-title
+              | {{ post.title }}
+          .post-tags
+            | {{ post | tags | remove: "," }}
+      | {% endfor %}
