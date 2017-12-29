@@ -48,7 +48,7 @@ It seems to me, one of the goals of cyborg development is to make *flesh* and
 bound to happen, at least partially.
 
 <figure>
-<img src="/images/posts/flesh/convergence.png">
+<img class="zoomTarget" data-closeclick="true" src="/images/posts/flesh/convergence.png">
 </figure>
 
 There are many instances to strengthen the belief that in near future,
@@ -94,7 +94,7 @@ In this project, a *Cockroach* is stimulated via the antenna to move left or
 right as commanded by an app.
 
 <figure>
-	<img src="/images/posts/flesh/roboroach.png">
+	<img class="zoomTarget" src="/images/posts/flesh/roboroach.png">
 	<figcaption>Roboroach</figcaption>
 </figure>
 

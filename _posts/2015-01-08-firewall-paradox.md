@@ -21,7 +21,7 @@ arrow. This is what creates now, and tomorrow. One of the most beautiful, but
 also one of the most controversial thing. It comes in question every time
 quantum mechanics and general relativity have a playoff.
 
-## The Firewall
+# The Firewall
 
 Black hole firewall is a recent thing (2012-13). [Read
 here](http://arxiv.org/pdf/1207.3123v4.pdf). According to *Hawking process*,
@@ -65,7 +65,7 @@ singularity, it returns things back, busting the whole black business.
 Whatever happens, it's really amusing to see what are the implications if the
 second law is flawed, or it is not what we think it is.
 
-## The Second Law
+# The Second Law
 
 I personally feel, the second law of thermodynamics is highly underrated in
 engineering institutions (in India at least). People take away the beauty of it

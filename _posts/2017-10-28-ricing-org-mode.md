@@ -13,14 +13,8 @@ processor like interface. The aim is to recreate a
 I submitted on /r/unixporn some time back. Shown below is a demo of what the
 thing actually looks like.
 
-<aside>
-<div class="aside-title">
-In action
-</div>
-
-<p>
+<aside markdown="1">
 Following screencast shows the setup in action.
-</p>
 
 <video width="100%" controls="controls">
   <source src="https://u.teknik.io/5Vy1T.mp4" type="video/mp4">
@@ -61,7 +55,7 @@ There are three basic steps involved from here:
 2. Padding and stuff
 3. Other Org-mode visual and usability tweaks
 
-## Faces
+# Faces
 
 We will set Et Book (named `EtBembo`) font to most of the org mode. Get the font
 [here](https://github.com/edwardtufte/et-book). If you are using spacemacs, the
@@ -76,7 +70,7 @@ Note that unlike other face settings, `org-indent`'s `(:inherit (org-hide
 fixed-pitch))` has a crucial effect of aligning text under Org heading in a
 non-monospace font, so you might not want to miss that.
 
-## Padding
+# Padding
 
 There are a few places where you can gain some breathing space.
 
@@ -116,7 +110,7 @@ from it. Nevertheless, [here is some
 config](https://github.com/lepisma/rogue/blob/75ab1c3422b409f41daa4c003b931e869eed0914/packages.el#L264-L287)
 for writeroom.
 
-## Other tweaks
+# Other tweaks
 
 Whatever information your mode line might be displaying, most likely it can be
 turned off if you are aiming for a distraction free setup. Spacemacs provide a

@@ -43,7 +43,7 @@ transformations mentioned above are more than `function` calls, which can be
 seen as lookups in some instruction manual. These are more akin to Lisp style
 `macros`.
 
-## Expressing programs
+# Expressing programs
 
 A programming language allows a really constrained form of expression and so
 (fortunately) it needs lesser training to understand a chunk of *rhetorical
@@ -69,15 +69,10 @@ just go through the words, nesting and order.
 ```
 
 <aside>
-<div class="aside-title">
-S-expressions in Lisp
-</div>
-
 Lisp code is represented as a list of items (possibly recursive) which can be
 interpreted both as data and code. When interpreted as data, they refer to
 themselves, when interpreted as code, the first item is something (a function,
 macro) to be applied on the rest.
-
 </aside>
 
 Also forget about the dummy variables (`from`, `where` ...) and hygiene (I am

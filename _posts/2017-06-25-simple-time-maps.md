@@ -41,19 +41,22 @@ for the *not that useful* tick labels in this whole post,
 <figcaption>Scrobbles time map</figcaption>
 </figure>
 
-Each dot here is a listen. The \\( x \\) value being the time difference between
-it and the previous listen, \\( y \\) being the difference with next listen.
-Note that the plot is log scaled (thus the repeated pattern in lower values)
-which helps us understand the diffs at multiple scales.
+Each dot here is a listen. The {% katex %}x{% endkatex %} value being the time
+difference between it and the previous listen, {% katex %}y{% endkatex %} being
+the difference with next listen. Note that the plot is log scaled (thus the
+repeated pattern in lower values) which helps us understand the diffs at
+multiple scales.
 
-Another important point is the *almost* symmetry along \\( x = y \\) line. When
-you use the *pre-event* and *post-event* time diffs of each event as \\( x \\)
-and \\( y \\) value for plotting, one points \\( x \\) will be previous one's
-(according to event ordering) \\( y \\) value. Now this has consequences on
-whether a time map is useful for you. What follows is the same plot with
-marginal histograms along the axis. No doubt the \\( x \\) and \\( y \\)
-marginals are similar. This is not because of the data but because of the way
-both axis values are derived, resulting in a non-exact symmetry.
+Another important point is the *almost* symmetry along {% katex %}x = y{%
+endkatex %} line. When you use the *pre-event* and *post-event* time diffs of
+each event as {% katex %}x{% endkatex %} and {% katex %}y{% endkatex %} value
+for plotting, one points {% katex %}x{% endkatex %} will be previous one's
+(according to event ordering) {% katex %}y{% endkatex %} value. Now this has
+consequences on whether a time map is useful for you. What follows is the same
+plot with marginal histograms along the axis. No doubt the {% katex %}x{%
+endkatex %} and {% katex %}y{% endkatex %} marginals are similar. This is not
+because of the data but because of the way both axis values are derived,
+resulting in a non-exact symmetry.
 
 <figure>
 <div id="diffs-lfm"></div>
@@ -63,10 +66,10 @@ both axis values are derived, resulting in a non-exact symmetry.
 Think about a point in top left corner. This refers to an event which was
 preceded by another event shortly but is followed by the next event after a long
 time gap. The opposite happens with point in bottom right. Because adjacent
-events share \\( x \\) and \\( y \\), the mass of points has similar
-distributions (notice that this is not the case with very few points). Unless
-you are displaying another data dimension using color / size of the circles
-(like in the original
+events share {% katex %}x{% endkatex %} and {% katex %}y{% endkatex %}, the mass
+of points has similar distributions (notice that this is not the case with very
+few points). Unless you are displaying another data dimension using color / size
+of the circles (like in the original
 [blog](https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales),
 where we see points colored according to the time of day), the two dimensions
 here just add to the visual clutter.
@@ -83,8 +86,8 @@ compared to repeating the same old songs.
 <figcaption>First listen time map</figcaption>
 </figure>
 
-Notice how easy it is to find the bumps in the marginal plot. A plot of \\( x
-\\) marginal follows.
+Notice how easy it is to find the bumps in the marginal plot. A plot of {% katex
+%}x{% endkatex %} marginal follows.
 
 <figure>
 <div id="dd-hist"></div>
@@ -92,13 +95,13 @@ Notice how easy it is to find the bumps in the marginal plot. A plot of \\( x
 </figure>
 
 As a side note this plot makes me wonder about the origin of the bumps. The
-initial rise up to \\( x = 3, 4 \\) (around 20, 50 minutes) is mostly due to
-radios listens (which give you fresh songs frequently) or binging on some new
-album/artist. The one around 7 (around 18 hours) might be a *session* change. A
-new session, with fresh items probably. Need to dig in the actual songs to
-understand this.
+initial rise up to {% katex %}x = 3, 4{% endkatex %} (around 20, 50 minutes) is
+mostly due to radios listens (which give you fresh songs frequently) or binging
+on some new album/artist. The one around 7 (around 18 hours) might be a
+*session* change. A new session, with fresh items probably. Need to dig in the
+actual songs to understand this.
 
-## Tweets
+# Tweets
 
 The original blog made a time map for tweets
 of [@BarackObama](https://twitter.com/BarackObama). I did a re-crawl. Here is
@@ -125,7 +128,7 @@ below.
 <figcaption>Tweets time map 1D @BarackObama</figcaption>
 </figure>
 
-## Gotchas
+# Gotchas
 
 - Making sense of a histogram in log scale (the kind I used, with uniform bins
   over log scaled data; You can have non-uniform, log scaled bins too. I haven't

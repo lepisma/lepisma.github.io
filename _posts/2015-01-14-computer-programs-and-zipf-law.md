@@ -46,12 +46,14 @@ variable names and other things aren't as frequent as keywords. Saying that, I
 do realize that this is not exactly the way this should be done, but it should
 work as a crude approximation.
 
+# Results
+
 Below are the plots of keyword frequencies (few top keywords) for various
 software projects along with the approx Zipfian distribution. The projects here
 are dominated by (almost) one single language and are large projects as far as
 lines of code are considered, this *might* be better for finding such patterns.
 
-### Linux kernel
+## Linux kernel
 
 The language of the project is predominantly C. I ran the frequency analysis for
 C/C++ language keywords.
@@ -61,7 +63,7 @@ C/C++ language keywords.
 src="/images/posts/zipf/linux.png"> </a>
 </figure>
 
-### FreeBSD
+## FreeBSD
 
 The language again is mostly C/C++, did the same analysis here.
 
@@ -70,7 +72,7 @@ The language again is mostly C/C++, did the same analysis here.
 src="/images/posts/zipf/bsd.png"> </a>
 </figure>
 
-### Bootstrap
+## Bootstrap
 
 Javascript
 
@@ -79,7 +81,7 @@ Javascript
 src="/images/posts/zipf/bootstrap.png"> </a>
 </figure>
 
-### Shogun
+## Shogun
 
 C++
 
@@ -88,7 +90,7 @@ C++
 src="/images/posts/zipf/shogun.png"> </a>
 </figure>
 
-### OpenCV
+## OpenCV
 
 C++
 
@@ -103,8 +105,6 @@ are not representatives of Zipf's law, but nevertheless, its fun to see
 something like this.
 
 <aside markdown="1">
-<div class="aside-title">A note on the script I used</div>
-
 The script is [here](https://github.com/lepisma/zipf) and is just a
 kind-of-works thing. A more rigorous analysis can be done, since the script
 neglected many things.

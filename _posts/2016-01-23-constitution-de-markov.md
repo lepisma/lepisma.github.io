@@ -28,7 +28,7 @@ universal constitution, all that power!). But, the amount of training time
 required turned me off. So, I left RNNs for a simpler (faster) model, and wasn't
 disappointed.
 
-## Markov Chains
+# Markov Chains
 
 Lots and lots of parody text generators on the Internet use Markov Chains. They
 provide probabilities of transition from one state (letter or word) to other
@@ -38,7 +38,7 @@ and beautifully explained
 
 I will quickly jump to the fun part.
 
-## Wisdom
+# Wisdom
 
 I used markov model on dump of all the constitutional text combined. Here are
 some of the pieces of wisdom generated.

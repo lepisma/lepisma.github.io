@@ -9,6 +9,7 @@
 @import './blog/figure';
 @import './blog/links';
 @import './blog/hr';
+@import './blog/edits';
 
 // Main column positioning
 @media (min-width: 1000px) {
@@ -27,28 +28,28 @@ li {
 .post {
   .post-header {
     h1 {
-      font-size: 48px;
+      font-size: 40px;
       font-style: normal;
+      font-variant: none;
       margin-bottom: 10px;
+      margin-top: 10px;
+      text-transform: none;
     }
     .post-tags {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       a {
         @include tag;
       }
     }
     .post-meta {
-      font-style: normal;
-      font-variant: small-caps;
+      @include light-meta();
     }
   }
 
   .post-content {
     .post-intro {
-      font-family: 'et-book';
-      font-size: 20px;
+      @include light-para(15px);
       margin-bottom: 40px;
-      line-height: 1.5;
     }
     p {
       line-height: 1.9;
@@ -75,9 +76,7 @@ li {
   margin: 40px 0;
 
   .archive-date {
-    color: $text-light;
-    font-size: 12px;
-    font-variant: small-caps;
+    @include light-meta();
   }
 
   .archive-title {
@@ -94,27 +93,26 @@ li {
 
   .archive-summary {
     margin-top: 10px;
-    font-family: 'et-book';
-    font-size: 18px;
+    @include light-para(15px);
 
     // Override for intro from posts
     .post-intro {
-      font-size: 18px;
-      line-height: 1.5;
+      @include light-para(15px);
     }
   }
 }
 
 // Better blockquote
 blockquote {
-  border-width: 4px;
-  border-color: $back-light;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  @include left-line();
 
   p {
     display: inline;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  footer, cite {
+    @include light-meta();
   }
 }
 
@@ -128,7 +126,7 @@ blockquote {
   padding: 0;
 }
 
-// Footer
+// Footer line
 .footer {
   background: $accent-dark;
 }

@@ -47,7 +47,7 @@ But, in general, you need to use the full `lambda` form. Some Lisps, like
 [hy](https://hylang.org) provide a shorter name like `fn` which is neat, but
 given that we have macros in hand there can be much cleaner solutions.
 
-## Cut
+# Cut
 
 One of the solutions I first came across is the `-cut` macro in Emacs Lisp from
 [dash.el](https://github.com/magnars/dash.el#-cut-rest-params). This has its
@@ -55,9 +55,6 @@ origin in [SRFI-26](https://srfi.schemers.org/srfi-26/srfi-26.html) where a one
 line description says *Notation for Specializing Parameters without Currying*.
 
 <aside markdown="1">
-<div class="aside-title">
-Currying
-</div>
 Currying is a process of converting an *n-ary* function into a chain of
 *unary* ones. This is different from what *cut*'s specification says. Cut
 returns a single new function with arbitrary positions filled in. Currying
@@ -142,7 +139,7 @@ version of λ which captures `<>`:
 (mapcar (acut * (/ 5 9) (- <> 32)) temperatures)
 ```
 
-## Xi
+# Xi
 
 This is another fancy way of creating λs that I came to know from
 [hy](https://hylang.org). Although its name is going to be changed in [a
@@ -187,9 +184,6 @@ Using `#L`, the above examples in clojure translates to the following Common
 Lisp code
 
 <aside markdown="1">
-<div class="aside-title">
-arnesi
-</div>
 Arnesi is not recommended for use though. The [version on
 quicklisp](http://quickdocs.org/arnesi/) is an unmaintained fork and suggests
 switching to newer libraries.

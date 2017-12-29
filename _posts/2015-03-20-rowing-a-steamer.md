@@ -20,7 +20,7 @@ try other stuff. Forget symbolic, forget finite difference (and don't even think
 about automatic), we have a course on *Power System Analysis*, which is a bit
 computational in nature and we use a more *traditional* method.
 
-## Hand calculus
+# Hand calculus
 
 The problem we have is to find solutions of non-linear equations (load-flow
 equations) that give the values of voltages and power factors for a power

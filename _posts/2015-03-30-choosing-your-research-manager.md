@@ -15,7 +15,7 @@ was, *enchanted* workflow and organization of the `/papers` directory. Making
 the perfect abstraction. Clutter no more. After using few more tools, I thought
 to make a comparison table according to my needs.
 
-## Showdown
+# Showdown
 
 Few general guidelines and clarifications for interpreting the comparison given
 here:
@@ -51,7 +51,7 @@ in-app import).
 **Cloud and sync** ratings are based on the web interface, space provided and
 sync capabilities.
 
-## Remarks
+# Remarks
 
 - For hardcore reference management, Mendeley is a powerhouse, no doubt. But,
   you can't grab pdfs while searching from Mendeley desktop! Bummer! Isn't it?

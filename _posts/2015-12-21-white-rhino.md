@@ -10,10 +10,6 @@ effective. Everywhere. Something that might help? Identifying lies.
 </p>
 <!--more-->
 
-<figure>
-<img src="/images/posts/rhino/head.jpg" style="float:right">
-</figure>
-
 <span class="dropcap">I</span>n case you didn't know '*there are only 3 northern
 white rhinos left on the planet*'. There were 5 since I started counting. One
 died
@@ -41,7 +37,7 @@ This brings up an important issue. Not that other reasons for dwindling wildlife
 are not so important, but because *this* specific reason is prevalent in every
 other area to an extent you would probably always underestimate.
 
-## Quacks, Advertisements and Lies
+# Quacks, Advertisements and Lies
 
 Recently, I got home, started watching TV, and one thing i noticed is that *our
 situation, in India, isn't drastically different from Vietnam*. I have seen
@@ -69,7 +65,7 @@ or the realists with a conservative 100%. It is about how *we* see these
 events and infer. I will be willing to believe the given statement if the person
 who is promoting this *knowledge* can answer following questions affirmatively.
 
-## Few Simple Questions
+# Few Simple Questions
 
 <blockquote>
 <p>
@@ -88,7 +84,7 @@ things) I believe we should be asking to judge the conclusions of a research.
 Since researches on medicine and likes involve comparison and statistical
 testings, these are not exactly valid for *any* research.
 
-#### 1. What do the numbers mean?
+## 1. What do the numbers mean?
 
 No, not what you are being told. What the numbers *actually* mean? Here is a
 case.
@@ -103,7 +99,7 @@ What is *50%* here?
 - Is it a mean (max, median) of that metric for groups?
 - Or, is it slightly quirky like "it worked for 50% more guys"?
 
-#### 2. Can I reproduce the numbers?
+## 2. Can I reproduce the numbers?
 
 Good research is reproducible research. Given an array of results, access to
 research documentations and methodologies, a person should be able to get to the
@@ -112,7 +108,7 @@ same conclusions as published.
 *Once done, there is a more critical question. This should be up in the order,
 but most of the times Q1 and Q2 hit it right.*
 
-#### 3. Is the process fair?
+## 3. Is the process fair?
 
 Now since the documented methods are providing the expected results, is the
 method actually performing a fair test?
@@ -189,11 +185,7 @@ initiating a *hate debate* against any of the specific ideas mentioned.
 
 And sadly, the rhinoceros count is not the only thing thats going down.
 
-<figure>
-<img src="/images/posts/rhino/back.jpg">
-</figure>
-
-##### Edits
-
-1. Thanks Gopal Sharma for suggesting ammendments to the list and other
+<div class="edits" markdown="1">
+- Thanks Gopal Sharma for suggesting ammendments to the list and other
    [fixes](https://github.com/lepisma/lepisma.github.io/commit/c7aede536fbd2306e6172ccf35499b17e9807518).
+</div>

@@ -56,7 +56,7 @@ the output of the network depends on current input as well as previous inputs
 which are helping the network to attain a state value. This helps it to be used
 in places where there are memory uses in understanding patterns.
 
-## NTM
+# NTM
 
 A Neural Turing Machine (NTM) also tries to form a memory system, but it
 actually creates a separate memory outside the network (amazingly simple

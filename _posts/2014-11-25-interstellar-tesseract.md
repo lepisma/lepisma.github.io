@@ -16,7 +16,7 @@ I was just wondering if we can help the lower dimensional people (If there are
 any) using a similar relay for our understandings of the worlds. But before
 that, we need to understand how the tesseract worked in the movie.
 
-## Tesseract
+# Tesseract
 
 <br>
 <figure>
@@ -70,7 +70,7 @@ be on terrestrial planets ?"*.
 
 ---
 
-## Flatlanders
+# Flatlanders
 
 Maybe an organism (a disc) is in 2 dimensional space, moving ahead in
 x-direction. A time space diagram for it will be

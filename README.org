@@ -9,4 +9,4 @@ bundle exec jekyll build
 #+END_SRC
 
 #+RESULTS: om-deploy
-: 73aa20b367218286fdf334c56670fa8b
+: a79a115717bb8f58602c4d6351714f6a

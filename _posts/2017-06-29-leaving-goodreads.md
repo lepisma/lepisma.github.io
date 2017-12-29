@@ -18,7 +18,7 @@ about *random sampling*. Oh and the clutter in the default setting of your feed.
 Everything and more made me switch to a scheme where my reading data is more
 bare, accessible and manageable without the noise.
 
-## A better list
+# A better list
 
 My usual book reading cycle involves doing a web search (not goodreads') after I
 become aware of a title and landing on goodreads to mark it as `to-read`. Then

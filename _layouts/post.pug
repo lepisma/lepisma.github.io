@@ -8,15 +8,14 @@ layout: default
 | {% endif %}
 
 .post-header.mb2
+  .post-meta.small
+    | {{ page.date | date: "%b %-d, %Y" }}
+  .post-meta.small
+    | {{ minutes }} minute read
   h1
     | {{ page.title | widont }}
   .post-tags
     | {{ page | tags | remove: "," }}
-  span.post-meta.small
-    | {{ page.date | date: "%b %-d, %Y" }}
-  br
-  span.post-meta.small
-    | {{ minutes }} minute read
 
 article.post-content
   | {{ content }}

@@ -4,22 +4,24 @@
 // Shades
 $c1: #000;
 $c2: #222;
-$c3: #7b7b7b;
-$c4: #c8c8c8;
-$c5: #efefef;
-$c6: #fff;
+$c3: #444;
+$c4: #7b7b7b;
+$c5: #c8c8c8;
+$c6: #efefef;
+$c7: #fff;
 
 $accent: #002642;
 $accent-dark: #00151c;
 
 $code-foreground: #2c3e50;
-$code-background: $c5;
+$code-background: $c6;
 
-$back-white: $c6;
-$back-light: $c5;
-$back-medium: $c4;
+$back-white: $c7;
+$back-light: $c6;
+$back-medium: $c5;
 
-$text-light: $c3;
+$text-light: $c4;
+$text-gray: $c3;
 $text-medium: $c2;
 $text-dark: $c1;
 
@@ -131,9 +133,37 @@ $text-dark: $c1;
 }
 
 @mixin tag() {
-  @include button(2px, 14px, 4px);
+  @include button(2px, 13px, 4px);
   line-height: 2.5em;
   white-space: nowrap;
+}
+
+@mixin light-para($font-size) {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: 1.6;
+  color: $text-gray;
+}
+
+@mixin light-meta() {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.9;
+  color: $text-light;
+  text-transform: uppercase;
+}
+
+@mixin left-line() {
+  border-width: 0;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: $back-medium;
+  margin: 20px 0;
+  padding: 0;
+  padding-left: 15px;
 }
 
 // Selection colors:
@@ -148,4 +178,19 @@ $text-dark: $c1;
 // Loading bar
 .pace .pace-progress {
   background-color: $accent !important;
+}
+
+// Lists
+ul, ol {
+  list-style-position: outside;
+  padding: 0;
+  margin: 30px 0;
+}
+
+ul ul, ol ol {
+  padding-left: 20px;
+}
+
+ul ul ul, ol ol ol {
+  padding-left: 40px;
 }

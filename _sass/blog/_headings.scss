@@ -15,27 +15,17 @@ h6 {
 
 // Override sizes
 h1 {
-  font-size: 36px;
-  font-style: italic;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 28px;
-  font-variant: all-small-caps;
-}
-
-h3 {
-  font-size: 30px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h5 {
   font-size: 20px;
+  text-transform: uppercase;
 }
 
-h6 {
-  font-size: 18px;
+// Just use three levels
+h3, h4, h5, h6 {
+  font-size: 20px;
+  font-style: italic;
 }

@@ -21,3 +21,9 @@ li a {
 .btn.disabled {
   color: $text-light;
 }
+
+.image-link, .image-link:hover {
+  text-decoration: none;
+  background: none;
+  text-shadow: none;
+}

@@ -26,7 +26,7 @@ layers lead to deadly slow training time and the risk of overfitting. But recent
 works by [Hinton](http://www.cs.toronto.edu/~hinton/) and others in unsupervised
 feature learning have given a hefty lift to deep learning.
 
-## Reservoirs
+# Reservoirs
 
 But, this post is not about Deep Learning. Its about a different concept. A
 network that avoids the murky computation.
@@ -47,7 +47,7 @@ Nets](http://en.wikipedia.org/wiki/Recurrent_neural_network). Both of them are
 based on reservoir computing. On the lines of reservoir computing and very
 similar in concept is the topic of this post, *Extreme Learning Machine*.
 
-## Extreme Learning
+# Extreme Learning
 
 Extreme learning machine (ELM) is a modification of single layer feedforward
 network (SLFN) where learning is quite similar to the reservoir topic discussed
@@ -136,7 +136,7 @@ Matlab and Python's `numpy.linalg`.
 This inverse can also be computed using regularized inverse for better
 generalization.
 
-## Performance
+# Performance
 
 Lets test out the thing.
 
@@ -185,7 +185,7 @@ import ELM, ANN;
 Since, both libraries have few functions with same names, so its better to use
 `import` rather than `using`.
 
-### Reading data
+## Reading data
 
 ~~~ julia
 Pkg.add("DataFrames");
@@ -210,7 +210,7 @@ head(dat)
 Last column is either 0 or 1 and tells us about the result of banknote
 authentication.
 
-### Scaling columns
+## Scaling columns
 
 Scaling all attributes to a similar scale makes sure that one attribute doesn't
 overshadow others.
@@ -232,7 +232,7 @@ train_rows = shuffle([1:length(dat[end])] .> n_test);
 dat_train, dat_test = dat[train_rows, :], dat[!train_rows, :];
 ~~~
 
-### Training
+## Training
 
 Lets create the models for training.
 
@@ -286,7 +286,7 @@ shows the difference.
 *A word of caution* : Since julia uses JIT compilation, it needs a bit of warm
 up. So, the first call to functions doesn't show the actual speed of julia.
 
-### ANN
+## ANN
 
 ~~~ julia
 tic(); ANN.fit!(ann, array(dat_train[1:end-1]), array(dat_train[end]), epochs =
@@ -299,7 +299,7 @@ elapsed time: 0.238218045 seconds
 0.9708029197080292
 ~~~
 
-### ELM
+## ELM
 
 ~~~ julia
 tic(); ELM.fit!(elm, dat_train[1:end-1], dat_train[end]); toc()
@@ -311,27 +311,24 @@ elapsed time: 0.003801902 seconds
 0.9817518248175182
 ~~~
 
-### WUT?
+## WUT?
 
 Assuming both models give same accuracy, the training of *ELM* is around
 *60x* faster than *ANN*! (Which kind of isn't actually surprising since the
 hidden connections are untouched).
 
----
-
-##### Edits
-
-1. As pointed out by Jeremy Gore, the current code throws error due to changes in
+<div class="edits" markdown="1">
+- As pointed out by Jeremy Gore, the current code throws error due to changes in
   Julia version. The original post was tested and written for Julia v0.2. I will
   update the post to meet the updated Julia standards after I get free from a
   few things I am currently in.
 
-2. The library (and this post) is updated to work with newer Julia versions
-   (tested on v0.3.3) with added support for DataFrames.
+- The library (and this post) is updated to work with newer Julia versions
+  (tested on v0.3.3) with added support for DataFrames.
 
-3. I thought to include my personal thoughts (which have also changed since I
-   first wrote the post) on ELMs since there are unbelievably large amount of
-   misconceptions popping everywhere on the internet.
+- I thought to include my personal thoughts (which have also changed since I
+  first wrote the post) on ELMs since there are unbelievably large amount of
+  misconceptions popping everywhere on the internet.
 
    - As it is obvious, there is just one hidden layer and the whole ideas
      centers around creating random projections of input to finally solve a
@@ -348,3 +345,4 @@ hidden connections are untouched).
      charming enough for anyone else, or even me at a different spot in
      space-time, but anyways, I did a simple comparison and posted the stuff
      here.
+</div>

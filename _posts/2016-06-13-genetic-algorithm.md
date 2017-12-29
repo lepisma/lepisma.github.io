@@ -37,7 +37,7 @@ on the role of crossover in GAs. But I have also seen the users and learners
 frowning at few of its aspects without going through what it is that GA really
 does.
 
-## Fundamental ideas
+# Fundamental ideas
 
 The main source of inspiration for GA is sexual reproduction. The core ideas
 including mate selection, gene crossover and mutation are all faithfully (to a
@@ -47,7 +47,7 @@ the meaning of *fitness functions* and its population aggregate. Let us leave
 the way fitness is used in traditional GA and focus on the two *major*
 operations.
 
-### Mutation
+## Mutation
 
 This is simply what every other random search algorithm does. Slight change from
 the current solution. Using a bit string solution representation like {% katex
@@ -63,7 +63,7 @@ global optimizer. Even more important is the ease of understanding the word
 *"mutation"* with respect to the problem representation. Use bit strings or
 direct real values or other symbols, mutation means what it means.
 
-### Crossover
+## Crossover
 
 In a common representation, a crossover operation swaps sections of solution
 strings from two mating parents. Now, this needs a little bit of digging. What
@@ -102,7 +102,7 @@ Evolution (DE) says
 
 Is there an identity crisis here?
 
-## Fundamental ideas, again
+# Fundamental ideas, again
 
 Look, everything works. Some variations are better and there are theoretical and
 empirical results backing them up. But then sometimes I feel it is unfair to

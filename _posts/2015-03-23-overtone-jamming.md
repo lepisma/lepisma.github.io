@@ -25,7 +25,7 @@ Looking for alternatives, I found [Sonic Pi](http://sonic-pi.net/). This was
 impressive, try the sample sounds on their website. But, the coolest thing was
 [Overtone](http://overtone.github.io/).
 
-## Overtone
+# Overtone
 
 Overtone allows you to [live] code (and compose music) in
 [Clojure](http://clojure.org), which is a modern dialect of lisp that runs on

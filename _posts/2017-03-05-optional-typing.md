@@ -32,7 +32,7 @@ module. I never really cared about types in Python because, well, thats what I
 probably have been avoiding by using Python all along. But this is slowly
 changing as I use static typing more and more.
 
-## Reading your own code
+# Reading your own code
 
 I enjoy cricket and Emacs. So wrote up a
 package, [cricbuzz.el](https://github.com/lepisma/cricbuzz.el), for displaying
@@ -103,7 +103,7 @@ practice which need *just a little bit* of hint about data types to clarify thei
 tasks. "Type hinting" fills in this sweet spot and at the same time flags logical
 bugs like passing `float` where `int` is expected.
 
-## Type Hinting
+# Type Hinting
 
 Type hinting is the idea of adding annotations about data type for variables,
 function arguments etc. These are usually parsed and checked before runtime
@@ -137,7 +137,7 @@ Then there is TypeScript which behaves more like a superset of JS but with
 the same idea. Your development process gets assisted by static types and then
 the code gets converted to plain JS and runs *like a duck*.
 
-## mypy
+# mypy
 
 Although not that popular, Python has in-language support for adding type hints
 which can be checked by something like [mypy](http://mypy-lang.org/). What this
@@ -196,7 +196,7 @@ me to read that a function takes coordinates (which is known to be a pair of num
 since I decided to read the code dealing with geography) rather than an argument
 described solely by its name and / or docstring.
 
-## Keeping it Optional
+# Keeping it Optional
 
 Typing is something that feels like it comes attached with performance benefits.
 But using mypy for around a month now has convinced me that just the
@@ -210,7 +210,7 @@ Most importantly, it really is non-intrusive and purely optional. You could use
 hints wherever needed and skip where is it unnecessary and verbose (though I am
 not sure if this is a recommended practice).
 
-## Final thoughts
+# Final thoughts
 
 Static type checking in python is not *that* popular as compared to JS.
 But JS community is particularly

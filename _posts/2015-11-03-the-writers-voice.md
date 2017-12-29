@@ -42,12 +42,12 @@ principle, allow us to compare the writing styles. This post tries to do the
 same using a technique called *dynamic time warping* on signals based on word
 vectors gathered from classic literary works.
 
-## Text to Signal
+# Text to Signal
 
 There are many ways to see text as a time series. I will use a pretty basic and
 intuitive technique with word embeddings.
 
-### Word Embeddings
+## Word Embeddings
 
 Word embeddings provide projections of *words* from any language to some {%
 katex %}N{% endkatex %} dimensional mathematical space. In simple terms, it
@@ -71,7 +71,7 @@ nearby words with semantic connections (hover on dots).
 <div id="words">
 </div>
 
-### Cramming text
+## Cramming text
 
 After training an embedding model (with 100 dimensions) and computing vectors
 for each word in a book, we are left with a matrix of size {% katex %}N_w \times
@@ -95,7 +95,7 @@ graph for *The Sign of the Four* by Arthur Conan Doyle.
 The smooth lines are generated after using a gaussian filter and they more or
 less capture the essence of the flow.
 
-## Comparing signals
+# Comparing signals
 
 Once we have set of comparable signals for each book, next step is to do actual
 comparison. A simple way would be to extract some sort of features from these
@@ -120,7 +120,7 @@ invariant of length and positions of peaks and valleys in signals. The
 [pseudo code](https://en.wikipedia.org/wiki/Dynamic_time_warping#Implementation)
 on Wikipedia should get you started.
 
-### Distances to coordinates
+## Distances to coordinates
 
 Once we get the distances, we get 2D cartesian coordinates using
 [Multi Dimensional Scaling (MDS)](https://en.wikipedia.org/wiki/Multidimensional_scaling).

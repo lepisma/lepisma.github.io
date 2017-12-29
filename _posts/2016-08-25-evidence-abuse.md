@@ -67,7 +67,7 @@ exaggeration of the issue, I will try to convince you its not the case. Also, I
 am no expert on many things and have been involved in stupidity pretty much
 regularly. So don't take things here as absolute truths, but opinions of sort.
 
-## 1. Drought
+# 1. Drought
 
 <figure>
 <a href="https://xkcd.com/285/">
@@ -154,7 +154,7 @@ shackle the chains around us. But we say
 
 > "Hey kiddo! We simplify things so people get it, get it?"
 
-### Simplification.
+## Simplification.
 
 <figure>
 <a href="https://xkcd.com/547/">
@@ -260,7 +260,7 @@ sender), despite my respect for the concern of the sender:
    general disagreement, which is pretty much known (specially for the original
    content creator).
 
-### Evidence
+## Evidence
 
 <figure>
 <a href="https://xkcd.com/925/">
@@ -293,7 +293,7 @@ fueled again? How many people have been convinced that every move we make, is
 against the grand scheme of someone's God? In my personal experiences with
 people, I can safely say, a hell lot!
 
-## 2. Deluge
+# 2. Deluge
 
 <figure>
 <a href="https://xkcd.com/906/">
@@ -337,7 +337,7 @@ articles, everything is helping people to accept science in their daily lives. L
 again, and you can see an almost exuberant insincerity for evidence spilling
 from the mouths of promoters. Of course not all of them.
 
-### Pseudo Science
+## Pseudo Science
 
 Take that microwave oven case. Here is the
 [link](http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145)
@@ -437,17 +437,19 @@ with my attacks. I don't need theories with doubtful validity claiming '*17 life
 energies from sun that gives you food*' to convince me of Sun's role. Just a
 simple reminder of photosynthesis will do.
 
-## 3. Disregard
-
-<center>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Colgate
+# 3. Disregard
+<blockquote>
+<p>
+Colgate
 used to warn against Indian traditional ways of using salt &amp; coal on teeth.
-But now they actively endorse it <a
-href="https://t.co/eYywXQpK4P">pic.twitter.com/eYywXQpK4P</a></p>&mdash; Swami
-Ramdev (@yogrishiramdev) <a
-href="https://twitter.com/yogrishiramdev/status/766977569661054976">August 20,
-2016</a></blockquote>
-</center>
+But now they actively endorse it <a href="https://t.co/eYywXQpK4P">
+pic.twitter.com/eYywXQpK4P</a>
+</p>
+<footer>
+<cite title="Swami Ramdev (@yogrishiramdev)">Swami Ramdev (@yogrishiramdev) <a href="https://twitter.com/yogrishiramdev/status/766977569661054976">
+August 20, 2016</a> </cite>
+</footer>
+</blockquote>
 
 Explore the tweet above (basically the linked image). Come back later. Look,
 what arguments can be put here to favour both sides. Colgate told not to rub
@@ -516,7 +518,7 @@ weird set of priorities. Because your product decisions don't tie to and create 
 identity. Because a demagogue can't yell a battle cry, right or wrong, and take
 control of your life decisions.
 
-### Cults
+## Cults
 
 I have absolutely no problem with product promotion based on actual quality.
 But, we know a few entities that tend to differ here. I saw a roadside banner
@@ -585,7 +587,7 @@ for making our lives easier.
 
 <figure>
 <a href="https://xkcd.com/882/">
-<img src="/images/posts/evidence/significant.png">
+<img class="zoomTarget" src="/images/posts/evidence/significant.png">
 </a>
 </figure>
 </aside>
@@ -624,6 +626,6 @@ just because you are too lazy and want to be spoon fed by some know-it-all? Or
 maybe its all meaningless and you already are in a cult with mechanisms for
 redemption in place.
 
-##### Edits
-
-1. Changed 'evidences' to 'evidence'. Thanks Rushil Nagda.
+<div class="edits" markdown="1">
+- Changed 'evidences' to 'evidence'. Thanks Rushil Nagda.
+</div>
