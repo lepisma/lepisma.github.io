@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+.home
+  .archive-container
+    ul.archive-listing
+      | {% for post in paginator.posts %}
+      li.archive-list-item
+        .archive-date
+          | {{ post.date | date: "%b %-d, %Y" }}
+        a.archive-link(href="{{ post.url | prepend: site.baseurl }}")
+          .archive-title
+            | {{ post.title }}
+        .archive-tags
+          | {{ post | tags | remove: "," }}
+        .archive-summary
+          | {% if post.summary %}
+          | {{ post.summary }}
+          | {% elsif post.excerpt %}
+          | {{ post.excerpt }}
+          | {% endif %}
+      | {% endfor %}
+
+  | {% include pagination.pug %}
