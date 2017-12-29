@@ -93,13 +93,14 @@
   border-radius: 5px;
   font-family: 'Fira Mono';
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.9;
   padding: 10px;
   overflow-x: auto;
 
   // Fix for parens
   .p {
     font-size: 14px;
+    line-height: 1.9;
   }
 
   code {
@@ -112,5 +113,6 @@ code {
   border-radius: 5px;
   color: $code-foreground;
   font-family: 'Fira Mono';
+  font-size: 14px;
   padding: 0 5px;
 }

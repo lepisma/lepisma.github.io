@@ -23,10 +23,86 @@ li {
   font-size: 16px;
 }
 
-article .post-intro {
-  font-family: 'et-book';
-  font-size: 20px;
-  margin-bottom: 40px;
+// Main blog styling
+.post {
+  .post-header {
+    h1 {
+      font-size: 48px;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+    .post-tags {
+      margin-bottom: 5px;
+      a {
+        @include tag;
+      }
+    }
+    .post-meta {
+      font-style: normal;
+      font-variant: small-caps;
+    }
+  }
+
+  .post-content {
+    .post-intro {
+      font-family: 'et-book';
+      font-size: 20px;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+    p {
+      line-height: 1.9;
+    }
+  }
+
+}
+
+// Archive and other listings (index, tag pages)
+.archive-container {
+  margin-top: 50px;
+
+  .archive-listing {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.archive-tag-cloud a {
+  @include tag;
+}
+
+.archive-list-item {
+  margin: 40px 0;
+
+  .archive-date {
+    color: $text-light;
+    font-size: 12px;
+    font-variant: small-caps;
+  }
+
+  .archive-title {
+    font-size: 25px;
+    line-height: 1.6;
+  }
+
+  .archive-tags {
+    margin-top: 5px;
+    a {
+      @include tag;
+    }
+  }
+
+  .archive-summary {
+    margin-top: 10px;
+    font-family: 'et-book';
+    font-size: 18px;
+
+    // Override for intro from posts
+    .post-intro {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
 }
 
 // Better blockquote
@@ -50,78 +126,6 @@ blockquote {
   margin-right: .3rem;
   margin-top: 30px;
   padding: 0;
-}
-
-// Blog archive and other listings
-header,
-.post-title {
-  font-family: 'Merriweather';
-  font-weight: normal;
-}
-
-.post-link .post-title {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.post-header {
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  .post-tags {
-    margin-bottom: 10px;
-  }
-}
-
-.post-summary, .post-intro {
-  color: $text-medium;
-  font-size: 16px;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-.posts .post {
-  margin-bottom: .75em;
-  padding-bottom: 1.33em;
-
-  .post-date {
-    color: $text-light;
-    font-variant: small-caps;
-    font-size: 16px;
-  }
-}
-
-.archive-container {
-  margin-top: 50px;
-}
-
-.archive-listing {
-  list-style: none;
-}
-
-.archive-list-item {
-  margin: 40px 0;
-
-  .archive-date {
-    color: $text-light;
-    font-variant: small-caps;
-  }
-
-  .archive-title {
-    font-size: 25px;
-    line-height: 1.2em;
-  }
-
-  .post-tags {
-    margin-top: 5px;
-  }
-}
-
-.post-tags a,
-#tag-cloud a {
-  @include tag;
 }
 
 // Footer

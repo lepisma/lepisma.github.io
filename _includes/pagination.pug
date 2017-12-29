@@ -4,25 +4,30 @@
     | {% if paginator.page == 2 %}
     a.btn(href="{{ site.baseurl }}/")
       i.fa.fa-angle-left(aria-hidden="true")
-      Newer
+      |
+      | Newer
     | {% else %}
     a.btn(href="{{ site.baseurl }}/page{{paginator.previous_page}}/")
       i.fa.fa-angle-left(aria-hidden="true")
-      Newer
+      |
+      | Newer
     | {% endif %}
     | {% else %}
     span.btn.disabled
       i.fa.fa-angle-left(aria-hidden="true")
-      Newer
+      |
+      | Newer
     | {% endif %}
 
   .right
     | {% if paginator.next_page %}
     a.btn(href="{{ site.baseurl }}/page{{paginator.next_page}}/")
-      Older
+      | Older
+      |
       i.fa.fa-angle-right(aria-hidden="true")
     | {% else %}
     span.btn.disabled
-      Older
+      | Older
+      |
       i.fa.fa-angle-right(aria-hidden="true")
     | {% endif %}

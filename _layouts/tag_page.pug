@@ -6,6 +6,7 @@ layout: default
   a.btn(href="/archive")
     i.archive-back.fa.fa-angle-double-left(aria-hidden="true")
     span
+      |
       | {{ page.tag }}
 
   .archive-container
@@ -14,9 +15,9 @@ layout: default
       li.archive-list-item
         .archive-date
           | {{ post.date | date: "%b %-d, %Y" }}
-        a.archive-link(href="{{ post.url }}")
+        a.archive-link(href="{{ post.url | prepend: site.baseurl }}")
           .archive-title
             | {{ post.title }}
-        .post-tags
+        .archive-tags
           | {{ post | tags | remove: "," }}
       | {% endfor %}

@@ -118,9 +118,11 @@ $text-dark: $c1;
   border-width: 1px;
   border-color: $back-light;
   border-radius: $radius;
-  font-family: 'Merriweather';
+  font-family: 'Open Sans';
+  font-variant: all-small-caps;
   font-size: $font-size;
   font-style: normal;
+  letter-spacing: 2px;
   background-image: none;
   &:hover {
     background-color: $back-light;
@@ -129,8 +131,7 @@ $text-dark: $c1;
 }
 
 @mixin tag() {
-  @include button(2px, 12px, 4px);
-  font-family: 'Fira Mono';
+  @include button(2px, 14px, 4px);
   line-height: 2.5em;
   white-space: nowrap;
 }
