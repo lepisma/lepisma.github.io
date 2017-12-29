@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+.post-header.mb2
+  h2
+    | {{ page.title }}
+  | {% if page.update_date %}
+  span.post-meta.small
+    | Last updated: {{ page.update_date | date: "%b %-d, %Y" }}
+  br
+  | {% endif %}
+
+article.post-content
+  | {{ content }}

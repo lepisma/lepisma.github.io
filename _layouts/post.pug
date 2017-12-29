@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+| {% assign minutes = content | number_of_words | divided_by: 180 %}
+| {% if minutes == 0 %}
+| {% assign minutes = 1 %}
+| {% endif %}
+
+.post-header.mb2
+  h1
+    | {{ page.title | widont }}
+  .post-tags
+    | {{ page | tags | remove: "," }}
+  span.post-meta.small
+    | {{ page.date | date: "%b %-d, %Y" }}
+  br
+  span.post-meta.small
+    | {{ minutes }} minute read
+
+article.post-content
+  | {{ content }}

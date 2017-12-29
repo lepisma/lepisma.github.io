@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+html
+  | {% include head-tags.pug %}
+  body
+    .site-wrap
+      | {% include header.pug %}
+
+      .post.p2.p-responsive.wrap(role="main")
+        .measure
+          | {{ content }}
+    footer.footer

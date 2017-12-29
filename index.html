@@ -9,7 +9,7 @@ layout: default
     <div class="post">
       <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-        <h3 class="h2 post-title">{{ post.title }}</h3>
+        <h2 class="post-title">{{ post.title }}</h2>
       </a>
       <div class="post-tags">
         {{ post | tags | remove: "," }}
@@ -25,5 +25,5 @@ layout: default
     {% endfor %}
   </div>
 
-  {% include pagination.html %}
+  {% include pagination.pug %}
 </div>
