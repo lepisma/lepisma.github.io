@@ -128,6 +128,13 @@ $text-dark: $c1;
   }
 }
 
+@mixin tag() {
+  @include button(2px, 12px, 4px);
+  font-family: 'Fira Mono';
+  line-height: 2.5em;
+  white-space: nowrap;
+}
+
 // Selection colors:
 *::selection {
   background: $back-medium;
@@ -135,4 +142,9 @@ $text-dark: $c1;
 
 *::-moz-selection {
   background: $back-medium;
+}
+
+// Loading bar
+.pace .pace-progress {
+  background-color: $accent !important;
 }

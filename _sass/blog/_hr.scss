@@ -1,0 +1,11 @@
+hr {
+  background-image: -webkit-linear-gradient(left, $back-light, $back-medium, $back-light);
+  background-image: -moz-linear-gradient(left, $back-light, $back-medium, $back-light);
+  background-image: -ms-linear-gradient(left, $back-light, $back-medium, $back-light);
+  background-image: -o-linear-gradient(left, $back-light, $back-medium, $back-light);
+  border: 0;
+  height: 1px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 80%;
+}

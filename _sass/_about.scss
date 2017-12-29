@@ -1,11 +1,7 @@
 // About me page style
 
 @import 'commons';
-
-// Loading bar
-.pace .pace-progress {
-  background-color: $accent !important;
-}
+@import 'code';
 
 a {
   color: $accent;
@@ -114,16 +110,6 @@ a {
       }
     }
   }
-}
-
-.highlight {
-  background-color: $code-background;
-  border-radius: 5px;
-  font-family: 'Fira Mono';
-  font-size: 14px;
-  line-height: 22px;
-  overflow-x: auto;
-  padding: 10px;
 }
 
 footer {
