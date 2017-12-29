@@ -1,0 +1,115 @@
+---
+layout: about
+permalink: /about/
+---
+
+.container
+  .row
+    .nine.columns
+      | {% include header-about.pug %}
+
+      #main-content
+        .section
+          .section-text
+            p
+              | I am an MS student in Computer Science at
+              | <a href="https://www.cics.umass.edu/" target="_blank"> UMass
+              | Amherst</a>. Earlier, I did bachelor coursework in Electrical
+              | Engineering at <a href="http://www.iitr.ac.in" target="_blank">
+              | Indian Institute of Technology, Roorkee </a>. I like learning
+              | about and exploring patterns in natural and machine intelligence.
+            p
+              | Since you are here, you might be interested in checking out my
+              | <a href="/archive">blog posts</a> or <a href="/sticky/emp">employment
+              | summary page</a> (if you are interested in hiring). Some of my
+              | projects are on
+              | <a href="{{ site.links.github }}" target="_blank">github</a>. I
+              | live and travel a lot on the Internet. Physically, I am in my room
+              | most of the time. Ideal way to get in touch would be to drop me an
+              | <a href="{{ site.email }}">email</a>.
+        .section.row#interests
+          .section-media.four.columns
+            img(src="{{ site.baseurl }}/assets/images/gun.gif")
+          .section-info.eight.columns
+            .section-title Interests
+            .section-text
+              p
+                | I am broadly interested in the ways computational sciences help
+                | explain physical and natural phenomena like intelligence and
+                | life. At right levels of abstraction, I believe, all natural
+                | processes can be reduced to a few common computational
+                | <em>time evolution</em> operations. My ideal life state will let
+                | me <em>have</em> and <em>spend</em> free time to study and play
+                | with these ideas.
+              p
+                | I am equally fascinated by data and visualization based
+                | exploration of complex systems. It is interesting how tiny
+                | interactions can generate almost magical behavior.
+
+        .section.row#projects
+          .section-media.four.columns
+            img(src="{{ site.baseurl }}/assets/images/falcon.jpg")
+          .section-info.eight.columns
+            .section-title Projects
+            .section-text
+              p
+                | Many of my projects are on <a href="{{ site.links.github }}">
+                | github/lepisma</a>. A few explorations can be scrambled from my
+                | <a href="/archive">blog</a>. I also maintain a list of incomplete
+                | side (hobby) projects at <a href="https://lepisma.github.io/dev/">/dev</a>,
+                | which gives me something when I am bored of my current work.
+              p
+                | I enjoy exploring and learning new languages and tools. Like
+                | many others, I am in love with the
+                | <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp family</a>
+                | which makes programming <em>really</em> joyful. On the regular
+                | side, I use Python, JS and Emacs (never ceases to
+                | <a href="https://github.com/lepisma/til-emacs">amaze me</a>).
+
+        .section.row#misc
+          .section-media.four.columns
+            img(src="{{ site.baseurl }}/assets/images/all.jpg")
+          .section-info.eight.columns
+            .section-title Miscellaneous
+            .section-text
+              p
+                | I like good design and am a typophile. I believe human facing
+                | interfaces should not avoid a little bit of extra work by citing
+                | <em>content before design</em>. I sometimes
+                | <a href="https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice">
+                | overindulge</a> in this.
+              p
+                | For many years, I have been fortunate enough to be in the
+                | vicinity of various kinds of pseudo‑science. This, in turn, has
+                | convinced me of the severity of problems they create and the
+                | importance of being skeptical about them and making people aware
+                | of the fallacies.
+              p
+                | I listen to <a href="{{ site.links.lastfm }}">music</a>
+                | religiously and occasionally sketch. Also, I try to maintain a
+                | list of books to read (or read)
+                | <a href="https://github.com/lepisma/reading-list">here</a> and
+                | list of clippings at
+                | <a href="https://lepisma.github.io/clippings">/clippings</a>.
+
+        .section.row.contact
+          .section-media.four.columns
+            img(src="{{ site.baseurl }}/assets/images/phone.jpg")
+          .section-info.eight.columns
+            .section-title Contact
+            .section-text
+              p
+                pre.highlight
+                  | ;; utf-8 code points (decimals) for email id
+                  | (let ((email-chars
+                  |        (list 108 101 112 105 115 109 97
+                  |              64 102 97 115 116 109
+                  |              97 105 108 46 99 111 109)))
+                  |   (mapconcat #'char-to-string email-chars ""))
+
+                | Above elisp snippet should give you my email id. Here is my
+                | <a href="{{ site.links.keybase }}">public key</a> with
+                | more details.
+              div
+                a(href="https://xkcd.com/1269/")
+                  img(src="{{ site.baseurl }}/assets/images/pri.png")
