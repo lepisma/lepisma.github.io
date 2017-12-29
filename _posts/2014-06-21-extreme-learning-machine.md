@@ -39,7 +39,7 @@ output can be tapped from those nodes and the training problem reduces to
 calculating the connection (weights) of tapping nodes to output. This avoids the
 major bottleneck, *iterative tuning of weights of input to higher level*.
 
-Well, does this thing even work? *Yes, farely well !*
+Well, does this thing even work? *Yes, farely well!*
 
 There is a concept known as *Liquid State Machine*, and a relatively better
 known *Echo State Network* which is used for training [Recurrent Neural
@@ -64,43 +64,59 @@ weighted sum of hidden nodes.
 After performing the tedious backpropagation ritual, we are left with the
 following equation that predicts output from inputs
   
-$$y = \sum h\_{i}$$
+{% katex display %}
+y = \sum h_i
+{% endkatex %}
 
-Where \\(h\_{i}\\) is the activation of \\(i^{th}\\) hidden neuron computed using
+Where {% katex %}h_i{% endkatex %} is the activation of {% katex %}i^{th}{%
+endkatex %} hidden neuron computed using
 
-$$h\_{i} = f(\sum\_{j} (w\_{i, j} \times x\_{j}) + b\_{i})$$
+{% katex display %}
+h_i = f(\sum_j (w_{i, j} \times x_j) + b_i)
+{% endkatex %}
 
-Here, \\(f\\) is the activation function like *sigmoid*, *tanh* etc.,
-\\(x\_{j}\\) is the \\(j^{th}\\) input, \\(w\_{i, j}\\) is the connection weight
-from \\(j^{th}\\) input to \\(i^{th}\\) hidden neuron and \\(b\_{i}\\) is the
-bias term.
+Here, {% katex %}f{% endkatex %} is the activation function like *sigmoid*,
+*tanh* etc., {% katex %}x_j{% endkatex %} is the {% katex %}j^{th}{% endkatex %}
+input, {% katex %}w_{i, j}{% endkatex %} is the connection weight from
+{% katex %}j^{th}{% endkatex %} input to {% katex %}i^{th}{% endkatex %} hidden
+neuron and {% katex %}b_i{% endkatex %} is the bias term.
 
 In matrix notation, the process can be represented in the following form
 
-$$\mathbf{Y} = \mathbf{W}' \times \mathbf{H}$$
+{% katex display %}
+\mathbf{Y} = \mathbf{W}' \times \mathbf{H}
+{% endkatex %}
 
-Where \\(\mathbf{W}'\\) is the matrix of weights from hidden to output layer
-while \\(\mathbf{H}\\) is the activation matrix computed using
+Where {% katex %}\mathbf{W}'{% endkatex %} is the matrix of weights from hidden
+to output layer while {% katex %}\mathbf{H}{% endkatex %} is the activation
+matrix computed using
 
-$$\mathbf{H} = f(\mathbf{W} \times \mathbf{X} + B)$$
+{% katex display %}
+\mathbf{H} = f(\mathbf{W} \times \mathbf{X} + \mathbf{B})
+{% endkatex %}
 
-with \\(\mathbf{W}\\) (without the '**'**') is matrix of weights from input to
+with {% katex %}\mathbf{W}{% endkatex %} is matrix of weights from input to
 hidden layer.
 
-Now, being different from usual SLFN, the ELM doesn't tune \\(\mathbf{W}\\)
-using backprop or any other iterative method, instead \\(\mathbf{W}\\) is
-randomly generated. This gives us a pool of higher level input abstractions in
-the hidden layer, out of which, ones fitting to training data can be found by
-adjusting hidden to output weights by solving a simple matrix equation.
+Now, being different from usual SLFN, the ELM doesn't tune {% katex
+%}\mathbf{W}{% endkatex %} using backprop or any other iterative method, instead
+{% katex %}\mathbf{W}{% endkatex %} is randomly generated. This gives us a pool
+of higher level input abstractions in the hidden layer, out of which, ones
+fitting to training data can be found by adjusting hidden to output weights by
+solving a simple matrix equation.
 
-$$\mathbf{Y} = \mathbf{W}' \times \mathbf{H}$$
+{% katex display %}
+\mathbf{Y} = \mathbf{W}' \times \mathbf{H}
+{% endkatex %}
 
-Now, given a training data with \\(\mathbf{X}\\) as input and \\(\mathbf{Y}\\)
-as output, the ELM training process takes the following steps
+Now, given a training data with {% katex %}\mathbf{X}{% endkatex %} as input and
+{% katex %}\mathbf{Y}{% endkatex %} as output, the ELM training process takes
+the following steps
 
-- Generate \\(\mathbf{W}\\)
-- Find \\(\mathbf{H}\\)
-- Solve \\(\mathbf{Y} = \mathbf{W}' \times \mathbf{H}\\) for \\(\mathbf{W}'\\)
+- Generate {% katex %}\mathbf{W}{% endkatex %}
+- Find {% katex %}\mathbf{H}{% endkatex %}
+- Solve {% katex %}\mathbf{Y} = \mathbf{W}' \times \mathbf{H}{% endkatex %} for
+  {% katex %}\mathbf{W}'{% endkatex %}
 
 <aside markdown="1">
 Mathematically inclined readers can refer to
@@ -108,12 +124,14 @@ Mathematically inclined readers can refer to
 details about *ELMs* can be found [here](http://www.ntu.edu.sg/home/egbhuang/)
 </aside>
 
-The value of \\(\mathbf{W}'\\) can be calculated simply using *psuedo
-(Moore-Penrose)* inverse which is usually available as a function that goes by
-the name *pinv* most of the scientific computation environment including
+The value of {% katex %}\mathbf{W}'{% endkatex %} can be calculated simply using
+*psuedo (Moore-Penrose)* inverse which is usually available as a function that
+goes by the name *pinv* most of the scientific computation environment including
 Matlab and Python's `numpy.linalg`.
 
-$$\mathbf{W}' = \mathbf{Y} \times pinv(\mathbf{H})$$
+{% katex display %}
+\mathbf{W}' = \mathbf{Y} \times pinv(\mathbf{H})
+{% endkatex %}
 
 This inverse can also be computed using regularized inverse for better
 generalization.

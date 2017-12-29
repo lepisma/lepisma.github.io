@@ -50,12 +50,13 @@ operations.
 ### Mutation
 
 This is simply what every other random search algorithm does. Slight change from
-the current solution. Using a bit string solution representation like
-\\(0100100\\), a simple point mutation along with fitness based selection
-procedure essentially is the hill climb algorithm. Change bits, evaluate the new
-positions and shift the population towards the better fitness. This case is
-stronger with situations including \\(N\to\infty\\) (larger population size,
-\\(N\\)), higher rate of mutation, elite individuals etc.
+the current solution. Using a bit string solution representation like {% katex
+%}0100100{% endkatex %}, a simple point mutation along with fitness based
+selection procedure essentially is the hill climb algorithm. Change bits,
+evaluate the new positions and shift the population towards the better fitness.
+This case is stronger with situations including {% katex %}N\to\infty{% endkatex
+%} (larger population size, {% katex %}N{% endkatex %}), higher rate of
+mutation, elite individuals etc.
 
 Mutation coupled with a population and selection procedure results in a nice
 global optimizer. Even more important is the ease of understanding the word
@@ -80,12 +81,15 @@ chunks of properties among the population and across generations.*
 
 In GA, you can represent the solution as *chromosomes* in multiple ways. A
 common method to represent real number parameters is to use direct value
-encoding. Let the fitness function simply be \\(f(a)\\). For crossing over
-individuals in this form, there are blending and interpolation techniques for
-numbers. While mating two solutions, \\(a_{1}\\) and \\(a_{2}\\), a simple
-\\(\alpha\\) blending gives
+encoding. Let the fitness function simply be {% katex %}f(a){% endkatex %}. For
+crossing over individuals in this form, there are blending and interpolation
+techniques for numbers. While mating two solutions, {% katex %}a_1{% endkatex %}
+and {% katex %}a_2{% endkatex %}, a simple {% katex %}\alpha{% endkatex %}
+blending gives
 
-$$ a_{3} = \alpha a_{1} + (1-\alpha) a_{2}$$
+{% katex display %}
+a_3 = \alpha a_1 + (1-\alpha) a_2
+{% endkatex %}
 
 Now, here is what the wikipedia
 [page](https://en.wikipedia.org/wiki/Differential_evolution) on Differential
@@ -126,7 +130,9 @@ nice example. Consider following lisp sexpr:
 
 The function is approximating the (-ve of) slope of another function by calculating
 
-$$ - \frac{fn(x + \Delta x) - fn(x - \Delta x)}{2 \times \Delta x} $$
+{% katex display %}
+- \frac{fn(x + \Delta x) - fn(x - \Delta x)}{2 \times \Delta x}
+{% endkatex %}
 
 The tree structure of operations has usable chunks which are essential to get
 the final output. Consider the numerator chunk.
