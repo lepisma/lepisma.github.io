@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem "jekyll-livereload"
   gem "jekyll-katex"
   gem "jekyll-typogrify"
+  gem "jekyll-pug"
 end
