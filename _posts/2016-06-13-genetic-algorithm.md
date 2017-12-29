@@ -131,7 +131,7 @@ nice example. Consider following lisp sexpr:
 The function is approximating the (-ve of) slope of another function by calculating
 
 {% katex display %}
-- \frac{fn(x + \Delta x) - fn(x - \Delta x)}{2 \times \Delta x}
+-\frac{fn(x + \Delta x) - fn(x - \Delta x)}{2 \times \Delta x}
 {% endkatex %}
 
 The tree structure of operations has usable chunks which are essential to get
