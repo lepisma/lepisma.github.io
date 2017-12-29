@@ -8,7 +8,7 @@ layout: default
 {% endif %}
 
 <div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
+  <h1>{{ page.title | widont }}</h1>
   <div class="post-tags">
     {{ page | tags | remove: "," }}
   </div>

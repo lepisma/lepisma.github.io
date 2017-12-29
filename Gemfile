@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem "jekyll-tagging"
   gem "jekyll-livereload"
   gem "jekyll-katex"
+  gem "jekyll-typogrify"
 end
