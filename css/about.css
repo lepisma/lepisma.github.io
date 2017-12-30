@@ -28,6 +28,271 @@
 .pace .pace-progress {
   background-color: #002642 !important; }
 
+ul, ol {
+  list-style-position: outside;
+  padding: 0;
+  margin: 30px 0; }
+
+ul ul, ol ol {
+  padding-left: 20px; }
+
+ul ul ul, ol ol ol {
+  padding-left: 40px; }
+
+img.zoomTarget:hover {
+  cursor: default !important; }
+
+/* Pygments theme exported from Emacs */
+/* Palette
+#655370  foreground
+#ffffff  background
+#3a81c3  builtin
+#555555  comment
+#4e3163  constant
+#2aa1ae  doc
+#6c3163  func
+#3a81c3  keyword
+#655370  regex
+#2d9574  string
+#ba2f59  type
+#715ab1  variable
+#dc752f  warning
+*/
+/* Style */
+.highlight {
+  color: #655370; }
+
+.highlight .c {
+  color: #555555; }
+
+.highlight .err {
+  color: #dc752f; }
+
+.highlight .g {
+  color: #655370; }
+
+.highlight .k {
+  color: #3a81c3; }
+
+.highlight .l {
+  color: #655370; }
+
+.highlight .n {
+  color: #655370; }
+
+.highlight .o {
+  color: #6c3163; }
+
+.highlight .x {
+  color: #4e3163; }
+
+.highlight .p {
+  color: #655370; }
+
+.highlight .cm {
+  color: #555555; }
+
+.highlight .cp {
+  color: #6c3163; }
+
+.highlight .c1 {
+  color: #555555; }
+
+.highlight .cs {
+  color: #6c3163; }
+
+.highlight .gd {
+  color: #2d9574; }
+
+.highlight .ge {
+  color: #655370;
+  font-style: italic; }
+
+.highlight .gr {
+  color: #dc752f; }
+
+.highlight .gh {
+  color: #4e3163; }
+
+.highlight .gi {
+  color: #6c3163; }
+
+.highlight .go {
+  color: #655370; }
+
+.highlight .gp {
+  color: #655370; }
+
+.highlight .gs {
+  color: #655370;
+  font-weight: bold; }
+
+.highlight .gu {
+  color: #4e3163; }
+
+.highlight .gt {
+  color: #655370; }
+
+.highlight .kc {
+  color: #4e3163; }
+
+.highlight .kd {
+  color: #3a81c3; }
+
+.highlight .kn {
+  color: #6c3163; }
+
+.highlight .kp {
+  color: #6c3163; }
+
+.highlight .kr {
+  color: #3a81c3; }
+
+.highlight .kt {
+  color: #ba2f59; }
+
+.highlight .ld {
+  color: #655370; }
+
+.highlight .m {
+  color: #2d9574; }
+
+.highlight .s {
+  color: #2d9574; }
+
+.highlight .na {
+  color: #655370; }
+
+.highlight .nb {
+  color: #3a81c3; }
+
+.highlight .nc {
+  color: #ba2f59; }
+
+.highlight .no {
+  color: #4e3163; }
+
+.highlight .nd {
+  color: #ba2f59; }
+
+.highlight .ni {
+  color: #4e3163; }
+
+.highlight .ne {
+  color: #4e3163; }
+
+.highlight .nf {
+  color: #6c3163; }
+
+.highlight .nl {
+  color: #655370; }
+
+.highlight .nn {
+  color: #655370; }
+
+.highlight .nx {
+  color: #655370; }
+
+.highlight .py {
+  color: #ba2f59; }
+
+.highlight .nt {
+  color: #ba2f59; }
+
+.highlight .nv {
+  color: #715ab1; }
+
+.highlight .ow {
+  color: #6c3163; }
+
+.highlight .w {
+  color: #655370; }
+
+.highlight .mf {
+  color: #2d9574; }
+
+.highlight .mh {
+  color: #2d9574; }
+
+.highlight .mi {
+  color: #2d9574; }
+
+.highlight .mo {
+  color: #2d9574; }
+
+.highlight .sb {
+  color: #555555; }
+
+.highlight .sc {
+  color: #2d9574; }
+
+.highlight .sd {
+  color: #2aa1ae; }
+
+.highlight .s2 {
+  color: #2d9574; }
+
+.highlight .se {
+  color: #4e3163; }
+
+.highlight .sh {
+  color: #2aa1ae; }
+
+.highlight .si {
+  color: #2d9574; }
+
+.highlight .sx {
+  color: #2d9574; }
+
+.highlight .sr {
+  color: #655370; }
+
+.highlight .s1 {
+  color: #2d9574; }
+
+.highlight .ss {
+  color: #2d9574; }
+
+.highlight .bp {
+  color: #3a81c3; }
+
+.highlight .vc {
+  color: #ba2f59; }
+
+.highlight .vg {
+  color: #715ab1; }
+
+.highlight .vi {
+  color: #715ab1; }
+
+.highlight .il {
+  color: #2d9574; }
+
+.highlight {
+  border-width: 0;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #c8c8c8;
+  margin: 20px 0;
+  padding: 0;
+  padding-left: 15px;
+  font-family: 'Fira Mono';
+  font-size: 14px;
+  line-height: 1.9;
+  overflow-x: auto; }
+  .highlight .p {
+    font-size: 14px;
+    line-height: 1.9; }
+  .highlight code {
+    padding: 0; }
+
+code {
+  border-radius: 5px;
+  color: #2c3e50;
+  font-family: 'Fira Mono';
+  font-size: 15px;
+  padding: 0 5px; }
+
 a {
   color: #002642;
   text-decoration: none; }
@@ -81,7 +346,6 @@ a {
           display: none; } }
     #main-content .section .section-title {
       font-family: 'et-book';
-      font-style: italic;
       font-size: 30px;
       margin-bottom: 20px; }
     #main-content .section .section-text {
@@ -132,15 +396,6 @@ a {
             text-shadow: none; }
           #main-content .section .section-text a:hover:visited {
             color: #222; }
-
-.highlight {
-  background-color: #efefef;
-  border-radius: 5px;
-  font-family: 'Fira Mono';
-  font-size: 14px;
-  line-height: 22px;
-  overflow-x: auto;
-  padding: 10px; }
 
 footer {
   background-color: #efefef;

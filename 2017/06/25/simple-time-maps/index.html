@@ -1,114 +1,76 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>
-    Simpler time map plots &#8211; abhinav tushar
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal Blog">
-  <meta name="author" content="Abhinav Tushar">
-  <meta name="keywords" content="">
-  <link rel="canonical" href="https://lepisma.github.io//2017/06/25/simple-time-maps/">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/assets/css/pace.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/lightbox.css" type="text/css">
-  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css">
-  <link rel="stylesheet" href="/css/blog.css" type="text/css">
-
-  <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
-
+<html><head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Personal Blog"/>
+<meta name="author" content="Abhinav Tushar"/>
+<meta name="keywords" content=""/>
+<link rel="canonical" href="https://lepisma.github.io//2017/06/25/simple-time-maps/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Simpler time map plots"/>
+<meta property="og:description" content="Personal Blog"/>
+<meta property="og:url" content="https://lepisma.github.io//2017/06/25/simple-time-maps/"/>
+<meta property="og:site_name" content="abhinav tushar"/>
+<meta name="twitter:url" content="https://lepisma.github.io//2017/06/25/simple-time-maps/"/>
+<meta name="twitter:title" content="Simpler time map plots"/>
+<meta name="twitter:description" content="Personal Blog"/>
+<meta itemprop="name" content="Simpler time map plots"/>
+<meta itemprop="description" content="Personal Blog"/>
+  <title>Simpler time map plots &#8211; abhinav tushar</title>
+  <link rel="stylesheet" href="/assets/css/pace.css" type="text/css"/>
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css"/>
+  <link rel="stylesheet" href="/css/blog.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css"/><link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png"/>
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196"/>
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128"/>
+<meta name="application-name" content="&amp;nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF"/>
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png"/>
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png"/>
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png"/>
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png"/>
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png"/><!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/assets/js/pace.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <script src="/assets/js/lightbox.min.js"></script>
+  <script src="/assets/js/jquery.zoomooz.min.js"></script>
   <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
   <script src="/assets/js/jquery.textillate.js"></script>
   <script src="/assets/js/custom.js"></script>
-
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Simpler time map plots">
-  <meta property="og:description" content="Personal Blog">
-  <meta property="og:url" content="https://lepisma.github.io//2017/06/25/simple-time-maps/">
-  <meta property="og:site_name" content="abhinav tushar">
-
-  <meta name="twitter:url" content="https://lepisma.github.io//2017/06/25/simple-time-maps/">
-  <meta name="twitter:title" content="Simpler time map plots">
-  <meta name="twitter:description" content="Personal Blog">
-
-  <meta itemprop="name" content="Simpler time map plots">
-  <meta itemprop="description" content="Personal Blog">
 </head>
-
   <body>
-    <div class="site-wrap">
-      <header class="site-header px2 px-responsive">
+    <div class="site-wrap"><header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
-    <div class="measure">
-      <span class="site-title">
-        <a href="/">
-          <img src="/assets/images/avatar32.png">
-        </a>
-      </span>
-      <nav class="site-nav right">
-        <a href="/">home</a>
-<a href="/feed.xml">feed</a>
-<a href="/archive">archive</a>
-<a href="/about/">about</a>
-
-      </nav>
+    <div class="measure"><span class="site-title"><a href="/"><img src="/assets/images/avatar32.png"/></a></span>
+      <nav class="site-nav right"><a href="/">home</a><a href="/feed.xml">feed</a><a href="/archive">archive</a><a href="/about/">about</a></nav>
       <div class="clearfix"></div>
     </div>
   </div>
 </header>
-
-
       <div class="post p2 p-responsive wrap" role="main">
         <div class="measure">
-          
-
 
 <div class="post-header mb2">
-  <h1>Simpler time map plots</h1>
-  <div class="post-tags">
-    <a href="/archive/exploration/" rel="tag">exploration</a> <a href="/archive/viz/" rel="tag">viz</a>
-  </div>
-  <span class="post-meta small">Jun 25, 2017</span><br>
-  <span class="post-meta small">5 minute read</span>
+  <div class="post-meta small">Jun 25, 2017</div>
+  <div class="post-meta small">6 minute read</div>
+  <h1>Simpler time map&nbsp;plots</h1>
+  <div class="post-tags"><a href="/archive/exploration/" rel="tag">exploration</a> <a href="/archive/viz/" rel="tag">viz</a></div>
 </div>
-
-<article class="post-content">
-  <p class="post-intro">
+<article class="post-content"><p class="post-intro">
 Proposing a one dimensional version of <a href="https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales">time
 map</a>
 plots which doesn’t lose any information displayed in most cases and is cleaner
@@ -131,46 +93,48 @@ intervals <em>and</em> for the daily one. A time map captures these two modes ea
 <p>Consider the following time series. The x axis shows date and the y axis shows
 my lastfm <a href="https://www.last.fm/user/abhinavtushar">scrobbles</a> per day.</p>
 
-<figure>
-<div id="counts-lfm"></div>
-<figcaption>My daily lastfm scrobbles</figcaption>
-</figure>
+<figure><div id="counts-lfm"></div><figcaption>
+    <p>My daily lastfm scrobbles</p>
+  </figcaption></figure>
 
-<p>Nothing much to it. If I plot it as a time map, I get this (scale is log; sorry
+<p>Nothing much to it. If I plot it as a time map, I get this</p>
+
+<aside>
+  <p>Scale is log; sorry
 for the <em>not that useful</em> tick labels in this whole post,
-<a href="https://github.com/lepisma/tufte.js/issues/21">will fix it</a>).</p>
+<a href="https://github.com/lepisma/tufte.js/issues/21">will fix it</a>.</p>
+</aside>
 
-<figure>
-<div id="diffs-lfm-vanilla"></div>
-<figcaption>Scrobbles time map</figcaption>
-</figure>
+<figure><div id="diffs-lfm-vanilla"></div><figcaption>
+    <p>Scrobbles time map</p>
+  </figcaption></figure>
 
-<p>Each dot here is a listen. The \( x \) value being the time difference between
-it and the previous listen, \( y \) being the difference with next listen.
-Note that the plot is log scaled (thus the repeated pattern in lower values)
-which helps us understand the diffs at multiple scales.</p>
+<p>Each dot here is a listen. The <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> value being the time
+difference between it and the previous listen, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> being
+the difference with next listen. Note that the plot is log scaled (thus the
+repeated pattern in lower values) which helps us understand the diffs at
+multiple scales.</p>
 
-<p>Another important point is the <em>almost</em> symmetry along \( x = y \) line. When
-you use the <em>pre-event</em> and <em>post-event</em> time diffs of each event as \( x \)
-and \( y \) value for plotting, one points \( x \) will be previous one’s
-(according to event ordering) \( y \) value. Now this has consequences on
-whether a time map is useful for you. What follows is the same plot with
-marginal histograms along the axis. No doubt the \( x \) and \( y \)
-marginals are similar. This is not because of the data but because of the way
-both axis values are derived, resulting in a non-exact symmetry.</p>
+<p>Another important point is the <em>almost</em> symmetry along <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x = y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> line. When you use the <em>pre-event</em> and <em>post-event</em> time diffs of
+each event as <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> value
+for plotting, one points <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> will be previous one’s
+(according to event ordering) <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> value. Now this has
+consequences on whether a time map is useful for you. What follows is the same
+plot with marginal histograms along the axis. No doubt the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> marginals are similar. This is not
+because of the data but because of the way both axis values are derived,
+resulting in a non-exact symmetry.</p>
 
-<figure>
-<div id="diffs-lfm"></div>
-<figcaption>Time map with marginals</figcaption>
-</figure>
+<figure><div id="diffs-lfm"></div><figcaption>
+    <p>Time map with marginals</p>
+  </figcaption></figure>
 
 <p>Think about a point in top left corner. This refers to an event which was
 preceded by another event shortly but is followed by the next event after a long
 time gap. The opposite happens with point in bottom right. Because adjacent
-events share \( x \) and \( y \), the mass of points has similar
-distributions (notice that this is not the case with very few points). Unless
-you are displaying another data dimension using color / size of the circles
-(like in the original
+events share <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span>, the mass
+of points has similar distributions (notice that this is not the case with very
+few points). Unless you are displaying another data dimension using color / size
+of the circles (like in the original
 <a href="https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales">blog</a>,
 where we see points colored according to the time of day), the two dimensions
 here just add to the visual clutter.</p>
@@ -182,54 +146,48 @@ only the first listen of each song. To give this some meaning, a lot of these
 <em>filtered</em> scrobbles in a short time span would mean that I explored more as
 compared to repeating the same old songs.</p>
 
-<figure>
-<div id="diffs-lfm-dd"></div>
-<figcaption>First listen time map</figcaption>
-</figure>
+<figure><div id="diffs-lfm-dd"></div><figcaption>
+    <p>First listen time maps</p>
+  </figcaption></figure>
 
-<p>Notice how easy it is to find the bumps in the marginal plot. A plot of \( x
-\) marginal follows.</p>
+<p>Notice how easy it is to find the bumps in the marginal plot. A plot of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> marginal follows.</p>
 
-<figure>
-<div id="dd-hist"></div>
-<figcaption>x marginal plot of first listens</figcaption>
-</figure>
+<figure><div id="dd-hist"></div><figcaption>
+    <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">x</span></span></span></span> marginal plot of first listens</p>
+  </figcaption></figure>
 
 <p>As a side note this plot makes me wonder about the origin of the bumps. The
-initial rise up to \( x = 3, 4 \) (around 20, 50 minutes) is mostly due to
-radios listens (which give you fresh songs frequently) or binging on some new
-album/artist. The one around 7 (around 18 hours) might be a <em>session</em> change. A
-new session, with fresh items probably. Need to dig in the actual songs to
-understand this.</p>
+initial rise up to <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mo separator="true">,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">x = 3, 4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord mathrm">3</span><span class="mpunct">,</span><span class="mord mathrm">4</span></span></span></span> (around 20, 50 minutes) is
+mostly due to radios listens (which give you fresh songs frequently) or binging
+on some new album/artist. The one around 7 (around 18 hours) might be a
+<em>session</em> change. A new session, with fresh items probably. Need to dig in the
+actual songs to understand this.</p>
 
-<h2 id="tweets">Tweets</h2>
+<h1 id="tweets">Tweets</h1>
 
 <p>The original blog made a time map for tweets
 of <a href="https://twitter.com/BarackObama">@BarackObama</a>. I did a re-crawl. Here is
 the time plot of tweets per day.</p>
 
-<figure>
-<div id="counts-tw"></div>
-<figcaption>Tweets per day @BarackObama</figcaption>
-</figure>
+<figure><div id="counts-tw"></div><figcaption>
+    <p>Tweets per day <a href="https://twitter.com/BarackObama">@BarackObama</a></p>
+  </figcaption></figure>
 
 <p>Next is the full time map for the series.</p>
 
-<figure>
-<div id="diffs-tw"></div>
-<figcaption>Tweets time map @BarackObama</figcaption>
-</figure>
+<figure><div id="diffs-tw"></div><figcaption>
+    <p>Tweets time map <a href="https://twitter.com/BarackObama">@BarackObama</a></p>
+  </figcaption></figure>
 
 <p>As argued earlier, unless we are showing extra information, its much easier to
 see the marginal to get the frequency behavior of the series. See the plot
 below.</p>
 
-<figure>
-<div id="tw-hist"></div>
-<figcaption>Tweets time map 1D @BarackObama</figcaption>
-</figure>
+<figure><div id="tw-hist"></div><figcaption>
+    <p>Tweets time map 1D <a href="https://twitter.com/BarackObama">@BarackObama</a></p>
+  </figcaption></figure>
 
-<h2 id="gotchas">Gotchas</h2>
+<h1 id="gotchas">Gotchas</h1>
 
 <ul>
   <li>Making sense of a histogram in log scale (the kind I used, with uniform bins
@@ -245,15 +203,13 @@ get the number of bins. Changing this number can result in different views
 as shown below.</li>
 </ul>
 
-<figure>
-<div id="tw-hist-less"></div>
-<figcaption>Tweets time map with 10 bins</figcaption>
-</figure>
+<figure><div id="tw-hist-less"></div><figcaption>
+    <p>Tweets time map with 10 bins</p>
+  </figcaption></figure>
 
-<figure>
-<div id="tw-hist-more"></div>
-<figcaption>Tweets time map with 200 bins</figcaption>
-</figure>
+<figure><div id="tw-hist-more"></div><figcaption>
+    <p>Tweets time map with 200 bins</p>
+  </figcaption></figure>
 
 <hr />
 
@@ -269,15 +225,9 @@ time map follows the same idea.</p>
 
 <script src="/scripts/posts/time-maps/script.js"></script
 </script>
-
-</article>
-
-        </div>
+</article></div>
       </div>
     </div>
-
-    <footer class="footer">
-</footer>
-
+    <footer class="footer"></footer>
   </body>
 </html>

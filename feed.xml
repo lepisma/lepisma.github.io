@@ -50,7 +50,7 @@ rid of the boilerplate like this:&lt;/p&gt;
 &lt;a href=&quot;https://hylang.org&quot;&gt;hy&lt;/a&gt; provide a shorter name like &lt;code class=&quot;highlighter-rouge&quot;&gt;fn&lt;/code&gt; which is neat, but
 given that we have macros in hand there can be much cleaner solutions.&lt;/p&gt;
 
-&lt;h2 id=&quot;cut&quot;&gt;Cut&lt;/h2&gt;
+&lt;h1 id=&quot;cut&quot;&gt;Cut&lt;/h1&gt;
 
 &lt;p&gt;One of the solutions I first came across is the &lt;code class=&quot;highlighter-rouge&quot;&gt;-cut&lt;/code&gt; macro in Emacs Lisp from
 &lt;a href=&quot;https://github.com/magnars/dash.el#-cut-rest-params&quot;&gt;dash.el&lt;/a&gt;. This has its
@@ -58,9 +58,6 @@ origin in &lt;a href=&quot;https://srfi.schemers.org/srfi-26/srfi-26.html&quot;&
 line description says &lt;em&gt;Notation for Specializing Parameters without Currying&lt;/em&gt;.&lt;/p&gt;
 
 &lt;aside&gt;
-  &lt;div class=&quot;aside-title&quot;&gt;
-Currying
-&lt;/div&gt;
   &lt;p&gt;Currying is a process of converting an &lt;em&gt;n-ary&lt;/em&gt; function into a chain of
 &lt;em&gt;unary&lt;/em&gt; ones. This is different from what &lt;em&gt;cut&lt;/em&gt;’s specification says. Cut
 returns a single new function with arbitrary positions filled in. Currying
@@ -145,7 +142,7 @@ version of λ which captures &lt;code class=&quot;highlighter-rouge&quot;&gt;&am
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;xi&quot;&gt;Xi&lt;/h2&gt;
+&lt;h1 id=&quot;xi&quot;&gt;Xi&lt;/h1&gt;
 
 &lt;p&gt;This is another fancy way of creating λs that I came to know from
 &lt;a href=&quot;https://hylang.org&quot;&gt;hy&lt;/a&gt;. Although its name is going to be changed in &lt;a href=&quot;https://github.com/hylang/hy/blob/862732ff2a96b811d9b1f077843cd89bb1049099/hy/extra/anaphoric.hy#L114&quot;&gt;a
@@ -190,9 +187,6 @@ Using &lt;code class=&quot;highlighter-rouge&quot;&gt;#L&lt;/code&gt;, the above
 Lisp code&lt;/p&gt;
 
 &lt;aside&gt;
-  &lt;div class=&quot;aside-title&quot;&gt;
-arnesi
-&lt;/div&gt;
   &lt;p&gt;Arnesi is not recommended for use though. The &lt;a href=&quot;http://quickdocs.org/arnesi/&quot;&gt;version on
 quicklisp&lt;/a&gt; is an unmaintained fork and suggests
 switching to newer libraries.&lt;/p&gt;
@@ -235,12 +229,12 @@ which are similar in the sense that they allow creating/manipulating functions:&
     &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/cl-cut/&quot;&gt;cl-cut&lt;/a&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;cut&lt;/code&gt; (and &lt;code class=&quot;highlighter-rouge&quot;&gt;cute&lt;/code&gt;) syntax from
 &lt;a href=&quot;https://srfi.schemers.org/srfi-26/srfi-26.html&quot;&gt;SRFI-26&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/cl-cut/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/cl-cut.svg&quot; alt=&quot;quickdocs-cl-cut&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/cl-cut/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/cl-cut.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/arnesi/&quot;&gt;arnesi&lt;/a&gt; for the &lt;code class=&quot;highlighter-rouge&quot;&gt;#L&lt;/code&gt; reader macro.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/arnesi/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/arnesi.svg&quot; alt=&quot;quickdocs-arnesi&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/arnesi/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/arnesi.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/cl21/cl21&quot;&gt;CL21&lt;/a&gt; for the &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; macro. Not on quicklisp main
@@ -250,7 +244,7 @@ repos but can be installed using ql. Instructions on project’s page.&lt;/p&gt;
     &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/positional-lambda/&quot;&gt;positional-lambda&lt;/a&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;plambda&lt;/code&gt;
 macro.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/positional-lambda/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/positional-lambda.svg&quot; alt=&quot;quickdocs-positional-lambda&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/positional-lambda/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/positional-lambda.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;There is also &lt;code class=&quot;highlighter-rouge&quot;&gt;#`-reader&lt;/code&gt; in &lt;a href=&quot;https://github.com/vseloved/rutils&quot;&gt;rutils&lt;/a&gt;
@@ -262,7 +256,7 @@ providing Clojure-ish but slightly limited shorthands&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/rutils/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/rutils.svg&quot; alt=&quot;quickdocs-rutils&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/rutils/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/rutils.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/cbaggers/fn&quot;&gt;fn&lt;/a&gt; provides another set of shorthands for
@@ -274,7 +268,7 @@ providing Clojure-ish but slightly limited shorthands&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/fn/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/fn.svg&quot; alt=&quot;quickdocs-fn&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/fn/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/fn.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://eschulte.github.io/curry-compose-reader-macros/&quot;&gt;curry-compose-reader-macros&lt;/a&gt;
@@ -290,7 +284,7 @@ examples from the github page:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/curry-compose-reader-macros/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/curry-compose-reader-macros.svg&quot; alt=&quot;quickdocs-curry-compose-reader-macros&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/curry-compose-reader-macros/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/curry-compose-reader-macros.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.cliki.net/curly&quot;&gt;curly&lt;/a&gt; has two reader macros for currying and
@@ -303,7 +297,7 @@ composition. Examples from homepage&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://quickdocs.org/curly/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/curly.svg&quot; alt=&quot;quickdocs-curly&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://quickdocs.org/curly/&quot;&gt;&lt;img src=&quot;http://quickdocs.org/badge/curly.svg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -323,22 +317,14 @@ I submitted on /r/unixporn some time back. Shown below is a demo of what the
 thing actually looks like.&lt;/p&gt;
 
 &lt;aside&gt;
-&lt;div class=&quot;aside-title&quot;&gt;
-In action
-&lt;/div&gt;
+  &lt;p&gt;Following screencast shows the setup in action.&lt;/p&gt;
 
-&lt;p&gt;
-Following screencast shows the setup in action.
-&lt;/p&gt;
-
-&lt;video width=&quot;100%&quot; controls=&quot;controls&quot;&gt;
+  &lt;video width=&quot;100%&quot; controls=&quot;controls&quot;&gt;
   &lt;source src=&quot;https://u.teknik.io/5Vy1T.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 &lt;/aside&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;/images/posts/org-rice/demo.png&quot; /&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/org-rice/demo.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;The look is inspired from the style used by &lt;a href=&quot;https://edwardtufte.github.io/et-book&quot;&gt;Edward
 Tufte&lt;/a&gt; in his books. A replication of the
@@ -348,14 +334,9 @@ spacing and margins, the thing that I like in Tufte’s style is the font &lt;a 
 Book&lt;/a&gt; which is an old-style serif font
 with beautiful &lt;em&gt;italics&lt;/em&gt;.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;a href=&quot;/images/posts/org-rice/et-book.png&quot; data-lightbox=&quot;bootstrap&quot;&gt;
-    &lt;img src=&quot;/images/posts/org-rice/et-book.png&quot; /&gt;
-  &lt;/a&gt;
-  &lt;figcaption&gt;
-    Et Book font
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/org-rice/et-book.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;Et Book font&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;hr /&gt;
 
@@ -366,13 +347,13 @@ because I use spacemacs and it is pretty complete as far as number of faces
 covered is concerned. Also, it has a good off-white background (&lt;code class=&quot;highlighter-rouge&quot;&gt;#fbf8ef&lt;/code&gt;).
 There are three basic steps involved from here:&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;Setting faces and themes&lt;/li&gt;
   &lt;li&gt;Padding and stuff&lt;/li&gt;
   &lt;li&gt;Other Org-mode visual and usability tweaks&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;faces&quot;&gt;Faces&lt;/h2&gt;
+&lt;h1 id=&quot;faces&quot;&gt;Faces&lt;/h1&gt;
 
 &lt;p&gt;We will set Et Book (named &lt;code class=&quot;highlighter-rouge&quot;&gt;EtBembo&lt;/code&gt;) font to most of the org mode. Get the font
 &lt;a href=&quot;https://github.com/edwardtufte/et-book&quot;&gt;here&lt;/a&gt;. If you are using spacemacs, the
@@ -387,39 +368,39 @@ with title and stuff) and enable &lt;code class=&quot;highlighter-rouge&quot;&gt
 fixed-pitch))&lt;/code&gt; has a crucial effect of aligning text under Org heading in a
 non-monospace font, so you might not want to miss that.&lt;/p&gt;
 
-&lt;h2 id=&quot;padding&quot;&gt;Padding&lt;/h2&gt;
+&lt;h1 id=&quot;padding&quot;&gt;Padding&lt;/h1&gt;
 
 &lt;p&gt;There are a few places where you can gain some breathing space.&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Line spacing&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Line spacing&lt;/em&gt;&lt;/p&gt;
 
     &lt;p&gt;Per buffer line spacing can be set using the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;line-spacing&lt;/code&gt;.
-Something like 0.1 goes well here.&lt;/p&gt;
+ Something like 0.1 goes well here.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Top padding&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Top padding&lt;/em&gt;&lt;/p&gt;
 
     &lt;p&gt;Similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;mode-line&lt;/code&gt;, Emacs also has &lt;code class=&quot;highlighter-rouge&quot;&gt;header-line&lt;/code&gt; for windows. Setting its
-format to empty string &lt;code class=&quot;highlighter-rouge&quot;&gt;(setq header-line-format &quot; &quot;)&lt;/code&gt; gives you top padding.
-Also by changing header-line face height, you can change this spacing.&lt;/p&gt;
+ format to empty string &lt;code class=&quot;highlighter-rouge&quot;&gt;(setq header-line-format &quot; &quot;)&lt;/code&gt; gives you top padding.
+ Also by changing header-line face height, you can change this spacing.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Side padding&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Side padding&lt;/em&gt;&lt;/p&gt;
 
     &lt;p&gt;Adding side spaces is possible by setting margin width. You also need to
-reset the buffer to make the change visible. Here is a function that does
-that:&lt;/p&gt;
+ reset the buffer to make the change visible. Here is a function that does
+ that:&lt;/p&gt;
 
-    &lt;div class=&quot;language-emacs-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;progn&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;left-margin-width&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;right-margin-width&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-window-buffer&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;current-buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+    &lt;div class=&quot;language-emacs-lisp highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;progn&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;left-margin-width&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;right-margin-width&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-window-buffer&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;current-buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;If you need padding all around the frame so that everything (including
 mode-line) goes inside the padded view, you can set &lt;code class=&quot;highlighter-rouge&quot;&gt;internal-border-width&lt;/code&gt;.&lt;/p&gt;
@@ -433,7 +414,7 @@ from it. Nevertheless, &lt;a href=&quot;https://github.com/lepisma/rogue/blob/75
 config&lt;/a&gt;
 for writeroom.&lt;/p&gt;
 
-&lt;h2 id=&quot;other-tweaks&quot;&gt;Other tweaks&lt;/h2&gt;
+&lt;h1 id=&quot;other-tweaks&quot;&gt;Other tweaks&lt;/h1&gt;
 
 &lt;p&gt;Whatever information your mode line might be displaying, most likely it can be
 turned off if you are aiming for a distraction free setup. Spacemacs provide a
@@ -487,7 +468,7 @@ find myself fishing around for some reasonable transformation of the same old
 answer, ‘using a keyboard is faster’. Do I really care about &lt;em&gt;speed&lt;/em&gt;? I would be
 lying if I said yes to that.&lt;/p&gt;
 
-&lt;h3 id=&quot;speed-vs-effortlessness&quot;&gt;Speed vs Effortlessness&lt;/h3&gt;
+&lt;h1 id=&quot;speed-vs-effortlessness&quot;&gt;Speed vs Effortlessness&lt;/h1&gt;
 
 &lt;p&gt;There are obvious differences between tasks like writing text vs doing something
 inherently visual which lets you choose either keyboard or mouse without any
@@ -530,7 +511,7 @@ to reduce the &lt;em&gt;cognitive burden&lt;/em&gt; while doing things which are
 of the task I am trying to accomplish. I don’t avoid something because its slow,
 but because I don’t like doing it.&lt;/p&gt;
 
-&lt;h3 id=&quot;interface&quot;&gt;Interface&lt;/h3&gt;
+&lt;h1 id=&quot;interface&quot;&gt;Interface&lt;/h1&gt;
 
 &lt;p&gt;Good design disappears. Its transparent and doesn’t make you sweat for secondary
 things. In application user interfaces, its the uniformity and familiarity which
@@ -540,15 +521,10 @@ customized systems), where we get these on the left side, these make up a
 universal language where you throw your mouse up there and things happen without
 being overly conscious of the very act of moving the mouse.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;a href=&quot;/images/posts/keyboard/dolphin.png&quot; data-lightbox=&quot;method&quot;&gt;
-    &lt;img src=&quot;/images/posts/keyboard/dolphin.png&quot; /&gt;
-  &lt;/a&gt;
-  &lt;figcaption&gt;
-    A familiar interface of a file browser removes the mental effort of doing
-    what you want to do
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/keyboard/dolphin.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;A familiar interface of a file browser removes the mental effort of doing
+what you want to do&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Consider something more unorthodox than simply closing the window. How about
 showing hidden files? Now the uniformity seems to break a little bit. You might
@@ -583,7 +559,7 @@ just a part of the interfaces, the question now is about which interface, &lt;em
 whole&lt;/em&gt;, is better suited for users who can reduce the cognitive friction if
 provided sufficiently deep access to the innards of the program.&lt;/p&gt;
 
-&lt;h3 id=&quot;plain-text&quot;&gt;Plain text&lt;/h3&gt;
+&lt;h1 id=&quot;plain-text&quot;&gt;Plain text&lt;/h1&gt;
 
 &lt;p&gt;Take any piece of software apart and you will find code. Text. There is no other
 &lt;em&gt;popular&lt;/em&gt; intermediate representation. And text has a uniform UI. Set of lines
@@ -625,18 +601,11 @@ addon’s source code). Say whatever about efficiency, the interface these hints
 conjure is at the same level as when you use a mouse. You still have to
 consciously &lt;em&gt;see&lt;/em&gt; where you want to &lt;em&gt;click&lt;/em&gt; and then act accordingly.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;a href=&quot;/images/posts/keyboard/hint.png&quot; data-lightbox=&quot;method&quot;&gt;
-    &lt;img src=&quot;/images/posts/keyboard/hint.png&quot; /&gt;
-  &lt;/a&gt;
-  &lt;figcaption&gt;
-    In hint mode (as shown here), you can press the keys shown on links
-    (&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements) to &lt;em&gt;click&lt;/em&gt; them. The image
-    uses Hok plugin for
-    &lt;a href=&quot;https://github.com/mooz/keysnail/wiki/plugin&quot;&gt;keysnail&lt;/a&gt; in
-    Firefox
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/keyboard/hint.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;In hint mode (as shown here), you can press the keys shown on links
+(&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements) to &lt;em&gt;click&lt;/em&gt; them. The image uses Hok plugin for
+&lt;a href=&quot;https://github.com/mooz/keysnail/wiki/plugin&quot;&gt;keysnail&lt;/a&gt; in Firefox&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;What would be &lt;em&gt;the&lt;/em&gt; keyboard centered interface that I might enjoy more here?
 Probably something that lets me hit links by allowing me to &lt;em&gt;create&lt;/em&gt; a filtering
@@ -659,15 +628,10 @@ keybindings, but when I used &lt;a href=&quot;https://github.com/emacs-helm/helm
 and came to know that all these functions (see image below) can be &lt;em&gt;created&lt;/em&gt;,
 &lt;em&gt;called&lt;/em&gt; and &lt;em&gt;bound&lt;/em&gt; to keys in whatever way you want.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;a href=&quot;/images/posts/keyboard/helm.png&quot; data-lightbox=&quot;method&quot;&gt;
-    &lt;img src=&quot;/images/posts/keyboard/helm.png&quot; /&gt;
-  &lt;/a&gt;
-  &lt;figcaption&gt;
-    Interfaces like helm combined with sensibly named items are good ways to
-    explore what is possible in a system.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/keyboard/helm.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;Interfaces like helm combined with sensibly named items are good ways to
+explore what is possible in a system.&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Keys are not inherently special, the plain text interface is. This also means
 that at places without a plain text interface, mousing/pointing can be better
@@ -697,7 +661,7 @@ about &lt;em&gt;random sampling&lt;/em&gt;. Oh and the clutter in the default se
 Everything and more made me switch to a scheme where my reading data is more
 bare, accessible and manageable without the noise.&lt;/p&gt;
 
-&lt;h2 id=&quot;a-better-list&quot;&gt;A better list&lt;/h2&gt;
+&lt;h1 id=&quot;a-better-list&quot;&gt;A better list&lt;/h1&gt;
 
 &lt;p&gt;My usual book reading cycle involves doing a web search (not goodreads’) after I
 become aware of a title and landing on goodreads to mark it as &lt;code class=&quot;highlighter-rouge&quot;&gt;to-read&lt;/code&gt;. Then
@@ -712,13 +676,10 @@ books from amazon and goodreads urls. Thankfully, there is csv export feature in
 goodreads which lets you export all you books in a single csv, which is easy to
 pull in.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;/images/posts/goodreads/screen.png&quot; /&gt;
-  &lt;figcaption&gt;
-    Yes, stars and everything. A little bit of effort and book covers can be
-    here too.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/goodreads/screen.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;Yes, stars and everything. A little bit of effort and book covers can be here
+too.&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Keeping an org file has some neat benefits. I can pull readings in my agenda
 view, create progress indicators separate from the shelves (which can go in org
@@ -757,46 +718,48 @@ intervals &lt;em&gt;and&lt;/em&gt; for the daily one. A time map captures these 
 &lt;p&gt;Consider the following time series. The x axis shows date and the y axis shows
 my lastfm &lt;a href=&quot;https://www.last.fm/user/abhinavtushar&quot;&gt;scrobbles&lt;/a&gt; per day.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;counts-lfm&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;My daily lastfm scrobbles&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;counts-lfm&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;My daily lastfm scrobbles&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;Nothing much to it. If I plot it as a time map, I get this (scale is log; sorry
+&lt;p&gt;Nothing much to it. If I plot it as a time map, I get this&lt;/p&gt;
+
+&lt;aside&gt;
+  &lt;p&gt;Scale is log; sorry
 for the &lt;em&gt;not that useful&lt;/em&gt; tick labels in this whole post,
-&lt;a href=&quot;https://github.com/lepisma/tufte.js/issues/21&quot;&gt;will fix it&lt;/a&gt;).&lt;/p&gt;
+&lt;a href=&quot;https://github.com/lepisma/tufte.js/issues/21&quot;&gt;will fix it&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;diffs-lfm-vanilla&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Scrobbles time map&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;diffs-lfm-vanilla&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Scrobbles time map&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;Each dot here is a listen. The \( x \) value being the time difference between
-it and the previous listen, \( y \) being the difference with next listen.
-Note that the plot is log scaled (thus the repeated pattern in lower values)
-which helps us understand the diffs at multiple scales.&lt;/p&gt;
+&lt;p&gt;Each dot here is a listen. The &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; value being the time
+difference between it and the previous listen, &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;y&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; being
+the difference with next listen. Note that the plot is log scaled (thus the
+repeated pattern in lower values) which helps us understand the diffs at
+multiple scales.&lt;/p&gt;
 
-&lt;p&gt;Another important point is the &lt;em&gt;almost&lt;/em&gt; symmetry along \( x = y \) line. When
-you use the &lt;em&gt;pre-event&lt;/em&gt; and &lt;em&gt;post-event&lt;/em&gt; time diffs of each event as \( x \)
-and \( y \) value for plotting, one points \( x \) will be previous one’s
-(according to event ordering) \( y \) value. Now this has consequences on
-whether a time map is useful for you. What follows is the same plot with
-marginal histograms along the axis. No doubt the \( x \) and \( y \)
-marginals are similar. This is not because of the data but because of the way
-both axis values are derived, resulting in a non-exact symmetry.&lt;/p&gt;
+&lt;p&gt;Another important point is the &lt;em&gt;almost&lt;/em&gt; symmetry along &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x = y&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; line. When you use the &lt;em&gt;pre-event&lt;/em&gt; and &lt;em&gt;post-event&lt;/em&gt; time diffs of
+each event as &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;y&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; value
+for plotting, one points &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; will be previous one’s
+(according to event ordering) &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;y&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; value. Now this has
+consequences on whether a time map is useful for you. What follows is the same
+plot with marginal histograms along the axis. No doubt the &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;y&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; marginals are similar. This is not
+because of the data but because of the way both axis values are derived,
+resulting in a non-exact symmetry.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;diffs-lfm&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Time map with marginals&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;diffs-lfm&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Time map with marginals&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Think about a point in top left corner. This refers to an event which was
 preceded by another event shortly but is followed by the next event after a long
 time gap. The opposite happens with point in bottom right. Because adjacent
-events share \( x \) and \( y \), the mass of points has similar
-distributions (notice that this is not the case with very few points). Unless
-you are displaying another data dimension using color / size of the circles
-(like in the original
+events share &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;y&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.625em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, the mass
+of points has similar distributions (notice that this is not the case with very
+few points). Unless you are displaying another data dimension using color / size
+of the circles (like in the original
 &lt;a href=&quot;https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales&quot;&gt;blog&lt;/a&gt;,
 where we see points colored according to the time of day), the two dimensions
 here just add to the visual clutter.&lt;/p&gt;
@@ -808,54 +771,48 @@ only the first listen of each song. To give this some meaning, a lot of these
 &lt;em&gt;filtered&lt;/em&gt; scrobbles in a short time span would mean that I explored more as
 compared to repeating the same old songs.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;diffs-lfm-dd&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;First listen time map&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;diffs-lfm-dd&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;First listen time maps&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;Notice how easy it is to find the bumps in the marginal plot. A plot of \( x
-\) marginal follows.&lt;/p&gt;
+&lt;p&gt;Notice how easy it is to find the bumps in the marginal plot. A plot of &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; marginal follows.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;dd-hist&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;x marginal plot of first listens&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;dd-hist&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; marginal plot of first listens&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;As a side note this plot makes me wonder about the origin of the bumps. The
-initial rise up to \( x = 3, 4 \) (around 20, 50 minutes) is mostly due to
-radios listens (which give you fresh songs frequently) or binging on some new
-album/artist. The one around 7 (around 18 hours) might be a &lt;em&gt;session&lt;/em&gt; change. A
-new session, with fresh items probably. Need to dig in the actual songs to
-understand this.&lt;/p&gt;
+initial rise up to &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;x = 3, 4&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.64444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.8388800000000001em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; (around 20, 50 minutes) is
+mostly due to radios listens (which give you fresh songs frequently) or binging
+on some new album/artist. The one around 7 (around 18 hours) might be a
+&lt;em&gt;session&lt;/em&gt; change. A new session, with fresh items probably. Need to dig in the
+actual songs to understand this.&lt;/p&gt;
 
-&lt;h2 id=&quot;tweets&quot;&gt;Tweets&lt;/h2&gt;
+&lt;h1 id=&quot;tweets&quot;&gt;Tweets&lt;/h1&gt;
 
 &lt;p&gt;The original blog made a time map for tweets
 of &lt;a href=&quot;https://twitter.com/BarackObama&quot;&gt;@BarackObama&lt;/a&gt;. I did a re-crawl. Here is
 the time plot of tweets per day.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;counts-tw&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Tweets per day @BarackObama&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;counts-tw&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Tweets per day &lt;a href=&quot;https://twitter.com/BarackObama&quot;&gt;@BarackObama&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Next is the full time map for the series.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;diffs-tw&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Tweets time map @BarackObama&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;diffs-tw&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Tweets time map &lt;a href=&quot;https://twitter.com/BarackObama&quot;&gt;@BarackObama&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;As argued earlier, unless we are showing extra information, its much easier to
 see the marginal to get the frequency behavior of the series. See the plot
 below.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;tw-hist&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Tweets time map 1D @BarackObama&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;tw-hist&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Tweets time map 1D &lt;a href=&quot;https://twitter.com/BarackObama&quot;&gt;@BarackObama&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
+&lt;h1 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Making sense of a histogram in log scale (the kind I used, with uniform bins
@@ -871,15 +828,13 @@ get the number of bins. Changing this number can result in different views
 as shown below.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;tw-hist-less&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Tweets time map with 10 bins&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;tw-hist-less&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Tweets time map with 10 bins&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;figure&gt;
-&lt;div id=&quot;tw-hist-more&quot;&gt;&lt;/div&gt;
-&lt;figcaption&gt;Tweets time map with 200 bins&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;div id=&quot;tw-hist-more&quot;&gt;&lt;/div&gt;&lt;figcaption&gt;
+    &lt;p&gt;Tweets time map with 200 bins&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;hr /&gt;
 
@@ -948,7 +903,7 @@ transformations mentioned above are more than &lt;code class=&quot;highlighter-r
 seen as lookups in some instruction manual. These are more akin to Lisp style
 &lt;code class=&quot;highlighter-rouge&quot;&gt;macros&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;expressing-programs&quot;&gt;Expressing programs&lt;/h2&gt;
+&lt;h1 id=&quot;expressing-programs&quot;&gt;Expressing programs&lt;/h1&gt;
 
 &lt;p&gt;A programming language allows a really constrained form of expression and so
 (fortunately) it needs lesser training to understand a chunk of &lt;em&gt;rhetorical
@@ -974,15 +929,10 @@ just go through the words, nesting and order.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;aside&gt;
-&lt;div class=&quot;aside-title&quot;&gt;
-S-expressions in Lisp
-&lt;/div&gt;
-
-Lisp code is represented as a list of items (possibly recursive) which can be
+  &lt;p&gt;Lisp code is represented as a list of items (possibly recursive) which can be
 interpreted both as data and code. When interpreted as data, they refer to
 themselves, when interpreted as code, the first item is something (a function,
-macro) to be applied on the rest.
-
+macro) to be applied on the rest.&lt;/p&gt;
 &lt;/aside&gt;
 
 &lt;p&gt;Also forget about the dummy variables (&lt;code class=&quot;highlighter-rouge&quot;&gt;from&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;where&lt;/code&gt; …) and hygiene (I am
@@ -1136,12 +1086,9 @@ if you are going to recreate SQL syntax with Lisp, why even bother with the
 switch in the first place? Its only when you crave for extensibility, which is
 not very often in practical cases, does it actually reveals its true beauty.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/297/&quot;&gt;
-&lt;img src=&quot;https://imgs.xkcd.com/comics/lisp_cycles.png&quot; /&gt;
-&lt;/a&gt;
-&lt;figcaption&gt;&lt;a href=&quot;https://xkcd.com/297/&quot;&gt;xkcd - 297&lt;/a&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/lisp_cycles.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/297/&quot;&gt;xkcd 297&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;The most popular languages are the ones with most set standards, certain
 important constraints and a lot of directly visible applications (not implying
@@ -1169,12 +1116,13 @@ increasing since the time I started maintaining such lists. There are
 many plans to execute, things to learn and ideas to explore. Around last week or
 so, I found this pretty relatable post on Reddit.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote class=&quot;reddit-card&quot; data-card-created=&quot;1489396976&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5x64jl/oh_look_a_new_project_idea/?ref=share&amp;amp;ref_source=embed&quot;&gt;Oh
-look, a new project idea!&lt;/a&gt; from &lt;a href=&quot;http://www.reddit.com/r/ProgrammerHumor&quot;&gt;ProgrammerHumor&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;//embed.redditmedia.com/widgets/platform.js&quot; charset=&quot;UTF-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ProgrammerHumor/comments/5x64jl/oh_look_a_new_project_idea/?ref=share&amp;amp;ref_source=embed&quot;&gt;Oh look, a new project
+idea!&lt;/a&gt;&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;from &lt;a href=&quot;http://www.reddit.com/r/ProgrammerHumor&quot;&gt;/r/ProgrammerHumor&lt;/a&gt;&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Seeing myself out there, its important to know what makes me jump &lt;em&gt;off&lt;/em&gt; from or
 &lt;em&gt;into&lt;/em&gt; and idea. I believe I have seen two kinds of works. The first type has
@@ -1200,7 +1148,7 @@ and round and nothing much happens in general, even with all the lists stripped
 naked. This phase of indecision goes on for days with me. Hand waving at things
 without actually touching them. More touchpad than keyboard.&lt;/p&gt;
 
-&lt;h2 id=&quot;micro-tasks&quot;&gt;Micro tasks&lt;/h2&gt;
+&lt;h1 id=&quot;micro-tasks&quot;&gt;Micro tasks&lt;/h1&gt;
 
 &lt;p&gt;A possibly promising way is to knit a tiny list of &lt;em&gt;micro tasks&lt;/em&gt; for tomorrow
 with some quick and concrete steps to be taken for certain works. This will let
@@ -1301,7 +1249,7 @@ module. I never really cared about types in Python because, well, thats what I
 probably have been avoiding by using Python all along. But this is slowly
 changing as I use static typing more and more.&lt;/p&gt;
 
-&lt;h2 id=&quot;reading-your-own-code&quot;&gt;Reading your own code&lt;/h2&gt;
+&lt;h1 id=&quot;reading-your-own-code&quot;&gt;Reading your own code&lt;/h1&gt;
 
 &lt;p&gt;I enjoy cricket and Emacs. So wrote up a
 package, &lt;a href=&quot;https://github.com/lepisma/cricbuzz.el&quot;&gt;cricbuzz.el&lt;/a&gt;, for displaying
@@ -1331,10 +1279,10 @@ pieces to keep track of.&lt;/p&gt;
 
 &lt;p&gt;There are two things really that are usually done to solve these issues:&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;Documenting functions, variables&lt;/li&gt;
   &lt;li&gt;Using helpful names&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Helpful names are helpful. But they can get weird. There are understandable
 limits to them. Documentations, specially function docs are more helpful.
@@ -1374,7 +1322,7 @@ practice which need &lt;em&gt;just a little bit&lt;/em&gt; of hint about data ty
 tasks. “Type hinting” fills in this sweet spot and at the same time flags logical
 bugs like passing &lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt; where &lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt; is expected.&lt;/p&gt;
 
-&lt;h2 id=&quot;type-hinting&quot;&gt;Type Hinting&lt;/h2&gt;
+&lt;h1 id=&quot;type-hinting&quot;&gt;Type Hinting&lt;/h1&gt;
 
 &lt;p&gt;Type hinting is the idea of adding annotations about data type for variables,
 function arguments etc. These are usually parsed and checked before runtime
@@ -1408,7 +1356,7 @@ like &lt;a href=&quot;https://flowtype.org/docs/running.html&quot;&gt;babel&lt;/
 the same idea. Your development process gets assisted by static types and then
 the code gets converted to plain JS and runs &lt;em&gt;like a duck&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;mypy&quot;&gt;mypy&lt;/h2&gt;
+&lt;h1 id=&quot;mypy&quot;&gt;mypy&lt;/h1&gt;
 
 &lt;p&gt;Although not that popular, Python has in-language support for adding type hints
 which can be checked by something like &lt;a href=&quot;http://mypy-lang.org/&quot;&gt;mypy&lt;/a&gt;. What this
@@ -1455,12 +1403,12 @@ its &lt;a href=&quot;http://mypy.readthedocs.io/en/latest/kinds_of_types.html&qu
 &lt;p&gt;Here are a few reasons other than the already helpful type checking to use these
 hints:&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;Its not really much to write and actually saves keystrokes as compared to
 writing unnecessary and passive documentation strings.&lt;/li&gt;
   &lt;li&gt;It avoids runtime overheads as compared to defining a logical type using a
 dummy class.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;There are concerns about the readability of code as such when using hints as it
 goes against python’s philosophy. I feel like readability should not be judged
@@ -1469,7 +1417,7 @@ me to read that a function takes coordinates (which is known to be a pair of num
 since I decided to read the code dealing with geography) rather than an argument
 described solely by its name and / or docstring.&lt;/p&gt;
 
-&lt;h2 id=&quot;keeping-it-optional&quot;&gt;Keeping it Optional&lt;/h2&gt;
+&lt;h1 id=&quot;keeping-it-optional&quot;&gt;Keeping it Optional&lt;/h1&gt;
 
 &lt;p&gt;Typing is something that feels like it comes attached with performance benefits.
 But using mypy for around a month now has convinced me that just the
@@ -1483,7 +1431,7 @@ barriers at places to frame the program.&lt;/p&gt;
 hints wherever needed and skip where is it unnecessary and verbose (though I am
 not sure if this is a recommended practice).&lt;/p&gt;
 
-&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
+&lt;h1 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h1&gt;
 
 &lt;p&gt;Static type checking in python is not &lt;em&gt;that&lt;/em&gt; popular as compared to JS.
 But JS community is particularly
@@ -1568,7 +1516,7 @@ using &lt;a href=&quot;http://docs.python-requests.org/en/master/&quot;&gt;reque
 over &lt;a href=&quot;https://github.com/request/request&quot;&gt;request&lt;/a&gt;. Notebooks simply have great
 overheads for small experiments with random jumble of scripts.&lt;/p&gt;
 
-&lt;h2 id=&quot;org-babel&quot;&gt;Org-babel&lt;/h2&gt;
+&lt;h1 id=&quot;org-babel&quot;&gt;Org-babel&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://orgmode.org/worg/org-contrib/babel/&quot;&gt;Org-babel&lt;/a&gt; is
 an &lt;a href=&quot;http://orgmode.org/&quot;&gt;Org-mode&lt;/a&gt; thing for running chunks of code in Org
@@ -1664,9 +1612,7 @@ have problems counting number of zeros.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;/images/posts/babel/pyplot.png&quot; data-lightbox=&quot;method&quot;&gt;&lt;img src=&quot;/images/posts/babel/pyplot.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/babel/pyplot.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;There are many languages supported and you have the
 usual org structures like tables and lists for mediating chunks. The working
@@ -1676,9 +1622,7 @@ expressive enough. Here is another screen using R and ggplot (plot taken
 from &lt;a href=&quot;http://docs.ggplot2.org/0.9.3/stat_binhex.html&quot;&gt;hexbin&lt;/a&gt; example). You
 could also put in something weird like C++.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;/images/posts/babel/rplot.png&quot; data-lightbox=&quot;method&quot;&gt;&lt;img src=&quot;/images/posts/babel/rplot.png&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img class=&quot;zoomTarget&quot; data-closeclick=&quot;true&quot; src=&quot;/images/posts/babel/rplot.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;All in all, these files are cheap, readable and usable. Exportable to any format
 imaginable. And these integrate deeply with your usual Emacs + Org-mode workflow.&lt;/p&gt;
@@ -1773,24 +1717,21 @@ exaggeration of the issue, I will try to convince you its not the case. Also, I
 am no expert on many things and have been involved in stupidity pretty much
 regularly. So don’t take things here as absolute truths, but opinions of sort.&lt;/p&gt;
 
-&lt;h2 id=&quot;1-drought&quot;&gt;1. Drought&lt;/h2&gt;
+&lt;h1 id=&quot;1-drought&quot;&gt;1. Drought&lt;/h1&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/285/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/wikipedian_protester.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/wikipedian_protester.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/285&quot;&gt;xkcd 285&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;One of my relative forwarded the following message to me.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;
-&quot;The Fact of Melatonin*
+  &lt;p&gt;“The Fact of Melatonin*
 &lt;br /&gt;
-Plz make it a point to sleep early... 😴😊
+Plz make it a point to sleep early… 😴😊
 &lt;br /&gt;
-Thats how God has made us... Sleep at night and work during the day...☺ Today I
-learnt something new... A natural cancer vaccine.
+Thats how God has made us… Sleep at night and work during the day…☺ Today I
+learnt something new… A natural cancer vaccine.
 &lt;br /&gt;
 God placed in each and everyone of us a gland in our head called the Pineal
 gland. It is considered to be the biological clock of the human body and it is
@@ -1799,20 +1740,19 @@ after sundown this gland starts producing a substance called Melatonin which
 runs in the bloodstream and protects the body from cancer. 😋
 &lt;br /&gt;
 This gland works only in the dark so if the eye is exposed to light the gland
-does not work because it thinks night has not come yet...🤔 So if you stay up at
-night in the light, you are depriving your body from this daily vaccine...
+does not work because it thinks night has not come yet…🤔 So if you stay up at
+night in the light, you are depriving your body from this daily vaccine…
 &lt;br /&gt;
 Our parents and grandparents who used to sleep early in the night and wake up
 early in the morning did not suffer from cancer or any of the disease we hear
 about today.
 &lt;br /&gt;
-God has placed this daily vaccine in our body to protect us so let's put it to
+God has placed this daily vaccine in our body to protect us so let’s put it to
 use by sleeping early.💪
 &lt;br /&gt;
 The gland starts working from after dark until two hours before sunrise !!!🌞
 &lt;br /&gt;
-Must read and share this miraculous physiology God designed inside man... 😊😊😊&quot;
-&lt;/p&gt;
+Must read and share this miraculous physiology God designed inside man… 😊😊😊”&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Is there anything wrong here? If you are careful, you might find a few mistakes.
@@ -1859,16 +1799,14 @@ really understand the uncertainties and are willing to go an extra mile to
 shackle the chains around us. But we say&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;“Hey kiddo! We simplify things so people get it, get it?”&lt;/p&gt;
+  &lt;p&gt;Hey kiddo! We simplify things so people get it, get it?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;simplification&quot;&gt;Simplification.&lt;/h3&gt;
+&lt;h2 id=&quot;simplification&quot;&gt;Simplification.&lt;/h2&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/547/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/simple.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/simple.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/547/&quot;&gt;xkcd 547&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;No one can know everything. So we use a few tricks. We learn how to utilize
 sources and do reasoning. In fact this is what we are taught in schools.
@@ -1936,13 +1874,11 @@ this line from
 talking about things that the characters were missing in the fiction&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;
-Number one, as I said, quality of information. Number two: leisure to digest it.
-[...]
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;cite title=&quot;Fahrenheit 451&quot;&gt;Faber - Fahrenheit 451&lt;/cite&gt;
-&lt;/footer&gt;
+  &lt;p&gt;Number one, as I said, quality of information. Number two: leisure to digest it.
+[…]&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Faber - Fahrenheit 451&lt;/p&gt;
+  &lt;/footer&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Leisure to digest comes with a responsibility of &lt;strong&gt;not&lt;/strong&gt; using the leisure to start
@@ -1951,7 +1887,7 @@ devouring another piece of information or throwing paper planes out of windows.&
 &lt;p&gt;The message I mentioned has following &lt;em&gt;non-factoid&lt;/em&gt; issues that hurt me (sorry
 sender), despite my respect for the concern of the sender:&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;em&gt;Swapping of model back end&lt;/em&gt;: A model must be passed on as it was created. We
 can’t mix and match things to suite the prejudices of audience or ourselves.
@@ -1961,29 +1897,27 @@ and avoid reading the content altogether.&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;em&gt;Term abuse, Vaccine&lt;/em&gt;: I remember a guy in train preaching people (college
 juniors) that Newton’s law of gravitation is wrong and you can’t use that.
-Apparently, someone didn’t use the right set of words while explaining him
-the idea that theories have certain limits, assumptions and validity over
-scale. And Newton’s law is not really adequate for some specific needs.&lt;/p&gt;
+Apparently, someone didn’t use the right set of words while explaining him the
+idea that theories have certain limits, assumptions and validity over scale.
+And Newton’s law is not really adequate for some specific needs.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;em&gt;Misinterpretation of data&lt;/em&gt;: Dying at 30 from T.B. saves
 us from common old age death causes. Cancer too, yes.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;em&gt;Absolute facts&lt;/em&gt;: I can believe this message lies on the side where researchers
-are certain about cancer effect, but then the reader should get hints for the
-general disagreement, which is pretty much known (specially for the original
-content creator).&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Absolute facts&lt;/em&gt;: I can believe this message lies on the side where
+researchers are certain about cancer effect, but then the reader should get
+hints for the general disagreement, which is pretty much known (specially for
+the original content creator).&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;evidence&quot;&gt;Evidence&lt;/h3&gt;
+&lt;h2 id=&quot;evidence&quot;&gt;Evidence&lt;/h2&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/925/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/cell_phones.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/cell_phones.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/925/&quot;&gt;xkcd 925&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Evidence keeps wild information mutations in check. Its not so much about
 actually putting up the citations before passing the message. Citations can also
@@ -2010,13 +1944,11 @@ fueled again? How many people have been convinced that every move we make, is
 against the grand scheme of someone’s God? In my personal experiences with
 people, I can safely say, a hell lot!&lt;/p&gt;
 
-&lt;h2 id=&quot;2-deluge&quot;&gt;2. Deluge&lt;/h2&gt;
+&lt;h1 id=&quot;2-deluge&quot;&gt;2. Deluge&lt;/h1&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/906/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/citations.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/citations.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/906/&quot;&gt;xkcd 906&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;I was recently involved in a facebook discussion about effects of microwave on
 food items. The issues included bad effects of microwave on food and carcinogenic
@@ -2045,7 +1977,7 @@ so many of them, however shallow, you will get almost convinced of the argument
 because you can’t gather enough time to accept / refute them. The evidence
 feels so solid on the surface, your mind will be confused whether they are
 actually refutable if I do a web search with my &lt;em&gt;‘limited’&lt;/em&gt; knowledge. Finally you
-succumb to &lt;em&gt;“better be safe than sorry”&lt;/em&gt;.&lt;/p&gt;
+succumb to &lt;em&gt;better be safe than sorry&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can almost feel the shades of gray here. Promotion of science in the way
 science intends is great, right? Look at all the T.V. programs, all the news
@@ -2053,7 +1985,7 @@ articles, everything is helping people to accept science in their daily lives. L
 again, and you can see an almost exuberant insincerity for evidence spilling
 from the mouths of promoters. Of course not all of them.&lt;/p&gt;
 
-&lt;h3 id=&quot;pseudo-science&quot;&gt;Pseudo Science&lt;/h3&gt;
+&lt;h2 id=&quot;pseudo-science&quot;&gt;Pseudo Science&lt;/h2&gt;
 
 &lt;p&gt;Take that microwave oven case. Here is the
 &lt;a href=&quot;http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145&quot;&gt;link&lt;/a&gt;
@@ -2093,11 +2025,9 @@ smile on your face (No kidding!).&lt;/p&gt;
 science. It tries to convince people using something it doesn’t understand. Just
 a pinch of skepticism and the house of cards is destroyed.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/765/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/dilution.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/dilution.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/765/&quot;&gt;xkcd 765&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Consider homeopathy. Something that’s still pretty much established because people
 didn’t try, or weren’t able to go through the ‘science’ thrown at them.
@@ -2108,15 +2038,14 @@ knowing how and why, just because we were somehow ‘convinced’ of its
 sciency-ness.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;
-Water, water, every where,
+  &lt;p&gt;Water, water, every where,
 &lt;br /&gt;
-Nor any drop to drink
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;cite title=&quot;Samuel Taylor Coleridge&quot;&gt;Samuel Taylor Coleridge - &quot;The Rime of the
-Ancient Mariner&quot;&lt;/cite&gt;
-&lt;/footer&gt;
+Nor any drop to drink&lt;/p&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Samuel Taylor Coleridge - “The Rime of the
+Ancient Mariner”&lt;/p&gt;
+  &lt;/footer&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Citations are not badges of authenticity, they are tools of abstraction
@@ -2125,19 +2054,19 @@ use you can conjure out of thin air for them.&lt;/p&gt;
 
 &lt;p&gt;A few people who are good at conjuring the ‘other’ uses are:&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;em&gt;Quacks&lt;/em&gt;: Promoting their method of treatment, wellness etc. &lt;em&gt;The doctors&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Simple innocent beings&lt;/em&gt;: Afraid, distressed by the hammer of ‘science’.
 &lt;em&gt;The patients&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Wannabe scientists&lt;/em&gt;: Don’t care much about the real thing if it serves the
 public image and the inner scientist. &lt;em&gt;Vectors of disease&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;The only people who are willing to listen fall in type 2. And they need access
-to real consolidated evidence. A truckload of evidence is used most of the time
-when you are not sure about whether any of them is right (independent of whether
-the thing is actually right or wrong). A gross misinterpretation of scientific
-method and communication.&lt;/p&gt;
+&lt;p&gt;The only people who are willing to listen are the &lt;em&gt;innocent beings&lt;/em&gt;. And they
+need access to real consolidated evidence. A truckload of evidence is used most
+of the time when you are not sure about whether any of them is right
+(independent of whether the thing is actually right or wrong). A gross
+misinterpretation of scientific method and communication.&lt;/p&gt;
 
 &lt;p&gt;Consider the sources you are getting your information from. The sources which
 support one pseudo-science are, by design, going to support other
@@ -2155,15 +2084,18 @@ with my attacks. I don’t need theories with doubtful validity claiming ‘&lt;
 energies from sun that gives you food&lt;/em&gt;’ to convince me of Sun’s role. Just a
 simple reminder of photosynthesis will do.&lt;/p&gt;
 
-&lt;h2 id=&quot;3-disregard&quot;&gt;3. Disregard&lt;/h2&gt;
+&lt;h1 id=&quot;3-disregard&quot;&gt;3. Disregard&lt;/h1&gt;
 
-&lt;center&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Colgate
+&lt;blockquote&gt;
+  &lt;p&gt;Colgate
 used to warn against Indian traditional ways of using salt &amp;amp; coal on teeth.
-But now they actively endorse it &lt;a href=&quot;https://t.co/eYywXQpK4P&quot;&gt;pic.twitter.com/eYywXQpK4P&lt;/a&gt;&lt;/p&gt;&amp;mdash; Swami
-Ramdev (@yogrishiramdev) &lt;a href=&quot;https://twitter.com/yogrishiramdev/status/766977569661054976&quot;&gt;August 20,
-2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/center&gt;
+But now they actively endorse it
+&lt;a href=&quot;https://t.co/eYywXQpK4P&quot;&gt;pic.twitter.com/eYywXQpK4P&lt;/a&gt;&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Swami Ramdev (@yogrishiramdev) &lt;a href=&quot;https://twitter.com/yogrishiramdev/status/766977569661054976&amp;quot;&quot;&gt;August 20,
+2016&lt;/a&gt;&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Explore the tweet above (basically the linked image). Come back later. Look,
 what arguments can be put here to favour both sides. Colgate told not to rub
@@ -2175,17 +2107,17 @@ arguments are good and bad in different ways.&lt;/p&gt;
 
 &lt;p&gt;Anyway, I see this message promoting two things&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;There is a reason higher than scientific method to decide against or in favor
-of a product. In this case, ethnocentrism, nationalism and other
-similar ideas on different scales.&lt;/p&gt;
+of a product. In this case, ethnocentrism, nationalism and other similar ideas
+on different scales.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;You shouldn’t feel a need to question anything if you are supportive of point
-1.&lt;/p&gt;
+    &lt;p&gt;You shouldn’t feel a need to question anything if you are supportive of the
+first point.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;You could argue that its just an example of healthy rivalry. But, do you see
 this message driving people to go for the real knowledge about what should they use
@@ -2209,11 +2141,9 @@ as presumed by the preachers. They are just questions. But the techniques of
 preachers doesn’t have anything but disregard for them. You don’t need to talk
 about evidence, because they are talking much above these petty issues.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/154/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/beliefs.jpg&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/beliefs.jpg&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/154/&quot;&gt;xkcd 154&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Advertisements do this all the time. They look for what sells and target
 advertisements that way. There are pockets of worshippers built around products
@@ -2227,10 +2157,10 @@ believe that I can at least reason around with them.&lt;/p&gt;
 &lt;p&gt;I mean, I would just say&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;“Hey, you ain’t gaining nothing by buying truckload of
+  &lt;p&gt;Hey, you ain’t gaining nothing by buying truckload of
 this biscuit that comes with x amount of mobile recharge, cause you are an
-amnesiac moron who doesn’t remember when was the last time you &lt;strong&gt;enjoyed&lt;/strong&gt; its
-taste.”&lt;/p&gt;
+amnesiac moron who doesn’t remember when was the last time you enjoyed its
+taste.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;This works in theory and, most of the time, in practice. Let me tell you
@@ -2239,7 +2169,7 @@ weird set of priorities. Because your product decisions don’t tie to and creat
 identity. Because a demagogue can’t yell a battle cry, right or wrong, and take
 control of your life decisions.&lt;/p&gt;
 
-&lt;h3 id=&quot;cults&quot;&gt;Cults&lt;/h3&gt;
+&lt;h2 id=&quot;cults&quot;&gt;Cults&lt;/h2&gt;
 
 &lt;p&gt;I have absolutely no problem with product promotion based on actual quality.
 But, we know a few entities that tend to differ here. I saw a roadside banner
@@ -2262,11 +2192,9 @@ mutate by piggybacking on badges of modern scientific developments (like quantum
 physics, mail me if you want to know the secrets of the universe; I wonder what
 would have happened if they had to popularize their ideas before 1920s).&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/1102/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/fastest_growing.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/images/posts/evidence/fastest_growing.png&quot; /&gt;&lt;figcaption&gt;
+    &lt;p&gt;&lt;a href=&quot;https://xkcd.com/1102&quot;&gt;xkcd 1102&lt;/a&gt;&lt;/p&gt;
+  &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Cults like these feed on your personal prejudices. You might be a properly
 functioning person, but when it comes to your cult, you share common, group
@@ -2277,12 +2205,10 @@ devoid of vulnerabilities. Pure. Complete. All knowing sentient entity free from
 restraints. Floating in an eternal universe of bliss. Remember,&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;
-There are no self-proclaimed villains, only regiments of self-proclaimed saints
-&lt;/p&gt;
-&lt;footer&gt;
-&lt;cite title=&quot;Glen Cook&quot;&gt;Glen Cook - &quot;Chronicles of the Black Company&quot;&lt;/cite&gt;
-&lt;/footer&gt;
+  &lt;p&gt;There are no self-proclaimed villains, only regiments of self-proclaimed saints&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Glen Cook - “Chronicles of the Black Company”&lt;/p&gt;
+  &lt;/footer&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;No one’s wisdom is gonna bring salvation to you but yours. Your information
@@ -2308,11 +2234,7 @@ before making decisions.&lt;/p&gt;
   &lt;p&gt;Another comic to balance the amount of text. Thanks &lt;a href=&quot;https://www.xkcd.com&quot;&gt;xkcd&lt;/a&gt;
 for making our lives easier.&lt;/p&gt;
 
-  &lt;figure&gt;
-&lt;a href=&quot;https://xkcd.com/882/&quot;&gt;
-&lt;img src=&quot;/images/posts/evidence/significant.png&quot; /&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
+  &lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;https://xkcd.com/882/&quot;&gt;&lt;img src=&quot;/images/posts/evidence/significant.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/aside&gt;
 
 &lt;p&gt;Call me paranoid with &lt;a href=&quot;https://xkcd.com/386/&quot;&gt;SIWOTI syndrome&lt;/a&gt;. I am over
@@ -2351,11 +2273,11 @@ just because you are too lazy and want to be spoon fed by some know-it-all? Or
 maybe its all meaningless and you already are in a cult with mechanisms for
 redemption in place.&lt;/p&gt;
 
-&lt;h5 id=&quot;edits&quot;&gt;Edits&lt;/h5&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Changed ‘evidences’ to ‘evidence’. Thanks Rushil Nagda.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;div class=&quot;edits&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Changed ‘evidences’ to ‘evidence’. Thanks Rushil Nagda.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Aug 2016 00:00:00 -0400</pubDate>
         <link>https://lepisma.github.io//2016/08/25/evidence-abuse/</link>
