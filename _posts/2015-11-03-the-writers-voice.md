@@ -129,6 +129,7 @@ visualization.
 Anyway, here is the scatterplot of 24 classic books.
 
 {% figure_div scatter %}
+24 classics clustered according to similarity calculated using the DTW method
 {% endfigure_div %}
 
 Jane Austen gets a personal space of her own. Mark Twain looks versatile.
