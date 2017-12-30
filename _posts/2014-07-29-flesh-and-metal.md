@@ -47,9 +47,9 @@ It seems to me, one of the goals of cyborg development is to make *flesh* and
 *metal* interchangeable. Seeing the recent developments, this convergence is
 bound to happen, at least partially.
 
-<figure>
-<img class="zoomTarget" data-closeclick="true" src="/images/posts/flesh/convergence.png">
-</figure>
+{% image_caption zoom %}
+/images/posts/flesh/convergence.png
+{% endimage_caption %}
 
 There are many instances to strengthen the belief that in near future,
 biological machines can be imitated using our traditional techniques, involving
@@ -79,10 +79,11 @@ restored by one of the landmark *cyborgee* experiments involving a camera
 *wired* to the visual cortex of brain (2002, about 12 years ago!). Although
 this experience was brief for Neumann, but it must have been divine.
 
-<figure>
-	<img src="/images/posts/flesh/alpha.png">
-	<figcaption>Patient Alpha</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/flesh/alpha.png
+
+Patient Alpha
+{% endimage_caption %}
 
 The researches in the field of Artificial Vision are important, and positive.
 People are making attempts to understand the brain. Boundary between
@@ -93,10 +94,11 @@ Consider the [Roboroach](https://backyardbrains.com/products/roboroach) project.
 In this project, a *Cockroach* is stimulated via the antenna to move left or
 right as commanded by an app.
 
-<figure>
-	<img class="zoomTarget" src="/images/posts/flesh/roboroach.png">
-	<figcaption>Roboroach</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/flesh/roboroach.png
+
+Roboroach
+{% endimage_caption %}
 
 To most of us, there is nothing bad here.
 But here is a nice read.

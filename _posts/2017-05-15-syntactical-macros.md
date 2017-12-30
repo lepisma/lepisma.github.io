@@ -68,7 +68,7 @@ just go through the words, nesting and order.
     (except [ValueError] False)))
 ```
 
-<aside>
+<aside markdown="1">
 Lisp code is represented as a list of items (possibly recursive) which can be
 interpreted both as data and code. When interpreted as data, they refer to
 themselves, when interpreted as code, the first item is something (a function,
@@ -226,12 +226,11 @@ if you are going to recreate SQL syntax with Lisp, why even bother with the
 switch in the first place? Its only when you crave for extensibility, which is
 not very often in practical cases, does it actually reveals its true beauty.
 
-<figure>
-<a href="https://xkcd.com/297/">
-<img src="https://imgs.xkcd.com/comics/lisp_cycles.png">
-</a>
-<figcaption><a href="https://xkcd.com/297/">xkcd - 297</a></figcaption>
-</figure>
+{% image_caption %}
+https://imgs.xkcd.com/comics/lisp_cycles.png
+
+[xkcd 297](https://xkcd.com/297/)
+{% endimage_caption %}
 
 The most popular languages are the ones with most set standards, certain
 important constraints and a lot of directly visible applications (not implying

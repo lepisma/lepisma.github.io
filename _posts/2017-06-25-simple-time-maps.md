@@ -27,19 +27,21 @@ intervals *and* for the daily one. A time map captures these two modes easily.
 Consider the following time series. The x axis shows date and the y axis shows
 my lastfm [scrobbles](https://www.last.fm/user/abhinavtushar) per day.
 
-<figure>
-<div id="counts-lfm"></div>
-<figcaption>My daily lastfm scrobbles</figcaption>
-</figure>
+{% figure_div counts-lfm %}
+My daily lastfm scrobbles
+{% endfigure_div %}
 
-Nothing much to it. If I plot it as a time map, I get this (scale is log; sorry
+Nothing much to it. If I plot it as a time map, I get this
+
+<aside markdown="1">
+Scale is log; sorry
 for the *not that useful* tick labels in this whole post,
-[will fix it](https://github.com/lepisma/tufte.js/issues/21)).
+[will fix it](https://github.com/lepisma/tufte.js/issues/21).
+</aside>
 
-<figure>
-<div id="diffs-lfm-vanilla"></div>
-<figcaption>Scrobbles time map</figcaption>
-</figure>
+{% figure_div diffs-lfm-vanilla %}
+Scrobbles time map
+{% endfigure_div %}
 
 Each dot here is a listen. The {% katex %}x{% endkatex %} value being the time
 difference between it and the previous listen, {% katex %}y{% endkatex %} being
@@ -58,10 +60,9 @@ endkatex %} and {% katex %}y{% endkatex %} marginals are similar. This is not
 because of the data but because of the way both axis values are derived,
 resulting in a non-exact symmetry.
 
-<figure>
-<div id="diffs-lfm"></div>
-<figcaption>Time map with marginals</figcaption>
-</figure>
+{% figure_div diffs-lfm %}
+Time map with marginals
+{% endfigure_div %}
 
 Think about a point in top left corner. This refers to an event which was
 preceded by another event shortly but is followed by the next event after a long
@@ -81,18 +82,16 @@ only the first listen of each song. To give this some meaning, a lot of these
 *filtered* scrobbles in a short time span would mean that I explored more as
 compared to repeating the same old songs.
 
-<figure>
-<div id="diffs-lfm-dd"></div>
-<figcaption>First listen time map</figcaption>
-</figure>
+{% figure_div diffs-lfm-dd %}
+First listen time maps
+{% endfigure_div %}
 
 Notice how easy it is to find the bumps in the marginal plot. A plot of {% katex
 %}x{% endkatex %} marginal follows.
 
-<figure>
-<div id="dd-hist"></div>
-<figcaption>x marginal plot of first listens</figcaption>
-</figure>
+{% figure_div dd-hist %}
+{% katex %}x{% endkatex %} marginal plot of first listens
+{% endfigure_div %}
 
 As a side note this plot makes me wonder about the origin of the bumps. The
 initial rise up to {% katex %}x = 3, 4{% endkatex %} (around 20, 50 minutes) is
@@ -107,26 +106,23 @@ The original blog made a time map for tweets
 of [@BarackObama](https://twitter.com/BarackObama). I did a re-crawl. Here is
 the time plot of tweets per day.
 
-<figure>
-<div id="counts-tw"></div>
-<figcaption>Tweets per day @BarackObama</figcaption>
-</figure>
+{% figure_div counts-tw %}
+Tweets per day [@BarackObama](https://twitter.com/BarackObama)
+{% endfigure_div %}
 
 Next is the full time map for the series.
 
-<figure>
-<div id="diffs-tw"></div>
-<figcaption>Tweets time map @BarackObama</figcaption>
-</figure>
+{% figure_div diffs-tw %}
+Tweets time map [@BarackObama](https://twitter.com/BarackObama)
+{% endfigure_div %}
 
 As argued earlier, unless we are showing extra information, its much easier to
 see the marginal to get the frequency behavior of the series. See the plot
 below.
 
-<figure>
-<div id="tw-hist"></div>
-<figcaption>Tweets time map 1D @BarackObama</figcaption>
-</figure>
+{% figure_div tw-hist %}
+Tweets time map 1D [@BarackObama](https://twitter.com/BarackObama)
+{% endfigure_div %}
 
 # Gotchas
 
@@ -142,15 +138,13 @@ below.
   get the number of bins. Changing this number can result in different views
   as shown below.
 
-<figure>
-<div id="tw-hist-less"></div>
-<figcaption>Tweets time map with 10 bins</figcaption>
-</figure>
+{% figure_div tw-hist-less %}
+Tweets time map with 10 bins
+{% endfigure_div %}
 
-<figure>
-<div id="tw-hist-more"></div>
-<figcaption>Tweets time map with 200 bins</figcaption>
-</figure>
+{% figure_div tw-hist-more %}
+Tweets time map with 200 bins
+{% endfigure_div %}
 
 ---
 

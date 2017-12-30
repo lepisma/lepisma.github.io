@@ -175,9 +175,11 @@ Consider the following fitness surface and value encoding. Considering crossover
 as extrapolations along some dimension, you can see two kind of results of
 mating. One better, one worse. That's fine, it happens in real crossovers too.
 
-<figure>
-<img src="/images/posts/ga/surf.png">
-</figure>
+{% image_caption %}
+/images/posts/ga/surf.png
+
+Surface with saddle
+{% endimage_caption %}
 
 But the point is, user can't seem to understand and extract the *power* of
 GA here. What are the schemata getting passed on? Where the crossover points

@@ -18,13 +18,11 @@ that, we need to understand how the tesseract worked in the movie.
 
 # Tesseract
 
-<br>
-<figure>
-<a href="/images/posts/interstellar/tesseract.png" data-lightbox="tess">
-<img src="/images/posts/interstellar/tesseract.png">
-</a>
-<figcaption>Cooper in Tesseract</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/interstellar/tesseract.png
+
+Cooper in Tesseract
+{% endimage_caption %}
 
 First thing first, this Tesseract is not an infinity stone. Die Marvel! From
 wikipedia,
@@ -36,10 +34,11 @@ Pretty much sums it up. As you can project a cube on a two dimensional space to
 get a square, similarly you can project a tesseract on 3. But the results aren't
 very intuitive, see image below.
 
-<figure>
-	<img src="/images/posts/interstellar/hyper.gif">
-	<figcaption>3D projection of a 4D hypercube</figcaption>
-</figure>
+{% image_caption %}
+/images/posts/interstellar/hyper.gif
+
+3D projection of a 4D hypercube
+{% endimage_caption %}
     
 In the movie, the higher civilization (referred as 'they') made a tesseract
 for Cooper to access time as a physical dimension so as to transfer the quantum
@@ -50,12 +49,10 @@ seen in many sci fi movie. Time seems a locked dimension in normal space. But
 see it this way, as seen from *outside* the *time*, there is no relevance of
 past or present or future. Its yet another dimension.
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 . . . climb a mountain to visit the future . . .
-</p>
-<footer>
-<cite title="Brand">Brand</cite>
+<footer markdown="1">
+Brand
 </footer>
 </blockquote>
 
@@ -75,9 +72,9 @@ be on terrestrial planets ?"*.
 Maybe an organism (a disc) is in 2 dimensional space, moving ahead in
 x-direction. A time space diagram for it will be
 
-<figure>
-<img src="/images/posts/interstellar/st.png">
-</figure>
+{% image_caption %}
+/images/posts/interstellar/st.png
+{% endimage_caption %}
 
 <aside markdown="1">
 A really amazing piece of work by Edwin Abbott Abbott explains the life of two
@@ -116,19 +113,15 @@ exploration where there is, apparently, no immediate benefit.
 
 But, humans are explorers, its inside all of us. Survival instinct, they say.
 
-<blockquote>
-<p>
-"We've always defined ourselves by the ability to overcome the impossible. And
+<blockquote markdown="1">
+We've always defined ourselves by the ability to overcome the impossible. And
 we count these moments. These moments when we dare to aim higher, to break
 barriers, to reach for the stars, to make the unknown known. We count these
 moments as our proudest achievements. But we lost all that. Or perhaps we've
 just forgotten that we are still pioneers. And we've barely begun. And that our
 greatest accomplishments cannot be behind us, because our destiny lies above
-us."
-</p>
-<footer>
-<cite title="Cooper">
+us.
+<footer markdown="1">
 Cooper
-</cite>
 </footer>
 </blockquote>

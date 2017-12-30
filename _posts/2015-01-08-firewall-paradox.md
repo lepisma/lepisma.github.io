@@ -34,9 +34,9 @@ entry of Cooper in the black hole in the recent movie
 [Interstellar](http://www.imdb.com/title/tt0816692/) (if you are having any).
 </aside>
 
-<figure>
-<img src="/images/posts/firewall/hawkrad.png">
-</figure>
+{% image_caption %}
+/images/posts/firewall/hawkrad.png
+{% endimage_caption %}
 
 But, here is the thing, if, accidentally, your water bottle gets sucked in a
 black hole, and if the black hole evaporates after few years, you loose
@@ -50,9 +50,9 @@ evaporation process. This is similar to breaking of chemical bonds. So, this
 gives an alternate ending to Interstellar, where Cooper dies abruptly and
 *foolishly*. But this isn't fun.
 
-<figure>
-<img src="/images/posts/firewall/firewall.png">
-</figure>
+{% image_caption %}
+/images/posts/firewall/firewall.png
+{% endimage_caption %}
 
 Firewall plays with general relativity on the other side and again, this raises
 questions on the second law.

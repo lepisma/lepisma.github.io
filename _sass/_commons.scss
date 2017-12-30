@@ -194,3 +194,8 @@ ul ul, ol ol {
 ul ul ul, ol ol ol {
   padding-left: 40px;
 }
+
+// Image zooms
+img.zoomTarget:hover {
+  cursor: default !important;
+}

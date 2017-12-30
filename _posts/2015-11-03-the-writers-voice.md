@@ -60,16 +60,17 @@ An excellent primer on the topic is on the blog of Christopher Olah
 [here](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/). This
 vector representation does two things for us:
 
-1. *Gives us something much more amenable to mathematical analysis, numbers.*
-2. *Arranges the words in vector space according to the semantic meanings.*
+- *Gives us something much more amenable to mathematical analysis, numbers.*
+- *Arranges the words in vector space according to the semantic meanings.*
 
 A sample of 1000 words from a 100 dimensional word space (t-SNE*ed* to 2
 dimensions) after training on [Project Gutenberg's](https://www.gutenberg.org/)
 1000 ebooks is shown below. Although the words look mostly archaic, lookout for
 nearby words with semantic connections (hover on dots).
 
-<div id="words">
-</div>
+{% figure_div words %}
+1000 words from a 100-D vector space
+{% endfigure_div %}
 
 ## Cramming text
 
@@ -88,9 +89,11 @@ A simple K-means clustering with 4 centers provide us the anchor points and now
 the matrices are of size {% katex %}N_s \times 4{% endkatex %}. Below is the
 graph for *The Sign of the Four* by Arthur Conan Doyle.
 
-<figure>
-<img src="/images/posts/voice/anchors.png">
-</figure>
+{% image_caption zoom %}
+/images/posts/voice/anchors.png
+
+Similarities of words in *The Sign of the Four* with the 4 anchor points.
+{% endimage_caption %}
 
 The smooth lines are generated after using a gaussian filter and they more or
 less capture the essence of the flow.
@@ -102,16 +105,12 @@ comparison. A simple way would be to extract some sort of features from these
 time series or directly apply techniques to learn from the series. But, lets try
 something more crude and direct.
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 In time series analysis, dynamic time warping (DTW) is an algorithm for
 measuring similarity between two temporal sequences which may vary in time or
 speed.
-</p>
-<footer>
-<cite title="Wikipedia">
+<footer markdown="1">
 Wikipedia
-</cite>
 </footer>
 </blockquote>
 
@@ -129,8 +128,8 @@ visualization.
 
 Anyway, here is the scatterplot of 24 classic books.
 
-<div id="scatter">
-</div>
+{% figure_div scatter %}
+{% endfigure_div %}
 
 Jane Austen gets a personal space of her own. Mark Twain looks versatile.
 

@@ -102,7 +102,7 @@ pip install pipwin
 pipwin install pycuda
 ~~~
 
-## 6. Test it out
+# Test it out
 
 A very basic test is to simply import theano.
 

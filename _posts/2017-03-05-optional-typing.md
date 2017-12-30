@@ -62,8 +62,8 @@ pieces to keep track of.
 
 There are two things really that are usually done to solve these issues:
 
-1. Documenting functions, variables
-2. Using helpful names
+- Documenting functions, variables
+- Using helpful names
 
 Helpful names are helpful. But they can get weird. There are understandable
 limits to them. Documentations, specially function docs are more helpful.
@@ -184,10 +184,10 @@ its [doc](http://mypy.readthedocs.io/en/latest/kinds_of_types.html).
 Here are a few reasons other than the already helpful type checking to use these
 hints:
 
-1. Its not really much to write and actually saves keystrokes as compared to
-   writing unnecessary and passive documentation strings.
-2. It avoids runtime overheads as compared to defining a logical type using a
-   dummy class.
+- Its not really much to write and actually saves keystrokes as compared to
+  writing unnecessary and passive documentation strings.
+- It avoids runtime overheads as compared to defining a logical type using a
+  dummy class.
 
 There are concerns about the readability of code as such when using hints as it
 goes against python's philosophy. I feel like readability should not be judged

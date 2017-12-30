@@ -33,13 +33,12 @@ books from amazon and goodreads urls. Thankfully, there is csv export feature in
 goodreads which lets you export all you books in a single csv, which is easy to
 pull in.
 
-<figure>
-  <img src="/images/posts/goodreads/screen.png">
-  <figcaption>
-    Yes, stars and everything. A little bit of effort and book covers can be
-    here too.
-  </figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/goodreads/screen.png
+
+Yes, stars and everything. A little bit of effort and book covers can be here
+too.
+{% endimage_caption %}
 
 Keeping an org file has some neat benefits. I can pull readings in my agenda
 view, create progress indicators separate from the shelves (which can go in org

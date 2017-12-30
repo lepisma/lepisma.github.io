@@ -53,51 +53,36 @@ software projects along with the approx Zipfian distribution. The projects here
 are dominated by (almost) one single language and are large projects as far as
 lines of code are considered, this *might* be better for finding such patterns.
 
-## Linux kernel
+{% image_caption zoom %}
+/images/posts/zipf/linux.png
 
-The language of the project is predominantly C. I ran the frequency analysis for
-C/C++ language keywords.
+**Linux Kernel**: The language of the project is predominantly C. I ran the
+frequency analysis for C/C++ language keywords.
+{% endimage_caption %}
 
-<figure>
-<a href="/images/posts/zipf/linux.png" data-lightbox="linux"> <img
-src="/images/posts/zipf/linux.png"> </a>
-</figure>
+{% image_caption zoom %}
+/images/posts/zipf/bsd.png
 
-## FreeBSD
+**Free BSD**: The language again is mostly C/C++, did the same analysis here.
+{% endimage_caption %}
 
-The language again is mostly C/C++, did the same analysis here.
+{% image_caption zoom %}
+/images/posts/zipf/bootstrap.png
 
-<figure>
-<a href="/images/posts/zipf/bsd.png" data-lightbox="bsd"> <img
-src="/images/posts/zipf/bsd.png"> </a>
-</figure>
+**Bootstrap**: JavaScript
+{% endimage_caption %}
 
-## Bootstrap
+{% image_caption zoom %}
+/images/posts/zipf/shogun.png
 
-Javascript
+**Shogun**: C++
+{% endimage_caption %}
 
-<figure>
-<a href="/images/posts/zipf/bootstrap.png" data-lightbox="bootstrap"> <img
-src="/images/posts/zipf/bootstrap.png"> </a>
-</figure>
+{% image_caption zoom %}
+/images/posts/zipf/cv.png
 
-## Shogun
-
-C++
-
-<figure>
-<a href="/images/posts/zipf/shogun.png" data-lightbox="shogun"> <img
-src="/images/posts/zipf/shogun.png"> </a>
-</figure>
-
-## OpenCV
-
-C++
-
-<figure>
-<a href="/images/posts/zipf/cv.png" data-lightbox="cv"> <img
-src="/images/posts/zipf/cv.png"> </a>
-</figure>
+**Open CV***: C++
+{% endimage_caption %}
 
 Ah! I don't know if I can declare this, but the distributions look nice. The law
 of least effort or anything else. Although there is high probability that these
@@ -119,19 +104,19 @@ This feels like toy mathematics, like knot theory, but there are serious
 implications, and there maybe more. Here is an excerpt from the Wikipedia
 article on [long tail](http://en.wikipedia.org/wiki/Long_tail)
 
-*"In his Wired article, Chris Anderson cites earlier research [17] by Erik
-Brynjolfsson, Yu (Jeffrey) Hu, and Michael D. Smith, who first used a log-linear
-curve on an XY graph to describe the relationship between Amazon.com sales and
-sales ranking. They found that a large proportion of Amazon.com's book sales
-come from obscure books that were not available in brick-and-mortar stores. They
-then quantified the potential value of the long tail to consumers. In an article
-published in 2003, these authors showed that, while most of the discussion about
-the value of the Internet to consumers has revolved around lower prices,
-consumer benefit (a.k.a. consumer surplus) from access to increased product
-variety in online book stores is ten times larger than their benefit from access
-to lower prices online. Thus, the primary value of the internet to consumers
-comes from releasing new sources of value by providing access to products in the
-long tail."*
+> In his Wired article, Chris Anderson cites earlier research [17] by Erik
+> Brynjolfsson, Yu (Jeffrey) Hu, and Michael D. Smith, who first used a log-linear
+> curve on an XY graph to describe the relationship between Amazon.com sales and
+> sales ranking. They found that a large proportion of Amazon.com's book sales
+> come from obscure books that were not available in brick-and-mortar stores. They
+> then quantified the potential value of the long tail to consumers. In an article
+> published in 2003, these authors showed that, while most of the discussion about
+> the value of the Internet to consumers has revolved around lower prices,
+> consumer benefit (a.k.a. consumer surplus) from access to increased product
+> variety in online book stores is ten times larger than their benefit from access
+> to lower prices online. Thus, the primary value of the internet to consumers
+> comes from releasing new sources of value by providing access to products in the
+> long tail.
 
 Anyway, the exciting thing about living in current time is that we have data.
 Much more than what Zipf had.

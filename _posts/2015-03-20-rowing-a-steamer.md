@@ -31,9 +31,9 @@ using computers.
 
 The situation is exactly as in the image below.
 
-<figure>
-<img src="/images/posts/rowing/dog.jpg">
-</figure>
+{% image_caption zoom %}
+/images/posts/rowing/dog.jpg
+{% endimage_caption %}
 
 You are a dog, your brain is optimized to judge movements, still you will do the
 calculations just because this is *the* analytical way. This is the perfect
@@ -57,12 +57,12 @@ and finite diff methods.
 I don't see such spirit for power use of computers in our academia. The
 arguments people usually give here are :
 
-> "You need to learn the Mathematics first."
+> You need to learn the Mathematics first.
 
 Ah, you are already assume teaching Calculus *in* Mathematics was a waste of
 time.
 
-> "You will learn nothing if you use functions directly."
+> You will learn nothing if you use functions directly.
 
 C'mon, you were going to teach us finite difference stuff, weren't you ? Or
 wait, you did teach that, but that was erratic pen-paper stuff right? Computers

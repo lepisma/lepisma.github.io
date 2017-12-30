@@ -21,9 +21,9 @@ Following screencast shows the setup in action.
 </video>
 </aside>
 
-<figure>
-  <img src="/images/posts/org-rice/demo.png">
-</figure>
+{% image_caption zoom %}
+/images/posts/org-rice/demo.png
+{% endimage_caption %}
 
 The look is inspired from the style used by [Edward
 Tufte](https://edwardtufte.github.io/et-book) in his books. A replication of the
@@ -33,14 +33,11 @@ spacing and margins, the thing that I like in Tufte's style is the font [ET
 Book](https://edwardtufte.github.io/et-book) which is an old-style serif font
 with beautiful _italics_.
 
-<figure>
-  <a href="/images/posts/org-rice/et-book.png" data-lightbox="bootstrap">
-    <img src="/images/posts/org-rice/et-book.png">
-  </a>
-  <figcaption>
-    Et Book font
-  </figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/org-rice/et-book.png
+
+Et Book font
+{% endimage_caption %}
 
 ---
 
@@ -51,9 +48,9 @@ because I use spacemacs and it is pretty complete as far as number of faces
 covered is concerned. Also, it has a good off-white background (`#fbf8ef`).
 There are three basic steps involved from here:
 
-1. Setting faces and themes
-2. Padding and stuff
-3. Other Org-mode visual and usability tweaks
+- Setting faces and themes
+- Padding and stuff
+- Other Org-mode visual and usability tweaks
 
 # Faces
 
@@ -74,18 +71,18 @@ non-monospace font, so you might not want to miss that.
 
 There are a few places where you can gain some breathing space.
 
-1. Line spacing
+- *Line spacing*
 
    Per buffer line spacing can be set using the variable `line-spacing`.
    Something like 0.1 goes well here.
    
-2. Top padding
+- *Top padding*
    
    Similar to `mode-line`, Emacs also has `header-line` for windows. Setting its
    format to empty string `(setq header-line-format " ")` gives you top padding.
    Also by changing header-line face height, you can change this spacing.
 
-3. Side padding
+- *Side padding*
 
    Adding side spaces is possible by setting margin width. You also need to
    reset the buffer to make the change visible. Here is a function that does

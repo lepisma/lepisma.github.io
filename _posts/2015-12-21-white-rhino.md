@@ -67,15 +67,13 @@ who is promoting this *knowledge* can answer following questions affirmatively.
 
 # Few Simple Questions
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 At school you were taught about chemicals in test tubes, equations to describe
 motion, and maybe something on photosynthesis—about which more later—but in all
 likelihood you were taught nothing about death, risk, statistics, and the
 science of what will kill or cure you.
-</p>
-<footer>
-<cite title="Bad Science">Ben Goldacre - Bad Science (2008)</cite>
+<footer markdown="1">
+Ben Goldacre - Bad Science (2008)
 </footer>
 </blockquote>
 
@@ -89,8 +87,8 @@ testings, these are not exactly valid for *any* research.
 No, not what you are being told. What the numbers *actually* mean? Here is a
 case.
 
-"In a test on N (N/2, N/2) people, product A performed 50% better than product
-B (assume an effect)."
+In a test on N (N/2, N/2) people, product A performed 50% better than product
+B (assume an effect).
 
 What is *50%* here?
 
@@ -137,14 +135,12 @@ similar issues like '*media torturing and twisting facts*'. Yet, shockingly
 small number of people criticize these incidences of quackery with similar
 enthusiasm.
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 The idea is to try and give all the information to help others to judge the
 value of your contribution; not just the information that leads to judgment in
 one particular direction or another.
-</p>
-<footer>
-<cite title="Richard P. Feynman">Richard P. Feynman</cite>
+<footer markdown="1">
+Richard P. Feynman
 </footer>
 </blockquote>
 
@@ -177,11 +173,11 @@ and is downright serious.
 I wrote this post because of the following few reasons, none of which involve
 initiating a *hate debate* against any of the specific ideas mentioned.
 
-1. I felt like I should.
-2. I still see many of my friends, relatives and myself reacting to senseless
-   persuasions. So at its worst, this post can simply work as a sanity reminder
-   for me.
-3. Maybe I am just ashamed of what our species has done to rhinos.
+- I felt like I should.
+- I still see many of my friends, relatives and myself reacting to senseless
+  persuasions. So at its worst, this post can simply work as a sanity reminder
+  for me.
+- Maybe I am just ashamed of what our species has done to rhinos.
 
 And sadly, the rhinoceros count is not the only thing thats going down.
 

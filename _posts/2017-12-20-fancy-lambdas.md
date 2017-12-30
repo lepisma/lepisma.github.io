@@ -224,11 +224,17 @@ which are similar in the sense that they allow creating/manipulating functions:
 - [cl-cut](http://quickdocs.org/cl-cut/) for `cut` (and `cute`) syntax from
   [SRFI-26](https://srfi.schemers.org/srfi-26/srfi-26.html)
   
-  [![quickdocs-cl-cut](http://quickdocs.org/badge/cl-cut.svg)](http://quickdocs.org/cl-cut/)
+  {% image_link %}
+  http://quickdocs.org/badge/cl-cut.svg
+  http://quickdocs.org/cl-cut/
+  {% endimage_link %}
   
 - [arnesi](http://quickdocs.org/arnesi/) for the `#L` reader macro.
   
-  [![quickdocs-arnesi](http://quickdocs.org/badge/arnesi.svg)](http://quickdocs.org/arnesi/)
+  {% image_link %}
+  http://quickdocs.org/badge/arnesi.svg
+  http://quickdocs.org/arnesi/
+  {% endimage_link %}
   
 - [CL21](https://github.com/cl21/cl21) for the `^` macro. Not on quicklisp main
   repos but can be installed using ql. Instructions on project's page.
@@ -236,7 +242,10 @@ which are similar in the sense that they allow creating/manipulating functions:
 - [positional-lambda](http://quickdocs.org/positional-lambda/) for `plambda`
   macro.
   
-  [![quickdocs-positional-lambda](http://quickdocs.org/badge/positional-lambda.svg)](http://quickdocs.org/positional-lambda/)
+  {% image_link %}
+  http://quickdocs.org/badge/positional-lambda.svg
+  http://quickdocs.org/positional-lambda/
+  {% endimage_link %}
   
 - There is also ```#`-reader``` in [rutils](https://github.com/vseloved/rutils)
   providing Clojure-ish but slightly limited shorthands
@@ -247,7 +256,10 @@ which are similar in the sense that they allow creating/manipulating functions:
   #`(+ % %%) ; => (lambda (&optional x y) (+ x y)) 
   ```
 
-  [![quickdocs-rutils](http://quickdocs.org/badge/rutils.svg)](http://quickdocs.org/rutils/)
+  {% image_link %}
+  http://quickdocs.org/badge/rutils.svg
+  http://quickdocs.org/rutils/
+  {% endimage_link %}
 
 - [fn](https://github.com/cbaggers/fn) provides another set of shorthands for
   λs. Examples from github page:
@@ -258,7 +270,10 @@ which are similar in the sense that they allow creating/manipulating functions:
   λ(+ _ _1) ; =>  (lambda (_ _1) (+ _ _1))
   ```
 
-  [![quickdocs-fn](http://quickdocs.org/badge/fn.svg)](http://quickdocs.org/fn/)
+  {% image_link %}
+  http://quickdocs.org/badge/fn.svg
+  http://quickdocs.org/fn/
+  {% endimage_link %}
 
 - [curry-compose-reader-macros](https://eschulte.github.io/curry-compose-reader-macros/)
   provides shorthand reader macros for currying and composing functions. A few
@@ -273,7 +288,10 @@ which are similar in the sense that they allow creating/manipulating functions:
   (mapcar «list {* 2} {* 3}» '(1 2 3 4)) ; => ((2 3) (4 6) (6 9) (8 12))
   ```
 
-  [![quickdocs-curry-compose-reader-macros](http://quickdocs.org/badge/curry-compose-reader-macros.svg)](http://quickdocs.org/curry-compose-reader-macros/)
+  {% image_link %}
+  http://quickdocs.org/badge/curry-compose-reader-macros.svg
+  http://quickdocs.org/curry-compose-reader-macros/
+  {% endimage_link %}
   
 - [curly](http://www.cliki.net/curly) has two reader macros for currying and
   composition. Examples from homepage
@@ -285,4 +303,7 @@ which are similar in the sense that they allow creating/manipulating functions:
   ;; => (lambda (#:g2724) (foo (bar 16 (baz 23 (quux #:g2724) 42)))
   ```
   
-  [![quickdocs-curly](http://quickdocs.org/badge/curly.svg)](http://quickdocs.org/curly/)
+  {% image_link %}
+  http://quickdocs.org/badge/curly.svg
+  http://quickdocs.org/curly/
+  {% endimage_link %}

@@ -69,16 +69,15 @@ regularly. So don't take things here as absolute truths, but opinions of sort.
 
 # 1. Drought
 
-<figure>
-<a href="https://xkcd.com/285/">
-<img src="/images/posts/evidence/wikipedian_protester.png">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/wikipedian_protester.png
+
+[xkcd 285](https://xkcd.com/285)
+{% endimage_caption %}
 
 One of my relative forwarded the following message to me.
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 "The Fact of Melatonin*
 <br>
 Plz make it a point to sleep early... 😴😊
@@ -106,7 +105,6 @@ use by sleeping early.💪
 The gland starts working from after dark until two hours before sunrise !!!🌞
 <br>
 Must read and share this miraculous physiology God designed inside man... 😊😊😊"
-</p>
 </blockquote>
 
 Is there anything wrong here? If you are careful, you might find a few mistakes.
@@ -152,15 +150,15 @@ explosive mutability of information can't be controlled. *Might*, because you
 really understand the uncertainties and are willing to go an extra mile to
 shackle the chains around us. But we say
 
-> "Hey kiddo! We simplify things so people get it, get it?"
+> Hey kiddo! We simplify things so people get it, get it?
 
 ## Simplification.
 
-<figure>
-<a href="https://xkcd.com/547/">
-<img src="/images/posts/evidence/simple.png">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/simple.png
+
+[xkcd 547](https://xkcd.com/547/)
+{% endimage_caption %}
 
 No one can know everything. So we use a few tricks. We learn how to utilize
 sources and do reasoning. In fact this is what we are taught in schools.
@@ -225,13 +223,11 @@ this line from
 [Fahrenheit 451](https://www.goodreads.com/book/show/17470674-fahrenheit-451)
 talking about things that the characters were missing in the fiction
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 Number one, as I said, quality of information. Number two: leisure to digest it.
 [...]
-</p>
-<footer>
-<cite title="Fahrenheit 451">Faber - Fahrenheit 451</cite>
+<footer markdown="1">
+Faber - Fahrenheit 451
 </footer>
 </blockquote>
 
@@ -241,32 +237,32 @@ devouring another piece of information or throwing paper planes out of windows.
 The message I mentioned has following *non-factoid* issues that hurt me (sorry
 sender), despite my respect for the concern of the sender:
 
-1. *Swapping of model back end*: A model must be passed on as it was created. We
-   can't mix and match things to suite the prejudices of audience or ourselves.
-   Like in this case, some non-creationist atheist (like me) can get pissed off
-   and avoid reading the content altogether.
+- *Swapping of model back end*: A model must be passed on as it was created. We
+  can't mix and match things to suite the prejudices of audience or ourselves.
+  Like in this case, some non-creationist atheist (like me) can get pissed off
+  and avoid reading the content altogether.
    
-2. *Term abuse, Vaccine*: I remember a guy in train preaching people (college
-   juniors) that Newton's law of gravitation is wrong and you can't use that.
-   Apparently, someone didn't use the right set of words while explaining him
-   the idea that theories have certain limits, assumptions and validity over
-   scale. And Newton's law is not really adequate for some specific needs.
+- *Term abuse, Vaccine*: I remember a guy in train preaching people (college
+  juniors) that Newton's law of gravitation is wrong and you can't use that.
+  Apparently, someone didn't use the right set of words while explaining him the
+  idea that theories have certain limits, assumptions and validity over scale.
+  And Newton's law is not really adequate for some specific needs.
    
-3. *Misinterpretation of data*: Dying at 30 from T.B. saves
-   us from common old age death causes. Cancer too, yes.
+- *Misinterpretation of data*: Dying at 30 from T.B. saves
+  us from common old age death causes. Cancer too, yes.
    
-4. *Absolute facts*: I can believe this message lies on the side where researchers
-   are certain about cancer effect, but then the reader should get hints for the
-   general disagreement, which is pretty much known (specially for the original
-   content creator).
+- *Absolute facts*: I can believe this message lies on the side where
+  researchers are certain about cancer effect, but then the reader should get
+  hints for the general disagreement, which is pretty much known (specially for
+  the original content creator).
 
 ## Evidence
 
-<figure>
-<a href="https://xkcd.com/925/">
-<img src="/images/posts/evidence/cell_phones.png">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/cell_phones.png
+
+[xkcd 925](https://xkcd.com/925/)
+{% endimage_caption %}
 
 Evidence keeps wild information mutations in check. Its not so much about
 actually putting up the citations before passing the message. Citations can also
@@ -295,11 +291,11 @@ people, I can safely say, a hell lot!
 
 # 2. Deluge
 
-<figure>
-<a href="https://xkcd.com/906/">
-<img src="/images/posts/evidence/citations.png">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/citations.png
+
+[xkcd 906](https://xkcd.com/906/)
+{% endimage_caption %}
 
 I was recently involved in a facebook discussion about effects of microwave on
 food items. The issues included bad effects of microwave on food and carcinogenic
@@ -329,7 +325,7 @@ so many of them, however shallow, you will get almost convinced of the argument
 because you can't gather enough time to accept / refute them. The evidence
 feels so solid on the surface, your mind will be confused whether they are
 actually refutable if I do a web search with my *'limited'* knowledge. Finally you
-succumb to *"better be safe than sorry"*.
+succumb to *better be safe than sorry*.
 
 You can almost feel the shades of gray here. Promotion of science in the way
 science intends is great, right? Look at all the T.V. programs, all the news
@@ -377,11 +373,11 @@ Pseudo science tries hard to look like real science. Uses all the tools used by
 science. It tries to convince people using something it doesn't understand. Just
 a pinch of skepticism and the house of cards is destroyed.
 
-<figure>
-<a href="https://xkcd.com/765/">
-<img src="/images/posts/evidence/dilution.png">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/dilution.png
+
+[xkcd 765](https://xkcd.com/765/)
+{% endimage_caption %}
 
 Consider homeopathy. Something that's still pretty much established because people
 didn't try, or weren't able to go through the 'science' thrown at them.
@@ -391,15 +387,14 @@ homeopathy. Same case. Many of us claim its the real thing, without actually
 knowing how and why, just because we were somehow 'convinced' of its
 sciency-ness.
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 Water, water, every where,
 <br>
 Nor any drop to drink
-</p>
-<footer>
-<cite title="Samuel Taylor Coleridge">Samuel Taylor Coleridge - "The Rime of the
-Ancient Mariner"</cite>
+
+<footer markdown="1">
+Samuel Taylor Coleridge - "The Rime of the
+Ancient Mariner"
 </footer>
 </blockquote>
 
@@ -409,17 +404,17 @@ use you can conjure out of thin air for them.
 
 A few people who are good at conjuring the 'other' uses are:
 
-1. *Quacks*: Promoting their method of treatment, wellness etc. *The doctors*
-2. *Simple innocent beings*: Afraid, distressed by the hammer of 'science'.
-   *The patients*
-3. *Wannabe scientists*: Don't care much about the real thing if it serves the
-   public image and the inner scientist. *Vectors of disease*
+- *Quacks*: Promoting their method of treatment, wellness etc. *The doctors*
+- *Simple innocent beings*: Afraid, distressed by the hammer of 'science'.
+  *The patients*
+- *Wannabe scientists*: Don't care much about the real thing if it serves the
+  public image and the inner scientist. *Vectors of disease*
 
-The only people who are willing to listen fall in type 2. And they need access
-to real consolidated evidence. A truckload of evidence is used most of the time
-when you are not sure about whether any of them is right (independent of whether
-the thing is actually right or wrong). A gross misinterpretation of scientific
-method and communication.
+The only people who are willing to listen are the *innocent beings*. And they
+need access to real consolidated evidence. A truckload of evidence is used most
+of the time when you are not sure about whether any of them is right
+(independent of whether the thing is actually right or wrong). A gross
+misinterpretation of scientific method and communication.
 
 Consider the sources you are getting your information from. The sources which
 support one pseudo-science are, by design, going to support other
@@ -438,16 +433,15 @@ energies from sun that gives you food*' to convince me of Sun's role. Just a
 simple reminder of photosynthesis will do.
 
 # 3. Disregard
-<blockquote>
-<p>
+
+<blockquote markdown="1">
 Colgate
 used to warn against Indian traditional ways of using salt &amp; coal on teeth.
-But now they actively endorse it <a href="https://t.co/eYywXQpK4P">
-pic.twitter.com/eYywXQpK4P</a>
-</p>
-<footer>
-<cite title="Swami Ramdev (@yogrishiramdev)">Swami Ramdev (@yogrishiramdev) <a href="https://twitter.com/yogrishiramdev/status/766977569661054976">
-August 20, 2016</a> </cite>
+But now they actively endorse it
+[pic.twitter.com/eYywXQpK4P](https://t.co/eYywXQpK4P)
+<footer markdown="1">
+Swami Ramdev (@yogrishiramdev) [August 20,
+2016](https://twitter.com/yogrishiramdev/status/766977569661054976")
 </footer>
 </blockquote>
 
@@ -461,12 +455,12 @@ arguments are good and bad in different ways.
 
 Anyway, I see this message promoting two things
 
-1. There is a reason higher than scientific method to decide against or in favor
-   of a product. In this case, ethnocentrism, nationalism and other
-   similar ideas on different scales.
+- There is a reason higher than scientific method to decide against or in favor
+  of a product. In this case, ethnocentrism, nationalism and other similar ideas
+  on different scales.
    
-2. You shouldn't feel a need to question anything if you are supportive of point
-   1.
+- You shouldn't feel a need to question anything if you are supportive of the
+  first point.
 
 You could argue that its just an example of healthy rivalry. But, do you see
 this message driving people to go for the real knowledge about what should they use
@@ -490,11 +484,11 @@ as presumed by the preachers. They are just questions. But the techniques of
 preachers doesn't have anything but disregard for them. You don't need to talk
 about evidence, because they are talking much above these petty issues.
 
-<figure>
-<a href="https://xkcd.com/154/">
-<img src="/images/posts/evidence/beliefs.jpg">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/beliefs.jpg
+
+[xkcd 154](https://xkcd.com/154/)
+{% endimage_caption %}
 
 Advertisements do this all the time. They look for what sells and target
 advertisements that way. There are pockets of worshippers built around products
@@ -507,10 +501,10 @@ believe that I can at least reason around with them.
 
 I mean, I would just say
 
-> "Hey, you ain't gaining nothing by buying truckload of
+> Hey, you ain't gaining nothing by buying truckload of
 > this biscuit that comes with x amount of mobile recharge, cause you are an
-> amnesiac moron who doesn't remember when was the last time you **enjoyed** its
-> taste."
+> amnesiac moron who doesn't remember when was the last time you enjoyed its
+> taste.
 
 This works in theory and, most of the time, in practice. Let me tell you
 why. Because you didn't sell your soul to a certain school of thought with
@@ -541,11 +535,11 @@ mutate by piggybacking on badges of modern scientific developments (like quantum
 physics, mail me if you want to know the secrets of the universe; I wonder what
 would have happened if they had to popularize their ideas before 1920s).
 
-<figure>
-<a href="https://xkcd.com/1102/">
-<img src="/images/posts/evidence/fastest_growing.png">
-</a>
-</figure>
+{% image_caption %}
+/images/posts/evidence/fastest_growing.png
+
+[xkcd 1102](https://xkcd.com/1102)
+{% endimage_caption %}
 
 Cults like these feed on your personal prejudices. You might be a properly
 functioning person, but when it comes to your cult, you share common, group
@@ -555,12 +549,10 @@ out in practice. They patch your ignorance with some mumbo-jumbo and you feel
 devoid of vulnerabilities. Pure. Complete. All knowing sentient entity free from
 restraints. Floating in an eternal universe of bliss. Remember,
 
-<blockquote>
-<p>
+<blockquote markdown="1">
 There are no self-proclaimed villains, only regiments of self-proclaimed saints
-</p>
-<footer>
-<cite title="Glen Cook">Glen Cook - "Chronicles of the Black Company"</cite>
+<footer markdown="1">
+Glen Cook - "Chronicles of the Black Company"
 </footer>
 </blockquote>
 
@@ -585,11 +577,10 @@ on a faith-face or shoving your own moral fragility deep inside you, you say
 Another comic to balance the amount of text. Thanks [xkcd](https://www.xkcd.com)
 for making our lives easier.
 
-<figure>
-<a href="https://xkcd.com/882/">
-<img class="zoomTarget" src="/images/posts/evidence/significant.png">
-</a>
-</figure>
+{% image_link %}
+/images/posts/evidence/significant.png
+https://xkcd.com/882/
+{% endimage_link %}
 </aside>
 
 Call me paranoid with [SIWOTI syndrome](https://xkcd.com/386/). I am over

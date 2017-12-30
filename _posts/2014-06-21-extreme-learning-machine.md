@@ -56,10 +56,11 @@ above.
 Given below is a simple *SLFN* with 3 inputs and 1 output which computes the
 weighted sum of hidden nodes.
 
-<figure>
-	<img src="/images/posts/elm/elm.jpg">
-	<figcaption>ELM architecture</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/elm/elm.jpg
+
+ELM architecture
+{% endimage_caption %}
 
 After performing the tedious backpropagation ritual, we are left with the
 following equation that predicts output from inputs
@@ -140,12 +141,11 @@ generalization.
 
 Lets test out the thing.
 
-<blockquote>
-  <p>
-    I happen to believe that we don't need slow languages
-  </p>
-  <footer><cite title="Jeff Bezanson. Co-creator, Julia">Jeff Bezanson.
-  Co-creator, Julia</cite></footer>
+<blockquote markdown="1">
+I happen to believe that we don't need slow languages
+<footer markdown="1">
+Jeff Bezanson. Co-creator, Julia
+</footer>
 </blockquote>
 
 Enough to make me try [julia](http://julialang.org/).
@@ -311,7 +311,7 @@ elapsed time: 0.003801902 seconds
 0.9817518248175182
 ~~~
 
-## WUT?
+# WUT?
 
 Assuming both models give same accuracy, the training of *ELM* is around
 *60x* faster than *ANN*! (Which kind of isn't actually surprising since the

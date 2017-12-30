@@ -19,9 +19,9 @@ Suppose the idea is to make an animal image classifier. So, this step involves
 feeding the network with tagged images of various animals so that the network
 can learn what is what.
 
-<figure>
-<img src="/images/posts/ntm/animals.jpg">
-</figure>
+{% image_caption %}
+/images/posts/ntm/animals.jpg
+{% endimage_caption %}
 
 After training, we can feed an unknown image to the network and it will spit out
 its name to the best of its knowledge.
@@ -31,9 +31,9 @@ running or jumping or walking (assuming it can't just stand still) ? If I give
 you an image (a shot from video) of it with its four feet on the ground, can you
 say anything? Maybe not.
 
-<figure>
-<img src="/images/posts/ntm/horse.jpg">
-</figure>
+{% image_caption %}
+/images/posts/ntm/horse.jpg
+{% endimage_caption %}
 
 We need to know what the animal was doing before this image was captured. If the
 previous image had all its four legs in air, we can, with high probability, say
@@ -63,9 +63,9 @@ actually creates a separate memory outside the network (amazingly simple
 structure to look at), and the network does *read* and  *write* operations on
 it.
 
-<figure>
-<img src="/images/posts/ntm/ntm.png">
-</figure>
+{% image_caption %}
+/images/posts/ntm/ntm.png
+{% endimage_caption %}
 
 In the above image, the controller is the actual neural network and it performs
 read and write on the memory via its read/write *heads*. (This structure results

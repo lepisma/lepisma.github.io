@@ -19,12 +19,11 @@ When they released lovelock (F15), they added GNOME 3. And needless to say, it
 was pure eye candy. Personally, I find the grid (of icons) based menu much
 easier to scan with my eyes and so I loved GNOME 3.
 
-<figure>
-<a href="/images/posts/gnome/fed.png" data-lightbox="fedora">
-<img src="/images/posts/gnome/fed.png">
-</a>
-<figcaption>Fedora lovelock</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/gnome/fed.png
+
+Fedora lovelock
+{% endimage_caption %}
 
 In spite of what popular opinions say about GNOME 3, I believe, drastic changes
 in UI help frame the next generation of design process. It has happened with
@@ -82,24 +81,22 @@ mouse hover. Without googling anything, I went to KDE settings and found a quick
 fix at just 3-4 clicks distance, I switched from OpenGl to XRender. Things like
 this are breeze to do in KDE.
 
-<figure>
-<a href="/images/posts/gnome/kde.jpeg" data-lightbox="kde">
-<img src="/images/posts/gnome/kde.jpeg">
-</a>
-<figcaption>KDE Plasma 5</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/gnome/kde.jpeg
+
+KDE Plasma 5
+{% endimage_caption %}
 
 Yesterday, I had to switch OS for something and went for Fedora 21 with GNOME. I
 faced GNOME after at least a year. Surprisingly, the same redraw glitch
 appeared. I again went for display related settings, but here there were only
 crude things, wallpapers, colors etc.
 
-<figure>
-<a href="/images/posts/gnome/gnome.png" data-lightbox="gnome">
-<img src="/images/posts/gnome/gnome.png">
-</a>
-<figcaption>GNOME</figcaption>
-</figure>
+{% image_caption zoom %}
+/images/posts/gnome/gnome.png
+
+GNOME
+{% endimage_caption %}
 
 Even though the first face of settings is comparable to KDE's but the *depth*
 is where the difference lies.
