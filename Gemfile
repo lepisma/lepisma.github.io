@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "github-pages"
+gem "org-ruby"
 
 group :jekyll_plugins do
   gem "jekyll-paginate"

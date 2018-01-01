@@ -205,6 +205,8 @@ GEM
     nuggets (1.5.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    org-ruby (0.9.12)
+      rubypants (~> 0.2)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -251,6 +253,7 @@ DEPENDENCIES
   jekyll-pug
   jekyll-tagging
   jekyll-typogrify
+  org-ruby
 
 RUBY VERSION
    ruby 2.4.3p205
