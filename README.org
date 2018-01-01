@@ -5,7 +5,7 @@ Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.gi
 /org-make tasks follow/
 
 #+name: om-deploy
-#+BEGIN_SRC bash :exports none :results none :async
+#+BEGIN_SRC bash :results none :async
   bundle exec jekyll build
   ./deploy.sh
 #+END_SRC
