@@ -11,75 +11,9 @@ Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.gi
 #+END_SRC
 
 #+name: om-build-org
-#+BEGIN_SRC emacs-lisp
-  ;; TODO: Move this in a separate package
-  (require 's)
+#+BEGIN_SRC emacs-lisp :results none
   (require 'f)
   (require 'dash)
-  (require 'dash-functional)
-
-  (defun omd-posts ()
-    "Read posts from _org directory"
-    (f-entries "./_org" (-cut s-ends-with? ".org" <>)))
-
-  (defun omd-post-output (input-file)
-    (s-replace-all '((".org" . ".md")
-                     ("_org". "_drafts")) input-file))
-
-  (defun omd-file-mtime (file-name)
-    (nth 5 (file-attributes file-name)))
-
-  (defun omd-post-uptodate? (input-file)
-    "Check if the output file corresponding to input is
-  up to date"
-    (let ((output (omd-post-output input-file)))
-      (if (f-exists? output)
-          (time-less-p (file-mtime input-file) (file-mtime output))
-        nil)))
-
-  (defun omd-is-header? (line)
-    "Tell if the line is a header for jekyll"
-    (let ((keys '("layout" "title" "tags" "summary")))
-      (-any? (lambda (k)
-               (s-starts-with? (format "#+%s:" k) (s-trim (downcase line))))
-             keys)))
-
-  (defun omd-transform-header (line)
-    "Transform line to yaml style"
-    (let ((splits (s-split-up-to ":" line 1)))
-      (format "%s: %s"
-              (s-chop-prefix "#+" (downcase (car splits)))
-              (second splits))))
-
-  (defun omd-transform-lines (lines &optional acc header-done)
-    "Replace org headers with yaml top matter"
-    (if (null acc) (omd-transform-lines lines '("---"))
-      (if (null lines) (reverse acc)
-        (let ((current-line (car lines)))
-          (if header-done
-              (omd-transform-lines nil (append (reverse lines) acc))
-            (if (omd-is-header? current-line)
-                (omd-transform-lines (cdr lines)
-                                     (cons (omd-transform-header current-line) acc))
-              (omd-transform-lines (cdr lines) (append (list current-line "---") acc) t)))))))
-
-  (defun omd-export-post (input-file)
-    "Export the post"
-    (let ((tmp (make-temp-file "omd"))
-          (output (post-output input-file)))
-      (--> input-file
-         (f-read-text it)
-         (s-split "\n" it)
-         (omd-transform-lines it)
-         (s-join "\n" it)
-         (f-write-text it 'utf-8 tmp))
-      (shell-command
-       (format "bundle exec org-ruby --translate markdown %s > %s"
-               (shell-quote-argument tmp)
-               (shell-quote-argument output)))))
-
+  (load (f-full "./omd.el"))
   (-map #'omd-export-post (-remove #'omd-post-uptodate? (omd-posts)))
 #+END_SRC
-
-#+RESULTS: om-build-org
-| 0 |
