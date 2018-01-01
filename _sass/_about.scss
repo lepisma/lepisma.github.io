@@ -2,6 +2,7 @@
 
 @import 'commons';
 @import 'code';
+@import './blog/links';
 
 a {
   color: $accent;
@@ -97,16 +98,6 @@ a {
       color: $text-medium;
       font-family: 'et-book';
       font-size: 18px;
-
-      a {
-        @include link-underline($back-white, $text-medium);
-        border-radius: 2px;
-
-        &:hover {
-          background-color: $back-light;
-          @include link-underline($back-light, $text-medium);
-        }
-      }
     }
   }
 }
