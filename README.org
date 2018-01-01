@@ -12,7 +12,7 @@ Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.gi
 
 #+name: om-build-org
 #+BEGIN_SRC emacs-lisp
-  ;; Move this in a separate package
+  ;; TODO: Move this in a separate package
   (require 's)
   (require 'f)
   (require 'dash)
@@ -24,12 +24,12 @@ Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.gi
 
   (defun omd-post-output (input-file)
     (s-replace-all '((".org" . ".md")
-                     ("_org". "_posts")) input-file))
+                     ("_org". "_drafts")) input-file))
 
   (defun omd-file-mtime (file-name)
     (nth 5 (file-attributes file-name)))
 
-  (defun omd-post-updated? (input-file)
+  (defun omd-post-uptodate? (input-file)
     "Check if the output file corresponding to input is
   up to date"
     (let ((output (omd-post-output input-file)))
@@ -78,7 +78,7 @@ Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.gi
                (shell-quote-argument tmp)
                (shell-quote-argument output)))))
 
-  (-map #'omd-export-post (-remove #'omd-post-updated? (omd-posts)))
+  (-map #'omd-export-post (-remove #'omd-post-uptodate? (omd-posts)))
 #+END_SRC
 
 #+RESULTS: om-build-org
