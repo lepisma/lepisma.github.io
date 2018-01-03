@@ -13,6 +13,7 @@ links:
 
 # Build settings
 livereload: true
+exclude: ['_org']
 markdown: kramdown
 permalink: pretty
 paginate: 5
