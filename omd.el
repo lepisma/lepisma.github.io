@@ -79,6 +79,36 @@
                                    (cons (omd-transform-header current-line) acc))
             (omd-transform-lines (cdr lines) (append (list current-line "---") acc) t)))))))
 
+(defun omd-revert-katex (string)
+  "Revert wrong conversions in katex blocks"
+  (let ((lines (->> string
+                  (s-replace-all '(("<sub>"  . "_{")
+                                   ("</sub>" . "}")
+                                   ("<sup>"  . "^{")
+                                   ("</sup>" . "}")))
+                  (s-split "\n")
+                  (-map #'s-trim)
+                  (-map (lambda (line)
+                          (if (s-starts-with? "* " line)
+                              (s-concat "-" (substring-no-properties line 2))
+                            line))))))
+    (s-join "\n" lines)))
+
+(defun omd-fix-katex (string)
+  "Fix katex blocks in the string"
+  (with-temp-buffer
+    (insert string)
+    (goto-char (point-min))
+    (while (search-forward "{% katex " nil t)
+      (let* ((start (search-forward "%}"))
+             (end (- (search-forward "{% endkatex %}") 14))
+             (block-text (buffer-substring-no-properties start end)))
+        (delete-region start end)
+        (goto-char start) ;; probably not needed
+        (insert (omd-revert-katex block-text))
+        (goto-char start)))
+    (buffer-string)))
+
 (defun omd-export-post (input-file)
   "Export the post"
   (let ((tmp (make-temp-file "omd"))
@@ -89,10 +119,10 @@
        (omd-transform-lines it)
        (s-join "\n" it)
        (f-write-text it 'utf-8 tmp))
-    (shell-command
-     (format "bundle exec org-ruby --translate markdown %s > %s"
-             (shell-quote-argument tmp)
-             (shell-quote-argument output)))))
+    (--> (shell-quote-argument tmp)
+       (shell-command-to-string (format "bundle exec org-ruby --translate markdown %s" it))
+       (omd-fix-katex it)
+       (f-write-text it 'utf-8 output))))
 
 (provide 'omd)
 

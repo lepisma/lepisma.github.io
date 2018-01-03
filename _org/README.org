@@ -1,9 +1,0 @@
-#+TITLE: Org babel-ish posts go here
-
-Instead of moving completely to org for blog posts, idea here is to just do
-basic transformations from ~org~ to ~md~ while keeping most of the markup powers in
-the hands of jekyll plugins (since I have already spent time on making them
-nice).
-
-Posts here will be of notebookish nature with generated outputs, equations in
-some form via ~org-babel~.
