@@ -8,6 +8,19 @@ aside {
   padding-bottom: 10px;
   line-height: 1.6 !important;
 
+  // Link overrides
+  figcaption a,
+  li a,
+  p a {
+    @include link-underline($code-background, $text-gray);
+    color: $text-gray;
+    border-radius: 2px;
+
+    &:hover {
+      @include link-underline($code-background, $text-gray);
+    }
+  }
+
   p {
     @include light-para(15px);
     line-height: 1.6 !important;
@@ -24,7 +37,6 @@ aside {
   }
 }
 
-// Move aside in main column in small screens
 @media (min-width: 1280px) {
   aside {
     float: right;
@@ -32,6 +44,18 @@ aside {
     background-color: $back-white;
     max-width: 45% !important;
     margin-right: -52%;
+
+    // Link overrides
+    figcaption a,
+    li a,
+    p a {
+      @include link-underline($back-white, $text-gray);
+
+      &:hover {
+        @include link-underline($back-light, $text-gray);
+        background-color: $back-light;
+      }
+    }
 
     &::before {
       content: '';
