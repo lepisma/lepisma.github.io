@@ -1,0 +1,10 @@
+#+TITLE: pile
+
+Personal pile of text and notes.
+
+#+NAME: om-sass
+#+BEGIN_SRC shell
+sass ./sass/main.scss ./pile/main.css
+#+END_SRC
+
+#+RESULTS: om-sass
