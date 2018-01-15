@@ -1,0 +1,12 @@
+blockquote {
+  @include left-line();
+
+  p {
+    display: inline;
+    font-size: 16px;
+  }
+
+  footer p {
+    @include light-meta();
+  }
+}

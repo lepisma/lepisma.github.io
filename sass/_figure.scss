@@ -1,0 +1,12 @@
+// Figure related stuff
+figure {
+  text-align: center;
+
+  figcaption {
+    color: $text-medium;
+    font-family: 'et-book';
+    font-size: 17px;
+    padding-top: 10px;
+    text-align: center;
+  }
+}

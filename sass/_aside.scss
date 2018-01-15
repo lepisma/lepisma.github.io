@@ -1,0 +1,64 @@
+// Aside divs
+aside {
+  background-color: $code-background;
+  border-radius: 5px;
+  @include light-para(15px);
+  margin: 20px 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  line-height: 1.6 !important;
+
+  // Link overrides
+  figcaption a,
+  li a,
+  p a {
+    @include link-underline($code-background, $text-gray);
+    color: $text-gray;
+    border-radius: 2px;
+
+    &:hover {
+      @include link-underline($code-background, $text-gray);
+    }
+  }
+
+  p {
+    @include light-para(15px);
+    line-height: 1.6 !important;
+  }
+
+  pre.highlight {
+    font-size: 12px;
+    .p {
+      font-size: 12px;
+    }
+    // Undo left-line
+    border: none;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  aside {
+    float: right;
+    clear: right;
+    background-color: $back-white;
+    max-width: 45% !important;
+    margin-right: -52%;
+
+    // Link overrides
+    figcaption a,
+    li a,
+    p a {
+      @include link-underline($back-white, $text-gray);
+
+      &:hover {
+        @include link-underline($back-light, $text-gray);
+        background-color: $back-light;
+      }
+    }
+
+    &::before {
+      content: '';
+    }
+  }
+}

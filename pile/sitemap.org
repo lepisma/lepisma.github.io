@@ -1,0 +1,7 @@
+#+TITLE: Sitemap
+
+- [[file:test.org][Org-mode Teaser Demo]]
+- [[file:index.org][pile]]
+- subdir
+  - [[file:subdir/test.org][Another thing]]
+  - [[file:subdir/index.org][This is a subdir]]

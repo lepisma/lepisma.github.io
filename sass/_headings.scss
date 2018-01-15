@@ -1,0 +1,31 @@
+// Headings for the post and index pages
+
+// Default face and margins
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'et-book';
+  font-weight: normal;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+// Override sizes
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+// Just use three levels
+h3, h4, h5, h6 {
+  font-size: 20px;
+  font-style: italic;
+}
