@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-01-15 Mon 02:46 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Org-mode Teaser Demo</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Karl Voit">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../lepisma.github.io/_site/css/blog.css" />
+
+<script type="text/javascript" src="http://orgmode.org/org-info.js">
+/**
+ *
+ * @source: http://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2017 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "showall");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<header>
+<h1 class="title">Org-mode Teaser Demo</h1>
+</header><nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9c502af">1. Org-mode by Examples</a>
+<ul>
+<li><a href="#orgf02bdce">1.1. activating Org-mode</a></li>
+<li><a href="#orgc0d6f7a">1.2. Org-mode documentation</a>
+<ul>
+<li><a href="#orgdf3e584">1.2.1. In case of Org-mode documentation does not work</a></li>
+</ul>
+</li>
+<li><a href="#orgd1913be">1.3. text formatting syntax (docu)</a></li>
+<li><a href="#org6e7bf3a">1.4. outlining (docu)</a>
+<ul>
+<li><a href="#org69e53c0">1.4.1. Creating</a></li>
+<li><a href="#org709c772">1.4.2. Using</a></li>
+<li><a href="#org13e7fa6">1.4.3. encryption</a></li>
+<li><a href="#org0f4f0df">1.4.4. time stamps when taking notes (docu)</a></li>
+</ul>
+</li>
+<li><a href="#orga0532c5">1.5. sparse trees (docu)</a></li>
+<li><a href="#org8ba3d88">1.6. lists (docu)</a>
+<ul>
+<li><a href="#orgf01f4c6">1.6.1. examples</a></li>
+<li><a href="#orga25908a">1.6.2. Simple</a></li>
+<li><a href="#org7d9a992">1.6.3. Checklists</a></li>
+<li><a href="#orgf35a0a7">1.6.4. Headings with TODO items</a></li>
+<li><a href="#orgf3f921e">1.6.5. Taking notes during a meeting or similar (docu)</a></li>
+</ul>
+</li>
+<li><a href="#org0dc2691">1.7. drawers, properties, columns (docu)</a>
+<ul>
+<li><a href="#org610c745">1.7.1. <span class="todo NEXT">NEXT</span> Test with category property</a></li>
+</ul>
+</li>
+<li><a href="#org16faf16">1.8. blocks (docu)</a>
+<ul>
+<li><a href="#orgb2b6610">1.8.1. examples for non-source-code blocks</a></li>
+</ul>
+</li>
+<li><a href="#org8bf43a7">1.9. links (docu)</a>
+<ul>
+<li><a href="#orgc279ac3">1.9.1. heading with PROPERTIES drawer containing ID</a></li>
+</ul>
+</li>
+<li><a href="#org87a8a1d">1.10. states; TODO items (docu)</a>
+<ul>
+<li><a href="#org9522b00">1.10.1. making dependencies explicit</a></li>
+<li><a href="#orgf071107">1.10.2. logging state changes (docu)</a></li>
+<li><a href="#orgd340201">1.10.3. habits (docu)</a></li>
+<li><a href="#org0320c53">1.10.4. priorities (docu)</a></li>
+<li><a href="#orgdfb06c9">1.10.5. breaking down in subtasks (docu)</a></li>
+</ul>
+</li>
+<li><a href="#org8bf7c6c">1.11. tags (docu)</a>
+<ul>
+<li><a href="#org339a642">1.11.1. example</a></li>
+<li><a href="#org30c0f3b">1.11.2. Tag groups (docu)</a></li>
+</ul>
+</li>
+<li><a href="#org345be4b">1.12. tables simple (docu)</a></li>
+<li><a href="#org678ec10">1.13. tables complex (docu, tutorial)</a>
+<ul>
+<li><a href="#orgce6caf2">1.13.1. referencing example with detailed explanation</a></li>
+</ul>
+</li>
+<li><a href="#org2c72595">1.14. column view (docu)</a>
+<ul>
+<li><a href="#orgf0429b7">1.14.1. example sub-item</a></li>
+<li><a href="#org3d985d2">1.14.2. <span class="todo NEXT">NEXT</span> <span class="priority">[B]</span> another example</a></li>
+</ul>
+</li>
+<li><a href="#org20cf644">1.15. capture, refile, archive (docu)</a></li>
+<li><a href="#org16d6772">1.16. attachments (docu)</a></li>
+<li><a href="#orgc4b9826">1.17. dates &amp; time (docu)</a>
+<ul>
+<li><a href="#orgeac1ccd">1.17.1. advanced date/time with sexp (docu)</a></li>
+</ul>
+</li>
+<li><a href="#orgd3cd454">1.18. agenda (docu)</a></li>
+<li><a href="#orgb54d7e1">1.19. clocking time (docu)</a>
+<ul>
+<li><a href="#org6988f07">1.19.1. example sub-hierarchy with report</a></li>
+</ul>
+</li>
+<li><a href="#orgba30ae5">1.20. dynamic blocks with ELISP (docu)</a></li>
+<li><a href="#org303421c">1.21. source code (docu)</a></li>
+<li><a href="#org7f22594">1.22. babel (docu)</a>
+<ul>
+<li><a href="#org25489b4">1.22.1. babel simple (doc)</a></li>
+<li><a href="#org74af875">1.22.2. babel advanced</a></li>
+</ul>
+</li>
+<li><a href="#orgbd75dff">1.23. LaTeX (docu)</a></li>
+<li><a href="#orgf767e46">1.24. export formats (docu)</a>
+<ul>
+<li><a href="#orge651263">1.24.1. Export options (docu)</a></li>
+</ul>
+</li>
+<li><a href="#org47ed554">1.25. MobileOrg (docu)</a></li>
+<li><a href="#org8cf7abb">1.26. many many many many more features!</a></li>
+<li><a href="#org03c9124">1.27. customization per &#x2026;</a></li>
+</ul>
+</li>
+<li><a href="#orgb2e24a9">2. Still Missing Topics</a></li>
+</ul>
+</div>
+</nav>
+<div id="outline-container-org9c502af" class="outline-2">
+<h2 id="org9c502af"><span class="section-number-2">1</span> Org-mode by Examples</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>This is a subset(!) of Org-mode basics to demonstrate the main
+features (sometimes probably more) of this wonderful tool</li>
+
+<li>Find the newest version of this document on
+<a href="https://github.com/novoid/org-mode-workshop">https://github.com/novoid/org-mode-workshop</a></li>
+</ul>
+
+
+<table id="org0bfc99b">
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left"><b>key</b></th>
+<th scope="col" class="org-left"><b>description</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">M</td>
+<td class="org-left">Meta (often: Alt)</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">Ctrl</td>
+</tr>
+
+<tr>
+<td class="org-left">S</td>
+<td class="org-left">Shift</td>
+</tr>
+
+<tr>
+<td class="org-left">TAB</td>
+<td class="org-left">Tabulator</td>
+</tr>
+
+<tr>
+<td class="org-left">RET</td>
+<td class="org-left">Return, Enter, CRLF</td>
+</tr>
+
+<tr>
+<td class="org-left">UP</td>
+<td class="org-left">arrow: up</td>
+</tr>
+
+<tr>
+<td class="org-left">DOWN</td>
+<td class="org-left">arrow: down</td>
+</tr>
+
+<tr>
+<td class="org-left">LEFT</td>
+<td class="org-left">arrow: left</td>
+</tr>
+
+<tr>
+<td class="org-left">RIGHT</td>
+<td class="org-left">arrow: right</td>
+</tr>
+
+<tr>
+<td class="org-left">SPC</td>
+<td class="org-left">Space</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgf02bdce" class="outline-3">
+<h3 id="orgf02bdce"><span class="section-number-3">1.1</span> activating Org-mode</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="http://orgmode.org/org.html#Activation">http://orgmode.org/org.html#Activation</a></li>
+<li><a href="http://orgmode.org/worg/org-configs/org-customization-guide.html">http://orgmode.org/worg/org-configs/org-customization-guide.html</a></li>
+</ul>
+
+<p>
+<a href="http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html#sec-1-2">Activation of Org-mode (external Tutorial)</a>:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(add-to-list 'auto-mode-alist '(<span style="color: #A3BE8C;">"\\.</span><span style="color: #9c91e4; font-weight: bold;">\\</span><span style="color: #9c91e4; font-weight: bold;">(</span><span style="color: #A3BE8C;">org</span><span style="color: #9c91e4; font-weight: bold;">\\</span><span style="color: #9c91e4; font-weight: bold;">|</span><span style="color: #A3BE8C;">org_archive</span><span style="color: #9c91e4; font-weight: bold;">\\</span><span style="color: #9c91e4; font-weight: bold;">|</span><span style="color: #A3BE8C;">txt</span><span style="color: #9c91e4; font-weight: bold;">\\</span><span style="color: #9c91e4; font-weight: bold;">)</span><span style="color: #A3BE8C;">$"</span> . org-mode<span style="color: #666666;">))</span>
+(define-key global-map <span style="color: #A3BE8C;">"\C-ca"</span> 'org-agenda)     <span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">by convention: "C-c a" opens agenda</span>
+(define-key global-map <span style="color: #A3BE8C;">"\C-cc"</span> 'org-capture)    <span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">by convention: "C-c c" captures stuff</span>
+(define-key global-map <span style="color: #A3BE8C;">"\C-cl"</span> 'org-store-link) <span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">by convention: "C-c l" stores a link to this heading</span>
+(<span style="color: #BF616A;">setq</span> org-log-done t) <span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">if you want to log DONE-states to the :LOGBOOK:-drawer</span>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Org-mode <b>minor mode</b> (structure editing and lists) <code>orgstruct-mode</code>
+(<a href="http://orgmode.org/org.html#Orgstruct-mode">docu</a>)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc0d6f7a" class="outline-3">
+<h3 id="orgc0d6f7a"><span class="section-number-3">1.2</span> Org-mode documentation</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><a href="http://orgmode.org/org.html">http://orgmode.org/org.html</a> is up to date</li>
+<li><code>C-h i</code> (while being in an Org-mode file) gives you a local version :-)</li>
+</ul>
+</div>
+
+<div id="outline-container-orgdf3e584" class="outline-4">
+<h4 id="orgdf3e584"><span class="section-number-4">1.2.1</span> In case of Org-mode documentation does not work</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+For using Org-mode from a local git repository: add following to your
+configuration:
+</p>
+
+<pre class="example">
+(add-to-list 'Info-additional-directory-list "~/.emacs.d/&lt;YOURDIRECTORY&gt;/org-mode/doc/")
+
+</pre>
+
+<p>
+OR: install Org-mode documentation to your system with:
+</p>
+
+<pre class="example">
+cd $ORGMODEDIRECTORY &amp;&amp; sudo make install-info
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd1913be" class="outline-3">
+<h3 id="orgd1913be"><span class="section-number-3">1.3</span> text formatting syntax <a href="http://orgmode.org/org.html#Emphasis-and-monospace">(docu)</a></h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li><b>bold</b></li>
+<li><i>italic</i></li>
+<li><span class="underline">underline</span></li>
+<li><del>strike through</del></li>
+<li><code>code</code></li>
+<li><code>commands</code></li>
+<li><a href="http://orgmode.org">http://orgmode.org</a></li>
+</ul>
+
+<pre class="example">
+small example
+
+</pre>
+
+<ul class="org-ul">
+<li>not (yet) working and edge cases:
+<ul class="org-ul">
+<li><i><b>combination</b></i></li>
+<li><b><i>combination</i></b></li>
+<li><span class="underline"><b>combination</b></span></li>
+<li><b><span class="underline">combination</span></b></li>
+<li><code>*combination*</code></li>
+<li><code>C:\a\very\old\DOS\path</code></li>
+<li><a href="http://orgmode.org">http://orgmode.org</a></li>
+<li><a href="http://orgmode.org">orgmode-Homepage</a></li>
+<li><a href="http://orgmode.org"><b>orgmode</b> <i>Homepage</i></a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e7bf3a" class="outline-3">
+<h3 id="org6e7bf3a"><span class="section-number-3">1.4</span> outlining (<a href="http://orgmode.org/org.html#Document-Structure">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>headlines start with asterisks</li>
+<li>levels</li>
+<li>visibility
+<ul class="org-ul">
+<li><code>TAB</code>      <b>visibility cycling</b></li>
+<li><code>S-TAB</code>    change buffer visibility</li>
+<li><code>C-c C-r</code>  <b>reveal context</b></li>
+<li>per-file visibility <code>#+STARTUP: overview</code> and so on: (<a href="http://orgmode.org/org.html#Visibility-cycling">docu</a>)</li>
+<li><code>C-u C-u TAB</code> <b>restore startup visibility</b></li>
+</ul></li>
+<li>motion
+<ul class="org-ul">
+<li><code>C-c C-n</code>   <b>next heading</b></li>
+<li><code>C-c C-p</code>   <b>previous heading</b></li>
+<li><code>C-c C-u</code>   one level up</li>
+<li><code>C-c C-j</code>   jump (goto)</li>
+<li><code>C-c C-f</code>   forward same level</li>
+<li><code>C-c C-b</code>   backward same level</li>
+<li><code>M-x org-goto</code>   nifty inerface for searching within an Org-mode buffer</li>
+</ul></li>
+<li>create basic elements
+<ul class="org-ul">
+<li><code>C-RET</code>     <b>new heading</b> below</li>
+</ul></li>
+<li>move elements
+<ul class="org-ul">
+<li><code>M-UP/DOWN</code> <b>move up/down</b> with subitems</li>
+<li><code>M-LEFT</code>    <b>promote</b></li>
+<li><code>M-RIGHT</code>   <b>demote</b></li>
+<li><code>M-S-LEFT/RIGHT</code>  promote/demote with subitems</li>
+</ul></li>
+<li><code>C-c C-c</code>  <b>toggle/modify</b> things (<a href="http://orgmode.org/org.html#The-very-busy-C_002dc-C_002dc-key">docu</a>)
+<ul class="org-ul">
+<li>checkbox: activate/deactivate, heading: tags, tables:
+re-calculate, jump footnote and back, update tables, update
+TODO-count, &#x2026;</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org69e53c0" class="outline-4">
+<h4 id="org69e53c0"><span class="section-number-4">1.4.1</span> Creating</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> DEMO: create headings</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org709c772" class="outline-4">
+<h4 id="org709c772"><span class="section-number-4">1.4.2</span> Using</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> DEMO: visibility cycling</li>
+<li class="off"><code>[&#xa0;]</code> DEMO: move headings</li>
+</ul>
+
+<p>
+This is a quite boring text just to show some body content.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org3e42821"></a>This is the 1st heading<br>
+<div class="outline-text-5" id="text-1-4-2-1">
+<p>
+This is a quite boring text just to show some body content.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orga0fdabe"></a>Sub-heading 1<br>
+<div class="outline-text-6" id="text-1-4-2-1-1">
+<p>
+This is a quite boring text just to show some body content.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgd74ed6b"></a>This is another heading<br>
+<div class="outline-text-5" id="text-1-4-2-2">
+<p>
+This is a quite boring text just to show some body content.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org52cedb3"></a>Sub-heading 2<br>
+<div class="outline-text-6" id="text-1-4-2-2-1">
+<p>
+This is a quite boring text just to show some body content.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orga76cfa1"></a>This is yet another heading<br></li>
+<li><a id="orgd078a76"></a>OK, now this is getting boring :-)<br></li>
+</ol>
+</div>
+
+
+<div id="outline-container-org13e7fa6" class="outline-4">
+<h4 id="org13e7fa6"><span class="section-number-4">1.4.3</span> encryption</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<ul class="org-ul">
+<li>whole Org-mode files</li>
+<li>selective headlines using :crypt:</li>
+<li><code>org-decrypt-entry</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0f4f0df" class="outline-4">
+<h4 id="org0f4f0df"><span class="section-number-4">1.4.4</span> time stamps when taking notes (<a href="http://orgmode.org/manual/Relative-timer.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<ul class="org-ul">
+<li><code>C-c C-x .</code>   start timer</li>
+<li><code>C-c C-x -</code>   insert list item with time</li>
+<li><code>M-&lt;RET&gt;</code>     insert heading with time</li>
+<li><code>C-c C-x ,</code>   toggle timer pause</li>
+<li><code>C-u C-c C-x ,</code>  stop timer</li>
+
+<li>also handy:
+<ul class="org-ul">
+<li><code>C-c C-x ;</code>    set countdown</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga0532c5" class="outline-3">
+<h3 id="orga0532c5"><span class="section-number-3">1.5</span> sparse trees (<a href="http://orgmode.org/org.html#Sparse-trees">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Filtering
+<ul class="org-ul">
+<li><code>C-c /</code>    Filter in <b>sparse trees</b></li>
+<li><code>C-c / r</code>  Filter using <b>Regular Expressions</b></li>
+</ul></li>
+<li>Moving in results
+<ul class="org-ul">
+<li><code>M-g n</code>    goto next match</li>
+<li><code>M-g o</code>    goto previous match</li>
+</ul></li>
+<li><a href="http://orgmode.org/org.html#Property-searches">docu: property search</a></li>
+
+<li><code>C-c a L</code>    time sorted view of buffer</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8ba3d88" class="outline-3">
+<h3 id="org8ba3d88"><span class="section-number-3">1.6</span> lists <a href="http://orgmode.org/org.html#Plain-lists">(docu)</a></h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li><code>M-RET</code>      <b>new list item</b></li>
+<li><code>M-S-RET</code>    create checkbox</li>
+<li><code>M-LEFT/RIGHT/UP/DOWN</code>  move item</li>
+<li><code>C-c -</code>      cycle item type OR turn into list item</li>
+</ul>
+</div>
+
+<div id="outline-container-orgf01f4c6" class="outline-4">
+<h4 id="orgf01f4c6"><span class="section-number-4">1.6.1</span> examples</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+simple list:
+</p>
+<ul class="org-ul">
+<li>Emacs</li>
+<li>Org-mode</li>
+<li>Lists</li>
+</ul>
+
+<p>
+enumerate:
+</p>
+<ol class="org-ol">
+<li>Emacs</li>
+<li>Org-mode</li>
+<li>Lists</li>
+</ol>
+
+<p>
+check lists:
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga25908a" class="outline-4">
+<h4 id="orga25908a"><span class="section-number-4">1.6.2</span> Simple</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> DEMO: create simple lists and move items around</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d9a992" class="outline-4">
+<h4 id="org7d9a992"><span class="section-number-4">1.6.3</span> Checklists</h4>
+<div class="outline-text-4" id="text-1-6-3">
+<ul class="org-ul">
+<li><code>M-S-RET</code>  new item with checkbox</li>
+<li><code>C-c C-*</code>  checkboxes become TODOs</li>
+<li><code>C-c C-C</code>  toggle checkboxes between <code>[X]</code> and <code>[ ]</code></li>
+<li><code>C-u C-u C-c C-C</code>  toggle checkboxes between <code>[ ]</code> and <code>[-]</code></li>
+
+<li>Clean out garage
+<ol class="org-ol">
+<li class="off"><code>[&#xa0;]</code> get stuff out
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> be careful with that axe, Eugene</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> get rid of old stuff
+<ul class="org-ul">
+<li>using eBay?</li>
+<li>try to use rubbish as birthday presents for family</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> repaint garage</li>
+<li class="off"><code>[&#xa0;]</code> put stuff back in</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf35a0a7" class="outline-4">
+<h4 id="orgf35a0a7"><span class="section-number-4">1.6.4</span> Headings with TODO items</h4>
+<div class="outline-text-4" id="text-1-6-4">
+</div>
+<ol class="org-ol">
+<li><a id="org2f04dbe"></a><span class="todo TODO">TODO</span> Clean out garage <code>[0/4]</code><br>
+<ol class="org-ol">
+<li><a id="org48a4a95"></a><span class="todo TODO">TODO</span> get stuff out<br>
+<div class="outline-text-6" id="text-1-6-4-1-1">
+<ul class="org-ul">
+<li>be careful with that axe, Eugene</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org00df64b"></a><span class="todo TODO">TODO</span> get rid of old stuff<br>
+<div class="outline-text-6" id="text-1-6-4-1-2">
+<ul class="org-ul">
+<li>using eBay?</li>
+<li>try to use rubbish as birthday presents for family</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgf29a112"></a><span class="todo TODO">TODO</span> repaint garage<br></li>
+
+<li><a id="org23b4bb4"></a><span class="todo TODO">TODO</span> put stuff back in<br></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf3f921e" class="outline-4">
+<h4 id="orgf3f921e"><span class="section-number-4">1.6.5</span> Taking notes during a meeting or similar (<a href="http://orgmode.org/org.html#Relative-timer">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-6-5">
+<ul class="org-ul">
+<li><code>C-c C-x .</code>        (re)start a timer</li>
+<li><code>C-c C-x -</code> or <code>M-&lt;RET&gt;</code>  insert description list item with the current relative time</li>
+<li><code>C-c C-x ,</code>        pause/continue</li>
+<li><code>C-u C-c C-x ,</code>    stop timer</li>
+</ul>
+
+<p>
+Bonus feature:
+</p>
+<ul class="org-ul">
+<li><code>C-c C-x ;</code>        count down timer</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0dc2691" class="outline-3">
+<h3 id="org0dc2691"><span class="section-number-3">1.7</span> drawers, properties, columns (<a href="http://orgmode.org/org.html#Properties-and-Columns">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>meta-data on headings</li>
+<li>standard drawers :PROPERTIES: and :LOGBOOK:</li>
+<li>ends with :END:</li>
+
+<li>FIXXME</li>
+
+<li><code>C-c C-z</code>      timed LOGBOOK entry</li>
+<li><code>:ID: label</code>   define ID in PROPERTIES</li>
+
+<li>hint: the property CATEGORY gets inherited and displayed on the
+agenda:</li>
+</ul>
+</div>
+
+<div id="outline-container-org610c745" class="outline-4">
+<h4 id="org610c745"><span class="section-number-4">1.7.1</span> <span class="todo NEXT">NEXT</span> Test with category property&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag">mytag</span></span></h4>
+<div class="outline-text-4" id="text-1-7-1">
+</div>
+</div>
+</div>
+
+<div id="outline-container-org16faf16" class="outline-3">
+<h3 id="org16faf16"><span class="section-number-3">1.8</span> blocks (<a href="http://orgmode.org/org.html#Blocks">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-8">
+<ul class="org-ul">
+<li>encapsulating content with begin&#x2026;end structure</li>
+<li><code>&lt;s + TAB</code>   easy templates (<a href="http://orgmode.org/org.html#Easy-Templates">docu</a>)</li>
+</ul>
+
+<pre class="example">
+Some example from a text file.
+</pre>
+
+<ul class="org-ul">
+<li>more of it in the Babel section later on</li>
+<li>differences between non-source-code blocks (<a href="http://orgmode.org/org.html#Literal-examples">docu</a>):</li>
+</ul>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left"><b>type</b></th>
+<th scope="col" class="org-left"><b>indendation</b></th>
+<th scope="col" class="org-left"><b>blank lines</b></th>
+<th scope="col" class="org-left"><b>line breaks</b></th>
+<th scope="col" class="org-left"><b>Org syntax</b></th>
+<th scope="col" class="org-left"><b>notes</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">example</td>
+<td class="org-left">preserved</td>
+<td class="org-left">preserved</td>
+<td class="org-left">preserved</td>
+<td class="org-left">ignored</td>
+<td class="org-left">like SRC block without a language</td>
+</tr>
+
+<tr>
+<td class="org-left">verse</td>
+<td class="org-left">preserved</td>
+<td class="org-left">preserved</td>
+<td class="org-left">preserved</td>
+<td class="org-left">recognized</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">quote</td>
+<td class="org-left">preserved</td>
+<td class="org-left">preserved</td>
+<td class="org-left">not preserved</td>
+<td class="org-left">recognized</td>
+<td class="org-left">for quoting text</td>
+</tr>
+
+<tr>
+<td class="org-left">center</td>
+<td class="org-left">not preserved</td>
+<td class="org-left">preserved</td>
+<td class="org-left">not preserved</td>
+<td class="org-left">recognized</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgb2b6610" class="outline-4">
+<h4 id="orgb2b6610"><span class="section-number-4">1.8.1</span> examples for non-source-code blocks</h4>
+<div class="outline-text-4" id="text-1-8-1">
+<pre class="example">
+This is a test.
+
+Demonstration of long lines within a non-source-code block like this or that or something else which is quite good.
+
+   Space upfront
+</pre>
+
+<p class="verse">
+This is a test.<br>
+<br>
+Demonstration of long lines within a non-source-code block like this or that or something else which is quite good.<br>
+<br>
+&#xa0;&#xa0;&#xa0;Space upfront<br>
+<br>
+</p>
+
+<blockquote>
+<p>
+This is a test.
+</p>
+
+<p>
+Demonstration of long lines within a non-source-code block like this
+or that or something else which is quite good.
+</p>
+
+<p>
+Space upfront
+</p>
+</blockquote>
+
+<div class="org-center">
+<p>
+This is a test.
+</p>
+
+<p>
+Demonstration of long lines within a non-source-code block like this
+or that or something else which is quite good.
+</p>
+
+<p>
+Space upfront
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8bf43a7" class="outline-3">
+<h3 id="org8bf43a7"><span class="section-number-3">1.9</span> links <a href="http://orgmode.org/org.html#Hyperlinks">(docu)</a></h3>
+<div class="outline-text-3" id="text-1-9">
+<pre class="example">
+[[link]]
+[[link][description]]
+
+</pre>
+
+<p>
+target:
+</p>
+<pre class="example">
+# &lt;&lt;link&gt;&gt;
+
+</pre>
+
+<ul class="org-ul">
+<li>id:myexampleid</li>
+<li><a href="file:///home/lepisma/.zshrc.local">file:///home/lepisma/.zshrc.local</a></li>
+<li><a href="http://orgmode.org">http://orgmode.org</a>
+<ul class="org-ul">
+<li><a href="http://orgmode.org/org.html#External-links">docu: list of external links</a></li>
+<li><a href="http://orgmode.org/org.html#Link-abbreviations">docu: link abbrevations</a></li>
+</ul></li>
+
+<li><code>C-c l</code>    store link (also in many other buffer types: <a href="http://orgmode.org/org.html#Handling-links">docu</a>)</li>
+<li><code>C-c C-l</code>  <b>inserting link</b> (or edit existing link)</li>
+<li><code>C-u C-c C-l</code>  file link (shortcut)</li>
+<li><code>C-c C-o</code>  <b>open link</b></li>
+<li><code>C-c C-x C-n</code> goto <b>next link</b></li>
+<li><code>C-c C-x C-p</code> goto <b>previous link</b></li>
+
+<li>"radio targets" are auto-links created by target like <code>&lt;&lt;&lt;target name&gt;&gt;&gt;</code>
+<ul class="org-ul">
+<li>all occurrences of "target name" will be links</li>
+</ul></li>
+
+<li><code>C-c C-x C-v</code>  toggle show inline images</li>
+
+<li><code>C-c %</code>   push position into ring</li>
+<li><code>C-c &amp;</code>   goto last saved position in ring</li>
+
+<li>footnotes (<a href="http://orgmode.org/org.html#Footnotes">docu</a>)
+<ul class="org-ul">
+<li>plain          <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
+<li>with own label <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
+<li>reference      <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> <sup>, </sup><sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup></li>
+<li><code>C-c C-c</code>      jump between footnote and reference</li>
+<li><code>C-c C-x f</code>    footnote action command (see <a href="http://orgmode.org/org.html#Footnotes">docu</a>)</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-orgc279ac3" class="outline-4">
+<h4 id="orgc279ac3"><a id="myexampleid"></a><span class="section-number-4">1.9.1</span> heading with PROPERTIES drawer containing ID</h4>
+<div class="outline-text-4" id="text-1-9-1">
+<p>
+foo bar
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org87a8a1d" class="outline-3">
+<h3 id="org87a8a1d"><span class="section-number-3">1.10</span> states; TODO items (<a href="http://orgmode.org/org.html#TODO-Items">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-10">
+<ul class="org-ul">
+<li><code>C-c C-t</code>   <b>rotate TODO state</b></li>
+<li><code>C-c / t</code>   sparse tree with TODOs</li>
+<li><code>C-c a t</code>   global TODO list in agenda</li>
+<li><code>C-S-RET</code>   <b>new TODO heading</b></li>
+
+<li>per-file keywords     <code>#+TODO: TODO(t) FEEDBACK(f) | DONE(d!) CANCELED(c!@)</code>
+<ul class="org-ul">
+<li><code>!</code>   timestamp</li>
+<li><code>@</code>   add note</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org9522b00" class="outline-4">
+<h4 id="org9522b00"><span class="section-number-4">1.10.1</span> making dependencies explicit</h4>
+<div class="outline-text-4" id="text-1-10-1">
+<ul class="org-ul">
+<li>simple, ordered method with PROPERTIES drawer:</li>
+</ul>
+<pre class="example">
+:ORDERED: t
+
+</pre>
+<ul class="org-ul">
+<li><code>C-c C-x o</code>  toggle ORDERED property</li>
+
+<li>see only tasks that are <b>not</b> depending on other <b>open</b> tasks
+<ul class="org-ul">
+<li>see only things that can be done now</li>
+</ul></li>
+<li><a href="http://orgmode.org/worg/org-contrib/org-depend.html">http://orgmode.org/worg/org-contrib/org-depend.html</a></li>
+<li>to define workflows (see demo below)</li>
+
+<li>task dependencies with org-depend (<a href="http://orgmode.org/worg/org-contrib/org-depend.html">docu</a>)
+<ul class="org-ul">
+<li><code>:BLOCKER: an-heading-id another-heading-id</code> define blocking task</li>
+<li><code>:TRIGGER: chain-siblings(NEXT)</code>  define trigger for setting NEXT</li>
+<li><code>:TRIGGER: my-heading-id(NEXT)</code>   define trigger for specific heading to set to NEXT</li>
+</ul></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org7138fcc"></a>example with chain siblings<br>
+<ol class="org-ol">
+<li><a id="org7597ea8"></a><span class="todo NEXT">NEXT</span> buy bike<br>
+<div class="outline-text-6" id="text-1-10-1-1-1">
+</div>
+</li>
+
+<li><a id="org31ec07b"></a>take tour<br></li>
+
+<li><a id="orga242a67"></a>goto hospital<br></li>
+</ol>
+</li>
+
+<li><a id="org16b42f8"></a>example with triggers and blockers<br>
+<ol class="org-ol">
+<li><a id="org4dc88b4"></a><a id="my-shopping"></a><span class="todo NEXT">NEXT</span> go for shopping<br>
+<div class="outline-text-6" id="text-1-10-1-2-1">
+<p>
+After setting this task to DONE, enjoying new clothes get to state
+NEXT and looking out for next errands to TODO.
+</p>
+</div>
+</li>
+
+<li><a id="org34d3dab"></a><a id="my-new-clothes"></a>enjoy new clothes<br>
+<div class="outline-text-6" id="text-1-10-1-2-2">
+</div>
+</li>
+
+<li><a id="orge70406b"></a><a id="my-next-errands"></a>look out for next errands<br>
+<div class="outline-text-6" id="text-1-10-1-2-3">
+<p>
+I can not finish this task as long as I did not enjoy my new clothes.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgf071107" class="outline-4">
+<h4 id="orgf071107"><span class="section-number-4">1.10.2</span> logging state changes (<a href="http://orgmode.org/org.html#Tracking-TODO-state-changes">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-10-2">
+<ul class="org-ul">
+<li><code>!</code> in todo state definition</li>
+<li><code>org-log-into-drawer</code> for setting default behavior</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd340201" class="outline-4">
+<h4 id="orgd340201"><span class="section-number-4">1.10.3</span> habits (<a href="http://orgmode.org/org.html#Tracking-your-habits">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-10-3">
+<ul class="org-ul">
+<li>enable habits module by customizing the variable <code>org-modules</code></li>
+<li>TODO items with property STYLE is set to the value <code>habit</code>:</li>
+</ul>
+<pre class="example">
+:STYLE: habit
+
+</pre>
+
+<pre class="example">
+** TODO Shave
+   SCHEDULED: &lt;2009-10-17 Sat .+2d/4d&gt;
+   - State "DONE"       from "TODO"       [2009-10-15 Thu]
+   - State "DONE"       from "TODO"       [2009-10-12 Mon]
+   - State "DONE"       from "TODO"       [2009-10-10 Sat]
+   - State "DONE"       from "TODO"       [2009-10-04 Sun]
+   - State "DONE"       from "TODO"       [2009-10-02 Fri]
+   - State "DONE"       from "TODO"       [2009-09-29 Tue]
+   - State "DONE"       from "TODO"       [2009-09-25 Fri]
+   - State "DONE"       from "TODO"       [2009-09-19 Sat]
+   - State "DONE"       from "TODO"       [2009-09-16 Wed]
+   - State "DONE"       from "TODO"       [2009-09-12 Sat]
+   :PROPERTIES:
+   :STYLE:    habit
+   :LAST_REPEAT: [2009-10-19 Mon 00:36]
+   :END:
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org0320c53" class="outline-4">
+<h4 id="org0320c53"><span class="section-number-4">1.10.4</span> priorities (<a href="http://orgmode.org/org.html#Priorities">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-10-4">
+<ul class="org-ul">
+<li><code>C-c ,</code>     set priorities</li>
+<li><code>S-UP/DOWN</code> <b>change priority</b></li>
+
+<li>[A], [B], [C]</li>
+<li>no priority is ordered like [B]</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org4325520"></a><span class="todo TODO">TODO</span> <span class="priority">[A]</span> example<br></li>
+</ol>
+</div>
+
+<div id="outline-container-orgdfb06c9" class="outline-4">
+<h4 id="orgdfb06c9"><span class="section-number-4">1.10.5</span> breaking down in subtasks (<a href="http://orgmode.org/org.html#Breaking-down-tasks">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-10-5">
+<ul class="org-ul">
+<li>for TODO-headings: stat cookies   <code>[/]</code> or <code>[%]</code> (will be <code>[1/3]</code> or <code>[33%]</code>)</li>
+<li>also possible:
+<ul class="org-ul">
+<li>for checkboxes</li>
+<li>recursive</li>
+<li>mark entry to DONE if all children are DONE</li>
+</ul></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orga541938"></a><span class="todo TODO">TODO</span> example <code>[1/3]</code> <code>[33%]</code><br>
+<ol class="org-ol">
+<li><a id="orgdc9c87b"></a><span class="done DONE">DONE</span> subtask 1<br></li>
+<li><a id="org295a04d"></a><span class="todo TODO">TODO</span> subtask 2<br></li>
+<li><a id="org0c0db21"></a><span class="todo TODO">TODO</span> subtask 3<br></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8bf7c6c" class="outline-3">
+<h3 id="org8bf7c6c"><span class="section-number-3">1.11</span> tags <a href="http://orgmode.org/org.html#Tags">(docu)</a></h3>
+<div class="outline-text-3" id="text-1-11">
+<ul class="org-ul">
+<li>inherited tags</li>
+<li>per-file definition of tags:</li>
+</ul>
+<pre class="example">
+#+TAGS: { @work(w) @home(h) } online(o) kids(k)
+
+</pre>
+
+<ul class="org-ul">
+<li>per-file tags for all entries:</li>
+</ul>
+<pre class="example">
+#+FILETAGS: :this:that:foo:
+
+</pre>
+
+<ul class="org-ul">
+<li><code>C-c C-q</code>   <b>set tags</b></li>
+<li><code>C-c C-c</code>   set tags if cursor is on a heading</li>
+
+<li><code>C-c / m</code>   <b>search for tags</b> in sparse tree</li>
+<li><code>C-c a m</code>   global list of tag matching</li>
+<li><code>C-c a M</code>   same but check only TODO items</li>
+
+<li>syntax (<a href="http://orgmode.org/org.html#Matching-tags-and-properties">docu</a>)
+<ul class="org-ul">
+<li><code>+boss+urgent</code>  AND</li>
+<li><code>boss|urgent</code>   OR</li>
+<li><code>+boss+urgent-project</code>   combination of tags</li>
+<li><code>work+TODO="WAITING"|home+TODO="WAITING"</code>  Waiting tasks both at work and at home</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org339a642" class="outline-4">
+<h4 id="org339a642"><span class="section-number-4">1.11.1</span> example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tag">tag</span></span></h4>
+</div>
+
+<div id="outline-container-org30c0f3b" class="outline-4">
+<h4 id="org30c0f3b"><span class="section-number-4">1.11.2</span> Tag groups (<a href="http://orgmode.org/manual/Tag-groups.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-11-2">
+<ul class="org-ul">
+<li>searching for a group tag return matches of all member tags as well</li>
+<li>example:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #BF616A;">setq</span> org-tag-alist '((<span style="color: #D08770;">:startgroup</span> . nil<span style="color: #666666;">)</span>
+                      (<span style="color: #A3BE8C;">"@read"</span> . nil<span style="color: #666666;">)</span>
+                      (<span style="color: #D08770;">:grouptags</span> . nil<span style="color: #666666;">)</span>
+                      (<span style="color: #A3BE8C;">"@read_book"</span> . nil<span style="color: #666666;">)</span>
+                      (<span style="color: #A3BE8C;">"@read_ebook"</span> . nil<span style="color: #666666;">)</span>
+                      (<span style="color: #D08770;">:endgroup</span> . nil<span style="color: #666666;">)))</span>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>searching for "@read" also returns "@read<sub>book</sub>" and "@read<sub>ebook</sub>"</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org345be4b" class="outline-3">
+<h3 id="org345be4b"><span class="section-number-3">1.12</span> tables simple <a href="http://orgmode.org/org.html#Tables">(docu)</a></h3>
+<div class="outline-text-3" id="text-1-12">
+<ul class="org-ul">
+<li><code>C-c C-c</code>  <b>update table</b></li>
+<li><code>TAB</code>      <b>move next field</b></li>
+<li><code>RET</code>      next row</li>
+<li><code>M-LEFT/RIGHT/UP/DOWN</code>   <b>moving rows/columns</b></li>
+<li><code>C-c -</code>    insert vertical bar below</li>
+<li><code>C-c |</code>    convert region into table OR: insert new table</li>
+<li><code>C-c ^</code>    sort lines (in region)</li>
+
+<li class="off"><code>[&#xa0;]</code> DEMO: create table</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org678ec10" class="outline-3">
+<h3 id="org678ec10"><span class="section-number-3">1.13</span> tables complex (<a href="http://orgmode.org/org.html#The-spreadsheet">docu</a>, <a href="http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html">tutorial</a>)</h3>
+<div class="outline-text-3" id="text-1-13">
+<ul class="org-ul">
+<li><code>C-c |</code>  move region into table (see <a href="http://orgmode.org/org.html#Built_002din-table-editor">docu</a>)
+<ul class="org-ul">
+<li>TABs, CSV, &#x2026;</li>
+</ul></li>
+<li><code>C-c +</code>   sum current column (or marked rectangle)</li>
+
+<li><code>=$1+$2</code>            value = sum of 1st and 2nd column</li>
+<li><code>:=vsum(@I..@II)</code>   field = sum between 1st and 2nd hline</li>
+<li><code>C-u C-u C-c C-c</code>   recompute table with iterations (<a href="http://orgmode.org/org.html#Updating-the-table">docu</a>)</li>
+
+<li><code>#+TBLFM: $3 = $1 + $2</code>             table formula</li>
+<li id="~#+TBLFM: $1 = -1 + 1">@2$1 = 1~  incremental numbers</li>
+
+<li><code>org-table-import</code>  import data from CSV file</li>
+<li><code>org-table-export</code>  export data to CSV file</li>
+</ul>
+
+<table id="orgee65441">
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right"><b>US-Dollar</b></td>
+<td class="org-right"><b>EUR</b></td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">0.76481836</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right"><b>When</b></th>
+<th scope="col" class="org-left"><b>What</b></th>
+<th scope="col" class="org-right"><b>USD</b></th>
+<th scope="col" class="org-right"><b>EUR</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2012-02-03</td>
+<td class="org-left">Taxi Graz-Airport</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">18.00</td>
+</tr>
+
+<tr>
+<td class="org-right">2012-02-03</td>
+<td class="org-left">Taxi Seattle Airport</td>
+<td class="org-right">25.00</td>
+<td class="org-right">19.12</td>
+</tr>
+
+<tr>
+<td class="org-right">2012-02-13</td>
+<td class="org-left">Taxi</td>
+<td class="org-right">7.00</td>
+<td class="org-right">5.35</td>
+</tr>
+
+<tr>
+<td class="org-right">2012-02-14</td>
+<td class="org-left">Taxi</td>
+<td class="org-right">8.00</td>
+<td class="org-right">6.12</td>
+</tr>
+
+<tr>
+<td class="org-right">2012-02-17</td>
+<td class="org-left">Taxi to Airport SeaTac</td>
+<td class="org-right">35.00</td>
+<td class="org-right">26.77</td>
+</tr>
+
+<tr>
+<td class="org-right">2012-02-22</td>
+<td class="org-left">Taxi Airport-Graz</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">16.00</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">91.36</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><code>C-c C-c</code>   update values</li>
+<li><code>C-c }</code>     visualize rows/columns</li>
+<li><code>C-c '</code>     edit formula in separate buffer
+<ul class="org-ul">
+<li><code>C-c C-r</code> switch between internal references (@3$2) and standard references (B3)</li>
+<li><code>S-&lt;up&gt;/&lt;down&gt;/&lt;left&gt;/&lt;right&gt;</code>  shift reference at point</li>
+</ul></li>
+<li><a href="http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html#sec-7">debugging formulas</a></li>
+
+<li>many, many, many more table features in the documentation!
+<ul class="org-ul">
+<li><a href="http://orgmode.org/worg/org-tutorials/index.html#sec-3-2">http://orgmode.org/worg/org-tutorials/index.html#sec-3-2</a></li>
+<li><a href="http://orgmode.org/worg/org-faq.html#Tables">http://orgmode.org/worg/org-faq.html#Tables</a>
+<ul class="org-ul">
+<li><a href="http://orgmode.org/worg/org-faq.html#fill-table-column-with-incremental-numbers">incremental numbers</a>, <a href="http://orgmode.org/worg/org-faq.html#table-column-filled-with-ERROR">what to do on #ERROR in columns</a>, &#x2026;</li>
+</ul></li>
+<li><a href="http://orgmode.org/worg/org-hacks.html#sec-1-4">http://orgmode.org/worg/org-hacks.html#sec-1-4</a>
+<ul class="org-ul">
+<li>calculations using time, date, hex, GPS, &#x2026;</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-orgce6caf2" class="outline-4">
+<h4 id="orgce6caf2"><span class="section-number-4">1.13.1</span> referencing example with detailed explanation</h4>
+<div class="outline-text-4" id="text-1-13-1">
+<p>
+Here is another example working with tables and referencing other
+tables. I did this example twice: first in a column (vertical) based
+layout and then the very same example in a row (horizontal) based layout:
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org32321ff"></a>column-based<br>
+<div class="outline-text-5" id="text-1-13-1-1">
+<table id="org7dad61e">
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Income May 2012</th>
+<th scope="col" class="org-right">Income June 2012</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Joe</td>
+<td class="org-right">12</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Alice</td>
+<td class="org-right">22</td>
+<td class="org-right">24</td>
+</tr>
+
+<tr>
+<td class="org-left">Bob</td>
+<td class="org-right">16</td>
+<td class="org-right">17</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">sum</td>
+<td class="org-right">50</td>
+<td class="org-right">51</td>
+</tr>
+</tbody>
+</table>
+
+<table id="org6700032">
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">June 2012 (from above)</th>
+<th scope="col" class="org-right">plus 20 percent</th>
+<th scope="col" class="org-right">June 2013</th>
+<th scope="col" class="org-right">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Joe</td>
+<td class="org-right">10</td>
+<td class="org-right">12.0</td>
+<td class="org-right">11</td>
+<td class="org-right">-1.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Alice</td>
+<td class="org-right">24</td>
+<td class="org-right">28.8</td>
+<td class="org-right">31</td>
+<td class="org-right">2.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Bob</td>
+<td class="org-right">17</td>
+<td class="org-right">20.4</td>
+<td class="org-right">21</td>
+<td class="org-right">0.6</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">sum</td>
+<td class="org-right">51</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1.8</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>all formulas explained in detail:
+<ul class="org-ul">
+<li><code>@&gt;$5=vsum(@I..@II)</code>
+<ul class="org-ul">
+<li>value: <code>1.8</code></li>
+<li>last row (<code>@&gt;</code>) of column five (<code>$5</code>) is the sum of column five
+between first and second horizontal line (<code>@I..@II</code>)</li>
+</ul></li>
+<li><code>@&gt;$3=string("")</code>
+<ul class="org-ul">
+<li>no value (empty)</li>
+<li>overwrite the last row (<code>@&gt;</code>) of column three (<code>$3</code>) with an empty
+string</li>
+<li>otherwise it would get 1.2 times the value of corresponding
+column of table Income2012v as well - I chose not to want this
+sum in this column</li>
+</ul></li>
+<li><code>$1='(identity remote(Income2012v, @@#$1))</code>
+<ul class="org-ul">
+<li>values: <code>Joe</code> until <code>sum</code></li>
+<li>copy content of the first column of table "Income2012v"
+(Lisp formula <code>'(identity remote(Income2012v, @@#$1))</code>) to the first
+column in this table
+(<code>$1</code>)</li>
+<li>the "identity" statement prevents calc from interpreting the content</li>
+<li>this is because I am too lazy to enter all names once again :-)</li>
+<li>see also <a href="http://orgmode.org/worg/org-hacks.html#field-coordinates-in-formulas">Org-hacks</a> for field formulas</li>
+</ul></li>
+<li><code>$2='(identity remote(Income2012v, @@#$3))</code>
+<ul class="org-ul">
+<li>values: <code>10; 24; 17; 51</code></li>
+<li>copy the content of the second column of table "Income2012v" to the
+second column in this table</li>
+<li>you could skip this column and calculate the values of the next
+columns with direct references to <code>remote(Income2012v, @@#$3)</code>
+as well. However, it is more easy to compare visually if the
+values from 2012 are shown here as well (usability/readability)</li>
+<li>note: by convention, only the values after the first horizontal
+line are taken</li>
+</ul></li>
+<li><code>$3=1.2 * remote(Income2012v, @@#$3);%.1f</code>
+<ul class="org-ul">
+<li>values: <code>12.0; 28.8; 20.4; 61.2</code></li>
+<li>column three (<code>$3</code>) is 120 percent of the values of the third
+column of table "Income2012v" with one decimal place (<code>;%.1f</code>)</li>
+<li>note: 61.2 (1.2 times 51) is overwritten by formula <code>@&gt;$3</code> from
+above</li>
+</ul></li>
+<li><code>$5=$4-$3;%.1f</code>
+<ul class="org-ul">
+<li>values: <code>-1.0; 2.2; 0.6</code></li>
+<li>column five (<code>$5</code>) is the difference between column four to
+column three with one decimal place</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+Here is another example: how to sum up the numbers of the first column
+so far:
+</p>
+
+<table id="org1e66ae6">
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Numbers</th>
+<th scope="col" class="org-right">Sum of numbers so far</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-right">16</td>
+</tr>
+
+<tr>
+<td class="org-right">50</td>
+<td class="org-right">66</td>
+</tr>
+
+<tr>
+<td class="org-right">200</td>
+<td class="org-right">266</td>
+</tr>
+
+<tr>
+<td class="org-right">1000</td>
+<td class="org-right">1266</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The formular can be simplified even more by using a column formula:
+<code>#+TBLFM: $2=vsum(@2$1..$-1)</code> provides the same result as above.
+</p>
+</div>
+</li>
+
+<li><a id="org0629f93"></a>row-based<br>
+<div class="outline-text-5" id="text-1-13-1-2">
+<table id="org6d16029">
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">Joe</td>
+<td class="org-right">Alice</td>
+<td class="org-right">Bob</td>
+<td class="org-right">sum</td>
+</tr>
+
+<tr>
+<td class="org-left">Income May 2012</td>
+<td class="org-right">12</td>
+<td class="org-right">22</td>
+<td class="org-right">16</td>
+<td class="org-right">50</td>
+</tr>
+
+<tr>
+<td class="org-left">Income June 2012</td>
+<td class="org-right">10</td>
+<td class="org-right">24</td>
+<td class="org-right">17</td>
+<td class="org-right">51</td>
+</tr>
+</tbody>
+</table>
+
+<table id="orge5784e7">
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">Joe</td>
+<td class="org-right">Alice</td>
+<td class="org-right">Bob</td>
+<td class="org-right">sum</td>
+</tr>
+
+<tr>
+<td class="org-left">Income June 2012</td>
+<td class="org-right">10</td>
+<td class="org-right">24</td>
+<td class="org-right">17</td>
+<td class="org-right">51</td>
+</tr>
+
+<tr>
+<td class="org-left">plus 20 percent</td>
+<td class="org-right">12.0</td>
+<td class="org-right">28.8</td>
+<td class="org-right">20.4</td>
+<td class="org-right">60.0</td>
+</tr>
+
+<tr>
+<td class="org-left">June 2013</td>
+<td class="org-right">11</td>
+<td class="org-right">31</td>
+<td class="org-right">21</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Difference</td>
+<td class="org-right">-1.0</td>
+<td class="org-right">2.2</td>
+<td class="org-right">0.6</td>
+<td class="org-right">1.8</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>all formulas explained in detail:
+<ul class="org-ul">
+<li><code>@&gt;$&gt;=vsum(@5$2..@5$4)</code>
+<ul class="org-ul">
+<li>value: <code>1.8</code></li>
+<li>last column in last row (<code>@&gt;$&gt;</code>) is the vector-sum (<code>vsum</code>) of
+column two to four of fifth row (<code>@5$2..@5$4</code>)</li>
+</ul></li>
+<li><code>@1$2..@1$4='(identity remote(Income2012h, @1$$#))</code>
+<ul class="org-ul">
+<li>values: <code>Joe | Alice |  Bob |  sum</code></li>
+<li>column two to four of first row (<code>@1$2..@1$4</code>) are copied from
+the corresponding fields of the first row (<code>@1$$#</code>) of table
+"Income2012h"</li>
+<li>see also <a href="http://orgmode.org/worg/org-hacks.html#field-coordinates-in-formulas">Org-hacks</a> for field formulas</li>
+</ul></li>
+<li><code>@2='(identity remote(Income2012h, @3$$#))</code>
+<ul class="org-ul">
+<li>values: <code>2012 Income June |   10 |    24 |   17 |   51</code></li>
+<li>the second row (<code>@2</code>) is copied from the corresponding fields of
+the first row (<code>@1$$#</code>) of table "Income2012h"</li>
+<li>my guess: "2012" is moved to the beginning of the field most
+probably because it is interpreted as numeric value and not as
+string</li>
+</ul></li>
+<li><code>@3$2..@3$4=1.2 * remote(Income2012h, @3$$#);%.1f</code>
+<ul class="org-ul">
+<li>values: <code>12.0 |  28.8 | 20.4 | 60.0</code></li>
+<li>the columns two to four of the third row (<code>@3$2..@3$4</code>) is 120
+percent of the corresponding values of the third row (<code>@3$$#</code>)
+of the table "Income2012h" with one decimal place (<code>;%.1f</code>)</li>
+</ul></li>
+<li><code>@5$2..@5$4=@4-@3;%.1f</code>
+<ul class="org-ul">
+<li>values: <code>-1.0 |   2.2 |  0.6</code></li>
+<li>the column two to four of the fifth row (<code>@5$2..@5$4</code>) is the
+difference of the values in the corresponding values of the
+fourth row and the third row (<code>@4-@3</code>) with one decimal place
+(<code>;%.1f</code>)</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2c72595" class="outline-3">
+<h3 id="org2c72595"><span class="section-number-3">1.14</span> column view (<a href="http://orgmode.org/org.html#Column-view">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-14">
+<ul class="org-ul">
+<li><code>C-c C-x C-c</code>   activate column view</li>
+<li><code>e</code>             edit value</li>
+<li><code>n/p</code>           next/previous value</li>
+<li><code>q</code>             quit column view</li>
+<li><code>a</code>             edit allowed values</li>
+<li><code>C-c C-x p</code>     set property</li>
+</ul>
+</div>
+
+<div id="outline-container-orgf0429b7" class="outline-4">
+<h4 id="orgf0429b7"><span class="section-number-4">1.14.1</span> example sub-item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag1">mytag1</span></span></h4>
+<div class="outline-text-4" id="text-1-14-1">
+</div>
+</div>
+
+<div id="outline-container-org3d985d2" class="outline-4">
+<h4 id="org3d985d2"><span class="section-number-4">1.14.2</span> <span class="todo NEXT">NEXT</span> <span class="priority">[B]</span> another example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag2">mytag2</span></span></h4>
+<div class="outline-text-4" id="text-1-14-2">
+</div>
+</div>
+</div>
+
+<div id="outline-container-org20cf644" class="outline-3">
+<h3 id="org20cf644"><span class="section-number-3">1.15</span> capture, refile, archive (<a href="http://orgmode.org/org.html#Capture-_002d-Refile-_002d-Archive">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-15">
+<ul class="org-ul">
+<li><code>C-c c</code>          <b>capture</b></li>
+<li><code>C-c C-w</code>        <b>refile</b></li>
+<li><code>C-c C-x C-a</code>    <b>archive</b></li>
+<li><code>C-u C-u C-c c</code>  <b>goto last capture</b></li>
+
+<li><code>#+ARCHIVE: %s_done::</code>   per-file archive</li>
+<li><code>C-c C-x a</code>       toggle ARCHIVE tag</li>
+<li><code>C-u C-c C-x a</code>   check direct children for archiving</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">######################################################</span>
+<span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">templates for capturing C-c c</span>
+<span style="color: #7b87a0; font-style: italic;">;; </span><span style="color: #7b87a0; font-style: italic;">http://orgmode.org/org.html#Capture-templates</span>
+(<span style="color: #BF616A;">setq</span> org-capture-templates
+      '(
+  (<span style="color: #A3BE8C;">"s"</span> <span style="color: #A3BE8C;">"shorts-todo"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/misc.org"</span> <span style="color: #A3BE8C;">"shorts"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* </span><span style="color: #dca3a3;">NEXT</span><span style="color: #A3BE8C;"> %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"e"</span> <span style="color: #A3BE8C;">"Event"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/misc.org"</span> <span style="color: #A3BE8C;">"Events"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"i"</span> <span style="color: #A3BE8C;">"IST Templates"</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"is"</span> <span style="color: #A3BE8C;">"IST shorts"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/IST.org"</span> <span style="color: #A3BE8C;">"shorts"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* </span><span style="color: #dca3a3;">NEXT</span><span style="color: #A3BE8C;"> %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"ie"</span> <span style="color: #A3BE8C;">"IST event"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/IST.org"</span> <span style="color: #A3BE8C;">"Events"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"ii"</span> <span style="color: #A3BE8C;">"IST isst"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/IST.org"</span> <span style="color: #A3BE8C;">"Events"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* %? IST isst: \n:PROPERTIES:\n:CREATED: %U\n:END:\n\n- [[contact:Ingo Pill][Ingo Pill]]\n- [[contact:Thomas Quartisch][Thomas Quartisch]]\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"b"</span> <span style="color: #A3BE8C;">"Besorgung"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/hardware.org"</span> <span style="color: #A3BE8C;">"Besorgungen"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* </span><span style="color: #cc9393;">TODO</span><span style="color: #A3BE8C;"> %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"C"</span> <span style="color: #A3BE8C;">"Clipboard"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/misc.org"</span> <span style="color: #A3BE8C;">"shorts"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* </span><span style="color: #cc9393;">TODO</span><span style="color: #A3BE8C;"> %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n%x\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"c"</span> <span style="color: #A3BE8C;">"capture to inbox, refile later"</span> entry (file <span style="color: #A3BE8C;">"~/share/all/org-mode/inbox.org"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"\n* %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"m"</span> <span style="color: #A3BE8C;">"movie"</span> entry (file+headline <span style="color: #A3BE8C;">"~/share/all/org-mode/movies.org"</span> <span style="color: #A3BE8C;">"inbox"</span><span style="color: #666666;">)</span>
+   <span style="color: #A3BE8C;">"* </span><span style="color: #cc9393;">TODO</span><span style="color: #A3BE8C;"> %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n"</span> <span style="color: #D08770;">:empty-lines</span> <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"x"</span> <span style="color: #A3BE8C;">"xlog"</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"xh"</span> <span style="color: #A3BE8C;">"xlog hometrainer"</span> table-line (id <span style="color: #A3BE8C;">"xlog-hometrainer"</span>) <span style="color: #A3BE8C;">"| %T |  |  |  |"</span><span style="color: #666666;">)</span>
+  (<span style="color: #A3BE8C;">"xk"</span> <span style="color: #A3BE8C;">"Keyboard Akkus leer"</span> table-line (id <span style="color: #A3BE8C;">"3407c9b7-1b41-443b-9254-32c4af3a54e8"</span>) <span style="color: #A3BE8C;">"| %T |"</span><span style="color: #666666;">)</span>
+      <span style="color: #666666;">)</span>
+<span style="color: #666666;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org16d6772" class="outline-3">
+<h3 id="org16d6772"><span class="section-number-3">1.16</span> attachments (<a href="http://orgmode.org/org.html#Attachments">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-16">
+<ul class="org-ul">
+<li><code>C-c C-a</code>    <b>org-attach</b> (menu)
+<ul class="org-ul">
+<li><code>i</code>        <b>inherit</b></li>
+<li><code>s</code>        <b>set directory</b></li>
+<li><code>a</code>        attach: move file to task directory</li>
+<li><code>c/m/l</code>    attach: copy/move/link file</li>
+</ul></li>
+<li>much more</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc4b9826" class="outline-3">
+<h3 id="orgc4b9826"><span class="section-number-3">1.17</span> dates &amp; time (<a href="http://orgmode.org/org.html#Dates-and-Times">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-17">
+<ul class="org-ul">
+<li><code>C-c .</code>    <b>insert active</b> <span class="timestamp-wrapper"><span class="timestamp">&lt;2012-04-23 Mon&gt;  </span></span>  (with <code>C-u</code>: <span class="timestamp-wrapper"><span class="timestamp">&lt;2012-04-23 Mon 19:14&gt;</span></span>)</li>
+<li><code>C-c !</code>    insert inactive <span class="timestamp-wrapper"><span class="timestamp">[2012-04-23 Mon]  </span></span>  (with <code>C-u</code>: <span class="timestamp-wrapper"><span class="timestamp">[2012-04-23 Mon 19:14]</span></span>)</li>
+<li><code>S-RIGHT/LEFT/UP/DOWN</code>  interactively change timestamp</li>
+<li><code>C-c &lt;</code>    <b>insert today</b></li>
+<li><code>C-c C-o</code>  open agenda for current timestamp</li>
+
+<li><code>C-c C-d</code>  <b>insert DEADLINE</b></li>
+<li><code>C-c C-s</code>  <b>insert SCHEDULED</b></li>
+
+<li><code>C-u C-c C-d</code>   removing DEADLINE</li>
+<li><code>C-u C-c C-s</code>   removing SCHEDULED</li>
+<li><code>C-c / d</code>       sparse tree with deadlines</li>
+
+<li><code>DEADLINE &lt;YYYY-MM-DD DoW +2d&gt;</code>   defining repeated events/tasks</li>
+<li><code>.+2w</code>     repetition interval starting with last DONE timestamp</li>
+<li><code>++3m</code>     never show multiple times even if not DONE</li>
+<li><code>.+2d/4d</code>  show up on agenda not earlier as 2 days until 4 days</li>
+<li><code>+1w -2d</code>  repeat weekly but show not earlier as two days before</li>
+
+<li><code>C-c C-x c</code>  clone (recurring) event with time-shift  (<code>org-clone-subtree-with-time-shift</code>)
+<ul class="org-ul">
+<li>good idea: create recurring event and clone it with time-shift</li>
+<li>this way, canceling single events or moving single events is
+possible</li>
+</ul></li>
+
+<li><code>13:00-15:15</code> or <code>13:00+2:15</code>  time range</li>
+<li><code>&lt;2013-11-15 Fri&gt;-&lt;2013-11-17 Sun&gt;</code> date range</li>
+<li><code>C-c C-y</code> return time range between dates</li>
+
+<li><code>UP/DOWN</code> on time stamp start/end -&gt; toggle active/inactive</li>
+</ul>
+
+<p>
+<b>Note:</b> please do not use time-stamps prior to <a href="https://en.wikipedia.org/wiki/Unix_time">UNIX epoch</a> which is
+1970-01-01. Some systems do handle those time-stamps fine, others
+produce errors.
+</p>
+</div>
+
+<div id="outline-container-orgeac1ccd" class="outline-4">
+<h4 id="orgeac1ccd"><span class="section-number-4">1.17.1</span> advanced date/time with sexp (<a href="http://orgmode.org/manual/Timestamps.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-17-1">
+<p>
+To do a thing every x days between two dates, put:
+</p>
+<pre class="example">
+%%(and (diary-cyclic x M1 D1 Y1) (diary-block M1 D1 Y1 M2 D2 Y2)) thing
+
+</pre>
+
+<p>
+22:00-23:00 The nerd meeting on every 2nd Thursday of the month
+</p>
+<pre class="example">
+&lt;%%(diary-float t 4 2)&gt;
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd3cd454" class="outline-3">
+<h3 id="orgd3cd454"><span class="section-number-3">1.18</span> agenda (<a href="http://orgmode.org/org.html#Agenda-Views">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-18">
+<ul class="org-ul">
+<li><code>C-c [</code>    add buffer to agenda</li>
+<li><code>C-c ]</code>    remove buffer from agenda</li>
+<li><code>C-c a</code>    show agenda command menu</li>
+<li><code>C-c a a</code>  <b>invoke agenda view</b></li>
+
+<li><code>C-c C-x &lt;</code>  <b>lock agenda</b> to subtree</li>
+<li><code>C-c C-x &gt;</code>  <b>release</b> agenda restriction <b>lock</b></li>
+</ul>
+
+<p>
+when being <b>in agenda</b> mode:
+</p>
+
+<ul class="org-ul">
+<li><code>q</code>        <b>quit agenda</b></li>
+
+<li><code>j</code>        <b>jump to date</b></li>
+<li><code>.</code>        <b>goto today</b></li>
+<li><code>f/b</code>      <b>forward/back</b></li>
+<li><code>v</code>        <b>choose view menu</b></li>
+<li><code>d/w</code>      <b>day/week view</b></li>
+<li><code>v d/w/m</code>  view for day/week/month</li>
+<li><code>r</code>        <b>refresh</b></li>
+
+<li><code>RET</code>   <b>goto item</b></li>
+<li><code>SPC</code>   show item</li>
+<li><code>&lt;</code>     <b>toggle filter to file</b></li>
+<li><code>F</code>     <b>toggle follow mode</b></li>
+<li><code>o</code>     <b>delete other window</b></li>
+<li><code>/</code>     filter by tag</li>
+
+<li><code>E</code>     toggle entry text</li>
+<li><code>R</code>     toggle clock report</li>
+
+<li><code>t</code>         <b>change TODO state</b></li>
+<li><code>:</code> or <code>T</code>  <b>set tags</b></li>
+<li><code>S-UP/DOWN</code>     <b>set priority</b></li>
+<li><code>,</code>             set priority</li>
+<li><code>S-LEFT/RIGHT</code>  <b>change timestamp day</b></li>
+<li><code>&gt;</code>         change timestamp to today</li>
+<li><code>e</code>         set effort</li>
+
+<li><code>m</code>     mark</li>
+<li><code>u</code>     unmark</li>
+<li><code>B</code>     bulk action
+<ul class="org-ul">
+<li><code>S</code>   <b>scatter marked TODOs</b> over the next N days</li>
+</ul></li>
+
+<li>clocking
+<ul class="org-ul">
+<li><code>I</code>   start</li>
+<li><code>O</code>   stop</li>
+<li><code>X</code>   cancel</li>
+<li><code>J</code>   jump to running clock entry</li>
+</ul></li>
+
+<li>attachments to TODO entries
+<ul class="org-ul">
+<li><code>C-c C-a</code>    <b>attachment menu</b></li>
+<li><code>C-c C-a s</code>  <b>set attachment folder</b></li>
+<li><code>C-c C-a i</code>  inherit attachment folder</li>
+<li><code>C-c C-a o</code>  <b>open attachment</b></li>
+</ul></li>
+
+<li>learn how to create your own agenda views:
+<ul class="org-ul">
+<li><a href="http://orgmode.org/org.html#Custom-agenda-views">http://orgmode.org/org.html#Custom-agenda-views</a></li>
+<li><a href="http://www.reddit.com/r/emacs/comments/2b9obs/org_users_what_did_it_take_you_a_long_time_to/cj4lb35">http://www.reddit.com/r/emacs/comments/2b9obs/org_users_what_did_it_take_you_a_long_time_to/cj4lb35</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb54d7e1" class="outline-3">
+<h3 id="orgb54d7e1"><span class="section-number-3">1.19</span> clocking time (<a href="http://orgmode.org/org.html#Clocking-work-time">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-19">
+<ul class="org-ul">
+<li><code>C-c C-x C-i</code>     start clock on item</li>
+<li><code>C-c C-x C-o/x</code>   stop or cancel clock on item</li>
+<li><code>C-c C-x C-d</code>     display total subtree times</li>
+<li><code>C-c C-c</code>         remove displayed times</li>
+<li><code>C-c C-x C-r</code>     insert/update table with report</li>
+</ul>
+</div>
+
+<div id="outline-container-org6988f07" class="outline-4">
+<h4 id="org6988f07"><span class="section-number-4">1.19.1</span> example sub-hierarchy with report</h4>
+<div class="outline-text-4" id="text-1-19-1">
+<p>
+Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2012-11-19 Mon 11:17]</span></span>
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-left">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-left"><b>27:16</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgde90183"></a>example item<br>
+<div class="outline-text-5" id="text-1-19-1-1">
+</div>
+</li>
+
+<li><a id="org994f49c"></a>another item<br>
+<div class="outline-text-5" id="text-1-19-1-2">
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgba30ae5" class="outline-3">
+<h3 id="orgba30ae5"><span class="section-number-3">1.20</span> dynamic blocks with ELISP (<a href="http://orgmode.org/org.html#Dynamic-blocks">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-20">
+<ul class="org-ul">
+<li>execute ELISP functions in special blocks (see docu)</li>
+
+<li><code>C-c C-x C-u</code>      update block</li>
+<li><code>C-u C-c C-x C-u</code>  update buffer blocks</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org303421c" class="outline-3">
+<h3 id="org303421c"><span class="section-number-3">1.21</span> source code (<a href="http://orgmode.org/org.html#Working-With-Source-Code">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-21">
+<ul class="org-ul">
+<li>python "Hello World"</li>
+<li><code>C-c '</code>      <b>edit in native mode</b></li>
+<li><code>&lt;s + TAB</code>   <b>easy templates</b> (<a href="http://orgmode.org/org.html#Easy-Templates">docu</a>)</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #BF616A;">def</span> <span style="color: #88C0D0;">foo</span><span style="color: #5E81AC;">(</span>argument<span style="color: #5E81AC;">)</span>:
+     <span style="color: #BF616A;">print</span> <span style="color: #A3BE8C;">"Hello World"</span>
+
+foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weight: bold;">42</span><span style="color: #5E81AC;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7f22594" class="outline-3">
+<h3 id="org7f22594"><span class="section-number-3">1.22</span> babel (<a href="http://orgmode.org/org.html#Library-of-Babel">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-22">
+<ul class="org-ul">
+<li><a href="http://orgmode.org/org.html#Languages">http://orgmode.org/org.html#Languages</a>
+<ul class="org-ul">
+<li>2012-04-23: 35(!) languages</li>
+</ul></li>
+
+<li><code>C-c C-c</code>    <b>execute code</b></li>
+<li><code>C-c C-v j</code>  insert header argument (menu)</li>
+
+<li><b>many</b> shortcuts for all kind of things
+<ul class="org-ul">
+<li>debugging</li>
+<li>output control</li>
+<li>navigation</li>
+<li>session handling</li>
+</ul></li>
+
+<li><code>C-c C-v b</code>  execute babel in buffer</li>
+<li><code>C-c C-v s</code>  execute babel in subtree</li>
+</ul>
+</div>
+
+<div id="outline-container-org25489b4" class="outline-4">
+<h4 id="org25489b4"><span class="section-number-4">1.22.1</span> babel simple (<a href="http://orgmode.org/org.html#Working-With-Source-Code">doc</a>)</h4>
+<div class="outline-text-4" id="text-1-22-1">
+<ul class="org-ul">
+<li>some examples are taken from <a href="http://orgmode.org/worg/org-contrib/babel/intro.html">Worg: Introduction to Babel</a></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgcd2f12f"></a>shell<br>
+<div class="outline-text-5" id="text-1-22-1-1">
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #D08770;">pwd</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgfed2e2e"></a>ruby<br>
+<div class="outline-text-5" id="text-1-22-1-2">
+<div class="org-src-container">
+<pre class="src src-ruby"><span style="color: #D08770;">require</span> <span style="color: #A3BE8C;">'date'</span>
+<span style="color: #A3BE8C;">"This file was last evaluated on </span><span style="color: #EBCB8B;">#{Date.today}</span><span style="color: #A3BE8C;">"</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgd5efc38"></a>python<br>
+<div class="outline-text-5" id="text-1-22-1-3">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #BF616A;">return</span> <span style="color: #9c91e4; font-weight: bold;">42</span> + <span style="color: #9c91e4; font-weight: bold;">7</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgd32f18f"></a>ditaa<br>
+<div class="outline-text-5" id="text-1-22-1-4">
+
+<figure>
+<img src="blue.png" alt="blue.png">
+
+</figure>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org74af875" class="outline-4">
+<h4 id="org74af875"><span class="section-number-4">1.22.2</span> babel advanced</h4>
+<div class="outline-text-4" id="text-1-22-2">
+</div>
+<ol class="org-ol">
+<li><a id="org890ce7a"></a>session with shell and R<br></li>
+
+<li><a id="org807b8c4"></a>remote shell session<br>
+<div class="outline-text-5" id="text-1-22-2-2">
+<ul class="org-ul">
+<li>Examples in this session is inspired by <a href="https://www.youtube.com/watch?v=dljNabciEGg&amp;feature=youtu.be">a great DevOps-demo video</a> by
+Howard Abrams (<a href="https://github.com/howardabrams/literate-devops-demo/blob/master/presentation.org">Demo material</a>)</li>
+</ul>
+
+<p>
+Executing shell commands:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #D08770;">echo</span> <span style="color: #A3BE8C;">"Executed by `whoami` on `hostname` in `pwd`"</span>
+</pre>
+</div>
+
+<pre class="example">
+Executed by lepisma on euclid-blue in /run/media/lepisma/Data/Projects/pile/pile
+
+</pre>
+
+<p>
+Doing something as root:
+</p>
+</div>
+</li>
+
+<li><a id="orgc231d33"></a>table using python function to calculate values<br>
+<div class="outline-text-5" id="text-1-22-2-3">
+<div class="org-src-container">
+<pre class="src src-python" id="org3f0ced3"><span style="color: #EBCB8B;">time</span> = epoch
+<span style="color: #BF616A;">import</span> datetime
+<span style="color: #EBCB8B;">strtime</span> = <span style="color: #D08770;">str</span><span style="color: #5E81AC;">(</span>time<span style="color: #5E81AC;">)</span>
+<span style="color: #EBCB8B;">datetimestamp</span> = datetime.datetime.utcfromtimestamp<span style="color: #5E81AC;">(</span><span style="color: #D08770;">int</span><span style="color: #BF616A;">(</span>strtime<span style="color: #B48EAD;">[</span>:<span style="color: #9c91e4; font-weight: bold;">10</span><span style="color: #B48EAD;">]</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<span style="color: #BF616A;">print</span> datetimestamp.strftime<span style="color: #5E81AC;">(</span><span style="color: #A3BE8C;">'[%Y-%m-%d %a %H:%M:%S]'</span><span style="color: #5E81AC;">)</span>
+</pre>
+</div>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right"><b>UNIX epoch</b></th>
+<th scope="col" class="org-left"><b>time-stamp</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1262675465119</td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">[2010-01-05 Tue 07:11]</span></span></td>
+</tr>
+
+<tr>
+<td class="org-right">1234567890</td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">[2009-02-13 Fri 23:31]</span></span></td>
+</tr>
+
+<tr>
+<td class="org-right">1000000000</td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">[2001-09-09 Sun 01:46]</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgbd75dff" class="outline-3">
+<h3 id="orgbd75dff"><span class="section-number-3">1.23</span> LaTeX (<a href="http://orgmode.org/org.html#Embedded-LaTeX">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-23">
+<ul class="org-ul">
+<li><code>C-c '</code>        <b>open block native buffer</b></li>
+
+<li><code>C-c C-x C-l</code>  preview LaTeX fragments</li>
+<li><code>C-c C-c</code>      quit preview</li>
+<li><code>C-c C-x \</code>    toggle preview TeX characters as UTF-8</li>
+</ul>
+
+<p>
+Greek characters &alpha; &beta; &phi; \LaTeX{}  \(\varphi\)
+</p>
+
+<ul class="org-ul">
+<li><code>M-x org-cdlatex-mode</code>  CDLaTeX minor mode
+<ul class="org-ul">
+<li>from <a href="http://staff.science.uva.nl/~dominik/Tools/cdlatex/">http://staff.science.uva.nl/~dominik/Tools/cdlatex/</a></li>
+<li>similar to AucTeX</li>
+<li><code>C-c {</code>     insert environment</li>
+<li><code>equ TAB</code>   expands equation</li>
+<li><code>`</code>         insert math symbols (menu)</li>
+</ul></li>
+</ul>
+
+<div class="LaTeX">
+<p>
+
+</p>
+
+<p>
+\section{Section Title}
+</p>
+
+<p>
+This is \emph{emphasized} and \(y=x^2\) is an equation.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf767e46" class="outline-3">
+<h3 id="orgf767e46"><span class="section-number-3">1.24</span> export formats (<a href="http://orgmode.org/org.html#Exporting">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-24">
+<ul class="org-ul">
+<li><code>C-c C-e</code>   <b>export menu</b></li>
+<li><code>C-c ;</code>     toggle COMMENT keyword on entry</li>
+
+<li>tag: "noexport"</li>
+
+<li>ASCII/Latin-1/UTF-8 export</li>
+<li>HTML</li>
+<li>LaTeX</li>
+<li>PDF</li>
+<li>DocBook</li>
+<li>OpenDocument Text</li>
+<li>TaskJuggler</li>
+<li>Freemind</li>
+<li>XOXO</li>
+<li>iCalendar</li>
+<li><a href="http://pandoc.org/">Pandoc</a></li>
+<li>&#x2026;</li>
+
+<li class="off"><code>[&#xa0;]</code> DEMO: export this as PDF (plain)</li>
+<li class="off"><code>[&#xa0;]</code> DEMO: export this as PDF (beamer)</li>
+</ul>
+</div>
+
+<div id="outline-container-orge651263" class="outline-4">
+<h4 id="orge651263"><span class="section-number-4">1.24.1</span> Export options (<a href="http://orgmode.org/manual/Export-options.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-1-24-1">
+<ul class="org-ul">
+<li>per file:
+<ul class="org-ul">
+<li><code>C-c C-e t</code> (org-insert-export-options-template)</li>
+</ul></li>
+<li>per heading:
+<ul class="org-ul">
+<li>see properties drawer above</li>
+<li>EXPORT<sub>OPTIONS</sub>: see <a href="http://orgmode.org/manual/Export-options.html">docu</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org47ed554" class="outline-3">
+<h3 id="org47ed554"><span class="section-number-3">1.25</span> MobileOrg (<a href="http://orgmode.org/org.html#MobileOrg">docu</a>)</h3>
+<div class="outline-text-3" id="text-1-25">
+<ul class="org-ul">
+<li>great <a href="http://mobileorg.ncogni.to/">iOS app</a>
+<ul class="org-ul">
+<li>no iOS on my side</li>
+<li>does not seem to be maintained any more :-(</li>
+</ul></li>
+<li><a href="http://wiki.github.com/matburt/mobileorg-android/">Android app</a>
+<ul class="org-ul">
+<li>sync via Dropbox, ssh, scp, WEBDAV, gpg encryption, &#x2026;</li>
+</ul></li>
+
+<li><a href="http://www.orgzly.com/">http://www.orgzly.com/</a> (since approx. 2015-01)
+<ul class="org-ul">
+<li>promising new app</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8cf7abb" class="outline-3">
+<h3 id="org8cf7abb"><span class="section-number-3">1.26</span> many many many many more features!</h3>
+<div class="outline-text-3" id="text-1-26">
+<ul class="org-ul">
+<li>sections above are only a small fraction of the feature-set of Org-mode!</li>
+<li>read <a href="http://orgmode.org/org.html">the manual</a> or <a href="http://news.gmane.org/gmane.emacs.orgmode">the mailinglist</a> to get inspired :-)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org03c9124" class="outline-3">
+<h3 id="org03c9124"><span class="section-number-3">1.27</span> customization per &#x2026;</h3>
+<div class="outline-text-3" id="text-1-27">
+<ul class="org-ul">
+<li>per configuration</li>
+<li>per file</li>
+<li>per heading</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb2e24a9" class="outline-2">
+<h2 id="orgb2e24a9"><span class="section-number-2">2</span> Still Missing Topics</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Things I did not include yet but are worth mentioning:
+</p>
+
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> org-protocol</li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">great content here</div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara">great content here</div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+This is a footnote from reference above.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
+This is a footnote with a simple number as label.
+</p>
+
+<ul class="org-ul">
+<li><b>many external link types</b> see <a href="http://orgmode.org/org.html#External-links">docu</a></li>
+</ul></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: 2016-04-24</p>
+<p class="author">Author: Karl Voit</p>
+<p class="date">Created: 2018-01-15 Mon 02:46</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>
