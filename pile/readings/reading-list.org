@@ -1,5 +1,5 @@
 #+TITLE: Reading List
-#+AUTHOR: Abhinav Tushar
+#+SETUPFILE: ../export.setup
 
 #+TODO: READING NEXT | READ
 

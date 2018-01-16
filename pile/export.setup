@@ -1,0 +1,12 @@
+# -*- mode: org; -*-
+
+#+AUTHOR: Abhinav Tushar
+#+OPTIONS: *:t -:t ::t <:t ^:nil broken-links:mark c:t creator:t
+#+OPTIONS: d:t date:t e:t email:nil f:t H:6 inline:t num:nil p:t
+#+OPTIONS: pri:t prop:t stat:t tasks:t tex:t timestamp:t toc:nil
+#+OPTIONS: todo:t |:t
+
+#+HTML_LINK_HOME: /pile
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/pile/css/main.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/css/main.css" />
+

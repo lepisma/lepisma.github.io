@@ -1,7 +1,16 @@
-# Created 2018-01-15 Mon 04:24
+# Created 2018-01-15 Mon 22:04
 #+TITLE: Org-mode Teaser Demo
 #+DATE: 2016-04-24
-#+AUTHOR: Karl Voit
+#+AUTHOR: Karl Voit Abhinav Tushar
+#+CREATOR: Emacs 25.3.1 (Org mode 9.1.3)
+#+SETUPFILE: ./export.setup
+#+TODO: TODO(t) NEXT(n) STARTED(s) WAITING(w@/!) SOMEDAY(S!) | DONE(d!/!) CANCELLED(c@/!)
+http://orgmode.org/org.html#Per_002dfile-keywords  [[info:org#Per-file%20keywords][info:org#Per-file keywords]]
+
+#+TAGS: important(i) private(p)
+#+TAGS: @HOME(h) @OFFICE(o)
+http://orgmode.org/org.html#Setting-tags  [[info:org#Setting%20tags][info:org#Setting tags]]
+
 * Setting Up the Demo
 
 - [ ] start key visualization tool like [[http://pabloseminario.com/projects/screenkey/][screenkey]]
@@ -927,8 +936,16 @@ Clock summary at [2012-11-19 Mon 11:17]
 #+END:
 
 **** example item
+:LOGBOOK:
+CLOCK: [2012-11-19 Mon 11:16]--[2012-11-19 Mon 11:17] =>  0:01
+CLOCK: [2012-11-18 Sun 19:15]--[2012-11-18 Sun 19:23] =>  0:08
+:END:
 
 **** another item
+:LOGBOOK:
+CLOCK: [2012-11-18 Sun 19:26]--[2012-11-18 Sun 19:33] =>  0:07
+CLOCK: [2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] => 27:00
+:END:
 
 ** dynamic blocks with ELISP ([[http://orgmode.org/org.html#Dynamic-blocks][docu]])
 

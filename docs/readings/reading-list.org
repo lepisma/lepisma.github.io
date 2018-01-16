@@ -1,6 +1,10 @@
-# Created 2018-01-15 Mon 18:48
+# Created 2018-01-15 Mon 22:10
 #+TITLE: Reading List
 #+AUTHOR: Abhinav Tushar
+#+CREATOR: Emacs 25.3.1 (Org mode 9.1.3)
+#+SETUPFILE: ../export.setup
+#+INDEX: test
+
 #+TODO: READING NEXT | READ
 
 * The Grid: Electrical Infrastructure for a New Era

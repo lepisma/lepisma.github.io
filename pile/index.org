@@ -1,5 +1,5 @@
 #+TITLE: pile
-#+INFOJS_OPT: view:showall toc:nil mouse:nil
+#+SETUPFILE: ./export.setup
 
 Things to do:
 - Setup export vars in options for org

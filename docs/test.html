@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-01-15 Mon 04:24 -->
+<!-- 2018-01-15 Mon 22:04 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Org-mode Teaser Demo</title>
 <meta name="generator" content="Org mode">
-<meta name="author" content="Karl Voit">
+<meta name="author" content="Karl Voit Abhinav Tushar">
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -178,8 +178,8 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" href="/pile/main.css" />
-                         <link rel="stylesheet" href="/main.css" />
+<link rel="stylesheet" type="text/css" href="/pile/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -250,202 +250,24 @@ for the JavaScript code in this tag.
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="content">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="/pile"> HOME </a>
+</div><div id="content">
 <header>
 <h1 class="title">Org-mode Teaser Demo</h1>
-</header><nav id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org531ee02">Setting Up the Demo</a></li>
-<li><a href="#org63dca6b">Org-mode by Examples</a>
-<ul>
-<li><a href="#orgc144b76">activating Org-mode</a></li>
-<li><a href="#orgf2d5d5f">Org-mode documentation</a>
-<ul>
-<li><a href="#orgbbcfac4">In case of Org-mode documentation does not work</a></li>
-</ul>
-</li>
-<li><a href="#orgc58cf6f">text formatting syntax (docu)</a></li>
-<li><a href="#orgf9b5536">outlining (docu)</a>
-<ul>
-<li><a href="#org9178cff">Creating</a></li>
-<li><a href="#org944d129">Using</a>
-<ul>
-<li><a href="#org7cd9b40">This is the 1st heading</a>
-<ul>
-<li><a href="#orga228593">Sub-heading 1</a></li>
-</ul>
-</li>
-<li><a href="#orgb7e695d">This is another heading</a>
-<ul>
-<li><a href="#org4c81f3a">Sub-heading 2</a></li>
-</ul>
-</li>
-<li><a href="#org1f58a03">This is yet another heading</a></li>
-<li><a href="#orgb9d470c">OK, now this is getting boring :-)</a></li>
-</ul>
-</li>
-<li><a href="#org2ce9539">encryption</a></li>
-<li><a href="#org60dbdba">time stamps when taking notes (docu)</a></li>
-</ul>
-</li>
-<li><a href="#org79bf533">sparse trees (docu)</a></li>
-<li><a href="#org3f676ca">lists (docu)</a>
-<ul>
-<li><a href="#org78ab84e">examples</a></li>
-<li><a href="#org6d76aef">Simple</a></li>
-<li><a href="#orgeadcbba">Checklists</a></li>
-<li><a href="#orga1d2002">Headings with TODO items</a>
-<ul>
-<li><a href="#org7284ff8"><span class="todo TODO">TODO</span> Clean out garage <code>[0/4]</code></a>
-<ul>
-<li><a href="#org3851093"><span class="todo TODO">TODO</span> get stuff out</a></li>
-<li><a href="#org6874a18"><span class="todo TODO">TODO</span> get rid of old stuff</a></li>
-<li><a href="#orgc780860"><span class="todo TODO">TODO</span> repaint garage</a></li>
-<li><a href="#org85db7b8"><span class="todo TODO">TODO</span> put stuff back in</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org0eb4125">Taking notes during a meeting or similar (docu)</a></li>
-</ul>
-</li>
-<li><a href="#org4bd549a">drawers, properties, columns (docu)</a>
-<ul>
-<li><a href="#org71f56b8"><span class="todo NEXT">NEXT</span> Test with category property&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag">mytag</span></span></a></li>
-</ul>
-</li>
-<li><a href="#org912106d">blocks (docu)</a>
-<ul>
-<li><a href="#orge716d49">examples for non-source-code blocks</a></li>
-</ul>
-</li>
-<li><a href="#orge79a9de">links (docu)</a>
-<ul>
-<li><a href="#org57a521a">heading with PROPERTIES drawer containing ID</a></li>
-</ul>
-</li>
-<li><a href="#org7b37086">states; TODO items (docu)</a>
-<ul>
-<li><a href="#org15d88c3">making dependencies explicit</a>
-<ul>
-<li><a href="#org93794d9">example with chain siblings</a>
-<ul>
-<li><a href="#org5c310af"><span class="todo NEXT">NEXT</span> buy bike</a></li>
-<li><a href="#orgb978e33">take tour</a></li>
-<li><a href="#orga23c88f">goto hospital</a></li>
-</ul>
-</li>
-<li><a href="#org2d8ee7b">example with triggers and blockers</a>
-<ul>
-<li><a href="#orge465ce0"><span class="todo NEXT">NEXT</span> go for shopping</a></li>
-<li><a href="#org76659aa">enjoy new clothes</a></li>
-<li><a href="#org300918a">look out for next errands</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org91ca533">logging state changes (docu)</a></li>
-<li><a href="#orgd1d3f2a">habits (docu)</a></li>
-<li><a href="#org966879f">priorities (docu)</a>
-<ul>
-<li><a href="#org5786625"><span class="todo TODO">TODO</span> <span class="priority">[A]</span> example</a></li>
-</ul>
-</li>
-<li><a href="#org1c741d9">breaking down in subtasks (docu)</a>
-<ul>
-<li><a href="#org8076433"><span class="todo TODO">TODO</span> example <code>[1/3]</code> <code>[33%]</code></a>
-<ul>
-<li><a href="#orgec76075"><span class="done DONE">DONE</span> subtask 1</a></li>
-<li><a href="#orgae38e08"><span class="todo TODO">TODO</span> subtask 2</a></li>
-<li><a href="#org24fcea3"><span class="todo TODO">TODO</span> subtask 3</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org82ac767">tags (docu)</a>
-<ul>
-<li><a href="#orgf19021f">example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tag">tag</span></span></a></li>
-<li><a href="#org88d0749">Tag groups (docu)</a></li>
-</ul>
-</li>
-<li><a href="#org43331c5">tables simple (docu)</a></li>
-<li><a href="#org533e9c4">tables complex (docu, tutorial)</a>
-<ul>
-<li><a href="#org7170312">referencing example with detailed explanation</a>
-<ul>
-<li><a href="#org46b3c43">column-based</a></li>
-<li><a href="#org003b85b">row-based</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orge06e39c">column view (docu)</a>
-<ul>
-<li><a href="#org3bb78d6">example sub-item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag1">mytag1</span></span></a></li>
-<li><a href="#orgb39c608"><span class="todo NEXT">NEXT</span> <span class="priority">[B]</span> another example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag2">mytag2</span></span></a></li>
-</ul>
-</li>
-<li><a href="#org2cdb272">capture, refile, archive (docu)</a></li>
-<li><a href="#org50f01e8">attachments (docu)</a></li>
-<li><a href="#org6d87b68">dates &amp; time (docu)</a>
-<ul>
-<li><a href="#org911ba1d">advanced date/time with sexp (docu)</a></li>
-</ul>
-</li>
-<li><a href="#org5996ff7">agenda (docu)</a></li>
-<li><a href="#org15874e8">clocking time (docu)</a>
-<ul>
-<li><a href="#org617f296">example sub-hierarchy with report</a>
-<ul>
-<li><a href="#org368c775">example item</a></li>
-<li><a href="#org2d6768a">another item</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgf8913c9">dynamic blocks with ELISP (docu)</a></li>
-<li><a href="#orgc00451c">source code (docu)</a></li>
-<li><a href="#orgcf6edfb">babel (docu)</a>
-<ul>
-<li><a href="#orgc2d2f33">babel simple (doc)</a>
-<ul>
-<li><a href="#org3b88f56">shell</a></li>
-<li><a href="#org6f7dca0">ruby</a></li>
-<li><a href="#org748114e">python</a></li>
-<li><a href="#org034bd0c">ditaa</a></li>
-</ul>
-</li>
-<li><a href="#org943e140">babel advanced</a>
-<ul>
-<li><a href="#org4bfdead">session with shell and R</a></li>
-<li><a href="#org18ce876">remote shell session</a></li>
-<li><a href="#org18f2ab0">table using python function to calculate values</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org257d5db">LaTeX (docu)</a></li>
-<li><a href="#org24ab0b2">export formats (docu)</a>
-<ul>
-<li><a href="#orgb5c93d8">Export options (docu)</a></li>
-</ul>
-</li>
-<li><a href="#orgd0c40ac">MobileOrg (docu)</a></li>
-<li><a href="#org33937d5">many many many many more features!</a></li>
-<li><a href="#org3209933">customization per &#x2026;</a></li>
-</ul>
-</li>
-<li><a href="#org6861426">Still Missing Topics</a></li>
-</ul>
-</div>
-</nav>
-<div id="outline-container-org531ee02" class="outline-2">
-<h2 id="org531ee02">Setting Up the Demo</h2>
-<div class="outline-text-2" id="text-org531ee02">
+</header><p>
+<a href="http://orgmode.org/org.html#Per_002dfile-keywords">http://orgmode.org/org.html#Per_002dfile-keywords</a>  <a href="https://www.gnu.org/software/emacs/manual/html_mono/org.html#Per_002dfile-keywords">info:org#Per-file keywords</a>
+</p>
+
+<p>
+<a href="http://orgmode.org/org.html#Setting-tags">http://orgmode.org/org.html#Setting-tags</a>  <a href="https://www.gnu.org/software/emacs/manual/html_mono/org.html#Setting-tags">info:org#Setting tags</a>
+</p>
+
+<div id="outline-container-orgd14e2ae" class="outline-2">
+<h2 id="orgd14e2ae">Setting Up the Demo</h2>
+<div class="outline-text-2" id="text-orgd14e2ae">
 <ul class="org-ul">
 <li class="off">&#x2610; start key visualization tool like <a href="http://pabloseminario.com/projects/screenkey/">screenkey</a></li>
 <li class="off">&#x2610; check font size
@@ -462,9 +284,9 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org63dca6b" class="outline-2">
-<h2 id="org63dca6b">Org-mode by Examples</h2>
-<div class="outline-text-2" id="text-org63dca6b">
+<div id="outline-container-org5310739" class="outline-2">
+<h2 id="org5310739">Org-mode by Examples</h2>
+<div class="outline-text-2" id="text-org5310739">
 <pre class="example">
 VISIBILITY: children
 </pre>
@@ -478,7 +300,7 @@ features (sometimes probably more) of this wonderful tool</li>
 </ul>
 
 
-<table id="org69359de">
+<table id="orgccfd5fe">
 
 
 <colgroup>
@@ -546,9 +368,9 @@ features (sometimes probably more) of this wonderful tool</li>
 </table>
 </div>
 
-<div id="outline-container-orgc144b76" class="outline-3">
-<h3 id="orgc144b76">activating Org-mode</h3>
-<div class="outline-text-3" id="text-orgc144b76">
+<div id="outline-container-org4e2d20c" class="outline-3">
+<h3 id="org4e2d20c">activating Org-mode</h3>
+<div class="outline-text-3" id="text-org4e2d20c">
 <ul class="org-ul">
 <li><a href="http://orgmode.org/org.html#Activation">http://orgmode.org/org.html#Activation</a></li>
 <li><a href="http://orgmode.org/worg/org-configs/org-customization-guide.html">http://orgmode.org/worg/org-configs/org-customization-guide.html</a></li>
@@ -573,18 +395,18 @@ features (sometimes probably more) of this wonderful tool</li>
 </div>
 </div>
 
-<div id="outline-container-orgf2d5d5f" class="outline-3">
-<h3 id="orgf2d5d5f">Org-mode documentation</h3>
-<div class="outline-text-3" id="text-orgf2d5d5f">
+<div id="outline-container-org59198c6" class="outline-3">
+<h3 id="org59198c6">Org-mode documentation</h3>
+<div class="outline-text-3" id="text-org59198c6">
 <ul class="org-ul">
 <li><a href="http://orgmode.org/org.html">http://orgmode.org/org.html</a> is up to date</li>
 <li><code>C-h i</code> (while being in an Org-mode file) gives you a local version :-)</li>
 </ul>
 </div>
 
-<div id="outline-container-orgbbcfac4" class="outline-4">
-<h4 id="orgbbcfac4">In case of Org-mode documentation does not work</h4>
-<div class="outline-text-4" id="text-orgbbcfac4">
+<div id="outline-container-org1b95aa2" class="outline-4">
+<h4 id="org1b95aa2">In case of Org-mode documentation does not work</h4>
+<div class="outline-text-4" id="text-org1b95aa2">
 <p>
 For using Org-mode from a local git repository: add following to your
 configuration:
@@ -607,9 +429,9 @@ cd $ORGMODEDIRECTORY &amp;&amp; sudo make install-info
 </div>
 </div>
 
-<div id="outline-container-orgc58cf6f" class="outline-3">
-<h3 id="orgc58cf6f">text formatting syntax <a href="http://orgmode.org/org.html#Emphasis-and-monospace">(docu)</a></h3>
-<div class="outline-text-3" id="text-orgc58cf6f">
+<div id="outline-container-org293801c" class="outline-3">
+<h3 id="org293801c">text formatting syntax <a href="http://orgmode.org/org.html#Emphasis-and-monospace">(docu)</a></h3>
+<div class="outline-text-3" id="text-org293801c">
 <ul class="org-ul">
 <li><b>bold</b></li>
 <li><i>italic</i></li>
@@ -642,9 +464,9 @@ small example
 </div>
 </div>
 
-<div id="outline-container-orgf9b5536" class="outline-3">
-<h3 id="orgf9b5536">outlining (<a href="http://orgmode.org/org.html#Document-Structure">docu</a>)</h3>
-<div class="outline-text-3" id="text-orgf9b5536">
+<div id="outline-container-orgcdc9594" class="outline-3">
+<h3 id="orgcdc9594">outlining (<a href="http://orgmode.org/org.html#Document-Structure">docu</a>)</h3>
+<div class="outline-text-3" id="text-orgcdc9594">
 <ul class="org-ul">
 <li>headlines start with asterisks</li>
 <li>levels</li>
@@ -686,18 +508,18 @@ TODO-count, &#x2026;</li>
 </ul>
 </div>
 
-<div id="outline-container-org9178cff" class="outline-4">
-<h4 id="org9178cff">Creating</h4>
-<div class="outline-text-4" id="text-org9178cff">
+<div id="outline-container-org5789bcd" class="outline-4">
+<h4 id="org5789bcd">Creating</h4>
+<div class="outline-text-4" id="text-org5789bcd">
 <ul class="org-ul">
 <li class="off">&#x2610; DEMO: create headings</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org944d129" class="outline-4">
-<h4 id="org944d129">Using</h4>
-<div class="outline-text-4" id="text-org944d129">
+<div id="outline-container-orga7b2a40" class="outline-4">
+<h4 id="orga7b2a40">Using</h4>
+<div class="outline-text-4" id="text-orga7b2a40">
 <ul class="org-ul">
 <li class="off">&#x2610; DEMO: visibility cycling</li>
 <li class="off">&#x2610; DEMO: move headings</li>
@@ -708,35 +530,17 @@ This is a quite boring text just to show some body content.
 </p>
 </div>
 
-<div id="outline-container-org7cd9b40" class="outline-5">
-<h5 id="org7cd9b40">This is the 1st heading</h5>
-<div class="outline-text-5" id="text-org7cd9b40">
+<div id="outline-container-orgd471dc3" class="outline-5">
+<h5 id="orgd471dc3">This is the 1st heading</h5>
+<div class="outline-text-5" id="text-orgd471dc3">
 <p>
 This is a quite boring text just to show some body content.
 </p>
 </div>
 
-<div id="outline-container-orga228593" class="outline-6">
-<h6 id="orga228593">Sub-heading 1</h6>
-<div class="outline-text-6" id="text-orga228593">
-<p>
-This is a quite boring text just to show some body content.
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgb7e695d" class="outline-5">
-<h5 id="orgb7e695d">This is another heading</h5>
-<div class="outline-text-5" id="text-orgb7e695d">
-<p>
-This is a quite boring text just to show some body content.
-</p>
-</div>
-
-<div id="outline-container-org4c81f3a" class="outline-6">
-<h6 id="org4c81f3a">Sub-heading 2</h6>
-<div class="outline-text-6" id="text-org4c81f3a">
+<div id="outline-container-org5c68eb9" class="outline-6">
+<h6 id="org5c68eb9">Sub-heading 1</h6>
+<div class="outline-text-6" id="text-org5c68eb9">
 <p>
 This is a quite boring text just to show some body content.
 </p>
@@ -744,18 +548,36 @@ This is a quite boring text just to show some body content.
 </div>
 </div>
 
-<div id="outline-container-org1f58a03" class="outline-5">
-<h5 id="org1f58a03">This is yet another heading</h5>
+<div id="outline-container-orgbfb6da1" class="outline-5">
+<h5 id="orgbfb6da1">This is another heading</h5>
+<div class="outline-text-5" id="text-orgbfb6da1">
+<p>
+This is a quite boring text just to show some body content.
+</p>
 </div>
-<div id="outline-container-orgb9d470c" class="outline-5">
-<h5 id="orgb9d470c">OK, now this is getting boring :-)</h5>
+
+<div id="outline-container-orgc013d0e" class="outline-6">
+<h6 id="orgc013d0e">Sub-heading 2</h6>
+<div class="outline-text-6" id="text-orgc013d0e">
+<p>
+This is a quite boring text just to show some body content.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org18b2577" class="outline-5">
+<h5 id="org18b2577">This is yet another heading</h5>
+</div>
+<div id="outline-container-org44cf955" class="outline-5">
+<h5 id="org44cf955">OK, now this is getting boring :-)</h5>
 </div>
 </div>
 
 
-<div id="outline-container-org2ce9539" class="outline-4">
-<h4 id="org2ce9539">encryption</h4>
-<div class="outline-text-4" id="text-org2ce9539">
+<div id="outline-container-org5e23d47" class="outline-4">
+<h4 id="org5e23d47">encryption</h4>
+<div class="outline-text-4" id="text-org5e23d47">
 <ul class="org-ul">
 <li>whole Org-mode files</li>
 <li>selective headlines using :crypt:</li>
@@ -764,9 +586,9 @@ This is a quite boring text just to show some body content.
 </div>
 </div>
 
-<div id="outline-container-org60dbdba" class="outline-4">
-<h4 id="org60dbdba">time stamps when taking notes (<a href="http://orgmode.org/manual/Relative-timer.html">docu</a>)</h4>
-<div class="outline-text-4" id="text-org60dbdba">
+<div id="outline-container-org18ef338" class="outline-4">
+<h4 id="org18ef338">time stamps when taking notes (<a href="http://orgmode.org/manual/Relative-timer.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-org18ef338">
 <ul class="org-ul">
 <li><code>C-c C-x .</code>   start timer</li>
 <li><code>C-c C-x -</code>   insert list item with time</li>
@@ -783,9 +605,9 @@ This is a quite boring text just to show some body content.
 </div>
 </div>
 
-<div id="outline-container-org79bf533" class="outline-3">
-<h3 id="org79bf533">sparse trees (<a href="http://orgmode.org/org.html#Sparse-trees">docu</a>)</h3>
-<div class="outline-text-3" id="text-org79bf533">
+<div id="outline-container-org3807389" class="outline-3">
+<h3 id="org3807389">sparse trees (<a href="http://orgmode.org/org.html#Sparse-trees">docu</a>)</h3>
+<div class="outline-text-3" id="text-org3807389">
 <ul class="org-ul">
 <li>Filtering
 <ul class="org-ul">
@@ -804,9 +626,9 @@ This is a quite boring text just to show some body content.
 </div>
 </div>
 
-<div id="outline-container-org3f676ca" class="outline-3">
-<h3 id="org3f676ca">lists <a href="http://orgmode.org/org.html#Plain-lists">(docu)</a></h3>
-<div class="outline-text-3" id="text-org3f676ca">
+<div id="outline-container-org735ec69" class="outline-3">
+<h3 id="org735ec69">lists <a href="http://orgmode.org/org.html#Plain-lists">(docu)</a></h3>
+<div class="outline-text-3" id="text-org735ec69">
 <ul class="org-ul">
 <li><code>M-RET</code>      <b>new list item</b></li>
 <li><code>M-S-RET</code>    create checkbox</li>
@@ -815,9 +637,9 @@ This is a quite boring text just to show some body content.
 </ul>
 </div>
 
-<div id="outline-container-org78ab84e" class="outline-4">
-<h4 id="org78ab84e">examples</h4>
-<div class="outline-text-4" id="text-org78ab84e">
+<div id="outline-container-orgff8cecd" class="outline-4">
+<h4 id="orgff8cecd">examples</h4>
+<div class="outline-text-4" id="text-orgff8cecd">
 <p>
 simple list:
 </p>
@@ -842,18 +664,18 @@ check lists:
 </div>
 </div>
 
-<div id="outline-container-org6d76aef" class="outline-4">
-<h4 id="org6d76aef">Simple</h4>
-<div class="outline-text-4" id="text-org6d76aef">
+<div id="outline-container-orga899687" class="outline-4">
+<h4 id="orga899687">Simple</h4>
+<div class="outline-text-4" id="text-orga899687">
 <ul class="org-ul">
 <li class="off">&#x2610; DEMO: create simple lists and move items around</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgeadcbba" class="outline-4">
-<h4 id="orgeadcbba">Checklists</h4>
-<div class="outline-text-4" id="text-orgeadcbba">
+<div id="outline-container-org1dc0ca2" class="outline-4">
+<h4 id="org1dc0ca2">Checklists</h4>
+<div class="outline-text-4" id="text-org1dc0ca2">
 <ul class="org-ul">
 <li><code>M-S-RET</code>  new item with checkbox</li>
 <li><code>C-c C-*</code>  checkboxes become TODOs</li>
@@ -878,26 +700,26 @@ check lists:
 </div>
 </div>
 
-<div id="outline-container-orga1d2002" class="outline-4">
-<h4 id="orga1d2002">Headings with TODO items</h4>
-<div class="outline-text-4" id="text-orga1d2002">
+<div id="outline-container-orgd91c66c" class="outline-4">
+<h4 id="orgd91c66c">Headings with TODO items</h4>
+<div class="outline-text-4" id="text-orgd91c66c">
 </div>
-<div id="outline-container-org7284ff8" class="outline-5">
-<h5 id="org7284ff8"><span class="todo TODO">TODO</span> Clean out garage <code>[0/4]</code></h5>
-<div class="outline-text-5" id="text-org7284ff8">
+<div id="outline-container-org860d795" class="outline-5">
+<h5 id="org860d795"><span class="todo TODO">TODO</span> Clean out garage <code>[0/4]</code></h5>
+<div class="outline-text-5" id="text-org860d795">
 </div>
-<div id="outline-container-org3851093" class="outline-6">
-<h6 id="org3851093"><span class="todo TODO">TODO</span> get stuff out</h6>
-<div class="outline-text-6" id="text-org3851093">
+<div id="outline-container-org46347e4" class="outline-6">
+<h6 id="org46347e4"><span class="todo TODO">TODO</span> get stuff out</h6>
+<div class="outline-text-6" id="text-org46347e4">
 <ul class="org-ul">
 <li>be careful with that axe, Eugene</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6874a18" class="outline-6">
-<h6 id="org6874a18"><span class="todo TODO">TODO</span> get rid of old stuff</h6>
-<div class="outline-text-6" id="text-org6874a18">
+<div id="outline-container-org36ac3f1" class="outline-6">
+<h6 id="org36ac3f1"><span class="todo TODO">TODO</span> get rid of old stuff</h6>
+<div class="outline-text-6" id="text-org36ac3f1">
 <ul class="org-ul">
 <li>using eBay?</li>
 <li>try to use rubbish as birthday presents for family</li>
@@ -905,18 +727,18 @@ check lists:
 </div>
 </div>
 
-<div id="outline-container-orgc780860" class="outline-6">
-<h6 id="orgc780860"><span class="todo TODO">TODO</span> repaint garage</h6>
+<div id="outline-container-org19c038a" class="outline-6">
+<h6 id="org19c038a"><span class="todo TODO">TODO</span> repaint garage</h6>
 </div>
 
-<div id="outline-container-org85db7b8" class="outline-6">
-<h6 id="org85db7b8"><span class="todo TODO">TODO</span> put stuff back in</h6>
+<div id="outline-container-orgefc0ecd" class="outline-6">
+<h6 id="orgefc0ecd"><span class="todo TODO">TODO</span> put stuff back in</h6>
 </div>
 </div>
 </div>
-<div id="outline-container-org0eb4125" class="outline-4">
-<h4 id="org0eb4125">Taking notes during a meeting or similar (<a href="http://orgmode.org/org.html#Relative-timer">docu</a>)</h4>
-<div class="outline-text-4" id="text-org0eb4125">
+<div id="outline-container-org52efcc5" class="outline-4">
+<h4 id="org52efcc5">Taking notes during a meeting or similar (<a href="http://orgmode.org/org.html#Relative-timer">docu</a>)</h4>
+<div class="outline-text-4" id="text-org52efcc5">
 <pre class="example">
 CREATED: [2014-04-20 Sun 11:33]
 </pre>
@@ -938,9 +760,9 @@ Bonus feature:
 </div>
 </div>
 
-<div id="outline-container-org4bd549a" class="outline-3">
-<h3 id="org4bd549a">drawers, properties, columns (<a href="http://orgmode.org/org.html#Properties-and-Columns">docu</a>)</h3>
-<div class="outline-text-3" id="text-org4bd549a">
+<div id="outline-container-org2a4531b" class="outline-3">
+<h3 id="org2a4531b">drawers, properties, columns (<a href="http://orgmode.org/org.html#Properties-and-Columns">docu</a>)</h3>
+<div class="outline-text-3" id="text-org2a4531b">
 <ul class="org-ul">
 <li>meta-data on headings</li>
 <li>standard drawers :PROPERTIES: and :LOGBOOK:</li>
@@ -956,9 +778,9 @@ agenda:</li>
 </ul>
 </div>
 
-<div id="outline-container-org71f56b8" class="outline-4">
-<h4 id="org71f56b8"><span class="todo NEXT">NEXT</span> Test with category property&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag">mytag</span></span></h4>
-<div class="outline-text-4" id="text-org71f56b8">
+<div id="outline-container-org01da55d" class="outline-4">
+<h4 id="org01da55d"><span class="todo NEXT">NEXT</span> Test with category property&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag">mytag</span></span></h4>
+<div class="outline-text-4" id="text-org01da55d">
 <pre class="example">
 CATEGORY: mycategory
 </pre>
@@ -966,9 +788,9 @@ CATEGORY: mycategory
 </div>
 </div>
 
-<div id="outline-container-org912106d" class="outline-3">
-<h3 id="org912106d">blocks (<a href="http://orgmode.org/org.html#Blocks">docu</a>)</h3>
-<div class="outline-text-3" id="text-org912106d">
+<div id="outline-container-orgfe2c2e1" class="outline-3">
+<h3 id="orgfe2c2e1">blocks (<a href="http://orgmode.org/org.html#Blocks">docu</a>)</h3>
+<div class="outline-text-3" id="text-orgfe2c2e1">
 <ul class="org-ul">
 <li>encapsulating content with begin&#x2026;end structure</li>
 <li><code>&lt;s + TAB</code>   easy templates (<a href="http://orgmode.org/org.html#Easy-Templates">docu</a>)</li>
@@ -1049,9 +871,9 @@ Some example from a text file.
 </table>
 </div>
 
-<div id="outline-container-orge716d49" class="outline-4">
-<h4 id="orge716d49">examples for non-source-code blocks</h4>
-<div class="outline-text-4" id="text-orge716d49">
+<div id="outline-container-org5367b1a" class="outline-4">
+<h4 id="org5367b1a">examples for non-source-code blocks</h4>
+<div class="outline-text-4" id="text-org5367b1a">
 <pre class="example">
 This is a test.
 
@@ -1102,9 +924,9 @@ Space upfront
 </div>
 </div>
 
-<div id="outline-container-orge79a9de" class="outline-3">
-<h3 id="orge79a9de">links <a href="http://orgmode.org/org.html#Hyperlinks">(docu)</a></h3>
-<div class="outline-text-3" id="text-orge79a9de">
+<div id="outline-container-orgf0f832c" class="outline-3">
+<h3 id="orgf0f832c">links <a href="http://orgmode.org/org.html#Hyperlinks">(docu)</a></h3>
+<div class="outline-text-3" id="text-orgf0f832c">
 <pre class="example">
 [[link]]
 [[link][description]]
@@ -1156,9 +978,9 @@ target:
 </ul>
 </div>
 
-<div id="outline-container-org57a521a" class="outline-4">
-<h4 id="org57a521a"><a id="myexampleid"></a>heading with PROPERTIES drawer containing ID</h4>
-<div class="outline-text-4" id="text-org57a521a">
+<div id="outline-container-orgd4768b7" class="outline-4">
+<h4 id="orgd4768b7"><a id="myexampleid"></a>heading with PROPERTIES drawer containing ID</h4>
+<div class="outline-text-4" id="text-orgd4768b7">
 <pre class="example">
 ID: myexampleid
 </pre>
@@ -1169,9 +991,9 @@ foo bar
 </div>
 </div>
 </div>
-<div id="outline-container-org7b37086" class="outline-3">
-<h3 id="org7b37086">states; TODO items (<a href="http://orgmode.org/org.html#TODO-Items">docu</a>)</h3>
-<div class="outline-text-3" id="text-org7b37086">
+<div id="outline-container-org6560561" class="outline-3">
+<h3 id="org6560561">states; TODO items (<a href="http://orgmode.org/org.html#TODO-Items">docu</a>)</h3>
+<div class="outline-text-3" id="text-org6560561">
 <ul class="org-ul">
 <li><code>C-c C-t</code>   <b>rotate TODO state</b></li>
 <li><code>C-c / t</code>   sparse tree with TODOs</li>
@@ -1186,9 +1008,9 @@ foo bar
 </ul>
 </div>
 
-<div id="outline-container-org15d88c3" class="outline-4">
-<h4 id="org15d88c3">making dependencies explicit</h4>
-<div class="outline-text-4" id="text-org15d88c3">
+<div id="outline-container-orgd13e8ca" class="outline-4">
+<h4 id="orgd13e8ca">making dependencies explicit</h4>
+<div class="outline-text-4" id="text-orgd13e8ca">
 <ul class="org-ul">
 <li>simple, ordered method with PROPERTIES drawer:</li>
 </ul>
@@ -1215,35 +1037,35 @@ foo bar
 </ul>
 </div>
 
-<div id="outline-container-org93794d9" class="outline-5">
-<h5 id="org93794d9">example with chain siblings</h5>
-<div class="outline-text-5" id="text-org93794d9">
+<div id="outline-container-orgdf239fa" class="outline-5">
+<h5 id="orgdf239fa">example with chain siblings</h5>
+<div class="outline-text-5" id="text-orgdf239fa">
 </div>
-<div id="outline-container-org5c310af" class="outline-6">
-<h6 id="org5c310af"><span class="todo NEXT">NEXT</span> buy bike</h6>
-<div class="outline-text-6" id="text-org5c310af">
+<div id="outline-container-org192fba5" class="outline-6">
+<h6 id="org192fba5"><span class="todo NEXT">NEXT</span> buy bike</h6>
+<div class="outline-text-6" id="text-org192fba5">
 <pre class="example">
 TRIGGER: chain-siblings(NEXT)
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgb978e33" class="outline-6">
-<h6 id="orgb978e33">take tour</h6>
+<div id="outline-container-orgf66e5b0" class="outline-6">
+<h6 id="orgf66e5b0">take tour</h6>
 </div>
 
-<div id="outline-container-orga23c88f" class="outline-6">
-<h6 id="orga23c88f">goto hospital</h6>
+<div id="outline-container-org5f5eac2" class="outline-6">
+<h6 id="org5f5eac2">goto hospital</h6>
 </div>
 </div>
 
-<div id="outline-container-org2d8ee7b" class="outline-5">
-<h5 id="org2d8ee7b">example with triggers and blockers</h5>
-<div class="outline-text-5" id="text-org2d8ee7b">
+<div id="outline-container-org8ece253" class="outline-5">
+<h5 id="org8ece253">example with triggers and blockers</h5>
+<div class="outline-text-5" id="text-org8ece253">
 </div>
-<div id="outline-container-orge465ce0" class="outline-6">
-<h6 id="orge465ce0"><a id="my-shopping"></a><span class="todo NEXT">NEXT</span> go for shopping</h6>
-<div class="outline-text-6" id="text-orge465ce0">
+<div id="outline-container-org1c8d555" class="outline-6">
+<h6 id="org1c8d555"><a id="my-shopping"></a><span class="todo NEXT">NEXT</span> go for shopping</h6>
+<div class="outline-text-6" id="text-org1c8d555">
 <pre class="example">
 ID: my-shopping
 TRIGGER: my-new-clothes(NEXT) my-next-errands(TODO)
@@ -1256,18 +1078,18 @@ NEXT and looking out for next errands to TODO.
 </div>
 </div>
 
-<div id="outline-container-org76659aa" class="outline-6">
-<h6 id="org76659aa"><a id="my-new-clothes"></a>enjoy new clothes</h6>
-<div class="outline-text-6" id="text-org76659aa">
+<div id="outline-container-org8fa1572" class="outline-6">
+<h6 id="org8fa1572"><a id="my-new-clothes"></a>enjoy new clothes</h6>
+<div class="outline-text-6" id="text-org8fa1572">
 <pre class="example">
 ID: my-new-clothes
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org300918a" class="outline-6">
-<h6 id="org300918a"><a id="my-next-errands"></a>look out for next errands</h6>
-<div class="outline-text-6" id="text-org300918a">
+<div id="outline-container-org9a77ce3" class="outline-6">
+<h6 id="org9a77ce3"><a id="my-next-errands"></a>look out for next errands</h6>
+<div class="outline-text-6" id="text-org9a77ce3">
 <pre class="example">
 ID: my-next-errands
 BLOCKER: my-new-clothes
@@ -1281,9 +1103,9 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </div>
 </div>
 
-<div id="outline-container-org91ca533" class="outline-4">
-<h4 id="org91ca533">logging state changes (<a href="http://orgmode.org/org.html#Tracking-TODO-state-changes">docu</a>)</h4>
-<div class="outline-text-4" id="text-org91ca533">
+<div id="outline-container-org017bf12" class="outline-4">
+<h4 id="org017bf12">logging state changes (<a href="http://orgmode.org/org.html#Tracking-TODO-state-changes">docu</a>)</h4>
+<div class="outline-text-4" id="text-org017bf12">
 <ul class="org-ul">
 <li><code>!</code> in todo state definition</li>
 <li><code>org-log-into-drawer</code> for setting default behavior</li>
@@ -1291,9 +1113,9 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </div>
 </div>
 
-<div id="outline-container-orgd1d3f2a" class="outline-4">
-<h4 id="orgd1d3f2a">habits (<a href="http://orgmode.org/org.html#Tracking-your-habits">docu</a>)</h4>
-<div class="outline-text-4" id="text-orgd1d3f2a">
+<div id="outline-container-org897f277" class="outline-4">
+<h4 id="org897f277">habits (<a href="http://orgmode.org/org.html#Tracking-your-habits">docu</a>)</h4>
+<div class="outline-text-4" id="text-org897f277">
 <ul class="org-ul">
 <li>enable habits module by customizing the variable <code>org-modules</code></li>
 <li>TODO items with property STYLE is set to the value <code>habit</code>:</li>
@@ -1324,9 +1146,9 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </div>
 </div>
 
-<div id="outline-container-org966879f" class="outline-4">
-<h4 id="org966879f">priorities (<a href="http://orgmode.org/org.html#Priorities">docu</a>)</h4>
-<div class="outline-text-4" id="text-org966879f">
+<div id="outline-container-orge604416" class="outline-4">
+<h4 id="orge604416">priorities (<a href="http://orgmode.org/org.html#Priorities">docu</a>)</h4>
+<div class="outline-text-4" id="text-orge604416">
 <ul class="org-ul">
 <li><code>C-c ,</code>     set priorities</li>
 <li><code>S-UP/DOWN</code> <b>change priority</b></li>
@@ -1336,14 +1158,14 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </ul>
 </div>
 
-<div id="outline-container-org5786625" class="outline-5">
-<h5 id="org5786625"><span class="todo TODO">TODO</span> <span class="priority">[A]</span> example</h5>
+<div id="outline-container-orge117645" class="outline-5">
+<h5 id="orge117645"><span class="todo TODO">TODO</span> <span class="priority">[A]</span> example</h5>
 </div>
 </div>
 
-<div id="outline-container-org1c741d9" class="outline-4">
-<h4 id="org1c741d9">breaking down in subtasks (<a href="http://orgmode.org/org.html#Breaking-down-tasks">docu</a>)</h4>
-<div class="outline-text-4" id="text-org1c741d9">
+<div id="outline-container-org4842ad2" class="outline-4">
+<h4 id="org4842ad2">breaking down in subtasks (<a href="http://orgmode.org/org.html#Breaking-down-tasks">docu</a>)</h4>
+<div class="outline-text-4" id="text-org4842ad2">
 <ul class="org-ul">
 <li>for TODO-headings: stat cookies   <code>[/]</code> or <code>[%]</code> (will be <code>[1/3]</code> or <code>[33%]</code>)</li>
 <li>also possible:
@@ -1355,25 +1177,25 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </ul>
 </div>
 
-<div id="outline-container-org8076433" class="outline-5">
-<h5 id="org8076433"><span class="todo TODO">TODO</span> example <code>[1/3]</code> <code>[33%]</code></h5>
-<div class="outline-text-5" id="text-org8076433">
+<div id="outline-container-orgf836207" class="outline-5">
+<h5 id="orgf836207"><span class="todo TODO">TODO</span> example <code>[1/3]</code> <code>[33%]</code></h5>
+<div class="outline-text-5" id="text-orgf836207">
 </div>
-<div id="outline-container-orgec76075" class="outline-6">
-<h6 id="orgec76075"><span class="done DONE">DONE</span> subtask 1</h6>
+<div id="outline-container-orge3668f6" class="outline-6">
+<h6 id="orge3668f6"><span class="done DONE">DONE</span> subtask 1</h6>
 </div>
-<div id="outline-container-orgae38e08" class="outline-6">
-<h6 id="orgae38e08"><span class="todo TODO">TODO</span> subtask 2</h6>
+<div id="outline-container-org5864a8e" class="outline-6">
+<h6 id="org5864a8e"><span class="todo TODO">TODO</span> subtask 2</h6>
 </div>
-<div id="outline-container-org24fcea3" class="outline-6">
-<h6 id="org24fcea3"><span class="todo TODO">TODO</span> subtask 3</h6>
-</div>
-</div>
+<div id="outline-container-org2ca6c02" class="outline-6">
+<h6 id="org2ca6c02"><span class="todo TODO">TODO</span> subtask 3</h6>
 </div>
 </div>
-<div id="outline-container-org82ac767" class="outline-3">
-<h3 id="org82ac767">tags <a href="http://orgmode.org/org.html#Tags">(docu)</a></h3>
-<div class="outline-text-3" id="text-org82ac767">
+</div>
+</div>
+<div id="outline-container-org1233f92" class="outline-3">
+<h3 id="org1233f92">tags <a href="http://orgmode.org/org.html#Tags">(docu)</a></h3>
+<div class="outline-text-3" id="text-org1233f92">
 <ul class="org-ul">
 <li>inherited tags</li>
 <li>per-file definition of tags:</li>
@@ -1409,13 +1231,13 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </ul>
 </div>
 
-<div id="outline-container-orgf19021f" class="outline-4">
-<h4 id="orgf19021f">example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tag">tag</span></span></h4>
+<div id="outline-container-orgbdde7a3" class="outline-4">
+<h4 id="orgbdde7a3">example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tag">tag</span></span></h4>
 </div>
 
-<div id="outline-container-org88d0749" class="outline-4">
-<h4 id="org88d0749">Tag groups (<a href="http://orgmode.org/manual/Tag-groups.html">docu</a>)</h4>
-<div class="outline-text-4" id="text-org88d0749">
+<div id="outline-container-orgcb5222a" class="outline-4">
+<h4 id="orgcb5222a">Tag groups (<a href="http://orgmode.org/manual/Tag-groups.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-orgcb5222a">
 <ul class="org-ul">
 <li>searching for a group tag return matches of all member tags as well</li>
 <li>example:</li>
@@ -1438,9 +1260,9 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </div>
 </div>
 
-<div id="outline-container-org43331c5" class="outline-3">
-<h3 id="org43331c5">tables simple <a href="http://orgmode.org/org.html#Tables">(docu)</a></h3>
-<div class="outline-text-3" id="text-org43331c5">
+<div id="outline-container-org84f36d5" class="outline-3">
+<h3 id="org84f36d5">tables simple <a href="http://orgmode.org/org.html#Tables">(docu)</a></h3>
+<div class="outline-text-3" id="text-org84f36d5">
 <ul class="org-ul">
 <li><code>C-c C-c</code>  <b>update table</b></li>
 <li><code>TAB</code>      <b>move next field</b></li>
@@ -1455,9 +1277,9 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </div>
 </div>
 
-<div id="outline-container-org533e9c4" class="outline-3">
-<h3 id="org533e9c4">tables complex (<a href="http://orgmode.org/org.html#The-spreadsheet">docu</a>, <a href="http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html">tutorial</a>)</h3>
-<div class="outline-text-3" id="text-org533e9c4">
+<div id="outline-container-orgbea82d4" class="outline-3">
+<h3 id="orgbea82d4">tables complex (<a href="http://orgmode.org/org.html#The-spreadsheet">docu</a>, <a href="http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html">tutorial</a>)</h3>
+<div class="outline-text-3" id="text-orgbea82d4">
 <ul class="org-ul">
 <li><code>C-c |</code>  move region into table (see <a href="http://orgmode.org/org.html#Built_002din-table-editor">docu</a>)
 <ul class="org-ul">
@@ -1476,7 +1298,7 @@ I can not finish this task as long as I did not enjoy my new clothes.
 <li><code>org-table-export</code>  export data to CSV file</li>
 </ul>
 
-<table id="org8e97d6d">
+<table id="orgb14953d">
 
 
 <colgroup>
@@ -1595,9 +1417,9 @@ I can not finish this task as long as I did not enjoy my new clothes.
 </ul>
 </div>
 
-<div id="outline-container-org7170312" class="outline-4">
-<h4 id="org7170312">referencing example with detailed explanation</h4>
-<div class="outline-text-4" id="text-org7170312">
+<div id="outline-container-orgdfef93e" class="outline-4">
+<h4 id="orgdfef93e">referencing example with detailed explanation</h4>
+<div class="outline-text-4" id="text-orgdfef93e">
 <p>
 Here is another example working with tables and referencing other
 tables. I did this example twice: first in a column (vertical) based
@@ -1605,10 +1427,10 @@ layout and then the very same example in a row (horizontal) based layout:
 </p>
 </div>
 
-<div id="outline-container-org46b3c43" class="outline-5">
-<h5 id="org46b3c43">column-based</h5>
-<div class="outline-text-5" id="text-org46b3c43">
-<table id="orge6dba53">
+<div id="outline-container-orge6b01f4" class="outline-5">
+<h5 id="orge6b01f4">column-based</h5>
+<div class="outline-text-5" id="text-orge6b01f4">
+<table id="org2b4f091">
 
 
 <colgroup>
@@ -1653,7 +1475,7 @@ layout and then the very same example in a row (horizontal) based layout:
 </tbody>
 </table>
 
-<table id="org14a96a4">
+<table id="org258a452">
 
 
 <colgroup>
@@ -1775,7 +1597,7 @@ Here is another example: how to sum up the numbers of the first column
 so far:
 </p>
 
-<table id="org65adad8">
+<table id="org14e5039">
 
 
 <colgroup>
@@ -1829,10 +1651,10 @@ The formular can be simplified even more by using a column formula:
 </div>
 </div>
 
-<div id="outline-container-org003b85b" class="outline-5">
-<h5 id="org003b85b">row-based</h5>
-<div class="outline-text-5" id="text-org003b85b">
-<table id="org7bd324b">
+<div id="outline-container-org4a2ef96" class="outline-5">
+<h5 id="org4a2ef96">row-based</h5>
+<div class="outline-text-5" id="text-org4a2ef96">
+<table id="orgc4dd3cc">
 
 
 <colgroup>
@@ -1873,7 +1695,7 @@ The formular can be simplified even more by using a column formula:
 </tbody>
 </table>
 
-<table id="org42f1a2c">
+<table id="org30ea236">
 
 
 <colgroup>
@@ -1978,9 +1800,9 @@ fourth row and the third row (<code>@4-@3</code>) with one decimal place
 </div>
 </div>
 
-<div id="outline-container-orge06e39c" class="outline-3">
-<h3 id="orge06e39c">column view (<a href="http://orgmode.org/org.html#Column-view">docu</a>)</h3>
-<div class="outline-text-3" id="text-orge06e39c">
+<div id="outline-container-orgd4a02ed" class="outline-3">
+<h3 id="orgd4a02ed">column view (<a href="http://orgmode.org/org.html#Column-view">docu</a>)</h3>
+<div class="outline-text-3" id="text-orgd4a02ed">
 <pre class="example">
 COLUMNS: %25ITEM %TAGS %PRIORITY %TODO %10MyProperties
 MyProperties_ALL: "Thomas" "Maria" "Susan" "Joe"
@@ -1996,18 +1818,18 @@ MyProperties_ALL: "Thomas" "Maria" "Susan" "Joe"
 </ul>
 </div>
 
-<div id="outline-container-org3bb78d6" class="outline-4">
-<h4 id="org3bb78d6">example sub-item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag1">mytag1</span></span></h4>
-<div class="outline-text-4" id="text-org3bb78d6">
+<div id="outline-container-orgc0a8f10" class="outline-4">
+<h4 id="orgc0a8f10">example sub-item&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag1">mytag1</span></span></h4>
+<div class="outline-text-4" id="text-orgc0a8f10">
 <pre class="example">
 MyProperties: Susan
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgb39c608" class="outline-4">
-<h4 id="orgb39c608"><span class="todo NEXT">NEXT</span> <span class="priority">[B]</span> another example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag2">mytag2</span></span></h4>
-<div class="outline-text-4" id="text-orgb39c608">
+<div id="outline-container-orgf583cbe" class="outline-4">
+<h4 id="orgf583cbe"><span class="todo NEXT">NEXT</span> <span class="priority">[B]</span> another example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mytag2">mytag2</span></span></h4>
+<div class="outline-text-4" id="text-orgf583cbe">
 <pre class="example">
 MyProperties: Thomas
 </pre>
@@ -2015,9 +1837,9 @@ MyProperties: Thomas
 </div>
 </div>
 
-<div id="outline-container-org2cdb272" class="outline-3">
-<h3 id="org2cdb272">capture, refile, archive (<a href="http://orgmode.org/org.html#Capture-_002d-Refile-_002d-Archive">docu</a>)</h3>
-<div class="outline-text-3" id="text-org2cdb272">
+<div id="outline-container-org60f983c" class="outline-3">
+<h3 id="org60f983c">capture, refile, archive (<a href="http://orgmode.org/org.html#Capture-_002d-Refile-_002d-Archive">docu</a>)</h3>
+<div class="outline-text-3" id="text-org60f983c">
 <ul class="org-ul">
 <li><code>C-c c</code>          <b>capture</b></li>
 <li><code>C-c C-w</code>        <b>refile</b></li>
@@ -2064,9 +1886,9 @@ MyProperties: Thomas
 </div>
 </div>
 
-<div id="outline-container-org50f01e8" class="outline-3">
-<h3 id="org50f01e8">attachments (<a href="http://orgmode.org/org.html#Attachments">docu</a>)</h3>
-<div class="outline-text-3" id="text-org50f01e8">
+<div id="outline-container-org53b3c34" class="outline-3">
+<h3 id="org53b3c34">attachments (<a href="http://orgmode.org/org.html#Attachments">docu</a>)</h3>
+<div class="outline-text-3" id="text-org53b3c34">
 <ul class="org-ul">
 <li><code>C-c C-a</code>    <b>org-attach</b> (menu)
 <ul class="org-ul">
@@ -2080,9 +1902,9 @@ MyProperties: Thomas
 </div>
 </div>
 
-<div id="outline-container-org6d87b68" class="outline-3">
-<h3 id="org6d87b68">dates &amp; time (<a href="http://orgmode.org/org.html#Dates-and-Times">docu</a>)</h3>
-<div class="outline-text-3" id="text-org6d87b68">
+<div id="outline-container-org50d002f" class="outline-3">
+<h3 id="org50d002f">dates &amp; time (<a href="http://orgmode.org/org.html#Dates-and-Times">docu</a>)</h3>
+<div class="outline-text-3" id="text-org50d002f">
 <ul class="org-ul">
 <li><code>C-c .</code>    <b>insert active</b> <span class="timestamp-wrapper"><span class="timestamp">&lt;2012-04-23 Mon&gt;  </span></span>  (with <code>C-u</code>: <span class="timestamp-wrapper"><span class="timestamp">&lt;2012-04-23 Mon 19:14&gt;</span></span>)</li>
 <li><code>C-c !</code>    insert inactive <span class="timestamp-wrapper"><span class="timestamp">[2012-04-23 Mon]  </span></span>  (with <code>C-u</code>: <span class="timestamp-wrapper"><span class="timestamp">[2012-04-23 Mon 19:14]</span></span>)</li>
@@ -2124,9 +1946,9 @@ produce errors.
 </p>
 </div>
 
-<div id="outline-container-org911ba1d" class="outline-4">
-<h4 id="org911ba1d">advanced date/time with sexp (<a href="http://orgmode.org/manual/Timestamps.html">docu</a>)</h4>
-<div class="outline-text-4" id="text-org911ba1d">
+<div id="outline-container-org93cf489" class="outline-4">
+<h4 id="org93cf489">advanced date/time with sexp (<a href="http://orgmode.org/manual/Timestamps.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-org93cf489">
 <pre class="example">
 CREATED: [2014-07-21 Mon 21:11]
 </pre>
@@ -2150,9 +1972,9 @@ To do a thing every x days between two dates, put:
 </div>
 </div>
 
-<div id="outline-container-org5996ff7" class="outline-3">
-<h3 id="org5996ff7">agenda (<a href="http://orgmode.org/org.html#Agenda-Views">docu</a>)</h3>
-<div class="outline-text-3" id="text-org5996ff7">
+<div id="outline-container-org68928ed" class="outline-3">
+<h3 id="org68928ed">agenda (<a href="http://orgmode.org/org.html#Agenda-Views">docu</a>)</h3>
+<div class="outline-text-3" id="text-org68928ed">
 <ul class="org-ul">
 <li><code>C-c [</code>    add buffer to agenda</li>
 <li><code>C-c ]</code>    remove buffer from agenda</li>
@@ -2228,9 +2050,9 @@ when being <b>in agenda</b> mode:
 </div>
 </div>
 
-<div id="outline-container-org15874e8" class="outline-3">
-<h3 id="org15874e8">clocking time (<a href="http://orgmode.org/org.html#Clocking-work-time">docu</a>)</h3>
-<div class="outline-text-3" id="text-org15874e8">
+<div id="outline-container-org5fbd096" class="outline-3">
+<h3 id="org5fbd096">clocking time (<a href="http://orgmode.org/org.html#Clocking-work-time">docu</a>)</h3>
+<div class="outline-text-3" id="text-org5fbd096">
 <ul class="org-ul">
 <li><code>C-c C-x C-i</code>     start clock on item</li>
 <li><code>C-c C-x C-o/x</code>   stop or cancel clock on item</li>
@@ -2240,9 +2062,9 @@ when being <b>in agenda</b> mode:
 </ul>
 </div>
 
-<div id="outline-container-org617f296" class="outline-4">
-<h4 id="org617f296">example sub-hierarchy with report</h4>
-<div class="outline-text-4" id="text-org617f296">
+<div id="outline-container-orgba3f01e" class="outline-4">
+<h4 id="orgba3f01e">example sub-hierarchy with report</h4>
+<div class="outline-text-4" id="text-orgba3f01e">
 <p>
 Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2012-11-19 Mon 11:17]</span></span>
 </p>
@@ -2270,23 +2092,43 @@ Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2012-1
 </table>
 </div>
 
-<div id="outline-container-org368c775" class="outline-5">
-<h5 id="org368c775">example item</h5>
-<div class="outline-text-5" id="text-org368c775">
+<div id="outline-container-org51985af" class="outline-5">
+<h5 id="org51985af">example item</h5>
+<div class="outline-text-5" id="text-org51985af">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2012-11-19 Mon 11:16]--[2012-11-19 Mon 11:17] </span> <span class="timestamp">(0:01)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2012-11-18 Sun 19:15]--[2012-11-18 Sun 19:23] </span> <span class="timestamp">(0:08)</span>
+</span>
+</p>
 </div>
 </div>
 
-<div id="outline-container-org2d6768a" class="outline-5">
-<h5 id="org2d6768a">another item</h5>
-<div class="outline-text-5" id="text-org2d6768a">
+<div id="outline-container-orgde0c4f5" class="outline-5">
+<h5 id="orgde0c4f5">another item</h5>
+<div class="outline-text-5" id="text-orgde0c4f5">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2012-11-18 Sun 19:26]--[2012-11-18 Sun 19:33] </span> <span class="timestamp">(0:07)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2012-11-17 Sat 16:25]--[2012-11-18 Sun 19:25] </span> <span class="timestamp">(27:00)</span>
+</span>
+</p>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgf8913c9" class="outline-3">
-<h3 id="orgf8913c9">dynamic blocks with ELISP (<a href="http://orgmode.org/org.html#Dynamic-blocks">docu</a>)</h3>
-<div class="outline-text-3" id="text-orgf8913c9">
+<div id="outline-container-org9d393ee" class="outline-3">
+<h3 id="org9d393ee">dynamic blocks with ELISP (<a href="http://orgmode.org/org.html#Dynamic-blocks">docu</a>)</h3>
+<div class="outline-text-3" id="text-org9d393ee">
 <ul class="org-ul">
 <li>execute ELISP functions in special blocks (see docu)</li>
 
@@ -2296,9 +2138,9 @@ Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2012-1
 </div>
 </div>
 
-<div id="outline-container-orgc00451c" class="outline-3">
-<h3 id="orgc00451c">source code (<a href="http://orgmode.org/org.html#Working-With-Source-Code">docu</a>)</h3>
-<div class="outline-text-3" id="text-orgc00451c">
+<div id="outline-container-orgf6ebad6" class="outline-3">
+<h3 id="orgf6ebad6">source code (<a href="http://orgmode.org/org.html#Working-With-Source-Code">docu</a>)</h3>
+<div class="outline-text-3" id="text-orgf6ebad6">
 <ul class="org-ul">
 <li>python "Hello World"</li>
 <li><code>C-c '</code>      <b>edit in native mode</b></li>
@@ -2315,9 +2157,9 @@ foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weigh
 </div>
 </div>
 
-<div id="outline-container-orgcf6edfb" class="outline-3">
-<h3 id="orgcf6edfb">babel (<a href="http://orgmode.org/org.html#Library-of-Babel">docu</a>)</h3>
-<div class="outline-text-3" id="text-orgcf6edfb">
+<div id="outline-container-orgcb4a224" class="outline-3">
+<h3 id="orgcb4a224">babel (<a href="http://orgmode.org/org.html#Library-of-Babel">docu</a>)</h3>
+<div class="outline-text-3" id="text-orgcb4a224">
 <ul class="org-ul">
 <li><a href="http://orgmode.org/org.html#Languages">http://orgmode.org/org.html#Languages</a>
 <ul class="org-ul">
@@ -2340,17 +2182,17 @@ foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weigh
 </ul>
 </div>
 
-<div id="outline-container-orgc2d2f33" class="outline-4">
-<h4 id="orgc2d2f33">babel simple (<a href="http://orgmode.org/org.html#Working-With-Source-Code">doc</a>)</h4>
-<div class="outline-text-4" id="text-orgc2d2f33">
+<div id="outline-container-org95fe6b0" class="outline-4">
+<h4 id="org95fe6b0">babel simple (<a href="http://orgmode.org/org.html#Working-With-Source-Code">doc</a>)</h4>
+<div class="outline-text-4" id="text-org95fe6b0">
 <ul class="org-ul">
 <li>some examples are taken from <a href="http://orgmode.org/worg/org-contrib/babel/intro.html">Worg: Introduction to Babel</a></li>
 </ul>
 </div>
 
-<div id="outline-container-org3b88f56" class="outline-5">
-<h5 id="org3b88f56">shell</h5>
-<div class="outline-text-5" id="text-org3b88f56">
+<div id="outline-container-org63abf45" class="outline-5">
+<h5 id="org63abf45">shell</h5>
+<div class="outline-text-5" id="text-org63abf45">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #D08770;">pwd</span>
 </pre>
@@ -2358,9 +2200,9 @@ foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weigh
 </div>
 </div>
 
-<div id="outline-container-org6f7dca0" class="outline-5">
-<h5 id="org6f7dca0">ruby</h5>
-<div class="outline-text-5" id="text-org6f7dca0">
+<div id="outline-container-orgbed2f9f" class="outline-5">
+<h5 id="orgbed2f9f">ruby</h5>
+<div class="outline-text-5" id="text-orgbed2f9f">
 <div class="org-src-container">
 <pre class="src src-ruby"><span style="color: #D08770;">require</span> <span style="color: #A3BE8C;">'date'</span>
 <span style="color: #A3BE8C;">"This file was last evaluated on </span><span style="color: #EBCB8B;">#{Date.today}</span><span style="color: #A3BE8C;">"</span>
@@ -2369,9 +2211,9 @@ foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weigh
 </div>
 </div>
 
-<div id="outline-container-org748114e" class="outline-5">
-<h5 id="org748114e">python</h5>
-<div class="outline-text-5" id="text-org748114e">
+<div id="outline-container-orgc8d8be5" class="outline-5">
+<h5 id="orgc8d8be5">python</h5>
+<div class="outline-text-5" id="text-orgc8d8be5">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #BF616A;">return</span> <span style="color: #9c91e4; font-weight: bold;">42</span> + <span style="color: #9c91e4; font-weight: bold;">7</span>
 </pre>
@@ -2379,9 +2221,9 @@ foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weigh
 </div>
 </div>
 
-<div id="outline-container-org034bd0c" class="outline-5">
-<h5 id="org034bd0c">ditaa</h5>
-<div class="outline-text-5" id="text-org034bd0c">
+<div id="outline-container-org126a8ba" class="outline-5">
+<h5 id="org126a8ba">ditaa</h5>
+<div class="outline-text-5" id="text-org126a8ba">
 
 <figure>
 <img src="blue.png" alt="blue.png">
@@ -2391,17 +2233,17 @@ foo<span style="color: #5E81AC;">(</span><span style="color: #9c91e4; font-weigh
 </div>
 </div>
 
-<div id="outline-container-org943e140" class="outline-4">
-<h4 id="org943e140">babel advanced</h4>
-<div class="outline-text-4" id="text-org943e140">
+<div id="outline-container-orgbd8ee62" class="outline-4">
+<h4 id="orgbd8ee62">babel advanced</h4>
+<div class="outline-text-4" id="text-orgbd8ee62">
 </div>
-<div id="outline-container-org4bfdead" class="outline-5">
-<h5 id="org4bfdead">session with shell and R</h5>
+<div id="outline-container-org4479276" class="outline-5">
+<h5 id="org4479276">session with shell and R</h5>
 </div>
 
-<div id="outline-container-org18ce876" class="outline-5">
-<h5 id="org18ce876">remote shell session</h5>
-<div class="outline-text-5" id="text-org18ce876">
+<div id="outline-container-orgb2f939a" class="outline-5">
+<h5 id="orgb2f939a">remote shell session</h5>
+<div class="outline-text-5" id="text-orgb2f939a">
 <ul class="org-ul">
 <li>Examples in this session is inspired by <a href="https://www.youtube.com/watch?v=dljNabciEGg&amp;feature=youtu.be">a great DevOps-demo video</a> by
 Howard Abrams (<a href="https://github.com/howardabrams/literate-devops-demo/blob/master/presentation.org">Demo material</a>)</li>
@@ -2427,11 +2269,11 @@ Doing something as root:
 </div>
 </div>
 
-<div id="outline-container-org18f2ab0" class="outline-5">
-<h5 id="org18f2ab0">table using python function to calculate values</h5>
-<div class="outline-text-5" id="text-org18f2ab0">
+<div id="outline-container-org55407a4" class="outline-5">
+<h5 id="org55407a4">table using python function to calculate values</h5>
+<div class="outline-text-5" id="text-org55407a4">
 <div class="org-src-container">
-<pre class="src src-python" id="org9741a76"><span style="color: #EBCB8B;">time</span> = epoch
+<pre class="src src-python" id="org9bb3e86"><span style="color: #EBCB8B;">time</span> = epoch
 <span style="color: #BF616A;">import</span> datetime
 <span style="color: #EBCB8B;">strtime</span> = <span style="color: #D08770;">str</span><span style="color: #5E81AC;">(</span>time<span style="color: #5E81AC;">)</span>
 <span style="color: #EBCB8B;">datetimestamp</span> = datetime.datetime.utcfromtimestamp<span style="color: #5E81AC;">(</span><span style="color: #D08770;">int</span><span style="color: #BF616A;">(</span>strtime<span style="color: #B48EAD;">[</span>:<span style="color: #9c91e4; font-weight: bold;">10</span><span style="color: #B48EAD;">]</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
@@ -2475,9 +2317,9 @@ Doing something as root:
 </div>
 </div>
 
-<div id="outline-container-org257d5db" class="outline-3">
-<h3 id="org257d5db">LaTeX (<a href="http://orgmode.org/org.html#Embedded-LaTeX">docu</a>)</h3>
-<div class="outline-text-3" id="text-org257d5db">
+<div id="outline-container-org9b8d5e4" class="outline-3">
+<h3 id="org9b8d5e4">LaTeX (<a href="http://orgmode.org/org.html#Embedded-LaTeX">docu</a>)</h3>
+<div class="outline-text-3" id="text-org9b8d5e4">
 <ul class="org-ul">
 <li><code>C-c '</code>        <b>open block native buffer</b></li>
 
@@ -2518,9 +2360,9 @@ This is \emph{emphasized} and \(y=x^2\) is an equation.
 </div>
 </div>
 
-<div id="outline-container-org24ab0b2" class="outline-3">
-<h3 id="org24ab0b2">export formats (<a href="http://orgmode.org/org.html#Exporting">docu</a>)</h3>
-<div class="outline-text-3" id="text-org24ab0b2">
+<div id="outline-container-org80da5d3" class="outline-3">
+<h3 id="org80da5d3">export formats (<a href="http://orgmode.org/org.html#Exporting">docu</a>)</h3>
+<div class="outline-text-3" id="text-org80da5d3">
 <ul class="org-ul">
 <li><code>C-c C-e</code>   <b>export menu</b></li>
 <li><code>C-c ;</code>     toggle COMMENT keyword on entry</li>
@@ -2545,9 +2387,9 @@ This is \emph{emphasized} and \(y=x^2\) is an equation.
 </ul>
 </div>
 
-<div id="outline-container-orgb5c93d8" class="outline-4">
-<h4 id="orgb5c93d8">Export options (<a href="http://orgmode.org/manual/Export-options.html">docu</a>)</h4>
-<div class="outline-text-4" id="text-orgb5c93d8">
+<div id="outline-container-org1fe129c" class="outline-4">
+<h4 id="org1fe129c">Export options (<a href="http://orgmode.org/manual/Export-options.html">docu</a>)</h4>
+<div class="outline-text-4" id="text-org1fe129c">
 <pre class="example">
 EXPORT_FILE_NAME: my-file-name
 EXPORT_TITLE: the title to be shown (default is the heading name)
@@ -2572,9 +2414,9 @@ EXPORT_OPTIONS: toc:nil author:nil ^:nil *:nil
 </div>
 </div>
 
-<div id="outline-container-orgd0c40ac" class="outline-3">
-<h3 id="orgd0c40ac">MobileOrg (<a href="http://orgmode.org/org.html#MobileOrg">docu</a>)</h3>
-<div class="outline-text-3" id="text-orgd0c40ac">
+<div id="outline-container-org4115dee" class="outline-3">
+<h3 id="org4115dee">MobileOrg (<a href="http://orgmode.org/org.html#MobileOrg">docu</a>)</h3>
+<div class="outline-text-3" id="text-org4115dee">
 <ul class="org-ul">
 <li>great <a href="http://mobileorg.ncogni.to/">iOS app</a>
 <ul class="org-ul">
@@ -2594,9 +2436,9 @@ EXPORT_OPTIONS: toc:nil author:nil ^:nil *:nil
 </div>
 </div>
 
-<div id="outline-container-org33937d5" class="outline-3">
-<h3 id="org33937d5">many many many many more features!</h3>
-<div class="outline-text-3" id="text-org33937d5">
+<div id="outline-container-org7ac487d" class="outline-3">
+<h3 id="org7ac487d">many many many many more features!</h3>
+<div class="outline-text-3" id="text-org7ac487d">
 <ul class="org-ul">
 <li>sections above are only a small fraction of the feature-set of Org-mode!</li>
 <li>read <a href="http://orgmode.org/org.html">the manual</a> or <a href="http://news.gmane.org/gmane.emacs.orgmode">the mailinglist</a> to get inspired :-)</li>
@@ -2604,9 +2446,9 @@ EXPORT_OPTIONS: toc:nil author:nil ^:nil *:nil
 </div>
 </div>
 
-<div id="outline-container-org3209933" class="outline-3">
-<h3 id="org3209933">customization per &#x2026;</h3>
-<div class="outline-text-3" id="text-org3209933">
+<div id="outline-container-orgaca0fe3" class="outline-3">
+<h3 id="orgaca0fe3">customization per &#x2026;</h3>
+<div class="outline-text-3" id="text-orgaca0fe3">
 <ul class="org-ul">
 <li>per configuration</li>
 <li>per file</li>
@@ -2617,9 +2459,9 @@ EXPORT_OPTIONS: toc:nil author:nil ^:nil *:nil
 </div>
 
 
-<div id="outline-container-org6861426" class="outline-2">
-<h2 id="org6861426">Still Missing Topics</h2>
-<div class="outline-text-2" id="text-org6861426">
+<div id="outline-container-org70eb845" class="outline-2">
+<h2 id="org70eb845">Still Missing Topics</h2>
+<div class="outline-text-2" id="text-org70eb845">
 <p>
 Things I did not include yet but are worth mentioning:
 </p>
@@ -2654,8 +2496,9 @@ This is a footnote with a simple number as label.
 </div></div>
 <div id="postamble" class="status">
 <p class="date">Date: 2016-04-24</p>
-<p class="author">Author: Karl Voit</p>
-<p class="date">Created: 2018-01-15 Mon 04:24</p>
+<p class="author">Author: Karl Voit Abhinav Tushar</p>
+<p class="date">Created: 2018-01-15 Mon 22:04</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 9.1.3)</p>
 <p class="validation"></p>
 </div>
 </body>
