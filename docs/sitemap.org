@@ -1,8 +1,10 @@
-# Created 2018-01-15 Mon 04:24
+# Created 2018-01-15 Mon 18:48
 #+TITLE: Sitemap
 #+AUTHOR: Abhinav Tushar
 - [[file:test.org][Org-mode Teaser Demo]]
 - [[file:index.org][pile]]
+- readings
+  - [[file:readings/reading-list.org][Reading List]]
 - subdir
   - [[file:subdir/test.org][Another thing]]
   - [[file:subdir/index.org][This is a subdir]]

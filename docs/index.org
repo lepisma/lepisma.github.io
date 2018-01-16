@@ -1,4 +1,4 @@
-# Created 2018-01-15 Mon 04:24
+# Created 2018-01-15 Mon 18:48
 #+TITLE: pile
 #+AUTHOR: Abhinav Tushar
 #+INFOJS_OPT: view:showall toc:nil mouse:nil
@@ -22,9 +22,12 @@ Things to do:
 - https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html#org74de1f7
 - Setup common navigation bar
 - title and time
-- tree style sitemap with page tags
+- tree style sitemap with page tags or index?
 - no sideborder in aside pre
 - fix fonts
+- style pesky div over code block
+- setupfile instead of in thing
+- theme before building site
 
 #+BEGIN_video
 #+HTML: <source src="movie.mp4" type="video/mp4">
