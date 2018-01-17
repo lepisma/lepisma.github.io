@@ -1,0 +1,102 @@
+#+TITLE: Erroring Oracle in Quantum Search
+#+SETUPFILE: ../assets/export.setup
+#+TAGS: physics exploration
+
+<p class="post-intro" markdown="1">
+What happens when the oracle in quantum search is wrong? Turns out that the
+resulting probabilities for finding items don't behave very robustly. This post
+tries to explore a few simple cases. Also a low-key reminder for starting
+projects early.
+</p>
+<!--more-->
+
+<span class="dropcap">F</span>or a course on Quantum Computation last semester,
+I toyed around with Grover's search algorithm which provides a quadratic speedup
+({% katex %}\mathcal{O}(\sqrt{N}){% endkatex %} as compared to {% katex
+%}\mathcal{O}(N){% endkatex %}) over classical search. Grover's search proceeds
+as a series of transformations on a prepared initial state comprising qubits
+representing probabilities of finding the {% katex %}N{% endkatex %} items that
+we are looking into. Using a black box function, the /oracle/, we get the following.
+
+* Quantum Search
+
+** Searching for {% katex %}M{% endkatex %} among {% katex %}N{% endkatex %}
+
+Using an /always/ correct oracle, its possible to solve the search problem with
+high probability in {% katex %}\mathcal{O}(N/M){% endkatex %} hits.
+
+<aside markdown="1">
+See Michel Boyer et al. “Tight bounds on quantum searching”. In: arXiv
+preprint [quant-ph/9605034](https://arxiv.org/abs/quant-ph/9605034) (1996) for
+exact details on the {% katex %}\mathcal{O}(N/M){% endkatex %} search.
+</aside>
+
+{% image_caption zoom %}
+/images/posts/quantum-search/five-twenty-no.svg
+
+There are two type of items. In the first panel, colored lines are the marked
+items, with around 0.2 probability of getting hit in the peak of the iterations
+for each of the 5 marked ones. The remaining 15 gray lines are the unmarked items.
+{% endimage_caption %}
+
+** Single error
+
+{% image_caption zoom %}
+/images/posts/quantum-search/five-twenty-one-bad.svg
+
+hello wrold
+{% endimage_caption %}
+
+{% image_caption zoom %}
+/images/posts/quantum-search/five-twenty-one-good.svg
+
+hello wrold
+{% endimage_caption %}
+
+* With 1 Error
+
+#+BEGIN_SRC python :session :exports none :results none
+  import sympy as sm
+
+  def show(form):
+      return f"""{{% katex display %}}
+  {sm.latex(form, evaluate=False)}
+  {{% endkatex %}}"""
+#+END_SRC
+
+Average probability of success is given by {% katex %}P_{av}{% endkatex %} which is
+the following expression:
+
+#+BEGIN_SRC python :session :exports both :results value raw
+N, M, sigma_l, l, k = sm.symbols("N M sigma_l \\bar{l}(0) \\bar{k}(0)")
+P_av = 1 - (N - M) * sigma_l ** 2 - 0.5 * ((N - M) * abs(l) ** 2 + M * k ** 2)
+show(P_av)
+#+END_SRC
+
+#+RESULTS:
+{% katex display %}
+- 0.5 M \bar{k}(0)^{2} - \sigma_{l}^{2} \left(- M + N\right) - 0.5 \left(- M + N\right) \left|{\bar{l}(0)}\right|^{2} + 1
+{% endkatex %}
+
+Simplifying we get:
+
+#+BEGIN_SRC python :session :exports both :results value raw
+show(P_av.subs(sigma_l, 0))
+#+END_SRC
+
+#+RESULTS:
+{% katex display %}
+- 0.5 M \bar{k}(0)^{2} - 0.5 \left(- M + N\right) \left|{\bar{l}(0)}\right|^{2} + 1
+{% endkatex %}
+
+#+BEGIN_SRC python :session :exports both :results value raw
+eq = sm.Eq(P_av, M**3 + 2*M**2 + 4*M + 8)
+show(eq)
+#+END_SRC
+
+#+RESULTS:
+{% katex display %}
+- 0.5 M \bar{k}(0)^{2} - \sigma_{l}^{2} \left(- M + N\right) - 0.5 \left(- M + N\right) \left|{\bar{l}(0)}\right|^{2} + 1 = M^{3} + 2 M^{2} + 4 M + 8
+{% endkatex %}
+
+* Random errors

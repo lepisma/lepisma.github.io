@@ -1,0 +1,6 @@
+#+TITLE: All the pages
+#+SETUPFILE: ./assets/export.setup
+
+Here are all the pages of this wiki
+
+#+INCLUDE: ./sitemap.org :lines "3-"

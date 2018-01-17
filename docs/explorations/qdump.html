@@ -4,7 +4,7 @@
 <!-- 2018-01-17 Wed 02:24 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>pile</title>
+<title>Erroring Oracle in Quantum Search</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -296,121 +296,166 @@ for the JavaScript code in this tag.
  <a accesskey="H" href="/pile"> HOME </a>
 </div><div id="content">
 <header>
-<h1 class="title">pile</h1>
+<h1 class="title">Erroring Oracle in Quantum Search</h1>
 </header><nav id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1f0f607">Title one</a></li>
-<li><a href="#orgc506b82">Hellow rolds sd</a>
+<li><a href="#orgd4d62f6">Quantum Search</a>
 <ul>
-<li><a href="#org3a535c6">Hellow</a></li>
+<li><a href="#org4b6fe54">Searching for {% katex %}M{% endkatex %} among {% katex %}N{% endkatex %}</a></li>
+<li><a href="#orge9ebdea">Single error</a></li>
 </ul>
 </li>
+<li><a href="#org9567db0">With 1 Error</a></li>
+<li><a href="#orgad0e99e">Random errors</a></li>
 </ul>
 </div>
 </nav>
 <p>
-Things to do:
+&lt;p class="post-intro" markdown="1"&gt;
+What happens when the oracle in quantum search is wrong? Turns out that the
+resulting probabilities for finding items don't behave very robustly. This post
+tries to explore a few simple cases. Also a low-key reminder for starting
+projects early.
+&lt;/p&gt;
+&lt;!&#x2013;more&#x2013;&gt;
 </p>
-<ul class="org-ul">
-<li>Setup export vars in options for org</li>
-<li>Use html5 export with fancy on</li>
-<li>latex using katex. might have to disable mathjax</li>
-<li>modify preamble postamble</li>
-<li>up and home links</li>
-<li>id based links html</li>
-<li>custom css <a href="https://orgmode.org/manual/CSS-support.html#CSS-support">https://orgmode.org/manual/CSS-support.html#CSS-support</a> also
-<a href="https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html#orge9218e3">https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html#orge9218e3</a></li>
-<li>Org export hooks &amp; filters should work for me</li>
-<li>extending backend
-<a href="https://orgmode.org/manual/Advanced-configuration.html#Advanced-configuration">https://orgmode.org/manual/Advanced-configuration.html#Advanced-configuration</a></li>
-<li>org-publish
-<ul class="org-ul">
-<li>:htmlized-source</li>
-<li>sitemap</li>
-<li>custom function</li>
-</ul></li>
-<li><a href="https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html#org74de1f7">https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html#org74de1f7</a></li>
-<li>Setup common navigation bar</li>
-<li>title and time</li>
-<li>tree style sitemap with page tags or index?</li>
-<li>no sideborder in aside pre</li>
-<li>fix fonts</li>
-<li>style pesky div over code block</li>
-<li>setupfile instead of in thing</li>
-<li>theme before building site</li>
-</ul>
 
-<video controls="controls" width="350">
-<source src="movie.mp4" type="video/mp4">
-<source src="movie.ogg" type="video/ogg">
 <p>
-Your browser does not support the video tag.
+&lt;span class="dropcap"&gt;F&lt;/span&gt;or a course on Quantum Computation last semester,
+I toyed around with Grover's search algorithm which provides a quadratic speedup
+({% katex %}\mathcal{O}(\sqrt{N}){% endkatex %} as compared to {% katex
+%}\mathcal{O}(N){% endkatex %}) over classical search. Grover's search proceeds
+as a series of transformations on a prepared initial state comprising qubits
+representing probabilities of finding the {% katex %}N{% endkatex %} items that
+we are looking into. Using a black box function, the <i>oracle</i>, we get the following.
 </p>
-</video>
 
-<aside>
+<div id="outline-container-orgd4d62f6" class="outline-2">
+<h2 id="orgd4d62f6">Quantum Search</h2>
+<div class="outline-text-2" id="text-orgd4d62f6">
+</div>
+<div id="outline-container-org4b6fe54" class="outline-3">
+<h3 id="org4b6fe54">Searching for {% katex %}M{% endkatex %} among {% katex %}N{% endkatex %}</h3>
+<div class="outline-text-3" id="text-org4b6fe54">
 <p>
-Lorem <i>ipsum</i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
-hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl,
-tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus
-et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec
-vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.
-Nullam rutrum.  Nam vestibulum accumsan nisl.
+Using an <i>always</i> correct oracle, its possible to solve the search problem with
+high probability in {% katex %}\mathcal{O}(N/M){% endkatex %} hits.
+</p>
+
+<p>
+&lt;aside markdown="1"&gt;
+See Michel Boyer et al. “Tight bounds on quantum searching”. In: arXiv
+preprint [quant-ph/9605034](<a href="https://arxiv.org/abs/quant-ph/9605034">https://arxiv.org/abs/quant-ph/9605034</a>) (1996) for
+exact details on the {% katex %}\mathcal{O}(N/M){% endkatex %} search.
+&lt;/aside&gt;
+</p>
+
+<p>
+{% image_caption zoom %}
+/images/posts/quantum-search/five-twenty-no.svg
+</p>
+
+<p>
+There are two type of items. In the first panel, colored lines are the marked
+items, with around 0.2 probability of getting hit in the peak of the iterations
+for each of the 5 marked ones. The remaining 15 gray lines are the unmarked items.
+{% endimage_caption %}
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge9ebdea" class="outline-3">
+<h3 id="orge9ebdea">Single error</h3>
+<div class="outline-text-3" id="text-orge9ebdea">
+<p>
+{% image_caption zoom %}
+/images/posts/quantum-search/five-twenty-one-bad.svg
+</p>
+
+<p>
+hello wrold
+{% endimage_caption %}
+</p>
+
+<p>
+{% image_caption zoom %}
+/images/posts/quantum-search/five-twenty-one-good.svg
+</p>
+
+<p>
+hello wrold
+{% endimage_caption %}
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9567db0" class="outline-2">
+<h2 id="org9567db0">With 1 Error</h2>
+<div class="outline-text-2" id="text-org9567db0">
+<p>
+Average probability of success is given by {% katex %}P_{av}{% endkatex %} which is
+the following expression:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #BF616A;">import</span> test
-what <span style="color: #BF616A;">is</span> this man!
+<pre class="src src-python"><span style="color: #EBCB8B;">N</span>, <span style="color: #EBCB8B;">M</span>, <span style="color: #EBCB8B;">sigma_l</span>, <span style="color: #EBCB8B;">l</span>, <span style="color: #EBCB8B;">k</span> = sm.symbols<span style="color: #5E81AC;">(</span><span style="color: #A3BE8C;">"N M sigma_l \\bar{l}(0) \\bar{k}(0)"</span><span style="color: #5E81AC;">)</span>
+<span style="color: #EBCB8B;">P_av</span> = <span style="color: #9c91e4; font-weight: bold;">1</span> - <span style="color: #5E81AC;">(</span>N - M<span style="color: #5E81AC;">)</span> * sigma_l ** <span style="color: #9c91e4; font-weight: bold;">2</span> - <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">5</span> * <span style="color: #5E81AC;">(</span><span style="color: #BF616A;">(</span>N - M<span style="color: #BF616A;">)</span> * <span style="color: #D08770;">abs</span><span style="color: #BF616A;">(</span>l<span style="color: #BF616A;">)</span> ** <span style="color: #9c91e4; font-weight: bold;">2</span> + M * k ** <span style="color: #9c91e4; font-weight: bold;">2</span><span style="color: #5E81AC;">)</span>
+show<span style="color: #5E81AC;">(</span>P_av<span style="color: #5E81AC;">)</span>
 </pre>
 </div>
-</aside>
 
-<div id="outline-container-org1f0f607" class="outline-2">
-<h2 id="org1f0f607">Title one</h2>
-<div class="outline-text-2" id="text-org1f0f607">
 <p>
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci
-commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget,
-lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac
-felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui
-dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet
-quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet
-tortor.  Nam euismod tellus id erat.
+{% katex display %}
+</p>
+<ul class="org-ul">
+<li>0.5 M \bar{k}(0)^{2} - &sigma;_{l}^{2} \left(- M + N\right) - 0.5 \left(- M + N\right) \left|{\bar{l}(0)}\right|^{2} + 1</li>
+</ul>
+<p>
+{% endkatex %}
 </p>
 
 <p>
-\[ f(x) = x + a \]
+Simplifying we get:
 </p>
 
-\begin{align*}
-\alpha + \gamma + \sum(i) = f(x)
-\end{align*}
-</div>
+<div class="org-src-container">
+<pre class="src src-python">show<span style="color: #5E81AC;">(</span>P_av.subs<span style="color: #BF616A;">(</span>sigma_l, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+</pre>
 </div>
 
-<div id="outline-container-orgc506b82" class="outline-2">
-<h2 id="orgc506b82">Hellow rolds sd</h2>
-<div class="outline-text-2" id="text-orgc506b82">
 <p>
-Mauris mollis tincidunt felis.
+{% katex display %}
 </p>
+<ul class="org-ul">
+<li>0.5 M \bar{k}(0)^{2} - 0.5 \left(- M + N\right) \left|{\bar{l}(0)}\right|^{2} + 1</li>
+</ul>
+<p>
+{% endkatex %}
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #EBCB8B;">eq</span> = sm.Eq<span style="color: #5E81AC;">(</span>P_av, M**<span style="color: #9c91e4; font-weight: bold;">3</span> + <span style="color: #9c91e4; font-weight: bold;">2</span>*M**<span style="color: #9c91e4; font-weight: bold;">2</span> + <span style="color: #9c91e4; font-weight: bold;">4</span>*M + <span style="color: #9c91e4; font-weight: bold;">8</span><span style="color: #5E81AC;">)</span>
+show<span style="color: #5E81AC;">(</span>eq<span style="color: #5E81AC;">)</span>
+</pre>
 </div>
 
-<div id="outline-container-org3a535c6" class="outline-3">
-<h3 id="org3a535c6">Hellow</h3>
-<div class="outline-text-3" id="text-org3a535c6">
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit
-tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis
-parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.
-Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.
-Nam vestibulum accumsan nisl.
+{% katex display %}
+</p>
+<ul class="org-ul">
+<li>0.5 M \bar{k}(0)^{2} - &sigma;_{l}^{2} \left(- M + N\right) - 0.5 \left(- M + N\right) \left|{\bar{l}(0)}\right|^{2} + 1 = M^{3} + 2 M^{2} + 4 M + 8</li>
+</ul>
+<p>
+{% endkatex %}
 </p>
 </div>
 </div>
+
+<div id="outline-container-orgad0e99e" class="outline-2">
+<h2 id="orgad0e99e">Random errors</h2>
 </div>
 </div>
 <div id="postamble" class="status">

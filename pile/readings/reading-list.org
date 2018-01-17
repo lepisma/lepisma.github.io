@@ -1,5 +1,5 @@
 #+TITLE: Reading List
-#+SETUPFILE: ../export.setup
+#+SETUPFILE: ../assets/export.setup
 
 #+TODO: READING NEXT | READ
 

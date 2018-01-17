@@ -1,4 +1,2 @@
-#+TITLE: Readings
+#+TITLE: pile
 #+SETUPFILE: ../assets/export.setup
-
-Hello world

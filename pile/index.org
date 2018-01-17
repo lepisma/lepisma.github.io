@@ -1,5 +1,5 @@
 #+TITLE: pile
-#+SETUPFILE: ./export.setup
+#+SETUPFILE: ./assets/export.setup
 
 Things to do:
 - Setup export vars in options for org

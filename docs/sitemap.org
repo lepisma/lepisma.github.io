@@ -1,9 +1,0 @@
-# Created 2018-01-15 Mon 22:09
-#+TITLE: Sitemap
-#+AUTHOR: Abhinav Tushar
-- [[file:theindex.org][Index]]
-- [[file:test.org][Org-mode Teaser Demo]]
-- [[file:index.org][pile]]
-- readings
-  - [[file:readings/reading-list.org][Reading List]]
-  - [[file:readings/index.org][Readings]]

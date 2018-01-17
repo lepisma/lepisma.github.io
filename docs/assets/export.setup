@@ -1,0 +1,56 @@
+# -*- mode: org; -*-
+
+#+AUTHOR: Abhinav Tushar
+#+OPTIONS: *:t -:t ::t <:t ^:nil broken-links:mark c:t creator:t
+#+OPTIONS: d:t date:t e:t email:nil f:t H:6 inline:t num:nil p:t
+#+OPTIONS: pri:t prop:t stat:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+
+#+HTML_LINK_HOME: /pile
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/pile/assets/css/animate.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" />
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/pace.min.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/jquery.lettering-0.6.1.min.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/jquery.textillate.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/custom.js"></script>
+
+# Icons and stuff
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+#+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+#+HTML_HEAD: <link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+#+HTML_HEAD: <link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+#+HTML_HEAD: <link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+#+HTML_HEAD: <link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+#+HTML_HEAD: <link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+#+HTML_HEAD: <meta name="application-name" content="&nbsp;" />
+#+HTML_HEAD: <meta name="msapplication-TileColor" content="#FFFFFF" />
+#+HTML_HEAD: <meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+#+HTML_HEAD: <meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+#+HTML_HEAD: <meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+#+HTML_HEAD: <meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+#+HTML_HEAD: <meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+
+# Root url fallbacks for local build AND most likely the next hosting location
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/assets/css/animate.min.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+#+HTML_HEAD_EXTRA: <script src="/assets/js/pace.min.js"></script>
+#+HTML_HEAD_EXTRA: <script src="/assets/js/jquery.zoomooz.min.js"></script>
+#+HTML_HEAD_EXTRA: <script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
+#+HTML_HEAD_EXTRA: <script src="/assets/js/jquery.textillate.js"></script>
+#+HTML_HEAD_EXTRA: <script src="/assets/js/custom.js"></script>
