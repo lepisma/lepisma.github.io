@@ -22,7 +22,7 @@ open, but I do have a bunch of perpetually partially complete pieces scattered
 around which don't fit in a blog.
 
 A personal publishing system should work well with my workflow which is
-(usually) less driven by deadlines/checkpoints and more on explorations.
+(usually) less driven by deadlines/checkpoints and more by explorations.
 
 # A personal wiki
 
