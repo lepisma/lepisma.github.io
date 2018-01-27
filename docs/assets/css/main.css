@@ -467,13 +467,19 @@ header .site-nav {
   color: #7b7b7b;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 2.0; }
+  line-height: 2.0;
+  margin-top: 22px; }
   header .site-nav a {
     color: #7b7b7b;
     text-decoration: none;
     margin-left: 10px; }
     header .site-nav a:hover {
       color: #444; }
+  header .site-nav a:first-child {
+    margin-left: 0; }
+
+header > div {
+  display: inherit; }
 
 @media (min-width: 1000px) {
   #content, header, .page-header {
@@ -483,7 +489,8 @@ header .site-nav {
   header .site-title {
     float: left; }
   header .site-nav {
-    float: right; } }
+    float: right;
+    margin-top: 0; } }
 .dropcap {
   float: left;
   font-size: 55px;

@@ -246,7 +246,15 @@ header {
       }
       margin-left: 10px;
     }
+    a:first-child {
+      margin-left: 0;
+    }
+    margin-top: 22px;
   }
+}
+
+header > div {
+  display: inherit;
 }
 
 @media (min-width: 1000px) {
@@ -261,6 +269,7 @@ header {
     }
     .site-nav {
       float: right;
+      margin-top: 0;
     }
   }
 }
