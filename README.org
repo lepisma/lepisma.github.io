@@ -10,6 +10,9 @@ Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.gi
   ./deploy.sh
 #+END_SRC
 
+#+RESULTS: om-deploy
+: 3404c9bea9247f504c6b74fd76b7bbd6
+
 #+name: om-build-org
 #+BEGIN_SRC emacs-lisp :results none
   (require 'f)
