@@ -217,7 +217,16 @@ pre.src:hover::before {
 
 // Layout
 #content, header, .page-header {
-  margin: 40px;
+  margin: 32px;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
 }
 
 header {
@@ -226,6 +235,17 @@ header {
   }
   .site-nav {
     text-align: center;
+    @include light-meta();
+    font-weight: bold;
+    line-height: 2.0;
+    a {
+      color: $text-light;
+      text-decoration: none;
+      &:hover {
+        color: $text-gray;
+      }
+      margin-left: 10px;
+    }
   }
 }
 
@@ -237,7 +257,7 @@ header {
 
   header {
     .site-title {
-      text-align: left;
+      float: left;
     }
     .site-nav {
       float: right;
@@ -267,6 +287,7 @@ body {
 
 // Main blog styling
 .page-header {
+  margin-top: 80px;
   h1 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -302,7 +323,7 @@ body {
 }
 
 .done {
-  color: #548b54;
+  color: $text-light;
 }
 
 .tag {
@@ -323,5 +344,27 @@ figure {
     }
     margin-top: 10px;
     @include light-para(15px);
+  }
+}
+
+#footnotes {
+  margin-top: 70px;
+  padding-top: 30px;
+  border-width: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: $back-light;
+  @include light-para(15px);
+
+  p, li {
+    @include light-para(15px);
+  }
+
+  h2.footnotes {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    letter-spacing: 5px;
   }
 }

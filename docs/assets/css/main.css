@@ -446,12 +446,34 @@ pre.src:hover::before {
   display: none !important; }
 
 #content, header, .page-header {
-  margin: 40px; }
+  margin: 32px; }
+
+.clearfix::after {
+  clear: both; }
+
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table; }
 
 header .site-title {
   text-align: center; }
 header .site-nav {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2.0; }
+  header .site-nav a {
+    color: #7b7b7b;
+    text-decoration: none;
+    margin-left: 10px; }
+    header .site-nav a:hover {
+      color: #444; }
 
 @media (min-width: 1000px) {
   #content, header, .page-header {
@@ -459,7 +481,7 @@ header .site-nav {
     max-width: 720px; }
 
   header .site-title {
-    text-align: left; }
+    float: left; }
   header .site-nav {
     float: right; } }
 .dropcap {
@@ -478,19 +500,21 @@ body {
   font-size: 16px;
   font-family: 'Merriweather'; }
 
-.page-header h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-transform: none; }
-.page-header .page-meta {
-  font-family: 'Open Sans';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.9;
-  color: #7b7b7b;
-  text-transform: uppercase; }
+.page-header {
+  margin-top: 80px; }
+  .page-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: none; }
+  .page-header .page-meta {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.9;
+    color: #7b7b7b;
+    text-transform: uppercase; }
 
 #content .page-intro {
   font-family: 'Open Sans';
@@ -534,7 +558,7 @@ body {
   color: #dc752f; }
 
 .done {
-  color: #548b54; }
+  color: #7b7b7b; }
 
 .tag {
   background: white; }
@@ -574,6 +598,31 @@ figure figcaption {
     line-height: 1.9;
     color: #7b7b7b;
     text-transform: uppercase; }
+
+#footnotes {
+  margin-top: 70px;
+  padding-top: 30px;
+  border-width: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #efefef;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444; }
+  #footnotes p, #footnotes li {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444; }
+  #footnotes h2.footnotes {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    letter-spacing: 5px; }
 
 aside {
   background-color: #efefef;
