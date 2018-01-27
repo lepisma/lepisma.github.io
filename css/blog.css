@@ -1242,7 +1242,8 @@ h3, h4, h5, h6 {
   .site-title ul {
     display: block !important;
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     .site-title ul img {
       border-radius: 2px;
       max-width: 32px; }
@@ -1269,6 +1270,84 @@ aside {
   padding: 20px;
   padding-bottom: 10px;
   line-height: 1.6 !important; }
+  aside figcaption a,
+  aside li a,
+  aside p a {
+    text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+    background-image: linear-gradient(#444, #444);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0% 95%;
+    color: #444;
+    text-decoration: none;
+    color: #444;
+    border-radius: 2px; }
+    aside figcaption a::selection,
+    aside li a::selection,
+    aside p a::selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    aside figcaption a::-moz-selection,
+    aside li a::-moz-selection,
+    aside p a::-moz-selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    aside figcaption a *,
+    aside figcaption a *:after, aside figcaption a:after,
+    aside figcaption a *:before, aside figcaption a:before,
+    aside li a *,
+    aside li a *:after,
+    aside li a:after,
+    aside li a *:before,
+    aside li a:before,
+    aside p a *,
+    aside p a *:after,
+    aside p a:after,
+    aside p a *:before,
+    aside p a:before {
+      text-shadow: none; }
+    aside figcaption a:visited,
+    aside li a:visited,
+    aside p a:visited {
+      color: #444; }
+    aside figcaption a:hover,
+    aside li a:hover,
+    aside p a:hover {
+      text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+      background-image: linear-gradient(#444, #444);
+      background-size: 1px 1px;
+      background-repeat: repeat-x;
+      background-position: 0% 95%;
+      color: #444;
+      text-decoration: none; }
+      aside figcaption a:hover::selection,
+      aside li a:hover::selection,
+      aside p a:hover::selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a:hover::-moz-selection,
+      aside li a:hover::-moz-selection,
+      aside p a:hover::-moz-selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a:hover *,
+      aside figcaption a:hover *:after, aside figcaption a:hover:after,
+      aside figcaption a:hover *:before, aside figcaption a:hover:before,
+      aside li a:hover *,
+      aside li a:hover *:after,
+      aside li a:hover:after,
+      aside li a:hover *:before,
+      aside li a:hover:before,
+      aside p a:hover *,
+      aside p a:hover *:after,
+      aside p a:hover:after,
+      aside p a:hover *:before,
+      aside p a:hover:before {
+        text-shadow: none; }
+      aside figcaption a:hover:visited,
+      aside li a:hover:visited,
+      aside p a:hover:visited {
+        color: #444; }
   aside p {
     font-family: 'Open Sans';
     font-weight: normal;
@@ -1290,6 +1369,83 @@ aside {
     background-color: #fff;
     max-width: 45% !important;
     margin-right: -52%; }
+    aside figcaption a,
+    aside li a,
+    aside p a {
+      text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+      background-image: linear-gradient(#444, #444);
+      background-size: 1px 1px;
+      background-repeat: repeat-x;
+      background-position: 0% 95%;
+      color: #444;
+      text-decoration: none; }
+      aside figcaption a::selection,
+      aside li a::selection,
+      aside p a::selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a::-moz-selection,
+      aside li a::-moz-selection,
+      aside p a::-moz-selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a *,
+      aside figcaption a *:after, aside figcaption a:after,
+      aside figcaption a *:before, aside figcaption a:before,
+      aside li a *,
+      aside li a *:after,
+      aside li a:after,
+      aside li a *:before,
+      aside li a:before,
+      aside p a *,
+      aside p a *:after,
+      aside p a:after,
+      aside p a *:before,
+      aside p a:before {
+        text-shadow: none; }
+      aside figcaption a:visited,
+      aside li a:visited,
+      aside p a:visited {
+        color: #444; }
+      aside figcaption a:hover,
+      aside li a:hover,
+      aside p a:hover {
+        text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+        background-image: linear-gradient(#444, #444);
+        background-size: 1px 1px;
+        background-repeat: repeat-x;
+        background-position: 0% 95%;
+        color: #444;
+        text-decoration: none;
+        background-color: #efefef; }
+        aside figcaption a:hover::selection,
+        aside li a:hover::selection,
+        aside p a:hover::selection {
+          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+          background: #c8c8c8; }
+        aside figcaption a:hover::-moz-selection,
+        aside li a:hover::-moz-selection,
+        aside p a:hover::-moz-selection {
+          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+          background: #c8c8c8; }
+        aside figcaption a:hover *,
+        aside figcaption a:hover *:after, aside figcaption a:hover:after,
+        aside figcaption a:hover *:before, aside figcaption a:hover:before,
+        aside li a:hover *,
+        aside li a:hover *:after,
+        aside li a:hover:after,
+        aside li a:hover *:before,
+        aside li a:hover:before,
+        aside p a:hover *,
+        aside p a:hover *:after,
+        aside p a:hover:after,
+        aside p a:hover *:before,
+        aside p a:hover:before {
+          text-shadow: none; }
+        aside figcaption a:hover:visited,
+        aside li a:hover:visited,
+        aside p a:hover:visited {
+          color: #444; }
     aside::before {
       content: ''; } }
 table {
@@ -1317,7 +1473,6 @@ figure {
     padding-top: 10px;
     text-align: center; }
 
-aside a,
 figcaption a,
 p a,
 li a {
@@ -1330,26 +1485,19 @@ li a {
   text-decoration: none;
   color: #000;
   border-radius: 2px; }
-  aside a::selection,
   figcaption a::selection,
   p a::selection,
   li a::selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8; }
-  aside a::-moz-selection,
   figcaption a::-moz-selection,
   p a::-moz-selection,
   li a::-moz-selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8; }
-  aside a *,
-  aside a *:after, aside a:after,
-  aside a *:before, aside a:before,
   figcaption a *,
-  figcaption a *:after,
-  figcaption a:after,
-  figcaption a *:before,
-  figcaption a:before,
+  figcaption a *:after, figcaption a:after,
+  figcaption a *:before, figcaption a:before,
   p a *,
   p a *:after,
   p a:after,
@@ -1361,12 +1509,10 @@ li a {
   li a *:before,
   li a:before {
     text-shadow: none; }
-  aside a:visited,
   figcaption a:visited,
   p a:visited,
   li a:visited {
     color: #000; }
-  aside a:hover,
   figcaption a:hover,
   p a:hover,
   li a:hover {
@@ -1378,26 +1524,19 @@ li a {
     color: #000;
     text-decoration: none;
     background-color: #efefef; }
-    aside a:hover::selection,
     figcaption a:hover::selection,
     p a:hover::selection,
     li a:hover::selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
-    aside a:hover::-moz-selection,
     figcaption a:hover::-moz-selection,
     p a:hover::-moz-selection,
     li a:hover::-moz-selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
-    aside a:hover *,
-    aside a:hover *:after, aside a:hover:after,
-    aside a:hover *:before, aside a:hover:before,
     figcaption a:hover *,
-    figcaption a:hover *:after,
-    figcaption a:hover:after,
-    figcaption a:hover *:before,
-    figcaption a:hover:before,
+    figcaption a:hover *:after, figcaption a:hover:after,
+    figcaption a:hover *:before, figcaption a:hover:before,
     p a:hover *,
     p a:hover *:after,
     p a:hover:after,
@@ -1409,7 +1548,6 @@ li a {
     li a:hover *:before,
     li a:hover:before {
       text-shadow: none; }
-    aside a:hover:visited,
     figcaption a:hover:visited,
     p a:hover:visited,
     li a:hover:visited {

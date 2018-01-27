@@ -293,6 +293,110 @@ code {
   font-size: 15px;
   padding: 0 5px; }
 
+figcaption a,
+p a,
+li a {
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  background-image: linear-gradient(#000, #000);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #000;
+  text-decoration: none;
+  color: #000;
+  border-radius: 2px; }
+  figcaption a::selection,
+  p a::selection,
+  li a::selection {
+    text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+    background: #c8c8c8; }
+  figcaption a::-moz-selection,
+  p a::-moz-selection,
+  li a::-moz-selection {
+    text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+    background: #c8c8c8; }
+  figcaption a *,
+  figcaption a *:after, figcaption a:after,
+  figcaption a *:before, figcaption a:before,
+  p a *,
+  p a *:after,
+  p a:after,
+  p a *:before,
+  p a:before,
+  li a *,
+  li a *:after,
+  li a:after,
+  li a *:before,
+  li a:before {
+    text-shadow: none; }
+  figcaption a:visited,
+  p a:visited,
+  li a:visited {
+    color: #000; }
+  figcaption a:hover,
+  p a:hover,
+  li a:hover {
+    text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+    background-image: linear-gradient(#000, #000);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0% 95%;
+    color: #000;
+    text-decoration: none;
+    background-color: #efefef; }
+    figcaption a:hover::selection,
+    p a:hover::selection,
+    li a:hover::selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    figcaption a:hover::-moz-selection,
+    p a:hover::-moz-selection,
+    li a:hover::-moz-selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    figcaption a:hover *,
+    figcaption a:hover *:after, figcaption a:hover:after,
+    figcaption a:hover *:before, figcaption a:hover:before,
+    p a:hover *,
+    p a:hover *:after,
+    p a:hover:after,
+    p a:hover *:before,
+    p a:hover:before,
+    li a:hover *,
+    li a:hover *:after,
+    li a:hover:after,
+    li a:hover *:before,
+    li a:hover:before {
+      text-shadow: none; }
+    figcaption a:hover:visited,
+    p a:hover:visited,
+    li a:hover:visited {
+      color: #000; }
+
+.btn {
+  padding: 7px 14px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #efefef;
+  border-radius: 4px;
+  font-family: 'Open Sans';
+  font-variant: all-small-caps;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 2px;
+  background-image: none; }
+  .btn:hover {
+    background-color: #efefef;
+    background-image: none; }
+
+.btn.disabled {
+  color: #7b7b7b; }
+
+.image-link, .image-link:hover {
+  text-decoration: none;
+  background: none;
+  text-shadow: none; }
+
 a {
   color: #002642;
   text-decoration: none; }
@@ -354,48 +458,6 @@ a {
       font-size: 18px; }
       #main-content .section .section-text img {
         width: 100%; }
-      #main-content .section .section-text a {
-        text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
-        background-image: linear-gradient(#222, #222);
-        background-size: 1px 1px;
-        background-repeat: repeat-x;
-        background-position: 0% 95%;
-        color: #222;
-        text-decoration: none;
-        border-radius: 2px; }
-        #main-content .section .section-text a::selection {
-          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
-          background: #c8c8c8; }
-        #main-content .section .section-text a::-moz-selection {
-          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
-          background: #c8c8c8; }
-        #main-content .section .section-text a *,
-        #main-content .section .section-text a *:after, #main-content .section .section-text a:after,
-        #main-content .section .section-text a *:before, #main-content .section .section-text a:before {
-          text-shadow: none; }
-        #main-content .section .section-text a:visited {
-          color: #222; }
-        #main-content .section .section-text a:hover {
-          background-color: #efefef;
-          text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
-          background-image: linear-gradient(#222, #222);
-          background-size: 1px 1px;
-          background-repeat: repeat-x;
-          background-position: 0% 95%;
-          color: #222;
-          text-decoration: none; }
-          #main-content .section .section-text a:hover::selection {
-            text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
-            background: #c8c8c8; }
-          #main-content .section .section-text a:hover::-moz-selection {
-            text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
-            background: #c8c8c8; }
-          #main-content .section .section-text a:hover *,
-          #main-content .section .section-text a:hover *:after, #main-content .section .section-text a:hover:after,
-          #main-content .section .section-text a:hover *:before, #main-content .section .section-text a:hover:before {
-            text-shadow: none; }
-          #main-content .section .section-text a:hover:visited {
-            color: #222; }
 
 footer {
   background-color: #efefef;

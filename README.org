@@ -2,11 +2,18 @@
 
 Personal [[https://lepisma.github.io/about][home page]] and [[https://lepisma.github.io][blog]].
 
+/org-make tasks follow/
+
 #+name: om-deploy
-#+BEGIN_SRC bash :exports none :results none :async
-bundle exec jekyll build
-./deploy.sh
+#+BEGIN_SRC bash :results none :async
+  bundle exec jekyll build
+  ./deploy.sh
 #+END_SRC
 
-#+RESULTS: om-deploy
-: 02ddfb1b08fc1f0a3a0624a298b78308
+#+name: om-build-org
+#+BEGIN_SRC emacs-lisp :results none
+  (require 'f)
+  (require 'dash)
+  (load (f-full "./omd.el"))
+  (-map #'omd-export-post (-remove #'omd-post-uptodate? (omd-posts)))
+#+END_SRC
