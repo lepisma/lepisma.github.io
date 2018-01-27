@@ -1,2 +1,6 @@
 #+TITLE: pile
 #+SETUPFILE: ../assets/export.setup
+
+
+Some stuff on dynamic modules here https://phst.github.io/emacs-modules#vec_get
+Also check joymacs and esvm.

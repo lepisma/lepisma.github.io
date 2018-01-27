@@ -2,9 +2,6 @@
 
 - [[file:allpages.org][All the pages]]
 - [[file:index.org][pile]]
-- about
-  - [[file:about/index.org][pile]]
-  - [[file:about/employment.org][pile]]
 - emacs
   - [[file:emacs/til.org][pile]]
   - [[file:emacs/index.org][pile]]
@@ -13,16 +10,13 @@
 - evolution
   - [[file:evolution/index.org][pile]]
 - explorations
+  - [[file:explorations/completion-series.org][Completion Series]]
   - [[file:explorations/qdump.org][Erroring Oracle in Quantum Search]]
   - [[file:explorations/index.org][pile]]
-- misc
-  - [[file:misc/index.org][pile]]
 - ml
   - [[file:ml/index.org][pile]]
 - music
   - [[file:music/index.org][pile]]
-- old-blog
-  - [[file:old-blog/index.org][pile]]
 - programming
   - [[file:programming/index.org][pile]]
 - readings
@@ -30,5 +24,5 @@
   - [[file:readings/index.org][Readings]]
   - [[file:readings/clippings.org][pile]]
   - [[file:readings/bookmarks.org][pile]]
-- rice
-  - [[file:rice/index.org][pile]]
+- writings
+  - [[file:writings/index.org][pile]]
