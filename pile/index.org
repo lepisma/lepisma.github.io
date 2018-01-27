@@ -3,11 +3,13 @@
 
 Things to do [fn:1]:
 
-- [ ] latex using katex. might have to disable mathjax
-- [ ]  custom css https://orgmode.org/manual/CSS-support.html#CSS-support also
-  https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html#orge9218e3
-  https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html#org74de1f7
-- [ ]  Custom sitemap
+- [ ] Setup latex using katex. might have to disable mathjax
+- [X] Custom css
+- [ ] Custom sitemap
+
+Really good resources for org based web publishing setup:
+- https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html#orge9218e3
+- https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html#org74de1f7
 
 #+ATTR_HTML: :controls controls :width 350
 #+BEGIN_video
