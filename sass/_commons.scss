@@ -31,8 +31,6 @@ $text-dark: $c1;
   src: url('../fonts/BebasNeue Bold.otf');
 }
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-
 @font-face {
   font-family: "et-book";
   src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
@@ -136,7 +134,7 @@ $text-dark: $c1;
 
 @mixin tag() {
   @include button(2px, 13px, 4px);
-  line-height: 2.5em;
+  line-height: 8px;
   white-space: nowrap;
 }
 
@@ -186,7 +184,6 @@ $text-dark: $c1;
 ul, ol {
   list-style-position: outside;
   padding: 0;
-  margin: 30px 0;
 }
 
 ul ul, ol ol {
@@ -200,4 +197,131 @@ ul ul ul, ol ol ol {
 // Image zooms
 img.zoomTarget:hover {
   cursor: default !important;
+}
+
+hr {
+  border: none;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: $back-light;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+// Hide some divs
+#table-of-contents,
+#org-div-home-and-up,
+pre.src:hover::before {
+  display: none !important;
+}
+
+// Layout
+#content, header, .page-header {
+  margin: 40px;
+}
+
+header {
+  .site-title {
+    text-align: center;
+  }
+  .site-nav {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  #content, header, .page-header {
+    margin-left: 164px;
+    max-width: 720px;
+  }
+
+  header {
+    .site-title {
+      text-align: left;
+    }
+    .site-nav {
+      float: right;
+    }
+  }
+}
+
+// Dropcap
+.dropcap {
+  float: left;
+  font-size: 55px;
+  line-height: .1;
+  margin-right: .3rem;
+  margin-top: 30px;
+  padding: 0;
+}
+
+footer {
+  height: 10px;
+  background: $accent-dark;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Merriweather';
+}
+
+// Main blog styling
+.page-header {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: none;
+  }
+  .page-meta {
+    @include light-meta();
+  }
+}
+
+#content {
+  .page-intro {
+    @include light-para(15px);
+    margin-bottom: 40px;
+  }
+  p, li {
+    line-height: 1.9;
+  }
+}
+
+.timestamp, .timestamp-kwd {
+  @include light-meta();
+}
+
+.todo, .done {
+  @include tag();
+  font-weight: bold;
+}
+
+.todo {
+  color: #dc752f;
+}
+
+.done {
+  color: #548b54;
+}
+
+.tag {
+  background: white;
+}
+
+.tag > span {
+  @include tag();
+}
+
+figure {
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    .figure-number {
+      @include light-meta();
+    }
+    margin-top: 10px;
+    @include light-para(15px);
+  }
 }

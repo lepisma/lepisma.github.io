@@ -9,6 +9,11 @@ table {
   margin-top: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
+  width: 100%;
+
+  thead {
+    @include light-meta();
+  }
 
   thead tr th {
     border-bottom: 0;
@@ -16,5 +21,13 @@ table {
 
   tbody tr td {
     border-top: 0;
+  }
+
+  caption {
+    .table-number {
+      @include light-meta();
+    }
+    margin-bottom: 10px;
+    @include light-para(15px);
   }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-01-26 Fri 21:53 -->
+<!-- 2018-01-26 Fri 23:09 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Erroring Oracle in Quantum Search</title>
@@ -179,7 +179,6 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/pile/assets/css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
@@ -189,9 +188,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/pile/assets/js/pace.min.js"></script>
 <script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
-<script src="/pile/assets/js/jquery.lettering-0.6.1.min.js"></script>
-<script src="/pile/assets/js/jquery.textillate.js"></script>
-<script src="/pile/assets/js/custom.js"></script>
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
@@ -213,13 +209,9 @@
 <meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <script src="/assets/js/pace.min.js"></script>
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
-<script src="/assets/js/jquery.lettering-0.6.1.min.js"></script>
-<script src="/assets/js/jquery.textillate.js"></script>
-<script src="/assets/js/custom.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -295,38 +287,43 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="/pile"> HOME </a>
 </div><div id="preamble" class="status">
-<div class='site-wrap'>
-  <header class='site-header px2 px-responsive'>
-    <div class='mt2 wrap'>
-      <div class='measure'>
-        <span class='site-title'>
-          <a href='/'>
-            <img src='/assets/images/avatar32.png'>
-          </a>
-        </span>
-        <nav class='site-nav right'>
-          <a href=''> home</a>
-          <a href=''> feed</a>
-          <a href=''> archive</a>
-          <a href=''> about</a>
-        </nav>
-        <div class='clearfix'></div>
-      </div>
-    </div>
-  </header>
+<header>
+  <div class='site-title'>
+    <a href=''>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a href=''> home</a>
+    <a href=''> feed</a>
+    <a href=''> archive</a>
+    <a href=''> about</a>
+  </div>
+</header>
 
-  <div class='post p2 p-responsive wrap'>
-    <div class='measure'>
-      <div class='post-header mb2'>
-        <div class='post-meta small'>
-          Last modified:  2018-01-17 Wed 02:22
-        </div>
-        <h1>Erroring Oracle in Quantum Search</h1>
-      </div>
-
-      <article class='post-content'>
+<div class='page-header'>
+  <div class='page-meta small'>
+    Last modified:  2018-01-17 Wed 02:22
+  </div>
+  <h1>Erroring Oracle in Quantum Search</h1>
+</div>
 </div>
 <div id="content">
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd4d62f6">Quantum Search</a>
+<ul>
+<li><a href="#org4b6fe54">Searching for {% katex %}M{% endkatex %} among {% katex %}N{% endkatex %}</a></li>
+<li><a href="#orge9ebdea">Single error</a></li>
+</ul>
+</li>
+<li><a href="#org9567db0">With 1 Error</a></li>
+<li><a href="#orgad0e99e">Random errors</a></li>
+</ul>
+</div>
+</nav>
 <p>
 &lt;p class="post-intro" markdown="1"&gt;
 What happens when the oracle in quantum search is wrong? Turns out that the
@@ -416,9 +413,9 @@ the following expression:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #715ab1;">N</span>, <span style="color: #715ab1;">M</span>, <span style="color: #715ab1;">sigma_l</span>, <span style="color: #715ab1;">l</span>, <span style="color: #715ab1;">k</span> = sm.symbols<span style="color: #3a81c3;">(</span><span style="color: #2d9574;">"N M sigma_l \\bar{l}(0) \\bar{k}(0)"</span><span style="color: #3a81c3;">)</span>
-<span style="color: #715ab1;">P_av</span> = <span style="color: #4e3163;">1</span> - <span style="color: #3a81c3;">(</span>N - M<span style="color: #3a81c3;">)</span> * sigma_l ** <span style="color: #4e3163;">2</span> - <span style="color: #4e3163;">0</span>.<span style="color: #4e3163;">5</span> * <span style="color: #3a81c3;">(</span><span style="color: #6c3163;">(</span>N - M<span style="color: #6c3163;">)</span> * <span style="color: #3a81c3;">abs</span><span style="color: #6c3163;">(</span>l<span style="color: #6c3163;">)</span> ** <span style="color: #4e3163;">2</span> + M * k ** <span style="color: #4e3163;">2</span><span style="color: #3a81c3;">)</span>
-show<span style="color: #3a81c3;">(</span>P_av<span style="color: #3a81c3;">)</span>
+<pre class="src src-python"><span style="color: #EBCB8B;">N</span>, <span style="color: #EBCB8B;">M</span>, <span style="color: #EBCB8B;">sigma_l</span>, <span style="color: #EBCB8B;">l</span>, <span style="color: #EBCB8B;">k</span> = sm.symbols<span style="color: #5E81AC;">(</span><span style="color: #A3BE8C;">"N M sigma_l \\bar{l}(0) \\bar{k}(0)"</span><span style="color: #5E81AC;">)</span>
+<span style="color: #EBCB8B;">P_av</span> = <span style="color: #9c91e4; font-weight: bold;">1</span> - <span style="color: #5E81AC;">(</span>N - M<span style="color: #5E81AC;">)</span> * sigma_l ** <span style="color: #9c91e4; font-weight: bold;">2</span> - <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">5</span> * <span style="color: #5E81AC;">(</span><span style="color: #BF616A;">(</span>N - M<span style="color: #BF616A;">)</span> * <span style="color: #D08770;">abs</span><span style="color: #BF616A;">(</span>l<span style="color: #BF616A;">)</span> ** <span style="color: #9c91e4; font-weight: bold;">2</span> + M * k ** <span style="color: #9c91e4; font-weight: bold;">2</span><span style="color: #5E81AC;">)</span>
+show<span style="color: #5E81AC;">(</span>P_av<span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -437,7 +434,7 @@ Simplifying we get:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python">show<span style="color: #3a81c3;">(</span>P_av.subs<span style="color: #6c3163;">(</span>sigma_l, <span style="color: #4e3163;">0</span><span style="color: #6c3163;">)</span><span style="color: #3a81c3;">)</span>
+<pre class="src src-python">show<span style="color: #5E81AC;">(</span>P_av.subs<span style="color: #BF616A;">(</span>sigma_l, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -452,8 +449,8 @@ Simplifying we get:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #715ab1;">eq</span> = sm.Eq<span style="color: #3a81c3;">(</span>P_av, M**<span style="color: #4e3163;">3</span> + <span style="color: #4e3163;">2</span>*M**<span style="color: #4e3163;">2</span> + <span style="color: #4e3163;">4</span>*M + <span style="color: #4e3163;">8</span><span style="color: #3a81c3;">)</span>
-show<span style="color: #3a81c3;">(</span>eq<span style="color: #3a81c3;">)</span>
+<pre class="src src-python"><span style="color: #EBCB8B;">eq</span> = sm.Eq<span style="color: #5E81AC;">(</span>P_av, M**<span style="color: #9c91e4; font-weight: bold;">3</span> + <span style="color: #9c91e4; font-weight: bold;">2</span>*M**<span style="color: #9c91e4; font-weight: bold;">2</span> + <span style="color: #9c91e4; font-weight: bold;">4</span>*M + <span style="color: #9c91e4; font-weight: bold;">8</span><span style="color: #5E81AC;">)</span>
+show<span style="color: #5E81AC;">(</span>eq<span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -474,12 +471,7 @@ show<span style="color: #3a81c3;">(</span>eq<span style="color: #3a81c3;">)</spa
 </div>
 </div>
 <div id="postamble" class="status">
-
-      </article>
-    </div>
-  </div>
-</div>
-<footer class='footer'></footer>
+<footer></footer>
 </div>
 </body>
 </html>

@@ -32,3 +32,10 @@
     color: $accent;
   }
 }
+
+// Navigation
+@media (max-width: 1000px) {
+  header * {
+    display: inline;
+  }
+}
