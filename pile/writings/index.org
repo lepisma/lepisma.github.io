@@ -1,2 +1,0 @@
-#+TITLE: pile
-#+SETUPFILE: ../org-publish/export.setup

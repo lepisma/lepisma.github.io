@@ -1,2 +1,265 @@
-#+TITLE: pile
+#+TITLE: Today I Learned  /in Emacs/
 #+SETUPFILE: ../assets/export.setup
+
+/Today I learned, Emacs version. More of a mini blog. Inspired by [[https://github.com/jbranchaud/til][jbranchaud/til]]./
+
+#+BEGIN_aside
+This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
+#+END_aside
+
++ *org macros*
+
+  Org mode allows simple text replacement macros with arguments for export. See
+  more [[https://orgmode.org/manual/Macro-replacement.html][here]].
+
++ *benchmark-run*
+
+  Just what you expect. Learnt from [[http://irreal.org/blog/?p=400][here]]. Also check ~benchmark-run-compiled~ if
+  you want to compare compiled elisp performance.
+
++ *calc*
+
+  Emacs has a very elaborate calculator capable even of symbolic mathematics and
+  manipulation. Check [[http://nullprogram.com/blog/2009/06/23/][this blog post]] by Chris to get a feel. I used to call
+  [[https://github.com/sharkdp/insect][insect]] to perform unit conversions, but looks like /calc/ is enough.
+
++ *tail calls*
+
+  Emacs lisp doesn't optimize tail calls. This forces you to use loops (like
+  ~while~) instead of recursion. Two workarounds are [[https://github.com/Wilfred/tco.el][tco]] and [[https://github.com/VincentToups/recur][recur]].
+
++ *two columns*
+
+  [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Two_002dColumn.html][Two column editing]] lets you split the current buffer in two columns
+  (obviously) which are finally merged in one. I am trying to use it for writing
+  sidenotes in org files. Will have issues with org-export though.
+
++ *gap buffers*
+
+  Emacs internally uses [[https://en.wikipedia.org/wiki/Gap_buffer][gap buffers]] to represent text (in buffers). Current gap
+  values can be accessed using functions ~gap-position~ and ~gap-size~. See the page
+  on [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Buffer-Gap.html][manual]] for more.
+
++ *reverse variable search*
+
+  Weird but possibly useful. ~apropos-value~ lets you search for variables with
+  provided value.
+
++ *literate configuration*
+
+  Using ~org-babel-load-file~, you can load emacs-lisp snippets from an org file.
+  This is great for maintaining readable configuration like done in
+  [[https://github.com/eschulte/emacs24-starter-kit][emacs24-starter-kit]].
+
++ *image tooltips*
+
+  Its [[https://www.youtube.com/watch?v=uX_hAPb9NOc][possible]] to show image inside the regular emacs tooltips. This is handy
+  for documents with linked images.
+
++ *capturing buffer bookmarks*
+
+  Org capture has templates (~%a~, ~%A~ etc.) for capturing the location where the
+  org-capture was called. This comes in handy with emails, todos in code etc.
+
++ *narrow region*
+
+  Narrowing allows showing only a certain part of a buffer instead of full
+  content. This lets you work on the narrowed region without affecting other
+  stuff.
+
++ *org-edit-special*
+
+  Special chunks in org mode like babel source blocks can be edited in a
+  separate dedicated buffer using ~org-edit-special~.
+
++ *rectangle insert*
+
+  Iedit has a ~iedit-rectangle-mode~ which lets edit vertical chunks. Handy for
+  enforcing indentation over a section.
+
++ *undo-tree*
+
+  [[https://elpa.gnu.org/packages/undo-tree.html][undo-tree]] maintains a tree instead of a linear undo/redo history. Wish there
+  was something similar for krita/gimp.
+
++ *org-store-link*
+
+  Special bookmarks to [[http://orgmode.org/manual/Handling-links.html][different]] modes can be saved in org files using
+  ~org-store-link~ and ~org-insert-link~.
+
++ *common lisp emulation*
+
+  Elisp can simulate many features of common lisp, including full fledged
+  function arguments, using the ~cl~ package.
+
++ *winner-mode*
+
+  Probably too late to know about it. Winner mode lets you undo/redo window
+  configuration.
+
++ *file-watch*
+
+  ~file-notify-add-watch~ allows hooking up callbacks for file changes.
+
++ *re-builder*
+
+  Emacs lets you check regex on the fly in current buffer using ~re-builder~.
+
++ *obarray*
+
+  ~obarray~ refers to a vector of symbols which are interned and is used for
+  looking up value of symbols.
+
++ *latex fragment preview*
+
+  Latex code snippets can be previewed directly in org-mode using
+  ~org-toggle-latex-fragment~.
+
++ *dired drag and drop*
+
+  Dropping a file to a dired buffer copies stuff to it.
+
++ *advising functions*
+
+  Elisp lets you /add/ a custom behavior on an already existing function
+  using the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Advising-Functions.html#Advising-Functions][advising facility]].
+
++ *highlight-regexp*
+
+  Highlight a regexp in buffer with certain color using ~highlight-regexp~.
+
++ *eieio*
+
+  Emacs Lisp has an Object Oriented Programming system called
+  [[https://www.gnu.org/software/emacs/manual/eieio.html][EIEIO]] mimicking Common Lisp Object System.
+
++ *org-protocol*
+  
+  #+BEGIN_QUOTE
+  org-protocol intercepts calls from emacsclient to trigger custom actions
+  without external dependencies. Only one protocol has to be configured with
+  your external applications or the operating system, to trigger an arbitrary
+  number of custom actions. Just register your custom sub-protocol and handler
+  with the variable `org-protocol-protocol-alist'.
+  #+END_QUOTE
+
+  Taken from [[http://orgmode.org/worg/org-contrib/org-protocol.html#orgheadline4][here]]. Probably the best surprise feature I found till date.
+
++ *comint mode scroll*
+
+  Comint mode (all the shell-ish processes), by default (in spacemacs at least),
+  shows everything possible whenever a shell output comes out. This results in
+  pushing (scrolling) the current line to the bottom even when you were up
+  somewhere. This can be fixed by setting ~comint-scroll-show-maximum-output~ to
+  ~nil~.
+
++ *custom agenda views*
+
+  Org agenda view allows custom built views by customizing the variable
+  ~org-agenda-custom-commands~. The customization lets you work with separate
+  files, tags, todo-states and much [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][more]].
+
++ *current-prefix-arg*
+
+  Setting ~current-prefix-arg~ variable works as ~C-u~ key for the command in
+  scope. This allows wrapping up some useful commands with prefix arguments.
+
++ *apropos*
+  
+  Apropos commands (~apropos~, ~apropos-command~ etc.) do full text searches
+  over corresponding components (symbols, commands, etc.) and are powerful and
+  useful than the regular ways.
+
++ *caching sudo password in eshell*
+
+  Eshell can use tramp's sudo instead of ~/usr/bin/sudo~ and then cache
+  passwords. Setting alias by ~alias sudo 'eshell/sudo $*'~ in eshell after
+  setting up cache does the trick.
+  #+BEGIN_SRC elisp
+    (use-package em-tramp
+      :config
+      (setq eshell-prefer-lisp-functions t)
+      (setq password-cache t)
+      (setq password-cache-expiry 3600))
+  #+END_SRC
+  [[https://emacs.stackexchange.com/questions/5608/how-to-let-eshell-remember-sudo-password-for-two-minutes][Source]]
+
++ *syntax table*
+
+  Emacs maintains what are called /syntax table/ for modes which define which
+  character is going to be treated as what. As an example, you could set ~$~ as
+  a whitespace character to assist jumping around in text by using
+  ~(modify-syntax-entry ?$ " ")~
+
++ *ditaa & dot*
+
+  Babel has great support for [[http://ditaa.sourceforge.net/][ditaa]] and [[http://www.graphviz.org/][dot]] snippets, allowing creation of
+  graph, drawings and flowcharts easily.
+
++ *lexical scoping*
+
+  Adding ~;;; -*- lexical-binding: t -*-~ to the header enables lexical binding
+  in an elisp source file.
+
++ *inserting unicode by name*
+
+  ~C-x 8 RET~ lets you search and insert unicode character by Unicode name.
+
++ *getting mouse position*
+
+  There are functions to get current position of mouse both in terms of
+  pixels ~mouse-pixel-position~ and characters ~mouse-position~ relative to
+  current frame (or absolute ~mouse-absolute-pixel-position~).
+
++ *smerge*
+
+  ~smerge-mode~ allows easy conflict resolution for merges. Move pointer to the
+  conflict and use ~smerge-keep-mine~ / ~smerge-keep-other~.
+
++ *edit file properties in dired*
+
+  Dired allows a special mode, wdired (~C-x C-q~), that lets dired buffer
+  editings -- like renaming files, changing permissions, etc. -- get reflected
+  to the file system. More details [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Wdired.html#Wdired][here]].
+
++ *external functions in org tables*
+
+  Any babel code block returning value can be referenced by its ~name~ and
+  called as a function for org tables. More details [[http://ehneilsen.net/notebook/orgExamples/org-examples.html#sec-8][here]].
+
++ *form feed lines*
+
+  Many popular elisp source files get rendered in spacemacs with sections
+  separated by neat horizontal lines. TIL those are form feed characters ~^L~
+  and are rendered using packages like [[https://github.com/purcell/page-break-lines][page-break-lines]].
+
++ *kill-ring*
+
+  Recently stopped using CUA keybindings. This opened me up to use the
+  kill-ring, which is a list with kill (cut, copy) history. Simple cut, copy,
+  paste are ~C-w~ (/kill/), ~M-w~ (/kill-save/) and ~C-y~ (/yank/). Cycle
+  through the ring while yanking using ~M-y~. Use ~helm-show-kill-ring~ for a
+  better kill-ring browsing experience.
+
++ *elisp scripts*
+  
+  Using Emacs for general purpose scripting has multiple issues. Many are
+  documented [[http://www.lunaryorn.com/posts/emacs-script-pitfalls.html#section-inhibiting-site-start][here]]. For me, package loading is a major one. A lot of
+  /not-inside-emacs/ scripts wont be helpful without packages like [[https://github.com/rejeep/f.el][f]], [[https://github.com/magnars/dash.el][dash]] and
+  [[https://github.com/magnars/s.el][s]]. [[https://github.com/cask/cask][cask]] provides a way out. Init a caskfile (~cask init~), install
+  dependencies (~cask install~), run (~cask emacs --script something.el~).
+
++ *data structures*
+
+  I never went beyond list. Knew about [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Association-Lists.html][alists]], but didn't know there are
+  [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Hash-Tables.html][hash tables]] and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Vectors.html][vectors]] too. In case you are working with key-value pairs in
+  either hash table or alist form, try [[https://github.com/Wilfred/ht.el][ht.el]].
+
++ *org-contacts*
+
+  You can use [[https://julien.danjou.info/projects/emacs-packages#org-contacts][org-contacts]] from org-contrib to manage contacts. This is really
+  neat considering it integrates with gnus.
+
++ *mpc*
+
+  There is a pretty nifty [[https://www.musicpd.org/][mpd]] client built into Emacs. Use ~M-x mpc~.

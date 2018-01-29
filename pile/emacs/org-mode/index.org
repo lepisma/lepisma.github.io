@@ -1,2 +1,0 @@
-#+TITLE: pile
-#+SETUPFILE: ../../assets/export.setup

@@ -1,4 +1,2 @@
 #+TITLE: Readings
 #+SETUPFILE: ../assets/export.setup
-
-Hello world

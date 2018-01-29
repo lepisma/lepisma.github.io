@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-01-27 Sat 06:02 -->
+<!-- 2018-01-29 Mon 04:20 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>pile</title>
+<title>Today I Learned  <i>in Emacs</i></title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -283,12 +283,465 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-01-17 Wed 02:22
+    Last modified:  2018-01-29 Mon 04:10
   </div>
-  <h1>pile</h1>
+  <h1>Today I Learned  <i>in Emacs</i></h1>
 </div>
 </div>
 <div id="content">
+<p>
+<i>Today I learned, Emacs version. More of a mini blog. Inspired by <a href="https://github.com/jbranchaud/til">jbranchaud/til</a>.</i>
+</p>
+
+<aside>
+<p>
+This page <i>used to</i> live in a separate repository <a href="https://github.com/lepisma/til-emacs">here</a>. Now, well, its here.
+</p>
+</aside>
+
+<ul class="org-ul">
+<li><p>
+<b>org macros</b>
+</p>
+
+<p>
+Org mode allows simple text replacement macros with arguments for export. See
+more <a href="https://orgmode.org/manual/Macro-replacement.html">here</a>.
+</p></li>
+
+<li><p>
+<b>benchmark-run</b>
+</p>
+
+<p>
+Just what you expect. Learnt from <a href="http://irreal.org/blog/?p=400">here</a>. Also check <code>benchmark-run-compiled</code> if
+you want to compare compiled elisp performance.
+</p></li>
+
+<li><p>
+<b>calc</b>
+</p>
+
+<p>
+Emacs has a very elaborate calculator capable even of symbolic mathematics and
+manipulation. Check <a href="http://nullprogram.com/blog/2009/06/23/">this blog post</a> by Chris to get a feel. I used to call
+<a href="https://github.com/sharkdp/insect">insect</a> to perform unit conversions, but looks like <i>calc</i> is enough.
+</p></li>
+
+<li><p>
+<b>tail calls</b>
+</p>
+
+<p>
+Emacs lisp doesn't optimize tail calls. This forces you to use loops (like
+<code>while</code>) instead of recursion. Two workarounds are <a href="https://github.com/Wilfred/tco.el">tco</a> and <a href="https://github.com/VincentToups/recur">recur</a>.
+</p></li>
+
+<li><p>
+<b>two columns</b>
+</p>
+
+<p>
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Two_002dColumn.html">Two column editing</a> lets you split the current buffer in two columns
+(obviously) which are finally merged in one. I am trying to use it for writing
+sidenotes in org files. Will have issues with org-export though.
+</p></li>
+
+<li><p>
+<b>gap buffers</b>
+</p>
+
+<p>
+Emacs internally uses <a href="https://en.wikipedia.org/wiki/Gap_buffer">gap buffers</a> to represent text (in buffers). Current gap
+values can be accessed using functions <code>gap-position</code> and <code>gap-size</code>. See the page
+on <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Buffer-Gap.html">manual</a> for more.
+</p></li>
+
+<li><p>
+<b>reverse variable search</b>
+</p>
+
+<p>
+Weird but possibly useful. <code>apropos-value</code> lets you search for variables with
+provided value.
+</p></li>
+
+<li><p>
+<b>literate configuration</b>
+</p>
+
+<p>
+Using <code>org-babel-load-file</code>, you can load emacs-lisp snippets from an org file.
+This is great for maintaining readable configuration like done in
+<a href="https://github.com/eschulte/emacs24-starter-kit">emacs24-starter-kit</a>.
+</p></li>
+
+<li><p>
+<b>image tooltips</b>
+</p>
+
+<p>
+Its <a href="https://www.youtube.com/watch?v=uX_hAPb9NOc">possible</a> to show image inside the regular emacs tooltips. This is handy
+for documents with linked images.
+</p></li>
+
+<li><p>
+<b>capturing buffer bookmarks</b>
+</p>
+
+<p>
+Org capture has templates (<code>%a</code>, <code>%A</code> etc.) for capturing the location where the
+org-capture was called. This comes in handy with emails, todos in code etc.
+</p></li>
+
+<li><p>
+<b>narrow region</b>
+</p>
+
+<p>
+Narrowing allows showing only a certain part of a buffer instead of full
+content. This lets you work on the narrowed region without affecting other
+stuff.
+</p></li>
+
+<li><p>
+<b>org-edit-special</b>
+</p>
+
+<p>
+Special chunks in org mode like babel source blocks can be edited in a
+separate dedicated buffer using <code>org-edit-special</code>.
+</p></li>
+
+<li><p>
+<b>rectangle insert</b>
+</p>
+
+<p>
+Iedit has a <code>iedit-rectangle-mode</code> which lets edit vertical chunks. Handy for
+enforcing indentation over a section.
+</p></li>
+
+<li><p>
+<b>undo-tree</b>
+</p>
+
+<p>
+<a href="https://elpa.gnu.org/packages/undo-tree.html">undo-tree</a> maintains a tree instead of a linear undo/redo history. Wish there
+was something similar for krita/gimp.
+</p></li>
+
+<li><p>
+<b>org-store-link</b>
+</p>
+
+<p>
+Special bookmarks to <a href="http://orgmode.org/manual/Handling-links.html">different</a> modes can be saved in org files using
+<code>org-store-link</code> and <code>org-insert-link</code>.
+</p></li>
+
+<li><p>
+<b>common lisp emulation</b>
+</p>
+
+<p>
+Elisp can simulate many features of common lisp, including full fledged
+function arguments, using the <code>cl</code> package.
+</p></li>
+
+<li><p>
+<b>winner-mode</b>
+</p>
+
+<p>
+Probably too late to know about it. Winner mode lets you undo/redo window
+configuration.
+</p></li>
+
+<li><p>
+<b>file-watch</b>
+</p>
+
+<p>
+<code>file-notify-add-watch</code> allows hooking up callbacks for file changes.
+</p></li>
+
+<li><p>
+<b>re-builder</b>
+</p>
+
+<p>
+Emacs lets you check regex on the fly in current buffer using <code>re-builder</code>.
+</p></li>
+
+<li><p>
+<b>obarray</b>
+</p>
+
+<p>
+<code>obarray</code> refers to a vector of symbols which are interned and is used for
+looking up value of symbols.
+</p></li>
+
+<li><p>
+<b>latex fragment preview</b>
+</p>
+
+<p>
+Latex code snippets can be previewed directly in org-mode using
+<code>org-toggle-latex-fragment</code>.
+</p></li>
+
+<li><p>
+<b>dired drag and drop</b>
+</p>
+
+<p>
+Dropping a file to a dired buffer copies stuff to it.
+</p></li>
+
+<li><p>
+<b>advising functions</b>
+</p>
+
+<p>
+Elisp lets you <i>add</i> a custom behavior on an already existing function
+using the <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Advising-Functions.html#Advising-Functions">advising facility</a>.
+</p></li>
+
+<li><p>
+<b>highlight-regexp</b>
+</p>
+
+<p>
+Highlight a regexp in buffer with certain color using <code>highlight-regexp</code>.
+</p></li>
+
+<li><p>
+<b>eieio</b>
+</p>
+
+<p>
+Emacs Lisp has an Object Oriented Programming system called
+<a href="https://www.gnu.org/software/emacs/manual/eieio.html">EIEIO</a> mimicking Common Lisp Object System.
+</p></li>
+
+<li><p>
+<b>org-protocol</b>
+</p>
+
+<blockquote>
+<p>
+org-protocol intercepts calls from emacsclient to trigger custom actions
+without external dependencies. Only one protocol has to be configured with
+your external applications or the operating system, to trigger an arbitrary
+number of custom actions. Just register your custom sub-protocol and handler
+with the variable `org-protocol-protocol-alist'.
+</p>
+</blockquote>
+
+<p>
+Taken from <a href="http://orgmode.org/worg/org-contrib/org-protocol.html#orgheadline4">here</a>. Probably the best surprise feature I found till date.
+</p></li>
+
+<li><p>
+<b>comint mode scroll</b>
+</p>
+
+<p>
+Comint mode (all the shell-ish processes), by default (in spacemacs at least),
+shows everything possible whenever a shell output comes out. This results in
+pushing (scrolling) the current line to the bottom even when you were up
+somewhere. This can be fixed by setting <code>comint-scroll-show-maximum-output</code> to
+<code>nil</code>.
+</p></li>
+
+<li><p>
+<b>custom agenda views</b>
+</p>
+
+<p>
+Org agenda view allows custom built views by customizing the variable
+<code>org-agenda-custom-commands</code>. The customization lets you work with separate
+files, tags, todo-states and much <a href="http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html">more</a>.
+</p></li>
+
+<li><p>
+<b>current-prefix-arg</b>
+</p>
+
+<p>
+Setting <code>current-prefix-arg</code> variable works as <code>C-u</code> key for the command in
+scope. This allows wrapping up some useful commands with prefix arguments.
+</p></li>
+
+<li><p>
+<b>apropos</b>
+</p>
+
+<p>
+Apropos commands (<code>apropos</code>, <code>apropos-command</code> etc.) do full text searches
+over corresponding components (symbols, commands, etc.) and are powerful and
+useful than the regular ways.
+</p></li>
+
+<li><p>
+<b>caching sudo password in eshell</b>
+</p>
+
+<p>
+Eshell can use tramp's sudo instead of <code>/usr/bin/sudo</code> and then cache
+passwords. Setting alias by <code>alias sudo 'eshell/sudo $*'</code> in eshell after
+setting up cache does the trick.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #BF616A;">use-package</span> <span style="color: #B48EAD;">em-tramp</span>
+  <span style="color: #D08770;">:config</span>
+  (<span style="color: #BF616A;">setq</span> eshell-prefer-lisp-functions t<span style="color: #666666;">)</span>
+  (<span style="color: #BF616A;">setq</span> password-cache t<span style="color: #666666;">)</span>
+  (<span style="color: #BF616A;">setq</span> password-cache-expiry <span style="color: #9c91e4; font-weight: bold;">3600</span><span style="color: #666666;">))</span>
+</pre>
+</div>
+<p>
+<a href="https://emacs.stackexchange.com/questions/5608/how-to-let-eshell-remember-sudo-password-for-two-minutes">Source</a>
+</p></li>
+
+<li><p>
+<b>syntax table</b>
+</p>
+
+<p>
+Emacs maintains what are called <i>syntax table</i> for modes which define which
+character is going to be treated as what. As an example, you could set <code>$</code> as
+a whitespace character to assist jumping around in text by using
+<code>(modify-syntax-entry ?$ " ")</code>
+</p></li>
+
+<li><p>
+<b>ditaa &amp; dot</b>
+</p>
+
+<p>
+Babel has great support for <a href="http://ditaa.sourceforge.net/">ditaa</a> and <a href="http://www.graphviz.org/">dot</a> snippets, allowing creation of
+graph, drawings and flowcharts easily.
+</p></li>
+
+<li><p>
+<b>lexical scoping</b>
+</p>
+
+<p>
+Adding <code>;;; -*- lexical-binding: t -*-</code> to the header enables lexical binding
+in an elisp source file.
+</p></li>
+
+<li><p>
+<b>inserting unicode by name</b>
+</p>
+
+<p>
+<code>C-x 8 RET</code> lets you search and insert unicode character by Unicode name.
+</p></li>
+
+<li><p>
+<b>getting mouse position</b>
+</p>
+
+<p>
+There are functions to get current position of mouse both in terms of
+pixels <code>mouse-pixel-position</code> and characters <code>mouse-position</code> relative to
+current frame (or absolute <code>mouse-absolute-pixel-position</code>).
+</p></li>
+
+<li><p>
+<b>smerge</b>
+</p>
+
+<p>
+<code>smerge-mode</code> allows easy conflict resolution for merges. Move pointer to the
+conflict and use <code>smerge-keep-mine</code> / <code>smerge-keep-other</code>.
+</p></li>
+
+<li><p>
+<b>edit file properties in dired</b>
+</p>
+
+<p>
+Dired allows a special mode, wdired (<code>C-x C-q</code>), that lets dired buffer
+editings &#x2013; like renaming files, changing permissions, etc. &#x2013; get reflected
+to the file system. More details <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Wdired.html#Wdired">here</a>.
+</p></li>
+
+<li><p>
+<b>external functions in org tables</b>
+</p>
+
+<p>
+Any babel code block returning value can be referenced by its <code>name</code> and
+called as a function for org tables. More details <a href="http://ehneilsen.net/notebook/orgExamples/org-examples.html#sec-8">here</a>.
+</p></li>
+
+<li><p>
+<b>form feed lines</b>
+</p>
+
+<p>
+Many popular elisp source files get rendered in spacemacs with sections
+separated by neat horizontal lines. TIL those are form feed characters <code>^L</code>
+and are rendered using packages like <a href="https://github.com/purcell/page-break-lines">page-break-lines</a>.
+</p></li>
+
+<li><p>
+<b>kill-ring</b>
+</p>
+
+<p>
+Recently stopped using CUA keybindings. This opened me up to use the
+kill-ring, which is a list with kill (cut, copy) history. Simple cut, copy,
+paste are <code>C-w</code> (<i>kill</i>), <code>M-w</code> (<i>kill-save</i>) and <code>C-y</code> (<i>yank</i>). Cycle
+through the ring while yanking using <code>M-y</code>. Use <code>helm-show-kill-ring</code> for a
+better kill-ring browsing experience.
+</p></li>
+
+<li><p>
+<b>elisp scripts</b>
+</p>
+
+<p>
+Using Emacs for general purpose scripting has multiple issues. Many are
+documented <a href="http://www.lunaryorn.com/posts/emacs-script-pitfalls.html#section-inhibiting-site-start">here</a>. For me, package loading is a major one. A lot of
+<i>not-inside-emacs</i> scripts wont be helpful without packages like <a href="https://github.com/rejeep/f.el">f</a>, <a href="https://github.com/magnars/dash.el">dash</a> and
+<a href="https://github.com/magnars/s.el">s</a>. <a href="https://github.com/cask/cask">cask</a> provides a way out. Init a caskfile (<code>cask init</code>), install
+dependencies (<code>cask install</code>), run (<code>cask emacs --script something.el</code>).
+</p></li>
+
+<li><p>
+<b>data structures</b>
+</p>
+
+<p>
+I never went beyond list. Knew about <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Association-Lists.html">alists</a>, but didn't know there are
+<a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Hash-Tables.html">hash tables</a> and <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Vectors.html">vectors</a> too. In case you are working with key-value pairs in
+either hash table or alist form, try <a href="https://github.com/Wilfred/ht.el">ht.el</a>.
+</p></li>
+
+<li><p>
+<b>org-contacts</b>
+</p>
+
+<p>
+You can use <a href="https://julien.danjou.info/projects/emacs-packages#org-contacts">org-contacts</a> from org-contrib to manage contacts. This is really
+neat considering it integrates with gnus.
+</p></li>
+
+<li><p>
+<b>mpc</b>
+</p>
+
+<p>
+There is a pretty nifty <a href="https://www.musicpd.org/">mpd</a> client built into Emacs. Use <code>M-x mpc</code>.
+</p></li>
+</ul>
 </div>
 <div id="postamble" class="status">
 <footer></footer>

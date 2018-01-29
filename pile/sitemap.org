@@ -1,28 +1,10 @@
 #+TITLE: Sitemap
 
 - [[file:allpages.org][All the pages]]
+- [[file:org-test.org][Org mode export test]]
 - [[file:index.org][pile]]
 - emacs
   - [[file:emacs/til.org][pile]]
   - [[file:emacs/index.org][pile]]
-  - org-mode
-    - [[file:emacs/org-mode/index.org][pile]]
-- evolution
-  - [[file:evolution/index.org][pile]]
-- explorations
-  - [[file:explorations/completion-series.org][Completion Series]]
-  - [[file:explorations/qdump.org][Erroring Oracle in Quantum Search]]
-  - [[file:explorations/index.org][pile]]
-- ml
-  - [[file:ml/index.org][pile]]
-- music
-  - [[file:music/index.org][pile]]
-- programming
-  - [[file:programming/index.org][pile]]
 - readings
-  - [[file:readings/reading-list.org][Reading List]]
   - [[file:readings/index.org][Readings]]
-  - [[file:readings/clippings.org][pile]]
-  - [[file:readings/bookmarks.org][pile]]
-- writings
-  - [[file:writings/index.org][pile]]
