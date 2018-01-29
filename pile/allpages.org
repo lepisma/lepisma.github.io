@@ -1,8 +1,7 @@
 #+TITLE: All the pages
 #+SETUPFILE: ./assets/export.setup
 
-Here are all the pages of this wiki. Right now, this sitemap is using the
-default org-publish function and doesn't keep directories with ~index.org~ files
-organized as I would like it to be. Will need to write a custom function here.
+Here are all the pages in this wiki. This sitemap reads a directory's ~index.org~
+as a parent and other ~*.org~ files as children.
 
 #+INCLUDE: ./sitemap.org :lines "3-"

@@ -4,8 +4,8 @@
 This is a personal wiki. Gradually, as I move files in here, it will take a more
 hybrid wiki-blog form.
 
-A list of all pages currently up here is in [[./allpages.org][allpages]]. Here is a short run down
-of those files:
+A list of all pages currently up here is in [[./allpages.org][all the pages]]. Here is a short run
+down of those files:
 
 - [[./emacs/][Emacs]] contains emacs and org-mode related things.
 - [[./readings/index.org][Readings]] has some lists related to readings.
