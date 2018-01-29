@@ -50,6 +50,12 @@ $text-dark: $c1;
   font-style: normal
 }
 
+// Face variables
+$sans-font: 'Open Sans';
+$body-font: 'Merriweather';
+$title-font: 'et-book';
+$code-font: 'Fira Mono';
+
 @mixin text-underline-crop($background) {
   text-shadow: .03em 0 $background,
   -.03em 0 $background,
@@ -89,6 +95,8 @@ $text-dark: $c1;
   @include text-background($background, $text);
   @include text-selection($back-medium);
 
+  border-radius: 1px;
+  background-color: $background;
   color: $text;
   text-decoration: none;
 
@@ -115,7 +123,7 @@ $text-dark: $c1;
   border-width: 1px;
   border-color: $back-light;
   border-radius: $radius;
-  font-family: 'Open Sans';
+  font-family: $sans-font;
   font-variant: all-small-caps;
   font-size: $font-size;
   font-style: normal;
@@ -134,7 +142,7 @@ $text-dark: $c1;
 }
 
 @mixin light-para($font-size) {
-  font-family: 'Open Sans';
+  font-family: $sans-font;
   font-weight: normal;
   font-size: $font-size;
   line-height: 1.6;
@@ -142,7 +150,7 @@ $text-dark: $c1;
 }
 
 @mixin light-meta() {
-  font-family: 'Open Sans';
+  font-family: $sans-font;
   font-weight: normal;
   font-style: normal;
   font-size: 12px;

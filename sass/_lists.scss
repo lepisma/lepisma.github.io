@@ -40,3 +40,8 @@ ul ul, ol ol {
 ul ul ul, ol ol ol {
   padding-left: 40px;
 }
+
+li p:first-child {
+  display: inline-block;
+  margin-bottom: 0;
+}

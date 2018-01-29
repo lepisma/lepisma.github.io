@@ -1,0 +1,5 @@
+#+TITLE: Reading List
+#+SETUPFILE: ../assets/export.setup
+#+TODO: READING NEXT | READ
+
+Books to read. Right now in the process of importing [[https://github.com/lepisma/reading-list][this repo]].

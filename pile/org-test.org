@@ -5,7 +5,9 @@ This is a test file with most of the features of org mode that I use. Its
 purpose is to test the export and fix styling issues, if any.
 
 * Heading level 1
-
+** Heading level 2
+*** Heading level 3
+**** Heading level 4
 Some checkboxes follow
 - [ ] Lol
 - [X] This is done
@@ -205,6 +207,17 @@ convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapie
 
 #+BEGIN_QUOTE
 Suspendisse potenti. Donec at pede.  Sed id ligula quis est convallis tempor.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit
+tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et,
+mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.
+Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.
+Nam vestibulum accumsan nisl.
+
+#+HTML:<footer>Hello</footer>
 #+END_QUOTE
 
 #+BEGIN_VERSE

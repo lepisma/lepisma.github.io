@@ -6,6 +6,16 @@ pre.src:hover::before {
   display: none !important;
 }
 
+// Override heading settings
+.outline-2 h2 {
+  font-size: 30px;
+}
+
+.outline-3 h3 {
+  font-size: 24px;
+  font-style: normal;
+}
+
 .timestamp, .timestamp-kwd {
   @include light-meta();
 }

@@ -23,6 +23,10 @@ table {
     border-top: 0;
   }
 
+  tr {
+    line-height: 1.9;
+  }
+
   caption {
     .table-number {
       @include light-meta();

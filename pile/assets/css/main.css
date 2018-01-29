@@ -424,7 +424,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  font-family: 'Merriweather'; }
+  font-family: "Merriweather"; }
 
 #content, header, .page-header {
   margin: 32px;
@@ -448,7 +448,7 @@ body {
     margin-top: 10px;
     text-transform: none; }
   .page-header .page-meta {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-style: normal;
     font-size: 12px;
@@ -460,7 +460,7 @@ header .site-title {
   text-align: center; }
 header .site-nav {
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
@@ -493,7 +493,7 @@ header > div {
     float: right;
     margin-top: 0; } }
 #content .page-intro {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 15px;
   line-height: 1.6;
@@ -502,7 +502,7 @@ header > div {
 #content p, #content li {
   line-height: 1.9; }
 
-footer {
+#footer {
   height: 10px;
   background: #00151c; }
 
@@ -535,7 +535,7 @@ footer {
 aside {
   background-color: #efefef;
   border-radius: 5px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 15px;
   line-height: 1.6;
@@ -544,19 +544,97 @@ aside {
   padding: 20px;
   padding-bottom: 10px;
   line-height: 1.6 !important; }
+  aside figcaption a,
+  aside li a,
+  aside p a {
+    text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+    background-image: linear-gradient(#444, #444);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0% 95%;
+    border-radius: 1px;
+    background-color: #efefef;
+    color: #444;
+    text-decoration: none; }
+    aside figcaption a::selection,
+    aside li a::selection,
+    aside p a::selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    aside figcaption a::-moz-selection,
+    aside li a::-moz-selection,
+    aside p a::-moz-selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    aside figcaption a *,
+    aside figcaption a *:after, aside figcaption a:after,
+    aside figcaption a *:before, aside figcaption a:before,
+    aside li a *,
+    aside li a *:after,
+    aside li a:after,
+    aside li a *:before,
+    aside li a:before,
+    aside p a *,
+    aside p a *:after,
+    aside p a:after,
+    aside p a *:before,
+    aside p a:before {
+      text-shadow: none; }
+    aside figcaption a:visited,
+    aside li a:visited,
+    aside p a:visited {
+      color: #444; }
+    aside figcaption a:hover,
+    aside li a:hover,
+    aside p a:hover {
+      text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+      background-image: linear-gradient(#444, #444);
+      background-size: 1px 1px;
+      background-repeat: repeat-x;
+      background-position: 0% 95%;
+      border-radius: 1px;
+      background-color: #efefef;
+      color: #444;
+      text-decoration: none; }
+      aside figcaption a:hover::selection,
+      aside li a:hover::selection,
+      aside p a:hover::selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a:hover::-moz-selection,
+      aside li a:hover::-moz-selection,
+      aside p a:hover::-moz-selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a:hover *,
+      aside figcaption a:hover *:after, aside figcaption a:hover:after,
+      aside figcaption a:hover *:before, aside figcaption a:hover:before,
+      aside li a:hover *,
+      aside li a:hover *:after,
+      aside li a:hover:after,
+      aside li a:hover *:before,
+      aside li a:hover:before,
+      aside p a:hover *,
+      aside p a:hover *:after,
+      aside p a:hover:after,
+      aside p a:hover *:before,
+      aside p a:hover:before {
+        text-shadow: none; }
+      aside figcaption a:hover:visited,
+      aside li a:hover:visited,
+      aside p a:hover:visited {
+        color: #444; }
   aside p {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-size: 15px;
     line-height: 1.6;
     color: #444;
     line-height: 1.6 !important; }
-  aside pre.highlight {
+  aside pre {
     font-size: 12px;
     border: none;
     padding-left: 0; }
-    aside pre.highlight .p {
-      font-size: 12px; }
 
 @media (min-width: 1280px) {
   aside {
@@ -565,6 +643,86 @@ aside {
     background-color: #fff;
     max-width: 45% !important;
     margin-right: -52%; }
+    aside figcaption a,
+    aside li a,
+    aside p a {
+      text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+      background-image: linear-gradient(#444, #444);
+      background-size: 1px 1px;
+      background-repeat: repeat-x;
+      background-position: 0% 95%;
+      border-radius: 1px;
+      background-color: #fff;
+      color: #444;
+      text-decoration: none; }
+      aside figcaption a::selection,
+      aside li a::selection,
+      aside p a::selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a::-moz-selection,
+      aside li a::-moz-selection,
+      aside p a::-moz-selection {
+        text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+        background: #c8c8c8; }
+      aside figcaption a *,
+      aside figcaption a *:after, aside figcaption a:after,
+      aside figcaption a *:before, aside figcaption a:before,
+      aside li a *,
+      aside li a *:after,
+      aside li a:after,
+      aside li a *:before,
+      aside li a:before,
+      aside p a *,
+      aside p a *:after,
+      aside p a:after,
+      aside p a *:before,
+      aside p a:before {
+        text-shadow: none; }
+      aside figcaption a:visited,
+      aside li a:visited,
+      aside p a:visited {
+        color: #444; }
+      aside figcaption a:hover,
+      aside li a:hover,
+      aside p a:hover {
+        text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+        background-image: linear-gradient(#444, #444);
+        background-size: 1px 1px;
+        background-repeat: repeat-x;
+        background-position: 0% 95%;
+        border-radius: 1px;
+        background-color: #efefef;
+        color: #444;
+        text-decoration: none; }
+        aside figcaption a:hover::selection,
+        aside li a:hover::selection,
+        aside p a:hover::selection {
+          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+          background: #c8c8c8; }
+        aside figcaption a:hover::-moz-selection,
+        aside li a:hover::-moz-selection,
+        aside p a:hover::-moz-selection {
+          text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+          background: #c8c8c8; }
+        aside figcaption a:hover *,
+        aside figcaption a:hover *:after, aside figcaption a:hover:after,
+        aside figcaption a:hover *:before, aside figcaption a:hover:before,
+        aside li a:hover *,
+        aside li a:hover *:after,
+        aside li a:hover:after,
+        aside li a:hover *:before,
+        aside li a:hover:before,
+        aside p a:hover *,
+        aside p a:hover *:after,
+        aside p a:hover:after,
+        aside p a:hover *:before,
+        aside p a:hover:before {
+          text-shadow: none; }
+        aside figcaption a:hover:visited,
+        aside li a:hover:visited,
+        aside p a:hover:visited {
+          color: #444; }
     aside::before {
       content: ''; } }
 blockquote {
@@ -577,10 +735,9 @@ blockquote {
   padding-left: 15px; }
   blockquote p {
     display: inline;
-    font-size: 16px;
     font-style: italic; }
-  blockquote footer p {
-    font-family: 'Open Sans';
+  blockquote footer {
+    font-family: "Open Sans";
     font-weight: normal;
     font-style: normal;
     font-size: 12px;
@@ -596,7 +753,7 @@ pre {
   margin: 20px 0;
   padding: 0;
   padding-left: 15px;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   font-size: 14px;
   line-height: 1.9;
   overflow-x: auto;
@@ -604,7 +761,7 @@ pre {
 
 code {
   color: #2c3e50;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   font-size: 15px;
   padding: 0 5px; }
 
@@ -620,13 +777,13 @@ figure img {
   max-width: 100%; }
 figure figcaption {
   margin-top: 10px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 15px;
   line-height: 1.6;
   color: #444; }
   figure figcaption .figure-number {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-style: normal;
     font-size: 12px;
@@ -644,13 +801,13 @@ img.zoomTarget:hover {
   border-top-style: solid;
   border-top-width: 1px;
   border-color: #efefef;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 15px;
   line-height: 1.6;
   color: #444; }
   #footnotes p, #footnotes li {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-size: 15px;
     line-height: 1.6;
@@ -661,6 +818,8 @@ img.zoomTarget:hover {
     font-family: 'Open Sans';
     font-size: 18px;
     letter-spacing: 5px; }
+  #footnotes .footnum {
+    color: #000; }
 
 h1,
 h2,
@@ -668,18 +827,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'et-book';
+  font-family: "et-book";
   font-weight: normal;
   margin-bottom: 0;
   margin-top: 60px; }
 
 h1 {
-  font-size: 26px;
-  text-transform: uppercase; }
+  font-size: 30px; }
 
 h2 {
-  font-size: 20px;
-  text-transform: uppercase; }
+  font-size: 24px; }
 
 h3, h4, h5, h6 {
   font-size: 20px;
@@ -701,10 +858,10 @@ li a {
   background-size: 1px 1px;
   background-repeat: repeat-x;
   background-position: 0% 95%;
+  border-radius: 1px;
+  background-color: #fff;
   color: #000;
-  text-decoration: none;
-  color: #000;
-  border-radius: 2px; }
+  text-decoration: none; }
   figcaption a::selection,
   p a::selection,
   li a::selection {
@@ -741,9 +898,10 @@ li a {
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0% 95%;
+    border-radius: 1px;
+    background-color: #efefef;
     color: #000;
-    text-decoration: none;
-    background-color: #efefef; }
+    text-decoration: none; }
     figcaption a:hover::selection,
     p a:hover::selection,
     li a:hover::selection {
@@ -779,7 +937,7 @@ li a {
   border-width: 1px;
   border-color: #efefef;
   border-radius: 4px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 14px;
   font-style: normal;
@@ -804,7 +962,7 @@ ul, ol {
   ul li::before, ol li::before {
     display: inline-block;
     width: 1em;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-size: 15px;
     line-height: 1.6;
@@ -831,13 +989,24 @@ ul ul, ol ol {
 ul ul ul, ol ol ol {
   padding-left: 40px; }
 
+li p:first-child {
+  display: inline-block;
+  margin-bottom: 0; }
+
 #table-of-contents,
 #org-div-home-and-up,
 pre.src:hover::before {
   display: none !important; }
 
+.outline-2 h2 {
+  font-size: 30px; }
+
+.outline-3 h3 {
+  font-size: 24px;
+  font-style: normal; }
+
 .timestamp, .timestamp-kwd {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
@@ -851,7 +1020,7 @@ pre.src:hover::before {
   border-width: 1px;
   border-color: #efefef;
   border-radius: 2px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 13px;
   font-style: normal;
@@ -879,7 +1048,7 @@ pre.src:hover::before {
   border-width: 1px;
   border-color: #efefef;
   border-radius: 2px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 13px;
   font-style: normal;
@@ -904,7 +1073,7 @@ table {
   padding-top: 20px;
   width: 100%; }
   table thead {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-style: normal;
     font-size: 12px;
@@ -915,15 +1084,17 @@ table {
     border-bottom: 0; }
   table tbody tr td {
     border-top: 0; }
+  table tr {
+    line-height: 1.9; }
   table caption {
     margin-bottom: 10px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: normal;
     font-size: 15px;
     line-height: 1.6;
     color: #444; }
     table caption .table-number {
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-weight: normal;
       font-style: normal;
       font-size: 12px;

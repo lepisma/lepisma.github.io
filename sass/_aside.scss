@@ -13,8 +13,6 @@ aside {
   li a,
   p a {
     @include link-underline($code-background, $text-gray);
-    color: $text-gray;
-    border-radius: 2px;
 
     &:hover {
       @include link-underline($code-background, $text-gray);
@@ -26,12 +24,8 @@ aside {
     line-height: 1.6 !important;
   }
 
-  pre.highlight {
+  pre {
     font-size: 12px;
-    .p {
-      font-size: 12px;
-    }
-    // Undo left-line
     border: none;
     padding-left: 0;
   }
@@ -53,7 +47,6 @@ aside {
 
       &:hover {
         @include link-underline($back-light, $text-gray);
-        background-color: $back-light;
       }
     }
 
