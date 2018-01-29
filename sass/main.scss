@@ -1,9 +1,18 @@
 @import 'normalize';
 @import 'commons';
+@import 'layout';
+@import 'nav';
+
+// Components
 @import 'aside';
 @import 'blockquote';
 @import 'code';
+@import 'dropcap';
+@import 'figure';
+@import 'footnotes';
 @import 'headings';
+@import 'hr';
 @import 'links';
-@import 'nav';
+@import 'lists';
+@import 'org';
 @import 'table';

@@ -27,30 +27,25 @@ $text-dark: $c1;
 
 // Fonts
 @font-face {
-  font-family: 'Bebas Neue Bold';
-  src: url('../fonts/BebasNeue Bold.otf');
-}
-
-@font-face {
-  font-family: "et-book";
-  src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-family: 'et-book';
+  src: url('../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot');
+  src: url('../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix') format('embedded-opentype'), url('../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff') format('woff'), url('../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf') format('truetype'), url('../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf') format('svg');
   font-weight: normal;
   font-style: normal
 }
 
 @font-face {
-  font-family: "et-book";
-  src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-family: 'et-book';
+  src: url('../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot');
+  src: url('../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix') format('embedded-opentype'), url('../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff') format('woff'), url('../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf') format('truetype'), url('../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf') format('svg');
   font-weight: normal;
   font-style: italic
 }
 
 @font-face {
-  font-family: "et-book";
-  src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-family: 'et-book';
+  src: url('../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot');
+  src: url('../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix') format('embedded-opentype'), url('../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff') format('woff'), url('../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf') format('truetype'), url('../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf') format('svg');
   font-weight: bold;
   font-style: normal
 }
@@ -178,213 +173,4 @@ $text-dark: $c1;
 // Loading bar
 .pace .pace-progress {
   background-color: $accent !important;
-}
-
-// Lists
-ul, ol {
-  list-style-position: outside;
-  padding: 0;
-}
-
-ul ul, ol ol {
-  padding-left: 20px;
-}
-
-ul ul ul, ol ol ol {
-  padding-left: 40px;
-}
-
-// Image zooms
-img.zoomTarget:hover {
-  cursor: default !important;
-}
-
-hr {
-  border: none;
-  border-top-style: solid;
-  border-top-width: 1px;
-  color: $back-light;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-// Hide some divs
-#table-of-contents,
-#org-div-home-and-up,
-pre.src:hover::before {
-  display: none !important;
-}
-
-// Layout
-#content, header, .page-header {
-  margin: 32px;
-  flex: 1 0 auto;
-}
-
-#content {
-  margin-top: 0;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-.clearfix::before, .clearfix::after {
-  content: " ";
-  display: table;
-}
-
-header {
-  .site-title {
-    text-align: center;
-  }
-  .site-nav {
-    text-align: center;
-    @include light-meta();
-    font-weight: bold;
-    line-height: 2.0;
-    a {
-      color: $text-light;
-      text-decoration: none;
-      &:hover {
-        color: $text-gray;
-      }
-      margin-left: 10px;
-    }
-    a:first-child {
-      margin-left: 0;
-    }
-    margin-top: 22px;
-  }
-}
-
-header > div {
-  display: inherit;
-}
-
-@media (min-width: 1000px) {
-  #content, header, .page-header {
-    margin-left: 164px;
-    max-width: 720px;
-  }
-
-  header {
-    .site-title {
-      float: left;
-    }
-    .site-nav {
-      float: right;
-      margin-top: 0;
-    }
-  }
-}
-
-// Dropcap
-.dropcap {
-  float: left;
-  font-size: 55px;
-  line-height: .1;
-  margin-right: .3rem;
-  margin-top: 30px;
-  padding: 0;
-}
-
-footer {
-  height: 10px;
-  background: $accent-dark;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  font-family: 'Merriweather';
-}
-
-// Main blog styling
-.page-header {
-  margin-top: 80px;
-  h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-transform: none;
-  }
-  .page-meta {
-    @include light-meta();
-  }
-}
-
-#content {
-  .page-intro {
-    @include light-para(15px);
-    margin-bottom: 40px;
-  }
-  p, li {
-    line-height: 1.9;
-  }
-}
-
-.timestamp, .timestamp-kwd {
-  @include light-meta();
-}
-
-.todo, .done {
-  @include tag();
-  font-weight: bold;
-}
-
-.todo {
-  color: #dc752f;
-}
-
-.done {
-  color: $text-light;
-}
-
-.tag {
-  background: white;
-}
-
-.tag > span {
-  @include tag();
-}
-
-figure {
-  img {
-    max-width: 100%;
-  }
-  figcaption {
-    .figure-number {
-      @include light-meta();
-    }
-    margin-top: 10px;
-    @include light-para(15px);
-  }
-}
-
-#footnotes {
-  margin-top: 70px;
-  padding-top: 30px;
-  border-width: 0;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-color: $back-light;
-  @include light-para(15px);
-
-  p, li {
-    @include light-para(15px);
-  }
-
-  h2.footnotes {
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-family: 'Open Sans';
-    font-size: 18px;
-    letter-spacing: 5px;
-  }
 }

@@ -1,0 +1,42 @@
+// Lists
+ul, ol {
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
+
+  li::before {
+    display: inline-block;
+    width: 1em;
+    @include light-para(15px);
+  }
+}
+
+ul {
+  li::before {
+    content: "•";
+    margin-left: -1em;
+  }
+}
+
+ol {
+  counter-reset: li;
+  li::before {
+    content: counter(li);
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
+  }
+  li {
+    counter-increment: li;
+  }
+}
+
+ul ul, ol ol {
+  padding-left: 20px;
+}
+
+// Only go three levels deep
+ul ul ul, ol ol ol {
+  padding-left: 40px;
+}
