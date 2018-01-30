@@ -456,10 +456,7 @@ body {
     color: #7b7b7b;
     text-transform: uppercase; }
 
-header .site-title {
-  text-align: center; }
 header .site-nav {
-  text-align: center;
   font-family: "Open Sans";
   font-weight: normal;
   font-style: normal;
@@ -481,30 +478,6 @@ header .site-nav {
 
 header > div {
   display: inherit; }
-
-@media (min-width: 1000px) {
-  #content, header, .page-header {
-    margin-left: 164px;
-    max-width: 720px; }
-
-  header .site-title {
-    float: left; }
-  header .site-nav {
-    float: right;
-    margin-top: 0; } }
-#content .page-intro {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 40px; }
-#content p, #content li {
-  line-height: 1.9; }
-
-#footer {
-  height: 10px;
-  background: #00151c; }
 
 .site-title {
   font-size: 16px; }
@@ -532,6 +505,30 @@ header > div {
 @media (max-width: 1000px) {
   header * {
     display: inline; } }
+@media (min-width: 1000px) {
+  #content, header, .page-header {
+    margin-left: 164px;
+    max-width: 720px; }
+
+  header .site-title {
+    float: left; }
+  header .site-nav {
+    float: right;
+    margin-top: 0; } }
+#content .page-intro {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 40px; }
+#content p, #content li, #content dd {
+  line-height: 1.9; }
+
+#footer {
+  height: 10px;
+  background: #00151c; }
+
 aside {
   background-color: #efefef;
   border-radius: 5px;
@@ -955,11 +952,11 @@ li a {
   background: none;
   text-shadow: none; }
 
-ul, ol {
+ul, ol, dl {
   list-style: none;
   list-style-position: outside;
   padding: 0; }
-  ul li::before, ol li::before {
+  ul li::before, ul dt::before, ol li::before, ol dt::before, dl li::before, dl dt::before {
     display: inline-block;
     width: 1em;
     font-family: "Open Sans";
@@ -992,6 +989,16 @@ ul ul ul, ol ol ol {
 li p:first-child {
   display: inline-block;
   margin-bottom: 0; }
+
+dl dt::before {
+  content: "•";
+  margin-left: -1em; }
+dl dt {
+  font-weight: normal;
+  margin-bottom: 10px; }
+dl dd {
+  font-style: italic;
+  margin-bottom: 20px; }
 
 #table-of-contents,
 #org-div-home-and-up,

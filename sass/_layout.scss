@@ -43,11 +43,7 @@ body {
 }
 
 header {
-  .site-title {
-    text-align: center;
-  }
   .site-nav {
-    text-align: center;
     @include light-meta();
     font-weight: bold;
     line-height: 2.0;
@@ -68,6 +64,45 @@ header {
 
 header > div {
   display: inherit;
+}
+
+.site-title {
+  font-size: 16px;
+
+  span {
+    display: none !important;
+  }
+
+  ul {
+    display: block !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    img {
+      border-radius: 2px;
+      max-width: 32px;
+    }
+  }
+}
+
+.site-header nav a {
+  color: $text-light;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    border: 0;
+    color: $accent;
+  }
+}
+
+@media (max-width: 1000px) {
+  header * {
+    display: inline;
+  }
 }
 
 @media (min-width: 1000px) {

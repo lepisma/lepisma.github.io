@@ -1,0 +1,4 @@
+#+TITLE: Writings
+#+SETUPFILE: ../assets/export.setup
+
+Some incomplete thoughts.

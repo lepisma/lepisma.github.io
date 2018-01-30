@@ -1,0 +1,11 @@
+#+TITLE: Pesky Little Things
+#+SETUPFILE: ../assets/export.setup
+
+From whatever I have experienced, there are two kind of good tools in
+programming.
+
+1. Complicated and powerful
+2. Simple and elegant
+
+And there are two ways people use these tools:
+1. 
