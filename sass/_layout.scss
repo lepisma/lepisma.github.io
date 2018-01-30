@@ -92,7 +92,7 @@ header > div {
     @include light-para(15px);
     margin-bottom: 40px;
   }
-  p, li {
+  p, li, dd {
     line-height: 1.9;
   }
 }
