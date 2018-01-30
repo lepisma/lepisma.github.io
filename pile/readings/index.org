@@ -1,2 +1,6 @@
 #+TITLE: Readings
 #+SETUPFILE: ../assets/export.setup
+
+* Pages in this section
+
+- [[./reading-list.org][Reading List]]

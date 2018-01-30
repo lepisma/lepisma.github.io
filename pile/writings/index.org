@@ -2,3 +2,7 @@
 #+SETUPFILE: ../assets/export.setup
 
 Some incomplete thoughts.
+
+* Pages in this section
+
+- [[./isolation.org][The Cost of Isolation]]

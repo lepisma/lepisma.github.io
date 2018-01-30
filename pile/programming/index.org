@@ -1,3 +1,7 @@
 #+TITLE: Programming
 #+SETUPFILE: ../assets/export.setup
 
+* Pages in this section
+
+- [[./aoc.org][Advent of Code]]
+- [[./pesky.org][Pesky Little Things]]
