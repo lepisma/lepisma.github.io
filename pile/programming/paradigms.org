@@ -1,0 +1,5 @@
+#+TITLE: Programming Paradigms
+#+SETUPFILE: ../assets/export.setup
+
+I would like to explore, as much as possible, all the various ways to write
+programs. This page aims to keep a log of this process.

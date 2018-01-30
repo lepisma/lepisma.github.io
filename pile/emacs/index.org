@@ -1,6 +1,8 @@
 #+TITLE: Emacs
 #+SETUPFILE: ../assets/export.setup
 
+Some notes/texts related to Emacs and Org Mode exploring various possibilities.
+
 * Pages in this section
 
 - [[./til.org][Today I Learned  /in Emacs/]]

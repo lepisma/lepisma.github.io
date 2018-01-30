@@ -4,4 +4,5 @@
 * Pages in this section
 
 - [[./aoc.org][Advent of Code]]
+- [[./paradigms.org][Programming Paradigms]]
 - [[./pesky.org][Pesky Little Things]]

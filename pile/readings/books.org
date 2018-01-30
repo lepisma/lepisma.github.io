@@ -1,4 +1,4 @@
-#+TITLE: Reading List
+#+TITLE: Reading List (Books)
 #+SETUPFILE: ../assets/export.setup
 #+TODO: READING NEXT | READ
 
