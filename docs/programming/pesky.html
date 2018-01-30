@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-01-29 Mon 19:30 -->
+<!-- 2018-01-29 Mon 22:19 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pesky Little Things</title>
@@ -258,6 +258,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -283,20 +305,28 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-01-29 Mon 19:30
+    Last modified:  2018-01-29 Mon 22:19
   </div>
   <h1>Pesky Little Things</h1>
 </div>
 </div>
 <div id="content">
 <p>
-From whatever I have experienced, there are two kind of good tools in
-programming.
+From whatever I have experienced, there are two kind of mental models provided
+by programming tools, <i>simple</i> (e.g. <a href="http://dplyr.tidyverse.org/">dplyr</a>) and <i>complex</i> (e.g. <a href="https://pandas.pydata.org/">pandas</a>). If used
+sparingly, most powerful tools are really annoying unless, of course, you
+clearly understand the idea behind the models they expose. Here are some tools
+in that category which I would like to study very <i>thoroughly</i> sometime:
 </p>
 
 <ol class="org-ol">
-<li>Complicated and powerful</li>
-<li>Simple and elegant</li>
+<li>Matplotlib. Maybe the recent updates made the API cleaner. A good resource to
+start might be <a href="http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html">this</a>.</li>
+<li>\(\LaTeX\) is like sand. Coarse, rough, irritating and gets everywhere. <a href="http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf">Here</a> is
+something that might help change my feelings.</li>
+<li><a href="https://sourceforge.net/projects/pgf/">TikZ</a>. Inkscape has pretty weak scripting capabilities.</li>
+<li>Regex. I specifically need to understand how it works to really appreciate
+it.</li>
 </ol>
 </div>
 <div id="postamble" class="status">
