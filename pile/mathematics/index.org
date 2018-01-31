@@ -1,0 +1,6 @@
+#+TITLE: Mathematics
+#+SETUPFILE: ../assets/export.setup
+
+* Pages in this section
+
+- [[./strassen.org][Searching for Strassen's multiplication rule]]

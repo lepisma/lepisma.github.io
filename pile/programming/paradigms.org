@@ -3,3 +3,4 @@
 
 I would like to explore, as much as possible, all the various ways to write
 programs. This page aims to keep a log of this process.
+mputation with exactly represented data. Such an exact representation implies that, even when the size of the output is small, the intermediate data generated during a computation may grow in an unpredictable way. This behavior is 

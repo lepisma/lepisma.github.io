@@ -3,6 +3,8 @@
 - [[file:index.org][Pile]]
 - [[file:emacs/index.org][Emacs]]
   - [[file:emacs/til.org][Today I Learned  /in Emacs/]]
+- [[file:mathematics/index.org][Mathematics]]
+  - [[file:mathematics/strassen.org][Searching for Strassen multiplication rule]]
 - [[file:misc/index.org][Miscellaneous]]
   - [[file:misc/desktop.org][Desktop]]
   - [[file:misc/employment.org][Employment Summary]]

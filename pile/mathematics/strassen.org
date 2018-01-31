@@ -1,0 +1,20 @@
+#+TITLE: Searching for Strassen multiplication rule
+#+SETUPFILE: ../assets/export.setup
+
+Strassen algorithm is an $\mathcal{O}(N^{2.8074})$ algorithm for multiplying two
+square matrices. One part of the algorithm is to do a bunch of transformations
+for the submatrices involved (TODO: add note). The transformation is mostly
+non-intuitive and looks like a good way to learn about symbolic computation and
+searching. Here I try to automate that part using maybe sage or maxima.
+
+#+BEGIN_SRC sage :session :exports both :eval never-export :file ./images/sagetest.png
+# Sagemath test
+var('x,y,z')
+T = RDF(golden_ratio)
+p = 2 - (cos(x + T*y) + cos(x - T*y) + cos(y + T*z) + cos(y - T*z) + cos(z - T*x) + cos(z + T*x))
+r = 4.77
+implicit_plot3d(p, (x, -r, r), (y, -r, r), (z, -r, r), plot_points=40).show(viewer='tachyon', figsize=5)
+#+END_SRC
+
+#+RESULTS:
+[[file:./images/sagetest.png]]
