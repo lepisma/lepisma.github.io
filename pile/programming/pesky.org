@@ -15,3 +15,4 @@ category which I would like to study very /thoroughly/ sometime:
 - [ ] Regex. I specifically need to understand how it works to really appreciate
   it.
 - [ ] DNS/CNAMEs/SSLs and everything involved in secure web communication.
+- [ ] CSS
