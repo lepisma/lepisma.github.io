@@ -1,6 +1,6 @@
 // Code highlighting
 
-pre {
+pre.src {
   @include left-line();
   font-family: $code-font;
   font-size: 14px;
