@@ -9,8 +9,9 @@ category which I would like to study very /thoroughly/ sometime:
 
 - [ ] Matplotlib. Maybe the recent updates made the API cleaner. A good resource
   to start might be [[http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html][this]].
-- [ ] $\LaTeX$ is like sand. Coarse, rough, irritating and gets everywhere. [[http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf][Here]]
-  is something that might help change my feelings.
+- [ ] $\LaTeX$ is irritating and is almost everywhere. [[http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf][Here]] is something that
+  might help change my feelings.
 - [ ] [[https://sourceforge.net/projects/pgf/][TikZ]]. Inkscape has pretty weak scripting capabilities.
 - [ ] Regex. I specifically need to understand how it works to really appreciate
   it.
+- [ ] DNS/CNAMEs/SSLs and everything involved in secure web communication.
