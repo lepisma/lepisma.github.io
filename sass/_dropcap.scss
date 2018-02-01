@@ -1,8 +1,9 @@
-.dropcap {
+#content > p:first-child::first-letter {
   float: left;
   font-size: 55px;
+  font-style: normal;
   line-height: .1;
-  margin-right: .3rem;
-  margin-top: 30px;
+  margin-right: 0.2em;
+  margin-top: 0.2em;
   padding: 0;
 }
