@@ -7,4 +7,4 @@ expression.
 
 * Pages in this section
 
-- [[./isolation.org][The Cost of Isolation]]
+- [[./lazy-answer.org][The Lazy Answer to Everything]]

@@ -1,0 +1,55 @@
+#+TITLE: The Lazy Answer to Everything
+#+SETUPFILE: ../assets/export.setup
+
+Linus Torvalds is notoriously famous for being direct/upfront/harsh/rude etc.
+Here is a recent [[https://news.ycombinator.com/item?id=16202205][news]] where he blasts on the Intel fiasco with meltdown patches.
+Many praise such behaviour, many don't. I, personally, am unsure about it both
+because I don't know enough about the case and because I have an obviously
+biased sampling of /internet/ logs with Linus involved.
+
+A reasonable way to judge the correctness of such actions is to notice the
+effect it produces. Was the effect planned by the actor? In most of the cases,
+it indeed works out as planned. In the case above for example, one of the
+effects can be better publicity of this specific incident which might result in
+a quicker solution. As stated earlier, I don't have enough knowledge right now
+to have opinions about the above mentioned case. But it does remind me of
+something.
+
+-----
+
+There is this thing that I am told sometimes when I talk to my previous
+generation. The thing is about the behaviour of teachers towards students in the
+days of yore (its always something about the glorious past). Specifically, they
+were less restrained as far as certain forms of punishments (for the students)
+were considered. The idea being that threats do wonder for making a pupil learn.
+It did, allegedly, and also made the /pupils/ more supportive of the idea
+itself.
+
+Something similar happened recently when I was trying to call bullshit on a
+certain WhatsApp group message. I went on with a harangue backed by certain
+/links/ and /evidence/ as a reasonable argument should do. The group received my
+messages. And regressed. Silently. I have not seen similar messages in that
+group since then. Did it work? I don't think so. It had the apparent effect, but
+it didn't satisfy my purpose of making the people see what is wrong /according to
+the evidence/. Seen as an attack, my response sired an atmosphere of subjugation
+rather than of healthy conversation and argumentation. The important thing is,
+my action was pure /lazy/. Harsh perfectionism is the tool of the weak. Specially
+in fields which are more art than science, like talking to fellow humans.
+
+In general there are many other realms in /soft/ sciences where people wield this
+magical wand of laziness freely without real effect. It might satisfy the actor
+in some ways (for example, I might feel like a know-it-all after lashing on
+pseudo-science in social networks) but in the core it still is just a cover up
+for the failure in /teaching/. Teaching is hard. There are easy ways around it. We
+use them all the time and its just lazy. Lazy because we didn't put the extra
+effort or choose to /not/ give an answer when the question is beyond our reach.
+
+-----
+
+Thinking more about it, a lot of moves hide within them such laziness. People
+blaming others (not fixing themselves), /fighting/ over power (not earning it),
+using intimidation (instead of actually teaching), putting faith in an organized
+religion (instead of finding the answers themselves) etc.
+
+It takes /a lot/ to make real change in people, things and systems. I hope we are
+putting that much at least where its really critical.

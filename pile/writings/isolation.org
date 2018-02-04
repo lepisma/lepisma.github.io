@@ -1,3 +1,0 @@
-#+TITLE: The Cost of Isolation
-#+SETUPFILE: ../assets/export.setup
-
