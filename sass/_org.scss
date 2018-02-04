@@ -40,3 +40,8 @@ pre.src:hover::before {
 .tag > span {
   @include tag();
 }
+
+.priority {
+  color: $text-light;
+  font-family: $code-font;
+}

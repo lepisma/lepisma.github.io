@@ -1,7 +1,9 @@
 #+TITLE: Writings
 #+SETUPFILE: ../assets/export.setup
 
-Some incomplete thoughts.
+Some incomplete thoughts. Texts here mostly written/modified on whim and
+conclusions are not properly testable in the strict sense. Just a place for
+expression.
 
 * Pages in this section
 

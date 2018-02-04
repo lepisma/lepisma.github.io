@@ -1059,6 +1059,10 @@ pre.src:hover::before {
     background-color: #efefef;
     background-image: none; }
 
+.priority {
+  color: #7b7b7b;
+  font-family: "Fira Mono"; }
+
 table {
   border-color: #7b7b7b;
   border-left: transparent;

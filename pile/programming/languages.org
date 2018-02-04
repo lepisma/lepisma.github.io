@@ -1,0 +1,219 @@
+#+TITLE: Language Exploration
+#+SETUPFILE: ../assets/export.setup
+#+TODO: NEXT | DONE
+
+One of the parts of programming that I enjoy the most is learning/exploring new
+languages. This page aims to keep a log of that process.
+
+In many ways, learning new languages does not look like a /very/ interesting
+endeavor. Most of the mainstream programming languages are pretty similar and,
+as the time goes, they are getting closer to each other by borrowing various
+features.
+
+/But/ there still are clear differences in some. Other than the taglines and the
+general paradigm they lie in, there are some really interesting differences in
+the solutions they provide for the same problem.
+
+I will try to keep a list of languages here with which I have had or /want to/
+have experiences (marked ~NEXT~), ignoring the ones whose interesting features are
+probably already in other languages.
+
+* NEXT Ada
+
+Specifically, I am interested in its generic system.
+
+* NEXT APL/J/K
+
+Interested to look at this family because of:
+- Dedicated array manipulation functionality
+- Non ASCII characters
+
+* C
+
+I recently tried to /actually/ use C while doing some Advent of Code problems and
+working with Emacs Lisp dynamic modules. Its actually much nicer than I
+expected. Although there is no modern-ish package management, the type of
+packages I have been needing at this level are easy to get.
+
+The following is in my list for C:
+- [ ] Maybe follow through an exercise set like [[https://github.com/AllenDowney/ExercisesInC][this one]]
+- [ ] Working with threads and other OS features
+- [ ] Network programming
+
+* C++
+
+I have had some experience with C++ and know the general basics. As of now, I
+don't have anything specific to try learning its more advanced features. I /might/
+try it to learn some design patterns.
+
+* NEXT COBOL
+
+Want to see how /English like/ it really is.
+
+* NEXT Dylan
+
+Have heard a lot about [[https://opendylan.org/articles/macro-system/index.html][dylan macros]]. Considering that its syntax is pretty non
+Lispy, its really interesting to know how macros feel in here. This might
+probably be similar to how they feel in R or Julia, or maybe not.
+
+* NEXT Eiffel
+
+/Contracts/ are the basic motivation here.
+
+* Erlang
+
+I have been playing with Erlang a little bit recently. The syntax at first looks
+weird but makes much more sense after you try Prolog first. The killer feature,
+actor based concurrency, is something I haven't really tried yet.
+
+Looking for a nice problem to proceed here.
+
+As far as other BEAM languages are concerned, Elixir looks neat but probably
+won't have much to throw at me if I look into the ML family first.
+
+* Factor
+
+I used factor once very long ago and didn't appreciate it then. Recently used
+some of its features and am impressed. The special point to mention is how
+clearly the /code is data/ idea translates here. Other than trying out its
+extensive set of libraries, I am interested in learning more about /quotations/
+and trying to implement the language itself.
+
+* Haskell
+
+Picking up Haskell after OCaml. Right now, I am working through the book [[http://learnyouahaskell.com/][Learn
+You a Haskell]] and solving a few problems with it. Some immediate things that
+interest me:
+
+- [ ] Typeclasses
+- [ ] Parsec and other tooling for working with parsers
+
+I am also interested to learn more type theory in the process.
+
+* Io
+
+Touched Io in 'Seven Languages in Seven weeks'. It is a good case study for
+learning about
+- Message passing system
+- Prototype based objects
+
+There are other interesting features like the actor based concurrency model but
+I am more inclined to try that in Erlang, so nothing much to do here.
+
+* Java
+
+I get to use it at a few places occasionally. Java has evolved but there are so
+much better languages right now on JVM that I probably will never touch it
+again.
+
+* JavaScript/TypeScript
+
+Modern JS has come a long way and has some seriously powerful features. I have
+been using it along with TypeScript and like both a lot. As of now, there is no
+specific language feature on my list. Probably after digging deeper into the
+runtime there will be some.
+
+* Julia
+
+Have used it as a Python user would. Like R, the interesting things here are in
+the language core and how the AST manipulation works. Will be looking into those
+soon.
+
+* Lisp
+
+Really impressive family. I have been using a few (Emacs Lisp, Common Lisp, Hy)
+regularly now and strongly recommend trying.
+
+Things to learn
+- [ ] Reader macros from Common Lisp
+- [ ] CLOS
+- [ ] Concurrency constructs from Clojure
+
+* NEXT Lua
+
+Lua probably is pretty well used in the game community and has some really nice
+engines. Will be trying it while working on a game.
+
+* Nim
+
+I have tried it in pieces here and there. Looks like follows the following
+relation ~crystal:ruby::nim:python~. I don't have any specific use case for it
+though so probably won't be jumping deeper here.
+
+* OCaml
+
+OCaml got me into pattern matching and algebraic data types. That's probably
+enough of this since I find Haskell more interesting now.
+
+* Prolog
+
+I have a decent understanding of Prolog now but sometimes the programs get stuck
+pretty deep while backtracking. Will be starting with the 'Art of Prolog'
+sometime soon.
+
+* Python
+
+Probably my main language as of now. Is pretty practical but has some annoying
+warts. Not much to dig here.
+
+* R
+
+R's problem domain already has mirrors in Python so its not worth that much. The
+more interesting part however comes in the language itself. A lot of nice
+package APIs in R are result of the meta programming support in R.
+
+[[http://adv-r.had.co.nz/][Advanced R]] has a section on metaprogramming which should be a good place to
+begin.
+
+* Racket
+
+Separating this from the Lisp family because its not a Lisp in the strict sense.
+Some reasons for learning it:
+- [ ] Hygienic macros
+- [ ] First class continuations
+- [ ] Typed racket
+
+Although I have used it occasionally, I haven't really committed to it. Given
+the modern and beautifully crafted documentation and libraries, I will be soon
+switching to this for the /Common Lisp role/.
+
+* NEXT REBOL / Red
+
+* Ruby
+
+A better Python. Seriously. It has better lambdas, better shell integration and
+better class system.
+
+But, I probably will never be switching to it because Python's package ecosystem
+is way ahead for my personal use cases.
+
+* NEXT Rust
+
+This is something I will be keeping in my toolbox because of:
+- Pattern matching
+- Type inference
+- Macros
+- Sane package management
+
+The interesting idea to get here is the ownership model.
+
+* Scala
+
+Tried this while going through the book 'Seven Languages in Seven Weeks'. Its
+focused a lot on practicalities and so is more of a mixture of tricks rather
+than having a definite ideological inclination. You can't love more than a
+couple /practical/ languages. I am already full.
+
+* NEXT Shen
+
+So shen is this /ultimate language/ which probably won't be really usable because
+of the lack of community. Even then it is worthy of study because of its sequent
+based type system and strong support for logic programming.
+
+* NEXT Squeak/Smalltalk
+
+What else is there in message passing OOP?
+
+* NEXT WebGL/OpenGL
+
+I have no idea how OpenGL goes. Will start with something like three.js.
