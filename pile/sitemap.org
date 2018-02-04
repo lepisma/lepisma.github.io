@@ -9,7 +9,6 @@
   - [[file:misc/desktop.org][Desktop]]
   - [[file:misc/employment.org][Employment Summary]]
 - [[file:programming/index.org][Programming]]
-  - [[file:programming/aoc.org][Advent of Code]]
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]
 - [[file:readings/index.org][Readings]]
