@@ -3,7 +3,8 @@
 #+TODO: READING NEXT | READ
 
 Books to read. This is a rather large list with items from my old Goodreads
-account. Naturally, I will /not/ be reading all of these.
+account. Most likely I will /not/ be reading all of these because the list
+increases with time.
 
 /Sorting is based on date added (recent first)/
 
@@ -107,7 +108,7 @@ CLOSED: [2017-11-10 Fri 22:07]
 :AMAZON:   https://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp
 :END:
 
-* READING राग दरबारी (Raag Darbari)
+* राग दरबारी (Raag Darbari)
 :PROPERTIES:
 :AUTHOR:   Shrilal Shukla
 :ADDED:    <2017-10-04>
@@ -231,7 +232,7 @@ topics it touches.
 :AMAZON:   https://www.amazon.com/Evolution-Levels-Selection-Samir-Okasha/dp/0199556717
 :END:
 
-* Deep Work: Rules for Focused Success in a Distracted World
+* READING Deep Work: Rules for Focused Success in a Distracted World
 :PROPERTIES:
 :AUTHOR:
 :ADDED:    <2017-08-23>
@@ -428,7 +429,7 @@ Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
 :AMAZON:   https://www.amazon.com/Through-Language-Glass-Different-Languages/dp/0312610491
 :END:
 
-* NEXT Design Patterns: Elements of Reusable Object-Oriented Software
+* Design Patterns: Elements of Reusable Object-Oriented Software
 :PROPERTIES:
 :AUTHOR:   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
 :ADDED:    <2017-06-28>
@@ -442,12 +443,13 @@ Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
 :GOODREADS: https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan
 :END:
 
-* NEXT Blankets
+* Blankets
 :PROPERTIES:
 :AUTHOR:   Craig Thompson
 :ADDED:    <2017-06-28>
 :GOODREADS: https://www.goodreads.com/book/show/25179.Blankets?ac=1&from_search=true
 :END:
+
 * The Mathematical Mechanic: Using Physical Reasoning to Solve Problems
 :PROPERTIES:
 :AUTHOR:   Mark Levi
@@ -476,7 +478,7 @@ Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
 :AMAZON:   https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275
 :END:
 
-* READING Practical Common Lisp
+* Practical Common Lisp
 :PROPERTIES:
 :AUTHOR:   Peter Seibel
 :ADDED:    <2017-06-28>
@@ -871,7 +873,7 @@ CLOSED: [2015-04-28]
 :GOODREADS: https://www.goodreads.com/book/show/18213403
 :END:
 
-* READING On Growth and Form
+* On Growth and Form
 :PROPERTIES:
 :AUTHOR:    D'Arcy Wentworth Thompson, John Tyler Bonner
 :ADDED:     <2017-03-13>
@@ -1370,7 +1372,8 @@ CLOSED: [2017-01-18]
 :GOODREADS: https://www.goodreads.com/book/show/17744
 :END:
 
-Interesting read on some of the 'earlier theory and works' in statistical visualizations.
+Interesting read on some of the earlier theory and works in statistical
+visualizations.
 
 * A Manual for Writers of Research Papers, Theses, and Dissertations: Chicago Style for Students and Researchers
 :PROPERTIES:
@@ -1973,7 +1976,7 @@ I like how the book classifies the type of problems regularly faced by a crowd
 and the conditions they need to make wise decisions there. These are some good
 cues for analyzing and understanding cases presented in the book.
 
-* READING Literate Programming
+* Literate Programming
 :PROPERTIES:
 :AUTHOR:    Donald Ervin Knuth
 :ADDED:     <2016-09-13>
@@ -3511,7 +3514,8 @@ CLOSED: [2016-05-16]
 :GOODREADS: https://www.goodreads.com/book/show/630144
 :END:
 
-* Around the World in Eighty Days (Extraordinary Voyages, #11)
+* READ Around the World in Eighty Days (Extraordinary Voyages, #11)
+CLOSED: [2018-02-05 Mon 01:21]
 :PROPERTIES:
 :AUTHOR:    Jules Verne, Michael Glencross, Brian W. Aldiss
 :ADDED:     <2015-08-19>
@@ -3867,7 +3871,8 @@ CLOSED: [2015-04-02]
 :GOODREADS: https://www.goodreads.com/book/show/22477307
 :END:
 
-* Treasure Island
+* READ Treasure Island
+CLOSED: [2018-02-05 Mon 01:20]
 :PROPERTIES:
 :AUTHOR:    Robert Louis Stevenson
 :ADDED:     <2015-03-14>
@@ -4649,7 +4654,8 @@ CLOSED: [2014-12-30]
 :GOODREADS: https://www.goodreads.com/book/show/331680
 :END:
 
-* The Jungle Book
+* READ The Jungle Book
+CLOSED: [2018-02-05 Mon 01:18]
 :PROPERTIES:
 :AUTHOR:    Rudyard Kipling
 :ADDED:     <2014-12-21>
@@ -4808,7 +4814,8 @@ CLOSED: [2015-04-09]
 :GOODREADS: https://www.goodreads.com/book/show/865617
 :END:
 
-* Flatland: A Romance of Many Dimensions
+* READ Flatland: A Romance of Many Dimensions
+CLOSED: [2018-02-05 Mon 01:18]
 :PROPERTIES:
 :AUTHOR:    Edwin A. Abbott, Banesh Hoffmann
 :ADDED:     <2014-10-27>
@@ -4997,7 +5004,8 @@ CLOSED: [2014-07-22]
 :GOODREADS: https://www.goodreads.com/book/show/21
 :END:
 
-* The Alchemist
+* READ The Alchemist
+CLOSED: [2018-02-05 Mon 01:17]
 :PROPERTIES:
 :AUTHOR:    Paulo Coelho, Alan R. Clarke
 :ADDED:     <2014-07-06>
@@ -5046,21 +5054,24 @@ CLOSED: [2014-07-22]
 :GOODREADS: https://www.goodreads.com/book/show/3
 :END:
 
-* Deception Point
+* READ Deception Point
+CLOSED: [2018-02-05 Mon 01:17]
 :PROPERTIES:
 :AUTHOR:    Dan Brown
 :ADDED:     <2014-07-05>
 :GOODREADS: https://www.goodreads.com/book/show/976
 :END:
 
-* Digital Fortress
+* READ Digital Fortress
+CLOSED: [2018-02-05 Mon 01:17]
 :PROPERTIES:
 :AUTHOR:    Dan Brown
 :ADDED:     <2014-07-05>
 :GOODREADS: https://www.goodreads.com/book/show/11125
 :END:
 
-* The Lost Symbol (Robert Langdon, #3)
+* READ The Lost Symbol (Robert Langdon, #3)
+CLOSED: [2018-02-05 Mon 01:17]
 :PROPERTIES:
 :AUTHOR:    Dan Brown
 :ADDED:     <2014-07-05>
@@ -5165,21 +5176,24 @@ CLOSED: [2014-03-23]
 :GOODREADS: https://www.goodreads.com/book/show/64582
 :END:
 
-* The Grand Design
+* READ The Grand Design
+CLOSED: [2018-02-05 Mon 01:16]
 :PROPERTIES:
 :AUTHOR:    Stephen Hawking, Leonard Mlodinow
 :ADDED:     <2014-03-19>
 :GOODREADS: https://www.goodreads.com/book/show/8520362
 :END:
 
-* Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character
+* READ Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character
+CLOSED: [2018-02-05 Mon 01:16]
 :PROPERTIES:
 :AUTHOR:    Richard Feynman
 :ADDED:     <2014-03-19>
 :GOODREADS: https://www.goodreads.com/book/show/5544
 :END:
 
-* A Brief History of Time
+* READ A Brief History of Time
+CLOSED: [2018-02-05 Mon 01:16]
 :PROPERTIES:
 :AUTHOR:    Stephen Hawking, Cao Chi, Phạm Văn Thiều
 :ADDED:     <2014-03-19>
