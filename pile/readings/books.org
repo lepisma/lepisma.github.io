@@ -5,6 +5,504 @@
 Books to read. This is a rather large list with items from my old Goodreads
 account. Naturally, I will /not/ be reading all of these.
 
+/Sorting is based on date added (recent first)/
+
+* READ Seven Languages in Seven Weeks 
+CLOSED: [2018-01-24 Wed 22:59]
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2018-01-24>
+:GOODREADS:   https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks
+:END:
+
+* Mastering the Techniques of Teaching
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2018-01-11>
+:AMAZON:   https://www.amazon.com/Mastering-Techniques-Teaching-Joseph-Lowman/dp/078795568X
+:END:
+
+* The Princeton Companion to Mathematics
+:PROPERTIES:
+:AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
+:ADDED:    <2018-01-08>
+:GOODREADS: https://www.goodreads.com/book/show/1471873.The_Princeton_Companion_to_Mathematics
+:END:
+
+* Concrete Mathematics: A Foundation for Computer Science
+:PROPERTIES:
+:AUTHOR:   Ronald L. Graham, Donald Ervin Knuth, Oren Patashnik
+:ADDED:    <2018-01-08>
+:GOODREADS: https://www.goodreads.com/book/show/112243.Concrete_Mathematics?ac=1&from_search=true
+:END:
+
+* Notes from Underground
+:PROPERTIES:
+:AUTHOR:   Fyodor Dostoyevsky, Christian Redl, Philip Dossick, Emanuela Guercetti, Michelle-Irène Brudny, Richard Pevear, Norman Dietz, Donald Fanger, coderati, Boris de Schlœzer, Larissa Volokhonsky
+:ADDED:    <2018-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/49455.Notes_from_Underground
+:END:
+
+* The Stranger
+:PROPERTIES:
+:AUTHOR:   Albert Camus, Stuart Gilbert, Matthew Ward, Leman Sarı
+:ADDED:    <2018-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/49552.The_Stranger
+:END:
+
+* READ Slaughterhouse-Five
+CLOSED: [2018-01-09 Tue 15:46]
+:PROPERTIES:
+:AUTHOR:   Kurt Vonnegut
+:ADDED:    <2018-01-04>
+:GOODREADS: https://www.goodreads.com/book/show/4981.Slaughterhouse_Five
+:END:
+
+* Schooling In Capitalist America: Educational Reform And The Contradictions Of Economic Life
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-12-27>
+:AMAZON:   https://www.amazon.com/Schooling-Capitalist-America-Educational-Contradictions/dp/0465097189
+:END:
+
+* Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-12-16>
+:AMAZON:   https://www.amazon.com/Adaptation-Natural-Artificial-Systems-Introductory/dp/0262581116
+:END:
+
+* READ The Last Answer
+CLOSED: [2017-11-13 Mon 20:46]
+:PROPERTIES:
+:AUTHOR:   Isaac Asimov
+:ADDED:    <2017-11-13>
+:GOODREADS: https://www.goodreads.com/book/show/15755066-the-last-answer
+:END:
+
+This (along with /The Last Question/, which I recently read) is a beautiful short.
+Looking forward to more from Asimov.
+
+* READ The Last Question
+CLOSED: [2017-11-10 Fri 22:07]
+:PROPERTIES:
+:AUTHOR:   Isaac Asimov, Bob E. Flick, Jim Gallant
+:ADDED:    <2017-11-10>
+:GOODREADS: https://www.goodreads.com/book/show/4808763-the-last-question
+:END:
+
+/How can entropy be reversed?/ ...
+
+* Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-10-18>
+:AMAZON:   https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465060722/ref=tmm_pap_title_0?_encoding=UTF8&sr=&qid=
+:END:
+
+* Realm of Racket: Learn to Program, One Game at a Time!
+:PROPERTIES:
+:AUTHOR:   Conrad Barski M.D., David Van Horn, Eight Students Northeastern University of
+:ADDED:    <2017-10-14>
+:AMAZON:   https://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp
+:END:
+
+* READING राग दरबारी (Raag Darbari)
+:PROPERTIES:
+:AUTHOR:   Shrilal Shukla
+:ADDED:    <2017-10-04>
+:GOODREADS: https://www.goodreads.com/book/show/2164749._
+:END:
+
+* The Black Swan: The Impact of the Highly Improbable (Incerto #2)
+:PROPERTIES:
+:AUTHOR:   Nassim Nicholas Taleb
+:ADDED:    <2017-10-03>
+:GOODREADS: https://www.goodreads.com/book/show/242472.The_Black_Swan
+:END:
+
+* Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto #1)
+:PROPERTIES:
+:AUTHOR:   Nassim Nicholas Taleb
+:ADDED:    <2017-10-03>
+:GOODREADS: https://www.goodreads.com/book/show/38315.Fooled_by_Randomness
+:END:
+
+* The Idea of India
+  :PROPERTIES:
+  :AUTHOR:   Sunil Khilnani
+  :ADDED:    <2017-09-29>
+  :GOODREADS: https://www.goodreads.com/book/show/631243.The_Idea_of_India
+  :END:
+
+* The Annihilation of Caste
+  :PROPERTIES:
+  :AUTHOR:   B.R. Ambedkar
+  :ADDED:    <2017-09-29>
+  :GOODREADS: https://www.goodreads.com/book/show/8521879-the-annihilation-of-caste
+  :END:
+  
+* The Denial of Death
+:PROPERTIES:
+:AUTHOR:   Ernest Becker, Sam Keen, Daniel Goleman
+:ADDED:    <2017-09-21>
+:GOODREADS: https://www.goodreads.com/book/show/2761.The_Denial_of_Death
+:END:
+
+* The Evolution of Beauty: How Darwin's Forgotten Theory of Mate Choice Shapes the Animal World - and Us
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-09-20>
+:AMAZON:   https://www.amazon.com/Evolution-Beauty-Darwins-Forgotten-Theory/dp/0385537212
+:END:
+
+* The Disaster Artist: My Life Inside The Room, the Greatest Bad Movie Ever Made
+:PROPERTIES:
+:AUTHOR:   Tom Bissell
+:ADDED:    <2017-09-18>
+:AMAZON:   https://www.amazon.com/Disaster-Artist-Inside-Greatest-Movie/dp/1451661193
+:END:
+
+* The Autobiography of Charles Darwin, 1809–82
+:PROPERTIES:
+:AUTHOR:   Charles Darwin, Nora Barlow
+:ADDED:    <2017-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/185404.The_Autobiography_of_Charles_Darwin_1809_82
+:END:
+
+* Diagrammatica: The Path to Feynman Diagrams (Cambridge Lecture Notes in Physics)
+:PROPERTIES:
+:AUTHOR:   Martinus Veltman
+:ADDED:    <2017-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/330562.Diagrammatica
+:END:
+
+* Blood Meridian, or the Evening Redness in the West
+:PROPERTIES:
+:AUTHOR:   Cormac McCarthy
+:ADDED:    <2017-09-11>
+:GOODREADS: https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West
+:END:
+
+* READ The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life
+CLOSED: [2017-09-21 Thu 03:56]
+:PROPERTIES:
+:AUTHOR:   Mark Manson
+:ADDED:    <2017-09-04>
+:GOODREADS: https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck
+:END:
+
+Here is a thing about self help books. You might not agree with them completely
+and/or they might not present solid backing for all they say, but they do help
+by letting you think about ideas you could not have thought much about
+otherwise.
+
+This particular book is a neat example. I bet it is /like/ (in spite of the
+presentation, which brought me to read it) other similar books in the genre.
+That means it fits into my earlier paragraph's argument and I wouldn't /strongly/
+recommend this specific book but would recommend reading/thinking about the
+topics it touches.
+
+* Hammer of the Gods: The Led Zeppelin Saga
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-31>
+:AMAZON:   https://www.amazon.com/Hammer-Gods-Led-Zeppelin-Saga/dp/0061473081
+:END:
+
+* Logic for Computer Scientists (Modern Birkhäuser Classics)
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-31>
+:AMAZON:   https://www.amazon.com/Computer-Scientists-Modern-Birkh%C3%A4user-Classics/dp/0817647627#reader_0817647627
+:END:
+
+* The Yellow Wall-Paper
+:PROPERTIES:
+:AUTHOR:   Charlotte Perkins Gilman, Elaine Hedges
+:ADDED:    <2017-08-28>
+:GOODREADS: https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper
+:END:
+
+* Evolution and the Levels of Selection
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-23>
+:AMAZON:   https://www.amazon.com/Evolution-Levels-Selection-Samir-Okasha/dp/0199556717
+:END:
+
+* Deep Work: Rules for Focused Success in a Distracted World
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-23>
+:AMAZON:   https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=sr_1_1?ie=UTF8&qid=1503497788&sr=8-1&keywords=deep+work
+:END:
+
+* Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-09>
+:AMAZON:   https://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758
+:END:
+
+* The Story of Art
+:PROPERTIES:
+:AUTHOR:   E.H. Gombrich
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/222078.The_Story_of_Art
+:END:
+
+* The Noonday Demon: An Atlas of Depression
+:PROPERTIES:
+:AUTHOR:   Andrew Solomon
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/13932.The_Noonday_Demon
+:END:
+
+* The Song Of The Dodo: Island Biogeography In An Age Of Extinctions
+:PROPERTIES:
+:AUTHOR:   David Quammen
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/546725.The_Song_Of_The_Dodo
+:END:
+
+* Forces of Habit: Drugs and the Making of the Modern World
+:PROPERTIES:
+:AUTHOR:   David T. Courtwright
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/1358247.Forces_of_Habit
+:END:
+
+* A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam
+:PROPERTIES:
+:AUTHOR:   Karen Armstrong
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/3873.A_History_of_God
+:END:
+
+* Inside Terrorism (Columbia Studies in Terrorism and Irregular Warfare)
+:PROPERTIES:
+:AUTHOR:   Bruce Hoffman
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/22891.Inside_Terrorism
+:END:
+
+* King Leopold's Ghost
+:PROPERTIES:
+:AUTHOR:   Adam Hochschild
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/347610.King_Leopold_s_Ghost
+:END:
+
+* Thinking, Fast and Slow
+:PROPERTIES:
+:AUTHOR:   Daniel Kahneman
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow
+:END:
+
+* The Emperor of All Maladies: A Biography of Cancer
+:PROPERTIES:
+:AUTHOR:   Siddhartha Mukherjee
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/7170627-the-emperor-of-all-maladies
+:END:
+
+* The Evolution of Cooperation: Revised Edition
+:PROPERTIES:
+:AUTHOR:   Robert Axelrod
+:ADDED:    <2017-07-28>
+:AMAZON:   https://www.amazon.com/Evolution-Cooperation-Revised-Robert-Axelrod/dp/0465005640
+:END:
+
+* The Science of Fear: How the Culture of Fear Manipulates Your Brain
+:PROPERTIES:
+:AUTHOR:   Daniel Gardner
+:ADDED:    <2017-07-27>
+:AMAZON:   https://www.amazon.com/Science-Fear-Culture-Manipulates-Brain/dp/0452295467
+:END:
+
+* The Organization Man
+:PROPERTIES:
+:AUTHOR:   William H. Whyte, Joseph Nocera
+:ADDED:    <2017-07-25>
+:AMAZON:   https://www.amazon.com/Organization-Man-William-H-Whyte/dp/0812218191
+:END:
+
+* READING A Midsummer Night's Dream
+:PROPERTIES:
+:AUTHOR:   William Shakespeare, Barbara A. Mowat, (Editor), Paul Werstine, (Editor), Catherine Belsey, (Contributor)
+:ADDED:    <2017-07-12>
+:GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
+:END:
+
+* READING Dream Country (Sandman, #3)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Kelley Jones, (Illustrator), Charles Vess, (Illustrator), Colleen Doran, (Illustrator), Malcolm Jones III, (Illustrator), Steve Erickson, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
+:END:
+
+* Season of Mists (Sandman, #4)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25101.Season_of_Mists
+:END:
+
+* A Game of You (Sandman, #5)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Shawn McManus, (Illustrator), Colleen Doran, (Illustrator), Bryan Talbot, (Illustrator), George Pratt, (Illustrator), Stan Woch, (Illustrator), Dick Giordano, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
+:END:
+
+* Fables and Reflections (Sandman, #6)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25106.Fables_and_Reflections
+:END:
+
+* Brief Lives (Sandman, #7)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Jill Thompson, (Illustrator), Vince Locke, (Illustrator), Peter Straub, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
+:END:
+
+* Worlds' End (Sandman, #8)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25103.Worlds_End
+:END:
+
+* The Kindly Ones (Sandman, #9)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Marc Hempel, (Illustrator), Richard Case, (Illustrator), D'Israeli, (Illustrator), Teddy Kristiansen, (Illustrator), Glyn Dillon, (Illustrator), Charles Vess, (Illustrator), Dean Ormston, (Illustrator), Kevin Nowlan, (Illustrator), Todd Klein, (Letterer), Frank McConnell, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/71252.The_Kindly_Ones
+:END:
+
+* The Wake (Sandman, #10)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Michael Zulli, (Illustrator), Jon J. Muth, (Illustrator), Charles Vess, (Illustrator), Mikal Gilmore, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25104.The_Wake
+:END:
+
+* Endless Nights (Sandman, #11)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Barron Storey, (Illustrator), Bill Sienkiewicz, (Illustrator), Glenn Fabry, (Illustrator), Dave McKean, (Illustrator), P. Craig Russell, (Illustrator), Milo Manara, (Illustrator), Miguelanxo Prado, (Illustrator), Frank Quitely, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/47720.The_Sandman
+:END:
+
+* READ The Doll's House (Sandman, #2)
+CLOSED: [2017-07-11 Tue 15:33]
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Steve Parkhouse, (Illustrator), Chris Bachalo, (Illustrator), Michael Zulli, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Clive Barker, (Introduction)
+:ADDED:    <2017-07-08>
+:GOODREADS: https://www.goodreads.com/book/show/25099.The_Doll_s_House
+:END:
+
+Better than the first collection. Both are written well, but the first feels
+like telling a pretty simple story while the second, spending the same amount of
+attention, has more depth to it.
+
+* READ Preludes & Nocturnes (Sandman, #1)
+CLOSED: [2017-07-07 Fri 23:58]
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Sam Kieth, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Karen  Berger, (Introduction/Editor)
+:ADDED:    <2017-07-07>
+:GOODREADS: https://www.goodreads.com/book/show/23754.Preludes_Nocturnes
+:END:
+
+Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
+
+* Through the Language Glass: Why the World Looks Different in Other Languages
+:PROPERTIES:
+:AUTHOR:   Guy Deutscher
+:ADDED:    <2017-07-04>
+:AMAZON:   https://www.amazon.com/Through-Language-Glass-Different-Languages/dp/0312610491
+:END:
+
+* NEXT Design Patterns: Elements of Reusable Object-Oriented Software
+:PROPERTIES:
+:AUTHOR:   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
+:END:
+
+* Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+:PROPERTIES:
+:AUTHOR:   Algernon Bertram Freeman-Mitford
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan
+:END:
+
+* NEXT Blankets
+:PROPERTIES:
+:AUTHOR:   Craig Thompson
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/25179.Blankets?ac=1&from_search=true
+:END:
+* The Mathematical Mechanic: Using Physical Reasoning to Solve Problems
+:PROPERTIES:
+:AUTHOR:   Mark Levi
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/6418615-the-mathematical-mechanic?ac=1&from_search=true
+:END:
+
+* Structure and Interpretation of Computer Programs
+:PROPERTIES:
+:AUTHOR:   Harold Abelson, Gerald Jay Sussman, Julie Sussman
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs?ac=1&from_search=true
+:END:
+
+* How to Design Programs: An Introduction to Programming and Computing
+:PROPERTIES:
+:AUTHOR:   Matthias Felleisen
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262062186
+:END:
+
+* Data Structures and Algorithms in Python
+:PROPERTIES:
+:AUTHOR:   Michael T. Goodrich
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275
+:END:
+
+* READING Practical Common Lisp
+:PROPERTIES:
+:AUTHOR:   Peter Seibel
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
+:END:
+
+* Beautiful Racket
+:PROPERTIES:
+:AUTHOR:   Matthew Butterick
+:ADDED:    <2017-06-28>
+:URL:      http://beautifulracket.com/
+:END:
+
+* Moby Dick
+:PROPERTIES:
+:AUTHOR:   Herman Melville
+:ADDED:    <2017-06-28>
+:END:
+
+* Soul Made Flesh: The Discovery of the Brain--and How it Changed the World
+:PROPERTIES:
+:AUTHOR:   Carl Zimmer
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/gp/product/0743272056
+:END:
+
 * The Grid: Electrical Infrastructure for a New Era
 :PROPERTIES:
 :AUTHOR:    Gretchen Bakke
@@ -1879,6 +2377,7 @@ CLOSED: [2017-04-11]
 :ADDED:     <2016-08-11>
 :GOODREADS: https://www.goodreads.com/book/show/17690
 :END:
+
 I don't think I got it completely. The story flows in a confusing and lazy way
 and I stopped at many places while reading this. I thought a bit about whats
 different here which is making the whole thing boring. Is it the weird way
@@ -4685,506 +5184,4 @@ CLOSED: [2014-03-23]
 :AUTHOR:    Stephen Hawking, Cao Chi, Phạm Văn Thiều
 :ADDED:     <2014-03-19>
 :GOODREADS: https://www.goodreads.com/book/show/3869
-:END:
-
-* NEXT Design Patterns: Elements of Reusable Object-Oriented Software
-:PROPERTIES:
-:AUTHOR:   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
-:END:
-
-* Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
-:PROPERTIES:
-:AUTHOR:   Algernon Bertram Freeman-Mitford
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan
-:END:
-
-* NEXT Blankets
-:PROPERTIES:
-:AUTHOR:   Craig Thompson
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/25179.Blankets?ac=1&from_search=true
-:END:
-* The Mathematical Mechanic: Using Physical Reasoning to Solve Problems
-:PROPERTIES:
-:AUTHOR:   Mark Levi
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/6418615-the-mathematical-mechanic?ac=1&from_search=true
-:END:
-
-* Structure and Interpretation of Computer Programs
-:PROPERTIES:
-:AUTHOR:   Harold Abelson, Gerald Jay Sussman, Julie Sussman
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs?ac=1&from_search=true
-:END:
-
-* How to Design Programs: An Introduction to Programming and Computing
-:PROPERTIES:
-:AUTHOR:   Matthias Felleisen
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262062186
-:END:
-
-* Data Structures and Algorithms in Python
-:PROPERTIES:
-:AUTHOR:   Michael T. Goodrich
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275
-:END:
-
-* READING Practical Common Lisp
-:PROPERTIES:
-:AUTHOR:   Peter Seibel
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
-:END:
-
-* Beautiful Racket
-:PROPERTIES:
-:AUTHOR:   Matthew Butterick
-:ADDED:    <2017-06-28>
-:URL:      http://beautifulracket.com/
-:END:
-
-* Moby Dick
-:PROPERTIES:
-:AUTHOR:   Herman Melville
-:ADDED:    <2017-06-28>
-:END:
-
-* Soul Made Flesh: The Discovery of the Brain--and How it Changed the World
-:PROPERTIES:
-:AUTHOR:   Carl Zimmer
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/gp/product/0743272056
-:END:
-
-* Through the Language Glass: Why the World Looks Different in Other Languages
-:PROPERTIES:
-:AUTHOR:   Guy Deutscher
-:ADDED:    <2017-07-04>
-:AMAZON:   https://www.amazon.com/Through-Language-Glass-Different-Languages/dp/0312610491
-:END:
-
-* READ Preludes & Nocturnes (Sandman, #1)
-CLOSED: [2017-07-07 Fri 23:58]
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Sam Kieth, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Karen  Berger, (Introduction/Editor)
-:ADDED:    <2017-07-07>
-:GOODREADS: https://www.goodreads.com/book/show/23754.Preludes_Nocturnes
-:END:
-
-Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
-
-* READ The Doll's House (Sandman, #2)
-CLOSED: [2017-07-11 Tue 15:33]
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Steve Parkhouse, (Illustrator), Chris Bachalo, (Illustrator), Michael Zulli, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Clive Barker, (Introduction)
-:ADDED:    <2017-07-08>
-:GOODREADS: https://www.goodreads.com/book/show/25099.The_Doll_s_House
-:END:
-
-Better than the first collection. Both are written well, but the first feels
-like telling a pretty simple story while the second, spending the same amount of
-attention, has more depth to it.
-
-* READING Dream Country (Sandman, #3)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Kelley Jones, (Illustrator), Charles Vess, (Illustrator), Colleen Doran, (Illustrator), Malcolm Jones III, (Illustrator), Steve Erickson, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
-:END:
-
-* Season of Mists (Sandman, #4)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25101.Season_of_Mists
-:END:
-
-* A Game of You (Sandman, #5)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Shawn McManus, (Illustrator), Colleen Doran, (Illustrator), Bryan Talbot, (Illustrator), George Pratt, (Illustrator), Stan Woch, (Illustrator), Dick Giordano, (Illustrator), Todd Klein, (Letterer)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
-:END:
-
-* Fables and Reflections (Sandman, #6)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25106.Fables_and_Reflections
-:END:
-
-* Brief Lives (Sandman, #7)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Jill Thompson, (Illustrator), Vince Locke, (Illustrator), Peter Straub, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
-:END:
-
-* Worlds' End (Sandman, #8)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25103.Worlds_End
-:END:
-
-* The Kindly Ones (Sandman, #9)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Marc Hempel, (Illustrator), Richard Case, (Illustrator), D'Israeli, (Illustrator), Teddy Kristiansen, (Illustrator), Glyn Dillon, (Illustrator), Charles Vess, (Illustrator), Dean Ormston, (Illustrator), Kevin Nowlan, (Illustrator), Todd Klein, (Letterer), Frank McConnell, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/71252.The_Kindly_Ones
-:END:
-
-* The Wake (Sandman, #10)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Michael Zulli, (Illustrator), Jon J. Muth, (Illustrator), Charles Vess, (Illustrator), Mikal Gilmore, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25104.The_Wake
-:END:
-
-* Endless Nights (Sandman, #11)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Barron Storey, (Illustrator), Bill Sienkiewicz, (Illustrator), Glenn Fabry, (Illustrator), Dave McKean, (Illustrator), P. Craig Russell, (Illustrator), Milo Manara, (Illustrator), Miguelanxo Prado, (Illustrator), Frank Quitely, (Illustrator), Todd Klein, (Letterer)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/47720.The_Sandman
-:END:
-
-* READING A Midsummer Night's Dream
-:PROPERTIES:
-:AUTHOR:   William Shakespeare, Barbara A. Mowat, (Editor), Paul Werstine, (Editor), Catherine Belsey, (Contributor)
-:ADDED:    <2017-07-12>
-:GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
-:END:
-
-* The Organization Man
-:PROPERTIES:
-:AUTHOR:   William H. Whyte, Joseph Nocera
-:ADDED:    <2017-07-25>
-:AMAZON:   https://www.amazon.com/Organization-Man-William-H-Whyte/dp/0812218191
-:END:
-
-* The Science of Fear: How the Culture of Fear Manipulates Your Brain
-:PROPERTIES:
-:AUTHOR:   Daniel Gardner
-:ADDED:    <2017-07-27>
-:AMAZON:   https://www.amazon.com/Science-Fear-Culture-Manipulates-Brain/dp/0452295467
-:END:
-
-* The Evolution of Cooperation: Revised Edition
-:PROPERTIES:
-:AUTHOR:   Robert Axelrod
-:ADDED:    <2017-07-28>
-:AMAZON:   https://www.amazon.com/Evolution-Cooperation-Revised-Robert-Axelrod/dp/0465005640
-:END:
-
-* The Lifelong Activist
-:PROPERTIES:
-:AUTHOR:   Hillary Rettig
-:URL:      http://lifelongactivist.com/
-:END:
-
-* The Story of Art
-:PROPERTIES:
-:AUTHOR:   E.H. Gombrich
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/222078.The_Story_of_Art
-:END:
-
-* The Noonday Demon: An Atlas of Depression
-:PROPERTIES:
-:AUTHOR:   Andrew Solomon
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/13932.The_Noonday_Demon
-:END:
-
-* The Song Of The Dodo: Island Biogeography In An Age Of Extinctions
-:PROPERTIES:
-:AUTHOR:   David Quammen
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/546725.The_Song_Of_The_Dodo
-:END:
-
-* Forces of Habit: Drugs and the Making of the Modern World
-:PROPERTIES:
-:AUTHOR:   David T. Courtwright
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/1358247.Forces_of_Habit
-:END:
-
-* A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam
-:PROPERTIES:
-:AUTHOR:   Karen Armstrong
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/3873.A_History_of_God
-:END:
-
-* Inside Terrorism (Columbia Studies in Terrorism and Irregular Warfare)
-:PROPERTIES:
-:AUTHOR:   Bruce Hoffman
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/22891.Inside_Terrorism
-:END:
-
-* King Leopold's Ghost
-:PROPERTIES:
-:AUTHOR:   Adam Hochschild
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/347610.King_Leopold_s_Ghost
-:END:
-
-* Thinking, Fast and Slow
-:PROPERTIES:
-:AUTHOR:   Daniel Kahneman
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow
-:END:
-
-* The Emperor of All Maladies: A Biography of Cancer
-:PROPERTIES:
-:AUTHOR:   Siddhartha Mukherjee
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/7170627-the-emperor-of-all-maladies
-:END:
-
-* Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-08-09>
-:AMAZON:   https://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758
-:END:
-
-* Evolution and the Levels of Selection
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-08-23>
-:AMAZON:   https://www.amazon.com/Evolution-Levels-Selection-Samir-Okasha/dp/0199556717
-:END:
-
-* Deep Work: Rules for Focused Success in a Distracted World
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-08-23>
-:AMAZON:   https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=sr_1_1?ie=UTF8&qid=1503497788&sr=8-1&keywords=deep+work
-:END:
-
-* The Yellow Wall-Paper
-:PROPERTIES:
-:AUTHOR:   Charlotte Perkins Gilman, Elaine Hedges
-:ADDED:    <2017-08-28>
-:GOODREADS: https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper
-:END:
-
-* Hammer of the Gods: The Led Zeppelin Saga
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-08-31>
-:AMAZON:   https://www.amazon.com/Hammer-Gods-Led-Zeppelin-Saga/dp/0061473081
-:END:
-
-* Logic for Computer Scientists (Modern Birkhäuser Classics)
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-08-31>
-:AMAZON:   https://www.amazon.com/Computer-Scientists-Modern-Birkh%C3%A4user-Classics/dp/0817647627#reader_0817647627
-:END:
-
-* READ The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life
-CLOSED: [2017-09-21 Thu 03:56]
-:PROPERTIES:
-:AUTHOR:   Mark Manson
-:ADDED:    <2017-09-04>
-:GOODREADS: https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck
-:END:
-
-Here is a thing about self help books. You might not agree with them completely
-and/or they might not present solid backing for all they say, but they do help
-by letting you think about ideas you could not have thought much about
-otherwise.
-
-This particular book is a neat example. I bet it is /like/ (in spite of the
-presentation, which brought me to read it) other similar books in the genre.
-That means it fits into my earlier paragraph's argument and I wouldn't /strongly/
-recommend this specific book but would recommend reading/thinking about the
-topics it touches.
-
-* Blood Meridian, or the Evening Redness in the West
-:PROPERTIES:
-:AUTHOR:   Cormac McCarthy
-:ADDED:    <2017-09-11>
-:GOODREADS: https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West
-:END:
-
-* The Autobiography of Charles Darwin, 1809–82
-:PROPERTIES:
-:AUTHOR:   Charles Darwin, Nora Barlow
-:ADDED:    <2017-09-12>
-:GOODREADS: https://www.goodreads.com/book/show/185404.The_Autobiography_of_Charles_Darwin_1809_82
-:END:
-
-* Diagrammatica: The Path to Feynman Diagrams (Cambridge Lecture Notes in Physics)
-:PROPERTIES:
-:AUTHOR:   Martinus Veltman
-:ADDED:    <2017-09-12>
-:GOODREADS: https://www.goodreads.com/book/show/330562.Diagrammatica
-:END:
-
-* The Disaster Artist: My Life Inside The Room, the Greatest Bad Movie Ever Made
-:PROPERTIES:
-:AUTHOR:   Tom Bissell
-:ADDED:    <2017-09-18>
-:AMAZON:   https://www.amazon.com/Disaster-Artist-Inside-Greatest-Movie/dp/1451661193
-:END:
-
-* The Evolution of Beauty: How Darwin's Forgotten Theory of Mate Choice Shapes the Animal World - and Us
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-09-20>
-:AMAZON:   https://www.amazon.com/Evolution-Beauty-Darwins-Forgotten-Theory/dp/0385537212
-:END:
-
-* The Denial of Death
-:PROPERTIES:
-:AUTHOR:   Ernest Becker, Sam Keen, Daniel Goleman
-:ADDED:    <2017-09-21>
-:GOODREADS: https://www.goodreads.com/book/show/2761.The_Denial_of_Death
-:END:
-
-* The Idea of India
-  :PROPERTIES:
-  :AUTHOR:   Sunil Khilnani
-  :ADDED:    <2017-09-29>
-  :GOODREADS: https://www.goodreads.com/book/show/631243.The_Idea_of_India
-  :END:
-
-* The Annihilation of Caste
-  :PROPERTIES:
-  :AUTHOR:   B.R. Ambedkar
-  :ADDED:    <2017-09-29>
-  :GOODREADS: https://www.goodreads.com/book/show/8521879-the-annihilation-of-caste
-  :END:
-  
-* The Black Swan: The Impact of the Highly Improbable (Incerto #2)
-:PROPERTIES:
-:AUTHOR:   Nassim Nicholas Taleb
-:ADDED:    <2017-10-03>
-:GOODREADS: https://www.goodreads.com/book/show/242472.The_Black_Swan
-:END:
-
-* Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto #1)
-:PROPERTIES:
-:AUTHOR:   Nassim Nicholas Taleb
-:ADDED:    <2017-10-03>
-:GOODREADS: https://www.goodreads.com/book/show/38315.Fooled_by_Randomness
-:END:
-
-* READING राग दरबारी (Raag Darbari)
-:PROPERTIES:
-:AUTHOR:   Shrilal Shukla
-:ADDED:    <2017-10-04>
-:GOODREADS: https://www.goodreads.com/book/show/2164749._
-:END:
-
-* Realm of Racket: Learn to Program, One Game at a Time!
-:PROPERTIES:
-:AUTHOR:   Conrad Barski M.D., David Van Horn, Eight Students Northeastern University of
-:ADDED:    <2017-10-14>
-:AMAZON:   https://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp
-:END:
-
-* Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-10-18>
-:AMAZON:   https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465060722/ref=tmm_pap_title_0?_encoding=UTF8&sr=&qid=
-:END:
-
-* READ The Last Question
-CLOSED: [2017-11-10 Fri 22:07]
-:PROPERTIES:
-:AUTHOR:   Isaac Asimov, Bob E. Flick, Jim Gallant
-:ADDED:    <2017-11-10>
-:GOODREADS: https://www.goodreads.com/book/show/4808763-the-last-question
-:END:
-
-/How can entropy be reversed?/ ...
-
-* READ The Last Answer
-CLOSED: [2017-11-13 Mon 20:46]
-:PROPERTIES:
-:AUTHOR:   Isaac Asimov
-:ADDED:    <2017-11-13>
-:GOODREADS: https://www.goodreads.com/book/show/15755066-the-last-answer
-:END:
-
-This (along with /The Last Question/, which I recently read) is a beautiful short.
-Looking forward to more from Asimov.
-
-* Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-12-16>
-:AMAZON:   https://www.amazon.com/Adaptation-Natural-Artificial-Systems-Introductory/dp/0262581116
-:END:
-
-* Schooling In Capitalist America: Educational Reform And The Contradictions Of Economic Life
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-12-27>
-:AMAZON:   https://www.amazon.com/Schooling-Capitalist-America-Educational-Contradictions/dp/0465097189
-:END:
-
-* READ Slaughterhouse-Five
-CLOSED: [2018-01-09 Tue 15:46]
-:PROPERTIES:
-:AUTHOR:   Kurt Vonnegut
-:ADDED:    <2018-01-04>
-:GOODREADS: https://www.goodreads.com/book/show/4981.Slaughterhouse_Five
-:END:
-
-* Notes from Underground
-:PROPERTIES:
-:AUTHOR:   Fyodor Dostoyevsky, Christian Redl, Philip Dossick, Emanuela Guercetti, Michelle-Irène Brudny, Richard Pevear, Norman Dietz, Donald Fanger, coderati, Boris de Schlœzer, Larissa Volokhonsky
-:ADDED:    <2018-01-07>
-:GOODREADS: https://www.goodreads.com/book/show/49455.Notes_from_Underground
-:END:
-
-* The Stranger
-:PROPERTIES:
-:AUTHOR:   Albert Camus, Stuart Gilbert, Matthew Ward, Leman Sarı
-:ADDED:    <2018-01-07>
-:GOODREADS: https://www.goodreads.com/book/show/49552.The_Stranger
-:END:
-
-* The Princeton Companion to Mathematics
-:PROPERTIES:
-:AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
-:ADDED:    <2018-01-08>
-:GOODREADS: https://www.goodreads.com/book/show/1471873.The_Princeton_Companion_to_Mathematics
-:END:
-
-* Concrete Mathematics: A Foundation for Computer Science
-:PROPERTIES:
-:AUTHOR:   Ronald L. Graham, Donald Ervin Knuth, Oren Patashnik
-:ADDED:    <2018-01-08>
-:GOODREADS: https://www.goodreads.com/book/show/112243.Concrete_Mathematics?ac=1&from_search=true
-:END:
-
-* Mastering the Techniques of Teaching
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2018-01-11>
-:AMAZON:   https://www.amazon.com/Mastering-Techniques-Teaching-Joseph-Lowman/dp/078795568X
-:END:
-
-* READ Seven Languages in Seven Weeks 
-CLOSED: [2018-01-24 Wed 22:59]
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2018-01-24>
-:GOODREADS:   https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks
 :END:
