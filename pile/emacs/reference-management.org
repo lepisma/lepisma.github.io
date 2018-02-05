@@ -1,0 +1,42 @@
+#+TITLE: Reference Management with Org Mode
+#+SETUPFILE: ../assets/export.setup
+
+I used to rely on [[http://www.mendeley.com/][mendeley]] for working with BibTeX related things. After
+switching mostly to Emacs, I find mendeley a bit confining. This page documents
+my Emacs based setup as of now. I will be updating it with new things that I
+try.
+
+There are a few pieces in the process of managing references.
+1. Searching for papers/documents
+2. Collecting BibTeX entries
+3. Adding references to Org files
+
+* Searching
+Mendeley and similar tools have decent support for step 1 and 2. The way I had
+been using mendeley was to use its /capture/ feature and make it output a single
+~~/library.bib~ file which can then be read by Emacs.
+
+The literature search feature from mendeley can be replicated if you get an
+interface to Google Scholar and few other aggregators. Turns out there is a
+package example for that, [[https://github.com/cute-jumper/gscholar-bibtex][gscholar-bibtex]], which lets you search documents and
+add BibTeX entries in a single file as you would have been doing with mendeley.
+
+* Using references
+Not much to say here. [[https://github.com/jkitchin/org-ref][org-ref]] is a very feature complete solution for working
+with references in Org files. The [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/bibtex][BibTeX layer]] in spacemacs comes packed with
+other goodies which I haven't looked very deeply yet.
+
+* Missing pieces
+Here are a few things that I would like to setup when I have some time. Most
+likely there already are tools for these which I am unaware of.
+
+1. /Browser capture/
+
+   Capturing papers from browser one of the most useful features of mendeley.
+   Shouldn't be that hard to cook considering the many utilities for working
+   with different websites available in [[https://github.com/jkitchin/org-ref#some-other-useful-libraries-in-org-ref][org-ref]].
+
+2. /PDF management/
+
+   Probably org-ref has some features for this. Although outside Emacs, [[https://github.com/alejandrogallo/papis][papis]] is
+   another nice tool with good PDF download support.

@@ -1,8 +1,9 @@
 #+TITLE: Emacs
 #+SETUPFILE: ../assets/export.setup
 
-Some notes/texts related to Emacs and Org Mode exploring various possibilities.
+Some notes/texts related to Emacs and Org Mode.
 
 * Pages in this section
 
+- [[./reference-management.org][Reference Management in Org Mode]]
 - [[./til.org][Today I Learned  /in Emacs/]]
