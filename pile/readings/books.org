@@ -2,4 +2,5189 @@
 #+SETUPFILE: ../assets/export.setup
 #+TODO: READING NEXT | READ
 
-Books to read. Right now in the process of importing [[https://github.com/lepisma/reading-list][this repo]].
+Books to read. This is a rather large list with items from my old Goodreads
+account. Naturally, I will /not/ be reading all of these.
+
+* The Grid: Electrical Infrastructure for a New Era
+:PROPERTIES:
+:AUTHOR:    Gretchen Bakke
+:ADDED:     <2017-06-21>
+:GOODREADS: https://www.goodreads.com/book/show/26073005
+:END:
+
+* The Fever: How Malaria Has Ruled Humankind for 500,000 Years
+:PROPERTIES:
+:AUTHOR:    Sonia Shah
+:ADDED:     <2017-06-21>
+:GOODREADS: https://www.goodreads.com/book/show/8162151
+:END:
+
+* House on Fire: The Fight to Eradicate Smallpox
+:PROPERTIES:
+:AUTHOR:    William H. Foege
+:ADDED:     <2017-06-21>
+:GOODREADS: https://www.goodreads.com/book/show/9772046
+:END:
+
+* Infections and Inequalities: The Modern Plagues
+:PROPERTIES:
+:AUTHOR:    Paul Farmer
+:ADDED:     <2017-06-21>
+:GOODREADS: https://www.goodreads.com/book/show/10233
+:END:
+
+* Homo Deus: A Brief History of Tomorrow
+:PROPERTIES:
+:AUTHOR:    Yuval Noah Harari
+:ADDED:     <2017-06-21>
+:GOODREADS: https://www.goodreads.com/book/show/31138556
+:END:
+
+* Sustainable Materials - With Both Eyes Open
+:PROPERTIES:
+:AUTHOR:    Julian M. Allwood, Jonathan M. Cullen
+:ADDED:     <2017-06-21>
+:GOODREADS: https://www.goodreads.com/book/show/13072034
+:END:
+
+* Advanced Cartooning and Other Drawings
+:PROPERTIES:
+:AUTHOR:    B. Kliban
+:ADDED:     <2017-06-15>
+:GOODREADS: https://www.goodreads.com/book/show/550802
+:END:
+
+* Homegoing
+:PROPERTIES:
+:AUTHOR:    Yaa Gyasi
+:ADDED:     <2017-06-15>
+:GOODREADS: https://www.goodreads.com/book/show/27071490
+:END:
+
+* Salvage the Bones
+:PROPERTIES:
+:AUTHOR:    Jesmyn Ward
+:ADDED:     <2017-06-15>
+:GOODREADS: https://www.goodreads.com/book/show/10846336
+:END:
+
+* Striking Thoughts: Bruce Lee's Wisdom for Daily Living
+:PROPERTIES:
+:AUTHOR:    Bruce Lee, John  Little
+:ADDED:     <2017-06-12>
+:GOODREADS: https://www.goodreads.com/book/show/259311
+:END:
+
+* The Age of Reason
+:PROPERTIES:
+:AUTHOR:    Thomas Paine
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/1031803
+:END:
+
+* Common Sense
+:PROPERTIES:
+:AUTHOR:    Thomas Paine
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/161744
+:END:
+
+* Engines of Creation: The Coming Era of Nanotechnology
+:PROPERTIES:
+:AUTHOR:    K. Eric Drexler, Marvin Minsky
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/83596
+:END:
+
+* Relativity Visualized: The Gold Nugget of Relativity Books
+:PROPERTIES:
+:AUTHOR:    Lewis Carroll Epstein
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/17363
+:END:
+
+* The Machinery of Life
+:PROPERTIES:
+:AUTHOR:    David S. Goodsell
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/6601267
+:END:
+
+* Visual Thinking
+:PROPERTIES:
+:AUTHOR:    Rudolf Arnheim
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/365660
+:END:
+
+* Art and Illusion: A Study in the Psychology of Pictorial Representation
+:PROPERTIES:
+:AUTHOR:    E.H. Gombrich
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/61506
+:END:
+
+* Religion and Science
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell, Michael Ruse
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/51790
+:END:
+
+* The Republic
+:PROPERTIES:
+:AUTHOR:    Plato, Desmond Lee
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/30289
+:END:
+
+* Beyond Boredom and Anxiety: Experiencing Flow in Work and Play
+:PROPERTIES:
+:AUTHOR:    Mihaly Csikszentmihalyi
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/66334
+:END:
+
+* The Interpretation of Cultures
+:PROPERTIES:
+:AUTHOR:    Clifford Geertz
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/330006
+:END:
+
+* Language and Species
+:PROPERTIES:
+:AUTHOR:    Derek Bickerton
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/636140
+:END:
+
+* Myths to Live By
+:PROPERTIES:
+:AUTHOR:    Joseph Campbell, Johnson E. Fairchild
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/821380
+:END:
+
+* Freedom and Culture
+:PROPERTIES:
+:AUTHOR:    John Dewey, Robert M. Baird, Stuart E. Rosenbaum
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/220895
+:END:
+
+* The Secret of Childhood
+:PROPERTIES:
+:AUTHOR:    Maria Montessori
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/920412
+:END:
+
+* Instead of Education: Ways to Help People Do Things Better
+:PROPERTIES:
+:AUTHOR:    John Holt
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/573008
+:END:
+
+* Lateral Thinking
+:PROPERTIES:
+:AUTHOR:    Edward de Bono
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/829616
+:END:
+
+* Mind in Society: Development of Higher Psychological Processes
+:PROPERTIES:
+:AUTHOR:    Lev S. Vygotsky, Vera John-Steiner, Michael Cole, Sylvia Scribner, Ellen Souberman
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/146977
+:END:
+
+* Toward a Theory of Instruction
+:PROPERTIES:
+:AUTHOR:    Jerome Bruner
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/1633905
+:END:
+
+* To Understand Is to Invent
+:PROPERTIES:
+:AUTHOR:    Jean Piaget
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/1728857
+:END:
+
+* The Psychology of the Child
+:PROPERTIES:
+:AUTHOR:    Jean Piaget, Bärbel Inhelder, Helen Weaver
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/137908
+:END:
+
+* The Gutenberg Galaxy: The Making of Typographic Man
+:PROPERTIES:
+:AUTHOR:    Marshall McLuhan
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/440463
+:END:
+
+* Conscientious Objections: Stirring Up Trouble About Language, Technology and Education
+:PROPERTIES:
+:AUTHOR:    Neil Postman
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/96444
+:END:
+
+* Technology, Management and Society
+:PROPERTIES:
+:AUTHOR:    Peter F. Drucker
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/4825159
+:END:
+
+* How to Watch TV News
+:PROPERTIES:
+:AUTHOR:    Neil Postman, Steve Powers
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/96446
+:END:
+
+* Amusing Ourselves to Death: Public Discourse in the Age of Show Business
+:PROPERTIES:
+:AUTHOR:    Neil Postman, Andrew Postman
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/74034
+:END:
+
+* Computation: Finite and Infinite Machines (Automatic Computation)
+:PROPERTIES:
+:AUTHOR:    Marvin Minsky
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/326791
+:END:
+
+* Privacy and Freedom
+:PROPERTIES:
+:AUTHOR:    Alan Westin
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/21535409
+:END:
+
+* The Poisonwood Bible
+:PROPERTIES:
+:AUTHOR:    Barbara Kingsolver
+:ADDED:     <2017-06-07>
+:GOODREADS: https://www.goodreads.com/book/show/7244
+:END:
+
+* Science Tales
+:PROPERTIES:
+:AUTHOR:    Darryl Cunningham
+:ADDED:     <2017-06-04>
+:GOODREADS: https://www.goodreads.com/book/show/13562838
+:END:
+
+* On Tyranny: Twenty Lessons from the Twentieth Century
+:PROPERTIES:
+:AUTHOR:    Timothy Snyder
+:ADDED:     <2017-06-04>
+:GOODREADS: https://www.goodreads.com/book/show/33917107
+:END:
+
+* Solving Mathematical Problems: A Personal Perspective
+:PROPERTIES:
+:AUTHOR:    Terence Tao
+:ADDED:     <2017-06-02>
+:GOODREADS: https://www.goodreads.com/book/show/265415
+:END:
+
+* David and Goliath: Underdogs, Misfits, and the Art of Battling Giants
+:PROPERTIES:
+:AUTHOR:    Malcolm Gladwell
+:ADDED:     <2017-06-02>
+:GOODREADS: https://www.goodreads.com/book/show/15751404
+:END:
+
+* Outliers: The Story of Success
+:PROPERTIES:
+:AUTHOR:    Malcolm Gladwell
+:ADDED:     <2017-06-02>
+:GOODREADS: https://www.goodreads.com/book/show/3228917
+:END:
+
+* Emblems of Mind: The Inner Life of Music and Mathematics
+:PROPERTIES:
+:AUTHOR:    Edward Rothstein
+:ADDED:     <2017-05-25>
+:GOODREADS: https://www.goodreads.com/book/show/1136403
+:END:
+
+* Metro 2033 (Metro, #1)
+:PROPERTIES:
+:AUTHOR:    Dmitry Glukhovsky
+:ADDED:     <2017-05-18>
+:GOODREADS: https://www.goodreads.com/book/show/17274667
+:END:
+
+* READ Solaris
+CLOSED: [2017-05-14]
+:PROPERTIES:
+:AUTHOR:    Stanisław Lem
+:ADDED:     <2017-05-07>
+:GOODREADS: https://www.goodreads.com/book/show/95558
+:END:
+
+Not very hard sci-fi, but one of the best experiences.
+
+* The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary
+:PROPERTIES:
+:AUTHOR:    Eric S. Raymond, Bob Young
+:ADDED:     <2017-05-01>
+:GOODREADS: https://www.goodreads.com/book/show/134825
+:END:
+
+* The Little Schemer
+:PROPERTIES:
+:AUTHOR:    Daniel P. Friedman, Matthias Felleisen, Duane Bibby, Gerald J. Sussman
+:ADDED:     <2017-04-30>
+:GOODREADS: https://www.goodreads.com/book/show/548914
+:END:
+
+* READ Alice's Adventures in Wonderland (Alice's Adventures in Wonderland #1)
+CLOSED: [2015-04-28]
+:PROPERTIES:
+:AUTHOR:    Lewis Carroll, John Tenniel
+:ADDED:     <2017-03-27>
+:GOODREADS: https://www.goodreads.com/book/show/6324090
+:END:
+
+* Soylent Green
+:PROPERTIES:
+:AUTHOR:    Harry Harrison
+:ADDED:     <2017-03-22>
+:GOODREADS: https://www.goodreads.com/book/show/9799221
+:END:
+
+* No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State
+:PROPERTIES:
+:AUTHOR:    Glenn Greenwald
+:ADDED:     <2017-03-21>
+:GOODREADS: https://www.goodreads.com/book/show/18213403
+:END:
+
+* READING On Growth and Form
+:PROPERTIES:
+:AUTHOR:    D'Arcy Wentworth Thompson, John Tyler Bonner
+:ADDED:     <2017-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/460984
+:END:
+
+* This Changes Everything: Capitalism vs. The Climate
+:PROPERTIES:
+:AUTHOR:    Naomi Klein
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/21913812
+:END:
+
+* Emergence: From Chaos To Order
+:PROPERTIES:
+:AUTHOR:    John H. Holland
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/896539
+:END:
+
+* Emergence: The Connected Lives of Ants, Brains, Cities, and Software
+:PROPERTIES:
+:AUTHOR:    Steven Johnson
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/2296
+:END:
+
+* Harnessing Complexity
+:PROPERTIES:
+:AUTHOR:    Robert Axelrod, Michael D. Cohen
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/366820
+:END:
+
+* Hidden Order: How Adaptation Builds Complexity
+:PROPERTIES:
+:AUTHOR:    John H. Holland, Heather Mimnaugh
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/183954
+:END:
+
+* READ An Introduction to Genetic Algorithms
+CLOSED: [2017-05-30]
+:PROPERTIES:
+:AUTHOR:    Melanie Mitchell
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/105139
+:END:
+
+* Complex Adaptive Systems: An Introduction to Computational Models of Social Life
+:PROPERTIES:
+:AUTHOR:    John H.  Miller, Scott E. Page
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/245273
+:END:
+
+* Utopia
+:PROPERTIES:
+:AUTHOR:    Thomas More, Paul Turner
+:ADDED:     <2017-03-03>
+:GOODREADS: https://www.goodreads.com/book/show/18414
+:END:
+
+* Development as Freedom
+:PROPERTIES:
+:AUTHOR:    Amartya Sen
+:ADDED:     <2017-03-03>
+:GOODREADS: https://www.goodreads.com/book/show/173961
+:END:
+
+* The Bottom Billion: Why the Poorest Countries Are Failing and What Can Be Done About It
+:PROPERTIES:
+:AUTHOR:    Paul Collier
+:ADDED:     <2017-03-03>
+:GOODREADS: https://www.goodreads.com/book/show/493371
+:END:
+
+* Politics
+:PROPERTIES:
+:AUTHOR:    Aristotle
+:ADDED:     <2017-03-01>
+:GOODREADS: https://www.goodreads.com/book/show/19083
+:END:
+
+* The New Organon
+:PROPERTIES:
+:AUTHOR:    Francis Bacon, Lisa Jardine, Michael Silverthorne
+:ADDED:     <2017-03-01>
+:GOODREADS: https://www.goodreads.com/book/show/309002
+:END:
+
+* Two Treatises of Government
+:PROPERTIES:
+:AUTHOR:    John Locke, Peter Laslett, Raymond Geuss
+:ADDED:     <2017-03-01>
+:GOODREADS: https://www.goodreads.com/book/show/364550
+:END:
+
+* An Enquiry Concerning Human Understanding
+:PROPERTIES:
+:AUTHOR:    David Hume
+:ADDED:     <2017-03-01>
+:GOODREADS: https://www.goodreads.com/book/show/130119
+:END:
+
+* Assassin's Quest (Farseer Trilogy, #3)
+:PROPERTIES:
+:AUTHOR:    Robin Hobb
+:ADDED:     <2017-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/33396914
+:END:
+
+* Royal Assassin (Farseer Trilogy, #2)
+:PROPERTIES:
+:AUTHOR:    Robin Hobb
+:ADDED:     <2017-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/25300956
+:END:
+
+* Assassin's Apprentice (Farseer Trilogy, #1)
+:PROPERTIES:
+:AUTHOR:    Robin Hobb
+:ADDED:     <2017-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/77197
+:END:
+
+* Broca's Brain: Reflections on the Romance of Science
+:PROPERTIES:
+:AUTHOR:    Carl Sagan
+:ADDED:     <2017-02-23>
+:GOODREADS: https://www.goodreads.com/book/show/485812
+:END:
+
+* Sceptical Essays
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell, John N. Gray
+:ADDED:     <2017-02-23>
+:GOODREADS: https://www.goodreads.com/book/show/144355
+:END:
+
+* Man and His Symbols
+:PROPERTIES:
+:AUTHOR:    C.G. Jung, Joseph L. Henderson, Aniela Jaffé, Jolande Jacobi, John Freeman, Marie-Louise von Franz
+:ADDED:     <2017-02-23>
+:GOODREADS: https://www.goodreads.com/book/show/123632
+:END:
+
+* The School and Society/The Child and the Curriculum
+:PROPERTIES:
+:AUTHOR:    John Dewey, Philip W. Jackson
+:ADDED:     <2017-02-23>
+:GOODREADS: https://www.goodreads.com/book/show/75282
+:END:
+
+* The Disappearance of Childhood
+:PROPERTIES:
+:AUTHOR:    Neil Postman
+:ADDED:     <2017-02-23>
+:GOODREADS: https://www.goodreads.com/book/show/79679
+:END:
+
+* Understanding Media: The Extensions of Man
+:PROPERTIES:
+:AUTHOR:    Marshall McLuhan, Lewis H. Lapham
+:ADDED:     <2017-02-23>
+:GOODREADS: https://www.goodreads.com/book/show/126274
+:END:
+
+* The Dictator's Handbook: Why Bad Behavior is Almost Always Good Politics
+:PROPERTIES:
+:AUTHOR:    Bruce Bueno De Mesquita, Alastair Smith
+:ADDED:     <2017-02-19>
+:GOODREADS: https://www.goodreads.com/book/show/11612989
+:END:
+
+* Gratitude
+:PROPERTIES:
+:AUTHOR:    Oliver Sacks
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/27161964
+:END:
+
+* Lost Woods: The Discovered Writing of Rachel Carson
+:PROPERTIES:
+:AUTHOR:    Rachel Carson, Linda Lear
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/340134
+:END:
+
+* The Sense of Wonder
+:PROPERTIES:
+:AUTHOR:    Rachel Carson, Charles Pratt, Nick Kelsh, Linda Lear
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/27344
+:END:
+
+* Always, Rachel: The Letters of Rachel Carson and Dorothy Freeman 1952-64-The Story of a Remarkable Friendship (Concord Library)
+:PROPERTIES:
+:AUTHOR:    Rachel Carson, Dorothy Freeman, Martha E. Freeman, Paul Brooks
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/27346
+:END:
+
+* The Sea Around Us
+:PROPERTIES:
+:AUTHOR:    Rachel Carson, Ann H. Zwinger
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/542766
+:END:
+
+* The Bear and the Nightingale
+:PROPERTIES:
+:AUTHOR:    Katherine  Arden
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/25489134
+:END:
+
+* The Descent of Man
+:PROPERTIES:
+:AUTHOR:    Charles Darwin
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/185407
+:END:
+
+* Evolution: The Modern Synthesis: The Definitive Edition
+:PROPERTIES:
+:AUTHOR:    Julian Huxley, Massimo Pigliucci, Gerd B. Müller
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/7250157
+:END:
+
+* Evolution—The Extended Synthesis
+:PROPERTIES:
+:AUTHOR:    Massimo Pigliucci, Gerd B. Müller
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/7618919
+:END:
+
+* A Scanner Darkly
+:PROPERTIES:
+:AUTHOR:    Philip K. Dick
+:ADDED:     <2017-02-10>
+:GOODREADS: https://www.goodreads.com/book/show/14817
+:END:
+
+* Evolution: Making Sense of Life
+:PROPERTIES:
+:AUTHOR:    Carl Zimmer, Douglas J. Emlen
+:ADDED:     <2017-02-06>
+:GOODREADS: https://www.goodreads.com/book/show/25785066
+:END:
+
+* On Lisp: Advanced Techniques for Common Lisp
+:PROPERTIES:
+:AUTHOR:    Paul Graham
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/41803
+:END:
+
+* I Know Why the Caged Bird Sings
+:PROPERTIES:
+:AUTHOR:    Maya Angelou
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/13214
+:END:
+
+* Catch-22
+:PROPERTIES:
+:AUTHOR:    Joseph Heller
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/168668
+:END:
+
+* The Book Your Church Doesn't Want You to Read
+:PROPERTIES:
+:AUTHOR:    Tim C. Leedom, Bill Jenkins
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/498359
+:END:
+
+* Nonbeliever Nation: The Rise of Secular Americans
+:PROPERTIES:
+:AUTHOR:    David Niose
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/13167816
+:END:
+
+* Candide
+:PROPERTIES:
+:AUTHOR:    Voltaire
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/19380
+:END:
+
+* Full House: The Spread of Excellence from Plato to Darwin
+:PROPERTIES:
+:AUTHOR:    Stephen Jay Gould
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/33928
+:END:
+
+* Society Without God: What the Least Religious Nations Can Tell Us about Contentment
+:PROPERTIES:
+:AUTHOR:    Phil Zuckerman
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/4286013
+:END:
+
+* Spook: Science Tackles the Afterlife
+:PROPERTIES:
+:AUTHOR:    Mary Roach
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/14990
+:END:
+
+* The Portable Atheist: Essential Readings for the Nonbeliever
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens, Titus Lucretius Carus, Omar Khayyám, Thomas Hobbes, Baruch Spinoza, David Hume, James Boswell, Percy Bysshe Shelley, George Eliot, Charles Darwin, Leslie Stephen, Anatole France, Mark Twain, Joseph Conrad, Thomas Hardy, Emma Goldman, H.P. Lovecraft, Carl Van Doren, H.L. Mencken, Sigmund Freud, Albert Einstein, George Orwell, John Betjeman, Chapman Cohen, Bertrand Russell, Philip Larkin, Martin Gardner, Carl Sagan, John Updike, John Leslie Mackie, Michael Shermer, A.J. Ayer, Daniel C. Dennett, Charles Templeton, Richard Dawkins, Victor J. Stenger, Elizabeth S.  Anderson, Penn Jillette, Ian McEwan, Steven Weinberg, Salman Rushdie, Ibn Warraq, Sam Harris, A.C. Grayling, Ayaan Hirsi Ali, John Stuart Mill, Karl Marx
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/1566053
+:END:
+
+* The Origin of Species
+:PROPERTIES:
+:AUTHOR:    Charles Darwin
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/22463
+:END:
+
+* READ The Handmaid's Tale
+CLOSED: [2017-06-07]
+:PROPERTIES:
+:AUTHOR:    Margaret Atwood
+:ADDED:     <2017-01-26>
+:GOODREADS: https://www.goodreads.com/book/show/38447
+:END:
+
+* Last Argument of Kings (The First Law #3)
+:PROPERTIES:
+:AUTHOR:    Joe Abercrombie
+:ADDED:     <2017-01-21>
+:GOODREADS: https://www.goodreads.com/book/show/944076
+:END:
+
+* Before They Are Hanged (The First Law #2)
+:PROPERTIES:
+:AUTHOR:    Joe Abercrombie
+:ADDED:     <2017-01-21>
+:GOODREADS: https://www.goodreads.com/book/show/902715
+:END:
+
+* The Blade Itself (The First Law #1)
+:PROPERTIES:
+:AUTHOR:    Joe Abercrombie
+:ADDED:     <2017-01-21>
+:GOODREADS: https://www.goodreads.com/book/show/944073
+:END:
+
+* READ Visual Explanations: Images and Quantities, Evidence and Narrative
+CLOSED: [2017-07-01 Sat 15:23]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2017-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/17746
+:END:
+
+Loved this book thoroughly. Takes me back to the explanatory books I used to
+read when younger. This makes you develop an eye for criticizing / respecting
+visual explanations, exactly what you expect from the title.
+
+* READ Envisioning Information
+CLOSED: [2017-02-20]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2017-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/17745
+:END:
+
+* Atlas Shrugged
+:PROPERTIES:
+:AUTHOR:    Ayn Rand, Leonard Peikoff
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/662
+:END:
+
+* A Doll's House
+:PROPERTIES:
+:AUTHOR:    Henrik Ibsen, Michael   Meyer
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/37793
+:END:
+
+* The Fountainhead
+:PROPERTIES:
+:AUTHOR:    Ayn Rand, Leonard Peikoff
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/2122
+:END:
+
+* The Call of Cthulhu and Other Weird Stories
+:PROPERTIES:
+:AUTHOR:    H.P. Lovecraft, S.T. Joshi
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/160149
+:END:
+
+* The End of Faith: Religion, Terror, and the Future of Reason
+:PROPERTIES:
+:AUTHOR:    Sam Harris
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/29501
+:END:
+
+* Small Gods (Discworld, #13)
+:PROPERTIES:
+:AUTHOR:    Terry Pratchett
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/34484
+:END:
+
+* Dune (Dune #1)
+:PROPERTIES:
+:AUTHOR:    Frank Herbert
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/234225
+:END:
+
+* The Skeptic's Annotated Bible
+:PROPERTIES:
+:AUTHOR:    Steve Wells
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/16161010
+:END:
+
+* God is Not Great: How Religion Poisons Everything
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/43369
+:END:
+
+* Letter to a Christian Nation
+:PROPERTIES:
+:AUTHOR:    Sam Harris
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/51299
+:END:
+
+* Idiot America: How Stupidity Became a Virtue in the Land of the Free
+:PROPERTIES:
+:AUTHOR:    Charles P. Pierce
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/6017788
+:END:
+
+* JavaScript: The Good Parts
+:PROPERTIES:
+:AUTHOR:    Douglas Crockford
+:ADDED:     <2017-01-03>
+:GOODREADS: https://www.goodreads.com/book/show/2998152
+:END:
+
+* Cellular Automata And Complexity: Collected Papers
+:PROPERTIES:
+:AUTHOR:    Stephen Wolfram
+:ADDED:     <2017-01-03>
+:GOODREADS: https://www.goodreads.com/book/show/459614
+:END:
+
+* The Idea Factory: Bell Labs and the Great Age of American Innovation
+:PROPERTIES:
+:AUTHOR:    Jon Gertner
+:ADDED:     <2017-01-02>
+:GOODREADS: https://www.goodreads.com/book/show/11797471
+:END:
+
+* Strangers in Their Own Land: Anger and Mourning on the American Right
+:PROPERTIES:
+:AUTHOR:    Arlie Russell Hochschild
+:ADDED:     <2017-01-02>
+:GOODREADS: https://www.goodreads.com/book/show/28695425
+:END:
+
+* A Mathematician's Lament: How School Cheats Us Out of Our Most Fascinating and Imaginative Art Form
+:PROPERTIES:
+:AUTHOR:    Paul  Lockhart, Keith J. Devlin
+:ADDED:     <2016-12-29>
+:GOODREADS: https://www.goodreads.com/book/show/6232657
+:END:
+
+* READ The Visual Display of Quantitative Information
+CLOSED: [2017-01-18]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2016-12-22>
+:GOODREADS: https://www.goodreads.com/book/show/17744
+:END:
+
+Interesting read on some of the 'earlier theory and works' in statistical visualizations.
+
+* A Manual for Writers of Research Papers, Theses, and Dissertations: Chicago Style for Students and Researchers
+:PROPERTIES:
+:AUTHOR:    Kate L. Turabian, Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, University of Chicago Press
+:ADDED:     <2016-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/201004
+:END:
+
+* The Chicago Manual of Style
+:PROPERTIES:
+:AUTHOR:    University of Chicago Press
+:ADDED:     <2016-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/103362
+:END:
+
+* Style: The Basics of Clarity and Grace
+:PROPERTIES:
+:AUTHOR:    Joseph M. Williams
+:ADDED:     <2016-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/17789795
+:END:
+
+* Black Hole Blues and Other Songs from Outer Space
+:PROPERTIES:
+:AUTHOR:    Janna Levin
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/27430326
+:END:
+
+* The View from the Cheap Seats: Selected Nonfiction
+:PROPERTIES:
+:AUTHOR:    Neil Gaiman
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/24331386
+:END:
+
+* Unforbidden Pleasures
+:PROPERTIES:
+:AUTHOR:    Adam Phillips
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/26114512
+:END:
+
+* Anger and Forgiveness: Resentment, Generosity, Justice
+:PROPERTIES:
+:AUTHOR:    Martha C. Nussbaum
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/26721206
+:END:
+
+* Hold Still: A Memoir with Photographs
+:PROPERTIES:
+:AUTHOR:    Sally Mann
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/23197288
+:END:
+
+* The Abundance: Narrative Essays Old and New
+:PROPERTIES:
+:AUTHOR:    Annie Dillard
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/25776682
+:END:
+
+* Becoming Wise: An Inquiry into the Mystery and Art of Living
+:PROPERTIES:
+:AUTHOR:    Krista Tippett
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/25894085
+:END:
+
+* Hidden Figures: The American Dream and the Untold Story of the Black Women Mathematicians Who Helped Win the Space Race
+:PROPERTIES:
+:AUTHOR:    Margot Lee Shetterly
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/25953369
+:END:
+
+* The Course of Love
+:PROPERTIES:
+:AUTHOR:    Alain de Botton
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/27845690
+:END:
+
+* When Breath Becomes Air
+:PROPERTIES:
+:AUTHOR:    Paul Kalanithi, Abraham Verghese
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/25899336
+:END:
+
+* Pinocchio: The Origin Story
+:PROPERTIES:
+:AUTHOR:    Alessandro Sanna
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/27130704
+:END:
+
+* READ Upstream: Selected Essays
+CLOSED: [2018-01-24 Wed 21:31]
+:PROPERTIES:
+:AUTHOR:    Mary Oliver
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/29358559
+:END:
+
+* Consider the Lobster and Other Essays
+:PROPERTIES:
+:AUTHOR:    David Foster Wallace
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/6751
+:END:
+
+* How to Get Control of Your Time and Your Life
+:PROPERTIES:
+:AUTHOR:    Alan Lakein
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/180121
+:END:
+
+* Daily Rituals: How Artists Work
+:PROPERTIES:
+:AUTHOR:    Mason Currey
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/15799151
+:END:
+
+* Disturbing the Universe
+:PROPERTIES:
+:AUTHOR:    Freeman Dyson
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/134225
+:END:
+
+* Advice To A Young Scientist
+:PROPERTIES:
+:AUTHOR:    Peter Medawar
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/905743
+:END:
+
+* Blitzed: Drugs in Nazi Germany
+:PROPERTIES:
+:AUTHOR:    Norman Ohler, Shaun Whiteside
+:ADDED:     <2016-12-09>
+:GOODREADS: https://www.goodreads.com/book/show/29429893
+:END:
+
+* Time Travel: A History
+:PROPERTIES:
+:AUTHOR:    James Gleick
+:ADDED:     <2016-12-07>
+:GOODREADS: https://www.goodreads.com/book/show/28587584
+:END:
+
+* Felt Time: The Psychology of How We Perceive Time (MIT Press)
+:PROPERTIES:
+:AUTHOR:    Marc Wittmann, Erik Butler
+:ADDED:     <2016-12-07>
+:GOODREADS: https://www.goodreads.com/book/show/29363487
+:END:
+
+* The Hidden Life of Trees: What They Feel, How They Communicate – Discoveries from a Secret World
+:PROPERTIES:
+:AUTHOR:    Peter Wohlleben, Tim Flannery, Jane Billinghurst, Susanne Simard
+:ADDED:     <2016-12-07>
+:GOODREADS: https://www.goodreads.com/book/show/28256439
+:END:
+
+* The Big Picture: On the Origins of Life, Meaning, and the Universe Itself
+:PROPERTIES:
+:AUTHOR:    Sean Carroll
+:ADDED:     <2016-12-07>
+:GOODREADS: https://www.goodreads.com/book/show/26150770
+:END:
+
+* Silence
+:PROPERTIES:
+:AUTHOR:    John Biguenet
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/23127665
+:END:
+
+* Dust
+:PROPERTIES:
+:AUTHOR:    Michael Marder
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/24804100
+:END:
+
+* I Contain Multitudes: The Microbes Within Us and a Grander View of Life
+:PROPERTIES:
+:AUTHOR:    Ed Yong
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/27213168
+:END:
+
+* Seven Brief Lessons on Physics
+:PROPERTIES:
+:AUTHOR:    Carlo Rovelli, Simon Carnell, Erica Segre
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/25734172
+:END:
+
+* Originals: How Non-Conformists Move the World
+:PROPERTIES:
+:AUTHOR:    Adam M. Grant
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/25614523
+:END:
+
+* Utopia for Realists: The Case for a Universal Basic Income, Open Borders, and a 15-hour Workweek
+:PROPERTIES:
+:AUTHOR:    Rutger Bregman, Elizabeth Manton
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/29544996
+:END:
+
+* The Speed of Sound: Breaking the Barriers Between Music and Technology: A Memoir
+:PROPERTIES:
+:AUTHOR:    Thomas Dolby
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/28260471
+:END:
+
+* In the Not Quite Dark: Stories
+:PROPERTIES:
+:AUTHOR:    Dana Johnson
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/27037165
+:END:
+
+* The High Mountains of Portugal
+:PROPERTIES:
+:AUTHOR:    Yann Martel
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/25489094
+:END:
+
+* All the Birds in the Sky
+:PROPERTIES:
+:AUTHOR:    Charlie Jane Anders
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/25372801
+:END:
+
+* The Gene: An Intimate History
+:PROPERTIES:
+:AUTHOR:    Siddhartha Mukherjee
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/27276428
+:END:
+
+* Landmarks
+:PROPERTIES:
+:AUTHOR:    Robert Macfarlane
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/23597544
+:END:
+
+* Urban Forests: A Natural History of Trees in the American Cityscape
+:PROPERTIES:
+:AUTHOR:    Jill Jonnes
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/28815455
+:END:
+
+* The Lonely City: Adventures in the Art of Being Alone
+:PROPERTIES:
+:AUTHOR:    Olivia Laing
+:ADDED:     <2016-12-01>
+:GOODREADS: https://www.goodreads.com/book/show/25667449
+:END:
+
+* Storm Front (The Dresden Files, #1)
+:PROPERTIES:
+:AUTHOR:    Jim Butcher
+:ADDED:     <2016-12-01>
+:GOODREADS: https://www.goodreads.com/book/show/47212
+:END:
+
+* Our Revolution: A Future to Believe In
+:PROPERTIES:
+:AUTHOR:    Bernie Sanders
+:ADDED:     <2016-11-30>
+:GOODREADS: https://www.goodreads.com/book/show/31741420
+:END:
+
+* Troublemaker: Surviving Hollywood and Scientology
+:PROPERTIES:
+:AUTHOR:    Leah Remini, Rebecca Paley
+:ADDED:     <2016-11-29>
+:GOODREADS: https://www.goodreads.com/book/show/26827675
+:END:
+
+* The Wealth of Nations
+:PROPERTIES:
+:AUTHOR:    Adam Smith
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/25698
+:END:
+
+* The Mysterious Flame of Queen Loana
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, Geoffrey Brock
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/10503
+:END:
+
+* India After Gandhi: The History of the World's Largest Democracy
+:PROPERTIES:
+:AUTHOR:    Ramachandra Guha
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/356824
+:END:
+
+* The Communist Manifesto
+:PROPERTIES:
+:AUTHOR:    Karl Marx, Friedrich Engels, Gareth Stedman Jones
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/30474
+:END:
+
+* Seveneves
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/22816087
+:END:
+
+* Mein Kampf
+:PROPERTIES:
+:AUTHOR:    Adolf Hitler
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/54270
+:END:
+
+* The Anatomy of Fascism
+:PROPERTIES:
+:AUTHOR:    Robert O. Paxton
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/188378
+:END:
+
+* Five Moral Pieces
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, Alastair McEwen
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/10515
+:END:
+
+* Foucault's Pendulum
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, William Weaver
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/17841
+:END:
+
+* War and Peace
+:PROPERTIES:
+:AUTHOR:    Leo Tolstoy, Henry Gifford, Aylmer Maude, Louise Maude
+:ADDED:     <2016-11-27>
+:GOODREADS: https://www.goodreads.com/book/show/656
+:END:
+
+* READING Critical Mass: How One Thing Leads to Another
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/472609
+:END:
+
+* The Self Made Tapestry: Pattern Formation in Nature
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/39076
+:END:
+
+* Shapes: Nature's Patterns: A Tapestry in Three Parts
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/3047954
+:END:
+
+* The Elements: A Very Short Introduction
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/372295
+:END:
+
+* The Devil's Doctor: Paracelsus and the World of Renaissance Magic and Science
+:PROPERTIES:
+:AUTHOR:    Philip Ball, Paracelsus, Cornelius Agrippa
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/578890
+:END:
+
+* Serving the Reich: The Struggle for the Soul of Physics under Hitler
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/17612667
+:END:
+
+* Patterns in Nature: Why the Natural World Looks the Way It Does
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/26240445
+:END:
+
+* READ Confessions of a Necromancer
+CLOSED: [2016-09-27]
+:PROPERTIES:
+:AUTHOR:    Pieter Hintjens
+:ADDED:     <2016-11-12>
+:GOODREADS: https://www.goodreads.com/book/show/32326166
+:END:
+
+* READ Social Architecture: Building On-line Communities
+CLOSED: [2016-11-12]
+:PROPERTIES:
+:AUTHOR:    Pieter Hintjens
+:ADDED:     <2016-11-12>
+:GOODREADS: https://www.goodreads.com/book/show/30121783
+:END:
+
+* READ Why Greatness Cannot Be Planned: The Myth of the Objective
+CLOSED: [2016-12-07]
+:PROPERTIES:
+:AUTHOR:    Kenneth O. Stanley, Joel Lehman
+:ADDED:     <2016-10-23>
+:GOODREADS: https://www.goodreads.com/book/show/25670869
+:END:
+
+* The Grammar of Graphics
+:PROPERTIES:
+:AUTHOR:    Leland Wilkinson
+:ADDED:     <2016-10-18>
+:GOODREADS: https://www.goodreads.com/book/show/2549408
+:END:
+
+* The Hound of the Baskervilles (Sherlock Holmes, #5)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle, Anne Perry
+:ADDED:     <2016-10-15>
+:GOODREADS: https://www.goodreads.com/book/show/8921
+:END:
+
+* The Sign of Four (Sherlock Holmes, #2)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle, Peter Ackroyd, Ed Glinert
+:ADDED:     <2016-10-15>
+:GOODREADS: https://www.goodreads.com/book/show/608474
+:END:
+
+* A Study in Scarlet (Sherlock Holmes, #1)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2016-10-15>
+:GOODREADS: https://www.goodreads.com/book/show/102868
+:END:
+
+* Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley
+:PROPERTIES:
+:AUTHOR:    Antonio Garcia Martinez
+:ADDED:     <2016-10-14>
+:GOODREADS: https://www.goodreads.com/book/show/28259132
+:END:
+
+* READ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy
+CLOSED: [2017-01-14]
+:PROPERTIES:
+:AUTHOR:    Cathy O'Neil
+:ADDED:     <2016-10-05>
+:GOODREADS: https://www.goodreads.com/book/show/28186015
+:END:
+
+For many it might just be a confirming nod to what they know about Big data in
+general, but is a good read nevertheless. Overall, it ties "data
+science" with its responsibilities. Responsibilities which demands greater care
+and openness than assumed in the present unconstrained Big data buzz.
+
+* READ Beautiful Evidence
+CLOSED: [2018-01-11 Thu 18:15]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2016-09-24>
+:GOODREADS: https://www.goodreads.com/book/show/17743
+:END:
+
+* Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts
+:PROPERTIES:
+:AUTHOR:    Stanislas Dehaene
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/18079692
+:END:
+
+* Making Truth: METAPHOR IN SCIENCE
+:PROPERTIES:
+:AUTHOR:    Theodore L. Brown
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/878548
+:END:
+
+* Leviathan
+:PROPERTIES:
+:AUTHOR:    Thomas Hobbes, C.B. Macpherson
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/91953
+:END:
+
+* The Anti-Christ
+:PROPERTIES:
+:AUTHOR:    Friedrich Nietzsche, H.L. Mencken
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/18304
+:END:
+
+* Fight Club
+:PROPERTIES:
+:AUTHOR:    Chuck Palahniuk
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/5759
+:END:
+
+* Media Control: The Spectacular Achievements of Propaganda
+:PROPERTIES:
+:AUTHOR:    Noam Chomsky
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/12615
+:END:
+
+* On Anarchism
+:PROPERTIES:
+:AUTHOR:    Noam Chomsky, Barry Pateman
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/12618
+:END:
+
+* Everything and More: A Compact History of Infinity
+:PROPERTIES:
+:AUTHOR:    David Foster Wallace
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/821914
+:END:
+
+* READ The Pragmatic Programmer: From Journeyman to Master
+CLOSED: [2017-06-29 Thu 14:36]
+:PROPERTIES:
+:AUTHOR:    Andrew Hunt, Dave Thomas
+:ADDED:     <2016-09-16>
+:GOODREADS: https://www.goodreads.com/book/show/4099
+:END:
+
+A good book. More like a collection of things, but the authors state this
+upfront so it doesn't break the idea of a /flowing/ read. Has a light take on the
+ideas it presents, which makes it a comfortable read without sounding overly
+preachy.
+
+* You Are Not a Gadget
+:PROPERTIES:
+:AUTHOR:    Jaron Lanier
+:ADDED:     <2016-09-15>
+:GOODREADS: https://www.goodreads.com/book/show/6683549
+:END:
+
+* READ The Wisdom of Crowds
+CLOSED: [2017-07-28 Fri 17:35]
+:PROPERTIES:
+:AUTHOR:    James Surowiecki
+:ADDED:     <2016-09-15>
+:GOODREADS: https://www.goodreads.com/book/show/68143
+:END:
+
+This is a great book. Its of perfect length for the matter and the way it
+presents them.
+
+At places, it felt like doing a little bit of exaggeration by criticizing the
+classical wisdom too much. Many of the times an approach which has less
+explanation and theory behind it is frowned upon. Many of the group-behavior
+based solutions fall in this category. They might work well, but their lack of
+popularity is not /entirely/ surprising and irrational.
+
+Also, the last chapter on democracy worries me a little. The point of the
+chapter is that democracy is better than other forms because it uses the crowd's
+wisdom, but it fails to make the a solid classification of the problem and
+specify /why/ it solves them better. I guess this is more because there are
+/problems/ rather than /a/ problem to be solved in a government and they are vary in
+how they can be solved. Overall, the chapter, while presenting good arguments,
+tries to convince you of something more vague. Not that the conclusion is wrong
+(that group wisdom can be used much more effectively in a democracy), but the
+examples leave places to fill in before you get completely satisfied.
+
+I like how the book classifies the type of problems regularly faced by a crowd
+and the conditions they need to make wise decisions there. These are some good
+cues for analyzing and understanding cases presented in the book.
+
+* READING Literate Programming
+:PROPERTIES:
+:AUTHOR:    Donald Ervin Knuth
+:ADDED:     <2016-09-13>
+:GOODREADS: https://www.goodreads.com/book/show/112245
+:END:
+
+* The Algorithmic Beauty of Seaweeds, Sponges and Corals
+:PROPERTIES:
+:AUTHOR:    Jaap A. Kaandorp
+:ADDED:     <2016-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/1670860
+:END:
+
+* The Algorithmic Beauty Of Sea Shells
+:PROPERTIES:
+:AUTHOR:    Hans Meinhardt
+:ADDED:     <2016-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/1703514
+:END:
+
+* The Algorithmic Beauty of Plants
+:PROPERTIES:
+:AUTHOR:    Przemysław Prusinkiewicz
+:ADDED:     <2016-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/944626
+:END:
+
+* Why I Am Not a Christian and Other Essays on Religion and Related Subjects
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell, Paul  Edwards
+:ADDED:     <2016-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/472025
+:END:
+
+* What I Believe
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell
+:ADDED:     <2016-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/67354
+:END:
+
+* Logicomix: An epic search for truth
+:PROPERTIES:
+:AUTHOR:    Apostolos Doxiadis, Christos H. Papadimitriou, Alecos Papadatos, Annie Di Donna
+:ADDED:     <2016-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/6493321
+:END:
+
+* Hitch-22: A Memoir
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens
+:ADDED:     <2016-08-30>
+:GOODREADS: https://www.goodreads.com/book/show/7332753
+:END:
+
+* Cults: Faith, Healing and Coercion
+:PROPERTIES:
+:AUTHOR:    Marc Galanter
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/714512
+:END:
+
+* READ An Illustrated Book of Bad Arguments
+CLOSED: [2016-08-27]
+:PROPERTIES:
+:AUTHOR:    Ali Almossawi, Alejandro Giraldo
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/18753581
+:END:
+
+* The Believing Brain: From Ghosts and Gods to Politics and Conspiracies How We Construct Beliefs and Reinforce Them as Truths
+:PROPERTIES:
+:AUTHOR:    Michael Shermer
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/9754534
+:END:
+
+* Why People Believe Weird Things: Pseudoscience, Superstition, and Other Confusions of Our Time
+:PROPERTIES:
+:AUTHOR:    Michael Shermer, Stephen Jay Gould
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/89281
+:END:
+
+* I Think You'll Find it's a Bit More Complicated Than That
+:PROPERTIES:
+:AUTHOR:    Ben Goldacre
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/23132200
+:END:
+
+* READ Mortality
+CLOSED: [2016-08-30]
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/13529055
+:END:
+
+There is a different complexion in a dying person's writing. You don't have to
+like it or hate it. Its honest, brutal and beautiful.
+
+* Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients
+:PROPERTIES:
+:AUTHOR:    Ben Goldacre
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/15795155
+:END:
+
+* The Psychopath Code: Cracking The Predators That Stalk Us
+:PROPERTIES:
+:AUTHOR:    Pieter Hintjens
+:ADDED:     <2016-08-23>
+:GOODREADS: https://www.goodreads.com/book/show/27211285
+:END:
+
+* The Crippled God (The Malazan Book of the Fallen, #10)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/8447255
+:END:
+
+* Dust of Dreams (The Malazan Book of the Fallen, #9)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/4703427
+:END:
+
+* Toll the Hounds (The Malazan Book of the Fallen, #8)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/938544
+:END:
+
+* Reaper's Gale (The Malazan Book of the Fallen, #7)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/459064
+:END:
+
+* The Bonehunters (Malazan Book of the Fallen, #6)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/478951
+:END:
+
+* Midnight Tides (The Malazan Book of the Fallen, #5)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/345299
+:END:
+
+* House of Chains (The Malazan Book of the Fallen, #4)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/55398
+:END:
+
+* Memories of Ice (The Malazan Book of the Fallen, #3)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/175983
+:END:
+
+* Deadhouse Gates (The Malazan Book of the Fallen, #2)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/55401
+:END:
+
+* Gardens of the Moon (The Malazan Book of the Fallen, #1)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/55399
+:END:
+
+* Fads and Fallacies in the Name of Science
+:PROPERTIES:
+:AUTHOR:    Martin Gardner
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/17798
+:END:
+
+* Where the Red Fern Grows
+:PROPERTIES:
+:AUTHOR:    Wilson Rawls
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/10365
+:END:
+
+* The Time Traveler's Wife
+:PROPERTIES:
+:AUTHOR:    Audrey Niffenegger
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/14050
+:END:
+
+* The Lovely Bones
+:PROPERTIES:
+:AUTHOR:    Alice Sebold
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/12232938
+:END:
+
+* READ Flowers for Algernon
+CLOSED: [2017-07-20 Thu 03:19]
+:PROPERTIES:
+:AUTHOR:    Daniel Keyes
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/18373
+:END:
+
+I expected the book to end the way it did a lot earlier and that decreased the
+power of the transition back to Charlie in this otherwise wonderful story.
+
+* Extremely Loud and Incredibly Close
+:PROPERTIES:
+:AUTHOR:    Jonathan Safran Foer
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/4588
+:END:
+
+* The Bell Jar
+:PROPERTIES:
+:AUTHOR:    Sylvia Plath
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/6514
+:END:
+
+* The Old Curiosity Shop
+:PROPERTIES:
+:AUTHOR:    Charles Dickens, Norman Page
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/429024
+:END:
+
+* Revolutionary Road
+:PROPERTIES:
+:AUTHOR:    Richard Yates
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/48328
+:END:
+
+* The Heart is a Lonely Hunter
+:PROPERTIES:
+:AUTHOR:    Carson McCullers
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/37380
+:END:
+
+* READ The Giving Tree
+CLOSED: [2017-06-08]
+:PROPERTIES:
+:AUTHOR:    Shel Silverstein
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/370493
+:END:
+
+* READ Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened
+CLOSED: [2016-08-13]
+:PROPERTIES:
+:AUTHOR:    Allie Brosh
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/17571564
+:END:
+
+* A Child Called "It" (Dave Pelzer #1)
+:PROPERTIES:
+:AUTHOR:    Dave Pelzer
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/60748
+:END:
+
+* The Boy in the Striped Pajamas
+:PROPERTIES:
+:AUTHOR:    John Boyne
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/39999
+:END:
+
+* A Farewell to Arms
+:PROPERTIES:
+:AUTHOR:    Ernest Hemingway
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/10799
+:END:
+
+* Of Mice and Men
+:PROPERTIES:
+:AUTHOR:    John Steinbeck
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/890
+:END:
+
+* Anna Karenina
+:PROPERTIES:
+:AUTHOR:    Leo Tolstoy, David Magarshack, Priscilla Meyer
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/152
+:END:
+
+* The Great Gatsby
+:PROPERTIES:
+:AUTHOR:    F. Scott Fitzgerald
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/4671
+:END:
+
+* The Catcher in the Rye
+:PROPERTIES:
+:AUTHOR:    J.D. Salinger
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/5107
+:END:
+
+* Crime and Punishment
+:PROPERTIES:
+:AUTHOR:    Fyodor Dostoyevsky, David McDuff
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/7144
+:END:
+
+* The Kite Runner
+:PROPERTIES:
+:AUTHOR:    Khaled Hosseini
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/77203
+:END:
+
+* A Thousand Splendid Suns
+:PROPERTIES:
+:AUTHOR:    Khaled Hosseini
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/128029
+:END:
+
+* A Tree Grows in Brooklyn
+:PROPERTIES:
+:AUTHOR:    Betty  Smith
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/14891
+:END:
+
+* The Perks of Being a Wallflower
+:PROPERTIES:
+:AUTHOR:    Stephen Chbosky
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/22628
+:END:
+
+* The Diary of a Young Girl
+:PROPERTIES:
+:AUTHOR:    Anne Frank, Eleanor Roosevelt, B.M. Mooyart-Doubleday
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/48855
+:END:
+
+* Bridge to Terabithia
+:PROPERTIES:
+:AUTHOR:    Katherine Paterson
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/2839
+:END:
+
+* The Metamorphosis
+:PROPERTIES:
+:AUTHOR:    Franz Kafka, Stanley Corngold
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/485894
+:END:
+
+* READ A Clockwork Orange
+CLOSED: [2017-04-11]
+:PROPERTIES:
+:AUTHOR:    Anthony Burgess
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/227463
+:END:
+
+* Dandelion Wine (Green Town, #1)
+:PROPERTIES:
+:AUTHOR:    Ray Bradbury
+:ADDED:     <2016-08-11>
+:GOODREADS: https://www.goodreads.com/book/show/50033
+:END:
+
+* READ The Trial
+  CLOSED: [2017-11-06 Mon 23:23]
+:PROPERTIES:
+:AUTHOR:    Franz Kafka, Edwin Muir, Willa Muir, Max Brod
+:ADDED:     <2016-08-11>
+:GOODREADS: https://www.goodreads.com/book/show/17690
+:END:
+I don't think I got it completely. The story flows in a confusing and lazy way
+and I stopped at many places while reading this. I thought a bit about whats
+different here which is making the whole thing boring. Is it the weird way
+people converse? Is it the repelling suspense in the story which I don't feel
+like unraveling by pushing myself a few pages ahead?
+
+Somewhere around 60-70% I got the genius (at least one) behind the writing
+style. The annoyance you feel from the way the story progresses is meant to be
+there and it helps you connect with K and his contempt for the court and the
+whole bureaucracy. I still haven't tried to interpret every symbolism in the
+story (and there are many, now that I think of it), but I do get the general
+point now. More Kafka's and some connected philosophical readings should help to
+get it right.
+
+* READ Brave New World
+CLOSED: [2017-03-31]
+:PROPERTIES:
+:AUTHOR:    Aldous Huxley
+:ADDED:     <2016-08-11>
+:GOODREADS: https://www.goodreads.com/book/show/5129
+:END:
+
+* Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values
+:PROPERTIES:
+:AUTHOR:    Robert M. Pirsig
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/629
+:END:
+
+* Thus Spoke Zarathustra
+:PROPERTIES:
+:AUTHOR:    Friedrich Nietzsche
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/24257
+:END:
+
+* Siddhartha
+:PROPERTIES:
+:AUTHOR:    Hermann Hesse, Hilda Rosner
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/52036
+:END:
+
+* The Diamond Age: or, A Young Lady's Illustrated Primer
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/827
+:END:
+
+* Leviathan (Leviathan, #1)
+:PROPERTIES:
+:AUTHOR:    Scott Westerfeld
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/6050678
+:END:
+
+* Contact
+:PROPERTIES:
+:AUTHOR:    Carl Sagan
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/61666
+:END:
+
+* Snow Crash
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/830
+:END:
+
+* Surreal Numbers
+:PROPERTIES:
+:AUTHOR:    Donald Ervin Knuth
+:ADDED:     <2016-07-25>
+:GOODREADS: https://www.goodreads.com/book/show/484458
+:END:
+
+* Pond
+:PROPERTIES:
+:AUTHOR:    Claire-Louise Bennett
+:ADDED:     <2016-07-14>
+:GOODREADS: https://www.goodreads.com/book/show/25333047
+:END:
+
+* Idea Makers: Personal Perspectives on the Lives & Ideas of Some Notable People
+:PROPERTIES:
+:AUTHOR:    Stephen Wolfram
+:ADDED:     <2016-07-09>
+:GOODREADS: https://www.goodreads.com/book/show/30618260
+:END:
+
+* READ The Physics of Star Trek
+CLOSED: [2016-07-01]
+:PROPERTIES:
+:AUTHOR:    Lawrence M. Krauss, Stephen Hawking
+:ADDED:     <2016-06-25>
+:GOODREADS: https://www.goodreads.com/book/show/2104
+:END:
+
+* READ Season of Storms (The Witcher, #0.5)
+CLOSED: [2016-06-29]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2016-06-19>
+:GOODREADS: https://www.goodreads.com/book/show/25748789
+:END:
+
+* READ Pani Jeziora (Saga o Wiedźminie, #7)
+CLOSED: [2016-06-24]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2016-06-19>
+:GOODREADS: https://www.goodreads.com/book/show/68452
+:END:
+
+* READ The Tower of the Swallow (The Witcher, #6)
+CLOSED: [2016-06-19]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski, David French
+:ADDED:     <2016-06-19>
+:GOODREADS: https://www.goodreads.com/book/show/18247597
+:END:
+
+* The Varieties of Religious Experience
+:PROPERTIES:
+:AUTHOR:    William James
+:ADDED:     <2016-06-17>
+:GOODREADS: https://www.goodreads.com/book/show/28820
+:END:
+
+* The Anatomy of Melancholy
+:PROPERTIES:
+:AUTHOR:    Robert  Burton, William H. Gass
+:ADDED:     <2016-06-17>
+:GOODREADS: https://www.goodreads.com/book/show/557658
+:END:
+
+* READ Anathem
+CLOSED: [2016-08-07]
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/2845024
+:END:
+
+It could have been helped by a bit more deeper storyline and 'theorics',
+considering the number of pages (~1000). The kind of topics it touched, it
+could have been perfect. But sometimes it bloats out.
+
+* The Night Circus
+:PROPERTIES:
+:AUTHOR:    Erin Morgenstern
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/9361589
+:END:
+
+* READ The Silver Spike (The Chronicles of the Black Company, #3.5)
+CLOSED: [2016-08-28]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400914
+:END:
+
+* READ The Black Company (The Chronicles of the Black Company, #1)
+CLOSED: [2016-07-04]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/140671
+:END:
+
+* READ Water Sleeps (The Chronicles of the Black Company, #8)
+CLOSED: [2017-02-07]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/349470
+:END:
+
+* READ Soldiers Live (The Chronicles of the Black Company, #9)
+CLOSED: [2017-02-25]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400899
+:END:
+
+* READ She is the Darkness (The Chronicles of the Black Company, #7)
+CLOSED: [2017-01-02]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400897
+:END:
+
+Story of the south really picks up with this one! Hopefully, the next 2 will be
+amazing.
+
+* READ Bleak Seasons (The Chronicles of the Black Company, #6)
+CLOSED: [2016-12-22]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400911
+:END:
+
+* READ Dreams of Steel (The Chronicles of the Black Company, #5)
+CLOSED: [2016-08-15]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400900
+:END:
+
+Characters up in the north were more alluring. Read through the books of the
+south using the impetus of north. Gets slightly unnecessarily chaotic at times,
+without moving the story as the older books did. Will go to glittering stone
+after touching the silver spike.
+
+* READ Shadow Games (The Chronicles of the Black Company, #4)
+CLOSED: [2016-08-14]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/113540
+:END:
+
+* READ The White Rose (The Chronicles of the Black Company, #3)
+CLOSED: [2016-08-12]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400906
+:END:
+
+* READ Shadows Linger (The Chronicles of the Black Company, #2)
+CLOSED: [2016-08-09]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400881
+:END:
+
+* Neverwhere
+:PROPERTIES:
+:AUTHOR:    Neil Gaiman
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/14497
+:END:
+
+* READ The Ocean at the End of the Lane
+CLOSED: [2016-05-28]
+:PROPERTIES:
+:AUTHOR:    Neil Gaiman
+:ADDED:     <2016-05-25>
+:GOODREADS: https://www.goodreads.com/book/show/15783514
+:END:
+
+* READ A Mathematician's Apology
+CLOSED: [2016-05-19]
+:PROPERTIES:
+:AUTHOR:    G.H. Hardy
+:ADDED:     <2016-05-19>
+:GOODREADS: https://www.goodreads.com/book/show/154060
+:END:
+
+* Nonrequired Reading
+:PROPERTIES:
+:AUTHOR:    Wisława Szymborska, Clare Cavanagh
+:ADDED:     <2016-04-29>
+:GOODREADS: https://www.goodreads.com/book/show/10207
+:END:
+
+* Machete Season: The Killers in Rwanda Speak
+:PROPERTIES:
+:AUTHOR:    Jean Hatzfeld, Linda Coverdale, Susan Sontag
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/189296
+:END:
+
+* The Journalist and the Murderer
+:PROPERTIES:
+:AUTHOR:    Janet Malcolm, Ian Jack
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/55563
+:END:
+
+* Infidel
+:PROPERTIES:
+:AUTHOR:    Ayaan Hirsi Ali
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/81227
+:END:
+
+* The Flight of the Garuda: The Dzogchen Tradition of Tibetan Buddhism
+:PROPERTIES:
+:AUTHOR:    Padmasambhava, Godemchan, Guru Chowang, Shabkar Tsogdruk Rangdrol, Keith Dowman
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/2508146
+:END:
+
+* Superintelligence: Paths, Dangers, Strategies
+:PROPERTIES:
+:AUTHOR:    Nick Bostrom
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/20527133
+:END:
+
+* Humiliation: And Other Essays on Honor, Social Discomfort, and Violence
+:PROPERTIES:
+:AUTHOR:    William Ian Miller
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/566817
+:END:
+
+* The Qur'an / القرآن الكريم
+:PROPERTIES:
+:AUTHOR:    Anonymous
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/646462
+:END:
+
+* The Last Word
+:PROPERTIES:
+:AUTHOR:    Thomas Nagel
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/257864
+:END:
+
+* Reasons and Persons
+:PROPERTIES:
+:AUTHOR:    Derek Parfit
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/327051
+:END:
+
+* A History of Western Philosophy
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/243685
+:END:
+
+* The Year of Magical Thinking
+:PROPERTIES:
+:AUTHOR:    Joan Didion
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/7815
+:END:
+
+* No Logo
+:PROPERTIES:
+:AUTHOR:    Naomi Klein
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/647
+:END:
+
+* Birthday Letters
+:PROPERTIES:
+:AUTHOR:    Ted Hughes
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/313277
+:END:
+
+* Dreams from My Father: A Story of Race and Inheritance
+:PROPERTIES:
+:AUTHOR:    Barack Obama
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/88061
+:END:
+
+* The Right Stuff
+:PROPERTIES:
+:AUTHOR:    Tom Wolfe
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/586472
+:END:
+
+* Orientalism
+:PROPERTIES:
+:AUTHOR:    Edward Said
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/355190
+:END:
+
+* Dispatches
+:PROPERTIES:
+:AUTHOR:    Michael Herr
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/4339
+:END:
+
+* Batman: The Dark Knight Returns
+:PROPERTIES:
+:AUTHOR:    Frank Miller, Klaus Janson, Lynn Varley
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/59960
+:END:
+
+* Batman: The Killing Joke
+:PROPERTIES:
+:AUTHOR:    Alan Moore, Brian Bolland, Tim Sale
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/96358
+:END:
+
+* Batman: Year One
+:PROPERTIES:
+:AUTHOR:    Frank Miller, David Mazzucchelli, Richmond Lewis, Dennis O'Neil
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/59980
+:END:
+
+* READ V for Vendetta
+CLOSED: [2016-06-19]
+:PROPERTIES:
+:AUTHOR:    Alan Moore, David   Lloyd
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/5805
+:END:
+
+* READ Watchmen
+CLOSED: [2016-05-24]
+:PROPERTIES:
+:AUTHOR:    Alan Moore, Dave Gibbons, John Higgins
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/472331
+:END:
+
+* The Five Ages of the Universe: Inside the Physics of Eternity
+:PROPERTIES:
+:AUTHOR:    Fred Adams, Greg Laughlin
+:ADDED:     <2016-04-01>
+:GOODREADS: https://www.goodreads.com/book/show/401973
+:END:
+
+* READ The Pleasure Instinct: Why We Crave Adventure, Chocolate, Pheromones, and Music
+CLOSED: [2016-04-04]
+:PROPERTIES:
+:AUTHOR:    Gene Wallenstein
+:ADDED:     <2016-03-27>
+:GOODREADS: https://www.goodreads.com/book/show/6076559
+:END:
+
+* The Vital Question: Energy, Evolution, and the Origins of Complex Life
+:PROPERTIES:
+:AUTHOR:    Nick Lane
+:ADDED:     <2016-03-25>
+:GOODREADS: https://www.goodreads.com/book/show/23316494
+:END:
+
+* The Closing of the American Mind
+:PROPERTIES:
+:AUTHOR:    Allan Bloom
+:ADDED:     <2016-03-22>
+:GOODREADS: https://www.goodreads.com/book/show/75812
+:END:
+
+* Reamde
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-03-21>
+:GOODREADS: https://www.goodreads.com/book/show/10552338
+:END:
+
+* Future Shock
+:PROPERTIES:
+:AUTHOR:    Alvin Toffler
+:ADDED:     <2016-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/466537
+:END:
+
+* Turtles, Termites, and Traffic Jams: Explorations in Massively Parallel Microworlds
+:PROPERTIES:
+:AUTHOR:    Mitchel Resnick
+:ADDED:     <2016-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/40798
+:END:
+
+* READ The Nature of Code
+CLOSED: [2016-03-19]
+:PROPERTIES:
+:AUTHOR:    Daniel Shiffman
+:ADDED:     <2016-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/16123828
+:END:
+
+* The Old Man and the Sea
+:PROPERTIES:
+:AUTHOR:    Ernest Hemingway
+:ADDED:     <2016-03-17>
+:GOODREADS: https://www.goodreads.com/book/show/2165
+:END:
+
+* READ The White Tiger
+CLOSED: [2016-03-20]
+:PROPERTIES:
+:AUTHOR:    Aravind Adiga
+:ADDED:     <2016-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/1768603
+:END:
+
+* Feynman's Rainbow: A Search for Beauty in Physics and in Life
+:PROPERTIES:
+:AUTHOR:    Leonard Mlodinow
+:ADDED:     <2016-03-04>
+:GOODREADS: https://www.goodreads.com/book/show/45776
+:END:
+
+* READ The Meaning of It All: Thoughts of a Citizen-Scientist
+CLOSED: [2016-03-12]
+:PROPERTIES:
+:AUTHOR:    Richard Feynman
+:ADDED:     <2016-03-04>
+:GOODREADS: https://www.goodreads.com/book/show/17375
+:END:
+
+* Six Degrees: The Science of a Connected Age
+:PROPERTIES:
+:AUTHOR:    Duncan J. Watts
+:ADDED:     <2016-03-01>
+:GOODREADS: https://www.goodreads.com/book/show/818170
+:END:
+
+* Why Don't Penguins' Feet Freeze?: And 114 Other Questions
+:PROPERTIES:
+:AUTHOR:    Mick O'Hare
+:ADDED:     <2016-02-27>
+:GOODREADS: https://www.goodreads.com/book/show/561436
+:END:
+
+* READ Life of Pi
+CLOSED: [2016-03-13]
+:PROPERTIES:
+:AUTHOR:    Yann Martel
+:ADDED:     <2016-02-27>
+:GOODREADS: https://www.goodreads.com/book/show/4214
+:END:
+
+* Excellent Sheep: The Miseducation of the American Elite and the Way to a Meaningful Life
+:PROPERTIES:
+:AUTHOR:    William Deresiewicz
+:ADDED:     <2016-02-22>
+:GOODREADS: https://www.goodreads.com/book/show/18775383
+:END:
+
+* READ Train to Pakistan
+CLOSED: [2016-02-16]
+:PROPERTIES:
+:AUTHOR:    Khushwant Singh
+:ADDED:     <2016-02-11>
+:GOODREADS: https://www.goodreads.com/book/show/785454
+:END:
+
+* The Society of Mind
+:PROPERTIES:
+:AUTHOR:    Marvin Minsky
+:ADDED:     <2016-01-26>
+:GOODREADS: https://www.goodreads.com/book/show/326790
+:END:
+
+* Reinventing Discovery: The New Era of Networked Science
+:PROPERTIES:
+:AUTHOR:    Michael Nielsen
+:ADDED:     <2016-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/11667578
+:END:
+
+* Flour Water Salt Yeast: The Fundamentals of Artisan Bread and Pizza
+:PROPERTIES:
+:AUTHOR:    Ken Forkish
+:ADDED:     <2016-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/13414492
+:END:
+
+* Tambora: The Eruption That Changed the World
+:PROPERTIES:
+:AUTHOR:    Gillen D'Arcy Wood
+:ADDED:     <2015-12-31>
+:GOODREADS: https://www.goodreads.com/book/show/18607842
+:END:
+
+* Small Worlds: The Dynamics of Networks Between Order and Randomness
+:PROPERTIES:
+:AUTHOR:    Duncan J. Watts
+:ADDED:     <2015-12-28>
+:GOODREADS: https://www.goodreads.com/book/show/373169
+:END:
+
+* The Two Towers (The Lord of the Rings, #2)
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/15241
+:END:
+
+* The Return of the King (The Lord of the Rings, #3)
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/18512
+:END:
+
+* The Fellowship of the Ring (The Lord of the Rings, #1)
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/34
+:END:
+
+* The Hobbit
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/5907
+:END:
+
+* Angels & Demons  (Robert Langdon, #1)
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/960
+:END:
+
+* Harry Potter and the Deathly Hallows (Harry Potter, #7)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/136251
+:END:
+
+* Harry Potter and the Half-Blood Prince (Harry Potter, #6)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/1
+:END:
+
+* Harry Potter and the Chamber of Secrets (Harry Potter, #2)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré, Amik Kasoruho
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/15881
+:END:
+
+* The Da Vinci Code (Robert Langdon, #2)
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/968
+:END:
+
+* Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/5
+:END:
+
+* Harry Potter and the Goblet of Fire (Harry Potter, #4)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/6
+:END:
+
+* Harry Potter and the Order of the Phoenix (Harry Potter, #5)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/2
+:END:
+
+* READ The Time of Contempt (The Witcher, #4)
+CLOSED: [2016-03-25]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski, David French
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/14781491
+:END:
+
+* READ The Last Battle (Chronicles of Narnia, #7)
+CLOSED: [2016-01-29]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/84369
+:END:
+
+* READ The Magician's Nephew (Chronicles of Narnia, #6)
+CLOSED: [2016-01-13]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/65605
+:END:
+
+* READ The Horse and His Boy (Chronicles of Narnia, #5)
+CLOSED: [2016-01-02]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/84119
+:END:
+
+* READ The Silver Chair (Chronicles of Narnia, #4)
+CLOSED: [2015-12-30]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis, Pauline Baynes
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/65641
+:END:
+
+* READ The Voyage of the Dawn Treader (Chronicles of Narnia, #5)
+CLOSED: [2015-12-29]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis, Pauline Baynes
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/7806771
+:END:
+
+* READ Prince Caspian (Chronicles of Narnia, #2)
+CLOSED: [2015-12-29]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/121749
+:END:
+
+* READ The Lion, the Witch, and the Wardrobe (Chronicles of Narnia, #1)
+CLOSED: [2015-12-27]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/100915
+:END:
+
+* READ Baptism of Fire (The Witcher, #5)
+CLOSED: [2016-05-23]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/18924205
+:END:
+
+* READ Sword of Destiny (The Witcher, #2)
+CLOSED: [2015-12-26]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-12-23>
+:GOODREADS: https://www.goodreads.com/book/show/25454056
+:END:
+
+* READ Simply Complexity
+CLOSED: [2016-02-27]
+:PROPERTIES:
+:AUTHOR:    Neil Johnson
+:ADDED:     <2015-12-20>
+:GOODREADS: https://www.goodreads.com/book/show/18936836
+:END:
+
+* Reckoning with Risk: Learning to Live with Uncertainty
+:PROPERTIES:
+:AUTHOR:    Gerd Gigerenzer
+:ADDED:     <2015-12-20>
+:GOODREADS: https://www.goodreads.com/book/show/320406
+:END:
+
+* How to Read a Paper: The Basics of Evidence-Based Medicine
+:PROPERTIES:
+:AUTHOR:    Trisha Greenhalgh
+:ADDED:     <2015-12-20>
+:GOODREADS: https://www.goodreads.com/book/show/1019894
+:END:
+
+* READ Bad Science: Quacks, Hacks, and Big Pharma Flacks
+CLOSED: [2015-12-20]
+:PROPERTIES:
+:AUTHOR:    Ben Goldacre
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/9665017
+:END:
+
+* Think Complexity: Complexity Science and Computational Modeling
+:PROPERTIES:
+:AUTHOR:    Allen B. Downey
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/13234078
+:END:
+
+* Micromotives and Macrobehavior
+:PROPERTIES:
+:AUTHOR:    Thomas C. Schelling
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/317333
+:END:
+
+* The Big Sort: Why the Clustering of Like-Minded America is Tearing Us Apart
+:PROPERTIES:
+:AUTHOR:    Bill Bishop
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/2569072
+:END:
+
+* Artificial Life: A Report from the Frontier Where Computers Meet Biology
+:PROPERTIES:
+:AUTHOR:    Steven Levy
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/737831
+:END:
+
+* READ Sync: How Order Emerges From Chaos In the Universe, Nature, and Daily Life
+CLOSED: [2015-12-11]
+:PROPERTIES:
+:AUTHOR:    Steven H. Strogatz
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/16173023
+:END:
+
+* The Windup Girl
+:PROPERTIES:
+:AUTHOR:    Paolo Bacigalupi
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/6597651
+:END:
+
+* Neuromancer
+:PROPERTIES:
+:AUTHOR:    William Gibson
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/22328
+:END:
+
+* READ The Lorax
+CLOSED: [2015-12-05]
+:PROPERTIES:
+:AUTHOR:    Dr. Seuss
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/7784
+:END:
+
+* Desert Solitaire
+:PROPERTIES:
+:AUTHOR:    Edward Abbey
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/214614
+:END:
+
+* Fighting God: An Atheist Manifesto for a Religious World
+:PROPERTIES:
+:AUTHOR:    David    Silverman, Cara Santa Maria
+:ADDED:     <2015-12-02>
+:GOODREADS: https://www.goodreads.com/book/show/23848169
+:END:
+
+* A Sand County Almanac and Sketches Here and There
+:PROPERTIES:
+:AUTHOR:    Aldo Leopold
+:ADDED:     <2015-11-29>
+:GOODREADS: https://www.goodreads.com/book/show/210404
+:END:
+
+* The Call of the Wild
+:PROPERTIES:
+:AUTHOR:    Jack London
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/1852
+:END:
+
+* Frankenstein
+:PROPERTIES:
+:AUTHOR:    Mary Wollstonecraft Shelley, Percy Bysshe Shelley, Maurice Hindle
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/18490
+:END:
+
+* The Strange Case of Dr. Jekyll and Mr. Hyde
+:PROPERTIES:
+:AUTHOR:    Robert Louis Stevenson, Vladimir Nabokov, Mervyn Peake, Dan Chaon
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/51496
+:END:
+
+* The Moonstone
+:PROPERTIES:
+:AUTHOR:    Wilkie Collins, Carolyn G. Heilbrun
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/6138
+:END:
+
+* The Clash of Civilizations and the Remaking of World Order
+:PROPERTIES:
+:AUTHOR:    Samuel P. Huntington
+:ADDED:     <2015-11-27>
+:GOODREADS: https://www.goodreads.com/book/show/413179
+:END:
+
+* Complexity: Life at the Edge of Chaos
+:PROPERTIES:
+:AUTHOR:    Roger Lewin
+:ADDED:     <2015-11-20>
+:GOODREADS: https://www.goodreads.com/book/show/384547
+:END:
+
+* Bursts: The Hidden Pattern Behind Everything We Do
+:PROPERTIES:
+:AUTHOR:    Albert-László Barabási
+:ADDED:     <2015-11-20>
+:GOODREADS: https://www.goodreads.com/book/show/7442792
+:END:
+
+* READ Butterick's Practical Typography
+CLOSED: [2016-06-26]
+:PROPERTIES:
+:AUTHOR:    Matthew Butterick, Erik Spiekermann
+:ADDED:     <2015-11-18>
+:GOODREADS: https://www.goodreads.com/book/show/18244760
+:END:
+
+* Jihad Academy: The Rise of Islamic State
+:PROPERTIES:
+:AUTHOR:    Nicolas Hénin, Martin Makinson
+:ADDED:     <2015-11-17>
+:GOODREADS: https://www.goodreads.com/book/show/27406435
+:END:
+
+* Flatterland: Like Flatland Only More So
+:PROPERTIES:
+:AUTHOR:    Ian Stewart
+:ADDED:     <2015-11-15>
+:GOODREADS: https://www.goodreads.com/book/show/17033
+:END:
+
+* Complexity: The Emerging Science at the Edge of Order and Chaos
+:PROPERTIES:
+:AUTHOR:    M. Mitchell Waldrop
+:ADDED:     <2015-11-15>
+:GOODREADS: https://www.goodreads.com/book/show/337123
+:END:
+
+* The Human Use Of Human Beings: Cybernetics And Society
+:PROPERTIES:
+:AUTHOR:    Norbert Wiener
+:ADDED:     <2015-11-06>
+:GOODREADS: https://www.goodreads.com/book/show/153954
+:END:
+
+* Cybernetics: or the Control and Communication in the Animal and the Machine
+:PROPERTIES:
+:AUTHOR:    Norbert Wiener
+:ADDED:     <2015-11-06>
+:GOODREADS: https://www.goodreads.com/book/show/294941
+:END:
+
+* The Origins of Order: Self-Organization and Selection in Evolution
+:PROPERTIES:
+:AUTHOR:    Stuart A. Kauffman
+:ADDED:     <2015-11-06>
+:GOODREADS: https://www.goodreads.com/book/show/783559
+:END:
+
+* The Mathematics of Love: Patterns, Proofs, and the Search for the Ultimate Equation
+:PROPERTIES:
+:AUTHOR:    Hannah Fry
+:ADDED:     <2015-11-04>
+:GOODREADS: https://www.goodreads.com/book/show/23258103
+:END:
+
+* Diary of a Wimpy Kid (Diary of a Wimpy Kid, #1)
+:PROPERTIES:
+:AUTHOR:    Jeff Kinney
+:ADDED:     <2015-11-01>
+:GOODREADS: https://www.goodreads.com/book/show/389627
+:END:
+
+* READ Fahrenheit 451
+CLOSED: [2016-08-11]
+:PROPERTIES:
+:AUTHOR:    Ray Bradbury
+:ADDED:     <2015-11-01>
+:GOODREADS: https://www.goodreads.com/book/show/17470674
+:END:
+
+* The Book Thief
+:PROPERTIES:
+:AUTHOR:    Markus Zusak
+:ADDED:     <2015-11-01>
+:GOODREADS: https://www.goodreads.com/book/show/19063
+:END:
+
+* The Motorcycle Diaries: Notes on a Latin American Journey
+:PROPERTIES:
+:AUTHOR:    Ernesto Che Guevara, Aleida Guevara March
+:ADDED:     <2015-10-28>
+:GOODREADS: https://www.goodreads.com/book/show/172732
+:END:
+
+* Biophilia
+:PROPERTIES:
+:AUTHOR:    Christopher Marley
+:ADDED:     <2015-10-27>
+:GOODREADS: https://www.goodreads.com/book/show/23167749
+:END:
+
+* The Invention of Clouds
+:PROPERTIES:
+:AUTHOR:    Richard Hamblyn
+:ADDED:     <2015-10-27>
+:GOODREADS: https://www.goodreads.com/book/show/1148768
+:END:
+
+* How to Teach Quantum Physics to Your Dog
+:PROPERTIES:
+:AUTHOR:    Chad Orzel
+:ADDED:     <2015-10-27>
+:GOODREADS: https://www.goodreads.com/book/show/8243716
+:END:
+
+* The World Without Us
+:PROPERTIES:
+:AUTHOR:    Alan Weisman
+:ADDED:     <2015-10-22>
+:GOODREADS: https://www.goodreads.com/book/show/248787
+:END:
+
+* The Tipping Point: How Little Things Can Make a Big Difference
+:PROPERTIES:
+:AUTHOR:    Malcolm Gladwell
+:ADDED:     <2015-10-21>
+:GOODREADS: https://www.goodreads.com/book/show/2612
+:END:
+
+* It's Not News, It's Fark: How Mass Media Tries to Pass Off Crap As News
+:PROPERTIES:
+:AUTHOR:    Drew Curtis
+:ADDED:     <2015-10-21>
+:GOODREADS: https://www.goodreads.com/book/show/816159
+:END:
+
+* READ The Lathe of Heaven
+CLOSED: [2015-10-25]
+:PROPERTIES:
+:AUTHOR:    Ursula K. Le Guin
+:ADDED:     <2015-10-20>
+:GOODREADS: https://www.goodreads.com/book/show/22007410
+:END:
+
+* READ Complexity: A Guided Tour
+CLOSED: [2015-11-06]
+:PROPERTIES:
+:AUTHOR:    Melanie Mitchell
+:ADDED:     <2015-10-19>
+:GOODREADS: https://www.goodreads.com/book/show/8207901
+:END:
+
+* The Age of Wonder: How the Romantic Generation Discovered the Beauty and Terror of Science
+:PROPERTIES:
+:AUTHOR:    Richard  Holmes
+:ADDED:     <2015-10-19>
+:GOODREADS: https://www.goodreads.com/book/show/4371507
+:END:
+
+* Genius At Play: The Curious Mind of John Horton Conway
+:PROPERTIES:
+:AUTHOR:    Siobhan Roberts
+:ADDED:     <2015-10-07>
+:GOODREADS: https://www.goodreads.com/book/show/22529392
+:END:
+
+* READ Musicophilia: Tales of Music and the Brain
+CLOSED: [2015-10-19]
+:PROPERTIES:
+:AUTHOR:    Oliver Sacks
+:ADDED:     <2015-10-06>
+:GOODREADS: https://www.goodreads.com/book/show/6234210
+:END:
+
+* The Story of Alice: Lewis Carroll and the Secret History of Wonderland
+:PROPERTIES:
+:AUTHOR:    Robert Douglas-Fairhurst
+:ADDED:     <2015-09-24>
+:GOODREADS: https://www.goodreads.com/book/show/23503019
+:END:
+
+* 1984
+:PROPERTIES:
+:AUTHOR:    George Orwell, Erich Fromm, Celâl Üster
+:ADDED:     <2015-09-24>
+:GOODREADS: https://www.goodreads.com/book/show/5470
+:END:
+
+* READ How Music Got Free: The End of an Industry, the Turn of the Century, and the Patient Zero of Piracy
+CLOSED: [2015-09-26]
+:PROPERTIES:
+:AUTHOR:    Stephen Witt
+:ADDED:     <2015-09-24>
+:GOODREADS: https://www.goodreads.com/book/show/25493536
+:END:
+
+It wasn't in my high priority to-read list, but I started and didn't stop till
+it was over. Exactly the way I wanted the piracy story to be told.
+
+* READ The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World
+CLOSED: [2016-05-16]
+:PROPERTIES:
+:AUTHOR:    Pedro Domingos
+:ADDED:     <2015-09-17>
+:GOODREADS: https://www.goodreads.com/book/show/24612233
+:END:
+
+* Moneyball: The Art of Winning an Unfair Game
+:PROPERTIES:
+:AUTHOR:    Michael   Lewis
+:ADDED:     <2015-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/1301
+:END:
+
+* Field Notes from a Catastrophe: Man, Nature, and Climate Change
+:PROPERTIES:
+:AUTHOR:    Elizabeth Kolbert
+:ADDED:     <2015-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/80513
+:END:
+
+* Under a Green Sky: Global Warming, the Mass Extinctions of the Past, and What They Can Tell Us About Our Future
+:PROPERTIES:
+:AUTHOR:    Peter D. Ward
+:ADDED:     <2015-09-01>
+:GOODREADS: https://www.goodreads.com/book/show/630144
+:END:
+
+* Around the World in Eighty Days (Extraordinary Voyages, #11)
+:PROPERTIES:
+:AUTHOR:    Jules Verne, Michael Glencross, Brian W. Aldiss
+:ADDED:     <2015-08-19>
+:GOODREADS: https://www.goodreads.com/book/show/54479
+:END:
+
+* October Sky
+:PROPERTIES:
+:AUTHOR:    Homer Hickam
+:ADDED:     <2015-08-17>
+:GOODREADS: https://www.goodreads.com/book/show/124862
+:END:
+
+* READ The End of Night: Searching for Natural Darkness in an Age of Artificial Light
+CLOSED: [2015-12-05]
+:PROPERTIES:
+:AUTHOR:    Paul Bogard
+:ADDED:     <2015-08-17>
+:GOODREADS: https://www.goodreads.com/book/show/18904721
+:END:
+
+* All the Light We Cannot See
+:PROPERTIES:
+:AUTHOR:    Anthony Doerr
+:ADDED:     <2015-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/18143977
+:END:
+
+* Harry Potter and the Methods of Rationality
+:PROPERTIES:
+:AUTHOR:    Eliezer Yudkowsky
+:ADDED:     <2015-08-14>
+:GOODREADS: https://www.goodreads.com/book/show/10016013
+:END:
+
+* READ Thing Explainer: Complicated Stuff in Simple Words
+CLOSED: [2015-12-09]
+:PROPERTIES:
+:AUTHOR:    Randall Munroe
+:ADDED:     <2015-07-30>
+:GOODREADS: https://www.goodreads.com/book/show/25329850
+:END:
+
+* READ Do Androids Dream of Electric Sheep?
+CLOSED: [2018-02-02 Fri 02:17]
+:PROPERTIES:
+:AUTHOR:    Philip K. Dick, Roger Zelazny
+:ADDED:     <2015-07-07>
+:GOODREADS: https://www.goodreads.com/book/show/7082
+:END:
+
+Mid way, I realized that I have actually seen the movie (blade runner) but this
+book still kept on giving and giving. I specially enjoyed the way the mind of
+Isidore was picked on. A simple being with a devotion to faith. Its really hard
+to reconcile with reality after your faith, your everything is taken away.
+
+As a side note, I am interested to know more about the author's (Philip K. Dick;
+this is my first book by him) philosophical and religious inclinations.
+
+* Gaia: A New Look at Life on Earth
+:PROPERTIES:
+:AUTHOR:    James E. Lovelock
+:ADDED:     <2015-07-06>
+:GOODREADS: https://www.goodreads.com/book/show/274230
+:END:
+
+* Under a Lucky Star
+:PROPERTIES:
+:AUTHOR:    Roy Chapman Andrews, Charles Gallenkamp, Ann Bausum
+:ADDED:     <2015-07-06>
+:GOODREADS: https://www.goodreads.com/book/show/6355840
+:END:
+
+* The Mismeasure of Man
+:PROPERTIES:
+:AUTHOR:    Stephen Jay Gould
+:ADDED:     <2015-07-06>
+:GOODREADS: https://www.goodreads.com/book/show/54218
+:END:
+
+* The Interpretation of Dreams
+:PROPERTIES:
+:AUTHOR:    Sigmund Freud
+:ADDED:     <2015-07-06>
+:GOODREADS: https://www.goodreads.com/book/show/93981
+:END:
+
+* This Explains Everything: Deep, Beautiful, and Elegant Theories of How the World Works
+:PROPERTIES:
+:AUTHOR:    John Brockman, Susan Blackmore, Rebecca Goldstein, James J. O'Donnell, Paul J. Steinhardt, Shing-Tung Yau, Frank Wilczek, Thomas Metzinger, Sean Carroll, Steven Pinker, Jonathan Gottschall, David G. Myers, Matt Ridley, Armand Marie Leroi, Gerd Gigerenzer, Martin J. Rees, Richard Dawkins, Scott Atran, Carlo Rovelli, Aubrey de Grey, Leonard Susskind, Joel Gold, Alan Alda, Anton Zeilinger, Jeremy Bernstein, Andrei D. Linde, George Dyson, Max Tegmark, Gino Segrè, Freeman Dyson, Satyajit Das, Haim Harari, Robert R. Provine, V.S. Ramachandran, David M. Eagleman, Mahzarin Banaji, Robert M. Sapolsky, Richard H. Thaler, Jennifer Jacquet, Judith Rich Harris, Dan Sperber, Clay Shirky, Hugo Mercier, Stewart Brand, Kevin P. Hand, Paul Saffo, Daniel C. Dennett, Carl Zimmer, David M. Buss, A.C. Grayling, Howard Gardner
+:ADDED:     <2015-06-13>
+:GOODREADS: https://www.goodreads.com/book/show/15818399
+:END:
+
+* READ Fortune's Formula: The Untold Story of the Scientific Betting System That Beat the Casinos and Wall Street
+CLOSED: [2015-08-07]
+:PROPERTIES:
+:AUTHOR:    William Poundstone
+:ADDED:     <2015-06-11>
+:GOODREADS: https://www.goodreads.com/book/show/6564279
+:END:
+
+* READ Culture & Empire: Digital Revolution
+CLOSED: [2015-09-26]
+:PROPERTIES:
+:AUTHOR:    Pieter Hintjens
+:ADDED:     <2015-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/19257445
+:END:
+
+* The Origin of Consciousness in the Breakdown of the Bicameral Mind
+:PROPERTIES:
+:AUTHOR:    Julian Jaynes
+:ADDED:     <2015-06-03>
+:GOODREADS: https://www.goodreads.com/book/show/22478
+:END:
+
+* The Joy of Pain: Schadenfreude and the Dark Side of Human Nature
+:PROPERTIES:
+:AUTHOR:    Richard H. Smith
+:ADDED:     <2015-05-31>
+:GOODREADS: https://www.goodreads.com/book/show/16285237
+:END:
+
+* Invisible: The Dangerous Allure of the Unseen
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2015-05-20>
+:GOODREADS: https://www.goodreads.com/book/show/19381681
+:END:
+
+* The Martian
+:PROPERTIES:
+:AUTHOR:    Andy Weir
+:ADDED:     <2015-05-19>
+:GOODREADS: https://www.goodreads.com/book/show/18007564
+:END:
+
+* Zero to One: Notes on Startups, or How to Build the Future
+:PROPERTIES:
+:AUTHOR:    Peter Thiel, Blake  Masters
+:ADDED:     <2015-05-15>
+:GOODREADS: https://www.goodreads.com/book/show/18050143
+:END:
+
+* The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
+:PROPERTIES:
+:AUTHOR:    Ben Horowitz
+:ADDED:     <2015-05-15>
+:GOODREADS: https://www.goodreads.com/book/show/18176747
+:END:
+
+* READ The Time Machine
+CLOSED: [2015-05-19]
+:PROPERTIES:
+:AUTHOR:    H.G. Wells
+:ADDED:     <2015-05-14>
+:GOODREADS: https://www.goodreads.com/book/show/8155907
+:END:
+
+* READ Oaxaca Journal
+CLOSED: [2015-05-14]
+:PROPERTIES:
+:AUTHOR:    Oliver Sacks
+:ADDED:     <2015-05-09>
+:GOODREADS: https://www.goodreads.com/book/show/13132815
+:END:
+
+* How to Write a Thesis
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, Caterina Mongiat Farina, Geoff Farina, Francesco Erspamer
+:ADDED:     <2015-05-02>
+:GOODREADS: https://www.goodreads.com/book/show/23461426
+:END:
+
+* READ What If?: Serious Scientific Answers to Absurd Hypothetical Questions
+CLOSED: [2015-05-07]
+:PROPERTIES:
+:AUTHOR:    Randall Munroe
+:ADDED:     <2015-05-01>
+:GOODREADS: https://www.goodreads.com/book/show/21413662
+:END:
+
+* Grimm's Fairy Tales
+:PROPERTIES:
+:AUTHOR:    Jacob Grimm, Wilhelm Grimm
+:ADDED:     <2015-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/11093132
+:END:
+
+* On the Move: A Life
+:PROPERTIES:
+:AUTHOR:    Oliver Sacks
+:ADDED:     <2015-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/24972194
+:END:
+
+* READ Consciousness and the Social Brain
+CLOSED: [2015-07-16]
+:PROPERTIES:
+:AUTHOR:    Michael S.A. Graziano
+:ADDED:     <2015-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/17349805
+:END:
+
+* Aesop's Fables
+:PROPERTIES:
+:AUTHOR:    Aesop
+:ADDED:     <2015-04-23>
+:GOODREADS: https://www.goodreads.com/book/show/6376577
+:END:
+
+* Einstein's Dice and Schrödinger's Cat: How Two Great Minds Battled Quantum Randomness to Create a Unified Theory of Physics
+:PROPERTIES:
+:AUTHOR:    Paul Halpern
+:ADDED:     <2015-04-22>
+:GOODREADS: https://www.goodreads.com/book/show/23013829
+:END:
+
+* The Antidote: Happiness for People Who Can't Stand Positive Thinking
+:PROPERTIES:
+:AUTHOR:    Oliver Burkeman
+:ADDED:     <2015-04-21>
+:GOODREADS: https://www.goodreads.com/book/show/13721709
+:END:
+
+* Book of Ages: The Life and Opinions of Jane Franklin
+:PROPERTIES:
+:AUTHOR:    Jill Lepore
+:ADDED:     <2015-04-21>
+:GOODREADS: https://www.goodreads.com/book/show/17262121
+:END:
+
+* Against Happiness: In Praise of Melancholy
+:PROPERTIES:
+:AUTHOR:    Eric G. Wilson
+:ADDED:     <2015-04-21>
+:GOODREADS: https://www.goodreads.com/book/show/1298834
+:END:
+
+* Drunk Tank Pink: And Other Unexpected Forces that Shape How We Think, Feel, and Behave
+:PROPERTIES:
+:AUTHOR:    Adam Alter
+:ADDED:     <2015-04-21>
+:GOODREADS: https://www.goodreads.com/book/show/15811497
+:END:
+
+* Internal Time: Chronotypes, Social Jet Lag, and Why You're So Tired
+:PROPERTIES:
+:AUTHOR:    Till Roenneberg
+:ADDED:     <2015-04-21>
+:GOODREADS: https://www.goodreads.com/book/show/13598053
+:END:
+
+* Music, Ways Of Listening
+:PROPERTIES:
+:AUTHOR:    Elliott Schwartz
+:ADDED:     <2015-04-18>
+:GOODREADS: https://www.goodreads.com/book/show/4498679
+:END:
+
+* READ The Name of the Rose
+CLOSED: [2016-02-09]
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, William Weaver, Seán Barrett
+:ADDED:     <2015-04-13>
+:GOODREADS: https://www.goodreads.com/book/show/119073
+:END:
+
+* The Pleasure of Finding Things Out: The Best Short Works of Richard P. Feynman
+:PROPERTIES:
+:AUTHOR:    Richard Feynman, Jeffrey Robbins, Freeman Dyson
+:ADDED:     <2015-04-11>
+:GOODREADS: https://www.goodreads.com/book/show/10260
+:END:
+
+* Chariots of The Gods
+:PROPERTIES:
+:AUTHOR:    Erich von Däniken
+:ADDED:     <2015-04-11>
+:GOODREADS: https://www.goodreads.com/book/show/91202
+:END:
+
+* To Kill a Mockingbird
+:PROPERTIES:
+:AUTHOR:    Harper Lee
+:ADDED:     <2015-04-09>
+:GOODREADS: https://www.goodreads.com/book/show/2657
+:END:
+
+* A Passage to India
+:PROPERTIES:
+:AUTHOR:    E.M. Forster, Oliver Stallybrass, Pankaj Mishra
+:ADDED:     <2015-04-09>
+:GOODREADS: https://www.goodreads.com/book/show/45195
+:END:
+
+* Midnight's Children
+:PROPERTIES:
+:AUTHOR:    Salman Rushdie
+:ADDED:     <2015-04-09>
+:GOODREADS: https://www.goodreads.com/book/show/14836
+:END:
+
+* American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer
+:PROPERTIES:
+:AUTHOR:    Kai Bird, Martin J. Sherwin
+:ADDED:     <2015-04-08>
+:GOODREADS: https://www.goodreads.com/book/show/80571
+:END:
+
+* READ Blood of Elves (The Witcher, #3)
+CLOSED: [2015-05-09]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-04-02>
+:GOODREADS: https://www.goodreads.com/book/show/6415386
+:END:
+
+* The Oldest Living Things in the World
+:PROPERTIES:
+:AUTHOR:    Rachel Sussman, Carl Zimmer, Hans Ulrich Obrist
+:ADDED:     <2015-03-23>
+:GOODREADS: https://www.goodreads.com/book/show/18526648
+:END:
+
+* READ The Last Wish (The Witcher, #1)
+CLOSED: [2015-04-02]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-03-22>
+:GOODREADS: https://www.goodreads.com/book/show/8173788
+:END:
+
+* Arrival of the Fittest: Solving Evolution's Greatest Puzzle
+:PROPERTIES:
+:AUTHOR:    Andreas Wagner
+:ADDED:     <2015-03-18>
+:GOODREADS: https://www.goodreads.com/book/show/20821275
+:END:
+
+* The Tale of the Dueling Neurosurgeons: The History of the Human Brain as Revealed by True Stories of Trauma, Madness, and Recovery
+:PROPERTIES:
+:AUTHOR:    Sam Kean
+:ADDED:     <2015-03-18>
+:GOODREADS: https://www.goodreads.com/book/show/18774002
+:END:
+
+* This Idea Must Die: Scientific Theories That Are Blocking Progress
+:PROPERTIES:
+:AUTHOR:    John Brockman
+:ADDED:     <2015-03-15>
+:GOODREADS: https://www.goodreads.com/book/show/22477307
+:END:
+
+* Treasure Island
+:PROPERTIES:
+:AUTHOR:    Robert Louis Stevenson
+:ADDED:     <2015-03-14>
+:GOODREADS: https://www.goodreads.com/book/show/295
+:END:
+
+* The Creative Brain: The Science of Genius
+:PROPERTIES:
+:AUTHOR:    Nancy C. Andreasen
+:ADDED:     <2015-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/907634
+:END:
+
+* Incompleteness: The Proof and Paradox of Kurt Gödel (Great Discoveries)
+:PROPERTIES:
+:AUTHOR:    Rebecca Goldstein
+:ADDED:     <2015-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/51287
+:END:
+
+* Brilliant Blunders: From Darwin to Einstein - Colossal Mistakes by Great Scientists That Changed Our Understanding of Life and the Universe
+:PROPERTIES:
+:AUTHOR:    Mario Livio
+:ADDED:     <2015-03-04>
+:GOODREADS: https://www.goodreads.com/book/show/15802325
+:END:
+
+* The Well of Being: A Children's Book for Adults
+:PROPERTIES:
+:AUTHOR:    Jean-Pierre Weill
+:ADDED:     <2015-03-02>
+:GOODREADS: https://www.goodreads.com/book/show/18789669
+:END:
+
+* Nonzero: The Logic of Human Destiny
+:PROPERTIES:
+:AUTHOR:    Robert Wright
+:ADDED:     <2015-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/1124380
+:END:
+
+* The Moral Animal: Why We Are the Way We Are: The New Science of Evolutionary Psychology
+:PROPERTIES:
+:AUTHOR:    Robert Wright
+:ADDED:     <2015-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/681941
+:END:
+
+* The Evolution of God
+:PROPERTIES:
+:AUTHOR:    Robert Wright
+:ADDED:     <2015-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/6340873
+:END:
+
+* Alice in Quantumland: An Allegory of Quantum Physics
+:PROPERTIES:
+:AUTHOR:    Robert Gilmore
+:ADDED:     <2015-02-25>
+:GOODREADS: https://www.goodreads.com/book/show/1044095
+:END:
+
+* Religion for Atheists: A Non-Believer's Guide to the Uses of Religion
+:PROPERTIES:
+:AUTHOR:    Alain de Botton
+:ADDED:     <2015-02-25>
+:GOODREADS: https://www.goodreads.com/book/show/12576334
+:END:
+
+* How to Create a Mind: The Secret of Human Thought Revealed
+:PROPERTIES:
+:AUTHOR:    Ray Kurzweil
+:ADDED:     <2015-02-22>
+:GOODREADS: https://www.goodreads.com/book/show/13589153
+:END:
+
+* Quantum Computing Since Democritus
+:PROPERTIES:
+:AUTHOR:    Scott Aaronson
+:ADDED:     <2015-02-20>
+:GOODREADS: https://www.goodreads.com/book/show/17471298
+:END:
+
+* The Quantum Moment: How Planck, Bohr, Einstein, and Heisenberg Taught Us to Love Uncertainty
+:PROPERTIES:
+:AUTHOR:    Robert P. Crease, Alfred Scharff Goldhaber
+:ADDED:     <2015-02-17>
+:GOODREADS: https://www.goodreads.com/book/show/20663690
+:END:
+
+* The Strangest Man: The Hidden Life of Paul Dirac, Mystic of the Atom
+:PROPERTIES:
+:AUTHOR:    Graham Farmelo
+:ADDED:     <2015-02-17>
+:GOODREADS: https://www.goodreads.com/book/show/6629359
+:END:
+
+* Time, Love, Memory: A Great Biologist and His Quest for the Origins of Behavior
+:PROPERTIES:
+:AUTHOR:    Jonathan Weiner
+:ADDED:     <2015-02-17>
+:GOODREADS: https://www.goodreads.com/book/show/164064
+:END:
+
+* Being Mortal: Medicine and What Matters in the End
+:PROPERTIES:
+:AUTHOR:    Atul Gawande
+:ADDED:     <2015-02-16>
+:GOODREADS: https://www.goodreads.com/book/show/20696006
+:END:
+
+* READ The Copernicus Complex: Our Cosmic Significance in a Universe of Planets and Probabilities
+CLOSED: [2015-06-27]
+:PROPERTIES:
+:AUTHOR:    Caleb Scharf
+:ADDED:     <2015-02-16>
+:GOODREADS: https://www.goodreads.com/book/show/22394373
+:END:
+
+* Gravity's Engines: How Bubble-Blowing Black Holes Rule Galaxies, Stars, and Life in the Cosmos
+:PROPERTIES:
+:AUTHOR:    Caleb Scharf
+:ADDED:     <2015-02-16>
+:GOODREADS: https://www.goodreads.com/book/show/13166638
+:END:
+
+* Rosalind Franklin: The Dark Lady of DNA
+:PROPERTIES:
+:AUTHOR:    Brenda Maddox
+:ADDED:     <2015-02-16>
+:GOODREADS: https://www.goodreads.com/book/show/326851
+:END:
+
+* The Universe in the Rearview Mirror: How Hidden Symmetries Shape Reality
+:PROPERTIES:
+:AUTHOR:    Dave Goldberg
+:ADDED:     <2015-02-14>
+:GOODREADS: https://www.goodreads.com/book/show/16101087
+:END:
+
+* Alice's Adventures in Wonderland & Through the Looking-Glass (Alice's Adventures in Wonderland #1-2)
+:PROPERTIES:
+:AUTHOR:    Lewis Carroll, John Tenniel, Martin Gardner
+:ADDED:     <2015-02-11>
+:GOODREADS: https://www.goodreads.com/book/show/24213
+:END:
+
+* A Madman Dreams of Turing Machines
+:PROPERTIES:
+:AUTHOR:    Janna Levin
+:ADDED:     <2015-02-10>
+:GOODREADS: https://www.goodreads.com/book/show/16670
+:END:
+
+* Quadrivium: The Four Classical Liberal Arts of Number, Geometry, Music, & Cosmology
+:PROPERTIES:
+:AUTHOR:    John Martineau, Miranda Lundy, Daud Sutton, Anthony Ashton, Jason Martineau
+:ADDED:     <2015-02-10>
+:GOODREADS: https://www.goodreads.com/book/show/7962457
+:END:
+
+* Stumbling on Happiness
+:PROPERTIES:
+:AUTHOR:    Daniel Todd Gilbert
+:ADDED:     <2015-02-05>
+:GOODREADS: https://www.goodreads.com/book/show/56627
+:END:
+
+* Experimental Philosophy
+:PROPERTIES:
+:AUTHOR:    Joshua Knobe, Shaun Nichols
+:ADDED:     <2015-02-05>
+:GOODREADS: https://www.goodreads.com/book/show/3215586
+:END:
+
+* The Book on the Taboo Against Knowing Who You Are
+:PROPERTIES:
+:AUTHOR:    Alan W. Watts
+:ADDED:     <2015-02-05>
+:GOODREADS: https://www.goodreads.com/book/show/60551
+:END:
+
+* Betraying Spinoza: The Renegade Jew Who Gave Us Modernity
+:PROPERTIES:
+:AUTHOR:    Rebecca Goldstein
+:ADDED:     <2015-02-05>
+:GOODREADS: https://www.goodreads.com/book/show/12876
+:END:
+
+* Hal's Legacy: 2001's Computer as Dream and Reality
+:PROPERTIES:
+:AUTHOR:    David G. Stork, Arthur C. Clarke
+:ADDED:     <2015-02-05>
+:GOODREADS: https://www.goodreads.com/book/show/215201
+:END:
+
+* READ The Science of Interstellar
+CLOSED: [2015-02-17]
+:PROPERTIES:
+:AUTHOR:    Kip S. Thorne, Christopher J. Nolan
+:ADDED:     <2015-02-03>
+:GOODREADS: https://www.goodreads.com/book/show/23521669
+:END:
+
+* The Poisoner's Handbook: Murder and the Birth of Forensic Medicine in Jazz Age New York
+:PROPERTIES:
+:AUTHOR:    Deborah Blum
+:ADDED:     <2015-02-03>
+:GOODREADS: https://www.goodreads.com/book/show/7054123
+:END:
+
+* Beating Back the Devil: On the Front Lines with the Disease Detectives of the Epidemic Intelligence Service
+:PROPERTIES:
+:AUTHOR:    Maryn McKenna
+:ADDED:     <2015-02-03>
+:GOODREADS: https://www.goodreads.com/book/show/535383
+:END:
+
+* Superbug: The Fatal Menace of MRSA
+:PROPERTIES:
+:AUTHOR:    Maryn McKenna
+:ADDED:     <2015-02-03>
+:GOODREADS: https://www.goodreads.com/book/show/7649306
+:END:
+
+* Mankind Beyond Earth: The History, Science, and Future of Human Space Exploration
+:PROPERTIES:
+:AUTHOR:    Claude A. Piantadosi
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/14624382
+:END:
+
+* Farewell to Reality: How Modern Physics Has Betrayed the Search for Scientific Truth
+:PROPERTIES:
+:AUTHOR:    Jim Baggott
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/16255226
+:END:
+
+* READ The Island of Knowledge: The Limits of Science and the Search for Meaning
+CLOSED: [2015-03-13]
+:PROPERTIES:
+:AUTHOR:    Marcelo Gleiser
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/22443383
+:END:
+
+* The Age of Entanglement: When Quantum Physics Was Reborn
+:PROPERTIES:
+:AUTHOR:    Louisa Gilder
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/5096882
+:END:
+
+* A History of Western Philosophy, Volume 1: The Classical Mind
+:PROPERTIES:
+:AUTHOR:    W.T. Jones, Robert J. Fogelin
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/116841
+:END:
+
+* But We Were Born Free
+:PROPERTIES:
+:AUTHOR:    Elmer Holmes Davis
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/18930684
+:END:
+
+* Who Speaks for Man
+:PROPERTIES:
+:AUTHOR:    Norman Cousins
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/17457133
+:END:
+
+* Timaeus
+:PROPERTIES:
+:AUTHOR:    Plato, Donald J. Zeyl
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/1130209
+:END:
+
+* Young Archimedes and Other Stories
+:PROPERTIES:
+:AUTHOR:    Aldous Huxley
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/1400129
+:END:
+
+* The Immoralist
+:PROPERTIES:
+:AUTHOR:    André Gide, Alan Sheridan, David Watson
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/70101
+:END:
+
+* The Uses Of The Past: Profiles Of Former Societies
+:PROPERTIES:
+:AUTHOR:    Herbert Joseph Muller
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/2088706
+:END:
+
+* Extraordinary Popular Delusions and the Madness of Crowds
+:PROPERTIES:
+:AUTHOR:    Charles Mackay
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/162120
+:END:
+
+* The Fractal Geometry of Nature
+:PROPERTIES:
+:AUTHOR:    Benoît B. Mandelbrot
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/558059
+:END:
+
+* Bird by Bird: Some Instructions on Writing and Life
+:PROPERTIES:
+:AUTHOR:    Anne Lamott
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/12543
+:END:
+
+* On Writing: A Memoir of the Craft
+:PROPERTIES:
+:AUTHOR:    Stephen King
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/10569
+:END:
+
+* How to Read a Book: The Classic Guide to Intelligent Reading
+:PROPERTIES:
+:AUTHOR:    Mortimer J. Adler, Charles Van Doren
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/567610
+:END:
+
+* The Elements of Style
+:PROPERTIES:
+:AUTHOR:    William Strunk Jr., E.B. White
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/33514
+:END:
+
+* Ernest Hemingway on Writing
+:PROPERTIES:
+:AUTHOR:    Ernest Hemingway, Larry W. Phillips, Charles Scribner Jr.
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/42683
+:END:
+
+* The Fourth Paradigm: Data-Intensive Scientific Discovery
+:PROPERTIES:
+:AUTHOR:    Tony Hey, Stewart Tansley, Kristin Tolle
+:ADDED:     <2015-01-30>
+:GOODREADS: https://www.goodreads.com/book/show/7380332
+:END:
+
+* The Intel Trinity: How Robert Noyce, Gordon Moore, and Andy Grove Built the World's Most Important Company
+:PROPERTIES:
+:AUTHOR:    Michael S. Malone
+:ADDED:     <2015-01-30>
+:GOODREADS: https://www.goodreads.com/book/show/18606951
+:END:
+
+* The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory
+:PROPERTIES:
+:AUTHOR:    Brian Greene
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/771
+:END:
+
+* The Man Who Mistook His Wife for a Hat and Other Clinical Tales
+:PROPERTIES:
+:AUTHOR:    Oliver Sacks
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/63697
+:END:
+
+* The Disappearing Spoon: And Other True Tales of Madness, Love, and the History of the World from the Periodic Table of the Elements
+:PROPERTIES:
+:AUTHOR:    Sam Kean
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/7247854
+:END:
+
+* Dragons of Eden: Speculations on the Evolution of Human Intelligence
+:PROPERTIES:
+:AUTHOR:    Carl Sagan
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/32276
+:END:
+
+* The Ascent of Man
+:PROPERTIES:
+:AUTHOR:    Jacob Bronowski
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/461104
+:END:
+
+* How the Mind Works
+:PROPERTIES:
+:AUTHOR:    Steven Pinker
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/835623
+:END:
+
+* The Greatest Show on Earth: The Evidence for Evolution
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/6117055
+:END:
+
+* Guns, Germs, and Steel: The Fates of Human Societies
+:PROPERTIES:
+:AUTHOR:    Jared Diamond
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/1842
+:END:
+
+* The God Delusion
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/14743
+:END:
+
+* Pale Blue Dot: A Vision of the Human Future in Space
+:PROPERTIES:
+:AUTHOR:    Carl Sagan, Ann Druyan
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/61663
+:END:
+
+* READ The Sixth Extinction: An Unnatural History
+CLOSED: [2015-09-06]
+:PROPERTIES:
+:AUTHOR:    Elizabeth Kolbert
+:ADDED:     <2015-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/19665685
+:END:
+
+* About Time: Einstein's Unfinished Revolution
+:PROPERTIES:
+:AUTHOR:    Paul Davies
+:ADDED:     <2015-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/298252
+:END:
+
+* Lonely Hearts of the Cosmos: The Story of the Scientific Quest for the Secret of the Universe
+:PROPERTIES:
+:AUTHOR:    Dennis Overbye
+:ADDED:     <2015-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/211213
+:END:
+
+* Einstein's Clocks, Poincaré's Maps: Empires of Time
+:PROPERTIES:
+:AUTHOR:    Peter Galison
+:ADDED:     <2015-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/276044
+:END:
+
+* The Emotion Machine: Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind
+:PROPERTIES:
+:AUTHOR:    Marvin Minsky
+:ADDED:     <2015-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/169007
+:END:
+
+* READ Einstein's Dreams
+CLOSED: [2015-02-09]
+:PROPERTIES:
+:AUTHOR:    Alan Lightman
+:ADDED:     <2015-01-26>
+:GOODREADS: https://www.goodreads.com/book/show/12086102
+:END:
+
+* The Accidental Universe: The World You Thought You Knew
+:PROPERTIES:
+:AUTHOR:    Alan Lightman
+:ADDED:     <2015-01-26>
+:GOODREADS: https://www.goodreads.com/book/show/17756352
+:END:
+
+* The River
+:PROPERTIES:
+:AUTHOR:    Alessandro Sanna, Michael Reynolds
+:ADDED:     <2015-01-23>
+:GOODREADS: https://www.goodreads.com/book/show/17675268
+:END:
+
+* READ The Character of Physical Law
+CLOSED: [2016-06-28]
+:PROPERTIES:
+:AUTHOR:    Richard Feynman, James Gleick
+:ADDED:     <2015-01-23>
+:GOODREADS: https://www.goodreads.com/book/show/291920
+:END:
+
+* How to Be an Explorer of the World: Portable Life Museum
+:PROPERTIES:
+:AUTHOR:    Keri Smith
+:ADDED:     <2015-01-23>
+:GOODREADS: https://www.goodreads.com/book/show/3090109
+:END:
+
+* The Epigenetics Revolution
+:PROPERTIES:
+:AUTHOR:    Nessa Carey
+:ADDED:     <2015-01-22>
+:GOODREADS: https://www.goodreads.com/book/show/12414734
+:END:
+
+* How to Avoid Work
+:PROPERTIES:
+:AUTHOR:    William J. Reilly
+:ADDED:     <2015-01-20>
+:GOODREADS: https://www.goodreads.com/book/show/17053961
+:END:
+
+* Reason for Hope: A Spiritual Journey
+:PROPERTIES:
+:AUTHOR:    Jane Goodall, Phillip Berman
+:ADDED:     <2015-01-19>
+:GOODREADS: https://www.goodreads.com/book/show/135484
+:END:
+
+* Power, Sex, Suicide: Mitochondria and the Meaning of Life
+:PROPERTIES:
+:AUTHOR:    Nick Lane
+:ADDED:     <2015-01-19>
+:GOODREADS: https://www.goodreads.com/book/show/39001
+:END:
+
+* READ The Spark of Life: Electricity in the Human Body
+CLOSED: [2015-02-08]
+:PROPERTIES:
+:AUTHOR:    Frances Ashcroft
+:ADDED:     <2015-01-19>
+:GOODREADS: https://www.goodreads.com/book/show/19046254
+:END:
+
+* Speaking And Language: Defence Of Poetry
+:PROPERTIES:
+:AUTHOR:    Paul Goodman
+:ADDED:     <2015-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/1857156
+:END:
+
+* Made in Japan: Akio Morita and Sony
+:PROPERTIES:
+:AUTHOR:    Akio Morita, Edwin M. Reingold, Mitsuko Shimomura
+:ADDED:     <2015-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/1008101
+:END:
+
+* Dear Professor Einstein: Albert Einstein's Letters to and from Children
+:PROPERTIES:
+:AUTHOR:    Albert Einstein, Alice Calaprice, Robert Schulmann, Evelyn Einstein
+:ADDED:     <2015-01-17>
+:GOODREADS: https://www.goodreads.com/book/show/665625
+:END:
+
+* Neurocomic
+:PROPERTIES:
+:AUTHOR:    Hana Ros, Matteo Farinella
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/17675119
+:END:
+
+* READ Flim-Flam!
+CLOSED: [2016-05-17]
+:PROPERTIES:
+:AUTHOR:    James Randi, Isaac Asimov
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/662277
+:END:
+
+* Cycles of Time: An Extraordinary New View of the Universe
+:PROPERTIES:
+:AUTHOR:    Roger Penrose
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/7947434
+:END:
+
+* Origins: Fourteen Billion Years of Cosmic Evolution
+:PROPERTIES:
+:AUTHOR:    Neil deGrasse Tyson, Donald Goldsmith
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/20663771
+:END:
+
+* The Inflationary Universe: The Quest for a New Theory of Cosmic Origins
+:PROPERTIES:
+:AUTHOR:    Alan Guth
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/1381851
+:END:
+
+* READ Genius: The Life and Science of Richard Feynman
+CLOSED: [2015-05-04]
+:PROPERTIES:
+:AUTHOR:    James Gleick
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/10380467
+:END:
+
+* Walden
+:PROPERTIES:
+:AUTHOR:    Henry David Thoreau
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/17792189
+:END:
+
+* Man's Search for Meaning
+:PROPERTIES:
+:AUTHOR:    Viktor E. Frankl
+:ADDED:     <2015-01-14>
+:GOODREADS: https://www.goodreads.com/book/show/4069
+:END:
+
+* Hackers & Painters: Big Ideas from the Computer Age
+:PROPERTIES:
+:AUTHOR:    Paul Graham, Allen Noren, Matt Hutchinson
+:ADDED:     <2015-01-14>
+:GOODREADS: https://www.goodreads.com/book/show/41793
+:END:
+
+* The Future of Ideas: The Fate of the Commons in a Connected World
+:PROPERTIES:
+:AUTHOR:    Lawrence Lessig
+:ADDED:     <2015-01-14>
+:GOODREADS: https://www.goodreads.com/book/show/72012
+:END:
+
+* Connectome: How the Brain's Wiring Makes Us Who We Are
+:PROPERTIES:
+:AUTHOR:    Sebastian Seung
+:ADDED:     <2015-01-13>
+:GOODREADS: https://www.goodreads.com/book/show/11346470
+:END:
+
+* READ Scatter, Adapt, and Remember: How Humans Will Survive a Mass Extinction
+CLOSED: [2015-01-23]
+:PROPERTIES:
+:AUTHOR:    Annalee Newitz
+:ADDED:     <2015-01-13>
+:GOODREADS: https://www.goodreads.com/book/show/17611011
+:END:
+
+* One, Two, Three...Infinity: Facts and Speculations of Science
+:PROPERTIES:
+:AUTHOR:    George Gamow
+:ADDED:     <2015-01-12>
+:GOODREADS: https://www.goodreads.com/book/show/52670
+:END:
+
+* READ What Is Life?: With Mind and Matter and Autobiographical Sketches
+CLOSED: [2015-01-19]
+:PROPERTIES:
+:AUTHOR:    Erwin Schrödinger, Roger Penrose
+:ADDED:     <2015-01-10>
+:GOODREADS: https://www.goodreads.com/book/show/18637768
+:END:
+
+* Life on the Edge: The Coming of Age of Quantum Biology
+:PROPERTIES:
+:AUTHOR:    Johnjoe McFadden, Jim Al-Khalili
+:ADDED:     <2015-01-10>
+:GOODREADS: https://www.goodreads.com/book/show/23347191
+:END:
+
+* Zero Time Space: How Quantum Tunneling Broke the Light Speed Barrier
+:PROPERTIES:
+:AUTHOR:    Günter Nimtz, Astrid Haibel
+:ADDED:     <2015-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/3038574
+:END:
+
+* The Checklist Manifesto: How to Get Things Right
+:PROPERTIES:
+:AUTHOR:    Atul Gawande
+:ADDED:     <2015-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/6667514
+:END:
+
+* This Is Your Brain on Music: The Science of a Human Obsession
+:PROPERTIES:
+:AUTHOR:    Daniel J. Levitin
+:ADDED:     <2015-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/141565
+:END:
+
+* A Life Decoded: My Genome: My Life
+:PROPERTIES:
+:AUTHOR:    J. Craig Venter
+:ADDED:     <2015-01-06>
+:GOODREADS: https://www.goodreads.com/book/show/1865671
+:END:
+
+* Frankenstein's Cat: Cuddling Up to Biotech's Brave New Beasts
+:PROPERTIES:
+:AUTHOR:    Emily Anthes
+:ADDED:     <2015-01-04>
+:GOODREADS: https://www.goodreads.com/book/show/15793536
+:END:
+
+* Quintessence: The Mystery of Missing Mass in the Universe
+:PROPERTIES:
+:AUTHOR:    Lawrence M. Krauss
+:ADDED:     <2015-01-02>
+:GOODREADS: https://www.goodreads.com/book/show/100645
+:END:
+
+* The Goldilocks Enigma: Why is the Universe Just Right for Life?
+:PROPERTIES:
+:AUTHOR:    Paul Davies
+:ADDED:     <2015-01-02>
+:GOODREADS: https://www.goodreads.com/book/show/817511
+:END:
+
+* Not Even Wrong: The Failure of String Theory and the Search for Unity in Physical Law
+:PROPERTIES:
+:AUTHOR:    Peter Woit
+:ADDED:     <2015-01-02>
+:GOODREADS: https://www.goodreads.com/book/show/27578
+:END:
+
+* Three Roads To Quantum Gravity
+:PROPERTIES:
+:AUTHOR:    Lee Smolin
+:ADDED:     <2014-12-30>
+:GOODREADS: https://www.goodreads.com/book/show/132695
+:END:
+
+* The Physics of Time Asymmetry
+:PROPERTIES:
+:AUTHOR:    Paul Davies
+:ADDED:     <2014-12-30>
+:GOODREADS: https://www.goodreads.com/book/show/1550618
+:END:
+
+* The Guardian of All Things: The Epic Story of Human Memory
+:PROPERTIES:
+:AUTHOR:    Michael S. Malone
+:ADDED:     <2014-12-24>
+:GOODREADS: https://www.goodreads.com/book/show/13167105
+:END:
+
+* In Search of Time: The Science of a Curious Dimension
+:PROPERTIES:
+:AUTHOR:    Dan Falk
+:ADDED:     <2014-12-24>
+:GOODREADS: https://www.goodreads.com/book/show/4902979
+:END:
+
+* The Information: A History, a Theory, a Flood
+:PROPERTIES:
+:AUTHOR:    James Gleick
+:ADDED:     <2014-12-24>
+:GOODREADS: https://www.goodreads.com/book/show/8701960
+:END:
+
+* Dark Pools: The Rise of Artificially Intelligent Trading Machines and the Looming Threat to Wall Street
+:PROPERTIES:
+:AUTHOR:    Scott Patterson
+:ADDED:     <2014-12-23>
+:GOODREADS: https://www.goodreads.com/book/show/12917124
+:END:
+
+* READ Programming the Universe: A Quantum Computer Scientist Takes on the Cosmos
+CLOSED: [2014-12-30]
+:PROPERTIES:
+:AUTHOR:    Seth Lloyd
+:ADDED:     <2014-12-23>
+:GOODREADS: https://www.goodreads.com/book/show/331680
+:END:
+
+* The Jungle Book
+:PROPERTIES:
+:AUTHOR:    Rudyard Kipling
+:ADDED:     <2014-12-21>
+:GOODREADS: https://www.goodreads.com/book/show/77270
+:END:
+
+* READ What Do You Care What Other People Think?: Further Adventures of a Curious Character
+CLOSED: [2016-03-04]
+:PROPERTIES:
+:AUTHOR:    Richard Feynman
+:ADDED:     <2014-12-19>
+:GOODREADS: https://www.goodreads.com/book/show/10916738
+:END:
+
+* The Demon-Haunted World: Science as a Candle in the Dark
+:PROPERTIES:
+:AUTHOR:    Carl Sagan, Ann Druyan
+:ADDED:     <2014-12-19>
+:GOODREADS: https://www.goodreads.com/book/show/17349
+:END:
+
+* Automate This: How Algorithms Came to Rule Our World
+:PROPERTIES:
+:AUTHOR:    Christopher Steiner
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/13542772
+:END:
+
+* READ The Design of Everyday Things
+CLOSED: [2016-06-27]
+:PROPERTIES:
+:AUTHOR:    Donald A. Norman
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/840
+:END:
+
+* The Signal and the Noise: Why So Many Predictions Fail - But Some Don't
+:PROPERTIES:
+:AUTHOR:    Nate Silver
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/13588394
+:END:
+
+* Our Mathematical Universe: My Quest for the Ultimate Nature of Reality
+:PROPERTIES:
+:AUTHOR:    Max Tegmark
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/19395553
+:END:
+
+* The Structure of Scientific Revolutions
+:PROPERTIES:
+:AUTHOR:    Thomas S. Kuhn
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/17997242
+:END:
+
+* Hackers: Heroes of the Computer Revolution
+:PROPERTIES:
+:AUTHOR:    Steven Levy
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/56829
+:END:
+
+* READ A New Kind of Science
+CLOSED: [2015-12-27]
+:PROPERTIES:
+:AUTHOR:    Stephen Wolfram
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/238558
+:END:
+
+* The Man Who Knew Infinity: A Life of the Genius Ramanujan
+:PROPERTIES:
+:AUTHOR:    Robert Kanigel
+:ADDED:     <2014-12-17>
+:GOODREADS: https://www.goodreads.com/book/show/106139
+:END:
+
+* Survival of the Prettiest: The Science of Beauty
+:PROPERTIES:
+:AUTHOR:    Nancy L. Etcoff
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/106860
+:END:
+
+* READ How to Be Alone
+CLOSED: [2015-01-01]
+:PROPERTIES:
+:AUTHOR:    Sara Maitland
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/20518977
+:END:
+
+* Dataclysm: Who We Are (When We Think No One's Looking)
+:PROPERTIES:
+:AUTHOR:    Christian Rudder
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/21480734
+:END:
+
+* How We Got to Now: Six Innovations That Made the Modern World
+:PROPERTIES:
+:AUTHOR:    Steven Johnson
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/20893477
+:END:
+
+* READ How to Do Nothing with Nobody All Alone by Yourself
+CLOSED: [2015-04-09]
+:PROPERTIES:
+:AUTHOR:    Robert Paul Smith, Elinor Goulding Smith, Paul     Collins
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/7022939
+:END:
+
+* Unweaving the Rainbow: Science, Delusion and the Appetite for Wonder
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/31487
+:END:
+
+* Geek Sublime: The Beauty of Code, the Code of Beauty
+:PROPERTIES:
+:AUTHOR:    Vikram Chandra
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/20613480
+:END:
+
+* The Lagoon: How Aristotle Invented Science
+:PROPERTIES:
+:AUTHOR:    Armand Marie Leroi
+:ADDED:     <2014-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/20821396
+:END:
+
+* Spoken Language Processing: A Guide to Theory, Algorithm and System Development
+:PROPERTIES:
+:AUTHOR:    Xuedong Huang, Alex Acero, Raj Reddy, Hsiao-Wuen Hon
+:ADDED:     <2014-11-25>
+:GOODREADS: https://www.goodreads.com/book/show/276783
+:END:
+
+* Creative Confidence: Unleashing the Creative Potential Within Us All
+:PROPERTIES:
+:AUTHOR:    Tom Kelley, David Kelley
+:ADDED:     <2014-11-10>
+:GOODREADS: https://www.goodreads.com/book/show/17288649
+:END:
+
+* Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life
+:PROPERTIES:
+:AUTHOR:    Robert Rosen
+:ADDED:     <2014-11-06>
+:GOODREADS: https://www.goodreads.com/book/show/865617
+:END:
+
+* Flatland: A Romance of Many Dimensions
+:PROPERTIES:
+:AUTHOR:    Edwin A. Abbott, Banesh Hoffmann
+:ADDED:     <2014-10-27>
+:GOODREADS: https://www.goodreads.com/book/show/433567
+:END:
+
+* Asleep: The Forgotten Epidemic that Remains One of Medicine's Greatest Mysteries
+:PROPERTIES:
+:AUTHOR:    Molly Caldwell Crosby
+:ADDED:     <2014-10-21>
+:GOODREADS: https://www.goodreads.com/book/show/7438853
+:END:
+
+* Brain Bugs: How the Brain's Flaws Shape Our Lives
+:PROPERTIES:
+:AUTHOR:    Dean Buonomano
+:ADDED:     <2014-10-21>
+:GOODREADS: https://www.goodreads.com/book/show/11213439
+:END:
+
+* READ On Intelligence
+CLOSED: [2014-10-21]
+:PROPERTIES:
+:AUTHOR:    Jeff Hawkins, Sandra Blakeslee
+:ADDED:     <2014-07-27>
+:GOODREADS: https://www.goodreads.com/book/show/27539
+:END:
+
+* Eleven Minutes
+:PROPERTIES:
+:AUTHOR:    Paulo Coelho
+:ADDED:     <2014-07-14>
+:GOODREADS: https://www.goodreads.com/book/show/1430
+:END:
+
+* The Panda's Thumb: More Reflections in Natural History
+:PROPERTIES:
+:AUTHOR:    Stephen Jay Gould
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/33933
+:END:
+
+* READ The Violinist's Thumb: And Other Lost Tales of Love, War, and Genius, as Written by Our Genetic Code
+CLOSED: [2015-01-18]
+:PROPERTIES:
+:AUTHOR:    Sam Kean
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/13521382
+:END:
+
+* The Hidden Reality: Parallel Universes and the Deep Laws of the Cosmos
+:PROPERTIES:
+:AUTHOR:    Brian Greene
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/8167094
+:END:
+
+* READ A Universe from Nothing: Why There Is Something Rather Than Nothing
+CLOSED: [2014-12-04]
+:PROPERTIES:
+:AUTHOR:    Lawrence M. Krauss, Richard Dawkins
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/11337189
+:END:
+
+* In Pursuit of the Unknown: 17 Equations That Changed the World
+:PROPERTIES:
+:AUTHOR:    Ian Stewart
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/13237758
+:END:
+
+* Physics of the Impossible: A Scientific Exploration into the World of Phasers, Force Fields, Teleportation, and Time Travel
+:PROPERTIES:
+:AUTHOR:    Michio Kaku
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/1168341
+:END:
+
+* Life Ascending: The Ten Great Inventions of Evolution
+:PROPERTIES:
+:AUTHOR:    Nick Lane
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/6429264
+:END:
+
+* READ Brighter than a Thousand Suns: A Personal History of the Atomic Scientists
+CLOSED: [2014-12-20]
+:PROPERTIES:
+:AUTHOR:    Robert Jungk, James Cleugh
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/407305
+:END:
+
+* The Emperor's New Mind Concerning Computers, Minds and the Laws of Physics
+:PROPERTIES:
+:AUTHOR:    Roger Penrose, Martin Gardner
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/179744
+:END:
+
+* READ Silent Spring
+CLOSED: [2014-12-28]
+:PROPERTIES:
+:AUTHOR:    Rachel Carson, Linda Lear, Edward O. Wilson
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/27333
+:END:
+
+* READ The Double Helix: A Personal Account of the Discovery of the Structure of DNA
+CLOSED: [2015-02-12]
+:PROPERTIES:
+:AUTHOR:    James D. Watson
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/18920474
+:END:
+
+* Gödel, Escher, Bach: An Eternal Golden Braid
+:PROPERTIES:
+:AUTHOR:    Douglas R. Hofstadter
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/24113
+:END:
+
+* READ The Selfish Gene
+CLOSED: [2018-01-04 Thu 23:31]
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/61535
+:END:
+
+This is a great book. I probably read it at the right time to understand and
+appreciate more of the issues it talks about. For an amateur interested in
+evolution, this marks an important point from where you start to think more
+deeply about why the world is the way it is.
+
+* READ The Singularity is Near: When Humans Transcend Biology
+CLOSED: [2015-03-09]
+:PROPERTIES:
+:AUTHOR:    Ray Kurzweil
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/5804507
+:END:
+
+* Hyperspace
+:PROPERTIES:
+:AUTHOR:    Michio Kaku
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/33426
+:END:
+
+* READ How to Lie with Statistics
+CLOSED: [2014-07-22]
+:PROPERTIES:
+:AUTHOR:    Darrell Huff, Irving Geis
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/51291
+:END:
+
+* Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP
+:PROPERTIES:
+:AUTHOR:    Peter Norvig
+:ADDED:     <2014-07-10>
+:GOODREADS: https://www.goodreads.com/book/show/83884
+:END:
+
+* Cosmos
+:PROPERTIES:
+:AUTHOR:    Carl Sagan
+:ADDED:     <2014-07-10>
+:GOODREADS: https://www.goodreads.com/book/show/55030
+:END:
+
+* Packing for Mars: The Curious Science of Life in the Void
+:PROPERTIES:
+:AUTHOR:    Mary Roach
+:ADDED:     <2014-07-10>
+:GOODREADS: https://www.goodreads.com/book/show/7237456
+:END:
+
+* A Short History of Nearly Everything
+:PROPERTIES:
+:AUTHOR:    Bill Bryson
+:ADDED:     <2014-07-10>
+:GOODREADS: https://www.goodreads.com/book/show/21
+:END:
+
+* The Alchemist
+:PROPERTIES:
+:AUTHOR:    Paulo Coelho, Alan R. Clarke
+:ADDED:     <2014-07-06>
+:GOODREADS: https://www.goodreads.com/book/show/865
+:END:
+
+* The Case-Book of Sherlock Holmes (Sherlock Holmes, #9)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/162823
+:END:
+
+* His Last Bow: 8 Stories (Sherlock Holmes, #8)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/754713
+:END:
+
+* The Return of Sherlock Holmes (Sherlock Holmes, #6)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/194366
+:END:
+
+* The Memoirs of Sherlock Holmes (Sherlock Holmes, #4)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/194373
+:END:
+
+* The Adventures of Sherlock Holmes (Sherlock Holmes, #3)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/3590
+:END:
+
+* Harry Potter and the Sorcerer's Stone (Harry Potter, #1)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Jim Kay, Mary GrandPré
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/3
+:END:
+
+* Deception Point
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/976
+:END:
+
+* Digital Fortress
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/11125
+:END:
+
+* The Lost Symbol (Robert Langdon, #3)
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/6411961
+:END:
+
+* READ The Immortal Life of Henrietta Lacks
+CLOSED: [2014-07-10]
+:PROPERTIES:
+:AUTHOR:    Rebecca Skloot
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/6493208
+:END:
+
+* On the Shoulders of Giants: The Great Works of Physics And Astronomy
+:PROPERTIES:
+:AUTHOR:    Stephen Hawking, Isaac Newton, Nicolaus Copernicus, Albert Einstein, Johannes Kepler, Galileo Galilei
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/32610
+:END:
+
+* God Created the Integers: The Mathematical Breakthroughs that Changed History
+:PROPERTIES:
+:AUTHOR:    Stephen Hawking
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/2096
+:END:
+
+* READ Quiet: The Power of Introverts in a World That Can't Stop Talking
+CLOSED: [2014-07-12]
+:PROPERTIES:
+:AUTHOR:    Susan Cain
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/8520610
+:END:
+
+* READ Animal Farm
+CLOSED: [2014-07-05]
+:PROPERTIES:
+:AUTHOR:    George Orwell
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/7613
+:END:
+
+* READ QED: The Strange Theory of Light and Matter
+CLOSED: [2014-06-24]
+:PROPERTIES:
+:AUTHOR:    Richard Feynman
+:ADDED:     <2014-06-23>
+:GOODREADS: https://www.goodreads.com/book/show/5552
+:END:
+
+* READ The First Three Minutes: A Modern View Of The Origin Of The Universe
+CLOSED: [2014-06-22]
+:PROPERTIES:
+:AUTHOR:    Steven Weinberg
+:ADDED:     <2014-06-22>
+:GOODREADS: https://www.goodreads.com/book/show/150131
+:END:
+
+* READ The Universe in a Nutshell
+:PROPERTIES:
+:AUTHOR:    Stephen Hawking
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/2095
+:END:
+
+* The Tao of Physics: An Exploration of the Parallels between Modern Physics and Eastern Mysticism
+:PROPERTIES:
+:AUTHOR:    Fritjof Capra
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/10238
+:END:
+
+* READ The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe Without Design
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/117047
+:END:
+
+* READ The Last Lecture
+CLOSED: [2014-04-10]
+:PROPERTIES:
+:AUTHOR:    Randy Pausch, Jeffrey Zaslow
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/2318271
+:END:
+
+* READ Nikola Tesla: Imagination and the Man That Invented the 20th Century
+:PROPERTIES:
+:AUTHOR:    Sean Patrick
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/17835351
+:END:
+
+* READ Chaos: Making a New Science
+CLOSED: [2014-03-23]
+:PROPERTIES:
+:AUTHOR:    James Gleick
+:ADDED:     <2014-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/64582
+:END:
+
+* The Grand Design
+:PROPERTIES:
+:AUTHOR:    Stephen Hawking, Leonard Mlodinow
+:ADDED:     <2014-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/8520362
+:END:
+
+* Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character
+:PROPERTIES:
+:AUTHOR:    Richard Feynman
+:ADDED:     <2014-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/5544
+:END:
+
+* A Brief History of Time
+:PROPERTIES:
+:AUTHOR:    Stephen Hawking, Cao Chi, Phạm Văn Thiều
+:ADDED:     <2014-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/3869
+:END:
+
+* NEXT Design Patterns: Elements of Reusable Object-Oriented Software
+:PROPERTIES:
+:AUTHOR:   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
+:END:
+
+* Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+:PROPERTIES:
+:AUTHOR:   Algernon Bertram Freeman-Mitford
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan
+:END:
+
+* NEXT Blankets
+:PROPERTIES:
+:AUTHOR:   Craig Thompson
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/25179.Blankets?ac=1&from_search=true
+:END:
+* The Mathematical Mechanic: Using Physical Reasoning to Solve Problems
+:PROPERTIES:
+:AUTHOR:   Mark Levi
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/6418615-the-mathematical-mechanic?ac=1&from_search=true
+:END:
+
+* Structure and Interpretation of Computer Programs
+:PROPERTIES:
+:AUTHOR:   Harold Abelson, Gerald Jay Sussman, Julie Sussman
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs?ac=1&from_search=true
+:END:
+
+* How to Design Programs: An Introduction to Programming and Computing
+:PROPERTIES:
+:AUTHOR:   Matthias Felleisen
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262062186
+:END:
+
+* Data Structures and Algorithms in Python
+:PROPERTIES:
+:AUTHOR:   Michael T. Goodrich
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275
+:END:
+
+* READING Practical Common Lisp
+:PROPERTIES:
+:AUTHOR:   Peter Seibel
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
+:END:
+
+* Beautiful Racket
+:PROPERTIES:
+:AUTHOR:   Matthew Butterick
+:ADDED:    <2017-06-28>
+:URL:      http://beautifulracket.com/
+:END:
+
+* Moby Dick
+:PROPERTIES:
+:AUTHOR:   Herman Melville
+:ADDED:    <2017-06-28>
+:END:
+
+* Soul Made Flesh: The Discovery of the Brain--and How it Changed the World
+:PROPERTIES:
+:AUTHOR:   Carl Zimmer
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/gp/product/0743272056
+:END:
+
+* Through the Language Glass: Why the World Looks Different in Other Languages
+:PROPERTIES:
+:AUTHOR:   Guy Deutscher
+:ADDED:    <2017-07-04>
+:AMAZON:   https://www.amazon.com/Through-Language-Glass-Different-Languages/dp/0312610491
+:END:
+
+* READ Preludes & Nocturnes (Sandman, #1)
+CLOSED: [2017-07-07 Fri 23:58]
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Sam Kieth, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Karen  Berger, (Introduction/Editor)
+:ADDED:    <2017-07-07>
+:GOODREADS: https://www.goodreads.com/book/show/23754.Preludes_Nocturnes
+:END:
+
+Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
+
+* READ The Doll's House (Sandman, #2)
+CLOSED: [2017-07-11 Tue 15:33]
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Steve Parkhouse, (Illustrator), Chris Bachalo, (Illustrator), Michael Zulli, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Clive Barker, (Introduction)
+:ADDED:    <2017-07-08>
+:GOODREADS: https://www.goodreads.com/book/show/25099.The_Doll_s_House
+:END:
+
+Better than the first collection. Both are written well, but the first feels
+like telling a pretty simple story while the second, spending the same amount of
+attention, has more depth to it.
+
+* READING Dream Country (Sandman, #3)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Kelley Jones, (Illustrator), Charles Vess, (Illustrator), Colleen Doran, (Illustrator), Malcolm Jones III, (Illustrator), Steve Erickson, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
+:END:
+
+* Season of Mists (Sandman, #4)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25101.Season_of_Mists
+:END:
+
+* A Game of You (Sandman, #5)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Shawn McManus, (Illustrator), Colleen Doran, (Illustrator), Bryan Talbot, (Illustrator), George Pratt, (Illustrator), Stan Woch, (Illustrator), Dick Giordano, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
+:END:
+
+* Fables and Reflections (Sandman, #6)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25106.Fables_and_Reflections
+:END:
+
+* Brief Lives (Sandman, #7)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Jill Thompson, (Illustrator), Vince Locke, (Illustrator), Peter Straub, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
+:END:
+
+* Worlds' End (Sandman, #8)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25103.Worlds_End
+:END:
+
+* The Kindly Ones (Sandman, #9)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Marc Hempel, (Illustrator), Richard Case, (Illustrator), D'Israeli, (Illustrator), Teddy Kristiansen, (Illustrator), Glyn Dillon, (Illustrator), Charles Vess, (Illustrator), Dean Ormston, (Illustrator), Kevin Nowlan, (Illustrator), Todd Klein, (Letterer), Frank McConnell, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/71252.The_Kindly_Ones
+:END:
+
+* The Wake (Sandman, #10)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Michael Zulli, (Illustrator), Jon J. Muth, (Illustrator), Charles Vess, (Illustrator), Mikal Gilmore, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25104.The_Wake
+:END:
+
+* Endless Nights (Sandman, #11)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Barron Storey, (Illustrator), Bill Sienkiewicz, (Illustrator), Glenn Fabry, (Illustrator), Dave McKean, (Illustrator), P. Craig Russell, (Illustrator), Milo Manara, (Illustrator), Miguelanxo Prado, (Illustrator), Frank Quitely, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/47720.The_Sandman
+:END:
+
+* READING A Midsummer Night's Dream
+:PROPERTIES:
+:AUTHOR:   William Shakespeare, Barbara A. Mowat, (Editor), Paul Werstine, (Editor), Catherine Belsey, (Contributor)
+:ADDED:    <2017-07-12>
+:GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
+:END:
+
+* The Organization Man
+:PROPERTIES:
+:AUTHOR:   William H. Whyte, Joseph Nocera
+:ADDED:    <2017-07-25>
+:AMAZON:   https://www.amazon.com/Organization-Man-William-H-Whyte/dp/0812218191
+:END:
+
+* The Science of Fear: How the Culture of Fear Manipulates Your Brain
+:PROPERTIES:
+:AUTHOR:   Daniel Gardner
+:ADDED:    <2017-07-27>
+:AMAZON:   https://www.amazon.com/Science-Fear-Culture-Manipulates-Brain/dp/0452295467
+:END:
+
+* The Evolution of Cooperation: Revised Edition
+:PROPERTIES:
+:AUTHOR:   Robert Axelrod
+:ADDED:    <2017-07-28>
+:AMAZON:   https://www.amazon.com/Evolution-Cooperation-Revised-Robert-Axelrod/dp/0465005640
+:END:
+
+* The Lifelong Activist
+:PROPERTIES:
+:AUTHOR:   Hillary Rettig
+:URL:      http://lifelongactivist.com/
+:END:
+
+* The Story of Art
+:PROPERTIES:
+:AUTHOR:   E.H. Gombrich
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/222078.The_Story_of_Art
+:END:
+
+* The Noonday Demon: An Atlas of Depression
+:PROPERTIES:
+:AUTHOR:   Andrew Solomon
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/13932.The_Noonday_Demon
+:END:
+
+* The Song Of The Dodo: Island Biogeography In An Age Of Extinctions
+:PROPERTIES:
+:AUTHOR:   David Quammen
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/546725.The_Song_Of_The_Dodo
+:END:
+
+* Forces of Habit: Drugs and the Making of the Modern World
+:PROPERTIES:
+:AUTHOR:   David T. Courtwright
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/1358247.Forces_of_Habit
+:END:
+
+* A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam
+:PROPERTIES:
+:AUTHOR:   Karen Armstrong
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/3873.A_History_of_God
+:END:
+
+* Inside Terrorism (Columbia Studies in Terrorism and Irregular Warfare)
+:PROPERTIES:
+:AUTHOR:   Bruce Hoffman
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/22891.Inside_Terrorism
+:END:
+
+* King Leopold's Ghost
+:PROPERTIES:
+:AUTHOR:   Adam Hochschild
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/347610.King_Leopold_s_Ghost
+:END:
+
+* Thinking, Fast and Slow
+:PROPERTIES:
+:AUTHOR:   Daniel Kahneman
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow
+:END:
+
+* The Emperor of All Maladies: A Biography of Cancer
+:PROPERTIES:
+:AUTHOR:   Siddhartha Mukherjee
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/7170627-the-emperor-of-all-maladies
+:END:
+
+* Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-09>
+:AMAZON:   https://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758
+:END:
+
+* Evolution and the Levels of Selection
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-23>
+:AMAZON:   https://www.amazon.com/Evolution-Levels-Selection-Samir-Okasha/dp/0199556717
+:END:
+
+* Deep Work: Rules for Focused Success in a Distracted World
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-23>
+:AMAZON:   https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=sr_1_1?ie=UTF8&qid=1503497788&sr=8-1&keywords=deep+work
+:END:
+
+* The Yellow Wall-Paper
+:PROPERTIES:
+:AUTHOR:   Charlotte Perkins Gilman, Elaine Hedges
+:ADDED:    <2017-08-28>
+:GOODREADS: https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper
+:END:
+
+* Hammer of the Gods: The Led Zeppelin Saga
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-31>
+:AMAZON:   https://www.amazon.com/Hammer-Gods-Led-Zeppelin-Saga/dp/0061473081
+:END:
+
+* Logic for Computer Scientists (Modern Birkhäuser Classics)
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-31>
+:AMAZON:   https://www.amazon.com/Computer-Scientists-Modern-Birkh%C3%A4user-Classics/dp/0817647627#reader_0817647627
+:END:
+
+* READ The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life
+CLOSED: [2017-09-21 Thu 03:56]
+:PROPERTIES:
+:AUTHOR:   Mark Manson
+:ADDED:    <2017-09-04>
+:GOODREADS: https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck
+:END:
+
+Here is a thing about self help books. You might not agree with them completely
+and/or they might not present solid backing for all they say, but they do help
+by letting you think about ideas you could not have thought much about
+otherwise.
+
+This particular book is a neat example. I bet it is /like/ (in spite of the
+presentation, which brought me to read it) other similar books in the genre.
+That means it fits into my earlier paragraph's argument and I wouldn't /strongly/
+recommend this specific book but would recommend reading/thinking about the
+topics it touches.
+
+* Blood Meridian, or the Evening Redness in the West
+:PROPERTIES:
+:AUTHOR:   Cormac McCarthy
+:ADDED:    <2017-09-11>
+:GOODREADS: https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West
+:END:
+
+* The Autobiography of Charles Darwin, 1809–82
+:PROPERTIES:
+:AUTHOR:   Charles Darwin, Nora Barlow
+:ADDED:    <2017-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/185404.The_Autobiography_of_Charles_Darwin_1809_82
+:END:
+
+* Diagrammatica: The Path to Feynman Diagrams (Cambridge Lecture Notes in Physics)
+:PROPERTIES:
+:AUTHOR:   Martinus Veltman
+:ADDED:    <2017-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/330562.Diagrammatica
+:END:
+
+* The Disaster Artist: My Life Inside The Room, the Greatest Bad Movie Ever Made
+:PROPERTIES:
+:AUTHOR:   Tom Bissell
+:ADDED:    <2017-09-18>
+:AMAZON:   https://www.amazon.com/Disaster-Artist-Inside-Greatest-Movie/dp/1451661193
+:END:
+
+* The Evolution of Beauty: How Darwin's Forgotten Theory of Mate Choice Shapes the Animal World - and Us
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-09-20>
+:AMAZON:   https://www.amazon.com/Evolution-Beauty-Darwins-Forgotten-Theory/dp/0385537212
+:END:
+
+* The Denial of Death
+:PROPERTIES:
+:AUTHOR:   Ernest Becker, Sam Keen, Daniel Goleman
+:ADDED:    <2017-09-21>
+:GOODREADS: https://www.goodreads.com/book/show/2761.The_Denial_of_Death
+:END:
+
+* The Idea of India
+  :PROPERTIES:
+  :AUTHOR:   Sunil Khilnani
+  :ADDED:    <2017-09-29>
+  :GOODREADS: https://www.goodreads.com/book/show/631243.The_Idea_of_India
+  :END:
+
+* The Annihilation of Caste
+  :PROPERTIES:
+  :AUTHOR:   B.R. Ambedkar
+  :ADDED:    <2017-09-29>
+  :GOODREADS: https://www.goodreads.com/book/show/8521879-the-annihilation-of-caste
+  :END:
+  
+* The Black Swan: The Impact of the Highly Improbable (Incerto #2)
+:PROPERTIES:
+:AUTHOR:   Nassim Nicholas Taleb
+:ADDED:    <2017-10-03>
+:GOODREADS: https://www.goodreads.com/book/show/242472.The_Black_Swan
+:END:
+
+* Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto #1)
+:PROPERTIES:
+:AUTHOR:   Nassim Nicholas Taleb
+:ADDED:    <2017-10-03>
+:GOODREADS: https://www.goodreads.com/book/show/38315.Fooled_by_Randomness
+:END:
+
+* READING राग दरबारी (Raag Darbari)
+:PROPERTIES:
+:AUTHOR:   Shrilal Shukla
+:ADDED:    <2017-10-04>
+:GOODREADS: https://www.goodreads.com/book/show/2164749._
+:END:
+
+* Realm of Racket: Learn to Program, One Game at a Time!
+:PROPERTIES:
+:AUTHOR:   Conrad Barski M.D., David Van Horn, Eight Students Northeastern University of
+:ADDED:    <2017-10-14>
+:AMAZON:   https://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp
+:END:
+
+* Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-10-18>
+:AMAZON:   https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465060722/ref=tmm_pap_title_0?_encoding=UTF8&sr=&qid=
+:END:
+
+* READ The Last Question
+CLOSED: [2017-11-10 Fri 22:07]
+:PROPERTIES:
+:AUTHOR:   Isaac Asimov, Bob E. Flick, Jim Gallant
+:ADDED:    <2017-11-10>
+:GOODREADS: https://www.goodreads.com/book/show/4808763-the-last-question
+:END:
+
+/How can entropy be reversed?/ ...
+
+* READ The Last Answer
+CLOSED: [2017-11-13 Mon 20:46]
+:PROPERTIES:
+:AUTHOR:   Isaac Asimov
+:ADDED:    <2017-11-13>
+:GOODREADS: https://www.goodreads.com/book/show/15755066-the-last-answer
+:END:
+
+This (along with /The Last Question/, which I recently read) is a beautiful short.
+Looking forward to more from Asimov.
+
+* Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-12-16>
+:AMAZON:   https://www.amazon.com/Adaptation-Natural-Artificial-Systems-Introductory/dp/0262581116
+:END:
+
+* Schooling In Capitalist America: Educational Reform And The Contradictions Of Economic Life
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-12-27>
+:AMAZON:   https://www.amazon.com/Schooling-Capitalist-America-Educational-Contradictions/dp/0465097189
+:END:
+
+* READ Slaughterhouse-Five
+CLOSED: [2018-01-09 Tue 15:46]
+:PROPERTIES:
+:AUTHOR:   Kurt Vonnegut
+:ADDED:    <2018-01-04>
+:GOODREADS: https://www.goodreads.com/book/show/4981.Slaughterhouse_Five
+:END:
+
+* Notes from Underground
+:PROPERTIES:
+:AUTHOR:   Fyodor Dostoyevsky, Christian Redl, Philip Dossick, Emanuela Guercetti, Michelle-Irène Brudny, Richard Pevear, Norman Dietz, Donald Fanger, coderati, Boris de Schlœzer, Larissa Volokhonsky
+:ADDED:    <2018-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/49455.Notes_from_Underground
+:END:
+
+* The Stranger
+:PROPERTIES:
+:AUTHOR:   Albert Camus, Stuart Gilbert, Matthew Ward, Leman Sarı
+:ADDED:    <2018-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/49552.The_Stranger
+:END:
+
+* The Princeton Companion to Mathematics
+:PROPERTIES:
+:AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
+:ADDED:    <2018-01-08>
+:GOODREADS: https://www.goodreads.com/book/show/1471873.The_Princeton_Companion_to_Mathematics
+:END:
+
+* Concrete Mathematics: A Foundation for Computer Science
+:PROPERTIES:
+:AUTHOR:   Ronald L. Graham, Donald Ervin Knuth, Oren Patashnik
+:ADDED:    <2018-01-08>
+:GOODREADS: https://www.goodreads.com/book/show/112243.Concrete_Mathematics?ac=1&from_search=true
+:END:
+
+* Mastering the Techniques of Teaching
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2018-01-11>
+:AMAZON:   https://www.amazon.com/Mastering-Techniques-Teaching-Joseph-Lowman/dp/078795568X
+:END:
+
+* READ Seven Languages in Seven Weeks 
+CLOSED: [2018-01-24 Wed 22:59]
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2018-01-24>
+:GOODREADS:   https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks
+:END:
