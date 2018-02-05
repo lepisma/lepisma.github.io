@@ -18,7 +18,7 @@ been using mendeley was to use its /capture/ feature and make it output a single
 
 The literature search feature from mendeley can be replicated if you get an
 interface to Google Scholar and few other aggregators. Turns out there is a
-package example for that, [[https://github.com/cute-jumper/gscholar-bibtex][gscholar-bibtex]], which lets you search documents and
+package exactly for that, [[https://github.com/cute-jumper/gscholar-bibtex][gscholar-bibtex]], which lets you search documents and
 add BibTeX entries in a single file as you would have been doing with mendeley.
 
 * Using references
