@@ -33,8 +33,8 @@ likely there already are tools for these which I am unaware of.
 1. /Browser capture/
 
    Capturing papers from browser one of the most useful features of mendeley.
-   Shouldn't be that hard to cook considering the many utilities for working
-   with different websites available in [[https://github.com/jkitchin/org-ref#some-other-useful-libraries-in-org-ref][org-ref]].
+   Shouldn't be that hard to cook considering the [[https://github.com/jkitchin/org-ref#some-other-useful-libraries-in-org-ref][many utilities]] for working
+   with different websites available in org-ref.
 
 2. /PDF management/
 
