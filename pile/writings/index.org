@@ -8,3 +8,4 @@ expression.
 * Pages in this section
 
 - [[./lazy-answer.org][The Lazy Answer to Everything]]
+- [[./time-over-todos.org][Time > Todos]]

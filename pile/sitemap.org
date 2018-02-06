@@ -17,3 +17,4 @@
   - [[file:readings/books.org][Reading List (Books)]]
 - [[file:writings/index.org][Writings]]
   - [[file:writings/lazy-answer.org][The Lazy Answer to Everything]]
+  - [[file:writings/time-over-todos.org][Time over TODOs]]
