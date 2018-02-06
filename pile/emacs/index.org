@@ -5,5 +5,5 @@ Some notes/texts related to Emacs and Org Mode.
 
 * Pages in this section
 
-- [[./reference-management.org][Reference Management in Org Mode]]
+- [[./reference-management.org][Reference Management with Org Mode]]
 - [[./til.org][Today I Learned  /in Emacs/]]
