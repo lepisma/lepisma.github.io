@@ -2,7 +2,7 @@
 
 - [[file:index.org][Pile]]
 - [[file:emacs/index.org][Emacs]]
-  - [[file:emacs/reference-management.org][Reference Management in Org Mode]]
+  - [[file:emacs/reference-management.org][Reference Management with Org Mode]]
   - [[file:emacs/til.org][Today I Learned  /in Emacs/]]
 - [[file:mathematics/index.org][Mathematics]]
   - [[file:mathematics/strassen.org][Searching for Strassen multiplication rule]]
@@ -17,4 +17,4 @@
   - [[file:readings/books.org][Reading List (Books)]]
 - [[file:writings/index.org][Writings]]
   - [[file:writings/lazy-answer.org][The Lazy Answer to Everything]]
-  - [[file:writings/time-over-todos.org][Time over TODOs]]
+  - [[file:writings/time-over-todos.org][Time > Todos]]
