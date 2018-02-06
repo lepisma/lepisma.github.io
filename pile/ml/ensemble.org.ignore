@@ -84,3 +84,5 @@ So you don't need to be a above the $1/c$ threshold in accuracy to gain using a
 voting ensemble. This means, even a /poorer/ than random classifier can be fine.
 The question now is to analyze the closed form of the plots above to get a
 critical value of success above which the ensemble is going to provide benefits.
+
+* TODO Regression
