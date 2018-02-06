@@ -1,0 +1,86 @@
+#+TITLE: Voting Ensembles
+#+SETUPFILE: ../assets/export.setup
+
+For binary classification, if there are $n$ component models and the rate of
+success of each model is $q$, then the rate of success of a /majority voting
+ensemble/ can be given using the binomial distribution:
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+import numpy as np
+var("n, m, q, c")
+
+binom_pmf = binomial(n, m) * q ^ m * (1 - q) ^ (n - m)
+binom_pmf
+#+END_SRC
+
+#+RESULTS:
+: (n, m, q, c)
+: q^m*(-q + 1)^(-m + n)*binomial(n, m)
+
+For a simple case of $n = 21$ and $q = 0.5$, this means that the ensemble
+success is given by:
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+sum(binom_pmf.subs(n == 21,  q == 0.5), m, 11, 21)
+#+END_SRC
+
+#+RESULTS:
+: 0.5
+
+Notice that $m$ is summed from 11 to 21 which is the zone of majority.
+
+A plot of varying $q$ values follows:
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results file
+list_plot([sum(binom_pmf.subs(n == 21,  q == qe), m, 11, 21) for qe in np.linspace(0.001, 0.999, 200)])
+#+END_SRC
+
+#+RESULTS:
+[[file:/home/lepisma/.sage/temp/euclid-blue/31231/tmp_MGOy4l.png]]
+
+* Multiclass
+
+Now assume we have $c$ classes. Now the week learning models have a par accuracy
+of $1/c$ now. This asks for a question whether a success rate (call it $q$ as
+before) greater than $1 - 1/c$ (or some other value) will result in an ensemble
+with better performance than any single one.
+
+For a simple case of 3 classes, we have the par error as $1/3$ and for the
+ensemble to be right, we need at least $ceil(n/3)$ models to be /right/. Meaning
+the success rate for the ensemble would be:
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+binom_pmf_mc = binomial(n, m) * q ^ m * (1 - q) ^ (n - m)
+float(sum(binom_pmf_mc.subs(n == 21,  q == 1/3), m, 8, 21))
+#+END_SRC
+
+#+RESULTS:
+: 0.3992381153824027
+
+Okay so it does better than the $1/3$ value.
+
+For 7 classes:
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+binom_pmf_mc = binomial(n, m) * q ^ m * (1 - q) ^ (n - m)
+float(sum(binom_pmf_mc.subs(n == 21,  q == 1/7), m, 4, 21))
+#+END_SRC
+
+#+RESULTS:
+: 0.3523243319568171
+
+A plot of $q$ vs ensemble success for 7 classes follows:
+ 
+#+BEGIN_SRC sage :session :eval never-export :exports both :results file
+list_plot([sum(binom_pmf.subs(n == 21,  q == qe), m, 4, 21) for qe in np.linspace(0.001, 0.999, 200)])
+#+END_SRC
+
+#+RESULTS:
+[[file:/home/lepisma/.sage/temp/euclid-blue/31231/tmp_RstVZu.png]]
+
+* TODO Critical ~q~
+
+So you don't need to be a above the $1/c$ threshold in accuracy to gain using a
+voting ensemble. This means, even a /poorer/ than random classifier can be fine.
+The question now is to analyze the closed form of the plots above to get a
+critical value of success above which the ensemble is going to provide benefits.

@@ -9,6 +9,7 @@
 - [[file:misc/index.org][Miscellaneous]]
   - [[file:misc/desktop.org][Desktop]]
   - [[file:misc/employment.org][Employment Summary]]
+- [[file:ml/index.org][Machine Learning]]
 - [[file:programming/index.org][Programming]]
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]

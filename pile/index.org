@@ -8,6 +8,7 @@ A list of all pages currently up here is in [[./allpages.org][all the pages]]. H
 in alphabetical order:
 
 - [[./emacs/][Emacs]]
+- [[./ml/][Machine Learning]]
 - [[./mathematics/][Mathematics]]
 - [[./misc/][Miscellaneous]]
 - [[./programming/][Programming]]
