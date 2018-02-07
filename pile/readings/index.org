@@ -9,3 +9,4 @@ nice intro to a topic in isolation.
 * Pages in this section
 
 - [[./books.org][Reading List (Books)]]
+- [[./clippings.org][Clippings]]

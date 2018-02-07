@@ -14,6 +14,7 @@
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]
 - [[file:readings/index.org][Readings]]
+  - [[file:readings/clippings.org][Clippings]]
   - [[file:readings/books.org][Reading List (Books)]]
 - [[file:writings/index.org][Writings]]
   - [[file:writings/lazy-answer.org][The Lazy Answer to Everything]]
