@@ -1,6 +1,7 @@
 #+TITLE: Clippings
 #+SETUPFILE: ../assets/export.setup
 #+HTML_HEAD_EXTRA: <script src="./clippings.js"></script>
+#+HTML_HEAD_EXTRA: <style>blockquote { margin: 50px 0; }</style>
 
 This is a randomized listing (page refresh shuffles items) of clippings from my
 readings.
