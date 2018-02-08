@@ -232,12 +232,17 @@ topics it touches.
 :AMAZON:   https://www.amazon.com/Evolution-Levels-Selection-Samir-Okasha/dp/0199556717
 :END:
 
-* READING Deep Work: Rules for Focused Success in a Distracted World
+* READ Deep Work: Rules for Focused Success in a Distracted World
+CLOSED: [2018-02-08 Thu 13:20]
 :PROPERTIES:
 :AUTHOR:
 :ADDED:    <2017-08-23>
 :AMAZON:   https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=sr_1_1?ie=UTF8&qid=1503497788&sr=8-1&keywords=deep+work
 :END:
+
+As I probably said earlier, self help books usually tend to work. I needed a
+reminder to get back to my pre undergrad flow (yes; I wasted around 4 + 2 years)
+and got that here.
 
 * Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
 :PROPERTIES:
