@@ -8,6 +8,34 @@ increases with time.
 
 /Sorting is based on date added (recent first)/
 
+* Robustness and Evolvability in Living Systems
+:PROPERTIES:
+:AUTHOR:   Andreas Wagner
+:ADDED:    <2018-02-08>
+:GOODREADS: https://www.goodreads.com/book/show/163233.Robustness_and_Evolvability_in_Living_Systems
+:END:
+
+* Principles of Evolution: From the Planck Epoch to Complex Multicellular Life
+:PROPERTIES:
+:AUTHOR:   Hildegard Meyer-Ortmanns, Stefan Thurner
+:ADDED:    <2018-02-08>
+:GOODREADS: https://www.goodreads.com/book/show/10802010-principles-of-evolution
+:END:
+
+* The Nature of Computation
+:PROPERTIES:
+:AUTHOR:   Cristopher Moore, Stephan Mertens
+:ADDED:    <2018-02-08>
+:GOODREADS: https://www.goodreads.com/book/show/3043127-the-nature-of-computation
+:END:
+
+* From Bacteria to Bach and Back: The Evolution of Minds
+:PROPERTIES:
+:AUTHOR:   Daniel C. Dennett
+:ADDED:    <2018-02-08>
+:GOODREADS: https://www.goodreads.com/book/show/30231803-from-bacteria-to-bach-and-back
+:END:
+
 * READ Seven Languages in Seven Weeks 
 CLOSED: [2018-01-24 Wed 22:59]
 :PROPERTIES:
@@ -3689,7 +3717,7 @@ CLOSED: [2015-05-14]
 :GOODREADS: https://www.goodreads.com/book/show/13132815
 :END:
 
-* How to Write a Thesis
+* READING How to Write a Thesis
 :PROPERTIES:
 :AUTHOR:    Umberto Eco, Caterina Mongiat Farina, Geoff Farina, Francesco Erspamer
 :ADDED:     <2015-05-02>
