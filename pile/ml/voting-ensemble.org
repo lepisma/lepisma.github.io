@@ -81,7 +81,7 @@ curve + parametric_plot((1/c, x), (x, 0, 1), linestyle="--", color="green")
 
 * Critical /p/
 
-So you don't need to be a above the $1/c$ threshold in accuracy to gain using a
+So you don't need to be above the $1/c$ threshold in accuracy to gain using a
 voting ensemble. This means, even a /poorer/ than random classifier will gain
 here. In general, any $p$ that makes the following true will be good:
 
