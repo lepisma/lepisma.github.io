@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-08 Thu 22:26 -->
+<!-- 2018-02-08 Thu 22:44 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voting Ensemble</title>
@@ -305,7 +305,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-02-08 Thu 22:25
+    Last modified:  2018-02-08 Thu 22:44
   </div>
   <h1>Voting Ensemble</h1>
 </div>
@@ -328,17 +328,18 @@ This is a test notebook for trying out sagemath features
 
 <p>
 For binary classification, if there are \(n\) component models and the rate of
-success of each model is \(q\), then the rate of success of a <i>majority voting
+success of each model is \(p\), then the rate of success of a <i>majority voting
 ensemble</i> can be given using the binomial distribution.
 </p>
 
 <p>
-For a simple case of \(n = 21\) and \(q = 0.5\), this means that the ensemble
+For a simple case of \(n = 21\) and \(p = 0.5\), this means that the ensemble
 success is given by:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #D08770;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">5</span><span style="color: #BF616A;">)</span>.subs<span style="color: #BF616A;">(</span>n == <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #BF616A;">)</span>, m, <span style="color: #9c91e4; font-weight: bold;">11</span>, <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">n</span> = <span style="color: #9c91e4; font-weight: bold;">21</span>; <span style="color: #EBCB8B;">c</span> = <span style="color: #9c91e4; font-weight: bold;">2</span>
+<span style="color: #D08770;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">5</span><span style="color: #BF616A;">)</span>.subs<span style="color: #BF616A;">(</span>N == n<span style="color: #BF616A;">)</span>, M, floor<span style="color: #BF616A;">(</span>n/c<span style="color: #BF616A;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -348,12 +349,13 @@ success is given by:
 </pre>
 
 <p>
-Notice that \(m\) is summed from 11 to 21 which is the zone of majority. A plot of
-varying \(q\) values follows:
+Notice that \(M\) is summed from 11 to 21 which is the zone of majority. A plot of
+varying \(p\) values follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage">plot<span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>q<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>n = <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #B48EAD;">)</span>, m, <span style="color: #9c91e4; font-weight: bold;">11</span>, <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>q, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">curve</span> = plot<span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>p<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N = n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>p, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+curve + parametric_plot<span style="color: #5E81AC;">(</span><span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c, x<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>x, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, linestyle=<span style="color: #A3BE8C;">"--"</span>, color=<span style="color: #A3BE8C;">"green"</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -380,7 +382,8 @@ Meaning the success rate for the ensemble would be:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #D08770;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/<span style="color: #9c91e4; font-weight: bold;">3</span><span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>n == <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #B48EAD;">)</span>, m, <span style="color: #9c91e4; font-weight: bold;">8</span>, <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">c</span> = <span style="color: #9c91e4; font-weight: bold;">3</span>
+<span style="color: #D08770;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -398,7 +401,8 @@ For 7 classes:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #D08770;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/<span style="color: #9c91e4; font-weight: bold;">7</span><span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>n == <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #B48EAD;">)</span>, m, <span style="color: #9c91e4; font-weight: bold;">4</span>, <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">c</span> = <span style="color: #9c91e4; font-weight: bold;">7</span>
+<span style="color: #D08770;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -412,7 +416,8 @@ A plot of \(q\) vs ensemble success for 7 classes follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage">plot<span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>q<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>n == <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #B48EAD;">)</span>, m, <span style="color: #9c91e4; font-weight: bold;">4</span>, <span style="color: #9c91e4; font-weight: bold;">21</span><span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>q, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">curve</span> = plot<span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>p<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>p, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+curve + parametric_plot<span style="color: #5E81AC;">(</span><span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c, x<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>x, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, linestyle=<span style="color: #A3BE8C;">"--"</span>, color=<span style="color: #A3BE8C;">"green"</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -430,21 +435,21 @@ A plot of \(q\) vs ensemble success for 7 classes follows:
 <p>
 So you don't need to be a above the \(1/c\) threshold in accuracy to gain using a
 voting ensemble. This means, even a <i>poorer</i> than random classifier will gain
-here. In general, any \(q\) that makes the following true will be good:
+here. In general, any \(p\) that makes the following true will be good:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #D08770;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span>q<span style="color: #BF616A;">)</span>, m, floor<span style="color: #BF616A;">(</span>n/c + <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, n<span style="color: #5E81AC;">)</span> &gt; <span style="color: #9c91e4; font-weight: bold;">1</span>/c
+<pre class="src src-sage"><span style="color: #D08770;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span>p<span style="color: #BF616A;">)</span>, M, floor<span style="color: #BF616A;">(</span>N/c + <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, N<span style="color: #5E81AC;">)</span> &gt; <span style="color: #9c91e4; font-weight: bold;">1</span>/c
 </pre>
 </div>
 
 <pre class="example">
-sum(q^m*(-q + 1)^(-m + n)*binomial(n, m), m, floor(n/c) + 1, n) &gt; (1/c)
+sum(p^M*(-p + 1)^(-M + N)*binomial(N, M), M, floor(1/7*N) + 1, N) &gt; (1/7)
 
 </pre>
 
 <p>
-Slight increase in \(q\) around this critical value help a lot (as seen from the
+Slight increase in \(p\) around this critical value help a lot (as seen from the
 curves).
 </p>
 </div>
