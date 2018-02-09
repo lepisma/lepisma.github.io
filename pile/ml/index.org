@@ -2,3 +2,5 @@
 #+SETUPFILE: ../assets/export.setup
 
 * Pages in this section
+
+- [[./voting-ensemble.org][Voting Ensemble]]
