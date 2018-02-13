@@ -7,5 +7,5 @@ expression.
 
 * Pages in this section
 
+- [[./hours-over-deadlines.org][Schedule Hours not Deadlines]]
 - [[./lazy-answer.org][The Lazy Answer to Everything]]
-- [[./time-over-todos.org][Time > Todos]]

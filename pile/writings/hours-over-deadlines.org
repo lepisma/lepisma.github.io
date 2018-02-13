@@ -1,4 +1,4 @@
-#+TITLE: Time > Todos
+#+TITLE: Schedule Hours not Deadlines
 #+SETUPFILE: ../assets/export.setup
 
 I have been maintaining and using date based task lists a lot. One important
