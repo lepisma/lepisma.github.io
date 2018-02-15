@@ -3,18 +3,59 @@
 
 Strassen algorithm is an $\mathcal{O}(N^{2.8074})$ algorithm for multiplying two
 square matrices. One part of the algorithm is to do a bunch of transformations
-for the submatrices involved (TODO: add note). The transformation is mostly
-non-intuitive and looks like a good way to learn about symbolic computation and
-searching. Here I try to automate that part using maybe sage or maxima.
+for the submatrices involved. The transformation is mostly non-intuitive and
+looks like a good way to learn about symbolic computation and searching. Here I
+try to automate that part using sage.
 
-#+BEGIN_SRC sage :session :exports both :eval never-export :file ./images/sagetest.png
-# Sagemath test
-var('x,y,z')
-T = RDF(golden_ratio)
-p = 2 - (cos(x + T*y) + cos(x - T*y) + cos(y + T*z) + cos(y - T*z) + cos(z - T*x) + cos(z + T*x))
-r = 4.77
-implicit_plot3d(p, (x, -r, r), (y, -r, r), (z, -r, r), plot_points=40).show(viewer='tachyon', figsize=5)
+#+BEGIN_aside
+See the [[https://en.wikipedia.org/wiki/Strassen_algorithm#Algorithm][wikipedia page]] for the transformations in the algorithm. The basic idea
+is to find a set of multiples with cardinality < 8 (since we already do 8
+multiplications in the normal case) which is then manipulated using $\pm$
+operators to give the values we want.
+#+END_aside
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+var("A_11, A_12, A_21, A_22, B_11, B_12, B_21, B_22, C_11, C_12, C_21, C_22")
 #+END_SRC
 
 #+RESULTS:
-[[file:./images/sagetest.png]]
+: (A_11, A_12, A_21, A_22, B_11, B_12, B_21, B_22, C_11, C_12, C_21, C_22)
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+# Output 4x16
+[[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1]]
+#+END_SRC
+
+The notebook thing gives a kind of metric to optimize against. One way is to do
+the following
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+import numpy as np
+Y = np.random.randint(-1, 2, (7, 16)) # 7x16
+X = output.dot(np.linalg.pinv(Y)) # 4x16
+# minimize
+np.linalg.norm(X, 2)
+#+END_SRC
+
+# Constraint the rows of Y to be a defined thing. Each row in Y can be written
+# as the (flattened) outer product of [a b c d] and [x y w z]. Here the first
+# vector represents the As and second the Bs. In both these vectors, there
+# should be at least 1 and at most 2 values active (active meaning non zero; 1
+# or -1).
+
+# For X, we need at least one item active in each row.
+
+Doing that outer things gives
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :results output
+Y = array([[ 1,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  1, 0,  0,  1],
+           [ 0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  1, 0,  0,  0],
+           [ 0,  1,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0, 0,  0,  0],
+           [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1, 0,  1,  0],
+           [ 0,  0,  0,  1,  0,  0,  0,  1,  0,  0,  0,  0,  0, 0,  0,  0],
+           [-1, -1,  0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  0, 0,  0,  0],
+           [ 0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  0,  0,  0, 0, -1, -1]])
+#+END_SRC

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-14 Wed 23:26 -->
+<!-- 2018-02-14 Wed 23:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Grouping</title>
@@ -315,32 +315,32 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8f0419a">Introduction</a></li>
-<li><a href="#org558e006">Evolutionary Algorithms</a>
+<li><a href="#org7e017fa">Introduction</a></li>
+<li><a href="#org874453d">Evolutionary Algorithms</a>
 <ul>
-<li><a href="#orgef8329d">Mutation</a></li>
-<li><a href="#orgb45ddca">Crossover</a></li>
+<li><a href="#org9c1ce79">Mutation</a></li>
+<li><a href="#orgb9c11f8">Crossover</a></li>
 </ul>
 </li>
-<li><a href="#org999ae97">Generalization in EAs</a></li>
-<li><a href="#org361d241">Problem Setting</a>
+<li><a href="#org6b58677">Generalization in EAs</a></li>
+<li><a href="#org3f787f5">Problem Setting</a>
 <ul>
-<li><a href="#orgf1bd9a9">Population Dynamics</a></li>
+<li><a href="#org4c09cac">Population Dynamics</a></li>
 </ul>
 </li>
-<li><a href="#org2eea021">&delta;-landscape</a>
+<li><a href="#orge01eeeb">&delta;-landscape</a>
 <ul>
-<li><a href="#orgf3f36e2">\(\delta = 0\)</a></li>
-<li><a href="#orgf5a4ab0">\(\delta \ne 0\)</a></li>
+<li><a href="#org7fd0b39">\(\delta = 0\)</a></li>
+<li><a href="#org952a762">\(\delta \ne 0\)</a></li>
 </ul>
 </li>
-<li><a href="#org1e55e7d">Improving generalization</a>
+<li><a href="#orgc96774b">Improving generalization</a>
 <ul>
-<li><a href="#org25b700d">Changing slope by grouping</a></li>
-<li><a href="#orgef5bcd1">Crossover</a></li>
+<li><a href="#orgf778c79">Changing slope by grouping</a></li>
+<li><a href="#org5706a15">Crossover</a></li>
 </ul>
 </li>
-<li><a href="#org6370024">Discussion and Conclusions</a></li>
+<li><a href="#org50dfe65">Discussion and Conclusions</a></li>
 </ul>
 </div>
 </nav>
@@ -354,9 +354,9 @@ environment so that a trade off option between preserving diversity and evolutio
 speed becomes viable.
 \end{abstract}
 
-<div id="outline-container-org8f0419a" class="outline-2">
-<h2 id="org8f0419a">Introduction</h2>
-<div class="outline-text-2" id="text-org8f0419a">
+<div id="outline-container-org7e017fa" class="outline-2">
+<h2 id="org7e017fa">Introduction</h2>
+<div class="outline-text-2" id="text-org7e017fa">
 <p>
 For many optimization problems where gradient information is unavailable (or
 costly) and there are many local optima values, a common approach is to use a
@@ -428,9 +428,9 @@ on evolution. &sect; 6 discusses methods to control the landscape by forming gro
 </div>
 </div>
 
-<div id="outline-container-org558e006" class="outline-2">
-<h2 id="org558e006">Evolutionary Algorithms</h2>
-<div class="outline-text-2" id="text-org558e006">
+<div id="outline-container-org874453d" class="outline-2">
+<h2 id="org874453d">Evolutionary Algorithms</h2>
+<div class="outline-text-2" id="text-org874453d">
 <p>
 Evolutionary algorithms (EAs) are general purpose global optimization techniques
 inspired by biological evolution. They are population based iterative algorithms
@@ -477,9 +477,9 @@ The next two subsections define the two common GA operators, <i>mutation</i> and
 </p>
 </div>
 
-<div id="outline-container-orgef8329d" class="outline-3">
-<h3 id="orgef8329d">Mutation</h3>
-<div class="outline-text-3" id="text-orgef8329d">
+<div id="outline-container-org9c1ce79" class="outline-3">
+<h3 id="org9c1ce79">Mutation</h3>
+<div class="outline-text-3" id="text-org9c1ce79">
 <p>
 Mutation refers to random changes in genotypes with some probability (<i>mutation
 rate</i>) in the evolution process. Its implementation depends on how the solution
@@ -498,9 +498,9 @@ the grouping of current gene pool.
 </div>
 </div>
 
-<div id="outline-container-orgb45ddca" class="outline-3">
-<h3 id="orgb45ddca">Crossover</h3>
-<div class="outline-text-3" id="text-orgb45ddca">
+<div id="outline-container-orgb9c11f8" class="outline-3">
+<h3 id="orgb9c11f8">Crossover</h3>
+<div class="outline-text-3" id="text-orgb9c11f8">
 <p>
 Along with mutation, crossover is one of the primitive operators used in Genetic
 algorithm. The specifics of this operator might be different based on the
@@ -545,9 +545,9 @@ and the resulting segments are swapped to produce the children.}
 </div>
 </div>
 
-<div id="outline-container-org999ae97" class="outline-2">
-<h2 id="org999ae97">Generalization in EAs</h2>
-<div class="outline-text-2" id="text-org999ae97">
+<div id="outline-container-org6b58677" class="outline-2">
+<h2 id="org6b58677">Generalization in EAs</h2>
+<div class="outline-text-2" id="text-org6b58677">
 <p>
 Generalization here means the ability of the algorithm (e.g. an EA which learns
 optimal parameters for a non-linear classifier) to work well beyond the data set
@@ -588,9 +588,9 @@ will come back to later.
 </div>
 </div>
 
-<div id="outline-container-org361d241" class="outline-2">
-<h2 id="org361d241">Problem Setting</h2>
-<div class="outline-text-2" id="text-org361d241">
+<div id="outline-container-org3f787f5" class="outline-2">
+<h2 id="org3f787f5">Problem Setting</h2>
+<div class="outline-text-2" id="text-org3f787f5">
 <p>
 Instead of working in a batch or online setting looking for a single solution,
 we can think of evolution as trying to solve an <i>episodic survival problem</i>. The
@@ -663,9 +663,9 @@ constraints that we are going to work with.
 </p>
 </div>
 
-<div id="outline-container-orgf1bd9a9" class="outline-3">
-<h3 id="orgf1bd9a9">Population Dynamics</h3>
-<div class="outline-text-3" id="text-orgf1bd9a9">
+<div id="outline-container-org4c09cac" class="outline-3">
+<h3 id="org4c09cac">Population Dynamics</h3>
+<div class="outline-text-3" id="text-org4c09cac">
 <p>
 We adopt the selfish gene worldview <a class='org-ref-reference' href="#williams1997adaptation">williams1997adaptation</a> for our problem.
 This means that in our world, genes are the fundamental units of selection and,
@@ -730,9 +730,9 @@ explained later.
 </div>
 </div>
 
-<div id="outline-container-org2eea021" class="outline-2">
-<h2 id="org2eea021">&delta;-landscape</h2>
-<div class="outline-text-2" id="text-org2eea021">
+<div id="outline-container-orge01eeeb" class="outline-2">
+<h2 id="orge01eeeb">&delta;-landscape</h2>
+<div class="outline-text-2" id="text-orge01eeeb">
 <p>
 We assume a mutation model similar to <a class='org-ref-reference' href="#wright1932roles">wright1932roles</a> which effectively
 considers mutations of a gene as a set of its neighbours which are reachable in
@@ -750,9 +750,9 @@ or \(p - 1\) (\(s \rightarrow s - \delta\)).
 </p>
 </div>
 
-<div id="outline-container-orgf3f36e2" class="outline-3">
-<h3 id="orgf3f36e2">\(\delta = 0\)</h3>
-<div class="outline-text-3" id="text-orgf3f36e2">
+<div id="outline-container-org7fd0b39" class="outline-3">
+<h3 id="org7fd0b39">\(\delta = 0\)</h3>
+<div class="outline-text-3" id="text-org7fd0b39">
 <p>
 Consider a case with \(\delta = 0\), i.e. the uniform fitness landscape. In this
 case, mutation doesn't matter since all locations in the landscape are
@@ -783,9 +783,9 @@ individuals at each evolution step.
 </div>
 </div>
 
-<div id="outline-container-orgf5a4ab0" class="outline-3">
-<h3 id="orgf5a4ab0">\(\delta \ne 0\)</h3>
-<div class="outline-text-3" id="text-orgf5a4ab0">
+<div id="outline-container-org952a762" class="outline-3">
+<h3 id="org952a762">\(\delta \ne 0\)</h3>
+<div class="outline-text-3" id="text-org952a762">
 <p>
 Lets assume \(\delta > 0\). In this case, starting with a population of size \(n\)
 concentrated at a position \(p\) with survival probability \(s\), a time step will
@@ -878,9 +878,9 @@ spots considering all factors to be the same.
 </div>
 </div>
 
-<div id="outline-container-org1e55e7d" class="outline-2">
-<h2 id="org1e55e7d">Improving generalization</h2>
-<div class="outline-text-2" id="text-org1e55e7d">
+<div id="outline-container-orgc96774b" class="outline-2">
+<h2 id="orgc96774b">Improving generalization</h2>
+<div class="outline-text-2" id="text-orgc96774b">
 <p>
 Coming back to the question of generalization, its important to restate two
 near obvious facts here:
@@ -914,9 +914,9 @@ improve generalization?
 </p>
 </div>
 
-<div id="outline-container-org25b700d" class="outline-3">
-<h3 id="org25b700d">Changing slope by grouping</h3>
-<div class="outline-text-3" id="text-org25b700d">
+<div id="outline-container-orgf778c79" class="outline-3">
+<h3 id="orgf778c79">Changing slope by grouping</h3>
+<div class="outline-text-3" id="text-orgf778c79">
 <p>
 Although the value of &delta; for the <i>actual</i> landscape can't be changed, the
 value of &delta; for the <i>apparent</i> landscape can be changed by appropriate
@@ -936,9 +936,9 @@ controlled. A higher \(k\) value provides more flatness and thus adds inertia.
 </div>
 </div>
 
-<div id="outline-container-orgef5bcd1" class="outline-3">
-<h3 id="orgef5bcd1">Crossover</h3>
-<div class="outline-text-3" id="text-orgef5bcd1">
+<div id="outline-container-org5706a15" class="outline-3">
+<h3 id="org5706a15">Crossover</h3>
+<div class="outline-text-3" id="text-org5706a15">
 <p>
 Crossover acts as a technique to swap chunks of genes among organisms.
 Considering 'organisms' as groups of genes we create in this case, crossover can
@@ -952,9 +952,9 @@ increasing the \(k\) value.
 </div>
 </div>
 
-<div id="outline-container-org6370024" class="outline-2">
-<h2 id="org6370024">Discussion and Conclusions</h2>
-<div class="outline-text-2" id="text-org6370024">
+<div id="outline-container-org50dfe65" class="outline-2">
+<h2 id="org50dfe65">Discussion and Conclusions</h2>
+<div class="outline-text-2" id="text-org50dfe65">
 <p>
 The main purpose of this exploration is to have an understanding of effect of
 grouping in a setting which is closer to real evolution than the usual evolution

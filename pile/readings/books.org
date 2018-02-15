@@ -2059,6 +2059,20 @@ CLOSED: [2018-02-14 Wed 20:23]
 :GOODREADS: https://www.goodreads.com/book/show/6493321
 :END:
 
+There are two comments I would like to make here:
+
+1. Probably we can tone down the /mad genius/ thing a little bit. I am, of course,
+   not sure if the mad genius idea is true but I felt like it was implied very
+   /literally/ here without being actually needed. From what I have perceived in
+   life, the struggles of conflicting thoughts leading to insanity (or even
+   occasional & innocuous fits) are indifferent to whether you are logician or
+   not. You just need to spend enough time with yourself and it follows pretty
+   directly.
+2. Putting aside a few things, this is a deep book. I was thinking to just take
+   a glance and ended up reading the whole thing in a sitting. Don't expect to
+   learn much though. This is /not a book/ on logic. Its exactly what its title
+   (or subtitle) says /An epic search for truth/.
+
 * Hitch-22: A Memoir
 :PROPERTIES:
 :AUTHOR:    Christopher Hitchens

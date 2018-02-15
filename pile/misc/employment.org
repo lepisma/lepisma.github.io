@@ -1,4 +1,6 @@
 #+TITLE: Employment Summary
 #+SETUPFILE: ../assets/export.setup
 
-TODO
+#+BEGIN_QUOTE
+This page is intentionally left blank
+#+END_QUOTE

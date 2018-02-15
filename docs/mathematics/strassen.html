@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-12 Mon 20:18 -->
+<!-- 2018-02-14 Wed 23:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Searching for Strassen multiplication rule</title>
@@ -305,7 +305,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-01-31 Wed 20:40
+    Last modified:  2018-02-13 Tue 22:48
   </div>
   <h1>Searching for Strassen multiplication rule</h1>
 </div>
@@ -314,26 +314,67 @@ for the JavaScript code in this tag.
 <p>
 Strassen algorithm is an \(\mathcal{O}(N^{2.8074})\) algorithm for multiplying two
 square matrices. One part of the algorithm is to do a bunch of transformations
-for the submatrices involved (TODO: add note). The transformation is mostly
-non-intuitive and looks like a good way to learn about symbolic computation and
-searching. Here I try to automate that part using maybe sage or maxima.
+for the submatrices involved. The transformation is mostly non-intuitive and
+looks like a good way to learn about symbolic computation and searching. Here I
+try to automate that part using sage.
 </p>
 
+<aside>
+<p>
+See the <a href="https://en.wikipedia.org/wiki/Strassen_algorithm#Algorithm">wikipedia page</a> for the transformations in the algorithm. The basic idea
+is to find a set of multiples with cardinality &lt; 8 (since we already do 8
+multiplications in the normal case) which is then manipulated using \(\pm\)
+operators to give the values we want.
+</p>
+</aside>
+
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">Sagemath test</span>
-var<span style="color: #5E81AC;">(</span><span style="color: #A3BE8C;">'x,y,z'</span><span style="color: #5E81AC;">)</span>
-<span style="color: #EBCB8B;">T</span> = RDF<span style="color: #5E81AC;">(</span>golden_ratio<span style="color: #5E81AC;">)</span>
-<span style="color: #EBCB8B;">p</span> = <span style="color: #9c91e4; font-weight: bold;">2</span> - <span style="color: #5E81AC;">(</span>cos<span style="color: #BF616A;">(</span>x + T*y<span style="color: #BF616A;">)</span> + cos<span style="color: #BF616A;">(</span>x - T*y<span style="color: #BF616A;">)</span> + cos<span style="color: #BF616A;">(</span>y + T*z<span style="color: #BF616A;">)</span> + cos<span style="color: #BF616A;">(</span>y - T*z<span style="color: #BF616A;">)</span> + cos<span style="color: #BF616A;">(</span>z - T*x<span style="color: #BF616A;">)</span> + cos<span style="color: #BF616A;">(</span>z + T*x<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
-<span style="color: #EBCB8B;">r</span> = <span style="color: #9c91e4; font-weight: bold;">4</span>.<span style="color: #9c91e4; font-weight: bold;">77</span>
-implicit_plot3d<span style="color: #5E81AC;">(</span>p, <span style="color: #BF616A;">(</span>x, -r, r<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>y, -r, r<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>z, -r, r<span style="color: #BF616A;">)</span>, plot_points=<span style="color: #9c91e4; font-weight: bold;">40</span><span style="color: #5E81AC;">)</span>.show<span style="color: #5E81AC;">(</span>viewer=<span style="color: #A3BE8C;">'tachyon'</span>, figsize=<span style="color: #9c91e4; font-weight: bold;">5</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage">var<span style="color: #5E81AC;">(</span><span style="color: #A3BE8C;">"A_11, A_12, A_21, A_22, B_11, B_12, B_21, B_22, C_11, C_12, C_21, C_22"</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
+<pre class="example">
+(A_11, A_12, A_21, A_22, B_11, B_12, B_21, B_22, C_11, C_12, C_21, C_22)
 
-<figure>
-<img src="./images/sagetest.png" alt="sagetest.png">
+</pre>
 
-</figure>
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">Output 4x16</span>
+<span style="color: #5E81AC;">[</span><span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">]</span>,
+ <span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">]</span>,
+ <span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">]</span>,
+ <span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">]</span><span style="color: #5E81AC;">]</span>
+</pre>
+</div>
+
+<p>
+The notebook thing gives a kind of metric to optimize against. One way is to do
+the following
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #BF616A;">import</span> numpy <span style="color: #BF616A;">as</span> np
+<span style="color: #EBCB8B;">Y</span> = np.random.randint<span style="color: #5E81AC;">(</span>-<span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">2</span>, <span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">7</span>, <span style="color: #9c91e4; font-weight: bold;">16</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span> <span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">7x16</span>
+<span style="color: #EBCB8B;">X</span> = output.dot<span style="color: #5E81AC;">(</span>np.linalg.pinv<span style="color: #BF616A;">(</span>Y<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span> <span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">4x16</span>
+<span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">minimize</span>
+np.linalg.norm<span style="color: #5E81AC;">(</span>X, <span style="color: #9c91e4; font-weight: bold;">2</span><span style="color: #5E81AC;">)</span>
+</pre>
+</div>
+
+<p>
+Doing that outer things gives
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #EBCB8B;">Y</span> = array<span style="color: #5E81AC;">(</span><span style="color: #BF616A;">[</span><span style="color: #B48EAD;">[</span> <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #B48EAD;">]</span>,
+           <span style="color: #B48EAD;">[</span> <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+           <span style="color: #B48EAD;">[</span> <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+           <span style="color: #B48EAD;">[</span> <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+           <span style="color: #B48EAD;">[</span> <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+           <span style="color: #B48EAD;">[</span>-<span style="color: #9c91e4; font-weight: bold;">1</span>, -<span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+           <span style="color: #B48EAD;">[</span> <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">1</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>,  <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, -<span style="color: #9c91e4; font-weight: bold;">1</span>, -<span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #B48EAD;">]</span><span style="color: #BF616A;">]</span><span style="color: #5E81AC;">)</span>
+</pre>
+</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
