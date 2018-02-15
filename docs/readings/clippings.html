@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-14 Wed 23:45 -->
+<!-- 2018-02-15 Thu 10:07 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clippings</title>
@@ -214,6 +214,14 @@
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
 <script src="./clippings.js"></script>
 <style>blockquote { margin: 50px 0; }</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+var epigraph = document.getElementsByClassName('epigraph')[0];
+for (var i = epigraph.children.length; i >= 0; i--) {
+epigraph.appendChild(epigraph.children[Math.random() * i | 0]);
+}
+})
+</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -285,7 +293,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-02-08 Thu 02:23
+    Last modified:  2018-02-15 Thu 10:07
   </div>
   <h1>Clippings</h1>
 </div>

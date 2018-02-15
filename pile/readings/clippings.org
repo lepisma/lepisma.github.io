@@ -2,6 +2,15 @@
 #+SETUPFILE: ../assets/export.setup
 #+HTML_HEAD_EXTRA: <script src="./clippings.js"></script>
 #+HTML_HEAD_EXTRA: <style>blockquote { margin: 50px 0; }</style>
+#+HTML_HEAD_EXTRA: <script>
+#+HTML_HEAD_EXTRA: document.addEventListener('DOMContentLoaded', () => {
+#+HTML_HEAD_EXTRA:   var epigraph = document.getElementsByClassName('epigraph')[0];
+#+HTML_HEAD_EXTRA: 
+#+HTML_HEAD_EXTRA:   for (var i = epigraph.children.length; i >= 0; i--) {
+#+HTML_HEAD_EXTRA:     epigraph.appendChild(epigraph.children[Math.random() * i | 0]);
+#+HTML_HEAD_EXTRA:   }
+#+HTML_HEAD_EXTRA: })
+#+HTML_HEAD_EXTRA: </script>
 
 This is a randomized listing (page refresh shuffles items) of clippings from my
 readings.
