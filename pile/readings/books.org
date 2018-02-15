@@ -2051,7 +2051,8 @@ cues for analyzing and understanding cases presented in the book.
 :GOODREADS: https://www.goodreads.com/book/show/67354
 :END:
 
-* Logicomix: An epic search for truth
+* READ Logicomix: An epic search for truth
+CLOSED: [2018-02-14 Wed 20:23]
 :PROPERTIES:
 :AUTHOR:    Apostolos Doxiadis, Christos H. Papadimitriou, Alecos Papadatos, Annie Di Donna
 :ADDED:     <2016-09-06>
