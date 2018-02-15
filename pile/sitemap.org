@@ -17,6 +17,8 @@
 - [[file:programming/index.org][Programming]]
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]
+  - [[file:programming/tikz-blood-dragon/index.org][index]]
+    - [[file:programming/tikz-blood-dragon/tikz-blood-dragon.org][TikZ Blood Dragon]]
 - [[file:readings/index.org][Readings]]
   - [[file:readings/clippings.org][Clippings]]
   - [[file:readings/books.org][Reading List (Books)]]
