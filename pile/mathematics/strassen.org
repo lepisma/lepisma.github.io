@@ -1,6 +1,10 @@
 #+TITLE: Searching for Strassen multiplication rule
 #+SETUPFILE: ../assets/export.setup
 
+#+BEGIN_QUOTE
+This page is a work in progress
+#+END_QUOTE
+
 Strassen algorithm is an $\mathcal{O}(N^{2.8074})$ algorithm for multiplying two
 square matrices. One part of the algorithm is to do a bunch of transformations
 for the submatrices involved. The transformation is mostly non-intuitive and
