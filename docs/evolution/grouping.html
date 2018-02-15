@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-02-14 Wed 23:26 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grouping</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="/pile"> HOME </a>
+</div><div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a href='/pile'> pile</a>
+    <a href='/feed.xml'> feed</a>
+    <a href='/archive'> blog</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'>
+  </div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta small'>
+    Last modified:  2018-02-14 Wed 23:26
+  </div>
+  <h1>Grouping</h1>
+</div>
+</div>
+<div id="content">
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org8f0419a">Introduction</a></li>
+<li><a href="#org558e006">Evolutionary Algorithms</a>
+<ul>
+<li><a href="#orgef8329d">Mutation</a></li>
+<li><a href="#orgb45ddca">Crossover</a></li>
+</ul>
+</li>
+<li><a href="#org999ae97">Generalization in EAs</a></li>
+<li><a href="#org361d241">Problem Setting</a>
+<ul>
+<li><a href="#orgf1bd9a9">Population Dynamics</a></li>
+</ul>
+</li>
+<li><a href="#org2eea021">&delta;-landscape</a>
+<ul>
+<li><a href="#orgf3f36e2">\(\delta = 0\)</a></li>
+<li><a href="#orgf5a4ab0">\(\delta \ne 0\)</a></li>
+</ul>
+</li>
+<li><a href="#org1e55e7d">Improving generalization</a>
+<ul>
+<li><a href="#org25b700d">Changing slope by grouping</a></li>
+<li><a href="#orgef5bcd1">Crossover</a></li>
+</ul>
+</li>
+<li><a href="#org6370024">Discussion and Conclusions</a></li>
+</ul>
+</div>
+</nav>
+\begin{abstract}
+We look at evolutionary algorithms under a setting where generalization corresponds
+to being able to survive changes in the {\sl cost function}. In such situations,
+a more diverse population is beneficial because of the range it covers in the fitness
+landscape. In a system without any control on the actual environment, we show how
+sharing of fitness helps in, effectively, providing a control on the apparent
+environment so that a trade off option between preserving diversity and evolution
+speed becomes viable.
+\end{abstract}
+
+<div id="outline-container-org8f0419a" class="outline-2">
+<h2 id="org8f0419a">Introduction</h2>
+<div class="outline-text-2" id="text-org8f0419a">
+<p>
+For many optimization problems where gradient information is unavailable (or
+costly) and there are many local optima values, a common approach is to use a
+method which does multiple evaluations to iteratively rolls down (or climbs up)
+the cost function landscape using different initial points so as to find the
+global optima. Collectively they can be grouped as <i>population</i> based global
+optimization methods. Many of these population based algorithms are randomized
+and inspired by some naturally occurring phenomena like swarming of birds (swarm
+optimization) or some processes like annealing (simulated annealing).
+</p>
+
+<p>
+Evolutionary algorithms (EAs) are a class of similar population based
+optimization algorithms inspired by the natural process of evolution. Genetic
+Algorithms are, arguably, the most well known algorithms from this class. They
+are also very similar to their original source of inspiration. Another famous
+class is of Evolution Strategies, which are simpler in complexity and are
+recently gaining traction <a class='org-ref-reference' href="#salimans2017evolution">salimans2017evolution</a> as an alternative for
+solving reinforcement learning problems.
+</p>
+
+<p>
+Although the <i>inspiration</i> works well in practice many times, its harder to
+create causal connections and have insights from the biological inspiration to
+machine learning or vice versa because of difference in the problem goals and
+the knobs we are allowed to tune.
+</p>
+
+<p>
+In this exploration, we try to understand a few biological phenomena using the
+EA framework but under a setting which tries to mimic natural evolution more
+closely. The question is fundamentally about how a fundamental unit of selection
+can results in grouping at higher levels. As an example, eusociality in insects
+involves extensive hierarchy creation and role division with intra-group
+altruistic behavior as an identifying trait. A simple explanation is provided
+just by considering the gene level of selection and applying Hamilton's rule
+<a class='org-ref-reference' href="#hamilton1964genetical">hamilton1964genetical</a> which provides a connection between how much an
+individual should be willing to sacrifice in order to cause net benefit to
+his/her genes.
+</p>
+
+<p>
+There are other game theoretic models which offer interesting explanations of
+different collective behaviors. In <a class='org-ref-reference' href="#chastain2014algorithms">chastain2014algorithms</a>, the authors
+present a multiplicative weight update algorithm for modeling sexual
+reproduction which results in diversity preservation in the population. A
+stochastic game based model is provided in <a class='org-ref-reference' href="#traulsen2006evolution">traulsen2006evolution</a> that
+explains cooperation. In general, evolutionary game theory provides explanations
+for various group behaviors in a population and helps explain how a certain
+strategy comes to be stable by modeling evolution as a game among the
+individuals.
+</p>
+
+<p>
+The idea in this work is to understand how grouping of individuals at various
+levels affects the process in a toy setting without any (explicitly) competitive
+game. In the process, we define and work with a new setting which is similar to
+online setting but more suitable for evolution in the biological sense. Finally,
+we show how these <i>groupings</i> help in regularizing the algorithm along with a
+new way to look at crossover.
+</p>
+
+<p>
+&sect; 2 provides an introduction to general EAs. &sect; 3 talks about generalization in
+EA and argues for a case to work in a different setting which is then presented
+in &sect; 4. &sect; 5 talks about the landscape in the new setting and effect of slope
+on evolution. &sect; 6 discusses methods to control the landscape by forming groups.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org558e006" class="outline-2">
+<h2 id="org558e006">Evolutionary Algorithms</h2>
+<div class="outline-text-2" id="text-org558e006">
+<p>
+Evolutionary algorithms (EAs) are general purpose global optimization techniques
+inspired by biological evolution. They are population based iterative algorithms
+with the following generalized steps:
+</p>
+
+<ol class="org-ol">
+<li>Figure out a way to represent the solutions of the optimization problem using
+a simple scheme like concatenating bitstrings for all the tunable parameters.</li>
+<li>Start with a <i>population</i> of randomly initialized solutions.</li>
+<li>Evolve and filter out the solutions using an operation set which models, in
+some ways, the ideas behind natural evolution.</li>
+<li>Continue evolution until the solution (best or with required fitnes) is found
+in the current population.</li>
+</ol>
+
+<p>
+Employing the vocabulary from biology, the solution encoding is referred to as
+<i>genotype</i> and its preimage is called <i>phenotype</i>. The evolution process works
+on the genotype level.
+</p>
+
+<p>
+Almost all variants of these methods differ only in step 3 which defines how the
+population moves from one time step to other. As an example, the operation set
+in <i>Genetic algorithm</i> (GA), which is based on ideas behind sexual reproduction,
+is a mixture of mutation (random changes in solution encoding), crossover (some
+form of mixing between two solutions) and fitness based filtering (e.g., pick
+\(n\) best individuals among the population, their mutants and the crossed over
+descendants).
+</p>
+
+<p>
+Another example to give a sense of variations in these techniques is an
+algorithm called \((1 + 1) ES\) (Evolution Strategies) which is similar to hill
+climbing. In this, the population size is 1 and it evolves using only mutation.
+If the mutant it generated is better, then the current (only) solution in the
+population is replaced by the mutant.
+</p>
+
+<p>
+The next two subsections define the two common GA operators, <i>mutation</i> and
+<i>crossover</i> which will be helpful later on in the document.
+</p>
+</div>
+
+<div id="outline-container-orgef8329d" class="outline-3">
+<h3 id="orgef8329d">Mutation</h3>
+<div class="outline-text-3" id="text-orgef8329d">
+<p>
+Mutation refers to random changes in genotypes with some probability (<i>mutation
+rate</i>) in the evolution process. Its implementation depends on how the solution
+is represented in the algorithm. In a representation using boolean strings,
+mutation is usually implemented as bit flip of a randomly selected index of the
+string. In a representation using real numbers, mutation can be implemented as
+normal random perturbation of one of the numbers around the current value as
+mean.
+</p>
+
+<p>
+Its noteworthy that mutaton is the only method to provide new <i>genetic material</i>
+for a population of genotypes since crossover, explained later, only shuffles
+the grouping of current gene pool.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb45ddca" class="outline-3">
+<h3 id="orgb45ddca">Crossover</h3>
+<div class="outline-text-3" id="text-orgb45ddca">
+<p>
+Along with mutation, crossover is one of the primitive operators used in Genetic
+algorithm. The specifics of this operator might be different based on the
+optimization problem at hand but the general idea is the same. This operator
+tries to simulate <i>mating</i> in the sexual reproduction sense by creating new
+genotypes (<i>children</i>) using segments of genotypes from the parents.
+</p>
+
+<p>
+Different variants of this operation differ in how they define these
+<i>segmentation</i> and <i>swapping</i> procedure. A common method is to do a single point
+crossover. In this, the representation of parents is broken at a single point
+(selected randomly) to create two children using the two permutations of the
+broken segments. See figure \ref{fig:scross} for an example.
+</p>
+
+\begin{figure}[H]
+\label{fig:scross}
+\centering
+\begin{tikzpicture}
+
+\draw[fill=blue!25] (0, 0) rectangle (3, 0.2);
+\draw[fill=red!25] (0, -0.5) rectangle (3, -0.3);
+
+\draw[<->] (2, -0.01) -- (2, -0.299);
+
+\draw[thick, ->] (3.5, -0.15) -- (4.5, -0.15);
+
+\draw (5, 0) rectangle (8, 0.2);
+\draw[fill=red!25] (5, 0) rectangle (7, 0.2);
+\draw[fill=blue!25] (7, 0) rectangle (8, 0.2);
+\draw (5, -0.5) rectangle (8, -0.3);
+\draw[fill=red!25] (7, -0.5) rectangle (8, -0.3);
+\draw[fill=blue!25] (5, -0.5) rectangle (7, -0.3);
+
+\end{tikzpicture}
+\caption{Example of a single point crossover. The representations of the parents
+on the left hand side are broken at a \textsl{single point} (show using $\updownarrow$)
+and the resulting segments are swapped to produce the children.}
+\end{figure}
+</div>
+</div>
+</div>
+
+<div id="outline-container-org999ae97" class="outline-2">
+<h2 id="org999ae97">Generalization in EAs</h2>
+<div class="outline-text-2" id="text-org999ae97">
+<p>
+Generalization here means the ability of the algorithm (e.g. an EA which learns
+optimal parameters for a non-linear classifier) to work well beyond the data set
+its trained on. For this purpose, we need to have a model of how an EA works.
+</p>
+
+<p>
+Analyses of these evolution inspired algorithms turn out to be different because
+of the variations in the algorithm and how you look at it. At a high level,
+generalization analysis in EAs can be done from the machine learning perspective
+of what <i>cost</i> and <i>training</i> means. As an example, something like the \((1 + 1)
+ES\) algorithm can be analyzed for generalization based on how long we perform
+the evolution, as done for stochastic gradient descent in <a class='org-ref-reference' href="#hardt2015train">hardt2015train</a>.
+</p>
+
+<p>
+Going that route mutes the meaning of adding anything inspired by real evolution
+unless we have a good sense of what that thing means and how it affects the
+constraints of our problem, if it does at all.
+</p>
+
+<p>
+Although EAs can be seen as optimization techniques based on evolution, there
+are a few differences between these and real evolution:
+</p>
+
+<ol class="org-ol">
+<li>The cost function in real evolution is not static.</li>
+<li><i>Training</i> in real evolution doesn't provide that much control over the hyper
+parameters in optimization (like time of evolution).</li>
+</ol>
+
+<p>
+It can be said that the <i>solutions</i> in evolution are for a different problem.
+This also changes the meaning of generalization a bit in evolution, which we
+will come back to later.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org361d241" class="outline-2">
+<h2 id="org361d241">Problem Setting</h2>
+<div class="outline-text-2" id="text-org361d241">
+<p>
+Instead of working in a batch or online setting looking for a single solution,
+we can think of evolution as trying to solve an <i>episodic survival problem</i>. The
+setting is similar to online setting, but differs in the following ways:
+</p>
+
+<ul class="org-ul">
+<li>There is no single cost function to optimize. The time dimension encodes
+<i>episodes</i> which are a zone of defined cost function (defining a fitness
+landscape).</li>
+<li>A good solution to an episode's cost function might not be good for the next
+episode. The population thus only wants to do well in the current episode's
+cost function.</li>
+</ul>
+
+<p>
+To elaborate, consider a learning problem for a computer game having different
+levels \(L_i\) with different set of possible training samples \(S_{L_i}\). For
+building an agent which does good on all the levels, the usual learning settings
+do fine. But if we only care about traversing through the levels once and we are
+guaranteed that the levels don't repeat, a better solution will be to only
+consider the loss on current level while optimizing the parameters of the
+learning agent.
+</p>
+
+<p>
+In some ways, this tries to approximate the ideas behind real evolution where a
+population is faced with changing conditions. In that case, species fit for
+(say) CO\textsubscript{2} based atmosphere will not survive if a reversal event
+like the <i>Oxygen holocaust</i> takes place, increasing the O\textsubscript{2}
+concentration at the cost of CO\textsubscript{2}.
+</p>
+
+<p>
+This also generalizes the <i>train-test</i> split method in which a learner must
+learn on training data but perform well on testing data. Other than effectively
+being a chain of such splits, a difference here is that the two splits are not
+guaranteed to be from the same distribution and so are more flexible in terms of
+how far the episodes can jump.
+</p>
+
+<p>
+In this setting, generalization means how well does a <i>population</i> fare off if
+faced with change in episode. If we have an ideal, all-knowing, algorithm for
+stepping the population, the population will move to the peak of each episode's
+cost function in one time step and stay there, reaping the benefits, until the
+next episode switch. But any practical survival (non oracle-ish) algorithm will
+have constraints on how far it can move the population in one time step just
+because it doesn't know the truth. This leads to a potential regularization
+strategy which provides a trade off between overfitting an episode greedily and
+trying to be open enough for the next ones.
+</p>
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{images/landscape-ga-three}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{images/landscape-ga-four}
+  \end{subfigure}
+  \caption{\emph{Changing landscape}. The population (\textcolor{blue}{$\bullet$} dots)
+in the left image are at a local peak but are stuck in a flat low region after the landscape
+shifts}
+\end{figure}
+
+<p>
+The next section presents the population model, the fitness landscape and
+constraints that we are going to work with.
+</p>
+</div>
+
+<div id="outline-container-orgf1bd9a9" class="outline-3">
+<h3 id="orgf1bd9a9">Population Dynamics</h3>
+<div class="outline-text-3" id="text-orgf1bd9a9">
+<p>
+We adopt the selfish gene worldview <a class='org-ref-reference' href="#williams1997adaptation">williams1997adaptation</a> for our problem.
+This means that in our world, genes are the fundamental units of selection and,
+in absence of any interaction, they are judged and filtered using <i>their own</i>
+fitness values.
+</p>
+
+<p>
+A population of genes at time \(t\) is a multiset of size \(n(t)\) containing all
+the genes alive at the time. Each gene \(g_i \in p(t)\) has a chance of surviving
+at time \(t\) so that it stays alive at time \(t+1\) too. This survival probability
+is given by \(SP(g_i, Loc(g_i), Agg(g_i))\). We will use a shorthand \(s_{g_i}\) (or
+just \(s\), if the context is clear) meaning the survival probability of \(g_i\).
+</p>
+
+<p>
+Notice that other than the index \(i\) identifying it, the gene also has a proper
+location in the fitness landscape which is defined by the function \(Loc(g_i)\).
+The function \(Agg(g_i)\) captures the effect of other genes in the population. In
+the case with no intra-population interaction, \(Agg(g_i) = 0\). An important
+point to note here is that \(SP\) is defined by \(Loc\) (ignoring \(Agg\) for a
+moment) but it can be different if other effects factor in (we will see an
+example later). Thus there really are two fitness landscapes,
+</p>
+
+<ol class="org-ol">
+<li><i>Actual landscape</i>: Defined by \(Loc\) function.</li>
+<li><i>Apparent landscape</i>: Defined by \(SP\) function.</li>
+</ol>
+
+<p>
+An important consequence of this is that to survive, a gene does not need to do
+well in actual landscape if the apparent landscape is conducive. The term
+<i>landscape</i> will refer to the <i>actual</i> landscape from here on unless explicitly
+stated.
+</p>
+
+<p>
+Other than the survival specification, we also have a max capacity (\(K\)) on how
+many genes can be in a population. If the population size, \(n\) exceeds this
+capacity then the genes with lower fitness are <i>culled</i> to make the population
+size equal \(K\).
+</p>
+
+<p>
+To move the population, we now add a mutation function \(M(g_i, m)\). This
+function takes in a gene and returns a new, <i>mutated</i>, gene based on the
+original \(g_i\) with probability \(m\). This new individual is now a part of the
+population. To see how this helps in motion, consider a population \(p(t)\) of
+size \(n(t) = 1\) with a constant survival probability \(s = 0.5\). At the time step
+\(t\), if survived, the (only) individual in the population either does nothing or
+begets another individual at a nearby location. If the nearby location has
+higher value of \(s\) (say 1), then the population has effectively shifted towards
+that location.
+</p>
+
+<p>
+This can be formalized in a simple way using a one dimensional landscape
+explained later.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2eea021" class="outline-2">
+<h2 id="org2eea021">&delta;-landscape</h2>
+<div class="outline-text-2" id="text-org2eea021">
+<p>
+We assume a mutation model similar to <a class='org-ref-reference' href="#wright1932roles">wright1932roles</a> which effectively
+considers mutations of a gene as a set of its neighbours which are reachable in
+a single step using the outgoing connections from the current gene. For our
+purpose, this means that the continuous fitness landscape of dimension \(d\) is
+broken down in a discrete mesh of certain step size. A mutation now is a
+movement operator which moves a single step (no diagonals) on this grid.
+</p>
+
+<p>
+We can define a one dimensional fitness landscape by locally approximating it as
+linear surface with a slope \(\delta\). This means a gene at position \(p\) with
+survival probability \(s\) will go to either \(p + 1\) (\(s \rightarrow s + \delta\))
+or \(p - 1\) (\(s \rightarrow s - \delta\)).
+</p>
+</div>
+
+<div id="outline-container-orgf3f36e2" class="outline-3">
+<h3 id="orgf3f36e2">\(\delta = 0\)</h3>
+<div class="outline-text-3" id="text-orgf3f36e2">
+<p>
+Consider a case with \(\delta = 0\), i.e. the uniform fitness landscape. In this
+case, mutation doesn't matter since all locations in the landscape are
+equivalent with respect to the value of \(s\). Starting with a population of size
+\(n(t)\) at time \(t = 0\), population (in expectation; we work with expectations
+from here on) at time \(t = 1\) can be given as:
+</p>
+
+<p>
+\[ n(1) = n(0) 2 s  \]
+</p>
+
+<p>
+More generally, the population at any time \(T\) is given as:
+</p>
+
+<p>
+\[ n(T) = n(0) (2 s)^T \]
+</p>
+
+<p>
+The factor of 2 comes in because, if survived, each individual splits in two
+(one original and another mutation). As an aside, the relation above sets the
+population to be exponentially increasing if \(s > 0.5\). This is not an issue
+since there is already a culling mechanism in place which takes the top \(K\)
+individuals at each evolution step.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5a4ab0" class="outline-3">
+<h3 id="orgf5a4ab0">\(\delta \ne 0\)</h3>
+<div class="outline-text-3" id="text-orgf5a4ab0">
+<p>
+Lets assume \(\delta > 0\). In this case, starting with a population of size \(n\)
+concentrated at a position \(p\) with survival probability \(s\), a time step will
+spread the population at three locations using the following steps:
+</p>
+
+<ol class="org-ol">
+<li><i>Survival</i>: Out of \(n\), \(ns\) will survive.</li>
+<li>These \(ns\) will clone themselves to become \(2ns\).</li>
+<li>From the \(ns\) clones, \(m\) will be mutated. This leaves \(ns(2 - m)\)
+individuals at the original position \(p\).</li>
+<li>From the \(snm\) mutants, \(1/2\) will go uphill in the fitness landscape and
+other half will move down.</li>
+<li>The three positions \(p - 1\), \(p\) and \(p + 1\) now have \(snm/2\), \(ns(2 - m)\)
+and \(snm/2\) individuals respectively.</li>
+</ol>
+
+<p>
+Although this split is symmetrical, the next split won't be because the value of
+\(s\) at the same three positions is not symmetrical. Those \(s\) values in this
+case are \(s - \delta\), \(s\) and \(s + \delta\) respectively. This causes uphill
+population to flourish more than the downhill.
+</p>
+
+\begin{figure}[H]
+\label{fig:split}
+\centering
+\begin{tikzpicture}
+
+\begin{scope}[every node/.style={}]
+    \node (A) at (0,0) {$n_{p - 1}(t - 1)$};
+    \node (B) at (2,0) {$n_p(t - 1)$};
+    \node (C) at (4,0) {$n_{p+1}(t-1)$};
+    \node (D) at (2,-3) {$n_p(t)$};
+\end{scope}
+
+\begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white},
+              every edge/.style={draw=gray,very thick}]
+    \path [->] (A) edge[bend right=60] node {$ \frac{m (s - \delta)}{2} $} (D);
+    \path [->] (B) edge node {$s (2-m)$} (D);
+    \path [->] (C) edge[bend left=60] node {$\frac{m (s + \delta)}{2}$} (D);
+\end{scope}
+\end{tikzpicture}
+\caption{Relation between counts at position and time. Node represents the counts
+and edges represents the probabilities of jump. Note that the survival value $s$ is
+for the middle location}
++\end{figure}
+
+<p>
+In the general case, the number of individuals at position \(p\) with survival
+value \(s\) and time \(t\) is dependent on individual counts at positions \(p - 1\),
+\(p\) and \(p + 1\) at time \(t - 1\) and can be given as:
+</p>
+
+\begin{align*}
+n_p(t) &= n_{p - 1}(t - 1) \frac{m (s - \delta)}{2} \\
+       &+ n_p(t - 1) s (2 - m)\\
+       &+ n_{p + 1}(t - 1) \frac{m (s + \delta)}{2}
+\end{align*}
+
+<p>
+Since we are constrained to choose just the top \(K\) items from the population at
+any time, we only need to notice the rightmost (assuming +ve &delta;) part of
+this count distribution in the set of all (\(2t + 1\)) possible positions at time
+\(t\). Using the above recursive equation, an simple case is of the rightmost
+fringe at each time step which just depends on the one of the terms. This is
+given by \(n_{right}\):
+</p>
+
+\begin{align*}
+n_{right}(t) &= n_{right}(t - 1) \frac{m (s_{n_{right}(t-1)} + \delta)}{2} \\
+\end{align*}
+
+<p>
+Starting with \(n\) individuals at time 0 at the same position with survival value
+of \(s\), \(n_{right}\) can be reduced to:
+</p>
+
+\begin{align*}
+n_{right}(t) &= n (\frac{m}{2})^t \Pi_{i = 0}^t (s + i \delta)
+\end{align*}
+
+<p>
+In general, a higher value of &delta; (meaning steeper landscape) will increase
+the number of individuals in the same (in the right side of the original \(s\))
+spots considering all factors to be the same.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1e55e7d" class="outline-2">
+<h2 id="org1e55e7d">Improving generalization</h2>
+<div class="outline-text-2" id="text-org1e55e7d">
+<p>
+Coming back to the question of generalization, its important to restate two
+near obvious facts here:
+</p>
+
+<ol class="org-ol">
+<li>If there are two scenarios with the same number of genes but with different
+distribution of counts, a more diverse distribution has higher chance of
+surviving any change in landscape.</li>
+
+<li>Because of higher population count in the high &delta; case, we get a smaller
+span of active positions (positions with non-zero population) after culling
+for top \(K\) items.</li>
+</ol>
+
+<p>
+In effect, if the situation is good for survival, and we are hitting the culling
+capacity (so that the two scenarios have same population counts), a low value of
+&delta; will make the population more spread out than a higher one. This, in
+turn, makes the population in low &delta; world preserve more diversity and
+survive better in case of a switch of landscape resulting in a more generalized
+<i>solution</i>.
+</p>
+
+<p>
+Adding to these the constraints that we don't actually have control over either
+the time of evolution \(t\), the value of &delta; or mutation rate \(m\) if we are in
+the population (this assumption doesn't really work if we go on a much longer
+scale and make mutation itself evolvable), what might be a good strategy to
+improve generalization?
+</p>
+</div>
+
+<div id="outline-container-org25b700d" class="outline-3">
+<h3 id="org25b700d">Changing slope by grouping</h3>
+<div class="outline-text-3" id="text-org25b700d">
+<p>
+Although the value of &delta; for the <i>actual</i> landscape can't be changed, the
+value of &delta; for the <i>apparent</i> landscape can be changed by appropriate
+interactions among the individuals.
+</p>
+
+<p>
+This brings us to the \(Agg\) function which changes the value of \(SP\) using the
+effects from inter individual interactions. Consider a sharing strategy where
+the function groups \(k\) individuals, takes the mean of their <i>actual</i> fitness
+values and assigns this mean as the <i>apparent</i> fitness of all the individuals.
+In the extreme case of \(k = n\), this makes the apparent value of &delta; to be 0.
+On the other hand, with \(k = 1\), this reduces to situation with no interaction
+and apparent &delta; equals actual &delta;. By varying \(k\), apparent slope can be
+controlled. A higher \(k\) value provides more flatness and thus adds inertia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef5bcd1" class="outline-3">
+<h3 id="orgef5bcd1">Crossover</h3>
+<div class="outline-text-3" id="text-orgef5bcd1">
+<p>
+Crossover acts as a technique to swap chunks of genes among organisms.
+Considering 'organisms' as groups of genes we create in this case, crossover can
+be seen as a trick to reduce the &delta; value as its effect is to shuffle genes
+around groups. Whatever way maybe used to form initial groups, a random
+shuffling operator like crossover is going to increase the flatness in
+expectation. Thus it can be seen as a way to flatten the landscape without
+increasing the \(k\) value.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6370024" class="outline-2">
+<h2 id="org6370024">Discussion and Conclusions</h2>
+<div class="outline-text-2" id="text-org6370024">
+<p>
+The main purpose of this exploration is to have an understanding of effect of
+grouping in a setting which is closer to real evolution than the usual evolution
+based optimization algorithms. The toy problem we studied here presents grouping
+as a viable landscape controlling strategy that can be utilized by genotypes in
+situations where they don't have control over the environment itself.
+</p>
+
+<p>
+An interesting question to find answer to is <i>how fundamental the idea of
+grouping really is</i>? Can a similar idea be extended so far as to say that the
+<i>bodies</i> (group of genes) form a level 1 grouping while social groups (group of
+bodies) form a level 2 grouping? There are sufficiently high quantities of
+assumptions and cherry-picking here that makes the results not really
+conclusive. For example, to conclude anything connected to generic grouping,
+other (non-averaging) interactions need to be considered. In any case there are
+connections from here to biology which provide directions to pursue for
+understanding more of whats happening. Some particularly interesting ones are:
+</p>
+
+<ul class="org-ul">
+<li><i>Biological robustness</i> refers to systems manifesting the same characteristics
+even under perturbations. Literature on this should tell more about how
+generalization in a digital variation of evolution connects with robustness.
+Interestingly there is empirical support for connection between flatter
+landscape and robustness <a class='org-ref-reference' href="#wilke2001evolution">wilke2001evolution</a>.</li>
+
+<li><i>Population bottleneck</i> is a well known phenomena where, due to sudden change
+in environment, a large mass of diversity is wiped out, putting selection
+pressure for having robustness.</li>
+</ul>
+
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="salimans2017evolution">[salimans2017evolution]</a> Salimans, Ho, Chen & Sutskever, Evolution strategies as a scalable alternative to reinforcement learning, <i>arXiv preprint arXiv:1703.03864</i>, <b></b>, (2017).</li>
+<li><a id="hamilton1964genetical">[hamilton1964genetical]</a> Hamilton, The genetical evolution of social behaviour. II, <i>Journal of theoretical biology</i>, <b>7(1)</b>, 17-52 (1964).</li>
+<li><a id="chastain2014algorithms">[chastain2014algorithms]</a> Chastain, Livnat, Papadimitriou & Vazirani, Algorithms, games, and evolution, <i>Proceedings of the National Academy of Sciences</i>, <b>111(29)</b>, 10620-10623 (2014).</li>
+<li><a id="traulsen2006evolution">[traulsen2006evolution]</a> Traulsen & Nowak, Evolution of cooperation by multilevel selection, <i>Proceedings of the National Academy of Sciences</i>, <b>103(29)</b>, 10952-10955 (2006).</li>
+<li><a id="hardt2015train">[hardt2015train]</a> Hardt, Recht & Singer, Train faster, generalize better: Stability of stochastic gradient descent, <i>arXiv preprint arXiv:1509.01240</i>, <b></b>, (2015).</li>
+<li><a id="williams1997adaptation">[williams1997adaptation]</a> Williams & Burt, Adaptation and natural selection, na (1997).</li>
+<li><a id="wright1932roles">[wright1932roles]</a> Wright, The roles of mutation, inbreeding, crossbreeding, and selection in evolution, na (1932).</li>
+<li><a id="wilke2001evolution">[wilke2001evolution]</a> Wilke, Wang, Ofria, Lenski & Adami, Evolution of digital organisms at high mutation rates leads to survival of the flattest, <i>Nature</i>, <b>412(6844)</b>, 331-333 (2001).</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

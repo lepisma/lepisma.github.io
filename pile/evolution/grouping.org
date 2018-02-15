@@ -1,0 +1,497 @@
+#+TITLE: Grouping
+#+SETUPFILE: ../assets/export.setup
+
+#+LATEX_CLASS: article
+#+LATEX_HEADER: \usepackage[final,nonatbib]{nips_2017}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usetikzlibrary{arrows.meta}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{biblatex}
+#+LATEX_HEADER: \usepackage{subcaption}
+#+LATEX_HEADER: \addbibresource{~/library.bib}
+#+LATEX_HEADER: \author{Abhinav Tushar\\
+#+LATEX_HEADER:  Department of Computer Science\\
+#+LATEX_HEADER:  University of Massachusetts, Amherst\\
+#+LATEX_HEADER:  \texttt{atushar@cs.umass.edu}
+#+LATEX_HEADER: }
+
+\begin{abstract}
+We look at evolutionary algorithms under a setting where generalization corresponds
+to being able to survive changes in the {\sl cost function}. In such situations,
+a more diverse population is beneficial because of the range it covers in the fitness
+landscape. In a system without any control on the actual environment, we show how
+sharing of fitness helps in, effectively, providing a control on the apparent
+environment so that a trade off option between preserving diversity and evolution
+speed becomes viable.
+\end{abstract}
+
+* Introduction
+
+For many optimization problems where gradient information is unavailable (or
+costly) and there are many local optima values, a common approach is to use a
+method which does multiple evaluations to iteratively rolls down (or climbs up)
+the cost function landscape using different initial points so as to find the
+global optima. Collectively they can be grouped as /population/ based global
+optimization methods. Many of these population based algorithms are randomized
+and inspired by some naturally occurring phenomena like swarming of birds (swarm
+optimization) or some processes like annealing (simulated annealing).
+
+Evolutionary algorithms (EAs) are a class of similar population based
+optimization algorithms inspired by the natural process of evolution. Genetic
+Algorithms are, arguably, the most well known algorithms from this class. They
+are also very similar to their original source of inspiration. Another famous
+class is of Evolution Strategies, which are simpler in complexity and are
+recently gaining traction cite:salimans2017evolution as an alternative for
+solving reinforcement learning problems.
+
+Although the /inspiration/ works well in practice many times, its harder to
+create causal connections and have insights from the biological inspiration to
+machine learning or vice versa because of difference in the problem goals and
+the knobs we are allowed to tune.
+
+In this exploration, we try to understand a few biological phenomena using the
+EA framework but under a setting which tries to mimic natural evolution more
+closely. The question is fundamentally about how a fundamental unit of selection
+can results in grouping at higher levels. As an example, eusociality in insects
+involves extensive hierarchy creation and role division with intra-group
+altruistic behavior as an identifying trait. A simple explanation is provided
+just by considering the gene level of selection and applying Hamilton's rule
+cite:hamilton1964genetical which provides a connection between how much an
+individual should be willing to sacrifice in order to cause net benefit to
+his/her genes.
+
+There are other game theoretic models which offer interesting explanations of
+different collective behaviors. In cite:chastain2014algorithms, the authors
+present a multiplicative weight update algorithm for modeling sexual
+reproduction which results in diversity preservation in the population. A
+stochastic game based model is provided in cite:traulsen2006evolution that
+explains cooperation. In general, evolutionary game theory provides explanations
+for various group behaviors in a population and helps explain how a certain
+strategy comes to be stable by modeling evolution as a game among the
+individuals.
+
+The idea in this work is to understand how grouping of individuals at various
+levels affects the process in a toy setting without any (explicitly) competitive
+game. In the process, we define and work with a new setting which is similar to
+online setting but more suitable for evolution in the biological sense. Finally,
+we show how these /groupings/ help in regularizing the algorithm along with a
+new way to look at crossover.
+
+\S 2 provides an introduction to general EAs. \S 3 talks about generalization in
+EA and argues for a case to work in a different setting which is then presented
+in \S 4. \S 5 talks about the landscape in the new setting and effect of slope
+on evolution. \S 6 discusses methods to control the landscape by forming groups.
+
+* Evolutionary Algorithms
+
+Evolutionary algorithms (EAs) are general purpose global optimization techniques
+inspired by biological evolution. They are population based iterative algorithms
+with the following generalized steps:
+
+1. Figure out a way to represent the solutions of the optimization problem using
+   a simple scheme like concatenating bitstrings for all the tunable parameters.
+2. Start with a /population/ of randomly initialized solutions.
+3. Evolve and filter out the solutions using an operation set which models, in
+   some ways, the ideas behind natural evolution.
+4. Continue evolution until the solution (best or with required fitnes) is found
+   in the current population.
+
+Employing the vocabulary from biology, the solution encoding is referred to as
+/genotype/ and its preimage is called /phenotype/. The evolution process works
+on the genotype level.
+
+Almost all variants of these methods differ only in step 3 which defines how the
+population moves from one time step to other. As an example, the operation set
+in /Genetic algorithm/ (GA), which is based on ideas behind sexual reproduction,
+is a mixture of mutation (random changes in solution encoding), crossover (some
+form of mixing between two solutions) and fitness based filtering (e.g., pick
+$n$ best individuals among the population, their mutants and the crossed over
+descendants).
+
+Another example to give a sense of variations in these techniques is an
+algorithm called $(1 + 1) ES$ (Evolution Strategies) which is similar to hill
+climbing. In this, the population size is 1 and it evolves using only mutation.
+If the mutant it generated is better, then the current (only) solution in the
+population is replaced by the mutant.
+
+The next two subsections define the two common GA operators, /mutation/ and
+/crossover/ which will be helpful later on in the document.
+
+** Mutation
+
+Mutation refers to random changes in genotypes with some probability (/mutation
+rate/) in the evolution process. Its implementation depends on how the solution
+is represented in the algorithm. In a representation using boolean strings,
+mutation is usually implemented as bit flip of a randomly selected index of the
+string. In a representation using real numbers, mutation can be implemented as
+normal random perturbation of one of the numbers around the current value as
+mean.
+
+Its noteworthy that mutaton is the only method to provide new /genetic material/
+for a population of genotypes since crossover, explained later, only shuffles
+the grouping of current gene pool.
+
+** Crossover
+
+Along with mutation, crossover is one of the primitive operators used in Genetic
+algorithm. The specifics of this operator might be different based on the
+optimization problem at hand but the general idea is the same. This operator
+tries to simulate /mating/ in the sexual reproduction sense by creating new
+genotypes (/children/) using segments of genotypes from the parents.
+
+Different variants of this operation differ in how they define these
+/segmentation/ and /swapping/ procedure. A common method is to do a single point
+crossover. In this, the representation of parents is broken at a single point
+(selected randomly) to create two children using the two permutations of the
+broken segments. See figure \ref{fig:scross} for an example.
+
+\begin{figure}[H]
+\label{fig:scross}
+\centering
+\begin{tikzpicture}
+
+\draw[fill=blue!25] (0, 0) rectangle (3, 0.2);
+\draw[fill=red!25] (0, -0.5) rectangle (3, -0.3);
+
+\draw[<->] (2, -0.01) -- (2, -0.299);
+
+\draw[thick, ->] (3.5, -0.15) -- (4.5, -0.15);
+
+\draw (5, 0) rectangle (8, 0.2);
+\draw[fill=red!25] (5, 0) rectangle (7, 0.2);
+\draw[fill=blue!25] (7, 0) rectangle (8, 0.2);
+\draw (5, -0.5) rectangle (8, -0.3);
+\draw[fill=red!25] (7, -0.5) rectangle (8, -0.3);
+\draw[fill=blue!25] (5, -0.5) rectangle (7, -0.3);
+
+\end{tikzpicture}
+\caption{Example of a single point crossover. The representations of the parents
+on the left hand side are broken at a \textsl{single point} (show using $\updownarrow$)
+and the resulting segments are swapped to produce the children.}
+\end{figure}
+
+* Generalization in EAs
+
+Generalization here means the ability of the algorithm (e.g. an EA which learns
+optimal parameters for a non-linear classifier) to work well beyond the data set
+its trained on. For this purpose, we need to have a model of how an EA works.
+
+Analyses of these evolution inspired algorithms turn out to be different because
+of the variations in the algorithm and how you look at it. At a high level,
+generalization analysis in EAs can be done from the machine learning perspective
+of what /cost/ and /training/ means. As an example, something like the $(1 + 1)
+ES$ algorithm can be analyzed for generalization based on how long we perform
+the evolution, as done for stochastic gradient descent in cite:hardt2015train.
+
+Going that route mutes the meaning of adding anything inspired by real evolution
+unless we have a good sense of what that thing means and how it affects the
+constraints of our problem, if it does at all.
+
+Although EAs can be seen as optimization techniques based on evolution, there
+are a few differences between these and real evolution:
+
+1. The cost function in real evolution is not static.
+2. /Training/ in real evolution doesn't provide that much control over the hyper
+   parameters in optimization (like time of evolution).
+
+It can be said that the /solutions/ in evolution are for a different problem.
+This also changes the meaning of generalization a bit in evolution, which we
+will come back to later.
+
+* Problem Setting
+
+Instead of working in a batch or online setting looking for a single solution,
+we can think of evolution as trying to solve an /episodic survival problem/. The
+setting is similar to online setting, but differs in the following ways:
+
+- There is no single cost function to optimize. The time dimension encodes
+  /episodes/ which are a zone of defined cost function (defining a fitness
+  landscape).
+- A good solution to an episode's cost function might not be good for the next
+  episode. The population thus only wants to do well in the current episode's
+  cost function.
+
+To elaborate, consider a learning problem for a computer game having different
+levels $L_i$ with different set of possible training samples $S_{L_i}$. For
+building an agent which does good on all the levels, the usual learning settings
+do fine. But if we only care about traversing through the levels once and we are
+guaranteed that the levels don't repeat, a better solution will be to only
+consider the loss on current level while optimizing the parameters of the
+learning agent.
+
+In some ways, this tries to approximate the ideas behind real evolution where a
+population is faced with changing conditions. In that case, species fit for
+(say) CO\textsubscript{2} based atmosphere will not survive if a reversal event
+like the /Oxygen holocaust/ takes place, increasing the O\textsubscript{2}
+concentration at the cost of CO\textsubscript{2}.
+
+This also generalizes the /train-test/ split method in which a learner must
+learn on training data but perform well on testing data. Other than effectively
+being a chain of such splits, a difference here is that the two splits are not
+guaranteed to be from the same distribution and so are more flexible in terms of
+how far the episodes can jump.
+
+In this setting, generalization means how well does a /population/ fare off if
+faced with change in episode. If we have an ideal, all-knowing, algorithm for
+stepping the population, the population will move to the peak of each episode's
+cost function in one time step and stay there, reaping the benefits, until the
+next episode switch. But any practical survival (non oracle-ish) algorithm will
+have constraints on how far it can move the population in one time step just
+because it doesn't know the truth. This leads to a potential regularization
+strategy which provides a trade off between overfitting an episode greedily and
+trying to be open enough for the next ones.
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{images/landscape-ga-three}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{images/landscape-ga-four}
+  \end{subfigure}
+  \caption{\emph{Changing landscape}. The population (\textcolor{blue}{$\bullet$} dots)
+in the left image are at a local peak but are stuck in a flat low region after the landscape
+shifts}
+\end{figure}
+
+The next section presents the population model, the fitness landscape and
+constraints that we are going to work with.
+
+** Population Dynamics
+
+We adopt the selfish gene worldview cite:williams1997adaptation for our problem.
+This means that in our world, genes are the fundamental units of selection and,
+in absence of any interaction, they are judged and filtered using /their own/
+fitness values.
+
+A population of genes at time $t$ is a multiset of size $n(t)$ containing all
+the genes alive at the time. Each gene $g_i \in p(t)$ has a chance of surviving
+at time $t$ so that it stays alive at time $t+1$ too. This survival probability
+is given by $SP(g_i, Loc(g_i), Agg(g_i))$. We will use a shorthand $s_{g_i}$ (or
+just $s$, if the context is clear) meaning the survival probability of $g_i$.
+
+Notice that other than the index $i$ identifying it, the gene also has a proper
+location in the fitness landscape which is defined by the function $Loc(g_i)$.
+The function $Agg(g_i)$ captures the effect of other genes in the population. In
+the case with no intra-population interaction, $Agg(g_i) = 0$. An important
+point to note here is that $SP$ is defined by $Loc$ (ignoring $Agg$ for a
+moment) but it can be different if other effects factor in (we will see an
+example later). Thus there really are two fitness landscapes,
+
+1. /Actual landscape/: Defined by $Loc$ function.
+2. /Apparent landscape/: Defined by $SP$ function.
+
+An important consequence of this is that to survive, a gene does not need to do
+well in actual landscape if the apparent landscape is conducive. The term
+/landscape/ will refer to the /actual/ landscape from here on unless explicitly
+stated.
+
+Other than the survival specification, we also have a max capacity ($K$) on how
+many genes can be in a population. If the population size, $n$ exceeds this
+capacity then the genes with lower fitness are /culled/ to make the population
+size equal $K$.
+
+To move the population, we now add a mutation function $M(g_i, m)$. This
+function takes in a gene and returns a new, /mutated/, gene based on the
+original $g_i$ with probability $m$. This new individual is now a part of the
+population. To see how this helps in motion, consider a population $p(t)$ of
+size $n(t) = 1$ with a constant survival probability $s = 0.5$. At the time step
+$t$, if survived, the (only) individual in the population either does nothing or
+begets another individual at a nearby location. If the nearby location has
+higher value of $s$ (say 1), then the population has effectively shifted towards
+that location.
+
+This can be formalized in a simple way using a one dimensional landscape
+explained later.
+
+* \delta-landscape
+
+We assume a mutation model similar to cite:wright1932roles which effectively
+considers mutations of a gene as a set of its neighbours which are reachable in
+a single step using the outgoing connections from the current gene. For our
+purpose, this means that the continuous fitness landscape of dimension $d$ is
+broken down in a discrete mesh of certain step size. A mutation now is a
+movement operator which moves a single step (no diagonals) on this grid.
+
+We can define a one dimensional fitness landscape by locally approximating it as
+linear surface with a slope $\delta$. This means a gene at position $p$ with
+survival probability $s$ will go to either $p + 1$ ($s \rightarrow s + \delta$)
+or $p - 1$ ($s \rightarrow s - \delta$).
+
+** $\delta = 0$
+
+Consider a case with $\delta = 0$, i.e. the uniform fitness landscape. In this
+case, mutation doesn't matter since all locations in the landscape are
+equivalent with respect to the value of $s$. Starting with a population of size
+$n(t)$ at time $t = 0$, population (in expectation; we work with expectations
+from here on) at time $t = 1$ can be given as:
+
+\[ n(1) = n(0) 2 s  \]
+
+More generally, the population at any time $T$ is given as:
+
+\[ n(T) = n(0) (2 s)^T \]
+
+The factor of 2 comes in because, if survived, each individual splits in two
+(one original and another mutation). As an aside, the relation above sets the
+population to be exponentially increasing if $s > 0.5$. This is not an issue
+since there is already a culling mechanism in place which takes the top $K$
+individuals at each evolution step.
+
+** $\delta \ne 0$
+
+Lets assume $\delta > 0$. In this case, starting with a population of size $n$
+concentrated at a position $p$ with survival probability $s$, a time step will
+spread the population at three locations using the following steps:
+
+1. /Survival/: Out of $n$, $ns$ will survive.
+2. These $ns$ will clone themselves to become $2ns$.
+3. From the $ns$ clones, $m$ will be mutated. This leaves $ns(2 - m)$
+   individuals at the original position $p$.
+4. From the $snm$ mutants, $1/2$ will go uphill in the fitness landscape and
+   other half will move down.
+5. The three positions $p - 1$, $p$ and $p + 1$ now have $snm/2$, $ns(2 - m)$
+   and $snm/2$ individuals respectively.
+
+Although this split is symmetrical, the next split won't be because the value of
+$s$ at the same three positions is not symmetrical. Those $s$ values in this
+case are $s - \delta$, $s$ and $s + \delta$ respectively. This causes uphill
+population to flourish more than the downhill.
+
+\begin{figure}[H]
+\label{fig:split}
+\centering
+\begin{tikzpicture}
+
+\begin{scope}[every node/.style={}]
+    \node (A) at (0,0) {$n_{p - 1}(t - 1)$};
+    \node (B) at (2,0) {$n_p(t - 1)$};
+    \node (C) at (4,0) {$n_{p+1}(t-1)$};
+    \node (D) at (2,-3) {$n_p(t)$};
+\end{scope}
+
+\begin{scope}[>={Stealth[black]},
+              every node/.style={fill=white},
+              every edge/.style={draw=gray,very thick}]
+    \path [->] (A) edge[bend right=60] node {$ \frac{m (s - \delta)}{2} $} (D);
+    \path [->] (B) edge node {$s (2-m)$} (D);
+    \path [->] (C) edge[bend left=60] node {$\frac{m (s + \delta)}{2}$} (D);
+\end{scope}
+\end{tikzpicture}
+\caption{Relation between counts at position and time. Node represents the counts
+and edges represents the probabilities of jump. Note that the survival value $s$ is
+for the middle location}
++\end{figure}
+
+In the general case, the number of individuals at position $p$ with survival
+value $s$ and time $t$ is dependent on individual counts at positions $p - 1$,
+$p$ and $p + 1$ at time $t - 1$ and can be given as:
+
+\begin{align*}
+n_p(t) &= n_{p - 1}(t - 1) \frac{m (s - \delta)}{2} \\
+       &+ n_p(t - 1) s (2 - m)\\
+       &+ n_{p + 1}(t - 1) \frac{m (s + \delta)}{2}
+\end{align*}
+
+Since we are constrained to choose just the top $K$ items from the population at
+any time, we only need to notice the rightmost (assuming +ve \delta) part of
+this count distribution in the set of all ($2t + 1$) possible positions at time
+$t$. Using the above recursive equation, an simple case is of the rightmost
+fringe at each time step which just depends on the one of the terms. This is
+given by $n_{right}$:
+
+\begin{align*}
+n_{right}(t) &= n_{right}(t - 1) \frac{m (s_{n_{right}(t-1)} + \delta)}{2} \\
+\end{align*}
+
+Starting with $n$ individuals at time 0 at the same position with survival value
+of $s$, $n_{right}$ can be reduced to:
+
+\begin{align*}
+n_{right}(t) &= n (\frac{m}{2})^t \Pi_{i = 0}^t (s + i \delta)
+\end{align*}
+
+In general, a higher value of \delta (meaning steeper landscape) will increase
+the number of individuals in the same (in the right side of the original $s$)
+spots considering all factors to be the same.
+
+* Improving generalization
+
+Coming back to the question of generalization, its important to restate two
+near obvious facts here:
+
+1. If there are two scenarios with the same number of genes but with different
+   distribution of counts, a more diverse distribution has higher chance of
+   surviving any change in landscape.
+
+2. Because of higher population count in the high \delta case, we get a smaller
+   span of active positions (positions with non-zero population) after culling
+   for top $K$ items.
+
+In effect, if the situation is good for survival, and we are hitting the culling
+capacity (so that the two scenarios have same population counts), a low value of
+\delta will make the population more spread out than a higher one. This, in
+turn, makes the population in low \delta world preserve more diversity and
+survive better in case of a switch of landscape resulting in a more generalized
+/solution/.
+
+Adding to these the constraints that we don't actually have control over either
+the time of evolution $t$, the value of \delta or mutation rate $m$ if we are in
+the population (this assumption doesn't really work if we go on a much longer
+scale and make mutation itself evolvable), what might be a good strategy to
+improve generalization?
+
+** Changing slope by grouping
+
+Although the value of \delta for the /actual/ landscape can't be changed, the
+value of \delta for the /apparent/ landscape can be changed by appropriate
+interactions among the individuals.
+
+This brings us to the $Agg$ function which changes the value of $SP$ using the
+effects from inter individual interactions. Consider a sharing strategy where
+the function groups $k$ individuals, takes the mean of their /actual/ fitness
+values and assigns this mean as the /apparent/ fitness of all the individuals.
+In the extreme case of $k = n$, this makes the apparent value of \delta to be 0.
+On the other hand, with $k = 1$, this reduces to situation with no interaction
+and apparent \delta equals actual \delta. By varying $k$, apparent slope can be
+controlled. A higher $k$ value provides more flatness and thus adds inertia.
+
+** Crossover
+
+Crossover acts as a technique to swap chunks of genes among organisms.
+Considering 'organisms' as groups of genes we create in this case, crossover can
+be seen as a trick to reduce the \delta value as its effect is to shuffle genes
+around groups. Whatever way maybe used to form initial groups, a random
+shuffling operator like crossover is going to increase the flatness in
+expectation. Thus it can be seen as a way to flatten the landscape without
+increasing the $k$ value.
+
+* Discussion and Conclusions
+
+The main purpose of this exploration is to have an understanding of effect of
+grouping in a setting which is closer to real evolution than the usual evolution
+based optimization algorithms. The toy problem we studied here presents grouping
+as a viable landscape controlling strategy that can be utilized by genotypes in
+situations where they don't have control over the environment itself.
+
+An interesting question to find answer to is /how fundamental the idea of
+grouping really is/? Can a similar idea be extended so far as to say that the
+/bodies/ (group of genes) form a level 1 grouping while social groups (group of
+bodies) form a level 2 grouping? There are sufficiently high quantities of
+assumptions and cherry-picking here that makes the results not really
+conclusive. For example, to conclude anything connected to generic grouping,
+other (non-averaging) interactions need to be considered. In any case there are
+connections from here to biology which provide directions to pursue for
+understanding more of whats happening. Some particularly interesting ones are:
+
+- /Biological robustness/ refers to systems manifesting the same characteristics
+  even under perturbations. Literature on this should tell more about how
+  generalization in a digital variation of evolution connects with robustness.
+  Interestingly there is empirical support for connection between flatter
+  landscape and robustness cite:wilke2001evolution.
+
+- /Population bottleneck/ is a well known phenomena where, due to sudden change
+  in environment, a large mass of diversity is wiped out, putting selection
+  pressure for having robustness.
+
+bibliography:~/library.bib
