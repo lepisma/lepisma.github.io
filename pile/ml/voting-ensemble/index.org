@@ -30,13 +30,13 @@ sum(binom_pmf(0.5).subs(N == n), M, floor(n/c) + 1, n)
 Notice that $M$ is summed from 11 to 21 which is the zone of majority. A plot of
 varying $p$ values follows:
 
-#+BEGIN_SRC sage :session :eval never-export :exports both :file ./voting-ensemble/two-class.png
+#+BEGIN_SRC sage :session :eval never-export :exports both :file ./two-class.png
 curve = plot(sum(binom_pmf(p).subs(N = n), M, floor(n/c) + 1, n), (p, 0.001, 0.999))
 curve + parametric_plot((1/c, x), (x, 0, 1), linestyle="--", color="green")
 #+END_SRC
 
 #+RESULTS:
-[[file:./voting-ensemble/two-class.png]]
+[[file:two-class.png]]
 
 * Multiclass
 
@@ -70,14 +70,14 @@ float(sum(binom_pmf(1/c).subs(N == n), M, floor(n/c) + 1, n))
 : 0.3523243319568171
 
 A plot of $q$ vs ensemble success for 7 classes follows:
- 
-#+BEGIN_SRC sage :session :eval never-export :exports both :file voting-ensemble/seven-class.png
+
+#+BEGIN_SRC sage :session :eval never-export :exports both :file seven-class.png
 curve = plot(sum(binom_pmf(p).subs(N == n), M, floor(n/c) + 1, n), (p, 0.001, 0.999))
 curve + parametric_plot((1/c, x), (x, 0, 1), linestyle="--", color="green")
 #+END_SRC
 
 #+RESULTS:
-[[file:voting-ensemble/seven-class.png]]
+[[file:seven-class.png]]
 
 * Critical /p/
 

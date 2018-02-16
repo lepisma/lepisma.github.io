@@ -3,5 +3,5 @@
 
 * Pages in this section
 
-- [[./noisy-quantum-search.org][Noisy Quantum Search]]
-- [[./strassen.org][Searching for Strassen multiplication rule]]
+- [[./noisy-quantum-search/index.org][Noisy Quantum Search]]
+- [[./strassen/index.org][Searching for Strassen multiplication rule]]

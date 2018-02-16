@@ -3,4 +3,4 @@
 
 * Pages in this section
 
-- [[./voting-ensemble.org][Voting Ensemble]]
+- [[./voting-ensemble/index.org][Voting Ensemble]]

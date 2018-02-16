@@ -7,6 +7,12 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *reader macros*
+
+  Unlike common lisp, the reader for Elisp is not open for extension (in elisp
+  that is; of course you can modify the C sources). [[https://github.com/mishoo/elisp-reader.el][Here]] is a custom reader
+  reader /in elisp/ which lets you define custom reader macros.
+
 + *org macros*
 
   Org mode allows simple text replacement macros with arguments for export. See

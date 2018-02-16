@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-15 Thu 10:21 -->
+<!-- 2018-02-15 Thu 19:07 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Searching for Strassen multiplication rule</title>
@@ -305,12 +305,22 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-02-15 Thu 10:21
+    Last modified:  2018-02-15 Thu 18:18
   </div>
   <h1>Searching for Strassen multiplication rule</h1>
 </div>
 </div>
 <div id="content">
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org2096cfb">The general idea</a></li>
+<li><a href="#orgba2a1b5">Direct search</a></li>
+<li><a href="#orge624e13">Better solutions</a></li>
+</ul>
+</div>
+</nav>
 <blockquote>
 <p>
 This page is a work in progress
@@ -319,10 +329,10 @@ This page is a work in progress
 
 <p>
 Strassen algorithm is an \(\mathcal{O}(N^{2.8074})\) algorithm for multiplying two
-square matrices. One part of the algorithm is to do a bunch of transformations
-for the submatrices involved. The transformation is mostly non-intuitive and
-looks like a good way to learn about symbolic computation and searching. Here I
-try to automate that part using sage.
+square matrices. One major part of the algorithm describes a bunch of
+transformations for the submatrices involved. The transformations are mostly
+non-intuitive and so the situation looks good playground to try some symbolic
+computation and searching.
 </p>
 
 <aside>
@@ -334,28 +344,114 @@ operators to give the values we want.
 </p>
 </aside>
 
-<div class="org-src-container">
-<pre class="src src-sage">var<span style="color: #5E81AC;">(</span><span style="color: #A3BE8C;">"A_11, A_12, A_21, A_22, B_11, B_12, B_21, B_22, C_11, C_12, C_21, C_22"</span><span style="color: #5E81AC;">)</span>
-</pre>
+<div id="outline-container-org2096cfb" class="outline-2">
+<h2 id="org2096cfb">The general idea</h2>
+<div class="outline-text-2" id="text-org2096cfb">
+<p>
+Leaving the specifics behind, the main idea here is to transform a represention
+of an object in a <i>non-commutative</i> <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> ring to
+another with lesser number of muliplications (since they might be costly) as
+compared to a basic canonical form. These multiplcations (and additions) are
+applied on certain fixed set of objects. As an example, consider the popular
+situation of multiplying two complex numbers \(a + ib\) and \(c + id\). The naive
+representation of the product can be given as:
+</p>
+
+<p>
+\[ (ac - bd) + i(ad + bc) \]
+</p>
+
+<p>
+This representation uses 4 multiplications (\(ac\), \(bd\), \(ad\) and \(bc\)) while the
+following, equivalent representation, uses 3 (\(ac\), \(bd\) and \((a + b)(c + d)\)):
+</p>
+
+<p>
+\[ (ac - bd) + i((a + b)(c + d) - ac - bd) \]
+</p>
+
+<p>
+Transformations like these are useful <i>if</i> there are differences in the resources
+requirement for various operations (and there are).
+</p>
+
+<p>
+Similar problem arises when multiplying two square matrices \(A\) and \(B\) to
+produce \(C\). If we break each of the matrices involved like shown below, we get
+a problem pretty similar to the complex number multiplication:
+</p>
+
+\begin{align*}
+X = \begin{bmatrix}
+   X_{11} & X_{12} \\
+   X_{21} & X_{22} \\
+\end{bmatrix}
+\end{align*}
+
+<p>
+In the matrix version, we have the following results to achieve:
+</p>
+
+\begin{align}
+\label{eq:simple}
+C_{11} &= A_{11}B_{11} + A_{12}B_{21} \\
+C_{12} &= A_{11}B_{12} + A_{12}B_{22} \nonumber \\
+C_{21} &= A_{21}B_{11} + A_{22}B_{21} \nonumber \\
+C_{22} &= A_{21}B_{12} + A_{22}B_{22} \nonumber \\
+\end{align}
+
+<p>
+This needs 8 multiplications. Strassen algorithm does it in 7 (see the
+intermediate transformations in wikipedia <a href="https://en.wikipedia.org/wiki/Strassen_algorithm#Algorithm">page</a>). Automating this exact procedure
+probably is not very hard and can be done by simple randomized optimization
+algorithms (so that we don't have to dig in the underlying mechanics). In fact I
+will try to do this first. The bigger problem is to have a general way to
+transform expression with certain needs in mind.
+</p>
+</div>
 </div>
 
-<pre class="example">
-(A_11, A_12, A_21, A_22, B_11, B_12, B_21, B_22, C_11, C_12, C_21, C_22)
+<div id="outline-container-orgba2a1b5" class="outline-2">
+<h2 id="orgba2a1b5">Direct search</h2>
+<div class="outline-text-2" id="text-orgba2a1b5">
+<p>
+For generating the intermediate forms \(M_{i}\) (as described in the wikipedia
+page) we use one multiplication, the first operand of which is a result of
+arbitrary number of sum and negation operations over \(\{A_{11}, A_{12}, A_{21},
+A_{22}, 0 \}\) with the constraints that the result is not \(0\). Similarly for the
+second operand with set of submatrices of type \(B_{ij}\). This results in
+\(M_{i}s\) getting pulled from the set \(\{A_{11}, A_{12}, A_{21}, A_{22}\} \times
+\{B_{11}, B_{12}, B_{21}, B_{22}\}\) (with possible integral coefficients).
+</p>
 
-</pre>
+<p>
+One way to proceed from here is to use the products \(A_{i}B_{j}\) to represent
+the desired result (see \ref{eq:simple}) in a matrix as shown below:
+</p>
+
+<aside>
+<p>
+This reminds me, we need a <i>shape checker</i> for matrices in Python in the spirit
+of mypy. I wonder how useful other users deem it.
+</p>
+</aside>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">Output 4x16</span>
-<span style="color: #5E81AC;">[</span><span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">]</span>,
- <span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">]</span>,
- <span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #BF616A;">]</span>,
- <span style="color: #BF616A;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">]</span><span style="color: #5E81AC;">]</span>
+<pre class="src src-sage"><span style="color: #BF616A;">import</span> numpy <span style="color: #BF616A;">as</span> np
+<span style="color: #7b87a0; font-style: italic;"># </span><span style="color: #7b87a0; font-style: italic;">Shape 4 (C) x 16 (A x B)</span>
+<span style="color: #EBCB8B;">output</span> = np.array<span style="color: #5E81AC;">(</span><span style="color: #BF616A;">[</span><span style="color: #B48EAD;">[</span><span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+                   <span style="color: #B48EAD;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+                   <span style="color: #B48EAD;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #B48EAD;">]</span>,
+                   <span style="color: #B48EAD;">[</span><span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #B48EAD;">]</span><span style="color: #BF616A;">]</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
 <p>
-The notebook thing gives a kind of metric to optimize against. One way is to do
-the following
+For the transformation from \(M_i\) to the output (represented in a way)
+</p>
+
+<p>
+TODO. <i>Mess ahead</i>.
 </p>
 
 <div class="org-src-container">
@@ -366,6 +462,18 @@ the following
 np.linalg.norm<span style="color: #5E81AC;">(</span>X, <span style="color: #9c91e4; font-weight: bold;">2</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
+
+<p>
+Constraint the rows of Y to be a defined thing. Each row in Y can be written
+as the (flattened) outer product of [a b c d] and [x y w z]. Here the first
+vector represents the As and second the Bs. In both these vectors, there
+should be at least 1 and at most 2 values active (active meaning non zero; 1
+or -1).
+</p>
+
+<p>
+For X, we need at least one item active in each row.
+</p>
 
 <p>
 Doing that outer things gives
@@ -382,6 +490,35 @@ Doing that outer things gives
 </pre>
 </div>
 </div>
+</div>
+
+<div id="outline-container-orge624e13" class="outline-2">
+<h2 id="orge624e13">Better solutions</h2>
+<div class="outline-text-2" id="text-orge624e13">
+<p>
+Keeping the obviously better solution aside for a moment, we have a lot
+possibilities of elegance even in the search. From the top of my head, there are
+the following two:
+</p>
+
+<ol class="org-ol">
+<li>Start with a <i>correct</i> output representation and expand the terms so as to
+create a valid solution at each step. This needs to go on til we get the
+desired amount of shared terms.</li>
+<li>Generate solution with less constraints and verify the correctness with a
+symbolic system like sagemath or proof system like coq.</li>
+</ol>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">This is required for matrices</div></div>
+
+
+</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
