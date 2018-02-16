@@ -3,4 +3,4 @@
 
 * Pages in this section
 
-- [[./grouping/index.org][Evolution]]
+- [[./grouping/index.org][Grouping]]

@@ -1,4 +1,4 @@
-#+TITLE: Today I Learned  /in Emacs/
+#+TITLE: Today I Learned /in Emacs/
 #+SETUPFILE: ../assets/export.setup
 
 /Today I learned, Emacs version. More of a mini blog. Inspired by [[https://github.com/jbranchaud/til][jbranchaud/til]]./
