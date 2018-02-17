@@ -270,7 +270,8 @@ CLOSED: [2018-02-08 Thu 13:20]
 
 As I probably said earlier, self help books usually tend to work. I needed a
 reminder to get back to my pre undergrad flow (yes; I wasted around 4 + 2 years)
-and got that here.
+and got that here. Nothing that you can't get anywhere else, but this might work
+also.
 
 * Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
 :PROPERTIES:
