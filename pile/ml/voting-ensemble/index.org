@@ -1,5 +1,5 @@
 #+TITLE: Voting Ensemble
-#+SETUPFILE: ../assets/export.setup
+#+SETUPFILE: ../../assets/export.setup
 
 #+BEGIN_QUOTE
 This is a test notebook for trying out sagemath features
