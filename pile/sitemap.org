@@ -13,6 +13,7 @@
   - [[file:misc/desktop.org][Desktop]]
   - [[file:misc/employment.org][Employment Summary]]
 - [[file:ml/index.org][Machine Learning]]
+  - [[file:ml/learning/index.org][Breaking down /Learning/]]
   - [[file:ml/voting-ensemble/index.org][Voting Ensemble]]
 - [[file:programming/index.org][Programming]]
   - [[file:programming/languages.org][Language Exploration]]

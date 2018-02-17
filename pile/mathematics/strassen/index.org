@@ -95,7 +95,7 @@ output = np.array([[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 
 For the transformation from $M_i$ to the output (represented in a way)
 
-TODO. /Mess ahead/.
+TODO. /Mess ahead/. Fix individual generation, randomization and mixing.
 
 #+BEGIN_SRC sage :session :eval never-export :exports both :results output
 import numpy as np
