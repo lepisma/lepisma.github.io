@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-16 Fri 01:13 -->
+<!-- 2018-02-17 Sat 21:23 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Grouping</title>
@@ -178,6 +178,40 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -248,7 +282,11 @@ for the JavaScript code in this tag.
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="preamble" class="status">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="/pile"> HOME </a>
+</div><div id="preamble" class="status">
 <header>
   <div class='site-title'>
     <a href='/'>
@@ -267,44 +305,42 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-02-15 Thu 10:21
+    Last modified:  2018-02-17 Sat 21:23
   </div>
   <h1>Grouping</h1>
 </div>
 </div>
 <div id="content">
-<header>
-<h1 class="title">Grouping</h1>
-</header><nav id="table-of-contents">
+<nav id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf81f03f">1. Introduction</a></li>
-<li><a href="#org773286c">2. Evolutionary Algorithms</a>
+<li><a href="#orgf81f03f">Introduction</a></li>
+<li><a href="#org773286c">Evolutionary Algorithms</a>
 <ul>
-<li><a href="#org67c4821">2.1. Mutation</a></li>
-<li><a href="#orgd10c51f">2.2. Crossover</a></li>
+<li><a href="#org67c4821">Mutation</a></li>
+<li><a href="#orgd2b2cd8">Crossover</a></li>
 </ul>
 </li>
-<li><a href="#org4e31b26">3. Generalization in EAs</a></li>
-<li><a href="#org0bd6cd3">4. Problem Setting</a>
+<li><a href="#org4e31b26">Generalization in EAs</a></li>
+<li><a href="#org0bd6cd3">Problem Setting</a>
 <ul>
-<li><a href="#org70c457e">4.1. Population Dynamics</a></li>
+<li><a href="#org70c457e">Population Dynamics</a></li>
 </ul>
 </li>
-<li><a href="#orga119bf7">5. &delta;-landscape</a>
+<li><a href="#orga119bf7">&delta;-landscape</a>
 <ul>
-<li><a href="#org0809c10">5.1. \(\delta = 0\)</a></li>
-<li><a href="#orgeddf9f5">5.2. \(\delta \ne 0\)</a></li>
+<li><a href="#org0809c10">\(\delta = 0\)</a></li>
+<li><a href="#orgeddf9f5">\(\delta \ne 0\)</a></li>
 </ul>
 </li>
-<li><a href="#org77d12a3">6. Improving generalization</a>
+<li><a href="#org77d12a3">Improving generalization</a>
 <ul>
-<li><a href="#orga76279a">6.1. Changing slope by grouping</a></li>
-<li><a href="#orgd2b2cd8">6.2. Crossover</a></li>
+<li><a href="#orga76279a">Changing slope by grouping</a></li>
+<li><a href="#org5cf1fdd">Crossover</a></li>
 </ul>
 </li>
-<li><a href="#org37a220d">7. Discussion and Conclusions</a></li>
+<li><a href="#org37a220d">Discussion and Conclusions</a></li>
 </ul>
 </div>
 </nav>
@@ -325,8 +361,8 @@ speed becomes viable.
 \end{abstract}
 
 <div id="outline-container-orgf81f03f" class="outline-2">
-<h2 id="orgf81f03f"><span class="section-number-2">1</span> Introduction</h2>
-<div class="outline-text-2" id="text-1">
+<h2 id="orgf81f03f">Introduction</h2>
+<div class="outline-text-2" id="text-orgf81f03f">
 <p>
 For many optimization problems where gradient information is unavailable (or
 costly) and there are many local optima values, a common approach is to use a
@@ -399,8 +435,8 @@ on evolution. &sect; 6 discusses methods to control the landscape by forming gro
 </div>
 
 <div id="outline-container-org773286c" class="outline-2">
-<h2 id="org773286c"><span class="section-number-2">2</span> Evolutionary Algorithms</h2>
-<div class="outline-text-2" id="text-2">
+<h2 id="org773286c">Evolutionary Algorithms</h2>
+<div class="outline-text-2" id="text-org773286c">
 <p>
 Evolutionary algorithms (EAs) are general purpose global optimization techniques
 inspired by biological evolution. They are population based iterative algorithms
@@ -448,8 +484,8 @@ The next two subsections define the two common GA operators, <i>mutation</i> and
 </div>
 
 <div id="outline-container-org67c4821" class="outline-3">
-<h3 id="org67c4821"><span class="section-number-3">2.1</span> Mutation</h3>
-<div class="outline-text-3" id="text-2-1">
+<h3 id="org67c4821">Mutation</h3>
+<div class="outline-text-3" id="text-org67c4821">
 <p>
 Mutation refers to random changes in genotypes with some probability (<i>mutation
 rate</i>) in the evolution process. Its implementation depends on how the solution
@@ -468,9 +504,9 @@ the grouping of current gene pool.
 </div>
 </div>
 
-<div id="outline-container-orgd10c51f" class="outline-3">
-<h3 id="orgd10c51f"><span class="section-number-3">2.2</span> Crossover</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orgd2b2cd8" class="outline-3">
+<h3 id="orgd2b2cd8">Crossover</h3>
+<div class="outline-text-3" id="text-orgd2b2cd8">
 <p>
 Along with mutation, crossover is one of the primitive operators used in Genetic
 algorithm. The specifics of this operator might be different based on the
@@ -516,8 +552,8 @@ and the resulting segments are swapped to produce the children.}
 </div>
 
 <div id="outline-container-org4e31b26" class="outline-2">
-<h2 id="org4e31b26"><span class="section-number-2">3</span> Generalization in EAs</h2>
-<div class="outline-text-2" id="text-3">
+<h2 id="org4e31b26">Generalization in EAs</h2>
+<div class="outline-text-2" id="text-org4e31b26">
 <p>
 Generalization here means the ability of the algorithm (e.g. an EA which learns
 optimal parameters for a non-linear classifier) to work well beyond the data set
@@ -559,8 +595,8 @@ will come back to later.
 </div>
 
 <div id="outline-container-org0bd6cd3" class="outline-2">
-<h2 id="org0bd6cd3"><span class="section-number-2">4</span> Problem Setting</h2>
-<div class="outline-text-2" id="text-4">
+<h2 id="org0bd6cd3">Problem Setting</h2>
+<div class="outline-text-2" id="text-org0bd6cd3">
 <p>
 Instead of working in a batch or online setting looking for a single solution,
 we can think of evolution as trying to solve an <i>episodic survival problem</i>. The
@@ -634,8 +670,8 @@ constraints that we are going to work with.
 </div>
 
 <div id="outline-container-org70c457e" class="outline-3">
-<h3 id="org70c457e"><span class="section-number-3">4.1</span> Population Dynamics</h3>
-<div class="outline-text-3" id="text-4-1">
+<h3 id="org70c457e">Population Dynamics</h3>
+<div class="outline-text-3" id="text-org70c457e">
 <p>
 We adopt the selfish gene worldview <a class='org-ref-reference' href="#williams1997adaptation">williams1997adaptation</a> for our problem.
 This means that in our world, genes are the fundamental units of selection and,
@@ -701,8 +737,8 @@ explained later.
 </div>
 
 <div id="outline-container-orga119bf7" class="outline-2">
-<h2 id="orga119bf7"><span class="section-number-2">5</span> &delta;-landscape</h2>
-<div class="outline-text-2" id="text-5">
+<h2 id="orga119bf7">&delta;-landscape</h2>
+<div class="outline-text-2" id="text-orga119bf7">
 <p>
 We assume a mutation model similar to <a class='org-ref-reference' href="#wright1932roles">wright1932roles</a> which effectively
 considers mutations of a gene as a set of its neighbours which are reachable in
@@ -721,8 +757,8 @@ or \(p - 1\) (\(s \rightarrow s - \delta\)).
 </div>
 
 <div id="outline-container-org0809c10" class="outline-3">
-<h3 id="org0809c10"><span class="section-number-3">5.1</span> \(\delta = 0\)</h3>
-<div class="outline-text-3" id="text-5-1">
+<h3 id="org0809c10">\(\delta = 0\)</h3>
+<div class="outline-text-3" id="text-org0809c10">
 <p>
 Consider a case with \(\delta = 0\), i.e. the uniform fitness landscape. In this
 case, mutation doesn't matter since all locations in the landscape are
@@ -754,8 +790,8 @@ individuals at each evolution step.
 </div>
 
 <div id="outline-container-orgeddf9f5" class="outline-3">
-<h3 id="orgeddf9f5"><span class="section-number-3">5.2</span> \(\delta \ne 0\)</h3>
-<div class="outline-text-3" id="text-5-2">
+<h3 id="orgeddf9f5">\(\delta \ne 0\)</h3>
+<div class="outline-text-3" id="text-orgeddf9f5">
 <p>
 Lets assume \(\delta > 0\). In this case, starting with a population of size \(n\)
 concentrated at a position \(p\) with survival probability \(s\), a time step will
@@ -849,8 +885,8 @@ spots considering all factors to be the same.
 </div>
 
 <div id="outline-container-org77d12a3" class="outline-2">
-<h2 id="org77d12a3"><span class="section-number-2">6</span> Improving generalization</h2>
-<div class="outline-text-2" id="text-6">
+<h2 id="org77d12a3">Improving generalization</h2>
+<div class="outline-text-2" id="text-org77d12a3">
 <p>
 Coming back to the question of generalization, its important to restate two
 near obvious facts here:
@@ -885,8 +921,8 @@ improve generalization?
 </div>
 
 <div id="outline-container-orga76279a" class="outline-3">
-<h3 id="orga76279a"><span class="section-number-3">6.1</span> Changing slope by grouping</h3>
-<div class="outline-text-3" id="text-6-1">
+<h3 id="orga76279a">Changing slope by grouping</h3>
+<div class="outline-text-3" id="text-orga76279a">
 <p>
 Although the value of &delta; for the <i>actual</i> landscape can't be changed, the
 value of &delta; for the <i>apparent</i> landscape can be changed by appropriate
@@ -906,9 +942,9 @@ controlled. A higher \(k\) value provides more flatness and thus adds inertia.
 </div>
 </div>
 
-<div id="outline-container-orgd2b2cd8" class="outline-3">
-<h3 id="orgd2b2cd8"><span class="section-number-3">6.2</span> Crossover</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-org5cf1fdd" class="outline-3">
+<h3 id="org5cf1fdd">Crossover</h3>
+<div class="outline-text-3" id="text-org5cf1fdd">
 <p>
 Crossover acts as a technique to swap chunks of genes among organisms.
 Considering 'organisms' as groups of genes we create in this case, crossover can
@@ -923,8 +959,8 @@ increasing the \(k\) value.
 </div>
 
 <div id="outline-container-org37a220d" class="outline-2">
-<h2 id="org37a220d"><span class="section-number-2">7</span> Discussion and Conclusions</h2>
-<div class="outline-text-2" id="text-7">
+<h2 id="org37a220d">Discussion and Conclusions</h2>
+<div class="outline-text-2" id="text-org37a220d">
 <p>
 The main purpose of this exploration is to have an understanding of effect of
 grouping in a setting which is closer to real evolution than the usual evolution

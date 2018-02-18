@@ -16,3 +16,8 @@ learning.
   representation capable of having a interpretation itself.
 - Undirected weighted graphs as experience encoder and type systems as domain
   specific decoders.
+
+
+* Bib                                                              :noexport:
+- Theoretical impediments... Pearl (2018)
+- Intelligence without representation, Rodney A Brooks

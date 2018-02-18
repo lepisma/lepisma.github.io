@@ -1,5 +1,5 @@
 #+TITLE: Grouping
-#+SETUPFILE: ../assets/export.setup
+#+SETUPFILE: ../../assets/export.setup
 
 #+LATEX_CLASS: article
 #+LATEX_HEADER: \usepackage[final,nonatbib]{nips_2017}

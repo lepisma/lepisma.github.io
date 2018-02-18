@@ -494,7 +494,7 @@ header > div {
 
 .site-header nav a {
   color: #7b7b7b;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase; }
@@ -742,6 +742,29 @@ blockquote {
     color: #7b7b7b;
     text-transform: uppercase; }
 
+.org-ref-bib-h1 {
+  margin-top: 70px;
+  padding-top: 30px;
+  border-width: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #efefef;
+  font-family: "Open Sans";
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444; }
+
+.org-ref-bib {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444; }
+  .org-ref-bib li > b {
+    font-weight: normal; }
+
 pre.src, pre.example {
   border-width: 0;
   border-left-style: solid;
@@ -804,7 +827,7 @@ img.zoomTarget:hover {
   #footnotes h2.footnotes {
     margin-top: 0;
     margin-bottom: 30px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 18px;
     letter-spacing: 5px;
     display: none; }

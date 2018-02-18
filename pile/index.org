@@ -4,8 +4,8 @@
 This is a personal wiki. Most of the pages here are still in transitory phase.
 Gradually, as I move files in here, it will take a more hybrid wiki-blog form.
 
-A list of all pages currently up here is in [[./allpages.org][all the pages]]. Here are the sections
-in alphabetical order:
+A list of all pages currently up here is in [[./allpages.org][all the pages]] [fn::Pages from my old
+blog are [[https://lepisma.github.io/archive][here]].]. Here are the sections in alphabetical order:
 
 - [[./emacs/][Emacs]]
 - [[./evolution/][Evolution]]
