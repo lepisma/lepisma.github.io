@@ -806,7 +806,8 @@ img.zoomTarget:hover {
     margin-bottom: 30px;
     font-family: 'Open Sans';
     font-size: 18px;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    display: none; }
   #footnotes .footnum {
     color: #000; }
 
