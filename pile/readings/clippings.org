@@ -17,6 +17,135 @@ readings.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+writing a thesis is like cooking a pig: nothing goes to waste.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Be humble and prudent before opening your mouth, but once you open it, be
+dignified and proud.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Do not play the solitary genius.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+writing. Do not play the solitary genius.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Your thesis exists to prove the hypothesis that you devised at the outset, not
+to show the breadth of your knowledge.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But the language of the thesis is a metalanguage, that is, a language that
+speaks of other languages.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If there were exhaustive rules, we would all be great writers.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+This is academic humility: the knowledge that anyone can teach us something.
+Perhaps this is because we are so clever that we succeed in having someone less
+skilled than us teach us something; or because even someone who does not seem
+very clever to us has some hidden skills; or also because someone who inspires
+us may not inspire others. The reasons are many.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Do not trust those who say that you must respect books. You respect books by
+using them, not leaving them alone.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Beware the “alibi of photocopies”!
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I am talking of the “secret title” of your thesis, the one that then usually
+appears as the subtitle.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In other words, it is no excuse to say, “I live in a small city, I do not have
+the books, I do not know where to start, and nobody is helping me.”
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“If in company you don’t pee, a spy or a thief you may be.”
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The more isolated and disregarded the library, the more the librarian is
+consumed with sorrow for its underestimation. A person who asks for help makes
+the librarian happy.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The “thesis neurosis” has begun: the student abandons the thesis, returns to it,
+feels unfulfilled, loses focus, and uses his thesis as an alibi to avoid other
+challenges in his life that he is too cowardly to address. This student will
+never graduate.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But a thesis that is too broad cannot be understood, and therefore is always an
+act of pride.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+With time, a writer becomes more astute and knowledgeable, but how he uses his
+knowledge will always depend on how he originally researched the many things he
+did not know.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It would be a society in which a piece of paper was not required to find
+employment or to obtain a promotion in the public sector, and a university
+graduate would not surpass other qualified applicants simply because the
+graduate had earned a laurea.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Ironically, jobs are actually easier to enjoy than free time, because like flow
 activities they have built-in goals, feedback rules, and challenges, all of
 which encourage one to become involved in one’s work, to concentrate and lose
