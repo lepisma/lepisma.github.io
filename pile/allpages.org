@@ -1,7 +1,8 @@
 #+TITLE: All the pages
 #+SETUPFILE: ./assets/export.setup
 
-Here are all the pages in this wiki. This sitemap reads a directory's ~index.org~
-as a parent and other ~*.org~ files as children.
+Here are all the pages in this wiki [fn::Pages from my old blog are [[https://lepisma.github.io/archive][here]].]. This
+sitemap reads a directory's ~index.org~ as a parent and other ~*.org~ files as
+children.
 
 #+INCLUDE: ./sitemap.org :lines "3-"

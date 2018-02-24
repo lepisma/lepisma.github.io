@@ -3,8 +3,8 @@
 #+TODO: READING NEXT | READ
 
 Books to read. This is a rather large list with items from my old Goodreads
-account. Most likely I will /not/ be reading all of these because the list
-increases with time.
+account. Most likely I will /not/ be reading all of these because this list grows
+faster than I read.
 
 /Sorting is based on date added (recent first)/
 
@@ -51,7 +51,7 @@ CLOSED: [2018-01-24 Wed 22:59]
 :AMAZON:   https://www.amazon.com/Mastering-Techniques-Teaching-Joseph-Lowman/dp/078795568X
 :END:
 
-* The Princeton Companion to Mathematics
+* READING The Princeton Companion to Mathematics
 :PROPERTIES:
 :AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
 :ADDED:    <2018-01-08>
