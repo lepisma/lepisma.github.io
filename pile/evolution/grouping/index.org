@@ -8,7 +8,6 @@
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{biblatex}
 #+LATEX_HEADER: \usepackage{subcaption}
-#+LATEX_HEADER: \addbibresource{~/library.bib}
 #+LATEX_HEADER: \author{Abhinav Tushar\\
 #+LATEX_HEADER:  Department of Computer Science\\
 #+LATEX_HEADER:  University of Massachusetts, Amherst\\
@@ -498,4 +497,4 @@ understanding more of whats happening. Some particularly interesting ones are:
   in environment, a large mass of diversity is wiped out, putting selection
   pressure for having robustness.
 
-bibliography:~/library.bib
+bibliography:./references.bib

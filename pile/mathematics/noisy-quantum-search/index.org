@@ -6,7 +6,6 @@
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage[usenames, dvipsnames]{color}
 #+LATEX_HEADER: \usepackage{subcaption}
-#+LATEX_HEADER: \addbibresource{~/library.bib}
 #+LATEX_HEADER: \definecolor{plotblue}{RGB}{97,159,202}
 #+LATEX_HEADER: \definecolor{plotpurple}{RGB}{157,94,145}
 
@@ -367,7 +366,7 @@ Looking forward, some other questions are:
   might end up taking enough effort to mute the advantages. How feasible is it
   to build a controllable oracle?
 
-bibliography:~/library.bib
+bibliography:./references.bib
 
 * Scratchpad                                                       :noexport:
 - What about meta search over oracle /and/ data
