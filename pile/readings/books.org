@@ -3733,12 +3733,23 @@ CLOSED: [2015-05-14]
 :GOODREADS: https://www.goodreads.com/book/show/13132815
 :END:
 
-* READING How to Write a Thesis
+* READ How to Write a Thesis
+CLOSED: [2018-02-24 Sat 13:00]
 :PROPERTIES:
 :AUTHOR:    Umberto Eco, Caterina Mongiat Farina, Geoff Farina, Francesco Erspamer
 :ADDED:     <2015-05-02>
 :GOODREADS: https://www.goodreads.com/book/show/23461426
 :END:
+
+As is already iterated in the translators' notes, this book is pretty outdated
+as far as the specifics are concerned. Nevertheless, this presents a good set of
+approaches on organizing and executing research. Many of these are already
+popular. In that case:
+
+#+BEGIN_QUOTE
+My book can then serve as a reminder, bringing to awareness what many of you
+have already absorbed without realizing it.
+#+END_QUOTE
 
 * READ What If?: Serious Scientific Answers to Absurd Hypothetical Questions
 CLOSED: [2015-05-07]
