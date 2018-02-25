@@ -7,6 +7,13 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *magic file names*
+
+  You can define specific /handlers/ for specific file name patterns which can
+  then override the behavior in interesting ways. [[https://bitbucket.org/jpkotta/openwith][openwith]] exploit this by
+  associating external programs with specific file formats. This capability
+  might allow creating hacks like [[https://github.com/rasguanabana/ytfs][ytfs]] in elisp. Documentation is [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Magic-File-Names.html][here]].
+
 + *reader macros*
 
   Unlike common lisp, the reader for Elisp is not open for extension (in elisp
