@@ -9,6 +9,28 @@ This page is a work in progress
 notes. I am realizing their importance /now/ and will be working on this page
 fairly regularly.
 
+** TODO 2010 - Physics, topology, logic and computation: a Rosetta Stone
+ :PROPERTIES:
+  :Custom_ID: baez2010physics
+  :AUTHOR: Baez \& Stay
+  :JOURNAL: 
+  :YEAR: 2010
+  :VOLUME: 
+  :PAGES: 95--172
+  :DOI: 
+  :URL: 
+ :END:
+
+cite:baez2010physics
+
+Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci
+commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget,
+lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac
+felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui
+dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet
+quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet
+tortor.  Nam euismod tellus id erat.
+
 ** TODO 1997 - A decision-theoretic generalization of on-line learning and an application to boosting
  :PROPERTIES:
   :Custom_ID: freund1997decision
@@ -20,6 +42,8 @@ fairly regularly.
   :DOI: 
   :URL: 
  :END:
+
+cite:freund1997decision
 
 Hello world Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
 Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean
