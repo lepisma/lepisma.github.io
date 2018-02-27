@@ -1,15 +1,11 @@
 # Site settings
 title: abhinav tushar
-email: https://lepisma.github.io/about#contact
+email: https://keybase.io/lepisma
+github: https://github.com/lepisma
 author: Abhinav Tushar
 description: Personal Blog
 baseurl: ""
 url: https://lepisma.github.io/
-
-links:
-  github: https://github.com/lepisma
-  lastfm: https://last.fm/user/AbhinavTushar
-  keybase: https://keybase.io/lepisma
 
 # Build settings
 livereload: true
