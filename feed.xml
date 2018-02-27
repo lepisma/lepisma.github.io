@@ -3,8 +3,8 @@
   <channel>
     <title>abhinav tushar</title>
     <description>Personal Blog</description>
-    <link>https://lepisma.github.io//</link>
-    <atom:link href="https://lepisma.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Blog 🡢 wiki</title>
@@ -67,8 +67,8 @@ needed), but many ideas are fundamentally evolving and they need a lot more than
 just a bunch of edits to tell a consistent story.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Jan 2018 00:00:00 -0500</pubDate>
-        <link>https://lepisma.github.io//2018/01/27/blog-to-wiki/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2018/01/27/blog-to-wiki/</guid>
+        <link>http://localhost:4000/2018/01/27/blog-to-wiki/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/27/blog-to-wiki/</guid>
       </item>
     
       <item>
@@ -367,8 +367,8 @@ composition. Examples from homepage&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 20 Dec 2017 00:00:00 -0500</pubDate>
-        <link>https://lepisma.github.io//2017/12/20/fancy-lambdas/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/12/20/fancy-lambdas/</guid>
+        <link>http://localhost:4000/2017/12/20/fancy-lambdas/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/20/fancy-lambdas/</guid>
       </item>
     
       <item>
@@ -509,8 +509,8 @@ and image previews (&lt;code class=&quot;highlighter-rouge&quot;&gt;org-image-to
 is the snapshot of my Emacs dotfiles with config related to this post.&lt;/p&gt;
 </description>
         <pubDate>Sat, 28 Oct 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2017/10/28/ricing-org-mode/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/10/28/ricing-org-mode/</guid>
+        <link>http://localhost:4000/2017/10/28/ricing-org-mode/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/28/ricing-org-mode/</guid>
       </item>
     
       <item>
@@ -707,8 +707,8 @@ potential created by the similarity of inner and outer representation. And its
 this smoothness, rather than speed, which really clicks me.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Aug 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2017/08/25/keyboard/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/08/25/keyboard/</guid>
+        <link>http://localhost:4000/2017/08/25/keyboard/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/25/keyboard/</guid>
       </item>
     
       <item>
@@ -754,8 +754,8 @@ experimenting with it but I believe it would fit right in with my needs and
 would quickly become what I want it to be.&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Jun 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2017/06/29/leaving-goodreads/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/06/29/leaving-goodreads/</guid>
+        <link>http://localhost:4000/2017/06/29/leaving-goodreads/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/29/leaving-goodreads/</guid>
       </item>
     
       <item>
@@ -917,8 +917,8 @@ time map follows the same idea.&lt;/p&gt;
 &lt;/script&gt;
 </description>
         <pubDate>Sun, 25 Jun 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2017/06/25/simple-time-maps/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/06/25/simple-time-maps/</guid>
+        <link>http://localhost:4000/2017/06/25/simple-time-maps/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/25/simple-time-maps/</guid>
       </item>
     
       <item>
@@ -1170,8 +1170,8 @@ using/going to use but just pure beauty. Probably it will stay that way for a
 long time.&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 May 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2017/05/15/syntactical-macros/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/05/15/syntactical-macros/</guid>
+        <link>http://localhost:4000/2017/05/15/syntactical-macros/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/15/syntactical-macros/</guid>
       </item>
     
       <item>
@@ -1280,8 +1280,8 @@ projects under &lt;code class=&quot;highlighter-rouge&quot;&gt;active&lt;/code&g
 &lt;p&gt;This should work better. Probably.&lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Mar 2017 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2017/03/15/projects/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/03/15/projects/</guid>
+        <link>http://localhost:4000/2017/03/15/projects/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/15/projects/</guid>
       </item>
     
       <item>
@@ -1532,8 +1532,8 @@ also
 &lt;a href=&quot;https://www.jetbrains.com/help/pycharm/2016.3/type-hinting-in-pycharm.html&quot;&gt;supports&lt;/a&gt; it.&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Mar 2017 00:00:00 -0500</pubDate>
-        <link>https://lepisma.github.io//2017/03/05/optional-typing/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2017/03/05/optional-typing/</guid>
+        <link>http://localhost:4000/2017/03/05/optional-typing/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/05/optional-typing/</guid>
       </item>
     
       <item>
@@ -1711,8 +1711,8 @@ try these &lt;a href=&quot;https://github.com/dfeich/org-babel-examples&quot;&gt
 the notebook I used.&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 Nov 2016 00:00:00 -0400</pubDate>
-        <link>https://lepisma.github.io//2016/11/02/org-babel/</link>
-        <guid isPermaLink="true">https://lepisma.github.io//2016/11/02/org-babel/</guid>
+        <link>http://localhost:4000/2016/11/02/org-babel/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/02/org-babel/</guid>
       </item>
     
   </channel>
