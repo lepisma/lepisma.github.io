@@ -9,19 +9,12 @@ This page is a work in progress
 notes. I am realizing their importance /now/ and will be working on this page
 fairly regularly.
 
-** TODO 2010 - Physics, topology, logic and computation: a Rosetta Stone
+** Physics, topology, logic and computation: a Rosetta Stone
  :PROPERTIES:
   :Custom_ID: baez2010physics
   :AUTHOR: Baez \& Stay
-  :JOURNAL: 
   :YEAR: 2010
-  :VOLUME: 
-  :PAGES: 95--172
-  :DOI: 
-  :URL: 
  :END:
-
-cite:baez2010physics
 
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci
 commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget,
@@ -31,7 +24,7 @@ dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet
 quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet
 tortor.  Nam euismod tellus id erat.
 
-** TODO 1997 - A decision-theoretic generalization of on-line learning and an application to boosting
+** A decision-theoretic generalization of on-line learning and an application to boosting
  :PROPERTIES:
   :Custom_ID: freund1997decision
   :AUTHOR: Freund \& Schapire
@@ -39,11 +32,7 @@ tortor.  Nam euismod tellus id erat.
   :YEAR: 1997
   :VOLUME: 55
   :PAGES: 119--139
-  :DOI: 
-  :URL: 
  :END:
-
-cite:freund1997decision
 
 Hello world Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
 Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean
@@ -56,7 +45,7 @@ consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.
 Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum,
 tellus tellus lacinia purus, et dictum nunc justo sit amet elit
 
-** 2009 - The Genuine Sieve of Eratosthenes
+** The Genuine Sieve of Eratosthenes
  :PROPERTIES:
   :Custom_ID: o2009genuine
   :AUTHOR: O'NEILL
