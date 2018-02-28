@@ -55,3 +55,30 @@ euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
 consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.
 Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum,
 tellus tellus lacinia purus, et dictum nunc justo sit amet elit
+
+** 2009 - The Genuine Sieve of Eratosthenes
+ :PROPERTIES:
+  :Custom_ID: o2009genuine
+  :AUTHOR: O'NEILL
+  :JOURNAL: Journal of Functional Programming
+  :YEAR: 2009
+  :VOLUME: 19
+  :PAGES: 95--106
+ :END:
+
+This talks about a functional implementation of Sieve of Eratosthenes.
+Specifically it debunks the following incorrect implementation:
+
+#+BEGIN_SRC haskell
+primes = sieve [2..]
+sieve (p : xs) = p : sieve [x | x <− xs, x `mod` p > 0]
+#+END_SRC
+
+Then we see correct functional implementations with neat tricks made possible
+due to laziness of Haskell. Although slower, there is a list based
+implementation by Bird mentioned in the /Epilogue/ which is pretty readable (and
+elegant) and follows very closely the following description:
+
+#+BEGIN_SRC
+primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
+#+END_SRC
