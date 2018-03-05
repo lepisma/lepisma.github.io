@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-24 Sat 01:51 -->
+<!-- 2018-03-05 Mon 01:53 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noisy Quantum Search</title>
@@ -315,22 +315,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orge5d8e08">Introduction</a></li>
-<li><a href="#orgac24f8c">Imperfect oracle</a>
+<li><a href="#org3815fc5">Introduction</a></li>
+<li><a href="#orgfbb9c7c">Imperfect oracle</a>
 <ul>
-<li><a href="#org1a7ddf3">Error in \(M/2\) items</a>
+<li><a href="#org7caf69d">Error in \(M/2\) items</a>
 <ul>
-<li><a href="#orgd56edfd">Perfect oracle</a></li>
-<li><a href="#orge4b6cd2">Imperfect oracle</a></li>
+<li><a href="#org5cfd375">Perfect oracle</a></li>
+<li><a href="#orgd5e50ca">Imperfect oracle</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org420b869">Noisy Oracle</a></li>
-<li><a href="#org0758a45">Conclusions and Future Work</a></li>
+<li><a href="#org5907235">Noisy Oracle</a></li>
+<li><a href="#org1723272">Conclusions and Future Work</a></li>
 </ul>
 </div>
 </nav>
+<div id='breadcrumbs'><a href='../../allpages.html'>≡ index</a> / <a href='../../mathematics/index.html'>mathematics</a> / noisy-quantum-search</div>
 <blockquote>
 <p>
 This page is a work in progress
@@ -345,9 +346,9 @@ probability of failure. We also explore noisy oracle empirically and its possibl
 use for selectively picking from marked items.
 \end{abstract}
 
-<div id="outline-container-orge5d8e08" class="outline-2">
-<h2 id="orge5d8e08">Introduction</h2>
-<div class="outline-text-2" id="text-orge5d8e08">
+<div id="outline-container-org3815fc5" class="outline-2">
+<h2 id="org3815fc5">Introduction</h2>
+<div class="outline-text-2" id="text-org3815fc5">
 <p>
 Grover's search <a class='org-ref-reference' href="#grover1996fast">grover1996fast</a> is a quantum search algorithm which provides
 quadratic speedup over classical search algorithms. One of the issues with
@@ -408,9 +409,9 @@ presents some empirical results with a noisy oracle. &sect; 4 concludes the repo
 </div>
 </div>
 
-<div id="outline-container-orgac24f8c" class="outline-2">
-<h2 id="orgac24f8c">Imperfect oracle</h2>
-<div class="outline-text-2" id="text-orgac24f8c">
+<div id="outline-container-orgfbb9c7c" class="outline-2">
+<h2 id="orgfbb9c7c">Imperfect oracle</h2>
+<div class="outline-text-2" id="text-orgfbb9c7c">
 <p>
 The problem we work with is of finding a <i>marked</i> item in a set of \(N\) items. It
 is known that there are \(M\) (\(< N\)) marked items in these \(N\). Marked items are
@@ -453,9 +454,9 @@ cancellations.
 </p>
 </div>
 
-<div id="outline-container-org1a7ddf3" class="outline-3">
-<h3 id="org1a7ddf3">Error in \(M/2\) items</h3>
-<div class="outline-text-3" id="text-org1a7ddf3">
+<div id="outline-container-org7caf69d" class="outline-3">
+<h3 id="org7caf69d">Error in \(M/2\) items</h3>
+<div class="outline-text-3" id="text-org7caf69d">
 <p>
 Consider the usual setting of \(N\) items, \(M\) of which are marked. The aim of the
 search is to find a marked item with high probability. We consider two cases
@@ -538,9 +539,9 @@ expression for \(P_{av}\) we will be working with is:
 \end{align*}
 </div>
 
-<div id="outline-container-orgd56edfd" class="outline-4">
-<h4 id="orgd56edfd">Perfect oracle</h4>
-<div class="outline-text-4" id="text-orgd56edfd">
+<div id="outline-container-org5cfd375" class="outline-4">
+<h4 id="org5cfd375">Perfect oracle</h4>
+<div class="outline-text-4" id="text-org5cfd375">
 <p>
 At time \(t\), the average amplitudes of the marked and unmarked states are:
 </p>
@@ -594,9 +595,9 @@ The last equality follows because sum of all squared amplitudes (probabilities) 
 </div>
 </div>
 
-<div id="outline-container-orge4b6cd2" class="outline-4">
-<h4 id="orge4b6cd2">Imperfect oracle</h4>
-<div class="outline-text-4" id="text-orge4b6cd2">
+<div id="outline-container-orgd5e50ca" class="outline-4">
+<h4 id="orgd5e50ca">Imperfect oracle</h4>
+<div class="outline-text-4" id="text-orgd5e50ca">
 <p>
 Analyzing the second case (with error at time \(t\)), we get the average
 amplitudes of the marked states as:
@@ -676,9 +677,9 @@ measurement is made.
 </div>
 </div>
 
-<div id="outline-container-org420b869" class="outline-2">
-<h2 id="org420b869">Noisy Oracle</h2>
-<div class="outline-text-2" id="text-org420b869">
+<div id="outline-container-org5907235" class="outline-2">
+<h2 id="org5907235">Noisy Oracle</h2>
+<div class="outline-text-2" id="text-org5907235">
 <p>
 A more practical scenario is when we don't know \(M\) or have that much control
 over the oracle. This also is connected to the case of the original problem
@@ -703,9 +704,9 @@ where the \(M\) items are separable depending on the probability of error.
 </div>
 </div>
 
-<div id="outline-container-org0758a45" class="outline-2">
-<h2 id="org0758a45">Conclusions and Future Work</h2>
-<div class="outline-text-2" id="text-org0758a45">
+<div id="outline-container-org1723272" class="outline-2">
+<h2 id="org1723272">Conclusions and Future Work</h2>
+<div class="outline-text-2" id="text-org1723272">
 <p>
 We see that the behavior of Grover's iterations in case of an imperfect oracle
 is dependent on the time of error. More generally the effect of error at time

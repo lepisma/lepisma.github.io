@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-02-27 Tue 22:25 -->
+<!-- 2018-03-05 Mon 01:53 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Note Cards</title>
@@ -258,6 +258,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -283,7 +305,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-02-27 Tue 22:25
+    Last modified:  2018-03-04 Sun 22:09
   </div>
   <h1>Note Cards</h1>
 </div>
@@ -296,9 +318,16 @@ for the JavaScript code in this tag.
 <li><a href="#baez2010physics">Physics, topology, logic and computation: a Rosetta Stone</a></li>
 <li><a href="#freund1997decision">A decision-theoretic generalization of on-line learning and an application to boosting</a></li>
 <li><a href="#o2009genuine">The Genuine Sieve of Eratosthenes</a></li>
+<li><a href="#arora2012multiplicative">The Multiplicative Weights Update Method: a Meta-Algorithm and Applications</a>
+<ul>
+<li><a href="#orgac091ae">Weighted majority</a></li>
+<li><a href="#orgbdcd498">Multiplicative weights</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav>
+<div id='breadcrumbs'><a href='../../allpages.html'>≡ index</a> / <a href='../readings/index.html'>readings</a> / bib-notes</div>
 <blockquote>
 <p>
 This page is a work in progress
@@ -311,8 +340,8 @@ notes. I am realizing their importance <i>now</i> and will be working on this pa
 fairly regularly.
 </p>
 
-<div id="outline-container-orgc4d3d80" class="outline-2">
-<h2 id="baez2010physics"><a id="orgc4d3d80"></a>Physics, topology, logic and computation: a Rosetta Stone</h2>
+<div id="outline-container-orgea47f67" class="outline-2">
+<h2 id="baez2010physics"><a id="orgea47f67"></a>Physics, topology, logic and computation: a Rosetta Stone</h2>
 <div class="outline-text-2" id="text-baez2010physics">
 <pre class="example">
 Custom_ID: baez2010physics
@@ -332,8 +361,8 @@ tortor.  Nam euismod tellus id erat.
 </div>
 </div>
 
-<div id="outline-container-org09da89e" class="outline-2">
-<h2 id="freund1997decision"><a id="org09da89e"></a>A decision-theoretic generalization of on-line learning and an application to boosting</h2>
+<div id="outline-container-orgbf2e320" class="outline-2">
+<h2 id="freund1997decision"><a id="orgbf2e320"></a>A decision-theoretic generalization of on-line learning and an application to boosting</h2>
 <div class="outline-text-2" id="text-freund1997decision">
 <pre class="example">
 Custom_ID: freund1997decision
@@ -359,8 +388,8 @@ tellus tellus lacinia purus, et dictum nunc justo sit amet elit
 </div>
 </div>
 
-<div id="outline-container-orgc4b3d73" class="outline-2">
-<h2 id="o2009genuine"><a id="orgc4b3d73"></a>The Genuine Sieve of Eratosthenes</h2>
+<div id="outline-container-orga516ce5" class="outline-2">
+<h2 id="o2009genuine"><a id="orga516ce5"></a>The Genuine Sieve of Eratosthenes</h2>
 <div class="outline-text-2" id="text-o2009genuine">
 <pre class="example">
 Custom_ID: o2009genuine
@@ -392,6 +421,44 @@ elegant) and follows very closely the following description:
 <pre class="example">
 primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 </pre>
+</div>
+</div>
+
+<div id="outline-container-orgdd057dd" class="outline-2">
+<h2 id="arora2012multiplicative"><a id="orgdd057dd"></a>The Multiplicative Weights Update Method: a Meta-Algorithm and Applications</h2>
+<div class="outline-text-2" id="text-arora2012multiplicative">
+<pre class="example">
+Custom_ID: arora2012multiplicative
+AUTHOR: Arora, Hazan \& Kale
+JOURNAL: Theory of Computing
+YEAR: 2012
+VOLUME: 8
+PAGES: 121--164
+</pre>
+</div>
+
+<div id="outline-container-orgac091ae" class="outline-3">
+<h3 id="orgac091ae">Weighted majority</h3>
+<div class="outline-text-3" id="text-orgac091ae">
+<p>
+Update rule \(w_i(t+1) = (1 - \eta)w_i(t)\) for each wrong decision. Loss is
+binary. The bound here is:
+</p>
+
+<p>
+\(L_E(T) \le 2(1 + \eta)L_i(T) + \frac{2 \ln{n}}{\eta}\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbdcd498" class="outline-3">
+<h3 id="orgbdcd498">Multiplicative weights</h3>
+<div class="outline-text-3" id="text-orgbdcd498">
+<p>
+Here the losses are not binary but in [-1, 1]. The update rule \(w_i(t+1) =
+w_i(t) (1 - \eta m_i(t))\). If \(\eta \le 1/2\), then
+</p>
+</div>
 </div>
 </div>
 </div>
