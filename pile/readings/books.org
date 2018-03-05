@@ -4499,7 +4499,8 @@ CLOSED: [2015-02-08]
 :GOODREADS: https://www.goodreads.com/book/show/665625
 :END:
 
-* Neurocomic
+* READ Neurocomic
+CLOSED: [2018-03-02 Fri 00:05]
 :PROPERTIES:
 :AUTHOR:    Hana Ros, Matteo Farinella
 :ADDED:     <2015-01-15>
