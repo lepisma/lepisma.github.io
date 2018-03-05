@@ -36,12 +36,6 @@ Do not play the solitary genius.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-writing. Do not play the solitary genius.
-
-#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
-#+END_QUOTE
-
-#+BEGIN_QUOTE
 Your thesis exists to prove the hypothesis that you devised at the outset, not
 to show the breadth of your knowledge.
 
