@@ -7,6 +7,5 @@ sense.
 
 * Pages in this section
 
-- [[./drives.org][Drives]]
 - [[./hours-over-deadlines.org][Schedule Hours not Deadlines]]
 - [[./lazy-answer.org][The Lazy Answer to Everything]]

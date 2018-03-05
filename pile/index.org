@@ -16,5 +16,6 @@ blog are [[https://lepisma.github.io/archive][here]].]. Here are the sections in
 - [[./readings/][Readings]]
 - [[./writings/][Writings]]
 
-Source code for this setup is [[https://github.com/lepisma/pile][here]]. My org-publish setup mostly lies [[https://github.com/lepisma/rogue/blob/master/local/rogue-pile/rogue-pile.el][here]]. If
-you want an extensive guide on org based publishing setup, look [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][here]] and [[https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html][here]].
+Files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing this wiki is mostly
+[[https://github.com/lepisma/rogue/blob/master/local/pile/][here]]. If you want an extensive guide for on org based publishing setup, look
+[[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][here]] and [[https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html][here]].
