@@ -4,3 +4,4 @@
 * Pages in this section
 
 - [[./grouping/index.org][Grouping]]
+- [[./resources.org][Resources]]
