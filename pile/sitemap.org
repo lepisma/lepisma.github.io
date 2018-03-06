@@ -14,7 +14,6 @@
   - [[file:mathematics/strassen/index.org][Searching for Strassen multiplication rule]]
 - [[file:misc/index.org][Miscellaneous]]
   - [[file:misc/desktop.org][Desktop]]
-  - [[file:misc/employment.org][Employment Summary]]
 - [[file:ml/index.org][Machine Learning]]
   - [[file:ml/resources.org][Resources]]
   - [[file:ml/learning/index.org][Breaking down /Learning/]]

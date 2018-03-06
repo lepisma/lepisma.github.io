@@ -6,4 +6,3 @@ Miscellaneous pages.
 * Pages in this section
 
 - [[./desktop.org][Desktop]]
-- [[./employment.org][Employment Summary]]
