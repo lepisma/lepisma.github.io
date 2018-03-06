@@ -5,3 +5,5 @@
 This page is a work in progress
 #+END_QUOTE
 
+* Explainers
+- Visual explanation of [[http://maze5.net/?page_id=733][Legendre Transform]]

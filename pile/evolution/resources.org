@@ -4,3 +4,6 @@
 #+BEGIN_QUOTE
 This page is a work in progress
 #+END_QUOTE
+
+* Explainers
+- Short document on [[http://brembs.net/papers/hamilton.pdf][Hamilton's rule]].
