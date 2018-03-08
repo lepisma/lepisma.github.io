@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-03-06 Tue 00:14 -->
+<!-- 2018-03-08 Thu 18:13 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Note Cards</title>
@@ -299,12 +299,11 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </nav>
-<div id='breadcrumbs'><a href='./../allpages.html'>≡ index</a> / <a href='../readings/index.html'>readings</a> / bib-notes</div>
-<blockquote>
+<div id='breadcrumbs'><a href='./../allpages.html'>≡ index</a> / <a href='../readings/index.html'>readings</a> / bib-notes</div>#+BEGIN_QUOTE
 <p>
 This page is a work in progress
+#+END_QUOTE
 </p>
-</blockquote>
 
 <p>
 (Okay, not exactly cards but I can shuffle entries aroung) Bibliographical
@@ -379,7 +378,7 @@ Specifically it debunks the following incorrect implementation:
 
 <div class="org-src-container">
 <pre class="src src-haskell"><span style="color: #88C0D0;">primes</span> <span style="color: #EBCB8B;">=</span> sieve <span style="color: #5E81AC;">[</span><span style="color: #9c91e4; font-weight: bold;">2</span><span style="color: #EBCB8B;">..</span><span style="color: #5E81AC;">]</span>
-<span style="color: #88C0D0;">sieve</span> <span style="color: #5E81AC;">(</span>p <span style="color: #8FBCBB; font-style: italic;">:</span> xs<span style="color: #5E81AC;">)</span> <span style="color: #EBCB8B;">=</span> p <span style="color: #8FBCBB; font-style: italic;">:</span> sieve <span style="color: #5E81AC;">[</span>x <span style="color: #EBCB8B;">|</span> x <span style="color: #EBCB8B;">&lt;&#8722;</span> xs, x <span style="color: #EBCB8B;">`mod`</span> p <span style="color: #EBCB8B;">&gt;</span> <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #5E81AC;">]</span>
+<span style="color: #88C0D0;">sieve</span> <span style="color: #5E81AC;">(</span>p <span style="color: #8FBCBB;">:</span> xs<span style="color: #5E81AC;">)</span> <span style="color: #EBCB8B;">=</span> p <span style="color: #8FBCBB;">:</span> sieve <span style="color: #5E81AC;">[</span>x <span style="color: #EBCB8B;">|</span> x <span style="color: #EBCB8B;">&lt;&#8722;</span> xs, x <span style="color: #EBCB8B;">`mod`</span> p <span style="color: #EBCB8B;">&gt;</span> <span style="color: #9c91e4; font-weight: bold;">0</span><span style="color: #5E81AC;">]</span>
 </pre>
 </div>
 

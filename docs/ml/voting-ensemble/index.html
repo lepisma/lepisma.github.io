@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-03-06 Tue 00:14 -->
+<!-- 2018-03-08 Thu 18:13 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voting Ensemble</title>
@@ -320,12 +320,11 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </nav>
-<div id='breadcrumbs'><a href='./../../allpages.html'>≡ index</a> / <a href='../../ml/index.html'>ml</a> / voting-ensemble</div>
-<blockquote>
+<div id='breadcrumbs'><a href='./../../allpages.html'>≡ index</a> / <a href='../../ml/index.html'>ml</a> / voting-ensemble</div>#+BEGIN_QUOTE
 <p>
 This is a test notebook for trying out sagemath features
+#+END_QUOTE
 </p>
-</blockquote>
 
 <p>
 For binary classification, if there are \(n\) component models and the rate of
@@ -340,7 +339,7 @@ success is given by:
 
 <div class="org-src-container">
 <pre class="src src-sage"><span style="color: #EBCB8B;">n</span> = <span style="color: #9c91e4; font-weight: bold;">21</span>; <span style="color: #EBCB8B;">c</span> = <span style="color: #9c91e4; font-weight: bold;">2</span>
-<span style="color: #D08770; font-style: italic;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">5</span><span style="color: #BF616A;">)</span>.subs<span style="color: #BF616A;">(</span>N == n<span style="color: #BF616A;">)</span>, M, floor<span style="color: #BF616A;">(</span>n/c<span style="color: #BF616A;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #5E81AC;">)</span>
+<span style="color: #D08770;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">5</span><span style="color: #BF616A;">)</span>.subs<span style="color: #BF616A;">(</span>N == n<span style="color: #BF616A;">)</span>, M, floor<span style="color: #BF616A;">(</span>n/c<span style="color: #BF616A;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -355,7 +354,7 @@ varying \(p\) values follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #EBCB8B;">curve</span> = plot<span style="color: #5E81AC;">(</span><span style="color: #D08770; font-style: italic;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>p<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N = n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>p, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">curve</span> = plot<span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>p<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N = n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>p, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 curve + parametric_plot<span style="color: #5E81AC;">(</span><span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c, x<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>x, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, linestyle=<span style="color: #A3BE8C;">"--"</span>, color=<span style="color: #A3BE8C;">"green"</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
@@ -384,7 +383,7 @@ Meaning the success rate for the ensemble would be:
 
 <div class="org-src-container">
 <pre class="src src-sage"><span style="color: #EBCB8B;">c</span> = <span style="color: #9c91e4; font-weight: bold;">3</span>
-<span style="color: #D08770; font-style: italic;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770; font-style: italic;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<span style="color: #D08770;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -403,7 +402,7 @@ For 7 classes:
 
 <div class="org-src-container">
 <pre class="src src-sage"><span style="color: #EBCB8B;">c</span> = <span style="color: #9c91e4; font-weight: bold;">7</span>
-<span style="color: #D08770; font-style: italic;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770; font-style: italic;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<span style="color: #D08770;">float</span><span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
 
@@ -417,7 +416,7 @@ A plot of \(q\) vs ensemble success for 7 classes follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #EBCB8B;">curve</span> = plot<span style="color: #5E81AC;">(</span><span style="color: #D08770; font-style: italic;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>p<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>p, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
+<pre class="src src-sage"><span style="color: #EBCB8B;">curve</span> = plot<span style="color: #5E81AC;">(</span><span style="color: #D08770;">sum</span><span style="color: #BF616A;">(</span>binom_pmf<span style="color: #B48EAD;">(</span>p<span style="color: #B48EAD;">)</span>.subs<span style="color: #B48EAD;">(</span>N == n<span style="color: #B48EAD;">)</span>, M, floor<span style="color: #B48EAD;">(</span>n/c<span style="color: #B48EAD;">)</span> + <span style="color: #9c91e4; font-weight: bold;">1</span>, n<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>p, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">001</span>, <span style="color: #9c91e4; font-weight: bold;">0</span>.<span style="color: #9c91e4; font-weight: bold;">999</span><span style="color: #BF616A;">)</span><span style="color: #5E81AC;">)</span>
 curve + parametric_plot<span style="color: #5E81AC;">(</span><span style="color: #BF616A;">(</span><span style="color: #9c91e4; font-weight: bold;">1</span>/c, x<span style="color: #BF616A;">)</span>, <span style="color: #BF616A;">(</span>x, <span style="color: #9c91e4; font-weight: bold;">0</span>, <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, linestyle=<span style="color: #A3BE8C;">"--"</span>, color=<span style="color: #A3BE8C;">"green"</span><span style="color: #5E81AC;">)</span>
 </pre>
 </div>
@@ -440,7 +439,7 @@ here. In general, any \(p\) that makes the following true will be good:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sage"><span style="color: #D08770; font-style: italic;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span>p<span style="color: #BF616A;">)</span>, M, floor<span style="color: #BF616A;">(</span>N/c + <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, N<span style="color: #5E81AC;">)</span> &gt; <span style="color: #9c91e4; font-weight: bold;">1</span>/c
+<pre class="src src-sage"><span style="color: #D08770;">sum</span><span style="color: #5E81AC;">(</span>binom_pmf<span style="color: #BF616A;">(</span>p<span style="color: #BF616A;">)</span>, M, floor<span style="color: #BF616A;">(</span>N/c + <span style="color: #9c91e4; font-weight: bold;">1</span><span style="color: #BF616A;">)</span>, N<span style="color: #5E81AC;">)</span> &gt; <span style="color: #9c91e4; font-weight: bold;">1</span>/c
 </pre>
 </div>
 
