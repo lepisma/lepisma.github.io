@@ -2,21 +2,23 @@
 #+SETUPFILE: ../assets/export.setup
 #+TODO: NEXT | DONE
 
-One of the parts of programming that I enjoy the most is learning/exploring new
-languages. This page aims to keep a log of that process.
+One of the parts of programming that I enjoy is learning/exploring new
+languages. This page aims to keep a log of that process (ignoring the languages
+whose interesting features are probably already present in others).
 
-In many ways, learning new languages does not look like a /very/ interesting
-endeavor. Most of the mainstream programming languages are pretty similar and,
-as the time goes, they are getting closer to each other by borrowing various
-features.
+Depending on what you want from a language, there are the following general
+areas to look for:
 
-/But/ there still are clear differences in some. Other than the taglines and the
-general paradigm they lie in, there are some really interesting differences in
-the solutions they provide for the same problem.
+1. The /core ideologies/ which define the language.
+2. General /code organization/, package system etc.
+3. Good practices, /libraries and ecosystem/.
+4. Knowledge of /internals and extensions/ which lets you simulate missing
+   features.
 
-I will try to keep a list of languages here with which I have had or /want to/
-have experiences (marked ~NEXT~), ignoring the ones whose interesting features are
-probably already in other languages.
+For most of the languages here in the list, I want to have experience 1. A few
+languages that I regularly use will have all 4 points covered (eventually).
+Nevertheless, I will try to keep links and documentation for any and all points
+that I do explore for each language.
 
 * NEXT Ada
 
@@ -94,6 +96,7 @@ I am also interested to learn more type theory in the process.
 
 Touched Io in 'Seven Languages in Seven weeks'. It is a good case study for
 learning about
+
 - Message passing system
 - Prototype based objects
 

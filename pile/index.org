@@ -5,17 +5,5 @@ This is a personal wiki. Most of the pages here are still in transitory phase.
 Gradually, as I move files in here, it will take a more hybrid wiki-blog form.
 
 A list of all pages currently up here is in [[./allpages.org][all the pages]] [fn::Pages from my old
-blog are [[https://lepisma.github.io/archive][here]].]. Here are the sections in alphabetical order:
-
-- [[./emacs/][Emacs]]
-- [[./evolution/][Evolution]]
-- [[./ml/][Machine Learning]]
-- [[./mathematics/][Mathematics]]
-- [[./misc/][Miscellaneous]]
-- [[./programming/][Programming]]
-- [[./readings/][Readings]]
-- [[./writings/][Writings]]
-
-Files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing this wiki is mostly
-[[https://github.com/lepisma/rogue/blob/master/local/pile/][here]]. If you want an extensive guide for on org based publishing setup, look
-[[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][here]] and [[https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html][here]].
+blog are [[https://lepisma.github.io/archive][here]].]. Org files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing
+this wiki is mostly [[https://github.com/lepisma/rogue/blob/master/local/pile/][here]] but I might move it in a separate repository sometime.
