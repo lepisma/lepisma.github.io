@@ -124,8 +124,8 @@ soon.
 
 * Lisp
 
-Really impressive family. I have been using a few (Emacs Lisp, Common Lisp, Hy)
-regularly now and strongly recommend trying.
+I have been using a few (Emacs Lisp, Common Lisp, Hy) regularly now and strongly
+recommend trying.
 
 Things to learn
 - [ ] Reader macros from Common Lisp
