@@ -59,7 +59,7 @@ On the other hand, making general purpose bundles has the obvious trap that you
 alone don't have enough content. To counter for that, you end up breaking the
 harmony of the bundle and it becomes a mess. I have tried a lot of times to do
 this in a ton of projects. A relatively successful one (in terms of code reuse)
-is [[https://github.com/lepisma/high][high]] but since I don't /identify/ every piece of it (and because hy is still
+is [[https://github.com/lepisma/high][high]] but since I don't /identify/ every piece of it, (and because hy is still
 evolving) using it has tied my hands down on a bunch of connected projects.
 
 -----
