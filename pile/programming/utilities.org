@@ -1,0 +1,80 @@
+#+TITLE: Utilities pitfall
+#+SETUPFILE: ../assets/export.setup
+
+Every now and then, I try to package some of my programs in a separate
+module/library. Most of the times, when the outcome is a /toolkit/ of sorts, the
+package doesn't work. Either it bloats out to become ideologically inconsistent
+or it splatters away in a bunch of small repositories, again rendering /them/ very
+hard to use.
+
+These two approaches are projections of what I have seen working in the wild.
+One method is to put every tiny little function in a separate package. This is
+pretty popular in JavaScript world. A justification for this approach can be
+seen [[https://github.com/sindresorhus/ama/issues/10#issuecomment-117766328][here]]. tldr (from the comment itself):
+
+#+BEGIN_QUOTE
+You make small focused modules for reusability and to make it possible to build
+larger more advanced things that are easier to reason about.
+#+END_QUOTE
+
+Another is to make large, kitchen sink bundles. There are many of these in
+Common Lisp for example. Many ~*dash*~ named libraries in a lot of languages too
+can be counted in this category. Both of these tend to work reasonably as one
+might expect. With /personal/ utilities, however, they don't really go straight
+because of the scale a single person alone can work on.
+
+-----
+
+I have been using a few functions across projects. Consider this simple python
+context manager which eases incremental writes to a csv:
+
+#+BEGIN_SRC python
+import pandas as pd
+import os
+
+class csvf:
+    def __init__(self, file_name, **kwargs):
+        self.file_name = file_name
+        if os.path.exists(file_name):
+            self.df = pd.read_csv(self.file_name, **kwargs)
+        else:
+            self.df = pd.DataFrame({})
+
+    def __enter__(self):
+        return self.df
+
+    def __exit__(self, type, value, traceback):
+        if type is None:
+            self.df.to_csv(self.file_name, index=None)
+#+END_SRC
+
+The problem with packaging this is that I don't have 100 other context managers
+to throw in a PyPI package. Smallish things like this are also not generally
+throwable in package repositories on their own. Even if some communities
+encourage it, your /own/ single packages are spread out sufficiently /in time/ to
+make you retouch everything systematically to maintain cross usability (this is
+even more problematic if you, as a programmer, are changing/evolving/devolving).
+
+On the other hand, making general purpose bundles has the obvious trap that you
+alone don't have enough content. To counter for that, you end up breaking the
+harmony of the bundle and it becomes a mess. I have tried a lot of times to do
+this in a ton of projects. A relatively successful one (in terms of code reuse)
+is [[https://github.com/lepisma/high][high]] but since I don't /identify/ every piece of it (and because hy is still
+evolving) using it has tied my hands down on a bunch of connected projects.
+
+-----
+
+It basically boils down to the /usage count/. A metric much easily achievable by a
+/community/. Even if the package is small, a large community easily lifts the
+burden of standardizing it while you alone can't call the functions enough times
+to ensure the optimal structure.
+
+Probably the right approach for personal modules is to initiate them within a
+larger project and let them stay for a while. This gives some time to evaluate
+the usefulness and massages down the initial gush of blood. In any case, the
+module can be extracted out pretty neatly using something like [[https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/][git
+filter-branch]]. I have been doing this at least in my Emacs configuration where a
+[[https://github.com/lepisma/rogue/tree/master/local][bunch of packages]] are doing time and will be free after they graduate. Other
+than modules, there are other tangible structures with similar reusability
+behavior which are also amenable to such process. Like /workflows/, directory
+/trees/, /peripheral tooling/ etc.
