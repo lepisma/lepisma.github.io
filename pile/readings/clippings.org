@@ -17,6 +17,105 @@ readings.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+A few blanket words covered them, and, in covering them, abolished them.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+One does not establish a dictatorship in order to safeguard a revolution; one
+makes the revolution in order to establish the dictatorship.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+That the choice for mankind lay between freedom and happiness, and that, for the
+great bulk of mankind, happiness was better.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Sanity is not statistical,’
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+CRIMESTOP, in short, means protective stupidity.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A ruling group is a ruling group so long as it can nominate its successors.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The essence of oligarchical rule is not father-to-son inheritance, but the
+persistence of a certain world-view and a certain way of life, imposed by the
+dead upon the living
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Wealth and privilege are most easily defended when they are possessed jointly.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you kept the small rules, you could break the big ones.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+which Parsons entered in a small notebook, in the neat handwriting of the
+illiterate.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Orthodoxy means not thinking — not needing to think. Orthodoxy is
+unconsciousness.’
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Don’t you see that the whole aim of Newspeak is to narrow the range of thought?
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Remember our boys on the Malabar front! And the sailors in the Floating
+Fortresses! Just think what THEY have to put up with.
+
+#+HTML:<footer>﻿1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Who controls the past,’ ran the Party slogan, ‘controls the future: who
+controls the present controls the past.’
+
+#+HTML:<footer>﻿1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It was not by making yourself heard but by staying sane that you carried on the
+human heritage.
+
+#+HTML:<footer>﻿1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 writing a thesis is like cooking a pig: nothing goes to waste.
 
 #+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>

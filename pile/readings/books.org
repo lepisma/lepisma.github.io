@@ -3516,12 +3516,20 @@ CLOSED: [2015-10-19]
 :GOODREADS: https://www.goodreads.com/book/show/23503019
 :END:
 
-* 1984
+* READ 1984
+CLOSED: [2018-03-16 Fri 14:54]
 :PROPERTIES:
 :AUTHOR:    George Orwell, Erich Fromm, Celâl Üster
 :ADDED:     <2015-09-24>
 :GOODREADS: https://www.goodreads.com/book/show/5470
 :END:
+
+Its beautiful how clearly this book makes you see the importance of written
+texts with all the imaginative diversity. Its this /diversity/ which threatens any
+power trying to control minds.
+
+The pieces around torture deeply reminded me of 'A Clockwork Orange' and I find
+it (elaboration of torture) really impactful in conveying the depth of ideas.
 
 * READ How Music Got Free: The End of an Industry, the Turn of the Century, and the Patient Zero of Piracy
 CLOSED: [2015-09-26]
