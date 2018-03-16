@@ -3,7 +3,7 @@
 Personal pile of text and notes.
 
 #+NAME: om-sass
-#+BEGIN_SRC shell
+#+BEGIN_SRC shell :exports none
 sass --sourcemap=none ./sass/main.scss ./pile/assets/css/main.css
 yes | cp ./pile/assets/css/main.css ./docs/assets/css/main.css
 #+END_SRC
