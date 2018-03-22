@@ -17,6 +17,15 @@ readings.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+I used the word mystic to refer to those few scientists who derive a perverse
+satisfaction from knowing that something is not known and who use that ignorance
+as a pretext for bursting out of the cruel confinements of positivism into the
+domain of rhapsodic intellection.
+
+#+HTML:<footer>Advice to a Young Scientist (Peter Medawar)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 A few blanket words covered them, and, in covering them, abolished them.
 
 #+HTML:<footer>1984 (George Orwell)</footer>
