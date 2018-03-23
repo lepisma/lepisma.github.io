@@ -1543,12 +1543,15 @@ CLOSED: [2018-01-24 Wed 21:31]
 :GOODREADS: https://www.goodreads.com/book/show/134225
 :END:
 
-* Advice To A Young Scientist
+* READ Advice To A Young Scientist
+CLOSED: [2018-03-23 Fri 14:01]
 :PROPERTIES:
 :AUTHOR:    Peter Medawar
 :ADDED:     <2016-12-15>
 :GOODREADS: https://www.goodreads.com/book/show/905743
 :END:
+
+A really pragmatic perspective on research. Short and well written.
 
 * Blitzed: Drugs in Nazi Germany
 :PROPERTIES:
