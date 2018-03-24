@@ -4,5 +4,6 @@
 * Pages in this section
 
 - [[./learning/index.org][Breaking down /Learning/]]
+- [[./potential.org][Potential in Regret Minimizing Ensemble]]
 - [[./resources.org][Resources]]
 - [[./voting-ensemble/index.org][Voting Ensemble]]

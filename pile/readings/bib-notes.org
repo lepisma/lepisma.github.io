@@ -71,3 +71,53 @@ elegant) and follows very closely the following description:
 #+BEGIN_SRC
 primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 #+END_SRC
+
+** The Multiplicative Weights Update Method: a Meta-Algorithm and Applications :noexport:
+ :PROPERTIES:
+  :Custom_ID: arora2012multiplicative
+  :AUTHOR: Arora, Hazan \& Kale
+  :JOURNAL: Theory of Computing
+  :YEAR: 2012
+  :VOLUME: 8
+  :PAGES: 121--164
+ :END:
+
+*** Weighted majority
+
+Update rule $w_i(t+1) = (1 - \eta)w_i(t)$ for each wrong decision. Loss is
+binary. The bound here is:
+
+$L_E(T) \le 2(1 + \eta)L_i(T) + \frac{2 \ln{n}}{\eta}$
+
+*** Multiplicative weights
+
+Here the losses are not binary but in [-1, 1]. The update rule $w_i(t+1) =
+w_i(t) (1 - \eta m_i(t))$. If $\eta \le 1/2$, then...
+
+** Computation at the edge of chaos: phase transitions and emergent computation
+ :PROPERTIES:
+  :Custom_ID: langton1990computation
+  :AUTHOR: Langton
+  :JOURNAL: Physica D: Nonlinear Phenomena
+  :YEAR: 1990
+  :VOLUME: 42
+  :PAGES: 12--37
+ :END:
+
+Three requirements to focus on for emergence of computation.
+
+1. Storage
+2. Transmission
+3. Interaction between the above 2.
+
+** Self-organized criticality
+ :PROPERTIES:
+  :Custom_ID: bak1988self
+  :AUTHOR: Bak, Tang \& Wiesenfeld
+  :JOURNAL: Physical review A
+  :YEAR: 1988
+  :VOLUME: 38
+  :PAGES: 364
+ :END:
+
+Sand model.
