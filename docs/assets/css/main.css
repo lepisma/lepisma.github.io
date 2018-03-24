@@ -1033,7 +1033,6 @@ dl dd {
   font-style: italic;
   margin-bottom: 20px; }
 
-#table-of-contents,
 #org-div-home-and-up,
 pre.src:hover::before {
   display: none !important; }
