@@ -4,8 +4,3 @@
 #+BEGIN_QUOTE
 This page is a work in progress
 #+END_QUOTE
-
-In the analysis of multiplicative weight algorithms, a /potential function/ comes
-up.
-
-In general, if 
