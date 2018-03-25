@@ -2,21 +2,16 @@
 #+SETUPFILE: ../assets/export.setup
 #+TODO: READING NEXT | READ
 
-#+BEGIN_QUOTE
-Categorization of books in sections is in progress
-#+END_QUOTE
-
 Books to read. This is a rather large list with items from my old Goodreads
 account. Most likely I will /not/ be reading all of these because this list grows
 faster than I read.
 
-/Sorting is based on date added (recent first)/. I am trying to make sections here
-so sorting is valid /inside/ the sections only.
+/Sorting is based on date added (recent first)/ but might be off since I am trying
+to categorize things in sections.
 
 #+TOC: headlines 2
 
 * Non Fiction
-** Computer Science
 *** The Nature of Computation
 :PROPERTIES:
 :AUTHOR:   Cristopher Moore, Stephan Mertens
@@ -38,7 +33,6 @@ so sorting is valid /inside/ the sections only.
 :GOODREADS: https://www.goodreads.com/book/show/326791
 :END:
 
-** Design, Interfaces etc.
 *** Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
 :PROPERTIES:
 :AUTHOR:
@@ -53,7 +47,6 @@ so sorting is valid /inside/ the sections only.
 :GOODREADS: https://www.goodreads.com/book/show/550802
 :END:
 
-** Evolution
 *** Robustness and Evolvability in Living Systems
 :PROPERTIES:
 :AUTHOR:   Andreas Wagner
@@ -103,8 +96,6 @@ so sorting is valid /inside/ the sections only.
 :AMAZON:   https://www.amazon.com/Evolution-Cooperation-Revised-Robert-Axelrod/dp/0465005640
 :END:
 
-** General Science
-The catch all section for science.
 *** From Bacteria to Bach and Back: The Evolution of Minds
 :PROPERTIES:
 :AUTHOR:   Daniel C. Dennett
@@ -238,7 +229,6 @@ The catch all section for science.
 :GOODREADS: https://www.goodreads.com/book/show/6601267
 :END:
 
-** Mathematics / Physics
 *** The Princeton Companion to Mathematics
 :PROPERTIES:
 :AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
@@ -267,7 +257,6 @@ The catch all section for science.
 :GOODREADS: https://www.goodreads.com/book/show/6418615-the-mathematical-mechanic?ac=1&from_search=true
 :END:
 
-** Philosophy
 *** The Denial of Death
 :PROPERTIES:
 :AUTHOR:   Ernest Becker, Sam Keen, Daniel Goleman
@@ -303,7 +292,6 @@ The catch all section for science.
 :GOODREADS: https://www.goodreads.com/book/show/30289
 :END:
 
-** Programming
 *** READ Seven Languages in Seven Weeks 
 CLOSED: [2018-01-24 Wed 22:59]
 :PROPERTIES:
@@ -354,7 +342,6 @@ CLOSED: [2018-01-24 Wed 22:59]
 :URL:      http://beautifulracket.com/
 :END:
 
-** Soft Science, History, Biographies etc.
 *** Mastering the Techniques of Teaching
 :PROPERTIES:
 :AUTHOR:
@@ -618,222 +605,11 @@ also.
 :GOODREADS: https://www.goodreads.com/book/show/74034
 :END:
 
-* Fiction
-** Science Fiction
-*** READ The Last Answer
-CLOSED: [2017-11-13 Mon 20:46]
-:PROPERTIES:
-:AUTHOR:   Isaac Asimov
-:ADDED:    <2017-11-13>
-:GOODREADS: https://www.goodreads.com/book/show/15755066-the-last-answer
-:END:
-
-This (along with /The Last Question/, which I recently read) is a beautiful short.
-Looking forward to more from Asimov.
-
-*** READ The Last Question
-CLOSED: [2017-11-10 Fri 22:07]
-:PROPERTIES:
-:AUTHOR:   Isaac Asimov, Bob E. Flick, Jim Gallant
-:ADDED:    <2017-11-10>
-:GOODREADS: https://www.goodreads.com/book/show/4808763-the-last-question
-:END:
-
-/How can entropy be reversed?/ ...
-
-** Graphics Novels
-*** READING Dream Country (Sandman, #3)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Kelley Jones, (Illustrator), Charles Vess, (Illustrator), Colleen Doran, (Illustrator), Malcolm Jones III, (Illustrator), Steve Erickson, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
-:END:
-
-*** Season of Mists (Sandman, #4)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25101.Season_of_Mists
-:END:
-
-*** A Game of You (Sandman, #5)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Shawn McManus, (Illustrator), Colleen Doran, (Illustrator), Bryan Talbot, (Illustrator), George Pratt, (Illustrator), Stan Woch, (Illustrator), Dick Giordano, (Illustrator), Todd Klein, (Letterer)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
-:END:
-
-*** Fables and Reflections (Sandman, #6)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25106.Fables_and_Reflections
-:END:
-
-*** Brief Lives (Sandman, #7)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Jill Thompson, (Illustrator), Vince Locke, (Illustrator), Peter Straub, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
-:END:
-
-*** Worlds' End (Sandman, #8)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25103.Worlds_End
-:END:
-
-*** The Kindly Ones (Sandman, #9)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Marc Hempel, (Illustrator), Richard Case, (Illustrator), D'Israeli, (Illustrator), Teddy Kristiansen, (Illustrator), Glyn Dillon, (Illustrator), Charles Vess, (Illustrator), Dean Ormston, (Illustrator), Kevin Nowlan, (Illustrator), Todd Klein, (Letterer), Frank McConnell, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/71252.The_Kindly_Ones
-:END:
-
-*** The Wake (Sandman, #10)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Michael Zulli, (Illustrator), Jon J. Muth, (Illustrator), Charles Vess, (Illustrator), Mikal Gilmore, (Introduction)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/25104.The_Wake
-:END:
-
-*** Endless Nights (Sandman, #11)
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Barron Storey, (Illustrator), Bill Sienkiewicz, (Illustrator), Glenn Fabry, (Illustrator), Dave McKean, (Illustrator), P. Craig Russell, (Illustrator), Milo Manara, (Illustrator), Miguelanxo Prado, (Illustrator), Frank Quitely, (Illustrator), Todd Klein, (Letterer)
-:ADDED:    <2017-07-11>
-:GOODREADS: https://www.goodreads.com/book/show/47720.The_Sandman
-:END:
-
-*** READ The Doll's House (Sandman, #2)
-CLOSED: [2017-07-11 Tue 15:33]
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Steve Parkhouse, (Illustrator), Chris Bachalo, (Illustrator), Michael Zulli, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Clive Barker, (Introduction)
-:ADDED:    <2017-07-08>
-:GOODREADS: https://www.goodreads.com/book/show/25099.The_Doll_s_House
-:END:
-
-Better than the first collection. Both are written well, but the first feels
-like telling a pretty simple story while the second, spending the same amount of
-attention, has more depth to it.
-
-*** READ Preludes & Nocturnes (Sandman, #1)
-CLOSED: [2017-07-07 Fri 23:58]
-:PROPERTIES:
-:AUTHOR:   Neil Gaiman, Sam Kieth, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Karen  Berger, (Introduction/Editor)
-:ADDED:    <2017-07-07>
-:GOODREADS: https://www.goodreads.com/book/show/23754.Preludes_Nocturnes
-:END:
-
-Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
-
-*** Blankets
-:PROPERTIES:
-:AUTHOR:   Craig Thompson
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/25179.Blankets?ac=1&from_search=true
-:END:
-
-** Uncategorized
-This mostly contains items which I haven't read so don't know how to categorize.
-*** Notes from Underground
-:PROPERTIES:
-:AUTHOR:   Fyodor Dostoyevsky, Christian Redl, Philip Dossick, Emanuela Guercetti, Michelle-Irène Brudny, Richard Pevear, Norman Dietz, Donald Fanger, coderati, Boris de Schlœzer, Larissa Volokhonsky
-:ADDED:    <2018-01-07>
-:GOODREADS: https://www.goodreads.com/book/show/49455.Notes_from_Underground
-:END:
-
-*** The Stranger
-:PROPERTIES:
-:AUTHOR:   Albert Camus, Stuart Gilbert, Matthew Ward, Leman Sarı
-:ADDED:    <2018-01-07>
-:GOODREADS: https://www.goodreads.com/book/show/49552.The_Stranger
-:END:
-
-*** READ Slaughterhouse-Five
-CLOSED: [2018-01-09 Tue 15:46]
-:PROPERTIES:
-:AUTHOR:   Kurt Vonnegut
-:ADDED:    <2018-01-04>
-:GOODREADS: https://www.goodreads.com/book/show/4981.Slaughterhouse_Five
-:END:
-
-*** राग दरबारी (Raag Darbari)
-:PROPERTIES:
-:AUTHOR:   Shrilal Shukla
-:ADDED:    <2017-10-04>
-:GOODREADS: https://www.goodreads.com/book/show/2164749._
-:END:
-
-*** Blood Meridian, or the Evening Redness in the West
-:PROPERTIES:
-:AUTHOR:   Cormac McCarthy
-:ADDED:    <2017-09-11>
-:GOODREADS: https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West
-:END:
-
-*** The Yellow Wall-Paper
-:PROPERTIES:
-:AUTHOR:   Charlotte Perkins Gilman, Elaine Hedges
-:ADDED:    <2017-08-28>
-:GOODREADS: https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper
-:END:
-
-*** READING A Midsummer Night's Dream
-:PROPERTIES:
-:AUTHOR:   William Shakespeare, Barbara A. Mowat, (Editor), Paul Werstine, (Editor), Catherine Belsey, (Contributor)
-:ADDED:    <2017-07-12>
-:GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
-:END:
-
-*** Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
-:PROPERTIES:
-:AUTHOR:   Algernon Bertram Freeman-Mitford
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan
-:END:
-
-*** Moby Dick
-:PROPERTIES:
-:AUTHOR:   Herman Melville
-:ADDED:    <2017-06-28>
-:END:
-
-*** Homegoing
-:PROPERTIES:
-:AUTHOR:    Yaa Gyasi
-:ADDED:     <2017-06-15>
-:GOODREADS: https://www.goodreads.com/book/show/27071490
-:END:
-
-*** Salvage the Bones
-:PROPERTIES:
-:AUTHOR:    Jesmyn Ward
-:ADDED:     <2017-06-15>
-:GOODREADS: https://www.goodreads.com/book/show/10846336
-:END:
-
-<CATEGORIZED TILL HERE>
-
 *** Privacy and Freedom
 :PROPERTIES:
 :AUTHOR:    Alan Westin
 :ADDED:     <2017-06-09>
 :GOODREADS: https://www.goodreads.com/book/show/21535409
-:END:
-
-*** The Poisonwood Bible
-:PROPERTIES:
-:AUTHOR:    Barbara Kingsolver
-:ADDED:     <2017-06-07>
-:GOODREADS: https://www.goodreads.com/book/show/7244
-:END:
-
-*** Science Tales
-:PROPERTIES:
-:AUTHOR:    Darryl Cunningham
-:ADDED:     <2017-06-04>
-:GOODREADS: https://www.goodreads.com/book/show/13562838
 :END:
 
 *** On Tyranny: Twenty Lessons from the Twentieth Century
@@ -871,22 +647,12 @@ CLOSED: [2018-01-09 Tue 15:46]
 :GOODREADS: https://www.goodreads.com/book/show/1136403
 :END:
 
-*** Metro 2033 (Metro, #1)
+*** Science Tales
 :PROPERTIES:
-:AUTHOR:    Dmitry Glukhovsky
-:ADDED:     <2017-05-18>
-:GOODREADS: https://www.goodreads.com/book/show/17274667
+:AUTHOR:    Darryl Cunningham
+:ADDED:     <2017-06-04>
+:GOODREADS: https://www.goodreads.com/book/show/13562838
 :END:
-
-*** READ Solaris
-CLOSED: [2017-05-14]
-:PROPERTIES:
-:AUTHOR:    Stanisław Lem
-:ADDED:     <2017-05-07>
-:GOODREADS: https://www.goodreads.com/book/show/95558
-:END:
-
-Not very hard sci-fi, but one of the best experiences.
 
 *** The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary
 :PROPERTIES:
@@ -900,21 +666,6 @@ Not very hard sci-fi, but one of the best experiences.
 :AUTHOR:    Daniel P. Friedman, Matthias Felleisen, Duane Bibby, Gerald J. Sussman
 :ADDED:     <2017-04-30>
 :GOODREADS: https://www.goodreads.com/book/show/548914
-:END:
-
-*** READ Alice's Adventures in Wonderland (Alice's Adventures in Wonderland #1)
-CLOSED: [2015-04-28]
-:PROPERTIES:
-:AUTHOR:    Lewis Carroll, John Tenniel
-:ADDED:     <2017-03-27>
-:GOODREADS: https://www.goodreads.com/book/show/6324090
-:END:
-
-*** Soylent Green
-:PROPERTIES:
-:AUTHOR:    Harry Harrison
-:ADDED:     <2017-03-22>
-:GOODREADS: https://www.goodreads.com/book/show/9799221
 :END:
 
 *** No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State
@@ -1030,27 +781,6 @@ CLOSED: [2017-05-30]
 :GOODREADS: https://www.goodreads.com/book/show/130119
 :END:
 
-*** Assassin's Quest (Farseer Trilogy, #3)
-:PROPERTIES:
-:AUTHOR:    Robin Hobb
-:ADDED:     <2017-02-26>
-:GOODREADS: https://www.goodreads.com/book/show/33396914
-:END:
-
-*** Royal Assassin (Farseer Trilogy, #2)
-:PROPERTIES:
-:AUTHOR:    Robin Hobb
-:ADDED:     <2017-02-26>
-:GOODREADS: https://www.goodreads.com/book/show/25300956
-:END:
-
-*** Assassin's Apprentice (Farseer Trilogy, #1)
-:PROPERTIES:
-:AUTHOR:    Robin Hobb
-:ADDED:     <2017-02-26>
-:GOODREADS: https://www.goodreads.com/book/show/77197
-:END:
-
 *** Broca's Brain: Reflections on the Romance of Science
 :PROPERTIES:
 :AUTHOR:    Carl Sagan
@@ -1135,13 +865,6 @@ CLOSED: [2017-05-30]
 :GOODREADS: https://www.goodreads.com/book/show/542766
 :END:
 
-*** The Bear and the Nightingale
-:PROPERTIES:
-:AUTHOR:    Katherine  Arden
-:ADDED:     <2017-02-18>
-:GOODREADS: https://www.goodreads.com/book/show/25489134
-:END:
-
 *** The Descent of Man
 :PROPERTIES:
 :AUTHOR:    Charles Darwin
@@ -1163,13 +886,6 @@ CLOSED: [2017-05-30]
 :GOODREADS: https://www.goodreads.com/book/show/7618919
 :END:
 
-*** A Scanner Darkly
-:PROPERTIES:
-:AUTHOR:    Philip K. Dick
-:ADDED:     <2017-02-10>
-:GOODREADS: https://www.goodreads.com/book/show/14817
-:END:
-
 *** Evolution: Making Sense of Life
 :PROPERTIES:
 :AUTHOR:    Carl Zimmer, Douglas J. Emlen
@@ -1189,13 +905,6 @@ CLOSED: [2017-05-30]
 :AUTHOR:    Maya Angelou
 :ADDED:     <2017-01-28>
 :GOODREADS: https://www.goodreads.com/book/show/13214
-:END:
-
-*** Catch-22
-:PROPERTIES:
-:AUTHOR:    Joseph Heller
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/168668
 :END:
 
 *** The Book Your Church Doesn't Want You to Read
@@ -1254,35 +963,6 @@ CLOSED: [2017-05-30]
 :GOODREADS: https://www.goodreads.com/book/show/22463
 :END:
 
-*** READ The Handmaid's Tale
-CLOSED: [2017-06-07]
-:PROPERTIES:
-:AUTHOR:    Margaret Atwood
-:ADDED:     <2017-01-26>
-:GOODREADS: https://www.goodreads.com/book/show/38447
-:END:
-
-*** Last Argument of Kings (The First Law #3)
-:PROPERTIES:
-:AUTHOR:    Joe Abercrombie
-:ADDED:     <2017-01-21>
-:GOODREADS: https://www.goodreads.com/book/show/944076
-:END:
-
-*** Before They Are Hanged (The First Law #2)
-:PROPERTIES:
-:AUTHOR:    Joe Abercrombie
-:ADDED:     <2017-01-21>
-:GOODREADS: https://www.goodreads.com/book/show/902715
-:END:
-
-*** The Blade Itself (The First Law #1)
-:PROPERTIES:
-:AUTHOR:    Joe Abercrombie
-:ADDED:     <2017-01-21>
-:GOODREADS: https://www.goodreads.com/book/show/944073
-:END:
-
 *** READ Visual Explanations: Images and Quantities, Evidence and Narrative
 CLOSED: [2017-07-01 Sat 15:23]
 :PROPERTIES:
@@ -1303,53 +983,11 @@ CLOSED: [2017-02-20]
 :GOODREADS: https://www.goodreads.com/book/show/17745
 :END:
 
-*** Atlas Shrugged
-:PROPERTIES:
-:AUTHOR:    Ayn Rand, Leonard Peikoff
-:ADDED:     <2017-01-15>
-:GOODREADS: https://www.goodreads.com/book/show/662
-:END:
-
-*** A Doll's House
-:PROPERTIES:
-:AUTHOR:    Henrik Ibsen, Michael   Meyer
-:ADDED:     <2017-01-15>
-:GOODREADS: https://www.goodreads.com/book/show/37793
-:END:
-
-*** The Fountainhead
-:PROPERTIES:
-:AUTHOR:    Ayn Rand, Leonard Peikoff
-:ADDED:     <2017-01-15>
-:GOODREADS: https://www.goodreads.com/book/show/2122
-:END:
-
-*** The Call of Cthulhu and Other Weird Stories
-:PROPERTIES:
-:AUTHOR:    H.P. Lovecraft, S.T. Joshi
-:ADDED:     <2017-01-15>
-:GOODREADS: https://www.goodreads.com/book/show/160149
-:END:
-
 *** The End of Faith: Religion, Terror, and the Future of Reason
 :PROPERTIES:
 :AUTHOR:    Sam Harris
 :ADDED:     <2017-01-09>
 :GOODREADS: https://www.goodreads.com/book/show/29501
-:END:
-
-*** Small Gods (Discworld, #13)
-:PROPERTIES:
-:AUTHOR:    Terry Pratchett
-:ADDED:     <2017-01-09>
-:GOODREADS: https://www.goodreads.com/book/show/34484
-:END:
-
-*** Dune (Dune #1)
-:PROPERTIES:
-:AUTHOR:    Frank Herbert
-:ADDED:     <2017-01-09>
-:GOODREADS: https://www.goodreads.com/book/show/234225
 :END:
 
 *** The Skeptic's Annotated Bible
@@ -1496,13 +1134,6 @@ visualizations.
 :GOODREADS: https://www.goodreads.com/book/show/25953369
 :END:
 
-*** The Course of Love
-:PROPERTIES:
-:AUTHOR:    Alain de Botton
-:ADDED:     <2016-12-15>
-:GOODREADS: https://www.goodreads.com/book/show/27845690
-:END:
-
 *** When Breath Becomes Air
 :PROPERTIES:
 :AUTHOR:    Paul Kalanithi, Abraham Verghese
@@ -1647,27 +1278,6 @@ A really pragmatic perspective on research. Short and well written.
 :GOODREADS: https://www.goodreads.com/book/show/28260471
 :END:
 
-*** In the Not Quite Dark: Stories
-:PROPERTIES:
-:AUTHOR:    Dana Johnson
-:ADDED:     <2016-12-06>
-:GOODREADS: https://www.goodreads.com/book/show/27037165
-:END:
-
-*** The High Mountains of Portugal
-:PROPERTIES:
-:AUTHOR:    Yann Martel
-:ADDED:     <2016-12-06>
-:GOODREADS: https://www.goodreads.com/book/show/25489094
-:END:
-
-*** All the Birds in the Sky
-:PROPERTIES:
-:AUTHOR:    Charlie Jane Anders
-:ADDED:     <2016-12-06>
-:GOODREADS: https://www.goodreads.com/book/show/25372801
-:END:
-
 *** The Gene: An Intimate History
 :PROPERTIES:
 :AUTHOR:    Siddhartha Mukherjee
@@ -1696,13 +1306,6 @@ A really pragmatic perspective on research. Short and well written.
 :GOODREADS: https://www.goodreads.com/book/show/25667449
 :END:
 
-*** Storm Front (The Dresden Files, #1)
-:PROPERTIES:
-:AUTHOR:    Jim Butcher
-:ADDED:     <2016-12-01>
-:GOODREADS: https://www.goodreads.com/book/show/47212
-:END:
-
 *** Our Revolution: A Future to Believe In
 :PROPERTIES:
 :AUTHOR:    Bernie Sanders
@@ -1724,13 +1327,6 @@ A really pragmatic perspective on research. Short and well written.
 :GOODREADS: https://www.goodreads.com/book/show/25698
 :END:
 
-*** The Mysterious Flame of Queen Loana
-:PROPERTIES:
-:AUTHOR:    Umberto Eco, Geoffrey Brock
-:ADDED:     <2016-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/10503
-:END:
-
 *** India After Gandhi: The History of the World's Largest Democracy
 :PROPERTIES:
 :AUTHOR:    Ramachandra Guha
@@ -1743,13 +1339,6 @@ A really pragmatic perspective on research. Short and well written.
 :AUTHOR:    Karl Marx, Friedrich Engels, Gareth Stedman Jones
 :ADDED:     <2016-11-28>
 :GOODREADS: https://www.goodreads.com/book/show/30474
-:END:
-
-*** Seveneves
-:PROPERTIES:
-:AUTHOR:    Neal Stephenson
-:ADDED:     <2016-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/22816087
 :END:
 
 *** Mein Kampf
@@ -1773,21 +1362,7 @@ A really pragmatic perspective on research. Short and well written.
 :GOODREADS: https://www.goodreads.com/book/show/10515
 :END:
 
-*** Foucault's Pendulum
-:PROPERTIES:
-:AUTHOR:    Umberto Eco, William Weaver
-:ADDED:     <2016-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/17841
-:END:
-
-*** War and Peace
-:PROPERTIES:
-:AUTHOR:    Leo Tolstoy, Henry Gifford, Aylmer Maude, Louise Maude
-:ADDED:     <2016-11-27>
-:GOODREADS: https://www.goodreads.com/book/show/656
-:END:
-
-*** READING Critical Mass: How One Thing Leads to Another
+*** Critical Mass: How One Thing Leads to Another
 :PROPERTIES:
 :AUTHOR:    Philip Ball
 :ADDED:     <2016-11-19>
@@ -1867,27 +1442,6 @@ CLOSED: [2016-12-07]
 :GOODREADS: https://www.goodreads.com/book/show/2549408
 :END:
 
-*** The Hound of the Baskervilles (Sherlock Holmes, #5)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle, Anne Perry
-:ADDED:     <2016-10-15>
-:GOODREADS: https://www.goodreads.com/book/show/8921
-:END:
-
-*** The Sign of Four (Sherlock Holmes, #2)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle, Peter Ackroyd, Ed Glinert
-:ADDED:     <2016-10-15>
-:GOODREADS: https://www.goodreads.com/book/show/608474
-:END:
-
-*** A Study in Scarlet (Sherlock Holmes, #1)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle
-:ADDED:     <2016-10-15>
-:GOODREADS: https://www.goodreads.com/book/show/102868
-:END:
-
 *** Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley
 :PROPERTIES:
 :AUTHOR:    Antonio Garcia Martinez
@@ -1942,13 +1496,6 @@ CLOSED: [2018-01-11 Thu 18:15]
 :AUTHOR:    Friedrich Nietzsche, H.L. Mencken
 :ADDED:     <2016-09-23>
 :GOODREADS: https://www.goodreads.com/book/show/18304
-:END:
-
-*** Fight Club
-:PROPERTIES:
-:AUTHOR:    Chuck Palahniuk
-:ADDED:     <2016-09-23>
-:GOODREADS: https://www.goodreads.com/book/show/5759
 :END:
 
 *** Media Control: The Spectacular Achievements of Propaganda
@@ -2155,156 +1702,11 @@ like it or hate it. Its honest, brutal and beautiful.
 :GOODREADS: https://www.goodreads.com/book/show/27211285
 :END:
 
-*** The Crippled God (The Malazan Book of the Fallen, #10)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/8447255
-:END:
-
-*** Dust of Dreams (The Malazan Book of the Fallen, #9)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/4703427
-:END:
-
-*** Toll the Hounds (The Malazan Book of the Fallen, #8)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/938544
-:END:
-
-*** Reaper's Gale (The Malazan Book of the Fallen, #7)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/459064
-:END:
-
-*** The Bonehunters (Malazan Book of the Fallen, #6)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/478951
-:END:
-
-*** Midnight Tides (The Malazan Book of the Fallen, #5)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/345299
-:END:
-
-*** House of Chains (The Malazan Book of the Fallen, #4)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/55398
-:END:
-
-*** Memories of Ice (The Malazan Book of the Fallen, #3)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/175983
-:END:
-
-*** Deadhouse Gates (The Malazan Book of the Fallen, #2)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/55401
-:END:
-
-*** Gardens of the Moon (The Malazan Book of the Fallen, #1)
-:PROPERTIES:
-:AUTHOR:    Steven Erikson
-:ADDED:     <2016-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/55399
-:END:
-
 *** Fads and Fallacies in the Name of Science
 :PROPERTIES:
 :AUTHOR:    Martin Gardner
 :ADDED:     <2016-08-15>
 :GOODREADS: https://www.goodreads.com/book/show/17798
-:END:
-
-*** Where the Red Fern Grows
-:PROPERTIES:
-:AUTHOR:    Wilson Rawls
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/10365
-:END:
-
-*** The Time Traveler's Wife
-:PROPERTIES:
-:AUTHOR:    Audrey Niffenegger
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/14050
-:END:
-
-*** The Lovely Bones
-:PROPERTIES:
-:AUTHOR:    Alice Sebold
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/12232938
-:END:
-
-*** READ Flowers for Algernon
-CLOSED: [2017-07-20 Thu 03:19]
-:PROPERTIES:
-:AUTHOR:    Daniel Keyes
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/18373
-:END:
-
-I expected the book to end the way it did a lot earlier and that decreased the
-power of the transition back to Charlie in this otherwise wonderful story.
-
-*** Extremely Loud and Incredibly Close
-:PROPERTIES:
-:AUTHOR:    Jonathan Safran Foer
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/4588
-:END:
-
-*** The Bell Jar
-:PROPERTIES:
-:AUTHOR:    Sylvia Plath
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/6514
-:END:
-
-*** The Old Curiosity Shop
-:PROPERTIES:
-:AUTHOR:    Charles Dickens, Norman Page
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/429024
-:END:
-
-*** Revolutionary Road
-:PROPERTIES:
-:AUTHOR:    Richard Yates
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/48328
-:END:
-
-*** The Heart is a Lonely Hunter
-:PROPERTIES:
-:AUTHOR:    Carson McCullers
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/37380
-:END:
-
-*** READ The Giving Tree
-CLOSED: [2017-06-08]
-:PROPERTIES:
-:AUTHOR:    Shel Silverstein
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/370493
 :END:
 
 *** READ Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened
@@ -2322,149 +1724,6 @@ CLOSED: [2016-08-13]
 :GOODREADS: https://www.goodreads.com/book/show/60748
 :END:
 
-*** The Boy in the Striped Pajamas
-:PROPERTIES:
-:AUTHOR:    John Boyne
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/39999
-:END:
-
-*** A Farewell to Arms
-:PROPERTIES:
-:AUTHOR:    Ernest Hemingway
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/10799
-:END:
-
-*** Of Mice and Men
-:PROPERTIES:
-:AUTHOR:    John Steinbeck
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/890
-:END:
-
-*** Anna Karenina
-:PROPERTIES:
-:AUTHOR:    Leo Tolstoy, David Magarshack, Priscilla Meyer
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/152
-:END:
-
-*** The Great Gatsby
-:PROPERTIES:
-:AUTHOR:    F. Scott Fitzgerald
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/4671
-:END:
-
-*** The Catcher in the Rye
-:PROPERTIES:
-:AUTHOR:    J.D. Salinger
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/5107
-:END:
-
-*** Crime and Punishment
-:PROPERTIES:
-:AUTHOR:    Fyodor Dostoyevsky, David McDuff
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/7144
-:END:
-
-*** The Kite Runner
-:PROPERTIES:
-:AUTHOR:    Khaled Hosseini
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/77203
-:END:
-
-*** A Thousand Splendid Suns
-:PROPERTIES:
-:AUTHOR:    Khaled Hosseini
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/128029
-:END:
-
-*** A Tree Grows in Brooklyn
-:PROPERTIES:
-:AUTHOR:    Betty  Smith
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/14891
-:END:
-
-*** The Perks of Being a Wallflower
-:PROPERTIES:
-:AUTHOR:    Stephen Chbosky
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/22628
-:END:
-
-*** The Diary of a Young Girl
-:PROPERTIES:
-:AUTHOR:    Anne Frank, Eleanor Roosevelt, B.M. Mooyart-Doubleday
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/48855
-:END:
-
-*** Bridge to Terabithia
-:PROPERTIES:
-:AUTHOR:    Katherine Paterson
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/2839
-:END:
-
-*** The Metamorphosis
-:PROPERTIES:
-:AUTHOR:    Franz Kafka, Stanley Corngold
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/485894
-:END:
-
-*** READ A Clockwork Orange
-CLOSED: [2017-04-11]
-:PROPERTIES:
-:AUTHOR:    Anthony Burgess
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/227463
-:END:
-
-*** Dandelion Wine (Green Town, #1)
-:PROPERTIES:
-:AUTHOR:    Ray Bradbury
-:ADDED:     <2016-08-11>
-:GOODREADS: https://www.goodreads.com/book/show/50033
-:END:
-
-*** READ The Trial
-  CLOSED: [2017-11-06 Mon 23:23]
-:PROPERTIES:
-:AUTHOR:    Franz Kafka, Edwin Muir, Willa Muir, Max Brod
-:ADDED:     <2016-08-11>
-:GOODREADS: https://www.goodreads.com/book/show/17690
-:END:
-
-I don't think I got it completely. The story flows in a confusing and lazy way
-and I stopped at many places while reading this. I thought a bit about whats
-different here which is making the whole thing boring. Is it the weird way
-people converse? Is it the repelling suspense in the story which I don't feel
-like unraveling by pushing myself a few pages ahead?
-
-Somewhere around 60-70% I got the genius (at least one) behind the writing
-style. The annoyance you feel from the way the story progresses is meant to be
-there and it helps you connect with K and his contempt for the court and the
-whole bureaucracy. I still haven't tried to interpret every symbolism in the
-story (and there are many, now that I think of it), but I do get the general
-point now. More Kafka's and some connected philosophical readings should help to
-get it right.
-
-*** READ Brave New World
-CLOSED: [2017-03-31]
-:PROPERTIES:
-:AUTHOR:    Aldous Huxley
-:ADDED:     <2016-08-11>
-:GOODREADS: https://www.goodreads.com/book/show/5129
-:END:
-
 *** Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values
 :PROPERTIES:
 :AUTHOR:    Robert M. Pirsig
@@ -2479,53 +1738,11 @@ CLOSED: [2017-03-31]
 :GOODREADS: https://www.goodreads.com/book/show/24257
 :END:
 
-*** Siddhartha
-:PROPERTIES:
-:AUTHOR:    Hermann Hesse, Hilda Rosner
-:ADDED:     <2016-08-07>
-:GOODREADS: https://www.goodreads.com/book/show/52036
-:END:
-
-*** The Diamond Age: or, A Young Lady's Illustrated Primer
-:PROPERTIES:
-:AUTHOR:    Neal Stephenson
-:ADDED:     <2016-08-07>
-:GOODREADS: https://www.goodreads.com/book/show/827
-:END:
-
-*** Leviathan (Leviathan, #1)
-:PROPERTIES:
-:AUTHOR:    Scott Westerfeld
-:ADDED:     <2016-08-07>
-:GOODREADS: https://www.goodreads.com/book/show/6050678
-:END:
-
-*** Contact
-:PROPERTIES:
-:AUTHOR:    Carl Sagan
-:ADDED:     <2016-08-07>
-:GOODREADS: https://www.goodreads.com/book/show/61666
-:END:
-
-*** Snow Crash
-:PROPERTIES:
-:AUTHOR:    Neal Stephenson
-:ADDED:     <2016-08-07>
-:GOODREADS: https://www.goodreads.com/book/show/830
-:END:
-
 *** Surreal Numbers
 :PROPERTIES:
 :AUTHOR:    Donald Ervin Knuth
 :ADDED:     <2016-07-25>
 :GOODREADS: https://www.goodreads.com/book/show/484458
-:END:
-
-*** Pond
-:PROPERTIES:
-:AUTHOR:    Claire-Louise Bennett
-:ADDED:     <2016-07-14>
-:GOODREADS: https://www.goodreads.com/book/show/25333047
 :END:
 
 *** Idea Makers: Personal Perspectives on the Lives & Ideas of Some Notable People
@@ -2543,30 +1760,6 @@ CLOSED: [2016-07-01]
 :GOODREADS: https://www.goodreads.com/book/show/2104
 :END:
 
-*** READ Season of Storms (The Witcher, #0.5)
-CLOSED: [2016-06-29]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski
-:ADDED:     <2016-06-19>
-:GOODREADS: https://www.goodreads.com/book/show/25748789
-:END:
-
-*** READ Pani Jeziora (Saga o Wiedźminie, #7)
-CLOSED: [2016-06-24]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski
-:ADDED:     <2016-06-19>
-:GOODREADS: https://www.goodreads.com/book/show/68452
-:END:
-
-*** READ The Tower of the Swallow (The Witcher, #6)
-CLOSED: [2016-06-19]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski, David French
-:ADDED:     <2016-06-19>
-:GOODREADS: https://www.goodreads.com/book/show/18247597
-:END:
-
 *** The Varieties of Religious Experience
 :PROPERTIES:
 :AUTHOR:    William James
@@ -2579,128 +1772,6 @@ CLOSED: [2016-06-19]
 :AUTHOR:    Robert  Burton, William H. Gass
 :ADDED:     <2016-06-17>
 :GOODREADS: https://www.goodreads.com/book/show/557658
-:END:
-
-*** READ Anathem
-CLOSED: [2016-08-07]
-:PROPERTIES:
-:AUTHOR:    Neal Stephenson
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/2845024
-:END:
-
-It could have been helped by a bit more deeper storyline and 'theorics',
-considering the number of pages (~1000). The kind of topics it touched, it
-could have been perfect. But sometimes it bloats out.
-
-*** The Night Circus
-:PROPERTIES:
-:AUTHOR:    Erin Morgenstern
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/9361589
-:END:
-
-*** READ The Silver Spike (The Chronicles of the Black Company, #3.5)
-CLOSED: [2016-08-28]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400914
-:END:
-
-*** READ The Black Company (The Chronicles of the Black Company, #1)
-CLOSED: [2016-07-04]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/140671
-:END:
-
-*** READ Water Sleeps (The Chronicles of the Black Company, #8)
-CLOSED: [2017-02-07]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/349470
-:END:
-
-*** READ Soldiers Live (The Chronicles of the Black Company, #9)
-CLOSED: [2017-02-25]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400899
-:END:
-
-*** READ She is the Darkness (The Chronicles of the Black Company, #7)
-CLOSED: [2017-01-02]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400897
-:END:
-
-Story of the south really picks up with this one! Hopefully, the next 2 will be
-amazing.
-
-*** READ Bleak Seasons (The Chronicles of the Black Company, #6)
-CLOSED: [2016-12-22]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400911
-:END:
-
-*** READ Dreams of Steel (The Chronicles of the Black Company, #5)
-CLOSED: [2016-08-15]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400900
-:END:
-
-Characters up in the north were more alluring. Read through the books of the
-south using the impetus of north. Gets slightly unnecessarily chaotic at times,
-without moving the story as the older books did. Will go to glittering stone
-after touching the silver spike.
-
-*** READ Shadow Games (The Chronicles of the Black Company, #4)
-CLOSED: [2016-08-14]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/113540
-:END:
-
-*** READ The White Rose (The Chronicles of the Black Company, #3)
-CLOSED: [2016-08-12]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400906
-:END:
-
-*** READ Shadows Linger (The Chronicles of the Black Company, #2)
-CLOSED: [2016-08-09]
-:PROPERTIES:
-:AUTHOR:    Glen Cook
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/400881
-:END:
-
-*** Neverwhere
-:PROPERTIES:
-:AUTHOR:    Neil Gaiman
-:ADDED:     <2016-06-16>
-:GOODREADS: https://www.goodreads.com/book/show/14497
-:END:
-
-*** READ The Ocean at the End of the Lane
-CLOSED: [2016-05-28]
-:PROPERTIES:
-:AUTHOR:    Neil Gaiman
-:ADDED:     <2016-05-25>
-:GOODREADS: https://www.goodreads.com/book/show/15783514
 :END:
 
 *** READ A Mathematician's Apology
@@ -2758,13 +1829,6 @@ CLOSED: [2016-05-19]
 :AUTHOR:    William Ian Miller
 :ADDED:     <2016-04-25>
 :GOODREADS: https://www.goodreads.com/book/show/566817
-:END:
-
-*** The Qur'an / القرآن الكريم
-:PROPERTIES:
-:AUTHOR:    Anonymous
-:ADDED:     <2016-04-25>
-:GOODREADS: https://www.goodreads.com/book/show/646462
 :END:
 
 *** The Last Word
@@ -2837,43 +1901,6 @@ CLOSED: [2016-05-19]
 :GOODREADS: https://www.goodreads.com/book/show/4339
 :END:
 
-*** Batman: The Dark Knight Returns
-:PROPERTIES:
-:AUTHOR:    Frank Miller, Klaus Janson, Lynn Varley
-:ADDED:     <2016-04-05>
-:GOODREADS: https://www.goodreads.com/book/show/59960
-:END:
-
-*** Batman: The Killing Joke
-:PROPERTIES:
-:AUTHOR:    Alan Moore, Brian Bolland, Tim Sale
-:ADDED:     <2016-04-05>
-:GOODREADS: https://www.goodreads.com/book/show/96358
-:END:
-
-*** Batman: Year One
-:PROPERTIES:
-:AUTHOR:    Frank Miller, David Mazzucchelli, Richmond Lewis, Dennis O'Neil
-:ADDED:     <2016-04-05>
-:GOODREADS: https://www.goodreads.com/book/show/59980
-:END:
-
-*** READ V for Vendetta
-CLOSED: [2016-06-19]
-:PROPERTIES:
-:AUTHOR:    Alan Moore, David   Lloyd
-:ADDED:     <2016-04-05>
-:GOODREADS: https://www.goodreads.com/book/show/5805
-:END:
-
-*** READ Watchmen
-CLOSED: [2016-05-24]
-:PROPERTIES:
-:AUTHOR:    Alan Moore, Dave Gibbons, John Higgins
-:ADDED:     <2016-04-05>
-:GOODREADS: https://www.goodreads.com/book/show/472331
-:END:
-
 *** The Five Ages of the Universe: Inside the Physics of Eternity
 :PROPERTIES:
 :AUTHOR:    Fred Adams, Greg Laughlin
@@ -2903,13 +1930,6 @@ CLOSED: [2016-04-04]
 :GOODREADS: https://www.goodreads.com/book/show/75812
 :END:
 
-*** Reamde
-:PROPERTIES:
-:AUTHOR:    Neal Stephenson
-:ADDED:     <2016-03-21>
-:GOODREADS: https://www.goodreads.com/book/show/10552338
-:END:
-
 *** Future Shock
 :PROPERTIES:
 :AUTHOR:    Alvin Toffler
@@ -2930,21 +1950,6 @@ CLOSED: [2016-03-19]
 :AUTHOR:    Daniel Shiffman
 :ADDED:     <2016-03-19>
 :GOODREADS: https://www.goodreads.com/book/show/16123828
-:END:
-
-*** The Old Man and the Sea
-:PROPERTIES:
-:AUTHOR:    Ernest Hemingway
-:ADDED:     <2016-03-17>
-:GOODREADS: https://www.goodreads.com/book/show/2165
-:END:
-
-*** READ The White Tiger
-CLOSED: [2016-03-20]
-:PROPERTIES:
-:AUTHOR:    Aravind Adiga
-:ADDED:     <2016-03-13>
-:GOODREADS: https://www.goodreads.com/book/show/1768603
 :END:
 
 *** Feynman's Rainbow: A Search for Beauty in Physics and in Life
@@ -2976,27 +1981,11 @@ CLOSED: [2016-03-12]
 :GOODREADS: https://www.goodreads.com/book/show/561436
 :END:
 
-*** READ Life of Pi
-CLOSED: [2016-03-13]
-:PROPERTIES:
-:AUTHOR:    Yann Martel
-:ADDED:     <2016-02-27>
-:GOODREADS: https://www.goodreads.com/book/show/4214
-:END:
-
 *** Excellent Sheep: The Miseducation of the American Elite and the Way to a Meaningful Life
 :PROPERTIES:
 :AUTHOR:    William Deresiewicz
 :ADDED:     <2016-02-22>
 :GOODREADS: https://www.goodreads.com/book/show/18775383
-:END:
-
-*** READ Train to Pakistan
-CLOSED: [2016-02-16]
-:PROPERTIES:
-:AUTHOR:    Khushwant Singh
-:ADDED:     <2016-02-11>
-:GOODREADS: https://www.goodreads.com/book/show/785454
 :END:
 
 *** The Society of Mind
@@ -3032,170 +2021,6 @@ CLOSED: [2016-02-16]
 :AUTHOR:    Duncan J. Watts
 :ADDED:     <2015-12-28>
 :GOODREADS: https://www.goodreads.com/book/show/373169
-:END:
-
-*** The Two Towers (The Lord of the Rings, #2)
-:PROPERTIES:
-:AUTHOR:    J.R.R. Tolkien
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/15241
-:END:
-
-*** The Return of the King (The Lord of the Rings, #3)
-:PROPERTIES:
-:AUTHOR:    J.R.R. Tolkien
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/18512
-:END:
-
-*** The Fellowship of the Ring (The Lord of the Rings, #1)
-:PROPERTIES:
-:AUTHOR:    J.R.R. Tolkien
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/34
-:END:
-
-*** The Hobbit
-:PROPERTIES:
-:AUTHOR:   J.R.R. Tolkien
-:ADDED:    <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/5907
-:END:
-
-*** Angels & Demons  (Robert Langdon, #1)
-:PROPERTIES:
-:AUTHOR:    Dan Brown
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/960
-:END:
-
-*** Harry Potter and the Deathly Hallows (Harry Potter, #7)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Mary GrandPré
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/136251
-:END:
-
-*** Harry Potter and the Half-Blood Prince (Harry Potter, #6)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Mary GrandPré
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/1
-:END:
-
-*** Harry Potter and the Chamber of Secrets (Harry Potter, #2)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Mary GrandPré, Amik Kasoruho
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/15881
-:END:
-
-*** The Da Vinci Code (Robert Langdon, #2)
-:PROPERTIES:
-:AUTHOR:    Dan Brown
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/968
-:END:
-
-*** Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Mary GrandPré
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/5
-:END:
-
-*** Harry Potter and the Goblet of Fire (Harry Potter, #4)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Mary GrandPré
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/6
-:END:
-
-*** Harry Potter and the Order of the Phoenix (Harry Potter, #5)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Mary GrandPré
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/2
-:END:
-
-*** READ The Time of Contempt (The Witcher, #4)
-CLOSED: [2016-03-25]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski, David French
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/14781491
-:END:
-
-*** READ The Last Battle (Chronicles of Narnia, #7)
-CLOSED: [2016-01-29]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/84369
-:END:
-
-*** READ The Magician's Nephew (Chronicles of Narnia, #6)
-CLOSED: [2016-01-13]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/65605
-:END:
-
-*** READ The Horse and His Boy (Chronicles of Narnia, #5)
-CLOSED: [2016-01-02]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/84119
-:END:
-
-*** READ The Silver Chair (Chronicles of Narnia, #4)
-CLOSED: [2015-12-30]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis, Pauline Baynes
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/65641
-:END:
-
-*** READ The Voyage of the Dawn Treader (Chronicles of Narnia, #5)
-CLOSED: [2015-12-29]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis, Pauline Baynes
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/7806771
-:END:
-
-*** READ Prince Caspian (Chronicles of Narnia, #2)
-CLOSED: [2015-12-29]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/121749
-:END:
-
-*** READ The Lion, the Witch, and the Wardrobe (Chronicles of Narnia, #1)
-CLOSED: [2015-12-27]
-:PROPERTIES:
-:AUTHOR:    C.S. Lewis
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/100915
-:END:
-
-*** READ Baptism of Fire (The Witcher, #5)
-CLOSED: [2016-05-23]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski
-:ADDED:     <2015-12-27>
-:GOODREADS: https://www.goodreads.com/book/show/18924205
-:END:
-
-*** READ Sword of Destiny (The Witcher, #2)
-CLOSED: [2015-12-26]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski
-:ADDED:     <2015-12-23>
-:GOODREADS: https://www.goodreads.com/book/show/25454056
 :END:
 
 *** READ Simply Complexity
@@ -3264,28 +2089,6 @@ CLOSED: [2015-12-11]
 :GOODREADS: https://www.goodreads.com/book/show/16173023
 :END:
 
-*** The Windup Girl
-:PROPERTIES:
-:AUTHOR:    Paolo Bacigalupi
-:ADDED:     <2015-12-05>
-:GOODREADS: https://www.goodreads.com/book/show/6597651
-:END:
-
-*** Neuromancer
-:PROPERTIES:
-:AUTHOR:    William Gibson
-:ADDED:     <2015-12-05>
-:GOODREADS: https://www.goodreads.com/book/show/22328
-:END:
-
-*** READ The Lorax
-CLOSED: [2015-12-05]
-:PROPERTIES:
-:AUTHOR:    Dr. Seuss
-:ADDED:     <2015-12-05>
-:GOODREADS: https://www.goodreads.com/book/show/7784
-:END:
-
 *** Desert Solitaire
 :PROPERTIES:
 :AUTHOR:    Edward Abbey
@@ -3305,34 +2108,6 @@ CLOSED: [2015-12-05]
 :AUTHOR:    Aldo Leopold
 :ADDED:     <2015-11-29>
 :GOODREADS: https://www.goodreads.com/book/show/210404
-:END:
-
-*** The Call of the Wild
-:PROPERTIES:
-:AUTHOR:    Jack London
-:ADDED:     <2015-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/1852
-:END:
-
-*** Frankenstein
-:PROPERTIES:
-:AUTHOR:    Mary Wollstonecraft Shelley, Percy Bysshe Shelley, Maurice Hindle
-:ADDED:     <2015-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/18490
-:END:
-
-*** The Strange Case of Dr. Jekyll and Mr. Hyde
-:PROPERTIES:
-:AUTHOR:    Robert Louis Stevenson, Vladimir Nabokov, Mervyn Peake, Dan Chaon
-:ADDED:     <2015-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/51496
-:END:
-
-*** The Moonstone
-:PROPERTIES:
-:AUTHOR:    Wilkie Collins, Carolyn G. Heilbrun
-:ADDED:     <2015-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/6138
 :END:
 
 *** The Clash of Civilizations and the Remaking of World Order
@@ -3413,28 +2188,6 @@ CLOSED: [2016-06-26]
 :GOODREADS: https://www.goodreads.com/book/show/23258103
 :END:
 
-*** Diary of a Wimpy Kid (Diary of a Wimpy Kid, #1)
-:PROPERTIES:
-:AUTHOR:    Jeff Kinney
-:ADDED:     <2015-11-01>
-:GOODREADS: https://www.goodreads.com/book/show/389627
-:END:
-
-*** READ Fahrenheit 451
-CLOSED: [2016-08-11]
-:PROPERTIES:
-:AUTHOR:    Ray Bradbury
-:ADDED:     <2015-11-01>
-:GOODREADS: https://www.goodreads.com/book/show/17470674
-:END:
-
-*** The Book Thief
-:PROPERTIES:
-:AUTHOR:    Markus Zusak
-:ADDED:     <2015-11-01>
-:GOODREADS: https://www.goodreads.com/book/show/19063
-:END:
-
 *** The Motorcycle Diaries: Notes on a Latin American Journey
 :PROPERTIES:
 :AUTHOR:    Ernesto Che Guevara, Aleida Guevara March
@@ -3484,14 +2237,6 @@ CLOSED: [2016-08-11]
 :GOODREADS: https://www.goodreads.com/book/show/816159
 :END:
 
-*** READ The Lathe of Heaven
-CLOSED: [2015-10-25]
-:PROPERTIES:
-:AUTHOR:    Ursula K. Le Guin
-:ADDED:     <2015-10-20>
-:GOODREADS: https://www.goodreads.com/book/show/22007410
-:END:
-
 *** READ Complexity: A Guided Tour
 CLOSED: [2015-11-06]
 :PROPERTIES:
@@ -3528,21 +2273,6 @@ CLOSED: [2015-10-19]
 :ADDED:     <2015-09-24>
 :GOODREADS: https://www.goodreads.com/book/show/23503019
 :END:
-
-*** READ 1984
-CLOSED: [2018-03-16 Fri 14:54]
-:PROPERTIES:
-:AUTHOR:    George Orwell, Erich Fromm, Celâl Üster
-:ADDED:     <2015-09-24>
-:GOODREADS: https://www.goodreads.com/book/show/5470
-:END:
-
-Its beautiful how clearly this book makes you see the importance of written
-texts with all the imaginative diversity. Its this /diversity/ which threatens any
-power trying to control minds.
-
-The pieces around torture deeply reminded me of 'A Clockwork Orange' and I find
-it (elaboration of torture) really impactful in conveying the depth of ideas.
 
 *** READ How Music Got Free: The End of an Industry, the Turn of the Century, and the Patient Zero of Piracy
 CLOSED: [2015-09-26]
@@ -3584,34 +2314,12 @@ CLOSED: [2016-05-16]
 :GOODREADS: https://www.goodreads.com/book/show/630144
 :END:
 
-*** READ Around the World in Eighty Days (Extraordinary Voyages, #11)
-CLOSED: [2018-02-05 Mon 01:21]
-:PROPERTIES:
-:AUTHOR:    Jules Verne, Michael Glencross, Brian W. Aldiss
-:ADDED:     <2015-08-19>
-:GOODREADS: https://www.goodreads.com/book/show/54479
-:END:
-
-*** October Sky
-:PROPERTIES:
-:AUTHOR:    Homer Hickam
-:ADDED:     <2015-08-17>
-:GOODREADS: https://www.goodreads.com/book/show/124862
-:END:
-
 *** READ The End of Night: Searching for Natural Darkness in an Age of Artificial Light
 CLOSED: [2015-12-05]
 :PROPERTIES:
 :AUTHOR:    Paul Bogard
 :ADDED:     <2015-08-17>
 :GOODREADS: https://www.goodreads.com/book/show/18904721
-:END:
-
-*** All the Light We Cannot See
-:PROPERTIES:
-:AUTHOR:    Anthony Doerr
-:ADDED:     <2015-08-15>
-:GOODREADS: https://www.goodreads.com/book/show/18143977
 :END:
 
 *** Harry Potter and the Methods of Rationality
@@ -3628,22 +2336,6 @@ CLOSED: [2015-12-09]
 :ADDED:     <2015-07-30>
 :GOODREADS: https://www.goodreads.com/book/show/25329850
 :END:
-
-*** READ Do Androids Dream of Electric Sheep?
-CLOSED: [2018-02-02 Fri 02:17]
-:PROPERTIES:
-:AUTHOR:    Philip K. Dick, Roger Zelazny
-:ADDED:     <2015-07-07>
-:GOODREADS: https://www.goodreads.com/book/show/7082
-:END:
-
-Mid way, I realized that I have actually seen the movie (blade runner) but this
-book still kept on giving and giving. I specially enjoyed the way the mind of
-Isidore was picked on. A simple being with a devotion to faith. Its really hard
-to reconcile with reality after your faith, your everything is taken away.
-
-As a side note, I am interested to know more about the author's (Philip K. Dick;
-this is my first book by him) philosophical and religious inclinations.
 
 *** Gaia: A New Look at Life on Earth
 :PROPERTIES:
@@ -3717,13 +2409,6 @@ CLOSED: [2015-09-26]
 :GOODREADS: https://www.goodreads.com/book/show/19381681
 :END:
 
-*** The Martian
-:PROPERTIES:
-:AUTHOR:    Andy Weir
-:ADDED:     <2015-05-19>
-:GOODREADS: https://www.goodreads.com/book/show/18007564
-:END:
-
 *** Zero to One: Notes on Startups, or How to Build the Future
 :PROPERTIES:
 :AUTHOR:    Peter Thiel, Blake  Masters
@@ -3736,14 +2421,6 @@ CLOSED: [2015-09-26]
 :AUTHOR:    Ben Horowitz
 :ADDED:     <2015-05-15>
 :GOODREADS: https://www.goodreads.com/book/show/18176747
-:END:
-
-*** READ The Time Machine
-CLOSED: [2015-05-19]
-:PROPERTIES:
-:AUTHOR:    H.G. Wells
-:ADDED:     <2015-05-14>
-:GOODREADS: https://www.goodreads.com/book/show/8155907
 :END:
 
 *** READ Oaxaca Journal
@@ -3780,13 +2457,6 @@ CLOSED: [2015-05-07]
 :GOODREADS: https://www.goodreads.com/book/show/21413662
 :END:
 
-*** Grimm's Fairy Tales
-:PROPERTIES:
-:AUTHOR:    Jacob Grimm, Wilhelm Grimm
-:ADDED:     <2015-04-25>
-:GOODREADS: https://www.goodreads.com/book/show/11093132
-:END:
-
 *** On the Move: A Life
 :PROPERTIES:
 :AUTHOR:    Oliver Sacks
@@ -3800,13 +2470,6 @@ CLOSED: [2015-07-16]
 :AUTHOR:    Michael S.A. Graziano
 :ADDED:     <2015-04-25>
 :GOODREADS: https://www.goodreads.com/book/show/17349805
-:END:
-
-*** Aesop's Fables
-:PROPERTIES:
-:AUTHOR:    Aesop
-:ADDED:     <2015-04-23>
-:GOODREADS: https://www.goodreads.com/book/show/6376577
 :END:
 
 *** Einstein's Dice and Schrödinger's Cat: How Two Great Minds Battled Quantum Randomness to Create a Unified Theory of Physics
@@ -3858,35 +2521,6 @@ CLOSED: [2015-07-16]
 :GOODREADS: https://www.goodreads.com/book/show/4498679
 :END:
 
-*** READ The Name of the Rose
-CLOSED: [2016-02-09]
-:PROPERTIES:
-:AUTHOR:    Umberto Eco, William Weaver, Seán Barrett
-:ADDED:     <2015-04-13>
-:GOODREADS: https://www.goodreads.com/book/show/119073
-:END:
-
-*** To Kill a Mockingbird
-:PROPERTIES:
-:AUTHOR:    Harper Lee
-:ADDED:     <2015-04-09>
-:GOODREADS: https://www.goodreads.com/book/show/2657
-:END:
-
-*** A Passage to India
-:PROPERTIES:
-:AUTHOR:    E.M. Forster, Oliver Stallybrass, Pankaj Mishra
-:ADDED:     <2015-04-09>
-:GOODREADS: https://www.goodreads.com/book/show/45195
-:END:
-
-*** Midnight's Children
-:PROPERTIES:
-:AUTHOR:    Salman Rushdie
-:ADDED:     <2015-04-09>
-:GOODREADS: https://www.goodreads.com/book/show/14836
-:END:
-
 *** American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer
 :PROPERTIES:
 :AUTHOR:    Kai Bird, Martin J. Sherwin
@@ -3894,27 +2528,11 @@ CLOSED: [2016-02-09]
 :GOODREADS: https://www.goodreads.com/book/show/80571
 :END:
 
-*** READ Blood of Elves (The Witcher, #3)
-CLOSED: [2015-05-09]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski
-:ADDED:     <2015-04-02>
-:GOODREADS: https://www.goodreads.com/book/show/6415386
-:END:
-
 *** The Oldest Living Things in the World
 :PROPERTIES:
 :AUTHOR:    Rachel Sussman, Carl Zimmer, Hans Ulrich Obrist
 :ADDED:     <2015-03-23>
 :GOODREADS: https://www.goodreads.com/book/show/18526648
-:END:
-
-*** READ The Last Wish (The Witcher, #1)
-CLOSED: [2015-04-02]
-:PROPERTIES:
-:AUTHOR:    Andrzej Sapkowski
-:ADDED:     <2015-03-22>
-:GOODREADS: https://www.goodreads.com/book/show/8173788
 :END:
 
 *** Arrival of the Fittest: Solving Evolution's Greatest Puzzle
@@ -3936,14 +2554,6 @@ CLOSED: [2015-04-02]
 :AUTHOR:    John Brockman
 :ADDED:     <2015-03-15>
 :GOODREADS: https://www.goodreads.com/book/show/22477307
-:END:
-
-*** READ Treasure Island
-CLOSED: [2018-02-05 Mon 01:20]
-:PROPERTIES:
-:AUTHOR:    Robert Louis Stevenson
-:ADDED:     <2015-03-14>
-:GOODREADS: https://www.goodreads.com/book/show/295
 :END:
 
 *** The Creative Brain: The Science of Genius
@@ -4080,20 +2690,6 @@ CLOSED: [2015-06-27]
 :GOODREADS: https://www.goodreads.com/book/show/16101087
 :END:
 
-*** Alice's Adventures in Wonderland & Through the Looking-Glass (Alice's Adventures in Wonderland #1-2)
-:PROPERTIES:
-:AUTHOR:    Lewis Carroll, John Tenniel, Martin Gardner
-:ADDED:     <2015-02-11>
-:GOODREADS: https://www.goodreads.com/book/show/24213
-:END:
-
-*** A Madman Dreams of Turing Machines
-:PROPERTIES:
-:AUTHOR:    Janna Levin
-:ADDED:     <2015-02-10>
-:GOODREADS: https://www.goodreads.com/book/show/16670
-:END:
-
 *** Quadrivium: The Four Classical Liberal Arts of Number, Geometry, Music, & Cosmology
 :PROPERTIES:
 :AUTHOR:    John Martineau, Miranda Lundy, Daud Sutton, Anthony Ashton, Jason Martineau
@@ -4227,13 +2823,6 @@ CLOSED: [2015-03-13]
 :AUTHOR:    Aldous Huxley
 :ADDED:     <2015-02-02>
 :GOODREADS: https://www.goodreads.com/book/show/1400129
-:END:
-
-*** The Immoralist
-:PROPERTIES:
-:AUTHOR:    André Gide, Alan Sheridan, David Watson
-:ADDED:     <2015-02-02>
-:GOODREADS: https://www.goodreads.com/book/show/70101
 :END:
 
 *** The Uses Of The Past: Profiles Of Former Societies
@@ -4412,26 +3001,11 @@ CLOSED: [2015-09-06]
 :GOODREADS: https://www.goodreads.com/book/show/169007
 :END:
 
-*** READ Einstein's Dreams
-CLOSED: [2015-02-09]
-:PROPERTIES:
-:AUTHOR:    Alan Lightman
-:ADDED:     <2015-01-26>
-:GOODREADS: https://www.goodreads.com/book/show/12086102
-:END:
-
 *** The Accidental Universe: The World You Thought You Knew
 :PROPERTIES:
 :AUTHOR:    Alan Lightman
 :ADDED:     <2015-01-26>
 :GOODREADS: https://www.goodreads.com/book/show/17756352
-:END:
-
-*** The River
-:PROPERTIES:
-:AUTHOR:    Alessandro Sanna, Michael Reynolds
-:ADDED:     <2015-01-23>
-:GOODREADS: https://www.goodreads.com/book/show/17675268
 :END:
 
 *** READ The Character of Physical Law
@@ -4722,14 +3296,6 @@ CLOSED: [2014-12-30]
 :GOODREADS: https://www.goodreads.com/book/show/331680
 :END:
 
-*** READ The Jungle Book
-CLOSED: [2018-02-05 Mon 01:18]
-:PROPERTIES:
-:AUTHOR:    Rudyard Kipling
-:ADDED:     <2014-12-21>
-:GOODREADS: https://www.goodreads.com/book/show/77270
-:END:
-
 *** READ What Do You Care What Other People Think?: Further Adventures of a Curious Character
 CLOSED: [2016-03-04]
 :PROPERTIES:
@@ -4861,20 +3427,6 @@ CLOSED: [2015-04-09]
 :GOODREADS: https://www.goodreads.com/book/show/20821396
 :END:
 
-*** Spoken Language Processing: A Guide to Theory, Algorithm and System Development
-:PROPERTIES:
-:AUTHOR:    Xuedong Huang, Alex Acero, Raj Reddy, Hsiao-Wuen Hon
-:ADDED:     <2014-11-25>
-:GOODREADS: https://www.goodreads.com/book/show/276783
-:END:
-
-*** Creative Confidence: Unleashing the Creative Potential Within Us All
-:PROPERTIES:
-:AUTHOR:    Tom Kelley, David Kelley
-:ADDED:     <2014-11-10>
-:GOODREADS: https://www.goodreads.com/book/show/17288649
-:END:
-
 *** Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life
 :PROPERTIES:
 :AUTHOR:    Robert Rosen
@@ -4910,13 +3462,6 @@ CLOSED: [2014-10-21]
 :AUTHOR:    Jeff Hawkins, Sandra Blakeslee
 :ADDED:     <2014-07-27>
 :GOODREADS: https://www.goodreads.com/book/show/27539
-:END:
-
-*** Eleven Minutes
-:PROPERTIES:
-:AUTHOR:    Paulo Coelho
-:ADDED:     <2014-07-14>
-:GOODREADS: https://www.goodreads.com/book/show/1430
 :END:
 
 *** The Panda's Thumb: More Reflections in Natural History
@@ -5072,80 +3617,6 @@ CLOSED: [2014-07-22]
 :GOODREADS: https://www.goodreads.com/book/show/21
 :END:
 
-*** READ The Alchemist
-CLOSED: [2018-02-05 Mon 01:17]
-:PROPERTIES:
-:AUTHOR:    Paulo Coelho, Alan R. Clarke
-:ADDED:     <2014-07-06>
-:GOODREADS: https://www.goodreads.com/book/show/865
-:END:
-
-*** The Case-Book of Sherlock Holmes (Sherlock Holmes, #9)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/162823
-:END:
-
-*** His Last Bow: 8 Stories (Sherlock Holmes, #8)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/754713
-:END:
-
-*** The Return of Sherlock Holmes (Sherlock Holmes, #6)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/194366
-:END:
-
-*** The Memoirs of Sherlock Holmes (Sherlock Holmes, #4)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/194373
-:END:
-
-*** The Adventures of Sherlock Holmes (Sherlock Holmes, #3)
-:PROPERTIES:
-:AUTHOR:    Arthur Conan Doyle
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/3590
-:END:
-
-*** Harry Potter and the Sorcerer's Stone (Harry Potter, #1)
-:PROPERTIES:
-:AUTHOR:    J.K. Rowling, Jim Kay, Mary GrandPré
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/3
-:END:
-
-*** READ Deception Point
-CLOSED: [2018-02-05 Mon 01:17]
-:PROPERTIES:
-:AUTHOR:    Dan Brown
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/976
-:END:
-
-*** READ Digital Fortress
-CLOSED: [2018-02-05 Mon 01:17]
-:PROPERTIES:
-:AUTHOR:    Dan Brown
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/11125
-:END:
-
-*** READ The Lost Symbol (Robert Langdon, #3)
-CLOSED: [2018-02-05 Mon 01:17]
-:PROPERTIES:
-:AUTHOR:    Dan Brown
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/6411961
-:END:
-
 *** READ The Immortal Life of Henrietta Lacks
 CLOSED: [2014-07-10]
 :PROPERTIES:
@@ -5160,14 +3631,6 @@ CLOSED: [2014-07-12]
 :AUTHOR:    Susan Cain
 :ADDED:     <2014-07-05>
 :GOODREADS: https://www.goodreads.com/book/show/8520610
-:END:
-
-*** READ Animal Farm
-CLOSED: [2014-07-05]
-:PROPERTIES:
-:AUTHOR:    George Orwell
-:ADDED:     <2014-07-05>
-:GOODREADS: https://www.goodreads.com/book/show/7613
 :END:
 
 *** READ QED: The Strange Theory of Light and Matter
@@ -5252,4 +3715,1487 @@ CLOSED: [2018-02-05 Mon 01:16]
 :AUTHOR:    Stephen Hawking, Cao Chi, Phạm Văn Thiều
 :ADDED:     <2014-03-19>
 :GOODREADS: https://www.goodreads.com/book/show/3869
+:END:
+
+* Fiction
+*** READ The Last Answer
+CLOSED: [2017-11-13 Mon 20:46]
+:PROPERTIES:
+:AUTHOR:   Isaac Asimov
+:ADDED:    <2017-11-13>
+:GOODREADS: https://www.goodreads.com/book/show/15755066-the-last-answer
+:END:
+
+This (along with /The Last Question/, which I recently read) is a beautiful short.
+Looking forward to more from Asimov.
+
+*** READ The Last Question
+CLOSED: [2017-11-10 Fri 22:07]
+:PROPERTIES:
+:AUTHOR:   Isaac Asimov, Bob E. Flick, Jim Gallant
+:ADDED:    <2017-11-10>
+:GOODREADS: https://www.goodreads.com/book/show/4808763-the-last-question
+:END:
+
+/How can entropy be reversed?/ ...
+
+*** READING Dream Country (Sandman, #3)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Kelley Jones, (Illustrator), Charles Vess, (Illustrator), Colleen Doran, (Illustrator), Malcolm Jones III, (Illustrator), Steve Erickson, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
+:END:
+
+*** Season of Mists (Sandman, #4)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25101.Season_of_Mists
+:END:
+
+*** A Game of You (Sandman, #5)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Shawn McManus, (Illustrator), Colleen Doran, (Illustrator), Bryan Talbot, (Illustrator), George Pratt, (Illustrator), Stan Woch, (Illustrator), Dick Giordano, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
+:END:
+
+*** Fables and Reflections (Sandman, #6)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25106.Fables_and_Reflections
+:END:
+
+*** Brief Lives (Sandman, #7)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Jill Thompson, (Illustrator), Vince Locke, (Illustrator), Peter Straub, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
+:END:
+
+*** Worlds' End (Sandman, #8)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25103.Worlds_End
+:END:
+
+*** The Kindly Ones (Sandman, #9)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Marc Hempel, (Illustrator), Richard Case, (Illustrator), D'Israeli, (Illustrator), Teddy Kristiansen, (Illustrator), Glyn Dillon, (Illustrator), Charles Vess, (Illustrator), Dean Ormston, (Illustrator), Kevin Nowlan, (Illustrator), Todd Klein, (Letterer), Frank McConnell, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/71252.The_Kindly_Ones
+:END:
+
+*** The Wake (Sandman, #10)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Michael Zulli, (Illustrator), Jon J. Muth, (Illustrator), Charles Vess, (Illustrator), Mikal Gilmore, (Introduction)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/25104.The_Wake
+:END:
+
+*** Endless Nights (Sandman, #11)
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Barron Storey, (Illustrator), Bill Sienkiewicz, (Illustrator), Glenn Fabry, (Illustrator), Dave McKean, (Illustrator), P. Craig Russell, (Illustrator), Milo Manara, (Illustrator), Miguelanxo Prado, (Illustrator), Frank Quitely, (Illustrator), Todd Klein, (Letterer)
+:ADDED:    <2017-07-11>
+:GOODREADS: https://www.goodreads.com/book/show/47720.The_Sandman
+:END:
+
+*** READ The Doll's House (Sandman, #2)
+CLOSED: [2017-07-11 Tue 15:33]
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Steve Parkhouse, (Illustrator), Chris Bachalo, (Illustrator), Michael Zulli, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Clive Barker, (Introduction)
+:ADDED:    <2017-07-08>
+:GOODREADS: https://www.goodreads.com/book/show/25099.The_Doll_s_House
+:END:
+
+Better than the first collection. Both are written well, but the first feels
+like telling a pretty simple story while the second, spending the same amount of
+attention, has more depth to it.
+
+*** READ Preludes & Nocturnes (Sandman, #1)
+CLOSED: [2017-07-07 Fri 23:58]
+:PROPERTIES:
+:AUTHOR:   Neil Gaiman, Sam Kieth, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Karen  Berger, (Introduction/Editor)
+:ADDED:    <2017-07-07>
+:GOODREADS: https://www.goodreads.com/book/show/23754.Preludes_Nocturnes
+:END:
+
+Decent. Did not feel /very/ impressive, but there are a lot more issues to go.
+
+*** Blankets
+:PROPERTIES:
+:AUTHOR:   Craig Thompson
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/25179.Blankets?ac=1&from_search=true
+:END:
+
+*** Notes from Underground
+:PROPERTIES:
+:AUTHOR:   Fyodor Dostoyevsky, Christian Redl, Philip Dossick, Emanuela Guercetti, Michelle-Irène Brudny, Richard Pevear, Norman Dietz, Donald Fanger, coderati, Boris de Schlœzer, Larissa Volokhonsky
+:ADDED:    <2018-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/49455.Notes_from_Underground
+:END:
+
+*** The Stranger
+:PROPERTIES:
+:AUTHOR:   Albert Camus, Stuart Gilbert, Matthew Ward, Leman Sarı
+:ADDED:    <2018-01-07>
+:GOODREADS: https://www.goodreads.com/book/show/49552.The_Stranger
+:END:
+
+*** READ Slaughterhouse-Five
+CLOSED: [2018-01-09 Tue 15:46]
+:PROPERTIES:
+:AUTHOR:   Kurt Vonnegut
+:ADDED:    <2018-01-04>
+:GOODREADS: https://www.goodreads.com/book/show/4981.Slaughterhouse_Five
+:END:
+
+*** राग दरबारी (Raag Darbari)
+:PROPERTIES:
+:AUTHOR:   Shrilal Shukla
+:ADDED:    <2017-10-04>
+:GOODREADS: https://www.goodreads.com/book/show/2164749._
+:END:
+
+*** Blood Meridian, or the Evening Redness in the West
+:PROPERTIES:
+:AUTHOR:   Cormac McCarthy
+:ADDED:    <2017-09-11>
+:GOODREADS: https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West
+:END:
+
+*** The Yellow Wall-Paper
+:PROPERTIES:
+:AUTHOR:   Charlotte Perkins Gilman, Elaine Hedges
+:ADDED:    <2017-08-28>
+:GOODREADS: https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper
+:END:
+
+*** READING A Midsummer Night's Dream
+:PROPERTIES:
+:AUTHOR:   William Shakespeare, Barbara A. Mowat, (Editor), Paul Werstine, (Editor), Catherine Belsey, (Contributor)
+:ADDED:    <2017-07-12>
+:GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
+:END:
+
+*** Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+:PROPERTIES:
+:AUTHOR:   Algernon Bertram Freeman-Mitford
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan
+:END:
+
+*** Moby Dick
+:PROPERTIES:
+:AUTHOR:   Herman Melville
+:ADDED:    <2017-06-28>
+:END:
+
+*** Homegoing
+:PROPERTIES:
+:AUTHOR:    Yaa Gyasi
+:ADDED:     <2017-06-15>
+:GOODREADS: https://www.goodreads.com/book/show/27071490
+:END:
+
+*** Salvage the Bones
+:PROPERTIES:
+:AUTHOR:    Jesmyn Ward
+:ADDED:     <2017-06-15>
+:GOODREADS: https://www.goodreads.com/book/show/10846336
+:END:
+
+*** The Poisonwood Bible
+:PROPERTIES:
+:AUTHOR:    Barbara Kingsolver
+:ADDED:     <2017-06-07>
+:GOODREADS: https://www.goodreads.com/book/show/7244
+:END:
+
+*** Metro 2033 (Metro, #1)
+:PROPERTIES:
+:AUTHOR:    Dmitry Glukhovsky
+:ADDED:     <2017-05-18>
+:GOODREADS: https://www.goodreads.com/book/show/17274667
+:END:
+
+*** READ Solaris
+CLOSED: [2017-05-14]
+:PROPERTIES:
+:AUTHOR:    Stanisław Lem
+:ADDED:     <2017-05-07>
+:GOODREADS: https://www.goodreads.com/book/show/95558
+:END:
+
+Not very hard sci-fi, but one of the best experiences.
+
+*** READ Alice's Adventures in Wonderland (Alice's Adventures in Wonderland #1)
+CLOSED: [2015-04-28]
+:PROPERTIES:
+:AUTHOR:    Lewis Carroll, John Tenniel
+:ADDED:     <2017-03-27>
+:GOODREADS: https://www.goodreads.com/book/show/6324090
+:END:
+
+*** Soylent Green
+:PROPERTIES:
+:AUTHOR:    Harry Harrison
+:ADDED:     <2017-03-22>
+:GOODREADS: https://www.goodreads.com/book/show/9799221
+:END:
+
+*** Assassin's Quest (Farseer Trilogy, #3)
+:PROPERTIES:
+:AUTHOR:    Robin Hobb
+:ADDED:     <2017-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/33396914
+:END:
+
+*** Royal Assassin (Farseer Trilogy, #2)
+:PROPERTIES:
+:AUTHOR:    Robin Hobb
+:ADDED:     <2017-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/25300956
+:END:
+
+*** Assassin's Apprentice (Farseer Trilogy, #1)
+:PROPERTIES:
+:AUTHOR:    Robin Hobb
+:ADDED:     <2017-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/77197
+:END:
+
+*** A Scanner Darkly
+:PROPERTIES:
+:AUTHOR:    Philip K. Dick
+:ADDED:     <2017-02-10>
+:GOODREADS: https://www.goodreads.com/book/show/14817
+:END:
+
+*** Catch-22
+:PROPERTIES:
+:AUTHOR:    Joseph Heller
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/168668
+:END:
+
+*** READ The Handmaid's Tale
+CLOSED: [2017-06-07]
+:PROPERTIES:
+:AUTHOR:    Margaret Atwood
+:ADDED:     <2017-01-26>
+:GOODREADS: https://www.goodreads.com/book/show/38447
+:END:
+
+*** Last Argument of Kings (The First Law #3)
+:PROPERTIES:
+:AUTHOR:    Joe Abercrombie
+:ADDED:     <2017-01-21>
+:GOODREADS: https://www.goodreads.com/book/show/944076
+:END:
+
+*** Before They Are Hanged (The First Law #2)
+:PROPERTIES:
+:AUTHOR:    Joe Abercrombie
+:ADDED:     <2017-01-21>
+:GOODREADS: https://www.goodreads.com/book/show/902715
+:END:
+
+*** The Blade Itself (The First Law #1)
+:PROPERTIES:
+:AUTHOR:    Joe Abercrombie
+:ADDED:     <2017-01-21>
+:GOODREADS: https://www.goodreads.com/book/show/944073
+:END:
+
+*** Atlas Shrugged
+:PROPERTIES:
+:AUTHOR:    Ayn Rand, Leonard Peikoff
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/662
+:END:
+
+*** A Doll's House
+:PROPERTIES:
+:AUTHOR:    Henrik Ibsen, Michael   Meyer
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/37793
+:END:
+
+*** The Fountainhead
+:PROPERTIES:
+:AUTHOR:    Ayn Rand, Leonard Peikoff
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/2122
+:END:
+
+*** The Call of Cthulhu and Other Weird Stories
+:PROPERTIES:
+:AUTHOR:    H.P. Lovecraft, S.T. Joshi
+:ADDED:     <2017-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/160149
+:END:
+
+*** Small Gods (Discworld, #13)
+:PROPERTIES:
+:AUTHOR:    Terry Pratchett
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/34484
+:END:
+
+*** Dune (Dune #1)
+:PROPERTIES:
+:AUTHOR:    Frank Herbert
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/234225
+:END:
+
+*** The Course of Love
+:PROPERTIES:
+:AUTHOR:    Alain de Botton
+:ADDED:     <2016-12-15>
+:GOODREADS: https://www.goodreads.com/book/show/27845690
+:END:
+
+*** In the Not Quite Dark: Stories
+:PROPERTIES:
+:AUTHOR:    Dana Johnson
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/27037165
+:END:
+
+*** The High Mountains of Portugal
+:PROPERTIES:
+:AUTHOR:    Yann Martel
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/25489094
+:END:
+
+*** All the Birds in the Sky
+:PROPERTIES:
+:AUTHOR:    Charlie Jane Anders
+:ADDED:     <2016-12-06>
+:GOODREADS: https://www.goodreads.com/book/show/25372801
+:END:
+
+*** Storm Front (The Dresden Files, #1)
+:PROPERTIES:
+:AUTHOR:    Jim Butcher
+:ADDED:     <2016-12-01>
+:GOODREADS: https://www.goodreads.com/book/show/47212
+:END:
+
+*** The Mysterious Flame of Queen Loana
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, Geoffrey Brock
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/10503
+:END:
+
+*** Seveneves
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/22816087
+:END:
+
+*** Foucault's Pendulum
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, William Weaver
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/17841
+:END:
+
+*** War and Peace
+:PROPERTIES:
+:AUTHOR:    Leo Tolstoy, Henry Gifford, Aylmer Maude, Louise Maude
+:ADDED:     <2016-11-27>
+:GOODREADS: https://www.goodreads.com/book/show/656
+:END:
+
+*** The Hound of the Baskervilles (Sherlock Holmes, #5)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle, Anne Perry
+:ADDED:     <2016-10-15>
+:GOODREADS: https://www.goodreads.com/book/show/8921
+:END:
+
+*** The Sign of Four (Sherlock Holmes, #2)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle, Peter Ackroyd, Ed Glinert
+:ADDED:     <2016-10-15>
+:GOODREADS: https://www.goodreads.com/book/show/608474
+:END:
+
+*** A Study in Scarlet (Sherlock Holmes, #1)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2016-10-15>
+:GOODREADS: https://www.goodreads.com/book/show/102868
+:END:
+
+*** Fight Club
+:PROPERTIES:
+:AUTHOR:    Chuck Palahniuk
+:ADDED:     <2016-09-23>
+:GOODREADS: https://www.goodreads.com/book/show/5759
+:END:
+
+*** The Crippled God (The Malazan Book of the Fallen, #10)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/8447255
+:END:
+
+*** Dust of Dreams (The Malazan Book of the Fallen, #9)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/4703427
+:END:
+
+*** Toll the Hounds (The Malazan Book of the Fallen, #8)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/938544
+:END:
+
+*** Reaper's Gale (The Malazan Book of the Fallen, #7)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/459064
+:END:
+
+*** The Bonehunters (Malazan Book of the Fallen, #6)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/478951
+:END:
+
+*** Midnight Tides (The Malazan Book of the Fallen, #5)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/345299
+:END:
+
+*** House of Chains (The Malazan Book of the Fallen, #4)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/55398
+:END:
+
+*** Memories of Ice (The Malazan Book of the Fallen, #3)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/175983
+:END:
+
+*** Deadhouse Gates (The Malazan Book of the Fallen, #2)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/55401
+:END:
+
+*** Gardens of the Moon (The Malazan Book of the Fallen, #1)
+:PROPERTIES:
+:AUTHOR:    Steven Erikson
+:ADDED:     <2016-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/55399
+:END:
+
+*** Where the Red Fern Grows
+:PROPERTIES:
+:AUTHOR:    Wilson Rawls
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/10365
+:END:
+
+*** The Time Traveler's Wife
+:PROPERTIES:
+:AUTHOR:    Audrey Niffenegger
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/14050
+:END:
+
+*** The Lovely Bones
+:PROPERTIES:
+:AUTHOR:    Alice Sebold
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/12232938
+:END:
+
+*** READ Flowers for Algernon
+CLOSED: [2017-07-20 Thu 03:19]
+:PROPERTIES:
+:AUTHOR:    Daniel Keyes
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/18373
+:END:
+
+I expected the book to end the way it did a lot earlier and that decreased the
+power of the transition back to Charlie in this otherwise wonderful story.
+
+*** Extremely Loud and Incredibly Close
+:PROPERTIES:
+:AUTHOR:    Jonathan Safran Foer
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/4588
+:END:
+
+*** The Bell Jar
+:PROPERTIES:
+:AUTHOR:    Sylvia Plath
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/6514
+:END:
+
+*** The Old Curiosity Shop
+:PROPERTIES:
+:AUTHOR:    Charles Dickens, Norman Page
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/429024
+:END:
+
+*** Revolutionary Road
+:PROPERTIES:
+:AUTHOR:    Richard Yates
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/48328
+:END:
+
+*** The Heart is a Lonely Hunter
+:PROPERTIES:
+:AUTHOR:    Carson McCullers
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/37380
+:END:
+
+*** READ The Giving Tree
+CLOSED: [2017-06-08]
+:PROPERTIES:
+:AUTHOR:    Shel Silverstein
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/370493
+:END:
+
+*** The Boy in the Striped Pajamas
+:PROPERTIES:
+:AUTHOR:    John Boyne
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/39999
+:END:
+
+*** A Farewell to Arms
+:PROPERTIES:
+:AUTHOR:    Ernest Hemingway
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/10799
+:END:
+
+*** Of Mice and Men
+:PROPERTIES:
+:AUTHOR:    John Steinbeck
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/890
+:END:
+
+*** Anna Karenina
+:PROPERTIES:
+:AUTHOR:    Leo Tolstoy, David Magarshack, Priscilla Meyer
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/152
+:END:
+
+*** The Great Gatsby
+:PROPERTIES:
+:AUTHOR:    F. Scott Fitzgerald
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/4671
+:END:
+
+*** The Catcher in the Rye
+:PROPERTIES:
+:AUTHOR:    J.D. Salinger
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/5107
+:END:
+
+*** Crime and Punishment
+:PROPERTIES:
+:AUTHOR:    Fyodor Dostoyevsky, David McDuff
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/7144
+:END:
+
+*** The Kite Runner
+:PROPERTIES:
+:AUTHOR:    Khaled Hosseini
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/77203
+:END:
+
+*** A Thousand Splendid Suns
+:PROPERTIES:
+:AUTHOR:    Khaled Hosseini
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/128029
+:END:
+
+*** A Tree Grows in Brooklyn
+:PROPERTIES:
+:AUTHOR:    Betty  Smith
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/14891
+:END:
+
+*** The Perks of Being a Wallflower
+:PROPERTIES:
+:AUTHOR:    Stephen Chbosky
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/22628
+:END:
+
+*** The Diary of a Young Girl
+:PROPERTIES:
+:AUTHOR:    Anne Frank, Eleanor Roosevelt, B.M. Mooyart-Doubleday
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/48855
+:END:
+
+*** Bridge to Terabithia
+:PROPERTIES:
+:AUTHOR:    Katherine Paterson
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/2839
+:END:
+
+*** The Metamorphosis
+:PROPERTIES:
+:AUTHOR:    Franz Kafka, Stanley Corngold
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/485894
+:END:
+
+*** READ A Clockwork Orange
+CLOSED: [2017-04-11]
+:PROPERTIES:
+:AUTHOR:    Anthony Burgess
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/227463
+:END:
+
+*** Dandelion Wine (Green Town, #1)
+:PROPERTIES:
+:AUTHOR:    Ray Bradbury
+:ADDED:     <2016-08-11>
+:GOODREADS: https://www.goodreads.com/book/show/50033
+:END:
+
+*** READ The Trial
+  CLOSED: [2017-11-06 Mon 23:23]
+:PROPERTIES:
+:AUTHOR:    Franz Kafka, Edwin Muir, Willa Muir, Max Brod
+:ADDED:     <2016-08-11>
+:GOODREADS: https://www.goodreads.com/book/show/17690
+:END:
+
+I don't think I got it completely. The story flows in a confusing and lazy way
+and I stopped at many places while reading this. I thought a bit about whats
+different here which is making the whole thing boring. Is it the weird way
+people converse? Is it the repelling suspense in the story which I don't feel
+like unraveling by pushing myself a few pages ahead?
+
+Somewhere around 60-70% I got the genius (at least one) behind the writing
+style. The annoyance you feel from the way the story progresses is meant to be
+there and it helps you connect with K and his contempt for the court and the
+whole bureaucracy. I still haven't tried to interpret every symbolism in the
+story (and there are many, now that I think of it), but I do get the general
+point now. More Kafka's and some connected philosophical readings should help to
+get it right.
+
+*** READ Brave New World
+CLOSED: [2017-03-31]
+:PROPERTIES:
+:AUTHOR:    Aldous Huxley
+:ADDED:     <2016-08-11>
+:GOODREADS: https://www.goodreads.com/book/show/5129
+:END:
+
+*** Siddhartha
+:PROPERTIES:
+:AUTHOR:    Hermann Hesse, Hilda Rosner
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/52036
+:END:
+
+*** The Diamond Age: or, A Young Lady's Illustrated Primer
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/827
+:END:
+
+*** Leviathan (Leviathan, #1)
+:PROPERTIES:
+:AUTHOR:    Scott Westerfeld
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/6050678
+:END:
+
+*** Contact
+:PROPERTIES:
+:AUTHOR:    Carl Sagan
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/61666
+:END:
+
+*** Snow Crash
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-08-07>
+:GOODREADS: https://www.goodreads.com/book/show/830
+:END:
+
+*** Pond
+:PROPERTIES:
+:AUTHOR:    Claire-Louise Bennett
+:ADDED:     <2016-07-14>
+:GOODREADS: https://www.goodreads.com/book/show/25333047
+:END:
+
+*** READ Season of Storms (The Witcher, #0.5)
+CLOSED: [2016-06-29]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2016-06-19>
+:GOODREADS: https://www.goodreads.com/book/show/25748789
+:END:
+
+*** READ Pani Jeziora (Saga o Wiedźminie, #7)
+CLOSED: [2016-06-24]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2016-06-19>
+:GOODREADS: https://www.goodreads.com/book/show/68452
+:END:
+
+*** READ The Tower of the Swallow (The Witcher, #6)
+CLOSED: [2016-06-19]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski, David French
+:ADDED:     <2016-06-19>
+:GOODREADS: https://www.goodreads.com/book/show/18247597
+:END:
+
+*** READ Anathem
+CLOSED: [2016-08-07]
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/2845024
+:END:
+
+It could have been helped by a bit more deeper storyline and 'theorics',
+considering the number of pages (~1000). The kind of topics it touched, it
+could have been perfect. But sometimes it bloats out.
+
+*** The Night Circus
+:PROPERTIES:
+:AUTHOR:    Erin Morgenstern
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/9361589
+:END:
+
+*** READ The Silver Spike (The Chronicles of the Black Company, #3.5)
+CLOSED: [2016-08-28]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400914
+:END:
+
+*** READ The Black Company (The Chronicles of the Black Company, #1)
+CLOSED: [2016-07-04]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/140671
+:END:
+
+*** READ Water Sleeps (The Chronicles of the Black Company, #8)
+CLOSED: [2017-02-07]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/349470
+:END:
+
+*** READ Soldiers Live (The Chronicles of the Black Company, #9)
+CLOSED: [2017-02-25]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400899
+:END:
+
+*** READ She is the Darkness (The Chronicles of the Black Company, #7)
+CLOSED: [2017-01-02]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400897
+:END:
+
+Story of the south really picks up with this one! Hopefully, the next 2 will be
+amazing.
+
+*** READ Bleak Seasons (The Chronicles of the Black Company, #6)
+CLOSED: [2016-12-22]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400911
+:END:
+
+*** READ Dreams of Steel (The Chronicles of the Black Company, #5)
+CLOSED: [2016-08-15]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400900
+:END:
+
+Characters up in the north were more alluring. Read through the books of the
+south using the impetus of north. Gets slightly unnecessarily chaotic at times,
+without moving the story as the older books did. Will go to glittering stone
+after touching the silver spike.
+
+*** READ Shadow Games (The Chronicles of the Black Company, #4)
+CLOSED: [2016-08-14]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/113540
+:END:
+
+*** READ The White Rose (The Chronicles of the Black Company, #3)
+CLOSED: [2016-08-12]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400906
+:END:
+
+*** READ Shadows Linger (The Chronicles of the Black Company, #2)
+CLOSED: [2016-08-09]
+:PROPERTIES:
+:AUTHOR:    Glen Cook
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/400881
+:END:
+
+*** Neverwhere
+:PROPERTIES:
+:AUTHOR:    Neil Gaiman
+:ADDED:     <2016-06-16>
+:GOODREADS: https://www.goodreads.com/book/show/14497
+:END:
+
+*** READ The Ocean at the End of the Lane
+CLOSED: [2016-05-28]
+:PROPERTIES:
+:AUTHOR:    Neil Gaiman
+:ADDED:     <2016-05-25>
+:GOODREADS: https://www.goodreads.com/book/show/15783514
+:END:
+
+*** Batman: The Dark Knight Returns
+:PROPERTIES:
+:AUTHOR:    Frank Miller, Klaus Janson, Lynn Varley
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/59960
+:END:
+
+*** Batman: The Killing Joke
+:PROPERTIES:
+:AUTHOR:    Alan Moore, Brian Bolland, Tim Sale
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/96358
+:END:
+
+*** Batman: Year One
+:PROPERTIES:
+:AUTHOR:    Frank Miller, David Mazzucchelli, Richmond Lewis, Dennis O'Neil
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/59980
+:END:
+
+*** READ V for Vendetta
+CLOSED: [2016-06-19]
+:PROPERTIES:
+:AUTHOR:    Alan Moore, David   Lloyd
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/5805
+:END:
+
+*** READ Watchmen
+CLOSED: [2016-05-24]
+:PROPERTIES:
+:AUTHOR:    Alan Moore, Dave Gibbons, John Higgins
+:ADDED:     <2016-04-05>
+:GOODREADS: https://www.goodreads.com/book/show/472331
+:END:
+
+*** Reamde
+:PROPERTIES:
+:AUTHOR:    Neal Stephenson
+:ADDED:     <2016-03-21>
+:GOODREADS: https://www.goodreads.com/book/show/10552338
+:END:
+
+*** The Old Man and the Sea
+:PROPERTIES:
+:AUTHOR:    Ernest Hemingway
+:ADDED:     <2016-03-17>
+:GOODREADS: https://www.goodreads.com/book/show/2165
+:END:
+
+*** READ The White Tiger
+CLOSED: [2016-03-20]
+:PROPERTIES:
+:AUTHOR:    Aravind Adiga
+:ADDED:     <2016-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/1768603
+:END:
+
+*** READ Life of Pi
+CLOSED: [2016-03-13]
+:PROPERTIES:
+:AUTHOR:    Yann Martel
+:ADDED:     <2016-02-27>
+:GOODREADS: https://www.goodreads.com/book/show/4214
+:END:
+
+*** READ Train to Pakistan
+CLOSED: [2016-02-16]
+:PROPERTIES:
+:AUTHOR:    Khushwant Singh
+:ADDED:     <2016-02-11>
+:GOODREADS: https://www.goodreads.com/book/show/785454
+:END:
+
+*** The Two Towers (The Lord of the Rings, #2)
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/15241
+:END:
+
+*** The Return of the King (The Lord of the Rings, #3)
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/18512
+:END:
+
+*** The Fellowship of the Ring (The Lord of the Rings, #1)
+:PROPERTIES:
+:AUTHOR:    J.R.R. Tolkien
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/34
+:END:
+
+*** The Hobbit
+:PROPERTIES:
+:AUTHOR:   J.R.R. Tolkien
+:ADDED:    <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/5907
+:END:
+
+*** Angels & Demons  (Robert Langdon, #1)
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/960
+:END:
+
+*** Harry Potter and the Deathly Hallows (Harry Potter, #7)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/136251
+:END:
+
+*** Harry Potter and the Half-Blood Prince (Harry Potter, #6)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/1
+:END:
+
+*** Harry Potter and the Chamber of Secrets (Harry Potter, #2)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré, Amik Kasoruho
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/15881
+:END:
+
+*** The Da Vinci Code (Robert Langdon, #2)
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/968
+:END:
+
+*** Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/5
+:END:
+
+*** Harry Potter and the Goblet of Fire (Harry Potter, #4)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/6
+:END:
+
+*** Harry Potter and the Order of the Phoenix (Harry Potter, #5)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Mary GrandPré
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/2
+:END:
+
+*** READ The Time of Contempt (The Witcher, #4)
+CLOSED: [2016-03-25]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski, David French
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/14781491
+:END:
+
+*** READ The Last Battle (Chronicles of Narnia, #7)
+CLOSED: [2016-01-29]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/84369
+:END:
+
+*** READ The Magician's Nephew (Chronicles of Narnia, #6)
+CLOSED: [2016-01-13]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/65605
+:END:
+
+*** READ The Horse and His Boy (Chronicles of Narnia, #5)
+CLOSED: [2016-01-02]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/84119
+:END:
+
+*** READ The Silver Chair (Chronicles of Narnia, #4)
+CLOSED: [2015-12-30]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis, Pauline Baynes
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/65641
+:END:
+
+*** READ The Voyage of the Dawn Treader (Chronicles of Narnia, #5)
+CLOSED: [2015-12-29]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis, Pauline Baynes
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/7806771
+:END:
+
+*** READ Prince Caspian (Chronicles of Narnia, #2)
+CLOSED: [2015-12-29]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/121749
+:END:
+
+*** READ The Lion, the Witch, and the Wardrobe (Chronicles of Narnia, #1)
+CLOSED: [2015-12-27]
+:PROPERTIES:
+:AUTHOR:    C.S. Lewis
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/100915
+:END:
+
+*** READ Baptism of Fire (The Witcher, #5)
+CLOSED: [2016-05-23]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-12-27>
+:GOODREADS: https://www.goodreads.com/book/show/18924205
+:END:
+
+*** READ Sword of Destiny (The Witcher, #2)
+CLOSED: [2015-12-26]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-12-23>
+:GOODREADS: https://www.goodreads.com/book/show/25454056
+:END:
+
+*** The Windup Girl
+:PROPERTIES:
+:AUTHOR:    Paolo Bacigalupi
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/6597651
+:END:
+
+*** Neuromancer
+:PROPERTIES:
+:AUTHOR:    William Gibson
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/22328
+:END:
+
+*** READ The Lorax
+CLOSED: [2015-12-05]
+:PROPERTIES:
+:AUTHOR:    Dr. Seuss
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/7784
+:END:
+
+*** The Call of the Wild
+:PROPERTIES:
+:AUTHOR:    Jack London
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/1852
+:END:
+
+*** Frankenstein
+:PROPERTIES:
+:AUTHOR:    Mary Wollstonecraft Shelley, Percy Bysshe Shelley, Maurice Hindle
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/18490
+:END:
+
+*** The Strange Case of Dr. Jekyll and Mr. Hyde
+:PROPERTIES:
+:AUTHOR:    Robert Louis Stevenson, Vladimir Nabokov, Mervyn Peake, Dan Chaon
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/51496
+:END:
+
+*** The Moonstone
+:PROPERTIES:
+:AUTHOR:    Wilkie Collins, Carolyn G. Heilbrun
+:ADDED:     <2015-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/6138
+:END:
+
+*** Diary of a Wimpy Kid (Diary of a Wimpy Kid, #1)
+:PROPERTIES:
+:AUTHOR:    Jeff Kinney
+:ADDED:     <2015-11-01>
+:GOODREADS: https://www.goodreads.com/book/show/389627
+:END:
+
+*** READ Fahrenheit 451
+CLOSED: [2016-08-11]
+:PROPERTIES:
+:AUTHOR:    Ray Bradbury
+:ADDED:     <2015-11-01>
+:GOODREADS: https://www.goodreads.com/book/show/17470674
+:END:
+
+*** The Book Thief
+:PROPERTIES:
+:AUTHOR:    Markus Zusak
+:ADDED:     <2015-11-01>
+:GOODREADS: https://www.goodreads.com/book/show/19063
+:END:
+
+*** READ The Lathe of Heaven
+CLOSED: [2015-10-25]
+:PROPERTIES:
+:AUTHOR:    Ursula K. Le Guin
+:ADDED:     <2015-10-20>
+:GOODREADS: https://www.goodreads.com/book/show/22007410
+:END:
+
+*** READ 1984
+CLOSED: [2018-03-16 Fri 14:54]
+:PROPERTIES:
+:AUTHOR:    George Orwell, Erich Fromm, Celâl Üster
+:ADDED:     <2015-09-24>
+:GOODREADS: https://www.goodreads.com/book/show/5470
+:END:
+
+Its beautiful how clearly this book makes you see the importance of written
+texts with all the imaginative diversity. Its this /diversity/ which threatens any
+power trying to control minds.
+
+The pieces around torture deeply reminded me of 'A Clockwork Orange' and I find
+it (elaboration of torture) really impactful in conveying the depth of ideas.
+
+*** READ Around the World in Eighty Days (Extraordinary Voyages, #11)
+CLOSED: [2018-02-05 Mon 01:21]
+:PROPERTIES:
+:AUTHOR:    Jules Verne, Michael Glencross, Brian W. Aldiss
+:ADDED:     <2015-08-19>
+:GOODREADS: https://www.goodreads.com/book/show/54479
+:END:
+
+*** October Sky
+:PROPERTIES:
+:AUTHOR:    Homer Hickam
+:ADDED:     <2015-08-17>
+:GOODREADS: https://www.goodreads.com/book/show/124862
+:END:
+
+*** All the Light We Cannot See
+:PROPERTIES:
+:AUTHOR:    Anthony Doerr
+:ADDED:     <2015-08-15>
+:GOODREADS: https://www.goodreads.com/book/show/18143977
+:END:
+
+*** READ Do Androids Dream of Electric Sheep?
+CLOSED: [2018-02-02 Fri 02:17]
+:PROPERTIES:
+:AUTHOR:    Philip K. Dick, Roger Zelazny
+:ADDED:     <2015-07-07>
+:GOODREADS: https://www.goodreads.com/book/show/7082
+:END:
+
+Mid way, I realized that I have actually seen the movie (blade runner) but this
+book still kept on giving and giving. I specially enjoyed the way the mind of
+Isidore was picked on. A simple being with a devotion to faith. Its really hard
+to reconcile with reality after your faith, your everything is taken away.
+
+As a side note, I am interested to know more about the author's (Philip K. Dick;
+this is my first book by him) philosophical and religious inclinations.
+
+*** The Martian
+:PROPERTIES:
+:AUTHOR:    Andy Weir
+:ADDED:     <2015-05-19>
+:GOODREADS: https://www.goodreads.com/book/show/18007564
+:END:
+
+*** READ The Time Machine
+CLOSED: [2015-05-19]
+:PROPERTIES:
+:AUTHOR:    H.G. Wells
+:ADDED:     <2015-05-14>
+:GOODREADS: https://www.goodreads.com/book/show/8155907
+:END:
+
+*** Grimm's Fairy Tales
+:PROPERTIES:
+:AUTHOR:    Jacob Grimm, Wilhelm Grimm
+:ADDED:     <2015-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/11093132
+:END:
+
+*** Aesop's Fables
+:PROPERTIES:
+:AUTHOR:    Aesop
+:ADDED:     <2015-04-23>
+:GOODREADS: https://www.goodreads.com/book/show/6376577
+:END:
+
+*** READ The Name of the Rose
+CLOSED: [2016-02-09]
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, William Weaver, Seán Barrett
+:ADDED:     <2015-04-13>
+:GOODREADS: https://www.goodreads.com/book/show/119073
+:END:
+
+*** To Kill a Mockingbird
+:PROPERTIES:
+:AUTHOR:    Harper Lee
+:ADDED:     <2015-04-09>
+:GOODREADS: https://www.goodreads.com/book/show/2657
+:END:
+
+*** A Passage to India
+:PROPERTIES:
+:AUTHOR:    E.M. Forster, Oliver Stallybrass, Pankaj Mishra
+:ADDED:     <2015-04-09>
+:GOODREADS: https://www.goodreads.com/book/show/45195
+:END:
+
+*** Midnight's Children
+:PROPERTIES:
+:AUTHOR:    Salman Rushdie
+:ADDED:     <2015-04-09>
+:GOODREADS: https://www.goodreads.com/book/show/14836
+:END:
+
+*** READ Blood of Elves (The Witcher, #3)
+CLOSED: [2015-05-09]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-04-02>
+:GOODREADS: https://www.goodreads.com/book/show/6415386
+:END:
+
+*** READ The Last Wish (The Witcher, #1)
+CLOSED: [2015-04-02]
+:PROPERTIES:
+:AUTHOR:    Andrzej Sapkowski
+:ADDED:     <2015-03-22>
+:GOODREADS: https://www.goodreads.com/book/show/8173788
+:END:
+
+*** READ Treasure Island
+CLOSED: [2018-02-05 Mon 01:20]
+:PROPERTIES:
+:AUTHOR:    Robert Louis Stevenson
+:ADDED:     <2015-03-14>
+:GOODREADS: https://www.goodreads.com/book/show/295
+:END:
+
+*** A Madman Dreams of Turing Machines
+:PROPERTIES:
+:AUTHOR:    Janna Levin
+:ADDED:     <2015-02-10>
+:GOODREADS: https://www.goodreads.com/book/show/16670
+:END:
+
+*** The Immoralist
+:PROPERTIES:
+:AUTHOR:    André Gide, Alan Sheridan, David Watson
+:ADDED:     <2015-02-02>
+:GOODREADS: https://www.goodreads.com/book/show/70101
+:END:
+
+*** READ Einstein's Dreams
+CLOSED: [2015-02-09]
+:PROPERTIES:
+:AUTHOR:    Alan Lightman
+:ADDED:     <2015-01-26>
+:GOODREADS: https://www.goodreads.com/book/show/12086102
+:END:
+
+*** The River
+:PROPERTIES:
+:AUTHOR:    Alessandro Sanna, Michael Reynolds
+:ADDED:     <2015-01-23>
+:GOODREADS: https://www.goodreads.com/book/show/17675268
+:END:
+
+*** READ The Jungle Book
+CLOSED: [2018-02-05 Mon 01:18]
+:PROPERTIES:
+:AUTHOR:    Rudyard Kipling
+:ADDED:     <2014-12-21>
+:GOODREADS: https://www.goodreads.com/book/show/77270
+:END:
+
+*** Eleven Minutes
+:PROPERTIES:
+:AUTHOR:    Paulo Coelho
+:ADDED:     <2014-07-14>
+:GOODREADS: https://www.goodreads.com/book/show/1430
+:END:
+
+*** READ The Alchemist
+CLOSED: [2018-02-05 Mon 01:17]
+:PROPERTIES:
+:AUTHOR:    Paulo Coelho, Alan R. Clarke
+:ADDED:     <2014-07-06>
+:GOODREADS: https://www.goodreads.com/book/show/865
+:END:
+
+*** The Case-Book of Sherlock Holmes (Sherlock Holmes, #9)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/162823
+:END:
+
+*** His Last Bow: 8 Stories (Sherlock Holmes, #8)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/754713
+:END:
+
+*** The Return of Sherlock Holmes (Sherlock Holmes, #6)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/194366
+:END:
+
+*** The Memoirs of Sherlock Holmes (Sherlock Holmes, #4)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/194373
+:END:
+
+*** The Adventures of Sherlock Holmes (Sherlock Holmes, #3)
+:PROPERTIES:
+:AUTHOR:    Arthur Conan Doyle
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/3590
+:END:
+
+*** Harry Potter and the Sorcerer's Stone (Harry Potter, #1)
+:PROPERTIES:
+:AUTHOR:    J.K. Rowling, Jim Kay, Mary GrandPré
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/3
+:END:
+
+*** READ Deception Point
+CLOSED: [2018-02-05 Mon 01:17]
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/976
+:END:
+
+*** READ Digital Fortress
+CLOSED: [2018-02-05 Mon 01:17]
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/11125
+:END:
+
+*** READ The Lost Symbol (Robert Langdon, #3)
+CLOSED: [2018-02-05 Mon 01:17]
+:PROPERTIES:
+:AUTHOR:    Dan Brown
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/6411961
+:END:
+
+*** READ Animal Farm
+CLOSED: [2014-07-05]
+:PROPERTIES:
+:AUTHOR:    George Orwell
+:ADDED:     <2014-07-05>
+:GOODREADS: https://www.goodreads.com/book/show/7613
 :END:

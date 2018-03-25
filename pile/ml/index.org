@@ -4,6 +4,6 @@
 * Pages in this section
 
 - [[./learning/index.org][Breaking down /Learning/]]
-- [[./potential.org][Potential in Regret Minimizing Ensemble]]
+- [[./potential/index.org][Potential in Multiplicative Weight Algorithms]]
 - [[./resources.org][Resources]]
 - [[./voting-ensemble/index.org][Voting Ensemble]]
