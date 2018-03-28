@@ -11,6 +11,15 @@ li a {
   }
 }
 
+#content .page-intro p a,
+#footnotes a {
+  @include link-underline($back-white, $text-gray);
+
+  &:hover {
+    @include link-underline($back-light, $text-gray);
+  }
+}
+
 .btn {
   @include button(4px, 14px, 7px);
 }

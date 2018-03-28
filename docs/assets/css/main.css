@@ -961,6 +961,69 @@ li a {
     li a:hover:visited {
       color: #000; }
 
+#content .page-intro p a,
+#footnotes a {
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  background-image: linear-gradient(#444, #444);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  border-radius: 1px;
+  background-color: #fff;
+  color: #444;
+  text-decoration: none; }
+  #content .page-intro p a::selection,
+  #footnotes a::selection {
+    text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+    background: #c8c8c8; }
+  #content .page-intro p a::-moz-selection,
+  #footnotes a::-moz-selection {
+    text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+    background: #c8c8c8; }
+  #content .page-intro p a *,
+  #content .page-intro p a *:after, #content .page-intro p a:after,
+  #content .page-intro p a *:before, #content .page-intro p a:before,
+  #footnotes a *,
+  #footnotes a *:after,
+  #footnotes a:after,
+  #footnotes a *:before,
+  #footnotes a:before {
+    text-shadow: none; }
+  #content .page-intro p a:visited,
+  #footnotes a:visited {
+    color: #444; }
+  #content .page-intro p a:hover,
+  #footnotes a:hover {
+    text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
+    background-image: linear-gradient(#444, #444);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0% 95%;
+    border-radius: 1px;
+    background-color: #efefef;
+    color: #444;
+    text-decoration: none; }
+    #content .page-intro p a:hover::selection,
+    #footnotes a:hover::selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    #content .page-intro p a:hover::-moz-selection,
+    #footnotes a:hover::-moz-selection {
+      text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
+      background: #c8c8c8; }
+    #content .page-intro p a:hover *,
+    #content .page-intro p a:hover *:after, #content .page-intro p a:hover:after,
+    #content .page-intro p a:hover *:before, #content .page-intro p a:hover:before,
+    #footnotes a:hover *,
+    #footnotes a:hover *:after,
+    #footnotes a:hover:after,
+    #footnotes a:hover *:before,
+    #footnotes a:hover:before {
+      text-shadow: none; }
+    #content .page-intro p a:hover:visited,
+    #footnotes a:hover:visited {
+      color: #444; }
+
 .btn {
   padding: 7px 14px;
   border-style: solid;
