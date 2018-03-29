@@ -1355,12 +1355,15 @@ A really pragmatic perspective on research. Short and well written.
 :GOODREADS: https://www.goodreads.com/book/show/188378
 :END:
 
-*** Five Moral Pieces
+*** READ Five Moral Pieces
+CLOSED: [2018-03-28 Wed 21:26]
 :PROPERTIES:
 :AUTHOR:    Umberto Eco, Alastair McEwen
 :ADDED:     <2016-11-28>
 :GOODREADS: https://www.goodreads.com/book/show/10515
 :END:
+
+Really good pieces in here. Specially /Ur-Fascism/.
 
 *** Critical Mass: How One Thing Leads to Another
 :PROPERTIES:
