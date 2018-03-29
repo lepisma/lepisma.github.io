@@ -94,7 +94,7 @@ $L_E(T) \le 2(1 + \eta)L_i(T) + \frac{2 \ln{n}}{\eta}$
 Here the losses are not binary but in [-1, 1]. The update rule $w_i(t+1) =
 w_i(t) (1 - \eta m_i(t))$. If $\eta \le 1/2$, then...
 
-** Computation at the edge of chaos: phase transitions and emergent computation :noexport:
+** Computation at the edge of chaos: phase transitions and emergent computation
  :PROPERTIES:
   :Custom_ID: langton1990computation
   :AUTHOR: Langton
@@ -104,11 +104,22 @@ w_i(t) (1 - \eta m_i(t))$. If $\eta \le 1/2$, then...
   :PAGES: 12--37
  :END:
 
-Three requirements to focus on for emergence of computation.
+The question here focuses on how to get rules capable of computation in CAs.
+Specifically, we are looking at /environments/ which characterize rules that
+allow:
 
-1. Storage
+1. Storage of information
 2. Transmission
-3. Interaction between the above 2.
+3. Interaction between the above two
+
+Intuitively, as the rule's output entropy increases, we move from a very simple
+output (more /storage/) to output with randomness (more /transmission/). In between
+these two, lies the region with the right amount of signal and noise with very
+large transients and this is where most of the interesting events take place.
+
+An interesting idea involves the definition of $\lambda$ parameter (that helps in
+categorizing the rules) which is basically a discrete probability distribution
+for the range of mapping function.
 
 ** Self-organized criticality                                     :noexport:
  :PROPERTIES:

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-03-29 Thu 00:05 -->
+<!-- 2018-03-29 Thu 18:54 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Note Cards</title>
@@ -258,6 +258,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -283,7 +305,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-03-29 Thu 00:05
+    Last modified:  2018-03-29 Thu 18:54
   </div>
   <h1>Note Cards</h1>
 </div>
@@ -383,6 +405,45 @@ elegant) and follows very closely the following description:
 <pre class="example">
 primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 </pre>
+</div>
+</div>
+
+<div id="outline-container-org1df03c3" class="outline-2">
+<h2 id="langton1990computation"><a id="org1df03c3"></a>Computation at the edge of chaos: phase transitions and emergent computation</h2>
+<div class="outline-text-2" id="text-langton1990computation">
+<pre class="example">
+Custom_ID: langton1990computation
+AUTHOR: Langton
+JOURNAL: Physica D: Nonlinear Phenomena
+YEAR: 1990
+VOLUME: 42
+PAGES: 12--37
+</pre>
+
+<p>
+The question here focuses on how to get rules capable of computation in CAs.
+Specifically, we are looking at <i>environments</i> which characterize rules that
+allow:
+</p>
+
+<ol class="org-ol">
+<li>Storage of information</li>
+<li>Transmission</li>
+<li>Interaction between the above two</li>
+</ol>
+
+<p>
+Intuitively, as the rule's output entropy increases, we move from a very simple
+output (more <i>storage</i>) to output with randomness (more <i>transmission</i>). In between
+these two, lies the region with the right amount of signal and noise with very
+large transients and this is where most of the interesting events take place.
+</p>
+
+<p>
+An interesting idea involves the definition of \(\lambda\) parameter (that helps in
+categorizing the rules) which is basically a discrete probability distribution
+for the range of mapping function.
+</p>
 </div>
 </div>
 </div>
