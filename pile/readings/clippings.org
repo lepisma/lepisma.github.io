@@ -1,21 +1,93 @@
 #+TITLE: Clippings
 #+SETUPFILE: ../assets/export.setup
-#+HTML_HEAD_EXTRA: <script src="./clippings.js"></script>
 #+HTML_HEAD_EXTRA: <style>blockquote { margin: 50px 0; }</style>
-#+HTML_HEAD_EXTRA: <script>
-#+HTML_HEAD_EXTRA: document.addEventListener('DOMContentLoaded', () => {
-#+HTML_HEAD_EXTRA:   var epigraph = document.getElementsByClassName('epigraph')[0];
-#+HTML_HEAD_EXTRA: 
-#+HTML_HEAD_EXTRA:   for (var i = epigraph.children.length; i >= 0; i--) {
-#+HTML_HEAD_EXTRA:     epigraph.appendChild(epigraph.children[Math.random() * i | 0]);
-#+HTML_HEAD_EXTRA:   }
-#+HTML_HEAD_EXTRA: })
-#+HTML_HEAD_EXTRA: </script>
 
-This is a randomized listing (page refresh shuffles items) of clippings from my
-readings.
+#+BEGIN_EXPORT html
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('shuffle-btn').onclick = function () {
+      let epigraph = document.getElementsByClassName('epigraph')[0]
+      for (var i = epigraph.children.length; i >= 0; i--) {
+        epigraph.appendChild(epigraph.children[Math.random() * i | 0])
+      }
+    }
+  })
+</script>
+#+END_EXPORT
+
+This is a listing of clippings from my readings. Most recent first. The button
+below shuffles items.
+
+@@html:<div><a class="btn" id="shuffle-btn">shuffle</a></div>@@
 
 #+HTML:<div class="epigraph">
+#+BEGIN_QUOTE
+The most dangerous form of intolerance is precisely the kind that arises in the
+absence of any doctrine, fueled by elemental drives.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The term "Fascism" fits everything because it is possible to eliminate one or
+more aspects from a Fascist regime and it will always be recognizably Fascist.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The excess of information leads either to casual criteria of decimation or to
+discriminating choices granted, once more, to a highly educated elite.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+given that it is not possible to read the whole thing in seven days—it is as if
+the news it gives were censored.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We would have an elite of extremely well-informed users, who know where and when
+to look for news, and a mass of information subproletarians, content with
+knowing that a calf with two heads has been born in their district, and ignoring
+the rest of the world.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Once it has demonstrated its self-flagellatory impartiality, the press no longer
+feels any interest in reforming itself.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Pope John must be an atheist. Only a man who does not believe in God can love
+his fellowman so much!"
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+While the industry of state consumption (such as armaments) needs tension, that
+of individual consumption needs happiness.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+but because the moment of action requires the elimination of nuances and
+ambiguities (and this is the irreplaceable function of the "decision maker" in
+every institution), whereas the intellectual function lies in delving for
+ambiguities and bringing them to light.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
 #+BEGIN_QUOTE
 I used the word mystic to refer to those few scientists who derive a perverse
 satisfaction from knowing that something is not known and who use that ignorance

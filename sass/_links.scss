@@ -22,6 +22,7 @@ li a {
 
 .btn {
   @include button(4px, 14px, 7px);
+  cursor: pointer;
 }
 
 .btn.disabled {
