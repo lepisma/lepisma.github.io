@@ -1035,7 +1035,8 @@ li a {
   font-size: 14px;
   font-style: normal;
   letter-spacing: 2px;
-  background-image: none; }
+  background-image: none;
+  cursor: pointer; }
   .btn:hover {
     background-color: #efefef;
     background-image: none; }
