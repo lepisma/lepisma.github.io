@@ -94,7 +94,7 @@ $L_E(T) \le 2(1 + \eta)L_i(T) + \frac{2 \ln{n}}{\eta}$
 Here the losses are not binary but in [-1, 1]. The update rule $w_i(t+1) =
 w_i(t) (1 - \eta m_i(t))$. If $\eta \le 1/2$, then...
 
-** Computation at the edge of chaos: phase transitions and emergent computation
+** Computation at the edge of chaos: phase transitions and emergent computation :noexport:
  :PROPERTIES:
   :Custom_ID: langton1990computation
   :AUTHOR: Langton
@@ -110,7 +110,7 @@ Three requirements to focus on for emergence of computation.
 2. Transmission
 3. Interaction between the above 2.
 
-** Self-organized criticality
+** Self-organized criticality                                     :noexport:
  :PROPERTIES:
   :Custom_ID: bak1988self
   :AUTHOR: Bak, Tang \& Wiesenfeld
