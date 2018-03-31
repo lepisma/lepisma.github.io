@@ -9,6 +9,16 @@ ul, ol, dl {
     width: 1em;
     @include light-para(15px);
   }
+
+  li {
+    margin: 5px 0;
+    font-size: 14px;
+
+    p {
+      // Revert inside p
+      font-size: 15px;
+    }
+  }
 }
 
 ul {

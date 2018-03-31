@@ -16,6 +16,15 @@ code {
   padding: 0 5px;
 }
 
+li {
+  code {
+    font-size: 14px;
+  }
+  p code {
+    font-size: 15px;
+  }
+}
+
 // Palette copied from blog
 // ------------------------
 // foreground: #655370

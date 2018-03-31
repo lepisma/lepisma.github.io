@@ -3,10 +3,11 @@ blockquote {
 
   p {
     display: inline;
-    font-style: italic;
+    font-size: 13px;
   }
 
   footer {
     @include light-meta();
+    text-transform: none;
   }
 }
