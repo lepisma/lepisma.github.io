@@ -113,6 +113,12 @@ $code-font: 'Fira Mono';
   }
 }
 
+@mixin link-reset() {
+  background: none;
+  text-shadow: none;
+  text-decoration: none;
+}
+
 @function twice($v1) {
   @return $v1 + $v1;
 }

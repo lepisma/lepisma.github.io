@@ -14,8 +14,15 @@
 .org-ref-bib {
   @include light-para(15px);
 
-  li > b {
-    // Reset font weight
-    font-weight: normal;
+  li > a:nth-child(2) {
+    @include link-reset();
+    &:hover {
+      @include link-reset();
+    }
+  }
+
+  .bib-link {
+    @include light-meta();
+    @include link-reset();
   }
 }

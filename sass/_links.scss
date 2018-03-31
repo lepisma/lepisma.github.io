@@ -30,7 +30,5 @@ li a {
 }
 
 .image-link, .image-link:hover {
-  text-decoration: none;
-  background: none;
-  text-shadow: none;
+  @include link-reset();
 }

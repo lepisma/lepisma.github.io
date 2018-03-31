@@ -763,8 +763,25 @@ blockquote {
   font-size: 15px;
   line-height: 1.6;
   color: #444; }
-  .org-ref-bib li > b {
-    font-weight: normal; }
+  .org-ref-bib li > a:nth-child(2) {
+    background: none;
+    text-shadow: none;
+    text-decoration: none; }
+    .org-ref-bib li > a:nth-child(2):hover {
+      background: none;
+      text-shadow: none;
+      text-decoration: none; }
+  .org-ref-bib .bib-link {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.9;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    background: none;
+    text-shadow: none;
+    text-decoration: none; }
 
 pre.src, pre.example {
   border-width: 0;
@@ -1097,9 +1114,9 @@ li a {
   color: #7b7b7b; }
 
 .image-link, .image-link:hover {
-  text-decoration: none;
   background: none;
-  text-shadow: none; }
+  text-shadow: none;
+  text-decoration: none; }
 
 ul, ol, dl {
   list-style: none;
