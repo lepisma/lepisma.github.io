@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-03-30 Fri 19:43 -->
+<!-- 2018-04-01 Sun 03:12 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Resources</title>
@@ -283,25 +283,85 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-03-30 Fri 19:43
+    Last modified:  2018-04-01 Sun 03:12
   </div>
   <h1>Resources</h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../allpages.html'>≡ index</a> / <a href='../programming/index.html'>programming</a> / resources</div>
-<blockquote>
 <p>
-This page is a work in progress
+This page houses some programming related resources that I have found useful
+while working on <i>anything</i>. Its starting out jumbled but will get more organized
+as I put more things in here.
 </p>
-</blockquote>
+
+<div id="outline-container-org51eda70" class="outline-2">
+<h2 id="org51eda70">Common Lisp</h2>
+<div class="outline-text-2" id="text-org51eda70">
+<ul class="org-ul">
+<li>Use <a href="https://github.com/roswell/roswell">roswell</a> for building command line tools.</li>
+<li><a href="https://github.com/takagi/lake">lake</a> is a neat make alternative.</li>
+<li>I keep a list of utility packages that I <code>:use</code> in repl <a href="https://github.com/lepisma/cfg/blob/master/dune/package.lisp">here</a>. Probably you could
+use something like <a href="https://github.com/cl21/cl21">cl21</a> but then you would want to write packages in cl21 too.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgde44434" class="outline-2">
+<h2 id="orgde44434">Emacs Lisp</h2>
+<div class="outline-text-2" id="text-orgde44434">
+<ul class="org-ul">
+<li>Use <a href="https://github.com/magnars/s.el">s</a>, <a href="https://github.com/magnars/dash.el">dash</a>, <a href="https://github.com/rejeep/f.el">f</a> and <a href="https://github.com/Wilfred/ht.el">ht</a> while programming in elisp for maximum pleasure.</li>
+</ul>
+</div>
+</div>
 
 <div id="outline-container-org53bed24" class="outline-2">
 <h2 id="org53bed24">Python</h2>
 <div class="outline-text-2" id="text-org53bed24">
 <ul class="org-ul">
-<li><a href="https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html">The Definitive Guide to Python import Statements</a> is a neat guide clearing up
+<li><a href="https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html">The Definitive Guide to Python import Statements</a> is a neat guide explaining
 the import mess in Python.</li>
+<li>Want more structure in python programs? Use <a href="https://github.com/ericvsmith/dataclasses">dataclasses</a>/<a href="https://github.com/python-attrs/attrs">attrs</a> and <a href="https://github.com/python/mypy">mypy</a>.</li>
+<li><a href="https://github.com/dgilland/pydash">pydash</a> has nice set of high level functions.</li>
+<li>For workflow management, I find <a href="https://snakemake.readthedocs.io/">snakemake</a> really useful. Combining it with
+<a href="https://conda.io/">conda</a> gives nice pavement for exploratory projects. For scripts, <a href="https://github.com/kennethreitz/pipenv/">pipenv</a> is
+probably the cleanest solution. For packages too, I am trying to use pipenv
+for the development side (tests, docs etc) with a pinch of make.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org54a54ff" class="outline-2">
+<h2 id="org54a54ff">Tools</h2>
+<div class="outline-text-2" id="text-org54a54ff">
+<p>
+Some nifty command line tools
+</p>
+
+<ul class="org-ul">
+<li><a href="http://pandoc.org/">Pandoc</a> for document conversion. If you feel like something is off, check out
+<a href="http://pandoc.org/filters.html">filters</a>.</li>
+<li><a href="https://www.imagemagick.org/script/index.php">imagemagick</a> for image manipulation. A lot of image-fu is possible just by
+piping through this.</li>
+<li><a href="https://www.graphviz.org/">graphviz</a> and <a href="http://ditaa.sourceforge.net/">ditaa</a> for making graphs, flowcharts etc. Both go really nicely in
+org-babel.</li>
+<li><a href="https://www.ffmpeg.org/">ffmpeg</a> for media conversion. Has nice language bindings too (e.g.
+<a href="https://github.com/kkroening/ffmpeg-python">ffmpeg-python</a>).</li>
+<li><a href="https://harelba.github.io/q/">q</a> allows running SQL over CSVs.</li>
+<li><a href="https://stedolan.github.io/jq/">jq</a> for working with json strings in command line.</li>
+<li><a href="https://httpie.org/">HTTPie</a> as HTTP client. In Emacs, try <a href="https://github.com/pashky/restclient.el">restclient</a> and <a href="https://github.com/alf/ob-restclient.el">ob-restclient</a>.</li>
+<li><a href="https://rg3.github.io/youtube-dl/">youtube-dl</a> for downloading media. Try <a href="https://github.com/skeeto/youtube-dl-emacs">youtube-dl-emacs</a> for Emacs.</li>
+<li><a href="https://aria2.github.io/">aria2</a> for downloading the rest. There is an <a href="https://github.com/LdBeth/aria2.el/">interface</a> for Emacs but I haven't used it.</li>
+<li><a href="https://github.com/tapio/live-server">live-server</a> for avoiding <code>python -m SimpleHTTPServer</code>.</li>
+<li><a href="https://ngrok.com">ngrok</a> for quickly exposing localhost.</li>
+<li><a href="https://github.com/dbcli/pgcli">pgcli</a> / <a href="https://github.com/dbcli/mycli">mycli</a> as db cli.</li>
+<li><a href="https://github.com/tldr-pages/tldr">tldr</a> for quick docs.</li>
+<li><a href="https://github.com/BurntSushi/ripgrep">rg</a> / <a href="https://github.com/ggreer/the_silver_searcher">ag</a> for searching in code. Spacemacs has nice ag wrappers.</li>
+<li><a href="https://github.com/wireservice/csvkit">csvkit</a> for csv-fu. Haven't used it but tools like <code>csvcut</code> are really nice.</li>
+<li>Command line tools from <code>poppler-utils</code> can replace almost everything you need
+to do with pdfs.</li>
 </ul>
 </div>
 </div>

@@ -1,12 +1,50 @@
 #+TITLE: Resources
 #+SETUPFILE: ../assets/export.setup
 
-#+BEGIN_QUOTE
-This page is a work in progress
-#+END_QUOTE
+This page houses some programming related resources that I have found useful
+while working on /anything/. Its starting out jumbled but will get more organized
+as I put more things in here.
+
+* Common Lisp
+- Use [[https://github.com/roswell/roswell][roswell]] for building command line tools.
+- [[https://github.com/takagi/lake][lake]] is a neat make alternative.
+- I keep a list of utility packages that I ~:use~ in repl [[https://github.com/lepisma/cfg/blob/master/dune/package.lisp][here]]. Probably you could
+  use something like [[https://github.com/cl21/cl21][cl21]] but then you would want to write packages in cl21 too.
+
+* Emacs Lisp
+- Use [[https://github.com/magnars/s.el][s]], [[https://github.com/magnars/dash.el][dash]], [[https://github.com/rejeep/f.el][f]] and [[https://github.com/Wilfred/ht.el][ht]] while programming in elisp for maximum pleasure.
 
 * Python
-- [[https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html][The Definitive Guide to Python import Statements]] is a neat guide clearing up
+- [[https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html][The Definitive Guide to Python import Statements]] is a neat guide explaining
   the import mess in Python.
+- Want more structure in python programs? Use [[https://github.com/ericvsmith/dataclasses][dataclasses]]/[[https://github.com/python-attrs/attrs][attrs]] and [[https://github.com/python/mypy][mypy]].
+- [[https://github.com/dgilland/pydash][pydash]] has nice set of high level functions.
+- For workflow management, I find [[https://snakemake.readthedocs.io/][snakemake]] really useful. Combining it with
+  [[https://conda.io/][conda]] gives nice pavement for exploratory projects. For scripts, [[https://github.com/kennethreitz/pipenv/][pipenv]] is
+  probably the cleanest solution. For packages too, I am trying to use pipenv
+  for the development side (tests, docs etc) with a pinch of make.
 
-* Tools                                                            :noexport:
+* Tools
+Some nifty command line tools
+
+- [[http://pandoc.org/][Pandoc]] for document conversion. If you feel like something is off, check out
+  [[http://pandoc.org/filters.html][filters]].
+- [[https://www.imagemagick.org/script/index.php][imagemagick]] for image manipulation. A lot of image-fu is possible just by
+  piping through this.
+- [[https://www.graphviz.org/][graphviz]] and [[http://ditaa.sourceforge.net/][ditaa]] for making graphs, flowcharts etc. Both go really nicely in
+  org-babel.
+- [[https://www.ffmpeg.org/][ffmpeg]] for media conversion. Has nice language bindings too (e.g.
+  [[https://github.com/kkroening/ffmpeg-python][ffmpeg-python]]).
+- [[https://harelba.github.io/q/][q]] allows running SQL over CSVs.
+- [[https://stedolan.github.io/jq/][jq]] for working with json strings in command line.
+- [[https://httpie.org/][HTTPie]] as HTTP client. In Emacs, try [[https://github.com/pashky/restclient.el][restclient]] and [[https://github.com/alf/ob-restclient.el][ob-restclient]].
+- [[https://rg3.github.io/youtube-dl/][youtube-dl]] for downloading media. Try [[https://github.com/skeeto/youtube-dl-emacs][youtube-dl-emacs]] for Emacs.
+- [[https://aria2.github.io/][aria2]] for downloading the rest. There is an [[https://github.com/LdBeth/aria2.el/][interface]] for Emacs but I haven't used it.
+- [[https://github.com/tapio/live-server][live-server]] for avoiding ~python -m SimpleHTTPServer~.
+- [[https://ngrok.com][ngrok]] for quickly exposing localhost.
+- [[https://github.com/dbcli/pgcli][pgcli]] / [[https://github.com/dbcli/mycli][mycli]] as db cli.
+- [[https://github.com/tldr-pages/tldr][tldr]] for quick docs.
+- [[https://github.com/BurntSushi/ripgrep][rg]] / [[https://github.com/ggreer/the_silver_searcher][ag]] for searching in code. Spacemacs has nice ag wrappers. 
+- [[https://github.com/wireservice/csvkit][csvkit]] for csv-fu. Haven't used it but tools like ~csvcut~ are really nice.
+- Command line tools from ~poppler-utils~ can replace almost everything you need
+  to do with pdfs.
