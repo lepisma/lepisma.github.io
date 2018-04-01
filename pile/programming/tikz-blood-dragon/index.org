@@ -16,57 +16,61 @@
 This page is a work in progress
 #+END_QUOTE
 
-\definecolor{fpink}{RGB}{255, 2, 131}
-\definecolor{fblue}{RGB}{52, 121, 176}
-\definecolor{fback}{RGB}{16, 40, 64}
-\definecolor{fdark}{RGB}{12, 4, 15}
-\definecolor{forange}{RGB}{233, 122, 69}
-\newfontfamily\stfont{LeviBrush}
-\newfontfamily\fcfont{FarCry}
+#+HEADER: :iminoptions -density 300 
+#+HEADER: :file "./output.png"
+#+BEGIN_SRC latex :results raw file :eval export
+  \definecolor{fpink}{RGB}{255, 2, 131}
+  \definecolor{fblue}{RGB}{52, 121, 176}
+  \definecolor{fback}{RGB}{16, 40, 64}
+  \definecolor{fdark}{RGB}{12, 4, 15}
+  \definecolor{forange}{RGB}{233, 122, 69}
+  \newfontfamily\stfont{LeviBrush}
+  \newfontfamily\fcfont{FarCry}
 
-\begin{center}
-\begin{tikzpicture}
-\path (0,0) -- (11,0) -- (11,8) -- (0, 8) -- cycle;
-\fill[inner color=fback!85, outer color=fdark] (0,0) rectangle (11,8);
+  \begin{center}
+  \begin{tikzpicture}
+  \path (0,0) -- (11,0) -- (11,8) -- (0, 8) -- cycle;
+  \fill[inner color=fback!85, outer color=fdark] (0,0) rectangle (11,8);
 
-% grid lines
-\begin{scope}
-\clip (0, 0) rectangle (11, 4);
-\foreach \i in {-15, ..., 25}
-{
-  \draw[color=fpink, opacity=0.7] (\i,0) -- (5.5,6);
-}
-
-\foreach \i in {1, ..., 12}
-{
-  \draw[color=fpink, opacity=0.7] ($ (0, {0.67 * pow(\i, 0.7)})$) -- ($ (11, {0.67 * pow(\i, 0.7)})$);
-}
-\end{scope}
-
-% Mountains
-\node at (0, 4) (a) {};
-\node at (11, 4) (b) {};
-  \tikzset{
-    render blur shadow/.prefix code={
-      \colorlet{black}{fblue}
-    }
+  % grid lines
+  \begin{scope}
+  \clip (0, 0) rectangle (11, 4);
+  \foreach \i in {-15, ..., 25}
+  {
+    \draw[color=fpink, opacity=0.7] (\i,0) -- (5.5,6);
   }
-\draw[color=fblue, thick] (a) -- (b);
-\shade[top color=fback!10!black, bottom color=fblue!70!black] (0,4) rectangle (11,8);
 
-\node at (5.5, 4) {\Huge \fcfont TIKZ};
+  \foreach \i in {1, ..., 12}
+  {
+    \draw[color=fpink, opacity=0.7] ($ (0, {0.67 * pow(\i, 0.7)})$) -- ($ (11, {0.67 * pow(\i, 0.7)})$);
+  }
+  \end{scope}
 
-\begin{scope}
-\clip (0, 0) rectangle (11, 4);
-\node at (5.5, 4.1) {\color{forange} \Huge \fcfont fARCRY3};
-\end{scope}
+  % Mountains
+  \node at (0, 4) (a) {};
+  \node at (11, 4) (b) {};
+    \tikzset{
+      render blur shadow/.prefix code={
+        \colorlet{black}{fblue}
+      }
+    }
+  \draw[color=fblue, thick] (a) -- (b);
+  \shade[top color=fback!10!black, bottom color=fblue!70!black] (0,4) rectangle (11,8);
 
-\begin{scope}
-\clip (0, 4) rectangle (11, 8);
-\node at (5.5, 4.1) {\color{fback} \Huge \fcfont fARCRY3};
-\end{scope}
+  \node at (5.5, 4) {\Huge \fcfont TIKZ};
 
-\node at (5.5, 3) {\HUGE \stfont BLOOD DRAGON};
-\node at (5.5, 3.1) {\color{fpink} \HUGE \stfont BLOOD DRAGON};
-\end{tikzpicture}
-\end{center}
+  \begin{scope}
+  \clip (0, 0) rectangle (11, 4);
+  \node at (5.5, 4.1) {\color{forange} \Huge \fcfont fARCRY3};
+  \end{scope}
+
+  \begin{scope}
+  \clip (0, 4) rectangle (11, 8);
+  \node at (5.5, 4.1) {\color{fback} \Huge \fcfont fARCRY3};
+  \end{scope}
+
+  \node at (5.5, 3) {\color{black} \HUGE \stfont BLOOD DRAGON};
+  \node at (5.5, 3.1) {\color{fpink} \HUGE \stfont BLOOD DRAGON};
+  \end{tikzpicture}
+  \end{center}
+#+END_SRC

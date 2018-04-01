@@ -2,31 +2,38 @@
 #+SETUPFILE: ../../assets/export.setup
 
 #+LATEX_CLASS: article
-#+LATEX_HEADER: \usepackage[final,nonatbib]{nips_2017}
 #+LATEX_HEADER: \usepackage{tikz}
 #+LATEX_HEADER: \usetikzlibrary{arrows.meta}
 #+LATEX_HEADER: \usepackage{float}
-#+LATEX_HEADER: \usepackage{biblatex}
 #+LATEX_HEADER: \usepackage{subcaption}
-#+LATEX_HEADER: \author{Abhinav Tushar\\
-#+LATEX_HEADER:  Department of Computer Science\\
-#+LATEX_HEADER:  University of Massachusetts, Amherst\\
-#+LATEX_HEADER:  \texttt{atushar@cs.umass.edu}
-#+LATEX_HEADER: }
 
 #+BEGIN_QUOTE
 This page is a work in progress
 #+END_QUOTE
 
-\begin{abstract}
-We look at evolutionary algorithms under a setting where generalization corresponds
-to being able to survive changes in the {\sl cost function}. In such situations,
-a more diverse population is beneficial because of the range it covers in the fitness
-landscape. In a system without any control on the actual environment, we show how
-sharing of fitness helps in, effectively, providing a control on the apparent
-environment so that a trade off option between preserving diversity and evolution
-speed becomes viable.
-\end{abstract}
+#+BEGIN_page-intro
+We look at evolutionary algorithms under a setting where generalization
+corresponds to being able to survive changes in the /cost function/. In such
+situations, a more diverse population is beneficial because of the range it
+covers in the fitness landscape. In a system without any control on the actual
+environment, we show how sharing of fitness helps in, effectively, providing a
+control on the apparent environment so that a trade off option between
+preserving diversity and evolution speed becomes viable.
+#+END_page-intro
+
+#+NAME: fsa
+#+HEADER: :iminoptions -density 300 
+#+HEADER: :imoutoptions -resize 240x360 
+#+HEADER: :file "./images/test.png"
+#+BEGIN_SRC latex :results raw file :eval export
+  \usetikzlibrary{trees}
+  \begin{tikzpicture}
+    \node [circle, draw, fill=red!20] at (-3,0) {1}
+     child { node [circle, draw, fill=blue!30] {2}
+     child { node [circle, draw, fill=green!30] {3} }
+     child { node [circle, draw, fill=yellow!30] {4} }};
+  \end{tikzpicture}
+#+END_SRC
 
 * Introduction
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-03-25 Sun 02:58 -->
+<!-- 2018-04-01 Sun 13:41 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Potential in Multiplicative Weight Algorithms</title>
@@ -258,6 +258,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -283,18 +305,83 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-03-25 Sun 02:58
+    Last modified:  2018-03-30 Fri 21:33
   </div>
   <h1>Potential in Multiplicative Weight Algorithms</h1>
 </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./../../allpages.html'>≡ index</a> / <a href='../../ml/index.html'>ml</a> / potential</div>
+<div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../ml/index.html'>ml</a> / potential</div>
 <blockquote>
 <p>
 This page is a work in progress
 </p>
 </blockquote>
+
+<p>
+While analyzing multiplicative weight algorithms we track a <i>potential</i> function
+keeping the sum of all the expert weights. The idea is kind of intuitive since
+it makes sense to track a quantity dependent on the changing variable. Moreover,
+its easy to get a lower and upper bound for the sum of weights.
+</p>
+
+<aside>
+<p>
+A simple weight update technique is of hedging (<a class='org-ref-reference' href="#freund1997decision">freund1997decision</a>) where
+\(w_{i}(t + 1) = w_{i}(t) \beta^{m_i(t)}\). \(m_i(t)\) is the loss of expert \(i\) at
+time \(t\) and \(\beta\) is a hyper parameter in \([0, 1]\)
+</p>
+</aside>
+
+<p>
+In spite of this, the name <i>potential function</i> feels unsatisfactory since the
+other connected quantities don't appear anywhere close. A more general and
+complete description of this <i>potential</i> appears in <a class='org-ref-reference' href="#cesa2006prediction">cesa2006prediction</a>
+(chapter 2). In this description, potential is a wrapper around the sum of
+weights \(\sum_{i=1}^{n} w_i(t)\) that we usually work with and is written as (in
+the exact notation from the book):
+</p>
+
+<p>
+\[ \Phi(\mathbf{u}) = \psi\left( \sum_{i=1}^n \phi(u_i) \right) \]
+</p>
+
+<p>
+The weights at any time point \(t\) is then given by normalizing the vector
+\(\nabla \Phi(\mathbf{R_{t - 1}})\). Here \(\mathbf{R_{t}}\) is the vector of
+cumulative regret values for each expert till time \(t\).
+</p>
+
+<p>
+The question then is, how far can we push this analogy? Definitely we know
+something about the derivative of a potential, the negative of which is force.
+Multiplying force with displacement results in work.
+</p>
+
+<p>
+Now the scalar potential field is on a cumulative risk space. The curvature of
+which is well defined if we define the functions \(\psi\) and \(\phi\). What we
+want, in the end, is to minimize the regret. But we can't walk on the regret
+landscape directly. We do have some properties about the movements (with the
+right set of models) though. One of them is the <i>Blackwell</i> condition which
+tells us:
+</p>
+
+<p>
+\[ \sup_{y_t \in \mathcal{Y}} \mathbf{r}_t \cdot \nabla \Phi(\mathbf{R}_{t - 1})
+\le 0\]
+</p>
+
+<p>
+In the physical analogy, this translates to the fact that&#x2026;
+</p>
+
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="freund1997decision">[freund1997decision]</a> <a name="freund1997decision">Freund & Schapire. 1997. "A decision-theoretic generalization of on-line learning and an application to boosting." <i>Journal of computer and system sciences</i>, 55(1), 119-139. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="cesa2006prediction">[cesa2006prediction]</a> <a name="cesa2006prediction">Cesa-Bianchi & Lugosi. 2006. <i>Prediction, learning, and games</i>. Cambridge university press.</li>
+</ul>
+</p>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>

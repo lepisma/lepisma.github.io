@@ -1,5 +1,5 @@
 #+TITLE: Reference Management with Org Mode
-#+SETUPFILE: ../assets/export.setup
+#+SETUPFILE: ../../assets/export.setup
 
 I used to rely on [[http://www.mendeley.com/][mendeley]] for working with BibTeX related things. After
 switching mostly to Emacs, I find mendeley a bit confining. This page documents

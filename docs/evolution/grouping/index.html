@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-03-25 Sun 02:54 -->
+<!-- 2018-04-01 Sun 13:41 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Grouping</title>
@@ -305,28 +305,48 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta small'>
-    Last modified:  2018-02-24 Sat 01:32
+    Last modified:  2018-03-30 Fri 00:48
   </div>
   <h1>Grouping</h1>
 </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./../../allpages.html'>≡ index</a> / <a href='../../evolution/index.html'>evolution</a> / grouping</div>
+<div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../evolution/index.html'>evolution</a> / grouping</div>
 <blockquote>
 <p>
 This page is a work in progress
 </p>
 </blockquote>
 
-\begin{abstract}
-We look at evolutionary algorithms under a setting where generalization corresponds
-to being able to survive changes in the {\sl cost function}. In such situations,
-a more diverse population is beneficial because of the range it covers in the fitness
-landscape. In a system without any control on the actual environment, we show how
-sharing of fitness helps in, effectively, providing a control on the apparent
-environment so that a trade off option between preserving diversity and evolution
-speed becomes viable.
-\end{abstract}
+<div class="page-intro">
+<p>
+We look at evolutionary algorithms under a setting where generalization
+corresponds to being able to survive changes in the <i>cost function</i>. In such
+situations, a more diverse population is beneficial because of the range it
+covers in the fitness landscape. In a system without any control on the actual
+environment, we show how sharing of fitness helps in, effectively, providing a
+control on the apparent environment so that a trade off option between
+preserving diversity and evolution speed becomes viable.
+</p>
+
+</div>
+
+<div class="org-src-container">
+<pre class="src src-latex" id="org33dab33"><span class="org-font-latex-sedate">\usetikzlibrary</span>{trees}
+<span class="org-font-latex-sedate"><span class="org-keyword">\begin</span></span>{<span class="org-function-name">tikzpicture</span>}
+  <span class="org-font-latex-sedate">\node</span> [circle, draw, fill=red!20] at (-3,0) {1}
+   child { node [circle, draw, fill=blue!30] {2}
+   child { node [circle, draw, fill=green!30] {3} }
+   child { node [circle, draw, fill=yellow!30] {4} }};
+<span class="org-font-latex-sedate"><span class="org-keyword">\end</span></span>{<span class="org-function-name">tikzpicture</span>}
+</pre>
+</div>
+
+
+<figure>
+<img src="./images/test.png" alt="test.png">
+
+</figure>
 
 <div id="outline-container-org3e8595c" class="outline-2">
 <h2 id="org3e8595c">Introduction</h2>
@@ -472,9 +492,9 @@ the grouping of current gene pool.
 </div>
 </div>
 
-<div id="outline-container-orgc57d1a3" class="outline-3">
-<h3 id="orgc57d1a3">Crossover</h3>
-<div class="outline-text-3" id="text-orgc57d1a3">
+<div id="outline-container-org0f126a9" class="outline-3">
+<h3 id="org0f126a9">Crossover</h3>
+<div class="outline-text-3" id="text-org0f126a9">
 <p>
 Along with mutation, crossover is one of the primitive operators used in Genetic
 algorithm. The specifics of this operator might be different based on the
@@ -910,9 +930,9 @@ controlled. A higher \(k\) value provides more flatness and thus adds inertia.
 </div>
 </div>
 
-<div id="outline-container-org2e0a393" class="outline-3">
-<h3 id="org2e0a393">Crossover</h3>
-<div class="outline-text-3" id="text-org2e0a393">
+<div id="outline-container-org8ad0f3c" class="outline-3">
+<h3 id="org8ad0f3c">Crossover</h3>
+<div class="outline-text-3" id="text-org8ad0f3c">
 <p>
 Crossover acts as a technique to swap chunks of genes among organisms.
 Considering 'organisms' as groups of genes we create in this case, crossover can
@@ -963,14 +983,14 @@ pressure for having robustness.</li>
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="salimans2017evolution">[salimans2017evolution]</a> <a name="salimans2017evolution">Salimans, Ho, Chen & Sutskever, Evolution strategies as a scalable alternative to reinforcement learning, <i>arXiv preprint arXiv:1703.03864</i>, <b></b>, (2017).</li>
-<li><a id="hamilton1964genetical">[hamilton1964genetical]</a> <a name="hamilton1964genetical">Hamilton, The genetical evolution of social behaviour. II, <i>Journal of theoretical biology</i>, <b>7(1)</b>, 17-52 (1964).</li>
-<li><a id="chastain2014algorithms">[chastain2014algorithms]</a> <a name="chastain2014algorithms">Chastain, Livnat, Papadimitriou & Vazirani, Algorithms, games, and evolution, <i>Proceedings of the National Academy of Sciences</i>, <b>111(29)</b>, 10620-10623 (2014).</li>
-<li><a id="traulsen2006evolution">[traulsen2006evolution]</a> <a name="traulsen2006evolution">Traulsen & Nowak, Evolution of cooperation by multilevel selection, <i>Proceedings of the National Academy of Sciences</i>, <b>103(29)</b>, 10952-10955 (2006).</li>
-<li><a id="hardt2015train">[hardt2015train]</a> <a name="hardt2015train">Hardt, Recht & Singer, Train faster, generalize better: Stability of stochastic gradient descent, <i>arXiv preprint arXiv:1509.01240</i>, <b></b>, (2015).</li>
-<li><a id="williams1997adaptation">[williams1997adaptation]</a> <a name="williams1997adaptation">Williams & Burt, Adaptation and natural selection, na (1997).</li>
-<li><a id="wright1932roles">[wright1932roles]</a> <a name="wright1932roles">Wright, The roles of mutation, inbreeding, crossbreeding, and selection in evolution, na (1932).</li>
-<li><a id="wilke2001evolution">[wilke2001evolution]</a> <a name="wilke2001evolution">Wilke, Wang, Ofria, Lenski & Adami, Evolution of digital organisms at high mutation rates leads to survival of the flattest, <i>Nature</i>, <b>412(6844)</b>, 331-333 (2001).</li>
+<ul class='org-ref-bib'><li><a id="salimans2017evolution">[salimans2017evolution]</a> <a name="salimans2017evolution">Salimans, Ho, Chen & Sutskever. 2017. "Evolution strategies as a scalable alternative to reinforcement learning." <i>arXiv preprint arXiv:1703.03864</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="hamilton1964genetical">[hamilton1964genetical]</a> <a name="hamilton1964genetical">Hamilton. 1964. "The genetical evolution of social behaviour. II." <i>Journal of theoretical biology</i>, 7(1), 17-52. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="chastain2014algorithms">[chastain2014algorithms]</a> <a name="chastain2014algorithms">Chastain, Livnat, Papadimitriou & Vazirani. 2014. "Algorithms, games, and evolution." <i>Proceedings of the National Academy of Sciences</i>, 111(29), 10620-10623. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="traulsen2006evolution">[traulsen2006evolution]</a> <a name="traulsen2006evolution">Traulsen & Nowak. 2006. "Evolution of cooperation by multilevel selection." <i>Proceedings of the National Academy of Sciences</i>, 103(29), 10952-10955. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="hardt2015train">[hardt2015train]</a> <a name="hardt2015train">Hardt, Recht & Singer. 2015. "Train faster, generalize better: Stability of stochastic gradient descent." <i>arXiv preprint arXiv:1509.01240</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="williams1997adaptation">[williams1997adaptation]</a> <a name="williams1997adaptation">Williams & Burt. 1997. <i>Adaptation and natural selection</i>. na.</li>
+<li><a id="wright1932roles">[wright1932roles]</a> <a name="wright1932roles">Wright. 1932. <i>The roles of mutation, inbreeding, crossbreeding, and selection in evolution</i>. na.</li>
+<li><a id="wilke2001evolution">[wilke2001evolution]</a> <a name="wilke2001evolution">Wilke, Wang, Ofria, Lenski & Adami. 2001. "Evolution of digital organisms at high mutation rates leads to survival of the flattest." <i>Nature</i>, 412(6844), 331-333. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 </ul>
 </p>
 </div>

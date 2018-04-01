@@ -4,6 +4,8 @@
 This is a personal wiki. Most of the pages here are still in transitory phase.
 Gradually, as I move files in here, it will take a more hybrid wiki-blog form.
 
-A list of all pages currently up here is in [[./allpages.org][all the pages]] [fn::Pages from my old
-blog are [[https://lepisma.github.io/archive][here]].]. Org files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing
-this wiki is mostly [[https://github.com/lepisma/rogue/blob/master/local/pile/][here]] but I might move it in a separate repository sometime.
+A list of all the pages in this wiki [fn::Pages from my old blog are [[https://lepisma.github.io/archive][here]].]
+follows. Org files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing this wiki
+is mostly [[https://github.com/lepisma/rogue/blob/master/local/pile/][here]] but I might move it in a separate repository sometime.
+
+#+INCLUDE: ./sitemap.org :lines "3-"
