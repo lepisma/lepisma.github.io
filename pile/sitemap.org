@@ -32,7 +32,6 @@
   - [[file:readings/clippings.org][Clippings]]
   - [[file:readings/bib-notes.org][Note Cards]]
   - [[file:readings/books.org][Reading List (Books)]]
-  - [[file:readings/resources.org][Resources]]
 - [[file:writings/index.org][Writings]]
   - [[file:writings/hours-over-deadlines.org][Schedule Hours not Deadlines]]
   - [[file:writings/lazy-answer.org][The Lazy Answer to Everything]]

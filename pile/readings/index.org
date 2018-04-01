@@ -12,4 +12,3 @@ nice intro to a topic in isolation.
 - [[./books.org][Reading List (Books)]]
 - [[./clippings.org][Clippings]]
 - [[./likes.org][Articles I like]]
-- [[./resources.org][Resources]]
