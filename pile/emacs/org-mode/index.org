@@ -7,4 +7,3 @@ Org mode stuff needed a separate section.
 
 - [[./links.org][Exploiting /org-links/]]
 - [[./references.org][Reference Management with Org Mode]]
-- [[./resources.org][Resources]]
