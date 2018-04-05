@@ -38,6 +38,7 @@ Some nifty command line tools
 - [[https://harelba.github.io/q/][q]] allows running SQL over CSVs.
 - [[https://stedolan.github.io/jq/][jq]] for working with json strings in command line.
 - [[https://httpie.org/][HTTPie]] as HTTP client. In Emacs, try [[https://github.com/pashky/restclient.el][restclient]] and [[https://github.com/alf/ob-restclient.el][ob-restclient]].
+- [[https://github.com/ericchiang/pup][pup]] for working with html strings.
 - [[https://rg3.github.io/youtube-dl/][youtube-dl]] for downloading media. Try [[https://github.com/skeeto/youtube-dl-emacs][youtube-dl-emacs]] for Emacs.
 - [[https://aria2.github.io/][aria2]] for downloading the rest. There is an [[https://github.com/LdBeth/aria2.el/][interface]] for Emacs but I haven't used it.
 - [[https://github.com/tapio/live-server][live-server]] for avoiding ~python -m SimpleHTTPServer~.
