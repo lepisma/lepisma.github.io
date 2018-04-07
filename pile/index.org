@@ -6,6 +6,6 @@ Gradually, as I move files in here, it will take a more hybrid wiki-blog form.
 
 A list of all the pages in this wiki [fn::Pages from my old blog are [[https://lepisma.github.io/archive][here]].]
 follows. Org files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing this wiki
-is mostly [[https://github.com/lepisma/rogue/blob/master/local/pile/][here]] but I might move it in a separate repository sometime.
+is [[https://github.com/lepisma/pile-wiki][here]].
 
 #+INCLUDE: ./sitemap.org :lines "3-"
