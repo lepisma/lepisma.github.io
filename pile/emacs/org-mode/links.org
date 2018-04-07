@@ -1,7 +1,65 @@
 #+TITLE: Exploiting /org-links/
 #+SETUPFILE: ../../assets/export.setup
 
-#+BEGIN_QUOTE
-This page is a work in progress
-#+END_QUOTE
+#+HTML_HEAD: <style>
+#+HTML_HEAD: .bbq-list-info {
+#+HTML_HEAD:   margin-bottom: 20px;
+#+HTML_HEAD: }
+#+HTML_HEAD: .bbq-list-container {
+#+HTML_HEAD:   display: grid;
+#+HTML_HEAD:   grid-template-columns: repeat(3, 1fr);
+#+HTML_HEAD:   grid-gaps: 20px;
+#+HTML_HEAD:   grid-auto-rows: minmax(100px, auto);
+#+HTML_HEAD: }
+#+HTML_HEAD: .bbq-item-info {
+#+HTML_HEAD:   font-family: 'Open Sans';
+#+HTML_HEAD:   font-size: 12px;
+#+HTML_HEAD:   margin-top: 10px;
+#+HTML_HEAD:   margin-bottom: 30px;
+#+HTML_HEAD:   color: #7b7b7b;
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
 
+I have been using them to maintain a lot of /buttons/, or things that are
+functionally equivalent. The basic idea is to define a /link type/ and setup
+functions for what happens when you click on it, and (optionally) what happens
+on org export (depending on the export backend). To know what they are capable
+of, look at Malabarba's [[http://endlessparentheses.com/use-org-mode-links-for-absolutely-anything.html][series]] on org links.
+
+A lot of basic external link types are mentioned in the [[https://orgmode.org/manual/External-links.html#External-links][docs]]. Special helpful is
+the ~elisp~ one which lets you invoke arbitrary elisp. The bookmarks you save via
+org capture also are just org-links.
+
+If your org files have links that have a usable export view, they get a whole
+lot better. For example, I keep an org file with search based playlists for [[https://github.com/lepisma/bbq][my
+music player]]. Clicking fires the playlist and exporting lays out the items from
+that list along with the youtube embed trick from Malabarba. Export result for ~[[bbq::new
+ 6][Newest 6 songs]]~ follows:
+
+[[bbq::new 6][Newest 6 songs]]
+
+-----
+
+One feature that I would like is to have the ability to get link position in the
+buffer while defining the export function. Right now, the export function has
+the following signature:
+
+#+BEGIN_SRC emacs-lisp
+  (defun personal-link/export (path desc backend)
+    "PATH and DESC come from the link markup. BACKEND is the export backend"
+    "stuff")
+#+END_SRC
+
+Follow function just allows the ~path~ but since you are /right there/ you can just
+use ~(point)~ and go from there. This gets useful in cases where you have some
+contextual information about a section in the properties drawer and want a
+certain link type to respond based on that context.
+
+I keep a simple github issue type link that is defined like ~[[gh:n]]~ where ~n~ defines
+the issue number. Follow function simply looks in the section's property for a
+value of ~GITHUB~. Works fine inside Emacs, but html export doesn't. A workaround
+is to probably just use a snippet which looks up the property before creating
+the link. Since this repeats the url, it hurts portability of links (though I
+don't know why I would want to move these links around). A better way might be
+to have the snippet prepend a uuid and the export can then pick up the position.
+Meh, not that high on priority.

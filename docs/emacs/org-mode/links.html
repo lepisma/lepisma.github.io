@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-01 Sun 13:45 -->
+<!-- 2018-04-07 Sat 00:47 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Exploiting <i>org-links</i></title>
@@ -208,6 +208,24 @@
 <meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<style>
+.bbq-list-info {
+margin-bottom: 20px;
+}
+.bbq-list-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gaps: 20px;
+grid-auto-rows: minmax(100px, auto);
+}
+.bbq-item-info {
+font-family: 'Open Sans';
+font-size: 12px;
+margin-top: 10px;
+margin-bottom: 30px;
+color: #7b7b7b;
+}
+</style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <script src="/assets/js/pace.min.js"></script>
@@ -282,19 +300,95 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta small'>
-    Last modified:  2018-04-01 Sun 13:45
+  <div class='page-meta'>
+    Last modified:  2018-04-07 Sat 00:47
   </div>
   <h1>Exploiting <i>org-links</i></h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../emacs/index.html'>emacs</a> / <a href='../org-mode/index.html'>org-mode</a> / links</div>
-<blockquote>
 <p>
-This page is a work in progress
+I have been using them to maintain a lot of <i>buttons</i>, or things that are
+functionally equivalent. The basic idea is to define a <i>link type</i> and setup
+functions for what happens when you click on it, and (optionally) what happens
+on org export (depending on the export backend). To know what they are capable
+of, look at Malabarba's <a href="http://endlessparentheses.com/use-org-mode-links-for-absolutely-anything.html">series</a> on org links.
 </p>
-</blockquote>
+
+<p>
+A lot of basic external link types are mentioned in the <a href="https://orgmode.org/manual/External-links.html#External-links">docs</a>. Special helpful is
+the <code>elisp</code> one which lets you invoke arbitrary elisp. The bookmarks you save via
+org capture also are just org-links.
+</p>
+
+<p>
+If your org files have links that have a usable export view, they get a whole
+lot better. For example, I keep an org file with search based playlists for <a href="https://github.com/lepisma/bbq">my
+music player</a>. Clicking fires the playlist and exporting lays out the items from
+that list along with the youtube embed trick from Malabarba. Export result for <code>[[bbq::new
+ 6][Newest 6 songs]]</code> follows:
+</p>
+
+<p>
+<div class="bbq-list">
+                   <h3 class="bbq-list-info">
+                     Playlist: Newest 6 songs <code>[:new 6]</code>
+                   </h3>
+                   <div class="bbq-list-container"><div class="bbq-item">
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/P504Tlb_OuA" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Weather Diaries - <em>Ride</em></div>
+             </div><div class="bbq-item">
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/ZZi7x5Q69zg" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Rocket Silver Symphony - <em>Ride</em></div>
+             </div><div class="bbq-item">
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/2qNP53ggpFk" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Lateral Alice - <em>Ride</em></div>
+             </div><div class="bbq-item">
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/NjQmP0HUCZQ" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Cali - <em>Ride</em></div>
+             </div><div class="bbq-item">
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/jSdZvH-CofE" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Integration Tape - <em>Ride</em></div>
+             </div><div class="bbq-item">
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/xnQ0gN6nS2c" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Impermanence - <em>Ride</em></div>
+             </div></div>
+                 </div>
+</p>
+
+<hr>
+
+<p>
+One feature that I would like is to have the ability to get link position in the
+buffer while defining the export function. Right now, the export function has
+the following signature:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">personal-link/export</span> (path desc backend<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  <span class="org-doc">"PATH and DESC come from the link markup. BACKEND is the export backend"</span>
+  <span class="org-string">"stuff"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+</pre>
+</div>
+
+<p>
+Follow function just allows the <code>path</code> but since you are <i>right there</i> you can just
+use <code>(point)</code> and go from there. This gets useful in cases where you have some
+contextual information about a section in the properties drawer and want a
+certain link type to respond based on that context.
+</p>
+
+<p>
+I keep a simple github issue type link that is defined like <code>[[gh:n]]</code> where <code>n</code> defines
+the issue number. Follow function simply looks in the section's property for a
+value of <code>GITHUB</code>. Works fine inside Emacs, but html export doesn't. A workaround
+is to probably just use a snippet which looks up the property before creating
+the link. Since this repeats the url, it hurts portability of links (though I
+don't know why I would want to move these links around). A better way might be
+to have the snippet prepend a uuid and the export can then pick up the position.
+Meh, not that high on priority.
+</p>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
