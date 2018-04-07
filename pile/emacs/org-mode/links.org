@@ -58,9 +58,10 @@ certain link type to respond based on that context.
 
 I keep a simple github issue type link that is defined like ~[[gh:n]]~ where ~n~ defines
 the issue number. Follow function simply looks in the section's property for a
-value of ~GITHUB~. Works fine inside Emacs, but html export doesn't. A workaround
-is to probably just use a snippet which looks up the property before creating
-the link. Since this repeats the url, it hurts portability of links (though I
-don't know why I would want to move these links around). A better way might be
-to have the snippet prepend a uuid and the export can then pick up the position.
-Meh, not that high on priority.
+value of ~GITHUB~. Works fine inside Emacs, but not in exports.
+
+A workaround is to probably just use a snippet which looks up the property
+before creating the link. Since this repeats the url, it hurts portability of
+links (though I don't know why I would want to move these links around). A
+better way might be to have the snippet prepend a uuid and the export can then
+pick up the position. Meh, not that high on priority.

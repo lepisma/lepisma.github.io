@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-07 Sat 00:53 -->
+<!-- 2018-04-07 Sat 00:56 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Exploiting <i>org-links</i></title>
@@ -301,7 +301,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta'>
-    Last modified:  2018-04-07 Sat 00:52
+    Last modified:  2018-04-07 Sat 00:56
   </div>
   <h1>Exploiting <i>org-links</i></h1>
 </div>
@@ -383,12 +383,15 @@ certain link type to respond based on that context.
 <p>
 I keep a simple github issue type link that is defined like <code>[[gh:n]]</code> where <code>n</code> defines
 the issue number. Follow function simply looks in the section's property for a
-value of <code>GITHUB</code>. Works fine inside Emacs, but html export doesn't. A workaround
-is to probably just use a snippet which looks up the property before creating
-the link. Since this repeats the url, it hurts portability of links (though I
-don't know why I would want to move these links around). A better way might be
-to have the snippet prepend a uuid and the export can then pick up the position.
-Meh, not that high on priority.
+value of <code>GITHUB</code>. Works fine inside Emacs, but not in exports.
+</p>
+
+<p>
+A workaround is to probably just use a snippet which looks up the property
+before creating the link. Since this repeats the url, it hurts portability of
+links (though I don't know why I would want to move these links around). A
+better way might be to have the snippet prepend a uuid and the export can then
+pick up the position. Meh, not that high on priority.
 </p>
 </div>
 <div id="postamble" class="status">
