@@ -1,4 +1,4 @@
-#+TITLE: Reference Management with Org Mode
+#+TITLE: Reference Management
 #+SETUPFILE: ../../assets/export.setup
 
 I used to rely on [[http://www.mendeley.com/][mendeley]] for working with BibTeX related things. After

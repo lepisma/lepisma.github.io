@@ -5,5 +5,5 @@ Org mode stuff needed a separate section.
 
 * Pages in this section
 
-- [[./links.org][Exploiting /org-links/]]
-- [[./references.org][Reference Management with Org Mode]]
+- [[./links.org][Org-links]]
+- [[./references.org][Reference Management]]
