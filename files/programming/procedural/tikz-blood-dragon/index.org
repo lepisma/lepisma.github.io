@@ -1,5 +1,5 @@
 #+TITLE: TikZ Blood Dragon
-#+SETUPFILE: ../../assets/export.setup
+#+SETUPFILE: ../../../assets/export.setup
 
 #+OPTIONS: toc:nil
 
