@@ -5,6 +5,7 @@
 
 - [[./languages.org][Language Exploration]]
 - [[./pesky.org][Pesky Little Things]]
+- [[./procedural/index.org][Procedural Generation]]
+  - [[./procedural/tikz-blood-dragon/index.org][TikZ Blood Dragon]]
 - [[./resources.org][Resources]]
-- [[./tikz-blood-dragon/index.org][TikZ Blood Dragon]]
 - [[./utilities.org][Utilities pitfall]]
