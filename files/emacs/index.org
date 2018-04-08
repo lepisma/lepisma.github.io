@@ -6,7 +6,7 @@ Some notes/texts related to Emacs and Org Mode.
 * Pages in this section
 
 - [[./org-mode/index.org][Org Mode]]
-  - [[./org-mode/links.org][Exploiting /org-links/]]
-  - [[./org-mode/references.org][Reference Management with Org Mode]]
+  - [[./org-mode/links.org][Org-links]]
+  - [[./org-mode/references.org][Reference Management]]
 - [[./resources.org][Resources]]
 - [[./til.org][Today I Learned /in Emacs/]]
