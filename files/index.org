@@ -5,7 +5,6 @@ This is a personal wiki. Most of the pages here are still in transitory phase.
 Gradually, as I move files in here, it will take a more hybrid wiki-blog form.
 
 A list of all the pages in this wiki [fn::Pages from my old blog are [[https://lepisma.github.io/archive][here]].]
-follows. Org files from this wiki are [[https://github.com/lepisma/pile][here]]. Source code for managing this wiki
-is [[https://github.com/lepisma/pile-wiki][here]].
+follows. See [[pile:misc/colophon][colophon]] for details on how these pages are built.
 
 #+INCLUDE: ./sitemap.org :lines "3-"

@@ -15,6 +15,7 @@
   - [[file:mathematics/noisy-quantum-search/index.org][Noisy Quantum Search]]
   - [[file:mathematics/strassen/index.org][Searching for Strassen multiplication rule]]
 - [[file:misc/index.org][Miscellaneous]]
+  - [[file:misc/colophon.org][Colophon]]
   - [[file:misc/desktop.org][Desktop]]
 - [[file:ml/index.org][Machine Learning]]
   - [[file:ml/resources.org][Resources]]

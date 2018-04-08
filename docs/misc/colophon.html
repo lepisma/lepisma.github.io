@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-08 Sun 03:06 -->
+<!-- 2018-04-08 Sun 03:07 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pile</title>
+<title>Colophon</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -285,89 +285,66 @@ for the JavaScript code in this tag.
   <div class='page-meta'>
     Last modified:  2018-04-08 Sun 03:06
   </div>
-  <h1>Pile</h1>
+  <h1>Colophon</h1>
 </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  home</div>
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../misc/index.html'>misc</a> / colophon</div>
+<blockquote>
 <p>
-This is a personal wiki. Most of the pages here are still in transitory phase.
-Gradually, as I move files in here, it will take a more hybrid wiki-blog form.
+This is the obligatory <i>colophon</i> page.
 </p>
+</blockquote>
 
 <p>
-A list of all the pages in this wiki <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
-follows. See <a href="/pile/misc/colophon.html">colophon</a> for details on how these pages are built.
+I have used jekyll in the past to maintain my <a href="https://github.com/lepisma/lepisma.github.io">home page</a>. Its been nice really,
+but extending it was painful. Some times, working directly on the system is
+easier than writing <i>plugins</i>. I do concede that the above purported <i>pain</i> was more
+because of my requirements instead of insufficiency of jekyll as a regular
+<i>blogging system</i>. What I wanted to do with jekyll was to:
+</p>
+
+<ol class="org-ol">
+<li>write posts in org</li>
+<li>have a tree-ish file structure (mimicking my local files)</li>
+<li>run code blocks inside the org files</li>
+</ol>
+
+<p>
+I actually tried to work on all these three issues by writing little ruby
+plugins and helper elisp scripts, but it was not really worth the time since, at
+around the same time, I started looking into <a href="https://orgmode.org/manual/Publishing.html">org-publish</a> which offers everything
+and more.
+</p>
+
+<hr>
+
+<p>
+The set of pages here mirror a small section of my messy org directory (I am
+still figuring out how to work efficiently with my private files. Probably
+something like <a href="https://github.com/Kungsgeten/org-brain">org-brain</a> might help). Other than the org files themselves (which
+are <a href="https://github.com/lepisma/pile">here</a>), there are three pieces that assist in publishing:
+</p>
+
+<ol class="org-ol">
+<li>The <a href="https://github.com/lepisma/pile/blob/master/files/assets/export.setup">export setup file</a> which attaches css/js scripts and provides the general
+export config.</li>
+<li><a href="https://github.com/lepisma/pile-theme">Theme</a> for the pages. This is a slight variant of my old blog's theme. Since I
+use it at other places too (at least one), its now in a separate repository.</li>
+<li><a href="https://github.com/lepisma/pile-wiki">Elisp package</a> for working with and publishing everything.</li>
+</ol>
+
+<p>
+There are a ton of places from which I have taken inspiration (both ideological
+and programmatic). I might not recall all of them but here are some:
 </p>
 
 <ul class="org-ul">
-<li><a href="index.html">Pile</a></li>
-<li><a href="emacs/index.html">Emacs</a>
-<ul class="org-ul">
-<li><a href="emacs/resources.html">Resources</a></li>
-<li><a href="emacs/til.html">Today I Learned <i>in Emacs</i></a></li>
-<li><a href="emacs/org-mode/index.html">Org Mode</a>
-<ul class="org-ul">
-<li><a href="emacs/org-mode/links.html">Org-links</a></li>
-<li><a href="emacs/org-mode/references.html">Reference Management</a></li>
-</ul></li>
-</ul></li>
-<li><a href="evolution/index.html">Evolution</a>
-<ul class="org-ul">
-<li><a href="evolution/resources.html">Resources</a></li>
-<li><a href="evolution/grouping/index.html">Grouping</a></li>
-</ul></li>
-<li><a href="mathematics/index.html">Mathematics</a>
-<ul class="org-ul">
-<li><a href="mathematics/resources.html">Resources</a></li>
-<li><a href="mathematics/noisy-quantum-search/index.html">Noisy Quantum Search</a></li>
-<li><a href="mathematics/strassen/index.html">Searching for Strassen multiplication rule</a></li>
-</ul></li>
-<li><a href="misc/index.html">Miscellaneous</a>
-<ul class="org-ul">
-<li><a href="misc/colophon.html">Colophon</a></li>
-<li><a href="misc/desktop.html">Desktop</a></li>
-</ul></li>
-<li><a href="ml/index.html">Machine Learning</a>
-<ul class="org-ul">
-<li><a href="ml/resources.html">Resources</a></li>
-<li><a href="ml/learning/index.html">Breaking down <i>Learning</i></a></li>
-<li><a href="ml/potential/index.html">Potential in Multiplicative Weight Algorithms</a></li>
-<li><a href="ml/voting-ensemble/index.html">Voting Ensemble</a></li>
-</ul></li>
-<li><a href="programming/index.html">Programming</a>
-<ul class="org-ul">
-<li><a href="programming/languages.html">Language Exploration</a></li>
-<li><a href="programming/pesky.html">Pesky Little Things</a></li>
-<li><a href="programming/resources.html">Resources</a></li>
-<li><a href="programming/utilities.html">Utilities pitfall</a></li>
-<li><a href="programming/procedural/index.html">Procedural Generation</a>
-<ul class="org-ul">
-<li><a href="programming/procedural/tikz-blood-dragon/index.html">TikZ Blood Dragon</a></li>
-</ul></li>
-</ul></li>
-<li><a href="readings/index.html">Readings</a>
-<ul class="org-ul">
-<li><a href="readings/likes.html">Articles I like</a></li>
-<li><a href="readings/clippings.html">Clippings</a></li>
-<li><a href="readings/bib-notes.html">Note Cards</a></li>
-<li><a href="readings/books.html">Reading List (Books)</a></li>
-</ul></li>
-<li><a href="writings/index.html">Writings</a>
-<ul class="org-ul">
-<li><a href="writings/hours-over-deadlines.html">Schedule Hours not Deadlines</a></li>
-<li><a href="writings/lazy-answer.html">The Lazy Answer to Everything</a></li>
-</ul></li>
+<li><a href="https://caiorss.github.io/org-wiki/">org-wiki</a> and <a href="https://github.com/Kungsgeten/org-brain">org-brain</a> packages.</li>
+<li><a href="https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html">Personal website</a> and <a href="https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html">wiki in org</a> posts by <a href="https://github.com/thibaultmarin">thibaultmarin</a> made me realize the
+capabilities of org-publish.</li>
 </ul>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Pages from my old blog are <a href="https://lepisma.github.io/archive">here</a>.</div></div>
-
-
 </div>
-</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
