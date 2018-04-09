@@ -3825,9 +3825,9 @@ CLOSED: [2016-08-07]
 :GOODREADS: https://www.goodreads.com/book/show/2845024
 :END:
 
-It could have been helped by a bit more deeper storyline and 'theorics',
-considering the number of pages (~1000). The kind of topics it touched, it
-could have been perfect. But sometimes it bloats out.
+It could have been helped by a bit deeper storyline and 'theorics', considering
+the number of pages (~1000). The kind of topics it touched, it could have been
+perfect. But sometimes it felt bloated.
 
 *** Reamde
 :PROPERTIES:
