@@ -13,6 +13,20 @@ to categorize things in sections.
 
 * Non Fiction
 ** Uncategorized
+*** Pantone's Guide to Communicating with Color
+:PROPERTIES:
+:AUTHOR:   Leatrice Eisemann
+:ADDED:    <2018-04-10>
+:AMAZON:   https://www.amazon.com/gp/product/B004J8HX5E
+:END:
+
+*** The Elements of Typographic Style
+:PROPERTIES:
+:AUTHOR:   Robert Bringhurst
+:ADDED:    <2018-04-10>
+:AMAZON:   https://www.amazon.com/gp/product/0881792063/
+:END:
+
 *** The Nature of Computation
 :PROPERTIES:
 :AUTHOR:   Cristopher Moore, Stephan Mertens
