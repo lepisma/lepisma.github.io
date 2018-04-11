@@ -307,7 +307,8 @@ spots considering all factors to be the same.
 
 * Improving generalization
 
-Coming back to the question of generalization, there are near two things here:
+Coming back to the question of generalization, there are two things to point out
+here:
 
 1. If there are two scenarios with the same number of genes but with different
    distribution of counts, a more diverse distribution has higher chance of
