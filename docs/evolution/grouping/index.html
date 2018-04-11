@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-08 Sun 03:12 -->
+<!-- 2018-04-11 Wed 02:18 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Grouping</title>
@@ -305,91 +305,36 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta'>
-    Last modified:  2018-03-30 Fri 00:48
+    Last modified:  2018-04-11 Wed 02:17
   </div>
   <h1>Grouping</h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../evolution/index.html'>evolution</a> / grouping</div>
-<blockquote>
-<p>
-This page is a work in progress
-</p>
-</blockquote>
-
 <div class="page-intro">
 <p>
-We look at evolutionary algorithms under a setting where generalization
-corresponds to being able to survive changes in the <i>cost function</i>. In such
-situations, a more diverse population is beneficial because of the range it
-covers in the fitness landscape. In a system without any control on the actual
-environment, we show how sharing of fitness helps in, effectively, providing a
-control on the apparent environment so that a trade off option between
-preserving diversity and evolution speed becomes viable.
+This is a toy analysis to see how <i>grouping</i> might affect <i>generalization</i>
+capabilities of a population. Here generalization for a population corresponds
+to being able to survive changes in the <i>cost function</i>. In such situations, a
+more diverse population is beneficial because of the range it covers in the
+fitness landscape. In a system without any control on the actual environment,
+grouping (sharing fitness), provides a control on the <i>apparent</i> environment so
+that a trade off option between preserving diversity and evolution speed becomes
+viable.
 </p>
 
 </div>
 
-<div class="org-src-container">
-<pre class="src src-latex" id="orgfa0a074"><span class="org-font-latex-sedate">\usetikzlibrary</span>{trees}
-<span class="org-font-latex-sedate"><span class="org-keyword">\begin</span></span>{<span class="org-function-name">tikzpicture</span>}
-  <span class="org-font-latex-sedate">\node</span> [circle, draw, fill=red!20] at (-3,0) {1}
-   child { node [circle, draw, fill=blue!30] {2}
-   child { node [circle, draw, fill=green!30] {3} }
-   child { node [circle, draw, fill=yellow!30] {4} }};
-<span class="org-font-latex-sedate"><span class="org-keyword">\end</span></span>{<span class="org-function-name">tikzpicture</span>}
-</pre>
-</div>
-
-
-<figure>
-<img src="./images/test.png" alt="test.png">
-
-</figure>
-
-<div id="outline-container-org6c38953" class="outline-2">
-<h2 id="org6c38953">Introduction</h2>
-<div class="outline-text-2" id="text-org6c38953">
 <p>
-For many optimization problems where gradient information is unavailable (or
-costly) and there are many local optima values, a common approach is to use a
-method which does multiple evaluations to iteratively rolls down (or climbs up)
-the cost function landscape using different initial points so as to find the
-global optima. Collectively they can be grouped as <i>population</i> based global
-optimization methods. Many of these population based algorithms are randomized
-and inspired by some naturally occurring phenomena like swarming of birds (swarm
-optimization) or some processes like annealing (simulated annealing).
-</p>
-
-<p>
-Evolutionary algorithms (EAs) are a class of similar population based
-optimization algorithms inspired by the natural process of evolution. Genetic
-Algorithms are, arguably, the most well known algorithms from this class. They
-are also very similar to their original source of inspiration. Another famous
-class is of Evolution Strategies, which are simpler in complexity and are
-recently gaining traction <a class='org-ref-reference' href="#salimans2017evolution">salimans2017evolution</a> as an alternative for
-solving reinforcement learning problems.
-</p>
-
-<p>
-Although the <i>inspiration</i> works well in practice many times, its harder to
-create causal connections and have insights from the biological inspiration to
-machine learning or vice versa because of difference in the problem goals and
-the knobs we are allowed to tune.
-</p>
-
-<p>
-In this exploration, we try to understand a few biological phenomena using the
-EA framework but under a setting which tries to mimic natural evolution more
-closely. The question is fundamentally about how a fundamental unit of selection
-can results in grouping at higher levels. As an example, eusociality in insects
-involves extensive hierarchy creation and role division with intra-group
-altruistic behavior as an identifying trait. A simple explanation is provided
-just by considering the gene level of selection and applying Hamilton's rule
-<a class='org-ref-reference' href="#hamilton1964genetical">hamilton1964genetical</a> which provides a connection between how much an
-individual should be willing to sacrifice in order to cause net benefit to
-his/her genes.
+So I recently was reading a bit about the question of how a fundamental unit of
+selection can results in grouping at higher levels. As an example, eusociality
+in insects involves extensive hierarchy creation and role division with
+intra-group altruistic behavior as an identifying trait. A simple explanation is
+provided just by considering the gene level of selection and applying Hamilton's
+rule <a class='org-ref-reference' href="#hamilton1964genetical">hamilton1964genetical</a> (though its not exactly right) which provides a
+connection between how much an individual should be willing to sacrifice in
+order to cause net benefit to his/her genes.
 </p>
 
 <p>
@@ -405,30 +350,19 @@ individuals.
 </p>
 
 <p>
-The idea in this work is to understand how grouping of individuals at various
-levels affects the process in a toy setting without any (explicitly) competitive
-game. In the process, we define and work with a new setting which is similar to
-online setting but more suitable for evolution in the biological sense. Finally,
-we show how these <i>groupings</i> help in regularizing the algorithm along with a
-new way to look at crossover.
+The idea in this page is to understand how grouping, in general, affects the
+process in an evolutionary algorithm setting without any (explicitly)
+competitive game. In the process, we define and work with a new setting which is
+similar to online setting but more suitable for evolution in the biological
+sense. Finally, we show how these <i>groupings</i> help in regularizing the algorithm
+along with a new way to look at crossover.
 </p>
 
+<div id="outline-container-orgde5efb9" class="outline-2">
+<h2 id="orgde5efb9">Evolutionary Algorithms (EAs)</h2>
+<div class="outline-text-2" id="text-orgde5efb9">
 <p>
-&sect; 2 provides an introduction to general EAs. &sect; 3 talks about generalization in
-EA and argues for a case to work in a different setting which is then presented
-in &sect; 4. &sect; 5 talks about the landscape in the new setting and effect of slope
-on evolution. &sect; 6 discusses methods to control the landscape by forming groups.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org7e18c4b" class="outline-2">
-<h2 id="org7e18c4b">Evolutionary Algorithms</h2>
-<div class="outline-text-2" id="text-org7e18c4b">
-<p>
-Evolutionary algorithms (EAs) are general purpose global optimization techniques
-inspired by biological evolution. They are population based iterative algorithms
-with the following generalized steps:
+Using a very generic outline, we can define an EA as doing the following:
 </p>
 
 <ol class="org-ol">
@@ -464,106 +398,15 @@ climbing. In this, the population size is 1 and it evolves using only mutation.
 If the mutant it generated is better, then the current (only) solution in the
 population is replaced by the mutant.
 </p>
-
-<p>
-The next two subsections define the two common GA operators, <i>mutation</i> and
-<i>crossover</i> which will be helpful later on in the document.
-</p>
-</div>
-
-<div id="outline-container-orgede5d68" class="outline-3">
-<h3 id="orgede5d68">Mutation</h3>
-<div class="outline-text-3" id="text-orgede5d68">
-<p>
-Mutation refers to random changes in genotypes with some probability (<i>mutation
-rate</i>) in the evolution process. Its implementation depends on how the solution
-is represented in the algorithm. In a representation using boolean strings,
-mutation is usually implemented as bit flip of a randomly selected index of the
-string. In a representation using real numbers, mutation can be implemented as
-normal random perturbation of one of the numbers around the current value as
-mean.
-</p>
-
-<p>
-Its noteworthy that mutaton is the only method to provide new <i>genetic material</i>
-for a population of genotypes since crossover, explained later, only shuffles
-the grouping of current gene pool.
-</p>
 </div>
 </div>
 
-<div id="outline-container-org472fb37" class="outline-3">
-<h3 id="org472fb37">Crossover</h3>
-<div class="outline-text-3" id="text-org472fb37">
+<div id="outline-container-org4f98f94" class="outline-2">
+<h2 id="org4f98f94">Generalization</h2>
+<div class="outline-text-2" id="text-org4f98f94">
 <p>
-Along with mutation, crossover is one of the primitive operators used in Genetic
-algorithm. The specifics of this operator might be different based on the
-optimization problem at hand but the general idea is the same. This operator
-tries to simulate <i>mating</i> in the sexual reproduction sense by creating new
-genotypes (<i>children</i>) using segments of genotypes from the parents.
-</p>
-
-<p>
-Different variants of this operation differ in how they define these
-<i>segmentation</i> and <i>swapping</i> procedure. A common method is to do a single point
-crossover. In this, the representation of parents is broken at a single point
-(selected randomly) to create two children using the two permutations of the
-broken segments. See figure \ref{fig:scross} for an example.
-</p>
-
-\begin{figure}[H]
-\label{fig:scross}
-\centering
-\begin{tikzpicture}
-
-\draw[fill=blue!25] (0, 0) rectangle (3, 0.2);
-\draw[fill=red!25] (0, -0.5) rectangle (3, -0.3);
-
-\draw[<->] (2, -0.01) -- (2, -0.299);
-
-\draw[thick, ->] (3.5, -0.15) -- (4.5, -0.15);
-
-\draw (5, 0) rectangle (8, 0.2);
-\draw[fill=red!25] (5, 0) rectangle (7, 0.2);
-\draw[fill=blue!25] (7, 0) rectangle (8, 0.2);
-\draw (5, -0.5) rectangle (8, -0.3);
-\draw[fill=red!25] (7, -0.5) rectangle (8, -0.3);
-\draw[fill=blue!25] (5, -0.5) rectangle (7, -0.3);
-
-\end{tikzpicture}
-\caption{Example of a single point crossover. The representations of the parents
-on the left hand side are broken at a \textsl{single point} (show using $\updownarrow$)
-and the resulting segments are swapped to produce the children.}
-\end{figure}
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgdea8aa9" class="outline-2">
-<h2 id="orgdea8aa9">Generalization in EAs</h2>
-<div class="outline-text-2" id="text-orgdea8aa9">
-<p>
-Generalization here means the ability of the algorithm (e.g. an EA which learns
-optimal parameters for a non-linear classifier) to work well beyond the data set
-its trained on. For this purpose, we need to have a model of how an EA works.
-</p>
-
-<p>
-Analyses of these evolution inspired algorithms turn out to be different because
-of the variations in the algorithm and how you look at it. At a high level,
-generalization analysis in EAs can be done from the machine learning perspective
-of what <i>cost</i> and <i>training</i> means. As an example, something like the \((1 + 1)
-ES\) algorithm can be analyzed for generalization based on how long we perform
-the evolution, as done for stochastic gradient descent in <a class='org-ref-reference' href="#hardt2015train">hardt2015train</a>.
-</p>
-
-<p>
-Going that route mutes the meaning of adding anything inspired by real evolution
-unless we have a good sense of what that thing means and how it affects the
-constraints of our problem, if it does at all.
-</p>
-
-<p>
+Generalization in a regular EA (solving an optimization problem) refers to
+ability of the algorithm to work well beyond the data set its trained on.
 Although EAs can be seen as optimization techniques based on evolution, there
 are a few differences between these and real evolution:
 </p>
@@ -582,9 +425,9 @@ will come back to later.
 </div>
 </div>
 
-<div id="outline-container-orgaae2479" class="outline-2">
-<h2 id="orgaae2479">Problem Setting</h2>
-<div class="outline-text-2" id="text-orgaae2479">
+<div id="outline-container-orgebcb565" class="outline-2">
+<h2 id="orgebcb565">Shifting landscapes</h2>
+<div class="outline-text-2" id="text-orgebcb565">
 <p>
 Instead of working in a batch or online setting looking for a single solution,
 we can think of evolution as trying to solve an <i>episodic survival problem</i>. The
@@ -613,9 +456,9 @@ learning agent.
 <p>
 In some ways, this tries to approximate the ideas behind real evolution where a
 population is faced with changing conditions. In that case, species fit for
-(say) CO\textsubscript{2} based atmosphere will not survive if a reversal event
-like the <i>Oxygen holocaust</i> takes place, increasing the O\textsubscript{2}
-concentration at the cost of CO\textsubscript{2}.
+(say) \(CO_2\) based atmosphere will not survive if a reversal event like the
+<i>Oxygen holocaust</i> takes place, increasing the \(O_2\) concentration at the cost of
+\(CO_2\).
 </p>
 
 <p>
@@ -626,30 +469,35 @@ guaranteed to be from the same distribution and so are more flexible in terms of
 how far the episodes can jump.
 </p>
 
+<aside>
 <p>
-In this setting, generalization means how well does a <i>population</i> fare off if
-faced with change in episode. If we have an ideal, all-knowing, algorithm for
-stepping the population, the population will move to the peak of each episode's
-cost function in one time step and stay there, reaping the benefits, until the
-next episode switch. But any practical survival (non oracle-ish) algorithm will
-have constraints on how far it can move the population in one time step just
-because it doesn't know the truth. This leads to a potential regularization
-strategy which provides a trade off between overfitting an episode greedily and
-trying to be open enough for the next ones.
+Though, thinking more about it, this setting is pretty similar to <i>tracking the
+expert</i> in multiplicative weights world. The idea there is to have an online
+ensemble which suffers low regret with respect to the best <i>sequence of experts</i>
+during a period of time \(n\) given that there are \(m\) episodes. See
+<a class='org-ref-reference' href="#herbster1998tracking">herbster1998tracking</a>.
+</p>
+</aside>
+
+<p>
+In this setting, generalization means how well a <i>population</i> does if faced with
+change in episode. If we have an ideal, all-knowing, algorithm for stepping the
+population, the population will move to the peak of each episode's cost function
+in one time step and stay there, reaping the benefits, until the next episode
+switch. But any practical survival (non oracle-ish) algorithm will have
+constraints on how far it can move the population in one time step just because
+it doesn't know the truth. This leads to a potential regularization strategy
+which provides a trade off between overfitting an episode greedily and trying to
+be open enough for the next ones.
 </p>
 
-\begin{figure}[h]
-  \centering
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{images/landscape-ga-three}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{images/landscape-ga-four}
-  \end{subfigure}
-  \caption{\emph{Changing landscape}. The population (\textcolor{blue}{$\bullet$} dots)
-in the left image are at a local peak but are stuck in a flat low region after the landscape
-shifts}
-\end{figure}
+
+
+<figure>
+<img src="images/landscape.png" alt="landscape.png">
+
+<figcaption><span class="figure-number">Figure 1: </span><i>Changing landscape</i>. The population (<font color="blue">●</font> dots) in the left image are at a local peak but are stuck in a flat low region after the landscape shifts</figcaption>
+</figure>
 
 <p>
 The next section presents the population model, the fitness landscape and
@@ -804,30 +652,12 @@ case are \(s - \delta\), \(s\) and \(s + \delta\) respectively. This causes uphi
 population to flourish more than the downhill.
 </p>
 
-\begin{figure}[H]
-\label{fig:split}
-\centering
-\begin{tikzpicture}
 
-\begin{scope}[every node/.style={}]
-    \node (A) at (0,0) {$n_{p - 1}(t - 1)$};
-    \node (B) at (2,0) {$n_p(t - 1)$};
-    \node (C) at (4,0) {$n_{p+1}(t-1)$};
-    \node (D) at (2,-3) {$n_p(t)$};
-\end{scope}
+<figure>
+<img src="./images/nodes.png" alt="nodes.png">
 
-\begin{scope}[>={Stealth[black]},
-              every node/.style={fill=white},
-              every edge/.style={draw=gray,very thick}]
-    \path [->] (A) edge[bend right=60] node {$ \frac{m (s - \delta)}{2} $} (D);
-    \path [->] (B) edge node {$s (2-m)$} (D);
-    \path [->] (C) edge[bend left=60] node {$\frac{m (s + \delta)}{2}$} (D);
-\end{scope}
-\end{tikzpicture}
-\caption{Relation between counts at position and time. Node represents the counts
-and edges represents the probabilities of jump. Note that the survival value $s$ is
-for the middle location}
-+\end{figure}
+<figcaption><span class="figure-number">Figure 2: </span>Relation between counts at position and time. Node represents the counts and edges represents the probabilities of jump. Note that the survival value \(s\) is for the middle location</figcaption>
+</figure>
 
 <p>
 In the general case, the number of individuals at position \(p\) with survival
@@ -876,8 +706,7 @@ spots considering all factors to be the same.
 <h2 id="orgc17034e">Improving generalization</h2>
 <div class="outline-text-2" id="text-orgc17034e">
 <p>
-Coming back to the question of generalization, its important to restate two
-near obvious facts here:
+Coming back to the question of generalization, there are near two things here:
 </p>
 
 <ol class="org-ol">
@@ -930,9 +759,9 @@ controlled. A higher \(k\) value provides more flatness and thus adds inertia.
 </div>
 </div>
 
-<div id="outline-container-org47fd5b8" class="outline-3">
-<h3 id="org47fd5b8">Crossover</h3>
-<div class="outline-text-3" id="text-org47fd5b8">
+<div id="outline-container-org9301ce5" class="outline-3">
+<h3 id="org9301ce5">Crossover</h3>
+<div class="outline-text-3" id="text-org9301ce5">
 <p>
 Crossover acts as a technique to swap chunks of genes among organisms.
 Considering 'organisms' as groups of genes we create in this case, crossover can
@@ -942,57 +771,39 @@ shuffling operator like crossover is going to increase the flatness in
 expectation. Thus it can be seen as a way to flatten the landscape without
 increasing the \(k\) value.
 </p>
-</div>
-</div>
-</div>
 
-<div id="outline-container-org078b2eb" class="outline-2">
-<h2 id="org078b2eb">Discussion and Conclusions</h2>
-<div class="outline-text-2" id="text-org078b2eb">
+<hr>
+
 <p>
-The main purpose of this exploration is to have an understanding of effect of
-grouping in a setting which is closer to real evolution than the usual evolution
-based optimization algorithms. The toy problem we studied here presents grouping
-as a viable landscape controlling strategy that can be utilized by genotypes in
-situations where they don't have control over the environment itself.
+Computational modeling of evolution is a really nice way to play around with and
+understand some of the major ideas. Although this experiment says nothing
+conclusively (there are sufficiently high quantities of assumptions and
+cherry-picking), it showed me a lot of directions to pursue for getting to the
+right way of modeling the processes.
 </p>
 
 <p>
-An interesting question to find answer to is <i>how fundamental the idea of
-grouping really is</i>? Can a similar idea be extended so far as to say that the
-<i>bodies</i> (group of genes) form a level 1 grouping while social groups (group of
-bodies) form a level 2 grouping? There are sufficiently high quantities of
-assumptions and cherry-picking here that makes the results not really
-conclusive. For example, to conclude anything connected to generic grouping,
-other (non-averaging) interactions need to be considered. In any case there are
-connections from here to biology which provide directions to pursue for
-understanding more of whats happening. Some particularly interesting ones are:
+An important point from my perspective is to see connnections between life
+processes and computation (which, when applied to biological world, ends up
+sharing a lot of pieces with machine <i>learning</i>). As a next step, I would like
+to spend time understanding the equivalences (if there are) between biological
+terms like <i>robustness</i> and learning stability. The hostility of real
+environment throws challenges like <i>population bottleneck</i> which are
+sufficiently different than the simple learning settings we work with regularly
+and thats pretty interesting.
 </p>
-
-<ul class="org-ul">
-<li><i>Biological robustness</i> refers to systems manifesting the same characteristics
-even under perturbations. Literature on this should tell more about how
-generalization in a digital variation of evolution connects with robustness.
-Interestingly there is empirical support for connection between flatter
-landscape and robustness <a class='org-ref-reference' href="#wilke2001evolution">wilke2001evolution</a>.</li>
-
-<li><i>Population bottleneck</i> is a well known phenomena where, due to sudden change
-in environment, a large mass of diversity is wiped out, putting selection
-pressure for having robustness.</li>
-</ul>
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="salimans2017evolution">[salimans2017evolution]</a> <a name="salimans2017evolution">Salimans, Ho, Chen & Sutskever. 2017. "Evolution strategies as a scalable alternative to reinforcement learning." <i>arXiv preprint arXiv:1703.03864</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="hamilton1964genetical">[hamilton1964genetical]</a> <a name="hamilton1964genetical">Hamilton. 1964. "The genetical evolution of social behaviour. II." <i>Journal of theoretical biology</i>, 7(1), 17-52. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<ul class='org-ref-bib'><li><a id="hamilton1964genetical">[hamilton1964genetical]</a> <a name="hamilton1964genetical">Hamilton. 1964. "The genetical evolution of social behaviour. II." <i>Journal of theoretical biology</i>, 7(1), 17-52. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 <li><a id="chastain2014algorithms">[chastain2014algorithms]</a> <a name="chastain2014algorithms">Chastain, Livnat, Papadimitriou & Vazirani. 2014. "Algorithms, games, and evolution." <i>Proceedings of the National Academy of Sciences</i>, 111(29), 10620-10623. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 <li><a id="traulsen2006evolution">[traulsen2006evolution]</a> <a name="traulsen2006evolution">Traulsen & Nowak. 2006. "Evolution of cooperation by multilevel selection." <i>Proceedings of the National Academy of Sciences</i>, 103(29), 10952-10955. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="hardt2015train">[hardt2015train]</a> <a name="hardt2015train">Hardt, Recht & Singer. 2015. "Train faster, generalize better: Stability of stochastic gradient descent." <i>arXiv preprint arXiv:1509.01240</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="herbster1998tracking">[herbster1998tracking]</a> <a name="herbster1998tracking">Herbster & Warmuth. 1998. "Tracking the best expert." <i>Machine learning</i>, 32(2), 151-178. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 <li><a id="williams1997adaptation">[williams1997adaptation]</a> <a name="williams1997adaptation">Williams & Burt. 1997. <i>Adaptation and natural selection</i>. na.</li>
 <li><a id="wright1932roles">[wright1932roles]</a> <a name="wright1932roles">Wright. 1932. <i>The roles of mutation, inbreeding, crossbreeding, and selection in evolution</i>. na.</li>
-<li><a id="wilke2001evolution">[wilke2001evolution]</a> <a name="wilke2001evolution">Wilke, Wang, Ofria, Lenski & Adami. 2001. "Evolution of digital organisms at high mutation rates leads to survival of the flattest." <i>Nature</i>, 412(6844), 331-333. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 </ul>
 </p>
+</div>
 </div>
 </div>
 </div>

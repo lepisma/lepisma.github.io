@@ -132,3 +132,16 @@ for the range of mapping function.
  :END:
 
 Sand model.
+
+** Revisiting the edge of chaos: Evolving cellular automata to perform computations :noexport:
+ :PROPERTIES:
+  :Custom_ID: mitchell1993revisiting
+  :AUTHOR: Mitchell, Hraber \& Crutchfield
+  :JOURNAL: arXiv preprint adap-org/9303003
+  :YEAR: 1993
+ :END:
+
+One neat trick that I haven't seen much (though I haven't seen much) is of
+keeping high the number of /elites/ high and changing the evaluation function on
+each generation. This looks like a more practical way to use GAs in evaluation
+over real data set.
