@@ -16,6 +16,11 @@ that a trade off option between preserving diversity and evolution speed becomes
 viable.
 #+END_page-intro
 
+#+BEGIN_aside
+This page is basically a clipped version of a course project report so might be
+inconsistent at places.
+#+END_aside
+
 So I recently was reading a bit about the question of how a fundamental unit of
 selection can results in grouping at higher levels. As an example, eusociality
 in insects involves extensive hierarchy creation and role division with
