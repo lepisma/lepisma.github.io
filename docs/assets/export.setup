@@ -6,21 +6,18 @@
 #+OPTIONS: pri:t prop:t stat:t tasks:t tex:t timestamp:t toc:nil
 #+OPTIONS: todo:t |:t title:nil
 
-#+MACRO: js #+HTML_HEAD: <script src="$1"></script>
-#+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
-
 #+HTML_LINK_HOME: /pile
-{{{css(/pile/assets/css/pace.css)}}}
-{{{css(/pile/assets/css/main.css)}}}
-{{{css(https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css)}}}
-{{{css(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css)}}}
-{{{css(https://fonts.googleapis.com/css?family=Merriweather:900\,900italic\,300\,300italic)}}}
-{{{css(https://fonts.googleapis.com/css?family=Open+Sans:400\,300\,800)}}}
-{{{css(https://fonts.googleapis.com/css?family=Fira+Mono)}}}
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" />
 
-{{{js(https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js)}}}
-{{{js(/pile/assets/js/pace.min.js)}}}
-{{{js(/pile/assets/js/jquery.zoomooz.min.js)}}}
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/pace.min.js"></script>
+#+HTML_HEAD: <script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
 
 # Icons and stuff
 #+HTML_HEAD: <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
@@ -45,10 +42,10 @@
 #+HTML_HEAD: <meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
 
 # Root url fallbacks for local build AND most likely the next hosting location
-{{{css(/assets/css/pace.css)}}}
-{{{css(/assets/css/main.css)}}}
-{{{js(/assets/js/pace.min.js)}}}
-{{{js(/assets/js/jquery.zoomooz.min.js)}}}
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+#+HTML_HEAD_EXTRA: <script src="/assets/js/pace.min.js"></script>
+#+HTML_HEAD_EXTRA: <script src="/assets/js/jquery.zoomooz.min.js"></script>
 
 # Org babel default headers
 #+PROPERTY: header-args :eval never-export :exports both :results output
