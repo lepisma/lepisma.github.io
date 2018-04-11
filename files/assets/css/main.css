@@ -853,23 +853,25 @@ li p code {
   .src .org-highlight-numbers-number {
     color: #4e3163; }
 
-figure img {
-  max-width: 100%; }
-figure figcaption {
-  margin-top: 10px;
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #444; }
-  figure figcaption .figure-number {
+figure {
+  text-align: center; }
+  figure img {
+    max-width: 100%; }
+  figure figcaption {
+    margin-top: 10px;
     font-family: "Open Sans";
     font-weight: normal;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.9;
-    color: #7b7b7b;
-    text-transform: uppercase; }
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444; }
+    figure figcaption .figure-number {
+      font-family: "Open Sans";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.9;
+      color: #7b7b7b;
+      text-transform: uppercase; }
 
 img.zoomTarget:hover {
   cursor: default !important; }
