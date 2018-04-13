@@ -8,7 +8,7 @@ nice intro to a topic in isolation.
 
 * Pages in this section
 
-- [[./bib-notes.org][Note Cards]]
+- [[./bib-notes.org][Notes]]
 - [[./books.org][Reading List (Books)]]
 - [[./clippings.org][Clippings]]
 - [[./likes.org][Articles I like]]

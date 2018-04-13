@@ -50,7 +50,7 @@
 # Org babel default headers
 #+PROPERTY: header-args :eval never-export :exports both :results output
 
-# Some macros for use
+# Some handy macros
 #+MACRO: js #+HTML_HEAD: <script src="$1"></script>
 #+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
 #+MACRO: color @@html:<font color="$1">$2</font>@@

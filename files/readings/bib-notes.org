@@ -1,13 +1,13 @@
-#+TITLE: Note Cards
+#+TITLE: Notes
 #+SETUPFILE: ../assets/export.setup
 
 #+BEGIN_QUOTE
 This page is a work in progress
 #+END_QUOTE
 
-(Okay, not exactly cards but I can shuffle entries around) Bibliographical
-notes. I am realizing their importance /now/ and will be working on this page
-fairly regularly.
+This contains notes for paper-ish documents that I read (notes for books in
+general are [[pile:readings/books][here]]). I am now realizing importance of summarizing what I read so
+will be working on this page fairly regularly.
 
 ** Physics, topology, logic and computation: a Rosetta Stone
  :PROPERTIES:
@@ -145,3 +145,32 @@ One neat trick that I haven't seen much (though I haven't seen much) is of
 keeping high the number of /elites/ high and changing the evaluation function on
 each generation. This looks like a more practical way to use GAs in evaluation
 over real data set.
+
+** Lisp, Jazz, Aikido--Three Expressions of a Single Essence
+ :PROPERTIES:
+  :Custom_ID: verna2018lisp
+  :AUTHOR: Verna
+  :JOURNAL: arXiv preprint arXiv:1804.00485
+  :YEAR: 2018
+ :END:
+
+Okay, this was up on /r/lisp, felt not that much effort to read so I gave it a
+shot. There are three general aesthetic avenues that the author covers:
+
+1. Conformation
+2. Transgression
+3. Unification
+
+The general idea is about the similar interplay of these in all the 3 things
+(Lisp, Jazz & Aikido) and how they end up being a source of pleasure and
+enlightenment.
+
+From whatever I have felt, /things/ that focus on an act itself (rather than
+prioritizing the results) end up being like these (well, probably this is
+obvious).
+
+This paper is a quick read and is not overly philosophical. Maybe that's because
+one of the focus is on tools that stay out of your way by staying /practical/ (you
+can see this when the author talks about /Common Lisp/ specifically). Although I
+must say that I know next to nothing about both /Jazz/ and /Aikido/ so might not
+have really been able to connect all the pieces.

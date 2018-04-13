@@ -32,7 +32,7 @@
 - [[file:readings/index.org][Readings]]
   - [[file:readings/likes.org][Articles I like]]
   - [[file:readings/clippings.org][Clippings]]
-  - [[file:readings/bib-notes.org][Note Cards]]
+  - [[file:readings/bib-notes.org][Notes]]
   - [[file:readings/books.org][Reading List (Books)]]
 - [[file:writings/index.org][Writings]]
   - [[file:writings/hours-over-deadlines.org][Schedule Hours not Deadlines]]
