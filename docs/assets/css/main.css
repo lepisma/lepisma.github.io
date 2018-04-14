@@ -1095,6 +1095,9 @@ li a {
     #footnotes a:hover:visited {
       color: #444; }
 
+.pile-link::before {
+  content: "🗎\00a0"; }
+
 .btn {
   padding: 7px 14px;
   border-style: solid;
