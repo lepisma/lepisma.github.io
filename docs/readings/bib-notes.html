@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-14 Sat 02:56 -->
+<!-- 2018-04-16 Mon 21:49 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes</title>
@@ -305,7 +305,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta'>
-    Last modified:  2018-04-12 Thu 22:32
+    Last modified:  2018-04-16 Mon 21:49
   </div>
   <h1>Notes</h1>
 </div>
@@ -320,7 +320,7 @@ This page is a work in progress
 
 <p>
 This contains notes for paper-ish documents that I read (notes for books in
-general are <a class="pile-link" href="/pile/readings/books.html">here</a>). I am now realizing the importance of summarizing what I read
+general are <a href="/pile/readings/books.html">here</a>). I am now realizing the importance of summarizing what I read
 so will be working on this page fairly regularly.
 </p>
 
@@ -447,6 +447,42 @@ for the range of mapping function.
 </div>
 </div>
 
+<div id="outline-container-org9b89283" class="outline-2">
+<h2 id="mitchell1993revisiting"><a id="org9b89283"></a>Revisiting the edge of chaos: Evolving cellular automata to perform computations</h2>
+<div class="outline-text-2" id="text-mitchell1993revisiting">
+<pre class="example">
+Custom_ID: mitchell1993revisiting
+AUTHOR: Mitchell, Hraber \& Crutchfield
+JOURNAL: arXiv preprint adap-org/9303003
+YEAR: 1993
+</pre>
+
+<p>
+The edge of chaos idea turned out to be pretty popular among the masses. A short
+article criticizing that is <a href="http://bactra.org/notebooks/edge-of-chaos.html">here</a>. This is one of the papers that tried to debunk
+(kind of) an experiment (<a class='org-ref-reference' href="#packard1988adaptation">packard1988adaptation</a>; this was in my reading list
+for a long time) which claimed that evolving (in the GA sense) a CA to solve
+computational problems gyrate it towards the edge of chaos.
+</p>
+
+<p>
+Its pretty direct to see the issue since a solution to a <i>specific problem</i> (they
+took majority classification) is going to have a <i>specific &lambda;</i> and that's going to
+be what that is, in spite of where the critical &lambda; lies.
+</p>
+
+<p>
+Other than that, this paper has some nice explanations and insights for the
+results from GA. One neat trick that I haven't seen much (though I haven't seen
+much) is of keeping the number of <i>elites</i> high and changing the evaluation
+function on each generation. This looks like a more practical way to use GAs in
+evaluation over real data set. I also like the trick where you stop at a
+variable number of generations to avoid getting a rule which gets the right
+answer by alternating between 0s and 1s.
+</p>
+</div>
+</div>
+
 <div id="outline-container-org080ff27" class="outline-2">
 <h2 id="verna2018lisp"><a id="org080ff27"></a>Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h2>
 <div class="outline-text-2" id="text-verna2018lisp">
@@ -486,6 +522,12 @@ one of the focus is on tools that stay out of your way by staying <i>practical</
 can see this when the author talks about <i>Common Lisp</i> specifically). Although I
 must say that I know next to nothing about both <i>Jazz</i> and <i>Aikido</i> so might not
 have really been able to connect all the pieces.
+</p>
+
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="packard1988adaptation">[packard1988adaptation]</a> <a name="packard1988adaptation">Packard. 1988. "Adaptation toward the edge of chaos." <i>Dynamic patterns in complex systems</i>, 212, 293-301. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+</ul>
 </p>
 </div>
 </div>

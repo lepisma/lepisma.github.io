@@ -72,28 +72,6 @@ elegant) and follows very closely the following description:
 primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 #+END_SRC
 
-** The Multiplicative Weights Update Method: a Meta-Algorithm and Applications :noexport:
- :PROPERTIES:
-  :Custom_ID: arora2012multiplicative
-  :AUTHOR: Arora, Hazan \& Kale
-  :JOURNAL: Theory of Computing
-  :YEAR: 2012
-  :VOLUME: 8
-  :PAGES: 121--164
- :END:
-
-*** Weighted majority
-
-Update rule $w_i(t+1) = (1 - \eta)w_i(t)$ for each wrong decision. Loss is
-binary. The bound here is:
-
-$L_E(T) \le 2(1 + \eta)L_i(T) + \frac{2 \ln{n}}{\eta}$
-
-*** Multiplicative weights
-
-Here the losses are not binary but in [-1, 1]. The update rule $w_i(t+1) =
-w_i(t) (1 - \eta m_i(t))$. If $\eta \le 1/2$, then...
-
 ** Computation at the edge of chaos: phase transitions and emergent computation
  :PROPERTIES:
   :Custom_ID: langton1990computation
@@ -133,7 +111,7 @@ for the range of mapping function.
 
 Sand model.
 
-** Revisiting the edge of chaos: Evolving cellular automata to perform computations :noexport:
+** Revisiting the edge of chaos: Evolving cellular automata to perform computations
  :PROPERTIES:
   :Custom_ID: mitchell1993revisiting
   :AUTHOR: Mitchell, Hraber \& Crutchfield
@@ -141,10 +119,23 @@ Sand model.
   :YEAR: 1993
  :END:
 
-One neat trick that I haven't seen much (though I haven't seen much) is of
-keeping high the number of /elites/ high and changing the evaluation function on
-each generation. This looks like a more practical way to use GAs in evaluation
-over real data set.
+The edge of chaos idea turned out to be pretty popular among the masses. A short
+article criticizing that is [[http://bactra.org/notebooks/edge-of-chaos.html][here]]. This is one of the papers that tried to debunk
+(kind of) an experiment (cite:packard1988adaptation; this was in my reading list
+for a long time) which claimed that evolving (in the GA sense) a CA to solve
+computational problems gyrate it towards the edge of chaos.
+
+Its pretty direct to see the issue since a solution to a /specific problem/ (they
+took majority classification) is going to have a /specific \lambda/ and that's going to
+be what that is, in spite of where the critical \lambda lies.
+
+Other than that, this paper has some nice explanations and insights for the
+results from GA. One neat trick that I haven't seen much (though I haven't seen
+much) is of keeping the number of /elites/ high and changing the evaluation
+function on each generation. This looks like a more practical way to use GAs in
+evaluation over real data set. I also like the trick where you stop at a
+variable number of generations to avoid getting a rule which gets the right
+answer by alternating between 0s and 1s.
 
 ** Lisp, Jazz, Aikido--Three Expressions of a Single Essence
  :PROPERTIES:
@@ -174,3 +165,15 @@ one of the focus is on tools that stay out of your way by staying /practical/ (y
 can see this when the author talks about /Common Lisp/ specifically). Although I
 must say that I know next to nothing about both /Jazz/ and /Aikido/ so might not
 have really been able to connect all the pieces.
+
+bibliography:./references.bib
+
+** At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks :noexport:
+
+ :PROPERTIES:
+  :Custom_ID: bertschinger2005edge
+  :AUTHOR: Bertschinger, Natschl\"ager \& Legenstein
+  :JOURNAL: 
+  :YEAR: 2005
+  :PAGES: 145--152
+ :END:
