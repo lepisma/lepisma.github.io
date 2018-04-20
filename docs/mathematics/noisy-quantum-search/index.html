@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-08 Sun 03:12 -->
+<!-- 2018-04-20 Fri 03:10 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noisy Quantum Search</title>
@@ -185,9 +185,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/pile/assets/js/pace.min.js"></script>
-<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
@@ -211,7 +209,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <script src="/assets/js/pace.min.js"></script>
-<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -282,11 +280,7 @@ for the JavaScript code in this tag.
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
- |
- <a accesskey="H" href="/pile"> HOME </a>
-</div><div id="preamble" class="status">
+<div id="preamble" class="status">
 <header>
   <div class='site-title'>
     <a href='/'>
@@ -326,9 +320,9 @@ probability of failure. We also explore noisy oracle empirically and its possibl
 use for selectively picking from marked items.
 \end{abstract}
 
-<div id="outline-container-org39e36a6" class="outline-2">
-<h2 id="org39e36a6">Introduction</h2>
-<div class="outline-text-2" id="text-org39e36a6">
+<div id="outline-container-orgf884060" class="outline-2">
+<h2 id="orgf884060">Introduction</h2>
+<div class="outline-text-2" id="text-orgf884060">
 <p>
 Grover's search <a class='org-ref-reference' href="#grover1996fast">grover1996fast</a> is a quantum search algorithm which provides
 quadratic speedup over classical search algorithms. One of the issues with
@@ -389,9 +383,9 @@ presents some empirical results with a noisy oracle. &sect; 4 concludes the repo
 </div>
 </div>
 
-<div id="outline-container-orgfc1788d" class="outline-2">
-<h2 id="orgfc1788d">Imperfect oracle</h2>
-<div class="outline-text-2" id="text-orgfc1788d">
+<div id="outline-container-org846338a" class="outline-2">
+<h2 id="org846338a">Imperfect oracle</h2>
+<div class="outline-text-2" id="text-org846338a">
 <p>
 The problem we work with is of finding a <i>marked</i> item in a set of \(N\) items. It
 is known that there are \(M\) (\(< N\)) marked items in these \(N\). Marked items are
@@ -434,9 +428,9 @@ cancellations.
 </p>
 </div>
 
-<div id="outline-container-org1bf97a6" class="outline-3">
-<h3 id="org1bf97a6">Error in \(M/2\) items</h3>
-<div class="outline-text-3" id="text-org1bf97a6">
+<div id="outline-container-org6ef6e38" class="outline-3">
+<h3 id="org6ef6e38">Error in \(M/2\) items</h3>
+<div class="outline-text-3" id="text-org6ef6e38">
 <p>
 Consider the usual setting of \(N\) items, \(M\) of which are marked. The aim of the
 search is to find a marked item with high probability. We consider two cases
@@ -519,9 +513,9 @@ expression for \(P_{av}\) we will be working with is:
 \end{align*}
 </div>
 
-<div id="outline-container-orgc27a38f" class="outline-4">
-<h4 id="orgc27a38f">Perfect oracle</h4>
-<div class="outline-text-4" id="text-orgc27a38f">
+<div id="outline-container-org4aba69c" class="outline-4">
+<h4 id="org4aba69c">Perfect oracle</h4>
+<div class="outline-text-4" id="text-org4aba69c">
 <p>
 At time \(t\), the average amplitudes of the marked and unmarked states are:
 </p>
@@ -575,9 +569,9 @@ The last equality follows because sum of all squared amplitudes (probabilities) 
 </div>
 </div>
 
-<div id="outline-container-orge926e9d" class="outline-4">
-<h4 id="orge926e9d">Imperfect oracle</h4>
-<div class="outline-text-4" id="text-orge926e9d">
+<div id="outline-container-org3c1813a" class="outline-4">
+<h4 id="org3c1813a">Imperfect oracle</h4>
+<div class="outline-text-4" id="text-org3c1813a">
 <p>
 Analyzing the second case (with error at time \(t\)), we get the average
 amplitudes of the marked states as:
@@ -657,9 +651,9 @@ measurement is made.
 </div>
 </div>
 
-<div id="outline-container-org240286d" class="outline-2">
-<h2 id="org240286d">Noisy Oracle</h2>
-<div class="outline-text-2" id="text-org240286d">
+<div id="outline-container-org0a86aca" class="outline-2">
+<h2 id="org0a86aca">Noisy Oracle</h2>
+<div class="outline-text-2" id="text-org0a86aca">
 <p>
 A more practical scenario is when we don't know \(M\) or have that much control
 over the oracle. This also is connected to the case of the original problem
@@ -684,9 +678,9 @@ where the \(M\) items are separable depending on the probability of error.
 </div>
 </div>
 
-<div id="outline-container-org7831d2c" class="outline-2">
-<h2 id="org7831d2c">Conclusions and Future Work</h2>
-<div class="outline-text-2" id="text-org7831d2c">
+<div id="outline-container-org7ca7757" class="outline-2">
+<h2 id="org7ca7757">Conclusions and Future Work</h2>
+<div class="outline-text-2" id="text-org7ca7757">
 <p>
 We see that the behavior of Grover's iterations in case of an imperfect oracle
 is dependent on the time of error. More generally the effect of error at time
@@ -716,9 +710,9 @@ to build a controllable oracle?</li>
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="grover1996fast">[grover1996fast]</a> <a name="grover1996fast">Grover. 1996. "A fast quantum mechanical algorithm for database search", 212-219, in in: Proceedings of the twenty-eighth annual ACM symposium on Theory of computing, edited by </li>
-<li><a id="boyer1996tight">[boyer1996tight]</a> <a name="boyer1996tight">Boyer, Brassard, Høyer & Tapp. 1996. "Tight bounds on quantum searching." <i>arXiv preprint quant-ph/9605034</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="biham1999grover">[biham1999grover]</a> <a name="biham1999grover">Biham, Biham, Biron, Grassl & Lidar. 1999. "Grover’s quantum search algorithm for an arbitrary initial amplitude distribution." <i>Physical Review A</i>, 60(4), 2742. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<ul class='org-ref-bib'><li><a id="grover1996fast">[grover1996fast]</a> <a name="grover1996fast"></a>Grover. 1996. "A fast quantum mechanical algorithm for database search", 212-219, in in: Proceedings of the twenty-eighth annual ACM symposium on Theory of computing, edited by </li>
+<li><a id="boyer1996tight">[boyer1996tight]</a> <a name="boyer1996tight"></a>Boyer, Brassard, Høyer & Tapp. 1996. "Tight bounds on quantum searching." <i>arXiv preprint quant-ph/9605034</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="biham1999grover">[biham1999grover]</a> <a name="biham1999grover"></a>Biham, Biham, Biron, Grassl & Lidar. 1999. "Grover’s quantum search algorithm for an arbitrary initial amplitude distribution." <i>Physical Review A</i>, 60(4), 2742. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 </ul>
 </p>
 </div>
