@@ -1097,7 +1097,12 @@ li a {
       color: #444; }
 
 .pile-link::before {
-  content: "🗎\00a0"; }
+  background-color: #fff;
+  content: "«\00a0"; }
+
+.pile-link::after {
+  background-color: #fff;
+  content: "\00a0»"; }
 
 .btn {
   padding: 7px 14px;
