@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-20 Fri 03:10 -->
+<!-- 2018-04-23 Mon 23:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes</title>
@@ -299,7 +299,7 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta'>
-    Last modified:  2018-04-16 Mon 21:49
+    Last modified:  2018-04-23 Mon 23:45
   </div>
   <h1>Notes</h1>
 </div>
@@ -328,13 +328,13 @@ YEAR: 2010
 </pre>
 
 <p>
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci
-commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget,
-lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac
-felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui
-dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet
-quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet
-tortor.  Nam euismod tellus id erat.
+Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci
+commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget,
+lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac
+felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui
+dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet
+quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor.
+Nam euismod tellus id erat.
 </p>
 </div>
 </div>
@@ -352,16 +352,16 @@ PAGES: 119--139
 </pre>
 
 <p>
-Hello world Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
-Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean
-in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec,
-sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at
-dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent
-augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui
-euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
-consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.
-Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum,
-tellus tellus lacinia purus, et dictum nunc justo sit amet elit
+Hello world Pellentesque dapibus suscipit ligula. Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean
+in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec,
+sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at
+dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue.
+Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod
+elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris, consequat
+quis, varius et, dictum id, arcu. Mauris mollis tincidunt felis. Aliquam feugiat
+tellus ut neque. Nulla facilisis, risus a rhoncus fermentum, tellus tellus
+lacinia purus, et dictum nunc justo sit amet elit
 </p>
 </div>
 </div>
@@ -517,10 +517,60 @@ can see this when the author talks about <i>Common Lisp</i> specifically). Altho
 must say that I know next to nothing about both <i>Jazz</i> and <i>Aikido</i> so might not
 have really been able to connect all the pieces.
 </p>
+</div>
+</div>
+
+<div id="outline-container-org81b753a" class="outline-2">
+<h2 id="hoffmann2018optimization"><a id="org81b753a"></a>Optimization by Self-Organized Criticality</h2>
+<div class="outline-text-2" id="text-hoffmann2018optimization">
+<pre class="example">
+Custom_ID: hoffmann2018optimization
+AUTHOR: Hoffmann \& Payton
+JOURNAL: Scientific reports
+YEAR: 2018
+VOLUME: 8
+PAGES: 2358
+</pre>
+
+<p>
+I believe it is not <i>using</i> SoC in the strict sense. The key is the generation of
+test patterns. Using the sandpile model, we get a reasonable
+exploration/exploitation trade offs. Also, two avalanches are less likely to
+occur on overlapping patches (I am going by hunches on this so can be wrong) so
+it also provides a more coordinate descent-ish behavior than the regular random
+patch thing. Not sure if we can say that SoC is <i>specifically</i> helping here.
+</p>
+
+<p>
+There are two things. First is that this is better than the random approach
+(consider <i>random patch</i> since only that is fairly comparable). This probably
+needs a lot more test cases or some theoretical justification.
+</p>
+
+<p>
+Second is about the optimality of the sandpile approach. How about other non <code>1/f</code>
+distributions? I don't know which generating mechanisms can be employed to get
+the test patterns but fishing around a bit tells me that this purity of
+distribution is not that justified (consider for example the recent
+<a class='org-ref-reference' href="#broido2018scale">broido2018scale</a>). The point being: if you fix an annealing schedule for
+stimulated annealing based on some <i>natural</i> observation, that doesn't:
+</p>
+<ol class="org-ol">
+<li>create a parameter-less solver, and</li>
+<li>justify the <i>natural</i> observation to be the optimal</li>
+</ol>
+
+<p>
+All said, I liked the thought of a random <i>object</i> (?) generator which does better
+than the regular approach in the general case. If there indeed is such a
+generator, this could work as an off-the-shelf technique replacing uniform
+random search.
+</p>
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
 <ul class='org-ref-bib'><li><a id="packard1988adaptation">[packard1988adaptation]</a> <a name="packard1988adaptation"></a>Packard. 1988. "Adaptation toward the edge of chaos." <i>Dynamic patterns in complex systems</i>, 212, 293-301. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="broido2018scale">[broido2018scale]</a> <a name="broido2018scale"></a>Broido & Clauset. 2018. "Scale-free networks are rare." <i>arXiv preprint arXiv:1801.03400</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 </ul>
 </p>
 </div>

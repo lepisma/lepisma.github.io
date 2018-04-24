@@ -16,13 +16,13 @@ so will be working on this page fairly regularly.
   :YEAR: 2010
  :END:
 
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci
-commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget,
-lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac
-felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui
-dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet
-quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet
-tortor.  Nam euismod tellus id erat.
+Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci
+commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget,
+lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac
+felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui
+dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet
+quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor.
+Nam euismod tellus id erat.
 
 ** A decision-theoretic generalization of on-line learning and an application to boosting
  :PROPERTIES:
@@ -34,16 +34,16 @@ tortor.  Nam euismod tellus id erat.
   :PAGES: 119--139
  :END:
 
-Hello world Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
-Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean
-in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec,
-sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at
-dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent
-augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui
-euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
-consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.
-Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum,
-tellus tellus lacinia purus, et dictum nunc justo sit amet elit
+Hello world Pellentesque dapibus suscipit ligula. Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean
+in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec,
+sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at
+dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue.
+Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod
+elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris, consequat
+quis, varius et, dictum id, arcu. Mauris mollis tincidunt felis. Aliquam feugiat
+tellus ut neque. Nulla facilisis, risus a rhoncus fermentum, tellus tellus
+lacinia purus, et dictum nunc justo sit amet elit
 
 ** The Genuine Sieve of Eratosthenes
  :PROPERTIES:
@@ -166,10 +166,44 @@ can see this when the author talks about /Common Lisp/ specifically). Although I
 must say that I know next to nothing about both /Jazz/ and /Aikido/ so might not
 have really been able to connect all the pieces.
 
+** Optimization by Self-Organized Criticality
+ :PROPERTIES:
+  :Custom_ID: hoffmann2018optimization
+  :AUTHOR: Hoffmann \& Payton
+  :JOURNAL: Scientific reports
+  :YEAR: 2018
+  :VOLUME: 8
+  :PAGES: 2358
+ :END:
+
+I believe it is not /using/ SoC in the strict sense. The key is the generation of
+test patterns. Using the sandpile model, we get a reasonable
+exploration/exploitation trade offs. Also, two avalanches are less likely to
+occur on overlapping patches (I am going by hunches on this so can be wrong) so
+it also provides a more coordinate descent-ish behavior than the regular random
+patch thing. Not sure if we can say that SoC is /specifically/ helping here.
+
+There are two things. First is that this is better than the random approach
+(consider /random patch/ since only that is fairly comparable). This probably
+needs a lot more test cases or some theoretical justification.
+
+Second is about the optimality of the sandpile approach. How about other non ~1/f~
+distributions? I don't know which generating mechanisms can be employed to get
+the test patterns but fishing around a bit tells me that this purity of
+distribution is not that justified (consider for example the recent
+cite:broido2018scale). The point being: if you fix an annealing schedule for
+stimulated annealing based on some /natural/ observation, that doesn't:
+1. create a parameter-less solver, and
+2. justify the /natural/ observation to be the optimal
+
+All said, I liked the thought of a random /object/ (?) generator which does better
+than the regular approach in the general case. If there indeed is such a
+generator, this could work as an off-the-shelf technique replacing uniform
+random search.
+
 bibliography:./references.bib
 
 ** At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks :noexport:
-
  :PROPERTIES:
   :Custom_ID: bertschinger2005edge
   :AUTHOR: Bertschinger, Natschl\"ager \& Legenstein
