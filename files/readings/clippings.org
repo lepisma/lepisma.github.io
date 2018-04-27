@@ -22,6 +22,82 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Riots and comedy are but symptoms of the times, profoundly revealing. They
+betray the psychological tone, the deep uncertainties ... and the striving for
+something better, plus the fear that nothing would come of it all.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Life—all life—is in the service of life.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Prophets have a way of dying by violence. ”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“The people who can destroy a thing, they control it,”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“It’s easier to be terrified by an enemy you admire.”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The meeting between ignorance and knowledge, between brutality and culture—it
+begins in the dignity with which we treat our dead.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What do you despise? By this are you truly known.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Any man who retreats into a cave which has only one opening deserves to die,”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Parting with people is a sadness; a place is only a place.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Is it defeatist or treacherous for a doctor to diagnose a disease correctly?
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“When strangers meet, great allowance should be made for differences of custom
+and training.”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“If wishes were fishes we’d all cast nets,”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 The most dangerous form of intolerance is precisely the kind that arises in the
 absence of any doctrine, fueled by elemental drives.
 
