@@ -1098,11 +1098,11 @@ li a {
 
 .pile-link::before {
   background-color: #fff;
-  content: "«\00a0"; }
+  content: "‹\00a0"; }
 
 .pile-link::after {
   background-color: #fff;
-  content: "\00a0»"; }
+  content: "\00a0›"; }
 
 .btn {
   padding: 7px 14px;
