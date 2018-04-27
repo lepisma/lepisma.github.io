@@ -5,6 +5,7 @@
   - [[file:emacs/resources.org][Resources]]
   - [[file:emacs/til.org][Today I Learned /in Emacs/]]
   - [[file:emacs/org-mode/index.org][Org Mode]]
+    - [[file:emacs/org-mode/macros.org][Macros]]
     - [[file:emacs/org-mode/links.org][Org-links]]
     - [[file:emacs/org-mode/references.org][Reference Management]]
 - [[file:evolution/index.org][Evolution]]

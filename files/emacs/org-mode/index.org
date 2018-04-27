@@ -6,4 +6,5 @@ Org mode stuff needed a separate section.
 * Pages in this section
 
 - [[./links.org][Org-links]]
+- [[./macros.org][Macros]]
 - [[./references.org][Reference Management]]

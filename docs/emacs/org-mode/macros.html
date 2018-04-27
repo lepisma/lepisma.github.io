@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-04-27 Fri 01:51 -->
+<!-- 2018-04-27 Fri 01:50 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emacs</title>
+<title>Macros</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -277,32 +277,27 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta'>
-    Last modified:  2018-04-27 Fri 01:51
+    Last modified:  2018-04-27 Fri 01:50
   </div>
-  <h1>Emacs</h1>
+  <h1>Macros</h1>
 </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> /  emacs</div>
+<div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../emacs/index.html'>emacs</a> / <a href='../org-mode/index.html'>org-mode</a> / macros</div>
 <p>
-Some notes/texts related to Emacs and Org Mode.
+A few org-mode macros.
 </p>
 
-<div id="outline-container-org6cf4a18" class="outline-2">
-<h2 id="org6cf4a18">Pages in this section</h2>
-<div class="outline-text-2" id="text-org6cf4a18">
-<ul class="org-ul">
-<li><a href="./org-mode/index.html">Org Mode</a>
-<ul class="org-ul">
-<li><a href="./org-mode/links.html">Org-links</a></li>
-<li><a href="./org-mode/macros.html">Macros</a></li>
-<li><a href="./org-mode/references.html">Reference Management</a></li>
-</ul></li>
-<li><a href="./resources.html">Resources</a></li>
-<li><a href="./til.html">Today I Learned <i>in Emacs</i></a></li>
-</ul>
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-meta-line">#+MACRO: js #+HTML_HEAD: &lt;script src="$1"&gt;&lt;/script&gt;</span>
+<span class="org-org-meta-line">#+MACRO: css #+HTML_HEAD: &lt;link rel="stylesheet" href="$1" /&gt;</span>
+<span class="org-org-meta-line">#+MACRO: color </span><span class="org-org-meta-line"><span class="org-org-formula">@@html:&lt;font</span></span><span class="org-org-meta-line"> color="$1"&gt;$2&lt;/font&gt;@@</span>
+</pre>
 </div>
-</div>
+
+<p>
+Block macros are also possible. See <a href="https://github.com/fniessen/org-macros/">this repository</a> for more examples.
+</p>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
