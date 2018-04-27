@@ -3744,6 +3744,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 
 * Fiction
 ** Science Fiction
+*** Dune Messiah (Dune #2)
+:PROPERTIES:
+:AUTHOR:   Frank Herbert
+:ADDED:    <2018-04-27>
+:GOODREADS: https://www.goodreads.com/book/show/106.Dune_Messiah
+:END:
+
 *** READ The Last Answer
 CLOSED: [2017-11-13 Mon 20:46]
 :PROPERTIES:
@@ -3796,12 +3803,37 @@ Not very hard sci-fi, but one of the best experiences.
 :GOODREADS: https://www.goodreads.com/book/show/14817
 :END:
 
-*** Dune (Dune #1)
+*** READ Dune (Dune #1)
+CLOSED: [2018-04-27 Fri 14:17]
 :PROPERTIES:
 :AUTHOR:    Frank Herbert
 :ADDED:     <2017-01-09>
 :GOODREADS: https://www.goodreads.com/book/show/234225
 :END:
+
+So finally I got around to reading this. I was looking for a solid science
+fiction and had high hopes with this one. Disappointed that this is not really
+the science fiction I wanted.
+
+Keeping the soft and hard sci-fi distinction in mind, I would still say that you
+should not approach this as a sci-fi because not much changes (at least in book
+one) even when you replace all of the /science/ with simpler alternatives. Its
+about rise of a prophet and things like power struggle. Science is /not/
+fundamentally affecting any of the story line.
+
+It also has a tone of prophecy around everything. So much that you might just
+not feel the /anticipation/ and can easily guess where everything is going
+resulting in bland experience. This might work out differently if you either
+like /the chosen one/ theme or have not read similar ones recently.
+
+Overall, it had a relatively simple story (for such length) with some nice
+character development (Paul, /the prophet/).
+
+I don't have plans for going through the whole series but will read the next
+book (/Dune Messiah/) since it is darker.
+
+PS: In case you also feel a lack of richness while reading, don't miss the
+Appendices at the end. They help adding some depth to the story.
 
 *** Seveneves
 :PROPERTIES:
