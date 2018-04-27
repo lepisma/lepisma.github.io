@@ -1365,8 +1365,8 @@ nav#table-of-contents {
 @media (min-width: 1280px) {
   nav#table-of-contents {
     position: fixed;
-    top: 80px;
-    left: 80px;
+    top: 200px;
+    left: 50px;
     background-color: transparent;
     max-width: 50vw;
     padding: 0; }
@@ -1374,17 +1374,19 @@ nav#table-of-contents {
       background-color: #fff;
       box-shadow: 0 0 2px;
       padding: 20px;
-      padding-left: 50px;
       display: none;
       max-height: 50vh;
       overflow: auto; }
+      nav#table-of-contents #text-table-of-contents ul {
+        margin: 0; }
     nav#table-of-contents:hover #text-table-of-contents {
       display: block; }
+    nav#table-of-contents:hover h2 {
+      display: none; }
     nav#table-of-contents h2 {
       transform: rotate(-90deg);
       position: relative;
-      left: 10px;
-      top: 180px; }
+      top: 50px; }
     nav#table-of-contents li::before {
       content: ""; }
     nav#table-of-contents li a {
