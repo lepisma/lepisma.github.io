@@ -20,6 +20,7 @@
   - [[file:misc/desktop.org][Desktop]]
 - [[file:ml/index.org][Machine Learning]]
   - [[file:ml/resources.org][Resources]]
+  - [[file:ml/hyperparameters/index.org][Hyperparameters]]
   - [[file:ml/learning/index.org][Breaking down /Learning/]]
   - [[file:ml/potential/index.org][Potential in Multiplicative Weight Algorithms]]
   - [[file:ml/voting-ensemble/index.org][Voting Ensemble]]
