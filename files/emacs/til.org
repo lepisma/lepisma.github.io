@@ -7,6 +7,12 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *dump-emacs*
+
+  Similar to most Common Lisp implementations, emacs also provides a /dump/
+  function which dumps the state. Although this is mostly for development
+  purpose and not really useful. See this [[https://www.reddit.com/r/emacs/comments/2rietp/dumpemacs_truly_speeds_up_emacs_startup/][thread]].
+
 + *magic file names*
 
   You can define specific /handlers/ for certain file name patterns which can then
