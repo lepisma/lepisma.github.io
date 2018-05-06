@@ -13,6 +13,41 @@ to categorize things in sections.
 
 * Non Fiction
 ** Uncategorized
+*** The Joy of x: A Guided Tour of Math, from One to Infinity
+:PROPERTIES:
+:AUTHOR:   Steven H. Strogatz
+:ADDED:    <2018-05-06>
+:GOODREADS: https://www.goodreads.com/book/show/13356649-the-joy-of-x
+:END:
+
+*** How to Solve It: A New Aspect of Mathematical Method
+:PROPERTIES:
+:AUTHOR:   George Pólya
+:ADDED:    <2018-05-06>
+:GOODREADS: https://www.goodreads.com/book/show/192221.How_to_Solve_It
+:END:
+
+*** I Am a Strange Loop
+:PROPERTIES:
+:AUTHOR:   Douglas R. Hofstadter
+:ADDED:    <2018-05-06>
+:GOODREADS: https://www.goodreads.com/book/show/123471.I_Am_a_Strange_Loop
+:END:
+
+*** Algebra: Chapter 0 (Graduate Studies in Mathematics)
+:PROPERTIES:
+:AUTHOR:   Paolo Aluffi
+:ADDED:    <2018-05-06>
+:AMAZON:   https://www.amazon.com/Algebra-Chapter-Graduate-Studies-Mathematics/dp/0821847813
+:END:
+
+*** Love and Math: The Heart of Hidden Reality
+:PROPERTIES:
+:AUTHOR:   Edward Frenkel
+:ADDED:    <2018-05-06>
+:AMAZON:   https://www.amazon.com/Love-Math-Heart-Hidden-Reality/dp/0465050743?language=en_GB
+:END:
+
 *** Pantone's Guide to Communicating with Color
 :PROPERTIES:
 :AUTHOR:   Leatrice Eisemann
