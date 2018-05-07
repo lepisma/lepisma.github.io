@@ -3779,12 +3779,21 @@ CLOSED: [2018-02-05 Mon 01:16]
 
 * Fiction
 ** Science Fiction
-*** Dune Messiah (Dune #2)
+*** READ Dune Messiah (Dune #2)
+CLOSED: [2018-05-06 Sun 23:16]
 :PROPERTIES:
 :AUTHOR:   Frank Herbert
 :ADDED:    <2018-04-27>
 :GOODREADS: https://www.goodreads.com/book/show/106.Dune_Messiah
 :END:
+
+This is a /really/ heavy upgrade on the first book. The acts and inhibitions go
+much deeper here. Going by my thoughts about the first book, this one /too/ is not
+very /detailed/ from the perspective of the plot itself. But the point here is
+more about the perplexity of prescience than anything else, and the book commits
+to that.
+
+I surely am interested in reading the rest of the series now.
 
 *** READ The Last Answer
 CLOSED: [2017-11-13 Mon 20:46]
