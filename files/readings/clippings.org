@@ -22,6 +22,50 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+“All men are interlopers, old friend.”
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+How easy it was to mistake clear reasoning for correct reasoning!
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Men always fear things which move by themselves,”
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Even danger had been good in those days—clean danger from known sources.
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Empires do not suffer emptiness of purpose at the time of their creation. It is
+when they have become established that aims are lost and replaced by vague
+ritual.
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Reason is the first victim of strong emotion,”
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+As with all priests, you learned early to call the truth heresy.
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Riots and comedy are but symptoms of the times, profoundly revealing. They
 betray the psychological tone, the deep uncertainties ... and the striving for
 something better, plus the fear that nothing would come of it all.
