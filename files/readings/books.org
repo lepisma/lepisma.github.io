@@ -27,7 +27,7 @@ to categorize things in sections.
 :GOODREADS: https://www.goodreads.com/book/show/192221.How_to_Solve_It
 :END:
 
-*** I Am a Strange Loop
+*** READING I Am a Strange Loop
 :PROPERTIES:
 :AUTHOR:   Douglas R. Hofstadter
 :ADDED:    <2018-05-06>
@@ -3779,6 +3779,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 
 * Fiction
 ** Science Fiction
+*** READING Children of Dune (Dune #3)
+:PROPERTIES:
+:AUTHOR:   Frank Herbert
+:ADDED:    <2018-05-09>
+:GOODREADS: https://www.goodreads.com/book/show/112.Children_of_Dune
+:END:
+
 *** READ Dune Messiah (Dune #2)
 CLOSED: [2018-05-06 Sun 23:16]
 :PROPERTIES:
