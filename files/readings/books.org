@@ -27,12 +27,26 @@ to categorize things in sections.
 :GOODREADS: https://www.goodreads.com/book/show/192221.How_to_Solve_It
 :END:
 
-*** READING I Am a Strange Loop
+*** READ I Am a Strange Loop
+CLOSED: [2018-05-26 Sat 15:41]
 :PROPERTIES:
 :AUTHOR:   Douglas R. Hofstadter
 :ADDED:    <2018-05-06>
 :GOODREADS: https://www.goodreads.com/book/show/123471.I_Am_a_Strange_Loop
 :END:
+
+This reminds me a lot of a newer book 'Consciousness and the Social Brain' by
+Michael Graziano, where the author talks about an /attention schema/. In that,
+consciousness of a system is basically /attention/ directed towards a model of
+itself.
+
+And this is the idea behind the strange loops in /this/ book. A system with enough
+representational power to represent /itself/ is going to perceive, analyze and
+modify /itself/. This ability to loop around is what makes it conscious.
+
+This book is good but unless you have dualist tendencies or have inclination
+towards other solutions, it might feel lengthy since Douglas presents a lot of
+examples and analogies.
 
 *** Algebra: Chapter 0 (Graduate Studies in Mathematics)
 :PROPERTIES:
