@@ -484,6 +484,13 @@ CLOSED: [2014-03-23]
 :GOODREADS: https://www.goodreads.com/book/show/64582
 :END:
 
+*** The Vital Question: Energy, Evolution, and the Origins of Complex Life
+:PROPERTIES:
+:AUTHOR:    Nick Lane
+:ADDED:     <2016-03-25>
+:GOODREADS: https://www.goodreads.com/book/show/23316494
+:END:
+
 ** Programming
 *** READ Seven Languages in Seven Weeks 
 CLOSED: [2018-01-24 Wed 22:59]
@@ -748,6 +755,325 @@ CLOSED: [2016-06-27]
 :GOODREADS: https://www.goodreads.com/book/show/840
 :END:
 
+*** Bird by Bird: Some Instructions on Writing and Life
+:PROPERTIES:
+:AUTHOR:    Anne Lamott
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/12543
+:END:
+
+** Biographies/Memoirs
+*** The Disaster Artist: My Life Inside The Room, the Greatest Bad Movie Ever Made
+:PROPERTIES:
+:AUTHOR:   Tom Bissell
+:ADDED:    <2017-09-18>
+:AMAZON:   https://www.amazon.com/Disaster-Artist-Inside-Greatest-Movie/dp/1451661193
+:END:
+
+*** The Autobiography of Charles Darwin, 1809–82
+:PROPERTIES:
+:AUTHOR:   Charles Darwin, Nora Barlow
+:ADDED:    <2017-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/185404.The_Autobiography_of_Charles_Darwin_1809_82
+:END:
+
+*** Troublemaker: Surviving Hollywood and Scientology
+:PROPERTIES:
+:AUTHOR:    Leah Remini, Rebecca Paley
+:ADDED:     <2016-11-29>
+:GOODREADS: https://www.goodreads.com/book/show/26827675
+:END:
+
+*** Mein Kampf
+:PROPERTIES:
+:AUTHOR:    Adolf Hitler
+:ADDED:     <2016-11-28>
+:GOODREADS: https://www.goodreads.com/book/show/54270
+:END:
+
+*** READ Confessions of a Necromancer
+CLOSED: [2016-09-27]
+:PROPERTIES:
+:AUTHOR:    Pieter Hintjens
+:ADDED:     <2016-11-12>
+:GOODREADS: https://www.goodreads.com/book/show/32326166
+:END:
+
+*** Hitch-22: A Memoir
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens
+:ADDED:     <2016-08-30>
+:GOODREADS: https://www.goodreads.com/book/show/7332753
+:END:
+
+*** READ Mortality
+CLOSED: [2016-08-30]
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens
+:ADDED:     <2016-08-26>
+:GOODREADS: https://www.goodreads.com/book/show/13529055
+:END:
+
+There is a different complexion in a dying person's writing. You don't have to
+like it or hate it. Its honest, brutal and beautiful.
+
+*** READ Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened
+CLOSED: [2016-08-13]
+:PROPERTIES:
+:AUTHOR:    Allie Brosh
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/17571564
+:END:
+
+*** A Child Called "It" (Dave Pelzer #1)
+:PROPERTIES:
+:AUTHOR:    Dave Pelzer
+:ADDED:     <2016-08-12>
+:GOODREADS: https://www.goodreads.com/book/show/60748
+:END:
+
+*** Idea Makers: Personal Perspectives on the Lives & Ideas of Some Notable People
+:PROPERTIES:
+:AUTHOR:    Stephen Wolfram
+:ADDED:     <2016-07-09>
+:GOODREADS: https://www.goodreads.com/book/show/30618260
+:END:
+
+*** Infidel
+:PROPERTIES:
+:AUTHOR:    Ayaan Hirsi Ali
+:ADDED:     <2016-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/81227
+:END:
+
+*** Genius At Play: The Curious Mind of John Horton Conway
+:PROPERTIES:
+:AUTHOR:    Siobhan Roberts
+:ADDED:     <2015-10-07>
+:GOODREADS: https://www.goodreads.com/book/show/22529392
+:END:
+
+*** On the Move: A Life
+:PROPERTIES:
+:AUTHOR:    Oliver Sacks
+:ADDED:     <2015-04-25>
+:GOODREADS: https://www.goodreads.com/book/show/24972194
+:END:
+
+*** The Strangest Man: The Hidden Life of Paul Dirac, Mystic of the Atom
+:PROPERTIES:
+:AUTHOR:    Graham Farmelo
+:ADDED:     <2015-02-17>
+:GOODREADS: https://www.goodreads.com/book/show/6629359
+:END:
+
+*** Time, Love, Memory: A Great Biologist and His Quest for the Origins of Behavior
+:PROPERTIES:
+:AUTHOR:    Jonathan Weiner
+:ADDED:     <2015-02-17>
+:GOODREADS: https://www.goodreads.com/book/show/164064
+:END:
+
+*** Rosalind Franklin: The Dark Lady of DNA
+:PROPERTIES:
+:AUTHOR:    Brenda Maddox
+:ADDED:     <2015-02-16>
+:GOODREADS: https://www.goodreads.com/book/show/326851
+:END:
+
+*** Dear Professor Einstein: Albert Einstein's Letters to and from Children
+:PROPERTIES:
+:AUTHOR:    Albert Einstein, Alice Calaprice, Robert Schulmann, Evelyn Einstein
+:ADDED:     <2015-01-17>
+:GOODREADS: https://www.goodreads.com/book/show/665625
+:END:
+
+*** READ Genius: The Life and Science of Richard Feynman
+CLOSED: [2015-05-04]
+:PROPERTIES:
+:AUTHOR:    James Gleick
+:ADDED:     <2015-01-15>
+:GOODREADS: https://www.goodreads.com/book/show/10380467
+:END:
+
+*** A Life Decoded: My Genome: My Life
+:PROPERTIES:
+:AUTHOR:    J. Craig Venter
+:ADDED:     <2015-01-06>
+:GOODREADS: https://www.goodreads.com/book/show/1865671
+:END:
+
+*** READ What Do You Care What Other People Think?: Further Adventures of a Curious Character
+CLOSED: [2016-03-04]
+:PROPERTIES:
+:AUTHOR:    Richard Feynman
+:ADDED:     <2014-12-19>
+:GOODREADS: https://www.goodreads.com/book/show/10916738
+:END:
+
+*** Hackers: Heroes of the Computer Revolution
+:PROPERTIES:
+:AUTHOR:    Steven Levy
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/56829
+:END:
+
+*** The Man Who Knew Infinity: A Life of the Genius Ramanujan
+:PROPERTIES:
+:AUTHOR:    Robert Kanigel
+:ADDED:     <2014-12-17>
+:GOODREADS: https://www.goodreads.com/book/show/106139
+:END:
+
+*** READ Nikola Tesla: Imagination and the Man That Invented the 20th Century
+:PROPERTIES:
+:AUTHOR:    Sean Patrick
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/17835351
+:END:
+
+*** READ Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character
+CLOSED: [2018-02-05 Mon 01:16]
+:PROPERTIES:
+:AUTHOR:    Richard Feynman
+:ADDED:     <2014-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/5544
+:END:
+
+*** October Sky
+:PROPERTIES:
+:AUTHOR:    Homer Hickam
+:ADDED:     <2015-08-17>
+:GOODREADS: https://www.goodreads.com/book/show/124862
+:END:
+
+** Religion
+*** Religion and Science
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell, Michael Ruse
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/51790
+:END:
+
+*** A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam
+:PROPERTIES:
+:AUTHOR:   Karen Armstrong
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/3873.A_History_of_God
+:END:
+
+*** The Book Your Church Doesn't Want You to Read
+:PROPERTIES:
+:AUTHOR:    Tim C. Leedom, Bill Jenkins
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/498359
+:END:
+
+*** Nonbeliever Nation: The Rise of Secular Americans
+:PROPERTIES:
+:AUTHOR:    David Niose
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/13167816
+:END:
+
+*** Society Without God: What the Least Religious Nations Can Tell Us about Contentment
+:PROPERTIES:
+:AUTHOR:    Phil Zuckerman
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/4286013
+:END:
+
+*** The Portable Atheist: Essential Readings for the Nonbeliever
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens, Titus Lucretius Carus, Omar Khayyám, Thomas Hobbes, Baruch Spinoza, David Hume, James Boswell, Percy Bysshe Shelley, George Eliot, Charles Darwin, Leslie Stephen, Anatole France, Mark Twain, Joseph Conrad, Thomas Hardy, Emma Goldman, H.P. Lovecraft, Carl Van Doren, H.L. Mencken, Sigmund Freud, Albert Einstein, George Orwell, John Betjeman, Chapman Cohen, Bertrand Russell, Philip Larkin, Martin Gardner, Carl Sagan, John Updike, John Leslie Mackie, Michael Shermer, A.J. Ayer, Daniel C. Dennett, Charles Templeton, Richard Dawkins, Victor J. Stenger, Elizabeth S.  Anderson, Penn Jillette, Ian McEwan, Steven Weinberg, Salman Rushdie, Ibn Warraq, Sam Harris, A.C. Grayling, Ayaan Hirsi Ali, John Stuart Mill, Karl Marx
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/1566053
+:END:
+
+*** The End of Faith: Religion, Terror, and the Future of Reason
+:PROPERTIES:
+:AUTHOR:    Sam Harris
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/29501
+:END:
+
+*** The Skeptic's Annotated Bible
+:PROPERTIES:
+:AUTHOR:    Steve Wells
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/16161010
+:END:
+
+*** God is Not Great: How Religion Poisons Everything
+:PROPERTIES:
+:AUTHOR:    Christopher Hitchens
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/43369
+:END:
+
+*** Letter to a Christian Nation
+:PROPERTIES:
+:AUTHOR:    Sam Harris
+:ADDED:     <2017-01-09>
+:GOODREADS: https://www.goodreads.com/book/show/51299
+:END:
+
+*** Why I Am Not a Christian and Other Essays on Religion and Related Subjects
+:PROPERTIES:
+:AUTHOR:   Bertrand Russell, Paul  Edwards
+:ADDED:    <2016-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/472025
+:END:
+
+*** What I Believe
+:PROPERTIES:
+:AUTHOR:    Bertrand Russell
+:ADDED:     <2016-09-06>
+:GOODREADS: https://www.goodreads.com/book/show/67354
+:END:
+
+*** The Varieties of Religious Experience
+:PROPERTIES:
+:AUTHOR:    William James
+:ADDED:     <2016-06-17>
+:GOODREADS: https://www.goodreads.com/book/show/28820
+:END:
+
+*** Fighting God: An Atheist Manifesto for a Religious World
+:PROPERTIES:
+:AUTHOR:    David    Silverman, Cara Santa Maria
+:ADDED:     <2015-12-02>
+:GOODREADS: https://www.goodreads.com/book/show/23848169
+:END:
+
+*** The Evolution of God
+:PROPERTIES:
+:AUTHOR:    Robert Wright
+:ADDED:     <2015-02-26>
+:GOODREADS: https://www.goodreads.com/book/show/6340873
+:END:
+
+*** Religion for Atheists: A Non-Believer's Guide to the Uses of Religion
+:PROPERTIES:
+:AUTHOR:    Alain de Botton
+:ADDED:     <2015-02-25>
+:GOODREADS: https://www.goodreads.com/book/show/12576334
+:END:
+
+*** The God Delusion
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/14743
+:END:
+
+*** The Tao of Physics: An Exploration of the Parallels between Modern Physics and Eastern Mysticism
+:PROPERTIES:
+:AUTHOR:    Fritjof Capra
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/10238
+:END:
+
 ** Uncategorized
 *** READ I Am a Strange Loop
 CLOSED: [2018-05-26 Sat 15:41]
@@ -931,13 +1257,6 @@ examples and analogies.
 :GOODREADS: https://www.goodreads.com/book/show/161744
 :END:
 
-*** Religion and Science
-:PROPERTIES:
-:AUTHOR:    Bertrand Russell, Michael Ruse
-:ADDED:     <2017-06-09>
-:GOODREADS: https://www.goodreads.com/book/show/51790
-:END:
-
 *** The Republic
 :PROPERTIES:
 :AUTHOR:    Plato, Desmond Lee
@@ -971,20 +1290,6 @@ examples and analogies.
 :AUTHOR:   B.R. Ambedkar
 :ADDED:    <2017-09-29>
 :GOODREADS: https://www.goodreads.com/book/show/8521879-the-annihilation-of-caste
-:END:
-
-*** The Disaster Artist: My Life Inside The Room, the Greatest Bad Movie Ever Made
-:PROPERTIES:
-:AUTHOR:   Tom Bissell
-:ADDED:    <2017-09-18>
-:AMAZON:   https://www.amazon.com/Disaster-Artist-Inside-Greatest-Movie/dp/1451661193
-:END:
-
-*** The Autobiography of Charles Darwin, 1809–82
-:PROPERTIES:
-:AUTHOR:   Charles Darwin, Nora Barlow
-:ADDED:    <2017-09-12>
-:GOODREADS: https://www.goodreads.com/book/show/185404.The_Autobiography_of_Charles_Darwin_1809_82
 :END:
 
 *** READ The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life
@@ -1052,13 +1357,6 @@ also.
 :AUTHOR:   William H. Whyte, Joseph Nocera
 :ADDED:    <2017-07-25>
 :AMAZON:   https://www.amazon.com/Organization-Man-William-H-Whyte/dp/0812218191
-:END:
-
-*** A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam
-:PROPERTIES:
-:AUTHOR:   Karen Armstrong
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/3873.A_History_of_God
 :END:
 
 *** Striking Thoughts: Bruce Lee's Wisdom for Daily Living
@@ -1390,20 +1688,6 @@ also.
 :GOODREADS: https://www.goodreads.com/book/show/13214
 :END:
 
-*** The Book Your Church Doesn't Want You to Read
-:PROPERTIES:
-:AUTHOR:    Tim C. Leedom, Bill Jenkins
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/498359
-:END:
-
-*** Nonbeliever Nation: The Rise of Secular Americans
-:PROPERTIES:
-:AUTHOR:    David Niose
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/13167816
-:END:
-
 *** Candide
 :PROPERTIES:
 :AUTHOR:    Voltaire
@@ -1418,53 +1702,11 @@ also.
 :GOODREADS: https://www.goodreads.com/book/show/33928
 :END:
 
-*** Society Without God: What the Least Religious Nations Can Tell Us about Contentment
-:PROPERTIES:
-:AUTHOR:    Phil Zuckerman
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/4286013
-:END:
-
 *** Spook: Science Tackles the Afterlife
 :PROPERTIES:
 :AUTHOR:    Mary Roach
 :ADDED:     <2017-01-28>
 :GOODREADS: https://www.goodreads.com/book/show/14990
-:END:
-
-*** The Portable Atheist: Essential Readings for the Nonbeliever
-:PROPERTIES:
-:AUTHOR:    Christopher Hitchens, Titus Lucretius Carus, Omar Khayyám, Thomas Hobbes, Baruch Spinoza, David Hume, James Boswell, Percy Bysshe Shelley, George Eliot, Charles Darwin, Leslie Stephen, Anatole France, Mark Twain, Joseph Conrad, Thomas Hardy, Emma Goldman, H.P. Lovecraft, Carl Van Doren, H.L. Mencken, Sigmund Freud, Albert Einstein, George Orwell, John Betjeman, Chapman Cohen, Bertrand Russell, Philip Larkin, Martin Gardner, Carl Sagan, John Updike, John Leslie Mackie, Michael Shermer, A.J. Ayer, Daniel C. Dennett, Charles Templeton, Richard Dawkins, Victor J. Stenger, Elizabeth S.  Anderson, Penn Jillette, Ian McEwan, Steven Weinberg, Salman Rushdie, Ibn Warraq, Sam Harris, A.C. Grayling, Ayaan Hirsi Ali, John Stuart Mill, Karl Marx
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/1566053
-:END:
-
-*** The End of Faith: Religion, Terror, and the Future of Reason
-:PROPERTIES:
-:AUTHOR:    Sam Harris
-:ADDED:     <2017-01-09>
-:GOODREADS: https://www.goodreads.com/book/show/29501
-:END:
-
-*** The Skeptic's Annotated Bible
-:PROPERTIES:
-:AUTHOR:    Steve Wells
-:ADDED:     <2017-01-09>
-:GOODREADS: https://www.goodreads.com/book/show/16161010
-:END:
-
-*** God is Not Great: How Religion Poisons Everything
-:PROPERTIES:
-:AUTHOR:    Christopher Hitchens
-:ADDED:     <2017-01-09>
-:GOODREADS: https://www.goodreads.com/book/show/43369
-:END:
-
-*** Letter to a Christian Nation
-:PROPERTIES:
-:AUTHOR:    Sam Harris
-:ADDED:     <2017-01-09>
-:GOODREADS: https://www.goodreads.com/book/show/51299
 :END:
 
 *** Idiot America: How Stupidity Became a Virtue in the Land of the Free
@@ -1730,13 +1972,6 @@ A really pragmatic perspective on research. Short and well written.
 :GOODREADS: https://www.goodreads.com/book/show/31741420
 :END:
 
-*** Troublemaker: Surviving Hollywood and Scientology
-:PROPERTIES:
-:AUTHOR:    Leah Remini, Rebecca Paley
-:ADDED:     <2016-11-29>
-:GOODREADS: https://www.goodreads.com/book/show/26827675
-:END:
-
 *** The Wealth of Nations
 :PROPERTIES:
 :AUTHOR:    Adam Smith
@@ -1756,13 +1991,6 @@ A really pragmatic perspective on research. Short and well written.
 :AUTHOR:    Karl Marx, Friedrich Engels, Gareth Stedman Jones
 :ADDED:     <2016-11-28>
 :GOODREADS: https://www.goodreads.com/book/show/30474
-:END:
-
-*** Mein Kampf
-:PROPERTIES:
-:AUTHOR:    Adolf Hitler
-:ADDED:     <2016-11-28>
-:GOODREADS: https://www.goodreads.com/book/show/54270
 :END:
 
 *** The Anatomy of Fascism
@@ -1801,14 +2029,6 @@ Really good pieces in here. Specially /Ur-Fascism/.
 :AUTHOR:    Philip Ball
 :ADDED:     <2016-11-19>
 :GOODREADS: https://www.goodreads.com/book/show/17612667
-:END:
-
-*** READ Confessions of a Necromancer
-CLOSED: [2016-09-27]
-:PROPERTIES:
-:AUTHOR:    Pieter Hintjens
-:ADDED:     <2016-11-12>
-:GOODREADS: https://www.goodreads.com/book/show/32326166
 :END:
 
 *** READ Social Architecture: Building On-line Communities
@@ -1903,20 +2123,6 @@ and openness than assumed in the present unconstrained Big data buzz.
 :GOODREADS: https://www.goodreads.com/book/show/6683549
 :END:
 
-*** Why I Am Not a Christian and Other Essays on Religion and Related Subjects
-:PROPERTIES:
-:AUTHOR:   Bertrand Russell, Paul  Edwards
-:ADDED:    <2016-09-06>
-:GOODREADS: https://www.goodreads.com/book/show/472025
-:END:
-
-*** What I Believe
-:PROPERTIES:
-:AUTHOR:    Bertrand Russell
-:ADDED:     <2016-09-06>
-:GOODREADS: https://www.goodreads.com/book/show/67354
-:END:
-
 *** READ Logicomix: An epic search for truth
 CLOSED: [2018-02-14 Wed 20:23]
 :PROPERTIES:
@@ -1938,13 +2144,6 @@ There are two comments I would like to make here:
    a glance and ended up reading the whole thing in a sitting. Don't expect to
    learn much though. This is /not a book/ on logic. Its exactly what its title
    (or subtitle) says /An epic search for truth/.
-
-*** Hitch-22: A Memoir
-:PROPERTIES:
-:AUTHOR:    Christopher Hitchens
-:ADDED:     <2016-08-30>
-:GOODREADS: https://www.goodreads.com/book/show/7332753
-:END:
 
 *** Cults: Faith, Healing and Coercion
 :PROPERTIES:
@@ -1982,17 +2181,6 @@ CLOSED: [2016-08-27]
 :GOODREADS: https://www.goodreads.com/book/show/23132200
 :END:
 
-*** READ Mortality
-CLOSED: [2016-08-30]
-:PROPERTIES:
-:AUTHOR:    Christopher Hitchens
-:ADDED:     <2016-08-26>
-:GOODREADS: https://www.goodreads.com/book/show/13529055
-:END:
-
-There is a different complexion in a dying person's writing. You don't have to
-like it or hate it. Its honest, brutal and beautiful.
-
 *** Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients
 :PROPERTIES:
 :AUTHOR:    Ben Goldacre
@@ -2014,21 +2202,6 @@ like it or hate it. Its honest, brutal and beautiful.
 :GOODREADS: https://www.goodreads.com/book/show/17798
 :END:
 
-*** READ Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened
-CLOSED: [2016-08-13]
-:PROPERTIES:
-:AUTHOR:    Allie Brosh
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/17571564
-:END:
-
-*** A Child Called "It" (Dave Pelzer #1)
-:PROPERTIES:
-:AUTHOR:    Dave Pelzer
-:ADDED:     <2016-08-12>
-:GOODREADS: https://www.goodreads.com/book/show/60748
-:END:
-
 *** Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values
 :PROPERTIES:
 :AUTHOR:    Robert M. Pirsig
@@ -2043,26 +2216,12 @@ CLOSED: [2016-08-13]
 :GOODREADS: https://www.goodreads.com/book/show/24257
 :END:
 
-*** Idea Makers: Personal Perspectives on the Lives & Ideas of Some Notable People
-:PROPERTIES:
-:AUTHOR:    Stephen Wolfram
-:ADDED:     <2016-07-09>
-:GOODREADS: https://www.goodreads.com/book/show/30618260
-:END:
-
 *** READ The Physics of Star Trek
 CLOSED: [2016-07-01]
 :PROPERTIES:
 :AUTHOR:    Lawrence M. Krauss, Stephen Hawking
 :ADDED:     <2016-06-25>
 :GOODREADS: https://www.goodreads.com/book/show/2104
-:END:
-
-*** The Varieties of Religious Experience
-:PROPERTIES:
-:AUTHOR:    William James
-:ADDED:     <2016-06-17>
-:GOODREADS: https://www.goodreads.com/book/show/28820
 :END:
 
 *** The Anatomy of Melancholy
@@ -2099,13 +2258,6 @@ CLOSED: [2016-05-19]
 :AUTHOR:    Janet Malcolm, Ian Jack
 :ADDED:     <2016-04-25>
 :GOODREADS: https://www.goodreads.com/book/show/55563
-:END:
-
-*** Infidel
-:PROPERTIES:
-:AUTHOR:    Ayaan Hirsi Ali
-:ADDED:     <2016-04-25>
-:GOODREADS: https://www.goodreads.com/book/show/81227
 :END:
 
 *** The Flight of the Garuda: The Dzogchen Tradition of Tibetan Buddhism
@@ -2212,13 +2364,6 @@ CLOSED: [2016-04-04]
 :AUTHOR:    Gene Wallenstein
 :ADDED:     <2016-03-27>
 :GOODREADS: https://www.goodreads.com/book/show/6076559
-:END:
-
-*** The Vital Question: Energy, Evolution, and the Origins of Complex Life
-:PROPERTIES:
-:AUTHOR:    Nick Lane
-:ADDED:     <2016-03-25>
-:GOODREADS: https://www.goodreads.com/book/show/23316494
 :END:
 
 *** The Closing of the American Mind
@@ -2350,13 +2495,6 @@ CLOSED: [2015-12-20]
 :GOODREADS: https://www.goodreads.com/book/show/214614
 :END:
 
-*** Fighting God: An Atheist Manifesto for a Religious World
-:PROPERTIES:
-:AUTHOR:    David    Silverman, Cara Santa Maria
-:ADDED:     <2015-12-02>
-:GOODREADS: https://www.goodreads.com/book/show/23848169
-:END:
-
 *** A Sand County Almanac and Sketches Here and There
 :PROPERTIES:
 :AUTHOR:    Aldo Leopold
@@ -2453,13 +2591,6 @@ CLOSED: [2015-12-20]
 :AUTHOR:    Richard  Holmes
 :ADDED:     <2015-10-19>
 :GOODREADS: https://www.goodreads.com/book/show/4371507
-:END:
-
-*** Genius At Play: The Curious Mind of John Horton Conway
-:PROPERTIES:
-:AUTHOR:    Siobhan Roberts
-:ADDED:     <2015-10-07>
-:GOODREADS: https://www.goodreads.com/book/show/22529392
 :END:
 
 *** READ Musicophilia: Tales of Music and the Brain
@@ -2642,13 +2773,6 @@ CLOSED: [2015-05-07]
 :GOODREADS: https://www.goodreads.com/book/show/21413662
 :END:
 
-*** On the Move: A Life
-:PROPERTIES:
-:AUTHOR:    Oliver Sacks
-:ADDED:     <2015-04-25>
-:GOODREADS: https://www.goodreads.com/book/show/24972194
-:END:
-
 *** READ Consciousness and the Social Brain
 CLOSED: [2015-07-16]
 :PROPERTIES:
@@ -2769,25 +2893,11 @@ CLOSED: [2015-07-16]
 :GOODREADS: https://www.goodreads.com/book/show/681941
 :END:
 
-*** The Evolution of God
-:PROPERTIES:
-:AUTHOR:    Robert Wright
-:ADDED:     <2015-02-26>
-:GOODREADS: https://www.goodreads.com/book/show/6340873
-:END:
-
 *** Alice in Quantumland: An Allegory of Quantum Physics
 :PROPERTIES:
 :AUTHOR:    Robert Gilmore
 :ADDED:     <2015-02-25>
 :GOODREADS: https://www.goodreads.com/book/show/1044095
-:END:
-
-*** Religion for Atheists: A Non-Believer's Guide to the Uses of Religion
-:PROPERTIES:
-:AUTHOR:    Alain de Botton
-:ADDED:     <2015-02-25>
-:GOODREADS: https://www.goodreads.com/book/show/12576334
 :END:
 
 *** How to Create a Mind: The Secret of Human Thought Revealed
@@ -2811,20 +2921,6 @@ CLOSED: [2015-07-16]
 :GOODREADS: https://www.goodreads.com/book/show/20663690
 :END:
 
-*** The Strangest Man: The Hidden Life of Paul Dirac, Mystic of the Atom
-:PROPERTIES:
-:AUTHOR:    Graham Farmelo
-:ADDED:     <2015-02-17>
-:GOODREADS: https://www.goodreads.com/book/show/6629359
-:END:
-
-*** Time, Love, Memory: A Great Biologist and His Quest for the Origins of Behavior
-:PROPERTIES:
-:AUTHOR:    Jonathan Weiner
-:ADDED:     <2015-02-17>
-:GOODREADS: https://www.goodreads.com/book/show/164064
-:END:
-
 *** Being Mortal: Medicine and What Matters in the End
 :PROPERTIES:
 :AUTHOR:    Atul Gawande
@@ -2845,13 +2941,6 @@ CLOSED: [2015-06-27]
 :AUTHOR:    Caleb Scharf
 :ADDED:     <2015-02-16>
 :GOODREADS: https://www.goodreads.com/book/show/13166638
-:END:
-
-*** Rosalind Franklin: The Dark Lady of DNA
-:PROPERTIES:
-:AUTHOR:    Brenda Maddox
-:ADDED:     <2015-02-16>
-:GOODREADS: https://www.goodreads.com/book/show/326851
 :END:
 
 *** The Universe in the Rearview Mirror: How Hidden Symmetries Shape Reality
@@ -3010,13 +3099,6 @@ CLOSED: [2015-03-13]
 :GOODREADS: https://www.goodreads.com/book/show/162120
 :END:
 
-*** Bird by Bird: Some Instructions on Writing and Life
-:PROPERTIES:
-:AUTHOR:    Anne Lamott
-:ADDED:     <2015-02-01>
-:GOODREADS: https://www.goodreads.com/book/show/12543
-:END:
-
 *** How to Read a Book: The Classic Guide to Intelligent Reading
 :PROPERTIES:
 :AUTHOR:    Mortimer J. Adler, Charles Van Doren
@@ -3085,13 +3167,6 @@ CLOSED: [2015-03-13]
 :AUTHOR:    Jared Diamond
 :ADDED:     <2015-01-29>
 :GOODREADS: https://www.goodreads.com/book/show/1842
-:END:
-
-*** The God Delusion
-:PROPERTIES:
-:AUTHOR:    Richard Dawkins
-:ADDED:     <2015-01-29>
-:GOODREADS: https://www.goodreads.com/book/show/14743
 :END:
 
 *** Pale Blue Dot: A Vision of the Human Future in Space
@@ -3202,13 +3277,6 @@ CLOSED: [2015-02-08]
 :GOODREADS: https://www.goodreads.com/book/show/1008101
 :END:
 
-*** Dear Professor Einstein: Albert Einstein's Letters to and from Children
-:PROPERTIES:
-:AUTHOR:    Albert Einstein, Alice Calaprice, Robert Schulmann, Evelyn Einstein
-:ADDED:     <2015-01-17>
-:GOODREADS: https://www.goodreads.com/book/show/665625
-:END:
-
 *** READ Neurocomic
 CLOSED: [2018-03-02 Fri 00:05]
 :PROPERTIES:
@@ -3244,14 +3312,6 @@ CLOSED: [2016-05-17]
 :AUTHOR:    Alan Guth
 :ADDED:     <2015-01-15>
 :GOODREADS: https://www.goodreads.com/book/show/1381851
-:END:
-
-*** READ Genius: The Life and Science of Richard Feynman
-CLOSED: [2015-05-04]
-:PROPERTIES:
-:AUTHOR:    James Gleick
-:ADDED:     <2015-01-15>
-:GOODREADS: https://www.goodreads.com/book/show/10380467
 :END:
 
 *** Walden
@@ -3340,13 +3400,6 @@ CLOSED: [2015-01-19]
 :GOODREADS: https://www.goodreads.com/book/show/141565
 :END:
 
-*** A Life Decoded: My Genome: My Life
-:PROPERTIES:
-:AUTHOR:    J. Craig Venter
-:ADDED:     <2015-01-06>
-:GOODREADS: https://www.goodreads.com/book/show/1865671
-:END:
-
 *** Frankenstein's Cat: Cuddling Up to Biotech's Brave New Beasts
 :PROPERTIES:
 :AUTHOR:    Emily Anthes
@@ -3425,14 +3478,6 @@ CLOSED: [2014-12-30]
 :GOODREADS: https://www.goodreads.com/book/show/331680
 :END:
 
-*** READ What Do You Care What Other People Think?: Further Adventures of a Curious Character
-CLOSED: [2016-03-04]
-:PROPERTIES:
-:AUTHOR:    Richard Feynman
-:ADDED:     <2014-12-19>
-:GOODREADS: https://www.goodreads.com/book/show/10916738
-:END:
-
 *** The Demon-Haunted World: Science as a Candle in the Dark
 :PROPERTIES:
 :AUTHOR:    Carl Sagan, Ann Druyan
@@ -3466,20 +3511,6 @@ CLOSED: [2016-03-04]
 :AUTHOR:    Thomas S. Kuhn
 :ADDED:     <2014-12-18>
 :GOODREADS: https://www.goodreads.com/book/show/17997242
-:END:
-
-*** Hackers: Heroes of the Computer Revolution
-:PROPERTIES:
-:AUTHOR:    Steven Levy
-:ADDED:     <2014-12-18>
-:GOODREADS: https://www.goodreads.com/book/show/56829
-:END:
-
-*** The Man Who Knew Infinity: A Life of the Genius Ramanujan
-:PROPERTIES:
-:AUTHOR:    Robert Kanigel
-:ADDED:     <2014-12-17>
-:GOODREADS: https://www.goodreads.com/book/show/106139
 :END:
 
 *** Survival of the Prettiest: The Science of Beauty
@@ -3742,26 +3773,12 @@ CLOSED: [2014-06-22]
 :GOODREADS: https://www.goodreads.com/book/show/2095
 :END:
 
-*** The Tao of Physics: An Exploration of the Parallels between Modern Physics and Eastern Mysticism
-:PROPERTIES:
-:AUTHOR:    Fritjof Capra
-:ADDED:     <2014-04-10>
-:GOODREADS: https://www.goodreads.com/book/show/10238
-:END:
-
 *** READ The Last Lecture
 CLOSED: [2014-04-10]
 :PROPERTIES:
 :AUTHOR:    Randy Pausch, Jeffrey Zaslow
 :ADDED:     <2014-04-10>
 :GOODREADS: https://www.goodreads.com/book/show/2318271
-:END:
-
-*** READ Nikola Tesla: Imagination and the Man That Invented the 20th Century
-:PROPERTIES:
-:AUTHOR:    Sean Patrick
-:ADDED:     <2014-04-10>
-:GOODREADS: https://www.goodreads.com/book/show/17835351
 :END:
 
 *** READ The Grand Design
@@ -3772,27 +3789,12 @@ CLOSED: [2018-02-05 Mon 01:16]
 :GOODREADS: https://www.goodreads.com/book/show/8520362
 :END:
 
-*** READ Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character
-CLOSED: [2018-02-05 Mon 01:16]
-:PROPERTIES:
-:AUTHOR:    Richard Feynman
-:ADDED:     <2014-03-19>
-:GOODREADS: https://www.goodreads.com/book/show/5544
-:END:
-
 *** READ A Brief History of Time
 CLOSED: [2018-02-05 Mon 01:16]
 :PROPERTIES:
 :AUTHOR:    Stephen Hawking, Cao Chi, Phạm Văn Thiều
 :ADDED:     <2014-03-19>
 :GOODREADS: https://www.goodreads.com/book/show/3869
-:END:
-
-*** October Sky
-:PROPERTIES:
-:AUTHOR:    Homer Hickam
-:ADDED:     <2015-08-17>
-:GOODREADS: https://www.goodreads.com/book/show/124862
 :END:
 
 * Fiction
