@@ -12,7 +12,7 @@ to categorize things in sections.
 #+TOC: headlines 2
 
 * Non Fiction
-** Uncategorized
+** Mathematics/Logic
 *** The Joy of x: A Guided Tour of Math, from One to Infinity
 :PROPERTIES:
 :AUTHOR:   Steven H. Strogatz
@@ -27,27 +27,6 @@ to categorize things in sections.
 :GOODREADS: https://www.goodreads.com/book/show/192221.How_to_Solve_It
 :END:
 
-*** READ I Am a Strange Loop
-CLOSED: [2018-05-26 Sat 15:41]
-:PROPERTIES:
-:AUTHOR:   Douglas R. Hofstadter
-:ADDED:    <2018-05-06>
-:GOODREADS: https://www.goodreads.com/book/show/123471.I_Am_a_Strange_Loop
-:END:
-
-This reminds me a lot of a newer book 'Consciousness and the Social Brain' by
-Michael Graziano, where the author talks about an /attention schema/. In that,
-consciousness of a system is basically /attention/ directed towards a model of
-itself.
-
-And this is the idea behind the strange loops in /this/ book. A system with enough
-representational power to represent /itself/ is going to perceive, analyze and
-modify /itself/. This ability to loop around is what makes it conscious.
-
-This book is good but unless you have dualist tendencies or have inclination
-towards other solutions, it might feel lengthy since Douglas presents a lot of
-examples and analogies.
-
 *** Algebra: Chapter 0 (Graduate Studies in Mathematics)
 :PROPERTIES:
 :AUTHOR:   Paolo Aluffi
@@ -60,20 +39,6 @@ examples and analogies.
 :AUTHOR:   Edward Frenkel
 :ADDED:    <2018-05-06>
 :AMAZON:   https://www.amazon.com/Love-Math-Heart-Hidden-Reality/dp/0465050743?language=en_GB
-:END:
-
-*** Pantone's Guide to Communicating with Color
-:PROPERTIES:
-:AUTHOR:   Leatrice Eisemann
-:ADDED:    <2018-04-10>
-:AMAZON:   https://www.amazon.com/gp/product/B004J8HX5E
-:END:
-
-*** The Elements of Typographic Style
-:PROPERTIES:
-:AUTHOR:   Robert Bringhurst
-:ADDED:    <2018-04-10>
-:AMAZON:   https://www.amazon.com/gp/product/0881792063/
 :END:
 
 *** The Nature of Computation
@@ -97,20 +62,56 @@ examples and analogies.
 :GOODREADS: https://www.goodreads.com/book/show/326791
 :END:
 
-*** Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
+*** The Princeton Companion to Mathematics
 :PROPERTIES:
-:AUTHOR:
-:ADDED:    <2017-08-09>
-:AMAZON:   https://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758
+:AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
+:ADDED:    <2018-01-08>
+:GOODREADS: https://www.goodreads.com/book/show/1471873.The_Princeton_Companion_to_Mathematics
 :END:
 
-*** Advanced Cartooning and Other Drawings
+*** Concrete Mathematics: A Foundation for Computer Science
 :PROPERTIES:
-:AUTHOR:    B. Kliban
-:ADDED:     <2017-06-15>
-:GOODREADS: https://www.goodreads.com/book/show/550802
+:AUTHOR:   Ronald L. Graham, Donald Ervin Knuth, Oren Patashnik
+:ADDED:    <2018-01-08>
+:GOODREADS: https://www.goodreads.com/book/show/112243.Concrete_Mathematics?ac=1&from_search=true
 :END:
 
+*** The Mathematical Mechanic: Using Physical Reasoning to Solve Problems
+:PROPERTIES:
+:AUTHOR:   Mark Levi
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/6418615-the-mathematical-mechanic?ac=1&from_search=true
+:END:
+
+*** Solving Mathematical Problems: A Personal Perspective
+:PROPERTIES:
+:AUTHOR:    Terence Tao
+:ADDED:     <2017-06-02>
+:GOODREADS: https://www.goodreads.com/book/show/265415
+:END:
+
+*** Surreal Numbers
+:PROPERTIES:
+:AUTHOR:    Donald Ervin Knuth
+:ADDED:     <2016-07-25>
+:GOODREADS: https://www.goodreads.com/book/show/484458
+:END:
+
+*** The Mathematics of Love: Patterns, Proofs, and the Search for the Ultimate Equation
+:PROPERTIES:
+:AUTHOR:    Hannah Fry
+:ADDED:     <2015-11-04>
+:GOODREADS: https://www.goodreads.com/book/show/23258103
+:END:
+
+*** Incompleteness: The Proof and Paradox of Kurt Gödel (Great Discoveries)
+:PROPERTIES:
+:AUTHOR:    Rebecca Goldstein
+:ADDED:     <2015-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/51287
+:END:
+
+** Evolution/Emergence/Order
 *** Robustness and Evolvability in Living Systems
 :PROPERTIES:
 :AUTHOR:   Andreas Wagner
@@ -159,6 +160,615 @@ examples and analogies.
 :ADDED:    <2017-07-28>
 :AMAZON:   https://www.amazon.com/Evolution-Cooperation-Revised-Robert-Axelrod/dp/0465005640
 :END:
+
+*** On Growth and Form
+:PROPERTIES:
+:AUTHOR:    D'Arcy Wentworth Thompson, John Tyler Bonner
+:ADDED:     <2017-03-13>
+:GOODREADS: https://www.goodreads.com/book/show/460984
+:END:
+
+*** Emergence: From Chaos To Order
+:PROPERTIES:
+:AUTHOR:    John H. Holland
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/896539
+:END:
+
+*** Emergence: The Connected Lives of Ants, Brains, Cities, and Software
+:PROPERTIES:
+:AUTHOR:    Steven Johnson
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/2296
+:END:
+
+*** Harnessing Complexity
+:PROPERTIES:
+:AUTHOR:    Robert Axelrod, Michael D. Cohen
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/366820
+:END:
+
+*** Hidden Order: How Adaptation Builds Complexity
+:PROPERTIES:
+:AUTHOR:    John H. Holland, Heather Mimnaugh
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/183954
+:END:
+
+*** READ An Introduction to Genetic Algorithms
+CLOSED: [2017-05-30]
+:PROPERTIES:
+:AUTHOR:    Melanie Mitchell
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/105139
+:END:
+
+*** Complex Adaptive Systems: An Introduction to Computational Models of Social Life
+:PROPERTIES:
+:AUTHOR:    John H.  Miller, Scott E. Page
+:ADDED:     <2017-03-11>
+:GOODREADS: https://www.goodreads.com/book/show/245273
+:END:
+
+*** The Descent of Man
+:PROPERTIES:
+:AUTHOR:    Charles Darwin
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/185407
+:END:
+
+*** Evolution: The Modern Synthesis: The Definitive Edition
+:PROPERTIES:
+:AUTHOR:    Julian Huxley, Massimo Pigliucci, Gerd B. Müller
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/7250157
+:END:
+
+*** Evolution—The Extended Synthesis
+:PROPERTIES:
+:AUTHOR:    Massimo Pigliucci, Gerd B. Müller
+:ADDED:     <2017-02-18>
+:GOODREADS: https://www.goodreads.com/book/show/7618919
+:END:
+
+*** Evolution: Making Sense of Life
+:PROPERTIES:
+:AUTHOR:    Carl Zimmer, Douglas J. Emlen
+:ADDED:     <2017-02-06>
+:GOODREADS: https://www.goodreads.com/book/show/25785066
+:END:
+
+*** The Origin of Species
+:PROPERTIES:
+:AUTHOR:    Charles Darwin
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/22463
+:END:
+
+*** Cellular Automata And Complexity: Collected Papers
+:PROPERTIES:
+:AUTHOR:    Stephen Wolfram
+:ADDED:     <2017-01-03>
+:GOODREADS: https://www.goodreads.com/book/show/459614
+:END:
+
+*** Critical Mass: How One Thing Leads to Another
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/472609
+:END:
+
+*** The Self Made Tapestry: Pattern Formation in Nature
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/39076
+:END:
+
+*** Shapes: Nature's Patterns: A Tapestry in Three Parts
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/3047954
+:END:
+
+*** Patterns in Nature: Why the Natural World Looks the Way It Does
+:PROPERTIES:
+:AUTHOR:    Philip Ball
+:ADDED:     <2016-11-19>
+:GOODREADS: https://www.goodreads.com/book/show/26240445
+:END:
+
+*** READ The Wisdom of Crowds
+CLOSED: [2017-07-28 Fri 17:35]
+:PROPERTIES:
+:AUTHOR:    James Surowiecki
+:ADDED:     <2016-09-15>
+:GOODREADS: https://www.goodreads.com/book/show/68143
+:END:
+
+This is a great book. Its of perfect length for the matter and the way it
+presents them.
+
+At places, it felt like doing a little bit of exaggeration by criticizing the
+classical wisdom too much. Many of the times an approach which has less
+explanation and theory behind it is frowned upon. Many of the group-behavior
+based solutions fall in this category. They might work well, but their lack of
+popularity is not /entirely/ surprising and irrational.
+
+Also, the last chapter on democracy worries me a little. The point of the
+chapter is that democracy is better than other forms because it uses the crowd's
+wisdom, but it fails to make the a solid classification of the problem and
+specify /why/ it solves them better. I guess this is more because there are
+/problems/ rather than /a/ problem to be solved in a government and they are vary in
+how they can be solved. Overall, the chapter, while presenting good arguments,
+tries to convince you of something more vague. Not that the conclusion is wrong
+(that group wisdom can be used much more effectively in a democracy), but the
+examples leave places to fill in before you get completely satisfied.
+
+I like how the book classifies the type of problems regularly faced by a crowd
+and the conditions they need to make wise decisions there. These are some good
+cues for analyzing and understanding cases presented in the book.
+
+*** The Algorithmic Beauty of Seaweeds, Sponges and Corals
+:PROPERTIES:
+:AUTHOR:    Jaap A. Kaandorp
+:ADDED:     <2016-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/1670860
+:END:
+
+*** The Algorithmic Beauty Of Sea Shells
+:PROPERTIES:
+:AUTHOR:    Hans Meinhardt
+:ADDED:     <2016-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/1703514
+:END:
+
+*** The Algorithmic Beauty of Plants
+:PROPERTIES:
+:AUTHOR:    Przemysław Prusinkiewicz
+:ADDED:     <2016-09-12>
+:GOODREADS: https://www.goodreads.com/book/show/944626
+:END:
+
+*** Six Degrees: The Science of a Connected Age
+:PROPERTIES:
+:AUTHOR:    Duncan J. Watts
+:ADDED:     <2016-03-01>
+:GOODREADS: https://www.goodreads.com/book/show/818170
+:END:
+
+*** Small Worlds: The Dynamics of Networks Between Order and Randomness
+:PROPERTIES:
+:AUTHOR:    Duncan J. Watts
+:ADDED:     <2015-12-28>
+:GOODREADS: https://www.goodreads.com/book/show/373169
+:END:
+
+*** READ Simply Complexity
+CLOSED: [2016-02-27]
+:PROPERTIES:
+:AUTHOR:    Neil Johnson
+:ADDED:     <2015-12-20>
+:GOODREADS: https://www.goodreads.com/book/show/18936836
+:END:
+
+*** Think Complexity: Complexity Science and Computational Modeling
+:PROPERTIES:
+:AUTHOR:    Allen B. Downey
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/13234078
+:END:
+
+*** Artificial Life: A Report from the Frontier Where Computers Meet Biology
+:PROPERTIES:
+:AUTHOR:    Steven Levy
+:ADDED:     <2015-12-12>
+:GOODREADS: https://www.goodreads.com/book/show/737831
+:END:
+
+*** READ Sync: How Order Emerges From Chaos In the Universe, Nature, and Daily Life
+CLOSED: [2015-12-11]
+:PROPERTIES:
+:AUTHOR:    Steven H. Strogatz
+:ADDED:     <2015-12-05>
+:GOODREADS: https://www.goodreads.com/book/show/16173023
+:END:
+
+*** Complexity: Life at the Edge of Chaos
+:PROPERTIES:
+:AUTHOR:    Roger Lewin
+:ADDED:     <2015-11-20>
+:GOODREADS: https://www.goodreads.com/book/show/384547
+:END:
+
+*** Bursts: The Hidden Pattern Behind Everything We Do
+:PROPERTIES:
+:AUTHOR:   Albert-László Barabási
+:ADDED:    <2015-11-20>
+:GOODREADS: https://www.goodreads.com/book/show/7442792
+:END:
+
+*** Complexity: The Emerging Science at the Edge of Order and Chaos
+:PROPERTIES:
+:AUTHOR:    M. Mitchell Waldrop
+:ADDED:     <2015-11-15>
+:GOODREADS: https://www.goodreads.com/book/show/337123
+:END:
+
+*** The Origins of Order: Self-Organization and Selection in Evolution
+:PROPERTIES:
+:AUTHOR:    Stuart A. Kauffman
+:ADDED:     <2015-11-06>
+:GOODREADS: https://www.goodreads.com/book/show/783559
+:END:
+
+*** READ Complexity: A Guided Tour
+CLOSED: [2015-11-06]
+:PROPERTIES:
+:AUTHOR:    Melanie Mitchell
+:ADDED:     <2015-10-19>
+:GOODREADS: https://www.goodreads.com/book/show/8207901
+:END:
+
+*** Arrival of the Fittest: Solving Evolution's Greatest Puzzle
+:PROPERTIES:
+:AUTHOR:    Andreas Wagner
+:ADDED:     <2015-03-18>
+:GOODREADS: https://www.goodreads.com/book/show/20821275
+:END:
+
+*** The Fractal Geometry of Nature
+:PROPERTIES:
+:AUTHOR:    Benoît B. Mandelbrot
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/558059
+:END:
+
+*** The Greatest Show on Earth: The Evidence for Evolution
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2015-01-29>
+:GOODREADS: https://www.goodreads.com/book/show/6117055
+:END:
+
+*** The Epigenetics Revolution
+:PROPERTIES:
+:AUTHOR:    Nessa Carey
+:ADDED:     <2015-01-22>
+:GOODREADS: https://www.goodreads.com/book/show/12414734
+:END:
+
+*** READ A New Kind of Science
+CLOSED: [2015-12-27]
+:PROPERTIES:
+:AUTHOR:    Stephen Wolfram
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/238558
+:END:
+
+*** Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life
+:PROPERTIES:
+:AUTHOR:    Robert Rosen
+:ADDED:     <2014-11-06>
+:GOODREADS: https://www.goodreads.com/book/show/865617
+:END:
+
+*** READ The Selfish Gene
+CLOSED: [2018-01-04 Thu 23:31]
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2014-07-13>
+:GOODREADS: https://www.goodreads.com/book/show/61535
+:END:
+
+This is a great book. I probably read it at the right time to understand and
+appreciate more of the issues it talks about. For an amateur interested in
+evolution, this marks an important point from where you start to think more
+deeply about why the world is the way it is.
+
+*** READ The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe Without Design
+:PROPERTIES:
+:AUTHOR:    Richard Dawkins
+:ADDED:     <2014-04-10>
+:GOODREADS: https://www.goodreads.com/book/show/117047
+:END:
+
+*** READ Chaos: Making a New Science
+CLOSED: [2014-03-23]
+:PROPERTIES:
+:AUTHOR:    James Gleick
+:ADDED:     <2014-03-19>
+:GOODREADS: https://www.goodreads.com/book/show/64582
+:END:
+
+** Programming
+*** READ Seven Languages in Seven Weeks 
+CLOSED: [2018-01-24 Wed 22:59]
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2018-01-24>
+:GOODREADS:   https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks
+:END:
+
+*** Realm of Racket: Learn to Program, One Game at a Time!
+:PROPERTIES:
+:AUTHOR:   Conrad Barski M.D., David Van Horn, Eight Students Northeastern University of
+:ADDED:    <2017-10-14>
+:AMAZON:   https://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp
+:END:
+
+*** Design Patterns: Elements of Reusable Object-Oriented Software
+:PROPERTIES:
+:AUTHOR:   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
+:END:
+
+*** Structure and Interpretation of Computer Programs
+:PROPERTIES:
+:AUTHOR:   Harold Abelson, Gerald Jay Sussman, Julie Sussman
+:ADDED:    <2017-06-28>
+:GOODREADS: https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs?ac=1&from_search=true
+:END:
+
+*** How to Design Programs: An Introduction to Programming and Computing
+:PROPERTIES:
+:AUTHOR:   Matthias Felleisen
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262062186
+:END:
+
+*** Practical Common Lisp
+:PROPERTIES:
+:AUTHOR:   Peter Seibel
+:ADDED:    <2017-06-28>
+:AMAZON:   https://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
+:END:
+
+*** Beautiful Racket
+:PROPERTIES:
+:AUTHOR:   Matthew Butterick
+:ADDED:    <2017-06-28>
+:URL:      http://beautifulracket.com/
+:END:
+
+*** The Little Schemer
+:PROPERTIES:
+:AUTHOR:    Daniel P. Friedman, Matthias Felleisen, Duane Bibby, Gerald J. Sussman
+:ADDED:     <2017-04-30>
+:GOODREADS: https://www.goodreads.com/book/show/548914
+:END:
+
+*** On Lisp: Advanced Techniques for Common Lisp
+:PROPERTIES:
+:AUTHOR:    Paul Graham
+:ADDED:     <2017-01-28>
+:GOODREADS: https://www.goodreads.com/book/show/41803
+:END:
+
+*** READ The Pragmatic Programmer: From Journeyman to Master
+CLOSED: [2017-06-29 Thu 14:36]
+:PROPERTIES:
+:AUTHOR:    Andrew Hunt, Dave Thomas
+:ADDED:     <2016-09-16>
+:GOODREADS: https://www.goodreads.com/book/show/4099
+:END:
+
+A good book. More like a collection of things, but the authors state this
+upfront so it doesn't break the idea of a /flowing/ read. Has a light take on the
+ideas it presents, which makes it a comfortable read without sounding overly
+preachy.
+
+*** Literate Programming
+:PROPERTIES:
+:AUTHOR:    Donald Ervin Knuth
+:ADDED:     <2016-09-13>
+:GOODREADS: https://www.goodreads.com/book/show/112245
+:END:
+
+*** Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP
+:PROPERTIES:
+:AUTHOR:    Peter Norvig
+:ADDED:     <2014-07-10>
+:GOODREADS: https://www.goodreads.com/book/show/83884
+:END:
+
+** Design/Art
+*** Pantone's Guide to Communicating with Color
+:PROPERTIES:
+:AUTHOR:   Leatrice Eisemann
+:ADDED:    <2018-04-10>
+:AMAZON:   https://www.amazon.com/gp/product/B004J8HX5E
+:END:
+
+*** The Elements of Typographic Style
+:PROPERTIES:
+:AUTHOR:   Robert Bringhurst
+:ADDED:    <2018-04-10>
+:AMAZON:   https://www.amazon.com/gp/product/0881792063/
+:END:
+
+*** Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2017-08-09>
+:AMAZON:   https://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758
+:END:
+
+*** Advanced Cartooning and Other Drawings
+:PROPERTIES:
+:AUTHOR:    B. Kliban
+:ADDED:     <2017-06-15>
+:GOODREADS: https://www.goodreads.com/book/show/550802
+:END:
+
+*** The Story of Art
+:PROPERTIES:
+:AUTHOR:   E.H. Gombrich
+:ADDED:    <2017-08-08>
+:GOODREADS: https://www.goodreads.com/book/show/222078.The_Story_of_Art
+:END:
+
+*** Visual Thinking
+:PROPERTIES:
+:AUTHOR:    Rudolf Arnheim
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/365660
+:END:
+
+*** Art and Illusion: A Study in the Psychology of Pictorial Representation
+:PROPERTIES:
+:AUTHOR:    E.H. Gombrich
+:ADDED:     <2017-06-09>
+:GOODREADS: https://www.goodreads.com/book/show/61506
+:END:
+
+*** READ Visual Explanations: Images and Quantities, Evidence and Narrative
+CLOSED: [2017-07-01 Sat 15:23]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2017-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/17746
+:END:
+
+Loved this book thoroughly. Takes me back to the explanatory books I used to
+read when younger. This makes you develop an eye for criticizing / respecting
+visual explanations, exactly what you expect from the title.
+
+*** READ Envisioning Information
+CLOSED: [2017-02-20]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2017-01-18>
+:GOODREADS: https://www.goodreads.com/book/show/17745
+:END:
+
+*** READ The Visual Display of Quantitative Information
+CLOSED: [2017-01-18]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2016-12-22>
+:GOODREADS: https://www.goodreads.com/book/show/17744
+:END:
+
+Interesting read on some of the earlier theory and works in statistical
+visualizations.
+
+*** A Manual for Writers of Research Papers, Theses, and Dissertations: Chicago Style for Students and Researchers
+:PROPERTIES:
+:AUTHOR:    Kate L. Turabian, Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, University of Chicago Press
+:ADDED:     <2016-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/201004
+:END:
+
+*** The Chicago Manual of Style
+:PROPERTIES:
+:AUTHOR:    University of Chicago Press
+:ADDED:     <2016-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/103362
+:END:
+
+*** Style: The Basics of Clarity and Grace
+:PROPERTIES:
+:AUTHOR:    Joseph M. Williams
+:ADDED:     <2016-12-16>
+:GOODREADS: https://www.goodreads.com/book/show/17789795
+:END:
+
+*** The Grammar of Graphics
+:PROPERTIES:
+:AUTHOR:    Leland Wilkinson
+:ADDED:     <2016-10-18>
+:GOODREADS: https://www.goodreads.com/book/show/2549408
+:END:
+
+*** READ Beautiful Evidence
+CLOSED: [2018-01-11 Thu 18:15]
+:PROPERTIES:
+:AUTHOR:    Edward R. Tufte
+:ADDED:     <2016-09-24>
+:GOODREADS: https://www.goodreads.com/book/show/17743
+:END:
+
+*** READ Butterick's Practical Typography
+CLOSED: [2016-06-26]
+:PROPERTIES:
+:AUTHOR:    Matthew Butterick, Erik Spiekermann
+:ADDED:     <2015-11-18>
+:GOODREADS: https://www.goodreads.com/book/show/18244760
+:END:
+
+*** READ How to Write a Thesis
+CLOSED: [2018-02-24 Sat 13:00]
+:PROPERTIES:
+:AUTHOR:    Umberto Eco, Caterina Mongiat Farina, Geoff Farina, Francesco Erspamer
+:ADDED:     <2015-05-02>
+:GOODREADS: https://www.goodreads.com/book/show/23461426
+:END:
+
+As is already iterated in the translators' notes, this book is pretty outdated
+as far as the specifics are concerned. Nevertheless, this presents a good set of
+approaches on organizing and executing research. Many of these are already
+popular. In that case:
+
+#+BEGIN_QUOTE
+My book can then serve as a reminder, bringing to awareness what many of you
+have already absorbed without realizing it.
+#+END_QUOTE
+
+*** On Writing: A Memoir of the Craft
+:PROPERTIES:
+:AUTHOR:    Stephen King
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/10569
+:END:
+
+*** The Elements of Style
+:PROPERTIES:
+:AUTHOR:    William Strunk Jr., E.B. White
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/33514
+:END:
+
+*** Ernest Hemingway on Writing
+:PROPERTIES:
+:AUTHOR:    Ernest Hemingway, Larry W. Phillips, Charles Scribner Jr.
+:ADDED:     <2015-02-01>
+:GOODREADS: https://www.goodreads.com/book/show/42683
+:END:
+
+*** READ The Design of Everyday Things
+CLOSED: [2016-06-27]
+:PROPERTIES:
+:AUTHOR:    Donald A. Norman
+:ADDED:     <2014-12-18>
+:GOODREADS: https://www.goodreads.com/book/show/840
+:END:
+
+** Uncategorized
+*** READ I Am a Strange Loop
+CLOSED: [2018-05-26 Sat 15:41]
+:PROPERTIES:
+:AUTHOR:   Douglas R. Hofstadter
+:ADDED:    <2018-05-06>
+:GOODREADS: https://www.goodreads.com/book/show/123471.I_Am_a_Strange_Loop
+:END:
+
+This reminds me a lot of a newer book 'Consciousness and the Social Brain' by
+Michael Graziano, where the author talks about an /attention schema/. In that,
+consciousness of a system is basically /attention/ directed towards a model of
+itself.
+
+And this is the idea behind the strange loops in /this/ book. A system with enough
+representational power to represent /itself/ is going to perceive, analyze and
+modify /itself/. This ability to loop around is what makes it conscious.
+
+This book is good but unless you have dualist tendencies or have inclination
+towards other solutions, it might feel lengthy since Douglas presents a lot of
+examples and analogies.
 
 *** From Bacteria to Bach and Back: The Evolution of Minds
 :PROPERTIES:
@@ -293,32 +903,11 @@ examples and analogies.
 :GOODREADS: https://www.goodreads.com/book/show/6601267
 :END:
 
-*** The Princeton Companion to Mathematics
-:PROPERTIES:
-:AUTHOR:   Timothy Gowers, June Barrow-Green, Imre Leader
-:ADDED:    <2018-01-08>
-:GOODREADS: https://www.goodreads.com/book/show/1471873.The_Princeton_Companion_to_Mathematics
-:END:
-
-*** Concrete Mathematics: A Foundation for Computer Science
-:PROPERTIES:
-:AUTHOR:   Ronald L. Graham, Donald Ervin Knuth, Oren Patashnik
-:ADDED:    <2018-01-08>
-:GOODREADS: https://www.goodreads.com/book/show/112243.Concrete_Mathematics?ac=1&from_search=true
-:END:
-
 *** Diagrammatica: The Path to Feynman Diagrams (Cambridge Lecture Notes in Physics)
 :PROPERTIES:
 :AUTHOR:   Martinus Veltman
 :ADDED:    <2017-09-12>
 :GOODREADS: https://www.goodreads.com/book/show/330562.Diagrammatica
-:END:
-
-*** The Mathematical Mechanic: Using Physical Reasoning to Solve Problems
-:PROPERTIES:
-:AUTHOR:   Mark Levi
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/6418615-the-mathematical-mechanic?ac=1&from_search=true
 :END:
 
 *** The Denial of Death
@@ -354,56 +943,6 @@ examples and analogies.
 :AUTHOR:    Plato, Desmond Lee
 :ADDED:     <2017-06-09>
 :GOODREADS: https://www.goodreads.com/book/show/30289
-:END:
-
-*** READ Seven Languages in Seven Weeks 
-CLOSED: [2018-01-24 Wed 22:59]
-:PROPERTIES:
-:AUTHOR:
-:ADDED:    <2018-01-24>
-:GOODREADS:   https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks
-:END:
-
-*** Realm of Racket: Learn to Program, One Game at a Time!
-:PROPERTIES:
-:AUTHOR:   Conrad Barski M.D., David Van Horn, Eight Students Northeastern University of
-:ADDED:    <2017-10-14>
-:AMAZON:   https://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp
-:END:
-
-*** Design Patterns: Elements of Reusable Object-Oriented Software
-:PROPERTIES:
-:AUTHOR:   Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612
-:END:
-
-*** Structure and Interpretation of Computer Programs
-:PROPERTIES:
-:AUTHOR:   Harold Abelson, Gerald Jay Sussman, Julie Sussman
-:ADDED:    <2017-06-28>
-:GOODREADS: https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs?ac=1&from_search=true
-:END:
-
-*** How to Design Programs: An Introduction to Programming and Computing
-:PROPERTIES:
-:AUTHOR:   Matthias Felleisen
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262062186
-:END:
-
-*** Practical Common Lisp
-:PROPERTIES:
-:AUTHOR:   Peter Seibel
-:ADDED:    <2017-06-28>
-:AMAZON:   https://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
-:END:
-
-*** Beautiful Racket
-:PROPERTIES:
-:AUTHOR:   Matthew Butterick
-:ADDED:    <2017-06-28>
-:URL:      http://beautifulracket.com/
 :END:
 
 *** Mastering the Techniques of Teaching
@@ -487,13 +1026,6 @@ reminder to get back to my pre undergrad flow (yes; I wasted around 4 + 2 years)
 and got that here. Nothing that you can't get anywhere else, but this might work
 also.
 
-*** The Story of Art
-:PROPERTIES:
-:AUTHOR:   E.H. Gombrich
-:ADDED:    <2017-08-08>
-:GOODREADS: https://www.goodreads.com/book/show/222078.The_Story_of_Art
-:END:
-
 *** Forces of Habit: Drugs and the Making of the Modern World
 :PROPERTIES:
 :AUTHOR:   David T. Courtwright
@@ -534,20 +1066,6 @@ also.
 :AUTHOR:    Bruce Lee, John  Little
 :ADDED:     <2017-06-12>
 :GOODREADS: https://www.goodreads.com/book/show/259311
-:END:
-
-*** Visual Thinking
-:PROPERTIES:
-:AUTHOR:    Rudolf Arnheim
-:ADDED:     <2017-06-09>
-:GOODREADS: https://www.goodreads.com/book/show/365660
-:END:
-
-*** Art and Illusion: A Study in the Psychology of Pictorial Representation
-:PROPERTIES:
-:AUTHOR:    E.H. Gombrich
-:ADDED:     <2017-06-09>
-:GOODREADS: https://www.goodreads.com/book/show/61506
 :END:
 
 *** Beyond Boredom and Anxiety: Experiencing Flow in Work and Play
@@ -683,13 +1201,6 @@ also.
 :GOODREADS: https://www.goodreads.com/book/show/33917107
 :END:
 
-*** Solving Mathematical Problems: A Personal Perspective
-:PROPERTIES:
-:AUTHOR:    Terence Tao
-:ADDED:     <2017-06-02>
-:GOODREADS: https://www.goodreads.com/book/show/265415
-:END:
-
 *** David and Goliath: Underdogs, Misfits, and the Art of Battling Giants
 :PROPERTIES:
 :AUTHOR:    Malcolm Gladwell
@@ -725,13 +1236,6 @@ also.
 :GOODREADS: https://www.goodreads.com/book/show/134825
 :END:
 
-*** The Little Schemer
-:PROPERTIES:
-:AUTHOR:    Daniel P. Friedman, Matthias Felleisen, Duane Bibby, Gerald J. Sussman
-:ADDED:     <2017-04-30>
-:GOODREADS: https://www.goodreads.com/book/show/548914
-:END:
-
 *** No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State
 :PROPERTIES:
 :AUTHOR:    Glenn Greenwald
@@ -739,61 +1243,11 @@ also.
 :GOODREADS: https://www.goodreads.com/book/show/18213403
 :END:
 
-*** On Growth and Form
-:PROPERTIES:
-:AUTHOR:    D'Arcy Wentworth Thompson, John Tyler Bonner
-:ADDED:     <2017-03-13>
-:GOODREADS: https://www.goodreads.com/book/show/460984
-:END:
-
 *** This Changes Everything: Capitalism vs. The Climate
 :PROPERTIES:
 :AUTHOR:    Naomi Klein
 :ADDED:     <2017-03-11>
 :GOODREADS: https://www.goodreads.com/book/show/21913812
-:END:
-
-*** Emergence: From Chaos To Order
-:PROPERTIES:
-:AUTHOR:    John H. Holland
-:ADDED:     <2017-03-11>
-:GOODREADS: https://www.goodreads.com/book/show/896539
-:END:
-
-*** Emergence: The Connected Lives of Ants, Brains, Cities, and Software
-:PROPERTIES:
-:AUTHOR:    Steven Johnson
-:ADDED:     <2017-03-11>
-:GOODREADS: https://www.goodreads.com/book/show/2296
-:END:
-
-*** Harnessing Complexity
-:PROPERTIES:
-:AUTHOR:    Robert Axelrod, Michael D. Cohen
-:ADDED:     <2017-03-11>
-:GOODREADS: https://www.goodreads.com/book/show/366820
-:END:
-
-*** Hidden Order: How Adaptation Builds Complexity
-:PROPERTIES:
-:AUTHOR:    John H. Holland, Heather Mimnaugh
-:ADDED:     <2017-03-11>
-:GOODREADS: https://www.goodreads.com/book/show/183954
-:END:
-
-*** READ An Introduction to Genetic Algorithms
-CLOSED: [2017-05-30]
-:PROPERTIES:
-:AUTHOR:    Melanie Mitchell
-:ADDED:     <2017-03-11>
-:GOODREADS: https://www.goodreads.com/book/show/105139
-:END:
-
-*** Complex Adaptive Systems: An Introduction to Computational Models of Social Life
-:PROPERTIES:
-:AUTHOR:    John H.  Miller, Scott E. Page
-:ADDED:     <2017-03-11>
-:GOODREADS: https://www.goodreads.com/book/show/245273
 :END:
 
 *** Utopia
@@ -929,41 +1383,6 @@ CLOSED: [2017-05-30]
 :GOODREADS: https://www.goodreads.com/book/show/542766
 :END:
 
-*** The Descent of Man
-:PROPERTIES:
-:AUTHOR:    Charles Darwin
-:ADDED:     <2017-02-18>
-:GOODREADS: https://www.goodreads.com/book/show/185407
-:END:
-
-*** Evolution: The Modern Synthesis: The Definitive Edition
-:PROPERTIES:
-:AUTHOR:    Julian Huxley, Massimo Pigliucci, Gerd B. Müller
-:ADDED:     <2017-02-18>
-:GOODREADS: https://www.goodreads.com/book/show/7250157
-:END:
-
-*** Evolution—The Extended Synthesis
-:PROPERTIES:
-:AUTHOR:    Massimo Pigliucci, Gerd B. Müller
-:ADDED:     <2017-02-18>
-:GOODREADS: https://www.goodreads.com/book/show/7618919
-:END:
-
-*** Evolution: Making Sense of Life
-:PROPERTIES:
-:AUTHOR:    Carl Zimmer, Douglas J. Emlen
-:ADDED:     <2017-02-06>
-:GOODREADS: https://www.goodreads.com/book/show/25785066
-:END:
-
-*** On Lisp: Advanced Techniques for Common Lisp
-:PROPERTIES:
-:AUTHOR:    Paul Graham
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/41803
-:END:
-
 *** I Know Why the Caged Bird Sings
 :PROPERTIES:
 :AUTHOR:    Maya Angelou
@@ -1020,33 +1439,6 @@ CLOSED: [2017-05-30]
 :GOODREADS: https://www.goodreads.com/book/show/1566053
 :END:
 
-*** The Origin of Species
-:PROPERTIES:
-:AUTHOR:    Charles Darwin
-:ADDED:     <2017-01-28>
-:GOODREADS: https://www.goodreads.com/book/show/22463
-:END:
-
-*** READ Visual Explanations: Images and Quantities, Evidence and Narrative
-CLOSED: [2017-07-01 Sat 15:23]
-:PROPERTIES:
-:AUTHOR:    Edward R. Tufte
-:ADDED:     <2017-01-18>
-:GOODREADS: https://www.goodreads.com/book/show/17746
-:END:
-
-Loved this book thoroughly. Takes me back to the explanatory books I used to
-read when younger. This makes you develop an eye for criticizing / respecting
-visual explanations, exactly what you expect from the title.
-
-*** READ Envisioning Information
-CLOSED: [2017-02-20]
-:PROPERTIES:
-:AUTHOR:    Edward R. Tufte
-:ADDED:     <2017-01-18>
-:GOODREADS: https://www.goodreads.com/book/show/17745
-:END:
-
 *** The End of Faith: Religion, Terror, and the Future of Reason
 :PROPERTIES:
 :AUTHOR:    Sam Harris
@@ -1082,13 +1474,6 @@ CLOSED: [2017-02-20]
 :GOODREADS: https://www.goodreads.com/book/show/6017788
 :END:
 
-*** Cellular Automata And Complexity: Collected Papers
-:PROPERTIES:
-:AUTHOR:    Stephen Wolfram
-:ADDED:     <2017-01-03>
-:GOODREADS: https://www.goodreads.com/book/show/459614
-:END:
-
 *** The Idea Factory: Bell Labs and the Great Age of American Innovation
 :PROPERTIES:
 :AUTHOR:    Jon Gertner
@@ -1108,38 +1493,6 @@ CLOSED: [2017-02-20]
 :AUTHOR:    Paul  Lockhart, Keith J. Devlin
 :ADDED:     <2016-12-29>
 :GOODREADS: https://www.goodreads.com/book/show/6232657
-:END:
-
-*** READ The Visual Display of Quantitative Information
-CLOSED: [2017-01-18]
-:PROPERTIES:
-:AUTHOR:    Edward R. Tufte
-:ADDED:     <2016-12-22>
-:GOODREADS: https://www.goodreads.com/book/show/17744
-:END:
-
-Interesting read on some of the earlier theory and works in statistical
-visualizations.
-
-*** A Manual for Writers of Research Papers, Theses, and Dissertations: Chicago Style for Students and Researchers
-:PROPERTIES:
-:AUTHOR:    Kate L. Turabian, Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, University of Chicago Press
-:ADDED:     <2016-12-16>
-:GOODREADS: https://www.goodreads.com/book/show/201004
-:END:
-
-*** The Chicago Manual of Style
-:PROPERTIES:
-:AUTHOR:    University of Chicago Press
-:ADDED:     <2016-12-16>
-:GOODREADS: https://www.goodreads.com/book/show/103362
-:END:
-
-*** Style: The Basics of Clarity and Grace
-:PROPERTIES:
-:AUTHOR:    Joseph M. Williams
-:ADDED:     <2016-12-16>
-:GOODREADS: https://www.goodreads.com/book/show/17789795
 :END:
 
 *** Black Hole Blues and Other Songs from Outer Space
@@ -1429,27 +1782,6 @@ CLOSED: [2018-03-28 Wed 21:26]
 
 Really good pieces in here. Specially /Ur-Fascism/.
 
-*** Critical Mass: How One Thing Leads to Another
-:PROPERTIES:
-:AUTHOR:    Philip Ball
-:ADDED:     <2016-11-19>
-:GOODREADS: https://www.goodreads.com/book/show/472609
-:END:
-
-*** The Self Made Tapestry: Pattern Formation in Nature
-:PROPERTIES:
-:AUTHOR:    Philip Ball
-:ADDED:     <2016-11-19>
-:GOODREADS: https://www.goodreads.com/book/show/39076
-:END:
-
-*** Shapes: Nature's Patterns: A Tapestry in Three Parts
-:PROPERTIES:
-:AUTHOR:    Philip Ball
-:ADDED:     <2016-11-19>
-:GOODREADS: https://www.goodreads.com/book/show/3047954
-:END:
-
 *** The Elements: A Very Short Introduction
 :PROPERTIES:
 :AUTHOR:    Philip Ball
@@ -1469,13 +1801,6 @@ Really good pieces in here. Specially /Ur-Fascism/.
 :AUTHOR:    Philip Ball
 :ADDED:     <2016-11-19>
 :GOODREADS: https://www.goodreads.com/book/show/17612667
-:END:
-
-*** Patterns in Nature: Why the Natural World Looks the Way It Does
-:PROPERTIES:
-:AUTHOR:    Philip Ball
-:ADDED:     <2016-11-19>
-:GOODREADS: https://www.goodreads.com/book/show/26240445
 :END:
 
 *** READ Confessions of a Necromancer
@@ -1502,13 +1827,6 @@ CLOSED: [2016-12-07]
 :GOODREADS: https://www.goodreads.com/book/show/25670869
 :END:
 
-*** The Grammar of Graphics
-:PROPERTIES:
-:AUTHOR:    Leland Wilkinson
-:ADDED:     <2016-10-18>
-:GOODREADS: https://www.goodreads.com/book/show/2549408
-:END:
-
 *** Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley
 :PROPERTIES:
 :AUTHOR:    Antonio Garcia Martinez
@@ -1528,14 +1846,6 @@ For many it might just be a confirming nod to what they know about Big data in
 general, but is a good read nevertheless. Overall, it ties "data
 science" with its responsibilities. Responsibilities which demands greater care
 and openness than assumed in the present unconstrained Big data buzz.
-
-*** READ Beautiful Evidence
-CLOSED: [2018-01-11 Thu 18:15]
-:PROPERTIES:
-:AUTHOR:    Edward R. Tufte
-:ADDED:     <2016-09-24>
-:GOODREADS: https://www.goodreads.com/book/show/17743
-:END:
 
 *** Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts
 :PROPERTIES:
@@ -1586,83 +1896,11 @@ CLOSED: [2018-01-11 Thu 18:15]
 :GOODREADS: https://www.goodreads.com/book/show/821914
 :END:
 
-*** READ The Pragmatic Programmer: From Journeyman to Master
-CLOSED: [2017-06-29 Thu 14:36]
-:PROPERTIES:
-:AUTHOR:    Andrew Hunt, Dave Thomas
-:ADDED:     <2016-09-16>
-:GOODREADS: https://www.goodreads.com/book/show/4099
-:END:
-
-A good book. More like a collection of things, but the authors state this
-upfront so it doesn't break the idea of a /flowing/ read. Has a light take on the
-ideas it presents, which makes it a comfortable read without sounding overly
-preachy.
-
 *** You Are Not a Gadget
 :PROPERTIES:
 :AUTHOR:    Jaron Lanier
 :ADDED:     <2016-09-15>
 :GOODREADS: https://www.goodreads.com/book/show/6683549
-:END:
-
-*** READ The Wisdom of Crowds
-CLOSED: [2017-07-28 Fri 17:35]
-:PROPERTIES:
-:AUTHOR:    James Surowiecki
-:ADDED:     <2016-09-15>
-:GOODREADS: https://www.goodreads.com/book/show/68143
-:END:
-
-This is a great book. Its of perfect length for the matter and the way it
-presents them.
-
-At places, it felt like doing a little bit of exaggeration by criticizing the
-classical wisdom too much. Many of the times an approach which has less
-explanation and theory behind it is frowned upon. Many of the group-behavior
-based solutions fall in this category. They might work well, but their lack of
-popularity is not /entirely/ surprising and irrational.
-
-Also, the last chapter on democracy worries me a little. The point of the
-chapter is that democracy is better than other forms because it uses the crowd's
-wisdom, but it fails to make the a solid classification of the problem and
-specify /why/ it solves them better. I guess this is more because there are
-/problems/ rather than /a/ problem to be solved in a government and they are vary in
-how they can be solved. Overall, the chapter, while presenting good arguments,
-tries to convince you of something more vague. Not that the conclusion is wrong
-(that group wisdom can be used much more effectively in a democracy), but the
-examples leave places to fill in before you get completely satisfied.
-
-I like how the book classifies the type of problems regularly faced by a crowd
-and the conditions they need to make wise decisions there. These are some good
-cues for analyzing and understanding cases presented in the book.
-
-*** Literate Programming
-:PROPERTIES:
-:AUTHOR:    Donald Ervin Knuth
-:ADDED:     <2016-09-13>
-:GOODREADS: https://www.goodreads.com/book/show/112245
-:END:
-
-*** The Algorithmic Beauty of Seaweeds, Sponges and Corals
-:PROPERTIES:
-:AUTHOR:    Jaap A. Kaandorp
-:ADDED:     <2016-09-12>
-:GOODREADS: https://www.goodreads.com/book/show/1670860
-:END:
-
-*** The Algorithmic Beauty Of Sea Shells
-:PROPERTIES:
-:AUTHOR:    Hans Meinhardt
-:ADDED:     <2016-09-12>
-:GOODREADS: https://www.goodreads.com/book/show/1703514
-:END:
-
-*** The Algorithmic Beauty of Plants
-:PROPERTIES:
-:AUTHOR:    Przemysław Prusinkiewicz
-:ADDED:     <2016-09-12>
-:GOODREADS: https://www.goodreads.com/book/show/944626
 :END:
 
 *** Why I Am Not a Christian and Other Essays on Religion and Related Subjects
@@ -1803,13 +2041,6 @@ CLOSED: [2016-08-13]
 :AUTHOR:    Friedrich Nietzsche
 :ADDED:     <2016-08-07>
 :GOODREADS: https://www.goodreads.com/book/show/24257
-:END:
-
-*** Surreal Numbers
-:PROPERTIES:
-:AUTHOR:    Donald Ervin Knuth
-:ADDED:     <2016-07-25>
-:GOODREADS: https://www.goodreads.com/book/show/484458
 :END:
 
 *** Idea Makers: Personal Perspectives on the Lives & Ideas of Some Notable People
@@ -2034,13 +2265,6 @@ CLOSED: [2016-03-12]
 :GOODREADS: https://www.goodreads.com/book/show/17375
 :END:
 
-*** Six Degrees: The Science of a Connected Age
-:PROPERTIES:
-:AUTHOR:    Duncan J. Watts
-:ADDED:     <2016-03-01>
-:GOODREADS: https://www.goodreads.com/book/show/818170
-:END:
-
 *** Why Don't Penguins' Feet Freeze?: And 114 Other Questions
 :PROPERTIES:
 :AUTHOR:    Mick O'Hare
@@ -2083,21 +2307,6 @@ CLOSED: [2016-03-12]
 :GOODREADS: https://www.goodreads.com/book/show/18607842
 :END:
 
-*** Small Worlds: The Dynamics of Networks Between Order and Randomness
-:PROPERTIES:
-:AUTHOR:    Duncan J. Watts
-:ADDED:     <2015-12-28>
-:GOODREADS: https://www.goodreads.com/book/show/373169
-:END:
-
-*** READ Simply Complexity
-CLOSED: [2016-02-27]
-:PROPERTIES:
-:AUTHOR:    Neil Johnson
-:ADDED:     <2015-12-20>
-:GOODREADS: https://www.goodreads.com/book/show/18936836
-:END:
-
 *** Reckoning with Risk: Learning to Live with Uncertainty
 :PROPERTIES:
 :AUTHOR:    Gerd Gigerenzer
@@ -2120,13 +2329,6 @@ CLOSED: [2015-12-20]
 :GOODREADS: https://www.goodreads.com/book/show/9665017
 :END:
 
-*** Think Complexity: Complexity Science and Computational Modeling
-:PROPERTIES:
-:AUTHOR:    Allen B. Downey
-:ADDED:     <2015-12-12>
-:GOODREADS: https://www.goodreads.com/book/show/13234078
-:END:
-
 *** Micromotives and Macrobehavior
 :PROPERTIES:
 :AUTHOR:    Thomas C. Schelling
@@ -2139,21 +2341,6 @@ CLOSED: [2015-12-20]
 :AUTHOR:    Bill Bishop
 :ADDED:     <2015-12-12>
 :GOODREADS: https://www.goodreads.com/book/show/2569072
-:END:
-
-*** Artificial Life: A Report from the Frontier Where Computers Meet Biology
-:PROPERTIES:
-:AUTHOR:    Steven Levy
-:ADDED:     <2015-12-12>
-:GOODREADS: https://www.goodreads.com/book/show/737831
-:END:
-
-*** READ Sync: How Order Emerges From Chaos In the Universe, Nature, and Daily Life
-CLOSED: [2015-12-11]
-:PROPERTIES:
-:AUTHOR:    Steven H. Strogatz
-:ADDED:     <2015-12-05>
-:GOODREADS: https://www.goodreads.com/book/show/16173023
 :END:
 
 *** Desert Solitaire
@@ -2184,28 +2371,6 @@ CLOSED: [2015-12-11]
 :GOODREADS: https://www.goodreads.com/book/show/413179
 :END:
 
-*** Complexity: Life at the Edge of Chaos
-:PROPERTIES:
-:AUTHOR:    Roger Lewin
-:ADDED:     <2015-11-20>
-:GOODREADS: https://www.goodreads.com/book/show/384547
-:END:
-
-*** Bursts: The Hidden Pattern Behind Everything We Do
-:PROPERTIES:
-:AUTHOR:   Albert-László Barabási
-:ADDED:    <2015-11-20>
-:GOODREADS: https://www.goodreads.com/book/show/7442792
-:END:
-
-*** READ Butterick's Practical Typography
-CLOSED: [2016-06-26]
-:PROPERTIES:
-:AUTHOR:    Matthew Butterick, Erik Spiekermann
-:ADDED:     <2015-11-18>
-:GOODREADS: https://www.goodreads.com/book/show/18244760
-:END:
-
 *** Jihad Academy: The Rise of Islamic State
 :PROPERTIES:
 :AUTHOR:    Nicolas Hénin, Martin Makinson
@@ -2220,13 +2385,6 @@ CLOSED: [2016-06-26]
 :GOODREADS: https://www.goodreads.com/book/show/17033
 :END:
 
-*** Complexity: The Emerging Science at the Edge of Order and Chaos
-:PROPERTIES:
-:AUTHOR:    M. Mitchell Waldrop
-:ADDED:     <2015-11-15>
-:GOODREADS: https://www.goodreads.com/book/show/337123
-:END:
-
 *** The Human Use Of Human Beings: Cybernetics And Society
 :PROPERTIES:
 :AUTHOR:    Norbert Wiener
@@ -2239,20 +2397,6 @@ CLOSED: [2016-06-26]
 :AUTHOR:    Norbert Wiener
 :ADDED:     <2015-11-06>
 :GOODREADS: https://www.goodreads.com/book/show/294941
-:END:
-
-*** The Origins of Order: Self-Organization and Selection in Evolution
-:PROPERTIES:
-:AUTHOR:    Stuart A. Kauffman
-:ADDED:     <2015-11-06>
-:GOODREADS: https://www.goodreads.com/book/show/783559
-:END:
-
-*** The Mathematics of Love: Patterns, Proofs, and the Search for the Ultimate Equation
-:PROPERTIES:
-:AUTHOR:    Hannah Fry
-:ADDED:     <2015-11-04>
-:GOODREADS: https://www.goodreads.com/book/show/23258103
 :END:
 
 *** The Motorcycle Diaries: Notes on a Latin American Journey
@@ -2302,14 +2446,6 @@ CLOSED: [2016-06-26]
 :AUTHOR:    Drew Curtis
 :ADDED:     <2015-10-21>
 :GOODREADS: https://www.goodreads.com/book/show/816159
-:END:
-
-*** READ Complexity: A Guided Tour
-CLOSED: [2015-11-06]
-:PROPERTIES:
-:AUTHOR:    Melanie Mitchell
-:ADDED:     <2015-10-19>
-:GOODREADS: https://www.goodreads.com/book/show/8207901
 :END:
 
 *** The Age of Wonder: How the Romantic Generation Discovered the Beauty and Terror of Science
@@ -2498,24 +2634,6 @@ CLOSED: [2015-05-14]
 :GOODREADS: https://www.goodreads.com/book/show/13132815
 :END:
 
-*** READ How to Write a Thesis
-CLOSED: [2018-02-24 Sat 13:00]
-:PROPERTIES:
-:AUTHOR:    Umberto Eco, Caterina Mongiat Farina, Geoff Farina, Francesco Erspamer
-:ADDED:     <2015-05-02>
-:GOODREADS: https://www.goodreads.com/book/show/23461426
-:END:
-
-As is already iterated in the translators' notes, this book is pretty outdated
-as far as the specifics are concerned. Nevertheless, this presents a good set of
-approaches on organizing and executing research. Many of these are already
-popular. In that case:
-
-#+BEGIN_QUOTE
-My book can then serve as a reminder, bringing to awareness what many of you
-have already absorbed without realizing it.
-#+END_QUOTE
-
 *** READ What If?: Serious Scientific Answers to Absurd Hypothetical Questions
 CLOSED: [2015-05-07]
 :PROPERTIES:
@@ -2602,13 +2720,6 @@ CLOSED: [2015-07-16]
 :GOODREADS: https://www.goodreads.com/book/show/18526648
 :END:
 
-*** Arrival of the Fittest: Solving Evolution's Greatest Puzzle
-:PROPERTIES:
-:AUTHOR:    Andreas Wagner
-:ADDED:     <2015-03-18>
-:GOODREADS: https://www.goodreads.com/book/show/20821275
-:END:
-
 *** The Tale of the Dueling Neurosurgeons: The History of the Human Brain as Revealed by True Stories of Trauma, Madness, and Recovery
 :PROPERTIES:
 :AUTHOR:   Sam Kean
@@ -2628,13 +2739,6 @@ CLOSED: [2015-07-16]
 :AUTHOR:    Nancy C. Andreasen
 :ADDED:     <2015-03-13>
 :GOODREADS: https://www.goodreads.com/book/show/907634
-:END:
-
-*** Incompleteness: The Proof and Paradox of Kurt Gödel (Great Discoveries)
-:PROPERTIES:
-:AUTHOR:    Rebecca Goldstein
-:ADDED:     <2015-03-13>
-:GOODREADS: https://www.goodreads.com/book/show/51287
 :END:
 
 *** Brilliant Blunders: From Darwin to Einstein - Colossal Mistakes by Great Scientists That Changed Our Understanding of Life and the Universe
@@ -2906,13 +3010,6 @@ CLOSED: [2015-03-13]
 :GOODREADS: https://www.goodreads.com/book/show/162120
 :END:
 
-*** The Fractal Geometry of Nature
-:PROPERTIES:
-:AUTHOR:    Benoît B. Mandelbrot
-:ADDED:     <2015-02-01>
-:GOODREADS: https://www.goodreads.com/book/show/558059
-:END:
-
 *** Bird by Bird: Some Instructions on Writing and Life
 :PROPERTIES:
 :AUTHOR:    Anne Lamott
@@ -2920,32 +3017,11 @@ CLOSED: [2015-03-13]
 :GOODREADS: https://www.goodreads.com/book/show/12543
 :END:
 
-*** On Writing: A Memoir of the Craft
-:PROPERTIES:
-:AUTHOR:    Stephen King
-:ADDED:     <2015-02-01>
-:GOODREADS: https://www.goodreads.com/book/show/10569
-:END:
-
 *** How to Read a Book: The Classic Guide to Intelligent Reading
 :PROPERTIES:
 :AUTHOR:    Mortimer J. Adler, Charles Van Doren
 :ADDED:     <2015-02-01>
 :GOODREADS: https://www.goodreads.com/book/show/567610
-:END:
-
-*** The Elements of Style
-:PROPERTIES:
-:AUTHOR:    William Strunk Jr., E.B. White
-:ADDED:     <2015-02-01>
-:GOODREADS: https://www.goodreads.com/book/show/33514
-:END:
-
-*** Ernest Hemingway on Writing
-:PROPERTIES:
-:AUTHOR:    Ernest Hemingway, Larry W. Phillips, Charles Scribner Jr.
-:ADDED:     <2015-02-01>
-:GOODREADS: https://www.goodreads.com/book/show/42683
 :END:
 
 *** The Fourth Paradigm: Data-Intensive Scientific Discovery
@@ -3002,13 +3078,6 @@ CLOSED: [2015-03-13]
 :AUTHOR:    Steven Pinker
 :ADDED:     <2015-01-29>
 :GOODREADS: https://www.goodreads.com/book/show/835623
-:END:
-
-*** The Greatest Show on Earth: The Evidence for Evolution
-:PROPERTIES:
-:AUTHOR:    Richard Dawkins
-:ADDED:     <2015-01-29>
-:GOODREADS: https://www.goodreads.com/book/show/6117055
 :END:
 
 *** Guns, Germs, and Steel: The Fates of Human Societies
@@ -3088,13 +3157,6 @@ CLOSED: [2016-06-28]
 :AUTHOR:    Keri Smith
 :ADDED:     <2015-01-23>
 :GOODREADS: https://www.goodreads.com/book/show/3090109
-:END:
-
-*** The Epigenetics Revolution
-:PROPERTIES:
-:AUTHOR:    Nessa Carey
-:ADDED:     <2015-01-22>
-:GOODREADS: https://www.goodreads.com/book/show/12414734
 :END:
 
 *** How to Avoid Work
@@ -3385,14 +3447,6 @@ CLOSED: [2016-03-04]
 :GOODREADS: https://www.goodreads.com/book/show/13542772
 :END:
 
-*** READ The Design of Everyday Things
-CLOSED: [2016-06-27]
-:PROPERTIES:
-:AUTHOR:    Donald A. Norman
-:ADDED:     <2014-12-18>
-:GOODREADS: https://www.goodreads.com/book/show/840
-:END:
-
 *** The Signal and the Noise: Why So Many Predictions Fail - But Some Don't
 :PROPERTIES:
 :AUTHOR:    Nate Silver
@@ -3419,14 +3473,6 @@ CLOSED: [2016-06-27]
 :AUTHOR:    Steven Levy
 :ADDED:     <2014-12-18>
 :GOODREADS: https://www.goodreads.com/book/show/56829
-:END:
-
-*** READ A New Kind of Science
-CLOSED: [2015-12-27]
-:PROPERTIES:
-:AUTHOR:    Stephen Wolfram
-:ADDED:     <2014-12-18>
-:GOODREADS: https://www.goodreads.com/book/show/238558
 :END:
 
 *** The Man Who Knew Infinity: A Life of the Genius Ramanujan
@@ -3492,13 +3538,6 @@ CLOSED: [2015-04-09]
 :AUTHOR:    Armand Marie Leroi
 :ADDED:     <2014-12-16>
 :GOODREADS: https://www.goodreads.com/book/show/20821396
-:END:
-
-*** Life Itself: A Comprehensive Inquiry Into the Nature, Origin, and Fabrication of Life
-:PROPERTIES:
-:AUTHOR:    Robert Rosen
-:ADDED:     <2014-11-06>
-:GOODREADS: https://www.goodreads.com/book/show/865617
 :END:
 
 *** READ Flatland: A Romance of Many Dimensions
@@ -3620,19 +3659,6 @@ CLOSED: [2015-02-12]
 :GOODREADS: https://www.goodreads.com/book/show/24113
 :END:
 
-*** READ The Selfish Gene
-CLOSED: [2018-01-04 Thu 23:31]
-:PROPERTIES:
-:AUTHOR:    Richard Dawkins
-:ADDED:     <2014-07-13>
-:GOODREADS: https://www.goodreads.com/book/show/61535
-:END:
-
-This is a great book. I probably read it at the right time to understand and
-appreciate more of the issues it talks about. For an amateur interested in
-evolution, this marks an important point from where you start to think more
-deeply about why the world is the way it is.
-
 *** READ The Singularity is Near: When Humans Transcend Biology
 CLOSED: [2015-03-09]
 :PROPERTIES:
@@ -3654,13 +3680,6 @@ CLOSED: [2014-07-22]
 :AUTHOR:   Darrell Huff, Irving Geis
 :ADDED:    <2014-07-13>
 :GOODREADS: https://www.goodreads.com/book/show/51291
-:END:
-
-*** Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP
-:PROPERTIES:
-:AUTHOR:    Peter Norvig
-:ADDED:     <2014-07-10>
-:GOODREADS: https://www.goodreads.com/book/show/83884
 :END:
 
 *** Cosmos
@@ -3730,13 +3749,6 @@ CLOSED: [2014-06-22]
 :GOODREADS: https://www.goodreads.com/book/show/10238
 :END:
 
-*** READ The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe Without Design
-:PROPERTIES:
-:AUTHOR:    Richard Dawkins
-:ADDED:     <2014-04-10>
-:GOODREADS: https://www.goodreads.com/book/show/117047
-:END:
-
 *** READ The Last Lecture
 CLOSED: [2014-04-10]
 :PROPERTIES:
@@ -3750,14 +3762,6 @@ CLOSED: [2014-04-10]
 :AUTHOR:    Sean Patrick
 :ADDED:     <2014-04-10>
 :GOODREADS: https://www.goodreads.com/book/show/17835351
-:END:
-
-*** READ Chaos: Making a New Science
-CLOSED: [2014-03-23]
-:PROPERTIES:
-:AUTHOR:    James Gleick
-:ADDED:     <2014-03-19>
-:GOODREADS: https://www.goodreads.com/book/show/64582
 :END:
 
 *** READ The Grand Design
