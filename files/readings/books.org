@@ -12,7 +12,12 @@ to categorize things in sections.
 #+TOC: headlines 2
 
 * Non Fiction
+Some non fiction. Most of the books are still in uncategorized section.
+
 ** Mathematics/Logic
+Books with more mathematical and logical inclinations. Some theoretical computer
+science books might also go in here.
+
 *** The Joy of x: A Guided Tour of Math, from One to Infinity
 :PROPERTIES:
 :AUTHOR:   Steven H. Strogatz
@@ -112,6 +117,12 @@ to categorize things in sections.
 :END:
 
 ** Evolution/Emergence/Order
+This is a slightly fuzzy section. What I have put here are books that try to or
+assist in understanding why and how are there certain /order/ and /pattern/ in
+nature. I am not sure which exact fields to look at for answers to questions
+about natural order and its emergence, therefore this section might stay a
+hodgepodge for a while.
+
 *** Robustness and Evolvability in Living Systems
 :PROPERTIES:
 :AUTHOR:   Andreas Wagner
@@ -492,6 +503,9 @@ CLOSED: [2014-03-23]
 :END:
 
 ** Programming
+Books about the craft itself. More theoretical computer science is going to go
+in the math section.
+
 *** READ Seven Languages in Seven Weeks 
 CLOSED: [2018-01-24 Wed 22:59]
 :PROPERTIES:
@@ -584,6 +598,10 @@ preachy.
 :END:
 
 ** Design/Art
+This section is more general than what the title proclaims. Here I have tried to
+keep books which talk about a way of /presenting/ information, interfaces and
+ideas.
+
 *** Pantone's Guide to Communicating with Color
 :PROPERTIES:
 :AUTHOR:   Leatrice Eisemann
@@ -1075,6 +1093,15 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Uncategorized
+What sections can I create for these? Gleaning over the list makes me think at
+the least the following would be okay:
+
+1. Philosophy
+2. Social science/history/politics
+3. Skepticism/rationality
+4. Physics
+5. Popular science (the catch-all section)
+
 *** READ I Am a Strange Loop
 CLOSED: [2018-05-26 Sat 15:41]
 :PROPERTIES:
