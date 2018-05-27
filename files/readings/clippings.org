@@ -22,6 +22,42 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+We act as if we wanted to praise Bach, but in truth we only praise ourselves.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The basic idea is that the dance of symbols in a brain is itself perceived by
+symbols, and that step extends the dance, and so round and round it goes.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Or perhaps, when there is love, the widowed must stay for the resurrection of
+the beloved — so that the one who has gone is not really dead, but grows and is
+created for a second time in the soul of the living?
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+we should have great respect for what seem like the most mundane of analogies,
+for when they are examined, they often can be seen to have sprung from, and to
+reveal, the deepest roots of human cognition.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I think that’s one of the things about growing older — one’s writing becomes
+more inward, more reflective, perhaps wiser, or perhaps just sadder.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 “All men are interlopers, old friend.”
 
 #+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
