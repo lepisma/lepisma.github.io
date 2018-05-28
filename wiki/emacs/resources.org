@@ -1,0 +1,9 @@
+#+TITLE: Resources
+#+SETUPFILE: ../../assets/export.setup
+
+#+BEGIN_QUOTE
+This page is a work in progress
+#+END_QUOTE
+
+* Org Mode
+- Extensive guides for org-publish setup. Look [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][here]] and [[https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html][here]].

@@ -1,9 +1,0 @@
-#+TITLE: Miscellaneous
-#+SETUPFILE: ../assets/export.setup
-
-Miscellaneous pages.
-
-* Pages in this section
-
-- [[./colophon.org][Colophon]]
-- [[./desktop.org][Desktop]]

@@ -1,0 +1,12 @@
+#+TITLE: Macros
+#+SETUPFILE: ../../../assets/export.setup
+
+A few org-mode macros.
+
+#+BEGIN_SRC org
+#+MACRO: js #+HTML_HEAD: <script src="$1"></script>
+#+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
+#+MACRO: color @@html:<font color="$1">$2</font>@@
+#+END_SRC
+
+Block macros are also possible. See [[https://github.com/fniessen/org-macros/][this repository]] for more examples.

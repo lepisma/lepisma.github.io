@@ -1,0 +1,4 @@
+#+TITLE: Blog
+#+SETUPFILE: ../wiki/assets/export.setup
+
+Test blog.

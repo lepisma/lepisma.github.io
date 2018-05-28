@@ -1,8 +1,0 @@
-#+TITLE: Mathematics
-#+SETUPFILE: ../assets/export.setup
-
-* Pages in this section
-
-- [[./noisy-quantum-search/index.org][Noisy Quantum Search]]
-- [[./resources.org][Resources]]
-- [[./strassen/index.org][Searching for Strassen multiplication rule]]

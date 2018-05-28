@@ -1,0 +1,11 @@
+#+TITLE: Writings
+#+SETUPFILE: ../../assets/export.setup
+
+Some general thoughts/opinions. Texts here are mostly written/modified on whim
+and conclusions, if implied, are mostly not going to be testable in the strict
+sense.
+
+* Pages in this section
+
+- [[./hours-over-deadlines.org][Schedule Hours not Deadlines]]
+- [[./lazy-answer.org][The Lazy Answer to Everything]]

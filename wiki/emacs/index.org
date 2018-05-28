@@ -1,0 +1,14 @@
+#+TITLE: Emacs
+#+SETUPFILE: ../../assets/export.setup
+
+Some notes/texts related to Emacs and Org Mode.
+
+* Pages in this section
+
+- [[./org-mode/index.org][Org Mode]]
+  - [[./org-mode/links.org][Org-links]]
+  - [[./org-mode/macros.org][Macros]]
+  - [[./org-mode/presentations.org][Presentations]]
+  - [[./org-mode/references.org][Reference Management]]
+- [[./resources.org][Resources]]
+- [[./til.org][Today I Learned /in Emacs/]]

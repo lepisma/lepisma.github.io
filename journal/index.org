@@ -1,0 +1,4 @@
+#+TITLE: Journal
+#+SETUPFILE: ../wiki/assets/export.setup
+
+Test blog.

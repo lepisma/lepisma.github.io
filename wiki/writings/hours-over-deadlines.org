@@ -1,0 +1,43 @@
+#+TITLE: Schedule Hours not Deadlines
+#+SETUPFILE: ../../assets/export.setup
+
+I have been maintaining and using date based task lists a lot. One important
+reason is because they are pretty obvious and easy to build. Most of the
+applications make it really easy to add a line of text with a specified
+date/time. For many tasks, you already have these two pieces of information
+available so making a todo-ish list seems like an obvious step forward. But the
+whole idea goes overboard sometimes.
+
+To be clear, plain lists like the following are alright:
+
++ Shopping
+  - [ ] Salt
+  - [ ] Oil
+  - [ ] +Cabbage+
++ Fix
+  - [ ] #26 on ~lepisma/pipwin~
+  - [ ] language support in ~bbq~
+
+This is a proper list. You look in here only when you are going for /shopping/ or
+are going to /fix some bugs/.
+
+But the easy access to such capabilities creeps into more sacred places. For the
+last few years, I have been using a lot of lists for shepherding tasks with
+deadlines. Course projects, presentations, exams etc. Most of the time, as I
+have been noticing, major portion of my work takes place in the last few time
+units (days or weeks, depending on the vastness of the task). Realizing the
+general human limits, its not very wrong to call culprit on this /deadline driven/
+approach resulting from date based todo lists.
+
+There might be other reasons involved, but I can't ignore the observation that
+the general time I spend on things in a /no-deadline/ cruise mode are pretty
+fragmented. This translates directly to the fact that I end up not giving
+focused attention on things a healthy amount of time /before/ the deadline.
+Working with todo lists for important tasks make me lose the important
+information about /time needed/. Every task looks the same and this ends up
+causing the attention fragmentation.
+
+How to fix this? One simple idea is to use a /time/ list (or time table as some
+say) discretizing the day/week's attention in large chunks. The idea being to
+explicitly plan and tell myself that this particular task is not equivalent to
+that one and will take (or should take) this much more/less time.

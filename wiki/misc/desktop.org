@@ -1,0 +1,65 @@
+#+TITLE: Desktop
+#+SETUPFILE: ../../assets/export.setup
+
+A few of my desktop rices from /r/unixporn submissions. My Emacs config lies
+[[https://github.com/lepisma/rogue][here]] and other dotfiles are [[https://github.com/lepisma/cfg][here]].
+
+-----
+
+#+HTML: <div style='text-align:center'>
+#+HTML: <blockquote class="imgur-embed-pub" lang="en" data-id="a/EvEvV">
+#+HTML: <a href="//imgur.com/EvEvV">Better with borders</a>
+#+HTML: </blockquote>
+#+HTML: <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+#+HTML: </div>
+
+Trying a setup that looks okay without compton. Border less windows look bad.
+Dark borders in dark themes are alright. Haven't found a way to make light
+borders look good in dark theme. I guess a lot also depends on whether you keep
+the window gaps on to let the wallpaper seep in.
+
+-----
+
+#+HTML: <div style='text-align:center'>
+#+HTML: <blockquote class="imgur-embed-pub" lang="en" data-id="a/NNlXK">
+#+HTML: <a href="//imgur.com/NNlXK">Rice for the winter</a>
+#+HTML: </blockquote>
+#+HTML: <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+#+HTML: </div>
+
+This one is a bit less saturated and more /steely/. Based on [[https://github.com/arcticicestudio/nord][nord colors]].
+
+-----
+
+#+HTML: <div style='text-align:center'>
+#+HTML: <blockquote class="imgur-embed-pub" lang="en" data-id="a/R9KJ0">
+#+HTML: <a href="//imgur.com/R9KJ0">Purple off-white rice</a>
+#+HTML: </blockquote>
+#+HTML: <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+#+HTML: </div>
+
+A light theme. If you want to make your org mode look like shown here, follow
+[[https://https://lepisma.github.io/2017/10/28/ricing-org-mode/][these steps]].
+
+-----
+
+#+HTML: <div style='text-align:center'>
+#+HTML: <blockquote class="imgur-embed-pub" lang="en" data-id="a/EVms1">
+#+HTML: <a href="//imgur.com/EVms1">Dark grayish rice</a>
+#+HTML: </blockquote>
+#+HTML: <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+#+HTML: </div>
+
+Probably a little too dark. And colors too saturated.
+
+-----
+
+#+HTML: <div style='text-align:center'>
+#+HTML: <blockquote class="imgur-embed-pub" lang="en" data-id="a/shXpQ">
+#+HTML: <a href="//imgur.com/shXpQ">StumpWM + KDE</a>
+#+HTML: </blockquote>
+#+HTML: <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+#+HTML: </div>
+
+First rice. Starting to use a tiling WM on KDE. Looks pretty stupid with the
+zoomed types.

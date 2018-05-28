@@ -1,0 +1,6 @@
+#+TITLE: Procedural Generation
+#+SETUPFILE: ../../../assets/export.setup
+
+* Pages in this section
+
+- [[./tikz-blood-dragon/index.org][TikZ Blood Dragon]]

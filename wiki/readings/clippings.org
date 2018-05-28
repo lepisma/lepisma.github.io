@@ -1,0 +1,2748 @@
+#+TITLE: Clippings
+#+SETUPFILE: ../../assets/export.setup
+#+HTML_HEAD_EXTRA: <style>blockquote { margin: 50px 0; }</style>
+
+#+BEGIN_EXPORT html
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('shuffle-btn').onclick = function () {
+      let epigraph = document.getElementsByClassName('epigraph')[0]
+      for (var i = epigraph.children.length; i >= 0; i--) {
+        epigraph.appendChild(epigraph.children[Math.random() * i | 0])
+      }
+    }
+  })
+</script>
+#+END_EXPORT
+
+This is a listing of clippings from my readings. Most recent first. The button
+below shuffles items.
+
+@@html:<div><a class="btn" id="shuffle-btn">shuffle</a></div>@@
+
+#+HTML:<div class="epigraph">
+#+BEGIN_QUOTE
+We act as if we wanted to praise Bach, but in truth we only praise ourselves.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The basic idea is that the dance of symbols in a brain is itself perceived by
+symbols, and that step extends the dance, and so round and round it goes.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Or perhaps, when there is love, the widowed must stay for the resurrection of
+the beloved — so that the one who has gone is not really dead, but grows and is
+created for a second time in the soul of the living?
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+we should have great respect for what seem like the most mundane of analogies,
+for when they are examined, they often can be seen to have sprung from, and to
+reveal, the deepest roots of human cognition.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I think that’s one of the things about growing older — one’s writing becomes
+more inward, more reflective, perhaps wiser, or perhaps just sadder.
+
+#+HTML:<footer>﻿I Am a Strange Loop (Douglas R. Hofstadter)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“All men are interlopers, old friend.”
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+How easy it was to mistake clear reasoning for correct reasoning!
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Men always fear things which move by themselves,”
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Even danger had been good in those days—clean danger from known sources.
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Empires do not suffer emptiness of purpose at the time of their creation. It is
+when they have become established that aims are lost and replaced by vague
+ritual.
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Reason is the first victim of strong emotion,”
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+As with all priests, you learned early to call the truth heresy.
+
+#+HTML:<footer>﻿Dune Messiah (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Riots and comedy are but symptoms of the times, profoundly revealing. They
+betray the psychological tone, the deep uncertainties ... and the striving for
+something better, plus the fear that nothing would come of it all.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Life—all life—is in the service of life.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Prophets have a way of dying by violence. ”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“The people who can destroy a thing, they control it,”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“It’s easier to be terrified by an enemy you admire.”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The meeting between ignorance and knowledge, between brutality and culture—it
+begins in the dignity with which we treat our dead.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What do you despise? By this are you truly known.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Any man who retreats into a cave which has only one opening deserves to die,”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Parting with people is a sadness; a place is only a place.
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Is it defeatist or treacherous for a doctor to diagnose a disease correctly?
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“When strangers meet, great allowance should be made for differences of custom
+and training.”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“If wishes were fishes we’d all cast nets,”
+
+#+HTML:<footer>﻿Dune (Frank Herbert)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The most dangerous form of intolerance is precisely the kind that arises in the
+absence of any doctrine, fueled by elemental drives.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The term "Fascism" fits everything because it is possible to eliminate one or
+more aspects from a Fascist regime and it will always be recognizably Fascist.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The excess of information leads either to casual criteria of decimation or to
+discriminating choices granted, once more, to a highly educated elite.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+given that it is not possible to read the whole thing in seven days—it is as if
+the news it gives were censored.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We would have an elite of extremely well-informed users, who know where and when
+to look for news, and a mass of information subproletarians, content with
+knowing that a calf with two heads has been born in their district, and ignoring
+the rest of the world.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Once it has demonstrated its self-flagellatory impartiality, the press no longer
+feels any interest in reforming itself.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Pope John must be an atheist. Only a man who does not believe in God can love
+his fellowman so much!"
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+While the industry of state consumption (such as armaments) needs tension, that
+of individual consumption needs happiness.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+but because the moment of action requires the elimination of nuances and
+ambiguities (and this is the irreplaceable function of the "decision maker" in
+every institution), whereas the intellectual function lies in delving for
+ambiguities and bringing them to light.
+
+#+HTML:<footer>Five Moral Pieces (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I used the word mystic to refer to those few scientists who derive a perverse
+satisfaction from knowing that something is not known and who use that ignorance
+as a pretext for bursting out of the cruel confinements of positivism into the
+domain of rhapsodic intellection.
+
+#+HTML:<footer>Advice to a Young Scientist (Peter Medawar)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A few blanket words covered them, and, in covering them, abolished them.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+One does not establish a dictatorship in order to safeguard a revolution; one
+makes the revolution in order to establish the dictatorship.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+That the choice for mankind lay between freedom and happiness, and that, for the
+great bulk of mankind, happiness was better.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Sanity is not statistical,’
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+CRIMESTOP, in short, means protective stupidity.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A ruling group is a ruling group so long as it can nominate its successors.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The essence of oligarchical rule is not father-to-son inheritance, but the
+persistence of a certain world-view and a certain way of life, imposed by the
+dead upon the living
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Wealth and privilege are most easily defended when they are possessed jointly.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you kept the small rules, you could break the big ones.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+which Parsons entered in a small notebook, in the neat handwriting of the
+illiterate.
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Orthodoxy means not thinking — not needing to think. Orthodoxy is
+unconsciousness.’
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Don’t you see that the whole aim of Newspeak is to narrow the range of thought?
+
+#+HTML:<footer>1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Remember our boys on the Malabar front! And the sailors in the Floating
+Fortresses! Just think what THEY have to put up with.
+
+#+HTML:<footer>﻿1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Who controls the past,’ ran the Party slogan, ‘controls the future: who
+controls the present controls the past.’
+
+#+HTML:<footer>﻿1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It was not by making yourself heard but by staying sane that you carried on the
+human heritage.
+
+#+HTML:<footer>﻿1984 (George Orwell)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+writing a thesis is like cooking a pig: nothing goes to waste.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Be humble and prudent before opening your mouth, but once you open it, be
+dignified and proud.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Do not play the solitary genius.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Your thesis exists to prove the hypothesis that you devised at the outset, not
+to show the breadth of your knowledge.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But the language of the thesis is a metalanguage, that is, a language that
+speaks of other languages.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If there were exhaustive rules, we would all be great writers.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+This is academic humility: the knowledge that anyone can teach us something.
+Perhaps this is because we are so clever that we succeed in having someone less
+skilled than us teach us something; or because even someone who does not seem
+very clever to us has some hidden skills; or also because someone who inspires
+us may not inspire others. The reasons are many.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Do not trust those who say that you must respect books. You respect books by
+using them, not leaving them alone.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Beware the “alibi of photocopies”!
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I am talking of the “secret title” of your thesis, the one that then usually
+appears as the subtitle.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In other words, it is no excuse to say, “I live in a small city, I do not have
+the books, I do not know where to start, and nobody is helping me.”
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“If in company you don’t pee, a spy or a thief you may be.”
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The more isolated and disregarded the library, the more the librarian is
+consumed with sorrow for its underestimation. A person who asks for help makes
+the librarian happy.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The “thesis neurosis” has begun: the student abandons the thesis, returns to it,
+feels unfulfilled, loses focus, and uses his thesis as an alibi to avoid other
+challenges in his life that he is too cowardly to address. This student will
+never graduate.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But a thesis that is too broad cannot be understood, and therefore is always an
+act of pride.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+With time, a writer becomes more astute and knowledgeable, but how he uses his
+knowledge will always depend on how he originally researched the many things he
+did not know.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It would be a society in which a piece of paper was not required to find
+employment or to obtain a promotion in the public sector, and a university
+graduate would not surpass other qualified applicants simply because the
+graduate had earned a laurea.
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Ironically, jobs are actually easier to enjoy than free time, because like flow
+activities they have built-in goals, feedback rules, and challenges, all of
+which encourage one to become involved in one’s work, to concentrate and lose
+oneself in it. Free time, on the other hand, is unstructured, and requires much
+greater effort to be shaped into something that can be enjoyed.
+
+#+HTML:<footer>Deep Work (Cal Newport)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Who you are, what you think, feel, and do, what you love—is the sum of what you
+focus on.”
+
+#+HTML:<footer>Deep Work (Cal Newport)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“It does not make them illegal. It does not make them immoral. It does not even
+make them unpopular. It makes them invisible and therefore irrelevant.”
+
+#+HTML:<footer>Deep Work (Cal Newport)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Is this not also what we ask from a teacher, to provoke us to invent ideas?
+
+#+HTML:<footer>How to Write a Thesis (Umberto Eco;Caterina Mongiat Farina;Geoff Farina;Francesco Erspamer)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You have to be with other people, he thought. In order to live at all. I mean,
+before they came here I could stand it, being alone in the building. But now
+it’s changed. You can’t go back, he thought. You can’t go from people to
+nonpeople.
+
+#+HTML:<footer>﻿Do Androids Dream of Electric Sheep (Philip K. Dick)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A town cannot live on dreams. The change was slow but harsh. The young men and
+women, boys and girls left to find work and to build another life. And the town
+became, not all at once but steadily, a town of pleasure. People swarmed in on
+weekends, and they still do. And it will no doubt go on. And there is no blame
+in this. The town had to find another way to live.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Previously there were small shops because it was a small town. Now there are
+small shops because the tourists want to think they are still in that little
+town, which has vanished. It is good business now to appear antiquated, with
+narrow aisles and quaintly labeled jars.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Darkness you are gentler than my lover... his flesh was sweaty and panting, I
+feel the hot moisture yet that he left me. (p. 109)
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Logic and sermons never convince, The damp of the night drives deeper into my
+soul (p. 56)
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is a simple case. The eye that does not look back does not acknowledge.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The most regretful people on earth are those who felt the call to creative work,
+who felt their own creative power restive and uprising, and gave to it neither
+power nor time.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The world sheds, in the energetic way of an open and communal place, its many
+greetings, as a world should. What quarrel can there be with that?
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Adults can change their circumstances; children cannot. Children are powerless,
+and in difficult situations they are the victims of every sorrow and mischance
+and rage around them, for children feel all of these things but without any of
+the ability that adults have to change them. Whatever can take a child beyond
+such circumstances, therefore, is an alleviation and a blessing.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In the beginning I was so young and such a stranger to myself I hardly existed.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+...in solitude, or in that deserted state when we are surrounded by human beings
+and yet they sympathise not with us, we love the flowers, the grass and the
+waters and the sky. In the motion of the very leaves of spring in the blue air
+there is then found a secret correspondence with our heart.
+
+#+HTML:<footer>﻿Upstream (Mary Oliver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+'Thou shalt not live under the same heaven nor tread the same earth with the
+enemy of thy father or lord,'
+
+#+HTML:<footer>﻿Tales of Old Japan (Lord Redesdale)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+They were grainy things, soot and chalk. They could have been anybody.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The window reflected the news. It was about power and sports and anger and
+death.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But it was too early in the evening for programs that allowed people with
+peculiar opinions to speak out. It was only a little after eight o’clock, so all
+the shows were about silliness or murder.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It was very exciting for her, taking his dignity away in the name of love.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“It would sound like a dream,” said Billy. “Other people’s dreams aren’t very
+interesting, usually.”
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+And that thought had a brother: “There are right people to lynch.” Who? People
+not well connected. So it goes.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+She upset Billy simply by being his mother. She made him feel embarrassed and
+ungrateful and weak because she had gone to so much trouble to give him life,
+and to keep that life going, and Billy didn’t really like life at all.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Well, here we are, Mr. Pilgrim, trapped in the amber of this moment. There is
+no why.”
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+There was a soft drink bottle on the windowsill. Its label boasted that it
+contained no nourishment whatsoever.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Among the things Billy Pilgrim could not change were the past, the present, and
+the future.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Like so many Americans, she was trying to construct a life that made sense from
+things she found in gift shops.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The nicest veterans in Schenectady, I thought, the kindest and funniest ones,
+the ones who hated war the most, were the ones who’d really fought.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+At that time, they were teaching that there was absolutely no difference between
+anybody. They may be teaching that still.
+
+#+HTML:<footer>Slaughterhouse-five (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Being big is not necessarily a good thing: most organisms are bacteria and very
+few are elephants.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+'The rabbit runs faster than the fox, because the rabbit is running for his life
+while the fox is only running for his dinner.'
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But 'chance' is just a word expressing ignorance. It means 'determined by some
+as yet unknown, or unspecified, means'.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When we die there are two things we can leave behind us: genes and memes.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What is it about the idea of a god that gives it its stability and penetrance in
+the cultural environment? The survival value of the god meme in the meme pool
+results from its great psychological appeal. It provides a superficially
+plausible answer to deep and troubling questions about existence. It suggests
+that injustices in this world may be rectified in the next. The 'everlasting
+arms' hold out a cushion against our own inadequacies which, like a doctor's
+placebo, is none the less effective for being imaginary.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It may be that the overall probability that a random member of the school is a
+relation is so high that the altruism is worth the cost.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+parental care is just a special case of kin altruism.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Perhaps consciousness arises when the brain's simulation of the world becomes so
+complete that it must include a model of itself.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The 'goal' of a machine is simply defined as that state to which it tends to
+return.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It leaps from body to body down the generations, manipulating body after body in
+its own way and for its own ends, abandoning a succession of mortal bodies
+before they sink in senility and death.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A gene is defined as any portion of chromosomal material that potentially lasts
+for enough generations to serve as a unit of natural selection.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Human suffering has been caused because too many of us cannot grasp that words
+are only tools for our use,
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The universe is populated by stable things.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+(Curiously, peace-time appeals for individuals to make some small sacrifice in
+the rate at which they increase their standard of living seem to be less
+effective than war-time appeals for individuals to lay down their lives.)
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Chosen examples are never serious evidence for any worthwhile generalization.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Inspiration is for amateurs,” Close says. “The rest of us just show up and get
+to work.”
+
+#+HTML:<footer>Daily Rituals How Artists Work (Mason Currey)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Rather than propose a new theory or unearth a new fact, often the most important
+contribution a scientist can make is to discover a new way of seeing old
+theories or facts.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Anyone can popularize science if he oversimplifies.
+
+#+HTML:<footer>The Selfish Gene (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I believe in getting up from the typewriter, away from it, while I still have
+things to say.”
+
+#+HTML:<footer>Daily Rituals How Artists Work (Mason Currey)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Merde! I absolutely detest all openings and parties! They’re commercial,
+political, and everybody talks too much. They get on my tits!”
+
+#+HTML:<footer>Daily Rituals How Artists Work (Mason Currey)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I always wanted to go at the world and try and do too much, and even to do it
+for something that was not too cheap. That was wrong of me
+
+#+HTML:<footer>The Trial (Kafka, Franz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you're under suspicion it better to be moving than still, as if you're still
+you can be in the pan of the scales without knowing it and be weighed along with
+your sins."
+
+#+HTML:<footer>The Trial (Kafka, Franz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The pampering of the modern mind has resulted in a population that feels
+deserving of something without earning that something, a population that feels
+they have a right to something without sacrificing for it. People declare
+themselves experts, entrepreneurs, inventors, innovators, mavericks, and coaches
+without any real-life experience. And they do this not because they actually
+think they are greater than everybody else; they do it because they feel that
+they need to be great to be accepted in a world that broadcasts only the
+extraordinary.
+
+#+HTML:<footer>The Subtle Art of Not Giving a F*ck (Mark Manson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“I used to think the human brain was the most wonderful organ in my body. Then I
+realized who was telling me this.”
+
+#+HTML:<footer>The Subtle Art of Not Giving a F*ck (Mark Manson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It’s easier to sit in a painful certainty that nobody would find you attractive,
+that nobody appreciates your talents, than to actually test those beliefs and
+find out for sure.
+
+#+HTML:<footer>The Subtle Art of Not Giving a F*ck (Mark Manson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Most people need to go to some sort of therapist just to hear these questions
+asked for the first time.
+
+#+HTML:<footer>The Subtle Art of Not Giving a F*ck (Mark Manson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Kids were given inane homework assignments, like writing down all the reasons
+why they thought they were special, or the five things they liked most about
+themselves.
+
+#+HTML:<footer>The Subtle Art of Not Giving a F*ck (Mark Manson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Why? My guess: because giving a fuck about more stuff is good for business.
+
+#+HTML:<footer>The Subtle Art of Not Giving a F*ck (Mark Manson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+should like it to help to open eyes, not to loosen tongues.
+
+#+HTML:<footer>The Story of Art (Gombrich, E. H.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+For is it not rather those who misuse 'scientific' language, not to enlighten
+but to impress the reader, who are 'talking down' to us—from the clouds
+
+#+HTML:<footer>The Story of Art (Gombrich, E. H.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+was tired of Miss Montag continuously watching his lips. In that way she took
+control of what he wanted to say before he said it.
+
+#+HTML:<footer>The Trial (Kafka, Franz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The decisions that democracies make may not demonstrate the wisdom of the crowd.
+The decision to make them democratically does.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What they disagree about is what democracy is for and what we can expect it to
+accomplish. Do we have it because it gives people a sense of involvement and
+control over their lives, and therefore contributes to political stability? Do
+we have it because individuals have the right to rule themselves, even if they
+use that right in ridiculous ways? Or do we have it because democracy is
+actually an excellent vehicle for making intelligent decisions and uncovering
+the truth?
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“It is far more difficult to form an informed opinion about what is good for
+society as a whole than it is to determine where one’s self-interest lies,”
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“The United States is a tenaciously philistine society,”
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+is that the best way to disclose public information is without hype or even
+commentary from people in positions of power.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Companies tend to pay people based on whether they do what they’re expected to
+do. In a market, people get paid based simply on what they do.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+One of the real dangers that small groups face is emphasizing consensus over
+dissent.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“In science, one’s private property is established by giving its substance
+away.”
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+selfish—which is to say they are rational, in the economic sense—and always free
+ride.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+People want to do the right thing, but no one wants to be a sucker.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The market may not teach people to trust, but it certainly makes it easier for
+people to do so.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+what is the free market? It’s a mechanism designed to solve a coordination
+problem,
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+groups are better at deciding between possible solutions to a problem than they
+are at coming up with them.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+trying to find smart people will not lead you astray. Trying to find the
+smartest person will.
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Its easy to have frends if you let pepul laff at you. Im going to have lots of
+frends where I go.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+at night I go out for walks, wander around the city. I don't know why. To see
+faces, I guess.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"There are a lot of people who will give money or materials, but very few who
+will give time and affection.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+ago the adolescent in me thought death could happen only to other people),
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A child may not know how to feed itself, or what to eat, yet it knows hunger.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+and as soon as exceptional begins to mean anything to anyone they'll change it.
+The idea seems to be: use an expression only as long as it doesn't mean anything
+to anybody.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+He's no Freud or Jung or Pavlov or Watson, but he's doing something important
+and I respect his dedication—maybe even more because he's just an ordinary man
+trying to do a great man's work, while the great men are all busy making bombs."
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It's getting harder for me to write down all my thoughts and feelings because I
+know that people are reading them.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Only in the matirnity ward by the babys where it dont matter if she talks too
+much.
+
+#+HTML:<footer>Flowers for Algernon (Daniel Keyes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“No matter how much evidence exists that seers do not exist, suckers will pay
+for the existence of seers.”
+
+#+HTML:<footer>The Wisdom of Crowds (James Surowiecki)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Good fences make good neighbors.
+
+#+HTML:<footer>The Pragmatic Programmer: From Journeyman to Master (Hunt, Andrew;Thomas, David)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Everyone knows that they personally are the only good driver on Earth.
+
+#+HTML:<footer>The Pragmatic Programmer: From Journeyman to Master (Hunt, Andrew;Thomas, David)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+All software becomes legacy as soon as it's written.
+
+#+HTML:<footer>The Pragmatic Programmer: From Journeyman to Master (Hunt, Andrew;Thomas, David)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"It's easier to ask forgiveness than it is to get permission."
+
+#+HTML:<footer>The Pragmatic Programmer: From Journeyman to Master (Hunt, Andrew;Thomas, David)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Truly amazing, what people can get used to, as long as there are a few
+compensations.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Better never means better for everyone,
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+That is what you have to do before you kill, I thought. You have to create an
+it, where none was before. You do that first, in your head, and then you make it
+real.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+How easy it is to invent a humanity, for anyone at all.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You can think clearly only with your clothes on.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+who can remember pain, once it's over?
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+nobody dies from lack of sex, It's lack of love we die from.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It's like a fart in church.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We lived in the gaps between the stories.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What you don't know won't hurt you,
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+There is more than one kind of freedom, said Aunt Lydia. Freedom to and freedom
+from. In the days of anarchy, it was freedom to. Now you are being given freedom
+from. Don't underrate it.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It's black, of course, the color of prestige or a hearse, and long and sleek.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Not so her eyes, which were the flat hostile blue of a midsummer sky in bright
+sunlight, a blue that shuts you
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+There's always a black market, there's always something that can be exchanged.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The threshold of a new house is a lonely place.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It's good to have small goals that can be easily attained.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Like other things now, thought must be rationed. There's a lot that doesn't bear
+thinking about. Thinking can hurt your chances, and I intend to last.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Like other things now, thought must be rationed.
+
+#+HTML:<footer>The Handmaid's Tale (Margaret Atwood)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I’d have many acquaintances, friends even, and women, maybe even one woman.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+and humans are defined by their papers.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Besides, it isn’t these sorts of revelations, more worthy of poetry than
+science, that are hoped for by the “believers,” oh no; though they themselves
+are unaware of it, what they are waiting for is a Revelation that would explain
+to them the meaning of humankind itself!
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is faith wrapped in the cloak of science; contact, the goal for which we are
+striving, is as vague and obscure as communion with the saints or the coming of
+the Messiah.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Human beings set out to encounter other worlds, other civilizations, without
+having fully gotten to know their own hidden recesses, their blind alleys, well
+shafts, dark barricaded doors.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If an elephant isn’t a very large bacterium, then an ocean can’t be a very large
+brain.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Every science comes with its own pseudo-science, a bizarre distortion that comes
+from a certain kind of mind: astronomy has its caricaturist in astrology,
+chemistry used to have alchemy.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We’re not searching for anything except people. We don’t need other worlds. We
+need mirrors.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We don’t need other worlds. We need mirrors.
+
+#+HTML:<footer>Solaris (Stanislaw Lem)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The common people will let it go, oh yes.  They will sell liberty for a quieter
+life.  That is why they must be prodded, prodded -
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A man who cannot choose ceases to be a man."
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"He resisted his lawful arresters."
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+More, badness is of the self, the one, the you or me on our oddy knockies, and
+that self is made by old Bog or God and is his great pride and radosty.  But the
+not-self cannot have the bad, meaning they of the government and the judges and
+the schools cannot allow the bad because they cannot allow the self.
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+They don't go into the cause of goodness, so why the other shop? If lewdies are
+good that's because they like it,
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+human hole products,
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is as inhuman to be totally good as it is to be totally evil. The important
+thing is moral choice.
+
+#+HTML:<footer>A Clockwork Orange (Anthony Burgess)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Happiness is never grand.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You've got to choose between happiness and what people used to call high art.
+We've sacrificed the high art. We have the feelies and the scent organ instead.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You can't make flivvers without steel-and you can't make tragedies without
+social instability. The world's stable now. People are happy; they get what they
+want, and they never want what they can't get.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It was a masterly piece of work. But once you began admitting explanations in
+terms of purpose-well, you didn't know what the result might be.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Unorthodoxy threatens more than the life of a mere individual; it strikes at
+Society itself.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"If one's different, one's bound to be lonely.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Five minutes later roots and fruits were abolished; the flower of the present
+rosily blossomed.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+He hated these things-just because he liked Bernard.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Myself and nasty. Not somebody else, however jolly."
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the three great London newspapers-777e Hourly Radio, an upper-caste sheet, the
+pale green Gamma Gazette, and, on khaki paper and in words exclusively of one
+syllable, The Delta Mirror.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The mockery made him feel an outsider; and feeling an outsider he behaved like
+one, which increased the prejudice against him and intensified the contempt and
+hostility aroused by his physical defects. Which in turn increased his sense of
+being alien and alone. A chronic fear of being slighted made him avoid his
+equals, made him stand, where his inferiors were concerned, self-consciously on
+his dignity.
+
+#+HTML:<footer>Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“I must pursue my goal through thick and thin and I must not allow bourgeois
+society to turn me into a money-making machine,”
+
+#+HTML:<footer>Daily Rituals How Artists Work (Mason Currey)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“work is still the best way of escaping from life!”
+
+#+HTML:<footer>Daily Rituals How Artists Work (Mason Currey)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+seeking a “biological” (which is to say, an adaptive) explanation for all
+patterning and collectivity in animal populations runs the risk of invoking a
+contingent explanation for something that is in fact an immediate consequence of
+the “physics” of the situation.
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Moral education, which ought never, in any circumstances, to be rational."
+
+#+HTML:<footer>﻿Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Primroses and landscapes, he pointed out, have one grave defect: they are
+gratuitous.
+
+#+HTML:<footer>﻿Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Major instruments of social stability.
+
+#+HTML:<footer>﻿Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+For particulars, as every one knows, make for virtue and happiness; generalities
+are intellectually necessary evils. Not philosophers but fret-sawyers and stamp
+collectors compose the backbone of society.
+
+#+HTML:<footer>﻿Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Wintriness responded to wintriness.
+
+#+HTML:<footer>﻿Brave New World (Aldous Huxley)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The DLA cluster is a map of frozen accidents of history.
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Time forks perpetually towards innumerable futures,”
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Free will is for history only an expression connoting what we do not know about
+the laws of human life.”
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Assessing individual events in the context of their average rate of occurrence
+is a relatively modern practice. Without it, the world is ripe for magic,
+superstition, miracles, and conspiracy theories.
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Man is free if he needs to obey no person but solely the laws.”1
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Hobbes’s supreme authority, whether an individual or a collective body,
+subsequently had the right to decide who would succeed it—democracy is exercised
+once and then relinquished.
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Mankind’s volitions, therefore, are divided by Hobbes into “appetites” and
+“aversions”:
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The greater the religious diversity, it seemed, the greater the intolerance.
+
+#+HTML:<footer>﻿Critical Mass (Philip Ball)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Memory is immortality of a sort. In the night, when the wind dies and silence
+rules the place of glittering stone, I remember. And they all live again.
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A few minutes of that reminded me why I always resisted visiting till I had
+forgotten the despair a visit inspired.
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Is that what happens when you get old? You worry more about people and their
+interaction than you do about drama and the violence and the wicked deeds those
+people do?
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“You feel guilty. You wonder why him and not me, then you’re glad it was him and
+not you, then you feel guilty. Soldiers live. And wonder why.”
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Generating rumors is one thing even the most inept armed force does exceedingly
+well.
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The ability to ignore seems to be coupled with a talent for sorcery.
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I had plenty of regrets. I am sure she had more. She gave up so much more.
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“The Captain is still solving her personnel problems by exiling the
+questionables to Khatovar.”
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the past is, as history, a hall of mirrors that reflect the needs of souls
+observing from the present. Absolute fact serves the hungers of only a few
+disconnected
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The thing that you know to be true is the lie that will kill you.
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Physician, heal thyself.”
+
+#+HTML:<footer>﻿Soldiers Live (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Soldiers live. And wonder why.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+God is Great. God is Merciful. In Forgiveness He is Like the Earth. But He can
+become a tad mean-spirited with unbelievers.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Bunions should be our seal, not a fire breathing skull.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you always do the easier thing, then you cannot possibly remain steadfast
+when it becomes necessary to take a difficult stand.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“She’ll be pretty when she’s older and she doesn’t have a brain in her head to
+complicate things.”
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Men driven solely by a need for revenge are flawed tools at best.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Places are natural, Sleepy. People are good and evil.”
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+diarrhea of the mouth.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I realize that most history may really pivot on personal considerations like
+that, not on the pursuit of ideals dark or shining.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Kind of like real life, where the same demon comes back again and again.
+
+#+HTML:<footer>﻿Water Sleeps (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+This asymmetry of information prevents the various parties from joining
+forces—which is precisely the point of a democratic government.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+it will become harder to access the political messages our neighbors are
+seeing—and as a result, to understand why they believe what they do, often
+passionately.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Only the machine knew, and it wasn’t talking.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+arbitrary, unaccountable, unregulated, and often unfair—in short, they’re WMDs.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The model is optimized for efficiency and profitability, not for justice or the
+good of the “team.” This is, of course, the nature of capitalism.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Phrenology was a model that relied on pseudoscientific nonsense to make
+authoritative pronouncements, and for decades it went untested. Big Data can
+fall into the same trap.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+People who favor policies like stop and frisk should experience it themselves.
+Justice cannot just be something that one part of society inflicts upon the
+other.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In a system in which cheating is the norm, following the rules amounts to a
+handicap.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+when you create a model from proxies, it is far simpler for people to game it.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We’re modeled as shoppers and couch potatoes, as patients and loan applicants,
+and very little of this do we see—even in applications we happily sign up for.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Models are opinions embedded in mathematics.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The privileged, we’ll see time and again, are processed more by people, the
+masses by machines.
+
+#+HTML:<footer>﻿Weapons of Math Destruction (Cathy O'Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You gain nothing by arguing with your critics.
+
+#+HTML:<footer>﻿She Is The Darkness (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The best of the diviner breed are never wrong because they never set anything in
+stone.
+
+#+HTML:<footer>﻿She Is The Darkness (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+People want to believe what they want to believe, good, bad, or indifferent, and
+do not confuse them with facts.
+
+#+HTML:<footer>﻿She Is The Darkness (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I have always found the religious tolerance of the southerners amazing and
+disconcerting, though it was really only an ancient habit predicated on the fact
+that no religious community was strong enough to show the rest the errors in
+their thinking at swordspoint.
+
+#+HTML:<footer>﻿She Is The Darkness (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Like any good soldier, if he was bitching he was perfectly all right.
+
+#+HTML:<footer>﻿She Is The Darkness (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Nobody got hurt. In our gang.
+
+#+HTML:<footer>﻿Bleak Seasons (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Hagop and I each spent one of our diminishing supply of single finger salutes.
+
+#+HTML:<footer>﻿Bleak Seasons (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Fickle folk. A little hunger and stress and they forgot all about liberty.
+
+#+HTML:<footer>﻿Bleak Seasons (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+in the future there will be two types of jobs: people who tell computers what to
+do, and people who are told by computers what to do.
+
+#+HTML:<footer>Chaos Monkeys (Antonio Garcia Martinez)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But is selection really necessary in the strongest sense to create the complex
+creatures we see around us? Or is it possibly a restriction that limits the
+creativity of evolution?
+
+#+HTML:<footer>Why Greatness Cannot Be Planned (Kenneth O. Stanley;Joel Lehman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you don’t have a clear objective, then you can’t be wrong, because wherever
+you end up is okay.
+
+#+HTML:<footer>Why Greatness Cannot Be Planned (Kenneth O. Stanley;Joel Lehman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+All of us can transform the present into the future. None can transform the
+future into the present.
+
+#+HTML:<footer>Why Greatness Cannot Be Planned (Kenneth O. Stanley;Joel Lehman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The problem is that when individuals with opposing preferences are forced to
+vote, the winner often represents no one’s ideals (which perhaps explains the
+nearly-universal frustration people have with politics).
+
+#+HTML:<footer>Why Greatness Cannot Be Planned (Kenneth O. Stanley;Joel Lehman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“You can’t control what you can’t measure [69].”
+
+#+HTML:<footer>Why Greatness Cannot Be Planned (Kenneth O. Stanley;Joel Lehman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The past doesn’t tell us about the objective but it does offer a clue to
+something equally if not more important—the past is a guide to novelty.
+
+#+HTML:<footer>Why Greatness Cannot Be Planned (Kenneth O. Stanley;Joel Lehman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The theory goes that ideas are rare, so the trick is to capture them. It's like
+non-musicians being awed by a guitar player, not realizing that great talent is
+so cheap it literally plays on the streets for coins.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It's like non-musicians being awed by a guitar player, not realizing that great
+talent is so cheap it literally plays on the streets for coins.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Ideas are cheap. What does work sensibly as property is the hard work we do in
+building a market.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Diversity beats education any time.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In business, marriage, and collective works, sooner or later, we either stop
+caring, or we fight and we argue.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Software dies, but community survives.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+there are no dangerous opinions, only dangerous responses.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Profits often come from the ignorance of customers.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The core trick is to accept authority without giving it the "right to command."
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+diversity of opinion, independence of members from one another,
+decentralization, and effective ways to aggregate opinions.
+
+#+HTML:<footer>Social Architecture (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Isn’t it enough to see that a garden is beautiful without having to believe
+that there are fairies at the bottom of it too?’
+
+#+HTML:<footer>The God delusion (Richard Dawkins)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+With infinite life comes an infinite list of relatives. Grandparents never die,
+nor do great-grandparents, great-aunts . . . and so on, back through the
+generations, all alive and offering advice. Sons never escape from the shadows
+of their fathers. Nor do daughters of their mothers. No one ever comes into his
+own . . . Such is the cost of immortality. No person is whole. No person is
+free.
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If I convert it’s because it’s better that a believer dies than that an atheist
+does.
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Religion’s surest foundation is the contempt for life.”
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+he was able to avail himself of a historically unprecedented level of care,
+while at the same time being exposed to a degree of suffering that previous
+generations might not have been able to afford.
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+For me, to remember friendship is to recall those conversations that it seemed a
+sin to break off: the ones that made the sacrifice of the following day a
+trivial one.
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The call to prayer is self–cancelling.
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+People don’t have cancer: They are reported to be battling cancer.
+
+#+HTML:<footer>Mortality (Christopher Hitchens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+First came the conquerers, unstoppable in war. Then came the administrators, who
+bound it all together into one apparently unshakable, immortal edifice. Then
+came the wasters, who knew no responsibility and squandered the capital of their
+inheritance upon whims and vices.
+
+#+HTML:<footer>The Silver Spike (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Nice people tend to think everybody is nice.
+
+#+HTML:<footer>The Silver Spike (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Careful is my middle name.”
+
+#+HTML:<footer>The Silver Spike (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+any dork who became a soldier for an idea instead of the money deserved to die
+for his country.
+
+#+HTML:<footer>The Silver Spike (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+He had learned self-control in a hard school. He had been married for thirty
+years.
+
+#+HTML:<footer>The Silver Spike (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Short people weren’t supposed to be joyous, they were supposed to be cocky and
+obnoxious. Then you could thump on them and shut them up without feeling bad
+about it.
+
+#+HTML:<footer>The Silver Spike (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I’ve never met a priest who honestly expected miracles in his own lifetime.
+
+#+HTML:<footer>Dreams of Steel (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+More evil gets done in the name of righteousness than any other way. Few
+villains think they are villains.
+
+#+HTML:<footer>Dreams of Steel (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+hadn’t planned on investigating the source of the noise, because, as you know
+from watching scary movies, people who investigate noises die.
+
+#+HTML:<footer>Hyperbole and a Half (Allie Brosh)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It was the time of the Monthly Meeting. The big confab during which nothing gets
+done.
+
+#+HTML:<footer>The White Rose (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Ask no guarantees, ask for no security, there never was such an animal.
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Something your hand touched some way so your soul has somewhere to go when you
+die,
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But you can't make people listen. They have to come round in their own time,
+wondering what happened and why the world blew up under them.
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Not everyone born free and equal, as the Constitution says, but everyone made
+equal.
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Why learn anything save pressing buttons, pulling switches, fitting nuts and
+bolts?"
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Time has fallen asleep in the afternoon sunshine."
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"I sometimes think drivers don't know what grass is, or flowers, because they
+never see them slowly,"
+
+#+HTML:<footer>Fahrenheit 451 (Ray Bradbury)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Little people have to hate, have to blame someone for their own inadequacies.
+
+#+HTML:<footer>Shadows Linger (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In some ways he was an ideal overlord. All he wanted from his people was to be
+left alone. He was willing to grant the same favor.
+
+#+HTML:<footer>Shadows Linger (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“The mystic nails a symbol to one meaning that was true for a moment but soon
+becomes false. The poet, on the other hand, sees that truth while it’s true but
+understands that symbols are always in flux and that their meanings are
+fleeting.”
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Being watched by females changed everything.
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the Convox was political, and made decisions by compromise.
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The people who’d made the system thus were jealous, not of money and not of
+power but of story.
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Communicating and coordinating with others was often more trouble than it was
+worth.
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+brain was so organized that he was blind to facial expressions.
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Nothing is more important than that you see and love the beauty that is right
+in front of you, or else you will have no defense against the ugliness that will
+hem you in and come at you in so many ways.”
+
+#+HTML:<footer>Anathem (Neal Stephenson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I have been too close to her. I am not in love now.
+
+#+HTML:<footer>The Black Company (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+There are no self-proclaimed villains, only regiments of self-proclaimed saints.
+
+#+HTML:<footer>The Black Company (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Dead heroes don’t get a second chance.”
+
+#+HTML:<footer>The Black Company (Glen Charles Cook)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“It's difficult to work in a group when you are omnipotent.”
+
+#+HTML:<footer>The physics of Star Trek (Lawrence Maxwell Krauss)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘History,’ the witcher smiled. ‘Is a relation, mostly mendacious, of events
+mostly irrelevant, given by historians, mostly idiots.’
+
+#+HTML:<footer>Season of Storms (Fan Translation) (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the agony of choice.’
+
+#+HTML:<footer>Season of Storms (Fan Translation) (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A philosophy, which is sometimes called an understanding of the law, is simply a
+way that a person holds the laws in his mind in order to guess quickly at
+consequences.
+
+#+HTML:<footer>The Character of Physical Law (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is usually said when this is pointed out, ‘When you are dealing with
+psychological matters things can’t be defined so precisely’. Yes, but then you
+cannot claim to know anything about it.
+
+#+HTML:<footer>The Character of Physical Law (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+you cannot prove a vague theory wrong.
+
+#+HTML:<footer>The Character of Physical Law (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+And to stand with evil and beauty and hope, or to stand with the fundamental
+laws, hoping that way to get a deep understanding of the whole world, with that
+aspect alone, is a mistake.
+
+#+HTML:<footer>The Character of Physical Law (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In theory, there is no difference between theory and practice. In practice,
+there is
+
+#+HTML:<footer>Design of Everyday Things, The - Don Norman  </footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Requirements made in the abstract are invariably wrong. Requirements produced by
+asking people what they need are invariably wrong. Requirements are developed by
+watching people in their natural environment
+
+#+HTML:<footer>Design of Everyday Things, The - Don Norman  </footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+There is nothing like a firm deadline to get creative minds to reach convergence
+
+#+HTML:<footer>Design of Everyday Things, The - Don Norman  </footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Engineers and businesspeople are trained to solve problems. Designers are
+trained to discover the real problems
+
+#+HTML:<footer>Design of Everyday Things, The - Don Norman  </footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“No matter where you go, there you are.”
+
+#+HTML:<footer>The physics of Star Trek (Lawrence Maxwell Krauss)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is a strange world we live in – that all the new advances in understanding
+are used only to continue the nonsense which has existed for 2,000 years.
+
+#+HTML:<footer>The Character of Physical Law (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Destiny is not the way to providence or comfortable fatalism. Destiny is hope.
+
+#+HTML:<footer>Lady of the Lake (Fan Translation) (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Do you know, Ciri, what university studies give a person?’ ‘No. What?’ ‘The
+ability to make use of sources.’
+
+#+HTML:<footer>The Tower of Swallows (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+somebody always wants to give to a pauper, even if out of calculation.
+
+#+HTML:<footer>The Tower of Swallows (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The king loved the queen boundlessly, and she loved him with all her heart.
+Something so fair had to finish unhappily.
+
+#+HTML:<footer>The Tower of Swallows (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A given land’s history is very often created by foreigners. Foreigners are the
+cause–but the effects are always invariably borne by the local people.
+
+#+HTML:<footer>The Tower of Swallows (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Charles Lamb PART ONE Chapter 1 When he was nearly thirteen, my brother Jem got
+his arm badly broken at the elbow. When it healed, and Jem’s fears of never
+being able to play football were assuaged,
+
+#+HTML:<footer>To Kill a Mockingbird (Harper Lee)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Some things can only be solved by massive cultural changes, which probably means
+they will never be solved
+
+#+HTML:<footer>Design of Everyday Things, The - Don Norman  </footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is possible to avoid failure, to always be safe. But that is also the route
+to a dull, uninteresting life
+
+#+HTML:<footer>Design of Everyday Things, The - Don Norman  </footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“You don’t pass or fail at being a person, dear.”
+
+#+HTML:<footer>The Ocean at the End of the Lane (Neil Gaiman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+when you are seven, beauty is an abstraction, not an imperative.
+
+#+HTML:<footer>The Ocean at the End of the Lane (Neil Gaiman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Adults are content to walk the same way, hundreds of times, or thousands;
+perhaps it never occurs to adults to step off the paths, to creep beneath
+rhododendrons, to find the spaces between fences.
+
+#+HTML:<footer>The Ocean at the End of the Lane (Neil Gaiman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Math is not a spectator sport; you need to play the game.”
+
+#+HTML:<footer>Count Like an Egyptian (Reimer, David)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Many people, of course, use ' sentimentalism' as a term of abuse for other
+people's decent feelings, and 'realism' as a disguise for their own brutality.
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The seriousness of a theorem, of course, does not lie in its consequences, which
+are merely the evidence for its seriousness.
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A man's first duty, a young man's at any rate, is to be ambitious.
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Good work is not done by 'humble' men. It is one of the first duties of a
+professor, for example, in any subject, to exaggerate a little both the
+importance of his subject and his own importance in it.
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The public does not need 64 to be convinced that there is something in
+mathematics.
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Exposition, criticism, appreciation, is work for second-rate minds.
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+'It is never worth a first class man's time to express a majority opinion. By
+definition, there are plenty of others to do that.'
+
+#+HTML:<footer>A Mathematicians Apology (G.H. Hardy)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘In Wonder all Philosophy began: in Wonder it ends…But the first Wonder is the
+Offspring of Ignorance; the last is the Parent of Adoration.’
+
+#+HTML:<footer>The Age of Wonder (Richard Holmes)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Consider, for a moment, the following information: A man who preaches love and
+tolerance is recognized by political and civic leaders as a man of God. He runs
+a wealthy and growing church. He can show his power to raise the dead and cure
+fatal illnesses, and no one denies his abilities. He creates and promotes
+interest in a community in another country wherein followers will be safe from
+the evils of pollution and prejudice. He teaches them methods of self-defense,
+warns them against "outsiders," and is obeyed and believed in all he does. Would
+it not be logical to follow this man wherever he leads?
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Nothing succeeds like failure.
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+already. The real story of automation is not what it replaces but what it
+enables.
+
+#+HTML:<footer>The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (Pedro Domingos)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Statisticians are prone to murder and maim for much less provocation.
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“How many Bayesians does it take to change a lightbulb? They’re not sure. Come
+to think of it, they’re not sure the lightbulb is burned out.”
+
+#+HTML:<footer>The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (Pedro Domingos)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+data mining means “torturing the data until it confesses.”
+
+#+HTML:<footer>The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (Pedro Domingos)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“every time I fire a linguist, the recognizer’s performance goes up.”
+
+#+HTML:<footer>The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (Pedro Domingos)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Michelangelo said that all he did was see the statue inside the block of marble
+and carve away the excess stone until the statue was revealed.
+
+#+HTML:<footer>The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (Pedro Domingos)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Man wishes to be deceived; deceive him."
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But he at no point calls to our attention the miracle known as Chartres
+Cathedral, the Parthenon in Greece, or even Stonehenge—that most remarkable
+astronomical construction—because these wonders are European, built by people he
+expects to have the intelligence and ability to do such work. He cannot conceive
+of our brown and black brothers having the wit to conceive or the skill to build
+the great structures they did leave behind.
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"bread before poetry"
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"Quacks are the greatest liars in the world, except their patients."
+
+#+HTML:<footer>Flim-Flam! Psychics, ESP, Unicorns, and Other Delusions (James Randi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Pleasure is nature’s shortcut; it enables humans to respond quickly to changing
+life demands by prioritizing basic needs that involve different neural systems
+on a single metric.
+
+#+HTML:<footer>The Pleasure Instinct (Gene Wallenstein)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Music with dinner is an insult both to the cook and the violinist.
+
+#+HTML:<footer>The Pleasure Instinct (Gene Wallenstein)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Happiness is a Norman Rockwell painting hanging over your fireplace on a cold
+winter’s eve. Pleasure is the warmth and aesthetic beauty of the flames, the
+heat beating on your skin.
+
+#+HTML:<footer>The Pleasure Instinct (Gene Wallenstein)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘Do not grieve for the cabbage when the forest is burning,’
+
+#+HTML:<footer>Time of Contempt (Andrzej Sapkowski)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Two kinds of people use these machines: the children of the rich, or the fully
+grown adults of the poorer class, who remain all their lives children.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Enough to feed a whole family, or one rich man.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+From the amount of garbage thrown outside the walls of the house, you knew that
+rich people lived here.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The Rooster Coop was doing its work. Servants have to keep other servants from
+becoming innovators, experimenters, or entrepreneurs.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+a servitude so strong that you can put the key of his emancipation in a man’s
+hands and he will throw it back at you with a curse.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+They remain slaves because they can’t see what is beautiful in this world.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The story of a poor man’s life is written on his body, in a sharp pen.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+and logs of wood, as many as we could pay for, were piled on top of the body.
+
+#+HTML:<footer>The White Tiger (Adiga, Aravind)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The printing press changed the way in which we made mistakes. Routine errors of
+transcription became less common. But when there was a mistake, it would be
+reproduced many times over, as in the case of the Wicked Bible.
+
+#+HTML:<footer>The Signal and the Noise: Why So Many Predictions Fail  but Some Don't (Nate Silver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“vast amounts of theory applied to extremely small amounts of data,”
+
+#+HTML:<footer>The Signal and the Noise: Why So Many Predictions Fail  but Some Don't (Nate Silver)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Only death consistently excites your emotions, whether contemplating it when
+life is safe and stale, or fleeing it when life is threatened and precious.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If he wants to test this hypothesis, one in twenty, he cannot do it from the
+same data that gave him the clue.
+
+#+HTML:<footer>The Meaning of it All (Richard Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+No government has the right to decide on the truth of scientific principles, nor
+to prescribe in any way the character of the questions investigated. Neither may
+a government determine the aesthetic value of artistic creations, nor limit the
+forms of literary or artistic expression. Nor should it pronounce on the
+validity of economic, historic, religious, or philosophical doctrines.
+
+#+HTML:<footer>The Meaning of it All (Richard Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+So in science we are not interested in where an idea comes from.
+
+#+HTML:<footer>The Meaning of it All (Richard Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+And the newspapers, as you know, have a standard line for every discovery made
+in physiology today: "The discoverer said that the discovery may have uses in
+the cure of cancer." But they cannot explain the value of the thing itself.
+
+#+HTML:<footer>The Meaning of it All (Richard Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you look closely enough at anything, you will see that there is nothing more
+exciting than the truth,
+
+#+HTML:<footer>The Meaning of it All (Richard Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Only fear can defeat life.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+To every man is given the key to the gates of heaven; the same key opens the
+gates of hell.
+
+#+HTML:<footer>'What Do You Care What Other People Think?' (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In science, you learn a kind of standard integrity and honesty.
+
+#+HTML:<footer>'What Do You Care What Other People Think?' (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+he sent me to all these universities in order to find out those things, and he
+never did find out.
+
+#+HTML:<footer>'What Do You Care What Other People Think?' (Richard P Feynman)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+For evil in the open is but evil from within that has been let out.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Socially inferior animals are the ones that make the most strenuous, resourceful
+efforts to get to know their keepers.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+animals don’t escape to somewhere but from something.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Life will defend itself no matter how small it is.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+a tie is a noose, and inverted though it is, it will hang a man nonetheless if
+he’s not careful.
+
+#+HTML:<footer>Life of Pi (Yann Martel)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Hate is many-sided, just as love can be.
+
+#+HTML:<footer>Simply Complexity (Johnson, Neil)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The doer must do only when the receiver is ready to receive. Otherwise, the act
+is wasted.
+
+#+HTML:<footer>﻿Train to Pakistan (Khushwant Singh)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the only thing a sane person can do in a lunatic asylum is to pretend that he is
+as mad as the others and at the first opportunity scale the walls and get out.’
+
+#+HTML:<footer>﻿Train to Pakistan (Khushwant Singh)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Logic was never a strong point with Sikhs;
+
+#+HTML:<footer>﻿Train to Pakistan (Khushwant Singh)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘A wise man swims with the current and still gets across.’
+
+#+HTML:<footer>﻿Train to Pakistan (Khushwant Singh)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+His mind was like the delicate spring of a watch, which quivers for several
+hours after it has been touched.
+
+#+HTML:<footer>﻿Train to Pakistan (Khushwant Singh)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+when what has been marginal would leap to the center, every trace of the center
+would be lost.
+
+#+HTML:<footer>﻿Name of the Rose (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Who of us is able to say now whether Hector or Achilles was right, Agamemnon or
+Priam, when they fought over the beauty of a woman who is now dust and ashes?
+
+#+HTML:<footer>﻿Name of the Rose (Umberto Eco)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+reading books of medicine, you are always convinced you feel the pains of which
+they speak.
+
+#+HTML:<footer>Name of the Rose (Umberto Eco)</footer>
+#+END_QUOTE
+#+HTML:</div>
