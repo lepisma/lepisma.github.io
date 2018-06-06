@@ -391,6 +391,9 @@ template {
   display: none; }
 
 @font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url("../fonts/BebasNeue Bold.otf"); }
+@font-face {
   font-family: 'et-book';
   src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
   src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
