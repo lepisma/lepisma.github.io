@@ -1,10 +1,6 @@
 #+TITLE: Colophon
 #+SETUPFILE: ../../assets/export.setup
 
-#+BEGIN_QUOTE
-This is the obligatory /colophon/ page.
-#+END_QUOTE
-
 I have used jekyll in the past to maintain my [[https://github.com/lepisma/lepisma.github.io][home page]]. Its been nice really,
 but extending it was painful. Some times, working directly on the system is
 easier than writing /plugins/. I do concede that the above purported /pain/ was more

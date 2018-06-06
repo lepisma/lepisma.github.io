@@ -1,10 +1,11 @@
-#+TITLE: 
+#+TITLE: About
 #+SETUPFILE: ../assets/export.setup
 #+PILE: dropcap:nil
 
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="about.css" />
 #+HTML_HEAD_EXTRA: <script src="sand.js"></script>
 #+HTML: <canvas id='canvas'></canvas>
+#+HTML: <div class='page-header'></div>
 
 #+BEGIN_EXPORT html
 <div id='details'>

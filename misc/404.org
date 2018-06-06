@@ -1,0 +1,10 @@
+#+TITLE: 404
+#+SETUPFILE: ../assets/export.setup
+#+PILE: dropcap:nil
+
+#+HTML: <div class='page-header'></div>
+
+/404/
+
+@@html: <a href='/' class='btn'>Take me home</a>@@
+#+HTML: <footer></footer>

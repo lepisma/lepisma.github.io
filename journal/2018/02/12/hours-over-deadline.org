@@ -1,5 +1,5 @@
 #+TITLE: Schedule Hours not Deadlines
-#+SETUPFILE: ../../assets/export.setup
+#+SETUPFILE: ../../../../assets/export.setup
 
 I have been maintaining and using date based task lists a lot. One important
 reason is because they are pretty obvious and easy to build. Most of the
