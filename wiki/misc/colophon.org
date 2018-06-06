@@ -23,11 +23,11 @@ still figuring out how to work efficiently with my private files. Probably
 something like [[https://github.com/Kungsgeten/org-brain][org-brain]] might help). Other than the org files themselves (which
 are [[https://github.com/lepisma/pile][here]]), there are three pieces that assist in publishing:
 
-1. The [[https://github.com/lepisma/pile/blob/master/files/assets/export.setup][export setup file]] which attaches css/js scripts and provides the general
+1. The [[https://github.com/lepisma/lepisma.github.io/blob/source/assets/export.setup][export setup file]] which attaches css/js scripts and provides the general
    export config.
 2. [[https://github.com/lepisma/pile-theme][Theme]] for the pages. This is a slight variant of my old blog's theme. Since I
    use it at other places too (at least one), its now in a separate repository.
-3. [[https://github.com/lepisma/pile-wiki][Elisp package]] for working with and publishing everything.
+3. [[https://github.com/lepisma/pile][Elisp package]] for working with and publishing everything.
 
 There are a ton of places from which I have taken inspiration (both ideological
 and programmatic). I might not recall all of them but here are some:
