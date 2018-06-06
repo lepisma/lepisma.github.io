@@ -5,7 +5,6 @@ Org mode stuff needed a separate section.
 
 * Pages in this section
 
-- [[./links.org][Org-links]]
-- [[./macros.org][Macros]]
-- [[./presentations.org][Presentations]]
-- [[./references.org][Reference Management]]
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index)))
+#+END_SRC

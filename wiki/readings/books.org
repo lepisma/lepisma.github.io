@@ -1102,6 +1102,13 @@ the least the following would be okay:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** Critique of Pure Reason
+:PROPERTIES:
+:AUTHOR:   Immanuel Kant
+:GOODREADS: https://www.goodreads.com/book/show/18288.Critique_of_Pure_Reason
+:ADDED:    <2018-06-04>
+:END:
+
 *** READ I Am a Strange Loop
 CLOSED: [2018-05-26 Sat 15:41]
 :PROPERTIES:

@@ -3,9 +3,6 @@
 
 * Pages in this section
 
-- [[./languages.org][Language Exploration]]
-- [[./pesky.org][Pesky Little Things]]
-- [[./procedural/index.org][Procedural Generation]]
-  - [[./procedural/tikz-blood-dragon/index.org][TikZ Blood Dragon]]
-- [[./resources.org][Resources]]
-- [[./utilities.org][Utilities pitfall]]
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index)))
+#+END_SRC

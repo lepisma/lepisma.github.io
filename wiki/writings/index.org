@@ -7,5 +7,6 @@ sense.
 
 * Pages in this section
 
-- [[./hours-over-deadlines.org][Schedule Hours not Deadlines]]
-- [[./lazy-answer.org][The Lazy Answer to Everything]]
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index)))
+#+END_SRC

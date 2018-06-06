@@ -1,0 +1,258 @@
+#+TITLE: Fancy Little Lisp λs
+#+TAGS: lisp, programming
+#+SETUPFILE: ../../../../assets/export.setup
+
+This year, I am trying to get my hands on [[https://adventofcode.com/][Advent of Code]]. One of my aims is to
+try out programming languages with varying paradigms. As of now, I have
+attempted the days (problems) [[https://github.com/lepisma/advent-of-code][intermittently]] and have not been changing
+languages that often too, mostly employing Common Lisp. One side effect of that
+has been a chance to have a deeper look into the CL's package ecosystem.
+
+On first sight, you will notice that a lot of Common Lisp packages are old.
+Really old. It feels like you don't have a lot of options. I actually started a
+github project for collecting various handy macros/functions I use (or have
+seen) in Emacs Lisp, Racket, Clojure etc. In the process, what I found was that
+many of these are already present in CL. They are just spread out over lots of
+packages (with lot of duplication). An interesting set of Lisp macros that I
+have recently started to like is one that provides shortcuts for expressing λ
+functions. In this post, I try to knot up the options in Common Lisp for these
+little beauties.
+
+--------------
+
+Working in Lisp (or any language with functional inclinations) makes you use a
+lot of partially applied functions. Consider a list of numbers that you want to
+increment by 1. In Common Lisp this would be something like:
+
+#+BEGIN_SRC lisp
+  (mapcar (lambda (n) (+ 1 n)) '(1 2 3 4 5 6))
+#+END_SRC
+
+The ~lambda~ in the middle really is just creating a partially applied version
+of the function ~#'+~ with the first argument set to 1. Now, writing this much
+code (~(lambda (n) (+ 1 n))~) for a simple function can get really boring. In
+this specific case, since we already have a unary function ~#'1+~, we can get
+rid of the boilerplate like this:
+
+#+BEGIN_SRC lisp
+  (mapcar #'1+ '(1 2 3 4 5 6))
+#+END_SRC
+
+But, in general, you need to use the full ~lambda~ form. Some Lisps, like
+[[https://hylang.org][hy]] provide a shorter name like ~fn~ which is neat, but
+given that we have macros in hand there can be much cleaner solutions.
+
+* Cut
+One of the solutions I first came across is the ~-cut~ macro in Emacs Lisp from
+[[https://github.com/magnars/dash.el#-cut-rest-params][dash.el]]. This has its origin in [[https://srfi.schemers.org/srfi-26/srfi-26.html][SRFI-26]] where a one line description says
+/Notation for Specializing Parameters without Currying/.
+
+#+BEGIN_aside
+Currying is a process of converting an /n-ary/ function into a chain of /unary/
+ones. This is different from what /cut/'s specification says. Cut returns a
+single new function with arbitrary positions filled in. Currying returns a chain
+which can then be applied sequentially to arguments. Here is an example of what
+currying does in [[https://racket-lang.org/][Racket]]:
+
+#+BEGIN_SRC racket
+  (expt 2 5)
+  ;; 32
+
+  (curry expt)
+  ;; #<procedure:curried>
+
+  ((curry expt) 2)
+  ;; #<procedure:curried>
+
+  (((curry expt) 2) 5)
+  ;; 32
+#+END_SRC
+#+END_aside
+
+In Common Lisp we have [[http://quickdocs.org/cl-cut/][cl-cut]] which follows
+Scheme's cut specification more completely (as compared to dash in elisp). If
+you want to (say) replace ~?~ with ~!~ in a list of strings, a cut based
+solution would be:
+
+#+BEGIN_SRC lisp
+  ;; cut is from cl-cut
+  ;; replace-all is from cl-strings
+  (mapcar (cut replace-all <> "?" "!") items)
+#+END_SRC
+
+Compare that with the full λ version:
+
+#+BEGIN_SRC lisp
+  (mapcar (lambda (s) (replace-all s "?" "!")) items)
+#+END_SRC
+
+Not a lot different, but why complicate things if there are shorter ways? Just
+like in functions, anonymity in arguments helps when the effective /name/ is
+clear from context. Cut also allows expressing multiple arguments and λs with
+~&rest~:
+
+#+BEGIN_SRC lisp
+  ;; Replace ? with different string in different items
+  (mapcar (cut replace-all <> "?" <>) items replacements)
+
+  ;; Taken from http://quickdocs.org/cl-cut/
+  (cut list 1 <> 3 <...>)
+  ;; is equivalent to the following
+  (lambda (x2 &rest xs)
+    (apply #'list 1 x2 3 xs))
+#+END_SRC
+
+One decision made in cut is to only allow ~<>~ in flat positions, i.e. the
+placeholder ~<>~ can not be hidden inside parentheses like in the following
+case:
+
+#+BEGIN_SRC lisp
+  ;; This doesn't work
+  (funcall (cut + 2 (* <> 3)) 3)
+
+  ;; <> inside lists are not detected while generating the argument list
+  ;; (macroexpand '(cut + 2 (* <> 3))) gives
+  (lambda () (+ 2 (* <> 3)))
+#+END_SRC
+
+Sometimes this nesting is needed. For example, if you are converting a list of
+temperature given in °F to °C, you might want to be able to write something
+like:
+
+#+BEGIN_SRC lisp
+  (mapcar (cut * (/ 5 9) (- <> 32)) temperatures)
+#+END_SRC
+
+If you need only unary functions, a simple solution is to make an anaphoric
+version of λ which captures ~<>~:
+
+#+BEGIN_SRC lisp
+  (defmacro acut (&rest body)
+    `(lambda (<>) ,@body))
+
+  ;; This works now
+  (mapcar (acut * (/ 5 9) (- <> 32)) temperatures)
+#+END_SRC
+
+* Xi
+This is another fancy way of creating λs that I came to know from
+[[https://hylang.org][hy]]. Although its name is going to be changed in
+[[https://github.com/hylang/hy/blob/862732ff2a96b811d9b1f077843cd89bb1049099/hy/extra/anaphoric.hy#L114][a
+while]], according to
+[[http://docs.hylang.org/en/stable/extra/anaphoric.html#xi][current stable
+docs]], its usage is like this:
+
+#+BEGIN_SRC hy
+  ;; (require [hy.extra.anaphoric [*]])
+  (xi - x1 x2)
+  ;; This is equivalent to
+  (fn [x1 x2] (- x1 x2)) ; Not that `lambda` is called `fn` in Hy
+#+END_SRC
+
+The important thing to notice is that ~xi~ supports positional arguments (and
+also nesting) by using the number in the placeholders ~x1~, ~x2~ etc. For
+example, consider the following snippet:
+
+#+BEGIN_SRC hy
+  ;; Hy
+  ((xi - (+ x1 x2) x3) 2 5 10) ;; -3
+  ((xi - (+ x2 x3) x1) 2 5 10) ;; 13
+#+END_SRC
+
+Xi really is inspired by Clojure's
+[[https://clojure.org/guides/learn/functions#_anonymous_functions][anonymous
+function syntax]] which is pretty powerful:
+
+#+BEGIN_SRC clojure
+  #(+ 10 %)         ;; % acts similar to <> in cut
+  #(- %1 (+ %3 %2)) ;; We have nesting and positional arguments (%i)
+  #(some-fun % %&)  ;; We have &rest (as %&) too
+#+END_SRC
+
+Closest looking syntax for this in Common Lisp (at least from what I found out)
+is of the ~#L~ reader macro from
+[[https://common-lisp.net/project/bese/docs/arnesi/html/api/function_005FIT.BESE.ARNESI_003A_003ASHARPL-READER.html][arnesi]]
+and ~^~ macro from
+[[https://github.com/cl21/cl21/blob/master/doc/Reader_Macros.markdown#-3][CL21]].
+Using ~#L~, the above examples in clojure translates to the following Common
+Lisp code
+
+#+BEGIN_aside
+Arnesi is not recommended for use though. The
+[[http://quickdocs.org/arnesi/][version on quicklisp]] is an unmaintained fork
+and suggests switching to newer libraries.
+#+END_aside
+
+#+BEGIN_SRC lisp
+  ;; Need to enable sharp-l reader macro
+  ;; (arnesi:enable-sharp-l-syntax)
+  #L(+ 10 !1)         ;; !i for position i
+  #L(- !1 (+ !3 !2))
+                      ;; No &rest arguments here
+#+END_SRC
+
+In CL21, you have:
+
+#+BEGIN_SRC lisp
+  ^(+ 10 %)
+  ^(- %1 (+ %3 %2))
+                      ;; Don't know if &rest is supported yet
+#+END_SRC
+
+Another option is [[http://quickdocs.org/positional-lambda/][positional-lambda]]
+where Clojure's examples go like the following:
+
+#+BEGIN_SRC lisp
+  (plambda (+ 10 :1))            ;; :i for position i
+  (plambda (- :1 (+ :3 :2)))
+  (plambda (some-fun :1 :rest))  ;; &rest is supported
+#+END_SRC
+
+--------------
+
+Although using complicated λs signals that you better reconsider your decision
+of /not/ creating dedicated functions, these fancier variants are pretty useful.
+
+Here is a listing of Common Lisp packages mentioned in this post and some other
+which are similar in the sense that they allow creating/manipulating functions:
+
+- [[http://quickdocs.org/cl-cut/][cl-cut]] for ~cut~ (and ~cute~) syntax from [[https://srfi.schemers.org/srfi-26/srfi-26.html][SRFI-26]]
+- [[http://quickdocs.org/arnesi/][arnesi]] for the =#L= reader macro.
+- [[https://github.com/cl21/cl21][CL21]] for the =^= macro. Not on quicklisp main repos but can be installed using
+  ql. Instructions on project's page.
+- [[http://quickdocs.org/positional-lambda/][positional-lambda]] for =plambda= macro.
+- There is also =#`-reader= in [[https://github.com/vseloved/rutils][rutils]] providing Clojure-ish but slightly limited
+  shorthands
+
+#+BEGIN_SRC lisp
+  #`(+ 2 %) ; => (lambda (&optional x y) (+ 2 x)) 
+  #`((print %) (1+ %)) ; => (lambda (&optional x) (print x) (1+ x))
+  #`(+ % %%) ; => (lambda (&optional x y) (+ x y)) 
+#+END_SRC
+- [[https://github.com/cbaggers/fn][fn]] provides another set of shorthands for λs. Examples from github page:
+
+#+BEGIN_SRC lisp
+  (fn* (subseq _@ 0 2)) ; =>  (lambda (&rest _@) (subseq _@ 0 2))
+  ;; with reader macros for fn* forms too
+  λ(+ _ _1) ; =>  (lambda (_ _1) (+ _ _1))
+#+END_SRC
+- [[https://eschulte.github.io/curry-compose-reader-macros/][curry-compose-reader-macros]] provides shorthand reader macros for currying and
+  composing functions. A few examples from the github page:
+
+#+BEGIN_SRC lisp
+  ;; partial application `curry'
+  (mapcar {+ 1} '(1 2 3 4)) ; => (2 3 4 5)
+  ;; function composition
+  (mapcar [#'list {* 2}] '(1 2 3 4)) ; => ((2) (4) (6) (8))
+  ;; function split and join
+  (mapcar «list {* 2} {* 3}» '(1 2 3 4)) ; => ((2 3) (4 6) (6 9) (8 12))
+#+END_SRC
+- [[http://www.cliki.net/curly][curly]] has two reader macros for currying and composition. Examples from
+  homepage
+
+#+BEGIN_SRC lisp
+  '[foo bar * baz] ; => (lambda (#:g2709) (foo bar #:g2709 baz))
+
+  '{foo (bar 16) (baz 23 * 42) quux}
+  ;; => (lambda (#:g2724) (foo (bar 16 (baz 23 (quux #:g2724) 42)))
+#+END_SRC

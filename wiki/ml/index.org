@@ -3,8 +3,6 @@
 
 * Pages in this section
 
-- [[./hyperparameters/index.org][Hyperparameters]]
-- [[./learning/index.org][Breaking down /Learning/]]
-- [[./potential/index.org][Potential in Multiplicative Weight Algorithms]]
-- [[./resources.org][Resources]]
-- [[./voting-ensemble/index.org][Voting Ensemble]]
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index)))
+#+END_SRC

@@ -3,6 +3,6 @@
 
 * Pages in this section
 
-- [[./noisy-quantum-search/index.org][Noisy Quantum Search]]
-- [[./resources.org][Resources]]
-- [[./strassen/index.org][Searching for Strassen multiplication rule]]
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index)))
+#+END_SRC

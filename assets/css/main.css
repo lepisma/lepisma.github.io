@@ -447,14 +447,15 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
     text-transform: none; }
-  .page-header .page-meta {
-    font-family: "Open Sans";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.9;
-    color: #7b7b7b;
-    text-transform: uppercase; }
+
+.page-meta {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #7b7b7b;
+  text-transform: uppercase; }
 
 header .site-nav {
   font-family: "Open Sans";
@@ -473,6 +474,9 @@ header .site-nav {
     margin-left: 10px; }
     header .site-nav a:hover {
       color: #444; }
+    header .site-nav a.active {
+      border-bottom: solid;
+      border-bottom-width: 2px; }
   header .site-nav a:first-child {
     margin-left: 0; }
 
@@ -530,7 +534,20 @@ header > div {
   height: 10px;
   background: #00151c; }
 
-aside {
+.archive-item {
+  margin: 50px 0; }
+  .archive-item .archive-title {
+    font-size: 25px;
+    margin: 5px 0;
+    background: none;
+    text-shadow: none;
+    text-decoration: none; }
+    .archive-item .archive-title:hover {
+      background: none;
+      text-shadow: none;
+      text-decoration: none; }
+
+aside, .aside {
   background-color: #efefef;
   border-radius: 5px;
   font-family: "Open Sans";
@@ -544,7 +561,9 @@ aside {
   line-height: 1.6 !important; }
   aside figcaption a,
   aside li a,
-  aside p a {
+  aside p a, .aside figcaption a,
+  .aside li a,
+  .aside p a {
     text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
     background-image: linear-gradient(#444, #444);
     background-size: 1px 1px;
@@ -556,12 +575,16 @@ aside {
     text-decoration: none; }
     aside figcaption a::selection,
     aside li a::selection,
-    aside p a::selection {
+    aside p a::selection, .aside figcaption a::selection,
+    .aside li a::selection,
+    .aside p a::selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
     aside figcaption a::-moz-selection,
     aside li a::-moz-selection,
-    aside p a::-moz-selection {
+    aside p a::-moz-selection, .aside figcaption a::-moz-selection,
+    .aside li a::-moz-selection,
+    .aside p a::-moz-selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
     aside figcaption a *,
@@ -576,15 +599,31 @@ aside {
     aside p a *:after,
     aside p a:after,
     aside p a *:before,
-    aside p a:before {
+    aside p a:before, .aside figcaption a *,
+    .aside figcaption a *:after, .aside figcaption a:after,
+    .aside figcaption a *:before, .aside figcaption a:before,
+    .aside li a *,
+    .aside li a *:after,
+    .aside li a:after,
+    .aside li a *:before,
+    .aside li a:before,
+    .aside p a *,
+    .aside p a *:after,
+    .aside p a:after,
+    .aside p a *:before,
+    .aside p a:before {
       text-shadow: none; }
     aside figcaption a:visited,
     aside li a:visited,
-    aside p a:visited {
+    aside p a:visited, .aside figcaption a:visited,
+    .aside li a:visited,
+    .aside p a:visited {
       color: #444; }
     aside figcaption a:hover,
     aside li a:hover,
-    aside p a:hover {
+    aside p a:hover, .aside figcaption a:hover,
+    .aside li a:hover,
+    .aside p a:hover {
       text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
       background-image: linear-gradient(#444, #444);
       background-size: 1px 1px;
@@ -596,12 +635,16 @@ aside {
       text-decoration: none; }
       aside figcaption a:hover::selection,
       aside li a:hover::selection,
-      aside p a:hover::selection {
+      aside p a:hover::selection, .aside figcaption a:hover::selection,
+      .aside li a:hover::selection,
+      .aside p a:hover::selection {
         text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
         background: #c8c8c8; }
       aside figcaption a:hover::-moz-selection,
       aside li a:hover::-moz-selection,
-      aside p a:hover::-moz-selection {
+      aside p a:hover::-moz-selection, .aside figcaption a:hover::-moz-selection,
+      .aside li a:hover::-moz-selection,
+      .aside p a:hover::-moz-selection {
         text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
         background: #c8c8c8; }
       aside figcaption a:hover *,
@@ -616,26 +659,40 @@ aside {
       aside p a:hover *:after,
       aside p a:hover:after,
       aside p a:hover *:before,
-      aside p a:hover:before {
+      aside p a:hover:before, .aside figcaption a:hover *,
+      .aside figcaption a:hover *:after, .aside figcaption a:hover:after,
+      .aside figcaption a:hover *:before, .aside figcaption a:hover:before,
+      .aside li a:hover *,
+      .aside li a:hover *:after,
+      .aside li a:hover:after,
+      .aside li a:hover *:before,
+      .aside li a:hover:before,
+      .aside p a:hover *,
+      .aside p a:hover *:after,
+      .aside p a:hover:after,
+      .aside p a:hover *:before,
+      .aside p a:hover:before {
         text-shadow: none; }
       aside figcaption a:hover:visited,
       aside li a:hover:visited,
-      aside p a:hover:visited {
+      aside p a:hover:visited, .aside figcaption a:hover:visited,
+      .aside li a:hover:visited,
+      .aside p a:hover:visited {
         color: #444; }
-  aside p {
+  aside p, .aside p {
     font-family: "Open Sans";
     font-weight: normal;
     font-size: 15px;
     line-height: 1.6;
     color: #444;
     line-height: 1.6 !important; }
-  aside pre {
+  aside pre, .aside pre {
     font-size: 12px;
     border: none;
     padding-left: 0; }
 
 @media (min-width: 1280px) {
-  aside {
+  aside, .aside {
     float: right;
     clear: right;
     background-color: #fff;
@@ -643,7 +700,9 @@ aside {
     margin-right: -52%; }
     aside figcaption a,
     aside li a,
-    aside p a {
+    aside p a, .aside figcaption a,
+    .aside li a,
+    .aside p a {
       text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
       background-image: linear-gradient(#444, #444);
       background-size: 1px 1px;
@@ -655,12 +714,16 @@ aside {
       text-decoration: none; }
       aside figcaption a::selection,
       aside li a::selection,
-      aside p a::selection {
+      aside p a::selection, .aside figcaption a::selection,
+      .aside li a::selection,
+      .aside p a::selection {
         text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
         background: #c8c8c8; }
       aside figcaption a::-moz-selection,
       aside li a::-moz-selection,
-      aside p a::-moz-selection {
+      aside p a::-moz-selection, .aside figcaption a::-moz-selection,
+      .aside li a::-moz-selection,
+      .aside p a::-moz-selection {
         text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
         background: #c8c8c8; }
       aside figcaption a *,
@@ -675,15 +738,31 @@ aside {
       aside p a *:after,
       aside p a:after,
       aside p a *:before,
-      aside p a:before {
+      aside p a:before, .aside figcaption a *,
+      .aside figcaption a *:after, .aside figcaption a:after,
+      .aside figcaption a *:before, .aside figcaption a:before,
+      .aside li a *,
+      .aside li a *:after,
+      .aside li a:after,
+      .aside li a *:before,
+      .aside li a:before,
+      .aside p a *,
+      .aside p a *:after,
+      .aside p a:after,
+      .aside p a *:before,
+      .aside p a:before {
         text-shadow: none; }
       aside figcaption a:visited,
       aside li a:visited,
-      aside p a:visited {
+      aside p a:visited, .aside figcaption a:visited,
+      .aside li a:visited,
+      .aside p a:visited {
         color: #444; }
       aside figcaption a:hover,
       aside li a:hover,
-      aside p a:hover {
+      aside p a:hover, .aside figcaption a:hover,
+      .aside li a:hover,
+      .aside p a:hover {
         text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
         background-image: linear-gradient(#444, #444);
         background-size: 1px 1px;
@@ -695,12 +774,16 @@ aside {
         text-decoration: none; }
         aside figcaption a:hover::selection,
         aside li a:hover::selection,
-        aside p a:hover::selection {
+        aside p a:hover::selection, .aside figcaption a:hover::selection,
+        .aside li a:hover::selection,
+        .aside p a:hover::selection {
           text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
           background: #c8c8c8; }
         aside figcaption a:hover::-moz-selection,
         aside li a:hover::-moz-selection,
-        aside p a:hover::-moz-selection {
+        aside p a:hover::-moz-selection, .aside figcaption a:hover::-moz-selection,
+        .aside li a:hover::-moz-selection,
+        .aside p a:hover::-moz-selection {
           text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
           background: #c8c8c8; }
         aside figcaption a:hover *,
@@ -715,13 +798,27 @@ aside {
         aside p a:hover *:after,
         aside p a:hover:after,
         aside p a:hover *:before,
-        aside p a:hover:before {
+        aside p a:hover:before, .aside figcaption a:hover *,
+        .aside figcaption a:hover *:after, .aside figcaption a:hover:after,
+        .aside figcaption a:hover *:before, .aside figcaption a:hover:before,
+        .aside li a:hover *,
+        .aside li a:hover *:after,
+        .aside li a:hover:after,
+        .aside li a:hover *:before,
+        .aside li a:hover:before,
+        .aside p a:hover *,
+        .aside p a:hover *:after,
+        .aside p a:hover:after,
+        .aside p a:hover *:before,
+        .aside p a:hover:before {
           text-shadow: none; }
         aside figcaption a:hover:visited,
         aside li a:hover:visited,
-        aside p a:hover:visited {
+        aside p a:hover:visited, .aside figcaption a:hover:visited,
+        .aside li a:hover:visited,
+        .aside p a:hover:visited {
           color: #444; }
-    aside::before {
+    aside::before, .aside::before {
       content: ''; } }
 blockquote {
   border-width: 0;
@@ -854,6 +951,15 @@ li p code {
   .src .org-highlight-numbers-number {
     color: #4e3163; }
 
+.dropcap {
+  float: left;
+  font-size: 55px;
+  font-style: normal;
+  line-height: .1;
+  margin-right: 0.2em;
+  margin-top: 0.5em;
+  padding: 0; }
+
 figure {
   text-align: center; }
   figure img {
@@ -926,6 +1032,34 @@ h3, h4, h5, h6 {
   font-size: 20px;
   font-style: italic; }
 
+.section-number-1,
+.section-number-2,
+.section-number-3,
+.section-number-4,
+.section-number-5,
+.section-number-6 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  color: #c8c8c8;
+  float: right; }
+
+.section-number-1 {
+  font-size: 30px; }
+
+.section-number-2 {
+  font-size: 24px; }
+
+.section-number-3,
+.section-number-4,
+.section-number-5,
+.section-number-6 {
+  font-size: 20px; }
+
 hr {
   border: none;
   border-top-style: solid;
@@ -937,6 +1071,7 @@ hr {
 #breadcrumbs a,
 figcaption a,
 p a,
+.page-tags a,
 li a {
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
   background-image: linear-gradient(#000, #000);
@@ -950,12 +1085,14 @@ li a {
   #breadcrumbs a::selection,
   figcaption a::selection,
   p a::selection,
+  .page-tags a::selection,
   li a::selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8; }
   #breadcrumbs a::-moz-selection,
   figcaption a::-moz-selection,
   p a::-moz-selection,
+  .page-tags a::-moz-selection,
   li a::-moz-selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8; }
@@ -972,6 +1109,11 @@ li a {
   p a:after,
   p a *:before,
   p a:before,
+  .page-tags a *,
+  .page-tags a *:after,
+  .page-tags a:after,
+  .page-tags a *:before,
+  .page-tags a:before,
   li a *,
   li a *:after,
   li a:after,
@@ -981,11 +1123,13 @@ li a {
   #breadcrumbs a:visited,
   figcaption a:visited,
   p a:visited,
+  .page-tags a:visited,
   li a:visited {
     color: #000; }
   #breadcrumbs a:hover,
   figcaption a:hover,
   p a:hover,
+  .page-tags a:hover,
   li a:hover {
     text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
     background-image: linear-gradient(#000, #000);
@@ -999,12 +1143,14 @@ li a {
     #breadcrumbs a:hover::selection,
     figcaption a:hover::selection,
     p a:hover::selection,
+    .page-tags a:hover::selection,
     li a:hover::selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
     #breadcrumbs a:hover::-moz-selection,
     figcaption a:hover::-moz-selection,
     p a:hover::-moz-selection,
+    .page-tags a:hover::-moz-selection,
     li a:hover::-moz-selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
@@ -1021,6 +1167,11 @@ li a {
     p a:hover:after,
     p a:hover *:before,
     p a:hover:before,
+    .page-tags a:hover *,
+    .page-tags a:hover *:after,
+    .page-tags a:hover:after,
+    .page-tags a:hover *:before,
+    .page-tags a:hover:before,
     li a:hover *,
     li a:hover *:after,
     li a:hover:after,
@@ -1030,6 +1181,7 @@ li a {
     #breadcrumbs a:hover:visited,
     figcaption a:hover:visited,
     p a:hover:visited,
+    .page-tags a:hover:visited,
     li a:hover:visited {
       color: #000; }
 
@@ -1189,9 +1341,21 @@ pre.src:hover::before {
 .outline-2 h2 {
   font-size: 30px; }
 
-.outline-3 h3 {
+.outline-3 h3,
+.outline-4 h4,
+.outline-5 h5,
+.outline-6 h6 {
   font-size: 24px;
   font-style: normal; }
+
+.outline-2 .section-number-2 {
+  font-size: 30px; }
+
+.outline-3 .section-number-3,
+.outline-4 .section-number-4,
+.outline-5 .section-number-5,
+.outline-6 .section-number-5 {
+  font-size: 24px; }
 
 .timestamp, .timestamp-kwd {
   font-family: "Open Sans";
@@ -1443,3 +1607,51 @@ nav#table-of-contents {
   text-transform: uppercase; }
   #breadcrumbs a {
     background-image: none; }
+
+.edits {
+  margin-top: 70px;
+  border-width: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #efefef;
+  padding-top: 30px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444; }
+  .edits p, .edits li {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444; }
+  .edits li {
+    margin-bottom: 16px; }
+
+.edits::before {
+  content: 'EDITS';
+  font-family: 'Open Sans';
+  font-size: 18px;
+  letter-spacing: 5px; }
+
+.page-tags {
+  margin-bottom: 30px; }
+  .page-tags a {
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #efefef;
+    border-radius: 2px;
+    font-family: "Open Sans";
+    font-variant: all-small-caps;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 2px;
+    background-image: none;
+    line-height: 8px;
+    white-space: nowrap;
+    margin-right: 5px; }
+    .page-tags a:hover {
+      background-color: #efefef;
+      background-image: none; }
