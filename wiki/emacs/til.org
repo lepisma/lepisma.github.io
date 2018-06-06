@@ -7,6 +7,21 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *inline code blocks*
+
+  Inline /executable/ code blocks can be written in org mode as:
+
+  #+BEGIN_SRC emacs-lisp
+  src_LANG[HEADERS]{CODE}
+  #+END_SRC
+
+  A snippet like the following then shows up like this src_emacs-lisp[:exports
+  both :results value]{(+ 1 1)} {{{results(=2=)}}}:
+
+  #+BEGIN_EXAMPLE
+  src_emacs-lisp[:exports both :results value]{(+ 1 1)} {{{results(=2=)}}}  
+  #+END_EXAMPLE
+
 + *dump-emacs*
 
   Similar to most Common Lisp implementations, emacs also provides a /dump/
