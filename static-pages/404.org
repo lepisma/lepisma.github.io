@@ -1,0 +1,9 @@
+#+TITLE: 404
+#+SETUPFILE: ../assets/export.setup
+#+PILE: dropcap:nil tags:nil
+
+#+CAPTION: 
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[https://imgs.xkcd.com/comics/error_code.png]]
+
+#+HTML: <p><a href='/' class='btn'>Take me home</a></p>
