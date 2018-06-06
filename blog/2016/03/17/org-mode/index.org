@@ -1,0 +1,97 @@
+#+TITLE:  On why you too should give Emacs Org-mode a spin
+#+TAGS: org-mode, emacs, tooling
+#+SETUPFILE: ../../../../../assets/export.setup
+
+Just came across a hackernews [[https://news.ycombinator.com/item?id=11296843][post]] on [[http://orgmode.org/][Org-mode]]. Its beautiful to know people
+settling into various states of equilibrium with Org for different needs. The
+first time I used Org was for simple note taking purpose. But left it in no time
+since Emacs was a whole new (and weird) thing for a newbie like me.
+
+Disappointed from [[http://www.any.do/][all]] [[https://workflowy.com/][the]] [[https://www.wunderlist.com/][flashy]] [[https://evernote.com/][kids]] due to one reason or another (mostly lack
+of satisfaction; don't know why), I switched to keeping notes on a local dropbox
+folder. Then, gave Org another shot.
+
+Initially, there were just three things I needed Org to help me with
+
+- Note taking
+- Planning tasks
+- Some kind of cloud sync
+
+This time, I kept track of the possibilities and started discovering teeny-tiny
+bits of happiness. Things like table completion, tags, marking todo/done etc.
+Starting with simple, hierarchical notes, I slowly moved to marking and tagging
+items. Then started to use agenda (I was late). Agenda view lets you see your
+schedule and timed tasks from calendar entries in Org files.
+
+#+CAPTION: Schedule, add deadlines or repeated dates (and times) to tasks
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./cal.png]]
+
+Fast forward a few weeks, I have my college time table, birthday lists,
+meetings, class notes, few other (encrypted) things, everything in Org files.
+And I have never faced any form of friction with my lists since then.
+
+#+CAPTION: Agenda View
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./agenda.png]]
+
+Right now, I use [[http://spacemacs.org/][spacemacs]] for my Emacs configuration. Its easier to setup
+packages in spacemacs, due to modular structures called layers (see a list of
+[[https://github.com/syl20bnr/spacemacs/blob/master/layers/LAYERS.org][available layers]]), which can be enabled/disabled in your personal configuration
+(along with some variable passing). Spacemacs is also useful for vim users
+shifting to Emacs. In fact it was made to merge both the editors. Anyways, there
+is an Org layer already present in spacemacs repo. If you are like me and keep
+many plain text files in a directory, [[http://jblevins.org/projects/deft/][deft]] can come in handy. Just point your
+=deft-directory= variable =(setq deft-directory "~/Dropbox/notes")= to notes
+directory and you can have a /really/ fast file filter.
+
+#+CAPTION: Deft mode filtering
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./deft.png]]
+
+Deft is also available as a layer in spacemacs. Spacemacs is well documented and
+a peek at its [[https://github.com/syl20bnr/spacemacs/blob/master/README.md][README]] should get you started, in case you are planning to try it.
+
+Need encryption ? Save the file as =name.org.gpg= and Emacs will use
+symmetric/asymmetric encryption to access and write to the file. This is
+specially useful for a synced folder on a cloud storage service like dropbox.
+
+#+CAPTION: Plain text makes GPG encryption easy
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./enc.png]]
+
+Plug in [[https://github.com/groksteve/org-alert][org-alert]] to create reminders. Enable flyspell (spell check) for a full
+fledged writing mode. Or just write your own module for your needs (like for
+inserting clipboard images).
+
+* Export everywhere
+Exporting support from Org is amazingly complete (add [[http://pandoc.org/][pandoc]] for extra frills)
+and probably adds the most to general purpose use scenarios. Put in your plans,
+write down notes and then export to any format. Present using [[https://github.com/yjwen/org-reveal/][revealjs]], plain
+latex beamers or inside Emacs itself.
+
+#+CAPTION: Presentation mode
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./present.png]]
+
+If you need to share notes of some sort, or just want to write a well formed
+$\LaTeX$ pdf, well, just export to $\LaTeX$ pdf (with tables, images, links
+etc.).
+
+#+CAPTION: PDF export
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./pdf.png]]
+
+These are few of the endless feats possible and you can never know enough to get
+bored or /saturated/. Since its easier to work with Org files in Emacs, due to the
+(obviously) tight integration, you can safely leave any popular markup language
+like markdown or rst (just if you need: github shows formatted =.org= files).
+Worst case ? Do an =org-export=.
+
+--------------
+
+Although its useful when you are actually /using/ Emacs as your main text editor,
+I believe trying Emacs just for Org is an experience you will never regret. Go
+to somewhere like [[https://masteringemacs.org/reading-guide][Mastering Emacs]] for learning Emacs. Read spacemacs
+[[https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org][documentation]] or give numerous other [[https://www.emacswiki.org/emacs/StarterKits][starter kits]] a try. Org mode also has its
+[[http://orgmode.org/#docs][manual]] and after a basic introduction it keeps getting better with your needs.

@@ -1,0 +1,177 @@
+#+TITLE: Up and running with Theano (GPU) + PyCUDA on Windows
+#+TAGS: tooling
+#+SETUPFILE: ../../../../assets/export.setup
+#+OPTIONS: num:t
+
+Getting CUDA to work with python on Windows is really frustrating. Its not
+exactly hard, but is sure irritating when you start doing it. If you have ever
+tried it, you might be knowing that many possible combinations of /compilers/,
+/cuda toolkit/, /python/ etc. don't work.
+
+This post describes the steps that I followed for a working setup of theano
+working with GPU acceleration and PyCUDA for general access to GPU from python.
+Hopefully, it will help if you haven't found the sweet spot yet.
+
+* Setting up
+Starting with my machine, it is a /Pavilion DV6 7012tx/ Laptop with Nvidia GeForce
+GT 630m card. Right now its running /Windows 10 x64/. If you are already having
+=cygwin= or =mingw= based =gcc= in place, you might want to remove that since our
+scientific python stack will provide that.
+
+** Install Visual Studio
+This is needed to get Nvidia's CUDA compiler (=nvcc=) working. For choosing the
+version, go to the latest [[http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-microsoft-windows/index.html][CUDA on Windows doc]] and see which version of visual
+studio the current CUDA toolkit supports.
+
+At the time of writing, CUDA 7 was the latest release and Visual Studio 2013 was
+the latest supported version. You also don't need to install 2008 or 2010
+version of compiler for python. This will be taken care of later, just go with
+everything latest.
+
+After installation, you don't actually need to add =cl.exe= (usually in a
+directory like =C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin=,
+depending on your Visual Studio version) to =PATH= for theano since we will define
+this explicitly in =.theanorc=, but it is better to do this as many other tools
+might be using it.
+
+** Install CUDA toolkit
+This should be easy, get the latest CUDA and install it. Keep the samples while
+installing, they are nice for checking if things are working fine.
+
+** Setup Python
+This is where most of the trouble is. Its easy to get lost while setting up
+vanilla python for theano specially since you also are setting up =gcc= and
+related tools. The theano installation tutorial will bog you down in this phase
+if you don't actually read it carefully. Most likely you would end up
+downloading lots of legacy Visual Studio versions and other stuff. We won't be
+going that way.
+
+Install a scientific python distribution like [[http://continuum.io/downloads][Anaconda]]. I haven't tried setting
+up theano using other distributions but this should be one of the easier ways
+because of [[http://conda.pydata.org/docs/#conda][conda]] package manager. This really relieves you from setting up a
+separate =mingw= environment and handling /commonly used/ libraries which are as
+easy as =conda install boost= in Anaconda.
+
+If you feel Anaconda is a bit too heavy, try [[http://conda.pydata.org/miniconda.html][miniconda]] and adding basic packages
+like =numpy= on top of it.
+
+Once you install Anaconda, install additional dependencies.
+
+#+BEGIN_EXAMPLE
+  conda install mingw libpython
+#+END_EXAMPLE
+
+** Install theano
+Install theano using =pip install theano= and create a =.theanorc= file in your =HOME=
+directory with following contents.
+
+#+BEGIN_EXAMPLE
+  [global]
+  floatX = float32
+  device = gpu
+
+  [nvcc]
+  flags=-LC:\Anaconda\libs
+  compiler_bindir=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin
+#+END_EXAMPLE
+
+Make sure to change the path =C:\Anaconda\libs= according to your Anaconda install
+directory and =compiler_bindir= to the path with =cl.exe= in it.
+
+** Install PyCUDA
+Best way to install PyCUDA is to get the Unofficial Windows Binaries by
+Christoph Gohlke [[http://www.lfd.uci.edu/~gohlke/pythonlibs/][here]].
+
+For quick setup, you can use [[https://github.com/lepisma/pipwin][pipwin]] which basically automates the process of
+installing Gohlke's packages.
+
+#+BEGIN_EXAMPLE
+  pip install pipwin
+  pipwin install pycuda
+#+END_EXAMPLE
+
+* Test it out
+A very basic test is to simply import theano.
+
+#+BEGIN_SRC python
+  import theano
+  Using gpu device 0: GeForce GT 630M (CNMeM is disabled)
+#+END_SRC
+
+This should tell you if the GPU is getting used.
+
+One error says that /CUDA is installed, but device gpu is not available/. For me,
+this was solved after installing =mingw= and =libpython= via conda since Anaconda
+doesn't setup =gcc= along with it as it used to do earlier.
+
+For a more extensive test, try the following snippet taken from [[http://deeplearning.net/software/theano/tutorial/using_gpu.html][theano docs]].
+
+#+BEGIN_SRC python
+  from theano import function, config, shared, sandbox
+  import theano.tensor as T
+  import numpy
+  import time
+
+  vlen = 10 * 30 * 768  # 10 x #cores x # threads per core
+  iters = 1000
+
+  rng = numpy.random.RandomState(22)
+  x = shared(numpy.asarray(rng.rand(vlen), config.floatX))
+  f = function([], T.exp(x))
+  print f.maker.fgraph.toposort()
+  t0 = time.time()
+  for i in xrange(iters):
+      r = f()
+  t1 = time.time()
+  print 'Looping %d times took' % iters, t1 - t0, 'seconds'
+  print 'Result is', r
+  if numpy.any([isinstance(x.op, T.Elemwise) for x in f.maker.fgraph.toposort()]):
+      print 'Used the cpu'
+  else:
+      print 'Used the gpu'
+#+END_SRC
+
+You should see something like this.
+
+#+BEGIN_EXAMPLE
+  Using gpu device 0: GeForce GT 630M (CNMeM is disabled)
+  [GpuElemwise{exp,no_inplace}(<CudaNdarrayType(float32, vector)>), HostFromGpu(GpuElemwise{exp,no_inplace}.0)]
+  Looping 1000 times took 1.42199993134 seconds
+  Result is [ 1.23178029  1.61879349  1.52278066 ...,  2.20771813  2.29967761
+    1.62323296]
+  Used the gpu
+#+END_EXAMPLE
+
+For PyCUDA, here is a quick test snippet from their [[http://documen.tician.de/pycuda/index.html][web page]]
+
+#+BEGIN_SRC python
+  import pycuda.autoinit
+  import pycuda.driver as drv
+  import numpy
+
+  from pycuda.compiler import SourceModule
+  mod = SourceModule("""
+  __global__ void multiply_them(float *dest, float *a, float *b)
+  {
+    const int i = threadIdx.x;
+    dest[i] = a[i] * b[i];
+  }
+  """)
+
+  multiply_them = mod.get_function("multiply_them")
+
+  a = numpy.random.randn(400).astype(numpy.float32)
+  b = numpy.random.randn(400).astype(numpy.float32)
+
+  dest = numpy.zeros_like(a)
+  multiply_them(
+          drv.Out(dest), drv.In(a), drv.In(b),
+          block=(400,1,1), grid=(1,1))
+
+  print dest-a*b
+#+END_SRC
+
+Seeing an array of zeros ? Its working fine then.
+
+Hopefully, this should give you a working /pythonish/ CUDA setup using the latest
+versions of VS, Windows, Python etc.

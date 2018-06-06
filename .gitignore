@@ -1,8 +1,14 @@
-_site
-.sass-cache
-.DS_Store
-_drafts
+# Compiled
+*.elc
 
-# Ignore the config file that's used for gh-pages.
-_config.gh-pages.yml
-/.pug-cache
+# Packaging
+.cask
+
+# Backup files
+*~
+
+# Undo-tree save-files
+*.~undo-tree
+.sass-cache
+
+references.el

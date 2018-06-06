@@ -1,0 +1,213 @@
+#+TITLE: Notes
+#+SETUPFILE: ../../assets/export.setup
+
+#+BEGIN_QUOTE
+This page is a work in progress
+#+END_QUOTE
+
+This contains notes for paper-ish documents that I read (notes for books in
+general are [[pile:wiki:readings/books][here]]). I am now realizing the importance of summarizing what I read
+so will be working on this page fairly regularly.
+
+** Physics, topology, logic and computation: a Rosetta Stone
+ :PROPERTIES:
+  :Custom_ID: baez2010physics
+  :AUTHOR: Baez \& Stay
+  :YEAR: 2010
+ :END:
+
+Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci
+commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget,
+lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac
+felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui
+dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet
+quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor.
+Nam euismod tellus id erat.
+
+** A decision-theoretic generalization of on-line learning and an application to boosting
+ :PROPERTIES:
+  :Custom_ID: freund1997decision
+  :AUTHOR: Freund \& Schapire
+  :JOURNAL: Journal of computer and system sciences
+  :YEAR: 1997
+  :VOLUME: 55
+  :PAGES: 119--139
+ :END:
+
+Hello world Pellentesque dapibus suscipit ligula. Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean
+in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec,
+sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at
+dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue.
+Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod
+elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris, consequat
+quis, varius et, dictum id, arcu. Mauris mollis tincidunt felis. Aliquam feugiat
+tellus ut neque. Nulla facilisis, risus a rhoncus fermentum, tellus tellus
+lacinia purus, et dictum nunc justo sit amet elit
+
+** The Genuine Sieve of Eratosthenes
+ :PROPERTIES:
+  :Custom_ID: o2009genuine
+  :AUTHOR: O'NEILL
+  :JOURNAL: Journal of Functional Programming
+  :YEAR: 2009
+  :VOLUME: 19
+  :PAGES: 95--106
+ :END:
+
+This talks about a functional implementation of Sieve of Eratosthenes.
+Specifically it debunks the following incorrect implementation:
+
+#+BEGIN_SRC haskell
+primes = sieve [2..]
+sieve (p : xs) = p : sieve [x | x <− xs, x `mod` p > 0]
+#+END_SRC
+
+Then we see correct functional implementations with neat tricks made possible
+due to laziness of Haskell. Although slower, there is a list based
+implementation by Bird mentioned in the /Epilogue/ which is pretty readable (and
+elegant) and follows very closely the following description:
+
+#+BEGIN_SRC
+primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
+#+END_SRC
+
+** Computation at the edge of chaos: phase transitions and emergent computation
+ :PROPERTIES:
+  :Custom_ID: langton1990computation
+  :AUTHOR: Langton
+  :JOURNAL: Physica D: Nonlinear Phenomena
+  :YEAR: 1990
+  :VOLUME: 42
+  :PAGES: 12--37
+ :END:
+
+The question here focuses on how to get rules capable of computation in CAs.
+Specifically, we are looking at /environments/ which characterize rules that
+allow:
+
+1. Storage of information
+2. Transmission
+3. Interaction between the above two
+
+Intuitively, as the rule's output entropy increases, we move from a very simple
+output (more /storage/) to output with randomness (more /transmission/). In between
+these two, lies the region with the right amount of signal and noise with very
+large transients and this is where most of the interesting events take place.
+
+An interesting idea involves the definition of $\lambda$ parameter (that helps in
+categorizing the rules) which is basically a discrete probability distribution
+for the range of mapping function.
+
+** Self-organized criticality                                     :noexport:
+ :PROPERTIES:
+  :Custom_ID: bak1988self
+  :AUTHOR: Bak, Tang \& Wiesenfeld
+  :JOURNAL: Physical review A
+  :YEAR: 1988
+  :VOLUME: 38
+  :PAGES: 364
+ :END:
+
+Sand model.
+
+** Revisiting the edge of chaos: Evolving cellular automata to perform computations
+ :PROPERTIES:
+  :Custom_ID: mitchell1993revisiting
+  :AUTHOR: Mitchell, Hraber \& Crutchfield
+  :JOURNAL: arXiv preprint adap-org/9303003
+  :YEAR: 1993
+ :END:
+
+The edge of chaos idea turned out to be pretty popular among the masses. A short
+article criticizing that is [[http://bactra.org/notebooks/edge-of-chaos.html][here]]. This is one of the papers that tried to debunk
+(kind of) an experiment (cite:packard1988adaptation; this was in my reading list
+for a long time) which claimed that evolving (in the GA sense) a CA to solve
+computational problems gyrate it towards the edge of chaos.
+
+Its pretty direct to see the issue since a solution to a /specific problem/ (they
+took majority classification) is going to have a /specific \lambda/ and that's going to
+be what that is, in spite of where the critical \lambda lies.
+
+Other than that, this paper has some nice explanations and insights for the
+results from GA. One neat trick that I haven't seen much (though I haven't seen
+much) is of keeping the number of /elites/ high and changing the evaluation
+function on each generation. This looks like a more practical way to use GAs in
+evaluation over real data set. I also like the trick where you stop at a
+variable number of generations to avoid getting a rule which gets the right
+answer by alternating between 0s and 1s.
+
+** Lisp, Jazz, Aikido--Three Expressions of a Single Essence
+ :PROPERTIES:
+  :Custom_ID: verna2018lisp
+  :AUTHOR: Verna
+  :JOURNAL: arXiv preprint arXiv:1804.00485
+  :YEAR: 2018
+ :END:
+
+Okay, this was up on /r/lisp, felt not that much effort to read so I gave it a
+shot. There are three general aesthetic avenues that the author covers:
+
+1. Conformation
+2. Transgression
+3. Unification
+
+The general idea is about the similar interplay of these in all the 3 things
+(Lisp, Jazz & Aikido) and how they end up being a source of pleasure and
+enlightenment.
+
+From whatever I have felt, /things/ that focus on an act itself (rather than
+prioritizing the results) end up being like these (well, probably this is
+obvious).
+
+This paper is a quick read and is not overly philosophical. Maybe that's because
+one of the focus is on tools that stay out of your way by staying /practical/ (you
+can see this when the author talks about /Common Lisp/ specifically). Although I
+must say that I know next to nothing about both /Jazz/ and /Aikido/ so might not
+have really been able to connect all the pieces.
+
+** Optimization by Self-Organized Criticality
+ :PROPERTIES:
+  :Custom_ID: hoffmann2018optimization
+  :AUTHOR: Hoffmann \& Payton
+  :JOURNAL: Scientific reports
+  :YEAR: 2018
+  :VOLUME: 8
+  :PAGES: 2358
+ :END:
+
+I believe it is not /using/ SoC in the strict sense. The key is the generation of
+test patterns. Using the sandpile model, we get a reasonable
+exploration/exploitation trade offs. Also, two avalanches are less likely to
+occur on overlapping patches (I am going by hunches on this so can be wrong) so
+it also provides a more coordinate descent-ish behavior than the regular random
+patch thing. Not sure if we can say that SoC is /specifically/ helping here.
+
+There are two things. First is that this is better than the random approach
+(consider /random patch/ since only that is fairly comparable). This probably
+needs a lot more test cases or some theoretical justification.
+
+Second is about the optimality of the sandpile approach. How about other non ~1/f~
+distributions? I don't know which generating mechanisms can be employed to get
+the test patterns but fishing around a bit tells me that this purity of
+distribution is not that justified (consider for example the recent
+cite:broido2018scale). The point being: if you fix an annealing schedule for
+stimulated annealing based on some /natural/ observation, that doesn't:
+1. create a parameter-less solver, and
+2. justify the /natural/ observation to be the optimal
+
+All said, I liked the thought of a random /object/ (?) generator which does better
+than the regular approach in the general case. If there indeed is such a
+generator, this could work as an off-the-shelf technique replacing uniform
+random search.
+
+bibliography:./references.bib
+
+** At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks :noexport:
+ :PROPERTIES:
+  :Custom_ID: bertschinger2005edge
+  :AUTHOR: Bertschinger, Natschl\"ager \& Legenstein
+  :JOURNAL: 
+  :YEAR: 2005
+  :PAGES: 145--152
+ :END:

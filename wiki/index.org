@@ -1,0 +1,11 @@
+#+TITLE: wiki
+#+SETUPFILE: ../assets/export.setup
+
+This is a personal wiki. Most of the pages here are still in transitory phase. I
+will be moving some of the pages here to my journal or, after finishing the
+work, to the blog.
+
+A list of all the pages in this wiki follows. See [[pile:wiki:misc/colophon][colophon]] for details on how
+these pages are built.
+
+#+INCLUDE: ./sitemap.org :lines "4-"

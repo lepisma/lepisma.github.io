@@ -1,0 +1,19 @@
+#+TITLE: About
+#+SETUPFILE: ../assets/export.setup
+#+PILE: dropcap:nil
+
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="about.css" />
+#+HTML_HEAD_EXTRA: <script src="sand.js"></script>
+#+HTML: <canvas id='canvas'></canvas>
+#+HTML: <div class='page-header'></div>
+
+#+BEGIN_EXPORT html
+<div id='details'>
+  <div id='name'>Abhinav Tushar</div>
+  <div id='links'>
+    <a href='/'>prose</a>
+    <a href='https://github.com/lepisma'>programs</a>
+    <a href='https://keybase.io/lepisma'>prattle</a>
+  </div>
+</div>
+#+END_EXPORT

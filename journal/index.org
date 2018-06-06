@@ -1,0 +1,10 @@
+#+TITLE: Journal
+#+SETUPFILE: ../assets/export.setup
+
+This is an auxiliary blog where I put items which can change because of, say,
+change in my opinion or gain in knowledge etc. This is going to have higher
+publishing frequency than my main blog.
+
+#+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
+(princ (pile-archive))
+#+END_SRC

@@ -1,0 +1,12 @@
+#+TITLE: Emacs
+#+SETUPFILE: ../../assets/export.setup
+
+Some notes/texts related to Emacs and Org Mode.
+
+* Pages in this section
+
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index))
+#+END_SRC
+
+#+RESULTS:

@@ -1,0 +1,37 @@
+#+TITLE: Colophon
+#+SETUPFILE: ../../assets/export.setup
+
+I have used jekyll in the past to maintain my [[https://github.com/lepisma/lepisma.github.io][home page]]. Its been nice really,
+but extending it was painful. Some times, working directly on the system is
+easier than writing /plugins/. I do concede that the above purported /pain/ was more
+because of my requirements instead of insufficiency of jekyll as a regular
+/blogging system/. What I wanted to do with jekyll was to:
+
+1. write posts in org
+2. have a tree-ish file structure (mimicking my local files)
+3. run code blocks inside the org files
+
+I actually tried to work on all these three issues by writing little ruby
+plugins and helper elisp scripts, but it was not really worth the time since, at
+around the same time, I started looking into [[https://orgmode.org/manual/Publishing.html][org-publish]] which offers everything
+and more.
+
+-----
+
+The set of pages here mirror a small section of my messy org directory (I am
+still figuring out how to work efficiently with my private files. Probably
+something like [[https://github.com/Kungsgeten/org-brain][org-brain]] might help). Other than the org files themselves (which
+are [[https://github.com/lepisma/pile][here]]), there are three pieces that assist in publishing:
+
+1. The [[https://github.com/lepisma/pile/blob/master/files/assets/export.setup][export setup file]] which attaches css/js scripts and provides the general
+   export config.
+2. [[https://github.com/lepisma/pile-theme][Theme]] for the pages. This is a slight variant of my old blog's theme. Since I
+   use it at other places too (at least one), its now in a separate repository.
+3. [[https://github.com/lepisma/pile-wiki][Elisp package]] for working with and publishing everything.
+
+There are a ton of places from which I have taken inspiration (both ideological
+and programmatic). I might not recall all of them but here are some:
+
+- [[https://caiorss.github.io/org-wiki/][org-wiki]] and [[https://github.com/Kungsgeten/org-brain][org-brain]] packages.
+- [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][Personal website]] and [[https://thibaultmarin.github.io/blog/posts/2017-08-15-Personal_wiki_in_org.html][wiki in org]] posts by [[https://github.com/thibaultmarin][thibaultmarin]] made me realize the
+  capabilities of org-publish.

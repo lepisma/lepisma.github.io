@@ -1,0 +1,16 @@
+#+TITLE: Articles I like
+#+SETUPFILE: ../../assets/export.setup
+
+I am not sure what kind of /liked/ articles I should keep a log of here (by using
+the term /articles/, I am restricting myself to essays, blog posts and the likes).
+Since this page lies in the general /reading/ section it is probably more suited
+for general topics. I recently started logging these, so this list might be
+missing a lot of what I would have meant to put here.
+
+- [[https://moxie.org/blog/career-advice/][Career Advice]] by /Moxie Marlinspike/
+- [[https://eev.ee/blog/2015/06/09/i-quit-the-tech-industry/][I quit the tech industry]] by /Eevee/
+- [[http://www.paulgraham.com/love.html][How to Do What You Love]] by /Paul Graham/
+- [[http://kk.org/thetechnium/better-than-fre/][Better Than Free]] by /Kevin Kelly/
+- [[http://hintjens.com/blog:115][A Protocol for Dying]] by /Pieter Hintjens/
+- [[http://www.structuredprocrastination.com/][Structured Procastination]] by /John Perry/
+- [[http://www.monbiot.com/2000/06/09/choose-life/][Choose Life]] by /George Monbiot/

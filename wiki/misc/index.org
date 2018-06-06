@@ -1,0 +1,10 @@
+#+TITLE: Miscellaneous
+#+SETUPFILE: ../../assets/export.setup
+
+Miscellaneous pages.
+
+* Pages in this section
+
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index))
+#+END_SRC

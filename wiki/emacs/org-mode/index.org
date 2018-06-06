@@ -1,0 +1,10 @@
+#+TITLE: Org Mode
+#+SETUPFILE: ../../../assets/export.setup
+
+Org mode stuff needed a separate section.
+
+* Pages in this section
+
+#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
+(princ (pile-index))
+#+END_SRC

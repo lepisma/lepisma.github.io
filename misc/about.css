@@ -1,0 +1,33 @@
+#canvas {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+}
+
+#details #name {
+  font-style: italic;
+  font-family: 'et-book';
+  font-size: 30px;
+  line-height: 1.2em;
+}
+
+#details #links a {
+  font-family: 'Bebas Neue Bold';
+  text-decoration: none;
+  color: #7b7b7b;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-right: 8px;
+}
+
+#details #links a:hover {
+  colors: #222;
+}

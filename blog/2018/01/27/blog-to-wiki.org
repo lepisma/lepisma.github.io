@@ -1,0 +1,56 @@
+#+TITLE: Blog 🡢 wiki
+#+TAGS: personal
+#+SETUPFILE: ../../../../assets/export.setup
+
+#+BEGIN_page-intro
+Maintaining a blog has certain disadvantages, mostly due to linearity of post
+timeline and its apparent permanence. I am making a switch to a wiki which
+provides much more freedom and makes the texts and corrections flow much more
+fluently.
+#+END_page-intro
+
+Ever since I started this blog, every post has made me rethink the purpose of
+the whole blog. Sometimes I have been putting personal experiences, other times
+half baked opinions. A few times, I have pushed because there was nothing in
+here for a long time. Even more than these organizational issues, the idea of
+having a /conclusion/, with a timestamp, is something which keeps the blog from
+working /along with me/. Not that I have a pandora box to open, but I do have a
+bunch of perpetually partially complete pieces scattered around which don't fit
+in a blog.
+
+A personal publishing system should work well with my workflow which is
+(usually) less driven by deadlines/checkpoints and more by explorations.
+
+* A personal wiki
+After some scripting to try and improve the content generation pipeline for this
+blog recently, I realized that I probably am recreating everything org-mode
+already provides. Even more, I already have a bunch of org files sitting around.
+
+So I am now moving to an org mode based personal wiki. Not very wiki like and
+just a pile of files which lives at [[/pile]] [fn::This link should not work, I
+moved things around and have a different writing setup now]. The =pile= is
+fundamentally a place to log things in the process of gathering and playing
+around with knowledge of any kind. This makes it more of an assistive tool for
+myself than anyone else. Using org mode helps a lot in this /selfish/ endeavor
+because of [[https://orgmode.org/worg/org-contrib/babel/][org-babel]] (for authoring code based pages) and [[https://orgmode.org/manual/Publishing.html][org-publish]] (for
+publishing the whole pile to the web). I will most probably have a page
+documenting my setup once it reaches a decent level with enough differences from
+other org-publish tutorials on the web.
+
+#+BEGIN_aside
+In case you tend to have a bunch of jupyter notebooks with just explorations, [[/2016/11/02/org-babel/][I
+highly recommend]] looking at org-babel.
+#+END_aside
+
+Here are some of the items that I am thinking of putting up in my pile:
+
+- Notes from readings.
+- Problems I would like to know answers to and incremental solutions as I get
+  time to work on those.
+- Reading lists and other similar aggregations which are right now floating
+  around in separate repositories.
+- Some miscellaneous writings.
+
+Some contents still belong in a blog post (and they will come out as and when
+needed), but many ideas are fundamentally evolving and they need a lot more than
+just a bunch of edits to tell a consistent story.

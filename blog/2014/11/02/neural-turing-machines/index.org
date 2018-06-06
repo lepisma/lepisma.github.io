@@ -1,0 +1,78 @@
+#+TITLE: Neural Turing Machines for dummies
+#+TAGS: ml
+#+SETUPFILE: ../../../../../assets/export.setup
+
+Recently, DeepMind (Oops ! [[http://deepmind.com/][/Google/ DeepMind]]) revealed a paper titled '/Neural
+Turing Machines/'. Interesting name.
+
+So, whats the deal here ? Basically, simple Neural Networks follow the following
+steps in their working lifetime :
+
+- Learning using a given training data
+- Prediction on new data
+
+Suppose the idea is to make an animal image classifier. So, this step involves
+feeding the network with tagged images of various animals so that the network
+can learn what is what.
+
+#+CAPTION: 
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./animals.jpg]]
+
+After training, we can feed an unknown image to the network and it will spit out
+its name to the best of its knowledge.
+
+So far so good. What if we have a video and want to know whether an animal is
+running or jumping or walking (assuming it can't just stand still)? If I give
+you an image (a shot from video) of it with its four feet on the ground, can you
+say anything? Maybe not.
+
+#+CAPTION: 
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./horse.jpg]]
+
+We need to know what the animal was doing before this image was captured. If the
+previous image had all its four legs in air, we can, with high probability, say
+that it is jumping, not walking. We just used our /memory/! If we can somehow
+store the last few sequence of actions, we can understand temporal patterns.
+
+And /it is important/. Just remember how handy the pronouns are, if someone says
+"/Pluto/ is not a planet" and then says, "/It's/ back!" how could you have figured
+out what /it/ is? By the way, are you listening a song right now?
+
+#+BEGIN_QUOTE
+  /We understand sequences, not snapshots./
+#+END_QUOTE
+
+Now there already is a kind of network that tries to store states, the /Recurrent
+Neural Networks/ (RNN).
+
+RNNs have feedback connections to make activation flow in loops (read
+[[http://www.wikiwand.com/en/Recurrent_neural_network][wikipedia]]). This makes the system form a memory representation for current state
+of the network. Now the output of the network depends on current input as well
+as previous inputs which are helping the network to attain a state value. This
+helps it to be used in places where there are memory uses in understanding
+patterns.
+
+* NTM
+A Neural Turing Machine (NTM) also tries to form a memory system, but it
+actually creates a separate memory outside the network (amazingly simple
+structure to look at), and the network does /read/ and /write/ operations on it.
+
+#+CAPTION: 
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./ntm.png]]
+
+In the above image, the controller is the actual neural network and it performs
+read and write on the memory via its read/write /heads/. (This structure results
+in the additional - '/Turing Machine/')
+
+The network can read and write to the memory by using a weight vector to control
+the amount of /attention/ given to a place (content) in memory and is able to
+perform tasks of temporal nature. The exact method of implementing the interface
+between the controller (the network) and the memory is beautifully explained in
+the paper itself.
+
+The paper can be found on arXiv [[http://arxiv.org/abs/1410.5401][here]]. It contains details on how to do read and
+write operations on the /external/ memory from the controller, how the memory
+addressing works, and also a lot of interesting experimental results using NTM.
