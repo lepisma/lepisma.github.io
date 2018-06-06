@@ -1,4 +1,3 @@
-#+TITLE: pile
+#+TITLE: lepisma.github.io
 
-Personal pile of text and notes. Elisp source is in [[https://github.com/lepisma/pile-wiki][pile-wiki]], sass
-files are in [[https://github.com/lepisma/pile-theme][pile-theme]].
+Pages and notes. Elisp source is in [[https://github.com/lepisma/pile][pile]], sass files are in [[https://github.com/lepisma/pile-theme][pile-theme]].
