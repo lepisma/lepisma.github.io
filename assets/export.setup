@@ -44,7 +44,6 @@
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 #+HTML_HEAD_EXTRA: <script src="/assets/js/pace.min.js"></script>
 #+HTML_HEAD_EXTRA: <script src="/assets/js/jquery.zoomooz.min.js"></script>
-#+HTML_HEAD_EXTRA: <script src="/assets/js/local-link-patch.js"></script>
 
 # Org babel default headers
 #+PROPERTY: header-args :eval never-export :exports both :results output
