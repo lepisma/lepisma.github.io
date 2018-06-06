@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flesh and Metal</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2014-07-29 Tue 00:00</div>
+                                <h1>Flesh and Metal</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../../..#ramble'>ramble</a></div>
+<p>
+<span class='dropcap'>I</span>t isn't long before we get to see <a href="http://www.imdb.com/title/tt1340138/">another installment</a> of one of the classic
+<i>cyborg</i> movies. <a href="http://www.imdb.com/title/tt0088247/">The Terminator (1984)</a> inspired many AI junkies of our times (at
+least the people I know), specially because of sequels surviving till the 2000s.
+</p>
+
+<p>
+In the movie, a badass AI machine dubbed <i>Skynet</i> takes on humans after it gains
+control over the technologies powering the world, including military and
+communication systems. One of the hobbies of Skynet seemed to make <i>Cyborgs</i> and
+send it back in time to kill the human leader who will lead the war against
+machines.
+</p>
+
+<p>
+So, does <i>'inspired by Skynet'</i> or even a similar human sound okay?
+</p>
+
+<p>
+From <a href="http://www.smithsonianmag.com/science-nature/ten-inventions-inspired-by-science-fiction-128080674/?no-ist">Smithsonian Mag</a>
+</p>
+
+<blockquote>
+<p>
+In 1914, H.G. Wells published a novel, The World Set Free, imagining the
+emergence of "artificial" atomic energy by 1933, followed by a devastating
+world war and the eventual emergence of a peaceful global government.
+Physicist Leo Szilard read the book in 1932, which inspired him to solve the
+problem of creating a nuclear chain reaction in 1933. The same book would
+inspire Szilard to campaign for arms control and the peaceful, international
+use of nuclear power after World War II.
+</p>
+</blockquote>
+
+<p>
+<i>Inspiration</i> is not a positive word in science, neither is it negative, it is
+neutral and like all other neutral words, it has both use cases. And its not
+unethical to be inspired by a <i>villain</i> unless what you do of it is <i>villainous</i>.
+</p>
+
+<hr>
+
+<p>
+Formally, a cyborg is
+</p>
+
+<blockquote>
+<p>
+a fictional or hypothetical person whose physical abilities are extended
+beyond normal human limitations by mechanical elements built into the body.
+</p>
+</blockquote>
+
+<p>
+It seems to me, one of the goals of cyborg development is to make <i>flesh</i> and
+<i>metal</i> interchangeable. Seeing the recent developments, this convergence is bound
+to happen, at least partially.
+</p>
+
+
+<figure>
+<img src="./convergence.png" alt="convergence.png" class="zoomTarget" data-closeclick="true">
+
+</figure>
+
+<p>
+There are many instances to strengthen the belief that in near future,
+biological machines can be imitated using our traditional techniques, involving
+computational unit and actuators.
+</p>
+
+<p>
+Also the other way round, traditional machines will be using the goodness of
+biological systems as is visible in this <a href="http://news.illinois.edu/news/12/1115bio-bots_RashidBashir.html">bio-bots</a> project. An explanatory video
+is <a href="https://www.youtube.com/watch?v=skCzl7FlM34">here</a>.
+</p>
+
+<hr>
+
+<p>
+Let us take the most amazing sensory unit in any (relatively advanced)
+biological machine, the <i>vision</i> unit.
+</p>
+
+<p>
+From the classy <a href="http://yann.lecun.com/exdb/lenet/">LeNet</a>, demonstrating the power of Convolutional Networks, to
+<a href="http://en.wikipedia.org/wiki/Google_Brain">Google Brain</a> and further <a href="http://research.microsoft.com/en-us/news/features/dnnvision-071414.aspx">Adam</a> by Microsoft, your instincts will make you believe
+that <i><a href="https://www.goodreads.com/book/show/83518.The_Singularity_is_Near">the Singularity is Near</a></i>.
+</p>
+
+<p>
+A noteworthy example here is of Jens Neumann, also referred sometimes as the
+patient <i>Alpha</i>. Neumann lost his sight completely, but he got it partially
+restored by one of the landmark <i>cyborgee</i> experiments involving a camera <i>wired</i> to
+the visual cortex of brain (2002, about 12 years ago!). Although this experience
+was brief for Neumann, but it must have been divine.
+</p>
+
+
+<figure>
+<img src="./alpha.png" alt="alpha.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span>Patient Alpha</figcaption>
+</figure>
+
+<p>
+The researches in the field of Artificial Vision are important, and positive.
+People are making attempts to understand the brain. Boundary between
+<i>Neuroscience</i> and <i>Artificial Intelligence</i> is blurring.
+</p>
+
+<p>
+But, the study of brain is not without issues. Consider the <a href="https://backyardbrains.com/products/roboroach">Roboroach</a> project.
+In this project, a <i>Cockroach</i> is stimulated via the antenna to move left or right
+as commanded by an app.
+</p>
+
+
+<figure>
+<img src="./roboroach.png" alt="roboroach.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 3: </span>Roboroach</figcaption>
+</figure>
+
+<p>
+To most of us, there is nothing bad here. But here is a nice read. The <i>Ethics</i>
+<a href="http://wiki.backyardbrains.com/Ethical_Issues_Regarding_Using_Invertebrates_in_Education">statement</a> by <i>Backyard Brains</i>, the group behind Roboroach. They are (at current
+stage) mostly right from my personal point of views. But the page is a must read
+to understand what issues are present when experimenters try to test things on
+biological organisms.
+</p>
+
+<p>
+And there is no dearth of such examples
+</p>
+
+<ul class="org-ul">
+<li>Remote controlled beetles by DARPA</li>
+<li>Remote controlled rats</li>
+<li>Remote controlled pigeons</li>
+<li>. . .</li>
+</ul>
+
+<p>
+A more complete reference is in the wikipedia article about <a href="http://en.wikipedia.org/wiki/Remote_control_animal">Remote control
+animals</a>
+</p>
+
+<p>
+Experiments on animals have a scary potential to be extended for humans,
+specially in a world already filled with cruel experimentation examples. I will
+list few of the most infamous examples (not in any order, there is no order for
+such things), with Wikipedia links to read and follow the necessary redirects.
+</p>
+
+<ul class="org-ul">
+<li><a href="http://en.wikipedia.org/wiki/Nazi_human_experimentation">Nazi human experimentation</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Unit_731">Unit 731</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tuskegee_syphilis_experiment">Tuskegee syphilis experiment</a></li>
+</ul>
+
+<hr>
+
+<p>
+Many believe that there is a Skynet in the making. When <a href="http://www.robotictechnologyinc.com/index.php/home">Robotic Technology Inc</a>
+said that their robot, the <a href="http://www.robotictechnologyinc.com/index.php/EATR">EATR</a>, is vegetarian, people were skeptical. When
+Google acquired 8 robotics companies in 6 months, people were skeptical. But
+wait! When recently, the Roboroach guys experimented with wired Scorpions, here
+is what I <a href="http://www.popularmechanics.com/science/health/nueroscience/the-robo-scorpion-is-coming-and-no-one-is-safe-17035113">got</a>.
+</p>
+
+<blockquote>
+<p>
+"The Robo-Scorpion is Coming and No One is Safe"
+</p>
+</blockquote>
+
+<p>
+Without digging specifically here, I believe there are loopholes in science
+journalism. When I was in school, I heard more people talking about a black hole
+that will gulp down the whole Earth, if the <i><a href="http://en.wikipedia.org/wiki/Large_Hadron_Collider">LHC</a></i> is made to run. And only one or
+two guys actually knew the meaning of <i>Boson</i> (hoping that they might have come
+across <i>Higgs Boson</i> in the news articles)!
+</p>
+
+<p>
+Some might say that they are not wrong, the journalists, the kids, the common
+people. Its just the <i>essential</i> premonition about the future technologies
+surfacing. Deep inside, humans are somewhat attracted towards war, towards
+things that explode, towards movies about destruction. Maybe this is the result
+of the leftovers in our genes from our ancestors, for whom war had an important
+survival value.
+</p>
+
+<p>
+I believe that many times the fault is in the interpretations. There are, and
+will always be people who use technology for <i>bad science</i>. But, there are people
+who work for the love of science and technology, and even if their theories are
+not for the direct (positive) use by humans or other organisms, their intent is.
+</p>
+
+<p>
+Maybe I haven't seen much to say this, but journalism, being a very powerful
+tool, is used very much wrongly at places.
+</p>
+
+<hr>
+
+<p>
+A.C. Clarke said it rightly
+</p>
+
+<blockquote>
+<p>
+"It has yet to be proven that intelligence has any survival value."
+</p>
+</blockquote>
+
+<p>
+Intelligence wont take you long, understanding will. As long as the people are
+right by heart, there is nothing wrong with cyborgs.
+</p>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

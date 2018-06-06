@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>White Rhinos, irrationality and other tales</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2015-12-21 Mon 00:00</div>
+                                <h1>White Rhinos, irrationality and other tales</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../..#ramble'>ramble</a><a href='../../../..#skepticism'>skepticism</a></div>
+<div class="page-intro">
+<p>
+White rhinos are down to a few just because irrational persuasions are
+effective. Everywhere. Something that might help? Identifying lies.
+</p>
+
+</div>
+
+<p>
+<span class='dropcap'>I</span>n case you didn't know '<i>there are only 3 northern white rhinos left on the
+planet</i>'. There were 5 since I started counting. One died <a href="http://edition.cnn.com/2015/07/29/world/northern-rhino-dies/">earlier this year</a>.
+Another one, <a href="http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/">last month</a>. It's closer relative, southern white rhino, is
+relatively safe as of this writing but you never know. Rhinos are ominously
+popular targets for poachers. Along with Bengal Tiger (skin) and Elephant
+(teeth), this animal (horns) is one of the first that comes to mind when I hear
+<i>poaching</i>.
+</p>
+
+<p>
+Where exactly do the horns go? Having no direct marketing channel, illegal items
+are slightly harder to sell (in the usual sense). Although you can create a
+market out of thin air, most of the cases require external factors. How about a
+bit of <i>human irrationality</i> ?
+</p>
+
+<p>
+One of the reasons why Rhinoceros hunting has recently gathered pace is due to a
+weird outburst of horn demands from Vietnam. Apparently, there was a <a href="http://qz.com/82302/theres-a-country-that-will-pay-300000-per-rhino-horn-to-cure-cancer-and-hangovers-and-its-wiping-out-rhinos/">guy</a> who was
+cured from terminal cancer using rhinoceros horns and people weren't able to
+stop the tendency of '<i>inferring from a sample size of 1</i>' to outgrow their
+rationality.
+</p>
+
+<p>
+This brings up an important issue. Not that other reasons for dwindling wildlife
+are not so important, but because <i>this</i> specific reason is prevalent in every
+other area to an extent you would probably always underestimate.
+</p>
+
+<div id="outline-container-org12c89c6" class="outline-2">
+<h2 id="quacks,-advertisements-and-lies"><a id="org12c89c6"></a><span class="section-number-2">1</span> Quacks, Advertisements and Lies</h2>
+<div class="outline-text-2" id="text-quacks,-advertisements-and-lies">
+
+<p>
+Recently, I got home, started watching TV, and one thing i noticed is that <i>our
+situation, in India, isn't drastically different from Vietnam</i>. I have seen
+traditional Chinese medicine usually getting the heat for promoting irrational
+cultural beliefs (sadly, many involving endangered species). Are we any better?
+</p>
+
+<p>
+Natural remedies are inspiring. And to be very clear, I have a space of respect
+for them (I mean, why not?). But I never quite understand the <i>point of view</i> of
+many of their propagators here. When engaged in discussion, most of them try to
+sell one of the following conclusions:
+</p>
+
+<ul class="org-ul">
+<li>Western medicine is trying to destroy our traditional wisdom</li>
+<li>People in ancient times were much healthier</li>
+<li>We have a long history with medicine</li>
+</ul>
+
+<p>
+Honestly, I have stopped paying attention to statements which don't add anything
+in anyone's plate. So, I ask, tell me what <i>you</i> are proposing? And I get
+statements like this (not disclosing the source)
+</p>
+
+<blockquote>
+<p>
+vegetarian food reduces domestic violence.
+</p>
+</blockquote>
+
+<p>
+Now, its not about the people who can <i>cure</i> homosexuality, the one who can tell
+we are going to die in future, the one who can guarantee 700% reduction in fat
+or the realists with a conservative 100%. It is about how <i>we</i> see these events
+and infer. I will be willing to believe the given statement if the person who is
+promoting this <i>knowledge</i> can answer following questions affirmatively.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4409eb" class="outline-2">
+<h2 id="few-simple-questions"><a id="orgb4409eb"></a><span class="section-number-2">2</span> Few Simple Questions</h2>
+<div class="outline-text-2" id="text-few-simple-questions">
+
+
+<blockquote>
+<p>
+At school you were taught about chemicals in test tubes, equations to describe
+motion, and maybe something on photosynthesis&#x2014;about which more later&#x2014;but in
+all likelihood you were taught nothing about death, risk, statistics, and the
+science of what will kill or cure you.
+</p>
+
+<footer>Ben Goldacre - Bad Science (2008)</footer>
+</blockquote>
+
+<p>
+Here are a few simple questions (non-exhaustive, please email me to add/remove
+things) I believe we should be asking to judge the conclusions of a research.
+Since researches on medicine and likes involve comparison and statistical
+testings, these are not exactly valid for <i>any</i> research.
+</p>
+</div>
+
+<div id="outline-container-org02a23d2" class="outline-3">
+<h3 id="few-simple-questions/what-do-the-numbers-mean?"><a id="org02a23d2"></a><span class="section-number-3">2.1</span> What do the numbers mean?</h3>
+<div class="outline-text-3" id="text-few-simple-questions/what-do-the-numbers-mean?">
+
+<p>
+No, not what you are being told. What the numbers <i>actually</i> mean? Here is a case.
+</p>
+
+<p>
+In a test on N (N/2, N/2) people, product A performed 50% better than product B
+(assume an effect).
+</p>
+
+<p>
+What is <i>50%</i> here?
+</p>
+
+<ul class="org-ul">
+<li>Is there a performance metric which bumps 50% more for A guys (first N/2, say)
+than for B guys (next N/2)?</li>
+<li>Is it a mean (max, median) of that metric for groups?</li>
+<li>Or, is it slightly quirky like "it worked for 50% more guys"?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org87051df" class="outline-3">
+<h3 id="few-simple-questions/can-i-reproduce-the-numbers?"><a id="org87051df"></a><span class="section-number-3">2.2</span> Can I reproduce the numbers?</h3>
+<div class="outline-text-3" id="text-few-simple-questions/can-i-reproduce-the-numbers?">
+
+<p>
+Good research is reproducible research. Given an array of results, access to
+research documentations and methodologies, a person should be able to get to the
+same conclusions as published.
+</p>
+
+<p>
+<i>Once done, there is a more critical question. This should be up in the order,
+but most of the times Q1 and Q2 hit it right.</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc5efd08" class="outline-3">
+<h3 id="few-simple-questions/is-the-process-fair?"><a id="orgc5efd08"></a><span class="section-number-3">2.3</span> Is the process fair?</h3>
+<div class="outline-text-3" id="text-few-simple-questions/is-the-process-fair?">
+
+<p>
+Now since the documented methods are providing the expected results, is the
+method actually performing a fair test?
+</p>
+
+<p>
+For example if you want to compare two toothpastes, you will want to have few
+basic things like:
+</p>
+
+<ul class="org-ul">
+<li>Two <i>randomly</i> divided groups</li>
+<li>Doubly blinded experiment</li>
+<li>No confounding variables etc.</li>
+</ul>
+
+<p>
+Also, is the research using sufficient sample size? Are the numbers compared
+properly using established statistical tests? etc.
+</p>
+
+<hr>
+
+<p>
+If you see the previous statement (about domestic violence) as a research
+outcome (which is the only reason you should be believing it), then you can
+immediately identify what might be wrong in the experiment (spoiler:
+<i>everything</i>). When you are communicating via a proper scientific channel, you are
+automatically bound to go ahead only when the results are conclusive. But when
+statements like this start to frame the basis of judgments, you know the channel
+of knowledge generation and communication is severely damaged. I have heard so
+many people (due to their own personal reasons) around me agreeing on similar
+issues like '<i>media torturing and twisting facts</i>'. Yet, shockingly small number
+of people criticize these incidences of quackery with similar enthusiasm.
+</p>
+
+<blockquote>
+<p>
+The idea is to try and give all the information to help others to judge
+the value of your contribution; not just the information that leads to
+judgment in one particular direction or another.
+</p>
+
+<footer>Richard P. Feynman</footer>
+</blockquote>
+
+<p>
+Many argue that its important to use dumbed down logic to reach a mass audience.
+But, there is a difference between <i>dumbed down</i> and <i>simplified</i>. One misleads
+people in thinking <i>they know the actual thing</i> while the other make them realize
+<i>what they don't know</i>.
+</p>
+
+<p>
+The major problems with the propagators are probably not the numerous questions
+raised, but the ones unanswered because their claims are <i>unfalsifiable</i>. This
+approach is not a sane way to do any Science. Most of the claimed success is due
+to the confounding variables covering the obvious observations like <i>eating
+healthy helps</i>. Others left are weeded out in a huge placebo storm.
+</p>
+
+<p>
+Many a times, you <i>can't avoid</i> irrationality. But, sometimes you <i>can't afford</i>.
+There is a huge responsibility on you when you are touching dead serious topics
+involving lives, deaths and crowd emotions. We can't afford statements like
+<i>"AIDS can be cured through yoga"</i>, but while we can, lets ask if these statements
+have enough evidences to answer the questions.
+</p>
+
+<hr>
+
+<p>
+Before finishing, I would strongly recommend reading <a href="https://www.goodreads.com/book/show/3272165-bad-science">Bad Science</a> by Ben Goldacre
+(the quotes in this post are directly taken from there), specially the chapter
+'<i>The Doctor Will Sue You Now</i>' if you are on a tight schedule. The story in the
+chapter explains the exact conundrum here with amazing precision and is
+downright serious.
+</p>
+
+<p>
+I wrote this post because of the following few reasons, none of which involve
+initiating a <i>hate debate</i> against any of the specific ideas mentioned.
+</p>
+
+<ul class="org-ul">
+<li>I felt like I should.</li>
+<li>I still see many of my friends, relatives and myself reacting to senseless
+persuasions. So at its worst, this post can simply work as a sanity reminder
+for me.</li>
+<li>Maybe I am just ashamed of what our species has done to rhinos.</li>
+</ul>
+
+<p>
+And sadly, the rhinoceros count is not the only thing thats going down.
+</p>
+
+<div class="edits">
+<ul class="org-ul">
+<li>Thanks Gopal Sharma for suggesting ammendments to the list and other <a href="https://github.com/lepisma/lepisma.github.io/commit/c7aede536fbd2306e6172ccf35499b17e9807518">fixes</a>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

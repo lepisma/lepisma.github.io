@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheap polyglot notebooks</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2016-11-02 Wed 00:00</div>
+                                <h1>Cheap polyglot notebooks</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../../..#org-mode'>org-mode</a><a href='../../../../..#emacs'>emacs</a><a href='../../../../..#tooling'>tooling</a><a href='../../../../..#programming'>programming</a></div>
+<div class="page-intro">
+<p>
+As compared to json based jupyter notebooks, Emacs org-mode provides a much more
+readable and lighter notebook with multiple language support using org-babel.
+Just like RMarkdown, but in Emacs.
+</p>
+
+</div>
+
+<p>
+<span class='dropcap'>R</span>Studio v1.0 is <a href="https://blog.rstudio.org/2016/11/01/announcing-rstudio-v1-0/">released</a>. One of the key features is the <a href="http://rmarkdown.rstudio.com/r_notebooks.html">notebook</a>. Yes, there is
+a <a href="https://irkernel.github.io/">Jupyter kernel</a> for R, but this is probably going to be much better.
+</p>
+
+<p>
+The idea of having interactive notebooks is not really new. Mathematica had it
+before I was born or something. IPython and then Jupyter brought these to the
+mainstream. Now almost every product on these lines have great many features
+including cool visualization support, multiple kernels (many in the same
+notebook) etc. You have some big products like <a href="http://beakernotebook.com/">beaker</a>, <a href="https://zeppelin.apache.org/">zeppelin</a> and of course
+<a href="https://jupyter.org/">Jupyter</a>.
+</p>
+
+<p>
+Everything is fine. But I don't particularly enjoy it when I accidently open a
+notebook in my editor and its a mess of JSON waiting to force me into believing
+that its just a set of simple scripts I wrote to do something much simpler than
+</p>
+
+<blockquote>
+<p>
+working interactively with large and complex datasets
+</p>
+</blockquote>
+
+<p>
+<a href="http://rmarkdown.rstudio.com/">R Markdowns</a> shine here. They are by default cleaner to read. So that's a plus.
+What else do you need? Well, R is not a general purpose language. Neither is
+python good for everything. A notebook supporting multiple languages? That will
+work. But then they are too heavy to open up everything and get going. Honestly,
+they are not targeting your tiny scripts crossing and piping data over language
+barriers to make sense of your local files or sating your fussiness for using
+<a href="http://docs.python-requests.org/en/master/">requests</a> over <a href="https://github.com/request/request">request</a>. Notebooks simply have great overheads for small
+experiments with random jumble of scripts.
+</p>
+
+<div id="outline-container-org6258d3b" class="outline-2">
+<h2 id="org-babel"><a id="org6258d3b"></a><span class="section-number-2">1</span> Org-babel</h2>
+<div class="outline-text-2" id="text-org-babel">
+
+<p>
+<a href="http://orgmode.org/worg/org-contrib/babel/">Org-babel</a> is an <a href="http://orgmode.org/">Org-mode</a> thing for running chunks of code in Org files. You
+could add language chunks, like in R Markdowns, and execute those with optional
+shared sessions or variable passing. So, for example, you could get around with
+your <i>ggplot envy</i> while using Python (at least until <a href="https://github.com/altair-viz/altair">altair</a> goes on big).
+Anyways, the point is not heavy plotting (those are much better on web based
+UIs), its the speed with which you can play around with your ideas inside org
+files.
+</p>
+
+<p>
+You could use JS, Python and other languages with great packages and weave them
+with your writings or class notes in Org with \(\LaTeX\). Additionally, being
+inside Emacs, you could exploit Emacs lisp and Org to have cool side effects
+with ease. For example, shifting your scheduled tasks depending on weather
+gathered using python requests. Obviously there are other ways. Get data with
+Elisp itself, or use something like <a href="https://github.com/bjonnh/PyOrgMode">PyOrgMode</a>. But you might really love
+<i>requests</i> for http things and want to use Emacs' buffer manipulation for writing
+to files. And you might want this weather dependent org agenda file to be self
+contained. Or you are of the other type and might be okay with firing up (or
+planning to) different processes and piping everything externally.
+</p>
+
+<p>
+I recently started trying out Babel for some of the use cases involving
+web-scraping, some <i>pythonish</i> things, some directory restructuring and some
+planning and writing. As of now, I am really enjoying the neat polyglot
+<i>notebookish</i> properties with great many freedoms for plumbing code with prose.
+</p>
+
+<p>
+Here is a quick preview for generating some results in Python
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-meta-line">#+NAME: chunks</span>
+<span class="org-org-block-begin-line">#+BEGIN_SRC python :results silent</span>
+<span class="org-org-block"> </span><span class="org-org-block"><span class="org-keyword">import</span></span><span class="org-org-block"> requests</span>
+<span class="org-org-block"> </span><span class="org-org-block"><span class="org-variable-name">animals</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">[</span></span><span class="org-org-block"><span class="org-string">"doge"</span></span><span class="org-org-block">, </span><span class="org-org-block"><span class="org-string">"moon moon"</span></span><span class="org-org-block">, </span><span class="org-org-block"><span class="org-string">"pepe"</span></span><span class="org-org-block">, </span><span class="org-org-block"><span class="org-string">"grumpy cat"</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">]</span></span>
+<span class="org-org-block"> </span><span class="org-org-block"><span class="org-variable-name">chunks</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">[]</span></span>
+<span class="org-org-block"> </span><span class="org-org-block"><span class="org-keyword">for</span></span><span class="org-org-block"> animal </span><span class="org-org-block"><span class="org-keyword">in</span></span><span class="org-org-block"> animals:</span>
+<span class="org-org-block">   </span><span class="org-org-block"><span class="org-variable-name">r</span></span><span class="org-org-block"> = requests.get</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block"><span class="org-string">"<a href="https://google.com/search?q">https://google.com/search?q</a>="</span></span><span class="org-org-block"> + animal + </span><span class="org-org-block"><span class="org-string">" meme"</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block">   chunks.append</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">[</span></span><span class="org-org-block">animal, r.text</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">]</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block"> </span><span class="org-org-block"><span class="org-keyword">return</span></span><span class="org-org-block"> chunks</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+</pre>
+</div>
+
+<p>
+You have your usual org code block with few specifications (like <code>NAME</code>
+for variable name to be used for the block result). Essentially this
+snip is counting Google search hits for "[name] meme" for different
+<code>names</code>. It uses <i>requests</i> to get the search results. Now for parsing
+the HTML element which says something like "About 100 results found",
+lets pass the results to JS
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-meta-line">#+NAME: counts</span>
+<span class="org-org-block-begin-line">#+BEGIN_SRC js :var data=chunks :cmd babel-node :results list</span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-keyword">const</span></span><span class="org-org-block"> </span><span class="org-org-block"><span class="org-variable-name">cheerio</span></span><span class="org-org-block"> = require</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block"><span class="org-string">"cheerio"</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-keyword">return</span></span><span class="org-org-block"> data.map</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block">d =&gt; </span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">[</span></span><span class="org-org-block">d</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">[</span></span><span class="org-org-block"><span class="org-highlight-numbers-number">0</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">]</span></span><span class="org-org-block">,</span>
+<span class="org-org-block">                        cheerio.load</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">(</span></span><span class="org-org-block">d</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-4">[</span></span><span class="org-org-block"><span class="org-highlight-numbers-number">1</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-4">]</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">)(</span></span><span class="org-org-block"><span class="org-string">"#resultStats"</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">)</span></span>
+<span class="org-org-block">                        .text</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">()</span></span>
+<span class="org-org-block">                        .replace</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">(</span></span><span class="org-org-block"><span class="org-string">/,/</span></span><span class="org-org-block">g, </span><span class="org-org-block"><span class="org-string">""</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">)</span></span>
+<span class="org-org-block">                        .split</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">(</span></span><span class="org-org-block"><span class="org-string">" "</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">)[</span></span><span class="org-org-block"><span class="org-highlight-numbers-number">1</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">]</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">]</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-meta-line">#+RESULTS: counts</span>
+<span class="org-org-list-dt">-</span> ("doge" "735000")
+<span class="org-org-list-dt">-</span> ("moon moon" "3420000")
+<span class="org-org-list-dt">-</span> ("pepe" "775000")
+<span class="org-org-list-dt">-</span> ("grumpy cat" "1250000")
+</pre>
+</div>
+
+<p>
+Nice. It works. We could go back to python and do a frequency plot
+because we have problems counting number of zeros.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-block-begin-line">#+BEGIN_SRC python :var counts=counts :results file :export both</span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-keyword">import</span></span><span class="org-org-block"> seaborn </span><span class="org-org-block"><span class="org-keyword">as</span></span><span class="org-org-block"> sns</span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-keyword">import</span></span><span class="org-org-block"> matplotlib.pyplot </span><span class="org-org-block"><span class="org-keyword">as</span></span><span class="org-org-block"> plt</span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-keyword">import</span></span><span class="org-org-block"> numpy </span><span class="org-org-block"><span class="org-keyword">as</span></span><span class="org-org-block"> np</span>
+<span class="org-org-block">  sns.</span><span class="org-org-block"><span class="org-builtin">set</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">()</span></span>
+
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-variable-name">f</span></span><span class="org-org-block">, </span><span class="org-org-block"><span class="org-variable-name">ax</span></span><span class="org-org-block"> = plt.subplots</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block">figsize=</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">(</span></span><span class="org-org-block"><span class="org-highlight-numbers-number">5</span></span><span class="org-org-block">, </span><span class="org-org-block"><span class="org-highlight-numbers-number">3</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-variable-name">frequencies</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">[</span></span><span class="org-org-block"><span class="org-builtin">int</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">(</span></span><span class="org-org-block">c</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">[</span></span><span class="org-org-block"><span class="org-highlight-numbers-number">1</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-3">]</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-org-block"> </span><span class="org-org-block"><span class="org-keyword">for</span></span><span class="org-org-block"> c </span><span class="org-org-block"><span class="org-keyword">in</span></span><span class="org-org-block"> counts</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">]</span></span>
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-variable-name">names</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">[</span></span><span class="org-org-block">c</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">[</span></span><span class="org-org-block"><span class="org-highlight-numbers-number">0</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">]</span></span><span class="org-org-block"> </span><span class="org-org-block"><span class="org-keyword">for</span></span><span class="org-org-block"> c </span><span class="org-org-block"><span class="org-keyword">in</span></span><span class="org-org-block"> counts</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">]</span></span>
+
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-variable-name">pos</span></span><span class="org-org-block"> = np.arange</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block"><span class="org-builtin">len</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">(</span></span><span class="org-org-block">names</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block">  ax.set_xticks</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block">pos + </span><span class="org-org-block"><span class="org-highlight-numbers-number">0</span></span><span class="org-org-block">.</span><span class="org-org-block"><span class="org-highlight-numbers-number">5</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block">  ax.set_xticklabels</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block">names</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+
+<span class="org-org-block">  plt.bar</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block">pos, frequencies, </span><span class="org-org-block"><span class="org-highlight-numbers-number">1</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+<span class="org-org-block">  plt.savefig</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">(</span></span><span class="org-org-block"><span class="org-string">"plot.png"</span></span><span class="org-org-block">, transparent=</span><span class="org-org-block"><span class="org-constant">True</span></span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+
+<span class="org-org-block">  </span><span class="org-org-block"><span class="org-keyword">return</span></span><span class="org-org-block"> </span><span class="org-org-block"><span class="org-string">"plot.png"</span></span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-meta-line">#+RESULTS:</span>
+<span class="org-org-link"><a href="file:plot.png">file:plot.png</a></span>
+</pre>
+</div>
+
+
+<figure>
+<img src="./pyplot.png" alt="pyplot.png" class="zoomTarget" data-closeclick="true">
+
+</figure>
+
+<p>
+There are many languages supported and you have the usual org structures like
+tables and lists for mediating chunks. The working model is really simple. Even
+the plotting is nothing more than writing to file and displaying with the usual
+org-inline image toggle. But, that is expressive enough. Here is another screen
+using R and ggplot (plot taken from <a href="http://docs.ggplot2.org/0.9.3/stat_binhex.html">hexbin</a> example). You could also put in
+something weird like C++.
+</p>
+
+
+<figure>
+<img src="./rplot.png" alt="rplot.png" class="zoomTarget" data-closeclick="true">
+
+</figure>
+
+<p>
+All in all, these files are cheap, readable and usable. Exportable to any format
+imaginable. And these integrate deeply with your usual Emacs + Org-mode
+workflow.
+</p>
+
+<hr>
+
+<p>
+Org files are not 'the' polyglot notebooks. They don't solve everything and of
+course not everyone uses Emacs. They are limited in many aspects, for example
+visualizations. But they let you do a few things in a <i>notebookish</i> manner which
+would have been a mess otherwise.
+</p>
+
+<p>
+I used to do <i>many</i> things in Jupyter notebooks before I learned easier non-python
+alternatives for quick tasks. Some time after that I switched to Emacs and
+realized I don't like editing in browser that much and the <a href="https://tkf.github.io/emacs-ipython-notebook/">ipython-notebook mode</a>
+was not much fun either. Org-babel looks great now. It sits nicely in between
+and fills many gaps. In case you are having certain likelihood of getting hooked
+too, try these <a href="https://github.com/dfeich/org-babel-examples">samples</a>.
+</p>
+
+<p>
+<a href="https://gist.githubusercontent.com/lepisma/6157074b8cec0eecfcc97555ac72289c/raw/ca39f3715b714d28ff138c49946b2188bf00e7f5/ob.org">Here</a> is the notebook I used.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

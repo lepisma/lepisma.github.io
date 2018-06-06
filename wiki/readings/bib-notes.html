@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 23:26 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='active' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>Last modified:  2018-05-29 Tue 06:01</div>
+                                <h1>Notes</h1>
+                              </div>
+</div>
+<div id="content">
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../readings/index.html'>readings</a> / bib-notes</div>
+<blockquote>
+<p>
+This page is a work in progress
+</p>
+</blockquote>
+
+<p>
+This contains notes for paper-ish documents that I read (notes for books in
+general are <a class="pile-link" href="/wiki/readings/books.html">here</a>). I am now realizing the importance of summarizing what I read
+so will be working on this page fairly regularly.
+</p>
+
+<div id="outline-container-org853807e" class="outline-2">
+<h2 id="baez2010physics"><a id="org853807e"></a><span class="section-number-2">1</span> Physics, topology, logic and computation: a Rosetta Stone</h2>
+<div class="outline-text-2" id="text-baez2010physics">
+<pre class="example">
+Custom_ID: baez2010physics
+AUTHOR: Baez \& Stay
+YEAR: 2010
+</pre>
+
+<p>
+Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci
+commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget,
+lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac
+felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui
+dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet
+quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor.
+Nam euismod tellus id erat.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16a5bb4" class="outline-2">
+<h2 id="freund1997decision"><a id="org16a5bb4"></a><span class="section-number-2">2</span> A decision-theoretic generalization of on-line learning and an application to boosting</h2>
+<div class="outline-text-2" id="text-freund1997decision">
+<pre class="example">
+Custom_ID: freund1997decision
+AUTHOR: Freund \& Schapire
+JOURNAL: Journal of computer and system sciences
+YEAR: 1997
+VOLUME: 55
+PAGES: 119--139
+</pre>
+
+<p>
+Hello world Pellentesque dapibus suscipit ligula. Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean
+in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec,
+sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at
+dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue.
+Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod
+elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris, consequat
+quis, varius et, dictum id, arcu. Mauris mollis tincidunt felis. Aliquam feugiat
+tellus ut neque. Nulla facilisis, risus a rhoncus fermentum, tellus tellus
+lacinia purus, et dictum nunc justo sit amet elit
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f10011" class="outline-2">
+<h2 id="o2009genuine"><a id="org3f10011"></a><span class="section-number-2">3</span> The Genuine Sieve of Eratosthenes</h2>
+<div class="outline-text-2" id="text-o2009genuine">
+<pre class="example">
+Custom_ID: o2009genuine
+AUTHOR: O'NEILL
+JOURNAL: Journal of Functional Programming
+YEAR: 2009
+VOLUME: 19
+PAGES: 95--106
+</pre>
+
+<p>
+This talks about a functional implementation of Sieve of Eratosthenes.
+Specifically it debunks the following incorrect implementation:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-haskell"><span class="org-haskell-definition">primes</span> <span class="org-haskell-operator">=</span> sieve <span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">2</span><span class="org-haskell-operator">..</span><span class="org-rainbow-delimiters-depth-1">]</span>
+<span class="org-haskell-definition">sieve</span> <span class="org-rainbow-delimiters-depth-1">(</span>p <span class="org-haskell-constructor">:</span> xs<span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-haskell-operator">=</span> p <span class="org-haskell-constructor">:</span> sieve <span class="org-rainbow-delimiters-depth-1">[</span>x <span class="org-haskell-operator">|</span> x <span class="org-haskell-operator">&lt;&#8722;</span> xs, x <span class="org-haskell-operator">`mod`</span> p <span class="org-haskell-operator">&gt;</span> <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-1">]</span>
+</pre>
+</div>
+
+<p>
+Then we see correct functional implementations with neat tricks made possible
+due to laziness of Haskell. Although slower, there is a list based
+implementation by Bird mentioned in the <i>Epilogue</i> which is pretty readable (and
+elegant) and follows very closely the following description:
+</p>
+
+<pre class="example">
+primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org461a3a0" class="outline-2">
+<h2 id="langton1990computation"><a id="org461a3a0"></a><span class="section-number-2">4</span> Computation at the edge of chaos: phase transitions and emergent computation</h2>
+<div class="outline-text-2" id="text-langton1990computation">
+<pre class="example">
+Custom_ID: langton1990computation
+AUTHOR: Langton
+JOURNAL: Physica D: Nonlinear Phenomena
+YEAR: 1990
+VOLUME: 42
+PAGES: 12--37
+</pre>
+
+<p>
+The question here focuses on how to get rules capable of computation in CAs.
+Specifically, we are looking at <i>environments</i> which characterize rules that
+allow:
+</p>
+
+<ol class="org-ol">
+<li>Storage of information</li>
+<li>Transmission</li>
+<li>Interaction between the above two</li>
+</ol>
+
+<p>
+Intuitively, as the rule's output entropy increases, we move from a very simple
+output (more <i>storage</i>) to output with randomness (more <i>transmission</i>). In between
+these two, lies the region with the right amount of signal and noise with very
+large transients and this is where most of the interesting events take place.
+</p>
+
+<p>
+An interesting idea involves the definition of \(\lambda\) parameter (that helps in
+categorizing the rules) which is basically a discrete probability distribution
+for the range of mapping function.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org03c140a" class="outline-2">
+<h2 id="mitchell1993revisiting"><a id="org03c140a"></a><span class="section-number-2">5</span> Revisiting the edge of chaos: Evolving cellular automata to perform computations</h2>
+<div class="outline-text-2" id="text-mitchell1993revisiting">
+<pre class="example">
+Custom_ID: mitchell1993revisiting
+AUTHOR: Mitchell, Hraber \& Crutchfield
+JOURNAL: arXiv preprint adap-org/9303003
+YEAR: 1993
+</pre>
+
+<p>
+The edge of chaos idea turned out to be pretty popular among the masses. A short
+article criticizing that is <a href="http://bactra.org/notebooks/edge-of-chaos.html">here</a>. This is one of the papers that tried to debunk
+(kind of) an experiment (<a class='org-ref-reference' href="#packard1988adaptation">packard1988adaptation</a>; this was in my reading list
+for a long time) which claimed that evolving (in the GA sense) a CA to solve
+computational problems gyrate it towards the edge of chaos.
+</p>
+
+<p>
+Its pretty direct to see the issue since a solution to a <i>specific problem</i> (they
+took majority classification) is going to have a <i>specific &lambda;</i> and that's going to
+be what that is, in spite of where the critical &lambda; lies.
+</p>
+
+<p>
+Other than that, this paper has some nice explanations and insights for the
+results from GA. One neat trick that I haven't seen much (though I haven't seen
+much) is of keeping the number of <i>elites</i> high and changing the evaluation
+function on each generation. This looks like a more practical way to use GAs in
+evaluation over real data set. I also like the trick where you stop at a
+variable number of generations to avoid getting a rule which gets the right
+answer by alternating between 0s and 1s.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfdb8e4f" class="outline-2">
+<h2 id="verna2018lisp"><a id="orgfdb8e4f"></a><span class="section-number-2">6</span> Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h2>
+<div class="outline-text-2" id="text-verna2018lisp">
+<pre class="example">
+Custom_ID: verna2018lisp
+AUTHOR: Verna
+JOURNAL: arXiv preprint arXiv:1804.00485
+YEAR: 2018
+</pre>
+
+<p>
+Okay, this was up on /r/lisp, felt not that much effort to read so I gave it a
+shot. There are three general aesthetic avenues that the author covers:
+</p>
+
+<ol class="org-ol">
+<li>Conformation</li>
+<li>Transgression</li>
+<li>Unification</li>
+</ol>
+
+<p>
+The general idea is about the similar interplay of these in all the 3 things
+(Lisp, Jazz &amp; Aikido) and how they end up being a source of pleasure and
+enlightenment.
+</p>
+
+<p>
+From whatever I have felt, <i>things</i> that focus on an act itself (rather than
+prioritizing the results) end up being like these (well, probably this is
+obvious).
+</p>
+
+<p>
+This paper is a quick read and is not overly philosophical. Maybe that's because
+one of the focus is on tools that stay out of your way by staying <i>practical</i> (you
+can see this when the author talks about <i>Common Lisp</i> specifically). Although I
+must say that I know next to nothing about both <i>Jazz</i> and <i>Aikido</i> so might not
+have really been able to connect all the pieces.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0732786" class="outline-2">
+<h2 id="hoffmann2018optimization"><a id="org0732786"></a><span class="section-number-2">7</span> Optimization by Self-Organized Criticality</h2>
+<div class="outline-text-2" id="text-hoffmann2018optimization">
+<pre class="example">
+Custom_ID: hoffmann2018optimization
+AUTHOR: Hoffmann \& Payton
+JOURNAL: Scientific reports
+YEAR: 2018
+VOLUME: 8
+PAGES: 2358
+</pre>
+
+<p>
+I believe it is not <i>using</i> SoC in the strict sense. The key is the generation of
+test patterns. Using the sandpile model, we get a reasonable
+exploration/exploitation trade offs. Also, two avalanches are less likely to
+occur on overlapping patches (I am going by hunches on this so can be wrong) so
+it also provides a more coordinate descent-ish behavior than the regular random
+patch thing. Not sure if we can say that SoC is <i>specifically</i> helping here.
+</p>
+
+<p>
+There are two things. First is that this is better than the random approach
+(consider <i>random patch</i> since only that is fairly comparable). This probably
+needs a lot more test cases or some theoretical justification.
+</p>
+
+<p>
+Second is about the optimality of the sandpile approach. How about other non <code>1/f</code>
+distributions? I don't know which generating mechanisms can be employed to get
+the test patterns but fishing around a bit tells me that this purity of
+distribution is not that justified (consider for example the recent
+<a class='org-ref-reference' href="#broido2018scale">broido2018scale</a>). The point being: if you fix an annealing schedule for
+stimulated annealing based on some <i>natural</i> observation, that doesn't:
+</p>
+<ol class="org-ol">
+<li>create a parameter-less solver, and</li>
+<li>justify the <i>natural</i> observation to be the optimal</li>
+</ol>
+
+<p>
+All said, I liked the thought of a random <i>object</i> (?) generator which does better
+than the regular approach in the general case. If there indeed is such a
+generator, this could work as an off-the-shelf technique replacing uniform
+random search.
+</p>
+
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="packard1988adaptation">[packard1988adaptation]</a> <a name="packard1988adaptation"></a>Packard. 1988. "Adaptation toward the edge of chaos." <i>Dynamic patterns in complex systems</i>, 212, 293-301. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="broido2018scale">[broido2018scale]</a> <a name="broido2018scale"></a>Broido & Clauset. 2018. "Scale-free networks are rare." <i>arXiv preprint arXiv:1801.03400</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

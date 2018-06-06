@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Constitution De Markov</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2016-01-23 Sat 00:00</div>
+                                <h1>Constitution De Markov</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../..#exploration'>exploration</a></div>
+<p>
+<span class='dropcap'>R</span>ecently I came across <a href="https://www.constituteproject.org/">Constitute</a> project that provides '<i>the World's
+Constitutions to read, search, and compare</i>'. Now, 194 constitutions have enough
+text to play around with generative text models. That is, to create a model of
+text from the corpus and generate similar data from it.
+</p>
+
+<p>
+Most of the impressive feats you will see around at present for generating text
+use Recurrent Neural Networks. If you want to try these, use <a href="https://github.com/karpathy/char-rnn">char-rnn</a> (lua) or
+<a href="https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py">lstm-text-generation-example</a> of keras (python). There are many entertaining
+examples. Look around for generated <a href="https://medium.com/@samim/ted-rnn-machine-generated-ted-talks-3dd682b894c0#.z0dofjaea">TED talks</a>, <a href="https://medium.com/@samim/obama-rnn-machine-generated-political-speeches-c8abd18a2ea0">Obama speeches</a>, <a href="https://twitter.com/rnn_bible">Biblical tweets</a>
+etc. See Karpathy's <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">post</a> for more examples and insights.
+</p>
+
+<p>
+Naturally, I tried doing the same with all the constitutions combined (a
+universal constitution, all that power!). But, the amount of training time
+required turned me off. So, I left RNNs for a simpler (faster) model, and wasn't
+disappointed.
+</p>
+
+<div id="outline-container-org86dbd3c" class="outline-2">
+<h2 id="markov-chains"><a id="org86dbd3c"></a><span class="section-number-2">1</span> Markov Chains</h2>
+<div class="outline-text-2" id="text-markov-chains">
+
+<p>
+Lots and lots of parody text generators on the Internet use Markov Chains. They
+provide probabilities of transition from one state (letter or word) to other
+based on the statistics of data they are modeled on. The idea is really simple
+and beautifully explained <a href="http://setosa.io/blog/2014/07/26/markov-chains/">here</a>.
+</p>
+
+<p>
+I will quickly jump to the fun part.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3e2b4c" class="outline-2">
+<h2 id="wisdom"><a id="orgf3e2b4c"></a><span class="section-number-2">2</span> Wisdom</h2>
+<div class="outline-text-2" id="text-wisdom">
+
+<p>
+I used markov model on dump of all the constitutional text combined. Here are
+some of the pieces of wisdom generated.
+</p>
+
+<p>
+Oh, and I hold no responsibilities here.
+</p>
+
+<blockquote>
+<p>
+The Riksdag may, if necessary, be pursued to the highest point of Mt.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Article 104, dissolve the House of Assembly or affect the coinage or currency
+of Pakistan or any part of Samoa and the efficient management of their
+affairs. Provided that the parties may elect to have their case decided within
+a reasonable time. Regarding contracts which regulate the status of a county
+by law.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Mining rights, which include minerals, the electromagnetic spectrum and the
+space located above the national territory.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Privacy shall take place before December 31st, 1995.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Any person in pre-trial detention has the right to undisturbed relations and
+cooperation with their compatriots outside the territory of India.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+The Riigikogu may express no-confidence in the Prime Minister if more than
+half of all of the entire Nation.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+The modalities of management and of results, founded on efficiency and
+effectiveness, economy, equity, opportunity and objectivity, and are
+determined by the Constitution and by law. No person may perform a state or
+public function in conflict with their other functions, occupation or private
+interests. Foreign citizens and persons without citizenship shall not enjoy
+the right to freedom.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Children shall care for all government officials, and of the judicial or
+administrative matters that fall within the territory of the Republic. The
+Deputies represent the respective territorial entity. The conditions under
+which the conformation of its member within thirty days from the date of
+appointment to a Sunday.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+The Constitution of the people of Iran is Islam.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Everyone has a right of farmers and crafters and find marketplaces for them.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Unless otherwise provided by an independent budget whose items are handled
+before Congress in conformity with the leave of absence or from a minimum of
+five independent notable persons. Protection of the Republic can restrict the
+freedom of association, or by the President shall submit to it against a
+determination of an Extradition Act.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+The law shall come into operation of transportation, in the organic laws and
+shall keep the President.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Commercial activities may be regulated by law, to the authority and support
+the charitable activities for the current term. Efficient, economic, and
+Schleswig-Holstein. They shall respect the basic needs of the games and
+lotteries.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Constitutional Province of Lower Canada is hereby recognized. The President
+for a crime.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+If a Minister must resign. A non-South Sudanese may acquire title to land,
+natural disaster.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+The President shall be held to furnish them to sell products to the
+Constitution. Provided that licences or permits relating to the Union.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Sabotage of the Judicial Power of Parliament; that I will not accept their
+oath during the period between 2015 and 2020 are inferior to 40%.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Copyrights, patents of invention and patent rights shall be dealt with behind
+closed doors. The Prime Minister shall be twice put in place for despotism,
+repression, tyranny, heals the wounds of the content of other persons
+indicated by law to protect it.
+</p>
+</blockquote>
+
+<p>
+If you want to play around with the data and/or script, head over to the
+repository <a href="https://github.com/lepisma/fake-charter">here</a>. The script uses <a href="http://rednoise.org/rita">RiTa</a> and runs on <i>node.js</i>. Try changing the N
+factor (default 3) for creating different N-gram models. A higher value gives
+content similar to original text.
+</p>
+
+<p>
+And remember
+</p>
+
+<blockquote>
+<p>
+Loss of citizenship starts at 11 a. m.
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

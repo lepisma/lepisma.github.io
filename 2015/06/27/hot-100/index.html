@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hot 100 over the years</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2015-06-27 Sat 00:00</div>
+                                <h1>Hot 100 over the years</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../../..#exploration viz'>exploration viz</a></div>
+<div class="page-intro">
+<p>
+Exploration of trends in Billboard Hot 100 songs using echonest's acoustic
+features.
+</p>
+
+</div>
+
+<p>
+<span class='dropcap'>W</span>e all know that Billboard maintains charts of almost every type feasible. One
+of the most important is the <i>HOT 100</i>.
+</p>
+
+<p>
+HOT 100 basically tells you what <i>single</i> (not album tracks) songs are <i>Hot</i> right
+now. Image below (click to zoom) shows the current evaluation scheme for the
+songs (taken from Billboard).
+</p>
+
+
+<figure>
+<img src="./method.png" alt="method.png" class="zoomTarget" data-closeclick="true">
+
+</figure>
+
+<p>
+Billboard started maintaining this chart in 1958 and you can basically go
+through the whole history on their website. Well 1958 to 2015, you can easily
+smell a huge variety of records and interesting trends here, and there
+definitely are. Follow this <a href="https://en.wikipedia.org/wiki/List_of_Billboard_Hot_100_chart_achievements_and_milestones">Wikipedia link</a>.
+</p>
+
+<hr>
+
+<p>
+I scraped the whole history of HOT 100 starting from August 09, 1958 (Poor
+Little Fool, Ricky Nelson) to June 06, 2015 (Bad Blood, Taylor Swift) to see
+what else is interesting here and there apart from the obvious records.
+</p>
+
+<div id="outline-container-org6ce0d7c" class="outline-2">
+<h2 id="stays"><a id="org6ce0d7c"></a><span class="section-number-2">1</span> Stays</h2>
+<div class="outline-text-2" id="text-stays">
+
+<p>
+One thing I was interested to know is the nature of stays in the chart. My
+belief was that over the years, there must be some changes in the number of
+weeks a song stays in the chart. I started by gathering all the songs and the
+week they entered the chart. Now, leaving the ranks they acquired, I just
+counted the number of weeks the songs were having a place in the chart and
+grouped them year wise (the year of entry).
+</p>
+
+<p>
+Here are the plots. Ignore the trends in the extreme ends of the plot since the
+recent songs still are spending time in chart, while the oldest songs were
+abruptly inducted.
+</p>
+
+<a href="https://plot.ly/~lepisma/67/" target="_blank" title="Max chart
+stay" style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/67.png" alt="Max chart stay" style="max-width:
+100%;width: 1229px;"  width="1229"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:67" src="https://plot.ly/embed.js"
+async></script>
+
+<p>
+The max stays have increased over the years, with the peak being 87
+weeks (<i>Radioactive</i>, Imagine Dragons, 2012). Maybe this is because of
+the whole internet thing, things grow in popularity when you have a
+better communication.
+</p>
+
+<p>
+A more interesting thing to look out for is the mean and standard
+deviation of chart stays.
+</p>
+
+<a href="https://plot.ly/~lepisma/79/" target="_blank" title="Chart stays"
+style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/79.png" alt="Chart stays" style="max-width:
+100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:79" src="https://plot.ly/embed.js"
+async></script>
+
+<p>
+Here also the same trend is there, a higher mean tells you that songs are
+staying longer. Also the standard deviation has increased signaling the
+disparities in popularity.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org059d2f9" class="outline-2">
+<h2 id="words"><a id="org059d2f9"></a><span class="section-number-2">2</span> Words</h2>
+<div class="outline-text-2" id="text-words">
+
+<p>
+I also tried to find out how many times particular words enjoy presence in the
+chart. Basically I gathered the count of words (<code>nltk.tokenizer</code>) in the song
+titles from the whole chunk. Here are the top 20 words (removing the usual stop
+words).
+</p>
+
+<a href="https://plot.ly/~lepisma/146/" target="_blank" title="Chart
+presence of words in Hot 100 (1958-2015)" style="display: block; text-align:
+center;"><img src="https://plot.ly/~lepisma/146.png" alt="Chart presence of
+words in Hot 100 (1958-2015)" style="max-width: 100%;width: 869px;"
+width="869" onerror="this.onerror=null;this.src='https://plot.ly/404.png';"
+/></a>
+<script data-plotly="lepisma:146" src="https://plot.ly/embed.js"
+async></script>
+
+<p>
+Nothing interesting here apart from the classical conclusion of Music being so
+lovesick. I also ran this year wise, but leaving the occasional shuffling of few
+words, nothing really interesting came out. Lets move on.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf012097" class="outline-2">
+<h2 id="acoustics"><a id="orgf012097"></a><span class="section-number-2">3</span> Acoustics</h2>
+<div class="outline-text-2" id="text-acoustics">
+
+<p>
+Why not go with the acoustic attributes of the music themselves ?
+</p>
+
+<p>
+By <i>acoustic attributes</i> of music I mean properties that define the music and its
+components as perceived by your subjective senses. One example can be (lets say)
+a value that signifies the sadness of songs.
+</p>
+
+<hr>
+
+<p>
+<a href="http://the.echonest.com/">Echonest</a> has exactly what we need. An API that provides you access to the
+acoustic attributes they maintain for their (really) huge music database. Also,
+the attributes have real subjective meanings too. You can see this from the
+attribute names like <i>acousticness</i>, <i>instrumentalness</i> etc.
+</p>
+
+<p>
+<i>In what ways can they help?</i> Actually, in a lot of ways. But lets start with the
+most obvious thing first. I gathered echonest attributes for all the Hot 100
+songs, from 1958 to 2015 and went on to plot the year wise mean of 9 acoustic
+attributes.
+</p>
+</div>
+
+<div id="outline-container-org5daccb8" class="outline-3">
+<h3 id="acoustics/acousticness"><a id="org5daccb8"></a><span class="section-number-3">3.1</span> Acousticness</h3>
+<div class="outline-text-3" id="text-acoustics/acousticness">
+
+<p>
+Higher values mean higher content by vocal or acoustic instruments.
+</p>
+
+<a href="https://plot.ly/~lepisma/90/" target="_blank" title="Mean
+acousticness" style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/90.png" alt="Mean acousticness"
+style="max-width: 100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:90" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-orga08358c" class="outline-3">
+<h3 id="acoustics/loudness"><a id="orga08358c"></a><span class="section-number-3">3.2</span> Loudness</h3>
+<div class="outline-text-3" id="text-acoustics/loudness">
+
+<p>
+You know what that is (in dB).
+</p>
+
+<a href="https://plot.ly/~lepisma/95/" target="_blank" title="Mean Loudness"
+style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/95.png" alt="Mean Loudness" style="max-width:
+100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:95" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-org4540c8c" class="outline-3">
+<h3 id="acoustics/danceability"><a id="org4540c8c"></a><span class="section-number-3">3.3</span> Danceability</h3>
+<div class="outline-text-3" id="text-acoustics/danceability">
+
+<p>
+You can guess this too.
+</p>
+
+<a href="https://plot.ly/~lepisma/100/" target="_blank" title="Mean
+Danceability" style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/100.png" alt="Mean Danceability"
+style="max-width: 100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:100" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-org1fc7966" class="outline-3">
+<h3 id="acoustics/liveness"><a id="org1fc7966"></a><span class="section-number-3">3.4</span> Liveness</h3>
+<div class="outline-text-3" id="text-acoustics/liveness">
+
+<p>
+Higher values indicate more audience effect (as in live tracks). Though this
+property has significant meaning only when it is high.
+</p>
+
+<a href="https://plot.ly/~lepisma/105/" target="_blank" title="Mean
+Liveness" style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/105.png" alt="Mean Liveness" style="max-width:
+100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:105" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-org5153843" class="outline-3">
+<h3 id="acoustics/tempo"><a id="org5153843"></a><span class="section-number-3">3.5</span> Tempo</h3>
+<div class="outline-text-3" id="text-acoustics/tempo">
+
+<p>
+Beats per minute stuff.
+</p>
+
+<a href="https://plot.ly/~lepisma/110/" target="_blank" title="Mean Tempo"
+style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/110.png" alt="Mean Tempo" style="max-width:
+100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:110" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-orgcb490c8" class="outline-3">
+<h3 id="acoustics/valence"><a id="orgcb490c8"></a><span class="section-number-3">3.6</span> Valence</h3>
+<div class="outline-text-3" id="text-acoustics/valence">
+
+<p>
+Higher value tells you the song is positive, lower value tells you the
+song is negative, sad etc.
+</p>
+
+<a href="https://plot.ly/~lepisma/115/" target="_blank" title="Mean Valence"
+style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/115.png" alt="Mean Valence" style="max-width:
+100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:115" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-orgaae51f6" class="outline-3">
+<h3 id="acoustics/speechiness"><a id="orgaae51f6"></a><span class="section-number-3">3.7</span> Speechiness</h3>
+<div class="outline-text-3" id="text-acoustics/speechiness">
+
+<p>
+Spoken words content in the song.
+</p>
+
+<a href="https://plot.ly/~lepisma/118/" target="_blank" title="Mean
+Speechiness" style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/118.png" alt="Mean Speechiness"
+style="max-width: 100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:118" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-org631be58" class="outline-3">
+<h3 id="acoustics/instrumentalness"><a id="org631be58"></a><span class="section-number-3">3.8</span> Instrumentalness</h3>
+<div class="outline-text-3" id="text-acoustics/instrumentalness">
+
+<p>
+You can guess this too.
+</p>
+
+<a href="https://plot.ly/~lepisma/125/" target="_blank" title="Mean
+Instrumentalness" style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/125.png" alt="Mean Instrumentalness"
+style="max-width: 100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:125" src="https://plot.ly/embed.js"
+async></script>
+</div>
+</div>
+
+<div id="outline-container-orgcbc5828" class="outline-3">
+<h3 id="acoustics/energy"><a id="orgcbc5828"></a><span class="section-number-3">3.9</span> Energy</h3>
+<div class="outline-text-3" id="text-acoustics/energy">
+
+<p>
+Intensity, power etc.
+</p>
+
+<a href="https://plot.ly/~lepisma/128/" target="_blank" title="Mean Energy"
+style="display: block; text-align: center;"><img
+src="https://plot.ly/~lepisma/128.png" alt="Mean Energy" style="max-width:
+100%;width: 869px;"  width="869"
+onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+<script data-plotly="lepisma:128" src="https://plot.ly/embed.js"
+async></script>
+
+<p>
+For getting the meaning of the numbers and the attributes, you should read
+echonest's documentations on the attributes, like <a href="http://developer.echonest.com/acoustic-attributes.html">this</a> and <a href="http://developer.echonest.com/docs/v4/_static/AnalyzeDocumentation.pdf">this</a>.
+</p>
+
+<p>
+So, yes, you just saw the music trends according to the subjective acoustic
+attributes. There are clear falling or rising trends for few attributes. I don't
+know the exact reasons (clearly) for few very visible but not so obvious trends
+since I am not from the region where this whole playground is set (U.S.), but
+anyone with enough background could deduce meanings from these plots.
+</p>
+
+<hr>
+
+<p>
+Acoustic attributes are awesome. There are lots and lots of ways you could
+analyze the trends using these attributes. For example I could try:
+</p>
+
+<ul class="org-ul">
+<li>Clustering songs based on the attributes and popularity (based on ranks).</li>
+<li>Analyzing the effect of attributes on songs which are quick to come and
+equally quick to go, or songs that stay really long.</li>
+<li>Predicting chart positions.</li>
+<li>Analyzing artist wise trends etc.</li>
+</ul>
+
+<p>
+Though I have done a few of these, many possibilities are left untouched. Once,
+I get free with few things, I will try to push the results as a continuation of
+this post.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

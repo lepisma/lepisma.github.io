@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 23:26 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Searching for Strassen multiplication rule</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='active' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>Last modified:  2018-05-28 Mon 10:04</div>
+                                <h1>Searching for Strassen multiplication rule</h1>
+                              </div>
+</div>
+<div id="content">
+<div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../mathematics/index.html'>mathematics</a> / strassen</div>
+<blockquote>
+<p>
+This page is a work in progress
+</p>
+</blockquote>
+
+<p>
+Strassen algorithm is an \(\mathcal{O}(N^{2.8074})\) algorithm for multiplying two
+square matrices. One major part of the algorithm describes a bunch of
+transformations for the submatrices involved. The transformations are mostly
+non-intuitive and so the situation looks good playground to try some symbolic
+computation and searching.
+</p>
+
+<aside>
+<p>
+See the <a href="https://en.wikipedia.org/wiki/Strassen_algorithm#Algorithm">wikipedia page</a> for the transformations in the algorithm. The basic idea
+is to find a set of multiples with cardinality &lt; 8 (since we already do 8
+multiplications in the normal case) which is then manipulated using \(\pm\)
+operators to give the values we want.
+</p>
+</aside>
+
+<div id="outline-container-org038c7ad" class="outline-2">
+<h2 id="the-general-idea"><a id="org038c7ad"></a><span class="section-number-2">1</span> The general idea</h2>
+<div class="outline-text-2" id="text-the-general-idea">
+
+
+<p>
+Leaving the specifics behind, the main idea here is to transform a represention
+of an object in a <i>non-commutative</i> <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> ring to
+another with lesser number of muliplications (since they might be costly) as
+compared to a basic canonical form. These multiplcations (and additions) are
+applied on certain fixed set of objects. As an example, consider the popular
+situation of multiplying two complex numbers \(a + ib\) and \(c + id\). The naive
+representation of the product can be given as:
+</p>
+
+<p>
+\[ (ac - bd) + i(ad + bc) \]
+</p>
+
+<p>
+This representation uses 4 multiplications (\(ac\), \(bd\), \(ad\) and \(bc\)) while the
+following, equivalent representation, uses 3 (\(ac\), \(bd\) and \((a + b)(c + d)\)):
+</p>
+
+<p>
+\[ (ac - bd) + i((a + b)(c + d) - ac - bd) \]
+</p>
+
+<p>
+Transformations like these are useful <i>if</i> there are differences in the resources
+requirement for various operations (and there are).
+</p>
+
+<p>
+Similar problem arises when multiplying two square matrices \(A\) and \(B\) to
+produce \(C\). If we break each of the matrices involved like shown below, we get
+a problem pretty similar to the complex number multiplication:
+</p>
+
+\begin{align*}
+X = \begin{bmatrix}
+   X_{11} & X_{12} \\
+   X_{21} & X_{22} \\
+\end{bmatrix}
+\end{align*}
+
+<p>
+In the matrix version, we have the following results to achieve:
+</p>
+
+\begin{align}
+\label{eq:simple}
+C_{11} &= A_{11}B_{11} + A_{12}B_{21} \\
+C_{12} &= A_{11}B_{12} + A_{12}B_{22} \nonumber \\
+C_{21} &= A_{21}B_{11} + A_{22}B_{21} \nonumber \\
+C_{22} &= A_{21}B_{12} + A_{22}B_{22} \nonumber \\
+\end{align}
+
+<p>
+This needs 8 multiplications. Strassen algorithm does it in 7 (see the
+intermediate transformations in wikipedia <a href="https://en.wikipedia.org/wiki/Strassen_algorithm#Algorithm">page</a>). Automating this exact procedure
+probably is not very hard and can be done by simple randomized optimization
+algorithms (so that we don't have to dig in the underlying mechanics). In fact I
+will try to do this first. The bigger problem is to have a general way to
+transform expression with certain needs in mind.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9dfa339" class="outline-2">
+<h2 id="direct-search"><a id="org9dfa339"></a><span class="section-number-2">2</span> Direct search</h2>
+<div class="outline-text-2" id="text-direct-search">
+
+
+<p>
+For generating the intermediate forms \(M_{i}\) (as described in the wikipedia
+page) we use one multiplication, the first operand of which is a result of
+arbitrary number of sum and negation operations over \(\{A_{11}, A_{12}, A_{21},
+A_{22}, 0 \}\) with the constraints that the result is not \(0\). Similarly for the
+second operand with set of submatrices of type \(B_{ij}\). This results in
+\(M_{i}s\) getting pulled from the set \(\{A_{11}, A_{12}, A_{21}, A_{22}\} \times
+\{B_{11}, B_{12}, B_{21}, B_{22}\}\) (with possible integral coefficients).
+</p>
+
+<p>
+One way to proceed from here is to use the products \(A_{i}B_{j}\) to represent
+the desired result (see \ref{eq:simple}) in a matrix as shown below:
+</p>
+
+<aside>
+<p>
+This reminds me, we need a <i>shape checker</i> for matrices in Python in the spirit
+of mypy. I wonder how useful other users deem it.
+</p>
+</aside>
+
+<div class="org-src-container">
+<pre class="src src-sage"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-comment-delimiter"># </span><span class="org-comment">Shape 4 (C) x 16 (A x B)</span>
+<span class="org-variable-name">output</span> = np.array<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[</span><span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+                   <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+                   <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+                   <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+For the transformation from \(M_i\) to the output (represented in a way)
+</p>
+
+<p>
+TODO. <i>Mess ahead</i>. Fix individual generation, randomization and mixing.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sage"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-variable-name">Y</span> = np.random.randint<span class="org-rainbow-delimiters-depth-1">(</span>-<span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">2</span>, <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">7</span>, <span class="org-highlight-numbers-number">16</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-comment-delimiter"># </span><span class="org-comment">7x16</span>
+<span class="org-variable-name">X</span> = output.dot<span class="org-rainbow-delimiters-depth-1">(</span>np.linalg.pinv<span class="org-rainbow-delimiters-depth-2">(</span>Y<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-comment-delimiter"># </span><span class="org-comment">4x16</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">minimize</span>
+np.linalg.norm<span class="org-rainbow-delimiters-depth-1">(</span>X, <span class="org-highlight-numbers-number">2</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Constraint the rows of Y to be a defined thing. Each row in Y can be written
+as the (flattened) outer product of [a b c d] and [x y w z]. Here the first
+vector represents the As and second the Bs. In both these vectors, there
+should be at least 1 and at most 2 values active (active meaning non zero; 1
+or -1).
+</p>
+
+<p>
+For X, we need at least one item active in each row.
+</p>
+
+<p>
+Doing that outer things gives
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sage"><span class="org-variable-name">Y</span> = array<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[</span><span class="org-rainbow-delimiters-depth-3">[</span> <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+           <span class="org-rainbow-delimiters-depth-3">[</span> <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+           <span class="org-rainbow-delimiters-depth-3">[</span> <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+           <span class="org-rainbow-delimiters-depth-3">[</span> <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>, <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+           <span class="org-rainbow-delimiters-depth-3">[</span> <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+           <span class="org-rainbow-delimiters-depth-3">[</span>-<span class="org-highlight-numbers-number">1</span>, -<span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+           <span class="org-rainbow-delimiters-depth-3">[</span> <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">1</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>,  <span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">0</span>, -<span class="org-highlight-numbers-number">1</span>, -<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4e85b96" class="outline-2">
+<h2 id="better-solutions"><a id="org4e85b96"></a><span class="section-number-2">3</span> Better solutions</h2>
+<div class="outline-text-2" id="text-better-solutions">
+
+
+<p>
+Keeping the obviously better solution aside for a moment, we have a lot
+possibilities of elegance even in the search. From the top of my head, there are
+the following two:
+</p>
+
+<ol class="org-ol">
+<li>Start with a <i>correct</i> output representation and expand the terms so as to
+create a valid solution at each step. This needs to go on til we get the
+desired amount of shared terms.</li>
+<li>Generate solution with less constraints and verify the correctness with a
+symbolic system like sagemath or proof system like coq.</li>
+</ol>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">This is required for matrices</div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

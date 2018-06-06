@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Up and running with Theano (GPU) + PyCUDA on Windows</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2015-07-30 Thu 00:00</div>
+                                <h1>Up and running with Theano (GPU) + PyCUDA on Windows</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../..#tooling'>tooling</a></div>
+<p>
+<span class='dropcap'>G</span>etting CUDA to work with python on Windows is really frustrating. Its not
+exactly hard, but is sure irritating when you start doing it. If you have ever
+tried it, you might be knowing that many possible combinations of <i>compilers</i>,
+<i>cuda toolkit</i>, <i>python</i> etc. don't work.
+</p>
+
+<p>
+This post describes the steps that I followed for a working setup of theano
+working with GPU acceleration and PyCUDA for general access to GPU from python.
+Hopefully, it will help if you haven't found the sweet spot yet.
+</p>
+
+<div id="outline-container-org3304590" class="outline-2">
+<h2 id="setting-up"><a id="org3304590"></a><span class="section-number-2">1</span> Setting up</h2>
+<div class="outline-text-2" id="text-setting-up">
+
+<p>
+Starting with my machine, it is a <i>Pavilion DV6 7012tx</i> Laptop with Nvidia GeForce
+GT 630m card. Right now its running <i>Windows 10 x64</i>. If you are already having
+<code>cygwin</code> or <code>mingw</code> based <code>gcc</code> in place, you might want to remove that since our
+scientific python stack will provide that.
+</p>
+</div>
+
+<div id="outline-container-orgb613727" class="outline-3">
+<h3 id="setting-up/install-visual-studio"><a id="orgb613727"></a><span class="section-number-3">1.1</span> Install Visual Studio</h3>
+<div class="outline-text-3" id="text-setting-up/install-visual-studio">
+
+<p>
+This is needed to get Nvidia's CUDA compiler (<code>nvcc</code>) working. For choosing the
+version, go to the latest <a href="http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-microsoft-windows/index.html">CUDA on Windows doc</a> and see which version of visual
+studio the current CUDA toolkit supports.
+</p>
+
+<p>
+At the time of writing, CUDA 7 was the latest release and Visual Studio 2013 was
+the latest supported version. You also don't need to install 2008 or 2010
+version of compiler for python. This will be taken care of later, just go with
+everything latest.
+</p>
+
+<p>
+After installation, you don't actually need to add <code>cl.exe</code> (usually in a
+directory like <code>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin</code>,
+depending on your Visual Studio version) to <code>PATH</code> for theano since we will define
+this explicitly in <code>.theanorc</code>, but it is better to do this as many other tools
+might be using it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96260e9" class="outline-3">
+<h3 id="setting-up/install-cuda-toolkit"><a id="org96260e9"></a><span class="section-number-3">1.2</span> Install CUDA toolkit</h3>
+<div class="outline-text-3" id="text-setting-up/install-cuda-toolkit">
+
+<p>
+This should be easy, get the latest CUDA and install it. Keep the samples while
+installing, they are nice for checking if things are working fine.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org49f8d02" class="outline-3">
+<h3 id="setting-up/setup-python"><a id="org49f8d02"></a><span class="section-number-3">1.3</span> Setup Python</h3>
+<div class="outline-text-3" id="text-setting-up/setup-python">
+
+<p>
+This is where most of the trouble is. Its easy to get lost while setting up
+vanilla python for theano specially since you also are setting up <code>gcc</code> and
+related tools. The theano installation tutorial will bog you down in this phase
+if you don't actually read it carefully. Most likely you would end up
+downloading lots of legacy Visual Studio versions and other stuff. We won't be
+going that way.
+</p>
+
+<p>
+Install a scientific python distribution like <a href="http://continuum.io/downloads">Anaconda</a>. I haven't tried setting
+up theano using other distributions but this should be one of the easier ways
+because of <a href="http://conda.pydata.org/docs/#conda">conda</a> package manager. This really relieves you from setting up a
+separate <code>mingw</code> environment and handling <i>commonly used</i> libraries which are as
+easy as <code>conda install boost</code> in Anaconda.
+</p>
+
+<p>
+If you feel Anaconda is a bit too heavy, try <a href="http://conda.pydata.org/miniconda.html">miniconda</a> and adding basic packages
+like <code>numpy</code> on top of it.
+</p>
+
+<p>
+Once you install Anaconda, install additional dependencies.
+</p>
+
+<pre class="example">
+conda install mingw libpython
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgb00c647" class="outline-3">
+<h3 id="setting-up/install-theano"><a id="orgb00c647"></a><span class="section-number-3">1.4</span> Install theano</h3>
+<div class="outline-text-3" id="text-setting-up/install-theano">
+
+<p>
+Install theano using <code>pip install theano</code> and create a <code>.theanorc</code> file in your <code>HOME</code>
+directory with following contents.
+</p>
+
+<pre class="example">
+[global]
+floatX = float32
+device = gpu
+
+[nvcc]
+flags=-LC:\Anaconda\libs
+compiler_bindir=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin
+</pre>
+
+<p>
+Make sure to change the path <code>C:\Anaconda\libs</code> according to your Anaconda install
+directory and <code>compiler_bindir</code> to the path with <code>cl.exe</code> in it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgde7624f" class="outline-3">
+<h3 id="setting-up/install-pycuda"><a id="orgde7624f"></a><span class="section-number-3">1.5</span> Install PyCUDA</h3>
+<div class="outline-text-3" id="text-setting-up/install-pycuda">
+
+<p>
+Best way to install PyCUDA is to get the Unofficial Windows Binaries by
+Christoph Gohlke <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">here</a>.
+</p>
+
+<p>
+For quick setup, you can use <a href="https://github.com/lepisma/pipwin">pipwin</a> which basically automates the process of
+installing Gohlke's packages.
+</p>
+
+<pre class="example">
+pip install pipwin
+pipwin install pycuda
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org05ab5fb" class="outline-2">
+<h2 id="test-it-out"><a id="org05ab5fb"></a><span class="section-number-2">2</span> Test it out</h2>
+<div class="outline-text-2" id="text-test-it-out">
+
+<p>
+A very basic test is to simply import theano.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">import</span> theano
+Using gpu device <span class="org-highlight-numbers-number">0</span>: GeForce GT <span class="org-highlight-numbers-number">630M</span> <span class="org-rainbow-delimiters-depth-1">(</span>CNMeM <span class="org-keyword">is</span> disabled<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+This should tell you if the GPU is getting used.
+</p>
+
+<p>
+One error says that <i>CUDA is installed, but device gpu is not available</i>. For me,
+this was solved after installing <code>mingw</code> and <code>libpython</code> via conda since Anaconda
+doesn't setup <code>gcc</code> along with it as it used to do earlier.
+</p>
+
+<p>
+For a more extensive test, try the following snippet taken from <a href="http://deeplearning.net/software/theano/tutorial/using_gpu.html">theano docs</a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">from</span> theano <span class="org-keyword">import</span> function, config, shared, sandbox
+<span class="org-keyword">import</span> theano.tensor <span class="org-keyword">as</span> T
+<span class="org-keyword">import</span> numpy
+<span class="org-keyword">import</span> time
+
+<span class="org-variable-name">vlen</span> = <span class="org-highlight-numbers-number">10</span> * <span class="org-highlight-numbers-number">30</span> * <span class="org-highlight-numbers-number">768</span>  <span class="org-comment-delimiter"># </span><span class="org-comment">10 x #cores x # threads per core</span>
+<span class="org-variable-name">iters</span> = <span class="org-highlight-numbers-number">1000</span>
+
+<span class="org-variable-name">rng</span> = numpy.random.RandomState<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">22</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-variable-name">x</span> = shared<span class="org-rainbow-delimiters-depth-1">(</span>numpy.asarray<span class="org-rainbow-delimiters-depth-2">(</span>rng.rand<span class="org-rainbow-delimiters-depth-3">(</span>vlen<span class="org-rainbow-delimiters-depth-3">)</span>, config.floatX<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-variable-name">f</span> = function<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[]</span>, T.exp<span class="org-rainbow-delimiters-depth-2">(</span>x<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-keyword">print</span> f.maker.fgraph.toposort<span class="org-rainbow-delimiters-depth-1">()</span>
+<span class="org-variable-name">t0</span> = time.time<span class="org-rainbow-delimiters-depth-1">()</span>
+<span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-builtin">xrange</span><span class="org-rainbow-delimiters-depth-1">(</span>iters<span class="org-rainbow-delimiters-depth-1">)</span>:
+    <span class="org-variable-name">r</span> = f<span class="org-rainbow-delimiters-depth-1">()</span>
+<span class="org-variable-name">t1</span> = time.time<span class="org-rainbow-delimiters-depth-1">()</span>
+<span class="org-keyword">print</span> <span class="org-string">'Looping %d times took'</span> % iters, t1 - t0, <span class="org-string">'seconds'</span>
+<span class="org-keyword">print</span> <span class="org-string">'Result is'</span>, r
+<span class="org-keyword">if</span> numpy.<span class="org-builtin">any</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[</span><span class="org-builtin">isinstance</span><span class="org-rainbow-delimiters-depth-3">(</span>x.op, T.Elemwise<span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-keyword">for</span> x <span class="org-keyword">in</span> f.maker.fgraph.toposort<span class="org-rainbow-delimiters-depth-3">()</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>:
+    <span class="org-keyword">print</span> <span class="org-string">'Used the cpu'</span>
+<span class="org-keyword">else</span>:
+    <span class="org-keyword">print</span> <span class="org-string">'Used the gpu'</span>
+</pre>
+</div>
+
+<p>
+You should see something like this.
+</p>
+
+<pre class="example">
+Using gpu device 0: GeForce GT 630M (CNMeM is disabled)
+[GpuElemwise{exp,no_inplace}(&lt;CudaNdarrayType(float32, vector)&gt;), HostFromGpu(GpuElemwise{exp,no_inplace}.0)]
+Looping 1000 times took 1.42199993134 seconds
+Result is [ 1.23178029  1.61879349  1.52278066 ...,  2.20771813  2.29967761
+  1.62323296]
+Used the gpu
+</pre>
+
+<p>
+For PyCUDA, here is a quick test snippet from their <a href="http://documen.tician.de/pycuda/index.html">web page</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">import</span> pycuda.autoinit
+<span class="org-keyword">import</span> pycuda.driver <span class="org-keyword">as</span> drv
+<span class="org-keyword">import</span> numpy
+
+<span class="org-keyword">from</span> pycuda.compiler <span class="org-keyword">import</span> SourceModule
+<span class="org-variable-name">mod</span> = SourceModule<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"""</span>
+<span class="org-string">__global__ void multiply_them(float *dest, float *a, float *b)</span>
+<span class="org-string">{</span>
+<span class="org-string">  const int i = threadIdx.x;</span>
+<span class="org-string">  dest[i] = a[i] * b[i];</span>
+<span class="org-string">}</span>
+<span class="org-string">"""</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-variable-name">multiply_them</span> = mod.get_function<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"multiply_them"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-variable-name">a</span> = numpy.random.randn<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">400</span><span class="org-rainbow-delimiters-depth-1">)</span>.astype<span class="org-rainbow-delimiters-depth-1">(</span>numpy.float32<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-variable-name">b</span> = numpy.random.randn<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">400</span><span class="org-rainbow-delimiters-depth-1">)</span>.astype<span class="org-rainbow-delimiters-depth-1">(</span>numpy.float32<span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-variable-name">dest</span> = numpy.zeros_like<span class="org-rainbow-delimiters-depth-1">(</span>a<span class="org-rainbow-delimiters-depth-1">)</span>
+multiply_them<span class="org-rainbow-delimiters-depth-1">(</span>
+        drv.Out<span class="org-rainbow-delimiters-depth-2">(</span>dest<span class="org-rainbow-delimiters-depth-2">)</span>, drv.In<span class="org-rainbow-delimiters-depth-2">(</span>a<span class="org-rainbow-delimiters-depth-2">)</span>, drv.In<span class="org-rainbow-delimiters-depth-2">(</span>b<span class="org-rainbow-delimiters-depth-2">)</span>,
+        block=<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">400</span>,<span class="org-highlight-numbers-number">1</span>,<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">)</span>, grid=<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">1</span>,<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-keyword">print</span> dest-a*b
+</pre>
+</div>
+
+<p>
+Seeing an array of zeros ? Its working fine then.
+</p>
+
+<p>
+Hopefully, this should give you a working <i>pythonish</i> CUDA setup using the latest
+versions of VS, Windows, Python etc.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abusing Evidence: Drought, Deluge and Disregard</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2016-08-25 Thu 00:00</div>
+                                <h1>Abusing Evidence: Drought, Deluge and Disregard</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../../..#ramble'>ramble</a><a href='../../../../..#skepticism'>skepticism</a></div>
+<style>
+.video-iframe {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="page-intro">
+<p>
+Three recent events. Each trying to push psuedo-science using different
+approaches. But with a common element of grayness in how they discuss topics
+related to science.
+</p>
+
+</div>
+
+<blockquote>
+<p>
+Warning: This post contains strong language at places. Its also long.
+</p>
+</blockquote>
+
+<p>
+<span class='dropcap'>W</span>eird things happen when you are at home. You get to talk to <i>real</i> people and get
+out of your utopic daydream. I have recently been unable to argue with people on
+a few topics. I wonder if I am getting too old for this shit. Most of these
+happen when I touch a <i>gray</i> portion of certain communicated opinions. It gets
+hard to convince people about a general sense of blackness or whiteness. In
+every argument, you can easily weasel out solid points for your favour. And if
+people have even a single point in favour, they are willing to stick it with
+their sense of identity and refuse to accept any change. (I need an ego
+deflation session, mail me)
+</p>
+
+<p>
+Some cases are easy to argue against. You just roll your eyes. Some are
+not-so-easy. Let me give a general sense of what type of content I am talking
+about. Consider vegetarian and non-vegetarian eating habits. Simplest of the
+arguments will split opinions among factions. The neutrals are easy to get
+baptized to either side. Only when you give enough time, the fog begins to
+clear. Till then, the arguments go on like meteor showers. Never hitting
+anything. Its not necessary that one side is ultimately right and other is
+wrong. But there is something special about the ways bad arguments work here,
+which makes it easy to know who is putting real arguments and who is shuffling
+flip-flops. Meanwhile the flip-flop guy isn't aware of things and has trust on
+the points of virtue of his / her cause. This makes it hard. <i>"Hey you are being
+good, but its not the right way"</i>, ever heard this work?
+</p>
+
+<p>
+Things boil down to poor journalism and communication. Information communication
+is how you learn about things and use them to make arguments. Poor examples of
+communication almost always mishandle evidence. I will mention 3 major cases
+here that I repeatedly face.
+</p>
+
+<p>
+Before I begin, I want to specifically focus on the point that the topic of my
+interest in all these cases, for this post, is the <i>presentation of information</i>
+and not the information itself. This post might also look like doing undue
+exaggeration of the issue, I will try to convince you its not the case. Also, I
+am no expert on many things and have been involved in stupidity pretty much
+regularly. So don't take things here as absolute truths, but opinions of sort.
+</p>
+
+<div id="outline-container-orgad3261a" class="outline-2">
+<h2 id="drought"><a id="orgad3261a"></a><span class="section-number-2">1</span> Drought</h2>
+<div class="outline-text-2" id="text-drought">
+
+
+
+<figure>
+<img src="./wikipedian_protester.png" alt="wikipedian_protester.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span><a href="https://xkcd.com/285">xkcd 285</a></figcaption>
+</figure>
+
+<p>
+One of my relative forwarded the following message to me.
+</p>
+
+<blockquote>
+<p>
+"The Fact of Melatonin* Plz make it a point to sleep early&#x2026; 😴😊 Thats how God
+has made us&#x2026; Sleep at night and work during the day&#x2026;☺ Today I learnt
+something new&#x2026; A natural cancer vaccine. God placed in each and everyone of us
+a gland in our head called the Pineal gland. It is considered to be the
+biological clock of the human body and it is also connected to the sight nerve.
+It is small like the size of a pea. Everyday after sundown this gland starts
+producing a substance called Melatonin which runs in the bloodstream and
+protects the body from cancer. 😋 This gland works only in the dark so if the
+eye is exposed to light the gland does not work because it thinks night has not
+come yet&#x2026;🤔 So if you stay up at night in the light, you are depriving your
+body from this daily vaccine&#x2026; Our parents and grandparents who used to sleep
+early in the night and wake up early in the morning did not suffer from cancer
+or any of the disease we hear about today. God has placed this daily vaccine in
+our body to protect us so let's put it to use by sleeping early.💪 The gland
+starts working from after dark until two hours before sunrise !!!🌞 Must read
+and share this miraculous physiology God designed inside man&#x2026; 😊😊😊"
+</p>
+</blockquote>
+
+<p>
+Is there anything wrong here? If you are careful, you might find a few mistakes.
+But someone sent you this with good intentions. Honestly, I am happy someone
+other than my parents (ok, the sender was not one of my parents) give a damn
+about when I put my head on pillow. And this message has no side effects and
+isn't really wrong, isn't it?
+</p>
+
+<p>
+I know you have started hating me already. Anyways, what drives you to believe a
+thing like this? Scientific evidence, right? Right?
+</p>
+
+<p>
+You might have heard of melatonin if you use some screen filter like <a href="https://justgetflux.com">flux</a>,
+<a href="http://jonls.dk/redshift/">redshift</a>, <a href="https://github.com/raatmarien/red-moon">red-moon</a> etc. for filtering out blueish lights in night. Melatonin
+gets released in darkness, has things with sleep wake cycle and certain results
+find blue side of the spectrum affecting its release. A well informed source for
+reading on the topic is <a href="http://skeptics.stackexchange.com/a/30730">this</a> answer. Notice how the researches talk about
+statistical significance and uncertainties.
+</p>
+
+<p>
+What about cancer? Wikipedia usually does a good job for communicating popular
+knowledge and opinions. By design it can be rigged by one side of a research.
+But, when it notes a contradiction among results, you can be assured to find
+multiple arguments floating around among researchers. Head over to the Wikipedia
+article on <a href="https://en.wikipedia.org/wiki/Melatonin#Cancer">melatonin</a>. First, there is not much consensus. A bit of web search
+will tell you that there are few researches supporting its assistance in certain
+forms of cancer (mostly breast cancer). But in any case, the results never state
+it as a <i>'vaccine for cancer'</i>. Go on. Mail me papers. Convince me. At least an
+<i>in-vivo</i> trial that concludes it as a cure for cancer. Even, many of the quacks
+(I know a few) use 'maybe' when talking melatonin and cancer connection, because
+otherwise whats stopping them from solving the whole world's cancer with a
+<a href="https://duckduckgo.com/?t=lm&amp;q=buy+melatonin+online">cheap, over-the-counter medicine</a>?
+</p>
+
+<p>
+Oh, and you can also find pretty damn sure articles that say its a miraculous
+thing against cancer. We will talk about those cases in section 2.
+</p>
+
+<p>
+How do you communicate a research which is not strongly established? Obviously
+you factor in the risk and play it safe by saying that <i>"thing X might lead to
+cancer"</i>. <i>Might</i>, because scientists are not sure. <i>Might</i>, because the explosive
+mutability of information can't be controlled. <i>Might</i>, because you really
+understand the uncertainties and are willing to go an extra mile to shackle the
+chains around us. But we say
+</p>
+
+<blockquote>
+<p>
+Hey kiddo! We simplify things so people get it, get it?
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org7e92801" class="outline-3">
+<h3 id="drought/simplification."><a id="org7e92801"></a><span class="section-number-3">1.1</span> Simplification.</h3>
+<div class="outline-text-3" id="text-drought/simplification.">
+
+
+
+<figure>
+<img src="./simple.png" alt="simple.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span><a href="https://xkcd.com/547/">xkcd 547</a></figcaption>
+</figure>
+
+<p>
+No one can know everything. So we use a few tricks. We learn how to utilize
+sources and do reasoning. In fact this is what we are taught in schools.
+Everything else, you learn on the go. We work on coarse models of the world when
+we can't understand or afford a finer one.
+</p>
+
+<p>
+The model we use are made of bricks of a certain kind of framework that you
+choose to be true. Like science, religion, morality etc. The model itself tries
+to faithfully represent the observed behaviour of a certain system. For a
+particular system, many models work, irrespective of the backing framework or
+observational errors.
+</p>
+
+<p>
+Consider climate change. Established observations <a href="http://climate.nasa.gov/vital-signs/global-temperature/">say</a> that the temperature is
+increasing globally over the years. Say we have to understand and communicate
+this observation to the masses. We start by creating a model that explains the
+observation. Now the analysts choose their weapon of choice and create models
+with various levels of abstractions. Some go with hard atmospheric sciences,
+some believe we are in a simulation and go with that, some work using human
+morality and some with religion.
+</p>
+
+<p>
+Next, onto communication. Most of the frameworks have certain techniques to
+abstract away their finest models so as to reach a wider audience. A common
+method is used by religions in many practical cases which reduces their model
+abstractions to simple human morality. When a writer tries to tell people about
+a system, he / she uses a model which is approachable by the <i>target audience</i>.
+</p>
+
+<ul class="org-ul">
+<li>An airplane flies using its <i>'certain kind'</i> of wings. Want more?</li>
+<li>The wings when <i>'pushed forward'</i> create a <i>'situation'</i> in air around it, that
+makes it go up. Want more?</li>
+<li>The wings are shaped in <i>'such a way'</i> that the air speed above and below it are
+different and <i>'an established theory'</i> explains the observed lift. Want more?</li>
+<li>&#x2026;</li>
+<li>Here is the actual documentation with mechanisms and <i>'assumptions'</i>.</li>
+</ul>
+
+<p>
+Notice the quoted words. You can't abstract away models without allowing
+uncertainties, its a myth loved by most of the promoters of ancient-wisdom and
+preachers that I know of. If you are able to, you model was fat and bloated. A
+good communication lets you know at what level of abstraction you are reading
+and how to shift up gears if you can afford it. More importantly, it makes you
+able to ask the right sort of questions.
+</p>
+
+<p>
+Another kind of uncertainty comes with the research itself. Digging deeper makes
+you see that there are many models, within a framework, competing to explain
+observations using certain sub-frameworks. The original model creator warns you
+about these. The assumptions are laid bare and the competing ideas are visible
+to naked eyes. The person responsible for popularizing the model passes these on
+faithfully to a higher abstraction level. The results are not statistically
+significant? No issue. <i>"Mate, the scientists tried to compare this. The results
+are slightly negative but more inconclusive. Though its nice to be safe"</i>.
+</p>
+
+<p>
+Whenever you see an absolute truth walking down, descending from heaven itself
+to grace the internet with its aura, you got a task at hand. Fish out for
+uncertainties. You know they are there, they can't hide if not for assumptions
+(in which case, the assumptions can't hide). Simplification doesn't take away
+uncertainties, but tries to save them.
+</p>
+
+<p>
+The content I mentioned in the beginning seems to have an idiosyncratic way of
+simplification. Similar contents can be seen in their natural habitat of quick
+witted media. IM forwards, social networking posts, micro blogs etc. I remember
+this line from <a href="https://www.goodreads.com/book/show/17470674-fahrenheit-451">Fahrenheit 451</a> talking about things that the characters were
+missing in the fiction
+</p>
+
+<blockquote>
+<p>
+Number one, as I said, quality of information. Number two: leisure to
+digest it. [&#x2026;]
+</p>
+
+<footer>Faber - Fahrenheit 451</footer>
+</blockquote>
+
+<p>
+Leisure to digest comes with a responsibility of <b>not</b> using the leisure to start
+devouring another piece of information or throwing paper planes out of windows.
+</p>
+
+<p>
+The message I mentioned has following <i>non-factoid</i> issues that hurt me (sorry
+sender), despite my respect for the concern of the sender:
+</p>
+
+<ul class="org-ul">
+<li><i>Swapping of model back end</i>: A model must be passed on as it was created. We
+can't mix and match things to suite the prejudices of audience or ourselves.
+Like in this case, some non-creationist atheist (like me) can get pissed off
+and avoid reading the content altogether.</li>
+
+<li><i>Term abuse, Vaccine</i>: I remember a guy in train preaching people (college
+juniors) that Newton's law of gravitation is wrong and you can't use that.
+Apparently, someone didn't use the right set of words while explaining him the
+idea that theories have certain limits, assumptions and validity over scale.
+And Newton's law is not really adequate for some specific needs.</li>
+
+<li><i>Misinterpretation of data</i>: Dying at 30 from T.B. saves us from common old age
+death causes. Cancer too, yes.</li>
+
+<li><i>Absolute facts</i>: I can believe this message lies on the side where researchers
+are certain about cancer effect, but then the reader should get hints for the
+general disagreement, which is pretty much known (specially for the original
+content creator).</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge32cb79" class="outline-3">
+<h3 id="drought/evidence"><a id="orge32cb79"></a><span class="section-number-3">1.2</span> Evidence</h3>
+<div class="outline-text-3" id="text-drought/evidence">
+
+
+<figure>
+<img src="./cell_phones.png" alt="cell_phones.png" class="zoomTarget" data-closeclick="true"> 
+
+<figcaption><span class="figure-number">Figure 3: </span><a href="https://xkcd.com/925/">xkcd 925</a></figcaption>
+</figure>
+
+<p>
+Evidence keeps wild information mutations in check. Its not so much about
+actually putting up the citations before passing the message. Citations can also
+be successfully abstracted. More important is to ensure that there is no drought
+of evidence. Ensure that there are sufficient amount of them before passing on
+information, or creating a higher level abstraction. And ensure that the
+receiver bears the same comfort and responsibility with evidence.
+</p>
+
+<p>
+Evidence, not to be confused with observations, ties the whole model building
+process together. Absence of evidence allows you to do mix and match,
+exaggerations, misinterpretations and misjudgments.
+</p>
+
+<p>
+I mean, what would have been wrong if the message would be circulating without
+the issues we talked about. Heeding to evidence would have kept the facts in
+check (like whether Pineal gland or <a href="https://en.wikipedia.org/wiki/Suprachiasmatic_nucleus">SCN</a> is known as the 'clock'), would have
+included the required uncertainty of results, and even then could have made the
+point it originally intended (making me sleep earlier). How many people are now
+convinced that there is such a thing like <i>'vaccine'</i> for cancer? How many people
+are assured enough to not look upon <i>'Melatonin'</i> on even Wikipedia since the
+information provided is complete and absolute? How many irrational nostalgic
+sentiments about healthy life of yesterdays have been fueled again? How many
+people have been convinced that every move we make, is against the grand scheme
+of someone's God? In my personal experiences with people, I can safely say, a
+hell lot!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbeb1dca" class="outline-2">
+<h2 id="deluge"><a id="orgbeb1dca"></a><span class="section-number-2">2</span> Deluge</h2>
+<div class="outline-text-2" id="text-deluge">
+
+
+<figure>
+<img src="./citations.png" alt="citations.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 4: </span><a href="https://xkcd.com/906/">xkcd 906</a></figcaption>
+</figure>
+
+<p>
+I was recently involved in a facebook discussion about effects of microwave on
+food items. The issues included bad effects of microwave on food and
+carcinogenic quality of plastic + microwave interaction. Without touching the
+topic, let me tell you the state of the final facebook post. There are around 20
+citations floating around. Many of which are not going to affect the arguments.
+Sadly, the original link shared was enough to convince most of us that its good
+science. Citations, references, geeky words, what else do you need? I am sure
+not more than 5 (not sure about the number) guys actually went through, or
+needed to look at the citations. Also, I can assure you, many adventurous people
+who opened the main link came out convinced that they were dealing with science.
+To put it straight, many of us believe that there is no such thing as poor
+science.
+</p>
+
+<aside>
+<p>
+Let John Oliver <a href="https://youtu.be/0Rnq1NpHdmw">explain</a> to you what kind of cases I am talking about.
+</p>
+<iframe src="https://www.youtube.com/embed/0Rnq1NpHdmw" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+</aside>
+
+<p>
+Its different from the first situation. You ask for evidence and the first guy
+will realize the lack and would go on the defensive. This case will throw so
+many of them, however shallow, you will get almost convinced of the argument
+because you can't gather enough time to accept / refute them. The evidence feels
+so solid on the surface, your mind will be confused whether they are actually
+refutable if I do a web search with my <i>'limited'</i> knowledge. Finally you succumb
+to <i>better be safe than sorry</i>.
+</p>
+
+<p>
+You can almost feel the shades of gray here. Promotion of science in the way
+science intends is great, right? Look at all the T.V. programs, all the news
+articles, everything is helping people to accept science in their daily lives.
+Look again, and you can see an almost exuberant insincerity for evidence
+spilling from the mouths of promoters. Of course not all of them.
+</p>
+</div>
+
+<div id="outline-container-orgd167410" class="outline-3">
+<h3 id="deluge/pseudo-science"><a id="orgd167410"></a><span class="section-number-3">2.1</span> Pseudo Science</h3>
+<div class="outline-text-3" id="text-deluge/pseudo-science">
+
+<p>
+Take that microwave oven case. Here is the <a href="http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145">link</a> that was shared. If you actually
+read that link, you might have already reached <a href="http://articles.mercola.com/sites/articles/archive/2010/05/18/microwave-hazards.aspx">this article</a>. See how the content
+itself is similar to the melatonin message, but the presentation is different.
+Obviously, this link will also get to its level of WhatsApp forward, but its all
+pro-science in the article. This one is trying hard to stand on the shoulders of
+giants. Evidence, references, articles, numbers, bio-photons? food value?
+bio-information from sun? Microwave ban in Russia? dioxins? Most of the times,
+these get convincing because of the jargons, our fear to look beyond them and
+cherry picked exaggerations from quacks.
+</p>
+
+<p>
+Go to some skeptic forums, they have good sources of information to read from
+and they welcome heavy skepticism. Go to <a href="http://rationalwiki.org/wiki/Microwave_oven">RationalWiki</a>, search <a href="https://www.reddit.com/r/skeptic/search?q=microwave&amp;restrict_sr=on&amp;sort=relevance&amp;t=all">/r/skeptic</a> and
+<a href="https://www.reddit.com/r/DebunkThis/search?q=microwave&amp;restrict_sr=on&amp;sort=relevance&amp;t=all">/r/DebunkThis</a> (I have linked microwave specific results), follow whatever points
+you can find against any argument. This is important, not because I am
+convincing you to go against the original argument, but because in cases with a
+deluge of superficial evidence, you will most like fail to notice the <i>'taken
+out-of-context'</i> information, which you can learn only when you hear the counter
+arguments. Hell! I don't even want to link so many articles debunking this. It
+would be sad. And ironic. You might say well, how do you know which links are
+right, which links are wrong? I don't. You can never accept any content just as
+it is. But, you can have a prior belief about certain kind of content which
+makes you focus your skepticism where its most needed. Go on, read all the links
+you find. I am assured, after a while you can tell whether an article has a
+higher chance of pseudo-science just by looking at its CSS. Its like finding
+your perfect life partner. A beautiful breeze will touch you and put a smile on
+your face (No kidding!).
+</p>
+
+<p>
+Pseudo science tries hard to look like real science. Uses all the tools used by
+science. It tries to convince people using something it doesn't understand. Just
+a pinch of skepticism and the house of cards is destroyed.
+</p>
+
+
+<figure>
+<img src="./dilution.png" alt="dilution.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 5: </span><a href="https://xkcd.com/765/">xkcd 765</a></figcaption>
+</figure>
+
+<p>
+Consider homeopathy. Something that's still pretty much established because
+people didn't try, or weren't able to go through the 'science' thrown at them.
+In case you are missing out, please read the <a href="https://en.wikipedia.org/wiki/Homeopathic_dilutions">basic principle</a> of homeopathy. Same
+case. Many of us claim its the real thing, without actually knowing how and why,
+just because we were somehow 'convinced' of its sciency-ness.
+</p>
+
+<blockquote>
+<p>
+Water, water, every where, Nor any drop to drink
+</p>
+
+<footer>Samuel Taylor Coleridge - "The Rime of the Ancient Mariner"</footer>
+</blockquote>
+
+<p>
+Citations are not badges of authenticity, they are tools of abstraction
+outsourcing. And when they are not helping in abstraction, there is no 'other'
+use you can conjure out of thin air for them.
+</p>
+
+<p>
+A few people who are good at conjuring the 'other' uses are:
+</p>
+
+<ul class="org-ul">
+<li><i>Quacks</i>: Promoting their method of treatment, wellness etc. <i>The doctors</i></li>
+<li><i>Simple innocent beings</i>: Afraid, distressed by the hammer of 'science'. <i>The
+patients</i></li>
+<li><i>Wannabe scientists</i>: Don't care much about the real thing if it serves the
+public image and the inner scientist. <i>Vectors of disease</i></li>
+</ul>
+
+<p>
+The only people who are willing to listen are the <i>innocent beings</i>. And they need
+access to real consolidated evidence. A truckload of evidence is used most of
+the time when you are not sure about whether any of them is right (independent
+of whether the thing is actually right or wrong). A gross misinterpretation of
+scientific method and communication.
+</p>
+
+<p>
+Consider the sources you are getting your information from. The sources which
+support one pseudo-science are, by design, going to support other
+pseudo-sciences if they feel like. See if you can find meaningless diversions
+and misinterpretation of the evidence. Real bold scientific claims don't come in
+a <i>Buzzfeed</i> list. They don't devoid you of your ability to reach the original
+research. They welcome it. Their basic hypothesis is clear and analyzable. And
+they don't mix inconsistent web sources to create a coherent model of their
+liking.
+</p>
+
+<p>
+Of course, there are issues when you attack these sources. I already mentioned
+the grayness of these arguments. You will definitely be able to find patches of
+truth in the information provided and will wonder why I am being so diligent
+with my attacks. I don't need theories with doubtful validity claiming '<i>17 life
+energies from sun that gives you food</i>' to convince me of Sun's role. Just a
+simple reminder of photosynthesis will do.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org570b562" class="outline-2">
+<h2 id="disregard"><a id="org570b562"></a><span class="section-number-2">3</span> Disregard</h2>
+<div class="outline-text-2" id="text-disregard">
+
+<blockquote>
+<p>
+Colgate used to warn against Indian traditional ways of using salt &amp; coal on
+teeth. But now they actively endorse it <a href="https://t.co/eYywXQpK4P">pic.twitter.com/eYywXQpK4P</a>
+</p>
+
+<footer>Swami Ramdev (@yogrishiramdev)
+<a href='https://twitter.com/yogrishiramdev/status/766977569661054976%22'>
+August 20, 2016</a></footer>
+</blockquote>
+
+<p>
+Explore the tweet above (basically the linked image). Come back later. Look,
+what arguments can be put here to favour both sides. Colgate told not to rub
+abrasives on your teeth. Later they tried incorporating <a href="https://en.wikipedia.org/wiki/Activated_carbon">activated charcoal</a> in
+their products in a form <i>they</i> found better. On the other side, baba tells us
+about this hypocrisy that companies regularly employ to sell stuff. Obviously,
+both arguments are good and bad in different ways.
+</p>
+
+<p>
+Anyway, I see this message promoting two things
+</p>
+
+<ul class="org-ul">
+<li>There is a reason higher than scientific method to decide against or in favor
+of a product. In this case, ethnocentrism, nationalism and other similar ideas
+on different scales.</li>
+
+<li>You shouldn't feel a need to question anything if you are supportive of the
+first point.</li>
+</ul>
+
+<p>
+You could argue that its just an example of healthy rivalry. But, do you see
+this message driving people to go for the real knowledge about what should they
+use for cleaning teeth, and in which form (<i>buy our toothpastes</i>)? I don't see it.
+Maybe you could pry it out if someone is willing to reveal it. But do you think
+people care when they are <i>attacked</i> by foreign companies and are <i>loosing</i> their
+tradition?
+</p>
+
+<p>
+Now, Baba gave us cool exercises. Great. Cheaper products don't hurt me. Neither
+do I get a heart stroke when one company gives competition to other established
+players. But on what cost to the popular thinking? I have seen people actually
+getting conscious about health and that's cool. But no one can amputate my head
+as if I don't give a damn about who controls my thoughts and stories. I live in
+a country that has <i>earned</i> its independence and I know what emotions you can stir
+when you invoke nationalistic ideas. Talk about eternal cultural superiority,
+shout national slogans, appeal to ancient science and you get an army of martyrs
+without cause, ready to sabotage the people who ask "why".
+</p>
+
+<p>
+The questions people need answers to are innocent. They aren't against anything,
+as presumed by the preachers. They are just questions. But the techniques of
+preachers doesn't have anything but disregard for them. You don't need to talk
+about evidence, because they are talking much above these petty issues.
+</p>
+
+
+<figure>
+<img src="./beliefs.jpg" alt="beliefs.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 6: </span><a href="https://xkcd.com/154/">xkcd 154</a></figcaption>
+</figure>
+
+<p>
+Advertisements do this all the time. They look for what sells and target
+advertisements that way. There are pockets of worshippers built around products
+and logo badges. By design and diversity, usually these pockets keep things
+chaotic (though I accept there is a certain drift over time). But I am yet to
+hear a person asking me to buy a certain biscuit by a certain company because of
+a reason other than what the ingredients label yell or certain offers indicate.
+Sure there is congenital imbecility to account for, but I have strong reasons to
+believe that I can at least reason around with them.
+</p>
+
+<p>
+I mean, I would just say
+</p>
+
+<blockquote>
+<p>
+Hey, you ain't gaining nothing by buying truckload of this biscuit that comes
+with x amount of mobile recharge, cause you are an amnesiac moron who doesn't
+remember when was the last time you enjoyed its taste.
+</p>
+</blockquote>
+
+<p>
+This works in theory and, most of the time, in practice. Let me tell you why.
+Because you didn't sell your soul to a certain school of thought with weird set
+of priorities. Because your product decisions don't tie to and create your
+identity. Because a demagogue can't yell a battle cry, right or wrong, and take
+control of your life decisions.
+</p>
+</div>
+
+<div id="outline-container-orga3e22f6" class="outline-3">
+<h3 id="disregard/cults"><a id="orga3e22f6"></a><span class="section-number-3">3.1</span> Cults</h3>
+<div class="outline-text-3" id="text-disregard/cults">
+
+<p>
+I have absolutely no problem with product promotion based on actual quality.
+But, we know a few entities that tend to differ here. I saw a roadside banner
+for some mobile company InFocus that said something like <i>"Why buy Chinese, when
+you can get American?"</i> (I read this on billboards in Varanasi and Lucknow, can't
+seem to find it on internet. So, can't assure if it was put by the company or
+some local store. In case you have read it too, please send me a pic for
+inclusion). Is this a good reason? Since I am not touching anything sensitive,
+we can get neutral and reasonable answers for this particular advertisement. Its
+no. You can have certain tendencies, but you don't make decisions using them.
+</p>
+
+<p>
+The models we talked about, there can be many kinds that work. There are many
+lapses in almost all the backing frameworks. Some accept the lapses, make way
+for other models to move in action. <i>Morality</i> and <i>Science</i> complement each other
+real good this way. Some don't. And mainly the ones with most number of
+deficiencies in term of framework capabilities. These framework claim to be
+absolutely complete and purer than anything other. Complete. Right from their
+inception to the present time, despite the popular knowledge that they visibly
+mutate by piggybacking on badges of modern scientific developments (like quantum
+physics, mail me if you want to know the secrets of the universe; I wonder what
+would have happened if they had to popularize their ideas before 1920s).
+</p>
+
+
+<figure>
+<img src="./fastest_growing.png" alt="fastest_growing.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 7: </span><a href="https://xkcd.com/1102">xkcd 1102</a></figcaption>
+</figure>
+
+<p>
+Cults like these feed on your personal prejudices. You might be a properly
+functioning person, but when it comes to your cult, you share common, group
+beliefs and it gets hard to listen to a voice of reason. The leaders are
+charismatic. You might not see them doing anything bad, but it doesn't work out
+in practice. They patch your ignorance with some mumbo-jumbo and you feel devoid
+of vulnerabilities. Pure. Complete. All knowing sentient entity free from
+restraints. Floating in an eternal universe of bliss. Remember,
+</p>
+
+<blockquote>
+<p>
+There are no self-proclaimed villains, only regiments of self-proclaimed
+saints
+</p>
+
+<footer>Glen Cook - "Chronicles of the Black Company"</footer>
+</blockquote>
+
+<p>
+No one's wisdom is gonna bring salvation to you but yours. Your information
+source should give you freedom to exercise your freedom. I remember a student
+talking in my undergraduate university mess to someone that our ancient wisdom
+tells to not sleep with your head pointing north pole (a myth promoted by <i>some</i>
+alternate med guys and traditionalists). Whats the issue? He is killing the
+spirit of evidence by choosing a framework that disregards them. Also he is
+hurting himself by choosing a B.Tech. in Electrical Engineering while apparently
+having spent the time sleeping when someone was teaching about magnetic dipoles
+in high school.
+</p>
+
+<p>
+The point is, if something tends to make you disregard the evidence by putting
+on a faith-face or shoving your own moral fragility deep inside you, you say
+</p>
+
+<blockquote>
+<p>
+Aye, I got this covered! I am the king of xenophobes, but balance my biases
+before making decisions.
+</p>
+</blockquote>
+
+<hr>
+<aside>
+<p>
+Another comic to balance the amount of text. Thanks <a href="https://www.xkcd.com">xkcd</a> for making our lives
+easier.
+</p>
+
+
+<figure>
+<img src="./significant.png" alt="significant.png" class="zoomTarget" data-closeclick="true">
+
+</figure>
+</aside>
+
+<p>
+Call me paranoid with <a href="https://xkcd.com/386/">SIWOTI syndrome</a>. I am over touching everything. Maybe I
+live among jerks and am butthurt. Maybe I just have a dystopian fetish. This
+post shouldn't have been this long. In fact this could have been a much gentler
+tea-time conversation just like we regularly have on climate change,
+vaccination, GMO etc. Ah! the wonderful evenings. But I am fed up talking with
+people who just want to drink tea. Look around yourself, throw pebbles in water.
+See what floats, what sinks. Try to foresee the long term effects if
+circulations like these keep on going unrestrained by a few who give a damn.
+Sure, you can argue that there is nothing presently 'that' harmful done by these
+issues (though I disagree). But, boy! You will be sorry then because no one will
+be able to question the conspiracy of silence when it hits you.
+</p>
+
+<p>
+First, look for evidence and the acceptance it receives in the content you got.
+Second, see if the 'science' overwhelms you to a point where you risk accepting
+it as granted. Third, check if somebody is sneaking a leash over how you are
+going to analyze contents.
+</p>
+
+<p>
+More than abuses to evidence, these are abuses to our sanity and intellect as a
+population. Even if melatonin saves you from cancer, even if microwave oven
+gives you cancer or even if the cult fictions are the ultimate facts, the point
+stays. Final verdict can't be used to prove the righteousness of fickle
+arguments.
+</p>
+
+<ul class="org-ul">
+<li>This leads to that.</li>
+<li>Scientists[1] say, this leads[2] to[3] that[4]. References.</li>
+<li>This, because [/insert your cult leader's wet dream/]</li>
+</ul>
+
+<p>
+Ask yourself, if these contents pass through you unchecked, will you be
+able to shed the guilt of depriving kids of genuine 'curiosity'? Guilt
+of fooling people into believing they are 'scientists'? Guilt of closing
+your eyes to the truth just because you are too lazy and want to be
+spoon fed by some know-it-all? Or maybe its all meaningless and you
+already are in a cult with mechanisms for redemption in place.
+</p>
+
+<div class="edits">
+<ul class="org-ul">
+<li>Changed 'evidences' to 'evidence'. Thanks Rushil Nagda.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

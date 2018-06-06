@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Beauty of Syntactical Macros</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2017-05-15 Mon 00:00</div>
+                                <h1>The Beauty of Syntactical Macros</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../..#programming'>programming</a><a href='../../../..#lisp'>lisp</a></div>
+<div class="page-intro">
+<p>
+On the importance of code as first class citizen after my first 'got it'
+moment with a Lisp.
+</p>
+
+</div>
+
+<p>
+<span class='dropcap'>I</span>f you think about it, most of what we communicate can be compiled down to
+something that is quite <i>literal</i>, which is to say that a Hollywood AI robot (like
+<a href="http://terminator.wikia.com/wiki/T-800_(The_Terminator)">T-800</a>) can read and understand it mechanically using no more than a dictionary
+for reference. For example, when we say
+</p>
+
+<blockquote>
+<p>
+My dog is a cheetah
+</p>
+</blockquote>
+
+<p>
+in a literal sense, all we mean is
+</p>
+
+<blockquote>
+<p>
+My dog runs very fast
+</p>
+</blockquote>
+
+<p>
+Sometimes the transformation is not so direct and we need more context or
+language training to convert it to a <i>literal</i> form. An example is the following:
+</p>
+
+<blockquote>
+<p>
+When an elephant is in trouble even a frog will kick him.
+</p>
+</blockquote>
+
+<p>
+What do we get from these transformations? Occasionally a shorter
+representation, specially when they exploit the context. Sometimes its a simple
+meaning but with more weight. Sometimes its an indirect way of saying something
+to change the flow of emotions. All in all we can agree that they are elegant
+rhetorical devices and have a deeper connections with how we communicate and how
+our mind evaluates these tiny vagaries.
+</p>
+
+<p>
+The <i>literal</i> meaning is what we, as humans, can use (mostly) without ambiguity.
+Considering this as the final <a href="https://www.wikiwand.com/en/Abstract_syntax_tree">AST</a>, the transformations mentioned above are more
+than <code>function</code> calls, which can be seen as lookups in some instruction manual.
+These are more akin to Lisp style <code>macros</code>.
+</p>
+
+<div id="outline-container-org59c1ecc" class="outline-2">
+<h2 id="expressing-programs"><a id="org59c1ecc"></a><span class="section-number-2">1</span> Expressing programs</h2>
+<div class="outline-text-2" id="text-expressing-programs">
+
+<p>
+A programming language allows a really constrained form of expression and so
+(fortunately) it needs lesser training to understand a chunk of <i>rhetorical
+code</i>, if there is one. There is a limit to how much a programmer can let
+his/her words fly without breaking the intended low level syntax tree. But that
+limit definitely is above what I have hit, until now.
+</p>
+
+<p>
+I have been playing with <a href="https://github.com/hylang/hy">Hy</a>, which is a Lispy dialect of Python, recently and
+started using macros. Put simply, they transform code to code. The input form
+usually is something we intend to write, the output being something the computer
+could understand. An example follows. Forget about the visual clutter if you are
+<i>not familiar</i> with <a href="https://en.wikipedia.org/wiki/S-expression"><i>s-expressions</i></a> in Lisp and just go through the words, nesting
+and order.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-hy">(<span class="org-keyword">defmacro</span> <span class="org-function-name">query-list</span> [return-cond from source-list where check-cond <span class="org-builtin">is</span> item<span class="org-parinfer-pretty-parensXdim-paren">]</span>
+  <span class="org-doc">"SQL-ish query on list"</span>
+  `(<span class="org-keyword">try</span>
+    (let [item-index (.index (<span class="org-builtin">list</span> (<span class="org-builtin">map</span> (<span class="org-keyword">fn</span> [it] ~check-cond) ~source-list)) ~item<span class="org-parinfer-pretty-parensXdim-paren">)]</span>
+      ((<span class="org-keyword">fn</span> [it] ~return-cond) (<span class="org-builtin">nth</span> ~source-list item-index<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">except</span> [<span class="org-type">ValueError</span>] <span class="org-constant">False</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+</pre>
+</div>
+
+<aside>
+<p>
+Lisp code is represented as a list of items (possibly recursive) which can be
+interpreted both as data and code. When interpreted as data, they refer to
+themselves, when interpreted as code, the first item is something (a function,
+macro) to be applied on the rest.
+</p>
+</aside>
+
+<p>
+Also forget about the dummy variables (<code>from</code>, <code>where</code> &#x2026;) and hygiene (I am
+capturing <code>it</code>) if you <i>are familiar</i> with Lisp. For reference, here is a roughly
+equivalent code in Python for the code generated by that macro (forget
+representing this as <a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions">list comprehension</a> for a while, because its not about a
+specific language feature but how <i>easily</i> we can add another, possibly specific,
+feature):
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">try</span>:
+    <span class="org-variable-name">item_index</span> = <span class="org-builtin">list</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-builtin">map</span><span class="org-rainbow-delimiters-depth-2">(</span>check_cond, source_list<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>.index<span class="org-rainbow-delimiters-depth-1">(</span>item<span class="org-rainbow-delimiters-depth-1">)</span>
+    <span class="org-keyword">return</span> return_cond<span class="org-rainbow-delimiters-depth-1">(</span>source_list<span class="org-rainbow-delimiters-depth-2">[</span>item_index<span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-keyword">except</span> <span class="org-type">ValueError</span>:
+    <span class="org-keyword">return</span> <span class="org-constant">False</span>
+</pre>
+</div>
+
+<p>
+What do I get from this macro? Here is a simple piece which uses this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-hy">(query-list (<span class="org-builtin">=</span> <span class="org-string">"dodo"</span> it.name) from animals where it.extinction <span class="org-builtin">is</span> <span class="org-string">"1660s"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+</pre>
+</div>
+
+
+<p>
+Just by looking at it, you can sort of see what it is intended for. Indeed this
+is a variant of list comprehension. When I was working on the code that needed
+this construct, I was thinking of <i>something</i> on the lines of the above example in
+my mind. Usually, that <i>something</i> would have gotten converted to a function
+representation which would have a certain set of sensibly arranged and named
+arguments. But now that I have seen the above <i>valid</i> form, I don't think a
+function would have done justice to the exact <i>expression</i> in my mind and wouldn't
+have been that flexible in its usage.
+</p>
+
+<p>
+Another example is with the case of <a href="http://docopt.org/">docopt</a> based argument parsing. <i>Docopt</i> allows
+you to write human readable usage instructions for a command line tool and
+parses it to a structure we can use in our program. Although the arguments
+passed into the command line can be structured in a nested way, the parsed
+dictionary returned by <code>docopt</code> is flat. Consider a program with usage instruction
+like the following (items separated by <code>|</code> are two options for representing the
+same thing):
+</p>
+
+<pre class="example">
+program task (sub-task-one | sto)
+program task (sub-task-two | stt)
+program task-two
+</pre>
+
+<p>
+After parsing the arguments, docopt gives a dictionary like so:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-variable-name">args</span> = <span class="org-rainbow-delimiters-depth-1">{</span>
+    <span class="org-string">"task"</span>: <span class="org-constant">False</span>,
+    <span class="org-string">"sub-task-one"</span>: <span class="org-constant">False</span>,
+    <span class="org-string">"sub-task-two"</span>: <span class="org-constant">False</span>,
+    <span class="org-string">"sto"</span>: <span class="org-constant">False</span>,
+    <span class="org-string">"stt"</span>: <span class="org-constant">False</span>,
+    <span class="org-string">"task-two"</span>: <span class="org-constant">True</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+</pre>
+</div>
+
+<p>
+Now checking for the values mean using ~if~s &amp; ~else~s. Many times its trivial.
+Sometimes the nesting can go deep and it becomes messier. When we <i>think</i> about
+what to do with these arguments, we think in terms of what each possible
+combination is going to do. We think about doing something when we get <code>task</code> AND
+(<code>sub-task-one</code> OR <code>sto</code>). Can we directly expose this to our program so that its
+readable? Surely, we could do
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">if</span> args<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-string">"task"</span><span class="org-rainbow-delimiters-depth-1">]</span> <span class="org-keyword">and</span> <span class="org-rainbow-delimiters-depth-1">(</span>args<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-string">"sub-task-one"</span><span class="org-rainbow-delimiters-depth-2">]</span> <span class="org-keyword">or</span> args<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-string">"sto"</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>:
+    ...
+</pre>
+</div>
+
+<p>
+This approach does more than nesting <code>if</code> s because the first test (<code>args["task"]</code>)
+is happening many times, but lets not worry about that since its not really a
+heavy computation. There is a repeating pattern here of <code>args["&lt;&gt;"]</code>. Repeated
+patterns are good for machines, but not for us. Its not that this tiny piece is
+hurting the readability, its just that I didn't think about this thing in my
+mind while planning to code. This thing actually came in when I did the
+transformations from my plan to a computer acceptable construct. Can we get rid
+of this then? A quick and simple fix is the following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">if</span> check_args<span class="org-rainbow-delimiters-depth-1">(</span>args, <span class="org-string">"task"</span>, <span class="org-rainbow-delimiters-depth-2">[</span><span class="org-string">"sub-task-one"</span>, <span class="org-string">"sto"</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>:
+    ...
+</pre>
+</div>
+
+<p>
+What the function <code>check_args</code> does is to collect all the parameters after <code>args</code>
+and put them in a list (call it <code>*argv</code>). Each of the items in that list is
+considered to be joined by <code>AND</code> s and the next level of nesting is joined by
+<code>OR~s. These computations are done by ~getting</code> the corresponding value of the
+string (the key) from <code>args</code> dictionary. This is fine. Probably will need some
+level of familiarity with the usage but its okay for this trivial case. What
+about a deeper level of argument nesting? In that case, for each list at any
+level, we could add a string representing the operation to apply on the list
+like <code>and</code> or <code>or</code>. For more complex transformations and when the arguments are not
+just boolean, instead of adding a string, we can just pass a function like the
+following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">if</span> check_args<span class="org-rainbow-delimiters-depth-1">(</span>args, <span class="org-rainbow-delimiters-depth-2">[</span>func1, <span class="org-string">"task"</span>, <span class="org-rainbow-delimiters-depth-3">[</span>func2, <span class="org-string">"subtask"</span>, <span class="org-string">"st"</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>:
+    ...
+</pre>
+</div>
+
+<p>
+See whats happening here? Our arguments are slowly beginning to take form of
+code themselves. Nothing wrong in that. But this is not really natural for
+Python and it looks out of place from the rest of the code as it needs a
+different mental model of whats happening here. Consider the same as a macro in
+Hy:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-hy">(<span class="org-keyword">if</span> (check-args args (func1 <span class="org-string">"task"</span> (func2 <span class="org-string">"subtask"</span> <span class="org-string">"st"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+  (...<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+</pre>
+</div>
+
+<p>
+The macro is also doing the same transformation of replacing the strings with a
+<code>getter</code> corresponding to the dictionary <code>args</code>, which is something like <code>(get args
+"string")</code>. But its doing nothing other than that. Just like I <i>thought</i> about the
+transformation. My first thought was to just run <code>(func1 "task" (func "subtask"
+"st"))</code> by using <code>args</code> as the context for interpreting the strings. This is not so
+in the case of a function. The mental model here is simpler because there is
+essentially just one, viz. of <i>s-expressions</i>.
+</p>
+
+<p>
+The point is this, programming involves transforming our thoughts to code
+constructs and then writing them. Occasionally the output of our transformations
+get slightly messy and its feels bad to keep repeating the transformations.
+Making functions first class citizen puts us one level up while doing these
+transformations. Making code itself first class citizen puts us even higher.
+Considering you don't actually think in Python and are transforming your plain
+thoughts to code, the transformations like in the examples shown above are not
+at all natural to the approach of <i>just</i> writing functions. Using <i>s-expressions</i> we
+get a sweet spot of representation between what is sufficiently high level and
+what is understandable by a computer and allows us this syntactical freedom
+which is immensely beautiful to peruse, like a rhetorical device.
+</p>
+
+<hr>
+
+<p>
+You shouldn't write a newspaper with poetic constructs because not everyone is
+looking to untangle a string of pearls every morning, however beautiful they
+might be. Reading a newspaper is not exactly <i>reading</i> as in <i>"joyfully devouring
+words"</i>, its more of an information gathering mechanism and will go out of
+fashion if we invent something like an <i>information</i> drink.
+</p>
+
+<p>
+There is a certain reason I wasn't seeing the importance of syntactical macros
+and it is the same reason non-standard constructs are avoided in popular
+programs. Probably its the same reason it will never be in popular usage for
+specific domains. A domain has certain needs which, when satisfied, remove the
+need of syntactical extensibility. SQL queries won't be replaced by Lisp because
+if you are going to recreate SQL syntax with Lisp, why even bother with the
+switch in the first place? Its only when you crave for extensibility, which is
+not very often in practical cases, does it actually reveals its true beauty.
+</p>
+
+
+
+<figure>
+<img src="https://imgs.xkcd.com/comics/lisp_cycles.png" alt="lisp_cycles.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span><a href="https://xkcd.com/297/">xkcd 297</a></figcaption>
+</figure>
+
+<p>
+The most popular languages are the ones with most set standards, certain
+important constraints and a lot of directly visible applications (not implying
+causality of the opposite side) and they keep gaining traction since its easier
+to get started and get going. To focus on the real problem we are solving. But
+sometimes, its good to just lay back and play around with the words till they
+entertain us on a very personal level. None of what I said is something new
+which others haven't already said about Lisp. The new thing, is just my personal
+realization of these facts. I don't actually believe now that I am seeking
+anything like performance (<code>Hy</code> has certain overheads, although <code>common-lisp</code> is
+crazy fast if used properly) or better productivity (though this is looking like
+a very visible long term side effect) with any of the Lisp variants I am
+using/going to use but just pure beauty. Probably it will stay that way for a
+long time.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

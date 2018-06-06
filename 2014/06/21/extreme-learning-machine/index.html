@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 19:19 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extreme Learning Machines with Julia</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='active' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>2014-06-21 Sat 00:00</div>
+                                <h1>Extreme Learning Machines with Julia</h1>
+                              </div>
+</div>
+<div id="content">
+<div class='page-tags'><a href='../../../../..#exploration'>exploration</a><a href='../../../../..#ml'>ml</a></div>
+<div class="page-intro">
+<p>
+Simple comparison of training time and performance of Extreme Learning Machines
+and regular feed forward network using Julia language.
+</p>
+
+</div>
+
+<p>
+<span class='dropcap'>W</span>ith the advent of powerful computation techniques, there has been increasing
+interest back in the good old neural networks as major potential machine
+learning candidate after a long hiatus.
+</p>
+
+<p>
+Modern and complex neural networks have come to the front, led by those dubbed
+<a href="http://en.wikipedia.org/wiki/Deep_learning">Deep Learning Networks</a>. Deep Learning algos are hot these days, thanks to the
+media. Just head over to <a href="http://www.datatau.com/">datatau</a> and you will know what I mean <i>(btw I am not
+saying that they aren't worth the hype)</i>.
+</p>
+
+<p>
+DL networks are basically networks with very deep (many) hidden layers in neural
+nets. One major problem with them is (as expected) of speed. Deeper hidden
+layers lead to deadly slow training time and the risk of overfitting. But recent
+works by <a href="http://www.cs.toronto.edu/~hinton/">Hinton</a> and others in unsupervised feature learning have given a hefty
+lift to deep learning.
+</p>
+
+<div id="outline-container-orgb692c97" class="outline-2">
+<h2 id="reservoirs"><a id="orgb692c97"></a><span class="section-number-2">1</span> Reservoirs</h2>
+<div class="outline-text-2" id="text-reservoirs">
+
+<p>
+But, this post is not about Deep Learning. Its about a different concept. A
+network that avoids the murky computation.
+</p>
+
+<p>
+Recently, I came across the concept of <a href="http://en.wikipedia.org/wiki/Reservoir_computing">Reservoir computing</a>, which (in a very
+simple way) refers to a construct where the input are connected <i>randomly</i> to
+higher level of abstraction (see it as a hidden layer of higher level) and
+output can be tapped from those nodes and the training problem reduces to
+calculating the connection (weights) of tapping nodes to output. This avoids the
+major bottleneck, <i>iterative tuning of weights of input to higher level</i>.
+</p>
+
+<p>
+Well, does this thing even work? <i>Yes, farely well!</i>
+</p>
+
+<p>
+There is a concept known as <i>Liquid State Machine</i>, and a relatively better known
+<i>Echo State Network</i> which is used for training <a href="http://en.wikipedia.org/wiki/Recurrent_neural_network">Recurrent Neural Nets</a>. Both of
+them are based on reservoir computing. On the lines of reservoir computing and
+very similar in concept is the topic of this post, <i>Extreme Learning Machine</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd7ad670" class="outline-2">
+<h2 id="extreme-learning"><a id="orgd7ad670"></a><span class="section-number-2">2</span> Extreme Learning</h2>
+<div class="outline-text-2" id="text-extreme-learning">
+
+<p>
+Extreme learning machine (ELM) is a modification of single layer feedforward
+network (SLFN) where learning is quite similar to the reservoir topic discussed
+above.
+</p>
+
+<p>
+Given below is a simple <i>SLFN</i> with 3 inputs and 1 output which computes the
+weighted sum of hidden nodes.
+</p>
+
+
+<figure>
+<img src="./elm.jpg" alt="elm.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>ELM architecture</figcaption>
+</figure>
+
+<p>
+After performing the tedious backpropagation ritual, we are left with
+the following equation that predicts output from inputs
+</p>
+
+<p>
+\[ y = \sum h_i \]
+</p>
+
+<p>
+Where \(h_i\) is the activation of \(i^{th}\) hidden neuron computed using
+</p>
+
+<p>
+\[ h_i = f(\sum_j (w_{i, j} \times x_j) + b_i) \]
+</p>
+
+<p>
+Here, \(f\) is the activation function like <i>sigmoid</i>, <i>tanh</i> etc., \(x\_j\) is the
+\(j^{th}\) input, \(w\_{i, j}\) is the connection weight from \(j^{th}\) input to
+\(i^{th}\) hidden neuron and \(b\_i\) is the bias term.
+</p>
+
+<p>
+In matrix notation, the process can be represented in the following form
+</p>
+
+<p>
+\[ Y = W' \times H \]
+</p>
+
+<p>
+Where \(W'\) is the matrix of weights from hidden to output layer while \(H\) is the
+activation matrix computed using
+</p>
+
+<p>
+\[ H = f(W \times X + B) \]
+</p>
+
+<p>
+with \(W\) is matrix of weights from input to hidden layer.
+</p>
+
+<p>
+Now, being different from usual SLFN, the ELM doesn't tune \(W\) using backprop or
+any other iterative method, instead \(W\) is randomly generated. This gives us a
+pool of higher level input abstractions in the hidden layer, out of which, ones
+fitting to training data can be found by adjusting hidden to output weights by
+solving a simple matrix equation.
+</p>
+
+<p>
+\[ Y = W' \times H \]
+</p>
+
+<p>
+Now, given a training data with \(X\) as input and \(Y\) as output, the ELM training
+process takes the following steps
+</p>
+
+<ul class="org-ul">
+<li>Generate \(W\)</li>
+<li>Find \(H\)</li>
+<li>Solve \(Y = W' \times H\) for \(W'\)</li>
+</ul>
+
+<aside>
+<p>
+Mathematically inclined readers can refer to
+<a href="http://www3.ntu.edu.sg/home/EGBHuang/pdf/ELM_IJCNN2004.PDF">this</a> paper. More
+details about <i>ELMs</i> can be found <a href="http://www.ntu.edu.sg/home/egbhuang/">here</a>
+</p>
+</aside>
+
+<p>
+The value of \(W'\) can be calculated simply using <i>psuedo (Moore-Penrose)</i>
+inverse which is usually available as a function that goes by the name <i>pinv</i>
+most of the scientific computation environment including Matlab and Python's
+<code>numpy.linalg</code>.
+</p>
+
+<p>
+\[ W' = Y \times pinv(H) \]
+</p>
+
+<p>
+This inverse can also be computed using regularized inverse for better
+generalization.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org949c184" class="outline-2">
+<h2 id="performance"><a id="org949c184"></a><span class="section-number-2">3</span> Performance</h2>
+<div class="outline-text-2" id="text-performance">
+
+<p>
+Lets test out the thing.
+</p>
+
+<blockquote>
+<p>
+I happen to believe that we don't need slow languages
+</p>
+
+<footer>Jeff Bezanson. Co-creator, Julia</footer>
+</blockquote>
+
+<p>
+Enough to make me try <a href="http://julialang.org/">julia</a>.
+</p>
+
+<p>
+For python users (for anyone, almost), like me, switching is ridiculously easy
+and fun. Although still in cradle, julia features nice set of basic libraries
+for scientific computing. Kinds of
+<a href="https://github.com/JuliaStats/DataFrames.jl">DataFrames</a>,
+<a href="https://github.com/dcjones/Gadfly.jl">Gadfly</a> and
+<a href="https://github.com/JuliaLang/IJulia.jl">IJulia</a> will make you feel at home,
+whether you are coming from <i>R</i>, scientific <i>Python</i> or <i>Matlab / Octave</i>.
+</p>
+
+<p>
+And what you get? <i>Speed</i>, raw and visible! Calling C or fortran from python or
+R doesn't feel great, especially if you can avoid that.
+</p>
+
+<p>
+Coming back to testing. While trying out julia, I coded a simple
+<a href="https://github.com/lepisma/ELM.jl">ELM library</a>. I will be using that, and
+for comparison with regular NNs, I will be using the
+<a href="https://github.com/EricChiang/ANN.jl">ANN library</a> by
+<a href="https://twitter.com/erchiang">Eric Chiang</a>. In fact, this post is very much
+on the lines of a great post by Eric on yhat
+<a href="http://blog.yhathq.com/posts/julia-neural-networks.html">here</a>.
+</p>
+
+<p>
+The problem I will be taking is of a two class classification using the banknote
+authentication dataset. You can download the dataset and see its attributes
+<a href="https://archive.ics.uci.edu/ml/datasets/banknote+authentication">here</a>.
+</p>
+
+<p>
+Starting off by installing required libraries
+</p>
+
+<div class="org-src-container">
+<pre class="src src-julia">Pkg.clone<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"git://github.com/lepisma/ELM.jl.git"</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+Pkg.clone<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"git://github.com/EricChiang/ANN.jl.git"</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+
+<span class="org-keyword">import</span> ELM, ANN;
+</pre>
+</div>
+
+<p>
+Since, both libraries have few functions with same names, so its better to use
+<code>import</code> rather than <code>using</code>.
+</p>
+</div>
+
+<div id="outline-container-org8c6106e" class="outline-3">
+<h3 id="performance/reading-data"><a id="org8c6106e"></a><span class="section-number-3">3.1</span> Reading data</h3>
+<div class="outline-text-3" id="text-performance/reading-data">
+
+
+<div class="org-src-container">
+<pre class="src src-julia">Pkg.add<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"DataFrames"</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+<span class="org-keyword">using</span> DataFrames;
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">No column names here :(</span>
+dat = readtable<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"data_banknote_authentication.txt"</span>, header = <span class="org-constant">false</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+head<span class="org-rainbow-delimiters-depth-1">(</span>dat<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-julia"><span class="org-highlight-numbers-number">6</span>x5 DataFrame:
+             x1      x2      x3       x4 x5
+<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">1</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">3.6216</span>  <span class="org-highlight-numbers-number">8.6661</span> -<span class="org-highlight-numbers-number">2.8073</span> -<span class="org-highlight-numbers-number">0.44699</span>  <span class="org-highlight-numbers-number">0</span>
+<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">2</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">4.5459</span>  <span class="org-highlight-numbers-number">8.1674</span> -<span class="org-highlight-numbers-number">2.4586</span>  -<span class="org-highlight-numbers-number">1.4621</span>  <span class="org-highlight-numbers-number">0</span>
+<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">3</span>,<span class="org-rainbow-delimiters-depth-1">]</span>      <span class="org-highlight-numbers-number">3.866</span> -<span class="org-highlight-numbers-number">2.6383</span>  <span class="org-highlight-numbers-number">1.9242</span>  <span class="org-highlight-numbers-number">0.10645</span>  <span class="org-highlight-numbers-number">0</span>
+<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">4</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">3.4566</span>  <span class="org-highlight-numbers-number">9.5228</span> -<span class="org-highlight-numbers-number">4.0112</span>  -<span class="org-highlight-numbers-number">3.5944</span>  <span class="org-highlight-numbers-number">0</span>
+<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">5</span>,<span class="org-rainbow-delimiters-depth-1">]</span>    <span class="org-highlight-numbers-number">0.32924</span> -<span class="org-highlight-numbers-number">4.4552</span>  <span class="org-highlight-numbers-number">4.5718</span>  -<span class="org-highlight-numbers-number">0.9888</span>  <span class="org-highlight-numbers-number">0</span>
+<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">6</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">4.3684</span>  <span class="org-highlight-numbers-number">9.6718</span> -<span class="org-highlight-numbers-number">3.9606</span>  -<span class="org-highlight-numbers-number">3.1625</span>  <span class="org-highlight-numbers-number">0</span>
+</pre>
+</div>
+
+<p>
+Last column is either 0 or 1 and tells us about the result of banknote
+authentication.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org86ff2f4" class="outline-3">
+<h3 id="performance/scaling-columns"><a id="org86ff2f4"></a><span class="section-number-3">3.2</span> Scaling columns</h3>
+<div class="outline-text-3" id="text-performance/scaling-columns">
+
+
+<p>
+Scaling all attributes to a similar scale makes sure that one attribute
+doesn't overshadow others.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-julia"><span class="org-comment-delimiter"># </span><span class="org-comment">For all four columns</span>
+<span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-highlight-numbers-number">1</span>:<span class="org-highlight-numbers-number">4</span>
+    <span class="org-comment-delimiter"># </span><span class="org-comment">Subtracting the mean and dividing by standard deviation</span>
+    dat<span class="org-rainbow-delimiters-depth-1">[</span>i<span class="org-rainbow-delimiters-depth-1">]</span> = <span class="org-rainbow-delimiters-depth-1">(</span>dat<span class="org-rainbow-delimiters-depth-2">[</span>i<span class="org-rainbow-delimiters-depth-2">]</span> - mean<span class="org-rainbow-delimiters-depth-2">(</span>dat<span class="org-rainbow-delimiters-depth-3">[</span>i<span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span> / std<span class="org-rainbow-delimiters-depth-1">(</span>dat<span class="org-rainbow-delimiters-depth-2">[</span>i<span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+<span class="org-keyword">end</span>
+</pre>
+</div>
+
+<p>
+Keeping 20% of data for testing
+</p>
+
+<div class="org-src-container">
+<pre class="src src-julia">n_test = int<span class="org-rainbow-delimiters-depth-1">(</span>length<span class="org-rainbow-delimiters-depth-2">(</span>dat<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span> * <span class="org-highlight-numbers-number">0.2</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+train_rows = shuffle<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[</span><span class="org-highlight-numbers-number">1</span>:length<span class="org-rainbow-delimiters-depth-3">(</span>dat<span class="org-rainbow-delimiters-depth-4">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-4">]</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">]</span> .&gt; n_test<span class="org-rainbow-delimiters-depth-1">)</span>;
+
+dat_train, dat_test = dat<span class="org-rainbow-delimiters-depth-1">[</span>train_rows, :<span class="org-rainbow-delimiters-depth-1">]</span>, dat<span class="org-rainbow-delimiters-depth-1">[</span>!train_rows, :<span class="org-rainbow-delimiters-depth-1">]</span>;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaa539ad" class="outline-3">
+<h3 id="performance/training"><a id="orgaa539ad"></a><span class="section-number-3">3.3</span> Training</h3>
+<div class="outline-text-3" id="text-performance/training">
+
+<p>
+Lets create the models for training.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-julia">ann = ANN.ArtificialNeuralNetwork<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+<span class="org-comment-delimiter">#</span><span class="org-comment">10 hidden neurons, single hidden layer</span>
+
+elm = ELM.ExtremeLearningMachine<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+<span class="org-comment-delimiter">#</span><span class="org-comment">10 hidden neurons</span>
+</pre>
+</div>
+
+<p>
+Although ELM is also given 10 neurons, but since ELMs select from a <i>pool</i>, its
+better to give more options. But, whatever, the ultimate aim is to find the
+difference in training time of both when they provide almost similar accuracy.
+</p>
+
+<p>
+Like Matlab, you can time your code in julia using <code>tic()</code> and <code>toc()</code>
+functions. Before that, let us make functions for calculating accuracy.(Both
+libraries return values in different ways)
+</p>
+
+<div class="org-src-container">
+<pre class="src src-julia"><span class="org-comment-delimiter"># </span><span class="org-comment">For ANN</span>
+<span class="org-keyword">function</span> <span class="org-function-name">accu</span><span class="org-rainbow-delimiters-depth-1">(</span>model<span class="org-default">::</span><span class="org-type">ANN</span>.ArtificialNeuralNetwork,
+                      x_test<span class="org-default">::</span><span class="org-type">Matrix</span><span class="org-rainbow-delimiters-depth-2">{</span><span class="org-type">Float64</span><span class="org-rainbow-delimiters-depth-2">}</span>,
+                      y_test<span class="org-default">::</span><span class="org-type">Vector</span><span class="org-rainbow-delimiters-depth-2">{</span><span class="org-type">Int64</span><span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+    outputs = ANN.predict<span class="org-rainbow-delimiters-depth-1">(</span>model, x_test<span class="org-rainbow-delimiters-depth-1">)</span>;
+    predictions = <span class="org-type">Array</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-type">Int64</span>, length<span class="org-rainbow-delimiters-depth-2">(</span>y_test<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+
+    <span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-highlight-numbers-number">1</span>:length<span class="org-rainbow-delimiters-depth-1">(</span>y_test<span class="org-rainbow-delimiters-depth-1">)</span>
+        predictions<span class="org-rainbow-delimiters-depth-1">[</span>i<span class="org-rainbow-delimiters-depth-1">]</span> = model.classes<span class="org-rainbow-delimiters-depth-1">[</span>indmax<span class="org-rainbow-delimiters-depth-2">(</span>outputs<span class="org-rainbow-delimiters-depth-3">[</span>i, :<span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">]</span>;
+    <span class="org-keyword">end</span>
+
+    mean<span class="org-rainbow-delimiters-depth-1">(</span>predictions .== y_test<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-keyword">end</span>
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">For ELM</span>
+<span class="org-keyword">function</span> <span class="org-function-name">accu</span><span class="org-rainbow-delimiters-depth-1">(</span>model<span class="org-default">::</span><span class="org-type">ELM</span>.ExtremeLearningMachine,
+                         data_test<span class="org-default">::</span><span class="org-type">DataFrame</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">ELM.jl supports DataFrames now !</span>
+
+    predictions = ELM.predict<span class="org-rainbow-delimiters-depth-1">(</span>model, data_test<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+    mean<span class="org-rainbow-delimiters-depth-1">(</span>int<span class="org-rainbow-delimiters-depth-2">(</span>predictions<span class="org-rainbow-delimiters-depth-2">)</span> .== data_test<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-keyword">end</span>
+</pre>
+</div>
+
+<p>
+Back to training. After a bit of experimentation, following approach
+(basically, the choice of epochs in ANN) provides similar accuracy and a
+result that clearly shows the difference.
+</p>
+
+<p>
+<i>A word of caution</i> : Since julia uses JIT compilation, it needs a bit
+of warm up. So, the first call to functions doesn't show the actual
+speed of julia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge99d5d8" class="outline-3">
+<h3 id="performance/ann"><a id="orge99d5d8"></a><span class="section-number-3">3.4</span> ANN</h3>
+<div class="outline-text-3" id="text-performance/ann">
+
+
+<div class="org-src-container">
+<pre class="src src-julia">tic<span class="org-rainbow-delimiters-depth-1">()</span>; ANN.fit!<span class="org-rainbow-delimiters-depth-1">(</span>ann, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_train<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span>, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_train<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span>, epochs =
+                <span class="org-highlight-numbers-number">16</span>, lambda = <span class="org-highlight-numbers-number">1e-5</span><span class="org-rainbow-delimiters-depth-1">)</span>; toc<span class="org-rainbow-delimiters-depth-1">()</span>
+accu<span class="org-rainbow-delimiters-depth-1">(</span>ann, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_test<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span>, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_test<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<pre class="example">
+elapsed time: 0.238218045 seconds
+0.9708029197080292
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org5eb2613" class="outline-3">
+<h3 id="performance/elm"><a id="org5eb2613"></a><span class="section-number-3">3.5</span> ELM</h3>
+<div class="outline-text-3" id="text-performance/elm">
+
+
+<div class="org-src-container">
+<pre class="src src-julia">tic<span class="org-rainbow-delimiters-depth-1">()</span>; ELM.fit!<span class="org-rainbow-delimiters-depth-1">(</span>elm, dat_train<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">]</span>, dat_train<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>; toc<span class="org-rainbow-delimiters-depth-1">()</span>
+accu<span class="org-rainbow-delimiters-depth-1">(</span>elm, dat_test<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<pre class="example">
+elapsed time: 0.003801902 seconds
+0.9817518248175182
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1cc8a2b" class="outline-2">
+<h2 id="wut?"><a id="org1cc8a2b"></a><span class="section-number-2">4</span> WUT?</h2>
+<div class="outline-text-2" id="text-wut?">
+
+<p>
+Assuming both models give same accuracy, the training of <i>ELM</i> is around <i>60x</i>
+faster than <i>ANN</i>! (Which kind of isn't actually surprising since the hidden
+connections are untouched).
+</p>
+
+<div class="edits">
+<ul class="org-ul">
+<li>As pointed out by Jeremy Gore, the current code throws error due to
+changes in Julia version. The original post was tested and written for
+Julia v0.2. I will update the post to meet the updated Julia standards
+after I get free from a few things I am currently in.</li>
+
+<li>The library (and this post) is updated to work with newer Julia
+versions (tested on v0.3.3) with added support for DataFrames.</li>
+
+<li>I thought to include my personal thoughts (which have also changed
+since I first wrote the post) on ELMs since there are unbelievably
+large amount of misconceptions popping everywhere on the internet.
+
+<ul class="org-ul">
+<li>As it is obvious, there is just one hidden layer and the whole ideas
+centers around creating random projections of input to finally solve
+a linear equation problem. This <i>can not be justified</i> as a solution
+for hard and complex problems of the class currently tackled
+beautifully by deep learning methods.</li>
+
+<li>Talking about the originality of the concept of <i>random
+projections</i>, I personally am not a science historian (at least not
+right now) and would prefer the reader to do his/her own research.</li>
+
+<li>The main thing that looked promising to me here was the idea that
+tapping from random projections can solve <i>a class of problems</i>.
+This might not be charming enough for anyone else, or even me at a
+different spot in space-time, but anyways, I did a simple comparison
+and posted the stuff here.</li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

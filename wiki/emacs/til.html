@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-06-06 Wed 23:26 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Today I Learned <i>in Emacs</i></title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/pile/assets/js/pace.min.js"></script>
+<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<script src="/assets/js/local-link-patch.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+                                <div class='site-title'>
+                                  <a href='/'>
+                                    <img src='/assets/images/avatar32.png'>
+                                  </a>
+                                </div>
+                                <div class='site-nav'>
+                                  <a class='' href='/'> blog</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='active' href='/wiki'> wiki</a>
+                                  <a href='/about'> about</a>
+                                </div>
+                                <div class='clearfix'></div>
+                              </header>
+
+                              <div class='page-header'>
+                                <div class='page-meta'>Last modified:  2018-06-06 Wed 18:36</div>
+                                <h1>Today I Learned <i>in Emacs</i></h1>
+                              </div>
+</div>
+<div id="content">
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../emacs/index.html'>emacs</a> / til</div>
+<p>
+<i>Today I learned, Emacs version. More of a mini blog. Inspired by <a href="https://github.com/jbranchaud/til">jbranchaud/til</a>.</i>
+</p>
+
+<aside>
+<p>
+This page <i>used to</i> live in a separate repository <a href="https://github.com/lepisma/til-emacs">here</a>. Now, well, its here.
+</p>
+</aside>
+
+<ul class="org-ul">
+<li><p>
+<b>inline code blocks</b>
+</p>
+
+<p>
+Inline <i>executable</i> code blocks can be written in org mode as:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">src_LANG[HEADERS]{CODE}
+</pre>
+</div>
+
+<p>
+A snippet like the following then shows up like this <code class="src src-emacs-lisp">(+ <span class="org-highlight-numbers-number">1</span> <span class="org-highlight-numbers-number">1</span><span class="org-parinfer-pretty-parensXdim-paren">)</span></code> <code>2</code>:
+</p>
+
+<pre class="example">
+src_emacs-lisp[:exports both :results value]{(+ 1 1)} {{{results(=2=)}}}  
+</pre></li>
+
+<li><p>
+<b>dump-emacs</b>
+</p>
+
+<p>
+Similar to most Common Lisp implementations, emacs also provides a <i>dump</i>
+function which dumps the state. Although this is mostly for development
+purpose and not really useful. See this <a href="https://www.reddit.com/r/emacs/comments/2rietp/dumpemacs_truly_speeds_up_emacs_startup/">thread</a>.
+</p></li>
+
+<li><p>
+<b>magic file names</b>
+</p>
+
+<p>
+You can define specific <i>handlers</i> for certain file name patterns which can then
+override the behavior in interesting ways. <a href="https://bitbucket.org/jpkotta/openwith">openwith</a> exploits this by
+associating external programs with specific file formats. This capability
+might allow creating hacks like <a href="https://github.com/rasguanabana/ytfs">ytfs</a> in elisp. Documentation is <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Magic-File-Names.html">here</a>.
+</p></li>
+
+<li><p>
+<b>reader macros</b>
+</p>
+
+<p>
+Unlike common lisp, the reader for Elisp is not open for extension (in elisp
+that is; of course you can modify the C sources). <a href="https://github.com/mishoo/elisp-reader.el">Here</a> is a custom reader
+reader <i>in elisp</i> which lets you define custom reader macros.
+</p></li>
+
+<li><p>
+<b>org macros</b>
+</p>
+
+<p>
+Org mode allows simple text replacement macros with arguments for export. See
+more <a href="https://orgmode.org/manual/Macro-replacement.html">here</a>.
+</p></li>
+
+<li><p>
+<b>benchmark-run</b>
+</p>
+
+<p>
+Just what you expect. Learnt from <a href="http://irreal.org/blog/?p=400">here</a>. Also check <code>benchmark-run-compiled</code> if
+you want to compare compiled elisp performance.
+</p></li>
+
+<li><p>
+<b>calc</b>
+</p>
+
+<p>
+Emacs has a very elaborate calculator capable even of symbolic mathematics and
+manipulation. Check <a href="http://nullprogram.com/blog/2009/06/23/">this blog post</a> by Chris to get a feel. I used to call
+<a href="https://github.com/sharkdp/insect">insect</a> to perform unit conversions, but looks like <i>calc</i> is enough.
+</p></li>
+
+<li><p>
+<b>tail calls</b>
+</p>
+
+<p>
+Emacs lisp doesn't optimize tail calls. This forces you to use loops (like
+<code>while</code>) instead of recursion. Two workarounds are <a href="https://github.com/Wilfred/tco.el">tco</a> and <a href="https://github.com/VincentToups/recur">recur</a>.
+</p></li>
+
+<li><p>
+<b>two columns</b>
+</p>
+
+<p>
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Two_002dColumn.html">Two column editing</a> lets you split the current buffer in two columns
+(obviously) which are finally merged in one. I am trying to use it for writing
+sidenotes in org files. Will have issues with org-export though.
+</p></li>
+
+<li><p>
+<b>gap buffers</b>
+</p>
+
+<p>
+Emacs internally uses <a href="https://en.wikipedia.org/wiki/Gap_buffer">gap buffers</a> to represent text (in buffers). Current gap
+values can be accessed using functions <code>gap-position</code> and <code>gap-size</code>. See the page
+on <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Buffer-Gap.html">manual</a> for more.
+</p></li>
+
+<li><p>
+<b>reverse variable search</b>
+</p>
+
+<p>
+Weird but possibly useful. <code>apropos-value</code> lets you search for variables with
+provided value.
+</p></li>
+
+<li><p>
+<b>literate configuration</b>
+</p>
+
+<p>
+Using <code>org-babel-load-file</code>, you can load emacs-lisp snippets from an org file.
+This is great for maintaining readable configuration like done in
+<a href="https://github.com/eschulte/emacs24-starter-kit">emacs24-starter-kit</a>.
+</p></li>
+
+<li><p>
+<b>image tooltips</b>
+</p>
+
+<p>
+Its <a href="https://www.youtube.com/watch?v=uX_hAPb9NOc">possible</a> to show image inside the regular emacs tooltips. This is handy
+for documents with linked images.
+</p></li>
+
+<li><p>
+<b>capturing buffer bookmarks</b>
+</p>
+
+<p>
+Org capture has templates (<code>%a</code>, <code>%A</code> etc.) for capturing the location where the
+org-capture was called. This comes in handy with emails, todos in code etc.
+</p></li>
+
+<li><p>
+<b>narrow region</b>
+</p>
+
+<p>
+Narrowing allows showing only a certain part of a buffer instead of full
+content. This lets you work on the narrowed region without affecting other
+stuff.
+</p></li>
+
+<li><p>
+<b>org-edit-special</b>
+</p>
+
+<p>
+Special chunks in org mode like babel source blocks can be edited in a
+separate dedicated buffer using <code>org-edit-special</code>.
+</p></li>
+
+<li><p>
+<b>rectangle insert</b>
+</p>
+
+<p>
+Iedit has a <code>iedit-rectangle-mode</code> which lets edit vertical chunks. Handy for
+enforcing indentation over a section.
+</p></li>
+
+<li><p>
+<b>undo-tree</b>
+</p>
+
+<p>
+<a href="https://elpa.gnu.org/packages/undo-tree.html">undo-tree</a> maintains a tree instead of a linear undo/redo history. Wish there
+was something similar for krita/gimp.
+</p></li>
+
+<li><p>
+<b>org-store-link</b>
+</p>
+
+<p>
+Special bookmarks to <a href="http://orgmode.org/manual/Handling-links.html">different</a> modes can be saved in org files using
+<code>org-store-link</code> and <code>org-insert-link</code>.
+</p></li>
+
+<li><p>
+<b>common lisp emulation</b>
+</p>
+
+<p>
+Elisp can simulate many features of common lisp, including full fledged
+function arguments, using the <code>cl</code> package.
+</p></li>
+
+<li><p>
+<b>winner-mode</b>
+</p>
+
+<p>
+Probably too late to know about it. Winner mode lets you undo/redo window
+configuration.
+</p></li>
+
+<li><p>
+<b>file-watch</b>
+</p>
+
+<p>
+<code>file-notify-add-watch</code> allows hooking up callbacks for file changes.
+</p></li>
+
+<li><p>
+<b>re-builder</b>
+</p>
+
+<p>
+Emacs lets you check regex on the fly in current buffer using <code>re-builder</code>.
+</p></li>
+
+<li><p>
+<b>obarray</b>
+</p>
+
+<p>
+<code>obarray</code> refers to a vector of symbols which are interned and is used for
+looking up value of symbols.
+</p></li>
+
+<li><p>
+<b>latex fragment preview</b>
+</p>
+
+<p>
+Latex code snippets can be previewed directly in org-mode using
+<code>org-toggle-latex-fragment</code>.
+</p></li>
+
+<li><p>
+<b>dired drag and drop</b>
+</p>
+
+<p>
+Dropping a file to a dired buffer copies stuff to it.
+</p></li>
+
+<li><p>
+<b>advising functions</b>
+</p>
+
+<p>
+Elisp lets you <i>add</i> a custom behavior on an already existing function
+using the <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Advising-Functions.html#Advising-Functions">advising facility</a>.
+</p></li>
+
+<li><p>
+<b>highlight-regexp</b>
+</p>
+
+<p>
+Highlight a regexp in buffer with certain color using <code>highlight-regexp</code>.
+</p></li>
+
+<li><p>
+<b>eieio</b>
+</p>
+
+<p>
+Emacs Lisp has an Object Oriented Programming system called
+<a href="https://www.gnu.org/software/emacs/manual/eieio.html">EIEIO</a> mimicking Common Lisp Object System.
+</p></li>
+
+<li><p>
+<b>org-protocol</b>
+</p>
+
+<blockquote>
+<p>
+org-protocol intercepts calls from emacsclient to trigger custom actions
+without external dependencies. Only one protocol has to be configured with
+your external applications or the operating system, to trigger an arbitrary
+number of custom actions. Just register your custom sub-protocol and handler
+with the variable `org-protocol-protocol-alist'.
+</p>
+</blockquote>
+
+<p>
+Taken from <a href="http://orgmode.org/worg/org-contrib/org-protocol.html#orgheadline4">here</a>. Probably the best surprise feature I found till date.
+</p></li>
+
+<li><p>
+<b>comint mode scroll</b>
+</p>
+
+<p>
+Comint mode (all the shell-ish processes), by default (in spacemacs at least),
+shows everything possible whenever a shell output comes out. This results in
+pushing (scrolling) the current line to the bottom even when you were up
+somewhere. This can be fixed by setting <code>comint-scroll-show-maximum-output</code> to
+<code>nil</code>.
+</p></li>
+
+<li><p>
+<b>custom agenda views</b>
+</p>
+
+<p>
+Org agenda view allows custom built views by customizing the variable
+<code>org-agenda-custom-commands</code>. The customization lets you work with separate
+files, tags, todo-states and much <a href="http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html">more</a>.
+</p></li>
+
+<li><p>
+<b>current-prefix-arg</b>
+</p>
+
+<p>
+Setting <code>current-prefix-arg</code> variable works as <code>C-u</code> key for the command in
+scope. This allows wrapping up some useful commands with prefix arguments.
+</p></li>
+
+<li><p>
+<b>apropos</b>
+</p>
+
+<p>
+Apropos commands (<code>apropos</code>, <code>apropos-command</code> etc.) do full text searches
+over corresponding components (symbols, commands, etc.) and are powerful and
+useful than the regular ways.
+</p></li>
+
+<li><p>
+<b>caching sudo password in eshell</b>
+</p>
+
+<p>
+Eshell can use tramp's sudo instead of <code>/usr/bin/sudo</code> and then cache
+passwords. Setting alias by <code>alias sudo 'eshell/sudo $*'</code> in eshell after
+setting up cache does the trick.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span class="org-keyword">use-package</span> <span class="org-constant">em-tramp</span>
+  <span class="org-builtin">:config</span>
+  (<span class="org-keyword">setq</span> eshell-prefer-lisp-functions t<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  (<span class="org-keyword">setq</span> password-cache t<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  (<span class="org-keyword">setq</span> password-cache-expiry <span class="org-highlight-numbers-number">3600</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+</pre>
+</div>
+<p>
+<a href="https://emacs.stackexchange.com/questions/5608/how-to-let-eshell-remember-sudo-password-for-two-minutes">Source</a>
+</p></li>
+
+<li><p>
+<b>syntax table</b>
+</p>
+
+<p>
+Emacs maintains what are called <i>syntax table</i> for modes which define which
+character is going to be treated as what. As an example, you could set <code>$</code> as
+a whitespace character to assist jumping around in text by using
+<code>(modify-syntax-entry ?$ " ")</code>
+</p></li>
+
+<li><p>
+<b>ditaa &amp; dot</b>
+</p>
+
+<p>
+Babel has great support for <a href="http://ditaa.sourceforge.net/">ditaa</a> and <a href="http://www.graphviz.org/">dot</a> snippets, allowing creation of
+graph, drawings and flowcharts easily.
+</p></li>
+
+<li><p>
+<b>lexical scoping</b>
+</p>
+
+<p>
+Adding <code>;;; -*- lexical-binding: t -*-</code> to the header enables lexical binding
+in an elisp source file.
+</p></li>
+
+<li><p>
+<b>inserting unicode by name</b>
+</p>
+
+<p>
+<code>C-x 8 RET</code> lets you search and insert unicode character by Unicode name.
+</p></li>
+
+<li><p>
+<b>getting mouse position</b>
+</p>
+
+<p>
+There are functions to get current position of mouse both in terms of
+pixels <code>mouse-pixel-position</code> and characters <code>mouse-position</code> relative to
+current frame (or absolute <code>mouse-absolute-pixel-position</code>).
+</p></li>
+
+<li><p>
+<b>smerge</b>
+</p>
+
+<p>
+<code>smerge-mode</code> allows easy conflict resolution for merges. Move pointer to the
+conflict and use <code>smerge-keep-mine</code> / <code>smerge-keep-other</code>.
+</p></li>
+
+<li><p>
+<b>edit file properties in dired</b>
+</p>
+
+<p>
+Dired allows a special mode, wdired (<code>C-x C-q</code>), that lets dired buffer
+editings &#x2013; like renaming files, changing permissions, etc. &#x2013; get reflected
+to the file system. More details <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Wdired.html#Wdired">here</a>.
+</p></li>
+
+<li><p>
+<b>external functions in org tables</b>
+</p>
+
+<p>
+Any babel code block returning value can be referenced by its <code>name</code> and
+called as a function for org tables. More details <a href="http://ehneilsen.net/notebook/orgExamples/org-examples.html#sec-8">here</a>.
+</p></li>
+
+<li><p>
+<b>form feed lines</b>
+</p>
+
+<p>
+Many popular elisp source files get rendered in spacemacs with sections
+separated by neat horizontal lines. TIL those are form feed characters <code>^L</code>
+and are rendered using packages like <a href="https://github.com/purcell/page-break-lines">page-break-lines</a>.
+</p></li>
+
+<li><p>
+<b>kill-ring</b>
+</p>
+
+<p>
+Recently stopped using CUA keybindings. This opened me up to use the
+kill-ring, which is a list with kill (cut, copy) history. Simple cut, copy,
+paste are <code>C-w</code> (<i>kill</i>), <code>M-w</code> (<i>kill-save</i>) and <code>C-y</code> (<i>yank</i>). Cycle
+through the ring while yanking using <code>M-y</code>. Use <code>helm-show-kill-ring</code> for a
+better kill-ring browsing experience.
+</p></li>
+
+<li><p>
+<b>elisp scripts</b>
+</p>
+
+<p>
+Using Emacs for general purpose scripting has multiple issues. Many are
+documented <a href="http://www.lunaryorn.com/posts/emacs-script-pitfalls.html#section-inhibiting-site-start">here</a>. For me, package loading is a major one. A lot of
+<i>not-inside-emacs</i> scripts wont be helpful without packages like <a href="https://github.com/rejeep/f.el">f</a>, <a href="https://github.com/magnars/dash.el">dash</a> and
+<a href="https://github.com/magnars/s.el">s</a>. <a href="https://github.com/cask/cask">cask</a> provides a way out. Init a caskfile (<code>cask init</code>), install
+dependencies (<code>cask install</code>), run (<code>cask emacs --script something.el</code>).
+</p></li>
+
+<li><p>
+<b>data structures</b>
+</p>
+
+<p>
+I never went beyond list. Knew about <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Association-Lists.html">alists</a>, but didn't know there are
+<a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Hash-Tables.html">hash tables</a> and <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Vectors.html">vectors</a> too. In case you are working with key-value pairs in
+either hash table or alist form, try <a href="https://github.com/Wilfred/ht.el">ht.el</a>.
+</p></li>
+
+<li><p>
+<b>org-contacts</b>
+</p>
+
+<p>
+You can use <a href="https://julien.danjou.info/projects/emacs-packages#org-contacts">org-contacts</a> from org-contrib to manage contacts. This is really
+neat considering it integrates with gnus.
+</p></li>
+
+<li><p>
+<b>mpc</b>
+</p>
+
+<p>
+There is a pretty nifty <a href="https://www.musicpd.org/">mpd</a> client built into Emacs. Use <code>M-x mpc</code>.
+</p></li>
+</ul>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>
