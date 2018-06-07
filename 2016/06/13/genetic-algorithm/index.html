@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-06 Wed 19:19 -->
+<!-- 2018-06-07 Thu 12:49 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What is it that Genetic Algorithm does?</title>
@@ -178,41 +178,36 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
 <script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="/pile/assets/js/pace.min.js"></script>
-<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;" />
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
-<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <script src="/assets/js/pace.min.js"></script>
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
-<script src="/assets/js/local-link-patch.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -346,8 +341,8 @@ frowning at few of its aspects without going through what it is that GA really
 does.
 </p>
 
-<div id="outline-container-org5b7c5ea" class="outline-2">
-<h2 id="fundamental-ideas"><a id="org5b7c5ea"></a><span class="section-number-2">1</span> Fundamental ideas</h2>
+<div id="outline-container-org6eaff4f" class="outline-2">
+<h2 id="fundamental-ideas"><a id="org6eaff4f"></a><span class="section-number-2">1</span> Fundamental ideas</h2>
 <div class="outline-text-2" id="text-fundamental-ideas">
 
 <p>
@@ -361,8 +356,8 @@ Let us leave the way fitness is used in traditional GA and focus on the two
 </p>
 </div>
 
-<div id="outline-container-orgf5ca4ce" class="outline-3">
-<h3 id="fundamental-ideas/mutation"><a id="orgf5ca4ce"></a><span class="section-number-3">1.1</span> Mutation</h3>
+<div id="outline-container-orgefce1e6" class="outline-3">
+<h3 id="fundamental-ideas/mutation"><a id="orgefce1e6"></a><span class="section-number-3">1.1</span> Mutation</h3>
 <div class="outline-text-3" id="text-fundamental-ideas/mutation">
 
 <p>
@@ -384,8 +379,8 @@ real values or other symbols, mutation means what it means.
 </div>
 </div>
 
-<div id="outline-container-org7d1be2e" class="outline-3">
-<h3 id="fundamental-ideas/crossover"><a id="org7d1be2e"></a><span class="section-number-3">1.2</span> Crossover</h3>
+<div id="outline-container-org8899265" class="outline-3">
+<h3 id="fundamental-ideas/crossover"><a id="org8899265"></a><span class="section-number-3">1.2</span> Crossover</h3>
 <div class="outline-text-3" id="text-fundamental-ideas/crossover">
 
 <p>
@@ -440,8 +435,8 @@ Is there an identity crisis here?
 </div>
 </div>
 
-<div id="outline-container-orga28ccf3" class="outline-2">
-<h2 id="fundamental-ideas,-again"><a id="orga28ccf3"></a><span class="section-number-2">2</span> Fundamental ideas, again</h2>
+<div id="outline-container-orgd495e65" class="outline-2">
+<h2 id="fundamental-ideas,-again"><a id="orgd495e65"></a><span class="section-number-2">2</span> Fundamental ideas, again</h2>
 <div class="outline-text-2" id="text-fundamental-ideas,-again">
 
 <p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-06 Wed 19:19 -->
+<!-- 2018-06-07 Thu 12:50 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Extreme Learning Machines with Julia</title>
@@ -178,41 +178,36 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="/pile/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/pile/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
 <script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="/pile/assets/js/pace.min.js"></script>
-<script src="/pile/assets/js/jquery.zoomooz.min.js"></script>
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/pile/assets/favicons/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/pile/assets/favicons/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/pile/assets/favicons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/pile/assets/favicons/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/pile/assets/favicons/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/pile/assets/favicons/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/pile/assets/favicons/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/pile/assets/favicons/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="/pile/assets/favicons/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;" />
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="/pile/assets/favicons/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="/pile/assets/favicons/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="/pile/assets/favicons/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="/pile/assets/favicons/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="/pile/assets/favicons/mstile-310x310.png" />
-<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 <script src="/assets/js/pace.min.js"></script>
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
-<script src="/assets/js/local-link-patch.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -335,8 +330,8 @@ works by <a href="http://www.cs.toronto.edu/~hinton/">Hinton</a> and others in u
 lift to deep learning.
 </p>
 
-<div id="outline-container-orgb692c97" class="outline-2">
-<h2 id="reservoirs"><a id="orgb692c97"></a><span class="section-number-2">1</span> Reservoirs</h2>
+<div id="outline-container-orgf5c7146" class="outline-2">
+<h2 id="reservoirs"><a id="orgf5c7146"></a><span class="section-number-2">1</span> Reservoirs</h2>
 <div class="outline-text-2" id="text-reservoirs">
 
 <p>
@@ -366,8 +361,8 @@ very similar in concept is the topic of this post, <i>Extreme Learning Machine</
 </div>
 </div>
 
-<div id="outline-container-orgd7ad670" class="outline-2">
-<h2 id="extreme-learning"><a id="orgd7ad670"></a><span class="section-number-2">2</span> Extreme Learning</h2>
+<div id="outline-container-orgb87e588" class="outline-2">
+<h2 id="extreme-learning"><a id="orgb87e588"></a><span class="section-number-2">2</span> Extreme Learning</h2>
 <div class="outline-text-2" id="text-extreme-learning">
 
 <p>
@@ -481,8 +476,8 @@ generalization.
 </div>
 </div>
 
-<div id="outline-container-org949c184" class="outline-2">
-<h2 id="performance"><a id="org949c184"></a><span class="section-number-2">3</span> Performance</h2>
+<div id="outline-container-orgb3c86c1" class="outline-2">
+<h2 id="performance"><a id="orgb3c86c1"></a><span class="section-number-2">3</span> Performance</h2>
 <div class="outline-text-2" id="text-performance">
 
 <p>
@@ -550,8 +545,8 @@ Since, both libraries have few functions with same names, so its better to use
 </p>
 </div>
 
-<div id="outline-container-org8c6106e" class="outline-3">
-<h3 id="performance/reading-data"><a id="org8c6106e"></a><span class="section-number-3">3.1</span> Reading data</h3>
+<div id="outline-container-org4a4d0b7" class="outline-3">
+<h3 id="performance/reading-data"><a id="org4a4d0b7"></a><span class="section-number-3">3.1</span> Reading data</h3>
 <div class="outline-text-3" id="text-performance/reading-data">
 
 
@@ -584,8 +579,8 @@ authentication.
 </div>
 </div>
 
-<div id="outline-container-org86ff2f4" class="outline-3">
-<h3 id="performance/scaling-columns"><a id="org86ff2f4"></a><span class="section-number-3">3.2</span> Scaling columns</h3>
+<div id="outline-container-orgc561987" class="outline-3">
+<h3 id="performance/scaling-columns"><a id="orgc561987"></a><span class="section-number-3">3.2</span> Scaling columns</h3>
 <div class="outline-text-3" id="text-performance/scaling-columns">
 
 
@@ -617,8 +612,8 @@ dat_train, dat_test = dat<span class="org-rainbow-delimiters-depth-1">[</span>tr
 </div>
 </div>
 
-<div id="outline-container-orgaa539ad" class="outline-3">
-<h3 id="performance/training"><a id="orgaa539ad"></a><span class="section-number-3">3.3</span> Training</h3>
+<div id="outline-container-orge69886d" class="outline-3">
+<h3 id="performance/training"><a id="orge69886d"></a><span class="section-number-3">3.3</span> Training</h3>
 <div class="outline-text-3" id="text-performance/training">
 
 <p>
@@ -688,8 +683,8 @@ speed of julia.
 </div>
 </div>
 
-<div id="outline-container-orge99d5d8" class="outline-3">
-<h3 id="performance/ann"><a id="orge99d5d8"></a><span class="section-number-3">3.4</span> ANN</h3>
+<div id="outline-container-org38a2c15" class="outline-3">
+<h3 id="performance/ann"><a id="org38a2c15"></a><span class="section-number-3">3.4</span> ANN</h3>
 <div class="outline-text-3" id="text-performance/ann">
 
 
@@ -707,8 +702,8 @@ elapsed time: 0.238218045 seconds
 </div>
 </div>
 
-<div id="outline-container-org5eb2613" class="outline-3">
-<h3 id="performance/elm"><a id="org5eb2613"></a><span class="section-number-3">3.5</span> ELM</h3>
+<div id="outline-container-org541a432" class="outline-3">
+<h3 id="performance/elm"><a id="org541a432"></a><span class="section-number-3">3.5</span> ELM</h3>
 <div class="outline-text-3" id="text-performance/elm">
 
 
@@ -726,8 +721,8 @@ elapsed time: 0.003801902 seconds
 </div>
 </div>
 
-<div id="outline-container-org1cc8a2b" class="outline-2">
-<h2 id="wut?"><a id="org1cc8a2b"></a><span class="section-number-2">4</span> WUT?</h2>
+<div id="outline-container-orge5e02d7" class="outline-2">
+<h2 id="wut?"><a id="orge5e02d7"></a><span class="section-number-2">4</span> WUT?</h2>
 <div class="outline-text-2" id="text-wut?">
 
 <p>
