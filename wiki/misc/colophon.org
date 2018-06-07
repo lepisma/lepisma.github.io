@@ -21,7 +21,7 @@ and more.
 The set of pages here mirror a small section of my messy org directory (I am
 still figuring out how to work efficiently with my private files. Probably
 something like [[https://github.com/Kungsgeten/org-brain][org-brain]] might help). Other than the org files themselves (which
-are [[https://github.com/lepisma/pile][here]]), there are three pieces that assist in publishing:
+are [[https://github.com/lepisma/lepisma.github.io][here]]), there are three pieces that assist in publishing:
 
 1. The [[https://github.com/lepisma/lepisma.github.io/blob/source/assets/export.setup][export setup file]] which attaches css/js scripts and provides the general
    export config.
