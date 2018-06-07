@@ -1048,8 +1048,7 @@ h3, h4, h5, h6 {
   line-height: 1.9;
   color: #7b7b7b;
   text-transform: uppercase;
-  color: #c8c8c8;
-  float: right; }
+  color: #c8c8c8; }
 
 .section-number-1 {
   font-size: 30px; }
@@ -1344,20 +1343,14 @@ pre.src:hover::before {
 .outline-2 h2 {
   font-size: 30px; }
 
-.outline-3 h3,
-.outline-4 h4,
-.outline-5 h5,
-.outline-6 h6 {
+.outline-3 h3 {
   font-size: 24px;
   font-style: normal; }
 
 .outline-2 .section-number-2 {
   font-size: 30px; }
 
-.outline-3 .section-number-3,
-.outline-4 .section-number-4,
-.outline-5 .section-number-5,
-.outline-6 .section-number-5 {
+.outline-3 .section-number-3 {
   font-size: 24px; }
 
 .timestamp, .timestamp-kwd {

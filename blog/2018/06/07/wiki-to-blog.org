@@ -1,0 +1,89 @@
+#+TITLE: Blog ← Wiki
+#+TAGS: personal
+#+SETUPFILE: ../../../../assets/export.setup
+
+Some time back I tried to move almost completely to a wiki based writing system.
+Arguments in favour of that are [[file:../../01/27/blog-to-wiki.org][here]]. I have, since then, reverted my views on
+that. This post tries to elaborate that /new/ view starting with my reason for
+writing and then moving on to the organization issue.
+
+* Why write?
+Apart from the general benefits, one personal reason for me, even though I
+haven't really employed it so far, is to gain clarity of thoughts. Specially
+when you work with high level and/or initial phase ideas, writing things down
+really helps in formalizing and providing solid next level goals.
+
+* Why write in public?
+Even though there might be zero readership, writing in /public/ helps create a
+ghost audience and puts a sort of accountability on my part.
+
+Though I don't think this is really important as long as ideas are communicated
+where and when they matter. The same effect can be generated without an explicit
+/public/ face, but this way doesn't hurt too.
+
+* Organizing writings
+The main way I have been thinking about the organization of text files has been
+according to the topic they touch. This is useful but is an overkill if you
+don't have a lot of files for each topic. And when you merge every kind of topic
+in a single blog, it starts to add to the confusion where you keep thinking
+whether that new piece is okay to go in. From the last post:
+
+#+BEGIN_QUOTE
+Sometimes I have been putting personal experiences, other times half baked
+opinions. A few times, I have pushed because there was nothing in here for a
+long time.
+#+END_QUOTE
+
+Since this confusion is the only immediate problem for me right now, I believe
+allowing, somehow, more of the files to pass the screening can help in
+clarifying the confusion by letting me look at a fuller shape. While the setup
+should not encourage a lot of stupid contents (like in various social networks,
+specially the ones that expect you to spend more time on them), it should not
+stand in your way too.
+
+** Wiki
+Keeping a personal wiki was one way to resolve this. A tree of files, all
+mutable at will. It should have helped slack the screening process but I realize
+that a wiki is not really good for /posts/ (as compared to /pages/).
+
+Suppose you are working on a new algorithm. Does that go as a wiki page or a
+blog post? A wiki can hold a pointer to it or the whole but only /if/ the thing
+has a family of interlinked content. Most of the experimental stuff doesn't have
+this /family/ yet and so come out better in a news feed.
+
+** New page types
+Instead of fighting for posts in the main blog, I can just create a dedicated
+place for more flowy things.
+
+Formalizing it a bit more, what I want is to classify the pages according to
+their /mutability/ characteristics. Leaving corrections aside, a page can, in a
+future time, demand a change in either its text (literally), its main
+conclusions or both. As an example, a wiki page can house content that I am free
+to modify both textually and conclusively. A diary page allows only conclusion
+mutation and is going to be like a blog post which can be safely assumed /not
+final/ but persistent.
+
+Here are some page types that I plan to work on from now:
+
+|---------+--------+---------------|
+| type    | m text | m conclusions |
+|---------+--------+---------------|
+| blog    | ✕      | ✕             |
+| journal | ✕      | ✓             |
+| wiki    | ✓      | ✓             |
+|---------+--------+---------------|
+
+The [[../../../../journal/index.org][journal]] is new. An extra degree of freedom this allows is related to
+subjectiv-ish posts which I will tend to avoid putting on my main blog. You keep
+getting exposed to new ideas every day and its really hard to look back and /not/
+delete a stupid post a few weeks back.
+
+In all fairness, a regular blog also allow this freedom but I just haven't felt
+the same with mine. So the /journal/ is an auxiliary blog which leans a little on
+the micro blog side. More focused towards event based posts, maybe impulsive,
+maybe planned. Maybe just a post on an idea I am /not/ going to work on. Or maybe
+something I /am/ working on but have only done so partially. In any case, it will
+have a relatively higher post frequency.
+
+As for the others, the [[../../../../wiki/index.org][wiki]] will only have resourcy pages and the main [[../../../index.org][blog]] will
+have /finalized/ posts of more general (and objective) interest.

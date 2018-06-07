@@ -28,17 +28,17 @@ already provides. Even more, I already have a bunch of org files sitting around.
 
 So I am now moving to an org mode based personal wiki. Not very wiki like and
 just a pile of files which lives at [[/pile]] [fn::This link should not work, I
-moved things around and have a different writing setup now]. The =pile= is
-fundamentally a place to log things in the process of gathering and playing
-around with knowledge of any kind. This makes it more of an assistive tool for
-myself than anyone else. Using org mode helps a lot in this /selfish/ endeavor
-because of [[https://orgmode.org/worg/org-contrib/babel/][org-babel]] (for authoring code based pages) and [[https://orgmode.org/manual/Publishing.html][org-publish]] (for
-publishing the whole pile to the web). I will most probably have a page
-documenting my setup once it reaches a decent level with enough differences from
-other org-publish tutorials on the web.
+moved things around and have a different writing setup now. See [[../../06/07/wiki-to-blog.org][this post]] for
+more details]. The =pile= is fundamentally a place to log things in the process of
+gathering and playing around with knowledge of any kind. This makes it more of
+an assistive tool for myself than anyone else. Using org mode helps a lot in
+this /selfish/ endeavor because of [[https://orgmode.org/worg/org-contrib/babel/][org-babel]] (for authoring code based pages) and
+[[https://orgmode.org/manual/Publishing.html][org-publish]] (for publishing the whole pile to the web). I will most probably
+have a page documenting my setup once it reaches a decent level with enough
+differences from other org-publish tutorials on the web.
 
 #+BEGIN_aside
-In case you tend to have a bunch of jupyter notebooks with just explorations, [[/2016/11/02/org-babel/][I
+In case you tend to have a bunch of jupyter notebooks with just explorations, [[../../../2016/11/02/org-babel/][I
 highly recommend]] looking at org-babel.
 #+END_aside
 
