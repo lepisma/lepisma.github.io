@@ -1,4 +1,4 @@
-#+TITLE: Blog 🡢 wiki
+#+TITLE: Blog → Wiki
 #+TAGS: personal
 #+SETUPFILE: ../../../../assets/export.setup
 
