@@ -18,6 +18,18 @@ Some non fiction. Most of the books are still in uncategorized section.
 Books with more mathematical and logical inclinations. Some theoretical computer
 science books might also go in here.
 
+*** READ Book of Proof
+CLOSED: [2018-06-08 Fri 15:09]
+:PROPERTIES:
+:AUTHOR:   Richard Hammack
+:ADDED:    <2018-06-08 Fri>
+:URL:      https://www.people.vcu.edu/~rhammack/BookOfProof/
+:END:
+
+There are some nice things in here, but, for the most part, this is pretty
+elementary. Probably a less elementary book covering similar topic is /How to
+Prove It: A Structured Approach/ by Daniel J. Velleman.
+
 *** The Joy of x: A Guided Tour of Math, from One to Infinity
 :PROPERTIES:
 :AUTHOR:   Steven H. Strogatz
