@@ -25,6 +25,8 @@
   - [[file:ml/learning/index.org][Breaking down /Learning/]]
   - [[file:ml/potential/index.org][Potential in Multiplicative Weight Algorithms]]
   - [[file:ml/voting-ensemble/index.org][Voting Ensemble]]
+- [[file:philosophy/index.org][Philosophy]]
+  - [[file:philosophy/resources.org][Resources]]
 - [[file:programming/index.org][Programming]]
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]
