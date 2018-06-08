@@ -1,6 +1,8 @@
 #+TITLE: ;;
 #+SETUPFILE: ../assets/export.setup
 
+#+HTML: <script src="assets/js/tag-filter.js"></script>
+
 Hello, welcome to my blog! A listing of all the posts follows.
 
 I am now keeping more subjective (and frequent) pieces in [[../journal/index.org][/journal]]. Things that
