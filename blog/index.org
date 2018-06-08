@@ -6,6 +6,14 @@ Hello, welcome to my blog! A listing of all the posts follows.
 I am now keeping more subjective (and frequent) pieces in [[../journal/index.org][/journal]]. Things that
 are more /page/ like go in my personal [[../wiki/index.org][/wiki]].
 
+-----
+
+Filter by /tags/
+
+#+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
+(princ (pile-archive-tag-cloud))
+#+END_SRC
+
 #+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
 (princ (pile-archive))
 #+END_SRC

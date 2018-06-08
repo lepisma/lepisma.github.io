@@ -1,4 +1,5 @@
 #+TITLE: The Lazy Answer to Everything
+#+TAGS: personal
 #+SETUPFILE: ../../../../assets/export.setup
 
 Linus Torvalds is notoriously famous for being direct/upfront/harsh/rude etc.

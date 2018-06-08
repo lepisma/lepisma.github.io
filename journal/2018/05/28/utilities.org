@@ -1,4 +1,5 @@
 #+TITLE: Utilities pitfall
+#+TAGS: programming
 #+SETUPFILE: ../../../../assets/export.setup
 
 Every now and then, I try to package some of my programs in a separate
