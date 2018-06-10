@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-10 Sun 08:43 -->
+<!-- 2018-06-10 Sun 09:34 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Functions as state</title>
@@ -291,7 +291,7 @@ pretty intuitive:
 </p>
 
 <ul class="org-ul">
-<li>You create a model instance <code>m</code>, optionally parametrizing it.</li>
+<li>You create a model instance, optionally parametrizing it.</li>
 </ul>
 <div class="org-src-container">
 <pre class="src src-python"><span class="org-variable-name">model</span> = Model<span class="org-rainbow-delimiters-depth-1">(</span>params<span class="org-rainbow-delimiters-depth-1">)</span>
@@ -299,14 +299,14 @@ pretty intuitive:
 </div>
 <ul class="org-ul">
 <li>Ingest the training data using a <i>fit</i> method, which changes the internal
-state of <code>m</code>.</li>
+state of <code>model</code>.</li>
 </ul>
 <div class="org-src-container">
 <pre class="src src-python">model.fit<span class="org-rainbow-delimiters-depth-1">(</span>training_data<span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 <ul class="org-ul">
-<li>For predicting/testing you call a <i>predict</i> method on <code>m</code> using the test data.</li>
+<li>For predicting/testing you call a <i>predict</i> method using the test data.</li>
 </ul>
 <div class="org-src-container">
 <pre class="src src-python">model.predict<span class="org-rainbow-delimiters-depth-1">(</span>test_data<span class="org-rainbow-delimiters-depth-1">)</span>
