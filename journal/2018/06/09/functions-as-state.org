@@ -9,16 +9,16 @@ on it.
 The basic steps involved in a regular object oriented package (like sklearn) are
 pretty intuitive:
 
-- You create a model instance ~m~, optionally parametrizing it.
+- You create a model instance, optionally parametrizing it.
 #+BEGIN_SRC python
 model = Model(params)
 #+END_SRC
 - Ingest the training data using a /fit/ method, which changes the internal
-  state of ~m~.
+  state of ~model~.
 #+BEGIN_SRC python
 model.fit(training_data)
 #+END_SRC
-- For predicting/testing you call a /predict/ method on ~m~ using the test data.
+- For predicting/testing you call a /predict/ method using the test data.
 #+BEGIN_SRC python
 model.predict(test_data)
 #+END_SRC
