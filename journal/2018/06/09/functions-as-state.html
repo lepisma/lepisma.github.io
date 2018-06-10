@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-10 Sun 08:44 -->
+<!-- 2018-06-10 Sun 08:43 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>[symbol-<i>value</i> nil]</title>
+<title>Functions as state</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -264,8 +264,8 @@ for the JavaScript code in this tag.
                                   </a>
                                 </div>
                                 <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/'> blog</a>
+                                  <a class='active' href='/journal'> journal</a>
                                   <a class='' href='/wiki'> wiki</a>
                                   <a href='/about'> about</a>
                                 </div>
@@ -273,253 +273,136 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>[symbol-<i>value</i> nil]</h1>
+                                <div class='page-meta'>2018-06-09 Sat 00:00</div>
+                                <h1>Functions as state</h1>
                               </div>
 </div>
 <div id="content">
-<script src="assets/js/tag-filter.js"></script>
-
+<div class='page-tags'><a href='../../..#ml'>ml</a> <a href='../../..#programming'>programming</a></div>
 <p>
-Hello, welcome to my blog! A listing of all the posts follows.
+<span class='dropcap'>A</span> machine learning model is, for the most part, an stateful object. There is a
+bundle of state, call <code>{}</code>, packed in an object which changes as you call methods
+on it.
 </p>
 
 <p>
-I am now keeping more subjective (and frequent) pieces in <a href="../journal/index.html">/journal</a>. Things that
-are more <i>page</i> like go in my personal <a href="../wiki/index.html">/wiki</a>.
+The basic steps involved in a regular object oriented package (like sklearn) are
+pretty intuitive:
+</p>
+
+<ul class="org-ul">
+<li>You create a model instance <code>m</code>, optionally parametrizing it.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-variable-name">model</span> = Model<span class="org-rainbow-delimiters-depth-1">(</span>params<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+<ul class="org-ul">
+<li>Ingest the training data using a <i>fit</i> method, which changes the internal
+state of <code>m</code>.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-python">model.fit<span class="org-rainbow-delimiters-depth-1">(</span>training_data<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+<ul class="org-ul">
+<li>For predicting/testing you call a <i>predict</i> method on <code>m</code> using the test data.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-python">model.predict<span class="org-rainbow-delimiters-depth-1">(</span>test_data<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+In the functional approach on the other hand, the training and testing will go
+as functions taking in a <i>model</i> and returning a new <i>model</i>, thus inflicting the
+update.
+</p>
+
+<p>
+One major benefit here is in testing where we get complete control of the
+function's input <i>state</i>. If you know what input state to test against, you can
+test the function. Contrast this with OOP where you will have to know how to <i>get
+to</i> that state first. This is a really useful property if we have to drag the
+state change for long time, like in online learning.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+In a regular object model there is progression of a <i>single</i> object through time
+in a mutable way. In the functional model, its only the data object <code>{}</code> that's
+progressing (in an immutable way). Since this <code>{}</code> is the only carrier of program
+state, it can get loaded with burden of program logic too. For example, a flag
+might be present telling to choose one function than the other in the state
+evolution (unless this decision is easy/cheap to make from the <code>{}</code> value itself).
+You could also put those functions inside the objects, but that again is the
+same burden.
 </p>
 
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#exploration'>exploration</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#physics'>physics</a> <a href='#programming'>programming</a> <a href='#python'>python</a> <a href='#ramble'>ramble</a> <a href='#ricing'>ricing</a> <a href='#skepticism'>skepticism</a> <a href='#tooling'>tooling</a> <a href='#ux'>ux</a> <a href='#viz'>viz</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-07</div>
-<p class="archive-title">
-<a href="./2018/06/07/wiki-to-blog.html" class="archive-title">Blog ← Wiki</a>
+<aside>
+<p>
+To clarify, this <i>burden</i> is probably a burden only in a
+parameter-ish state systems like a machine learning model.
 </p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
+</aside>
+
+<p>
+Another way is to separate the movement of data object (pure
+config/parameters) and the program evolution logic by defining a function which
+maintains the state <code>{}</code> as an optional parameter, like here:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">evolve</span> (data <span class="org-type">&amp;optional</span> ({} init-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  <span class="org-doc">"DATA is new data according to which we modify the STATE."</span>
+  (<span class="org-keyword">let</span> ((new-{} (<span class="org-keyword">do-something</span> data {}<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> (state new-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+      (evolve data {}<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
+</pre>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-01-27</div>
-<p class="archive-title">
-<a href="./2018/01/27/blog-to-wiki.html" class="archive-title">Blog → Wiki</a>
+<p>
+This is basically a wrapper around the <code>do-something</code> function from the functional
+approach. Now, instead of putting in the information about branching logic in <code>{}</code>
+(and checking for flags in the <code>evolve</code> function) we return new <code>evolve</code> function
+each time, maintaining the evolution of <code>{}</code> in the lambda list. Something like
+the following:
 </p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
+
+<div class="org-src-container">
+<pre class="src src-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">evolve-init</span> (data <span class="org-type">&amp;optional</span> ({} init-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (<span class="org-keyword">let</span> ((new-{} (<span class="org-keyword">do-something</span> data {}<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">cond</span>
+      ((cond-a) (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{})) (something-a<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+      ((cond-b) (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{})) (something-b<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+      (t (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+           (evolve-init data {}<span class="org-parinfer-pretty-parensXdim-paren">))))))</span>
+
+(<span class="org-keyword">defun</span> <span class="org-function-name">go</span> (<span class="org-type">&amp;optional</span> (ev-fn #'evolve-init<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (<span class="org-keyword">let</span> ((data (get-data<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">if</span> data (<span class="org-keyword">go</span> (funcall ev-fn data<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
+</pre>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-12-20</div>
-<p class="archive-title">
-<a href="./2017/12/20/fancy-lambdas.html" class="archive-title">Fancy Little Lisp λs</a>
+<p>
+One trouble here is that to recover <code>{}</code> or to do anything with it needs
+inspection of the lambda list, which looks like a hack in most languages (in
+sbcl one way is <code>(sb-introspect:function-lambda-list #'evolve-init)</code>).
 </p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-10-28</div>
-<p class="archive-title">
-<a href="./2017/10/28/ricing-org-mode/index.html" class="archive-title">Ricing up Org Mode</a>
+<p>
+Since the function itself is, in some ways, a part of the program state, it
+would also be nice to be able to dispatch on function types. This is <a href="https://stackoverflow.com/a/39671677">probably
+possible</a> in Julia.
 </p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#ricing'>ricing</a> <a href='#ux'>ux</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-08-25</div>
-<p class="archive-title">
-<a href="./2017/08/25/keyboard/index.html" class="archive-title">The point of keyboarding</a>
+<p>
+I don't know if this makes any sense. This, kind of, puts the evolve function in
+the center stage which feels weird for the most use cases. But the <i>state</i> feels
+more organized in some ways. Probably there will be more to see when I get to
+use something with a lot of state based branching.
 </p>
-<div class='page-tags'><a href='#ux'>ux</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-29</div>
-<p class="archive-title">
-<a href="./2017/06/29/leaving-goodreads/index.html" class="archive-title">Leaving Goodreads</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#ramble'>ramble</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-25</div>
-<p class="archive-title">
-<a href="./2017/06/25/simple-time-maps/index.html" class="archive-title">Simpler time map plots</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-05-15</div>
-<p class="archive-title">
-<a href="./2017/05/15/syntactical-macros.html" class="archive-title">The Beauty of Syntactical Macros</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#lisp'>lisp</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-15</div>
-<p class="archive-title">
-<a href="./2017/03/15/projects.html" class="archive-title">Projects</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-05</div>
-<p class="archive-title">
-<a href="./2017/03/05/optional-typing.html" class="archive-title">Optional Typing</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#python'>python</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-11-02</div>
-<p class="archive-title">
-<a href="./2016/11/02/org-babel/index.html" class="archive-title">Cheap polyglot notebooks</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-08-25</div>
-<p class="archive-title">
-<a href="./2016/08/25/evidence-abuse/index.html" class="archive-title">Abusing Evidence: Drought, Deluge and Disregard</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-06-13</div>
-<p class="archive-title">
-<a href="./2016/06/13/genetic-algorithm/index.html" class="archive-title">What is it that Genetic Algorithm does?</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-03-17</div>
-<p class="archive-title">
-<a href="./2016/03/17/org-mode/index.html" class="archive-title">On why you too should give Emacs Org-mode a spin</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-01-23</div>
-<p class="archive-title">
-<a href="./2016/01/23/constitution-de-markov.html" class="archive-title">Constitution De Markov</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-12-21</div>
-<p class="archive-title">
-<a href="./2015/12/21/white-rhino.html" class="archive-title">White Rhinos, irrationality and other tales</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-11-03</div>
-<p class="archive-title">
-<a href="./2015/11/03/the-writers-voice/index.html" class="archive-title">The Writers' Voice</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-07-30</div>
-<p class="archive-title">
-<a href="./2015/07/30/up-with-theano-and-cuda.html" class="archive-title">Up and running with Theano (GPU) + PyCUDA on Windows</a>
-</p>
-<div class='page-tags'><a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-06-27</div>
-<p class="archive-title">
-<a href="./2015/06/27/hot-100/index.html" class="archive-title">Hot 100 over the years</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-23</div>
-<p class="archive-title">
-<a href="./2015/03/23/overtone-jamming.html" class="archive-title">Overtone Jamming</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-20</div>
-<p class="archive-title">
-<a href="./2015/03/20/rowing-a-steamer/index.html" class="archive-title">Rowing a Steamer</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-14</div>
-<p class="archive-title">
-<a href="./2015/01/14/computer-programs-and-zipf-law/index.html" class="archive-title">Computer Programs and Zipf's Law</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-08</div>
-<p class="archive-title">
-<a href="./2015/01/08/firewall-paradox/index.html" class="archive-title">Firewall Paradox and revisiting the Law of Information</a>
-</p>
-<div class='page-tags'><a href='#physics'>physics</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-06</div>
-<p class="archive-title">
-<a href="./2015/01/06/why-i-stopped-recommending-gnome/index.html" class="archive-title">Why I Stopped Recommending GNOME</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-25</div>
-<p class="archive-title">
-<a href="./2014/11/25/interstellar-tesseract/index.html" class="archive-title">The Interstellar's Tesseract</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-02</div>
-<p class="archive-title">
-<a href="./2014/11/02/neural-turing-machines/index.html" class="archive-title">Neural Turing Machines for dummies</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-07-29</div>
-<p class="archive-title">
-<a href="./2014/07/29/flesh-and-metal/index.html" class="archive-title">Flesh and Metal</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-06-21</div>
-<p class="archive-title">
-<a href="./2014/06/21/extreme-learning-machine/index.html" class="archive-title">Extreme Learning Machines with Julia</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
