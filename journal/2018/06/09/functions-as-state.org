@@ -27,7 +27,7 @@ In the functional approach on the other hand, the training and testing will go
 as functions taking in a /model/ and returning a new /model/, thus inflicting the
 update.
 
-One major benefit here is in testing where we get complete control of the
+One major benefit here is in testing, where we get complete control of the
 function's input /state/. If you know what input state to test against, you can
 test the function. Contrast this with OOP where you will have to know how to /get
 to/ that state first. This is a really useful property if we have to drag the
