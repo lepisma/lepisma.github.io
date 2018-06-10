@@ -90,6 +90,6 @@ would also be nice to be able to dispatch on function types. This is [[https://s
 possible]] in Julia.
 
 I don't know if this makes any sense. This, kind of, puts the evolve function in
-the center stage which feels weird for the most use cases. But the /state/ feels
-more organized in some ways. Probably there will be more to see when I get to
-use something with a lot of state based branching.
+the center stage which feels weird for most of the use cases. But the /state/
+feels more organized in some ways. Probably there will be more to see when I get
+to work on something with a lot of state based branching.
