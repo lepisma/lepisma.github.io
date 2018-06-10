@@ -1,0 +1,95 @@
+#+TITLE: Functions as state
+#+TAGS: ml, programming
+#+SETUPFILE: ../../../../assets/export.setup
+
+A machine learning model is, for the most part, an stateful object. There is a
+bundle of state, call ~{}~, packed in an object which changes as you call methods
+on it.
+
+The basic steps involved in a regular object oriented package (like sklearn) are
+pretty intuitive:
+
+- You create a model instance ~m~, optionally parametrizing it.
+#+BEGIN_SRC python
+model = Model(params)
+#+END_SRC
+- Ingest the training data using a /fit/ method, which changes the internal
+  state of ~m~.
+#+BEGIN_SRC python
+model.fit(training_data)
+#+END_SRC
+- For predicting/testing you call a /predict/ method on ~m~ using the test data.
+#+BEGIN_SRC python
+model.predict(test_data)
+#+END_SRC
+
+In the functional approach on the other hand, the training and testing will go
+as functions taking in a /model/ and returning a new /model/, thus inflicting the
+update.
+
+One major benefit here is in testing where we get complete control of the
+function's input /state/. If you know what input state to test against, you can
+test the function. Contrast this with OOP where you will have to know how to /get
+to/ that state first. This is a really useful property if we have to drag the
+state change for long time, like in online learning.
+
+-----
+
+In a regular object model there is progression of a /single/ object through time
+in a mutable way. In the functional model, its only the data object ~{}~ that's
+progressing (in an immutable way). Since this ~{}~ is the only carrier of program
+state, it can get loaded with burden of program logic too. For example, a flag
+might be present telling to choose one function than the other in the state
+evolution (unless this decision is easy/cheap to make from the ~{}~ value itself).
+You could also put those functions inside the objects, but that again is the
+same burden.
+
+#+BEGIN_aside
+To clarify, this /burden/ is probably a burden only in a
+parameter-ish state systems like a machine learning model.
+#+END_aside
+
+Another way is to separate the movement of data object (pure
+config/parameters) and the program evolution logic by defining a function which
+maintains the state ~{}~ as an optional parameter, like here:
+
+#+BEGIN_SRC lisp
+  (defun evolve (data &optional ({} init-{}))
+    "DATA is new data according to which we modify the STATE."
+    (let ((new-{} (do-something data {})))
+      (lambda (data &optional (state new-{}))
+        (evolve data {})))))
+#+END_SRC
+
+This is basically a wrapper around the ~do-something~ function from the functional
+approach. Now, instead of putting in the information about branching logic in ~{}~
+(and checking for flags in the ~evolve~ function) we return new ~evolve~ function
+each time, maintaining the evolution of ~{}~ in the lambda list. Something like
+the following:
+
+#+BEGIN_SRC lisp
+  (defun evolve-init (data &optional ({} init-{}))
+    (let ((new-{} (do-something data {})))
+      (cond
+        ((cond-a) (lambda (data &optional ({} new-{})) (something-a)))
+        ((cond-b) (lambda (data &optional ({} new-{})) (something-b)))
+        (t (lambda (data &optional ({} new-{}))
+             (evolve-init data {}))))))
+
+  (defun go (&optional (ev-fn #'evolve-init))
+    (let ((data (get-data)))
+      (if data (go (funcall ev-fn data)))))
+#+END_SRC
+
+One trouble here is that to recover ~{}~ or to do anything with it needs
+inspection of the lambda list, which looks like a hack in most languages (in
+sbcl one way is ~(sb-introspect:function-lambda-list #'evolve-init)~).
+
+Since the function itself is, in some ways, a part of the program state, it
+would also be nice to be able to dispatch on function types. This is [[https://stackoverflow.com/a/39671677][probably
+possible]] in Julia.
+
+I don't know if this makes any sense. This, kind of, puts the evolve function in
+the center stage which feels weird for the most use cases. But the /state/ feels
+more organized in some ways. Probably there will be more to see when I get to
+use something with a lot of state based branching.
