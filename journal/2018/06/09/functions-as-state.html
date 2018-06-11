@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-10 Sun 09:39 -->
+<!-- 2018-06-11 Mon 14:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Functions as state</title>
@@ -314,13 +314,12 @@ state of <code>model</code>.</li>
 </div>
 
 <p>
-In the functional approach on the other hand, the training and testing will go
-as functions taking in a <i>model</i> and returning a new <i>model</i>, thus inflicting the
-update.
+In the functional approach on the other hand, the training will go in a function
+taking in a <i>model</i> and returning a new <i>model</i>, thus inflicting the update.
 </p>
 
 <p>
-One major benefit here is in testing, where we get complete control of the
+One major benefit here is in unit testing, where we get complete control of the
 function's input <i>state</i>. If you know what input state to test against, you can
 test the function. Contrast this with OOP where you will have to know how to <i>get
 to</i> that state first. This is a really useful property if we have to drag the
@@ -357,8 +356,8 @@ maintains the state <code>{}</code> as an optional parameter, like here:
 <pre class="src src-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">evolve</span> (data <span class="org-type">&amp;optional</span> ({} init-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
   <span class="org-doc">"DATA is new data according to which we modify the STATE."</span>
   (<span class="org-keyword">let</span> ((new-{} (<span class="org-keyword">do-something</span> data {}<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> (state new-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-      (evolve data {}<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
+    (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+      (evolve data {}<span class="org-parinfer-pretty-parensXdim-paren">))))</span>
 </pre>
 </div>
 
