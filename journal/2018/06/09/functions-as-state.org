@@ -23,11 +23,10 @@ model.fit(training_data)
 model.predict(test_data)
 #+END_SRC
 
-In the functional approach on the other hand, the training and testing will go
-as functions taking in a /model/ and returning a new /model/, thus inflicting the
-update.
+In the functional approach on the other hand, the training will go in a function
+taking in a /model/ and returning a new /model/, thus inflicting the update.
 
-One major benefit here is in testing, where we get complete control of the
+One major benefit here is in unit testing, where we get complete control of the
 function's input /state/. If you know what input state to test against, you can
 test the function. Contrast this with OOP where you will have to know how to /get
 to/ that state first. This is a really useful property if we have to drag the
@@ -57,8 +56,8 @@ maintains the state ~{}~ as an optional parameter, like here:
   (defun evolve (data &optional ({} init-{}))
     "DATA is new data according to which we modify the STATE."
     (let ((new-{} (do-something data {})))
-      (lambda (data &optional (state new-{}))
-        (evolve data {})))))
+      (lambda (data &optional ({} new-{}))
+        (evolve data {}))))
 #+END_SRC
 
 This is basically a wrapper around the ~do-something~ function from the functional
