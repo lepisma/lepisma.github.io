@@ -38,7 +38,7 @@ In a regular object model there is progression of a /single/ object through time
 in a mutable way. In the functional model, its only the data object ~{}~ that's
 progressing (in an immutable way). Since this ~{}~ is the only carrier of program
 state, it can get loaded with burden of program logic too. For example, a flag
-might be present telling to choose one function than the other in the state
+might be present telling to choose one function over the other in the state
 evolution (unless this decision is easy/cheap to make from the ~{}~ value itself).
 You could also put those functions inside the objects, but that again is the
 same burden.
