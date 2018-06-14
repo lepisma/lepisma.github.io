@@ -1,0 +1,50 @@
+#+TITLE: Irrationalization and Selfishness
+#+TAGS: philosophy
+#+SETUPFILE: ../../../../assets/export.setup
+
+I am going through Bertrand Russell's /Sceptical Essays/ and found a /successful/
+strategy called 'irrationalization' where,
+
+#+BEGIN_QUOTE
+Having come to a sound egoistic decision by the help of the unconscious, a man
+proceeds to invent, or adopt from others, a set of high-sounding phrases showing
+how he is pursuing the public good at immense personal sacrifice...In this case
+a man appears less rational than he is; what is still more curious, the
+irrational part of him is conscious and the rational part unconscious.
+
+#+HTML:<footer>On the Value of Scepticism</footer>
+#+END_QUOTE
+
+I don't know how to feel about this. It assumes a couple of things:
+
+1. The unconscious mind[fn::Russell grants a lot of power to the unconscious. He
+   also admires psycho-analysis in a bunch of places in the book.] knows or can
+   know the /really/ beneficial actions, and
+2. the veil of /sacrifice/ helps in the person's goal
+
+The /high-sounding phrasing/ definitely can help in setting up a favorable
+environment for the unconscious plan, but I still don't feel very comfortable as
+to where this comes from. Something similar connecting public good and
+selfishness pops up in a later page:
+
+#+BEGIN_QUOTE
+...when people are mistaken as to what is to their own interest, the course that
+they believe to be wise is more harmful to others than the course that really is
+wise.
+
+#+HTML:<footer>On the Value of Scepticism</footer>
+#+END_QUOTE
+
+Again in a later essay:
+
+#+BEGIN_QUOTE
+In an ordered community it is very rarely to a man's interest to do anything
+which is very harmful to others
+
+#+HTML:<footer>Can Men be Rational?</footer>
+#+END_QUOTE
+
+These point to an assumption that /real/ personal selfishness is not in conflict
+with societal harmony (a little /selfish gene/ vibe), most of the time. I haven't
+seen this logically concluded outside the biological study of altruism. It will
+be interesting to know the philosophical roots of this.
