@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-12 Tue 21:00 -->
+<!-- 2018-06-14 Thu 20:39 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Functions as state</title>
+<title>Irrationalization and Selfishness</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,136 +273,85 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>2018-06-09 Sat 00:00</div>
-                                <h1>Functions as state</h1>
+                                <div class='page-meta'>2018-06-14 Thu 00:00</div>
+                                <h1>Irrationalization and Selfishness</h1>
                               </div>
 </div>
 <div id="content">
-<div class='page-tags'><a href='../../..#ml'>ml</a> <a href='../../..#programming'>programming</a></div>
+<div class='page-tags'><a href='../../..#philosophy'>philosophy</a></div>
 <p>
-<span class='dropcap'>A</span> machine learning model is, for the most part, an stateful object. There is a
-bundle of state, call <code>{}</code>, packed in an object which changes as you call methods
-on it.
+<span class='dropcap'>I</span> am going through Bertrand Russell's <i>Sceptical Essays</i> and found a <i>successful</i>
+strategy called 'irrationalization' where,
 </p>
 
+<blockquote>
 <p>
-The basic steps involved in a regular object oriented package (like sklearn) are
-pretty intuitive:
+Having come to a sound egoistic decision by the help of the unconscious, a man
+proceeds to invent, or adopt from others, a set of high-sounding phrases showing
+how he is pursuing the public good at immense personal sacrifice&#x2026;In this case
+a man appears less rational than he is; what is still more curious, the
+irrational part of him is conscious and the rational part unconscious.
 </p>
 
-<ul class="org-ul">
-<li>You create a model instance, optionally parametrizing it.</li>
-</ul>
-<div class="org-src-container">
-<pre class="src src-python"><span class="org-variable-name">model</span> = Model<span class="org-rainbow-delimiters-depth-1">(</span>params<span class="org-rainbow-delimiters-depth-1">)</span>
-</pre>
+<footer>On the Value of Scepticism</footer>
+</blockquote>
+
+<p>
+I don't know how to feel about this. It assumes a couple of things:
+</p>
+
+<ol class="org-ol">
+<li>The unconscious mind<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> knows or can
+know the <i>really</i> beneficial actions, and</li>
+<li>the veil of <i>sacrifice</i> helps in the person's goal</li>
+</ol>
+
+<p>
+The <i>high-sounding phrasing</i> definitely can help in setting up a favorable
+environment for the unconscious plan, but I still don't feel very comfortable as
+to where this comes from. Something similar connecting public good and
+selfishness pops up in a later page:
+</p>
+
+<blockquote>
+<p>
+&#x2026;when people are mistaken as to what is to their own interest, the course that
+they believe to be wise is more harmful to others than the course that really is
+wise.
+</p>
+
+<footer>On the Value of Scepticism</footer>
+</blockquote>
+
+<p>
+Again in a later essay:
+</p>
+
+<blockquote>
+<p>
+In an ordered community it is very rarely to a man's interest to do anything
+which is very harmful to others
+</p>
+
+<footer>Can Men be Rational?</footer>
+</blockquote>
+
+<p>
+These point to an assumption that <i>real</i> personal selfishness is not in conflict
+with societal harmony (a little <i>selfish gene</i> vibe), most of the time. I haven't
+seen this logically concluded outside the biological study of altruism. It will
+be interesting to know the philosophical roots of this.
+</p>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Russell grants a lot of power to the unconscious. He
+also admires psycho-analysis in a bunch of places in the book.</div></div>
+
+
 </div>
-<ul class="org-ul">
-<li>Ingest the training data using a <i>fit</i> method, which changes the internal
-state of <code>model</code>.</li>
-</ul>
-<div class="org-src-container">
-<pre class="src src-python">model.fit<span class="org-rainbow-delimiters-depth-1">(</span>training_data<span class="org-rainbow-delimiters-depth-1">)</span>
-</pre>
-</div>
-<ul class="org-ul">
-<li>For predicting/testing you call a <i>predict</i> method using the test data.</li>
-</ul>
-<div class="org-src-container">
-<pre class="src src-python">model.predict<span class="org-rainbow-delimiters-depth-1">(</span>test_data<span class="org-rainbow-delimiters-depth-1">)</span>
-</pre>
-</div>
-
-<p>
-In the functional approach on the other hand, the training will go in a function
-taking in a <i>model</i> and returning a new <i>model</i>, thus inflicting the update.
-</p>
-
-<p>
-One major benefit here is in unit testing, where we get complete control of the
-function's input <i>state</i>. If you know what input state to test against, you can
-test the function. Contrast this with OOP where you will have to know how to <i>get
-to</i> that state first. This is a really useful property if we have to drag the
-state change for long time, like in online learning.
-</p>
-
-<hr>
-
-<p>
-In a regular object model there is progression of a <i>single</i> object through time
-in a mutable way. In the functional model, its only the data object <code>{}</code> that's
-progressing (in an immutable way). Since this <code>{}</code> is the only carrier of program
-state, it can get loaded with burden of program logic too. For example, a flag
-might be present telling to choose one function over the other in the state
-evolution (unless this decision is easy/cheap to make from the <code>{}</code> value itself).
-You could also put those functions inside the objects, but that again is the
-same burden.
-</p>
-
-<aside>
-<p>
-To clarify, this <i>burden</i> is probably a burden only in a
-parameter-ish state systems like a machine learning model.
-</p>
-</aside>
-
-<p>
-Another way is to separate the movement of data object (pure
-config/parameters) and the program evolution logic by defining a function which
-maintains the state <code>{}</code> as an optional parameter, like here:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">evolve</span> (data <span class="org-type">&amp;optional</span> ({} init-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-  <span class="org-doc">"DATA is new data according to which we modify the STATE."</span>
-  (<span class="org-keyword">let</span> ((new-{} (<span class="org-keyword">do-something</span> data {}<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-      (evolve data {}<span class="org-parinfer-pretty-parensXdim-paren">))))</span>
-</pre>
-</div>
-
-<p>
-This is basically a wrapper around the <code>do-something</code> function from the functional
-approach. Now, instead of putting in the information about branching logic in <code>{}</code>
-(and checking for flags in the <code>evolve</code> function) we return new <code>evolve</code> function
-each time, maintaining the evolution of <code>{}</code> in the lambda list. Something like
-the following:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">evolve-init</span> (data <span class="org-type">&amp;optional</span> ({} init-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-  (<span class="org-keyword">let</span> ((new-{} (<span class="org-keyword">do-something</span> data {}<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">cond</span>
-      ((cond-a) (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{})) (something-a<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-      ((cond-b) (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{})) (something-b<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-      (t (<span class="org-keyword">lambda</span> (data <span class="org-type">&amp;optional</span> ({} new-{}<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-           (evolve-init data {}<span class="org-parinfer-pretty-parensXdim-paren">))))))</span>
-
-(<span class="org-keyword">defun</span> <span class="org-function-name">go</span> (<span class="org-type">&amp;optional</span> (ev-fn #'evolve-init<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-  (<span class="org-keyword">let</span> ((data (get-data<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">if</span> data (<span class="org-keyword">go</span> (funcall ev-fn data<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
-</pre>
-</div>
-
-<p>
-One trouble here is that to recover <code>{}</code> or to do anything with it needs
-inspection of the lambda list, which looks like a hack in most languages (in
-sbcl one way is <code>(sb-introspect:function-lambda-list #'evolve-init)</code>).
-</p>
-
-<p>
-Since the function itself is, in some ways, a part of the program state, it
-would also be nice to be able to dispatch on function types. This is <a href="https://stackoverflow.com/a/39671677">probably
-possible</a> in Julia.
-</p>
-
-<p>
-I don't know if this makes any sense. This, kind of, puts the evolve function in
-the center stage which feels weird for most of the use cases. But the <i>state</i>
-feels more organized in some ways. Probably there will be more to see when I get
-to work on something with a lot of state based branching.
-</p>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
