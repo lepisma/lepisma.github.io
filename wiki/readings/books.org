@@ -1147,6 +1147,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** Science and the Modern World
+:PROPERTIES:
+:AUTHOR:   Alfred North Whitehead
+:ADDED:    <2018-06-17>
+:GOODREADS: https://www.goodreads.com/book/show/253801.Science_and_the_Modern_World
+:END:
+
 *** Lila: An Inquiry Into Morals
 :PROPERTIES:
 :AUTHOR:   Robert M. Pirsig
