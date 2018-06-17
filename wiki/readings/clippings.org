@@ -2300,14 +2300,6 @@ cause–but the effects are always invariably borne by the local people.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-Charles Lamb PART ONE Chapter 1 When he was nearly thirteen, my brother Jem got
-his arm badly broken at the elbow. When it healed, and Jem’s fears of never
-being able to play football were assuaged,
-
-#+HTML:<footer>To Kill a Mockingbird (Harper Lee)</footer>
-#+END_QUOTE
-
-#+BEGIN_QUOTE
 Some things can only be solved by massive cultural changes, which probably means
 they will never be solved
 
