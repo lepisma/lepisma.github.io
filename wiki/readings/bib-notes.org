@@ -211,3 +211,23 @@ bibliography:./references.bib
   :YEAR: 2005
   :PAGES: 145--152
  :END:
+
+** Why functional programming matters
+ :PROPERTIES:
+  :Custom_ID: hughes1989functional
+  :AUTHOR: Hughes
+  :JOURNAL: The computer journal
+  :YEAR: 1989
+  :VOLUME: 32
+  :PAGES: 98--107
+ :END:
+
+This is a famous paper and I wanted to see what it focuses on. Its basically
+about the following two properties and their effect on modularity in functional
+programmings:
+
+1. Higher order functions
+2. Lazy evaluation
+
+The examples are nice and make this is a good read for beginners. Though I
+suspect there might be better, recent, articles on these topics now.
