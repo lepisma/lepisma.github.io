@@ -1,0 +1,19 @@
+#+TITLE: Impactful Books
+#+SETUPFILE: ../../assets/export.setup
+
+This is a list of books that have impacted me deeply in some ways. See [[../../journal/2018/06/18/impactful-books.org][this
+journal]] post for the definition of /impactful/.
+
+There is no planned order but it might take a chronological shape in some time.
+
+- [[https://www.goodreads.com/book/show/61535][The Selfish Gene - Richard Dawkins]]
+- [[https://www.goodreads.com/book/show/5544][Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character -
+  Richard Feynman]]
+- [[https://www.goodreads.com/book/show/19257445][Culture & Empire: Digital Revolution - Pieter Hintjens]]
+- [[https://www.goodreads.com/book/show/27333][Silent Spring - Rachel Carson]]
+- [[https://www.goodreads.com/book/show/8520610][Quiet: The Power of Introverts in a World That Can't Stop Talking - Susan Cain]]
+- [[https://www.goodreads.com/book/show/95558][Solaris - Stanisław Lem]]
+- [[https://www.goodreads.com/book/show/472331][Watchmen - Alan Moore]]
+- [[https://www.goodreads.com/book/show/18373][Flowers for Algernon - Daniel Keyes]]
+- [[https://www.goodreads.com/book/show/17470674][Fahrenheit 451 - Ray Bradbury]]
+- [[https://www.goodreads.com/book/show/12086102][Einstein's Dreams - Alan Lightman]]

@@ -1,0 +1,57 @@
+#+TITLE: Most Impactful Books
+#+TAGS: books, personal
+#+SETUPFILE: ../../../../assets/export.setup
+
+Recently there was a [[https://www.reddit.com/r/books/comments/8rqki3/what_are_your_top_ten_books_that_are_either_your/][thread]] on /r/books asking "What are your top ten books that
+are either your favorite or that made the greatest impact?" I feel that this
+question is much more interesting than just asking for a /top ten/ or a
+recommendations list.
+
+I read somewhere that there are three kinds of songs that you can /list/:
+
+#+BEGIN_aside
+These are not the exact classes. The original idea was on some blog talking
+about the spotify's recommendation system and I am not able to find that now.
+#+END_aside
+
+1. The songs you like the best (favorites)
+2. The songs you tell others you like the best (recommendations)
+3. The songs you actually listened the most (/hidden/ favorites)
+
+The distinction between 1 and 3 is something you can understand after a bit of
+analysis of your listening history.
+
+Something similar, if not exactly same, happens with books. Firstly, there are
+books that you would rate the best, possibly in different categories. Then there
+are books that you would recommend. These two sets have very definite
+separation. Other than molding your public /image/ (which you would like to have
+some control over), your recommendations are also pretty utilitarian and are
+different for different people.
+
+The third class covers the /impactful/ kind. The books that might not be your
+favorite /right now/ but they did stir things up /when/ you read them. Connecting
+with the songs example, these are the songs that you won't listen much now but
+you did put them on loop at some point in time. These were landmarks of your
+journey and had important say in where you decided to go next. They derive
+meaning less from their inherent value or quality, and more from the context
+they were consumed in. The /context/, made up of your knowledge, history and your
+story in general.
+
+-----
+
+So here is my top ten /impactful/ book list as of now (no order). Each of these
+impacted my life steps in some important way, which I am keeping private. This
+list is not final but is /append only/. Therefore, I will also be copying this to
+my wiki [[../../../../wiki/readings/impactful.org][here]] where it can live and grow.
+
+- [[https://www.goodreads.com/book/show/61535][The Selfish Gene - Richard Dawkins]]
+- [[https://www.goodreads.com/book/show/5544][Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character -
+  Richard Feynman]]
+- [[https://www.goodreads.com/book/show/19257445][Culture & Empire: Digital Revolution - Pieter Hintjens]]
+- [[https://www.goodreads.com/book/show/27333][Silent Spring - Rachel Carson]]
+- [[https://www.goodreads.com/book/show/8520610][Quiet: The Power of Introverts in a World That Can't Stop Talking - Susan Cain]]
+- [[https://www.goodreads.com/book/show/95558][Solaris - Stanisław Lem]]
+- [[https://www.goodreads.com/book/show/472331][Watchmen - Alan Moore]]
+- [[https://www.goodreads.com/book/show/18373][Flowers for Algernon - Daniel Keyes]]
+- [[https://www.goodreads.com/book/show/17470674][Fahrenheit 451 - Ray Bradbury]]
+- [[https://www.goodreads.com/book/show/12086102][Einstein's Dreams - Alan Lightman]]

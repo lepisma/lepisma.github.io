@@ -36,5 +36,6 @@
 - [[file:readings/index.org][Readings]]
   - [[file:readings/likes.org][Articles I like]]
   - [[file:readings/clippings.org][Clippings]]
+  - [[file:readings/impactful.org][Impactful Books]]
   - [[file:readings/bib-notes.org][Notes]]
   - [[file:readings/books.org][Reading List (Books)]]
