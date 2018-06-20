@@ -322,18 +322,15 @@ based solutions fall in this category. They might work well, but their lack of
 popularity is not /entirely/ surprising and irrational.
 
 Also, the last chapter on democracy worries me a little. The point of the
-chapter is that democracy is better than other forms because it uses the crowd's
-wisdom, but it fails to make the a solid classification of the problem and
-specify /why/ it solves them better. I guess this is more because there are
-/problems/ rather than /a/ problem to be solved in a government and they are vary in
-how they can be solved. Overall, the chapter, while presenting good arguments,
-tries to convince you of something more vague. Not that the conclusion is wrong
-(that group wisdom can be used much more effectively in a democracy), but the
-examples leave places to fill in before you get completely satisfied.
+chapter is that democracy is better than other forms /because/ it uses the crowd's
+wisdom. While presenting good arguments, this chapter tries to convince you of
+something vague. Not that the conclusion is wrong---that group wisdom can be
+used much more effectively in a democracy---but the examples leave places to
+fill in before you get completely satisfied.
 
-I like how the book classifies the type of problems regularly faced by a crowd
-and the conditions they need to make wise decisions there. These are some good
-cues for analyzing and understanding cases presented in the book.
+Overall, I like how the book classifies the type of problems faced by a crowd
+and the conditions they need to make wise decisions there. These are some really
+good cues for analyzing and understanding a bunch of social scenarios.
 
 *** The Algorithmic Beauty of Seaweeds, Sponges and Corals
 :PROPERTIES:
