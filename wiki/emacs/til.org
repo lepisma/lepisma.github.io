@@ -7,6 +7,18 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *buffer local hooks*
+
+  ~add-hook~ takes an argument ~local~ to set buffer local hooks. This is really
+  useful in cases like:
+
+  #+BEGIN_SRC emacs-lisp
+  (add-hook 'after-save-hook #'org-babel-tangle nil t) ; Last t is for local
+  #+END_SRC
+
+  This can probably be plugged in [[https://stackoverflow.com/questions/4356472/emacs-per-file-customization/4356877#4356877][eval section]] at the top of files, though I am
+  not sure if thats the right way.
+
 + *inline code blocks*
 
   Inline /executable/ code blocks can be written in org mode as:
