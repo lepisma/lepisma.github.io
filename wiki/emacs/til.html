@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-07 Thu 12:42 -->
+<!-- 2018-06-22 Fri 22:15 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned <i>in Emacs</i></title>
@@ -185,7 +185,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
-<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/assets/js/pace.min.js"></script>
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
@@ -273,7 +273,7 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-06-06 Wed 23:41</div>
+                                <div class='page-meta'>Last modified:  2018-06-22 Fri 22:15</div>
                                 <h1>Today I Learned <i>in Emacs</i></h1>
                               </div>
 </div>
@@ -290,6 +290,25 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>buffer local hooks</b>
+</p>
+
+<p>
+<code>add-hook</code> takes an argument <code>local</code> to set buffer local hooks. This is really
+useful in cases like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(add-hook 'after-save-hook #'org-babel-tangle nil t) <span class="org-comment-delimiter">; </span><span class="org-comment">Last t is for local</span>
+</pre>
+</div>
+
+<p>
+This can probably be plugged in <a href="https://stackoverflow.com/questions/4356472/emacs-per-file-customization/4356877#4356877">eval section</a> at the top of files, though I am
+not sure if thats the right way.
+</p></li>
+
 <li><p>
 <b>inline code blocks</b>
 </p>
