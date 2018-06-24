@@ -1305,12 +1305,16 @@ examples and analogies.
 :GOODREADS: https://www.goodreads.com/book/show/309002
 :END:
 
-*** Sceptical Essays
+*** READ Sceptical Essays
+CLOSED: [2018-06-24 Sun 22:48]
 :PROPERTIES:
 :AUTHOR:    Bertrand Russell, John N. Gray
 :ADDED:     <2017-02-23>
 :GOODREADS: https://www.goodreads.com/book/show/144355
 :END:
+
+Probably not a lot /new/ for contemporary readers, but there are places where you
+will feel a little amused realizing that this book was written in the 1920s.
 
 *** Man and His Symbols
 :PROPERTIES:
