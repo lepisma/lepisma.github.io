@@ -1314,7 +1314,7 @@ CLOSED: [2018-06-24 Sun 22:48]
 :END:
 
 Probably not a lot /new/ for contemporary readers, but there are places where you
-will feel a little amused realizing that this book was written in the 1920s.
+will feel a little amused realizing that the content here are from the 1920s.
 
 *** Man and His Symbols
 :PROPERTIES:
