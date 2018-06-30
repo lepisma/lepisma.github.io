@@ -669,8 +669,8 @@ CLOSED: [2017-07-01 Sat 15:23]
 :END:
 
 Loved this book thoroughly. Takes me back to the explanatory books I used to
-read when younger. This makes you develop an eye for criticizing / respecting
-visual explanations, exactly what you expect from the title.
+read when younger. Makes you develop an eye for criticizing / respecting visual
+explanations, just what you expect from the title.
 
 *** READ Envisioning Information
 CLOSED: [2017-02-20]
@@ -1632,6 +1632,20 @@ the least the following would be okay:
 3. Skepticism/rationality
 4. Physics
 5. Popular science (the catch-all section)
+
+*** Democracy's Schools: The Rise of Public Education in America (How Things Worked)
+:PROPERTIES:
+:AUTHOR:
+:ADDED:    <2018-07-01>
+:AMAZON:   https://www.amazon.com/Democracys-Schools-Public-Education-America/dp/1421423219
+:END:
+
+*** The Known Citizen: A History of Privacy in Modern America
+:PROPERTIES:
+:AUTHOR:   Sarah E. Igo
+:ADDED:    <2018-07-01>
+:AMAZON:   https://www.amazon.com/Known-Citizen-History-Privacy-America/dp/0674737504
+:END:
 
 *** From Bacteria to Bach and Back: The Evolution of Minds
 :PROPERTIES:
