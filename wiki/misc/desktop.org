@@ -39,7 +39,7 @@ This one is a bit less saturated and more /steely/. Based on [[https://github.co
 #+HTML: </div>
 
 A light theme. If you want to make your org mode look like shown here, follow
-[[https://https://lepisma.github.io/2017/10/28/ricing-org-mode/][these steps]].
+[[https://lepisma.github.io/2017/10/28/ricing-org-mode/][these steps]].
 
 -----
 
