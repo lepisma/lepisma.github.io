@@ -21,9 +21,10 @@ as I put more things in here.
 - [[https://github.com/dgilland/pydash][pydash]] has nice set of high level functions.
 - [[https://github.com/mahmoud/glom][glom]] helps in working with nested data.
 - For workflow management, I find [[https://snakemake.readthedocs.io/][snakemake]] really useful. Combining it with
-  [[https://conda.io/][conda]] gives nice pavement for exploratory projects. For scripts, [[https://github.com/kennethreitz/pipenv/][pipenv]] is
-  probably the cleanest solution. For packages too, I am trying to use pipenv
-  for the development side (tests, docs etc) with a pinch of make.
+  [[https://conda.io/][conda]] gives nice pavement for exploratory projects. +For scripts, [[https://github.com/kennethreitz/pipenv/][pipenv]] is
+  probably the cleanest solution+.
+- Use [[https://poetry.eustace.io/][poetry]] for developing python libraries and/or scripts. It avoids ~setup.py~
+  and its brothers altogether.
 
 * Tools
 Some nifty command line tools
