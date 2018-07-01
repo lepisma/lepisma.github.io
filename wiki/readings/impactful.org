@@ -6,13 +6,13 @@ journal]] post for the definition of /impactful/.
 
 There is no planned order but it might take a chronological shape in some time.
 
-- [[-https://www.goodreads.com/book/show/17349805][Consciousness and the Social Brain --- Michael S.A. Graziano]]
+- [[https://www.goodreads.com/book/show/17349805][Consciousness and the Social Brain --- Michael S.A. Graziano]]
 - [[https://www.goodreads.com/book/show/9665017][Bad Science: Quacks, Hacks, and Big Pharma Flacks --- Ben Goldacre]]
-[[https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/][- Deep Work: Rules for Focused Success in a Distracted World --- Cal Newport]]
+- [[https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/][Deep Work: Rules for Focused Success in a Distracted World --- Cal Newport]]
 - [[https://www.goodreads.com/book/show/17746][Visual Explanations: Images and Quantities, Evidence and Narrative --- Edward
   R. Tufte]]
-[[https://www.goodreads.com/book/show/6493208][- The Immortal Life of Henrietta Lacks --- Rebecca Skloot]]
-[[https://www.goodreads.com/book/show/25454056][- Sword of Destiny (The Witcher, #2) --- Andrzej Sapkowski]]
+- [[https://www.goodreads.com/book/show/6493208][The Immortal Life of Henrietta Lacks --- Rebecca Skloot]]
+- [[https://www.goodreads.com/book/show/25454056][Sword of Destiny (The Witcher, #2) --- Andrzej Sapkowski]]
 - [[https://www.goodreads.com/book/show/61535][The Selfish Gene --- Richard Dawkins]]
 - [[https://www.goodreads.com/book/show/5544][Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character ---
   Richard Feynman]]
