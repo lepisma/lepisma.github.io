@@ -1,0 +1,107 @@
+#+TITLE: A Partial Interpretation of /Metaphysics‑of‑Quality/
+#+TAGS: philosophy
+#+SETUPFILE: ../../../../assets/export.setup
+
+I am mid way through the second book, 'Lila: An Inquiry into Morals', by Pirsig
+on his Metaphysics of Quality. Although the first book (Zen and the Art of
+Motorcycle Maintenance) is standalone, the second book takes on the task of
+formalizing the term /quality/ in a metaphysics. I am not done, but have reached a
+checkpoint where there is an interpretation possible. This post is about that.
+
+* Quality
+Although Pirsig asks to keep it undefined, there is this statement from the
+first book:
+
+#+BEGIN_QUOTE
+Quality is a direct experience independent of and prior to intellectual abstractions.
+
+#+HTML:<footer>Zen and the Art of Motorcycle Maintenance</footer>
+#+END_QUOTE
+
+What is a direct experience? One analogy used in the book talks about 'touching
+a hot stove' which makes you react instinctively and /afterwards/ you create a
+story in your mind about what happened. The quality of stove created both these
+things, your physical /reaction/ and your mental /story/. But do we gain something
+by parenting out these two?
+
+Other than the question of why we need a thing like quality, I also want to get
+a sense of what it is capable of doing and how. This looks like a reasonable
+expectation even with something undefined since we are talking about projections
+in our own /well-defined/ world.
+
+* Value = Q ≈ Force?
+If I read things alright, the aim of writing about quality is to have a
+framework for providing justification of events in terms of it. Why did
+something happen? Why is something the way it is?
+
+In the first book, the focus was on unifying subjective and objective
+understanding/appreciation by taking the example of a motorcycle. In the second
+book, we do something similar by saying that /Value/ is the same as /Quality/. This
+paves the way for an idea put later which tries to unify all kind of /drives/
+under one umbrella.
+
+Assuming these terms to not have the exact English definitions, lets first
+abstract quality out in a symbol /Q/. Now keeping Q as the fundamental entity lets
+you talk about a certain unification of /subject/ and /object/. There are some
+examples concerning this in the books, but not all feel convincing. For me, the
+whole proposition feels too anthropomorphic.
+
+Something that really helps here is the statement on survival of the fittest
+(from an evolutionary sense) from the second book where we ask what is the
+meaning of /fittest/. Q is now divided in two parts, one dynamic and other static
+(with their regular English meanings). According to the dynamic/static split, a
+thing with higher /dynamic Q/ is fitter in evolution. One way I am finding the
+pieces to fit is to read /Q/ as force, which is a similar abstraction and the sole
+/actor/ that does things. The dynamic Q is then a contextual force that makes
+something happen locally. A particular species might be fit in /this/ environment,
+but might not be fit in the overall static sense ('entropy should increase' kind
+of things?).
+
+Though I am not sure if this solves things. Saying that an apple fell from the
+tree /because/ of gravitational /force/ is circular since that /force/ is defined in
+just that way. But I guess the focus is on a certain unification of different
+/types/ of inquiries instead of avoiding them altogether.
+
+* A hierarchy of Q
+An interesting idea comes up when fuzzing the mind-matter duality. A hierarchy
+of Q working at different levels:
+
+1. Inorganic
+2. Biological
+3. Social
+4. Intellectual
+
+The Q for all can be grouped together and called the same Q. This clumping
+together doesn't hurt the unification if things are cohesive and anyway Q is
+just an abstraction.
+
+These levels of Qs remind me of an example from another book I recently read 'I
+Am a Strange Loop'. There is an example that talks about a physical mechanism
+'domino chainium' which tells if a number is prime or not by making a domino
+fall. If a certain /decisive/ domino falls, one explanation goes on the line of
+bits of a computer (intermittent dominoes) changing a pixel (the final domino).
+Another explanation says the fall happened /since the number was prime
+(composite)/. Both explanations are equivalent.
+
+* Randomness
+There is a high risk of getting into teleological arguments concerning Q, but
+the author suggests a way out by saying dynamic Q goes against all /goals/. Is
+this also a goal? Maybe. But probably not if that 'going against' is random.
+Then you can't say that the goal is to explore everything or something on those
+lines.
+
+From what I have read and known, this dynamic/static split indeed feels like an
+acknowledgment of some sort of /randomness/ at work (otherwise, of course, there
+is no split). At all levels. This randomness helps in creation of pockets of
+anomalies which otherwise look surprisingly rare (like life) even when the same
+/static/ rules are being followed.
+
+To sum up, the Metaphysics of Quality looks like an attack on the mind-matter
+separation with focus on unification of /forces/ that drive things at various
+levels. An /idea/ is as real as a physical /object/ and the evolution of both
+involve a tussle between randomness and rules [fn::I probably am trapped in a
+confirmation bias here.].
+
+I am /okay/ with the idea, but don't know if this is actually assisting me in
+understanding things more clearly. I guess a lot of this is contextual and
+digging into other philosophies is going to help.
