@@ -1,5 +1,6 @@
 #+TITLE: Reading List (Books)
 #+SETUPFILE: ../../assets/export.setup
+#+PILE: cid:flat
 #+TODO: READING NEXT | READ
 
 Books to read. This is a rather large list with items from my old Goodreads
