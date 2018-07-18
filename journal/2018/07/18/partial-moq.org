@@ -59,8 +59,8 @@ of things?).
 
 Though I am not sure if this solves things. Saying that an apple fell from the
 tree /because/ of gravitational /force/ is circular since that /force/ is defined in
-just that way. But I guess the focus is on a certain unification of different
-/types/ of inquiries instead of avoiding them altogether.
+just that way. But I guess the focus here is on /unification/ of various inquiries
+instead of getting rid of them.
 
 * A hierarchy of Q
 An interesting idea comes up when fuzzing the mind-matter duality. A hierarchy
@@ -75,7 +75,7 @@ The Q for all can be grouped together and called the same Q. This clumping
 together doesn't hurt the unification if things are cohesive and anyway Q is
 just an abstraction.
 
-These levels of Qs remind me of an example from another book I recently read 'I
+These levels of Qs remind me of an example from another book I recently read, 'I
 Am a Strange Loop'. There is an example that talks about a physical mechanism
 'domino chainium' which tells if a number is prime or not by making a domino
 fall. If a certain /decisive/ domino falls, one explanation goes on the line of
