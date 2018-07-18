@@ -18,6 +18,13 @@ Some non fiction. Most of the books are still in uncategorized section.
 Books with more mathematical and logical inclinations. Some theoretical computer
 science books might also go in here.
 
+*** The Book of Why: The New Science of Cause and Effect
+:PROPERTIES:
+:AUTHOR:   Judea Pearl, Dana Mackenzie
+:ADDED:    <2018-07-18>
+:AMAZON:   https://www.amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X
+:END:
+
 *** READ Book of Proof
 CLOSED: [2018-06-08 Fri 15:09]
 :PROPERTIES:
@@ -134,6 +141,13 @@ assist in understanding why and how are there certain /order/ and /pattern/ in
 nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
+
+*** Essential Readings in Evolutionary Biology
+:PROPERTIES:
+:AUTHOR:   Francisco J. Ayala, John C. Avise
+:ADDED:    <2018-07-18>
+:AMAZON:   https://www.amazon.com/Essential-Readings-Evolutionary-Biology-Francisco/dp/1421413051
+:END:
 
 *** Robustness and Evolvability in Living Systems
 :PROPERTIES:
