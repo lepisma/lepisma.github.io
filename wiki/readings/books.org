@@ -2262,7 +2262,8 @@ CLOSED: [2018-01-24 Wed 21:31]
 :GOODREADS: https://www.goodreads.com/book/show/180121
 :END:
 
-*** Daily Rituals: How Artists Work
+*** READ Daily Rituals: How Artists Work
+CLOSED: [2018-07-20 Fri 01:03]
 :PROPERTIES:
 :AUTHOR:    Mason Currey
 :ADDED:     <2016-12-15>

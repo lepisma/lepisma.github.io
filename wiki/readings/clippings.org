@@ -22,6 +22,70 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+“Be regular and orderly in your life like a Bourgeois so that you may be violent
+and original in your work.”
+
+#+HTML:<footer>﻿Daily Rituals How Artists Work (Mason Currey)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+To the extent that one's behavior is controlled by static patterns of quality it
+is without choice. But to the extent that one follows Dynamic Quality, which is
+undefinable, one's behavior is free
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A conventional subject-object metaphysics uses the same four static patterns as
+the Metaphysics of Quality, dividing them into two groups of two:
+inorganic-biological patterns called 'matter,' and social-intellectual patterns
+called 'mind
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Naturally there is no mechanism toward which life is heading. Mechanisms are the
+enemy of life. The more static and unyielding the mechanisms are, the more life
+works to evade them or overcome them
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Something is happening right now and you think it's unimportant because you've
+never seen a movie of it.
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Until you're the celebrity you don't see how spooky it is. They love you for
+being what they want to be but they hate you for being what they're not
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+
+#+BEGIN_QUOTE
+If you can't generalize from data there's nothing else you can do with it
+either.
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It's very easy to spend your whole life swishing old tea around in your cup
+thinking it's great stuff because you've never really tried anything new,
+because you could never get it in, because the old stuff prevented its entry
+because you were so sure the old stuff was so good, because you never really
+tried anything new ... on and on in an endless circular pattern
+
+#+HTML:<footer>﻿Lila: An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Into every tidy scheme for arranging the pattern of human life it is necessary
 to inject a certain dose of anarchism, enough to prevent immobility leading to
 decay, but not enough to bring about disruption
