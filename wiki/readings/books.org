@@ -626,6 +626,14 @@ This section is more general than what the title proclaims. Here I have tried to
 keep books which talk about a way of /presenting/ information, interfaces and
 ideas.
 
+*** READ Designing Voice User Interfaces: Principles of Conversational Experiences
+CLOSED: [2018-07-21 Sat 00:42]
+:PROPERTIES:
+:AUTHOR:   Cathy Pearl
+:ADDED:    <2018-07-21>
+:AMAZON:   https://www.amazon.com/Designing-Voice-User-Interfaces-Conversational/dp/1491955414
+:END:
+
 *** Pantone's Guide to Communicating with Color
 :PROPERTIES:
 :AUTHOR:   Leatrice Eisemann
