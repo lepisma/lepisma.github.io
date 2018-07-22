@@ -530,6 +530,13 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
+*** Coders at Work: Reflections on the Craft of Programming
+:PROPERTIES:
+:AUTHOR:   Peter Seibel
+:ADDED:    <2018-07-23>
+:AMAZON:   https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483
+:END:
+
 *** READ Seven Languages in Seven Weeks 
 CLOSED: [2018-01-24 Wed 22:59]
 :PROPERTIES:
