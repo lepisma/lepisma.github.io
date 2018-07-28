@@ -530,7 +530,28 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
-*** Coders at Work: Reflections on the Craft of Programming
+*** The Art of the Metaobject Protocol
+:PROPERTIES:
+:AUTHOR:   Gregor Kiczales, Jim Des Rivieres, Daniel G. Bobrow
+:ADDED:    <2018-07-28>
+:GOODREADS: https://www.goodreads.com/book/show/274495.The_Art_of_the_Metaobject_Protocol?from_search=true
+:END:
+
+*** The Mythical Man-Month: Essays on Software Engineering
+:PROPERTIES:
+:AUTHOR:   Frederick P. Brooks Jr.
+:ADDED:    <2018-07-28>
+:GOODREADS: https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month
+:END:
+
+*** The Elements of Programming Style, 2nd Edition
+:PROPERTIES:
+:AUTHOR:   Brian W. Kernighan, P. J. Plauger
+:ADDED:    <2018-07-28>
+:AMAZON:   https://www.amazon.com/Elements-Programming-Style-2nd/dp/0070342075
+:END:
+
+*** READING Coders at Work: Reflections on the Craft of Programming
 :PROPERTIES:
 :AUTHOR:   Peter Seibel
 :ADDED:    <2018-07-23>
@@ -1181,7 +1202,7 @@ CLOSED: [2018-02-05 Mon 01:16]
 :GOODREADS: https://www.goodreads.com/book/show/253801.Science_and_the_Modern_World
 :END:
 
-*** Lila: An Inquiry Into Morals
+*** READING Lila: An Inquiry Into Morals
 :PROPERTIES:
 :AUTHOR:   Robert M. Pirsig
 :ADDED:    <2018-06-08>
@@ -2737,7 +2758,7 @@ CLOSED: [2016-03-12]
 :GOODREADS: https://www.goodreads.com/book/show/18775383
 :END:
 
-*** The Society of Mind
+*** READING The Society of Mind
 :PROPERTIES:
 :AUTHOR:    Marvin Minsky
 :ADDED:     <2016-01-26>
@@ -3920,7 +3941,7 @@ CLOSED: [2018-02-05 Mon 01:16]
 
 * Fiction
 ** Science Fiction
-*** READING Children of Dune (Dune #3)
+*** Children of Dune (Dune #3)
 :PROPERTIES:
 :AUTHOR:   Frank Herbert
 :ADDED:    <2018-05-09>
@@ -4854,6 +4875,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** We
+:PROPERTIES:
+:AUTHOR:   Yevgeny Zamyatin, Clarence Brown, Евгений Замятин
+:ADDED:    <2018-07-28>
+:GOODREADS: https://www.goodreads.com/book/show/76171.We
+:END:
+
 *** Notes from Underground
 :PROPERTIES:
 :AUTHOR:   Fyodor Dostoyevsky, Christian Redl, Philip Dossick, Emanuela Guercetti, Michelle-Irène Brudny, Richard Pevear, Norman Dietz, Donald Fanger, coderati, Boris de Schlœzer, Larissa Volokhonsky
@@ -4890,14 +4918,14 @@ CLOSED: [2018-01-09 Tue 15:46]
 :GOODREADS: https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper
 :END:
 
-*** READING A Midsummer Night's Dream
+*** A Midsummer Night's Dream
 :PROPERTIES:
 :AUTHOR:   William Shakespeare, Barbara A. Mowat, (Editor), Paul Werstine, (Editor), Catherine Belsey, (Contributor)
 :ADDED:    <2017-07-12>
 :GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
 :END:
 
-*** Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+*** READING Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
 :PROPERTIES:
 :AUTHOR:   Algernon Bertram Freeman-Mitford
 :ADDED:    <2017-06-28>
