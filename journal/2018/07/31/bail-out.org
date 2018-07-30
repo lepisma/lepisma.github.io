@@ -1,0 +1,88 @@
+#+TITLE: Bail Out Macro
+#+SETUPFILE: ../../../../assets/export.setup
+#+TAGS: lisp, programming
+
+Something I recently realized is that I have been writing a bunch of nested ~if~
+expressions for reporting error-ish cases in a lot of elisp packages, unchecked.
+An example follows:
+
+#+BEGIN_SRC emacs-lisp
+  (defun bmp-bump (bmp-type)
+    "Bump version using the given bmp-type"
+    (let* ((default-directory (projectile-project-root))
+           (project (bmp-get-project bmp-project-fns)))
+      (if (null project)
+          (message "No project detected")
+        (if (bmp-git-dirty-p)
+            (message "Git repository dirty")
+          (if (not (bmp-git-master-p))
+              (message "Not on master")
+            (let* ((version-str (bmp-get-version project))
+                   (new-ver-str (bmp-new-version version-str bmp-type)))
+              (bmp-set-version project new-ver-str)
+              (bmp-commit (bmp-get-files project) new-ver-str)
+              (bmp-tag new-ver-str)))))))
+#+END_SRC
+
+Another gloriously messy example is [[https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78][this one]]. This usually happens in the main
+function of the package which has to work on edges.
+
+In langauges like python, these look okay because you can do early return. The
+combination of that with ~if~ (without the ~elif~ branching; note that ~elif~ behavior
+is already in ~cond~ expressions) gives you a way to /bail out/ while keeping the
+code nesting in check. ~bo>~ macro is a simple attempt to replicate that [fn::Its
+basically a more imperative looking ~return~ macro].
+
+#+BEGIN_SRC emacs-lisp
+  (defun bmp-bump (bmp-type)
+    "Bump version using the given bmp-type"
+    (let* ((default-directory (projectile-project-root))
+           (project (bmp-get-project bmp-project-fns)))
+      (bo>
+       (?? (null project) (message "No project detected"))
+       (?? (bmp-git-dirty-p) (message "Git repository dirty"))
+       ;; Some thing here
+       (?? (not (bmp-git-master-p)) (message "Not on master"))
+
+       (let* ((version-str (bmp-get-version project))
+              (new-ver-str (bmp-new-version version-str bmp-type)))
+         (bmp-set-version project new-ver-str)
+         (bmp-commit (bmp-get-files project) new-ver-str)
+         (bmp-tag new-ver-str)))))
+#+END_SRC
+
+Expansion of the macro form gives
+
+#+BEGIN_SRC emacs-lisp
+  (progn
+    (if (null project)
+        (message "No project detected")
+      (progn
+        (if (bmp-git-dirty-p)
+            (message "Git repository dirty")
+          (progn
+            (if (not (bmp-git-master-p))
+                (message "Not on master")
+              (progn
+                (let* ((version-str (bmp-get-version project))
+                       (new-ver-str (bmp-new-version version-str bmp-type)))
+                  (bmp-set-version project new-ver-str)
+                  (bmp-commit (bmp-get-files project) new-ver-str)
+                  (bmp-tag new-ver-str)))))))))
+#+END_SRC
+
+The extra ~progn~ help in cases with multiple forms after a ~??~ form. The macro
+itself is short and only works flat.
+
+#+BEGIN_SRC emacs-lisp
+  (defmacro bo> (&rest body)
+    `(progn ,@(bo-transform body)))
+
+  (defun bo-transform (items)
+    (let ((fst (car items)))
+      (unless (null fst)
+        (if (eq (car fst) ??)
+            `((if ,(second fst) ,(third fst)
+                (progn ,@(bo-transform (cdr items)))))
+          (cons fst (bo-transform (cdr items)))))))
+#+END_SRC
