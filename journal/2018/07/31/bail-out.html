@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-07-31 Tue 02:31 -->
+<!-- 2018-07-31 Tue 03:08 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Bail Out Macro</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,91 +273,119 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>Journal</h1>
+                                <div class='page-meta'>2018-07-31 Tue 00:00</div>
+                                <h1>Bail Out Macro</h1>
                               </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../..#lisp'>lisp</a> <a href='../../..#programming'>programming</a></div>
+<p>
+<span class='dropcap'>S</span>omething I recently realized is that I have been writing a bunch of nested <code>if</code>
+expressions for reporting error-ish cases in a lot of elisp packages, unchecked.
+An example follows:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">bmp-bump</span> (bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  <span class="org-doc">"Bump version using the given bmp-type"</span>
+  (<span class="org-keyword">let*</span> ((default-directory (projectile-project-root<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+         (project (bmp-get-project bmp-project-fns<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">if</span> (null project<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+        (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+      (<span class="org-keyword">if</span> (bmp-git-dirty-p<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+          (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+        (<span class="org-keyword">if</span> (not (bmp-git-master-p<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+            (message <span class="org-string">"Not on master"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+          (<span class="org-keyword">let*</span> ((version-str (bmp-get-version project<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+                 (new-ver-str (bmp-new-version version-str bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+            (bmp-set-version project new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+            (bmp-commit (bmp-get-files project) new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+            (bmp-tag new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)))))))</span>
+</pre>
+</div>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+Another gloriously messy example is <a href="https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78">this one</a>. This usually happens in the main
+function of the package which has to work on edges.
 </p>
-
-<hr>
 
 <p>
-Filter by <i>tags</i>
+In langauges like python, these look okay because you can do early return. The
+combination of that with <code>if</code> (without the <code>elif</code> branching; note that <code>elif</code> behavior
+is already in <code>cond</code> expressions) gives you a way to <i>bail out</i> while keeping the
+code nesting in check. <code>bo&gt;</code> macro is a simple attempt to replicate that <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
 </p>
 
-<div class='page-tags'><a href='#books'>books</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a></div>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">bmp-bump</span> (bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  <span class="org-doc">"Bump version using the given bmp-type"</span>
+  (<span class="org-keyword">let*</span> ((default-directory (projectile-project-root<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+         (project (bmp-get-project bmp-project-fns<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">bo&gt;</span>
+     (?? (null project) (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+     (?? (bmp-git-dirty-p) (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+     <span class="org-comment-delimiter">;; </span><span class="org-comment">Some thing here</span>
+     (?? (not (bmp-git-master-p)) (message <span class="org-string">"Not on master"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics‑of‑Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
+     (<span class="org-keyword">let*</span> ((version-str (bmp-get-version project<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+            (new-ver-str (bmp-new-version version-str bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+       (bmp-set-version project new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+       (bmp-commit (bmp-get-files project) new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+       (bmp-tag new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
+</pre>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
+<p>
+Expansion of the macro form gives
 </p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">progn</span>
+  (<span class="org-keyword">if</span> (null project<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+      (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+    (<span class="org-keyword">progn</span>
+      (<span class="org-keyword">if</span> (bmp-git-dirty-p<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+          (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+        (<span class="org-keyword">progn</span>
+          (<span class="org-keyword">if</span> (not (bmp-git-master-p<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+              (message <span class="org-string">"Not on master"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+            (<span class="org-keyword">progn</span>
+              (<span class="org-keyword">let*</span> ((version-str (bmp-get-version project<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+                     (new-ver-str (bmp-new-version version-str bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+                (bmp-set-version project new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+                (bmp-commit (bmp-get-files project) new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+                (bmp-tag new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)))))))))</span>
+</pre>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
+<p>
+The extra <code>progn</code> help in cases with multiple forms after a <code>??</code> form. The macro
+itself is short and only works flat.
 </p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defmacro</span> <span class="org-function-name">bo&gt;</span> (<span class="org-type">&amp;rest</span> body<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  `(<span class="org-keyword">progn</span> ,@(bo-transform body<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
+(<span class="org-keyword">defun</span> <span class="org-function-name">bo-transform</span> (items<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  (<span class="org-keyword">let</span> ((fst (car items<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    (<span class="org-keyword">unless</span> (null fst<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+      (<span class="org-keyword">if</span> (eq (car fst) ??<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+          `((<span class="org-keyword">if</span> ,(second fst) ,(third fst<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+              (<span class="org-keyword">progn</span> ,@(bo-transform (cdr items<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
+        (cons fst (bo-transform (cdr items<span class="org-parinfer-pretty-parensXdim-paren">)))))))</span>
+</pre>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Its
+basically a more imperative looking <code>return</code> macro</div></div>
+
+
 </div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
