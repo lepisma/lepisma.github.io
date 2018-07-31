@@ -4,7 +4,7 @@
 <!-- 2018-08-01 Wed 01:39 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bail Out Macro</title>
+<title>Defer Macro</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,126 +273,83 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>2018-07-31 Tue 00:00</div>
-                                <h1>Bail Out Macro</h1>
+                                <div class='page-meta'>2018-08-01 Wed 00:00</div>
+                                <h1>Defer Macro</h1>
                               </div>
 </div>
 <div id="content">
 <div class='page-tags'><a href='../../..#lisp'>lisp</a> <a href='../../..#programming'>programming</a></div>
-<blockquote>
 <p>
-Since we already have <code>block</code> and <code>return</code> macro in elisp (from cl-lib), this post
-is useless. Also a better way to implement this would use <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Catch-and-Throw.html">catch-and-throw</a>.
-</p>
-</blockquote>
-
-<p>
-<span class='dropcap'>S</span>omething I recently realized is that I have been writing a bunch of nested <code>if</code>
-expressions for reporting error-ish cases in a lot of elisp packages, unchecked.
-An example follows:
+<span class='dropcap'>I</span> recently had to touch <a href="https://golang.org/">go</a> and came to know about <code>defer</code> statements which let you
+stack few function calls for later execution. Specifically, just before the
+function exists, irrespective of exits. Something like this is also available in
+R in the guise of <code>on.exit</code> function. Here is an example from the chapter on
+functions in <a href="http://adv-r.had.co.nz/Functions.html#on-exit">Advanced R</a>:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">bmp-bump</span> (bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-  <span class="org-doc">"Bump version using the given bmp-type"</span>
-  (<span class="org-keyword">let*</span> ((default-directory (projectile-project-root<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-         (project (bmp-get-project bmp-project-fns<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">if</span> (null project<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-        (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-      (<span class="org-keyword">if</span> (bmp-git-dirty-p<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-          (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-        (<span class="org-keyword">if</span> (not (bmp-git-master-p<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-            (message <span class="org-string">"Not on master"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-          (<span class="org-keyword">let*</span> ((version-str (bmp-get-version project<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-                 (new-ver-str (bmp-new-version version-str bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-            (bmp-set-version project new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-            (bmp-commit (bmp-get-files project) new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-            (bmp-tag new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)))))))</span>
+<pre class="src src-R"><span class="org-function-name">in_dir</span> <span class="org-ess-assignment">&lt;-</span> <span class="org-ess-keyword">function</span><span class="org-rainbow-delimiters-depth-1">(</span>dir, code<span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-rainbow-delimiters-depth-1">{</span>
+  old <span class="org-ess-assignment">&lt;-</span> setwd<span class="org-rainbow-delimiters-depth-2">(</span>dir<span class="org-rainbow-delimiters-depth-2">)</span>
+  on.exit<span class="org-rainbow-delimiters-depth-2">(</span>setwd<span class="org-rainbow-delimiters-depth-3">(</span>old<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
+
+  force<span class="org-rainbow-delimiters-depth-2">(</span>code<span class="org-rainbow-delimiters-depth-2">)</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+getwd<span class="org-rainbow-delimiters-depth-1">()</span>
 </pre>
 </div>
 
 <p>
-Another gloriously messy example is <a href="https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78">this one</a>. Thse cases commmon in the <i>main</i>
-functions of packages since they have to work on edges.
-</p>
-
-<p>
-In langauges like python, these look okay because you can do early return. The
-combination of that with <code>if</code> (without the <code>elif</code> branching; note that <code>elif</code> behavior
-is already in <code>cond</code> expressions) gives you a way to <i>bail out</i> while keeping the
-code nesting in check. <code>bo&gt;</code> macro is a simple attempt to replicate that <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
+In an attempt to improve the <code>defun</code> experience in Emacs Lisp, I tried replicating
+the defer thing in a macro (also adding support for <a href="../../07/31/bail-out.html">early return</a>).
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">bmp-bump</span> (bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-  <span class="org-doc">"Bump version using the given bmp-type"</span>
-  (<span class="org-keyword">let*</span> ((default-directory (projectile-project-root<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-         (project (bmp-get-project bmp-project-fns<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">bo&gt;</span>
-     (?? (null project) (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
-     (?? (bmp-git-dirty-p) (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
-     <span class="org-comment-delimiter">;; </span><span class="org-comment">Some thing here</span>
-     (?? (not (bmp-git-master-p)) (message <span class="org-string">"Not on master"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
-
-     (<span class="org-keyword">let*</span> ((version-str (bmp-get-version project<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-            (new-ver-str (bmp-new-version version-str bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-       (bmp-set-version project new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-       (bmp-commit (bmp-get-files project) new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-       (bmp-tag new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defmacro</span> <span class="org-function-name">defun+</span> (name lambda-list <span class="org-type">&amp;optional</span> docstring <span class="org-type">&amp;rest</span> body<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  <span class="org-doc">"Regular defun with defer and return support"</span>
+  (<span class="org-keyword">let</span> ((defers (make-symbol <span class="org-string">"defers"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+    `(<span class="org-keyword">defun</span> ,name ,lambda-list
+       ,docstring
+       (<span class="org-keyword">block</span> nil <span class="org-comment-delimiter">;; </span><span class="org-comment">This lets us use return expression</span>
+         (<span class="org-keyword">let</span> ((,defers nil<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+           (<span class="org-keyword">cl-macrolet</span> ((defer (form) `(<span class="org-keyword">push</span> ',form ,',defers<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+             (<span class="org-keyword">unwind-protect</span>
+                 (<span class="org-keyword">progn</span> ,@body<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+               (eval `(<span class="org-keyword">progn</span> ,@,defers<span class="org-parinfer-pretty-parensXdim-paren">)))))))))</span>
 </pre>
 </div>
 
 <p>
-Expansion of the macro form gives
+Now, we can do things like:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">progn</span>
-  (<span class="org-keyword">if</span> (null project<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-      (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-    (<span class="org-keyword">progn</span>
-      (<span class="org-keyword">if</span> (bmp-git-dirty-p<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-          (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-        (<span class="org-keyword">progn</span>
-          (<span class="org-keyword">if</span> (not (bmp-git-master-p<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-              (message <span class="org-string">"Not on master"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-            (<span class="org-keyword">progn</span>
-              (<span class="org-keyword">let*</span> ((version-str (bmp-get-version project<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-                     (new-ver-str (bmp-new-version version-str bmp-type<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-                (bmp-set-version project new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-                (bmp-commit (bmp-get-files project) new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-                (bmp-tag new-ver-str<span class="org-parinfer-pretty-parensXdim-paren">)))))))))</span>
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defun+</span> some-func (x y<span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  <span class="org-string">"hello"</span>
+  (defer (print <span class="org-string">"third"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (defer (print <span class="org-string">"second"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (print <span class="org-string">"hello world"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
+  (<span class="org-keyword">if</span> nil (defer (print <span class="org-string">"this will not be evaluated"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+  (defer (print <span class="org-string">"this will be evaluated first"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (<span class="org-keyword">if</span> t (<span class="org-keyword">return</span> <span class="org-highlight-numbers-number">33</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (+ x y<span class="org-parinfer-pretty-parensXdim-paren">))</span>
+
+(print (some-func <span class="org-highlight-numbers-number">1</span> <span class="org-highlight-numbers-number">2</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
 </pre>
 </div>
 
-<p>
-The extra <code>progn</code> help in cases with multiple forms after a <code>??</code> form. The macro
-itself is short and only works flat.
-</p>
+<pre class="example">
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">defmacro</span> <span class="org-function-name">bo&gt;</span> (<span class="org-type">&amp;rest</span> body<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-  `(<span class="org-keyword">progn</span> ,@(bo-transform body<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+"hello world"
 
-(<span class="org-keyword">defun</span> <span class="org-function-name">bo-transform</span> (items<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-  (<span class="org-keyword">let</span> ((fst (car items<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">unless</span> (null fst<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-      (<span class="org-keyword">if</span> (eq (car fst) ??<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-          `((<span class="org-keyword">if</span> ,(second fst) ,(third fst<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-              (<span class="org-keyword">progn</span> ,@(bo-transform (cdr items<span class="org-parinfer-pretty-parensXdim-paren">)))))</span>
-        (cons fst (bo-transform (cdr items<span class="org-parinfer-pretty-parensXdim-paren">)))))))</span>
+"this will be evaluated first"
+
+"second"
+
+"third"
+
+33
 </pre>
 </div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Its
-basically <code>if</code> and <code>return</code> macro clumped together</div></div>
-
-
-</div>
-</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
