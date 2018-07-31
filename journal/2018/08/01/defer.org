@@ -4,9 +4,9 @@
 
 I recently had to touch [[https://golang.org/][go]] and came to know about ~defer~ statements which let you
 stack few function calls for later execution. Specifically, just before the
-function exists, irrespective of exits. Something like this is also available in
-R in the guise of ~on.exit~ function. Here is an example from the chapter on
-functions in [[http://adv-r.had.co.nz/Functions.html#on-exit][Advanced R]]:
+function exists, irrespective of how it actually exited. Something like this is
+also available in R in the guise of ~on.exit~ function. Here is an example from
+the chapter on functions in [[http://adv-r.had.co.nz/Functions.html#on-exit][Advanced R]]:
 
 #+BEGIN_SRC R
 in_dir <- function(dir, code) {
