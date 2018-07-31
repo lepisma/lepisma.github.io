@@ -2,6 +2,11 @@
 #+SETUPFILE: ../../../../assets/export.setup
 #+TAGS: lisp, programming
 
+#+BEGIN_QUOTE
+Since we already have ~block~ and ~return~ macro in elisp (from cl-lib), this post
+is useless. Also a better way to implement this would use [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Catch-and-Throw.html][catch-and-throw]].
+#+END_QUOTE
+
 Something I recently realized is that I have been writing a bunch of nested ~if~
 expressions for reporting error-ish cases in a lot of elisp packages, unchecked.
 An example follows:

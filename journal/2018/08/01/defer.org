@@ -1,0 +1,66 @@
+#+TITLE: Defer Macro
+#+SETUPFILE: ../../../../assets/export.setup
+#+TAGS: lisp, programming
+
+I recently had to touch [[https://golang.org/][go]] and came to know about ~defer~ statements which let you
+stack few function calls for later execution. Specifically, just before the
+function exists, irrespective of exits. Something like this is also available in
+R in the guise of ~on.exit~ function. Here is an example from the chapter on
+functions in [[http://adv-r.had.co.nz/Functions.html#on-exit][Advanced R]]:
+
+#+BEGIN_SRC R
+in_dir <- function(dir, code) {
+  old <- setwd(dir)
+  on.exit(setwd(old))
+
+  force(code)
+}
+getwd()
+#+END_SRC
+
+In an attempt to improve the ~defun~ experience in Emacs Lisp, I tried replicating
+the defer thing in a macro (also adding support for [[../../07/31/bail-out.org][early return]]).
+
+#+BEGIN_SRC emacs-lisp
+  (defmacro defun+ (name lambda-list &optional docstring &rest body)
+    "Regular defun with defer and return support"
+    (let ((defers (make-symbol "defers")))
+      `(defun ,name ,lambda-list
+         ,docstring
+         (block nil ;; This lets us use return expression
+           (let ((,defers nil))
+             (cl-macrolet ((defer (form) `(push ',form ,',defers)))
+               (unwind-protect
+                   (progn ,@body)
+                 (eval `(progn ,@,defers)))))))))
+#+END_SRC
+
+Now, we can do things like:
+
+#+BEGIN_SRC emacs-lisp :results output
+(defun+ some-func (x y)
+  "hello"
+  (defer (print "third"))
+  (defer (print "second"))
+  (print "hello world")
+  (if nil (defer (print "this will not be evaluated")))
+  (defer (print "this will be evaluated first"))
+  (if t (return 33))
+  (+ x y))
+
+(print (some-func 1 2))
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+"hello world"
+
+"this will be evaluated first"
+
+"second"
+
+"third"
+
+33
+#+end_example
