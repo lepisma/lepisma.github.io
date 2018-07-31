@@ -24,8 +24,8 @@ An example follows:
               (bmp-tag new-ver-str)))))))
 #+END_SRC
 
-Another gloriously messy example is [[https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78][this one]]. This usually happens in the main
-function of the package which has to work on edges.
+Another gloriously messy example is [[https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78][this one]]. Thse cases commmon in the /main/
+functions of packages since they have to work on edges.
 
 In langauges like python, these look okay because you can do early return. The
 combination of that with ~if~ (without the ~elif~ branching; note that ~elif~ behavior
