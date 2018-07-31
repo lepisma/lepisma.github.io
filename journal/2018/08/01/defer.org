@@ -48,7 +48,7 @@ Now, we can do things like:
   (if t (return 33))
   (+ x y))
 
-(print (format "Finall, the returned value is %s" (some-func 1 2)))
+(print (format "Finally, the returned value is %s" (some-func 1 2)))
 #+END_SRC
 
 #+RESULTS:
@@ -62,5 +62,5 @@ Now, we can do things like:
 
 "the last deferred expression"
 
-"Finall, the returned value is 33"
+"Finally, the returned value is 33"
 #+end_example
