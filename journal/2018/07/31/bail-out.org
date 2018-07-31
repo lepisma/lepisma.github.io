@@ -31,7 +31,7 @@ In langauges like python, these look okay because you can do early return. The
 combination of that with ~if~ (without the ~elif~ branching; note that ~elif~ behavior
 is already in ~cond~ expressions) gives you a way to /bail out/ while keeping the
 code nesting in check. ~bo>~ macro is a simple attempt to replicate that [fn::Its
-basically a more imperative looking ~return~ macro].
+basically ~if~ and ~return~ macro clumped together].
 
 #+BEGIN_SRC emacs-lisp
   (defun bmp-bump (bmp-type)
