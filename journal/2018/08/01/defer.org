@@ -43,7 +43,7 @@ Now, we can do things like:
   (defer (print "the last deferred expression"))
   (defer (print "second deferred"))
   (print "hello world")
-  (if nil (defer (print "first deferred")))
+  (if nil (defer (print "unevaluated deferred")))
   (defer (print "this will be evaluated first"))
   (if t (return 33))
   (+ x y))
