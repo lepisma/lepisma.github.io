@@ -40,15 +40,15 @@ Now, we can do things like:
 #+BEGIN_SRC emacs-lisp :results output
 (defun+ some-func (x y)
   "hello"
-  (defer (print "third"))
-  (defer (print "second"))
+  (defer (print "the last deferred expression"))
+  (defer (print "second deferred"))
   (print "hello world")
-  (if nil (defer (print "this will not be evaluated")))
+  (if nil (defer (print "first deferred")))
   (defer (print "this will be evaluated first"))
   (if t (return 33))
   (+ x y))
 
-(print (some-func 1 2))
+(print (format "Finall, the returned value is %s" (some-func 1 2)))
 #+END_SRC
 
 #+RESULTS:
@@ -58,9 +58,9 @@ Now, we can do things like:
 
 "this will be evaluated first"
 
-"second"
+"second deferred"
 
-"third"
+"the last deferred expression"
 
-33
+"Finall, the returned value is 33"
 #+end_example
