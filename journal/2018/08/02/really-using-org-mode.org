@@ -16,9 +16,9 @@ notebook is the most powerful tool for scribbles and planning, its really bad
 for scheduling and capturing since it has a /physical/ form.
 
 So I gave [[http://www.orgzly.com/][orgzly]] another shot and this time its working well, thanks to
-[[https://syncthing.net/][syncthing]]. Along with help of the excellent [[https://github.com/alphapapa/org-super-agenda][org-super-agenda]], orgzly lets me /not
-avoid/ scheduled items since now I don't have to /pull/ up the agenda manually.
-Having notes nearby also makes it easy to go both ways:
+[[https://syncthing.net/][syncthing]]. Orgzly's notification system lets me /not avoid/ agenda items since I
+don't have to /pull/ up the agenda manually. Having notes nearby also makes it
+easy to go both ways:
 
 - capture notes on the go, and
 - look at all other files that get regularly ignored since there are always more
