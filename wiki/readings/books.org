@@ -530,6 +530,13 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
+*** Engineering: A Compiler
+:PROPERTIES:
+:AUTHOR:   Keith Cooper, Linda Torczon
+:ADDED:    <2018-08-01>
+:AMAZON:   https://www.amazon.com/dp/012088478X/
+:END:
+
 *** The Art of the Metaobject Protocol
 :PROPERTIES:
 :AUTHOR:   Gregor Kiczales, Jim Des Rivieres, Daniel G. Bobrow
