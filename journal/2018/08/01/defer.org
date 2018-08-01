@@ -29,22 +29,24 @@ the defer thing in a macro (also adding support for [[../../07/31/bail-out.org][
          ,docstring
          (block nil ;; This lets us use return expression
            (let ((,defers nil))
-             (cl-macrolet ((defer (form) `(push ',form ,',defers)))
+             (cl-macrolet ((defer (form) `(push '(funcall ,form) ,',defers)))
                (unwind-protect
                    (progn ,@body)
                  (eval `(progn ,@,defers)))))))))
 #+END_SRC
+
+#+RESULTS:
 
 Now, we can do things like:
 
 #+BEGIN_SRC emacs-lisp :results output
 (defun+ some-func (x y)
   "hello"
-  (defer (print "the last deferred expression"))
-  (defer (print "second deferred"))
+  (defer (lambda () (print "the last deferred expression")))
+  (defer (lambda () (print "second deferred")))
   (print "hello world")
-  (if nil (defer (print "unevaluated deferred")))
-  (defer (print "this will be evaluated first"))
+  (if nil (defer (lambda () (print "unevaluated deferred"))))
+  (defer (lambda () (print "this will be evaluated first")))
   (if t (return 33))
   (+ x y))
 
