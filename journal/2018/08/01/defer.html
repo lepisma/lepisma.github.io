@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-08-01 Wed 02:06 -->
+<!-- 2018-08-01 Wed 10:30 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Defer Macro</title>
@@ -311,7 +311,7 @@ the defer thing in a macro (also adding support for <a href="../../07/31/bail-ou
        ,docstring
        (<span class="org-keyword">block</span> nil <span class="org-comment-delimiter">;; </span><span class="org-comment">This lets us use return expression</span>
          (<span class="org-keyword">let</span> ((,defers nil<span class="org-parinfer-pretty-parensXdim-paren">))</span>
-           (<span class="org-keyword">cl-macrolet</span> ((defer (form) `(<span class="org-keyword">push</span> ',form ,',defers<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+           (<span class="org-keyword">cl-macrolet</span> ((defer (form) `(<span class="org-keyword">push</span> '(funcall ,form) ,',defers<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
              (<span class="org-keyword">unwind-protect</span>
                  (<span class="org-keyword">progn</span> ,@body<span class="org-parinfer-pretty-parensXdim-paren">)</span>
                (eval `(<span class="org-keyword">progn</span> ,@,defers<span class="org-parinfer-pretty-parensXdim-paren">)))))))))</span>
@@ -325,11 +325,11 @@ Now, we can do things like:
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span class="org-keyword">defun+</span> some-func (x y<span class="org-parinfer-pretty-parensXdim-paren">)</span>
   <span class="org-string">"hello"</span>
-  (defer (print <span class="org-string">"the last deferred expression"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
-  (defer (print <span class="org-string">"second deferred"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (defer (<span class="org-keyword">lambda</span> () (print <span class="org-string">"the last deferred expression"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+  (defer (<span class="org-keyword">lambda</span> () (print <span class="org-string">"second deferred"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
   (print <span class="org-string">"hello world"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-  (<span class="org-keyword">if</span> nil (defer (print <span class="org-string">"unevaluated deferred"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-  (defer (print <span class="org-string">"this will be evaluated first"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
+  (<span class="org-keyword">if</span> nil (defer (<span class="org-keyword">lambda</span> () (print <span class="org-string">"unevaluated deferred"</span><span class="org-parinfer-pretty-parensXdim-paren">))))</span>
+  (defer (<span class="org-keyword">lambda</span> () (print <span class="org-string">"this will be evaluated first"</span><span class="org-parinfer-pretty-parensXdim-paren">)))</span>
   (<span class="org-keyword">if</span> t (<span class="org-keyword">return</span> <span class="org-highlight-numbers-number">33</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
   (+ x y<span class="org-parinfer-pretty-parensXdim-paren">))</span>
 
