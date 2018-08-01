@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-08-02 Thu 00:32 -->
+<!-- 2018-08-02 Thu 01:25 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Really using Org Mode</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,106 +273,51 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>Journal</h1>
+                                <div class='page-meta'>2018-08-02 Thu 00:00</div>
+                                <h1>Really using Org Mode</h1>
                               </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../..#productivity'>productivity</a></div>
+<p>
+<span class='dropcap'>I</span>rrespective of what I tell myself, I have not been using Org mode in its full
+glory. The usual problem of file/topic organization is perennial but there are
+two really tractable pieces that I haven't given much thought to:
+</p>
+
+<ol class="org-ol">
+<li>Scheduling, along with <a href="https://orgmode.org/manual/Agenda-commands.html">agenda</a></li>
+<li><a href="https://orgmode.org/manual/Capture.html">Captures</a> for quickly getting ideas down</li>
+</ol>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+Although these two look independent, the most important/useful scheduling
+happens impromptu, just like captures. Keeping a physical notebook has taught me
+the importance of capturing things right when you encounter them. Even though a
+notebook is the most powerful tool for scribbles and planning, its really bad
+for scheduling and capturing since it has a <i>physical</i> form.
 </p>
-
-<hr>
 
 <p>
-Filter by <i>tags</i>
+So I gave <a href="http://www.orgzly.com/">orgzly</a> another shot and this time its working well thanks to
+<a href="https://syncthing.net/">syncthing</a>. Along with help of the excellent <a href="https://github.com/alphapapa/org-super-agenda">org-super-agenda</a>, orgzly lets me <i>not
+avoid</i> scheduled items since now I don't have to <i>pull</i> up the agenda manually.
+Since I have a phone nearby most of the time, its easy to go both ways now:
 </p>
 
-<div class='page-tags'><a href='#books'>books</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a></div>
+<ul class="org-ul">
+<li>capture notes on the go, and</li>
+<li>look at all other files that get regularly ignored since there are always more
+important things to do in a relatively unrestricted machine.</li>
+</ul>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-08-02</div>
-<p class="archive-title">
-<a href="./2018/08/02/really-using-org-mode.html" class="archive-title">Really using Org Mode</a>
+<p>
+Initially, there was this frustrating issue where you end up updating an org
+file at both the places&#x2013;mobile and laptop&#x2013;leaving you with git merge
+nightmares. I have now enforced one-way write behavior using syncthing and
+regular Emacs file variables (<code># -*- buffer-read-only: t -*-</code>). This has more or
+less fixed the problem. Hoping to get some mileage with this setup now.
 </p>
-<div class='page-tags'><a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-01</div>
-<p class="archive-title">
-<a href="./2018/08/01/defer.html" class="archive-title">Defer Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics‑of‑Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
-</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
