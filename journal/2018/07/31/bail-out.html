@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-08-01 Wed 01:41 -->
+<!-- 2018-08-01 Wed 11:44 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bail Out Macro</title>
@@ -313,8 +313,8 @@ An example follows:
 </div>
 
 <p>
-Another gloriously messy example is <a href="https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78">this one</a>. Thse cases commmon in the <i>main</i>
-functions of packages since they have to work on edges.
+Another gloriously messy example is <a href="https://github.com/lepisma/read-lyrics.el/blob/54a2c4c383d239761c4d9103e76319dea12c0291/read-lyrics.el#L53-L78">this one</a>. Cases like these are common in
+<i>main</i> functions of packages since they have to work on edges.
 </p>
 
 <p>
@@ -329,7 +329,7 @@ code nesting in check. <code>bo&gt;</code> macro is a simple attempt to replicat
   <span class="org-doc">"Bump version using the given bmp-type"</span>
   (<span class="org-keyword">let*</span> ((default-directory (projectile-project-root<span class="org-parinfer-pretty-parensXdim-paren">))</span>
          (project (bmp-get-project bmp-project-fns<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
-    (<span class="org-keyword">bo&gt;</span>
+    (bo&gt;
      (?? (null project) (message <span class="org-string">"No project detected"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
      (?? (bmp-git-dirty-p) (message <span class="org-string">"Git repository dirty"</span><span class="org-parinfer-pretty-parensXdim-paren">))</span>
      <span class="org-comment-delimiter">;; </span><span class="org-comment">Some thing here</span>
