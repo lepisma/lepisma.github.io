@@ -15,7 +15,7 @@ the importance of capturing things right when you encounter them. Even though a
 notebook is the most powerful tool for scribbles and planning, its really bad
 for scheduling and capturing since it has a /physical/ form.
 
-So I gave [[http://www.orgzly.com/][orgzly]] another shot and this time its working well thanks to
+So I gave [[http://www.orgzly.com/][orgzly]] another shot and this time its working well, thanks to
 [[https://syncthing.net/][syncthing]]. Along with help of the excellent [[https://github.com/alphapapa/org-super-agenda][org-super-agenda]], orgzly lets me /not
 avoid/ scheduled items since now I don't have to /pull/ up the agenda manually.
 Since I have a phone nearby most of the time, its easy to go both ways now:
