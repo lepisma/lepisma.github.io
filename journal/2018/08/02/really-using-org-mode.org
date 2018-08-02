@@ -25,7 +25,7 @@ easy to go both ways:
   important things to do in a relatively unrestricted machine.
 
 Initially, there was this frustrating issue where you end up updating an org
-file at both the places--mobile and laptop--leaving you with git merge
+file at both the places---mobile and laptop---leaving you with git merge
 nightmares. I have now enforced one-way write behavior using syncthing and
 regular Emacs file variables (~# -*- buffer-read-only: t -*-~). This has more or
 less fixed the problem. Hoping to get some mileage with this setup now.
