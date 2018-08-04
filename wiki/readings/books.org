@@ -537,6 +537,27 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
+*** Higher-Order Perl: Transforming Programs with Programs
+:PROPERTIES:
+:AUTHOR:   Mark Jason Dominus
+:ADDED:    <2018-08-05>
+:AMAZON:   https://www.amazon.com/Higher-Order-Perl-Transforming-Programs/dp/1558607013
+:END:
+
+*** Programming Pearls (ACM Press)
+:PROPERTIES:
+:AUTHOR:   Jon Bentley
+:ADDED:    <2018-08-05>
+:AMAZON:   https://www.amazon.in/Programming-Pearls-ACM-Press-Bentley/dp/0201657880
+:END:
+
+*** Purely Functional Data Structures
+:PROPERTIES:
+:AUTHOR:   Chris Okasaki
+:ADDED:    <2018-08-05>
+:AMAZON:   https://www.amazon.com/Purely-Functional-Structures-Chris-Okasaki/dp/0521663504/
+:END:
+
 *** Engineering: A Compiler
 :PROPERTIES:
 :AUTHOR:   Keith Cooper, Linda Torczon
