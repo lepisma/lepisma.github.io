@@ -143,6 +143,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** Evolution and the Theory of Games
+:PROPERTIES:
+:AUTHOR:   John Maynard Smith
+:ADDED:    <2018-08-04>
+:GOODREADS: https://www.goodreads.com/book/show/41862.Evolution_and_the_Theory_of_Games
+:END:
+
 *** Essential Readings in Evolutionary Biology
 :PROPERTIES:
 :AUTHOR:   Francisco J. Ayala, John C. Avise
