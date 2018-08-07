@@ -7,6 +7,12 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *macro indentation*
+
+  Custom macros show up really badly when indented in elisp code. I didn't try
+  to search for a solution earlier but we can allow arbitrary indentation in
+  [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Indenting-Macros.html#Indenting-Macros][macros]]. Adding ~(declare (indent defun))~ works for me in most of the cases.
+
 + *buffer local hooks*
 
   ~add-hook~ takes an argument ~local~ to set buffer local hooks. This is really

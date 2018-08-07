@@ -4910,6 +4910,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** Lord of the Flies
+:PROPERTIES:
+:AUTHOR:   William Golding
+:ADDED:    <2018-08-05>
+:AMAZON:   https://www.amazon.com/Lord-Flies-William-Golding/dp/0399501487
+:END:
+
 *** We
 :PROPERTIES:
 :AUTHOR:   Yevgeny Zamyatin, Clarence Brown, Евгений Замятин
