@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-22 Fri 22:15 -->
+<!-- 2018-08-08 Wed 02:42 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned <i>in Emacs</i></title>
@@ -273,7 +273,7 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-06-22 Fri 22:15</div>
+                                <div class='page-meta'>Last modified:  2018-08-08 Wed 02:42</div>
                                 <h1>Today I Learned <i>in Emacs</i></h1>
                               </div>
 </div>
@@ -290,6 +290,16 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>macro indentation</b>
+</p>
+
+<p>
+Custom macros show up really badly when indented in elisp code. I didn't try
+to search for a solution earlier but we can allow arbitrary indentation in
+<a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Indenting-Macros.html#Indenting-Macros">macros</a>. Adding <code>(declare (indent defun))</code> works for me in most of the cases.
+</p></li>
+
 <li><p>
 <b>buffer local hooks</b>
 </p>
