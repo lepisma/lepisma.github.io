@@ -3,9 +3,9 @@
 #+TAGS: philosophy, personal
 
 A lot of times, I have been baffled by the fact that many people who work with
-technologies and ideas that are fundamentally rational are theists and/or have
-religious tendencies which can, at least in theory, be knocked down by
-elementary logical arguments.
+technologies and ideas that are fundamentally rational are theists (in the
+organized religion sense) and/or have religious tendencies which can, at least
+in theory, be knocked down by elementary logical arguments.
 
 The truth is, its not baffling at all. The assumption about /logical people/ is
 very binary and wrong. We have personal irrational biases which are tied to our
