@@ -7,6 +7,12 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *edebug*
+
+  I am trying to use debuggers more than /prints/. In the process found ~edebug~ for
+  emacs lisp, which is really easy to use and works nicely on the source code
+  level.
+
 + *macro indentation*
 
   Custom macros show up really badly when indented in elisp code. I didn't try
