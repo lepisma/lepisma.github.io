@@ -1,0 +1,19 @@
+#+TITLE: Rational Theists
+#+SETUPFILE: ../../../../assets/export.setup
+#+TAGS: philosophy, personal
+
+A lot of times, I have been baffled by the fact that many people who work with
+technologies and ideas that are fundamentally rational are theists and/or have
+religious tendencies which can, at least in theory, be knocked down by
+elementary logical arguments.
+
+The truth is, its not baffling at all. The assumption about /logical people/ is
+very binary and wrong. We have personal irrational biases which are tied to our
+identities in a lot of cases, and its not unreasonable for them to control our
+actions and thoughts. Now, how far can we change ourselves to avoid damaging all
+that is good is a different question.
+
+An illuminating read I recently found is [[https://sciencereligionspectrum.org/wp-content/uploads/2018/05/My-Evolution-comic-final.compressed.pdf][My Evolution]], a short comics on
+religion and science. One of the things to take out from there is how often we
+tend to overestimate the split between theists and atheists and their assumed
+overlaps with rationality.
