@@ -143,6 +143,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** Evolutionary Game Theory (The MIT Press)
+:PROPERTIES:
+:AUTHOR:   Jorgen W. Weibull
+:ADDED:    <2018-08-11>
+:AMAZON:   https://www.amazon.com/Evolutionary-Game-Theory-MIT-Press/dp/0262731215#reader_0262731215
+:END:
+
 *** Evolution and the Theory of Games
 :PROPERTIES:
 :AUTHOR:   John Maynard Smith
