@@ -22,6 +22,88 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Good as a noun rather than an adjective is all the Metaphysics of Quality is
+about
+
+#+HTML:<footer>Lila An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Little children talk to dolls and grown-up adults talk to idols. He supposed
+that a doll allows a child to pretend he's a parent while an idol allows a
+parent to pretend he's a child
+
+#+HTML:<footer>Lila An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The most moral activity of all is the creation of space for life to move onward
+
+#+HTML:<footer>Lila An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Sanity is not truth. Sanity is conformity to what is socially expected. Truth is
+sometimes in conformity, sometimes not
+
+#+HTML:<footer>Lila An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Objects are inorganic and biological values; subjects are social and
+intellectual values
+
+#+HTML:<footer>Lila An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+That's what this whole century's been about, this struggle between intellectual
+and social patterns. That's the theme song of the twentieth century. Is society
+going to dominate intellect or is intellect going to dominate society
+
+#+HTML:<footer>Lila An Inquiry into Morals - Robert Pirsig</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+experience is not the same as understanding.
+
+#+HTML:<footer>Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+An author's job is using words the ways other people do, not telling others how
+to use them.
+
+#+HTML:<footer>Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+One can acquire certainty only by amputating inquiry.
+
+#+HTML:<footer>Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If self-control were easy to obtain, we'd end up accomplishing nothing at all.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Destructive acts can serve constructive goals by leaving fewer problems to be
+solved.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+To be sure, general laws apply to everything. But, for that very reason, they
+can rarely explain anything in particular.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 “Be regular and orderly in your life like a Bourgeois so that you may be violent
 and original in your work.”
 
