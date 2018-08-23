@@ -1244,12 +1244,37 @@ CLOSED: [2018-02-05 Mon 01:16]
 :GOODREADS: https://www.goodreads.com/book/show/253801.Science_and_the_Modern_World
 :END:
 
-*** READING Lila: An Inquiry Into Morals
+*** READ Lila: An Inquiry Into Morals
+CLOSED: [2018-08-23 Thu 02:00]
 :PROPERTIES:
 :AUTHOR:   Robert M. Pirsig
 :ADDED:    <2018-06-08>
 :GOODREADS: https://www.goodreads.com/book/show/31093.Lila
 :END:
+
+This is the ideological sequel to /Zen and the Art of Motorcycle Maintenance/ and
+has a more formalized explanation of 'Quality'. Even though I /might/ be writing a
+short post about my feelings for Quality, I feel I can do some nitpicking here.
+
+In the closing sections, there is an exploration of root of the word /arete/ where
+we go on to find connections with the Sanskrit word ऋत. Then we connect a few
+more dots and /conclude/ a few things. What worries me is the process of getting
+there which felt like inducing a lot of bias. Maybe there is a connection, maybe
+there is none. But if this connection is important, then we should be going
+there in a more matter-of-fact fashion and a bit earlier too.
+
+This nebulousness gets reinforced by a few other cases where the arguments don't
+feel /very/ solid for something which maybe doesn't even need an objective
+argument to begin with. For example there is a discussion of nimbus which tries
+to convince you of dynamic quality in an empirical-ish way but then stays at a
+kind of /safe distance/.
+
+The book is read worthy but if you come in with questions, you probably will not
+be a very comfortable person at the end. To clarify, a part of this is because
+the idea itself is not /the/ theory of everything, but there are other pieces
+(like the examples above) which will leave you with feelings like you can find
+inconsistencies. My next steps will mostly involve trying to do this /finding/ and
+see what things pop up.
 
 *** Critique of Pure Reason
 :PROPERTIES:
@@ -4127,7 +4152,7 @@ CLOSED: [2016-08-07]
 
 It could have been helped by a bit deeper storyline and 'theorics', considering
 the number of pages (~1000). The kind of topics it touched, it could have been
-perfect. But sometimes it felt bloated.
+perfect. But at time it felt bloated.
 
 *** Reamde
 :PROPERTIES:

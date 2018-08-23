@@ -2688,8 +2688,7 @@ Nothing succeeds like failure.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-already. The real story of automation is not what it replaces but what it
-enables.
+The real story of automation is not what it replaces but what it enables.
 
 #+HTML:<footer>The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (Pedro Domingos)</footer>
 #+END_QUOTE
