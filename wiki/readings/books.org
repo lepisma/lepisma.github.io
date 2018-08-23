@@ -1272,9 +1272,9 @@ kind of /safe distance/.
 The book is read worthy but if you come in with questions, you probably will not
 be a very comfortable person at the end. To clarify, a part of this is because
 the idea itself is not /the/ theory of everything, but there are other pieces
-(like the examples above) which will leave you with feelings like you can find
-inconsistencies. My next steps will mostly involve trying to do this /finding/ and
-see what things pop up.
+(like the examples above) which will leave you feeling like you can find
+inconsistencies somewhere. My next steps will mostly involve trying to do this
+/finding/ and see what things pop up.
 
 *** Critique of Pure Reason
 :PROPERTIES:
