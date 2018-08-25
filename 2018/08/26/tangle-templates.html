@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-08-26 Sun 03:40 -->
+<!-- 2018-08-26 Sun 03:51 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>(<i>car</i>  nil)</title>
+<title>Tangle Templates</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,260 +273,210 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>(<i>car</i>  nil)</h1>
+                                <div class='page-meta'>2018-08-26 Sun 00:00</div>
+                                <h1>Tangle Templates</h1>
                               </div>
 </div>
 <div id="content">
-<script src="assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../..#org-mode'>org-mode</a> <a href='../../..#programming'>programming</a> <a href='../../..#emacs'>emacs</a> <a href='../../..#tooling'>tooling</a></div>
+<p>
+<span class='dropcap'>L</span>ooking recently at <a href="https://github.com/commercialhaskell/stack-templates/blob/master/simple.hsfiles">hsfiles</a> template made me fiddle around with a relatively old
+script for <i>project template management</i> using <code>org-babel</code>. If you have used any
+scaffolding tool like <a href="https://github.com/audreyr/cookiecutter">cookiecutter</a>, you already know what I mean by template
+management for <i>projects</i>.
+</p>
 
 <p>
-Hello, welcome to my blog! A listing of all the posts follows.
+I tried using cookiecutter long ago but then stopped. Not sure of the exact
+reason but here are few points that cover parts of the dissatisfaction (in
+context of the new scheme from this post):
 </p>
+
+<ol class="org-ol">
+<li><b>UPDATION</b>: Keeping <i>template-ish</i> content spread around in a directory makes
+them cumbersome to update.</li>
+<li><b>UNIFICATION</b>: Different languages have different scaffolding tools, like
+<a href="https://www.xach.com/lisp/quickproject/">quickproject</a> for Lisp, <a href="http://poetry.eustace.io/">poetry</a>'s for python etc. There should be a simple way
+to wrap them around.</li>
+<li><b>REUSABILITY</b>: Once we have the above <i>wrapping around</i>, there should be a way
+for extending templates with reusable components. For example, I might want
+to add my common testing structure to poetry's <code>init</code> process <i>and</i> a conda based
+project.</li>
+<li><b>FLEXIBILITY</b>: Pre-execution editing of the templates makes them very practical
+since I might want to change something which was not planned as a template
+variable. Almost all other scaffolding tools are horrifically bad in this
+situation because of their terminal centered approach.</li>
+</ol>
+
+<div id="outline-container-org2030a35" class="outline-2">
+<h2 id="obtt"><a id="org2030a35"></a><span class="section-number-2">1</span> obtt</h2>
+<div class="outline-text-2" id="text-obtt">
+
 
 <p>
-I am now keeping more subjective (and frequent) pieces in <a href="../journal/index.html">/journal</a>. Things that
-are more <i>page</i> like go in my personal <a href="../wiki/index.html">/wiki</a>.
+obtt (<i>Org Babel Tangle Templates</i>) is a little tool which extends the idea of
+<code>hsfiles</code> templates and solves a lot of the issues I have with tools like
+cookiecutter. Here is how its supposed to be used:
 </p>
 
-<hr>
+<ol class="org-ol">
+<li>Describe project templates in org files using <a href="https://github.com/joaotavora/yasnippet">yasnippet</a> like templates and
+org babel tangle blocks.</li>
+<li>Fire <code>obtt-new</code> to select the root project directory and select the template to
+use.</li>
+<li>The next buffer (seed buffer) will drop you in yasnippet expansion state.
+Edit all you want and then fire <code>obtt-tangle</code> to finish.</li>
+</ol>
 
 <p>
-Filter by <i>tags</i>
+Using org mode lets you do other useful things like evaluating a code block.
+This can be useful in cases where you want to generate content of a file from an
+external tool. For example, if you use <a href="https://github.com/generate/generate-license">generate-license</a> for licenses, you can
+add a block with <code>:obtt eval</code> in the header.
 </p>
 
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#exploration'>exploration</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#physics'>physics</a> <a href='#programming'>programming</a> <a href='#python'>python</a> <a href='#ramble'>ramble</a> <a href='#ricing'>ricing</a> <a href='#skepticism'>skepticism</a> <a href='#tooling'>tooling</a> <a href='#ux'>ux</a> <a href='#viz'>viz</a></div>
+<pre class="example">
+#+BEGIN_SRC shell :obtt eval
+gen license:gpl-3.0
+#+END_SRC
+</pre>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/tangle-templates.html" class="archive-title">Tangle Templates</a>
+<p>
+There are other obvious benefits like including another template using the
+<code>#+INCLUDE: sub-template.obtt</code>. You might also <i>template</i> the parameter out to
+switch easily between, say, CI config files like below:
 </p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-meta-line">#+INCLUDE: ${1:gitlab-ci.obtt}</span>
+</pre>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-06-07</div>
-<p class="archive-title">
-<a href="./2018/06/07/wiki-to-blog.html" class="archive-title">Blog ← Wiki</a>
+<p>
+Having an org file as your template also lets you add useful documentation which
+makes the whole workflow more shareable and easier to tweak without bringing in
+inconsistencies.
 </p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-01-27</div>
-<p class="archive-title">
-<a href="./2018/01/27/blog-to-wiki.html" class="archive-title">Blog → Wiki</a>
+<div id="outline-container-org36a9ba4" class="outline-2">
+<h2 id="a-sample-template"><a id="org36a9ba4"></a><span class="section-number-2">2</span> A sample template</h2>
+<div class="outline-text-2" id="text-a-sample-template">
+
+
+<p>
+Here is a sample template from my config. As described in the preamble, its not
+the one I use right now and things might change. Good for conveying a general
+idea though.
 </p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-comment"># -- mode: org --</span>
+<span class="org-org-document-info-keyword">#+TITLE:</span> <span class="org-org-document-title">obtt-experiment</span>
+
+This is a snakemake + poetry based template for experimental projects. Heavily
+inspired from other <span class="org-italic">data science</span> templates. Most of the experiments use a conda
+based setup but this template just uses poetry for now. I will tune this when
+needed.
+
+<span class="org-org-level-1">* Variables</span>
+
+<span class="org-org-list-dt">-</span> <span class="org-org-list-dt">Name ::</span> $1
+<span class="org-org-list-dt">-</span> <span class="org-org-list-dt">Description ::</span> $2
+
+<span class="org-org-level-1">* README</span>
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC org :tangle ./README.org</span>
+<span class="custom">#+TITLE: $1</span>
+
+<span class="custom">$2</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-level-1">* toml file</span>
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC toml :tangle ./pyproject.toml</span>
+<span class="custom">[tool.poetry]</span>
+<span class="custom">name = "$1"</span>
+<span class="custom">version = "0.1.0"</span>
+<span class="custom">description = "$2"</span>
+<span class="custom">authors = []</span>
+
+<span class="custom">[tool.poetry.dependencies]</span>
+<span class="custom">python = "^3.6"</span>
+<span class="custom">snakemake = "^5.2"</span>
+
+<span class="custom">[tool.poetry.dev-dependencies]</span>
+<span class="custom">pytest = "^3.0"</span>
+<span class="custom">mypy = "^0.620.0"</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-level-1">* General structure</span>
+
+We have a <span class="org-org-code">data</span> directory with external and processed sub dirs. A <span class="org-org-code">src</span> directory
+keeps the modules that we build and use. <span class="org-org-code">scripts</span> keep snakemake scripts.
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC shell :obtt eval</span>
+<span class="custom">mkdir -p data/external data/processed</span>
+<span class="custom">mkdir scripts</span>
+<span class="custom">touch ./src/__init__.py</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+The snakefile rules now bind everything together.
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC python :tangle ./Snakefile</span>
+<span class="custom">rule all:</span>
+<span class="custom">    shell: "echo 'hi'"</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-level-1">* Testing</span>
+
+Tests are important even in experimental code, blah blah...
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC python :tangle ./tests/__init__.py</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC python :tangle ./mypy.ini</span>
+<span class="custom">[mypy]</span>
+<span class="custom">ignore_missing_imports=True</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC text :tangle ./tox.ini</span>
+<span class="custom">[tox]</span>
+<span class="custom">skipsdist = True</span>
+<span class="custom">envlist = py36</span>
+
+<span class="custom">[testenv]</span>
+<span class="custom">whitelist_externals = poetry</span>
+<span class="custom">skip_install = true</span>
+<span class="custom">commands =</span>
+<span class="custom">    poetry install -v</span>
+<span class="custom">    poetry run pytest tests/</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+
+<span class="org-org-level-1">* License</span>
+
+<span class="org-org-block-begin-line">#+BEGIN_SRC shell :obtt eval</span>
+<span class="custom">gen license:gpl-3.0</span>
+<span class="org-org-block-end-line">#+END_SRC</span>
+</pre>
+</div>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-12-20</div>
-<p class="archive-title">
-<a href="./2017/12/20/fancy-lambdas.html" class="archive-title">Fancy Little Lisp λs</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
+<div id="outline-container-org9c8c827" class="outline-2">
+<h2 id="the-package"><a id="org9c8c827"></a><span class="section-number-2">3</span> The package</h2>
+<div class="outline-text-2" id="text-the-package">
 
-<div class='archive-item'>
-<div class='page-meta'>2017-10-28</div>
-<p class="archive-title">
-<a href="./2017/10/28/ricing-org-mode/index.html" class="archive-title">Ricing up Org Mode</a>
-</p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#ricing'>ricing</a> <a href='#ux'>ux</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-08-25</div>
-<p class="archive-title">
-<a href="./2017/08/25/keyboard/index.html" class="archive-title">The point of keyboarding</a>
+<p>
+The obtt package is in <a href="https://github.com/lepisma/rogue/blob/4a8a26f83d859db57b7b93467eab99ba2a1a2d29/local/obtt/obtt.el">my config</a> as of now. I will be moving it out after a
+while. Other obtt templates are <a href="https://github.com/lepisma/rogue/tree/master/obtt">here</a> right now. One issue with this scheme is
+that conflicts can popup among yasnippet variables when you include other
+templates. But it should easy to resolve by allowing users to name variables and
+recreating the numbered variables that yasnippet expects.
 </p>
-<div class='page-tags'><a href='#ux'>ux</a> <a href='#personal'>personal</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-29</div>
-<p class="archive-title">
-<a href="./2017/06/29/leaving-goodreads/index.html" class="archive-title">Leaving Goodreads</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#ramble'>ramble</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-25</div>
-<p class="archive-title">
-<a href="./2017/06/25/simple-time-maps/index.html" class="archive-title">Simpler time map plots</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-05-15</div>
-<p class="archive-title">
-<a href="./2017/05/15/syntactical-macros.html" class="archive-title">The Beauty of Syntactical Macros</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#lisp'>lisp</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-15</div>
-<p class="archive-title">
-<a href="./2017/03/15/projects.html" class="archive-title">Projects</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-05</div>
-<p class="archive-title">
-<a href="./2017/03/05/optional-typing.html" class="archive-title">Optional Typing</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#python'>python</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-11-02</div>
-<p class="archive-title">
-<a href="./2016/11/02/org-babel/index.html" class="archive-title">Cheap polyglot notebooks</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-08-25</div>
-<p class="archive-title">
-<a href="./2016/08/25/evidence-abuse/index.html" class="archive-title">Abusing Evidence: Drought, Deluge and Disregard</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-06-13</div>
-<p class="archive-title">
-<a href="./2016/06/13/genetic-algorithm/index.html" class="archive-title">What is it that Genetic Algorithm does?</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-03-17</div>
-<p class="archive-title">
-<a href="./2016/03/17/org-mode/index.html" class="archive-title">On why you too should give Emacs Org-mode a spin</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-01-23</div>
-<p class="archive-title">
-<a href="./2016/01/23/constitution-de-markov.html" class="archive-title">Constitution De Markov</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-12-21</div>
-<p class="archive-title">
-<a href="./2015/12/21/white-rhino.html" class="archive-title">White Rhinos, irrationality and other tales</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-11-03</div>
-<p class="archive-title">
-<a href="./2015/11/03/the-writers-voice/index.html" class="archive-title">The Writers' Voice</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-07-30</div>
-<p class="archive-title">
-<a href="./2015/07/30/up-with-theano-and-cuda.html" class="archive-title">Up and running with Theano (GPU) + PyCUDA on Windows</a>
-</p>
-<div class='page-tags'><a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-06-27</div>
-<p class="archive-title">
-<a href="./2015/06/27/hot-100/index.html" class="archive-title">Hot 100 over the years</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-23</div>
-<p class="archive-title">
-<a href="./2015/03/23/overtone-jamming.html" class="archive-title">Overtone Jamming</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-20</div>
-<p class="archive-title">
-<a href="./2015/03/20/rowing-a-steamer/index.html" class="archive-title">Rowing a Steamer</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-14</div>
-<p class="archive-title">
-<a href="./2015/01/14/computer-programs-and-zipf-law/index.html" class="archive-title">Computer Programs and Zipf's Law</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-08</div>
-<p class="archive-title">
-<a href="./2015/01/08/firewall-paradox/index.html" class="archive-title">Firewall Paradox and revisiting the Law of Information</a>
-</p>
-<div class='page-tags'><a href='#physics'>physics</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-06</div>
-<p class="archive-title">
-<a href="./2015/01/06/why-i-stopped-recommending-gnome/index.html" class="archive-title">Why I Stopped Recommending GNOME</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-25</div>
-<p class="archive-title">
-<a href="./2014/11/25/interstellar-tesseract/index.html" class="archive-title">The Interstellar's Tesseract</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-02</div>
-<p class="archive-title">
-<a href="./2014/11/02/neural-turing-machines/index.html" class="archive-title">Neural Turing Machines for dummies</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-07-29</div>
-<p class="archive-title">
-<a href="./2014/07/29/flesh-and-metal/index.html" class="archive-title">Flesh and Metal</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-06-21</div>
-<p class="archive-title">
-<a href="./2014/06/21/extreme-learning-machine/index.html" class="archive-title">Extreme Learning Machines with Julia</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
 </div>
 </div>
 <div id="postamble" class="status">
