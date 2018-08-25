@@ -40,8 +40,8 @@ cookiecutter. Here is how its supposed to be used:
 
 Using org mode lets you do other useful things like evaluating a code block.
 This can be useful in cases where you want to generate content of a file from an
-external tool. For example, if you use [[https://github.com/generate/generate-license][generate-license]] for licenses, you can
-add a block with ~:obtt eval~ in the header.
+external tool. For example if you use [[https://github.com/generate/generate-license][generate-license]] for licenses, you can add
+the following block with ~:obtt eval~ in the header.
 
 #+BEGIN_EXAMPLE
 #+BEGIN_SRC shell :obtt eval
