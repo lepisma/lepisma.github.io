@@ -1,0 +1,78 @@
+#+TITLE: Tangle Templates
+#+SETUPFILE: ../../../../assets/export.setup
+#+TAGS: org-mode, programming, emacs, tooling
+
+Looking recently at [[https://github.com/commercialhaskell/stack-templates/blob/master/simple.hsfiles][hsfiles]] template made me fiddle around with a relatively old
+script for /project template management/ using ~org-babel~. If you have used any
+scaffolding tool like [[https://github.com/audreyr/cookiecutter][cookiecutter]], you already know what I mean by template
+management for /projects/.
+
+I tried using cookiecutter long ago but then stopped. Not sure of the exact
+reason but here are few points that cover parts of the dissatisfaction (in
+context of the new scheme from this post):
+
+1. *UPDATION*: Keeping /template-ish/ content spread around in a directory makes
+   them cumbersome to update.
+2. *UNIFICATION*: Different languages have different scaffolding tools, like
+   [[https://www.xach.com/lisp/quickproject/][quickproject]] for Lisp, [[http://poetry.eustace.io/][poetry]]'s for python etc. There should be a simple way
+   to wrap them around.
+3. *REUSABILITY*: Once we have the above /wrapping around/, there should be a way
+   for extending templates with reusable components. For example, I might want
+   to add my common testing structure to poetry's ~init~ process /and/ a conda based
+   project.
+4. *FLEXIBILITY*: Pre-execution editing of the templates makes them very practical
+   since I might want to change something which was not planned as a template
+   variable. Almost all other scaffolding tools are horrifically bad in this
+   situation because of their terminal centered approach.
+
+* obtt
+
+obtt (/Org Babel Tangle Templates/) is a little tool which extends the idea of
+~hsfiles~ templates and solves a lot of the issues I have with tools like
+cookiecutter. Here is how its supposed to be used:
+
+1. Describe project templates in org files using [[https://github.com/joaotavora/yasnippet][yasnippet]] like templates and
+   org babel tangle blocks.
+2. Fire ~obtt-new~ to select the root project directory and select the template to
+   use.
+3. The next buffer (seed buffer) will drop you in yasnippet expansion state.
+   Edit all you want and then fire ~obtt-tangle~ to finish.
+
+Using org mode lets you do other useful things like evaluating a code block.
+This can be useful in cases where you want to generate content of a file from an
+external tool. For example, if you use [[https://github.com/generate/generate-license][generate-license]] for licenses, you can
+add a block with ~:obtt eval~ in the header.
+
+#+BEGIN_EXAMPLE
+#+BEGIN_SRC shell :obtt eval
+gen license:gpl-3.0
+#+END_SRC
+#+END_EXAMPLE
+
+There are other obvious benefits like including another template using the
+~#+INCLUDE: sub-template.obtt~. You might also /template/ the parameter out to
+switch easily between, say, CI config files like below:
+
+#+BEGIN_SRC org
+#+INCLUDE: ${1:gitlab-ci.obtt}
+#+END_SRC
+
+Having an org file as your template also lets you add useful documentation which
+makes the whole workflow more shareable and easier to tweak without bringing in
+inconsistencies.
+
+* A sample template
+
+Here is a sample template from my config. As described in the preamble, its not
+the one I use right now and things might change. Good for conveying a general
+idea though.
+
+#+INCLUDE: ~/.emacs.d/private/rogue/obtt/experiment.obtt src org
+
+* The package
+
+The obtt package is in [[https://github.com/lepisma/rogue/blob/4a8a26f83d859db57b7b93467eab99ba2a1a2d29/local/obtt/obtt.el][my config]] as of now. I will be moving it out after a
+while. Other obtt templates are [[https://github.com/lepisma/rogue/tree/master/obtt][here]] right now. One issue with this scheme is
+that conflicts can popup among yasnippet variables when you include other
+templates. But it should easy to resolve by allowing users to name variables and
+recreating the numbered variables that yasnippet expects.
