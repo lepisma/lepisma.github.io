@@ -1,0 +1,82 @@
+#+TITLE: What are Jupyter notebooks for?
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: programming
+
+You might have seen [[https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/][this recent deck]] by Joel Grus on Jupyter notebooks. If you
+haven't, go through it once and then come back. I agree a lot with what he has
+been meaning to say in the presentation. Here are few of the issues notebooks
+have (picked from the slides):
+
+- Hard to reason about hidden states.
+- Promotes bad programming practices, specially when people start doing all the
+  prototyping in notebooks.
+- Testing notebook code is hard.
+- Editing support is weak.
+- Reproducibility actually gets a back seat because the shared notebook might
+  have been running out of order and with weird dependencies.
+- Mixing of library and execution code makes it hard to build things on top.
+- Teaching, like writing books, is harder with Jupyter since the tool doesn't
+  allow arbitrary writing order for programs.
+
+Some of these can be fixed in Jupyter as it stands right now, for example better
+editing support. Then there is this other heap of problems which is mostly
+because of the /accessibility-quality/ problem. The more accessible a thing
+becomes, more amateurs start using it and the quality of projects built using
+that thing will look worse when you do a random sampling.
+
+Leaving these aside, probably a more important issue is related to the confusion
+in the two major use cases for these notebooks.
+
+* Interactive computing
+
+This, I feel, is the most common use for notebooks but something that Jupyter is
+not completely focused on. If you really commit to this approach, you get more
+playground-ish tools like [[https://beta.observablehq.com/][observablehq]]. A lot of js based creative coding tools
+get the interactive computing part right. In essence, you are dropped in an
+interactive shell to play with exploratory snippets while the /library/ code stays
+out and unaffected.
+
+The idea here is to clearly separate what changes and what doesn't for an end
+user. While developing, you change both of the things and your product is a
+library and an interactive environment with assistive functions loaded (and
+documented).
+
+The best solution---on the development side---for things like these is probably
+to have your editor work nicely with the language's repl. You write persistent
+modules in files and play around with a living system on your side. As an
+example, I can fire up SLIME repl to connect to my [[https://stumpwm.github.io/][window manager]], change stuff
+in my dot file, evaluate and make things happen in the live environment.
+
+#+CAPTION: SLIME
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./slime.png]]
+
+Now creating and distributing the live environment to the users is a problem I
+am not very sure we have a good solution for. A notebook with very clear
+intention of being /just a playground/ maybe? Something that can also be loaded in
+your regular python shell apart from being available as a web based notebook
+might also be handy.
+
+* Literate programming
+
+The second use case is of literate programming à la Knuth. Of course notebooks
+are not exactly that, but people do end up using them in similar situation and
+are frustrated when things don't work out as expected. This is what Joel
+referred to while writing pedagogical material in Jupyter.
+
+Committing to this approach would actually make notebooks great for writing /all/
+your code in it. Your notebooks will then be pretty expository and their output
+will be proper library code, tested and all. But that isn't the focus of
+notebooks right now. There is ~nbconvert~ but its pretty /far/ from what literate
+programming actually lets you do.
+
+A good solution for things like these right now is to actually use a proper
+~noweb~ like tool (try org mode if on Emacs). I am yet to try out a full fledged
+project using literate programming but the lack of tooling shouldn't be a
+problem since they are relatively easy to build.
+
+-----
+
+Overall, we probably would be better off having two different tools rather than
+having a confusing way of mixing them in one. Or maybe there is a good way to
+mix them that's not yet built/popular.
