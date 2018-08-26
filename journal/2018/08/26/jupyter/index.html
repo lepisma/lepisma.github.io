@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-08-26 Sun 14:30 -->
+<!-- 2018-08-26 Sun 15:03 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>What are Jupyter notebooks for?</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,121 +273,126 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>Journal</h1>
+                                <div class='page-meta'>2018-08-26 Sun 00:00</div>
+                                <h1>What are Jupyter notebooks for?</h1>
                               </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../../..#programming'>programming</a></div>
+<p>
+<span class='dropcap'>Y</span>ou might have seen <a href="https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/">this recent deck</a> by Joel Grus on Jupyter notebooks. If you
+haven't, go through it once and then come back. I agree a lot with what he has
+been meaning to say in the presentation. Here are few of the issues notebooks
+have (picked from the slides):
+</p>
+
+<ul class="org-ul">
+<li>Hard to reason about hidden states.</li>
+<li>Promotes bad programming practices, specially when people start doing all the
+prototyping in notebooks.</li>
+<li>Testing notebook code is hard.</li>
+<li>Editing support is weak.</li>
+<li>Reproducibility actually gets a back seat because the shared notebook might
+have been running out of order and with weird dependencies.</li>
+<li>Mixing of library and execution code makes it hard to build things on top.</li>
+<li>Teaching, like writing books, is harder with Jupyter since the tool doesn't
+allow arbitrary writing order for programs.</li>
+</ul>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+Some of these can be fixed in Jupyter as it stands right now, for example better
+editing support. Then there is this other heap of problems which is mostly
+because of the <i>accessibility-quality</i> problem. The more accessible a thing
+becomes, more amateurs start using it and the quality of projects built using
+that thing will look worse when you do a random sampling.
+</p>
+
+<p>
+Leaving these aside, probably a more important issue is related to the confusion
+in the two major use cases for these notebooks.
+</p>
+
+<div id="outline-container-orgc520ab9" class="outline-2">
+<h2 id="interactive-computing"><a id="orgc520ab9"></a><span class="section-number-2">1</span> Interactive computing</h2>
+<div class="outline-text-2" id="text-interactive-computing">
+
+
+<p>
+This, I feel, is the most common use for notebooks but something that Jupyter is
+not completely focused on. If you really commit to this approach, you get more
+playground-ish tools like <a href="https://beta.observablehq.com/">observablehq</a>. A lot of js based creative coding tools
+get the interactive computing part right. In essence, you are dropped in an
+interactive shell to play with exploratory snippets while the <i>library</i> code stays
+out and unaffected.
+</p>
+
+<p>
+The idea here is to clearly separate what changes and what doesn't for an end
+user. While developing, you change both of the things and your product is a
+library and an interactive environment with assistive functions loaded (and
+documented).
+</p>
+
+<p>
+The best solution&#x2014;on the development side&#x2014;for things like these is probably
+to have your editor work nicely with the language's repl. You write persistent
+modules in files and play around with a living system on your side. As an
+example, I can fire up SLIME repl to connect to my <a href="https://stumpwm.github.io/">window manager</a>, change stuff
+in my dot file, evaluate and make things happen in the live environment.
+</p>
+
+
+<figure>
+<img src="./slime.png" alt="slime.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>SLIME</figcaption>
+</figure>
+
+<p>
+Now creating and distributing the live environment to the users is a problem I
+am not very sure we have a good solution for. A notebook with very clear
+intention of being <i>just a playground</i> maybe? Something that can also be loaded in
+your regular python shell apart from being available as a web based notebook
+might also be handy.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0aee11f" class="outline-2">
+<h2 id="literate-programming"><a id="org0aee11f"></a><span class="section-number-2">2</span> Literate programming</h2>
+<div class="outline-text-2" id="text-literate-programming">
+
+
+<p>
+The second use case is of literate programming à la Knuth. Of course notebooks
+are not exactly that, but people do end up using them in similar situation and
+are frustrated when things don't work out as expected. This is what Joel
+referred to while writing pedagogical material in Jupyter.
+</p>
+
+<p>
+Committing to this approach would actually make notebooks great for writing <i>all</i>
+your code in it. Your notebooks will then be pretty expository and their output
+will be proper library code, tested and all. But that isn't the focus of
+notebooks right now. There is <code>nbconvert</code> but its pretty <i>far</i> from what literate
+programming actually lets you do.
+</p>
+
+<p>
+A good solution for things like these right now is to actually use a proper
+<code>noweb</code> like tool (try org mode if on Emacs). I am yet to try out a full fledged
+project using literate programming but the lack of tooling shouldn't be a
+problem since they are relatively easy to build.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+Overall, we probably would be better off having two different tools rather than
+having a confusing way of mixing them in one. Or maybe there is a good way to
+mix them that's not yet built/popular.
 </p>
-
-<div class='page-tags'><a href='#books'>books</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/jupyter/index.html" class="archive-title">What are Jupyter notebooks for?</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-11</div>
-<p class="archive-title">
-<a href="./2018/08/11/rational-theists.html" class="archive-title">Rational Theists</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-02</div>
-<p class="archive-title">
-<a href="./2018/08/02/really-using-org-mode.html" class="archive-title">Really using Org Mode</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-01</div>
-<p class="archive-title">
-<a href="./2018/08/01/defer.html" class="archive-title">Defer Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics‑of‑Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
 </div>
 </div>
 <div id="postamble" class="status">
