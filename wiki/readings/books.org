@@ -593,7 +593,8 @@ in the math section.
 :AMAZON:   https://www.amazon.com/Elements-Programming-Style-2nd/dp/0070342075
 :END:
 
-*** READING Coders at Work: Reflections on the Craft of Programming
+*** READ Coders at Work: Reflections on the Craft of Programming
+CLOSED: [2018-08-26 Sun 13:39]
 :PROPERTIES:
 :AUTHOR:   Peter Seibel
 :ADDED:    <2018-07-23>
