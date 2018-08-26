@@ -74,5 +74,5 @@ idea though.
 The obtt package is in [[https://github.com/lepisma/rogue/blob/4a8a26f83d859db57b7b93467eab99ba2a1a2d29/local/obtt/obtt.el][my config]] as of now. I will be moving it out after a
 while. Other obtt templates are [[https://github.com/lepisma/rogue/tree/master/obtt][here]] right now. One issue with this scheme is
 that conflicts can popup among yasnippet variables when you include other
-templates. But it should easy to resolve by allowing users to name variables and
-recreating the numbered variables that yasnippet expects.
+templates. But it should be easy to resolve by allowing users to name variables
+and then recreating the numbered variables, ~$1~, ~$2~ etc that yasnippet expects.
