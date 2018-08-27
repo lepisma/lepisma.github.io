@@ -1,4 +1,4 @@
-#+TITLE: (/car/  nil)
+#+TITLE: (/car/ nil)
 #+SETUPFILE: ../assets/export.setup
 
 #+HTML: <script src="assets/js/tag-filter.js"></script>
