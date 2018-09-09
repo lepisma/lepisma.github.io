@@ -28,6 +28,7 @@
 - [[file:philosophy/index.org][Philosophy]]
   - [[file:philosophy/resources.org][Resources]]
 - [[file:programming/index.org][Programming]]
+  - [[file:programming/language-composition.org][Language Composition]]
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]
   - [[file:programming/resources.org][Resources]]

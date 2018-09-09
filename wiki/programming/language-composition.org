@@ -1,0 +1,26 @@
+#+TITLE: Language Composition
+#+SETUPFILE: ../../assets/export.setup
+
+#+BEGIN_QUOTE
+This page is a work in progress
+#+END_QUOTE
+
+By language /composition/ I mostly refer to composing code from different
+languages to solve a programming task. This definition is similar to what is
+used in [[http://tratt.net/laurie/blog/entries/fine_grained_language_composition.html][Fine Grained Language Composition]]. Following this definition, things
+like ffi and rpc are simple solutions for /coarse grained/ language composition.
+Not sure if the term /composition/ is widely used to refer to this act of
+connecting programming languages, but I quite like it.
+
+Preferring different languages/paradigms and solving problems using a mixture
+should have no barriers. Unfortunately, this is not really possible today
+without sacrificing performance. Not that this is easy to do also. Most of the
+languages are not /designed/ to be connected using simple pipes (not the technical
+term).
+
+Forgetting fine grained composition for a while, which by the way might let us
+create really unmaintainable programs, there are definitely /some/ usable
+techniques to connect languages. In this page, I will try to document ways that
+I have used for working across multiple languages. In the beginning, it might
+just list /working/ rpc packages, but should grow in something better after a
+while.
