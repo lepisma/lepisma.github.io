@@ -22,6 +22,28 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+There are some men who are sensible of shame for what regards their bodies, but
+who are ignorant of shame for what concerns their hearts; and a terrible mistake
+they make.
+
+#+HTML:<footer>﻿Tales of Old Japan (Lord Redesdale)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+'Verily I have been familiar with the flowers; yet are they withered and
+scattered, and we are parted. How sad!'
+
+#+HTML:<footer>﻿Tales of Old Japan (Lord Redesdale)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+indeed, if you wish to see the most beautiful spots of any Oriental city, ask
+for the cemeteries: the homes of the dead are ever the loveliest places.
+
+#+HTML:<footer>﻿Tales of Old Japan (Lord Redesdale)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Good as a noun rather than an adjective is all the Metaphysics of Quality is
 about
 

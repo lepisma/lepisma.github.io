@@ -5000,7 +5000,8 @@ CLOSED: [2018-01-09 Tue 15:46]
 :GOODREADS: https://www.goodreads.com/book/show/1622.A_Midsummer_Night_s_Dream
 :END:
 
-*** READING Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+*** READ Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+CLOSED: [2018-09-15 Sat 02:22]
 :PROPERTIES:
 :AUTHOR:   Algernon Bertram Freeman-Mitford
 :ADDED:    <2017-06-28>
