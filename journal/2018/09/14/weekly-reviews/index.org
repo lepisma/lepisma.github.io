@@ -1,0 +1,28 @@
+#+TITLE: Weekly Reviews
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, productivity
+
+It's surprisingly easy to get lost in things which are not /important/ enough.
+There are tricks to circumvent productivity while being apparently busy the
+whole day. My bag of them has grown large enough to experiment with new ways of
+reorganizing myself.
+
+During past few months, I have found /lookback/ reviews to be helpful for this
+reorganization. To take this a step further, I will be trying to put up /weekly/
+reviews in this journal involving a short stint of thinking and writing. A few
+points to cover follow:
+
+- Review and plan:
+  - Refile captures, emails and web bookmarks
+  - Skim through my personal /pending/ lists for tasks
+  - Plans for the next week
+
+- Write:
+  - Things studied
+  - Stuff written
+  - Programmed (recreational and regular)
+  - New problems/solutions
+  - Media consumed: podcasts, books, essays, music etc.
+
+All of these will be non-work related so should be a good personal gauge of
+where I am actually screwing up.
