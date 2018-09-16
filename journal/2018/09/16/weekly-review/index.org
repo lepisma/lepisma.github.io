@@ -1,0 +1,32 @@
+#+TITLE: Weekly Review /37-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: weekly-review
+
+First [[file:../../14/weekly-reviews/index.org][weekly review]]. Will be very incomplete and mostly biased towards the
+weekend since I started logging items in these last couple of days.
+
+* Problems/Solutions
+- Nothing. This is bad. There should be major items here.
+
+* Readings/Explorations
+- Skimmed [[https://common-lisp.net/project/asdf/asdf.html][asdf]] documentation. It's really extensible and I bet you can handle
+  mixed language projects in this too.
+- Went through a survey on active learning cite:aggarwal2014active.
+- Got into two threads of readings which I will be continuing
+  - Data programming (the machine learning type) and
+  - Entity resolution
+
+* Programming
+- Overall nothing major, [[https://github.com/lepisma/duck.el][wrote]] [[https://github.com/lepisma/pypi][little]] [[https://github.com/lepisma/obtt][bits]] of elisp.
+- Planned to improve [[https://github.com/lepisma/bbq][bbq]] so that it does entity resolution and breakpoint
+  detection based clustering of items but fell into the asdf rabbit hole.
+
+* Writing
+- Started the wiki page on [[pile:wiki:programming/language-composition][Language Composition]].
+
+* Media
+- Finally finished [[https://www.goodreads.com/book/show/194441.Tales_of_Old_Japan][Tales of Old Japan]].
+- Listened a bit about [[https://www.stuffyoushouldknow.com/podcasts/what-are-think-tanks-all-about.htm][think tanks]], I had no idea how properly (formally?) they
+  are used.
+
+bibliography:./index.bib

@@ -4009,6 +4009,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 
 * Fiction
 ** Science Fiction
+*** READING True Names...and Other Dangers
+:PROPERTIES:
+:AUTHOR:   Vernor Vinge
+:ADDED:    [2018-09-16]
+:AMAZON:   https://www.amazon.com/Names-Other-Dangers-Vernor-Vinge/dp/0671653636
+:END:
+
 *** Children of Dune (Dune #3)
 :PROPERTIES:
 :AUTHOR:   Frank Herbert
