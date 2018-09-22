@@ -12,6 +12,13 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READING Coevolution to the edge of chaos: coupled fitness landscapes, poised states, and coevolutionary avalanches
+:PROPERTIES:
+:CUSTOM_ID: kauffman1991coevolution
+:YEAR:     1991
+:AUTHOR:   Kauffman, Stuart A and Johnsen, Sonke
+:END:
+
 ** READ Computation at the edge of chaos: phase transitions and emergent computation
  :PROPERTIES:
   :Custom_ID: langton1990computation
@@ -57,13 +64,13 @@ for the range of mapping function.
   :YEAR: 1993
  :END:
 
-The edge of chaos idea turned out to be pretty popular among the masses. A short
-article criticizing that is [[http://bactra.org/notebooks/edge-of-chaos.html][here]]. This is one of the papers that tried to debunk
-(kind of) an experiment (cite:packard1988adaptation; this was in my reading list
-for a long time) which claimed that evolving (in the GA sense) a CA to solve
-computational problems gyrate it towards the edge of chaos.
+The edge of chaos idea is pretty popular and used to explain many phenomena. A
+short article criticizing that is [[http://bactra.org/notebooks/edge-of-chaos.html][here]]. This is one of the papers that tried to
+debunk (kind of) an experiment (cite:packard1988adaptation; this was in my
+reading list for a long time) which claimed that evolving (in the GA sense) a CA
+to solve computational problems gyrate it towards the edge of chaos.
 
-Its pretty direct to see the issue since a solution to a /specific problem/ (they
+Its pretty easy to see the issue since a solution to a /specific problem/ (they
 took majority classification) is going to have a /specific \lambda/ and that's going to
 be what that is, in spite of where the critical \lambda lies.
 
@@ -216,4 +223,4 @@ programmings:
 The examples are nice and make this is a good read for beginners. Though I
 suspect there might be better, recent, articles on these topics now.
 
-bibliography:./references.bib
+[[bibliography:./references.bib]]
