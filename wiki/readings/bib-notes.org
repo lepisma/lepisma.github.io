@@ -174,6 +174,35 @@ elegant) and follows very closely the following description:
 primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 #+END_SRC
 
+** READ Why functional programming matters
+ :PROPERTIES:
+  :Custom_ID: hughes1989functional
+  :AUTHOR: Hughes
+  :JOURNAL: The computer journal
+  :YEAR: 1989
+  :VOLUME: 32
+  :PAGES: 98--107
+ :END:
+
+This is a famous paper and I wanted to see what it focuses on. Its basically
+about the following two properties and their effect on modularity in functional
+programmings:
+
+1. Higher order functions
+2. Lazy evaluation
+
+The examples are nice and make this is a good read for beginners. Though I
+suspect there might be better, recent, articles on these topics now.
+
+* Misc
+
+** TOREAD Better science through art
+:PROPERTIES:
+:CUSTOM_ID: gabriel2010better
+:YEAR:     2010
+:AUTHOR:   Gabriel, Richard P and Sullivan, Kevin J
+:END:
+
 ** READ Lisp, Jazz, Aikido--Three Expressions of a Single Essence
  :PROPERTIES:
   :Custom_ID: verna2018lisp
@@ -203,24 +232,5 @@ can see this when the author talks about /Common Lisp/ specifically). Although I
 must say that I know next to nothing about both /Jazz/ and /Aikido/ so might not
 have really been able to connect all the pieces.
 
-** READ Why functional programming matters
- :PROPERTIES:
-  :Custom_ID: hughes1989functional
-  :AUTHOR: Hughes
-  :JOURNAL: The computer journal
-  :YEAR: 1989
-  :VOLUME: 32
-  :PAGES: 98--107
- :END:
-
-This is a famous paper and I wanted to see what it focuses on. Its basically
-about the following two properties and their effect on modularity in functional
-programmings:
-
-1. Higher order functions
-2. Lazy evaluation
-
-The examples are nice and make this is a good read for beginners. Though I
-suspect there might be better, recent, articles on these topics now.
 
 [[bibliography:./references.bib]]
