@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-17 Sun 13:30 -->
+<!-- 2018-09-22 Sat 20:23 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes</title>
@@ -295,7 +295,7 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-06-10 Sun 15:58</div>
+                                <div class='page-meta'>Last modified:  2018-09-22 Sat 20:20</div>
                                 <h1>Notes</h1>
                               </div>
 </div>
@@ -313,90 +313,15 @@ general are <a class="pile-link" href="/wiki/readings/books.html">here</a>). I a
 so will be working on this page fairly regularly.
 </p>
 
-<div id="outline-container-org51cd28d" class="outline-2">
-<h2 id="baez2010physics"><a id="org51cd28d"></a><span class="section-number-2">1</span> Physics, topology, logic and computation: a Rosetta Stone</h2>
-<div class="outline-text-2" id="text-baez2010physics">
-<pre class="example">
-AUTHOR: Baez \& Stay
-YEAR: 2010
-</pre>
+<div id="outline-container-org96dac22" class="outline-2">
+<h2 id="sec-evolution/complexity"><a id="org96dac22"></a><span class="section-number-2">1</span> Evolution/Complexity</h2>
+<div class="outline-text-2" id="text-sec-evolution/complexity">
 
-<p>
-Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci
-commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget,
-lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac
-felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui
-dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet
-quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor.
-Nam euismod tellus id erat.
-</p>
-</div>
 </div>
 
-<div id="outline-container-org8122124" class="outline-2">
-<h2 id="freund1997decision"><a id="org8122124"></a><span class="section-number-2">2</span> A decision-theoretic generalization of on-line learning and an application to boosting</h2>
-<div class="outline-text-2" id="text-freund1997decision">
-<pre class="example">
-AUTHOR: Freund \& Schapire
-JOURNAL: Journal of computer and system sciences
-YEAR: 1997
-VOLUME: 55
-PAGES: 119--139
-</pre>
-
-<p>
-Hello world Pellentesque dapibus suscipit ligula. Donec posuere augue in quam.
-Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean
-in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec,
-sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at
-dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue.
-Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod
-elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris, consequat
-quis, varius et, dictum id, arcu. Mauris mollis tincidunt felis. Aliquam feugiat
-tellus ut neque. Nulla facilisis, risus a rhoncus fermentum, tellus tellus
-lacinia purus, et dictum nunc justo sit amet elit
-</p>
-</div>
-</div>
-
-<div id="outline-container-orga6a4d8a" class="outline-2">
-<h2 id="o2009genuine"><a id="orga6a4d8a"></a><span class="section-number-2">3</span> The Genuine Sieve of Eratosthenes</h2>
-<div class="outline-text-2" id="text-o2009genuine">
-<pre class="example">
-AUTHOR: O'NEILL
-JOURNAL: Journal of Functional Programming
-YEAR: 2009
-VOLUME: 19
-PAGES: 95--106
-</pre>
-
-<p>
-This talks about a functional implementation of Sieve of Eratosthenes.
-Specifically it debunks the following incorrect implementation:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-haskell"><span class="org-haskell-definition">primes</span> <span class="org-haskell-operator">=</span> sieve <span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">2</span><span class="org-haskell-operator">..</span><span class="org-rainbow-delimiters-depth-1">]</span>
-<span class="org-haskell-definition">sieve</span> <span class="org-rainbow-delimiters-depth-1">(</span>p <span class="org-haskell-constructor">:</span> xs<span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-haskell-operator">=</span> p <span class="org-haskell-constructor">:</span> sieve <span class="org-rainbow-delimiters-depth-1">[</span>x <span class="org-haskell-operator">|</span> x <span class="org-haskell-operator">&lt;&#8722;</span> xs, x <span class="org-haskell-operator">`mod`</span> p <span class="org-haskell-operator">&gt;</span> <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-1">]</span>
-</pre>
-</div>
-
-<p>
-Then we see correct functional implementations with neat tricks made possible
-due to laziness of Haskell. Although slower, there is a list based
-implementation by Bird mentioned in the <i>Epilogue</i> which is pretty readable (and
-elegant) and follows very closely the following description:
-</p>
-
-<pre class="example">
-primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
-</pre>
-</div>
-</div>
-
-<div id="outline-container-orgd621c26" class="outline-2">
-<h2 id="langton1990computation"><a id="orgd621c26"></a><span class="section-number-2">4</span> Computation at the edge of chaos: phase transitions and emergent computation</h2>
-<div class="outline-text-2" id="text-langton1990computation">
+<div id="outline-container-orgd621c26" class="outline-3">
+<h3 id="langton1990computation"><a id="orgd621c26"></a><span class="section-number-3">1.1</span> <span class="done READ">READ</span> Computation at the edge of chaos: phase transitions and emergent computation</h3>
+<div class="outline-text-3" id="text-langton1990computation">
 <pre class="example">
 AUTHOR: Langton
 JOURNAL: Physica D: Nonlinear Phenomena
@@ -432,9 +357,22 @@ for the range of mapping function.
 </div>
 </div>
 
-<div id="outline-container-org4c9a85d" class="outline-2">
-<h2 id="mitchell1993revisiting"><a id="org4c9a85d"></a><span class="section-number-2">5</span> Revisiting the edge of chaos: Evolving cellular automata to perform computations</h2>
-<div class="outline-text-2" id="text-mitchell1993revisiting">
+<div id="outline-container-orge5c4e78" class="outline-3">
+<h3 id="bak1988self"><a id="orge5c4e78"></a><span class="section-number-3">1.2</span> <span class="todo TOREAD">TOREAD</span> Self-organized criticality</h3>
+<div class="outline-text-3" id="text-bak1988self">
+<pre class="example">
+AUTHOR: Bak, Tang \& Wiesenfeld
+JOURNAL: Physical review A
+YEAR: 1988
+VOLUME: 38
+PAGES: 364
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org4c9a85d" class="outline-3">
+<h3 id="mitchell1993revisiting"><a id="org4c9a85d"></a><span class="section-number-3">1.3</span> <span class="done READ">READ</span> Revisiting the edge of chaos: Evolving cellular automata to perform computations</h3>
+<div class="outline-text-3" id="text-mitchell1993revisiting">
 <pre class="example">
 AUTHOR: Mitchell, Hraber \& Crutchfield
 JOURNAL: arXiv preprint adap-org/9303003
@@ -467,51 +405,9 @@ answer by alternating between 0s and 1s.
 </div>
 </div>
 
-<div id="outline-container-orgb20c933" class="outline-2">
-<h2 id="verna2018lisp"><a id="orgb20c933"></a><span class="section-number-2">6</span> Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h2>
-<div class="outline-text-2" id="text-verna2018lisp">
-<pre class="example">
-AUTHOR: Verna
-JOURNAL: arXiv preprint arXiv:1804.00485
-YEAR: 2018
-</pre>
-
-<p>
-Okay, this was up on /r/lisp, felt not that much effort to read so I gave it a
-shot. There are three general aesthetic avenues that the author covers:
-</p>
-
-<ol class="org-ol">
-<li>Conformation</li>
-<li>Transgression</li>
-<li>Unification</li>
-</ol>
-
-<p>
-The general idea is about the similar interplay of these in all the 3 things
-(Lisp, Jazz &amp; Aikido) and how they end up being a source of pleasure and
-enlightenment.
-</p>
-
-<p>
-From whatever I have felt, <i>things</i> that focus on an act itself (rather than
-prioritizing the results) end up being like these (well, probably this is
-obvious).
-</p>
-
-<p>
-This paper is a quick read and is not overly philosophical. Maybe that's because
-one of the focus is on tools that stay out of your way by staying <i>practical</i> (you
-can see this when the author talks about <i>Common Lisp</i> specifically). Although I
-must say that I know next to nothing about both <i>Jazz</i> and <i>Aikido</i> so might not
-have really been able to connect all the pieces.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgdcef9c1" class="outline-2">
-<h2 id="hoffmann2018optimization"><a id="orgdcef9c1"></a><span class="section-number-2">7</span> Optimization by Self-Organized Criticality</h2>
-<div class="outline-text-2" id="text-hoffmann2018optimization">
+<div id="outline-container-orgdcef9c1" class="outline-3">
+<h3 id="hoffmann2018optimization"><a id="orgdcef9c1"></a><span class="section-number-3">1.4</span> <span class="done READ">READ</span> Optimization by Self-Organized Criticality</h3>
+<div class="outline-text-3" id="text-hoffmann2018optimization">
 <pre class="example">
 AUTHOR: Hoffmann \& Payton
 JOURNAL: Scientific reports
@@ -554,19 +450,138 @@ than the regular approach in the general case. If there indeed is such a
 generator, this could work as an off-the-shelf technique replacing uniform
 random search.
 </p>
+</div>
+</div>
+
+<div id="outline-container-org09d7674" class="outline-3">
+<h3 id="bertschinger2005edge"><a id="org09d7674"></a><span class="section-number-3">1.5</span> <span class="todo TOREAD">TOREAD</span> At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks</h3>
+<div class="outline-text-3" id="text-bertschinger2005edge">
+<pre class="example">
+AUTHOR: Bertschinger, Natschl\"ager \& Legenstein
+JOURNAL: 
+YEAR: 2005
+PAGES: 145--152
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2459848" class="outline-2">
+<h2 id="sec-ai/ml"><a id="org2459848"></a><span class="section-number-2">2</span> AI/ML</h2>
+<div class="outline-text-2" id="text-sec-ai/ml">
+
+</div>
+
+<div id="outline-container-org8122124" class="outline-3">
+<h3 id="freund1997decision"><a id="org8122124"></a><span class="section-number-3">2.1</span> <span class="todo READING">READING</span> A decision-theoretic generalization of on-line learning and an application to boosting</h3>
+<div class="outline-text-3" id="text-freund1997decision">
+<pre class="example">
+AUTHOR: Freund \& Schapire
+JOURNAL: Journal of computer and system sciences
+YEAR: 1997
+VOLUME: 55
+PAGES: 119--139
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1b5ba3c" class="outline-2">
+<h2 id="sec-computation/programming"><a id="org1b5ba3c"></a><span class="section-number-2">3</span> Computation/Programming</h2>
+<div class="outline-text-2" id="text-sec-computation/programming">
+
+</div>
+
+<div id="outline-container-org51cd28d" class="outline-3">
+<h3 id="baez2010physics"><a id="org51cd28d"></a><span class="section-number-3">3.1</span> <span class="todo TOREAD">TOREAD</span> Physics, topology, logic and computation: a Rosetta Stone</h3>
+<div class="outline-text-3" id="text-baez2010physics">
+<pre class="example">
+AUTHOR: Baez \& Stay
+YEAR: 2010
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orga6a4d8a" class="outline-3">
+<h3 id="o2009genuine"><a id="orga6a4d8a"></a><span class="section-number-3">3.2</span> <span class="done READ">READ</span> The Genuine Sieve of Eratosthenes</h3>
+<div class="outline-text-3" id="text-o2009genuine">
+<pre class="example">
+AUTHOR: O'NEILL
+JOURNAL: Journal of Functional Programming
+YEAR: 2009
+VOLUME: 19
+PAGES: 95--106
+</pre>
 
 <p>
-<h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="packard1988adaptation">[packard1988adaptation]</a> <a name="packard1988adaptation"></a>Packard. 1988. "Adaptation toward the edge of chaos." <i>Dynamic patterns in complex systems</i>, 212, 293-301. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="broido2018scale">[broido2018scale]</a> <a name="broido2018scale"></a>Broido & Clauset. 2018. "Scale-free networks are rare." <i>arXiv preprint arXiv:1801.03400</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-</ul>
+This talks about a functional implementation of Sieve of Eratosthenes.
+Specifically it debunks the following incorrect implementation:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-haskell"><span class="org-haskell-definition">primes</span> <span class="org-haskell-operator">=</span> sieve <span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">2</span><span class="org-haskell-operator">..</span><span class="org-rainbow-delimiters-depth-1">]</span>
+<span class="org-haskell-definition">sieve</span> <span class="org-rainbow-delimiters-depth-1">(</span>p <span class="org-haskell-constructor">:</span> xs<span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-haskell-operator">=</span> p <span class="org-haskell-constructor">:</span> sieve <span class="org-rainbow-delimiters-depth-1">[</span>x <span class="org-haskell-operator">|</span> x <span class="org-haskell-operator">&lt;&#8722;</span> xs, x <span class="org-haskell-operator">`mod`</span> p <span class="org-haskell-operator">&gt;</span> <span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-1">]</span>
+</pre>
+</div>
+
+<p>
+Then we see correct functional implementations with neat tricks made possible
+due to laziness of Haskell. Although slower, there is a list based
+implementation by Bird mentioned in the <i>Epilogue</i> which is pretty readable (and
+elegant) and follows very closely the following description:
+</p>
+
+<pre class="example">
+primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgb20c933" class="outline-3">
+<h3 id="verna2018lisp"><a id="orgb20c933"></a><span class="section-number-3">3.3</span> <span class="done READ">READ</span> Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h3>
+<div class="outline-text-3" id="text-verna2018lisp">
+<pre class="example">
+AUTHOR: Verna
+JOURNAL: arXiv preprint arXiv:1804.00485
+YEAR: 2018
+</pre>
+
+<p>
+Okay, this was up on /r/lisp, felt not that much effort to read so I gave it a
+shot. There are three general aesthetic avenues that the author covers:
+</p>
+
+<ol class="org-ol">
+<li>Conformation</li>
+<li>Transgression</li>
+<li>Unification</li>
+</ol>
+
+<p>
+The general idea is about the similar interplay of these in all the 3 things
+(Lisp, Jazz &amp; Aikido) and how they end up being a source of pleasure and
+enlightenment.
+</p>
+
+<p>
+From whatever I have felt, <i>things</i> that focus on an act itself (rather than
+prioritizing the results) end up being like these (well, probably this is
+obvious).
+</p>
+
+<p>
+This paper is a quick read and is not overly philosophical. Maybe that's because
+one of the focus is on tools that stay out of your way by staying <i>practical</i> (you
+can see this when the author talks about <i>Common Lisp</i> specifically). Although I
+must say that I know next to nothing about both <i>Jazz</i> and <i>Aikido</i> so might not
+have really been able to connect all the pieces.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org52b0376" class="outline-2">
-<h2 id="hughes1989functional"><a id="org52b0376"></a><span class="section-number-2">8</span> Why functional programming matters</h2>
-<div class="outline-text-2" id="text-hughes1989functional">
+<div id="outline-container-org52b0376" class="outline-3">
+<h3 id="hughes1989functional"><a id="org52b0376"></a><span class="section-number-3">3.4</span> <span class="done READ">READ</span> Why functional programming matters</h3>
+<div class="outline-text-3" id="text-hughes1989functional">
 <pre class="example">
 AUTHOR: Hughes
 JOURNAL: The computer journal
@@ -590,6 +605,14 @@ programmings:
 The examples are nice and make this is a good read for beginners. Though I
 suspect there might be better, recent, articles on these topics now.
 </p>
+
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="packard1988adaptation">[packard1988adaptation]</a> <a name="packard1988adaptation"></a>Packard. 1988. "Adaptation toward the edge of chaos." <i>Dynamic patterns in complex systems</i>, 212, 293-301. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="broido2018scale">[broido2018scale]</a> <a name="broido2018scale"></a>Broido & Clauset. 2018. "Scale-free networks are rare." <i>arXiv preprint arXiv:1801.03400</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+</ul>
+</p>
+</div>
 </div>
 </div>
 </div>
