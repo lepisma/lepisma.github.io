@@ -12,12 +12,21 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
-** READING Coevolution to the edge of chaos: coupled fitness landscapes, poised states, and coevolutionary avalanches
+** READ Coevolution to the edge of chaos: coupled fitness landscapes, poised states, and coevolutionary avalanches
+CLOSED: [2018-09-24 Mon 01:20]
 :PROPERTIES:
 :CUSTOM_ID: kauffman1991coevolution
 :YEAR:     1991
 :AUTHOR:   Kauffman, Stuart A and Johnsen, Sonke
 :END:
+
+This one uses the /NK model/ to experiment with coevolution. The main idea is that
+you can couple one NK landscape to another using a factor similar to K, called
+C, which defines how much the other affects this guy. Sounds like a reasonable
+model to represent the essence of coevolving species. An important hint that we
+get is that if a metadynamics is present to /select/ the value of K, then that
+moves it to an attractor state where changes in the system cause avalanches
+resembling the sandpile model from cite:bak1988self.
 
 ** READ Computation at the edge of chaos: phase transitions and emergent computation
  :PROPERTIES:
