@@ -1,0 +1,31 @@
+#+TITLE: Weekly Review /38-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: weekly-review
+
+I will be doing reviews on Mondays now to save the weekend work time. This week
+was pretty dilute. I wasn't getting large chunks of time so wasn't able to do
+any heavy lifting.
+
+* Problems/Solutions
+- Touched a little upon techniques to beat the leader in a online learning-ish
+  resource allocation problem. Will be doing a short journal post in near
+  future.
+
+* Readings/Explorations
+- Kauffman's paper (cite:kauffman1991coevolution) on Coevolution to the edge of
+  chaos.
+
+* Programming
+- Started working on a transpiler for Lisp to Python, [[https://github.com/lepisma/pigeon][pigeon]].
+
+* Writing
+- Nothing major, organized the paper reading process and set up a better
+  structure for my [[pile:wiki:readings/bib-notes][notes page]].
+
+* Media
+- Read [[https://www.goodreads.com/book/show/1280983.True_Names][True Names]].
+- Radiolab's [[http://www.wnycstudios.org/story/infective-heredity/][Infective Heredity]]. This reminds me, they are really good with
+  sound effects.
+- [[https://youarenotsosmart.com/2018/09/11/yanss-134-the-elaboration-likelihood-model/][Elaboration Likelihood Model]] on You Are Not So Smart.
+
+[[bibliography:./index.bib]]
