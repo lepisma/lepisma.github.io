@@ -17,6 +17,8 @@ any heavy lifting.
 
 * Programming
 - Started working on a transpiler for Lisp to Python, [[https://github.com/lepisma/pigeon][pigeon]].
+- Played around a little with [[https://github.com/cffi/cffi][cffi]] in Lisp. Its so much nicer than you might
+  think.
 
 * Writing
 - Nothing major, organized the paper reading process and set up a better
