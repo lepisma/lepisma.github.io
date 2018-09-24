@@ -15,8 +15,8 @@ technology since then (1981).
 
 Although explicit analogy based models have practical problems, they provide a
 good general framework for making sense of novel perceptions. In fact, most of
-the changes in the way we think about learning has been about a few ideas from
-these frameworks (like analogy) going from /explicit/ to /implicit/ in our models.
+the changes in the way we think about learning has involved a few ideas from
+these frameworks (like analogy) becoming /implicit/ from /explicit/ in our models.
 
 Coincidentally, I am going through [[https://www.goodreads.com/book/show/326790][Society of Mind]] by Minsky from the same era
 (80s) which also focuses a lot on memory and analogies.
