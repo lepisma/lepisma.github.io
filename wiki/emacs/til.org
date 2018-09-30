@@ -9,7 +9,7 @@ This page /used to/ live in a separate repository [[https://github.com/lepisma/t
 
 + *charts*
 
-  Emacs comes with a decently complete charting library. See [[http://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][this article]] for an
+  Emacs comes with a small and decent charting library. See [[http://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][this article]] for an
   introduction.
 
 + *edebug*
