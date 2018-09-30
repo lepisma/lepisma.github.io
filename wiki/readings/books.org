@@ -544,10 +544,17 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
+*** The Little Typer
+:PROPERTIES:
+:AUTHOR:   Daniel P. Friedman, David Thrane Christiansen
+:ADDED:    [2018-09-30]
+:AMAZON:   https://www.amazon.com/dp/0262536439/
+:END:
+
 *** READ The Little MLer
 CLOSED: [2018-09-30 Sun 15:33]
 :PROPERTIES:
-:AUTHOR:   Matthias Felleisen
+:AUTHOR:   Matthias Felleisen, Daniel P. Friedman
 :ADDED:    [2018-09-30]
 :AMAZON:   https://www.amazon.com/Little-MLer-Matthias-Felleisen/dp/026256114X
 :END:
