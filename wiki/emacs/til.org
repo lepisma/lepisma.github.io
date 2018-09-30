@@ -7,6 +7,11 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *charts*
+
+  Emacs comes with a decently complete charting library. See [[http://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][this article]] for an
+  introduction.
+
 + *edebug*
 
   I am trying to use debuggers more than /prints/. In the process found ~edebug~ for
