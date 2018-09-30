@@ -8,14 +8,16 @@ going to be /the machine/, my phone only has to be a tiny terminal so I don't wa
 to understand how to write stuff for android.
 
 Recently, I [[file:../../../08/02/really-using-org-mode.org][started using]] orgzly with syncthing and have found new uses for the
-phone. Another such utility bump has come with [[https://community.kde.org/KDEConnect][KDE Connect]]. Two features I like
-and use the most are:
+phone. Another such utility bump has come with [[https://community.kde.org/KDEConnect][KDE Connect]]. Its features are
+listed in the website. Two features I like and use the most are:
 
 1. Custom commands to run on laptop.
 2. Sharing links from mobile to laptop.
 
-Also with access to mobile notifications, I can finally automate a lot of things
-like (I still need to hijack the notification daemon in my machine):
+The more important point is that I can now partially offload
+scripting--the--mobile part to the laptop. With access to things like mobile
+notifications, I can finally automate a lot of things like (I still need to
+hijack the notification daemon in my machine):
 
 - Scheduling up calls when missed (this happens a lot).
 - Capturing messages to respond to from apps that don't allow programmatic
