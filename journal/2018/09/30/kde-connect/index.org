@@ -1,0 +1,31 @@
+#+TITLE: KDE Connect is Awesome!
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+I have mostly avoided playing around with my android phone /programmatically/
+since I don't know of good ways to quickly script stuff. Also since my laptop is
+going to be /the machine/, my phone only has to be a tiny terminal so I don't want
+to understand how to write stuff for android.
+
+Recently, I [[file:../../../08/02/really-using-org-mode.org][started using]] orgzly with syncthing and have found new uses for the
+phone. Another such utility bump has come with [[https://community.kde.org/KDEConnect][KDE Connect]]. Two features I like
+and use the most are:
+
+1. Custom commands to run on laptop.
+2. Sharing links from mobile to laptop.
+
+Also with access to mobile notifications, I can finally automate a lot of things
+like (I still need to hijack the notification daemon in my machine):
+
+- Scheduling up calls when missed (this happens a lot).
+- Capturing messages to respond to from apps that don't allow programmatic
+  read/write access (like signal).
+- Logging transactions in something like [[https://github.com/ledger/ledger][ledger]] from financy SMSes.
+
+Things like sending SMS from command line are also nifty though I don't know if
+people (not programs) write SMSes these days.
+
+To be honest, none of these are new. A lot of these (and more) were already
+there when I used a combination of Windows and vendor specific mobile-pc
+softwares. The good thing with KDE connect is that its /freer/ and more hackable
+than a lot of bloatware alternatives.
