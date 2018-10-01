@@ -1,0 +1,26 @@
+#+TITLE: Weekly Review /39-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: weekly-review
+
+One of the things I have learned from these past weeks is that /only/ weekends are
+not going to work out. Things that are fresh in memory should stay there
+consistently for a while.
+
+* Problems/Solutions
+- Nothing. I /should/ be pushing things in weekday gaps now too.
+
+* Readings/Explorations
+- Read the [[https://www.amazon.com/Little-MLer-Matthias-Felleisen/dp/026256114X][The Little MLer]].
+- Made some progress in [[https://www.goodreads.com/book/show/326790.The_Society_of_Mind][The Society of Mind]].
+- Read up a few things on semantic parsing.
+- Starting on [[https://www.amazon.com/Syntactic-Structures-Noam-Chomsky/dp/1614278040][Syntactic Structures]].
+
+* Programming
+- Did a few things in [[https://github.com/lepisma/pigeon][pigeon]] and am adding features incrementally on a need
+  basis so that I can port a few of the python scripts that I use.
+
+* Writing
+- Nothing major.
+
+* Media
+- [[https://www.stuffyoushouldknow.com/podcasts/how-ranked-choice-voting-works.htm][Ranked Choice Voting]]
