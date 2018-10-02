@@ -137,6 +137,20 @@ random search.
 
 * AI/ML
 
+** READ Bringing machine learning and compositional semantics together
+CLOSED: [2018-10-02 Tue 13:26]
+:PROPERTIES:
+:CUSTOM_ID: liang2015bringing
+:YEAR:     2015
+:AUTHOR:   Liang, Percy and Potts, Christopher
+:END:
+
+Got pointed to this while going through [[https://github.com/wcmac/sippycup][sippycup]]. This presents, in a very
+pedagogical way, a simple framework for ranking semantic parses using supervised
+learning. The important point is that this /framework/ can be applied to a lot of
+problems in nlu involving different ways of structuring the logical forms and
+features.
+
 ** READING A decision-theoretic generalization of on-line learning and an application to boosting
  :PROPERTIES:
   :Custom_ID: freund1997decision
