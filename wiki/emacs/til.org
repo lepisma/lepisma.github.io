@@ -7,6 +7,11 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *progress bar*
+
+  There is a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Progress.html][progress reporter]] for showing long running. A unicode version is
+  [[https://github.com/rolandwalker/unicode-progress-reporter][here]].
+
 + *charts*
 
   Emacs comes with a small and decent charting library. See [[http://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][this article]] for an
