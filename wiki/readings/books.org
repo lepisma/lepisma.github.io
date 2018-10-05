@@ -544,6 +544,13 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
+*** Code: The Hidden Language of Computer Hardware and Software
+:PROPERTIES:
+:AUTHOR:   Charles Petzold
+:ADDED:    [2018-10-06]
+:AMAZON:   https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319#reader_0735611319
+:END:
+
 *** The Little Typer
 :PROPERTIES:
 :AUTHOR:   Daniel P. Friedman, David Thrane Christiansen
