@@ -51,3 +51,4 @@ Some nifty command line tools
 - [[https://github.com/wireservice/csvkit][csvkit]] for csv-fu. Haven't used it but tools like ~csvcut~ are really nice.
 - Command line tools from ~poppler-utils~ can replace almost everything you need
   to do with pdfs.
+- [[https://github.com/clibs/entr][entr]] helps in rerunning commands based on file changes.
