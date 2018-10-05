@@ -143,6 +143,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** The Tangled Tree: A Radical New History of Life
+:PROPERTIES:
+:AUTHOR:   David Quammen
+:ADDED:    [2018-10-06]
+:AMAZON:   https://www.amazon.com/Tangled-Tree-Radical-History-Life/dp/1476776628
+:END:
+
 *** Evolutionary Game Theory (The MIT Press)
 :PROPERTIES:
 :AUTHOR:   Jorgen W. Weibull

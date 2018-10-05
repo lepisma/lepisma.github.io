@@ -137,6 +137,22 @@ random search.
 
 * AI/ML
 
+** TOREAD Swoosh: a generic approach to entity resolution
+SCHEDULED: <2018-10-06 Sat>
+:PROPERTIES:
+:CUSTOM_ID: benjelloun2009swoosh
+:YEAR:     2009
+:AUTHOR:   Benjelloun, Omar and Garcia-Molina, Hector and Menestrina, David and Su, Qi and Whang, Steven Euijong and Widom, Jennifer
+:END:
+
+** TOREAD How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation
+SCHEDULED: <2018-10-06 Sat 15:00>
+:PROPERTIES:
+:CUSTOM_ID: liu2016not
+:YEAR:     2016
+:AUTHOR:   Liu, Chia-Wei and Lowe, Ryan and Serban, Iulian V and Noseworthy, Michael and Charlin, Laurent and Pineau, Joelle
+:END:
+
 ** READ Bringing machine learning and compositional semantics together
 CLOSED: [2018-10-02 Tue 13:26]
 :PROPERTIES:
@@ -220,6 +236,7 @@ suspect there might be better, recent, articles on these topics now.
 * Misc
 
 ** TOREAD Better science through art
+SCHEDULED: <2018-10-06 Sat>
 :PROPERTIES:
 :CUSTOM_ID: gabriel2010better
 :YEAR:     2010
