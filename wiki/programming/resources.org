@@ -10,6 +10,7 @@ as I put more things in here.
 - [[https://github.com/takagi/lake][lake]] is a neat make alternative.
 - I keep a list of utility packages that I ~:use~ in repl [[https://github.com/lepisma/cfg/blob/master/dune/package.lisp][here]]. Probably you could
   use something like [[https://github.com/cl21/cl21][cl21]] but then you would want to write packages in cl21 too.
+- For pattern matching, try [[https://github.com/guicho271828/trivia][trivia]].
 
 * Emacs Lisp
 - Use [[https://github.com/magnars/s.el][s]], [[https://github.com/magnars/dash.el][dash]], [[https://github.com/rejeep/f.el][f]] and [[https://github.com/Wilfred/ht.el][ht]] while programming in elisp for maximum pleasure.
