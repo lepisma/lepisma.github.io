@@ -9,8 +9,7 @@ This page /used to/ live in a separate repository [[https://github.com/lepisma/t
 
 + *progress bar*
 
-  There is a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Progress.html][progress reporter]] for showing long running. A unicode version is
-  [[https://github.com/rolandwalker/unicode-progress-reporter][here]].
+  There is a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Progress.html][progress reporter]]. A unicode version is [[https://github.com/rolandwalker/unicode-progress-reporter][here]].
 
 + *charts*
 
