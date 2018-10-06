@@ -8,8 +8,9 @@ as I put more things in here.
 * Common Lisp
 - Use [[https://github.com/roswell/roswell][roswell]] for building command line tools.
 - [[https://github.com/takagi/lake][lake]] is a neat make alternative.
-- I keep a list of utility packages that I ~:use~ in repl [[https://github.com/lepisma/cfg/blob/master/dune/package.lisp][here]]. Probably you could
-  use something like [[https://github.com/cl21/cl21][cl21]] but then you would want to write packages in cl21 too.
+- I keep a list of utility packages that I ~:use~ in repl (and shell-ish scripts)
+  [[https://github.com/lepisma/cfg/blob/master/pod/package.lisp][here]]. Probably you could use something like [[https://github.com/cl21/cl21][cl21]] but then you would want to
+  write packages in cl21 too.
 - For pattern matching, try [[https://github.com/guicho271828/trivia][trivia]].
 
 * Emacs Lisp
