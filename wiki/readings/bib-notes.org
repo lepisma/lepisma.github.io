@@ -79,7 +79,7 @@ debunk (kind of) an experiment (cite:packard1988adaptation; this was in my
 reading list for a long time) which claimed that evolving (in the GA sense) a CA
 to solve computational problems gyrate it towards the edge of chaos.
 
-Its pretty easy to see the issue since a solution to a /specific problem/ (they
+It's pretty easy to see the issue since a solution to a /specific problem/ (they
 took majority classification) is going to have a /specific \lambda/ and that's going to
 be what that is, in spite of where the critical \lambda lies.
 
@@ -235,7 +235,7 @@ primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
   :PAGES: 98--107
  :END:
 
-This is a famous paper and I wanted to see what it focuses on. Its basically
+This is a famous paper and I wanted to see what it focuses on. It's basically
 about the following two properties and their effect on modularity in functional
 programmings:
 

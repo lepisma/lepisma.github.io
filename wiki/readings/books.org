@@ -348,7 +348,7 @@ CLOSED: [2017-07-28 Fri 17:35]
 :GOODREADS: https://www.goodreads.com/book/show/68143
 :END:
 
-This is a great book. Its of perfect length for the matter and the way it
+This is a great book. It's of perfect length for the matter and the way it
 presents them.
 
 At places, it felt like doing a little bit of exaggeration by criticizing the
@@ -965,7 +965,7 @@ CLOSED: [2016-08-30]
 :END:
 
 There is a different complexion in a dying person's writing. You don't have to
-like it or hate it. Its honest, brutal and beautiful.
+like it or hate it. It's honest, brutal and beautiful.
 
 *** READ Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened
 CLOSED: [2016-08-13]
@@ -2599,9 +2599,9 @@ CLOSED: [2017-01-14]
 :END:
 
 For many it might just be a confirming nod to what they know about Big data in
-general, but is a good read nevertheless. Overall, it ties "data
-science" with its responsibilities. Responsibilities which demands greater care
-and openness than assumed in the present unconstrained Big data buzz.
+general, but is a good read nevertheless. Overall, it ties 'data science' with
+its responsibilities. Responsibilities which demands greater care and openness
+than assumed in the present unconstrained Big data buzz.
 
 *** Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts
 :PROPERTIES:
@@ -2650,7 +2650,7 @@ There are two comments I would like to make here:
    directly.
 2. Putting aside a few things, this is a deep book. I was thinking to just take
    a glance and ended up reading the whole thing in a sitting. Don't expect to
-   learn much though. This is /not a book/ on logic. Its exactly what its title
+   learn much though. This is /not a book/ on logic. It's exactly what its title
    (or subtitle) says /An epic search for truth/.
 
 *** Cults: Faith, Healing and Coercion
@@ -4231,7 +4231,7 @@ CLOSED: [2018-02-02 Fri 02:17]
 
 Mid way, I realized that I have actually seen the movie (Blade Runner) but this
 book still kept on giving and giving. I specially enjoyed the way the mind of
-Isidore was picked. Its really hard to reconcile with reality after your faith,
+Isidore was picked. It's really hard to reconcile with reality after your faith,
 your everything, is taken away.
 
 As a side note, I am interested to know more about the author's (Philip K. Dick;
@@ -5431,9 +5431,9 @@ CLOSED: [2018-03-16 Fri 14:54]
 :GOODREADS: https://www.goodreads.com/book/show/5470
 :END:
 
-Its beautiful how clearly this book makes you see the importance of written
-texts with all the imaginative diversity. Its this /diversity/ which threatens any
-power trying to control minds.
+It's beautiful how clearly this book makes you see the importance of written
+texts with all the imaginative diversity. It's this /diversity/ which threatens
+any power trying to control minds.
 
 The pieces around torture deeply reminded me of 'A Clockwork Orange' and I find
 it (elaboration of torture) really impactful in conveying the depth of ideas.
