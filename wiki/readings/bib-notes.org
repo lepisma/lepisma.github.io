@@ -137,13 +137,25 @@ random search.
 
 * AI/ML
 
-** TOREAD Swoosh: a generic approach to entity resolution
-SCHEDULED: <2018-10-06 Sat>
+** READ Swoosh: a generic approach to entity resolution
+CLOSED: [2018-10-07 Sun 20:23] SCHEDULED: <2018-10-06 Sat>
 :PROPERTIES:
 :CUSTOM_ID: benjelloun2009swoosh
 :YEAR:     2009
 :AUTHOR:   Benjelloun, Omar and Garcia-Molina, Hector and Menestrina, David and Su, Qi and Whang, Steven Euijong and Widom, Jennifer
 :END:
+
+The main products are optimal algorithms to do ER which minimize the number of
+calls to the black box functions that actually perform the matching and merging.
+To do this, we first formalize the ER problem using:
+
+1. /Records/ and /features/ as the data structures
+2. /Merging/ and /matching/ functions as the operations
+
+Then we look for certain properties of a particular setting (mostly the effect
+of merge and match functions). Based on whether a few of these are satisfied
+(surprisingly trivial functions might not do what you expect of them), we can
+reduce the number of calls to matching.
 
 ** TOREAD How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation
 SCHEDULED: <2018-10-06 Sat 15:00>
