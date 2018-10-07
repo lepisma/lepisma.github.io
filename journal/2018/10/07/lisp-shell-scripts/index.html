@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-07 Sun 15:04 -->
+<!-- 2018-10-07 Sun 15:54 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Lisp Shell Scripts</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -273,179 +273,77 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>Journal</h1>
+                                <div class='page-meta'>2018-10-07 Sun 00:00</div>
+                                <h1>Lisp Shell Scripts</h1>
                               </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../../..#lisp'>lisp</a> <a href='../../../..#programming'>programming</a></div>
+<p>
+<span class='dropcap'>E</span>ven after using a relatively friendly shell <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>, I find writing
+shell scripts a major pain point in automating things. Yesterday, I wanted to
+make my <i>default</i> browser (whatever that means) open either firefox or chromium
+based on a regex pattern. What do I need to do this?
+</p>
+
+<ol class="org-ol">
+<li>A store for regex patterns mapping to browser executables (in a yaml/json
+maybe), and</li>
+<li>a way to match and call corresponding executable.</li>
+</ol>
+
+<aside>
+<p>
+There are regex based program dispatchers like <a href="https://xyne.archlinux.ca/projects/mimeo/">mimeo</a>, but I don't want to feel
+bad again when a new use case pops up.
+</p>
+</aside>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+My first thought was to understand if it is possible to do that in <code>xdg-utils</code>
+somehow. Then I started to look for a command line yaml parser. Gave up pretty
+quickly on that. Not because there are no tools/tricks, but because most of the
+them are not very consistently interoperable. One reason might be that these all
+have relatively low bandwidth connection (just piped text) in a shell like
+environment and that makes the actual programming unnecessarily slow and
+attention demanding.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+Anyway, a good way to write shell scripts is to just not write <i>shell</i> script but
+use a regular language. Python is really nice since it's dynamic and has lot of
+libraries but takes warm up time which is intolerable for tiny scripts. I
+finally am more or less moving towards Common Lisp for this, which is pretty
+snappy when using the dumped image. There is this issue with large images
+(sbcl's starts at around 60 MBs), but I am using a similar approach to <a href="https://github.com/fare/fare-scripts">fare</a> and
+will be sharing the same image for all the commands.
 </p>
 
-<div class='page-tags'><a href='#books'>books</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a> <a href='#weekly-review'>weekly-review</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-07</div>
-<p class="archive-title">
-<a href="./2018/10/07/lisp-shell-scripts/index.html" class="archive-title">Lisp Shell Scripts</a>
+<p>
+The system is <a href="https://github.com/lepisma/cfg/tree/master/pod">here</a>. There is one roswell binary called <code>pod</code> which dispatches
+functions like <code>pod &lt;sub-command&gt; [&lt;args&gt;]</code>. While setting up, these subcommands
+are written out as shell scripts. I tried using <a href="https://github.com/takagi/lake">lake</a> for a few <i>setting-up</i> things
+and found it to be very neat. In fact any make-ish system which can <i>use</i> your
+program's code is going to be nice.
 </p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-10-02</div>
-<p class="archive-title">
-<a href="./2018/10/02/weekly-review/index.html" class="archive-title">Weekly Review <i>39-2018</i></a>
+<p>
+Other than having a language with nice interactive capabilities at my disposal,
+another specific benefit with Common Lisp comes with the fact that my window
+manager can import the system and can share a lot of these
+tools/scripts/functions.
 </p>
-<div class='page-tags'><a href='#weekly-review'>weekly-review</a></div>
-</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2018-09-30</div>
-<p class="archive-title">
-<a href="./2018/09/30/kde-connect/index.html" class="archive-title">KDE Connect is Awesome!</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">fish shell</div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-09-25</div>
-<p class="archive-title">
-<a href="./2018/09/25/weekly-review/index.html" class="archive-title">Weekly Review <i>38-2018</i></a>
-</p>
-<div class='page-tags'><a href='#weekly-review'>weekly-review</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-09-24</div>
-<p class="archive-title">
-<a href="./2018/09/24/analogies/index.html" class="archive-title">Analogies</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-16</div>
-<p class="archive-title">
-<a href="./2018/09/16/weekly-review/index.html" class="archive-title">Weekly Review <i>37-2018</i></a>
-</p>
-<div class='page-tags'><a href='#weekly-review'>weekly-review</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-14</div>
-<p class="archive-title">
-<a href="./2018/09/14/weekly-reviews/index.html" class="archive-title">Weekly Reviews</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a> <a href='#weekly-review'>weekly-review</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/jupyter/index.html" class="archive-title">What are Jupyter notebooks for?</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-11</div>
-<p class="archive-title">
-<a href="./2018/08/11/rational-theists.html" class="archive-title">Rational Theists</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-02</div>
-<p class="archive-title">
-<a href="./2018/08/02/really-using-org-mode.html" class="archive-title">Really using Org Mode</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-01</div>
-<p class="archive-title">
-<a href="./2018/08/01/defer.html" class="archive-title">Defer Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics\342\200\221of\342\200\221Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
