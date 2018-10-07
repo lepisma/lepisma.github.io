@@ -141,8 +141,8 @@ This page /used to/ live in a separate repository [[https://github.com/lepisma/t
 
 + *rectangle insert*
 
-  Iedit has a ~iedit-rectangle-mode~ which lets edit vertical chunks. Handy for
-  enforcing indentation over a section.
+  Iedit has a ~iedit-rectangle-mode~ which lets you edit vertical chunks. Handy
+  for enforcing indentation over a section.
 
 + *undo-tree*
 

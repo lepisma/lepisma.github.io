@@ -92,14 +92,14 @@ async></script>
 
 Nothing interesting here apart from the classical conclusion of Music being so
 lovesick. I also ran this year wise, but leaving the occasional shuffling of few
-words, nothing really interesting came out. Lets move on.
+words, nothing really interesting came out. Let's move on.
 
 * Acoustics
 Why not go with the acoustic attributes of the music themselves ?
 
 By /acoustic attributes/ of music I mean properties that define the music and its
-components as perceived by your subjective senses. One example can be (lets say)
-a value that signifies the sadness of songs.
+components as perceived by your subjective senses. One example can be (let's
+say) a value that signifies the sadness of songs.
 
 --------------
 
@@ -108,7 +108,7 @@ acoustic attributes they maintain for their (really) huge music database. Also,
 the attributes have real subjective meanings too. You can see this from the
 attribute names like /acousticness/, /instrumentalness/ etc.
 
-/In what ways can they help?/ Actually, in a lot of ways. But lets start with the
+/In what ways can they help?/ Actually, in a lot of ways. But let's start with the
 most obvious thing first. I gathered echonest attributes for all the Hot 100
 songs, from 1958 to 2015 and went on to plot the year wise mean of 9 acoustic
 attributes.

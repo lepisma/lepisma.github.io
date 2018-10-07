@@ -151,8 +151,8 @@ iterations starting with arbitrary amplitudes at time $t = 0$:
 
 Here $\sigma_l^2$ is the variance in amplitudes of unmarked items at time 0.
 $\bar{l}(0)$ denotes the average amplitude of /unmarked/ items at time 0 and
-$\bar{k}(0)$ denotes the average amplitude of /marked/ items at time 0. Lets
-also define $C(t)$ as:
+$\bar{k}(0)$ denotes the average amplitude of /marked/ items at time 0. Let's also
+define $C(t)$ as:
 
 \begin{align*}
   C(t) = \frac{2}{N} [(N - M)\bar{l}(t) - M\bar{k}(t)]

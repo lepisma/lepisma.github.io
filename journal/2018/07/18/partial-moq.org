@@ -40,7 +40,7 @@ book, we do something similar by saying that /Value/ is the same as /Quality/. T
 paves the way for an idea put later which tries to unify all kinds of /drives/
 under one umbrella.
 
-Assuming these terms to not have the exact English definitions, lets first
+Assuming these terms to not have the exact English definitions, let's first
 abstract quality out in a symbol /Q/. Now keeping Q as the fundamental entity lets
 you talk about a certain unification of /subject/ and /object/. There are some
 examples concerning this in the books, but not all feel convincing. For me, the

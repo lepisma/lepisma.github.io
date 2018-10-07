@@ -21,7 +21,7 @@ runtime highly dependent on the number of samples, this combined with some sort
 of upper confidence bound should provide some theoretical guarantees on the
 problem.
 
-Before digging in that though, lets check in on some already available
+Before digging in that though, let's check in on some already available
 techniques.
 
 * TODO Read

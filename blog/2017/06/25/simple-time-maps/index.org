@@ -64,9 +64,9 @@ dimensions here just add to the visual clutter.
 
 --------------
 
-Lets tweak the lastfm data a little bit. Now, the scrobbles are filtered to show
-only the first listen of each song. To give this some meaning, a lot of these
-/filtered/ scrobbles in a short time span would mean that I explored more as
+Let's tweak the lastfm data a little bit. Now, the scrobbles are filtered to
+show only the first listen of each song. To give this some meaning, a lot of
+these /filtered/ scrobbles in a short time span would mean that I explored more as
 compared to repeating the same old songs.
 
 #+HTML: <figure> <div id='diffs-lfm-dd'></div> <figcaption>

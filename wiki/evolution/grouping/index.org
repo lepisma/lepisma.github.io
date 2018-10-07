@@ -234,7 +234,7 @@ individuals at each evolution step.
 
 ** $\delta \ne 0$
 
-Lets assume $\delta > 0$. In this case, starting with a population of size $n$
+Let's assume $\delta > 0$. In this case, starting with a population of size $n$
 concentrated at a position $p$ with survival probability $s$, a time step will
 spread the population at three locations using the following steps:
 

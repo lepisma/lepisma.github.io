@@ -177,9 +177,9 @@ with Genetic Algorithm. TSP solutions have chunks of continuous paths which can
 be locally optimal. Debugging makes sense here because the operations are
 intuitive. Also consider [[https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies][NEAT]], which /evolves/ neural network structures. Same
 idea. Manipulation of symbols and /actual/ implications of crossovers (of chunk of
-structural trees lets say) etc. Similar is the case with many examples which use
-Genetic Programming. There are cases where a genetic approach actually provides
-easier implementation and better results than other methods.
+structural trees let's say) etc. Similar is the case with many examples which
+use Genetic Programming. There are cases where a genetic approach actually
+provides easier implementation and better results than other methods.
 
 I found this piece of criticism by [[https://en.wikipedia.org/wiki/Steven_Skiena][Steven Skiena]] on Wikipedia page of GA
 

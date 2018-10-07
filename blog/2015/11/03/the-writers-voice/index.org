@@ -70,7 +70,7 @@ After training an embedding model (with 100 dimensions) and computing vectors
 for each word in a book, we are left with a matrix of size $N_w \times 100$, where
 $N_w$ is the number of words. One simple reduction strategy for $N_w$ is to
 simply take sentence vectors by averaging out the words (though, we could have
-used [[https://radimrehurek.com/gensim/models/doc2vec.html][Doc2Vec]] here, but lets go with this). For 100 columns, we can hinge to few
+used [[https://radimrehurek.com/gensim/models/doc2vec.html][Doc2Vec]] here, but let's go with this). For 100 columns, we can hinge to few
 fixed word vectors like /romance/, /mystery/ and calculate cosine distances of the
 rows from these anchor points. But, since the word space coverage might be
 severely affected, a better way is to create anchor points in the number space
@@ -90,8 +90,8 @@ less capture the essence of the flow.
 * Comparing signals
 Once we have set of comparable signals for each book, next step is to do actual
 comparison. A simple way would be to extract some sort of features from these
-time series or directly apply techniques to learn from the series. But, lets try
-something more crude and direct.
+time series or directly apply techniques to learn from the series. But, let's
+try something more crude and direct.
 
 #+BEGIN_QUOTE
 In time series analysis, dynamic time warping (DTW) is an algorithm for

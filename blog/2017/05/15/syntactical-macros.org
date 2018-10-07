@@ -142,7 +142,7 @@ readable? Surely, we could do
 #+END_SRC
 
 This approach does more than nesting ~if~ s because the first test (~args["task"]~)
-is happening many times, but lets not worry about that since its not really a
+is happening many times, but let's not worry about that since its not really a
 heavy computation. There is a repeating pattern here of ~args["<>"]~. Repeated
 patterns are good for machines, but not for us. Its not that this tiny piece is
 hurting the readability, its just that I didn't think about this thing in my

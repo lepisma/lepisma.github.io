@@ -75,12 +75,11 @@ Here is a quick preview for generating some results in Python
   ,#+END_SRC
 #+END_SRC
 
-You have your usual org code block with few specifications (like =NAME=
-for variable name to be used for the block result). Essentially this
-snip is counting Google search hits for "[name] meme" for different
-=names=. It uses /requests/ to get the search results. Now for parsing
-the HTML element which says something like "About 100 results found",
-lets pass the results to JS
+You have your usual org code block with few specifications (like =NAME= for
+variable name to be used for the block result). Essentially this snip is
+counting Google search hits for "[name] meme" for different =names=. It uses
+/requests/ to get the search results. Now for parsing the HTML element which says
+something like "About 100 results found", let's pass the results to JS
 
 #+BEGIN_SRC org
   ,#+NAME: counts

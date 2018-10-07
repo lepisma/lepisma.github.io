@@ -2,12 +2,12 @@
 #+SETUPFILE: ../assets/export.setup
 
 #+BEGIN_page-intro
-This is an introductory paragraph. Kind of like an abstract. Lets fill this a
-little. Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
-Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean
-in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec,
-sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at
-dui in ligula mollis ultricies.  Integer placerat tristique nisl.
+This is an introductory paragraph. Kind of like an abstract. Let's fill this a
+little. Pellentesque dapibus suscipit ligula. Donec posuere augue in quam. Etiam
+vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean in sem
+ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec, sagittis eu,
+wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at dui in ligula
+mollis ultricies. Integer placerat tristique nisl.
 #+END_page-intro
 
 This is a test file with most of the features of org mode that I use. Its
@@ -63,7 +63,7 @@ quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet
   1. Nesting
   2. Another
 
-Lets try numbers with more digits
+Let's try numbers with more digits
 1. Single
 2. Single
 3. Single
@@ -184,7 +184,7 @@ quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam
 feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus
 tellus lacinia purus, et dictum nunc justo sit amet elit.
 
-** Lets add some images
+** Let's add some images
 
 #+CAPTION: Test image
 [[file:./assets/favicons/mstile-310x150.png]]
@@ -209,7 +209,7 @@ vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci
 ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est
 convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapie
 
-* Lets draw some tables
+* Let's draw some tables
 
 #+CAPTION: This is the caption for the next table
 |-------+-------+-------+-------|

@@ -108,7 +108,7 @@ This inverse can also be computed using regularized inverse for better
 generalization.
 
 * Performance
-Lets test out the thing.
+Let's test out the thing.
 
 #+BEGIN_QUOTE
 I happen to believe that we don't need slow languages
@@ -201,7 +201,7 @@ Keeping 20% of data for testing
 #+END_SRC
 
 ** Training
-Lets create the models for training.
+Let's create the models for training.
 
 #+BEGIN_SRC julia
   ann = ANN.ArtificialNeuralNetwork(10);
