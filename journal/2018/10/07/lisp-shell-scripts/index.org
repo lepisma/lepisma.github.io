@@ -1,0 +1,46 @@
+#+TITLE: Lisp Shell Scripts
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: lisp, programming
+
+Even after using a relatively friendly shell [fn::fish shell], I find writing
+shell scripts a major pain point in automating things. Yesterday, I wanted to
+make my /default/ browser (whatever that means) open either firefox or chromium
+based on a regex pattern. What do I need to do this?
+
+1. A store for regex patterns mapping to browser executables (in a yaml/json
+   maybe), and
+2. a way to match and call corresponding executable.
+
+#+BEGIN_aside
+There are regex based program dispatchers like [[https://xyne.archlinux.ca/projects/mimeo/][mimeo]], but I don't want to feel
+bad again when a new use case pops up.
+#+END_aside
+
+My first thought was to understand if it is possible to do that in ~xdg-utils~
+somehow. Then I started to look for a command line yaml parser. Gave up pretty
+quickly on that. Not because there are no tools/tricks, but because most of the
+them are not very consistently interoperable. One reason might be that these all
+have relatively low bandwidth connection (just piped text) in a shell like
+environment and that makes the actual programming unnecessarily slow and
+attention demanding.
+
+-----
+
+Anyway, a good way to write shell scripts is to just not write /shell/ script but
+use a regular language. Python is really nice since it's dynamic and has lot of
+libraries but takes warm up time which is intolerable for tiny scripts. I
+finally am more or less moving towards Common Lisp for this, which is pretty
+snappy when using the dumped image. There is this issue with large images
+(sbcl's starts at around 60 MBs), but I am using a similar approach to [[https://github.com/fare/fare-scripts][fare]] and
+will be sharing the same image for all the commands.
+
+The system is [[https://github.com/lepisma/cfg/tree/master/pod][here]]. There is one roswell binary called ~pod~ which dispatches
+functions like ~pod <sub-command> [<args>]~. While setting up, these subcommands
+are written out as shell scripts. I tried using [[https://github.com/takagi/lake][lake]] for a few /setting-up/ things
+and found it to be very neat. In fact any make-ish system which can /use/ your
+program's code is going to be nice.
+
+Other than having a language with nice interactive capabilities at my disposal,
+another specific benefit with Common Lisp comes with the fact that my window
+manager can import the system and can share a lot of these
+tools/scripts/functions.
