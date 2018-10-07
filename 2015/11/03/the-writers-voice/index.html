@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-08 Fri 10:03 -->
+<!-- 2018-10-07 Sun 21:06 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Writers' Voice</title>
@@ -343,8 +343,8 @@ signals based on word vectors gathered from classic literary works.
 </p>
 
 <div id="outline-container-org39e87a8" class="outline-2">
-<h2 id="text-to-signal"><a id="org39e87a8"></a><span class="section-number-2">1</span> Text to Signal</h2>
-<div class="outline-text-2" id="text-text-to-signal">
+<h2 id="sec-text-to-signal"><a id="org39e87a8"></a><span class="section-number-2">1</span> Text to Signal</h2>
+<div class="outline-text-2" id="text-sec-text-to-signal">
 
 <p>
 There are many ways to see text as a time series. I will use a pretty basic and
@@ -353,8 +353,8 @@ intuitive technique with word embeddings.
 </div>
 
 <div id="outline-container-org1799312" class="outline-3">
-<h3 id="text-to-signal/word-embeddings"><a id="org1799312"></a><span class="section-number-3">1.1</span> Word Embeddings</h3>
-<div class="outline-text-3" id="text-text-to-signal/word-embeddings">
+<h3 id="sec-text-to-signal/word-embeddings"><a id="org1799312"></a><span class="section-number-3">1.1</span> Word Embeddings</h3>
+<div class="outline-text-3" id="text-sec-text-to-signal/word-embeddings">
 
 <p>
 Word embeddings provide projections of <i>words</i> from any language to some \(N\)
@@ -390,15 +390,15 @@ connections (hover on dots).
 </div>
 
 <div id="outline-container-org359406c" class="outline-3">
-<h3 id="text-to-signal/cramming-text"><a id="org359406c"></a><span class="section-number-3">1.2</span> Cramming text</h3>
-<div class="outline-text-3" id="text-text-to-signal/cramming-text">
+<h3 id="sec-text-to-signal/cramming-text"><a id="org359406c"></a><span class="section-number-3">1.2</span> Cramming text</h3>
+<div class="outline-text-3" id="text-sec-text-to-signal/cramming-text">
 
 <p>
 After training an embedding model (with 100 dimensions) and computing vectors
 for each word in a book, we are left with a matrix of size \(N_w \times 100\), where
 \(N_w\) is the number of words. One simple reduction strategy for \(N_w\) is to
 simply take sentence vectors by averaging out the words (though, we could have
-used <a href="https://radimrehurek.com/gensim/models/doc2vec.html">Doc2Vec</a> here, but lets go with this). For 100 columns, we can hinge to few
+used <a href="https://radimrehurek.com/gensim/models/doc2vec.html">Doc2Vec</a> here, but let's go with this). For 100 columns, we can hinge to few
 fixed word vectors like <i>romance</i>, <i>mystery</i> and calculate cosine distances of the
 rows from these anchor points. But, since the word space coverage might be
 severely affected, a better way is to create anchor points in the number space
@@ -427,14 +427,14 @@ less capture the essence of the flow.
 </div>
 
 <div id="outline-container-org889669f" class="outline-2">
-<h2 id="comparing-signals"><a id="org889669f"></a><span class="section-number-2">2</span> Comparing signals</h2>
-<div class="outline-text-2" id="text-comparing-signals">
+<h2 id="sec-comparing-signals"><a id="org889669f"></a><span class="section-number-2">2</span> Comparing signals</h2>
+<div class="outline-text-2" id="text-sec-comparing-signals">
 
 <p>
 Once we have set of comparable signals for each book, next step is to do actual
 comparison. A simple way would be to extract some sort of features from these
-time series or directly apply techniques to learn from the series. But, lets try
-something more crude and direct.
+time series or directly apply techniques to learn from the series. But, let's
+try something more crude and direct.
 </p>
 
 <blockquote>
@@ -455,8 +455,8 @@ code</a> on Wikipedia should get you started.
 </div>
 
 <div id="outline-container-org38869b6" class="outline-3">
-<h3 id="comparing-signals/distances-to-coordinates"><a id="org38869b6"></a><span class="section-number-3">2.1</span> Distances to coordinates</h3>
-<div class="outline-text-3" id="text-comparing-signals/distances-to-coordinates">
+<h3 id="sec-comparing-signals/distances-to-coordinates"><a id="org38869b6"></a><span class="section-number-3">2.1</span> Distances to coordinates</h3>
+<div class="outline-text-3" id="text-sec-comparing-signals/distances-to-coordinates">
 
 <p>
 Once we get the distances, we get 2D cartesian coordinates using <a href="https://en.wikipedia.org/wiki/Multidimensional_scaling">Multi

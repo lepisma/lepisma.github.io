@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-08 Fri 10:03 -->
+<!-- 2018-10-07 Sun 21:07 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Extreme Learning Machines with Julia</title>
@@ -331,8 +331,8 @@ lift to deep learning.
 </p>
 
 <div id="outline-container-orgf5c7146" class="outline-2">
-<h2 id="reservoirs"><a id="orgf5c7146"></a><span class="section-number-2">1</span> Reservoirs</h2>
-<div class="outline-text-2" id="text-reservoirs">
+<h2 id="sec-reservoirs"><a id="orgf5c7146"></a><span class="section-number-2">1</span> Reservoirs</h2>
+<div class="outline-text-2" id="text-sec-reservoirs">
 
 <p>
 But, this post is not about Deep Learning. Its about a different concept. A
@@ -362,8 +362,8 @@ very similar in concept is the topic of this post, <i>Extreme Learning Machine</
 </div>
 
 <div id="outline-container-orgb87e588" class="outline-2">
-<h2 id="extreme-learning"><a id="orgb87e588"></a><span class="section-number-2">2</span> Extreme Learning</h2>
-<div class="outline-text-2" id="text-extreme-learning">
+<h2 id="sec-extreme-learning"><a id="orgb87e588"></a><span class="section-number-2">2</span> Extreme Learning</h2>
+<div class="outline-text-2" id="text-sec-extreme-learning">
 
 <p>
 Extreme learning machine (ELM) is a modification of single layer feedforward
@@ -477,11 +477,11 @@ generalization.
 </div>
 
 <div id="outline-container-orgb3c86c1" class="outline-2">
-<h2 id="performance"><a id="orgb3c86c1"></a><span class="section-number-2">3</span> Performance</h2>
-<div class="outline-text-2" id="text-performance">
+<h2 id="sec-performance"><a id="orgb3c86c1"></a><span class="section-number-2">3</span> Performance</h2>
+<div class="outline-text-2" id="text-sec-performance">
 
 <p>
-Lets test out the thing.
+Let's test out the thing.
 </p>
 
 <blockquote>
@@ -546,8 +546,8 @@ Since, both libraries have few functions with same names, so its better to use
 </div>
 
 <div id="outline-container-org4a4d0b7" class="outline-3">
-<h3 id="performance/reading-data"><a id="org4a4d0b7"></a><span class="section-number-3">3.1</span> Reading data</h3>
-<div class="outline-text-3" id="text-performance/reading-data">
+<h3 id="sec-performance/reading-data"><a id="org4a4d0b7"></a><span class="section-number-3">3.1</span> Reading data</h3>
+<div class="outline-text-3" id="text-sec-performance/reading-data">
 
 
 <div class="org-src-container">
@@ -580,8 +580,8 @@ authentication.
 </div>
 
 <div id="outline-container-orgc561987" class="outline-3">
-<h3 id="performance/scaling-columns"><a id="orgc561987"></a><span class="section-number-3">3.2</span> Scaling columns</h3>
-<div class="outline-text-3" id="text-performance/scaling-columns">
+<h3 id="sec-performance/scaling-columns"><a id="orgc561987"></a><span class="section-number-3">3.2</span> Scaling columns</h3>
+<div class="outline-text-3" id="text-sec-performance/scaling-columns">
 
 
 <p>
@@ -613,11 +613,11 @@ dat_train, dat_test = dat<span class="org-rainbow-delimiters-depth-1">[</span>tr
 </div>
 
 <div id="outline-container-orge69886d" class="outline-3">
-<h3 id="performance/training"><a id="orge69886d"></a><span class="section-number-3">3.3</span> Training</h3>
-<div class="outline-text-3" id="text-performance/training">
+<h3 id="sec-performance/training"><a id="orge69886d"></a><span class="section-number-3">3.3</span> Training</h3>
+<div class="outline-text-3" id="text-sec-performance/training">
 
 <p>
-Lets create the models for training.
+Let's create the models for training.
 </p>
 
 <div class="org-src-container">
@@ -684,8 +684,8 @@ speed of julia.
 </div>
 
 <div id="outline-container-org38a2c15" class="outline-3">
-<h3 id="performance/ann"><a id="org38a2c15"></a><span class="section-number-3">3.4</span> ANN</h3>
-<div class="outline-text-3" id="text-performance/ann">
+<h3 id="sec-performance/ann"><a id="org38a2c15"></a><span class="section-number-3">3.4</span> ANN</h3>
+<div class="outline-text-3" id="text-sec-performance/ann">
 
 
 <div class="org-src-container">
@@ -703,8 +703,8 @@ elapsed time: 0.238218045 seconds
 </div>
 
 <div id="outline-container-org541a432" class="outline-3">
-<h3 id="performance/elm"><a id="org541a432"></a><span class="section-number-3">3.5</span> ELM</h3>
-<div class="outline-text-3" id="text-performance/elm">
+<h3 id="sec-performance/elm"><a id="org541a432"></a><span class="section-number-3">3.5</span> ELM</h3>
+<div class="outline-text-3" id="text-sec-performance/elm">
 
 
 <div class="org-src-container">
@@ -722,8 +722,8 @@ elapsed time: 0.003801902 seconds
 </div>
 
 <div id="outline-container-orge5e02d7" class="outline-2">
-<h2 id="wut?"><a id="orge5e02d7"></a><span class="section-number-2">4</span> WUT?</h2>
-<div class="outline-text-2" id="text-wut?">
+<h2 id="sec-wut?"><a id="orge5e02d7"></a><span class="section-number-2">4</span> WUT?</h2>
+<div class="outline-text-2" id="text-sec-wut?">
 
 <p>
 Assuming both models give same accuracy, the training of <i>ELM</i> is around <i>60x</i>
