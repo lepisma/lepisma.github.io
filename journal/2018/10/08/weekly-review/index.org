@@ -1,0 +1,42 @@
+#+TITLE: Weekly Review /40-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: weekly-review
+
+After around 4 reviews, I believe I have a better sense of where my time is
+going. I feel I am now reading more /effectively/ and am also prioritizing the
+programming tasks better. The problem is in the parts where I need to /think/
+about and /design/ solutions to problems, outside the work time. Will be working
+on that this week.
+ 
+* Problems/Solutions
+- Nothing.
+
+* Readings/Explorations
+- Made some more progress in [[https://www.goodreads.com/book/show/326790.The_Society_of_Mind][Society of Mind]]. Something about its writing style
+  is slowing me down.
+- Bringing ML and compositional semantics together (cite:liang2015bringing)
+- [[https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html][Design Principles Behind Smalltalk]] by Ingalls.
+- Swoosh: A generic approach to entity resolution (cite:benjelloun2009swoosh)
+
+* Programming
+I am trying to automate parts of this section so it shows some measure of
+/intensity/ and /amount/ of work I did last week including the work time.
+
+- Spent (wasted) some time getting Haskell FFI to work. Pretty easy to call in
+  C, but gets a little hairy with Python when depending on other libraries.
+- Came across [[https://www.reddit.com/r/Common_Lisp/comments/9bh8u6/introducing_seed_an_interactive_software][seed]], guess it's pretty close to the idea of Smalltalk's
+  interactive programming /environment/. I should try some system like this since
+  it looks really good for recreational programming.
+- Cleaned up my [[https://github.com/lepisma/cfg][cfg]] files a little, will sweep [[https://github.com/lepisma/rogue][rogue]] some time too.
+- Explored Haskell a little.
+
+* Writing
+- Nothing specific. Though I have noticed, writing reviews has made it easier to
+  put together tiny journal posts every now and then.
+
+* Media
+- [[https://www.stuffyoushouldknow.com/podcasts/how-the-concorde-worked.htm][How the Concorde Worked | Stuff You Should Know]]
+- [[https://www.wnycstudios.org/story/breaking-bad-news-bears][Breaking Bad News Bears | Radiolab | WNYC Studios]]
+- [[https://aeon.co/essays/consolation-philosophy-and-the-struggle-of-reason-in-africa?][A]] [[https://aeon.co/ideas/i-holobiont-are-you-and-your-microbes-a-community-or-a-single-entity][few]] [[https://aeon.co/videos/why-did-our-sea-dwelling-ancestors-leap-to-land-it-might-have-been-the-view][pieces]] [[https://aeon.co/videos/is-reboot-culture-out-of-control-or-are-we-kidding-ourselves-that-anything-is-original][from]] [[https://aeon.co/essays/does-philosophy-still-need-mathematics-and-vice-versa][aeon]].
+
+[[bibliography:./references.bib]]
