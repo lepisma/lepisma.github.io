@@ -247,13 +247,20 @@ suspect there might be better, recent, articles on these topics now.
 
 * Misc
 
-** TOREAD Better science through art
-SCHEDULED: <2018-10-06 Sat>
+** READ Better science through art
+CLOSED: [2018-10-12 Fri 23:16] SCHEDULED: <2018-10-06 Sat>
 :PROPERTIES:
 :CUSTOM_ID: gabriel2010better
 :YEAR:     2010
 :AUTHOR:   Gabriel, Richard P and Sullivan, Kevin J
 :END:
+
+Here are the last few lines which cover what's common between Science and Art
+and also summarize the document:
+
+- Explore: wander / defamiliarize
+- Discover: guess / abduce
+- Understand: validate / ask—did you build the right thing?
 
 ** READ Lisp, Jazz, Aikido--Three Expressions of a Single Essence
  :PROPERTIES:
