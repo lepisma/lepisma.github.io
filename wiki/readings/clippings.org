@@ -21,6 +21,15 @@ below shuffles items.
 @@html:<div><a class="btn" id="shuffle-btn">shuffle</a></div>@@
 
 #+HTML:<div class="epigraph">
+
+#+BEGIN_QUOTE
+But he did not understand the price. Mortals never do. They only see the prize,
+their heart's desire, their dream... But the price of getting what you want, is
+getting what you once wanted.
+
+#+HTML:<footer>Dream Country (Neil Gaiman)</footer>
+#+END_QUOTE
+
 #+BEGIN_QUOTE
 A successful warlock cannot afford to be successful in the real world. He had
 been greedy; he loved both realms too much.
