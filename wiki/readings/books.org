@@ -4858,7 +4858,8 @@ CLOSED: [2018-10-13 Sat 13:41]
 :GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
 :END:
 
-*** READING Season of Mists (Sandman, #4)
+*** READ Season of Mists (Sandman, #4)
+CLOSED: [2018-10-13 Sat 21:51]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
 :ADDED:    <2017-07-11>
