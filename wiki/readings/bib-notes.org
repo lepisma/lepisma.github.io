@@ -157,13 +157,16 @@ of merge and match functions). Based on whether a few of these are satisfied
 (surprisingly trivial functions might not do what you expect of them), we can
 reduce the number of calls to matching.
 
-** TOREAD How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation
-SCHEDULED: <2018-10-06 Sat 15:00>
+** READ How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation
+CLOSED: [2018-10-13 Sat 17:45] SCHEDULED: <2018-10-06 Sat 15:00>
 :PROPERTIES:
 :CUSTOM_ID: liu2016not
 :YEAR:     2016
 :AUTHOR:   Liu, Chia-Wei and Lowe, Ryan and Serban, Iulian V and Noseworthy, Michael and Charlin, Laurent and Pineau, Joelle
 :END:
+
+Other than the usuals, it is a decent summary for a few metrics used for
+sentence similarity.
 
 ** READ Bringing machine learning and compositional semantics together
 CLOSED: [2018-10-02 Tue 13:26]
