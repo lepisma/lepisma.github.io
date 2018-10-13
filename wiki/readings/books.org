@@ -4850,14 +4850,15 @@ CLOSED: [2016-02-09]
 :END:
 
 ** Graphic Novels
-*** READING Dream Country (Sandman, #3)
+*** READ Dream Country (Sandman, #3)
+CLOSED: [2018-10-13 Sat 13:41]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Kelley Jones, (Illustrator), Charles Vess, (Illustrator), Colleen Doran, (Illustrator), Malcolm Jones III, (Illustrator), Steve Erickson, (Introduction)
 :ADDED:    <2017-07-11>
 :GOODREADS: https://www.goodreads.com/book/show/25100.Dream_Country
 :END:
 
-*** Season of Mists (Sandman, #4)
+*** READING Season of Mists (Sandman, #4)
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Matt Wagner, (Illustrator), George Pratt, (Illustrator), Dick Giordano, (Illustrator), Kelley Jones, (Illustrator), P. Craig Russell, (Illustrator), Mike Dringenberg, (Illustrator), Malcolm Jones III, (Illustrator), Todd Klein, (Letterer), Harlan Ellison, (Introduction)
 :ADDED:    <2017-07-11>
