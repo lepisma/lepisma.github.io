@@ -21,9 +21,8 @@ the later half so wasn't able to do anything else.
   bytes to python objects.
 - Finally read up on functional package management and tried [[https://www.gnu.org/software/guix/manual/en/html_node/index.html#Top][guix]]. Needs a
   little momentum but looks really promising. I am specially interested in
-  things like ~guix environment~ and dependencies which go cross platform
-  painlessly (though these are not the direct output, they are nice side
-  effects).
+  things like ~guix environment~ and dependencies which go cross distro painlessly
+  (though these are not the direct output, they are nice side effects).
 
 * Programming
 - Added a few new features/syntaxes in [[https://github.com/lepisma/pigeon][pigeon]]. Will abuse reader macros for some
