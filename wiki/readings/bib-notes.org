@@ -194,7 +194,7 @@ CLOSED: [2018-10-13 Sat 17:45] SCHEDULED: <2018-10-06 Sat 15:00>
 :AUTHOR:   Liu, Chia-Wei and Lowe, Ryan and Serban, Iulian V and Noseworthy, Michael and Charlin, Laurent and Pineau, Joelle
 :END:
 
-Other than the usuals, it is a decent summary for a few metrics used for
+Other than the usuals, it has decent summaries of a few metrics used for
 sentence similarity.
 
 ** READ Bringing machine learning and compositional semantics together
