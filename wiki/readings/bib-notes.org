@@ -137,6 +137,35 @@ random search.
 
 * AI/ML
 
+** TOREAD Data programming: Creating large training sets, quickly
+DEADLINE: <2018-10-18 Thu>
+:PROPERTIES:
+:CUSTOM_ID: ratner2016data
+:YEAR:     2016
+:AUTHOR:   Ratner, Alexander J and De Sa, Christopher M and Wu, Sen and Selsam, Daniel and R{\'e}, Christopher
+:END:
+
+** TOREAD Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars
+DEADLINE: <2018-10-16 Tue>
+:PROPERTIES:
+:CUSTOM_ID: zettlemoyer2012learning
+:YEAR:     2012
+:AUTHOR:   Zettlemoyer, Luke S and Collins, Michael
+:END:
+
+** READ A very short introduction to CCG
+CLOSED: [2018-10-16 Tue 02:21]
+:PROPERTIES:
+:CUSTOM_ID: steedman1996very
+:YEAR:     1996
+:AUTHOR:   Steedman, Mark
+:END:
+
+A lambda calculus formulation of /verb/ (function) acts in natural text. Not sure
+if I can figure out exact advantages as compared to other approaches. This
+definitely has more appeal to it because of the functional forms and the tooling
+they pull in with themselves.
+
 ** READ Swoosh: a generic approach to entity resolution
 CLOSED: [2018-10-07 Sun 20:23] SCHEDULED: <2018-10-06 Sat>
 :PROPERTIES:
@@ -193,6 +222,14 @@ features.
  :END:
 
 * Computation/Programming
+
+** TOREAD Type systems as macros
+DEADLINE: <2018-10-17 Wed>
+:PROPERTIES:
+:CUSTOM_ID: chang2017type
+:YEAR:     2017
+:AUTHOR:   Chang, Stephen and Knauth, Alex and Greenman, Ben
+:END:
 
 ** TOREAD Physics, topology, logic and computation: a Rosetta Stone
  :PROPERTIES:
