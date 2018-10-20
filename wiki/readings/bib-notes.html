@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-16 Tue 03:51 -->
+<!-- 2018-10-20 Sat 21:17 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes</title>
@@ -295,7 +295,7 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-10-16 Tue 03:51</div>
+                                <div class='page-meta'>Last modified:  2018-10-20 Sat 21:17</div>
                                 <h1>Notes</h1>
                               </div>
 </div>
@@ -505,13 +505,35 @@ AUTHOR: Ratner, Alexander J and De Sa, Christopher M and Wu, Sen and Selsam, Dan
 </div>
 
 <div id="outline-container-org8af2e84" class="outline-3">
-<h3 id="zettlemoyer2012learning"><a id="org8af2e84"></a><span class="section-number-3">2.2</span> <span class="todo TOREAD">TOREAD</span> Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars</h3>
+<h3 id="zettlemoyer2012learning"><a id="org8af2e84"></a><span class="section-number-3">2.2</span> <span class="done READ">READ</span> Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars</h3>
 <div class="outline-text-3" id="text-zettlemoyer2012learning">
-<p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-10-16 Tue&gt;</span></span></p>
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-20 Sat 20:58] </span> <span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-10-16 Tue&gt;</span></span></p>
 <pre class="example">
 YEAR: 2012
 AUTHOR: Zettlemoyer, Luke S and Collins, Michael
 </pre>
+
+<p>
+<i>Assuming the title clarifies the goal</i>, there are three basic components here:
+</p>
+
+<ol class="org-ol">
+<li>A <span class="underline">parser</span> which takes a sentence \(S\), a set of categories \(\Lambda\) and weights over
+features of the derivation (generated from parsing) \(\theta\). This then generates
+logical forms (\(L\)) with certain probabilities.</li>
+<li>Category <span class="underline">generator</span> which takes \(S\) and its expected logical form \(L\) to
+generate the categories needed to parse it to that form.</li>
+<li>An <span class="underline">estimator</span> which, given the training set and a set of categories, updates
+\(\theta\) to increase the score of the form getting parsed.</li>
+</ol>
+
+<p>
+The interesting pieces are the representation of the logical form \(L\) (using &lambda;
+calculus) and category generation and pruning. Although the generated categories
+can be arbitrary, allowing for wrong grammars and such, I believe, it can be
+made to work better in noisy settings if we generalize <i>parsing</i> and (maybe) the
+meaning of the structurally rigid categories like \(S/NP\) using a few tricks.
+</p>
 </div>
 </div>
 
