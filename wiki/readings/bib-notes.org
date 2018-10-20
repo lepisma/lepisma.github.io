@@ -145,13 +145,29 @@ DEADLINE: <2018-10-18 Thu>
 :AUTHOR:   Ratner, Alexander J and De Sa, Christopher M and Wu, Sen and Selsam, Daniel and R{\'e}, Christopher
 :END:
 
-** TOREAD Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars
-DEADLINE: <2018-10-16 Tue>
+** READ Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars
+CLOSED: [2018-10-20 Sat 20:58] DEADLINE: <2018-10-16 Tue>
 :PROPERTIES:
 :CUSTOM_ID: zettlemoyer2012learning
 :YEAR:     2012
 :AUTHOR:   Zettlemoyer, Luke S and Collins, Michael
 :END:
+
+/Assuming the title clarifies the goal/, there are three basic components here:
+
+1. A _parser_ which takes a sentence $S$, a set of categories $\Lambda$ and weights over
+   features of the derivation (generated from parsing) $\theta$. This then generates
+   logical forms ($L$) with certain probabilities.
+2. Category _generator_ which takes $S$ and its expected logical form $L$ to
+   generate the categories needed to parse it to that form.
+3. An _estimator_ which, given the training set and a set of categories, updates
+   $\theta$ to increase the score of the form getting parsed.
+
+The interesting pieces are the representation of the logical form $L$ (using \lambda
+calculus) and category generation and pruning. Although the generated categories
+can be arbitrary, allowing for wrong grammars and such, I believe, it can be
+made to work better in noisy settings if we generalize /parsing/ and (maybe) the
+meaning of the structurally rigid categories like $S/NP$ using a few tricks.
 
 ** READ A very short introduction to CCG
 CLOSED: [2018-10-16 Tue 02:21]
