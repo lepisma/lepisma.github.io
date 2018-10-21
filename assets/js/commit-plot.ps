@@ -15,6 +15,10 @@
 (defvar *div-selector* "#commit-plot"
   "Selector for the div where we want to plot")
 
+(defvar *commit-events-file* "../../../../../assets/commit-events.csv"
+  "The csv with all the commit info. This is currently set relative to the weekly
+review files.")
+
 (defvar *margin* (ps:create :top 50 :bottom 10 :left 10 :right 10)
   "Margins around the svg")
 
@@ -133,7 +137,7 @@
           (x-scale (ps:chain d3 (scale-linear) (range (list 0 draw-width)))))
 
      (ps:chain
-      (d3.csv "../assets/commit-events.csv")
+      (d3.csv *commit-events-file*)
       (then
        (lambda (data)
 
