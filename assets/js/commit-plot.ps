@@ -1,0 +1,186 @@
+;; -*- mode: lisp -*-
+;; Expects two things from the page
+;; 1. There should be an element #commit-plot
+;; 2. There should be a global variable eventPlotFor defined with week and year set
+;;
+;; Since I am compiling from pod, I need to namespace a few symbols like `chain'
+
+(defmacro apply-props (selection prop-type props-alist)
+  `(ps:chain ,selection
+             ,@(mapcar (lambda (it) (list prop-type (car it) (cdr it))) props-alist)))
+
+(defvar *text-font* "Open Sans"
+  "Main font for text everywhere.")
+
+(defvar *div-selector* "#commit-plot"
+  "Selector for the div where we want to plot")
+
+(defvar *margin* (ps:create :top 50 :bottom 10 :left 10 :right 10)
+  "Margins around the svg")
+
+(defun format-week-id (week-dict)
+  (with-slots (year week) week-dict
+    (+ year "-" (ps:chain (*string week) (pad-start 2 "0")))))
+
+(defun get-week-id (offset)
+  "Get week id using the global variable event-plot-for"
+  (with-slots (year week) event-plot-for
+    (format-week-id (ps:create :week (+ offset week)
+                               :year year))))
+
+(defun get-diffs (items)
+  "Return one sided diffs of the items."
+  (if (< (length items) 2)
+      (list)
+      (ps:chain (loop for i from 0 to (- (length items) 2)
+                      collect (- (elt items (+ i 1)) (elt items i)))
+                (sort (lambda (a b) (> a b))))))
+
+(defun process-events-data (data offset)
+  "Process events data to get diffs in seconds."
+  (let ((week-id (get-week-id offset)))
+    (get-diffs (ps:chain (data.filter (lambda (d) (eq (ps:@ d week) week-id)))
+                         (map (lambda (d) (parse-int (ps:@ d timestamp))))))))
+
+(defun get-bbox (selection)
+  "Get bounding box from a d3 selection."
+  (ps:chain selection (node) (get-bounding-client-rect)))
+
+(defun make-histogram-data (diffs)
+  "Group diffs into bins and create plottable histogram-ish data."
+  (let ((normed (diffs.map (lambda (d) (floor (log d))))))
+    (ps:var output (ps:chain (*array 14) (fill 0)))
+    (ps:chain normed (for-each (lambda (d) (setf (elt output d) (+ (elt output d) 1)))))
+    (output.map (lambda (d idx) (ps:create :x idx :y d)))))
+
+(defun add-gradient (svg)
+  "Add intensity gradient definition to the svg."
+  (let ((grad (ps:chain svg (append "defs") (append "linearGradient"))))
+
+    (apply-props grad attr (("id" . "main-gradient")
+                            ("x1" . "0%")
+                            ("x2" . "100%")
+                            ("y1" . "0%")
+                            ("y2" . "0%")))
+
+    (apply-props (ps:chain grad (append "stop")) attr
+                 (("offset". "0%")
+                  ("style" . "stop-color:#00151c")))
+
+    (apply-props (ps:chain grad (append "stop")) attr
+                 (("offset". "100%")
+                  ("style" . "stop-color:#fff")))))
+
+(defun add-total-count (grp width y-scale data)
+  "Add total commit counts as two"
+  (let ((total (data.reduce (lambda (acc d) (+ acc d.y)) 0)))
+    (ps:var count-line (ps:chain grp (append "text")))
+
+    (apply-props count-line attr
+                 (("transform" . (+ "translate(" (- width 100) "," (y-scale 4) ")"))
+                  ("stroke" . "none")
+                  ("fill" . "gray")))
+
+    (ps:chain count-line (text total) (style "font-size" "20px"))
+
+    (ps:chain grp (append "text")
+              (attr "transform" (+ "translate(" (- width 100) "," (y-scale 1) ")"))
+              (text "COMMITS")
+              (style "font-size" "12px")
+              (attr "fill" "gray"))))
+
+(defun make-top-svg ()
+  "Create top level svg and assign proper height width to it."
+  (ps:var svg (ps:chain (d3.select *div-selector*) (append "svg")))
+  (ps:var svg-bbox (get-bbox svg))
+  (apply-props svg attr
+               (("height" . (ps:@ svg-bbox height))
+                ("width" . (ps:@ svg-bbox width))))
+  svg)
+
+(defun add-vertical-line (grp x-pos text height)
+  "Add time checkpoint line."
+  (apply-props (ps:chain grp (append "line")) attr
+               (("x1" . x-pos)
+                ("x2" . x-pos)
+                ("y1" . 0)
+                ("y2" . height)
+                ("stroke" . "rgba(0, 0, 0, 0.2)")
+                ("stroke-dasharray" . "10 10")))
+
+  (ps:var text-elem (ps:chain grp
+                           (append "text")
+                           (text text)
+                           (attr "transform" (+ "translate(" (+ 15 x-pos) ", 10) rotate(-90)"))))
+
+  (apply-props text-elem style
+               (("fill" . "#333")
+                ("font-size" . "12px")
+                ("text-anchor" . "end"))))
+
+((ps:@ window add-event-listener)
+ "DOMContentLoaded"
+ (lambda ()
+   (let* ((svg (make-top-svg))
+          (svg-bbox (get-bbox svg))
+          (height (ps:@ svg-bbox height))
+          (width (ps:@ svg-bbox width))
+          (draw-height (- height (ps:@ *margin* top) (ps:@ *margin* bottom)))
+          (draw-width (- width (ps:@ *margin* left) (ps:@ *margin* right)))
+          (grp (ps:chain svg (append "g")
+                         (attr "transform" (+ "translate(" (ps:@ *margin* left) "," (ps:@ *margin* top) ")"))
+                         (style "font-family" *text-font*)))
+          (x-scale (ps:chain d3 (scale-linear) (range (list 0 draw-width)))))
+
+     (ps:chain
+      (d3.csv "../assets/commit-events.csv")
+      (then
+       (lambda (data)
+
+         ;; Gradient for the areas
+         (add-gradient svg)
+
+         ;; TODO: This is useless
+         (ps:var hist-data (make-histogram-data (process-events-data data 0)))
+         (ps:chain x-scale (domain (list 0 (length hist-data))))
+
+         ;; Time checkpoints
+         (loop for val in (list 10 60 600 3600 (* 24 3600))
+               for txt in (list "10 SEC" "1 MIN" "10 MINS" "1 HOUR" "1 DAY")
+               do (add-vertical-line (grp.append "g") (x-scale (log val)) txt draw-height))
+
+         ;; NOTE: Each offset defines the week we are working with 0 for current,
+         ;;       -1 for last one and so on.
+         (ps:var offsets (list -4 -3 -2 -1 0))
+         (ps:var y-grain (/ draw-height (length offsets)))
+         (ps:var area)
+
+         (loop for offset in offsets
+               do (progn
+                    (setf hist-data (make-histogram-data (process-events-data data offset)))
+
+                    (ps:var y-zero (+ draw-height (* offset y-grain)))
+                    (ps:var y-scale (ps:chain d3
+                                              (scale-linear)
+                                              ;; We add some overlap on the top to make things a bit nice
+                                              (range (list y-zero (- y-zero y-grain 200)))
+                                              ;; 50 commits for the peak is fine
+                                              (domain (list 0 50))))
+
+                    (setf area (ps:chain d3
+                                         (area)
+                                         (x (lambda (d) (x-scale (ps:@ d x))))
+                                         (y0 (y-scale 0))
+                                         (y1 (lambda (d) (y-scale (ps:@ d y))))))
+
+                    ;; Not sure if smoothing looks better, here is the snippet in case I change my mind
+                    ;; (curve (ps:@ d3 curve-basis))
+
+                    (ps:chain grp
+                              (append "path")
+                              (datum hist-data)
+                              (attr "d" area)
+                              (attr "fill" "url(#main-gradient) rgba(0, 0, 0, 0.1)")
+                              (attr "opacity" (max 0.2 (+ 1 (* offset 0.3)))))
+
+                    (add-total-count grp draw-width y-scale hist-data)))))))))
