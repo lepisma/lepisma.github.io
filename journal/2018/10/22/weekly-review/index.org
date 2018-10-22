@@ -1,0 +1,83 @@
+#+TITLE: Weekly Review /42-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: weekly-review
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+  let eventPlotFor = {
+    week: 42,
+    year: 2018
+  }
+</script>
+<style>
+  #commit-plot > svg {
+    height: 600px;
+    width: 100%;
+  }
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Problems/Solutions
+I tried to improve the [[https://lepisma.github.io/2017/06/25/simple-time-maps/index.html][1d time maps]] to use them for visualizing git commits in
+these reviews. Overall I still don't have a general solution for binning, but
+here is what I am doing:
+
+Sticking with idea of keeping things /mostly/ qualitative, I go with time diffs
+(here the difference in seconds between commits) and take natural logs of them.
+I am then binning values directly by ~flooring~ (which is not the best way) them
+which gives uniform bins. The useful part is the set of /reference markers/ for
+time points like ~10 SEC~, which makes the plot work out okay for now.
+
+With the decision to keep /area/ as the chart primitive, I can apply things like
+gradients specifying more intense periods (frequent commits) and also convey a
+general sense of volume.
+
+* Readings/Explorations
+- Machine Learning: The High-Interest Credit Card of Technical Debt
+  (cite:sculley2014machine).
+- Harnessing Non-Linearity: Predicting Chaotic Systems and Saving Energy in
+  Wireless Communication (cite:jaeger2004harnessing).
+- Continuing on CCGs, read /Learning to map Sentences to Logical Form:
+  Structured Classification with Probabalistic Categorial Grammars/
+  (cite:zettlemoyer2012learning).
+- Started using [[https://common-lisp.net/project/parenscript/][parenscript]]. First impression: Feels a little clumsy as compared
+  to plain JS, but I know there will be nice things coming if I stick to it and
+  start writing macros and other stuff.
+
+* Programming
+
+From this week, I will have a plot showing my commit history for the last 5
+weeks (latest on the bottom). The idea is to emphasize the /intensity/, which
+covers both the commit counts /and/ the frequency. The darker regions along the
+x-axis represent more frequent events (i.e. I am committing every few seconds or
+so) and the height represents the number of events. It is obviously not very
+readable without context (you can try reading this [[https://lepisma.github.io/2017/06/25/simple-time-maps/index.html][old post]]) but it's a little
+low on priority for me to fix.
+
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 42-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+-----
+
+Overall, I don't think I created anything major outside of work this week.
+
+* Writing
+- Shepherded a few old notes from a couple of books which will go in journal
+  sometime soon.
+
+* Media
+- [[https://twobithistory.org/2018/10/14/lisp.html][How Lisp Became God's Own Programming Language]]. Overall this two-bit history
+  blog looks really nice.
+- Google's Hybrid Approach to Research (cite:spector2012google).
+- [[https://aeon.co/essays/can-algorithms-create-true-art-or-do-they-only-imitate][Can algorithms create true art, or do they only imitate?]] from Hannah Fry's new
+  book.
+- A few [[https://aeon.co/essays/the-secret-intellectual-history-of-mathematics][more]] [[https://aeon.co/essays/is-the-translator-a-servant-of-the-text-or-an-original-artist][pieces]]. I should setup my other, non aeon, feeds properly. The
+  problem is with this split between newsletters and rss. At this moment, I
+  think I should stop trying to merge both and stick with ~elfeed~ + ~mu4e~.
+
+[[bibliography:./index.bib]]
