@@ -1,0 +1,43 @@
+#+TITLE: Weekly Review /43-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: weekly-review
+
+#+BEGIN_EXPORT html
+<script>
+  let eventPlotFor = {
+    week: 43,
+    year: 2018
+  }
+</script>
+<style>
+  #commit-plot > svg {
+    height: 600px;
+    width: 100%;
+  }
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+A relatively busy work week.
+
+* Problems/Solutions
+- Nothing.
+
+* Readings/Explorations
+- [[https://people.xiph.org/~jm/demo/rnnoise/][RNNoise: Learning Noise Suppression]]. Haven't read the paper as of now.
+- Spent some time reading about WFSTs from cite:mohri2008speech.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 43-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+A bit low on programming this week. Had readings to do.
+
+* Writings
+- Nothing.
+
+* Media
+- [[https://aeon.co/essays/how-eric-hobsbawm-helped-shape-the-global-marxist-imagination][How Eric Hobsbawm helped shape the global Marxist imagination | Aeon Essays]]
