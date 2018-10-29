@@ -137,6 +137,20 @@ random search.
 
 * AI/ML
 
+** READING Speech recognition with weighted finite-state transducers
+DEADLINE: <2018-10-28 Sun>
+:PROPERTIES:
+:CUSTOM_ID: mohri2008speech
+:YEAR:     2008
+:AUTHOR:   Mohri, Mehryar and Pereira, Fernando and Riley, Michael
+:END:
+
+Partial notes:
+1. Composition: Transitive-ness.
+2. Determinization: Removing multiple transitions on same input.
+3. Minimization: Compressing to the minimal, /equivalent/ automaton. Done by first
+   weight pushing and then running the classical algorithm.
+
 ** TOREAD Data programming: Creating large training sets, quickly
 DEADLINE: <2018-10-18 Thu>
 :PROPERTIES:
@@ -314,6 +328,25 @@ The examples are nice and make this is a good read for beginners. Though I
 suspect there might be better, recent, articles on these topics now.
 
 * Misc
+
+** READ Google's hybrid approach to research
+CLOSED: [2018-10-30 Tue 02:34]
+:PROPERTIES:
+:CUSTOM_ID: spector2012google
+:YEAR:     2012
+:AUTHOR:   Spector, Alfred and Norvig, Peter and Petrov, Slav
+:END:
+
+Mostly about the people being /researchers/ and /developers/ and how it affects
+various aspects of experiments.
+
+** READ Machine learning: The high-interest credit card of technical debt
+CLOSED: [2018-10-20 Sat 02:33]
+:PROPERTIES:
+:CUSTOM_ID: sculley2014machine
+:YEAR:     2014
+:AUTHOR:   Sculley, D and Phillips, Todd and Ebner, Dietmar and Chaudhary, Vinay and Young, Michael
+:END:
 
 ** READ Better science through art
 CLOSED: [2018-10-12 Fri 23:16] SCHEDULED: <2018-10-06 Sat>
