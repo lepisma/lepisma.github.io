@@ -41,3 +41,5 @@ A bit low on programming this week. Had readings to do.
 
 * Media
 - [[https://aeon.co/essays/how-eric-hobsbawm-helped-shape-the-global-marxist-imagination][How Eric Hobsbawm helped shape the global Marxist imagination | Aeon Essays]]
+
+[[bibliography:./index.bib]]
