@@ -143,6 +143,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** A Crude Look at the Whole: The Science of Complex Systems in Business, Life, and Society
+:PROPERTIES:
+:AUTHOR:   John H. Miller
+:ADDED:    [2018-11-03]
+:GOODREADS: https://www.goodreads.com/book/show/25273751-a-crude-look-at-the-whole
+:END:
+
 *** The Tangled Tree: A Radical New History of Life
 :PROPERTIES:
 :AUTHOR:   David Quammen
