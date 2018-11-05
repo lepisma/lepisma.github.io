@@ -199,7 +199,7 @@ hodgepodge for a while.
 :AMAZON:   https://www.amazon.com/Adaptation-Natural-Artificial-Systems-Introductory/dp/0262581116
 :END:
 
-*** Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
+*** READING Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
 :PROPERTIES:
 :AUTHOR:
 :ADDED:    <2017-10-18>
@@ -4748,7 +4748,7 @@ CLOSED: [2015-04-02]
 :GOODREADS: https://www.goodreads.com/book/show/10503
 :END:
 
-*** Foucault's Pendulum
+*** READING Foucault's Pendulum
 :PROPERTIES:
 :AUTHOR:    Umberto Eco, William Weaver
 :ADDED:     <2016-11-28>
