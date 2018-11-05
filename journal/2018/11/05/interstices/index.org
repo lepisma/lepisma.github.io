@@ -1,0 +1,27 @@
+#+TITLE: Interstices
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, productivity
+
+Last weekend, I had one of those longer stays at an airport and was pleasantly
+surprised to get /pretty/ far in a few books that I was reading. That reminded me
+of a chapter named /The Interview/ from our English textbook in class 12[fn::CBSE,
+India]. The interview was of Umberto Eco. The relevant piece is this:
+
+#+BEGIN_aside
+The full interview is [[https://www.thehindu.com/2005/10/23/stories/2005102305241000.htm][here]], our textbook chapter was [[http://ncert.nic.in/ncerts/l/lefl107.pdf][this]].
+#+END_aside
+
+#+BEGIN_QUOTE
+Say you are coming over to my place. You are in an elevator and while you are
+coming up, I am waiting for you. This is an interstice, an empty space. I work
+in empty spaces.
+#+END_QUOTE
+
+I had a different perspective on these /interstices/. Little impotent chunks of
+time. I now feel focusing on the /littleness/ of these chunks makes you ignore
+their /innominateness/ which lowers expectations and constrains context--switches.
+
+I wonder what it takes to simulate these chunks. Definitely not /just/ any empty
+day since planning takes away the core idea. They are actually easier to get
+when you are on an externally maintained schedule. Keeping ample time margins
+before certain /time-to-act/ mixed with a few coin tosses might help.

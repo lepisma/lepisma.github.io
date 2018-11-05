@@ -4873,14 +4873,15 @@ CLOSED: [2018-10-13 Sat 21:51]
 :GOODREADS: https://www.goodreads.com/book/show/25101.Season_of_Mists
 :END:
 
-*** A Game of You (Sandman, #5)
+*** READ A Game of You (Sandman, #5)
+CLOSED: [2018-11-03 Sat 21:10]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Shawn McManus, (Illustrator), Colleen Doran, (Illustrator), Bryan Talbot, (Illustrator), George Pratt, (Illustrator), Stan Woch, (Illustrator), Dick Giordano, (Illustrator), Todd Klein, (Letterer)
 :ADDED:    <2017-07-11>
 :GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
 :END:
 
-*** Fables and Reflections (Sandman, #6)
+*** READING Fables and Reflections (Sandman, #6)
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
 :ADDED:    <2017-07-11>
