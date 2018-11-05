@@ -2862,12 +2862,25 @@ CLOSED: [2016-03-12]
 :GOODREADS: https://www.goodreads.com/book/show/18775383
 :END:
 
-*** READING The Society of Mind
+*** READ The Society of Mind
+CLOSED: [2018-11-06 Tue 02:25]
 :PROPERTIES:
 :AUTHOR:    Marvin Minsky
 :ADDED:     <2016-01-26>
 :GOODREADS: https://www.goodreads.com/book/show/326790
 :END:
+
+Took a lot longer than I expected. The structure is /pretty/ similar to 'I Am a
+Strange Loop'. Lots of sections and subsections. A bit too many to keep things
+coherent specially when you keep going off and on (though I am not sure which
+way the causality goes here). Anyway, a lot of the major ideas from the book are
+popularly known these days so it's hard to recommend as such. Though here is a
+line somewhere from the ending that helps in looking at this:
+
+#+BEGIN_QUOTE
+...this book should be read less as a text of scientific scholarship and more as
+an adventure story for the imagination.
+#+END_QUOTE
 
 *** Reinventing Discovery: The New Era of Networked Science
 :PROPERTIES:
