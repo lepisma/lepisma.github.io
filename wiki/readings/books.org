@@ -1,7 +1,7 @@
 #+TITLE: Reading List (Books)
 #+SETUPFILE: ../../assets/export.setup
 #+PILE: cid:flat
-#+TODO: READING NEXT | READ
+#+TODO: TOREAD READING | READ
 
 Books to read. This is a rather large list with items from my old Goodreads
 account. Most likely I will /not/ be reading all of these because this list grows
@@ -557,6 +557,13 @@ CLOSED: [2014-03-23]
 ** Programming
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
+
+*** Exercises in Programming Style
+:PROPERTIES:
+:AUTHOR:   Cristina Videira Lopes
+:ADDED:    [2018-11-07]
+:AMAZON:   https://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371
+:END:
 
 *** Code: The Hidden Language of Computer Hardware and Software
 :PROPERTIES:
@@ -1274,6 +1281,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** Infinity and the Mind: The Science and Philosophy of the Infinite
+:PROPERTIES:
+:AUTHOR:   Rudy Rucker
+:ADDED:    [2018-11-06]
+:GOODREADS: https://www.goodreads.com/book/show/274050.Infinity_and_the_Mind
+:END:
+
 *** Science and the Modern World
 :PROPERTIES:
 :AUTHOR:   Alfred North Whitehead

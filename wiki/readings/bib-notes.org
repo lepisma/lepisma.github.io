@@ -137,6 +137,22 @@ random search.
 
 * AI/ML
 
+** Generating exact lattices in the WFST framework
+DEADLINE: <2018-11-10 Sat>
+:PROPERTIES:
+:CUSTOM_ID: povey2012generating
+:YEAR:     2012
+:AUTHOR:   Povey, Daniel and Hannemann, Mirko and Boulianne, Gilles and Burget, Luk{\'a}{\v{s}} and Ghoshal, Arnab and Janda, Milo{\v{s}} and Karafi{\'a}t, Martin and Kombrink, Stefan and Motl{\'\i}{\v{c}}ek, Petr and Qian, Yanmin and others
+:END:
+
+** Quantifying the value of pronunciation lexicons for keyword search in lowresource languages
+DEADLINE: <2018-11-10 Sat>
+:PROPERTIES:
+:CUSTOM_ID: chen2013quantifying
+:YEAR:     2013
+:AUTHOR:   Chen, Guoguo and Khudanpur, Sanjeev and Povey, Daniel and Trmal, Jan and Yarowsky, David and Yilmaz, Oguz
+:END:
+
 ** READ State-of-the-art speech recognition with sequence-to-sequence models
 CLOSED: [2018-11-06 Tue 20:52]
 :PROPERTIES:
@@ -150,7 +166,7 @@ in end-to-end systems, we still look for /modular presence/ of components like
 Language Models. Maybe that helps in adding and justifying heuristics.
 
 ** READING Speech recognition with weighted finite-state transducers
-DEADLINE: <2018-10-28 Sun>
+DEADLINE: <2018-11-11 Sun>
 :PROPERTIES:
 :CUSTOM_ID: mohri2008speech
 :YEAR:     2008
@@ -340,6 +356,14 @@ The examples are nice and make this is a good read for beginners. Though I
 suspect there might be better, recent, articles on these topics now.
 
 * Misc
+
+** More is different
+DEADLINE: <2018-11-09 Fri>
+:PROPERTIES:
+:CUSTOM_ID: anderson1972more
+:YEAR:     1972
+:AUTHOR:   Anderson, Philip W and others
+:END:
 
 ** READ Google's hybrid approach to research
 CLOSED: [2018-10-30 Tue 02:34]
