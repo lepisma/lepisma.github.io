@@ -137,6 +137,18 @@ random search.
 
 * AI/ML
 
+** READ State-of-the-art speech recognition with sequence-to-sequence models
+CLOSED: [2018-11-06 Tue 20:52]
+:PROPERTIES:
+:CUSTOM_ID: chiu2018state
+:YEAR:     2018
+:AUTHOR:   Chiu, Chung-Cheng and Sainath, Tara N and Wu, Yonghui and Prabhavalkar, Rohit and Nguyen, Patrick and Chen, Zhifeng and Kannan, Anjuli and Weiss, Ron J and Rao, Kanishka and Gonina, Ekaterina and others
+:END:
+
+Bunch of improvements on top of the LAS architecture. It feels funny that even
+in end-to-end systems, we still look for /modular presence/ of components like
+Language Models. Maybe that helps in adding and justifying heuristics.
+
 ** READING Speech recognition with weighted finite-state transducers
 DEADLINE: <2018-10-28 Sun>
 :PROPERTIES:
