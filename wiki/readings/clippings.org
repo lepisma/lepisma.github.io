@@ -21,6 +21,146 @@ below shuffles items.
 @@html:<div><a class="btn" id="shuffle-btn">shuffle</a></div>@@
 
 #+HTML:<div class="epigraph">
+#+BEGIN_QUOTE
+For theoryless decisions it is sufficient that the circuit be effective in
+situations that are most frequently encountered by the owner—no theory or
+understanding of why it is effective is needed.
+
+#+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+That evolution could work in principle in some infinite limit is obvious and
+needs little discussion.
+
+#+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Contrary to common perception, computer science has always been more about
+humans than about machines.
+
+#+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Exceptions are a fact of life because few facts are always true. Logic fails
+because it tries to find exceptions to this rule.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Grammar is the servant of language, not the master.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If the theory had been any vaguer, it would have been ignored, but if it had
+been described in more detail, other scientists might have tested it, instead of
+contributing their own ideas.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We notice change in spite of change, not because of it.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The power of consciousness comes not from ceaseless change of state, but from
+having enough stability to discern significant changes in our surroundings.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+For although words are merely catalysts for starting mental processes, so, too,
+are real things: we can't sense what they really are, only what they remind us
+of.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When we disapprove of this, we complain about stereotypes — and when we
+sympathize with it, we speak of sensitivity and empathy.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The most useful sets of properties are those whose members do not interact too
+much.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+we rarely need to know that anything is absolutely wrong or right; instead, we
+only want to choose the best of some alternatives.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A fantasy need not reproduce the fine details of an actual scene. It need only
+reproduce that scene's effect on other agencies.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+one needs a process that sometimes works before one can proceed to improve it.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In the long run, the most productive kinds of thought are not the methods with
+which we solve particular problems, but those that lead us to formulating useful
+new kinds of descriptions.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The Exception Principle: It rarely pays to tamper with a rule that nearly always
+works. It's better just to complement it with an accumulation of specific
+exceptions.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Many good ideas are really two ideas in one — which form a bridge between two
+realms of thought or different points of view.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+whenever any simple idea appears to explain so many things, we must suspect a
+trick.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Nothing would get done if we succumbed to satisfaction.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The surer you are that you like what you are doing, the more completely your
+other ambitions are being suppressed.
+
+#+HTML:<footer>﻿Society of Mind (Marvin Minsky)</footer>
+#+END_QUOTE
 
 #+BEGIN_QUOTE
 But he did not understand the price. Mortals never do. They only see the prize,
