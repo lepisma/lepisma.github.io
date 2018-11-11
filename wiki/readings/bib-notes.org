@@ -12,6 +12,18 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READ How learning can guide evolution
+CLOSED: [2018-11-11 Sun 17:32] DEADLINE: <2018-11-11 Sun>
+:PROPERTIES:
+:CUSTOM_ID: hinton1987learning
+:YEAR:     1987
+:AUTHOR:   Hinton, Geoffrey E and Nowlan, Steven J
+:END:
+
+Simulation of a /minimalistic system/ for explaining the idea behind the searching
+power of evolution + learning. Look [[https://egtheory.wordpress.com/2014/02/07/learning-guide-evolution/][here]] for an argument against the specific
+example taken.
+
 ** READ Coevolution to the edge of chaos: coupled fitness landscapes, poised states, and coevolutionary avalanches
 CLOSED: [2018-09-24 Mon 01:20]
 :PROPERTIES:
