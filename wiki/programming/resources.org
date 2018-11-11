@@ -34,10 +34,11 @@ Some nifty command line tools
   [[http://pandoc.org/filters.html][filters]].
 - [[https://www.imagemagick.org/script/index.php][imagemagick]] for image manipulation. A lot of image-fu is possible just by
   piping through this.
-- [[https://www.graphviz.org/][graphviz]] and [[http://ditaa.sourceforge.net/][ditaa]] for making graphs, flowcharts etc. Both go really nicely in
-  org-babel.
+- [[https://github.com/kohler/gifsicle][gifsicle]] for working with gifs
 - [[https://www.ffmpeg.org/][ffmpeg]] for media conversion. Has nice language bindings too (e.g.
   [[https://github.com/kkroening/ffmpeg-python][ffmpeg-python]]).
+- [[https://www.graphviz.org/][graphviz]] and [[http://ditaa.sourceforge.net/][ditaa]] for making graphs, flowcharts etc. Both go really nicely in
+  org-babel.
 - [[https://harelba.github.io/q/][q]] allows running SQL over CSVs.
 - [[https://stedolan.github.io/jq/][jq]] for working with json strings in command line.
 - [[https://httpie.org/][HTTPie]] as HTTP client. In Emacs, try [[https://github.com/pashky/restclient.el][restclient]] and [[https://github.com/alf/ob-restclient.el][ob-restclient]].
@@ -53,3 +54,5 @@ Some nifty command line tools
 - Command line tools from ~poppler-utils~ can replace almost everything you need
   to do with pdfs.
 - [[https://github.com/clibs/entr][entr]] helps in rerunning commands based on file changes.
+- [[https://github.com/MaartenBaert/ssr][SimpleScreenRecorder]] does most of the things I want. A few other fancier tools
+  I tried don't work very nicely with tiling systems.
