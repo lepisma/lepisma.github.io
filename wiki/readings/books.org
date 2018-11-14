@@ -1802,6 +1802,13 @@ the least the following would be okay:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** Fashion, Faith, and Fantasy in the New Physics of the Universe
+:PROPERTIES:
+:AUTHOR:   Roger Penrose
+:ADDED:    [2018-11-15]
+:AMAZON:   https://www.amazon.com/Fashion-Faith-Fantasy-Physics-Universe/dp/0691119791
+:END:
+
 *** Democracy's Schools: The Rise of Public Education in America (How Things Worked)
 :PROPERTIES:
 :AUTHOR:
