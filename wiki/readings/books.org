@@ -1802,6 +1802,13 @@ the least the following would be okay:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** TOREAD The Cultural Logic of Computation
+:PROPERTIES:
+:AUTHOR:   David Golumbia
+:ADDED:    [2018-11-15]
+:GOODREADS: https://www.goodreads.com/book/show/6386295-the-cultural-logic-of-computation
+:END:
+
 *** Fashion, Faith, and Fantasy in the New Physics of the Universe
 :PROPERTIES:
 :AUTHOR:   Roger Penrose
