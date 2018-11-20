@@ -199,12 +199,23 @@ hodgepodge for a while.
 :AMAZON:   https://www.amazon.com/Adaptation-Natural-Artificial-Systems-Introductory/dp/0262581116
 :END:
 
-*** READING Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
+*** READ Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
+CLOSED: [2018-11-21 Wed 01:17]
 :PROPERTIES:
 :AUTHOR:
 :ADDED:    <2017-10-18>
 :AMAZON:   https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465060722/ref=tmm_pap_title_0?_encoding=UTF8&sr=&qid=
 :END:
+
+This is about viewing evolution as computing a PAC learnable solution
+(specifically a subset, the /evolvable/ class of functions).
+
+An important general point throughout the book is about the separation between
+/theoryless/ and /theoryful/ problems. In case of theoryless, the solver tries to
+/cope/ under some specific data distribution using a computational and statistical
+efficient (in the regular polynomial complexity term) algorithm. This formalism
+shapes the focus of the book which is more about the practical tractability of
+nature's algorithms rather than the algorithms themselves.
 
 *** The Evolution of Beauty: How Darwin's Forgotten Theory of Mate Choice Shapes the Animal World - and Us
 :PROPERTIES:
