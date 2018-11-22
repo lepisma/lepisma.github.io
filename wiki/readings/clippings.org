@@ -22,6 +22,26 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Computers are boring. They only give answers.
+
+#+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is simply fallacious to apply PAC learned concepts, such as consciousness, to
+artificial situations that do not occur in the domain from which the concepts
+were learned.
+
+#+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+brittleness is inevitable in any system for the theoryless that is programmed.
+
+#+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 For theoryless decisions it is sufficient that the circuit be effective in
 situations that are most frequently encountered by the owner—no theory or
 understanding of why it is effective is needed.
