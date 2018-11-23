@@ -705,7 +705,8 @@ CLOSED: [2018-01-24 Wed 22:59]
 :URL:      http://beautifulracket.com/
 :END:
 
-*** The Little Schemer
+*** READ The Little Schemer
+CLOSED: [2018-11-23 Fri 12:25]
 :PROPERTIES:
 :AUTHOR:    Daniel P. Friedman, Matthias Felleisen, Duane Bibby, Gerald J. Sussman
 :ADDED:     <2017-04-30>
