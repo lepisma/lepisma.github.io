@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-09 Tue 01:06 -->
+<!-- 2018-11-25 Sun 03:44 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weekly Review 40-2018</title>
+<title>Weekly Review 41-2018</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -265,7 +265,8 @@ for the JavaScript code in this tag.
                                 </div>
                                 <div class='site-nav'>
                                   <a class='' href='/'> blog</a>
-                                  <a class='active' href='/journal'> journal</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='active' href='/log'> log</a>
                                   <a class='' href='/wiki'> wiki</a>
                                   <a href='/about'> about</a>
                                 </div>
@@ -273,22 +274,19 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>2018-10-08 Mon 00:00</div>
-                                <h1>Weekly Review <i>40-2018</i></h1>
+                                <div class='page-meta'>2018-10-16 Tue 00:00</div>
+                                <h1>Weekly Review <i>41-2018</i></h1>
                               </div>
 </div>
 <div id="content">
-<div class='page-tags'><a href='../../../..#weekly-review'>weekly-review</a></div>
+<div class='page-tags'></div>
 <p>
-<span class='dropcap'>A</span>fter around 4 reviews, I believe I have a better sense of where my time is
-going. I feel I am now reading more <i>effectively</i> and am also prioritizing the
-programming tasks better. The problem is in the parts where I need to <i>think</i>
-about and <i>design</i> solutions to problems, outside the work time. Will be working
-on that this week.
+<span class='dropcap'>T</span>his week was mostly spent in readings and stuff. I also was stuck with flu for
+the later half so wasn't able to do anything else.
 </p>
 
-<div id="outline-container-org87123a5" class="outline-2">
-<h2 id="sec-problems/solutions"><a id="org87123a5"></a><span class="section-number-2">1</span> Problems/Solutions</h2>
+<div id="outline-container-org705b770" class="outline-2">
+<h2 id="sec-problems/solutions"><a id="org705b770"></a><span class="section-number-2">1</span> Problems/Solutions</h2>
 <div class="outline-text-2" id="text-sec-problems/solutions">
 
 <ul class="org-ul">
@@ -297,66 +295,67 @@ on that this week.
 </div>
 </div>
 
-<div id="outline-container-orga378b25" class="outline-2">
-<h2 id="sec-readings/explorations"><a id="orga378b25"></a><span class="section-number-2">2</span> Readings/Explorations</h2>
+<div id="outline-container-org3733648" class="outline-2">
+<h2 id="sec-readings/explorations"><a id="org3733648"></a><span class="section-number-2">2</span> Readings/Explorations</h2>
 <div class="outline-text-2" id="text-sec-readings/explorations">
 
 <ul class="org-ul">
-<li>Made some more progress in <a href="https://www.goodreads.com/book/show/326790.The_Society_of_Mind">Society of Mind</a>. Something about its writing style
-is slowing me down.</li>
-<li>Bringing ML and compositional semantics together (<a class='org-ref-reference' href="#liang2015bringing">liang2015bringing</a>)</li>
-<li><a href="https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html">Design Principles Behind Smalltalk</a> by Ingalls.</li>
-<li>Swoosh: A generic approach to entity resolution (<a class='org-ref-reference' href="#benjelloun2009swoosh">benjelloun2009swoosh</a>)</li>
+<li>Read up a few introductory documents on Ontologies.</li>
+<li>I am trying to understand <i>learnable</i> parsing so took up Combinatory Categorial
+Grammar (<a class='org-ref-reference' href="#steedman1996very">steedman1996very</a>)</li>
+<li>How NOT to evaluate your dialog system (<a class='org-ref-reference' href="#liu2016not">liu2016not</a>)</li>
+<li>Strange loop 2018 had few interesting ideas. I liked <a href="https://github.com/lexi-lambda/hackett">hackett</a>. This makes me
+wonder what exactly typed racket doing? Definitely something simpler.</li>
+<li>Got to use <a href="https://lparallel.org/">lparallel</a>. Working with single threading for so long almost had me
+squeal at this.</li>
+<li>Also used <a href="https://github.com/construct/construct">construct</a> which is a composable way for going back and forth from
+bytes to python objects.</li>
+<li>Finally read up on functional package management and tried <a href="https://www.gnu.org/software/guix/manual/en/html_node/index.html#Top">guix</a>. Needs a
+little momentum but looks really promising. I am specially interested in
+things like <code>guix environment</code> and dependencies which go cross distro painlessly
+(though these are not the direct output, they are nice side effects).</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0c7face" class="outline-2">
-<h2 id="sec-programming"><a id="org0c7face"></a><span class="section-number-2">3</span> Programming</h2>
+<div id="outline-container-org06321cd" class="outline-2">
+<h2 id="sec-programming"><a id="org06321cd"></a><span class="section-number-2">3</span> Programming</h2>
 <div class="outline-text-2" id="text-sec-programming">
 
-<p>
-I am trying to automate parts of this section so it shows some measure of
-<i>intensity</i> and <i>amount</i> of work I did last week including the work time.
-</p>
-
 <ul class="org-ul">
-<li>Spent (wasted) some time getting Haskell FFI to work. Pretty easy to call in
-C, but gets a little hairy with Python when depending on other libraries.</li>
-<li>Came across <a href="https://www.reddit.com/r/Common_Lisp/comments/9bh8u6/introducing_seed_an_interactive_software">seed</a>, guess it's pretty close to the idea of Smalltalk's
-interactive programming <i>environment</i>. I should try some system like this since
-it looks really good for recreational programming.</li>
-<li>Cleaned up my <a href="https://github.com/lepisma/cfg">cfg</a> files a little, will sweep <a href="https://github.com/lepisma/rogue">rogue</a> some time too.</li>
-<li>Explored Haskell a little.</li>
+<li>Added a few new features/syntaxes in <a href="https://github.com/lepisma/pigeon">pigeon</a>. Will abuse reader macros for some
+time now.</li>
+<li>A few other pieces I don't have logs of. Will be putting the commit visualizer
+here from next week onwards.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge22439f" class="outline-2">
-<h2 id="sec-writing"><a id="orge22439f"></a><span class="section-number-2">4</span> Writing</h2>
+<div id="outline-container-org4b4a2f3" class="outline-2">
+<h2 id="sec-writing"><a id="org4b4a2f3"></a><span class="section-number-2">4</span> Writing</h2>
 <div class="outline-text-2" id="text-sec-writing">
 
 <ul class="org-ul">
-<li>Nothing specific. Though I have noticed, writing reviews has made it easier to
-put together tiny journal posts every now and then.</li>
+<li>Nothing.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org874534a" class="outline-2">
-<h2 id="sec-media"><a id="org874534a"></a><span class="section-number-2">5</span> Media</h2>
+<div id="outline-container-orga7c1cce" class="outline-2">
+<h2 id="sec-media"><a id="orga7c1cce"></a><span class="section-number-2">5</span> Media</h2>
 <div class="outline-text-2" id="text-sec-media">
 
 <ul class="org-ul">
-<li><a href="https://www.stuffyoushouldknow.com/podcasts/how-the-concorde-worked.htm">How the Concorde Worked | Stuff You Should Know</a></li>
-<li><a href="https://www.wnycstudios.org/story/breaking-bad-news-bears">Breaking Bad News Bears | Radiolab | WNYC Studios</a></li>
-<li><a href="https://aeon.co/essays/consolation-philosophy-and-the-struggle-of-reason-in-africa?">A</a> <a href="https://aeon.co/ideas/i-holobiont-are-you-and-your-microbes-a-community-or-a-single-entity">few</a> <a href="https://aeon.co/videos/why-did-our-sea-dwelling-ancestors-leap-to-land-it-might-have-been-the-view">pieces</a> <a href="https://aeon.co/videos/is-reboot-culture-out-of-control-or-are-we-kidding-ourselves-that-anything-is-original">from</a> <a href="https://aeon.co/essays/does-philosophy-still-need-mathematics-and-vice-versa">aeon</a>.</li>
+<li>Better Science through Art (<a class='org-ref-reference' href="#gabriel2010better">gabriel2010better</a>)</li>
+<li>Resumed Sandman. Finished <a href="https://www.goodreads.com/book/show/25101.Season_of_Mists">Season of Mists</a>.</li>
+<li><a href="https://plus.maths.org/content/uncoiling-spiral-maths-and-hallucinations">Uncoiling the spiral: Maths and hallucinations | plus.maths.org</a></li>
 </ul>
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="liang2015bringing">[liang2015bringing]</a> <a name="liang2015bringing"></a>Liang & Potts. 2015. "Bringing machine learning and compositional semantics together." <i>Annu. Rev. Linguist.</i>, 1(1), 355-376. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="benjelloun2009swoosh">[benjelloun2009swoosh]</a> <a name="benjelloun2009swoosh"></a>Benjelloun, Garcia-Molina, Menestrina, Su, Whang & Widom. 2009. "Swoosh: a generic approach to entity resolution." <i>The VLDB Journal—The International Journal on Very Large Data Bases</i>, 18(1), 255-276. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<ul class='org-ref-bib'><li><a id="steedman1996very">[steedman1996very]</a> <a name="steedman1996very"></a>Steedman. 1996. "A very short introduction to CCG." <i>Unpublished paper. http://www. coqsci. ed. ac. uk/steedman/paper. html</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="liu2016not">[liu2016not]</a> <a name="liu2016not"></a>Liu, Lowe, Serban, Noseworthy, Charlin & Pineau. 2016. "How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation." <i>arXiv preprint arXiv:1603.08023</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="gabriel2010better">[gabriel2010better]</a> <a name="gabriel2010better"></a>Gabriel & Sullivan. 2010. "Better science through art", 885-900, in in: ACM Sigplan Notices, edited by </li>
 </ul>
 </p>
 </div>

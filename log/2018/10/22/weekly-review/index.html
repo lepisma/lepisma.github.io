@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-16 Tue 03:45 -->
+<!-- 2018-11-25 Sun 03:44 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weekly Review 41-2018</title>
+<title>Weekly Review 42-2018</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -265,7 +265,8 @@ for the JavaScript code in this tag.
                                 </div>
                                 <div class='site-nav'>
                                   <a class='' href='/'> blog</a>
-                                  <a class='active' href='/journal'> journal</a>
+                                  <a class='' href='/journal'> journal</a>
+                                  <a class='active' href='/log'> log</a>
                                   <a class='' href='/wiki'> wiki</a>
                                   <a href='/about'> about</a>
                                 </div>
@@ -273,88 +274,134 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>2018-10-16 Tue 00:00</div>
-                                <h1>Weekly Review <i>41-2018</i></h1>
+                                <div class='page-meta'>2018-10-22 Mon 00:00</div>
+                                <h1>Weekly Review <i>42-2018</i></h1>
                               </div>
 </div>
 <div id="content">
-<div class='page-tags'><a href='../../../..#weekly-review'>weekly-review</a></div>
-<p>
-<span class='dropcap'>T</span>his week was mostly spent in readings and stuff. I also was stuck with flu for
-the later half so wasn't able to do anything else.
-</p>
+<div class='page-tags'></div>
+<script>
+  let eventPlotFor = {
+    week: 42,
+    year: 2018
+  }
+</script>
+<style>
+  #commit-plot > svg {
+    height: 600px;
+    width: 100%;
+  }
+</style>
 
-<div id="outline-container-org131f9bf" class="outline-2">
-<h2 id="sec-problems/solutions"><a id="org131f9bf"></a><span class="section-number-2">1</span> Problems/Solutions</h2>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="../../../../../assets/js/commit-plot.js"></script>
+
+<div id="outline-container-orgb37398b" class="outline-2">
+<h2 id="sec-problems/solutions"><a id="orgb37398b"></a><span class="section-number-2">1</span> Problems/Solutions</h2>
 <div class="outline-text-2" id="text-sec-problems/solutions">
 
-<ul class="org-ul">
-<li>Nothing.</li>
-</ul>
+<p>
+I tried to improve the <a href="https://lepisma.github.io/2017/06/25/simple-time-maps/index.html">1d time maps</a> to use them for visualizing git commits in
+these reviews. Overall I still don't have a general solution for binning, but
+here is what I am doing:
+</p>
+
+<p>
+Sticking with idea of keeping things <i>mostly</i> qualitative, I go with time diffs
+(here the difference in seconds between commits) and take natural logs of them.
+I am then binning values directly by <code>flooring</code> (which is not the best way) them
+which gives uniform bins. The useful part is the set of <i>reference markers</i> for
+time points like <code>10 SEC</code>, which makes the plot work out okay for now.
+</p>
+
+<p>
+With the decision to keep <i>area</i> as the chart primitive, I can apply things like
+gradients specifying more intense periods (frequent commits) and also convey a
+general sense of volume.
+</p>
 </div>
 </div>
 
-<div id="outline-container-org108460d" class="outline-2">
-<h2 id="sec-readings/explorations"><a id="org108460d"></a><span class="section-number-2">2</span> Readings/Explorations</h2>
+<div id="outline-container-orgf247d36" class="outline-2">
+<h2 id="sec-readings/explorations"><a id="orgf247d36"></a><span class="section-number-2">2</span> Readings/Explorations</h2>
 <div class="outline-text-2" id="text-sec-readings/explorations">
 
 <ul class="org-ul">
-<li>Read up a few introductory documents on Ontologies.</li>
-<li>I am trying to understand <i>learnable</i> parsing so took up Combinatory Categorial
-Grammar (<a class='org-ref-reference' href="#steedman1996very">steedman1996very</a>)</li>
-<li>How NOT to evaluate your dialog system (<a class='org-ref-reference' href="#liu2016not">liu2016not</a>)</li>
-<li>Strange loop 2018 had few interesting ideas. I liked <a href="https://github.com/lexi-lambda/hackett">hackett</a>. This makes me
-wonder what exactly typed racket doing? Definitely something simpler.</li>
-<li>Got to use <a href="https://lparallel.org/">lparallel</a>. Working with single threading for so long almost had me
-squeal at this.</li>
-<li>Also used <a href="https://github.com/construct/construct">construct</a> which is a composable way for going back and forth from
-bytes to python objects.</li>
-<li>Finally read up on functional package management and tried <a href="https://www.gnu.org/software/guix/manual/en/html_node/index.html#Top">guix</a>. Needs a
-little momentum but looks really promising. I am specially interested in
-things like <code>guix environment</code> and dependencies which go cross distro painlessly
-(though these are not the direct output, they are nice side effects).</li>
+<li>Machine Learning: The High-Interest Credit Card of Technical Debt
+(<a class='org-ref-reference' href="#sculley2014machine">sculley2014machine</a>).</li>
+<li>Harnessing Non-Linearity: Predicting Chaotic Systems and Saving Energy in
+Wireless Communication (<a class='org-ref-reference' href="#jaeger2004harnessing">jaeger2004harnessing</a>).</li>
+<li>Continuing on CCGs, read <i>Learning to map Sentences to Logical Form:
+Structured Classification with Probabalistic Categorial Grammars</i>
+(<a class='org-ref-reference' href="#zettlemoyer2012learning">zettlemoyer2012learning</a>).</li>
+<li>Started using <a href="https://common-lisp.net/project/parenscript/">parenscript</a>. First impression: Feels a little clumsy as compared
+to plain JS, but I know there will be nice things coming if I stick to it and
+start writing macros and other stuff.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org734beef" class="outline-2">
-<h2 id="sec-programming"><a id="org734beef"></a><span class="section-number-2">3</span> Programming</h2>
+<div id="outline-container-org5bacbeb" class="outline-2">
+<h2 id="sec-programming"><a id="org5bacbeb"></a><span class="section-number-2">3</span> Programming</h2>
 <div class="outline-text-2" id="text-sec-programming">
 
-<ul class="org-ul">
-<li>Added a few new features/syntaxes in <a href="https://github.com/lepisma/pigeon">pigeon</a>. Will abuse reader macros for some
-time now.</li>
-<li>A few other pieces I don't have logs of. Will be putting the commit visualizer
-here from next week onwards.</li>
-</ul>
+
+<p>
+From this week, I will have a plot showing my commit history for the last 5
+weeks (latest on the bottom). The idea is to emphasize the <i>intensity</i>, which
+covers both the commit counts <i>and</i> the frequency. The darker regions along the
+x-axis represent more frequent events (i.e. I am committing every few seconds or
+so) and the height represents the number of events. It is obviously not very
+readable without context (you can try reading this <a href="https://lepisma.github.io/2017/06/25/simple-time-maps/index.html">old post</a>) but it's a little
+low on priority for me to fix.
+</p>
+
+<figure> <div id="commit-plot"></div> <figcaption>
+<p>
+Commits for week 42-2018 and 4 previous weeks.
+</p>
+</figcaption></figure>
+
+<hr>
+
+<p>
+Overall, I don't think I created anything major outside of work this week.
+</p>
 </div>
 </div>
 
-<div id="outline-container-org9f7e171" class="outline-2">
-<h2 id="sec-writing"><a id="org9f7e171"></a><span class="section-number-2">4</span> Writing</h2>
+<div id="outline-container-org29b9917" class="outline-2">
+<h2 id="sec-writing"><a id="org29b9917"></a><span class="section-number-2">4</span> Writing</h2>
 <div class="outline-text-2" id="text-sec-writing">
 
 <ul class="org-ul">
-<li>Nothing.</li>
+<li>Shepherded a few old notes from a couple of books which will go in journal
+sometime soon.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org3a3dd50" class="outline-2">
-<h2 id="sec-media"><a id="org3a3dd50"></a><span class="section-number-2">5</span> Media</h2>
+<div id="outline-container-orge7d4092" class="outline-2">
+<h2 id="sec-media"><a id="orge7d4092"></a><span class="section-number-2">5</span> Media</h2>
 <div class="outline-text-2" id="text-sec-media">
 
 <ul class="org-ul">
-<li>Better Science through Art (<a class='org-ref-reference' href="#gabriel2010better">gabriel2010better</a>)</li>
-<li>Resumed Sandman. Finished <a href="https://www.goodreads.com/book/show/25101.Season_of_Mists">Season of Mists</a>.</li>
-<li><a href="https://plus.maths.org/content/uncoiling-spiral-maths-and-hallucinations">Uncoiling the spiral: Maths and hallucinations | plus.maths.org</a></li>
+<li><a href="https://twobithistory.org/2018/10/14/lisp.html">How Lisp Became God's Own Programming Language</a>. Overall this two-bit history
+blog looks really nice.</li>
+<li>Google's Hybrid Approach to Research (<a class='org-ref-reference' href="#spector2012google">spector2012google</a>).</li>
+<li><a href="https://aeon.co/essays/can-algorithms-create-true-art-or-do-they-only-imitate">Can algorithms create true art, or do they only imitate?</a> from Hannah Fry's new
+book.</li>
+<li>A few <a href="https://aeon.co/essays/the-secret-intellectual-history-of-mathematics">more</a> <a href="https://aeon.co/essays/is-the-translator-a-servant-of-the-text-or-an-original-artist">pieces</a>. I should setup my other, non aeon, feeds properly. The
+problem is with this split between newsletters and rss. At this moment, I
+think I should stop trying to merge both and stick with <code>elfeed</code> + <code>mu4e</code>.</li>
 </ul>
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="steedman1996very">[steedman1996very]</a> <a name="steedman1996very"></a>Steedman. 1996. "A very short introduction to CCG." <i>Unpublished paper. http://www. coqsci. ed. ac. uk/steedman/paper. html</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="liu2016not">[liu2016not]</a> <a name="liu2016not"></a>Liu, Lowe, Serban, Noseworthy, Charlin & Pineau. 2016. "How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation." <i>arXiv preprint arXiv:1603.08023</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="gabriel2010better">[gabriel2010better]</a> <a name="gabriel2010better"></a>Gabriel & Sullivan. 2010. "Better science through art", 885-900, in in: ACM Sigplan Notices, edited by </li>
+<ul class='org-ref-bib'><li><a id="sculley2014machine">[sculley2014machine]</a> <a name="sculley2014machine"></a>Sculley, Phillips, Ebner, Chaudhary & Young. 2014. "Machine learning: The high-interest credit card of technical debt." <i></i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="jaeger2004harnessing">[jaeger2004harnessing]</a> <a name="jaeger2004harnessing"></a>Jaeger & Haas. 2004. "Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication." <i>science</i>, 304(5667), 78-80. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="zettlemoyer2012learning">[zettlemoyer2012learning]</a> <a name="zettlemoyer2012learning"></a>Zettlemoyer & Collins. 2012. "Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars." <i>arXiv preprint arXiv:1207.1420</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="spector2012google">[spector2012google]</a> <a name="spector2012google"></a>Spector, Norvig & Petrov. 2012. "Google's hybrid approach to research." <i>Communications of the ACM</i>, 55(7), 34-37. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 </ul>
 </p>
 </div>
