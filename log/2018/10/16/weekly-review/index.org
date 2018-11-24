@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /41-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 
 This week was mostly spent in readings and stuff. I also was stuck with flu for
 the later half so wasn't able to do anything else.

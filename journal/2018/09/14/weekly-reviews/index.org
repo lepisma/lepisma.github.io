@@ -1,6 +1,6 @@
 #+TITLE: Weekly Reviews
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: personal, productivity, weekly-review
+#+TAGS: personal, productivity
 
 It's surprisingly easy to get lost in things which are not /important/ enough.
 There are tricks to circumvent productivity while being apparently busy the

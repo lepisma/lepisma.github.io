@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /42-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 #+PILE: dropcap:nil
 
 #+BEGIN_EXPORT html

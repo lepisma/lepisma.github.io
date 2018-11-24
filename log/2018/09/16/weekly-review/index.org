@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /37-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 
 First [[file:../../14/weekly-reviews/index.org][weekly review]]. Will be very incomplete and mostly biased towards the
 weekend since I started logging items in these last couple of days.

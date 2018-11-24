@@ -6,7 +6,8 @@
 Hello, welcome to my blog! A listing of all the posts follows.
 
 I am now keeping more subjective (and frequent) pieces in [[../journal/index.org][/journal]]. Things that
-are more /page/ like go in my personal [[../wiki/index.org][/wiki]].
+are more /page/ like go in my personal [[../wiki/index.org][/wiki]]. I also try to maintain a regular
+activity [[../log/index.org][/log]].
 
 -----
 

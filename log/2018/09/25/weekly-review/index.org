@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /38-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 
 I will be doing reviews on Mondays now to save the weekend work time. This week
 was pretty dilute. I wasn't getting large chunks of time so wasn't able to do

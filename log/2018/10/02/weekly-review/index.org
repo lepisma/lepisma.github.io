@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /39-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 
 One of the things I have learned from these past weeks is that /only/ weekends are
 not going to work out. Things that are fresh in memory should stay there

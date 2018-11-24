@@ -1,0 +1,8 @@
+#+TITLE: Log
+#+SETUPFILE: ../assets/export.setup
+
+Periodic activity log.
+
+#+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
+(princ (pile-archive))
+#+END_SRC

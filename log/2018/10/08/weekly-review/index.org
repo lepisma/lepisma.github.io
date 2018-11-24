@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /40-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 
 After around 4 reviews, I believe I have a better sense of where my time is
 going. I feel I am now reading more /effectively/ and am also prioritizing the

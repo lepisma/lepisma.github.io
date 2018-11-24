@@ -1,6 +1,5 @@
 #+TITLE: Weekly Review /44-2018/
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: weekly-review
 
 #+BEGIN_EXPORT html
 <script>
