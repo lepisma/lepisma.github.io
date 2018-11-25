@@ -1,0 +1,20 @@
+#+TITLE: Self-contained Org files
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: org-mode, programming
+
+I tend to keep occasional image clippings from pdf documents, images or internet
+posts along with certain notes in org files and, at times, it gets really hard
+to move them around because of the links to some relative directory and all. I
+am now trying to make these files self contained by putting the bytes inside the
+org files in a separate block. Here is the [[https://github.com/lepisma/iorg][package]] if you want to give it a try.
+The screencast below shows the system in action:
+
+[[./screen.gif]]
+
+In some ways this violates the /plain-text/ idea of these files but it's not that
+bad really. Unless, of course, you start embedding things like fonts, audio
+clippings etc. [fn::Hmm] and start going fully towards something like /odf/.
+
+This is missing a few features to make it /actually/ usable. A notable one is
+support for org exports (at least for html so that I can use them in this
+website).
