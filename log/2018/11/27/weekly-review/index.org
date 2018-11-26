@@ -1,0 +1,73 @@
+#+TITLE: Weekly Review /47-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+
+I missed two reviews. This one might not have correctly demarcated items. Also
+redefining the sections a little so they make more sense.
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 47,
+year: 2018
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+/This section is for logging experiments connected with a problem I am solving.
+The output can be programs, documents etc./
+
+- NA
+
+* Readings/Explorations
+/The title is self explanatory/
+- [[https://bair.berkeley.edu/blog/2018/11/14/adasearch/][AdaSearch: A Successive Elimination Approach to Adaptive Search]], not really
+  sure this is something new. I feel a lot of similar ideas are around, covering
+  different instantiations/variations of the narrowing search problem.
+- Found [[http://blinkdb.org/][BlinkDB]] (as a result of finding this nice blog, [[https://blog.acolyer.org/][the morning paper]]), have
+  to see how it works but surely looks interesting.
+- [[http://esoteric.codes/blog/evan-buswell][Evan Buswell - esoteric.codes]]. Don't think the idea is as fundamental as
+  posed. I might be wrong since it needs a bit of growth to really show the
+  colors.
+- [[https://twobithistory.org/2018/11/12/cat.html][The Source History of Cat]] from two bit history (they have some really
+  interesting pieces).
+- Came to know that there is a fuzziness feature allowed in regex packages (see
+  [[https://pypi.org/project/regex/][here]] for example). I wonder whether a weighted regex, using a weighted
+  automata is useful enough to warrant existence.
+
+* Programming
+/Mostly for recreational programming. Though the plot covers all commits,
+including work related./
+
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 47-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- I got to setup elfeed finally. My feeds are [[https://github.com/lepisma/rogue/blob/master/feeds.org][here]].
+- Wrote some /inconsequential elisp/ (these two words should be kept together).
+
+* Writing
+/General writings, not related to experiments/
+
+- Tried to factor up the idea of Strange Loop and wrote a bunch. As an aside,
+  writing on paper feels real good.
+
+* Media
+/Books, podcasts, essays etc./
+
+- Read a few books. [[https://mitpress.mit.edu/books/little-schemer-fourth-edition][The Little Schemer]], [[https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465032710][Probably Approximately Correct]] and a few
+  more issues from [[https://www.goodreads.com/series/40372-the-sandman][Sandman]].
+- Came to know about [[https://www.stuffyoushouldknow.com/podcasts/what-were-war-masks.htm][war masks]]. Try out a few image searches for 'war masks
+  ww1', pretty neat.
+- A few essays. [[https://aeon.co/essays/deny-and-become-the-radical-ethos-of-negative-capability][Deny and become: the radical ethos of negative capability]], [[https://aeon.co/essays/why-read-the-nihilistic-work-of-giacomo-leopardi-today][Why
+  read the nihilistic work of Giacomo Leopardi today?]] I also tried curio on
+  aeon, the narration was nice.
