@@ -24,8 +24,9 @@ This page is a work in progress
   \definecolor{fback}{RGB}{16, 40, 64}
   \definecolor{fdark}{RGB}{12, 4, 15}
   \definecolor{forange}{RGB}{233, 122, 69}
-  \newfontfamily\stfont{LeviBrush}
-  \newfontfamily\fcfont{FarCry}
+  \immediate\write18{yes | cp -r ./fonts /tmp}
+  \newfontfamily\stfont{LeviBrush}[Path = /tmp/fonts/]
+  \newfontfamily\fcfont{FarCry}[Path = /tmp/fonts/]
 
   \begin{center}
   \begin{tikzpicture}
@@ -61,12 +62,12 @@ This page is a work in progress
 
   \begin{scope}
   \clip (0, 0) rectangle (11, 4);
-  \node at (5.5, 4.1) {\color{forange} \Huge \fcfont fARCRY3};
+  \node at (5.5, 4.1) {\color{forange} \Huge \fcfont TIKZ};
   \end{scope}
 
   \begin{scope}
   \clip (0, 4) rectangle (11, 8);
-  \node at (5.5, 4.1) {\color{fback} \Huge \fcfont fARCRY3};
+  \node at (5.5, 4.1) {\color{fback} \Huge \fcfont TIKZ};
   \end{scope}
 
   \node at (5.5, 3) {\color{black} \HUGE \stfont BLOOD DRAGON};
