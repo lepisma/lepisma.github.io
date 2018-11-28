@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-07 Thu 12:41 -->
+<!-- 2018-11-29 Thu 01:04 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TikZ Blood Dragon</title>
+<title>TikZ</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -185,7 +185,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
-<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/assets/js/pace.min.js"></script>
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
@@ -266,6 +266,7 @@ for the JavaScript code in this tag.
                                 <div class='site-nav'>
                                   <a class='' href='/'> blog</a>
                                   <a class='' href='/journal'> journal</a>
+                                  <a class='' href='/log'> log</a>
                                   <a class='active' href='/wiki'> wiki</a>
                                   <a href='/about'> about</a>
                                 </div>
@@ -273,12 +274,12 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-06-06 Wed 23:41</div>
-                                <h1>TikZ Blood Dragon</h1>
+                                <div class='page-meta'>Last modified:  2018-11-29 Thu 01:00</div>
+                                <h1>TikZ</h1>
                               </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./../../../index.html'>≡ index</a> / <a href='../../../programming/index.html'>programming</a> / <a href='../../procedural/index.html'>procedural</a> / tikz-blood-dragon</div>
+<div id='breadcrumbs'><a href='./../../../index.html'>≡ index</a> / <a href='../../../programming/index.html'>programming</a> / <a href='../../procedural/index.html'>procedural</a> / tikz</div>
 <blockquote>
 <p>
 This page is a work in progress
@@ -291,8 +292,9 @@ This page is a work in progress
 <span class="org-font-latex-sedate">\definecolor</span>{fback}{RGB}{16, 40, 64}
 <span class="org-font-latex-sedate">\definecolor</span>{fdark}{RGB}{12, 4, 15}
 <span class="org-font-latex-sedate">\definecolor</span>{forange}{RGB}{233, 122, 69}
-<span class="org-font-latex-sedate">\newfontfamily\stfont</span>{LeviBrush}
-<span class="org-font-latex-sedate">\newfontfamily\fcfont</span>{FarCry}
+<span class="org-font-latex-sedate">\immediate\write18</span>{yes | cp -r ./fonts /tmp}
+<span class="org-font-latex-sedate">\newfontfamily\stfont</span>{LeviBrush}[Path = /tmp/fonts/]
+<span class="org-font-latex-sedate">\newfontfamily\fcfont</span>{FarCry}[Path = /tmp/fonts/]
 
 <span class="org-font-latex-sedate"><span class="org-keyword">\begin</span></span>{<span class="org-function-name">center</span>}
 <span class="org-font-latex-sedate"><span class="org-keyword">\begin</span></span>{<span class="org-function-name">tikzpicture</span>}
@@ -328,12 +330,12 @@ This page is a work in progress
 
 <span class="org-font-latex-sedate"><span class="org-keyword">\begin</span></span>{<span class="org-function-name">scope</span>}
 <span class="org-font-latex-sedate">\clip</span> (0, 0) rectangle (11, 4);
-<span class="org-font-latex-sedate">\node</span> at (5.5, 4.1) {<span class="org-font-latex-sedate">\color</span>{forange} <span class="org-font-latex-sedate"><span class="org-type">\Huge</span></span> <span class="org-font-latex-sedate">\fcfont</span> fARCRY3};
+<span class="org-font-latex-sedate">\node</span> at (5.5, 4.1) {<span class="org-font-latex-sedate">\color</span>{forange} <span class="org-font-latex-sedate"><span class="org-type">\Huge</span></span> <span class="org-font-latex-sedate">\fcfont</span> TIKZ};
 <span class="org-font-latex-sedate"><span class="org-keyword">\end</span></span>{<span class="org-function-name">scope</span>}
 
 <span class="org-font-latex-sedate"><span class="org-keyword">\begin</span></span>{<span class="org-function-name">scope</span>}
 <span class="org-font-latex-sedate">\clip</span> (0, 4) rectangle (11, 8);
-<span class="org-font-latex-sedate">\node</span> at (5.5, 4.1) {<span class="org-font-latex-sedate">\color</span>{fback} <span class="org-font-latex-sedate"><span class="org-type">\Huge</span></span> <span class="org-font-latex-sedate">\fcfont</span> fARCRY3};
+<span class="org-font-latex-sedate">\node</span> at (5.5, 4.1) {<span class="org-font-latex-sedate">\color</span>{fback} <span class="org-font-latex-sedate"><span class="org-type">\Huge</span></span> <span class="org-font-latex-sedate">\fcfont</span> TIKZ};
 <span class="org-font-latex-sedate"><span class="org-keyword">\end</span></span>{<span class="org-function-name">scope</span>}
 
 <span class="org-font-latex-sedate">\node</span> at (5.5, 3) {<span class="org-font-latex-sedate">\color</span>{black} <span class="org-font-latex-sedate">\HUGE</span> <span class="org-font-latex-sedate">\stfont</span> BLOOD DRAGON};
