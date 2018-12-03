@@ -1,0 +1,43 @@
+#+TITLE: Weekly Review /48-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 48,
+year: 2018
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Read up [[https://www.python.org/dev/peps/pep-0544/][PEP 544 -- Protocols]]. Might be useful since we are starting to use
+  type hints at many places now, though only for documentation and not safety.
+- Did some reading on fonts since there were rendering issues with /complex
+  scripts/ based languages in Emacs.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 48-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- I have started doing [[http://adventofcode.com/][Advent of Code]] this year too. Will be keeping the
+  solutions [[http://github.com/lepisma/advent-of-code][here]]. Will be trying a few new languages from my list [[pile:wiki:programming/languages][here]].
+
+* Writing
+
+* Media
+- [[http://nautil.us/issue/66/clockwork/the-problem-with-scientific-credit][Credit Is About Perception More Than Performance]]
+- [[http://thisoldlisp.com/talks/els-2018/][This Old Lisp]]
