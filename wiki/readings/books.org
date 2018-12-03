@@ -4327,6 +4327,13 @@ CLOSED: [2015-05-19]
 :END:
 
 ** Fantasy
+*** Port of Shadows
+:PROPERTIES:
+:AUTHOR:   Glen Cook
+:ADDED:    [2018-12-04]
+:GOODREADS: https://www.goodreads.com/book/show/37534877-port-of-shadows
+:END:
+
 *** Assassin's Quest (Farseer Trilogy, #3)
 :PROPERTIES:
 :AUTHOR:    Robin Hobb
