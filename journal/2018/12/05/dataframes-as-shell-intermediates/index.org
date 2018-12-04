@@ -33,10 +33,10 @@ domain specific tools like from, say, [[http://www.speech.sri.com/projects/srilm
 | constraints  | 1 |
 | i            | 2 |
 
-Of course the idea is not as universal as I might be hinting. There are many
-popular tools that return different forms of structured data in formats like
-json, xml, sexps etc. but keeping a dataframes structure does make sense for
-many of the core unix tools and many data based tools.
+Of course the idea is not totally universal. There are many popular tools that
+return structured data in formats like json, xml, sexps etc., but keeping a
+dataframe structure does make sense for many of the core unix and data
+processing tools.
 
 Already there are a lot of tools for ingesting tables. A primitive parsing of
 shell output to tables is done in org-babel. You can get output of tools that
@@ -52,5 +52,5 @@ emit tabular data in org tables and then work on them /a little/ like dataframes
 
 Other than this and the usual unix tools, there are a lot of cli tools that
 actually work by passing proper /tables/, for example [[https://csvkit.readthedocs.io/en/1.0.3/][csvkit]]. But a move to
-dataframes, with type constraints and variable naming might have some nicer side
-effects.
+dataframes, with type constraints and variable naming, might have some nicer
+side effects.
