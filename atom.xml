@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>blog</title>
+  <link href=""/>
+  <updated>2018-12-06</updated>
+  <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Tangle Templates</title>
+    <link href="./2018/08/26/tangle-templates.html"/>
+    <updated>2018-08-26</updated>
+  </entry>
+  <entry>
+    <title>Blog ← Wiki</title>
+    <link href="./2018/06/07/wiki-to-blog.html"/>
+    <updated>2018-06-07</updated>
+  </entry>
+  <entry>
+    <title>Blog → Wiki</title>
+    <link href="./2018/01/27/blog-to-wiki.html"/>
+    <updated>2018-01-27</updated>
+  </entry>
+  <entry>
+    <title>Fancy Little Lisp λs</title>
+    <link href="./2017/12/20/fancy-lambdas.html"/>
+    <updated>2017-12-20</updated>
+  </entry>
+  <entry>
+    <title>Ricing up Org Mode</title>
+    <link href="./2017/10/28/ricing-org-mode/index.html"/>
+    <updated>2017-10-28</updated>
+  </entry>
+  <entry>
+    <title>The point of keyboarding</title>
+    <link href="./2017/08/25/keyboard/index.html"/>
+    <updated>2017-08-25</updated>
+  </entry>
+  <entry>
+    <title>Leaving Goodreads</title>
+    <link href="./2017/06/29/leaving-goodreads/index.html"/>
+    <updated>2017-06-29</updated>
+  </entry>
+  <entry>
+    <title>Simpler time map plots</title>
+    <link href="./2017/06/25/simple-time-maps/index.html"/>
+    <updated>2017-06-25</updated>
+  </entry>
+  <entry>
+    <title>The Beauty of Syntactical Macros</title>
+    <link href="./2017/05/15/syntactical-macros.html"/>
+    <updated>2017-05-15</updated>
+  </entry>
+  <entry>
+    <title>Projects</title>
+    <link href="./2017/03/15/projects.html"/>
+    <updated>2017-03-15</updated>
+  </entry>
+  <entry>
+    <title>Optional Typing</title>
+    <link href="./2017/03/05/optional-typing.html"/>
+    <updated>2017-03-05</updated>
+  </entry>
+  <entry>
+    <title>Cheap polyglot notebooks</title>
+    <link href="./2016/11/02/org-babel/index.html"/>
+    <updated>2016-11-02</updated>
+  </entry>
+  <entry>
+    <title>Abusing Evidence: Drought, Deluge and Disregard</title>
+    <link href="./2016/08/25/evidence-abuse/index.html"/>
+    <updated>2016-08-25</updated>
+  </entry>
+  <entry>
+    <title>What is it that Genetic Algorithm does?</title>
+    <link href="./2016/06/13/genetic-algorithm/index.html"/>
+    <updated>2016-06-13</updated>
+  </entry>
+  <entry>
+    <title>On why you too should give Emacs Org-mode a spin</title>
+    <link href="./2016/03/17/org-mode/index.html"/>
+    <updated>2016-03-17</updated>
+  </entry>
+  <entry>
+    <title>Constitution De Markov</title>
+    <link href="./2016/01/23/constitution-de-markov.html"/>
+    <updated>2016-01-23</updated>
+  </entry>
+  <entry>
+    <title>White Rhinos, irrationality and other tales</title>
+    <link href="./2015/12/21/white-rhino.html"/>
+    <updated>2015-12-21</updated>
+  </entry>
+  <entry>
+    <title>The Writers&#39; Voice</title>
+    <link href="./2015/11/03/the-writers-voice/index.html"/>
+    <updated>2015-11-03</updated>
+  </entry>
+  <entry>
+    <title>Up and running with Theano (GPU) + PyCUDA on Windows</title>
+    <link href="./2015/07/30/up-with-theano-and-cuda.html"/>
+    <updated>2015-07-30</updated>
+  </entry>
+  <entry>
+    <title>Hot 100 over the years</title>
+    <link href="./2015/06/27/hot-100/index.html"/>
+    <updated>2015-06-27</updated>
+  </entry>
+  <entry>
+    <title>Overtone Jamming</title>
+    <link href="./2015/03/23/overtone-jamming.html"/>
+    <updated>2015-03-23</updated>
+  </entry>
+  <entry>
+    <title>Rowing a Steamer</title>
+    <link href="./2015/03/20/rowing-a-steamer/index.html"/>
+    <updated>2015-03-20</updated>
+  </entry>
+  <entry>
+    <title>Computer Programs and Zipf&#39;s Law</title>
+    <link href="./2015/01/14/computer-programs-and-zipf-law/index.html"/>
+    <updated>2015-01-14</updated>
+  </entry>
+  <entry>
+    <title>Firewall Paradox and revisiting the Law of Information</title>
+    <link href="./2015/01/08/firewall-paradox/index.html"/>
+    <updated>2015-01-08</updated>
+  </entry>
+  <entry>
+    <title>Why I Stopped Recommending GNOME</title>
+    <link href="./2015/01/06/why-i-stopped-recommending-gnome/index.html"/>
+    <updated>2015-01-06</updated>
+  </entry>
+  <entry>
+    <title>The Interstellar&#39;s Tesseract</title>
+    <link href="./2014/11/25/interstellar-tesseract/index.html"/>
+    <updated>2014-11-25</updated>
+  </entry>
+  <entry>
+    <title>Neural Turing Machines for dummies</title>
+    <link href="./2014/11/02/neural-turing-machines/index.html"/>
+    <updated>2014-11-02</updated>
+  </entry>
+  <entry>
+    <title>Flesh and Metal</title>
+    <link href="./2014/07/29/flesh-and-metal/index.html"/>
+    <updated>2014-07-29</updated>
+  </entry>
+  <entry>
+    <title>Extreme Learning Machines with Julia</title>
+    <link href="./2014/06/21/extreme-learning-machine/index.html"/>
+    <updated>2014-06-21</updated>
+  </entry>
+</feed>
