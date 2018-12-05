@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>log</title>
+  <link href="https://lepisma.github.io/log"/>
+  <updated>2018-12-06</updated>
+  <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Weekly Review /48-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/12/04/weekly-review/index.html"/>
+    <updated>2018-12-04</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /47-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/11/27/weekly-review/index.html"/>
+    <updated>2018-11-27</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /44-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/11/06/weekly-review/index.html"/>
+    <updated>2018-11-06</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /43-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/10/30/weekly-review/index.html"/>
+    <updated>2018-10-30</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /42-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/10/22/weekly-review/index.html"/>
+    <updated>2018-10-22</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /41-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/10/16/weekly-review/index.html"/>
+    <updated>2018-10-16</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /40-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/10/08/weekly-review/index.html"/>
+    <updated>2018-10-08</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /39-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/10/02/weekly-review/index.html"/>
+    <updated>2018-10-02</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /38-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/09/25/weekly-review/index.html"/>
+    <updated>2018-09-25</updated>
+  </entry>
+  <entry>
+    <title>Weekly Review /37-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/09/16/weekly-review/index.html"/>
+    <updated>2018-09-16</updated>
+  </entry>
+</feed>
