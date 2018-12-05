@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
-  <link href="journal"/>
+  <link href="https://lepisma.github.io/journal"/>
   <updated>2018-12-06</updated>
   <author><name>Abhinav Tushar</name></author>
   <entry>
     <title>DataFrames as Shell Intermediates</title>
-    <link href="./2018/12/05/dataframes-as-shell-intermediates/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/12/05/dataframes-as-shell-intermediates/index.html"/>
     <updated>2018-12-05</updated>
   </entry>
   <entry>
     <title>Self-contained Org files</title>
-    <link href="./2018/11/11/self-contained-org-files/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/11/11/self-contained-org-files/index.html"/>
     <updated>2018-11-11</updated>
   </entry>
   <entry>
     <title>Interstices</title>
-    <link href="./2018/11/05/interstices/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/11/05/interstices/index.html"/>
     <updated>2018-11-05</updated>
   </entry>
   <entry>
     <title>The I /Loop/</title>
-    <link href="./2018/10/21/the-i-loop/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/10/21/the-i-loop/index.html"/>
     <updated>2018-10-21</updated>
   </entry>
   <entry>
     <title>Lisp Shell Scripts</title>
-    <link href="./2018/10/07/lisp-shell-scripts/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/10/07/lisp-shell-scripts/index.html"/>
     <updated>2018-10-07</updated>
   </entry>
   <entry>
     <title>KDE Connect is Awesome!</title>
-    <link href="./2018/09/30/kde-connect/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/09/30/kde-connect/index.html"/>
     <updated>2018-09-30</updated>
   </entry>
   <entry>
     <title>Analogies</title>
-    <link href="./2018/09/24/analogies/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/09/24/analogies/index.html"/>
     <updated>2018-09-24</updated>
   </entry>
   <entry>
     <title>Weekly Reviews</title>
-    <link href="./2018/09/14/weekly-reviews/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/09/14/weekly-reviews/index.html"/>
     <updated>2018-09-14</updated>
   </entry>
   <entry>
     <title>What are Jupyter notebooks for?</title>
-    <link href="./2018/08/26/jupyter/index.html"/>
+    <link href="https://lepisma.github.io/journal/2018/08/26/jupyter/index.html"/>
     <updated>2018-08-26</updated>
   </entry>
   <entry>
     <title>Rational Theists</title>
-    <link href="./2018/08/11/rational-theists.html"/>
+    <link href="https://lepisma.github.io/journal/2018/08/11/rational-theists.html"/>
     <updated>2018-08-11</updated>
   </entry>
   <entry>
     <title>Really using Org Mode</title>
-    <link href="./2018/08/02/really-using-org-mode.html"/>
+    <link href="https://lepisma.github.io/journal/2018/08/02/really-using-org-mode.html"/>
     <updated>2018-08-02</updated>
   </entry>
   <entry>
     <title>Defer Macro</title>
-    <link href="./2018/08/01/defer.html"/>
+    <link href="https://lepisma.github.io/journal/2018/08/01/defer.html"/>
     <updated>2018-08-01</updated>
   </entry>
   <entry>
     <title>Bail Out Macro</title>
-    <link href="./2018/07/31/bail-out.html"/>
+    <link href="https://lepisma.github.io/journal/2018/07/31/bail-out.html"/>
     <updated>2018-07-31</updated>
   </entry>
   <entry>
     <title>A Partial Interpretation of /Metaphysics‑of‑Quality/</title>
-    <link href="./2018/07/18/partial-moq.html"/>
+    <link href="https://lepisma.github.io/journal/2018/07/18/partial-moq.html"/>
     <updated>2018-07-18</updated>
   </entry>
   <entry>
     <title>Most Impactful Books</title>
-    <link href="./2018/06/18/impactful-books.html"/>
+    <link href="https://lepisma.github.io/journal/2018/06/18/impactful-books.html"/>
     <updated>2018-06-18</updated>
   </entry>
   <entry>
     <title>Irrationalization and Selfishness</title>
-    <link href="./2018/06/14/irrationalization.html"/>
+    <link href="https://lepisma.github.io/journal/2018/06/14/irrationalization.html"/>
     <updated>2018-06-14</updated>
   </entry>
   <entry>
     <title>Functions as state</title>
-    <link href="./2018/06/09/functions-as-state.html"/>
+    <link href="https://lepisma.github.io/journal/2018/06/09/functions-as-state.html"/>
     <updated>2018-06-09</updated>
   </entry>
   <entry>
     <title>Utilities pitfall</title>
-    <link href="./2018/05/28/utilities.html"/>
+    <link href="https://lepisma.github.io/journal/2018/05/28/utilities.html"/>
     <updated>2018-05-28</updated>
   </entry>
   <entry>
     <title>The Lazy Answer to Everything</title>
-    <link href="./2018/02/14/lazy-answer.html"/>
+    <link href="https://lepisma.github.io/journal/2018/02/14/lazy-answer.html"/>
     <updated>2018-02-14</updated>
   </entry>
   <entry>
     <title>Schedule Hours not Deadlines</title>
-    <link href="./2018/02/12/hours-over-deadline.html"/>
+    <link href="https://lepisma.github.io/journal/2018/02/12/hours-over-deadline.html"/>
     <updated>2018-02-12</updated>
   </entry>
 </feed>
