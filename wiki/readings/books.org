@@ -1814,6 +1814,13 @@ the least the following would be okay:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** Lost in Math: How Beauty Leads Physics Astray
+:PROPERTIES:
+:AUTHOR:   Sabine Hossenfelder
+:ADDED:    [2018-12-07]
+:AMAZON:   https://www.amazon.com/Lost-Math-Beauty-Physics-Astray/dp/0465094252
+:END:
+
 *** TOREAD The Cultural Logic of Computation
 :PROPERTIES:
 :AUTHOR:   David Golumbia
