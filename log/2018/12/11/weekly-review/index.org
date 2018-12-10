@@ -1,0 +1,46 @@
+#+TITLE: Weekly Review /49-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 49,
+year: 2018
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- A few pieces from Morning Paper
+  - [[https://blog.acolyer.org/2018/11/30/lemna-explaining-deep-learning-based-security-applications/][LEMNA: explaining deep learning based security applications]]
+  - [[https://blog.acolyer.org/2018/11/19/scootr-scaling-r-dataframes-on-dataflow-systems/][ScootR: scaling R dataframes on dataflow systems]].
+- Julia [[https://julialang.org/blog/2018/12/ml-language-compiler][looks lucrative]] again. They have few really nice language level ideas.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 49-2018 and 4 previous weeks. [fn::Looks like commit counting
+is a little buggy since it updates a lot for past weeks]
+#+HTML: </figcaption></figure>
+
+- Nothing significant, except a few advent-of-code problems and work stuff.
+
+* Writing
+
+* Media
+- A few more issues from Sandman.
+- Also started [[https://www.goodreads.com/book/show/33509756-moral-fables-followed-by-thoughts][Moral Fables]].
+- Having a bit more travel time these days, I went through a bunch of podcasts.
+  Specially started looking into [[https://www.thisamericanlife.org/663/how-i-read-it][TAL]] and [[http://www.backstoryradio.org/shows/flu][BackStory]]. Also [[http://www.wnycstudios.org/story/oliver-sacks-journey-where-to-where/][this piece]] on Oliver
+  Sacks by Radiolab.
