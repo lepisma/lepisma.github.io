@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.github.io/journal"/>
-  <updated>2018-12-06</updated>
+  <updated>2018-12-14</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Buffer Model Gotcha</title>
+    <link href="https://lepisma.github.io/journal/2018/12/14/buffer-model-gotcha/index.html"/>
+    <updated>2018-12-14</updated>
+  </entry>
   <entry>
     <title>DataFrames as Shell Intermediates</title>
     <link href="https://lepisma.github.io/journal/2018/12/05/dataframes-as-shell-intermediates/index.html"/>

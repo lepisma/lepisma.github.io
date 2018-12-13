@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-12-14 Fri 03:08 -->
+<!-- 2018-12-14 Fri 03:50 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Buffer Model Gotcha</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -274,187 +274,161 @@ for the JavaScript code in this tag.
                               </header>
 
                               <div class='page-header'>
-                                <div class='page-meta'></div>
-                                <h1>Journal</h1>
+                                <div class='page-meta'>2018-12-14 Fri 00:00</div>
+                                <h1>Buffer Model Gotcha</h1>
                               </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../../..#emacs'>emacs</a> <a href='../../../..#programming'>programming</a></div>
+<p>
+<span class='dropcap'>S</span>o I have this <a class="pile-link" href="/wiki/readings/books.html">reading list</a> which has around 750 org entries. My org publish
+setup adds <code>CUSTOM_ID</code> for each entry before publishing and does a regex based
+removal of the extra <code>&lt;pre&gt;...&lt;/pre&gt;</code> text generated due to the <code>CUSTOM_ID</code>
+property. The aim here is to have the items get reasonable<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> section <code>id</code>
+which can then be hyperlinked to jump around but not show up the <code>CUSTOM_ID</code> text
+in the final html.
+</p>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+Usually the solution would be to just have programmatically generated <code>CUSTOM_ID</code>
+properties and then <i>not</i> export org properties drawer in html (a lot of
+org-publish based blogs do this). Since I wanted the drawer to show, I did this
+post processing thing where I would go over the generated html and remove
+elements like the following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-ini">&lt;!-- remove this whole element --&gt;
+&lt;pre class="example"&gt;
+CUSTOM_ID: sec-mathematics/logic
+&lt;/pre&gt;
+
+&lt;pre class="example"&gt;
+AUTHOR: Timothy Gowers, June Barrow-Green, Imre Leader
+ADDED: &lt;2018-01-08&gt;
+GOODREADS: https://ww...
+CUSTOM_ID: sec-the-... &lt;!-- remove this line --&gt;
+&lt;/pre&gt;
+</pre>
+</div>
+
+<p>
+Anyway, here is how much my old function took:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">with-current-buffer</span> <span class="org-string">"books.org"</span>
+  (<span class="org-keyword">benchmark-run</span> (pile-publish-current-file t<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+</pre>
+</div>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">12.937646686</td>
+<td class="org-right">2</td>
+<td class="org-right">0.3899886170000002</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+Since I was basically double looping over the buffer in that version, here is
+the results from a better version:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">with-current-buffer</span> <span class="org-string">"books.org"</span>
+  (<span class="org-keyword">benchmark-run</span> (pile-publish-current-file t<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+</pre>
+</div>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">8.998249791</td>
+<td class="org-right">1</td>
+<td class="org-right">0.1909841450000016</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+I don't know why I was not worried but this is <i>really</i> <i>really</i> slow. A 500K file
+should not behave like this in a lightweight text processing task. Having bad
+timing estimates, I tried porting the same regex in Common Lisp and got almost
+instantaneous results.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+The issue was in my mental model which conflicts with the buffer model of string
+manipulation in Emacs. Doing <code>(with-current-buffer ...</code> hides the buffer and makes
+me feel like I am working on plain strings, which is wrong. Since the exported
+file had a full fledged html buffer with all the modes and fontification
+enabled, it took a long time for the <code>re-search-forward</code> calls to go through the
+whole thing. Just switching the buffer mode to <code>fundamental-mode</code> does the trick.
 </p>
 
-<div class='page-tags'><a href='#books'>books</a> <a href='#emacs'>emacs</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-14</div>
-<p class="archive-title">
-<a href="./2018/12/14/buffer-model-gotcha/index.html" class="archive-title">Buffer Model Gotcha</a>
+<p>
+Here is the current version. Even though the complete export is around 2-3
+seconds, the time spent in that regex step is almost nothing.
 </p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-12-05</div>
-<p class="archive-title">
-<a href="./2018/12/05/dataframes-as-shell-intermediates/index.html" class="archive-title">DataFrames as Shell Intermediates</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#org-mode'>org-mode</a></div>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">with-current-buffer</span> <span class="org-string">"books.org"</span>
+  (<span class="org-keyword">benchmark-run</span> (pile-publish-current-file t<span class="org-parinfer-pretty-parensXdim-paren">)))</span>
+</pre>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-11-11</div>
-<p class="archive-title">
-<a href="./2018/11/11/self-contained-org-files/index.html" class="archive-title">Self-contained Org files</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a></div>
-</div>
+<table>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-11-05</div>
-<p class="archive-title">
-<a href="./2018/11/05/interstices/index.html" class="archive-title">Interstices</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-10-07</div>
-<p class="archive-title">
-<a href="./2018/10/07/lisp-shell-scripts/index.html" class="archive-title">Lisp Shell Scripts</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
+<colgroup>
+<col  class="org-right">
 
-<div class='archive-item'>
-<div class='page-meta'>2018-09-30</div>
-<p class="archive-title">
-<a href="./2018/09/30/kde-connect/index.html" class="archive-title">KDE Connect is Awesome!</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
+<col  class="org-right">
 
-<div class='archive-item'>
-<div class='page-meta'>2018-09-24</div>
-<p class="archive-title">
-<a href="./2018/09/24/analogies/index.html" class="archive-title">Analogies</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a></div>
-</div>
+<col  class="org-right">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">3.134736484</td>
+<td class="org-right">2</td>
+<td class="org-right">0.49967851099999905</td>
+</tr>
+</tbody>
+</table>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2018-09-14</div>
-<p class="archive-title">
-<a href="./2018/09/14/weekly-reviews/index.html" class="archive-title">Weekly Reviews</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">By default org
+puts random ids like <code>org4d43428</code> which also change after exports</div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/jupyter/index.html" class="archive-title">What are Jupyter notebooks for?</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-08-11</div>
-<p class="archive-title">
-<a href="./2018/08/11/rational-theists.html" class="archive-title">Rational Theists</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a> <a href='#personal'>personal</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-02</div>
-<p class="archive-title">
-<a href="./2018/08/02/really-using-org-mode.html" class="archive-title">Really using Org Mode</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-01</div>
-<p class="archive-title">
-<a href="./2018/08/01/defer.html" class="archive-title">Defer Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics‑of‑Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
