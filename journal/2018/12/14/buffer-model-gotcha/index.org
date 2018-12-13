@@ -1,0 +1,78 @@
+#+TITLE: Buffer Model Gotcha
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: emacs, programming
+
+So I have this [[pile:wiki:readings/books][reading list]] which has around 750 org entries. My org publish
+setup adds ~CUSTOM_ID~ for each entry before publishing and does a regex based
+removal of the extra ~<pre>...</pre>~ text generated due to the ~CUSTOM_ID~
+property. The aim here is to have the items get reasonable[fn::By default org
+puts random ids like ~org4d43428~ which also change after exports] section ~id~
+which can then be hyperlinked to jump around but not show up the ~CUSTOM_ID~ text
+in the final html.
+
+Usually the solution would be to just have programmatically generated ~CUSTOM_ID~
+properties and then /not/ export org properties drawer in html (a lot of
+org-publish based blogs do this). Since I wanted the drawer to show, I did this
+post processing thing where I would go over the generated html and remove
+elements like the following:
+
+#+BEGIN_SRC ini
+<!-- remove this whole element -->
+<pre class="example">
+CUSTOM_ID: sec-mathematics/logic
+</pre>
+
+<pre class="example">
+AUTHOR: Timothy Gowers, June Barrow-Green, Imre Leader
+ADDED: <2018-01-08>
+GOODREADS: https://ww...
+CUSTOM_ID: sec-the-... <!-- remove this line -->
+</pre>
+#+END_SRC
+
+Anyway, here is how much my old function took:
+
+#+BEGIN_SRC emacs-lisp
+  (with-current-buffer "books.org"
+    (benchmark-run (pile-publish-current-file t)))
+#+END_SRC
+
+#+RESULTS:
+| 12.937646686 | 2 | 0.3899886170000002 |
+
+
+Since I was basically double looping over the buffer in that version, here is
+the results from a better version:
+
+#+BEGIN_SRC emacs-lisp
+  (with-current-buffer "books.org"
+    (benchmark-run (pile-publish-current-file t)))
+#+END_SRC
+
+#+RESULTS:
+| 8.998249791 | 1 | 0.1909841450000016 |
+
+I don't know why I was not worried but this is /really/ /really/ slow. A 500K file
+should not behave like this in a lightweight text processing task. Having bad
+timing estimates, I tried porting the same regex in Common Lisp and got almost
+instantaneous results.
+
+-----
+
+The issue was in my mental model which conflicts with the buffer model of string
+manipulation in Emacs. Doing ~(with-current-buffer ...~ hides the buffer and makes
+me feel like I am working on plain strings, which is wrong. Since the exported
+file had a full fledged html buffer with all the modes and fontification
+enabled, it took a long time for the ~re-search-forward~ calls to go through the
+whole thing. Just switching the buffer mode to ~fundamental-mode~ does the trick.
+
+Here is the current version. Even though the complete export is around 2-3
+seconds, the time spent in that regex step is almost nothing.
+
+#+BEGIN_SRC emacs-lisp
+  (with-current-buffer "books.org"
+    (benchmark-run (pile-publish-current-file t)))
+#+END_SRC
+
+#+RESULTS:
+| 3.134736484 | 2 | 0.49967851099999905 |
