@@ -7,6 +7,11 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *profiling*
+
+  Along with ~benchmark-run~, the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Profiling.html][emacs profiler]] is a handy way to check part of
+  your lisp code is eating up the major time.
+
 + *dbus*
 
   Emacs has proper dbus support (check the manual). Someone made a [[https://github.com/clarete/eosd][notification
