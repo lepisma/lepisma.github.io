@@ -12,6 +12,17 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READ Robustness and evolvability
+CLOSED: [2018-12-15 Sat 01:28]
+:PROPERTIES:
+:CUSTOM_ID: masel2010robustness
+:YEAR:     2010
+:AUTHOR:   Masel, Joanna and Trotter, Meredith V
+:END:
+
+A kind of review of the ideas behind evolutionary robustness. I got a few
+pointers and terminology to follow from this paper.
+
 ** READ How learning can guide evolution
 CLOSED: [2018-11-11 Sun 17:32] DEADLINE: <2018-11-11 Sun>
 :PROPERTIES:
