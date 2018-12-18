@@ -1,0 +1,55 @@
+#+TITLE: Weekly Review /50-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 50,
+year: 2018
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- From morning paper
+  - [[https://blog.acolyer.org/2018/12/14/darwinian-data-structure-selection/#respond][Darwinian data structure selection | the morning paper]]. No github the last
+    time I checked.
+  - [[https://blog.acolyer.org/2018/12/12/graphit-a-high-performance-graph-dsl/][GraphIt: A high-performance graph DSL | the morning paper]] (kind of skimmed,
+    don't have anything to look for in the depth right now)
+- [[https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html][A hammer you can only hold by the handle - Systems Group Blog]]. I want to start
+  using rust at places now.
+- [[https://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]
+- [[http://blog.christianperone.com/2018/05/nlp-word-representations-and-the-wittgenstein-philosophy-of-language/][NLP word representations and the Wittgenstein philosophy of language]]
+- Robustness and evolvability (cite:masel2010robustness)
+- [[http://behdad.org/text/][State of Text Rendering]]. Got here from the [[https://lists.gnu.org/archive/html/emacs-devel/2018-12/msg00252.html][recent discussion]] of moving to
+  harfbuzz in Emacs.
+- [[https://simplystatistics.org/2018/12/11/the-role-of-theory-in-data-analysis/][The Role of Theory in Data Analysis · Simply Statistics]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 50-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Initially thought to use APL for AoC but haven't spent sufficient time so am
+  picking up random problems and using Haskell (hoping to use more of it).
+- Started using Clojure and C++ at a few places so am toying around with the
+  current ecosystem for a while.
+
+* Writing
+
+* Media
+- [[http://www.wnycstudios.org/story/unerased-smid/][UnErased: Smid | Radiolab | WNYC Studios]]
+
+[[bibliography:./index.bib]]
