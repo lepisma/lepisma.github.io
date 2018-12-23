@@ -640,12 +640,22 @@ CLOSED: [2018-09-30 Sun 15:33]
 :GOODREADS: https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month
 :END:
 
-*** The Elements of Programming Style, 2nd Edition
+*** READ The Elements of Programming Style, 2nd Edition
+CLOSED: [2018-12-23 Sun 22:41]
 :PROPERTIES:
 :AUTHOR:   Brian W. Kernighan, P. J. Plauger
 :ADDED:    <2018-07-28>
 :AMAZON:   https://www.amazon.com/Elements-Programming-Style-2nd/dp/0070342075
 :END:
+
+Languages used in the book (FORTRAN, PL/I) are outdated but the ideas discussed
+are pretty relevant, specially for /professional/ programmers (since
+maintainability issues show up quickly when multiple people are involved).
+
+The rules listed in the book, which you can read from the [[https://en.wikipedia.org/wiki/The_Elements_of_Programming_Style][Wikipedia page]], are
+commonplace these days (at least in theory) but since the book is short and the
+commentary elaborates a certain approach for application of these rules, it's a
+worthwhile read.
 
 *** READ Coders at Work: Reflections on the Craft of Programming
 CLOSED: [2018-08-26 Sun 13:39]
