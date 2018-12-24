@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>log</title>
   <link href="https://lepisma.github.io/log"/>
-  <updated>2018-12-19</updated>
+  <updated>2018-12-25</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Weekly Review /51-2018/</title>
+    <link href="https://lepisma.github.io/log/2018/12/25/weekly-review/index.html"/>
+    <updated>2018-12-25</updated>
+  </entry>
   <entry>
     <title>Weekly Review /50-2018/</title>
     <link href="https://lepisma.github.io/log/2018/12/19/weekly-review/index.html"/>
