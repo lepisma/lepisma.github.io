@@ -1,0 +1,49 @@
+#+TITLE: Weekly Review /51-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 51,
+year: 2018
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- Started working on [[https://github.com/lepisma/faces][faces]] looking for similarities/differences in indic
+  scripts.
+- Trying to convert [[https://github.com/lepisma/pigeon][pigeon]] into a syntactical medley language by adding parsers
+  for inline snippets. Starting with APL.
+
+* Readings/Explorations
+- [[https://twobithistory.org/2018/12/18/rss.html][The Rise and Demise of RSS]] and related [[https://twobithistory.org/2018/05/27/semantic-web.html][Whatever Happened to the Semantic Web?]]
+- [[https://blog.acolyer.org/2018/12/19/identifying-impactful-service-system-problems-via-log-analysis/][Identifying impactful service system problems via log analysis]]. I liked the
+  cascade cluster trick here.
+- [[https://esoteric.codes/blog/codeprofiles][CodeProfiles - esoteric.codes]]. The idea of logging the code creation is nice
+  but I wonder if it can be done with minimal bootstrapping.
+- [[http://blog.shakirm.com/2018/10/machine-learning-trick-of-the-day-8-instrumental-thinking/][Machine Learning Trick of the Day (8): Instrumental Thinking ← The Spectator]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 51-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Minor updates to a few of my github projects.
+- Started rust lang.
+
+* Writing
+
+* Media
+- Finished [[https://www.amazon.com/Elements-Programming-Style-2nd/dp/0070342075][Elements of Programming Style]].
+- [[https://aeon.co/essays/why-it-is-better-not-to-aim-at-being-morally-perfect][Why it is better not to aim at being morally perfect | Aeon Essays]]
