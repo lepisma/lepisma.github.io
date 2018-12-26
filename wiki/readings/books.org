@@ -1303,6 +1303,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** READING Moral Fables, followed by “Thoughts”
+:PROPERTIES:
+:AUTHOR:   Giacomo Leopardi, J.G. Nichols
+:ADDED:    [2018-12-26]
+:GOODREADS: https://www.goodreads.com/book/show/33509756-moral-fables-followed-by-thoughts?ac=1&from_search=true
+:END:
+
 *** Infinity and the Mind: The Science and Philosophy of the Infinite
 :PROPERTIES:
 :AUTHOR:   Rudy Rucker
@@ -4812,7 +4819,7 @@ CLOSED: [2015-04-02]
 :GOODREADS: https://www.goodreads.com/book/show/10503
 :END:
 
-*** READING Foucault's Pendulum
+*** Foucault's Pendulum
 :PROPERTIES:
 :AUTHOR:    Umberto Eco, William Weaver
 :ADDED:     <2016-11-28>
@@ -5067,6 +5074,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** READING Cat's Cradle
+:PROPERTIES:
+:AUTHOR:   Kurt Vonnegut
+:ADDED:    [2018-12-26]
+:GOODREADS: https://www.goodreads.com/book/show/135479.Cat_s_Cradle
+:END:
+
 *** Lord of the Flies
 :PROPERTIES:
 :AUTHOR:   William Golding
