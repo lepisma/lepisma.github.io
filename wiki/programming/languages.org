@@ -84,11 +84,7 @@ and trying to implement the language itself.
 * Haskell
 
 Picking up Haskell after OCaml. Right now, I am working through the book [[http://learnyouahaskell.com/][Learn
-You a Haskell]] and solving a few problems with it. Some immediate things that
-interest me:
-
-- [ ] Typeclasses
-- [ ] Parsec and other tooling for working with parsers
+You a Haskell]] and solving a few problems with it.
 
 I am also interested to learn more type theory in the process.
 
@@ -150,9 +146,9 @@ enough of this since I find Haskell more interesting now.
 
 * Prolog
 
-I have a decent understanding of Prolog now but sometimes the programs get stuck
-pretty deep while backtracking. Will be starting with the 'Art of Prolog'
-sometime soon.
+I have an okayish understanding of Prolog now but sometimes the programs get
+stuck pretty deep while backtracking. Will need to dig into the language and
+implementation to see what's missing.
 
 * Python
 
@@ -190,7 +186,7 @@ better class system.
 But, I probably will never be switching to it because Python's package ecosystem
 is way ahead for my personal use cases.
 
-* NEXT Rust
+* Rust
 
 This is something I will be keeping in my toolbox because of:
 - Pattern matching
@@ -198,7 +194,8 @@ This is something I will be keeping in my toolbox because of:
 - Macros
 - Sane package management
 
-The interesting idea to get here is the ownership model.
+Haven't got to use it as of now, but most likely will be moving towards it since
+it is easy to make it work /with/ python.
 
 * Scala
 
@@ -219,4 +216,5 @@ What else is there in message passing OOP?
 
 * NEXT WebGL/OpenGL
 
-I have no idea how OpenGL goes. Will start with something like three.js.
+I have no idea how graphics programming. Hopefully, working on a few ideas with
+procedural generation and stuff will help in getting this.
