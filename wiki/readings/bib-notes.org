@@ -12,6 +12,38 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READ Robustness and evolvability: a paradox resolved
+CLOSED: [2018-12-27 Thu 10:38]
+:PROPERTIES:
+:CUSTOM_ID: wagner2007robustness
+:YEAR:     2007
+:AUTHOR:   Wagner, Andreas
+:END:
+
+Here we put up definitions for /robustness/ and /evolvability/ for sequences
+(genotype) and structures (phenotype). The main conclusion says that these two
+values are negatively correlated for genotype, but they support each other in
+case of phenotype. There are a few quantitative results on the setting of RNA
+sequences and the structures they form.
+
+The question I am interested in is, how much can this be generalized to
+arbitrary levels in arbitrary systems? The key property needed to get this
+working is:
+
+#+BEGIN_QUOTE
+...even though structure robustness increases modestly with structure frequency,
+this increase is much smaller than the vast increase in the number of different
+structures accessible found near a much larger neutral network.
+#+END_QUOTE
+
+which gives
+
+#+BEGIN_QUOTE
+...the populations with the highly robust phenotype are more diverse, and this
+increased diversity is much greater than the decreased diversity around any one
+sequence.
+#+END_QUOTE
+
 ** READ Robustness and evolvability
 CLOSED: [2018-12-15 Sat 01:28]
 :PROPERTIES:

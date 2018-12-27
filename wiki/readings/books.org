@@ -569,6 +569,13 @@ CLOSED: [2014-03-23]
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
 
+*** Clean Architecture: A Craftsman's Guide to Software Structure and Design
+:PROPERTIES:
+:AUTHOR:   Robert C. Martin
+:ADDED:    [2018-12-27]
+:AMAZON:   https://www.amazon.in/Clean-Architecture-Craftsmans-Software-Structure/dp/935286512X/ref=sr_1_1?s=books&ie=UTF8&qid=1545849396&sr=1-1&keywords=clean+architecture
+:END:
+
 *** Exercises in Programming Style
 :PROPERTIES:
 :AUTHOR:   Cristina Videira Lopes
