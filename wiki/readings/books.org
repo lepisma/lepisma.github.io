@@ -5081,12 +5081,16 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
-*** READING Cat's Cradle
+*** READ Cat's Cradle
+CLOSED: [2018-12-30 Sun 00:38]
 :PROPERTIES:
 :AUTHOR:   Kurt Vonnegut
 :ADDED:    [2018-12-26]
 :GOODREADS: https://www.goodreads.com/book/show/135479.Cat_s_Cradle
 :END:
+
+Don't know what to write here. A few books are more about the experience than a
+communicable output. It's one of those. Loved it thoroughly.
 
 *** Lord of the Flies
 :PROPERTIES:
