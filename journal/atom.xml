@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.github.io/journal"/>
-  <updated>2018-12-14</updated>
+  <updated>2018-12-30</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Books Read in 2018</title>
+    <link href="https://lepisma.github.io/journal/2018/12/30/books-read-in-2018/index.html"/>
+    <updated>2018-12-30</updated>
+  </entry>
   <entry>
     <title>Buffer Model Gotcha</title>
     <link href="https://lepisma.github.io/journal/2018/12/14/buffer-model-gotcha/index.html"/>
