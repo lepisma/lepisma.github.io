@@ -22,6 +22,45 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+“Beware of the man who works hard to learn something, learns it, and finds
+himself no wiser than before,” Bokonon tells us. “He is full of murderous
+resentment of people who are ignorant without having come by their ignorance the
+hard way.”
+
+#+HTML:<footer>﻿Cat's cradle (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A lover’s a liar,To himself he lies.The truthful are loveless,Like oysters their
+eyes!
+
+#+HTML:<footer>﻿Cat's cradle (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+mathematical calculation can be made to stand for propositions that are
+themselves not mathematical, but must still conform to mathematical rules
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“People have to talk about something just to keep their voice boxes in working
+order, so they’ll have good voice boxes in case there’s ever anything really
+meaningful to say.”
+
+#+HTML:<footer>﻿Cat's cradle (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“I don’t know whether I agree or not. I just have trouble understanding how
+truth, all by itself, could be enough for a person.” Miss Faust was ripe for
+Bokononism.
+
+#+HTML:<footer>﻿Cat's cradle (Kurt Vonnegut)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Computers are boring. They only give answers.
 
 #+HTML:<footer>﻿Probably Approximately Correct (Leslie Valiant)</footer>
