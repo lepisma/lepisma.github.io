@@ -1,0 +1,72 @@
+#+TITLE: Books Read in 2018
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, books
+
+Since I stopped using Goodreads, I didn't have any of the /finish-n-books/ this
+year thing around my neck. Add to that the ritual busyness of position
+transitions, I wonder how many books I read this year.
+
+I used to target around 50 earlier on Goodreads so expecting less than that
+because of the reasons mentioned above. Counting the entries for this specific
+year gives me 34. A little better than expected.
+
+#+BEGIN_SRC emacs-lisp :exports results :results value list
+  (defun org-get-closed-time-str ()
+    "Return closed time of the current entry as a string."
+    (let ((ent-body (buffer-substring-no-properties (org-entry-beginning-position) (org-entry-end-position))))
+      (if (string-match org-closed-time-regexp ent-body)
+          (match-string-no-properties 1 ent-body))))
+
+  (with-current-buffer (find-file-noselect user-books-file)
+    (let ((items
+           (org-map-entries
+            (lambda () (cons (nth 4 (org-heading-components)) (org-get-closed-time-str)))))
+          (year "2018"))
+      (->> items
+         (-remove (lambda (it)
+                    (or (null (cdr it))
+                        (not (string-prefix-p year (cdr it))))))
+         (-sort (lambda (a b) (string-lessp (cdr a) (cdr b))))
+         (-map #'car)
+#+END_SRC
+
+#+RESULTS:
+1. The Selfish Gene
+2. Slaughterhouse-Five
+3. Beautiful Evidence
+4. Upstream: Selected Essays
+5. Seven Languages in Seven Weeks
+6. Do Androids Dream of Electric Sheep?
+7. Deep Work: Rules for Focused Success in a Distracted World
+8. Logicomix: An epic search for truth
+9. How to Write a Thesis
+10. Neurocomic
+11. 1984
+12. Advice To A Young Scientist
+13. Five Moral Pieces
+14. Dune (Dune #1)
+15. Dune Messiah (Dune #2)
+16. I Am a Strange Loop
+17. Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values
+18. Book of Proof
+19. Sceptical Essays
+20. Daily Rituals: How Artists Work
+21. Designing Voice User Interfaces: Principles of Conversational Experiences
+22. Lila: An Inquiry Into Morals
+23. Coders at Work: Reflections on the Craft of Programming
+24. Tales of Old Japan: Folklore, Fairy Tales, Ghost Stories and Legends of the Samurai
+25. True Names
+26. The Little MLer
+27. Dream Country (Sandman, #3)
+28. Season of Mists (Sandman, #4)
+29. A Game of You (Sandman, #5)
+30. The Society of Mind
+31. Probably Approximately Correct: Nature's Algorithms for Learning and Prospering in a Complex World
+32. The Little Schemer
+33. The Elements of Programming Style, 2nd Edition
+34. Cat's Cradle
+
+
+About the overall pattern, I need to stop loitering and consider denser ones
+from next year. Also maybe more sci-fi for the fiction fix since that is a
+seriously uncharted territory for me.
