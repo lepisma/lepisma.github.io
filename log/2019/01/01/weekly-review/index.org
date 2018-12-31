@@ -1,0 +1,50 @@
+#+TITLE: Weekly Review /52-2018/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 52,
+year: 2018
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+I am removing /writing/ section from these reviews since, on its own, it doesn't
+sit anywhere in my current workflow.
+
+* Experiments
+- Started working on program modeling. Will be posting notes etc. in next few
+  days.
+
+* Readings/Explorations
+- Robustness and evolvability: a paradox resolved (cite:wagner2007robustness)
+- [[http://smug.drewc.ca/smug.html][SMUG : Super Monadic Über Go-into]]'s parser combinator tutorial. I now realize
+  I don't have issues with combinators but with more core stuff.
+- [[http://www.mit.edu/~xela/tao.html][The Tao of Programming]]. I liked 8.2.
+- [[https://www.youtube.com/watch?v=Or_yKiI3Ha4&feature=youtu.be]["Let's Build a Hygienic Macro Expander" by Matthew Flatt]].
+- [[https://twobithistory.org/2018/08/05/where-vim-came-from.html][Where Vim Came From]]
+- [[https://simplystatistics.org/2018/07/06/data-creators/][What Should be Done When Data Have Creators? · Simply Statistics]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 52-2018 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Cleaned up [[https://github.com/lepisma/rogue][rogue]] a bit.
+
+* Media
+- Finished [[https://www.goodreads.com/book/show/135479.Cat_s_Cradle][Cat's Cradle]].
+- [[https://aeon.co/essays/how-the-first-world-war-gave-medicine-a-new-body-of-evidence][How the First World War gave medicine a new body of evidence | Aeon Essays]]
+
+[[bibliography:./references.bib]]
