@@ -192,6 +192,19 @@ random search.
 
 * AI/ML
 
+** READ Neural text generation from structured data with application to the biography domain
+CLOSED: [2019-01-05 Sat 23:22]
+:PROPERTIES:
+:CUSTOM_ID: lebret2016neural
+:YEAR:     2016
+:AUTHOR:   Lebret, R{\'e}mi and Grangier, David and Auli, Michael
+:END:
+
+From wikipedia info entry (a table) for a person, they generate biographical
+sentences. The way to condition on the table while doing $P(w_i | c_{(i-1)})$ is
+just indexing into (learnable) embeddings. I was looking for something more
+insightful though.
+
 ** Generating exact lattices in the WFST framework
 DEADLINE: <2018-11-10 Sat>
 :PROPERTIES:
