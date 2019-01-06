@@ -1,0 +1,73 @@
+#+TITLE: Plugins for the Rest of us
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+Rant time. I downloaded my Google data using [[https://takeout.google.com/][takeout]] a few days back and was
+surprised to find my online order history kept neatly in jsons in a directory
+~Purchases _ Reservations~. Of course it's not really surprising since I have seen
+buttons like 'Track Order' in the gmail web ui, which means there is a sort of
+parsing happening and I should expect the output to be present in the takeout.
+
+Looking closely at a lot of online tech products, you will see these 'web
+automation' plugins served as sides (or the mains). Not only are they useful for
+the users, they are really valuable for the companies since any sort of
+monitoring on the information flow pays off real quick.
+
+#+BEGIN_aside
+Since this is a rant, I have not considered things like web extensions where you
+might get decent compromises. But I am pretty sure that there also the most
+popular plugins are not altruistically driven.
+
+But don't even talk about mobile phones where you have to watch an advertisement
+to turn on the torch[fn::just kidding].
+#+END_aside
+
+Now I can't blame anyone for doing what is rational, but it gets annoying when I
+see these simple solutions not democratized enough. This is specially bad in
+mobile phone ecosystem. Want to split a bill after getting bank SMSes
+automatically? Write your own parsers, then do a few nasty hacks since no other
+app can be programmatically controlled. Or just install a new shiny app which
+either asks for your data or money, usually both.
+
+* Plugins
+
+The idea of having user-built features on the internet goes back to the [[https://en.wikipedia.org/wiki/Semantic_Web][semantic
+web]]. Maybe the whole project was doomed because of too many strong assumptions
+about the way things work for people in general. But probably we were just too
+slow to accept milder versions of those assumptions compared to for-profit
+firms. We always stay so ideologically driven that it gets hard to see why the
+real world is not composed of triangles and squares. And then some realist
+stands up and says "I want to make money, quickly".
+
+The annoying part is that some of the /new/ features are up there somewhere in
+someone's ~~/projects~ directory. But that's it. Nothing is going to beat
+marketing, which is obviously inertia based. Add to that the closing-up of
+softwares for plugins themselves. There is also a security concern here but I
+don't know if we have given it sufficient thoughts in the not-so-vulnerable
+settings.
+
+To be fair, there are a few non-profit projects which allow creating and sharing
+unencumbered plugins and have what it takes to be successful among the common
+users. But they are either going to be out of date (vlc/local media, non mobile
+applications), restricted by the popularity of environment they run on (KDE
+etc.), or are just going to perpetually play catch up in the general user
+segment (GNU/Linux). There might be deeper causes for these but I am not going
+to think right now.
+
+* Users
+
+Talking about the users themselves, there are two ways they come across and
+accept plugins/features:
+
+1. Someone else telling them, or
+2. they themselves /wishing/ for that feature
+
+Til the time the first reason is dominant, there is no escape from the fact that
+a for-profit entity will just market itself into power. The only consolation is
+in the second reason but you would be a fool to buy into this since
+
+#+BEGIN_QUOTE
+the users themselves don't know what they want
+#+END_QUOTE
+
+So it goes.
