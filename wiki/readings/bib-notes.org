@@ -12,6 +12,25 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READ Is evolvability evolvable?
+CLOSED: [2019-01-06 Sun 16:01]
+:PROPERTIES:
+:CUSTOM_ID: pigliucci2008evolvability
+:YEAR:     2008
+:AUTHOR:   Pigliucci, Massimo
+:END:
+
+Barring for the various definitions of evolvability, we look at evolvability as
+some sort of hyperparametrically derived quantity. These hyperparameters define
+the phylogenic space the search will continue on /in the future/, therefore there
+are the usual two arguments for evolution of evolability in the selection
+setting:
+
+1. as a side effect
+2. targeted (sliding towards teleology)
+
+Since this is a survey/opinion, there are not much technicalities here.
+
 ** READ Robustness and evolvability: a paradox resolved
 CLOSED: [2018-12-27 Thu 10:38]
 :PROPERTIES:
