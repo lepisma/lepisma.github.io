@@ -1,0 +1,44 @@
+#+TITLE: Weekly Review /01-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 01,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- Gave some thought to program modelling and where it fits in the process of
+  converting thoughts to program. Not much progress though.
+
+* Readings/Explorations
+- Is evolvability evolvable? (cite:pigliucci2008evolvability)
+- Neural text generation from structured data with application to the biography
+  domain (cite:lebret2016neural)
+- [[https://docs.google.com/presentation/d/17NoJY2SnC2UMbVegaRCWA7Oca7UCZ3vHnMqBV4SUayc/edit][Writing Code for NLP Research]], slides from Allen NLP folks.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 01-2019 and 4 previous weeks.[fn::Looks like another bug in my
+commit counter (if the last weeks are showing 0 commits)]
+#+HTML: </figcaption></figure>
+
+* Media
+- Reading the cultural logic of computation
+- [[https://www.wnycstudios.org/story/radiolab-apologetical][Apologetical | Radiolab]]
+- [[https://aeon.co/essays/hume-is-the-amiable-modest-generous-philosopher-we-need-today][Hume is the amiable, modest, generous philosopher we need today]]
+
+[[bibliography:./references.bib]]
