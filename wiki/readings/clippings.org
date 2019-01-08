@@ -22,6 +22,16 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Among the most powerful tools for what I will call oligarchical capitalism is
+the use of large-scale pricing power to manipulate human behavior and the action
+of the working class so as to deprive them of real political choice and power,
+in the name of apparently laudable goals like efficiency, personalization,
+individual desire and need
+
+#+HTML:<footer>﻿The Cultural Logic of Computation (David Golumbia)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 “Beware of the man who works hard to learn something, learns it, and finds
 himself no wiser than before,” Bokonon tells us. “He is full of murderous
 resentment of people who are ignorant without having come by their ignorance the
