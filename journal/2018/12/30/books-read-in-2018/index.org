@@ -27,7 +27,7 @@ year gives me 34. A little better than expected.
                     (or (null (cdr it))
                         (not (string-prefix-p year (cdr it))))))
          (-sort (lambda (a b) (string-lessp (cdr a) (cdr b))))
-         (-map #'car)
+         (-map #'car))))
 #+END_SRC
 
 #+RESULTS:
