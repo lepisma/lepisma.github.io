@@ -1868,7 +1868,7 @@ The core idea which is shared by almost all the sections/chapters is that
 computationalism is just a scaled up version of rationality and it hasn't
 really, at least yet, improved (the usual meaning, democracy, equality etc.) the
 underlying political structure of our society contrary to how the whole system
-is advertised. More than just being another technology though, computers comes
+is advertised. More than just being another technology though, computers come
 very close to and almost satisfy the vision of a crude, mechanistic and
 individualistic explanation of everything. The approximation errors this time,
 as compared to other technological shifts, are badly misread and the
