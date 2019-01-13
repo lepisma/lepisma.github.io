@@ -22,6 +22,72 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+The computer does not offer a real model of the relation between the self and
+other ordinary people. But it does model the way certain kinds of political and
+capitalist power can be wielded over society, and over other people to the
+degree that they ﬁt into the model
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Now we say we have abandoned those beliefs in favor of a general humane
+egalitarianism— each of us is “capable” of “doing his best. ” But we rarely
+interrogate those beliefs about the present in terms of the present’s own
+cultural technology
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When we presume that the subject of politics just is the rational subject,
+stripped of her cognitive capacities outside and beyond rationality, we do not
+merely privilege one form of decision making above others: we work away at the
+fabric of the polis
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the oligarchical owners have in an important sense transcended everyday ﬁnancial
+needs, while employees remain ever more caught in and by them
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+what has been ﬂattened via IT is not at all individual access to culture,
+economics, or political power, but rather the “playing ﬁeld” for capitalist
+actors
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Both Chomsky’s pursuit of a Universal Grammar and Fodor’s quest for a “language
+of thought” can be understood as pursuits of this “real but as yet undiscovered
+universal language,” a language that is somehow at once spoken and understood by
+all human beings and yet at the same time inaccessible to all contemporary human
+beings— again, positing an Ursprache from which mankind has fallen into
+linguistic and cultural diversity that are responsible for political disunity
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It is there— like our life.
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The problem is the following: a “machine” in the sense of a physical system
+obeying the laws of Newtonian physics need not be a Turing machine
+
+#+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Among the most powerful tools for what I will call oligarchical capitalism is
 the use of large-scale pricing power to manipulate human behavior and the action
 of the working class so as to deprive them of real political choice and power,
