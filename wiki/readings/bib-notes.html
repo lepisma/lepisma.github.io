@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-01-06 Sun 20:22 -->
+<!-- 2019-01-15 Tue 01:11 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -296,7 +309,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-01-06 Sun 20:21</div>
+  <div class='page-meta'>Last modified:  2019-01-15 Tue 01:10</div>
   <h1>Notes</h1>
 </div>
 </div>
@@ -315,13 +328,47 @@ so will be working on this page fairly regularly.
 </p>
 
 <div id="outline-container-org96dac22" class="outline-2">
-<h2 id="sec-evolution/complexity"><a id="org96dac22"></a><span class="section-number-2">1</span> Evolution/Complexity</h2>
+<h2 id="sec-evolution/complexity"><span class="section-number-2">1</span> Evolution/Complexity</h2>
 <div class="outline-text-2" id="text-sec-evolution/complexity">
 
 </div>
 
+<div id="outline-container-org66f347d" class="outline-3">
+<h3 id="payne2018causes"><span class="section-number-3">1.1</span> <span class="done READ">READ</span> The causes of evolvability and their evolution</h3>
+<div class="outline-text-3" id="text-payne2018causes">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-15 Tue 00:54]</span></span></p>
+<pre class="example">
+CUSTOM_ID: payne2018causes
+YEAR: 2018
+AUTHOR: Payne, Joshua L and Wagner, Andreas
+</pre>
+
+<p>
+A very recent review on the subject with a bunch of experimental results. It
+talks about three "major causes of evolvability":
+</p>
+
+<ol class="org-ol">
+<li>Phenotype heterogeneity</li>
+<li>Robustness</li>
+<li>Adaptive landscapes</li>
+</ol>
+
+<p>
+And
+</p>
+
+<blockquote>
+<p>
+Whether they often evolve because they confer evolvability remains a
+particularly challenging open question.
+</p>
+</blockquote>
+</div>
+</div>
+
 <div id="outline-container-org7496d2b" class="outline-3">
-<h3 id="pigliucci2008evolvability"><a id="org7496d2b"></a><span class="section-number-3">1.1</span> <span class="done READ">READ</span> Is evolvability evolvable?</h3>
+<h3 id="pigliucci2008evolvability"><span class="section-number-3">1.2</span> <span class="done READ">READ</span> Is evolvability evolvable?</h3>
 <div class="outline-text-3" id="text-pigliucci2008evolvability">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-06 Sun 16:01]</span></span></p>
 <pre class="example">
@@ -350,7 +397,7 @@ Since this is a survey/opinion, there are not much technicalities here.
 </div>
 
 <div id="outline-container-org0f6658a" class="outline-3">
-<h3 id="wagner2007robustness"><a id="org0f6658a"></a><span class="section-number-3">1.2</span> <span class="done READ">READ</span> Robustness and evolvability: a paradox resolved</h3>
+<h3 id="wagner2007robustness"><span class="section-number-3">1.3</span> <span class="done READ">READ</span> Robustness and evolvability: a paradox resolved</h3>
 <div class="outline-text-3" id="text-wagner2007robustness">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-12-27 Thu 10:38]</span></span></p>
 <pre class="example">
@@ -396,7 +443,7 @@ sequence.
 </div>
 
 <div id="outline-container-orgfd84e52" class="outline-3">
-<h3 id="masel2010robustness"><a id="orgfd84e52"></a><span class="section-number-3">1.3</span> <span class="done READ">READ</span> Robustness and evolvability</h3>
+<h3 id="masel2010robustness"><span class="section-number-3">1.4</span> <span class="done READ">READ</span> Robustness and evolvability</h3>
 <div class="outline-text-3" id="text-masel2010robustness">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-12-15 Sat 01:28]</span></span></p>
 <pre class="example">
@@ -413,7 +460,7 @@ pointers and terminology to follow from this paper.
 </div>
 
 <div id="outline-container-org2bf4066" class="outline-3">
-<h3 id="hinton1987learning"><a id="org2bf4066"></a><span class="section-number-3">1.4</span> <span class="done READ">READ</span> How learning can guide evolution</h3>
+<h3 id="hinton1987learning"><span class="section-number-3">1.5</span> <span class="done READ">READ</span> How learning can guide evolution</h3>
 <div class="outline-text-3" id="text-hinton1987learning">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-11-11 Sun 17:32] </span> <span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-11-11 Sun&gt;</span></span></p>
 <pre class="example">
@@ -431,7 +478,7 @@ example taken.
 </div>
 
 <div id="outline-container-orgc331ffc" class="outline-3">
-<h3 id="kauffman1991coevolution"><a id="orgc331ffc"></a><span class="section-number-3">1.5</span> <span class="done READ">READ</span> Coevolution to the edge of chaos: coupled fitness landscapes, poised states, and coevolutionary avalanches</h3>
+<h3 id="kauffman1991coevolution"><span class="section-number-3">1.6</span> <span class="done READ">READ</span> Coevolution to the edge of chaos: coupled fitness landscapes, poised states, and coevolutionary avalanches</h3>
 <div class="outline-text-3" id="text-kauffman1991coevolution">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-09-24 Mon 01:20]</span></span></p>
 <pre class="example">
@@ -453,7 +500,7 @@ resembling the sandpile model from <a class='org-ref-reference' href="#bak1988se
 </div>
 
 <div id="outline-container-orgd621c26" class="outline-3">
-<h3 id="langton1990computation"><a id="orgd621c26"></a><span class="section-number-3">1.6</span> <span class="done READ">READ</span> Computation at the edge of chaos: phase transitions and emergent computation</h3>
+<h3 id="langton1990computation"><span class="section-number-3">1.7</span> <span class="done READ">READ</span> Computation at the edge of chaos: phase transitions and emergent computation</h3>
 <div class="outline-text-3" id="text-langton1990computation">
 <pre class="example">
 Custom_ID: langton1990computation
@@ -492,7 +539,7 @@ for the range of mapping function.
 </div>
 
 <div id="outline-container-orge5c4e78" class="outline-3">
-<h3 id="bak1988self"><a id="orge5c4e78"></a><span class="section-number-3">1.7</span> <span class="todo TOREAD">TOREAD</span> Self-organized criticality</h3>
+<h3 id="bak1988self"><span class="section-number-3">1.8</span> <span class="todo TOREAD">TOREAD</span> Self-organized criticality</h3>
 <div class="outline-text-3" id="text-bak1988self">
 <pre class="example">
 Custom_ID: bak1988self
@@ -506,7 +553,7 @@ PAGES: 364
 </div>
 
 <div id="outline-container-org4c9a85d" class="outline-3">
-<h3 id="mitchell1993revisiting"><a id="org4c9a85d"></a><span class="section-number-3">1.8</span> <span class="done READ">READ</span> Revisiting the edge of chaos: Evolving cellular automata to perform computations</h3>
+<h3 id="mitchell1993revisiting"><span class="section-number-3">1.9</span> <span class="done READ">READ</span> Revisiting the edge of chaos: Evolving cellular automata to perform computations</h3>
 <div class="outline-text-3" id="text-mitchell1993revisiting">
 <pre class="example">
 Custom_ID: mitchell1993revisiting
@@ -542,7 +589,7 @@ answer by alternating between 0s and 1s.
 </div>
 
 <div id="outline-container-orgdcef9c1" class="outline-3">
-<h3 id="hoffmann2018optimization"><a id="orgdcef9c1"></a><span class="section-number-3">1.9</span> <span class="done READ">READ</span> Optimization by Self-Organized Criticality</h3>
+<h3 id="hoffmann2018optimization"><span class="section-number-3">1.10</span> <span class="done READ">READ</span> Optimization by Self-Organized Criticality</h3>
 <div class="outline-text-3" id="text-hoffmann2018optimization">
 <pre class="example">
 Custom_ID: hoffmann2018optimization
@@ -591,7 +638,7 @@ random search.
 </div>
 
 <div id="outline-container-org09d7674" class="outline-3">
-<h3 id="bertschinger2005edge"><a id="org09d7674"></a><span class="section-number-3">1.10</span> <span class="todo TOREAD">TOREAD</span> At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks</h3>
+<h3 id="bertschinger2005edge"><span class="section-number-3">1.11</span> <span class="todo TOREAD">TOREAD</span> At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks</h3>
 <div class="outline-text-3" id="text-bertschinger2005edge">
 <pre class="example">
 Custom_ID: bertschinger2005edge
@@ -605,14 +652,30 @@ PAGES: 145--152
 </div>
 
 <div id="outline-container-org2459848" class="outline-2">
-<h2 id="sec-ai/ml"><a id="org2459848"></a><span class="section-number-2">2</span> AI/ML</h2>
+<h2 id="sec-ai/ml"><span class="section-number-2">2</span> AI/ML</h2>
 <div class="outline-text-2" id="text-sec-ai/ml">
 <pre class="example">
 </pre>
 </div>
 
+<div id="outline-container-orga574cdb" class="outline-3">
+<h3 id="raghuvanshi2018developing"><span class="section-number-3">2.1</span> <span class="done READ">READ</span> Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing</h3>
+<div class="outline-text-3" id="text-raghuvanshi2018developing">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-15 Tue 01:10]</span></span></p>
+<pre class="example">
+CUSTOM_ID: raghuvanshi2018developing
+YEAR: 2018
+AUTHOR: Raghuvanshi, Arushi and Carroll, Lucien and Raghunathan, Karthik
+</pre>
+
+<p>
+Doc on Mindmeld's NLU system.
+</p>
+</div>
+</div>
+
 <div id="outline-container-org327b8e4" class="outline-3">
-<h3 id="lebret2016neural"><a id="org327b8e4"></a><span class="section-number-3">2.1</span> <span class="done READ">READ</span> Neural text generation from structured data with application to the biography domain</h3>
+<h3 id="lebret2016neural"><span class="section-number-3">2.2</span> <span class="done READ">READ</span> Neural text generation from structured data with application to the biography domain</h3>
 <div class="outline-text-3" id="text-lebret2016neural">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-05 Sat 23:22]</span></span></p>
 <pre class="example">
@@ -631,7 +694,7 @@ insightful though.
 </div>
 
 <div id="outline-container-orgf3069be" class="outline-3">
-<h3 id="povey2012generating"><a id="orgf3069be"></a><span class="section-number-3">2.2</span> Generating exact lattices in the WFST framework</h3>
+<h3 id="povey2012generating"><span class="section-number-3">2.3</span> Generating exact lattices in the WFST framework</h3>
 <div class="outline-text-3" id="text-povey2012generating">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-11-10 Sat&gt;</span></span></p>
 <pre class="example">
@@ -643,7 +706,7 @@ AUTHOR: Povey, Daniel and Hannemann, Mirko and Boulianne, Gilles and Burget, Luk
 </div>
 
 <div id="outline-container-orgb31fb40" class="outline-3">
-<h3 id="chen2013quantifying"><a id="orgb31fb40"></a><span class="section-number-3">2.3</span> Quantifying the value of pronunciation lexicons for keyword search in lowresource languages</h3>
+<h3 id="chen2013quantifying"><span class="section-number-3">2.4</span> Quantifying the value of pronunciation lexicons for keyword search in lowresource languages</h3>
 <div class="outline-text-3" id="text-chen2013quantifying">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-11-10 Sat&gt;</span></span></p>
 <pre class="example">
@@ -655,7 +718,7 @@ AUTHOR: Chen, Guoguo and Khudanpur, Sanjeev and Povey, Daniel and Trmal, Jan and
 </div>
 
 <div id="outline-container-org42530aa" class="outline-3">
-<h3 id="chiu2018state"><a id="org42530aa"></a><span class="section-number-3">2.4</span> <span class="done READ">READ</span> State-of-the-art speech recognition with sequence-to-sequence models</h3>
+<h3 id="chiu2018state"><span class="section-number-3">2.5</span> <span class="done READ">READ</span> State-of-the-art speech recognition with sequence-to-sequence models</h3>
 <div class="outline-text-3" id="text-chiu2018state">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-11-06 Tue 20:52]</span></span></p>
 <pre class="example">
@@ -673,7 +736,7 @@ Language Models. Maybe that helps in adding and justifying heuristics.
 </div>
 
 <div id="outline-container-org9805bf1" class="outline-3">
-<h3 id="mohri2008speech"><a id="org9805bf1"></a><span class="section-number-3">2.5</span> <span class="todo READING">READING</span> Speech recognition with weighted finite-state transducers</h3>
+<h3 id="mohri2008speech"><span class="section-number-3">2.6</span> <span class="todo READING">READING</span> Speech recognition with weighted finite-state transducers</h3>
 <div class="outline-text-3" id="text-mohri2008speech">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-11-11 Sun&gt;</span></span></p>
 <pre class="example">
@@ -695,7 +758,7 @@ weight pushing and then running the classical algorithm.</li>
 </div>
 
 <div id="outline-container-org9df3d36" class="outline-3">
-<h3 id="ratner2016data"><a id="org9df3d36"></a><span class="section-number-3">2.6</span> <span class="todo TOREAD">TOREAD</span> Data programming: Creating large training sets, quickly</h3>
+<h3 id="ratner2016data"><span class="section-number-3">2.7</span> <span class="todo TOREAD">TOREAD</span> Data programming: Creating large training sets, quickly</h3>
 <div class="outline-text-3" id="text-ratner2016data">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-10-18 Thu&gt;</span></span></p>
 <pre class="example">
@@ -707,7 +770,7 @@ AUTHOR: Ratner, Alexander J and De Sa, Christopher M and Wu, Sen and Selsam, Dan
 </div>
 
 <div id="outline-container-org33f6321" class="outline-3">
-<h3 id="jaeger2004harnessing"><a id="org33f6321"></a><span class="section-number-3">2.7</span> <span class="done READ">READ</span> Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication</h3>
+<h3 id="jaeger2004harnessing"><span class="section-number-3">2.8</span> <span class="done READ">READ</span> Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication</h3>
 <div class="outline-text-3" id="text-jaeger2004harnessing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-22 Mon 23:48]</span></span></p>
 <pre class="example">
@@ -725,7 +788,7 @@ thought about there being separate inputs and outputs.
 </div>
 
 <div id="outline-container-org8af2e84" class="outline-3">
-<h3 id="zettlemoyer2012learning"><a id="org8af2e84"></a><span class="section-number-3">2.8</span> <span class="done READ">READ</span> Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars</h3>
+<h3 id="zettlemoyer2012learning"><span class="section-number-3">2.9</span> <span class="done READ">READ</span> Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars</h3>
 <div class="outline-text-3" id="text-zettlemoyer2012learning">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-20 Sat 20:58] </span> <span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-10-16 Tue&gt;</span></span></p>
 <pre class="example">
@@ -759,7 +822,7 @@ meaning of the structurally rigid categories like \(S/NP\) using a few tricks.
 </div>
 
 <div id="outline-container-org102f149" class="outline-3">
-<h3 id="steedman1996very"><a id="org102f149"></a><span class="section-number-3">2.9</span> <span class="done READ">READ</span> A very short introduction to CCG</h3>
+<h3 id="steedman1996very"><span class="section-number-3">2.10</span> <span class="done READ">READ</span> A very short introduction to CCG</h3>
 <div class="outline-text-3" id="text-steedman1996very">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-16 Tue 02:21]</span></span></p>
 <pre class="example">
@@ -778,7 +841,7 @@ they pull in with themselves.
 </div>
 
 <div id="outline-container-org4fe7060" class="outline-3">
-<h3 id="benjelloun2009swoosh"><a id="org4fe7060"></a><span class="section-number-3">2.10</span> <span class="done READ">READ</span> Swoosh: a generic approach to entity resolution</h3>
+<h3 id="benjelloun2009swoosh"><span class="section-number-3">2.11</span> <span class="done READ">READ</span> Swoosh: a generic approach to entity resolution</h3>
 <div class="outline-text-3" id="text-benjelloun2009swoosh">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-07 Sun 20:23] </span> <span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-10-06 Sat&gt;</span></span></p>
 <pre class="example">
@@ -808,7 +871,7 @@ reduce the number of calls to matching.
 </div>
 
 <div id="outline-container-orgd2e75a2" class="outline-3">
-<h3 id="liu2016not"><a id="orgd2e75a2"></a><span class="section-number-3">2.11</span> <span class="done READ">READ</span> How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation</h3>
+<h3 id="liu2016not"><span class="section-number-3">2.12</span> <span class="done READ">READ</span> How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation</h3>
 <div class="outline-text-3" id="text-liu2016not">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-13 Sat 17:45] </span> <span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-10-06 Sat 15:00&gt;</span></span></p>
 <pre class="example">
@@ -825,7 +888,7 @@ sentence similarity.
 </div>
 
 <div id="outline-container-org9e3584e" class="outline-3">
-<h3 id="liang2015bringing"><a id="org9e3584e"></a><span class="section-number-3">2.12</span> <span class="done READ">READ</span> Bringing machine learning and compositional semantics together</h3>
+<h3 id="liang2015bringing"><span class="section-number-3">2.13</span> <span class="done READ">READ</span> Bringing machine learning and compositional semantics together</h3>
 <div class="outline-text-3" id="text-liang2015bringing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-02 Tue 13:26]</span></span></p>
 <pre class="example">
@@ -845,7 +908,7 @@ features.
 </div>
 
 <div id="outline-container-org8122124" class="outline-3">
-<h3 id="freund1997decision"><a id="org8122124"></a><span class="section-number-3">2.13</span> <span class="todo READING">READING</span> A decision-theoretic generalization of on-line learning and an application to boosting</h3>
+<h3 id="freund1997decision"><span class="section-number-3">2.14</span> <span class="todo READING">READING</span> A decision-theoretic generalization of on-line learning and an application to boosting</h3>
 <div class="outline-text-3" id="text-freund1997decision">
 <pre class="example">
 Custom_ID: freund1997decision
@@ -860,14 +923,14 @@ PAGES: 119--139
 </div>
 
 <div id="outline-container-org1b5ba3c" class="outline-2">
-<h2 id="sec-computation/programming"><a id="org1b5ba3c"></a><span class="section-number-2">3</span> Computation/Programming</h2>
+<h2 id="sec-computation/programming"><span class="section-number-2">3</span> Computation/Programming</h2>
 <div class="outline-text-2" id="text-sec-computation/programming">
 <pre class="example">
 </pre>
 </div>
 
 <div id="outline-container-org2ac271d" class="outline-3">
-<h3 id="agarwal2013blinkdb"><a id="org2ac271d"></a><span class="section-number-3">3.1</span> BlinkDB: queries with bounded errors and bounded response times on very large data</h3>
+<h3 id="agarwal2013blinkdb"><span class="section-number-3">3.1</span> BlinkDB: queries with bounded errors and bounded response times on very large data</h3>
 <div class="outline-text-3" id="text-agarwal2013blinkdb">
 <pre class="example">
 CUSTOM_ID: agarwal2013blinkdb
@@ -878,7 +941,7 @@ AUTHOR: Agarwal, Sameer and Mozafari, Barzan and Panda, Aurojit and Milner, Henr
 </div>
 
 <div id="outline-container-org41da399" class="outline-3">
-<h3 id="chang2017type"><a id="org41da399"></a><span class="section-number-3">3.2</span> <span class="todo TOREAD">TOREAD</span> Type systems as macros</h3>
+<h3 id="chang2017type"><span class="section-number-3">3.2</span> <span class="todo TOREAD">TOREAD</span> Type systems as macros</h3>
 <div class="outline-text-3" id="text-chang2017type">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-10-17 Wed&gt;</span></span></p>
 <pre class="example">
@@ -890,7 +953,7 @@ AUTHOR: Chang, Stephen and Knauth, Alex and Greenman, Ben
 </div>
 
 <div id="outline-container-org51cd28d" class="outline-3">
-<h3 id="baez2010physics"><a id="org51cd28d"></a><span class="section-number-3">3.3</span> <span class="todo TOREAD">TOREAD</span> Physics, topology, logic and computation: a Rosetta Stone</h3>
+<h3 id="baez2010physics"><span class="section-number-3">3.3</span> <span class="todo TOREAD">TOREAD</span> Physics, topology, logic and computation: a Rosetta Stone</h3>
 <div class="outline-text-3" id="text-baez2010physics">
 <pre class="example">
 Custom_ID: baez2010physics
@@ -901,7 +964,7 @@ YEAR: 2010
 </div>
 
 <div id="outline-container-orga6a4d8a" class="outline-3">
-<h3 id="o2009genuine"><a id="orga6a4d8a"></a><span class="section-number-3">3.4</span> <span class="done READ">READ</span> The Genuine Sieve of Eratosthenes</h3>
+<h3 id="o2009genuine"><span class="section-number-3">3.4</span> <span class="done READ">READ</span> The Genuine Sieve of Eratosthenes</h3>
 <div class="outline-text-3" id="text-o2009genuine">
 <pre class="example">
 Custom_ID: o2009genuine
@@ -937,7 +1000,7 @@ primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 </div>
 
 <div id="outline-container-org52b0376" class="outline-3">
-<h3 id="hughes1989functional"><a id="org52b0376"></a><span class="section-number-3">3.5</span> <span class="done READ">READ</span> Why functional programming matters</h3>
+<h3 id="hughes1989functional"><span class="section-number-3">3.5</span> <span class="done READ">READ</span> Why functional programming matters</h3>
 <div class="outline-text-3" id="text-hughes1989functional">
 <pre class="example">
 Custom_ID: hughes1989functional
@@ -968,14 +1031,14 @@ suspect there might be better, recent, articles on these topics now.
 </div>
 
 <div id="outline-container-org82f55c4" class="outline-2">
-<h2 id="sec-misc"><a id="org82f55c4"></a><span class="section-number-2">4</span> Misc</h2>
+<h2 id="sec-misc"><span class="section-number-2">4</span> Misc</h2>
 <div class="outline-text-2" id="text-sec-misc">
 <pre class="example">
 </pre>
 </div>
 
 <div id="outline-container-org139e6bb" class="outline-3">
-<h3 id="anderson1972more"><a id="org139e6bb"></a><span class="section-number-3">4.1</span> More is different</h3>
+<h3 id="anderson1972more"><span class="section-number-3">4.1</span> More is different</h3>
 <div class="outline-text-3" id="text-anderson1972more">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-11-09 Fri&gt;</span></span></p>
 <pre class="example">
@@ -987,7 +1050,7 @@ AUTHOR: Anderson, Philip W and others
 </div>
 
 <div id="outline-container-org81c3328" class="outline-3">
-<h3 id="spector2012google"><a id="org81c3328"></a><span class="section-number-3">4.2</span> <span class="done READ">READ</span> Google's hybrid approach to research</h3>
+<h3 id="spector2012google"><span class="section-number-3">4.2</span> <span class="done READ">READ</span> Google's hybrid approach to research</h3>
 <div class="outline-text-3" id="text-spector2012google">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-30 Tue 02:34]</span></span></p>
 <pre class="example">
@@ -1004,7 +1067,7 @@ various aspects of experiments.
 </div>
 
 <div id="outline-container-orgdc1e49e" class="outline-3">
-<h3 id="sculley2014machine"><a id="orgdc1e49e"></a><span class="section-number-3">4.3</span> <span class="done READ">READ</span> Machine learning: The high-interest credit card of technical debt</h3>
+<h3 id="sculley2014machine"><span class="section-number-3">4.3</span> <span class="done READ">READ</span> Machine learning: The high-interest credit card of technical debt</h3>
 <div class="outline-text-3" id="text-sculley2014machine">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-20 Sat 02:33]</span></span></p>
 <pre class="example">
@@ -1016,7 +1079,7 @@ AUTHOR: Sculley, D and Phillips, Todd and Ebner, Dietmar and Chaudhary, Vinay an
 </div>
 
 <div id="outline-container-org82f0a1b" class="outline-3">
-<h3 id="gabriel2010better"><a id="org82f0a1b"></a><span class="section-number-3">4.4</span> <span class="done READ">READ</span> Better science through art</h3>
+<h3 id="gabriel2010better"><span class="section-number-3">4.4</span> <span class="done READ">READ</span> Better science through art</h3>
 <div class="outline-text-3" id="text-gabriel2010better">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-12 Fri 23:16] </span> <span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-10-06 Sat&gt;</span></span></p>
 <pre class="example">
@@ -1039,7 +1102,7 @@ and also summarize the document:
 </div>
 
 <div id="outline-container-orgb20c933" class="outline-3">
-<h3 id="verna2018lisp"><a id="orgb20c933"></a><span class="section-number-3">4.5</span> <span class="done READ">READ</span> Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h3>
+<h3 id="verna2018lisp"><span class="section-number-3">4.5</span> <span class="done READ">READ</span> Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h3>
 <div class="outline-text-3" id="text-verna2018lisp">
 <pre class="example">
 Custom_ID: verna2018lisp
