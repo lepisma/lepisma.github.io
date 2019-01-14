@@ -1,0 +1,54 @@
+#+TITLE: Weekly Review /02-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 02,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- Spent some time documenting and formalizing few of the ideas related to
+  strange loop and program modeling that will go in the wiki.
+
+* Readings/Explorations
+- Developing production-level conversational interfaces with shallow semantic
+  parsing (cite:raghuvanshi2018developing)
+- The causes of evolvability and their evolution (cite:payne2018causes)
+- A recent discussion regarding [[https://www.reddit.com/r/ProgrammingLanguages/comments/a9z8h0/first_class_macros/][first Class Macros]] led me to fexpressions and
+  the Kernel language. Will be exploring further in coming weeks.
+- [[https://futhark-lang.org/blog/2017-01-25-futhark-module-system.html][The Futhark Module System]]. Now I see the point of ML's modules. I had read
+  about those in The Little MLer but didn't really see what they were trying to
+  solve.
+- [[http://www.lbatalha.com/blog/feynman-on-fermats-last-theorem][Feynman on Fermat's Last Theorem – Luis Batalha]]
+- [[https://futhark-lang.org/blog/2019-01-13-giving-programmers-what-they-want.html][Giving programmers what they want, or what they ask for]]
+- [[https://aeon.co/ideas/why-languages-and-dialects-really-are-different-animals?utm_source=Aeon+Newsletter&utm_campaign=53875b3711-EMAIL_CAMPAIGN_2019_01_09_03_41&utm_medium=email&utm_term=0_411a82e59d-53875b3711-70469193][Why languages and dialects really are different animals]]. The [[https://asjp.clld.org/][ASJP Database]]
+  looks interesting.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 02-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Updated a few github packages.
+
+* Media
+- Finished [[https://www.hup.harvard.edu/catalog.php?isbn=9780674032927][Cultural Logic of Computation]]
+- [[https://aeon.co/essays/lost-innocence-the-children-whose-parents-joined-an-ashram][Lost innocence: the children whose parents joined an ashram]]
+- [[https://aeon.co/essays/how-20th-century-synthetics-altered-the-very-fabric-of-us-all][How 20th-century synthetics altered the very fabric of us all]]
+- [[https://aeon.co/essays/atheists-vs-religious-belief-with-wittgenstein-on-the-stand][Atheists vs religious belief, with Wittgenstein on the stand]]
+
+[[bibliography:./references.bib]]
