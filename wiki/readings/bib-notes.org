@@ -12,6 +12,28 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READ The causes of evolvability and their evolution
+CLOSED: [2019-01-15 Tue 00:54]
+:PROPERTIES:
+:CUSTOM_ID: payne2018causes
+:YEAR:     2018
+:AUTHOR:   Payne, Joshua L and Wagner, Andreas
+:END:
+
+A very recent review on the subject with a bunch of experimental results. It
+talks about three "major causes of evolvability":
+
+1. Phenotype heterogeneity
+2. Robustness
+3. Adaptive landscapes
+
+And
+
+#+BEGIN_QUOTE
+Whether they often evolve because they confer evolvability remains a
+particularly challenging open question.
+#+END_QUOTE
+
 ** READ Is evolvability evolvable?
 CLOSED: [2019-01-06 Sun 16:01]
 :PROPERTIES:
@@ -210,6 +232,16 @@ random search.
  :END:
 
 * AI/ML
+
+** READ Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing
+CLOSED: [2019-01-15 Tue 01:10]
+:PROPERTIES:
+:CUSTOM_ID: raghuvanshi2018developing
+:YEAR:     2018
+:AUTHOR:   Raghuvanshi, Arushi and Carroll, Lucien and Raghunathan, Karthik
+:END:
+
+Doc on Mindmeld's NLU system.
 
 ** READ Neural text generation from structured data with application to the biography domain
 CLOSED: [2019-01-05 Sat 23:22]
