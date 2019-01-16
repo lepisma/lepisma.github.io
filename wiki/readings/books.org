@@ -1317,7 +1317,8 @@ CLOSED: [2018-02-05 Mon 01:16]
 :AMAZON:   https://www.amazon.in/Treatise-Human-Nature-Philosophical-Classics/dp/0486432505
 :END:
 
-*** READING Moral Fables, followed by “Thoughts”
+*** READ Moral Fables, followed by “Thoughts”
+CLOSED: [2019-01-16 Wed 22:06]
 :PROPERTIES:
 :AUTHOR:   Giacomo Leopardi, J.G. Nichols
 :ADDED:    [2018-12-26]
