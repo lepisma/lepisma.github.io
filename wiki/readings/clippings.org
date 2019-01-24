@@ -22,6 +22,37 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+An apparently arbitrary element, compounded of personal and historical accident,
+is always a formative ingredient of the beliefs espoused by a given scientific
+community at a given time.
+
+#+HTML:<footer>﻿The Structure of Scientific Revolutions (Kuhn, Thomas S.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When was oxygen discovered? Who first conceived of energy conservation?
+Increasingly, a few of them suspect that these are simply the wrong sorts of
+questions to ask. Perhaps science does not develop by the accumulation of
+individual discoveries and inventions.
+
+#+HTML:<footer>﻿The Structure of Scientific Revolutions (Kuhn, Thomas S.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Wise lovers of facts, who try to determine the truth about something, do not
+state a “theory of truth.”
+
+#+HTML:<footer>﻿The Structure of Scientific Revolutions (Kuhn, Thomas S.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Normal science is based on prior scientific achievements acknowledged by some
+scientific community.
+
+#+HTML:<footer>﻿The Structure of Scientific Revolutions (Kuhn, Thomas S.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 The computer does not offer a real model of the relation between the self and
 other ordinary people. But it does model the way certain kinds of political and
 capitalist power can be wielded over society, and over other people to the
@@ -75,7 +106,7 @@ linguistic and cultural diversity that are responsible for political disunity
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-It is there— like our life.
+It is there — like our life.
 
 #+HTML:<footer>﻿Cultural Logic of Computation - David Golumbia</footer>
 #+END_QUOTE
