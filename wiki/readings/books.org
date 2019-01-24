@@ -4381,7 +4381,8 @@ CLOSED: [2015-05-19]
 :END:
 
 ** Fantasy
-*** Port of Shadows
+*** READ Port of Shadows
+CLOSED: [2019-01-24 Thu 23:57]
 :PROPERTIES:
 :AUTHOR:   Glen Cook
 :ADDED:    [2018-12-04]
