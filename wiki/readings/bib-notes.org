@@ -264,13 +264,21 @@ DEADLINE: <2018-11-10 Sat>
 :AUTHOR:   Povey, Daniel and Hannemann, Mirko and Boulianne, Gilles and Burget, Luk{\'a}{\v{s}} and Ghoshal, Arnab and Janda, Milo{\v{s}} and Karafi{\'a}t, Martin and Kombrink, Stefan and Motl{\'\i}{\v{c}}ek, Petr and Qian, Yanmin and others
 :END:
 
-** Quantifying the value of pronunciation lexicons for keyword search in lowresource languages
-DEADLINE: <2018-11-10 Sat>
+** READ Quantifying the value of pronunciation lexicons for keyword search in lowresource languages
+CLOSED: [2019-01-27 Sun 23:55]
 :PROPERTIES:
 :CUSTOM_ID: chen2013quantifying
 :YEAR:     2013
 :AUTHOR:   Chen, Guoguo and Khudanpur, Sanjeev and Povey, Daniel and Trmal, Jan and Yarowsky, David and Yilmaz, Oguz
 :END:
+
+In a single line, while pronunciation dictionary augmentation doesn't help that
+much in WER of an LVCSR (since the OOV rates are usually low), it helps a lot in
+Keyword Search.
+
+A few other things to note are the ways to generate pronunciation and two ways
+to do KWS if you already have an LVCSR system. Not surprisingly, the proxy
+keyword system doesn't work that well.
 
 ** READ State-of-the-art speech recognition with sequence-to-sequence models
 CLOSED: [2018-11-06 Tue 20:52]
@@ -501,7 +509,7 @@ not by any means imply a "constructionist" one.
 We are trying to understand that reductionist view is not going to explain
 everything and that fundamental laws at the lowest level are not going to be /the
 fundamental/ ones for the higher level ("Psychology is not applied biology...").
-A little hierarchy is also presented using examples where our movements across
+A littl0e hierarchy is also presented using examples where our movements across
 levels results in /broken symmetry/:
 
 - Crystallinity
