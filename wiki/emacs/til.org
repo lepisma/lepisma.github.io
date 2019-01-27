@@ -7,6 +7,17 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *registers*
+
+  [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]] are one of the little known features of Emacs. They essentially act
+  like variables which are made quick to access by mapping single chars to them.
+  Also their default impermanence across sessions probably makes them a little
+  different from other stores.
+
+  Similar to /unsaved/ keyboard macros, thees can probably be useful for
+  temporary, single session tasks. For example the text registers for working
+  with temporary templates, the number register for counting things etc.
+
 + *enriched-mode*
 
   Emacs has a tiny [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Enriched-Text.html#Enriched-Text][markup language]] that keeps things like face info along with
