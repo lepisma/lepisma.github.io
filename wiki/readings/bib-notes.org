@@ -483,13 +483,39 @@ suspect there might be better, recent, articles on these topics now.
 
 * Misc
 
-** More is different
-DEADLINE: <2018-11-09 Fri>
+** READ More is different
+CLOSED: [2019-01-27 Sun 20:55]
 :PROPERTIES:
 :CUSTOM_ID: anderson1972more
 :YEAR:     1972
 :AUTHOR:   Anderson, Philip W and others
 :END:
+
+The basic idea is the following:
+
+#+begin_quote
+The main fallacy in this kind of thinking is that reductionist hypothesis does
+not by any means imply a "constructionist" one.
+#+end_quote
+
+We are trying to understand that reductionist view is not going to explain
+everything and that fundamental laws at the lowest level are not going to be /the
+fundamental/ ones for the higher level ("Psychology is not applied biology...").
+A little hierarchy is also presented using examples where our movements across
+levels results in /broken symmetry/:
+
+- Crystallinity
+- Functional structures
+- /Regular systems/ with information like DNA
+- Ordering in the time dimension for information processing etc.
+
+#+begin_quote
+So it is not true, as a recent article would have it, that we each should
+"cultivate out own valley, and not attempt to build roads over the mountain
+ranges ... between the sciences." Rather, we should recognize that such roads,
+while often the quickest shortcut to another part of our own science, are not
+visible from the viewpoint of one science alone.
+#+end_quote
 
 ** READ Google's hybrid approach to research
 CLOSED: [2018-10-30 Tue 02:34]
