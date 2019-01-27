@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-01-02 Wed 02:00 -->
+<!-- 2019-01-27 Sun 22:32 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned in Emacs</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -213,7 +226,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -274,7 +287,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-01-02 Wed 02:00</div>
+  <div class='page-meta'>Last modified:  2019-01-27 Sun 22:31</div>
   <h1>Today I Learned <i>in Emacs</i></h1>
 </div>
 </div>
@@ -291,6 +304,23 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>registers</b>
+</p>
+
+<p>
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html">Registers</a> are one of the little known features of Emacs. They essentially act
+like variables which are made quick to access by mapping single chars to them.
+Also their default impermanence across sessions probably makes them a little
+different from other stores.
+</p>
+
+<p>
+Similar to <i>unsaved</i> keyboard macros, thees can probably be useful for
+temporary, single session tasks. For example the text registers for working
+with temporary templates, the number register for counting things etc.
+</p></li>
+
 <li><p>
 <b>enriched-mode</b>
 </p>
