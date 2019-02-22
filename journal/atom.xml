@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.github.io/journal"/>
-  <updated>2019-01-06</updated>
+  <updated>2019-02-23</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>The Human Messiness</title>
+    <link href="https://lepisma.github.io/journal/2019/02/23/the-human-messiness/index.html"/>
+    <updated>2019-02-23</updated>
+  </entry>
   <entry>
     <title>Plugins for the Rest of us</title>
     <link href="https://lepisma.github.io/journal/2019/01/06/plugins/index.html"/>
@@ -33,11 +38,6 @@
     <title>Interstices</title>
     <link href="https://lepisma.github.io/journal/2018/11/05/interstices/index.html"/>
     <updated>2018-11-05</updated>
-  </entry>
-  <entry>
-    <title>The I /Loop/</title>
-    <link href="https://lepisma.github.io/journal/2018/10/21/the-i-loop/index.html"/>
-    <updated>2018-10-21</updated>
   </entry>
   <entry>
     <title>Lisp Shell Scripts</title>
