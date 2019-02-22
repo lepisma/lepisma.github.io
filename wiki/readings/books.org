@@ -1764,7 +1764,7 @@ CLOSED: [2015-03-13]
 :GOODREADS: https://www.goodreads.com/book/show/461104
 :END:
 
-*** Walden
+*** READING Walden
 :PROPERTIES:
 :AUTHOR:    Henry David Thoreau
 :ADDED:     <2015-01-15>

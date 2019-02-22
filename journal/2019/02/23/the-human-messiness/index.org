@@ -1,0 +1,43 @@
+#+TITLE: The Human Messiness
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+A few weeks back I came across the phrase 'human messiness' in a YANSS [[https://youarenotsosmart.com/2019/01/19/yanss-145-douglas-rushkoff-explains-why-we-should-revolt-against-the-algorithms-so-we-can-get-back-to-our-essential-human-messiness/][episode]]
+where [[https://rushkoff.com/][Douglas Rushkoff]] talks about the place (and meaning) of human elements in
+an algorithm driven world.
+
+It's hard to say what is the meaning of /messiness/ here[fn::In a way, this is
+supposed to happen]. Depending on the situation, you can have different readings
+of the phrase. Maybe it's creativity, vagueness of actions or, even more
+generally, everything that differentiates humans from contemporary
+algorithms[fn::This is a surface reading considering only the /behavioral/
+differences between the two]. Whether it's fundamental to humans or not, I feel
+a good description of messiness will cover the varieties of subjective
+experiences caused /because/ of uncertainty.
+
+-----
+
+Recently, while travelling via cabs, I have noticed a lot of times GPS
+navigation applications giving uncannily correct time estimates. Even after
+finding a pleasant escape from a {{{color(#d35400, red)}}} patch, the time
+estimate stays close to the original, and mostly correct. As a driver of such a
+divinatory vehicle, what choices do you have? Can you really do something that
+improves your situation? Even though cases like these are, in general,
+considered to be useful, you can almost always see something frustrating and
+unfulfilling there.
+
+Probably these kinds of helplessness form one of the key arguments against
+general algorithmic perversion of human lives. Of course there is this idea that
+it's fundamentally impossible (intractable in an efficiency sense) to
+algorithmically define a few processes, but the above example talks about an
+argument which holds even when we are living in an efficient simulation. The
+/uncertainty/ need not be true. An illusion will do.
+
+A more satisfactory process of assimilation of algorithms will probably involve
+accepting subjectivity, whatever that means, as a first class citizen of the
+human experience and then noticing that a few pieces of present technology
+landscape explicitly devalue them. Maybe there is a better, even algorithmic,
+way to understand subjective experiences. Not just something that tries to solve
+all the problems in a maximum-market-reach sense. Though I am not sure if this
+argument works since subjectivity itself might be a side effect of such a
+maximum cover problem solving approach[fn::Evolution?].
