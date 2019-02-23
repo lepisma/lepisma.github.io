@@ -38,6 +38,6 @@ accepting subjectivity, whatever that means, as a first class citizen of the
 human experience and then noticing that a few pieces of present technology
 landscape explicitly devalue them. Maybe there is a better, even algorithmic,
 way to understand subjective experiences. Not just something that tries to solve
-all the problems in a maximum-market-reach sense. Though I am not sure if this
-argument works since subjectivity itself might be a side effect of such a
-maximum cover problem solving approach[fn::Evolution?].
+all the problems in a /whatever works without costing a fortune/ sense. Though I
+am not sure if this argument works since subjectivity itself might be a side
+effect of such a problem solving approach[fn::Evolution?].
