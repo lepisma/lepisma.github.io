@@ -1800,12 +1800,36 @@ CLOSED: [2015-01-19]
 :GOODREADS: https://www.goodreads.com/book/show/19395553
 :END:
 
-*** READING The Structure of Scientific Revolutions
+*** READ The Structure of Scientific Revolutions
+CLOSED: [2019-02-24 Sun 19:49]
 :PROPERTIES:
 :AUTHOR:    Thomas S. Kuhn
 :ADDED:     <2014-12-18>
 :GOODREADS: https://www.goodreads.com/book/show/17997242
 :END:
+
+I started this a few years ago but wasn't really in the zone to continue. This
+time though, it went pretty well. What you will find here is a certain
+presentation and analysis of history of science which is not possible to find in
+the course of what Kuhn calls /normal/ science. Output from normal science drives
+a lot of the practical progress that we see in the world and this makes us feel
+that scientific advancement proceeds in a cumulative fashion. At the very
+fundamental level though, this is not a given. Scientific revolutions involve
+perceptual switches between two /paradigms/ which are at odds concerning the
+/meaning/ of fundamental ontological forms. Post revolution, the usual methods of
+scientific communication (either textbooks or pop-science) will not, by design,
+represent the crisis faithfully enough to have similar discussions as in the
+period of revolution.
+
+You can clearly see why the ideas presented have controversies around them. A
+good set of criticisms and arguments against it can be found in the postscript
+itself. One that stands out to me is the idea that the whole thing promotes
+relativism in some form. Considering the ways in which a certain person
+assimilates a certain paradigm as true, this discussion is fundamentally about
+whether there is a neutral standpoint for viewing and understanding natural
+phenomenon. Most fundamental pieces of the book are based on absence of such
+neutral /observation/ language. What happens if such is not the case is going to
+be interesting.
 
 *** Unweaving the Rainbow: Science, Delusion and the Appetite for Wonder
 :PROPERTIES:
