@@ -5032,14 +5032,15 @@ CLOSED: [2018-11-03 Sat 21:10]
 :GOODREADS: https://www.goodreads.com/book/show/25106.Fables_and_Reflections
 :END:
 
-*** Brief Lives (Sandman, #7)
+*** READ Brief Lives (Sandman, #7)
+CLOSED: [2019-02-25 Mon 00:30]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Jill Thompson, (Illustrator), Vince Locke, (Illustrator), Peter Straub, (Introduction)
 :ADDED:    <2017-07-11>
 :GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
 :END:
 
-*** Worlds' End (Sandman, #8)
+*** READING Worlds' End (Sandman, #8)
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
 :ADDED:    <2017-07-11>
