@@ -233,6 +233,37 @@ random search.
 
 * AI/ML
 
+** READ Abstract meaning representation for sembanking
+CLOSED: [2019-03-10 Sun 22:43]
+:PROPERTIES:
+:CUSTOM_ID: banarescu2013abstract
+:YEAR:     2013
+:AUTHOR:   Banarescu, Laura and Bonial, Claire and Cai, Shu and Georgescu, Madalina and Griffitt, Kira and Hermjakob, Ulf and Knight, Kevin and Koehn, Philipp and Palmer, Martha and Schneider, Nathan
+:END:
+
+I found AMR while looking into a way of breaking from the usual intent/entity
+based NLU. While they are [[https://nlpers.blogspot.com/2014/09/amr-not-semantics-but-close-maybe.html][not perfect]], the specification tells you about pieces
+which should (in elaborate situations) be considered at least for practical
+computational language understanding.
+
+** READ Bootstrapping language models for dialogue systems
+CLOSED: [2019-03-10 Sun 22:43]
+:PROPERTIES:
+:CUSTOM_ID: weilhammer2006bootstrapping
+:YEAR:     2006
+:AUTHOR:   Weilhammer, Karl and Stuttle, Matthew N and Young, Steve
+:END:
+
+This is quickly getting /domain specific/ LMs. The idea is to not do a lot of
+manual (and perfect) text collection but start with simple grammars and get a
+seed LM using the generated text. Then for more refinements, get a large LM and
+do sentence selection on /in-the-wild/ data to get sentences with low value of
+$PP_{seed} / PP_{large}$. These sentences and the /rejected/ ones then give two more LMs
+which can then be interpolated based on a validation set.
+
+Exact steps aside, the idea (other than SLMs on grammar generated data) is to do
+some sort of /sentence selection/ to augment the seed LM.
+
 ** READ Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing
 CLOSED: [2019-01-15 Tue 01:10]
 :PROPERTIES:
