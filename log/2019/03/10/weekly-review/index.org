@@ -1,0 +1,37 @@
+#+TITLE: Weekly Review /10-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 10,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+After a long hiatus and a period of intellectual indolence, I am trying to get
+back on track. Excuses aside, this review will be pretty short. Covering very
+few things, probably a couple (one maybe) of books that I read, since I don't
+have good plan for summarizing all that is amiss.
+
+* Experiments
+
+* Readings/Explorations
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 10-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- Finished [[https://www.goodreads.com/book/show/33509756-moral-fables-followed-by-thoughts][Moral Fables]].
