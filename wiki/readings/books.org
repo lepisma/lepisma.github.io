@@ -5040,14 +5040,15 @@ CLOSED: [2019-02-25 Mon 00:30]
 :GOODREADS: https://www.goodreads.com/book/show/25105.Brief_Lives
 :END:
 
-*** READING Worlds' End (Sandman, #8)
+*** READ Worlds' End (Sandman, #8)
+CLOSED: [2019-03-11 Mon 22:49]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Mike Allred, (Illustrator), Gary Amaro, (Illustrator), Mark Buckingham, (Illustrator), David Giordano, (Illustrator), Tony Harris, (Illustrator), Steve Leialoha, (Illustrator), Vince Locke, (Illustrator), Shea Anton Pensa, (Illustrator), Alec Stevens, (Illustrator), Bryan Talbot, (Illustrator), John Watkiss, (Illustrator), Todd Klein, (Letterer), Michael Zulli, (Illustrator), Stephen King, (Introduction)
 :ADDED:    <2017-07-11>
 :GOODREADS: https://www.goodreads.com/book/show/25103.Worlds_End
 :END:
 
-*** The Kindly Ones (Sandman, #9)
+*** READING The Kindly Ones (Sandman, #9)
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Marc Hempel, (Illustrator), Richard Case, (Illustrator), D'Israeli, (Illustrator), Teddy Kristiansen, (Illustrator), Glyn Dillon, (Illustrator), Charles Vess, (Illustrator), Dean Ormston, (Illustrator), Kevin Nowlan, (Illustrator), Todd Klein, (Letterer), Frank McConnell, (Introduction)
 :ADDED:    <2017-07-11>

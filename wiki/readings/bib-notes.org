@@ -2,10 +2,6 @@
 #+SETUPFILE: ../../assets/export.setup
 #+TODO: TOREAD READING | READ
 
-#+BEGIN_QUOTE
-This page is a work in progress
-#+END_QUOTE
-
 This contains notes for paper-ish documents that I read (notes for books in
 general are [[pile:wiki:readings/books][here]]). I am now realizing the importance of summarizing what I read
 so will be working on this page fairly regularly.
@@ -151,7 +147,7 @@ An interesting idea involves the definition of $\lambda$ parameter (that helps i
 categorizing the rules) which is basically a discrete probability distribution
 for the range of mapping function.
 
-** TOREAD Self-organized criticality
+** Self-organized criticality
  :PROPERTIES:
   :Custom_ID: bak1988self
   :AUTHOR: Bak, Tang \& Wiesenfeld
@@ -222,7 +218,7 @@ than the regular approach in the general case. If there indeed is such a
 generator, this could work as an off-the-shelf technique replacing uniform
 random search.
 
-** TOREAD At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks
+** At the edge of chaos: Real-time computations and self-organized criticality in recurrent neural networks
  :PROPERTIES:
   :Custom_ID: bertschinger2005edge
   :AUTHOR: Bertschinger, Natschl\"ager \& Legenstein
@@ -232,6 +228,13 @@ random search.
  :END:
 
 * AI/ML
+
+** The tradeoffs of large scale learning
+:PROPERTIES:
+:CUSTOM_ID: bottou2008tradeoffs
+:YEAR:     2008
+:AUTHOR:   Bottou, L{\'e}on and Bousquet, Olivier
+:END:
 
 ** READ Abstract meaning representation for sembanking
 CLOSED: [2019-03-10 Sun 22:43]
@@ -288,7 +291,6 @@ just indexing into (learnable) embeddings. I was looking for something more
 insightful though.
 
 ** Generating exact lattices in the WFST framework
-DEADLINE: <2018-11-10 Sat>
 :PROPERTIES:
 :CUSTOM_ID: povey2012generating
 :YEAR:     2012
@@ -323,8 +325,7 @@ Bunch of improvements on top of the LAS architecture. It feels funny that even
 in end-to-end systems, we still look for /modular presence/ of components like
 Language Models. Maybe that helps in adding and justifying heuristics.
 
-** READING Speech recognition with weighted finite-state transducers
-DEADLINE: <2018-11-11 Sun>
+** Speech recognition with weighted finite-state transducers
 :PROPERTIES:
 :CUSTOM_ID: mohri2008speech
 :YEAR:     2008
@@ -337,8 +338,7 @@ Partial notes:
 3. Minimization: Compressing to the minimal, /equivalent/ automaton. Done by first
    weight pushing and then running the classical algorithm.
 
-** TOREAD Data programming: Creating large training sets, quickly
-DEADLINE: <2018-10-18 Thu>
+** Data programming: Creating large training sets, quickly
 :PROPERTIES:
 :CUSTOM_ID: ratner2016data
 :YEAR:     2016
@@ -439,7 +439,7 @@ learning. The important point is that this /framework/ can be applied to a lot o
 problems in nlu involving different ways of structuring the logical forms and
 features.
 
-** READING A decision-theoretic generalization of on-line learning and an application to boosting
+** A decision-theoretic generalization of on-line learning and an application to boosting
  :PROPERTIES:
   :Custom_ID: freund1997decision
   :AUTHOR: Freund \& Schapire
@@ -458,15 +458,14 @@ features.
 :AUTHOR:   Agarwal, Sameer and Mozafari, Barzan and Panda, Aurojit and Milner, Henry and Madden, Samuel and Stoica, Ion
 :END:
 
-** TOREAD Type systems as macros
-DEADLINE: <2018-10-17 Wed>
+** Type systems as macros
 :PROPERTIES:
 :CUSTOM_ID: chang2017type
 :YEAR:     2017
 :AUTHOR:   Chang, Stephen and Knauth, Alex and Greenman, Ben
 :END:
 
-** TOREAD Physics, topology, logic and computation: a Rosetta Stone
+** Physics, topology, logic and computation: a Rosetta Stone
  :PROPERTIES:
   :Custom_ID: baez2010physics
   :AUTHOR: Baez \& Stay
