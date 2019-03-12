@@ -451,6 +451,18 @@ features.
 
 * Computation/Programming
 
+** READ Growing a language
+CLOSED: [2019-03-12 Tue 11:11]
+:PROPERTIES:
+:CUSTOM_ID: steele1999growing
+:YEAR:     1999
+:AUTHOR:   Steele, Guy L
+:END:
+
+This is originally a talk, I read [[https://www.cs.virginia.edu/~evans/cs655/readings/steele.pdf][a pdf]] version. An interesting thing is the way
+the talk itself is structured (its vocabulary mostly) exemplifying the same
+/growth/ mechanism that Guy talks about in relation to languages.
+
 ** BlinkDB: queries with bounded errors and bounded response times on very large data
 :PROPERTIES:
 :CUSTOM_ID: agarwal2013blinkdb
