@@ -1,0 +1,54 @@
+#+TITLE: Weekly Review /11-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 11,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Growing a Language (cite:steele1999growing)
+- Rapidly building domain-specific entity-centric language models using semantic
+  web knowledge sources (cite:akbacak2014rapidly)
+- Streaming end-to-end speech recognition for mobile devices
+  (cite:he2018streaming)
+- Dynamically typed languages (cite:tratt2009dynamically)
+- [[https://petewarden.com/2016/05/03/how-to-quantize-neural-networks-with-tensorflow/][How to Quantize Neural Networks with TensorFlow « Pete Warden's blog]]. There is
+  a lot of cool things happening on the runtime side of neural nets.
+- [[https://learnyousomeerlang.com/dialyzer][Type Specifications and Erlang | Learn You Some Erlang for Great Good!]]. A
+  first glance at /success typing/ feels like just your regular optional typing.
+  But probably there is a difference. Will be looking into the paper
+  cite:lindahl2006practical.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 11-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Studied CL's restarts and conditions. Probably they are most useful when you
+  don't really know the error modes or they too many to fix programmatically in
+  a general way; I feel I have a few uses for them in [[https://github.com/lepisma/bbq][bbq]]. Will be looking into
+  signals in some time to understand how they are implemented.
+- Started using Clojure at work, hopefully we will have a good run with it.
+
+* Media
+- [[http://m.nautil.us/issue/70/variables/wikipedia-and-the-wisdom-of-polarized-crowdsq][Wikipedia and the Wisdom of Polarized Crowds]]
+- [[http://m.nautil.us/issue/70/variables/how-designers-engineer-luck-into-video-games-rp][The Problem with Video Game Luck]]
+
+[[bibliography:./references.bib]]

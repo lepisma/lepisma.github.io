@@ -229,6 +229,36 @@ random search.
 
 * AI/ML
 
+** READ Streaming End-to-end Speech Recognition For Mobile Devices
+CLOSED: [2019-03-19 Tue 00:12]
+:PROPERTIES:
+:CUSTOM_ID: he2018streaming
+:YEAR:     2018
+:AUTHOR:   He, Yanzhang and Sainath, Tara N and Prabhavalkar, Rohit and McGraw, Ian and Alvarez, Raziel and Zhao, Ding and Rybach, David and Kannan, Anjuli and Wu, Yonghui and Pang, Ruoming and others
+:END:
+
+From Google's recent on-device character level Speech Recognition system. There
+are a bunch of tricks used in the overall system other than the main model
+itself. A few are:
+
+- parameter quantization (required, of course, for fast computation on mobile
+  device)
+- data augmentation using tts for getting numbers, proper nouns etc. right
+  (instead of doing fancy stuff on the model side)
+
+** READ Rapidly building domain-specific entity-centric language models using semantic web knowledge sources
+CLOSED: [2019-03-19 Tue 00:12]
+:PROPERTIES:
+:CUSTOM_ID: akbacak2014rapidly
+:YEAR:     2014
+:AUTHOR:   Akbacak, Murat and Hakkani-T{\"u}r, Dilek and Tur, Gokhan
+:END:
+
+This is focused on filtering search queries for creating language model. The
+filtering that works out for them is to (after identifying a domain) go from
+queries to clicked links then back to queries that went to those links. There
+are a few other pieces involved but the general shape of narrowing is the same.
+
 ** The tradeoffs of large scale learning
 :PROPERTIES:
 :CUSTOM_ID: bottou2008tradeoffs
@@ -450,6 +480,16 @@ features.
  :END:
 
 * Computation/Programming
+
+** READ Dynamically typed languages
+CLOSED: [2019-03-19 Tue 00:10]
+:PROPERTIES:
+:CUSTOM_ID: tratt2009dynamically
+:YEAR:     2009
+:AUTHOR:   Tratt, Laurence
+:END:
+
+A basic and exhaustive intro to dynamic typed languages. Good for beginners.
 
 ** READ Growing a language
 CLOSED: [2019-03-12 Tue 11:11]
