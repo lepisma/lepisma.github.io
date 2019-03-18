@@ -29,8 +29,8 @@ width: 100%;
 - Streaming end-to-end speech recognition for mobile devices
   (cite:he2018streaming)
 - Dynamically typed languages (cite:tratt2009dynamically)
-- [[https://petewarden.com/2016/05/03/how-to-quantize-neural-networks-with-tensorflow/][How to Quantize Neural Networks with TensorFlow « Pete Warden's blog]]. There is
-  a lot of cool things happening on the runtime side of neural nets.
+- [[https://petewarden.com/2016/05/03/how-to-quantize-neural-networks-with-tensorflow/][How to Quantize Neural Networks with TensorFlow « Pete Warden's blog]]. There
+  are a lot of cool things happening on the runtime side of neural nets.
 - [[https://learnyousomeerlang.com/dialyzer][Type Specifications and Erlang | Learn You Some Erlang for Great Good!]]. A
   first glance at /success typing/ feels like just your regular optional typing.
   But probably there is a difference. Will be looking into the paper
