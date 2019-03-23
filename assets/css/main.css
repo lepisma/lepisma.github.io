@@ -1380,6 +1380,15 @@ pre.src:hover::before {
   .todo:hover, .done:hover {
     background-color: #efefef;
     background-image: none; }
+  .todo.active, .done.active {
+    text-shadow: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c3e50; }
+    .todo.active:hover, .done.active:hover {
+      background-color: #efefef;
+      background-image: none;
+      color: #000; }
 
 .todo {
   color: #dc752f; }
@@ -1407,6 +1416,15 @@ pre.src:hover::before {
   .tag > span:hover {
     background-color: #efefef;
     background-image: none; }
+  .tag > span.active {
+    text-shadow: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c3e50; }
+    .tag > span.active:hover {
+      background-color: #efefef;
+      background-image: none;
+      color: #000; }
 
 .priority {
   color: #7b7b7b;
@@ -1654,3 +1672,12 @@ nav#table-of-contents {
   .page-tags a:hover {
     background-color: #efefef;
     background-image: none; }
+  .page-tags a.active {
+    text-shadow: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c3e50; }
+    .page-tags a.active:hover {
+      background-color: #efefef;
+      background-image: none;
+      color: #000; }
