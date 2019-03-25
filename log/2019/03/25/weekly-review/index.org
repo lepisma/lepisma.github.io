@@ -1,0 +1,39 @@
+#+TITLE: Weekly Review /12-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 12,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- A bit of progress in language modeling (cite:goodman2001bit)
+- Srilm-an extensible language modeling toolkit (cite:stolcke2002srilm)
+- [[https://www.scala-lang.org/blog/2018/06/15/bsp.html][Announcing the Build Server Protocol v1.0.0 | The Scala Programming Language]]
+- Statistical language modeling for speech disfluencies (cite:stolcke1996statistical)
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 12-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[http://www.wnycstudios.org/story/bliss/][Bliss | Radiolab]]
+
+[[bibliography:./references.bib]]
