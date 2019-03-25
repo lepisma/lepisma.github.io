@@ -7,6 +7,10 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *drag and drop*
+
+  Not sure if I have ever used this feature in any text editor, but [[https://emacs.stackexchange.com/questions/21210/drag-selected-text-with-the-mouse/48440#48440][here]] it is.
+
 + *registers*
 
   [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]] are one of the little known features of Emacs. They essentially act

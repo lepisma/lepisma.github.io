@@ -229,6 +229,35 @@ random search.
 
 * AI/ML
 
+** READ Statistical language modeling for speech disfluencies
+CLOSED: [2019-03-26 Tue 00:01]
+:PROPERTIES:
+:CUSTOM_ID: stolcke1996statistical
+:YEAR:     1996
+:AUTHOR:   Stolcke, Andreas and Shriberg, Elizabeth
+:END:
+
+Got here from srilm's disfluency (DF) LM. The idea is to have a /cleanup/ model
+which models out certain common DFs, specifically filled pauses, repetitions and
+deletions. Although there was not much gain, an interesting conclusion comes
+with filled pauses where the DF model actually increased perplexity. The
+argument being a filled pause, in most of the cases, linguistically breaks the
+sentence and so the context behind it is not so useful for what follows.
+
+Since the paper is old and also hints at a bunch of improvements in DF modeling,
+I guess there might be a more recent reference around.
+
+** READ SRILM-an extensible language modeling toolkit
+CLOSED: [2019-03-26 Tue 00:01]
+:PROPERTIES:
+:CUSTOM_ID: stolcke2002srilm
+:YEAR:     2002
+:AUTHOR:   Stolcke, Andreas
+:END:
+
+This is an early document on SRILM's design and development. If you are looking
+for something more in-depth, just download the current tarball.
+
 ** READ A bit of progress in language modeling
 CLOSED: [2019-03-20 Wed 19:02]
 :PROPERTIES:
