@@ -229,6 +229,18 @@ random search.
 
 * AI/ML
 
+** READ Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries and LVCSR tasks
+CLOSED: [2019-03-30 Sat 20:07]
+:PROPERTIES:
+:CUSTOM_ID: hahn2012comparison
+:YEAR:     2012
+:AUTHOR:   Hahn, Stefan and Vozila, Paul and Bisani, Maximilian
+:END:
+
+This is mostly a comparison of statistical g2p models. I think I have a general
+idea now but looks like there is a lot more to see if I start looking into
+individual references.
+
 ** READ Statistical language modeling for speech disfluencies
 CLOSED: [2019-03-26 Tue 00:01]
 :PROPERTIES:
