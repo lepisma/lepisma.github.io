@@ -239,7 +239,9 @@ CLOSED: [2019-03-30 Sat 20:07]
 
 This is mostly a comparison of statistical g2p models. I think I have a general
 idea now but looks like there is a lot more to see if I start looking into
-individual references.
+individual references. A general thread along all these models was the use of a
+certain alignment (grapheme to phoneme) algorithm to get what are called
+/graphones/ and then train an ngrams-ish sequence model on them.
 
 ** READ Statistical language modeling for speech disfluencies
 CLOSED: [2019-03-26 Tue 00:01]
