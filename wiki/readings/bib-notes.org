@@ -560,7 +560,7 @@ approach towards types since programming in a dynamic language involves dropping
 a lot of so called writer's 'intention' here and there which does not adhere to
 the static type philosophy.
 
-Not sure if this is one of the first ones (the first for functional languages
+Not sure if this is one of the firsts (the first for functional languages
 according to the paper), but these days there are many mainstream dynamic
 languages adopting such soft typing systems in some form.
 
