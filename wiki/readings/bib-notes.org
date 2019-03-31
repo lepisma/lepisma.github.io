@@ -546,6 +546,24 @@ features.
 
 * Computation/Programming
 
+** READ Practical type inference based on success typings
+CLOSED: [2019-03-31 Sun 20:56]
+:PROPERTIES:
+:CUSTOM_ID: lindahl2006practical
+:YEAR:     2006
+:AUTHOR:   Lindahl, Tobias and Sagonas, Konstantinos
+:END:
+
+The general idea is to allow all programs that throw no runtime errors. This is
+specially useful in languages which are philosophically dynamic. I like this
+approach towards types since programming in a dynamic language involves dropping
+a lot of so called writer's 'intention' here and there which does not adhere to
+the static type philosophy.
+
+Not sure if this is one of the first ones (the first for functional languages
+according to the paper), but these days there are many mainstream dynamic
+languages adopting such soft typing systems in some form.
+
 ** READ Dynamically typed languages
 CLOSED: [2019-03-19 Tue 00:10]
 :PROPERTIES:
