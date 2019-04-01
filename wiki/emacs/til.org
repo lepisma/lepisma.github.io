@@ -7,6 +7,10 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *future history*
+
+  Check [[https://engineering.collbox.co/post/working-faster-in-emacs-by-reading-the-future/][this]] out.
+
 + *drag and drop*
 
   Not sure if I have ever used this feature in any text editor, but [[https://emacs.stackexchange.com/questions/21210/drag-selected-text-with-the-mouse/48440#48440][here]] it is.
