@@ -1,0 +1,39 @@
+#+TITLE: Weekly Review /13-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 13,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+Pretty slim, this week.
+
+* Experiments
+
+* Readings/Explorations
+- Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries
+  and lvcsr tasks (cite:hahn2012comparison)
+- Practical type inference based on success typings (cite:lindahl2006practical)
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 13-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+
+[[bibliography:./references.bib]]
