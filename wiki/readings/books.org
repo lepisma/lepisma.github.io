@@ -1764,12 +1764,19 @@ CLOSED: [2015-03-13]
 :GOODREADS: https://www.goodreads.com/book/show/461104
 :END:
 
-*** READING Walden
+*** READ Walden
+CLOSED: [2019-04-03 Wed 10:58]
 :PROPERTIES:
 :AUTHOR:    Henry David Thoreau
 :ADDED:     <2015-01-15>
 :GOODREADS: https://www.goodreads.com/book/show/17792189
 :END:
+
+Took a little more time than regular. Mostly because, after a while, I started
+picking small chunks and going through them deliberately. Less concerned with
+having the content stay longer in memory, more with the idea of putting myself
+as close as possible to the author. And it turned out to be a rewarding
+experience.
 
 *** Man's Search for Meaning
 :PROPERTIES:
