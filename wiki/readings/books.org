@@ -5032,7 +5032,8 @@ CLOSED: [2018-11-03 Sat 21:10]
 :GOODREADS: https://www.goodreads.com/book/show/25102.A_Game_of_You
 :END:
 
-*** READING Fables and Reflections (Sandman, #6)
+*** READ Fables and Reflections (Sandman, #6)
+CLOSED: [2019-04-05 Fri 12:51]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Bryan Talbot, (Illustrator), Stan Woch, (Illustrator), P. Craig Russell, (Illustrator), Shawn McManus, (Illustrator), John Watkiss, (Illustrator), Jill Thompson, (Illustrator), Duncan Eagleson, (Illustrator), Kent Williams, (Illustrator), Todd Klein, (Letterer)
 :ADDED:    <2017-07-11>
