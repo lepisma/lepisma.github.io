@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-03-31 Sun 21:40 -->
+<!-- 2019-04-07 Sun 22:14 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notes</title>
@@ -309,7 +309,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-03-31 Sun 21:39</div>
+  <div class='page-meta'>Last modified:  2019-04-07 Sun 22:14</div>
   <h1>Notes</h1>
 </div>
 </div>
@@ -1190,13 +1190,38 @@ the talk itself is structured (its vocabulary mostly) exemplifying the same
 </div>
 
 <div id="outline-container-org2ac271d" class="outline-3">
-<h3 id="agarwal2013blinkdb"><span class="section-number-3">3.4</span> BlinkDB: queries with bounded errors and bounded response times on very large data</h3>
+<h3 id="agarwal2013blinkdb"><span class="section-number-3">3.4</span> <span class="done READ">READ</span> BlinkDB: queries with bounded errors and bounded response times on very large data</h3>
 <div class="outline-text-3" id="text-agarwal2013blinkdb">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-07 Sun 21:57]</span></span></p>
 <pre class="example">
 CUSTOM_ID: agarwal2013blinkdb
 YEAR: 2013
 AUTHOR: Agarwal, Sameer and Mozafari, Barzan and Panda, Aurojit and Milner, Henry and Madden, Samuel and Stoica, Ion
 </pre>
+
+<p>
+I find works like this, and other approximate query processing systems, pretty
+interesting since their general structures are close to machine learning systems
+with slightly different metrics to be optimized. This, of course, then provides
+a lot of food for thought.
+</p>
+
+<p>
+So, what BlinkDB does is pretty clear from the title. On the how side, they
+basically create a bunch of samples (table subsets) based on criterion derived
+from past queries. The 'key' for samples here are sets of columns involved in
+the queries' <code>WHERE</code>, <code>HAVING</code> etc. clauses. When asked a query with timing, error
+requirements, a sample is picked (after some estimation on some data; this is
+important, since they don't want to put much assumptions on the type of
+workload) and query runs on that.
+</p>
+
+<p>
+Since they are mostly for high scale use cases, these methods are not 'very'
+visible unless you are into such things. Although, I believe, similar ideas (I
+specially liked the Online Aggregation thing from 1997) can be put in more
+commonplace, smaller, systems (or already are there).
+</p>
 </div>
 </div>
 
