@@ -586,12 +586,31 @@ This is originally a talk, I read [[https://www.cs.virginia.edu/~evans/cs655/rea
 the talk itself is structured (its vocabulary mostly) exemplifying the same
 /growth/ mechanism that Guy talks about in relation to languages.
 
-** BlinkDB: queries with bounded errors and bounded response times on very large data
+** READ BlinkDB: queries with bounded errors and bounded response times on very large data
+CLOSED: [2019-04-07 Sun 21:57]
 :PROPERTIES:
 :CUSTOM_ID: agarwal2013blinkdb
 :YEAR:     2013
 :AUTHOR:   Agarwal, Sameer and Mozafari, Barzan and Panda, Aurojit and Milner, Henry and Madden, Samuel and Stoica, Ion
 :END:
+
+I find works like this, and other approximate query processing systems, pretty
+interesting since their general structures are close to machine learning systems
+with slightly different metrics to be optimized. This, of course, then provides
+a lot of food for thought.
+
+So, what BlinkDB does is pretty clear from the title. On the how side, they
+basically create a bunch of samples (table subsets) based on criterion derived
+from past queries. The 'key' for samples here are sets of columns involved in
+the queries' ~WHERE~, ~HAVING~ etc. clauses. When asked a query with timing, error
+requirements, a sample is picked (after some estimation on some data; this is
+important, since they don't want to put much assumptions on the type of
+workload) and query runs on that.
+
+Since they are mostly for high scale use cases, these methods are not 'very'
+visible unless you are into such things. Although, I believe, similar ideas (I
+specially liked the Online Aggregation thing from 1997) can be put in more
+commonplace, smaller, systems (or already are there).
 
 ** Type systems as macros
 :PROPERTIES:
