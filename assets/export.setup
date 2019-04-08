@@ -46,3 +46,4 @@
 #+MACRO: js #+HTML_HEAD: <script src="$1"></script>
 #+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
 #+MACRO: color @@html:<font color="$1">$2</font>@@
+#+MACRO: color-bg @@html:<font style="background-color: $1">$2</font>@@
