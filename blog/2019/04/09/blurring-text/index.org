@@ -174,7 +174,9 @@ similar to the case with image) are to be found across training sets/methods.
 I wonder how these mixings in spaces can be connected with our understanding of
 semantics. Working in the vector space is all nice and good---in fact smoothing
 with an all $1/|k|$ kernel is what people use for basic document
-vectorization---but what about their projections into symbol space?
+vectorization---but what about their projections into symbol space? A few cases
+like analogies are commonly understood, but there are probably other interesting
+cases coming from the side of human usage of language.
 
 This mixing of representations is not very uncommon, both computationally (of
 course) and in regular usage. Look around various kinds of speech disfluencies
