@@ -4,7 +4,7 @@
 <!-- 2019-04-09 Tue 00:37 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>(car nil)</title>
+<title>Blurring Text</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -221,6 +221,11 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script src="./script.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<link rel="stylesheet" href="./style.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -267,6 +272,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -287,271 +314,283 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>(<i>car</i> nil)</h1>
+  <div class='page-meta'>2019-04-09 Tue 00:00</div>
+  <h1>Blurring Text</h1>
 </div>
 </div>
 <div id="content">
-<script src="assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../../..#exploration'>exploration</a> <a href='../../../..#ml'>ml</a></div>
+<p>
+<span class='dropcap'>W</span>hile sweeping through my old notes, I found an entry with one line of text:
+<i>blurring for text, like we do for images</i>. I should have written something
+more, but I think the idea was to have an operation similar to blurring for text
+and see what it might <i>mean</i>. The general theme in image blurring is something
+along the lines of 'bringing ambiguity in the roles of the constituents', i.e.,
+the pixels. This, if continued, makes it hard to perceive the semantics of the
+image.
+</p>
+
+<aside>
+<p>
+On a side note, the semantics is pretty use-case dependent. On a given day, even
+the second image works. On another day, you might start thinking whether the
+first image really is a burrito or something else, like a frankie.
+</p>
+</aside>
+
+
+<figure>
+<img src="./burrito.png" alt="burrito.png">
+
+<figcaption><span class="figure-number">Figure 1: </span>A burrito fading into meaninglessness</figcaption>
+</figure>
 
 <p>
-Hello, welcome to my blog! A listing of all the posts follows.
+The important point though is that even with the blurred pixels we still try to
+get some projection into the semantics. Let's try to do the same for text.
 </p>
 
 <p>
-I am now keeping more subjective (and frequent) pieces in <a href="../journal/index.html">/journal</a>. Things that
-are more <i>page</i> like go in my personal <a href="../wiki/index.html">/wiki</a>. I also try to maintain a regular
-activity <a href="../log/index.html">/log</a>.
+Here is the text that I picked for an example, randomly<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. This
+is (are) first (few) line(s) from the wikipedia page on
+<a href="https://en.wikipedia.org/wiki/Animal">Animal</a> after removing punctuation.
+</p>
+
+<pre class="example">
+Animals are multicellular eukaryotic organisms that form the biological kingdom
+Animalia With few exception animals consume organic material breathe oxygen are
+able to move reproduce sexually and grow from a hollow sphere of cells the
+blastula during embryonic development
+</pre>
+
+<div id="outline-container-org547646a" class="outline-2">
+<h2 id="sec-attempt-#1"><span class="section-number-2">1</span> Attempt #1</h2>
+<div class="outline-text-2" id="text-sec-attempt-#1">
+<pre class="example">
+</pre>
+
+<p>
+Using the usual weighted sum of neighbour approach, we can try applying a one
+dimensional kernel to word vectors which should give smoothened vector for each
+word.
+</p>
+
+<p>
+I am taking \(w = 3\) and my kernel looks like \([\frac{\alpha}{2}, (1 - \alpha),
+\frac{\alpha}{2}]\). For values of \(\alpha\) like \(0.0, 0.1, 0.2, \ldots 1.0\), the
+next few paragraphs show the smoothened outputs. Note that I did not touch the
+edges so the first and last words are going to be intact.
+</p>
+
+<p>
+If you have JavaScript enabled, you can see a bit more by hovering over the
+words. The face color of each word <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> defines the closeness with smoothened vector at that place. This is
+important since we are trying to impose meaning by projecting the vector on
+symbols where there might be none really. On hovering you can see top 3 closest
+projections along with cosine similarity with the smooth vector.
+</p>
+
+<p>
+Also, <font style="background-color: yellow"> yellow</font> highlights word positions and <span class="underline">underline</span>
+highlights same words across all the cases.
+</p>
+
+<p>
+\(\alpha = 0.0\)
+</p>
+
+<pre class="example">
+Animals are multicellular eukaryotic organisms that form the biological kingdom
+Animalia With few exception animals consume organic material breathe oxygen are
+able to move reproduce sexually and grow from a hollow sphere of cells the
+blastula during embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.1\)
+</p>
+
+<pre class="example">
+Animals are multicellular eukaryotic organisms that form the biological kingdom
+Animalia With few exception animals consume organic material breathe oxygen are
+able to move reproduce sexually and grow from a hollow sphere of cells the
+blastula during embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.2\)
+</p>
+
+<pre class="example">
+Animals are multicellular eukaryotic organisms that form the biological kingdom
+Animalia With few exception animals consume organic material breathe oxygen are
+able to move reproduce sexually and grow from a hollow sphere of cells the
+blastula during embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.3\)
+</p>
+
+<pre class="example">
+Animals are multicellular eukaryotic organisms that form the biological kingdom
+Animalia With few exception animals consume organic material breathe oxygen are
+able to move reproduce sexually and grow from a hollow sphere of cells the
+blastula during embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.4\)
+</p>
+
+<pre class="example">
+Animals are multicellular eukaryotic organisms that form the biological kingdom
+Animalia With few few animals consume organic material breathe oxygen are able
+to move reproduce sexually and grow a a a sphere of cells the blastula during
+embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.5\)
+</p>
+
+<pre class="example">
+Animals are are eukaryotic organisms that form the the kingdom Animalia With few
+few animals consume organic material breathe oxygen are able to move reproduce
+sexually and grow a a a of of of the the during embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.6\)
+</p>
+
+<pre class="example">
+Animals are are eukaryotic organisms that the the the kingdom Animalia With few
+few animals consume organic organic oxygen are are to to to reproduce sexually
+and grow a a a of of of the the during embryonic development
+</pre>
+
+<p>
+\(\alpha = 0.7\)
+</p>
+
+<pre class="example">
+Animals are are multicellular that form the the the kingdom With few few few
+consume animals organic organic oxygen are are to to to move and grow and a a a
+of of of cells the embryonic during development
+</pre>
+
+<p>
+Next few \(\alpha\) values are kind of different since the center vector has lesser
+weights than neighbours.
+</p>
+
+<p>
+\(\alpha = 0.8\)
+</p>
+
+<pre class="example">
+Animals Animals are organisms that form the form the Animalia With few With few
+consume animals consume organic oxygen are able to to to move and grow and a a a
+of cells of cells the embryonic during development
+</pre>
+
+<p>
+\(\alpha = 0.9\)
+</p>
+
+<pre class="example">
+Animals Animals are organisms that form the form the Animalia With few With few
+consume organic consume breathe oxygen are able to able to move and grow and a
+from a of cells of cells the embryonic during development
+</pre>
+
+<p>
+\(\alpha = 1.0\)
+</p>
+
+<pre class="example">
+Animals Animals are organisms that form the form the Animalia With few With few
+consume organic consume breathe oxygen are able to able to move and grow from a
+from a of cells of cells the embryonic during development
+</pre>
+
+<p>
+Other than virtually nothing, you can notice a few specific words going away,
+like the add-ons in burrito. Nothing interesting happens as far as new words'
+introduction is concerned. A few words like <code>of</code>, <code>a</code>, <code>few</code> etc. are easily
+repeated and look pretty resilient and imposing (?) in a certain sense.
+</p>
+
+<p>
+Much of these can be directly attributed to training corpus. For example, if the
+weighted average turns out to be around <i>something else</i>, you will start getting
+new words. Better question probably is if similar degradations (which looks
+similar to the case with image) are to be found across training sets/methods.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org37aa420" class="outline-2">
+<h2 id="sec-attempt-#2"><span class="section-number-2">2</span> Attempt #2</h2>
+<div class="outline-text-2" id="text-sec-attempt-#2">
+<pre class="example">
+</pre>
+
+<p>
+I wonder how these mixings in spaces can be connected with our understanding of
+semantics. Working in the vector space is all nice and good&#x2014;in fact smoothing
+with an all \(1/|k|\) kernel is what people use for basic document
+vectorization&#x2014;but what about their projections into symbol space? A few cases
+like analogies are commonly understood, but there are probably other interesting
+cases coming from the side of human usage of language.
+</p>
+
+<p>
+This mixing of representations is not very uncommon, both computationally (of
+course) and in regular usage. Look around various kinds of speech disfluencies
+<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. Freudian
+slips?
+</p>
+
+<p>
+Another interesting piece is the progression of semantic degradations as we push
+mixing in certain direction. What are the washed out colors in the last blurred
+burritos image? Do we have an equivalent in higher order constituents like
+words?
+</p>
+
+<p>
+I will probably not touch this exact thread, but hope to get on something
+similar in some time.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+Some notes on the vectors used for generating this. I had the
+<code>wiki-news-300d-1M-subword.vec.zip</code> <a href="https://fasttext.cc/docs/en/english-vectors.html">from fastext</a> lying around so loaded that up in
+gensim. The top-3 word lookup was done using gensim's default implementation.
 </p>
-
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#exploration'>exploration</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#physics'>physics</a> <a href='#programming'>programming</a> <a href='#python'>python</a> <a href='#ramble'>ramble</a> <a href='#ricing'>ricing</a> <a href='#skepticism'>skepticism</a> <a href='#tooling'>tooling</a> <a href='#ux'>ux</a> <a href='#viz'>viz</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-04-09</div>
-<p class="archive-title">
-<a href="./2019/04/09/blurring-text/index.html" class="archive-title">Blurring Text</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/tangle-templates.html" class="archive-title">Tangle Templates</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-07</div>
-<p class="archive-title">
-<a href="./2018/06/07/wiki-to-blog.html" class="archive-title">Blog ← Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-01-27</div>
-<p class="archive-title">
-<a href="./2018/01/27/blog-to-wiki.html" class="archive-title">Blog → Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-12-20</div>
-<p class="archive-title">
-<a href="./2017/12/20/fancy-lambdas.html" class="archive-title">Fancy Little Lisp λs</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-10-28</div>
-<p class="archive-title">
-<a href="./2017/10/28/ricing-org-mode/index.html" class="archive-title">Ricing up Org Mode</a>
-</p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#ricing'>ricing</a> <a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-08-25</div>
-<p class="archive-title">
-<a href="./2017/08/25/keyboard/index.html" class="archive-title">The point of keyboarding</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-29</div>
-<p class="archive-title">
-<a href="./2017/06/29/leaving-goodreads/index.html" class="archive-title">Leaving Goodreads</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#ramble'>ramble</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-25</div>
-<p class="archive-title">
-<a href="./2017/06/25/simple-time-maps/index.html" class="archive-title">Simpler time map plots</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-05-15</div>
-<p class="archive-title">
-<a href="./2017/05/15/syntactical-macros.html" class="archive-title">The Beauty of Syntactical Macros</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#lisp'>lisp</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-15</div>
-<p class="archive-title">
-<a href="./2017/03/15/projects.html" class="archive-title">Projects</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-05</div>
-<p class="archive-title">
-<a href="./2017/03/05/optional-typing.html" class="archive-title">Optional Typing</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#python'>python</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-11-02</div>
-<p class="archive-title">
-<a href="./2016/11/02/org-babel/index.html" class="archive-title">Cheap polyglot notebooks</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-08-25</div>
-<p class="archive-title">
-<a href="./2016/08/25/evidence-abuse/index.html" class="archive-title">Abusing Evidence: Drought, Deluge and Disregard</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-06-13</div>
-<p class="archive-title">
-<a href="./2016/06/13/genetic-algorithm/index.html" class="archive-title">What is it that Genetic Algorithm does?</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-03-17</div>
-<p class="archive-title">
-<a href="./2016/03/17/org-mode/index.html" class="archive-title">On why you too should give Emacs Org-mode a spin</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-01-23</div>
-<p class="archive-title">
-<a href="./2016/01/23/constitution-de-markov.html" class="archive-title">Constitution De Markov</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-12-21</div>
-<p class="archive-title">
-<a href="./2015/12/21/white-rhino.html" class="archive-title">White Rhinos, irrationality and other tales</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-11-03</div>
-<p class="archive-title">
-<a href="./2015/11/03/the-writers-voice/index.html" class="archive-title">The Writers' Voice</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-07-30</div>
-<p class="archive-title">
-<a href="./2015/07/30/up-with-theano-and-cuda.html" class="archive-title">Up and running with Theano (GPU) + PyCUDA on Windows</a>
-</p>
-<div class='page-tags'><a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-06-27</div>
-<p class="archive-title">
-<a href="./2015/06/27/hot-100/index.html" class="archive-title">Hot 100 over the years</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-23</div>
-<p class="archive-title">
-<a href="./2015/03/23/overtone-jamming.html" class="archive-title">Overtone Jamming</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-20</div>
-<p class="archive-title">
-<a href="./2015/03/20/rowing-a-steamer/index.html" class="archive-title">Rowing a Steamer</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-14</div>
-<p class="archive-title">
-<a href="./2015/01/14/computer-programs-and-zipf-law/index.html" class="archive-title">Computer Programs and Zipf's Law</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-08</div>
-<p class="archive-title">
-<a href="./2015/01/08/firewall-paradox/index.html" class="archive-title">Firewall Paradox and revisiting the Law of Information</a>
-</p>
-<div class='page-tags'><a href='#physics'>physics</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-06</div>
-<p class="archive-title">
-<a href="./2015/01/06/why-i-stopped-recommending-gnome/index.html" class="archive-title">Why I Stopped Recommending GNOME</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-25</div>
-<p class="archive-title">
-<a href="./2014/11/25/interstellar-tesseract/index.html" class="archive-title">The Interstellar's Tesseract</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-02</div>
-<p class="archive-title">
-<a href="./2014/11/02/neural-turing-machines/index.html" class="archive-title">Neural Turing Machines for dummies</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-07-29</div>
-<p class="archive-title">
-<a href="./2014/07/29/flesh-and-metal/index.html" class="archive-title">Flesh and Metal</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-06-21</div>
-<p class="archive-title">
-<a href="./2014/06/21/extreme-learning-machine/index.html" class="archive-title">Extreme Learning Machines with Julia</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
 </div>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">This might be a
+decent sample since there are normal, as well as niche words in the text.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">This is a bit hand wavy specially since
+I cherry picked the color scale; Check out the distances for something more
+meaningful</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">This is a stretch as far as mixing is concerned, but there probably are
+things here that can be modelled in our computational vector spaces</p></div></div>
+
+
+</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>

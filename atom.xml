@@ -2,8 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>blog</title>
   <link href="https://lepisma.github.io/"/>
-  <updated>2018-12-06</updated>
+  <updated>2019-04-09</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Blurring Text</title>
+    <link href="https://lepisma.github.io/2019/04/09/blurring-text/index.html"/>
+    <updated>2019-04-09</updated>
+  </entry>
+  <entry>
+    <title>Program Modeling</title>
+    <link href="https://lepisma.github.io/2019/01/06/program-modeling/index.html"/>
+    <updated>2019-01-06</updated>
+  </entry>
   <entry>
     <title>Tangle Templates</title>
     <link href="https://lepisma.github.io/2018/08/26/tangle-templates.html"/>
