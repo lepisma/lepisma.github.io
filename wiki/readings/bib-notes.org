@@ -229,6 +229,29 @@ random search.
 
 * AI/ML
 
+** READ SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing
+CLOSED: [2019-04-10 Wed 00:53]
+:PROPERTIES:
+:CUSTOM_ID: kudo2018sentencepiece
+:YEAR:     2018
+:AUTHOR:   Kudo, Taku and Richardson, John
+:END:
+
+A more rewarding read here can be the code in the [[https://github.com/google/sentencepiece][repository]] itself since this
+is just a short documentation on the methods implemented.
+
+** READ Bpemb: Tokenization-free pre-trained subword embeddings in 275 languages
+CLOSED: [2019-04-10 Wed 00:48]
+:PROPERTIES:
+:CUSTOM_ID: heinzerling2017bpemb
+:YEAR:     2017
+:AUTHOR:   Heinzerling, Benjamin and Strube, Michael
+:END:
+
+This is mostly a report on byte-pair embedding results and comparison with other
+models. Tracing back to (cite:sennrich2015neural) and the original compression
+paper (cite:gage1994new) should cover the background.
+
 ** READ Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries and LVCSR tasks
 CLOSED: [2019-03-30 Sat 20:07]
 :PROPERTIES:

@@ -1,0 +1,49 @@
+#+TITLE: Weekly Review /14-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 14,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- Took something from my lists and wrote a post after a long time. [[https://lepisma.github.io/2019/04/09/blurring-text/][Blurring
+  Text]]. Will be trying to do such things on a regular basis.
+
+* Readings/Explorations
+- Blinkdb: queries with bounded errors and bounded response times on very large
+  data (cite:agarwal2013blinkdb)
+- Went through a few subword papers:
+  - Bpemb: tokenization-free pre-trained subword embeddings in 275 languages
+    (cite:heinzerling2017bpemb)
+  - Sentencepiece: a simple and language independent subword tokenizer and
+    detokenizer for neural text processing (cite:kudo2018sentencepiece)
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 14-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- [[https://www.joelonsoftware.com/2001/12/11/back-to-basics/][Back to Basics – Joel on Software]]
+
+* Media
+- [[https://www.stuffyoushouldknow.com/podcasts/were-nazis-drug-fueled-crankheads.htm][Were Nazis Drug-Fueled Crankheads? | Stuff You Should Know]]. I kind of want to
+  try [[https://www.amazon.com/Blitzed-Drugs-Third-Norman-Ohler/dp/1328663795][Blitzed]] now.
+- [[https://www.youtube.com/watch?v=GOGru_4z1Vc&feature=youtu.be][Kurt Vonnegut, Shape of Stories (subtitulos castellano)]]
+- [[https://www.goodreads.com/book/show/16902.Walden][Walden by Henry David Thoreau]]
+
+[[bibliography:./references.bib]]
