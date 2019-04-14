@@ -7,6 +7,11 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *systemd unit*
+
+  Starting from v 26.1, you can use Emacs daemon as a systemd unit. See
+  discussions [[https://www.reddit.com/r/emacs/comments/b8ksfs/psa_for_new_users_emacs_261_has_the_emacs_daemon/][here]].
+
 + *future history*
 
   Check [[https://engineering.collbox.co/post/working-faster-in-emacs-by-reading-the-future/][this]] out.
