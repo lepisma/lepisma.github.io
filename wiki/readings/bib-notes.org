@@ -229,6 +229,17 @@ random search.
 
 * AI/ML
 
+** READ Neural machine translation of rare words with subword units
+CLOSED: [2019-04-17 Wed 02:17]
+:PROPERTIES:
+:CUSTOM_ID: sennrich2015neural
+:YEAR:     2015
+:AUTHOR:   Sennrich, Rico and Haddow, Barry and Birch, Alexandra
+:END:
+
+This is the application of subword (BPE based) on NMT. The results mostly show
+robustness and better learned handling of OOV stuff.
+
 ** READ SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing
 CLOSED: [2019-04-10 Wed 00:53]
 :PROPERTIES:
@@ -567,7 +578,22 @@ features.
   :PAGES: 119--139
  :END:
 
-* Computation/Programming
+* Computing/Programming
+
+** READ Online aggregation
+CLOSED: [2019-04-17 Wed 02:12]
+:PROPERTIES:
+:CUSTOM_ID: hellerstein1997online
+:YEAR:     1997
+:AUTHOR:   Hellerstein, Joseph M and Haas, Peter J and Wang, Helen J
+:END:
+
+I was looking into this while looking for prior works that provide streaming
+results from a database. The idea is to have always available results for
+aggregation queries like ~SUM~, ~COUNT~ etc. along with uncertainty measurements
+based on the currently sampled tuples. Other than the uncertainty estimation
+formulations, they presented work on the implementation side of the idea which
+involves random sampling and various UX niceties.
 
 ** READ Practical type inference based on success typings
 CLOSED: [2019-03-31 Sun 20:56]
