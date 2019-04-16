@@ -1,0 +1,49 @@
+#+TITLE: Weekly Review /15-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 15,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+A little busy these days. Long weekends might help put something in the
+experiments section.
+
+* Experiments
+
+* Readings/Explorations
+- Neural machine translation of rare words with subword units
+  (cite:sennrich2015neural)
+- Online aggregation (cite:hellerstein1997online)
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 15-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[http://www.espncricinfo.com/story/_/id/22453145/tendulkar-country][In Tendulkar country | ESPNcricinfo.com]]. This was a nice read. I guess I have
+  missed out a lot of long reads about Cricket from cricinfo.
+- [[https://aeon.co/ideas/muhammad-an-anticlerical-hero-of-the-european-enlightenment][Muhammad: an anticlerical hero of the European Enlightenment]]. I have been
+  reading things related to Muhammad recently and it's surprising to find a lot
+  of rich stories/views behind.
+- [[https://aeon.co/ideas/why-hasnt-evolution-dealt-with-the-inefficiency-of-ageing][Why hasn’t evolution dealt with the inefficiency of ageing?]]. Medawar's theory
+  basically.
+- [[https://aeon.co/ideas/a-constitution-should-help-a-country-govern-not-hobble-it][A constitution should help a country govern, not hobble it]]. Not sure what
+  should I take away from here other than constitutions should be pretty
+  situated and flexible, which is probably obvious.
+
+[[bibliography:./references.bib]]
