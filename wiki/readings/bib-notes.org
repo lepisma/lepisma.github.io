@@ -229,6 +229,19 @@ random search.
 
 * AI/ML
 
+** READ Few-Shot Generalization Across Dialogue Tasks
+CLOSED: [2019-04-21 Sun 01:15]
+:PROPERTIES:
+:CUSTOM_ID: vlasov2018few
+:YEAR:     2018
+:AUTHOR:   Vlasov, Vladimir and Drissner-Schmid, Akela and Nichol, Alan
+:END:
+
+The idea is to put all the involved pieces in a dialog, i.e. slots, intents and
+actions, in a space and then match with possible actions to do something. The
+/key/ idea is to have the items break into compositional pieces before embedding
+so that a new domain can share along a lot of items and get along well.
+
 ** READ Neural machine translation of rare words with subword units
 CLOSED: [2019-04-17 Wed 02:17]
 :PROPERTIES:
