@@ -229,6 +229,30 @@ random search.
 
 * AI/ML
 
+** READ Hidden technical debt in machine learning systems
+CLOSED: [2019-04-25 Thu 00:21]
+:PROPERTIES:
+:CUSTOM_ID: sculley2015hidden
+:YEAR:     2015
+:AUTHOR:   Sculley, David and Holt, Gary and Golovin, Daniel and Davydov, Eugene and Phillips, Todd and Ebner, Dietmar and Chaudhary, Vinay and Young, Michael and Crespo, Jean-Francois and Dennison, Dan
+:END:
+
+#+begin_quote
+It is important to create team cultures that reward deletion of features,
+reduction of complexity, improvements in reproducibility, stability, and
+monitoring to the same degree that improvements in accuracy are valued.
+#+end_quote
+
+#+begin_quote
+Paying down ML-related technical debt requires a specific commitment, which can
+often only be achieved by a shift in team culture. Recognizing, prioritizing,
+and rewarding this effort is important for the long term health of successful ML
+teams.
+#+end_quote
+
+There are other things too, but I specifically like the clippings above since
+they are about things that are very likely to be missed.
+
 ** READ Few-Shot Generalization Across Dialogue Tasks
 CLOSED: [2019-04-21 Sun 01:15]
 :PROPERTIES:
