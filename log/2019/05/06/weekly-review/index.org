@@ -1,0 +1,52 @@
+#+TITLE: Weekly Review /18-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 18,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+After a gap of 2 weeks or so. Might have accumulated items.
+
+* Experiments
+
+* Readings/Explorations
+- Few-Shot Generalization Across Dialogue Tasks (cite:vlasov2018few)
+- Hidden technical debt in machine learning systems (cite:sculley2015hidden)
+- Bootstrapping Conversational Agents With Weak Supervision
+  (cite:mallinar2018bootstrapping)
+- Data programming: creating large training sets, quickly (cite:ratner2016data)
+- Snorkel: rapid training data creation with weak supervision
+  (cite:ratner2017snorkel)
+- [[https://bair.berkeley.edu/blog/2019/03/21/tactile/][Manipulation By Feel – The Berkeley Artificial Intelligence Research Blog]]
+- [[https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/][Tukey, Design Thinking, and Better Questions · Simply Statistics]]
+- [[https://minimizingregret.wordpress.com/2019/04/15/reinforcement-learning-without-rewards/][Reinforcement learning without rewards – Minimizing Regret]] the goal looks a
+  lot similar to novelty search.
+- [[https://blog.steveklabnik.com/posts/2010-07-17-what-to-know-before-debating-type-systems][What to Know Before Debating Type Systems]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 18-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://twobithistory.org/2019/03/31/bbc-micro.html][Codecademy vs. The BBC Micro]] more of an opinion piece, but nice.
+- [[http://www.espncricinfo.com/story/_/id/26630222/barefoot-coach-paddy-upton][What do we mean when we say a cricketer is mentally tough?]]
+- [[https://changelog.com/podcast/341][The Changelog #341: Wasmer is taking WebAssembly beyond the browser]]
+- [[https://aeon.co/essays/night-school-and-the-dreams-of-bombays-factory-workers][Night school and the dreams of Bombay’s factory workers | Aeon Essays]]
+
+[[bibliography:./references.bib]]
