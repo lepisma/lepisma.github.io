@@ -7,6 +7,14 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *emacs regex case*
+
+  By default elisp regex match functions are [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Searching-and-Case.html][case insensitive]]. Setting
+  ~case-fold-search~ to nil changes the behavior. This is a til mostly because I
+  find this behavior very surprising. Probably more surprising is that nothing
+  bad happened, making me think that I probably don't need case sensitivity that
+  much.
+
 + *systemd unit*
 
   Starting from v 26.1, you can use Emacs daemon as a systemd unit. See
