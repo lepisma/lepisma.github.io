@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-04-14 Sun 23:42 -->
+<!-- 2019-05-06 Mon 23:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned in Emacs</title>
@@ -287,7 +287,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-04-14 Sun 23:42</div>
+  <div class='page-meta'>Last modified:  2019-05-06 Mon 23:45</div>
   <h1>Today I Learned <i>in Emacs</i></h1>
 </div>
 </div>
@@ -304,6 +304,18 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>emacs regex case</b>
+</p>
+
+<p>
+By default elisp regex match functions are <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Searching-and-Case.html">case insensitive</a>. Setting
+<code>case-fold-search</code> to nil changes the behavior. This is a til mostly because I
+find this behavior very surprising. Probably more surprising is that nothing
+bad happened, making me think that I probably don't need case sensitivity that
+much.
+</p></li>
+
 <li><p>
 <b>systemd unit</b>
 </p>
