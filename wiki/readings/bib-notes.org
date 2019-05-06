@@ -229,6 +229,35 @@ random search.
 
 * AI/ML
 
+** READ Snorkel: Rapid training data creation with weak supervision
+CLOSED: [2019-05-06 Mon 23:49]
+:PROPERTIES:
+:CUSTOM_ID: ratner2017snorkel
+:YEAR:     2017
+:AUTHOR:   Ratner, Alexander and Bach, Stephen H and Ehrenberg, Henry and Fries, Jason and Wu, Sen and R{\'e}, Christopher
+:END:
+
+This one has bunch of practical upgrades on the original /data programming/ paper.
+Two major things here involve:
+
+1. deciding when to use the generative model (as compared to voting)
+2. tackling correlation
+
+On a side note, while looking at the results you might find that even majority
+voting (which is /very easy/ to implement) might not be that bad if you are a
+little careful.
+
+** READ Bootstrapping Conversational Agents With Weak Supervision
+CLOSED: [2019-05-06 Mon 23:50]
+:PROPERTIES:
+:CUSTOM_ID: mallinar2018bootstrapping
+:YEAR:     2018
+:AUTHOR:   Mallinar, Neil and Shah, Abhishek and Ugrani, Rajendra and Gupta, Ayush and Gurusankar, Manikandan and Ho, Tin Kam and Liao, Q Vera and Zhang, Yunfeng and Bellamy, Rachel KE and Yates, Robert and others
+:END:
+
+I like there method of mass tagging. Other than that, this is a practical
+implementation of a snorkel like system.
+
 ** READ Hidden technical debt in machine learning systems
 CLOSED: [2019-04-25 Thu 00:21]
 :PROPERTIES:
@@ -504,12 +533,22 @@ Partial notes:
 3. Minimization: Compressing to the minimal, /equivalent/ automaton. Done by first
    weight pushing and then running the classical algorithm.
 
-** Data programming: Creating large training sets, quickly
+** READ Data programming: Creating large training sets, quickly
+CLOSED: [2019-05-06 Mon 23:55]
 :PROPERTIES:
 :CUSTOM_ID: ratner2016data
 :YEAR:     2016
 :AUTHOR:   Ratner, Alexander J and De Sa, Christopher M and Wu, Sen and Selsam, Daniel and R{\'e}, Christopher
 :END:
+
+Main idea is to focus on creating $O(1)$ labelling functions on boundless data
+to get similar asymptotes as compared to labeled data setting.
+
+This same change of focus has another side effect which I agree with:
+#+begin_quote
+One of our hopes is that a user without expertise in ML will be more productive
+iterating on labeling functions than on features.
+#+end_quote
 
 ** READ Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication
 CLOSED: [2018-10-22 Mon 23:48]
