@@ -1,6 +1,7 @@
 #+TITLE: Sitemap
 
 - [[file:index.org][wiki]]
+- [[file:education/index.org][Education]]
 - [[file:emacs/index.org][Emacs]]
   - [[file:emacs/resources.org][Resources]]
   - [[file:emacs/til.org][Today I Learned /in Emacs/]]
@@ -9,6 +10,7 @@
     - [[file:emacs/org-mode/links.org][Org-links]]
     - [[file:emacs/org-mode/presentations.org][Presentations]]
     - [[file:emacs/org-mode/references.org][Reference Management]]
+- [[file:employment/index.org][Employment]]
 - [[file:evolution/index.org][Evolution]]
   - [[file:evolution/resources.org][Resources]]
   - [[file:evolution/grouping/index.org][Grouping]]
@@ -32,7 +34,7 @@
   - [[file:programming/languages.org][Language Exploration]]
   - [[file:programming/pesky.org][Pesky Little Things]]
   - [[file:programming/resources.org][Resources]]
-  - [[file:programming/procedural/index.org][Procedural]]
+  - [[file:programming/procedural/index.org][Procedural Generation]]
     - [[file:programming/procedural/tikz/index.org][TikZ]]
 - [[file:readings/index.org][Readings]]
   - [[file:readings/likes.org][Articles I like]]
