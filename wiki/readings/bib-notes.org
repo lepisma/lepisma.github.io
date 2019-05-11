@@ -246,7 +246,8 @@ of anomaly detection. The general framework looks like this:
 4. Post-hoc pruning of false positives based on /identified/ anomalies
 
 Even though their method has less knobs to worry about, it still does not /feel/
-auto-pilotish. Well, that is supposed to happen I guess.
+auto-pilotish while reading the document. Well, that is supposed to happen I
+guess.
 
 ** READ Snorkel: Rapid training data creation with weak supervision
 CLOSED: [2019-05-06 Mon 23:49]
