@@ -7,6 +7,16 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *org-catch-invisible-edits*
+
+  At times your cursor ends up adding unwanted edits in folded org section. This
+  variable has solutions. Got to know from the post [[https://yiufung.net/post/org-mode-hidden-gems-pt1/][Org-mode Hidden Gems - 01
+  Document Structure]].
+
+  A very interesting thing about this particular setting is that I wasn't
+  expecting a solution for this issue, even though I had been facing this for a
+  long time.
+
 + *emacs regex case*
 
   By default elisp regex match functions are [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Searching-and-Case.html][case insensitive]]. Setting
