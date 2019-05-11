@@ -229,6 +229,25 @@ random search.
 
 * AI/ML
 
+** READ Detecting spacecraft anomalies using lstms and nonparametric dynamic thresholding
+CLOSED: [2019-05-11 Sat 23:22]
+:PROPERTIES:
+:CUSTOM_ID: hundman2018detecting
+:YEAR:     2018
+:AUTHOR:   Hundman, Kyle and Constantinou, Valentino and Laporte, Christopher and Colwell, Ian and Soderstrom, Tom
+:END:
+
+I picked this paper mostly randomly while looking around for the general scene
+of anomaly detection. The general framework looks like this:
+
+1. Train a model on the sequence
+2. Predict the future while collecting errors
+3. Identify anomalies using a non-parametric /heuristic/
+4. Post-hoc pruning of false positives based on /identified/ anomalies
+
+Even though their method has less knobs to worry about, it still does not /feel/
+auto-pilotish. Well, that is supposed to happen I guess.
+
 ** READ Snorkel: Rapid training data creation with weak supervision
 CLOSED: [2019-05-06 Mon 23:49]
 :PROPERTIES:
