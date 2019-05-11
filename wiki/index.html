@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-11-29 Thu 01:08 -->
+<!-- 2019-05-12 Sun 01:23 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wiki</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -213,7 +226,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -258,28 +271,28 @@ for the JavaScript code in this tag.
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/log'> log</a>
-                                  <a class='active' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a class='active' href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-10-30 Tue 03:35</div>
-                                <h1>Wiki</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>Last modified:  2018-10-30 Tue 03:35</div>
+  <h1>Wiki</h1>
+</div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  home</div>
+<div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  home</div>#+HTML:<div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  home</div>
 <p>
 This is a personal wiki. Most of the pages here are still in transitory phase. I
 will be moving some of the pages here to my journal or, after finishing the
@@ -292,6 +305,7 @@ these pages are built.
 </p>
 
 <ul class="org-ul">
+<li><a href="education/index.html">Education</a></li>
 <li><a href="emacs/index.html">Emacs</a>
 <ul class="org-ul">
 <li><a href="emacs/resources.html">Resources</a></li>
@@ -304,6 +318,7 @@ these pages are built.
 <li><a href="emacs/org-mode/references.html">Reference Management</a></li>
 </ul></li>
 </ul></li>
+<li><a href="employment/index.html">Employment</a></li>
 <li><a href="evolution/index.html">Evolution</a>
 <ul class="org-ul">
 <li><a href="evolution/resources.html">Resources</a></li>
@@ -338,7 +353,7 @@ these pages are built.
 <li><a href="programming/languages.html">Language Exploration</a></li>
 <li><a href="programming/pesky.html">Pesky Little Things</a></li>
 <li><a href="programming/resources.html">Resources</a></li>
-<li><a href="programming/procedural/index.html">Procedural</a>
+<li><a href="programming/procedural/index.html">Procedural Generation</a>
 <ul class="org-ul">
 <li><a href="programming/procedural/tikz/index.html">TikZ</a></li>
 </ul></li>
