@@ -1,0 +1,31 @@
+#+TITLE: DVC and ML reproducibility
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: programming, ml
+
+I have started using [[https://git-lfs.github.com/][git-lfs]] more. It's been really helpful for keeping a bunch
+of BLOBs along with related code. Compared to a url based approach, this
+provides a partial Content Addressable Memory[fn::Well it is exactly that, if
+you make the storage invisible] which is nicer in the reproducibility sense.
+
+Naturally I had to check out [[https://dvc.org][DVC]] after someone pointed me to [[https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8][this blog post]]. I
+haven't used dvc extensively (have tried the tutorial and gone through little
+bits of its internals) but I don't really see it as a major philosophical
+upgrade over anything else as claimed popularly. This, of course, is /not a no-no/
+for an otherwise great project.
+
+There are two major directions of [[https://dvc.org/doc/dvc-philosophy/related-technologies][differences]] and similarities from currently
+used solutions:
+
+1. Pipeline and workflow specification.
+2. Support for large data science files across multiple hosts.
+
+In an attempt to try and merge these two, DVC enforces a certain workflow for
+pipelines which makes me a little uncomfortable. If I want minimum invasion, I
+will still keep other tools like [[https://snakemake.readthedocs.io/en/stable/][snakemake]] and bunch of not so reproducible
+scripts where I don't really want hash verification of files etc. Even though I
+can mix this wherever needed, I am not sure the experiences will be pleasant
+unless I do /everything/ via DVC.
+
+Coming back to the difference, the second point actually makes it a better
+git-lfs than git-lfs so I might try using it more, starting from the large file
+side and then seeing if I need the pipeline side of it.
