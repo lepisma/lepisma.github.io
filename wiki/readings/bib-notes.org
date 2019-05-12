@@ -229,6 +229,30 @@ random search.
 
 * AI/ML
 
+** READ Unsupervised Grounding of Plannable First-Order Logic Representation from Images
+CLOSED: [2019-05-12 Sun 14:10]
+:PROPERTIES:
+:CUSTOM_ID: asai2019unsupervised
+:YEAR:     2019
+:AUTHOR:   Asai, Masataro
+:END:
+
+This is a attempt to have interpretable representation from a neural network
+that can be used with planing systems. The abstract should tell you what
+problems are getting solved. The keys ideas are the following:
+
+1. First Order State Auto Encoder (FOSAE) where the latent space represents FOL
+   predicates based on certain input objects and specified hyperparameters.
+2. Extensive use of Gumbel-Softmax to impose unitary credit assignment.
+
+I am not very sure how different this is from similar recent works since I
+haven't followed them. But the main difference looks like focusing on discrete
+representations and planning capabilities of PDDL-ish tools. Interpretability
+comes as a side effect.
+
+Since the predicates here are anonymous as of now, an interesting piece of
+future work involves a bit of supervision to put /names/ on things.
+
 ** READ Detecting spacecraft anomalies using lstms and nonparametric dynamic thresholding
 CLOSED: [2019-05-11 Sat 23:22]
 :PROPERTIES:
