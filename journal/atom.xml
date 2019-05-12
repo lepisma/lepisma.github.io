@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.github.io/journal"/>
-  <updated>2019-05-06</updated>
+  <updated>2019-05-13</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>DVC and ML reproducibility</title>
+    <link href="https://lepisma.github.io/journal/2019/05/13/dvc/index.html"/>
+    <updated>2019-05-13</updated>
+  </entry>
   <entry>
     <title>The Human Messiness</title>
     <link href="https://lepisma.github.io/journal/2019/02/23/the-human-messiness/index.html"/>
