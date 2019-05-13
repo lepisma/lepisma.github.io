@@ -1,0 +1,40 @@
+#+TITLE: Weekly Review /19-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 19,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Detecting spacecraft anomalies using lstms and nonparametric dynamic
+  thresholding (cite:hundman2018detecting)
+- Unsupervised grounding of plannable first-order logic representation from
+  images (cite:asai2019unsupervised)
+- [[https://www.youtube.com/watch?v=lKXe3HUG2l4]["The Mess We're In" by Joe Armstrong]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 19-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[http://www.wnycstudios.org/story/bit-flip/][Bit Flip | Radiolab | WNYC Studios]]
+- [[https://aeon.co/essays/networks-of-elements-drive-human-creativity-do-they-also-stifle-it][Networks of elements drive human creativity: do they also stifle it]]
+- [[https://aeon.co/ideas/is-emotional-labour-next-to-be-outsourced-and-professionalised][Is emotional labour next to be outsourced and professionalised?]]
