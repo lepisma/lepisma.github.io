@@ -8,7 +8,7 @@ provides a partial Content Addressable Memory[fn::Well it is exactly that, if
 you make the storage invisible] which is nicer in the reproducibility sense.
 
 Naturally I had to check out [[https://dvc.org][DVC]] after someone pointed me to [[https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8][this blog post]]. I
-haven't used dvc extensively (have tried the tutorial and gone through little
+haven't used DVC extensively (have tried the tutorial and gone through little
 bits of its internals) but I don't really see it as a major philosophical
 upgrade over anything else as claimed popularly. This, of course, is /not a no-no/
 for an otherwise great project.
@@ -26,6 +26,6 @@ scripts where I don't really want hash verification of files etc. Even though I
 can mix this wherever needed, I am not sure the experiences will be pleasant
 unless I do /everything/ via DVC.
 
-Coming back to the difference, the second point actually makes it a better
-git-lfs than git-lfs so I might try using it more, starting from the large file
-side and then seeing if I need the pipeline side of it.
+The second point actually makes it a better git-lfs than git-lfs so I might try
+using it more, starting from the large file side and then seeing if I need the
+pipeline piece of it.
