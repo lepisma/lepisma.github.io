@@ -229,6 +229,21 @@ random search.
 
 * AI/ML
 
+** READ Learning reductions that really work
+CLOSED: [2019-05-22 Wed 00:01]
+:PROPERTIES:
+:CUSTOM_ID: beygelzimer2016learning
+:YEAR:     2016
+:AUTHOR:   Beygelzimer, Alina and Daum{\'e}, Hal and Langford, John and Mineiro, Paul
+:END:
+
+I was looking into the general ideas behind [[https://github.com/VowpalWabbit/vowpal_wabbit/][Vowpal Wabbit]] and got to this
+document which /probably/ summarizes the whole concept of learning reductions.
+
+An important question is how general and fundamental this whole idea really is.
+Of course computational benefits are a major plus, but reductions also /feel/ very
+elegant.
+
 ** READ Unsupervised Grounding of Plannable First-Order Logic Representation from Images
 CLOSED: [2019-05-12 Sun 14:10]
 :PROPERTIES:
