@@ -1,0 +1,40 @@
+#+TITLE: Weekly Review /20-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 20,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Went through a [[https://lgtm.com/blog/intro_to_variant_analysis_part_1][few]] [[https://blog.semmle.com/introduction-to-variant-analysis-part-2/][posts]] on what folks at [[https://semmle.com/][Semmle]] calls variant analysis.
+  Basically a programmable static analyzer. Still interesting though.
+- Learning reductions that really work (cite:beygelzimer2016learning)
+- [[https://changelog.com/podcast/346][The Changelog #346: Off the grid social networking with Manyverse]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 20-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[http://www.wnycstudios.org/story/dinopocalypse-redux/][Dinopocalypse Redux | Radiolab]]
+- [[https://aeon.co/essays/bring-back-science-and-philosophy-as-natural-philosophy][Bring back science and philosophy as natural philosophy]]
+
+[[bibliography:./references.bib]]
