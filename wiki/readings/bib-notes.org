@@ -229,6 +229,23 @@ random search.
 
 * AI/ML
 
+** READ Morphnet: Fast & simple resource-constrained structure learning of deep networks
+CLOSED: [2019-05-24 Fri 23:12]
+:PROPERTIES:
+:CUSTOM_ID: gordon2018morphnet
+:YEAR:     2018
+:AUTHOR:   Gordon, Ariel and Eban, Elad and Nachum, Ofir and Chen, Bo and Wu, Hao and Yang, Tien-Ju and Choi, Edward
+:END:
+
+In a single line (from the appendix) what is happening is:
+
+#+begin_quote
+iterative process of shrinking via a sparsifying regularizer and expanding via a
+uniform multiplicative factor
+#+end_quote
+
+The regularizer is an $L1$ over the batch norm \gamma parameters for neurons.
+
 ** READ Learning reductions that really work
 CLOSED: [2019-05-22 Wed 00:01]
 :PROPERTIES:
