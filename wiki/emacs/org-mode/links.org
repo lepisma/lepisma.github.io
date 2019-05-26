@@ -25,7 +25,8 @@ org]]). I have been using them to maintain a lot of /buttons/, or things that ar
 functionally equivalent. The basic idea is to define a /link type/ and setup
 functions for what happens when you click on it, and (optionally) what happens
 on org export (depending on the export backend). To know what they are capable
-of, look at Malabarba's [[http://endlessparentheses.com/use-org-mode-links-for-absolutely-anything.html][series]] on org links.
+of, look at Malabarba's [[http://endlessparentheses.com/use-org-mode-links-for-absolutely-anything.html][series]] on org links. Also Cheong Yiufung has a post on
+few hidden org link features [[https://yiufung.net/post/org-mode-hidden-gems-pt3/][here]].
 
 A lot of basic external link types are mentioned in the [[https://orgmode.org/manual/External-links.html#External-links][docs]]. Special helpful is
 the ~elisp~ one which lets you invoke arbitrary elisp. The bookmarks you save via
