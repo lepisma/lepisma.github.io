@@ -7,6 +7,28 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *org radio-targets*
+
+  Another /hidden gem/ from Cheong Yiufung's series (post [[https://yiufung.net/post/org-mode-hidden-gems-pt3/][here]]).
+
+  If you want to make a particular phrase link to someplace, for example a
+  definition, without adding a lot of manual links, you can put that word within
+  triple ~<<<word>>>~ angles along with the definition. All other presences will
+  become links pointing to this place. These links are also there in exports
+  which is /really/ nice.
+
++ *link abbreviations*
+
+  A much neater solution for creating custom org links if you only want a fixed
+  string based expansion (exports also work as you would expect). Setting
+  ~org-link-abbrev-alist~ let's you write a shorthand link like
+  ~[[yt:dQw4w9WgXcQ][some-nice-video]]~ which can act like a fuller [[https://www.youtube.com/watch?v=dQw4w9WgXcQ][link]].
+
+  There is a more convenient and local shorthand for this that works by putting
+  something like ~#+LINK: yt https://www.youtube.com/watch?v=~ in the buffer.
+
+  Taken from [[https://yiufung.net/post/org-mode-hidden-gems-pt3/][here]].
+
 + *org-catch-invisible-edits*
 
   At times your cursor ends up adding unwanted edits in folded org section. This
