@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-05-12 Sun 00:43 -->
+<!-- 2019-05-26 Sun 22:03 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned in Emacs</title>
@@ -287,7 +287,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-05-12 Sun 00:43</div>
+  <div class='page-meta'>Last modified:  2019-05-26 Sun 22:03</div>
   <h1>Today I Learned <i>in Emacs</i></h1>
 </div>
 </div>
@@ -304,6 +304,42 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>org radio-targets</b>
+</p>
+
+<p>
+Another <i>hidden gem</i> from Cheong Yiufung's series (post <a href="https://yiufung.net/post/org-mode-hidden-gems-pt3/">here</a>).
+</p>
+
+<p>
+If you want to make a particular phrase link to someplace, for example a
+definition, without adding a lot of manual links, you can put that word within
+triple <code>&lt;&lt;&lt;word&gt;&gt;&gt;</code> angles along with the definition. All other presences will
+become links pointing to this place. These links are also there in exports
+which is <i>really</i> nice.
+</p></li>
+
+<li><p>
+<b>link abbreviations</b>
+</p>
+
+<p>
+A much neater solution for creating custom org links if you only want a fixed
+string based expansion (exports also work as you would expect). Setting
+<code>org-link-abbrev-alist</code> let's you write a shorthand link like
+<code>[[yt:dQw4w9WgXcQ][some-nice-video]]</code> which can act like a fuller <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a>.
+</p>
+
+<p>
+There is a more convenient and local shorthand for this that works by putting
+something like <code>#+LINK: yt https://www.youtube.com/watch?v=</code> in the buffer.
+</p>
+
+<p>
+Taken from <a href="https://yiufung.net/post/org-mode-hidden-gems-pt3/">here</a>.
+</p></li>
+
 <li><p>
 <b>org-catch-invisible-edits</b>
 </p>
