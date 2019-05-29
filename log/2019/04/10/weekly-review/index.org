@@ -21,7 +21,7 @@ width: 100%;
 #+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
 
 * Experiments
-- Took something from my lists and wrote a post after a long time. [[https://lepisma.github.io/2019/04/09/blurring-text/][Blurring
+- Took something from my lists and wrote a post after a long time. [[https://lepisma.xyz/2019/04/09/blurring-text/][Blurring
   Text]]. Will be trying to do such things on a regular basis.
 
 * Readings/Explorations

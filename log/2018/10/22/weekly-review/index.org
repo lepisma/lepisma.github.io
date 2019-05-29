@@ -21,7 +21,7 @@
 #+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
 
 * Problems/Solutions
-I tried to improve the [[https://lepisma.github.io/2017/06/25/simple-time-maps/index.html][1d time maps]] to use them for visualizing git commits in
+I tried to improve the [[https://lepisma.xyz/2017/06/25/simple-time-maps/index.html][1d time maps]] to use them for visualizing git commits in
 these reviews. Overall I still don't have a general solution for binning, but
 here is what I am doing:
 
@@ -54,7 +54,7 @@ weeks (latest on the bottom). The idea is to emphasize the /intensity/, which
 covers both the commit counts /and/ the frequency. The darker regions along the
 x-axis represent more frequent events (i.e. I am committing every few seconds or
 so) and the height represents the number of events. It is obviously not very
-readable without context (you can try reading this [[https://lepisma.github.io/2017/06/25/simple-time-maps/index.html][old post]]) but it's a little
+readable without context (you can try reading this [[https://lepisma.xyz/2017/06/25/simple-time-maps/index.html][old post]]) but it's a little
 low on priority for me to fix.
 
 #+HTML: <figure> <div id="commit-plot"></div> <figcaption>
