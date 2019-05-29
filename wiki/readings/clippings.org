@@ -22,6 +22,61 @@ below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Truth is a negotiated average of semi-lies.
+
+#+HTML:<footer>﻿The Psychopath Code (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When you have hidden dreams and desires, you are vulnerable. Anyone with the
+talent can guess those dreams.
+
+#+HTML:<footer>﻿The Psychopath Code (Pieter Hintjens)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Language is courage: the ability to conceive a thought, to speak it, and by
+doing so to make it true.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What’s a ghost? Unfinished business, is what.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It isn’t easy to be a brilliant, successful woman in a city where the gods are
+female but the females are merely goods.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Question: What is the opposite of faith? Not disbelief. Too final, certain,
+closed. Itself a kind of belief. Doubt.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A man who Invents himself needs someone to believe in him, to prove he’s managed
+it. Playing God again, you could say. Or you could come down a few notches, and
+think of Tinkerbell; fairies don’t exist if children don’t clap their hands.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The distance between cities is always small; a villager, travelling a hundred
+miles to town, traverses emptier, darker, more terrifying space.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Truth is always in harmony with herself, and is not concerned chiefly to reveal
 the justice that may consist with wrong-doing.
 
