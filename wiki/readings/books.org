@@ -2828,12 +2828,34 @@ CLOSED: [2016-08-27]
 :GOODREADS: https://www.goodreads.com/book/show/15795155
 :END:
 
-*** The Psychopath Code: Cracking The Predators That Stalk Us
+*** READ The Psychopath Code: Cracking The Predators That Stalk Us
+CLOSED: [2019-05-29 Wed 23:43]
 :PROPERTIES:
 :AUTHOR:    Pieter Hintjens
 :ADDED:     <2016-08-23>
 :GOODREADS: https://www.goodreads.com/book/show/27211285
 :END:
+
+I guess this one is supposed to be read like blog posts since a lot of the ideas
+are not /very/ scientific. The basic thesis is that there is a set of evolutionary
+adapted traits which are helpful if you are trying to cheat in a social species
+and such traits are what make psychopaths. The question about the /degree of
+coverage/ is something I am not very sure about.
+
+A few general points which I feel are okay to take away:
+1. Psychopaths have a limited set of /true/ emotions.
+2. Their emotional (mimicking) costs are nil so they have a lot of manipulative
+   power.
+3. They are very practical and thus very different from the run of the mill
+   psychopaths shown in popular media. The difference is important since this
+   defines the type of attacks you can expect.
+4. Counter attacks need well thought out plans since they will mostly beat you
+   in unplanned arguments involving a third party's judgement.
+
+Overall this is a pretty opinionated take on the topic. There are a few nice
+ideas that can help you put things into perspective and understand similar
+situations in a better way. I can't really say a lot since I don't know enough
+to put proper refutations.
 
 *** Fads and Fallacies in the Name of Science
 :PROPERTIES:
