@@ -48,3 +48,5 @@ Commits for week 22-2019 and 4 previous weeks.
 - [[https://aeon.co/essays/are-we-any-closer-to-learning-what-sparks-lightning][Are we any closer to learning what sparks lightning?]]
 - Finished [[https://www.goodreads.com/book/show/27211285-the-psychopath-code][The Psychopath Code]].
 - [[https://aeon.co/ideas/how-erasmus-darwins-poetry-prophesied-evolutionary-theory][How Erasmus Darwin’s poetry prophesied evolutionary theory]]
+
+[[bibliography:./references.bib]]
