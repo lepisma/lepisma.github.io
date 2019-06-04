@@ -229,6 +229,26 @@ random search.
 
 * AI/ML
 
+** READ Model-based testing without models: the TodoMVC case study
+CLOSED: [2019-06-04 Tue 10:52]
+:PROPERTIES:
+:CUSTOM_ID: bainczyk2017model
+:YEAR:     2017
+:AUTHOR:   Bainczyk, Alexander and Schieweck, Alexander and Steffen, Bernhard and Howar, Falk
+:END:
+
+This is a case study of a general purpose UI testing approach. Here are the
+general steps:
+
+1. You define a set of actions that can be done.
+2. Learn a mealy model (makes sense for a lot of UIs) based on exploration using
+   those states (I am not very sure I am using the correct phrasing for this
+   learning)
+3. Compare with reference, among siblings etc. Probably also fuzz.
+
+Even though there is not much in this specific paper itself, I got a general
+overview of the scene and references to a few primary sources.
+
 ** READ Morphnet: Fast & simple resource-constrained structure learning of deep networks
 CLOSED: [2019-05-24 Fri 23:12]
 :PROPERTIES:
