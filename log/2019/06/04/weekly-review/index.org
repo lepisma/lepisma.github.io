@@ -1,0 +1,50 @@
+#+TITLE: Weekly Review /22-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 22,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Morphnet: fast & simple resource-constrained structure learning of deep
+  networks (cite:gordon2018morphnet)
+- [[https://blog.acolyer.org/2019/06/03/ease-ml-ci/][Continuous integration of machine learning models with ease.ml/ci]]. It would
+  have been a better contribution if the code was open (I am not able to find it
+  on their [[https://github.com/DS3Lab][lab's github]]) and the project was ready to use, since similar ideas
+  are tried by almost every ML practitioner.
+- A bunch of Clojure stuff. [[https://github.com/clojure/core.typed][Types]], [[https://github.com/clojure/test.check][testing]], [[https://github.com/clojure/core.async][concurrency]]. Also I feel like
+  cookbooks (like Clojure's) make a /lot/ of sense when the audience is not a
+  beginner programmer.
+- Model-based testing without models: the todomvc case study
+  (cite:bainczyk2017model)
+- [[https://kdenlive.org/en/2019/03/inside-kdenlive-how-to-fuzz-a-complex-gui-application/][Inside Kdenlive: How to fuzz a complex GUI application?]]
+- I am looking into testing methodologies for complex UIs and found a nice path
+  where you learn an fsm-ish model of the system's behaviour and then,
+  essentially, fuzz it. [[https://github.com/LearnLib/learnlib][learnlib]] does that.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 22-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://aeon.co/essays/are-we-any-closer-to-learning-what-sparks-lightning][Are we any closer to learning what sparks lightning?]]
+- Finished [[https://www.goodreads.com/book/show/27211285-the-psychopath-code][The Psychopath Code]].
+- [[https://aeon.co/ideas/how-erasmus-darwins-poetry-prophesied-evolutionary-theory][How Erasmus Darwin’s poetry prophesied evolutionary theory]]
