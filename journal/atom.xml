@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-05-13</updated>
+  <updated>2019-06-11</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Pointing at Things</title>
+    <link href="https://lepisma.xyz/journal/2019/06/10/pointing-at-things/index.html"/>
+    <updated>2019-06-10</updated>
+  </entry>
   <entry>
     <title>DVC and ML reproducibility</title>
     <link href="https://lepisma.xyz/journal/2019/05/13/dvc/index.html"/>

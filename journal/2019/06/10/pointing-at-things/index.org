@@ -1,0 +1,45 @@
+#+TITLE: Pointing at Things
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: programming
+
+Here is a /permalink/ to something → http://existentialcomics.com/comic/268. What
+do you think this is? A comic of course. What else can you get from just reading
+the link?
+
+Here is another link to some other thing →
+https://github.com/lepisma/lepisma.github.io/blob/source/misc/sand.js#L30-L42
+
+Same, but more /formalized/ →
+https://github.com/lepisma/lepisma.github.io/blob/0a217ce8014f01a0ffcd18839b9b750f45f3f07d/misc/sand.js#L30-L42
+
+I obviously get why these obfuscations are useful but I hate not being able to
+/understand/ the meaning of a link just by looking at it. I wish information
+pointers were more /humane/. With limited machine memories, I remember us relying
+on a lot of fuzzy semantic pointers like 'what was that puzzle with 3 vessels
+and 8 litre thing?'. These were contextual and personal, of course, but much
+quicker and easier to work with, most of the time. If needed, we could also
+invoke a very formal and unambiguous pointer to the puzzle.
+
+-----
+
+With the fuzziness back in popularity again[fn::We are not expecting people to
+learn to use, say, email but just do the simplest, most intuitive thing using
+voice.], when I look at some sort of a pointer to an email, what I should see is
+something like "Reply from last night email to XYZ about ABC" rather than some
+arbitrary "Re: Some email thread I was pulled into whose title I don't think I
+ever looked at".
+
+I know I am just reiterating concerns that drive the whole fields of information
+extraction and language processing. In fact, most of the developments in these
+fields follow this pattern of creating /human accessible permalinks/. All the
+fancy interfaces, tailored for all the fancy use cases, are essentially nicer
+ways to point at the highly obfuscated mess of information we have produced.
+
+For general users, a lot has improved. Leaving unambiguous cases, where we have
+much easier applications to interact with, we are even resolving contextual
+ambiguities pretty well, for example, in conversational interfaces. Still I feel
+annoyed when simple, unambiguous and ubiquitous things, like functions in a JS
+file [fn::Okay, this is a rant.], are pointed to by using line numbers. I want
+these web URLs to hide behind and go away like cell phone numbers did. Do some
+client sided static analysis, do something, just give me a better link to look
+at.
