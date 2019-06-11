@@ -41,5 +41,5 @@ ambiguities pretty well, for example, in conversational interfaces. Still I feel
 annoyed when simple, unambiguous and ubiquitous things, like functions in a JS
 file [fn::Okay, this is a rant.], are pointed to by using line numbers. I want
 these web URLs to hide behind and go away like cell phone numbers did. Do some
-client sided static analysis, do something, just give me a better link to look
-at.
+client sided static analysis, do something, just give me better links to look at
+and share.
