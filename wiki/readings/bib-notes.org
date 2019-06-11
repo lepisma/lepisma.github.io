@@ -8,6 +8,32 @@ so will be working on this page fairly regularly.
 
 * Evolution/Complexity
 
+** READ Networks and history
+CLOSED: [2019-06-12 Wed 00:46]
+:PROPERTIES:
+:CUSTOM_ID: bearman2002networks
+:YEAR:     2002
+:AUTHOR:   Bearman, Peter and Moody, James and Faris, Robert
+:END:
+
+This was a really nice read. I suspect it's not that /nice/ for insiders though.
+Anyway, this presents a way to create /case/ (in social sciences, a group of
+interconnected events specifying causalities of some sort) using a few tricks
+from network science.
+
+Something a little counter intuitive for me was this idea that only robust nets
+(let's coin a better term) are important since they carry on and are the only
+meaningful things when you look back. I don't know enough but probably there are
+two ways of looking at something like a historical event.
+
+1. /What actually happened/. I believe happenstances play roles here but shouldn't
+   drive derivations of general rules of thumb.
+2. /What happens/, taken out as a general, most probable (?), rule. The paper
+   focuses on this piece by presenting ways of finding non chancy causes of
+   events.
+
+The problem is, I don't know which is more important to know about.
+
 ** READ The causes of evolvability and their evolution
 CLOSED: [2019-01-15 Tue 00:54]
 :PROPERTIES:
@@ -228,6 +254,21 @@ random search.
  :END:
 
 * AI/ML
+
+** READ Parallelizing wfst speech decoders
+CLOSED: [2019-06-12 Wed 00:55]
+:PROPERTIES:
+:CUSTOM_ID: mendis2016parallelizing
+:YEAR:     2016
+:AUTHOR:   Mendis, Charith and Droppo, Jasha and Maleki, Saeed and Musuvathi, Madanlal and Mytkowicz, Todd and Zweig, Geoffrey
+:END:
+
+I didn't get everything here mostly because of the split between AM and LM
+phase. Will probably look over with more background. Overall, the idea is to
+parallelize viterbi as you would think but keeping inter thread communication
+very low by clumping /actions/ which are mostly independent given their thread's
+other actions. This clumping gains by knowledge of the graph structure which is
+affected by the domain; in this case using the information about triphones.
 
 ** READ Model-based testing without models: the TodoMVC case study
 CLOSED: [2019-06-04 Tue 10:52]
