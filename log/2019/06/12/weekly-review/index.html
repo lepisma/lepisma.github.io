@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-06-11 Tue 09:49 -->
+<!-- 2019-06-12 Wed 00:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Weekly Review <i>23-2019</i></title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -278,8 +278,8 @@ for the JavaScript code in this tag.
   </div>
   <div class='site-nav'>
     <a  href='/'> blog</a>
-    <a class='active' href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/journal'> journal</a>
+    <a class='active' href='/log'> log</a>
     <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
   </div>
@@ -287,225 +287,86 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>Journal</h1>
+  <div class='page-meta'>2019-06-12 Wed 00:00</div>
+  <h1>Weekly Review <i>23-2019</i></h1>
 </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'></div>
+<script>
+let eventPlotFor = {
+week: 23,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="../../../../../assets/js/commit-plot.js"></script>
+
+<div id="outline-container-org3ffd265" class="outline-2">
+<h2 id="sec-experiments"><span class="section-number-2">1</span> Experiments</h2>
+<div class="outline-text-2" id="text-sec-experiments">
+
+</div>
+</div>
+
+<div id="outline-container-org6014d7f" class="outline-2">
+<h2 id="sec-readings/explorations"><span class="section-number-2">2</span> Readings/Explorations</h2>
+<div class="outline-text-2" id="text-sec-readings/explorations">
+
+<ul class="org-ul">
+<li>Networks and history (<a class='org-ref-reference' href="#bearman2002networks">bearman2002networks</a>)</li>
+<li>Parallelizing wfst speech decoders (<a class='org-ref-reference' href="#mendis2016parallelizing">mendis2016parallelizing</a>)</li>
+<li><a href="https://ericabrahamsen.net/tech/2016/feb/bbdb-eieio-object-oriented-elisp.html">BBDB on EIEIO – An Introduction to Object-Oriented Emacs Lisp</a>. Okay I thought
+EIEIO is a very low powered CLOS but I was wrong about the feature sets.</li>
+<li><a href="https://bair.berkeley.edu/blog/2019/06/07/data_aug/">1000x Faster Data Augmentation</a> and <a href="https://deepmind.com/blog/population-based-training-neural-networks/">Population based training of neural
+networks</a>. Everything works man.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org017e3e7" class="outline-2">
+<h2 id="sec-programming"><span class="section-number-2">3</span> Programming</h2>
+<div class="outline-text-2" id="text-sec-programming">
+
+<figure> <div id="commit-plot"></div> <figcaption>
+<p>
+Commits for week 23-2019 and 4 previous weeks.
+</p>
+</figcaption></figure>
+</div>
+</div>
+
+<div id="outline-container-org5847514" class="outline-2">
+<h2 id="sec-media"><span class="section-number-2">4</span> Media</h2>
+<div class="outline-text-2" id="text-sec-media">
+
+<ul class="org-ul">
+<li><a href="https://aeon.co/essays/knowledge-is-a-stone-age-concept-were-better-off-without-it">Knowledge is a stone-age concept, we're better off without it</a>. This is really
+interesting, even though I feel author's is <i>favoring</i> true positives without
+probably considering if that really is important. The interesting thing is
+that this provides a lot of thought food for understanding the way we think
+about aims of machine intelligence in general.</li>
+<li><a href="https://www.stuffyoushouldknow.com/podcasts/how-tv-ratings-work.htm">How TV Ratings Work</a>. I came to know the pervasiveness of Nielsen while reading
+<i>Cultural Logic of Computation</i> but here were a few more pieces that I didn't
+know about, specially sweeps week and the audio fingerprinting tech used for
+spying on shows.</li>
+<li><a href="https://aeon.co/essays/why-cultural-heritage-benefits-the-rich-and-powerful-above-all">Why cultural heritage benefits the rich and powerful above all</a></li>
+</ul>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="bearman2002networks">[bearman2002networks]</a> <a name="bearman2002networks"></a>Bearman, Moody & Faris. 2002. "Networks and history." <i>Complexity</i>, 8(1), 61-71. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="mendis2016parallelizing">[mendis2016parallelizing]</a> <a name="mendis2016parallelizing"></a>Mendis, Droppo, Maleki, Musuvathi, Mytkowicz & Zweig. 2016. "Parallelizing wfst speech decoders", 5325-5329, in in: 2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), edited by </li>
+</ul>
 </p>
-
-<hr>
-
-<p>
-Filter by <i>tags</i>
-</p>
-
-<div class='page-tags'><a href='#books'>books</a> <a href='#emacs'>emacs</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-06-10</div>
-<p class="archive-title">
-<a href="./2019/06/10/pointing-at-things/index.html" class="archive-title">Pointing at Things</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-05-13</div>
-<p class="archive-title">
-<a href="./2019/05/13/dvc/index.html" class="archive-title">DVC and ML reproducibility</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-02-23</div>
-<p class="archive-title">
-<a href="./2019/02/23/the-human-messiness/index.html" class="archive-title">The Human Messiness</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-01-06</div>
-<p class="archive-title">
-<a href="./2019/01/06/plugins/index.html" class="archive-title">Plugins for the Rest of us</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-30</div>
-<p class="archive-title">
-<a href="./2018/12/30/books-read-in-2018/index.html" class="archive-title">Books Read in 2018</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#books'>books</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-14</div>
-<p class="archive-title">
-<a href="./2018/12/14/buffer-model-gotcha/index.html" class="archive-title">Buffer Model Gotcha</a>
-</p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-05</div>
-<p class="archive-title">
-<a href="./2018/12/05/dataframes-as-shell-intermediates/index.html" class="archive-title">DataFrames as Shell Intermediates</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-11-11</div>
-<p class="archive-title">
-<a href="./2018/11/11/self-contained-org-files/index.html" class="archive-title">Self-contained Org files</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-11-05</div>
-<p class="archive-title">
-<a href="./2018/11/05/interstices/index.html" class="archive-title">Interstices</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-07</div>
-<p class="archive-title">
-<a href="./2018/10/07/lisp-shell-scripts/index.html" class="archive-title">Lisp Shell Scripts</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-30</div>
-<p class="archive-title">
-<a href="./2018/09/30/kde-connect/index.html" class="archive-title">KDE Connect is Awesome!</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-24</div>
-<p class="archive-title">
-<a href="./2018/09/24/analogies/index.html" class="archive-title">Analogies</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-14</div>
-<p class="archive-title">
-<a href="./2018/09/14/weekly-reviews/index.html" class="archive-title">Weekly Reviews</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/jupyter/index.html" class="archive-title">What are Jupyter notebooks for?</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-11</div>
-<p class="archive-title">
-<a href="./2018/08/11/rational-theists.html" class="archive-title">Rational Theists</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-02</div>
-<p class="archive-title">
-<a href="./2018/08/02/really-using-org-mode.html" class="archive-title">Really using Org Mode</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-01</div>
-<p class="archive-title">
-<a href="./2018/08/01/defer.html" class="archive-title">Defer Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics‑of‑Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
 </div>
 </div>
 <div id="postamble" class="status">
