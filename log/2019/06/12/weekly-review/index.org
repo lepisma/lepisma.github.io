@@ -1,0 +1,50 @@
+#+TITLE: Weekly Review /23-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 23,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Networks and history (cite:bearman2002networks)
+- Parallelizing wfst speech decoders (cite:mendis2016parallelizing)
+- [[https://ericabrahamsen.net/tech/2016/feb/bbdb-eieio-object-oriented-elisp.html][BBDB on EIEIO – An Introduction to Object-Oriented Emacs Lisp]]. Okay I thought
+  EIEIO is a very low powered CLOS but I was wrong about the feature sets.
+- [[https://bair.berkeley.edu/blog/2019/06/07/data_aug/][1000x Faster Data Augmentation]] and [[https://deepmind.com/blog/population-based-training-neural-networks/][Population based training of neural
+  networks]]. Everything works man.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 23-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://aeon.co/essays/knowledge-is-a-stone-age-concept-were-better-off-without-it][Knowledge is a stone-age concept, we're better off without it]]. This is really
+  interesting, even though I feel author's is /favoring/ true positives without
+  probably considering if that really is important. The interesting thing is
+  that this provides a lot of thought food for understanding the way we think
+  about aims of machine intelligence in general.
+- [[https://www.stuffyoushouldknow.com/podcasts/how-tv-ratings-work.htm][How TV Ratings Work]]. I came to know the pervasiveness of Nielsen while reading
+  /Cultural Logic of Computation/ but here were a few more pieces that I didn't
+  know about, specially sweeps week and the audio fingerprinting tech used for
+  spying on shows.
+- [[https://aeon.co/essays/why-cultural-heritage-benefits-the-rich-and-powerful-above-all][Why cultural heritage benefits the rich and powerful above all]]
+
+[[bibliography:./references.bib]]
