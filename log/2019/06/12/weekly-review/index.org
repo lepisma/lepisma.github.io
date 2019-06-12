@@ -37,7 +37,7 @@ Commits for week 23-2019 and 4 previous weeks.
 
 * Media
 - [[https://aeon.co/essays/knowledge-is-a-stone-age-concept-were-better-off-without-it][Knowledge is a stone-age concept, we're better off without it]]. This is really
-  interesting, even though I feel author's is /favoring/ true positives without
+  interesting, even though I feel author is /favoring/ true positives without
   probably considering if that really is important. The interesting thing is
   that this provides a lot of thought food for understanding the way we think
   about aims of machine intelligence in general.
