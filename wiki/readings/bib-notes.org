@@ -255,6 +255,28 @@ random search.
 
 * AI/ML
 
+** READ Large-Scale Long-Tailed Recognition in an Open World
+CLOSED: [2019-06-14 Fri 00:19]
+:PROPERTIES:
+:CUSTOM_ID: liu2019large
+:YEAR:     2019
+:AUTHOR:   Liu, Ziwei and Miao, Zhongqi and Zhan, Xiaohang and Wang, Jiayun and Gong, Boqing and Yu, Stella X
+:END:
+
+Here we are grouping the following three tasks, their losses, metrics etc. in
+one:
+1. Regular (a little imbalanced) classification
+2. Few shot classification
+3. Out of Domain classification
+
+Even though the system is a full network, there are planned components in there.
+Two are noteworthy:
+1. A distance metric, /reachability/ in paper, goes to tell how different an
+   instance is as compared to seen examples. This helps in task 2 vs 3.
+2. Memorized feature infusion which comes into picture in task 1 vs 2. Here we
+   put more weights for features from a memory which helps in reducing the bias
+   towards regular classes with large number of training samples.
+
 ** READ Parallelizing wfst speech decoders
 CLOSED: [2019-06-12 Wed 00:55]
 :PROPERTIES:
