@@ -1,8 +1,14 @@
 #+TITLE: Desktop
 #+SETUPFILE: ../../assets/export.setup
 
-A few of my desktop rices from /r/unixporn submissions. My Emacs config lies
-[[https://github.com/lepisma/rogue][here]] and other dotfiles are [[https://github.com/lepisma/cfg][here]].
+A few of my desktop rices. My Emacs config lies [[https://github.com/lepisma/rogue][here]]. Other dotfiles are [[https://github.com/lepisma/cfg][here]].
+
+#+HTML: <div style='text-align:center'>
+#+HTML: <blockquote class="imgur-embed-pub" lang="en" data-id="a/laxM9M2">
+#+HTML: <a href="//imgur.com/a/laxM9M2">More gaps</a>
+#+HTML: </blockquote>
+#+HTML: <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+#+HTML: </div>
 
 -----
 
