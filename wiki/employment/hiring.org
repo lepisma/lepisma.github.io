@@ -1,0 +1,29 @@
+#+TITLE: Hiring
+#+SETUPFILE: ../../assets/export.setup
+
+Not nearly enough but I have been involved in a few hirings directly or
+indirectly. And I have been wrong about many things. In this page I will try to
+dump my thoughts regarding a few involved topics and iteratively improve my
+process in case I need to do something similar again.
+
+* Communication
+
+* Subjectivity
+
+* Structure
+
+* Reason
+
+* TODO Mass
+
+- Replying to candidates
+- Subjectivity
+  - complement of resume
+  - process of improvement
+- A more structured approach
+  - Resources vs candidates etc.
+- Reasoning rejection
+  - even if you are fair
+  - bias and question level
+- Accepting the mass process of applications
+- Dry run your process on someone before implementing
