@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-07 Sun 21:00 -->
+<!-- 2019-06-16 Sun 14:47 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Org Mode Export Test</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -213,7 +226,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -280,26 +293,54 @@ for the JavaScript code in this tag.
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='active' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a class='active' href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-10-07 Sun 21:00</div>
-                                <h1>Org Mode Export Test</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>Last modified:  2019-06-16 Sun 14:47</div>
+  <h1>Org Mode Export Test</h1>
+</div>
 </div>
 <div id="content">
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-heading-level-1">1. Heading level 1</a>
+<ul>
+<li><a href="#sec-heading-level-1/heading-level-2">1.1. Heading level 2</a></li>
+</ul>
+</li>
+<li><a href="#sec-another-title">2. Another title</a>
+<ul>
+<li><a href="#sec-another-title/hello-world">2.1. Hello world</a></li>
+</ul>
+</li>
+<li><a href="#sec-property-test">3. Property test</a>
+<ul>
+<li><a href="#sec-property-test/todo-this-is-a-task-to-be-done">3.1. <span class="todo TODO">TODO</span> This is a task to be done</a></li>
+<li><a href="#sec-property-test/done-something-done">3.2. <span class="done DONE">DONE</span> Something done</a></li>
+<li><a href="#sec-property-test/some-other-section-with-tags-:hello:world:">3.3. Some other section with tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="hello">hello</span>&#xa0;<span class="world">world</span></span></a></li>
+<li><a href="#sec-property-test/let's-add-few-images">3.4. Let's add few images</a></li>
+</ul>
+</li>
+<li><a href="#sec-let's-draw-tables">4. Let's draw tables</a></li>
+</ul>
+</div>
+</nav>
+
 <div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  org-test</div>
 <div class="page-intro">
 <p>
@@ -328,22 +369,22 @@ convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
 </p>
 
 <div id="outline-container-org93a1964" class="outline-2">
-<h2 id="sec-heading-level-1"><a id="org93a1964"></a><span class="section-number-2">1</span> Heading level 1</h2>
+<h2 id="sec-heading-level-1"><span class="section-number-2">1</span> Heading level 1</h2>
 <div class="outline-text-2" id="text-sec-heading-level-1">
 
 </div>
 <div id="outline-container-orgaba2a4e" class="outline-3">
-<h3 id="sec-heading-level-1/heading-level-2"><a id="orgaba2a4e"></a><span class="section-number-3">1.1</span> Heading level 2</h3>
+<h3 id="sec-heading-level-1/heading-level-2"><span class="section-number-3">1.1</span> Heading level 2</h3>
 <div class="outline-text-3" id="text-sec-heading-level-1/heading-level-2">
 
 </div>
 <div id="outline-container-org97b6170" class="outline-4">
-<h4 id="sec-heading-level-1/heading-level-2/heading-level-3"><a id="org97b6170"></a><span class="section-number-4">1.1.1</span> Heading level 3</h4>
+<h4 id="sec-heading-level-1/heading-level-2/heading-level-3"><span class="section-number-4">1.1.1</span> Heading level 3</h4>
 <div class="outline-text-4" id="text-sec-heading-level-1/heading-level-2/heading-level-3">
 
 </div>
 <div id="outline-container-orgbb9026a" class="outline-5">
-<h5 id="sec-heading-level-1/heading-level-2/heading-level-3/heading-level-4"><a id="orgbb9026a"></a><span class="section-number-5">1.1.1.1</span> Heading level 4</h5>
+<h5 id="sec-heading-level-1/heading-level-2/heading-level-3/heading-level-4"><span class="section-number-5">1.1.1.1</span> Heading level 4</h5>
 <div class="outline-text-5" id="text-sec-heading-level-1/heading-level-2/heading-level-3/heading-level-4">
 
 <p>
@@ -449,7 +490,7 @@ what <span class="org-keyword">is</span> this man!
 
 
 <figure>
-<img src="./assets/favicons/mstile-310x150.png" alt="mstile-310x150.png">
+<img src="../assets/favicons/mstile-310x150.png" alt="mstile-310x150.png">
 
 </figure>
 </aside>
@@ -460,7 +501,7 @@ what <span class="org-keyword">is</span> this man!
 </div>
 
 <div id="outline-container-org1f482dd" class="outline-2">
-<h2 id="sec-another-title"><a id="org1f482dd"></a><span class="section-number-2">2</span> Another title</h2>
+<h2 id="sec-another-title"><span class="section-number-2">2</span> Another title</h2>
 <div class="outline-text-2" id="text-sec-another-title">
 
 <p>
@@ -483,7 +524,7 @@ tortor.  Nam euismod tellus id erat.
 </div>
 
 <div id="outline-container-org80c4768" class="outline-3">
-<h3 id="sec-another-title/hello-world"><a id="org80c4768"></a><span class="section-number-3">2.1</span> Hello world</h3>
+<h3 id="sec-another-title/hello-world"><span class="section-number-3">2.1</span> Hello world</h3>
 <div class="outline-text-3" id="text-sec-another-title/hello-world">
 
 <p>
@@ -499,7 +540,7 @@ Nam vestibulum accumsan nisl.
 </div>
 
 <div id="outline-container-org98694ee" class="outline-2">
-<h2 id="sec-property-test"><a id="org98694ee"></a><span class="section-number-2">3</span> Property test</h2>
+<h2 id="sec-property-test"><span class="section-number-2">3</span> Property test</h2>
 <div class="outline-text-2" id="text-sec-property-test">
 <pre class="example">
 ARCHIVE: value of archive
@@ -507,7 +548,7 @@ ARCHIVE: value of archive
 </div>
 
 <div id="outline-container-org20402e3" class="outline-3">
-<h3 id="sec-property-test/todo-this-is-a-task-to-be-done"><a id="org20402e3"></a><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> This is a task to be done</h3>
+<h3 id="sec-property-test/todo-this-is-a-task-to-be-done"><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> This is a task to be done</h3>
 <div class="outline-text-3" id="text-sec-property-test/todo-this-is-a-task-to-be-done">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-01-26 Fri&gt;</span></span></p>
 
@@ -528,7 +569,7 @@ sapien.
 </div>
 
 <div id="outline-container-org689d4b0" class="outline-3">
-<h3 id="sec-property-test/done-something-done"><a id="org689d4b0"></a><span class="section-number-3">3.2</span> <span class="done DONE">DONE</span> Something done</h3>
+<h3 id="sec-property-test/done-something-done"><span class="section-number-3">3.2</span> <span class="done DONE">DONE</span> Something done</h3>
 <div class="outline-text-3" id="text-sec-property-test/done-something-done">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-01-26 Fri 23:14]</span></span></p>
 
@@ -566,7 +607,7 @@ accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 </div>
 
 <div id="outline-container-org662a320" class="outline-3">
-<h3 id="sec-property-test/some-other-section-with-tags-:hello:world:"><a id="org662a320"></a><span class="section-number-3">3.3</span> Some other section with tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="hello">hello</span>&#xa0;<span class="world">world</span></span></h3>
+<h3 id="sec-property-test/some-other-section-with-tags-:hello:world:"><span class="section-number-3">3.3</span> Some other section with tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="hello">hello</span>&#xa0;<span class="world">world</span></span></h3>
 <div class="outline-text-3" id="text-sec-property-test/some-other-section-with-tags-:hello:world:">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-01-26 Fri&gt;</span></span></p>
 
@@ -586,14 +627,14 @@ tellus lacinia purus, et dictum nunc justo sit amet elit.
 </div>
 </div>
 
-<div id="outline-container-orgcc28b1e" class="outline-3">
-<h3 id="sec-property-test/let's-add-some-images"><a id="orgcc28b1e"></a><span class="section-number-3">3.4</span> Let's add some images</h3>
-<div class="outline-text-3" id="text-sec-property-test/let's-add-some-images">
+<div id="outline-container-orgf7030da" class="outline-3">
+<h3 id="sec-property-test/let's-add-few-images"><span class="section-number-3">3.4</span> Let's add few images</h3>
+<div class="outline-text-3" id="text-sec-property-test/let's-add-few-images">
 
 
 
 <figure>
-<img src="./assets/favicons/mstile-310x150.png" alt="mstile-310x150.png">
+<img src="../assets/favicons/mstile-310x150.png" alt="mstile-310x150.png">
 
 <figcaption><span class="figure-number">Figure 2: </span>Test image</figcaption>
 </figure>
@@ -623,9 +664,9 @@ convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapie
 </div>
 </div>
 
-<div id="outline-container-orgc9bd9f1" class="outline-2">
-<h2 id="sec-let's-draw-some-tables"><a id="orgc9bd9f1"></a><span class="section-number-2">4</span> Let's draw some tables</h2>
-<div class="outline-text-2" id="text-sec-let's-draw-some-tables">
+<div id="outline-container-org556243f" class="outline-2">
+<h2 id="sec-let's-draw-tables"><span class="section-number-2">4</span> Let's draw tables</h2>
+<div class="outline-text-2" id="text-sec-let's-draw-tables">
 
 
 <table>
@@ -715,9 +756,9 @@ This is some verse. I don't know what it is used for. I don't want to find out t
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">yes</div></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">yes</p></div></div>
 
-<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara">a definition</div></div>
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">a definition</p></div></div>
 
 <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
 The link is: <a href="http://orgmode.org">http://orgmode.org</a>

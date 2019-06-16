@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-07 Thu 12:42 -->
+<!-- 2019-06-17 Mon 00:22 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reference Management</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -185,7 +198,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
-<script src="https:/ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/assets/js/pace.min.js"></script>
 <script src="/assets/js/jquery.zoomooz.min.js"></script>
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
@@ -213,7 +226,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -258,24 +271,25 @@ for the JavaScript code in this tag.
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='active' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a class='active' href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>Last modified:  2018-06-06 Wed 23:41</div>
-                                <h1>Reference Management</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>Last modified:  2019-06-17 Mon 00:22</div>
+  <h1>Reference Management</h1>
+</div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../emacs/index.html'>emacs</a> / <a href='../org-mode/index.html'>org-mode</a> / references</div>
@@ -296,8 +310,8 @@ There are a few pieces in the process of managing references.
 </ol>
 
 <div id="outline-container-org6fd47eb" class="outline-2">
-<h2 id="searching"><a id="org6fd47eb"></a><span class="section-number-2">1</span> Searching</h2>
-<div class="outline-text-2" id="text-searching">
+<h2 id="sec-searching"><span class="section-number-2">1</span> Searching</h2>
+<div class="outline-text-2" id="text-sec-searching">
 
 <p>
 Mendeley and similar tools have decent support for step 1 and 2. The way I had
@@ -315,8 +329,8 @@ add BibTeX entries in a single file as you would have been doing with mendeley.
 </div>
 
 <div id="outline-container-org8962f57" class="outline-2">
-<h2 id="using-references"><a id="org8962f57"></a><span class="section-number-2">2</span> Using references</h2>
-<div class="outline-text-2" id="text-using-references">
+<h2 id="sec-using-references"><span class="section-number-2">2</span> Using references</h2>
+<div class="outline-text-2" id="text-sec-using-references">
 
 <p>
 Not much to say here. <a href="https://github.com/jkitchin/org-ref">org-ref</a> is a very feature complete solution for working
@@ -332,7 +346,7 @@ from org-ref make it really easy to search and add citations.</li>
 
 <ul class="org-ul">
 <li>Notes file, <code>org-ref-bibliography-notes</code>. I am starting to keep a notes file
-(lives <a class="pile-link" href="/wiki/readings/bib-notes.html">here</a>) which will help me trace/organize ideas and also make the
+(lives <a class="pile-link" href="/wiki/readings/notes/documents.html">here</a>) which will help me trace/organize ideas and also make the
 citations more meaningful rather than just pushing a <code>[1], [2], [3], [4]</code> list.</li>
 </ul>
 
@@ -353,8 +367,8 @@ keep pages here self contained.
 </div>
 
 <div id="outline-container-org7e9be5a" class="outline-2">
-<h2 id="annotations"><a id="org7e9be5a"></a><span class="section-number-2">3</span> Annotations</h2>
-<div class="outline-text-2" id="text-annotations">
+<h2 id="sec-annotations"><span class="section-number-2">3</span> Annotations</h2>
+<div class="outline-text-2" id="text-sec-annotations">
 
 <p>
 Although Emacs has a really decent pdf reading facility in <a href="https://github.com/politza/pdf-tools">pdf-tools</a> now, it
@@ -372,8 +386,8 @@ really useful.
 </div>
 
 <div id="outline-container-orgaf787ef" class="outline-2">
-<h2 id="missing-pieces"><a id="orgaf787ef"></a><span class="section-number-2">4</span> Missing pieces</h2>
-<div class="outline-text-2" id="text-missing-pieces">
+<h2 id="sec-missing-pieces"><span class="section-number-2">4</span> Missing pieces</h2>
+<div class="outline-text-2" id="text-sec-missing-pieces">
 
 <p>
 Here are a few things that I would like to setup when I have some time. Most
