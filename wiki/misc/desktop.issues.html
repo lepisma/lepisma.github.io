@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-06-17 Mon 01:58 -->
+<!-- 2019-06-17 Mon 02:03 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resources</title>
+<title><code>:desktop/issues</code></title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -287,105 +287,21 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-06-17 Mon 01:57</div>
-  <h1>Resources</h1>
+  <div class='page-meta'>Last modified:  2019-06-17 Mon 02:03</div>
+  <h1><code>:desktop/issues</code></h1>
 </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../programming/index.html'>programming</a> / resources</div>
-<p>
-This page houses some programming related resources that I have found useful
-while working on <i>anything</i>. It's starting out jumbled but will get more organized
-as I put more things in here.
-</p>
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../misc/index.html'>misc</a> / desktop.issues</div>
+<div id="outline-container-orgbdc1cd4" class="outline-2">
+<h2 id="pile-issue-1"><span class="section-number-2">1</span> Switch to non-imgur image hosting</h2>
+<div class="outline-text-2" id="text-pile-issue-1">
 
-<div id="outline-container-org24d016d" class="outline-2">
-<h2 id="sec-common-lisp"><span class="section-number-2">1</span> Common Lisp</h2>
-<div class="outline-text-2" id="text-sec-common-lisp">
-
-<ul class="org-ul">
-<li>Use <a href="https://github.com/roswell/roswell">roswell</a> for building command line tools.</li>
-<li><a href="https://github.com/takagi/lake">lake</a> is a neat make alternative.</li>
-<li>I keep a list of utility packages that I <code>:use</code> in repl (and shell-ish scripts)
-<a href="https://github.com/lepisma/cfg/blob/master/pod/package.lisp">here</a>. Probably you could use something like <a href="https://github.com/cl21/cl21">cl21</a> but then you would want to
-write packages in cl21 too.</li>
-<li>CL is also great for scripting if you live in the repl. I wrote my workflow
-<a class="pile-link" href="/journal/2018/10/07/lisp-shell-scripts/index.html">here</a>.</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org18ac468" class="outline-2">
-<h2 id="sec-emacs-lisp"><span class="section-number-2">2</span> Emacs Lisp</h2>
-<div class="outline-text-2" id="text-sec-emacs-lisp">
-
-<ul class="org-ul">
-<li>Use <a href="https://github.com/magnars/s.el">s</a>, <a href="https://github.com/magnars/dash.el">dash</a>, <a href="https://github.com/rejeep/f.el">f</a> and <a href="https://github.com/Wilfred/ht.el">ht</a> while programming in elisp for maximum pleasure.</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org5bd89e4" class="outline-2">
-<h2 id="sec-python"><span class="section-number-2">3</span> Python</h2>
-<div class="outline-text-2" id="text-sec-python">
-
-<ul class="org-ul">
-<li><a href="https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html">The Definitive Guide to Python import Statements</a> is a neat guide explaining
-the import mess in Python.</li>
-<li>Want more structure in python programs? Use <a href="https://github.com/ericvsmith/dataclasses">dataclasses</a>/<a href="https://github.com/python-attrs/attrs">attrs</a> and <a href="https://github.com/python/mypy">mypy</a>.</li>
-<li><a href="https://github.com/dgilland/pydash">pydash</a> has nice set of high level functions.</li>
-<li><a href="https://github.com/mahmoud/glom">glom</a> helps in working with nested data.</li>
-<li>For workflow management, I find <a href="https://snakemake.readthedocs.io/">snakemake</a> really useful. Combining it with
-<a href="https://conda.io/">conda</a> gives nice pavement for exploratory projects. <del>For scripts, <a href="https://github.com/kennethreitz/pipenv/">pipenv</a> is
-probably the cleanest solution</del>.</li>
-<li>Use <a href="https://poetry.eustace.io/">poetry</a> for developing python libraries and/or scripts. It avoids <code>setup.py</code>
-and its brothers altogether.</li>
-<li>For managing python versions, I have found <a href="https://github.com/pyenv/pyenv-installer">pyenv</a> to be very clean. Along with
-poetry for managing virtualenvs, this helps in closing the loop.</li>
-<li>I like <a href="https://github.com/docopt/docopt">docopt</a> for command line parsing. Even though there are probably valid
-arguments <i>against</i> it, since it's not very popular, I haven't really felt any
-problem with it til now.</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgbe90d95" class="outline-2">
-<h2 id="sec-tools"><span class="section-number-2">4</span> Tools</h2>
-<div class="outline-text-2" id="text-sec-tools">
 
 <p>
-Few nifty tools. Along with the usual *nix pack, they make so many things really
-quick.
+I don't like embedding imgur here. Also I don't see why I should upload static
+stuff like images to imgur or any other third party service.
 </p>
-
-<ul class="org-ul">
-<li><a href="http://pandoc.org/">Pandoc</a> for document conversion. If you feel like something is off, check out
-<a href="http://pandoc.org/filters.html">filters</a>.</li>
-<li><a href="https://www.imagemagick.org/script/index.php">imagemagick</a> for image manipulation. A lot of image-fu is possible just by
-piping through this.</li>
-<li><a href="https://github.com/kohler/gifsicle">gifsicle</a> for working with gifs</li>
-<li><a href="https://www.ffmpeg.org/">ffmpeg</a> for media conversion. Has nice language bindings too (e.g.
-<a href="https://github.com/kkroening/ffmpeg-python">ffmpeg-python</a>).</li>
-<li><a href="https://www.graphviz.org/">graphviz</a> and <a href="http://ditaa.sourceforge.net/">ditaa</a> for making graphs, flowcharts etc. Both go really nicely in
-org-babel.</li>
-<li><a href="https://harelba.github.io/q/">q</a> allows running SQL over CSVs.</li>
-<li><a href="https://stedolan.github.io/jq/">jq</a> for working with json strings in command line.</li>
-<li><del><a href="https://httpie.org/">HTTPie</a> as HTTP client.</del> Just use <code>curl</code>. In Emacs, try <a href="https://github.com/pashky/restclient.el">restclient</a> and <a href="https://github.com/alf/ob-restclient.el">ob-restclient</a>.</li>
-<li><a href="https://github.com/ericchiang/pup">pup</a> for working with html strings.</li>
-<li><a href="https://rg3.github.io/youtube-dl/">youtube-dl</a> for downloading media.</li>
-<li><a href="https://aria2.github.io/">aria2</a> for downloading the rest. There is an <a href="https://github.com/LdBeth/aria2.el/">interface</a> for Emacs but I haven't used it.</li>
-<li><a href="https://github.com/tapio/live-server">live-server</a> for avoiding <code>python -m SimpleHTTPServer</code>.</li>
-<li><a href="https://ngrok.com">ngrok</a> for quickly exposing localhost.</li>
-<li><a href="https://github.com/dbcli/pgcli">pgcli</a> / <a href="https://github.com/dbcli/mycli">mycli</a> as db cli.</li>
-<li><a href="https://github.com/tldr-pages/tldr">tldr</a> for quick docs.</li>
-<li><a href="https://github.com/BurntSushi/ripgrep">rg</a> / <a href="https://github.com/ggreer/the_silver_searcher">ag</a> for searching in code. Spacemacs has nice ag wrappers.</li>
-<li><a href="https://github.com/wireservice/csvkit">csvkit</a> for csv-fu. Haven't used it but tools like <code>csvcut</code> are really nice.</li>
-<li>Command line tools from <code>poppler-utils</code> can replace almost everything you need
-to do with pdfs.</li>
-<li><a href="https://github.com/clibs/entr">entr</a> helps in rerunning commands based on file changes.</li>
-<li><a href="https://github.com/MaartenBaert/ssr">SimpleScreenRecorder</a> does most of the things I want. A few other fancier tools
-I tried don't work very nicely with tiling systems.</li>
-</ul>
 </div>
 </div>
 </div>
