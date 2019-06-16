@@ -21,7 +21,7 @@ any heavy lifting.
 
 * Writing
 - Nothing major, organized the paper reading process and set up a better
-  structure for my [[pile:wiki:readings/bib-notes][notes page]].
+  structure for my [[pile:wiki:readings/notes/documents][notes page]].
 
 * Media
 - Read [[https://www.goodreads.com/book/show/1280983.True_Names][True Names]].

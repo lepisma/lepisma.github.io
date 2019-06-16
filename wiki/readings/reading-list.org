@@ -1,4 +1,4 @@
-#+TITLE: Reading List (Books)
+#+TITLE: Reading List
 #+SETUPFILE: ../../assets/export.setup
 #+PILE: cid:flat
 #+TODO: TOREAD READING | READ

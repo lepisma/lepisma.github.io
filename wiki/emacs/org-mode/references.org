@@ -31,7 +31,7 @@ it:
 
 
 - Notes file, ~org-ref-bibliography-notes~. I am starting to keep a notes file
-  (lives [[pile:wiki:readings/bib-notes][here]]) which will help me trace/organize ideas and also make the
+  (lives [[pile:wiki:readings/notes/documents][here]]) which will help me trace/organize ideas and also make the
   citations more meaningful rather than just pushing a ~[1], [2], [3], [4]~ list.
 
 
