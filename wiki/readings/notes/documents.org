@@ -2,9 +2,7 @@
 #+SETUPFILE: ../../../assets/export.setup
 #+TODO: TOREAD READING | READ
 
-This contains notes for paper-ish documents that I read (notes for books in
-general are [[pile:wiki:readings/books][here]]). I am now realizing the importance of summarizing what I read
-so will be working on this page fairly regularly.
+This contains notes for paper-ish documents that I read.
 
 * Evolution/Complexity
 

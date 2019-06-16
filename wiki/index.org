@@ -1,7 +1,7 @@
 #+TITLE: Wiki
 #+SETUPFILE: ../assets/export.setup
 
-This is a personal wiki. Most of the pages here are still in transitory phase. I
+This is a personal wiki. Most of the pages here are in /work-in-progress/ phase. I
 will be moving some of the pages here to my journal or, after finishing the
 work, to the blog.
 

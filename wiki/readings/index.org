@@ -1,10 +1,8 @@
 #+TITLE: Readings
 #+SETUPFILE: ../../assets/export.setup
 
-There are a few /kind/ of things to read that I encounter. Many of them are of
-/read and throw/ type. Here I keep more general /archivable/ variants like a reading
-list and some other resources that I feel are either good as a reference or are
-nice intro to a topic in isolation.
+Here I keep more general /archivable/ reading items and resources that I feel are
+either good as a reference or are nice intro to a topic in isolation.
 
 * Pages in this section
 

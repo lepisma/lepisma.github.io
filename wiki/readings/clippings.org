@@ -15,8 +15,8 @@
 </script>
 #+END_EXPORT
 
-This is a listing of clippings from my readings. Most recent first. The button
-below shuffles items.
+This is a listing of clippings from my readings from books. Most recent first.
+The button below shuffles items.
 
 @@html:<div><a class="btn" id="shuffle-btn">shuffle</a></div>@@
 
