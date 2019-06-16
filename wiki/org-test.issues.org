@@ -1,4 +1,4 @@
-#+TITLE: org-mode-export-test/issues
+#+TITLE: ~:org-mode-export-test/issues~
 #+SETUPFILE: ../assets/export.setup
 
 * Fix styling of TODO
