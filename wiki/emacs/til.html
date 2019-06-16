@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-05-26 Sun 22:03 -->
+<!-- 2019-06-16 Sun 12:26 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned in Emacs</title>
@@ -287,7 +287,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-05-26 Sun 22:03</div>
+  <div class='page-meta'>Last modified:  2019-06-16 Sun 12:26</div>
   <h1>Today I Learned <i>in Emacs</i></h1>
 </div>
 </div>
@@ -304,6 +304,17 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>eval-defun</b>
+</p>
+
+<p>
+While working with elisp, resetting <code>defcustom</code> like variables using
+<code>eval-last-sexp</code> doesn't work. I used to write a quick <code>setq</code> to do these things
+but found that I could use <code>eval-defun</code> with the same <i>setq</i> effect. Check this
+<a href="https://emacs.stackexchange.com/a/2302">answer</a>.
+</p></li>
+
 <li><p>
 <b>org radio-targets</b>
 </p>
