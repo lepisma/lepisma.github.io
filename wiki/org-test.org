@@ -1,6 +1,8 @@
 #+TITLE: Org Mode Export Test
 #+SETUPFILE: ../assets/export.setup
 
+#+TOC: headlines 2
+
 #+BEGIN_page-intro
 This is an introductory paragraph. Kind of like an abstract. Let's fill this a
 little. Pellentesque dapibus suscipit ligula. Donec posuere augue in quam. Etiam
@@ -99,7 +101,7 @@ import test
 what is this man!
 #+END_SRC
 
-[[file:./assets/favicons/mstile-310x150.png]]
+[[file:../assets/favicons/mstile-310x150.png]]
 #+END_aside
 
 * Another title
@@ -184,10 +186,10 @@ quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam
 feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus
 tellus lacinia purus, et dictum nunc justo sit amet elit.
 
-** Let's add some images
+** Let's add few images
 
 #+CAPTION: Test image
-[[file:./assets/favicons/mstile-310x150.png]]
+[[file:../assets/favicons/mstile-310x150.png]]
 
 Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel
 tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac
@@ -209,7 +211,7 @@ vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci
 ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est
 convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapie
 
-* Let's draw some tables
+* Let's draw tables
 
 #+CAPTION: This is the caption for the next table
 |-------+-------+-------+-------|

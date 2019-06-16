@@ -9,5 +9,5 @@ nice intro to a topic in isolation.
 * Pages in this section
 
 #+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
-(princ (pile-index))
+(princ (pile-index-generate))
 #+END_SRC
