@@ -1,0 +1,10 @@
+#+TITLE: ~:desktop/issues~
+#+SETUPFILE: ../../assets/export.setup
+
+* Switch to non-imgur image hosting
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-1
+:END:
+
+I don't like embedding imgur here. Also I don't see why I should upload static
+stuff like images to imgur or any other third party service.

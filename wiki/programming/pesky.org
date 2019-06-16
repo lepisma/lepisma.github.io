@@ -12,7 +12,7 @@ category which I would like to study very /thoroughly/ sometime:
 - [ ] $\LaTeX$ is irritating and is almost everywhere. [[http://www.rpi.edu/dept/arc/docs/latex/latex-intro.pdf][Here]] is something that
   might help change my feelings.
 - [ ] [[https://sourceforge.net/projects/pgf/][TikZ]]. Inkscape has pretty weak scripting capabilities.
-- [ ] Regex. I specifically need to understand how it works to really appreciate
-  it.
+- [X] +Regex. I specifically need to understand how it works to really
+  appreciate it.+
 - [ ] DNS/CNAMEs/SSLs and everything involved in secure web communication.
 - [ ] CSS. Specifically the old layout scheme, flexbox and grid.

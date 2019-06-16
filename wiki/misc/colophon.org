@@ -1,8 +1,8 @@
 #+TITLE: Colophon
 #+SETUPFILE: ../../assets/export.setup
 
-I have used jekyll in the past to maintain my [[https://github.com/lepisma/lepisma.github.io][home page]]. Its been nice really,
-but extending it was painful. Some times, working directly on the system is
+I have used jekyll in the past to maintain my [[https://github.com/lepisma/lepisma.github.io][home page]]. It's been nice really,
+but extending jekyll was painful. At times, working directly on the system is
 easier than writing /plugins/. I do concede that the above purported /pain/ was more
 because of my requirements instead of insufficiency of jekyll as a regular
 /blogging system/. What I wanted to do with jekyll was to:
@@ -26,7 +26,7 @@ are [[https://github.com/lepisma/lepisma.github.io][here]]), there are three pie
 1. The [[https://github.com/lepisma/lepisma.github.io/blob/source/assets/export.setup][export setup file]] which attaches css/js scripts and provides the general
    export config.
 2. [[https://github.com/lepisma/pile-theme][Theme]] for the pages. This is a slight variant of my old blog's theme. Since I
-   use it at other places too (at least one), its now in a separate repository.
+   use it at other places too (at least one), it's now in a separate repository.
 3. [[https://github.com/lepisma/pile][Elisp package]] for working with and publishing everything.
 
 There are a ton of places from which I have taken inspiration (both ideological

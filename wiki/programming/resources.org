@@ -11,6 +11,8 @@ as I put more things in here.
 - I keep a list of utility packages that I ~:use~ in repl (and shell-ish scripts)
   [[https://github.com/lepisma/cfg/blob/master/pod/package.lisp][here]]. Probably you could use something like [[https://github.com/cl21/cl21][cl21]] but then you would want to
   write packages in cl21 too.
+- CL is also great for scripting if you live in the repl. I wrote my workflow
+  [[pile:journal:2018/10/07/lisp-shell-scripts][here]].
 
 * Emacs Lisp
 - Use [[https://github.com/magnars/s.el][s]], [[https://github.com/magnars/dash.el][dash]], [[https://github.com/rejeep/f.el][f]] and [[https://github.com/Wilfred/ht.el][ht]] while programming in elisp for maximum pleasure.
@@ -26,9 +28,15 @@ as I put more things in here.
   probably the cleanest solution+.
 - Use [[https://poetry.eustace.io/][poetry]] for developing python libraries and/or scripts. It avoids ~setup.py~
   and its brothers altogether.
+- For managing python versions, I have found [[https://github.com/pyenv/pyenv-installer][pyenv]] to be very clean. Along with
+  poetry for managing virtualenvs, this helps in closing the loop.
+- I like [[https://github.com/docopt/docopt][docopt]] for command line parsing. Even though there are probably valid
+  arguments /against/ it, since it's not very popular, I haven't really felt any
+  problem with it til now.
 
 * Tools
-Some nifty command line tools
+Few nifty tools. Along with the usual *nix pack, they make so many things really
+quick.
 
 - [[http://pandoc.org/][Pandoc]] for document conversion. If you feel like something is off, check out
   [[http://pandoc.org/filters.html][filters]].
@@ -41,9 +49,9 @@ Some nifty command line tools
   org-babel.
 - [[https://harelba.github.io/q/][q]] allows running SQL over CSVs.
 - [[https://stedolan.github.io/jq/][jq]] for working with json strings in command line.
-- [[https://httpie.org/][HTTPie]] as HTTP client. In Emacs, try [[https://github.com/pashky/restclient.el][restclient]] and [[https://github.com/alf/ob-restclient.el][ob-restclient]].
+- +[[https://httpie.org/][HTTPie]] as HTTP client.+ Just use ~curl~. In Emacs, try [[https://github.com/pashky/restclient.el][restclient]] and [[https://github.com/alf/ob-restclient.el][ob-restclient]].
 - [[https://github.com/ericchiang/pup][pup]] for working with html strings.
-- [[https://rg3.github.io/youtube-dl/][youtube-dl]] for downloading media. Try [[https://github.com/skeeto/youtube-dl-emacs][youtube-dl-emacs]] for Emacs.
+- [[https://rg3.github.io/youtube-dl/][youtube-dl]] for downloading media.
 - [[https://aria2.github.io/][aria2]] for downloading the rest. There is an [[https://github.com/LdBeth/aria2.el/][interface]] for Emacs but I haven't used it.
 - [[https://github.com/tapio/live-server][live-server]] for avoiding ~python -m SimpleHTTPServer~.
 - [[https://ngrok.com][ngrok]] for quickly exposing localhost.
