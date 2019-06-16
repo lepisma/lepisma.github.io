@@ -7,6 +7,13 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *eval-defun*
+
+  While working with elisp, resetting ~defcustom~ like variables using
+  ~eval-last-sexp~ doesn't work. I used to write a quick ~setq~ to do these things
+  but found that I could use ~eval-defun~ with the same /setq/ effect. Check this
+  [[https://emacs.stackexchange.com/a/2302][answer]].
+
 + *org radio-targets*
 
   Another /hidden gem/ from Cheong Yiufung's series (post [[https://yiufung.net/post/org-mode-hidden-gems-pt3/][here]]).
