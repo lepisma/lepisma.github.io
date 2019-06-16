@@ -1,0 +1,33 @@
+#+TITLE: org-mode-export-test/issues
+#+SETUPFILE: ../assets/export.setup
+
+* Fix styling of TODO
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-1
+:END:
+
+* z value of ToC not sufficient to cover code blocks
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-2
+:END:
+
+* ToC hover is a little off
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-3
+:END:
+
+* Small button class
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-4
+:END:
+
+As of now, there is only one ~.btn~ class which is used for everything.
+
+* Cross link block for wiki pages
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-5
+:END:
+
+Possible use cases are:
+1. Linking org source of page
+2. Linking issue page and document page
