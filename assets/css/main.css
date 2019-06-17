@@ -1263,7 +1263,7 @@ li a {
   border-style: solid;
   border-width: 1px;
   border-color: #efefef;
-  border-radius: 4px;
+  border-radius: 1px;
   font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 14px;
@@ -1277,6 +1277,38 @@ li a {
 
 .btn.disabled {
   color: #7b7b7b; }
+  .btn.disabled:hover {
+    cursor: default; }
+
+.btn.small {
+  padding: 3px 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #efefef;
+  border-radius: 1px;
+  font-family: "Open Sans";
+  font-variant: all-small-caps;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 2px;
+  background-image: none;
+  padding-right: 9px;
+  padding-left: 9px; }
+  .btn.small:hover {
+    background-color: #efefef;
+    background-image: none; }
+
+.btn.highlight {
+  text-shadow: none;
+  text-decoration: none;
+  color: #000;
+  background-color: yellow; }
+
+.btn.primary {
+  text-shadow: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #002642; }
 
 .image-link, .image-link:hover {
   background: none;
@@ -1367,7 +1399,7 @@ pre.src:hover::before {
   border-style: solid;
   border-width: 1px;
   border-color: #efefef;
-  border-radius: 2px;
+  border-radius: 1px;
   font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 13px;
@@ -1391,7 +1423,7 @@ pre.src:hover::before {
       color: #000; }
 
 .todo {
-  color: #dc752f; }
+  color: #ee3333; }
 
 .done {
   color: #7b7b7b; }
@@ -1404,7 +1436,7 @@ pre.src:hover::before {
   border-style: solid;
   border-width: 1px;
   border-color: #efefef;
-  border-radius: 2px;
+  border-radius: 1px;
   font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 13px;
@@ -1412,7 +1444,11 @@ pre.src:hover::before {
   letter-spacing: 2px;
   background-image: none;
   line-height: 8px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 100px;
+  border-style: dashed; }
   .tag > span:hover {
     background-color: #efefef;
     background-image: none; }
@@ -1546,6 +1582,7 @@ nav#table-of-contents {
 
 @media (min-width: 1280px) {
   nav#table-of-contents {
+    z-index: 9999;
     position: fixed;
     top: 200px;
     left: 50px;
@@ -1658,7 +1695,7 @@ nav#table-of-contents {
   border-style: solid;
   border-width: 1px;
   border-color: #efefef;
-  border-radius: 2px;
+  border-radius: 1px;
   font-family: "Open Sans";
   font-variant: all-small-caps;
   font-size: 13px;

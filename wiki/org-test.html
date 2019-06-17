@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-06-16 Sun 14:47 -->
+<!-- 2019-06-18 Tue 00:35 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Org Mode Export Test</title>
@@ -309,7 +309,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-06-16 Sun 14:47</div>
+  <div class='page-meta'>Last modified:  2019-06-18 Tue 00:35</div>
   <h1>Org Mode Export Test</h1>
 </div>
 </div>
@@ -323,20 +323,21 @@ for the JavaScript code in this tag.
 <li><a href="#sec-heading-level-1/heading-level-2">1.1. Heading level 2</a></li>
 </ul>
 </li>
-<li><a href="#sec-another-title">2. Another title</a>
+<li><a href="#sec-buttons">2. Buttons</a></li>
+<li><a href="#sec-another-title">3. Another title</a>
 <ul>
-<li><a href="#sec-another-title/hello-world">2.1. Hello world</a></li>
+<li><a href="#sec-another-title/hello-world">3.1. Hello world</a></li>
 </ul>
 </li>
-<li><a href="#sec-property-test">3. Property test</a>
+<li><a href="#sec-property-test">4. Property test</a>
 <ul>
-<li><a href="#sec-property-test/todo-this-is-a-task-to-be-done">3.1. <span class="todo TODO">TODO</span> This is a task to be done</a></li>
-<li><a href="#sec-property-test/done-something-done">3.2. <span class="done DONE">DONE</span> Something done</a></li>
-<li><a href="#sec-property-test/some-other-section-with-tags-:hello:world:">3.3. Some other section with tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="hello">hello</span>&#xa0;<span class="world">world</span></span></a></li>
-<li><a href="#sec-property-test/let's-add-few-images">3.4. Let's add few images</a></li>
+<li><a href="#sec-property-test/todo-this-is-a-task-to-be-done">4.1. <span class="todo TODO">TODO</span> This is a task to be done</a></li>
+<li><a href="#sec-property-test/done-something-done">4.2. <span class="done DONE">DONE</span> Something done</a></li>
+<li><a href="#sec-property-test/some-other-section-with-tags-:hello:world:">4.3. Some other section with tags</a></li>
+<li><a href="#sec-property-test/let's-add-few-images">4.4. Let's add few images</a></li>
 </ul>
 </li>
-<li><a href="#sec-let's-draw-tables">4. Let's draw tables</a></li>
+<li><a href="#sec-let's-draw-tables">5. Let's draw tables</a></li>
 </ul>
 </div>
 </nav>
@@ -500,8 +501,45 @@ what <span class="org-keyword">is</span> this man!
 </div>
 </div>
 
+<div id="outline-container-org95b7160" class="outline-2">
+<h2 id="sec-buttons"><span class="section-number-2">2</span> Buttons</h2>
+<div class="outline-text-2" id="text-sec-buttons">
+
+<p>
+There are multiple buttons. Most common ones can be seen as tags in blog-ish
+sections of this website. Here is a showcase:
+</p>
+
+<p>
+<a href="#" class="btn">normal</a>  <a href="#" class="btn
+disabled">disabled</a> 
+</p>
+
+<p>
+For inline buttons, we add <code>.small</code> class like this → <a href="#"
+class="btn small">small</a>  <a href="#" class="btn small
+disabled">disabled</a> .
+</p>
+
+<p>
+Small buttons should gel well in paragraphs. Aliquam erat volutpat. Nunc
+eleifend leo vitae magna. In id erat non orci commodo lobortis. Proin neque
+<a href="#" class="btn small">small</a>  massa, cursus ut, gravida ut,
+lobortis eget, lacus. Sed diam. Praesent fermentum tempor tellus.
+</p>
+
+<p>
+Colored buttons are also there. Only two for now, one having the accent color
+<a href="#" class="btn small primary">★ | primary</a>  and other with
+highlight color <a href="#" class="btn small highlight">ⓘ | hear me </a>
+. We might add more but not really. The text now is only to fill in a few
+lines to cover buttons from below.
+</p>
+</div>
+</div>
+
 <div id="outline-container-org1f482dd" class="outline-2">
-<h2 id="sec-another-title"><span class="section-number-2">2</span> Another title</h2>
+<h2 id="sec-another-title"><span class="section-number-2">3</span> Another title</h2>
 <div class="outline-text-2" id="text-sec-another-title">
 
 <p>
@@ -524,7 +562,7 @@ tortor.  Nam euismod tellus id erat.
 </div>
 
 <div id="outline-container-org80c4768" class="outline-3">
-<h3 id="sec-another-title/hello-world"><span class="section-number-3">2.1</span> Hello world</h3>
+<h3 id="sec-another-title/hello-world"><span class="section-number-3">3.1</span> Hello world</h3>
 <div class="outline-text-3" id="text-sec-another-title/hello-world">
 
 <p>
@@ -540,7 +578,7 @@ Nam vestibulum accumsan nisl.
 </div>
 
 <div id="outline-container-org98694ee" class="outline-2">
-<h2 id="sec-property-test"><span class="section-number-2">3</span> Property test</h2>
+<h2 id="sec-property-test"><span class="section-number-2">4</span> Property test</h2>
 <div class="outline-text-2" id="text-sec-property-test">
 <pre class="example">
 ARCHIVE: value of archive
@@ -548,7 +586,7 @@ ARCHIVE: value of archive
 </div>
 
 <div id="outline-container-org20402e3" class="outline-3">
-<h3 id="sec-property-test/todo-this-is-a-task-to-be-done"><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> This is a task to be done</h3>
+<h3 id="sec-property-test/todo-this-is-a-task-to-be-done"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> This is a task to be done</h3>
 <div class="outline-text-3" id="text-sec-property-test/todo-this-is-a-task-to-be-done">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-01-26 Fri&gt;</span></span></p>
 
@@ -569,7 +607,7 @@ sapien.
 </div>
 
 <div id="outline-container-org689d4b0" class="outline-3">
-<h3 id="sec-property-test/done-something-done"><span class="section-number-3">3.2</span> <span class="done DONE">DONE</span> Something done</h3>
+<h3 id="sec-property-test/done-something-done"><span class="section-number-3">4.2</span> <span class="done DONE">DONE</span> Something done</h3>
 <div class="outline-text-3" id="text-sec-property-test/done-something-done">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-01-26 Fri 23:14]</span></span></p>
 
@@ -607,7 +645,7 @@ accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 </div>
 
 <div id="outline-container-org662a320" class="outline-3">
-<h3 id="sec-property-test/some-other-section-with-tags-:hello:world:"><span class="section-number-3">3.3</span> Some other section with tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="hello">hello</span>&#xa0;<span class="world">world</span></span></h3>
+<h3 id="sec-property-test/some-other-section-with-tags-:hello:world:"><span class="section-number-3">4.3</span> Some other section with tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="hello">hello</span>&#xa0;<span class="world">world</span></span></h3>
 <div class="outline-text-3" id="text-sec-property-test/some-other-section-with-tags-:hello:world:">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-01-26 Fri&gt;</span></span></p>
 
@@ -628,7 +666,7 @@ tellus lacinia purus, et dictum nunc justo sit amet elit.
 </div>
 
 <div id="outline-container-orgf7030da" class="outline-3">
-<h3 id="sec-property-test/let's-add-few-images"><span class="section-number-3">3.4</span> Let's add few images</h3>
+<h3 id="sec-property-test/let's-add-few-images"><span class="section-number-3">4.4</span> Let's add few images</h3>
 <div class="outline-text-3" id="text-sec-property-test/let's-add-few-images">
 
 
@@ -665,7 +703,7 @@ convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapie
 </div>
 
 <div id="outline-container-org556243f" class="outline-2">
-<h2 id="sec-let's-draw-tables"><span class="section-number-2">4</span> Let's draw tables</h2>
+<h2 id="sec-let's-draw-tables"><span class="section-number-2">5</span> Let's draw tables</h2>
 <div class="outline-text-2" id="text-sec-let's-draw-tables">
 
 
