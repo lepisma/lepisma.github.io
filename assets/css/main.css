@@ -1309,6 +1309,10 @@ li a {
   text-decoration: none;
   color: #fff;
   background-color: #002642; }
+  .btn.primary:hover {
+    background-color: #efefef;
+    background-image: none;
+    color: #000; }
 
 .image-link, .image-link:hover {
   background: none;
