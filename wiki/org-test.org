@@ -104,6 +104,28 @@ what is this man!
 [[file:../assets/favicons/mstile-310x150.png]]
 #+END_aside
 
+* Buttons
+There are multiple buttons. Most common ones can be seen as tags in blog-ish
+sections of this website. Here is a showcase:
+
+@@html:<a href="#" class="btn">normal</a> @@ @@html:<a href="#" class="btn
+disabled">disabled</a> @@
+
+For inline buttons, we add ~.small~ class like this → @@html:<a href="#"
+class="btn small">small</a> @@ @@html:<a href="#" class="btn small
+disabled">disabled</a> @@.
+
+Small buttons should gel well in paragraphs. Aliquam erat volutpat. Nunc
+eleifend leo vitae magna. In id erat non orci commodo lobortis. Proin neque
+@@html:<a href="#" class="btn small">small</a> @@ massa, cursus ut, gravida ut,
+lobortis eget, lacus. Sed diam. Praesent fermentum tempor tellus.
+
+Colored buttons are also there. Only two for now, one having the accent color
+@@html:<a href="#" class="btn small primary">★ | primary</a> @@ and other with
+highlight color @@html:<a href="#" class="btn small highlight">ⓘ | hear me </a>
+@@. We might add more but not really. The text now is only to fill in a few
+lines to cover buttons from below.
+
 * Another title
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci
 commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget,

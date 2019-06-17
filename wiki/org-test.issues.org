@@ -1,12 +1,14 @@
 #+TITLE: ~:org-mode-export-test/issues~
 #+SETUPFILE: ../assets/export.setup
 
-* Fix styling of TODO
+* DONE Fix styling of TODO
+CLOSED: [2019-06-18 Tue 00:03]
 :PROPERTIES:
 :CUSTOM_ID: pile-issue-1
 :END:
 
-* z value of ToC not sufficient to cover code blocks
+* DONE z value of ToC not sufficient to cover code blocks
+CLOSED: [2019-06-18 Tue 00:06]
 :PROPERTIES:
 :CUSTOM_ID: pile-issue-2
 :END:
@@ -16,7 +18,8 @@
 :CUSTOM_ID: pile-issue-3
 :END:
 
-* Small button class
+* DONE Small button class
+CLOSED: [2019-06-18 Tue 00:36]
 :PROPERTIES:
 :CUSTOM_ID: pile-issue-4
 :END:
