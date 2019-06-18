@@ -1,0 +1,51 @@
+#+TITLE: Weekly Review /24-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 24,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- [[https://jeremykun.com/2019/06/08/math-versus-data/][Math Versus Dirty Data – Math ∩ Programming]]. I can relate so much.
+- [[https://blog.stephenwolfram.com/2019/06/a-few-thoughts-about-deep-fakes/][A Few Thoughts about Deep Fakes]]
+- [[http://ruder.io/naacl2019/][NAACL 2019 Highlights]]
+- [[https://staltz.com/software-below-the-poverty-line.html][Software below the poverty line]]
+- Large-scale long-tailed recognition in an open world (cite:liu2019large).
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 24-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Worked (and working) a bit on my web page setup.
+
+* Media
+- [[https://aeon.co/essays/feminists-never-bought-the-idea-of-a-mind-set-free-from-its-body][Feminists never bought the idea of a mind set free from its body]]. I didn't
+  understand everything though.
+- [[https://www.stuffyoushouldknow.com/podcasts/how-area-51-works.htm][How Area 51 Works]]
+- [[https://www.stuffyoushouldknow.com/podcasts/sysk-selects-how-dying-works.htm][SYSK Selects: How Dying Works]]. By the way, here are the top 5 regrets
+  mentioned in the podcast:
+  + I wish I had been true to myself, not what was expected of me (by others)
+  + I wish I hadn't worked so hard
+  + I wish I'd have expressed my feelings
+  + Stayed in touch with my friends
+  + I wish I'd have let myself be happier
+
+[[bibliography:./references.bib]]
