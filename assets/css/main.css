@@ -1074,6 +1074,7 @@ hr {
 figcaption a,
 p a,
 .page-tags a,
+#crosslinks a:not(.highlight),
 li a {
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
   background-image: linear-gradient(#000, #000);
@@ -1088,6 +1089,7 @@ li a {
   figcaption a::selection,
   p a::selection,
   .page-tags a::selection,
+  #crosslinks a:not(.highlight)::selection,
   li a::selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8; }
@@ -1095,6 +1097,7 @@ li a {
   figcaption a::-moz-selection,
   p a::-moz-selection,
   .page-tags a::-moz-selection,
+  #crosslinks a:not(.highlight)::-moz-selection,
   li a::-moz-selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8; }
@@ -1116,6 +1119,11 @@ li a {
   .page-tags a:after,
   .page-tags a *:before,
   .page-tags a:before,
+  #crosslinks a:not(.highlight) *,
+  #crosslinks a:not(.highlight) *:after,
+  #crosslinks a:not(.highlight):after,
+  #crosslinks a:not(.highlight) *:before,
+  #crosslinks a:not(.highlight):before,
   li a *,
   li a *:after,
   li a:after,
@@ -1126,12 +1134,14 @@ li a {
   figcaption a:visited,
   p a:visited,
   .page-tags a:visited,
+  #crosslinks a:not(.highlight):visited,
   li a:visited {
     color: #000; }
   #breadcrumbs a:hover,
   figcaption a:hover,
   p a:hover,
   .page-tags a:hover,
+  #crosslinks a:not(.highlight):hover,
   li a:hover {
     text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
     background-image: linear-gradient(#000, #000);
@@ -1146,6 +1156,7 @@ li a {
     figcaption a:hover::selection,
     p a:hover::selection,
     .page-tags a:hover::selection,
+    #crosslinks a:not(.highlight):hover::selection,
     li a:hover::selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
@@ -1153,6 +1164,7 @@ li a {
     figcaption a:hover::-moz-selection,
     p a:hover::-moz-selection,
     .page-tags a:hover::-moz-selection,
+    #crosslinks a:not(.highlight):hover::-moz-selection,
     li a:hover::-moz-selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
       background: #c8c8c8; }
@@ -1174,6 +1186,11 @@ li a {
     .page-tags a:hover:after,
     .page-tags a:hover *:before,
     .page-tags a:hover:before,
+    #crosslinks a:not(.highlight):hover *,
+    #crosslinks a:not(.highlight):hover *:after,
+    #crosslinks a:not(.highlight):hover:after,
+    #crosslinks a:not(.highlight):hover *:before,
+    #crosslinks a:not(.highlight):hover:before,
     li a:hover *,
     li a:hover *:after,
     li a:hover:after,
@@ -1184,6 +1201,7 @@ li a {
     figcaption a:hover:visited,
     p a:hover:visited,
     .page-tags a:hover:visited,
+    #crosslinks a:not(.highlight):hover:visited,
     li a:hover:visited {
       color: #000; }
 
@@ -1257,6 +1275,35 @@ li a {
 .pile-link::after {
   background-color: #fff;
   content: "\00a0›"; }
+
+#crosslinks {
+  margin-top: 20px; }
+  #crosslinks a:not(.highlight) {
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #efefef;
+    border-radius: 1px;
+    font-family: "Open Sans";
+    font-variant: all-small-caps;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 2px;
+    background-image: none;
+    line-height: 8px;
+    white-space: nowrap; }
+    #crosslinks a:not(.highlight):hover {
+      background-color: #efefef;
+      background-image: none; }
+    #crosslinks a:not(.highlight).active {
+      text-shadow: none;
+      text-decoration: none;
+      color: #fff;
+      background-color: #2c3e50; }
+      #crosslinks a:not(.highlight).active:hover {
+        background-color: #efefef;
+        background-image: none;
+        color: #000; }
 
 .btn {
   padding: 7px 14px;
