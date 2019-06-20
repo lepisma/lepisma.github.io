@@ -26,7 +26,8 @@ CLOSED: [2019-06-18 Tue 00:36]
 
 As of now, there is only one ~.btn~ class which is used for everything.
 
-* Cross link block for wiki pages
+* DONE Cross link block for wiki pages
+CLOSED: [2019-06-21 Fri 03:03]
 :PROPERTIES:
 :CUSTOM_ID: pile-issue-5
 :END:
@@ -34,3 +35,8 @@ As of now, there is only one ~.btn~ class which is used for everything.
 Possible use cases are:
 1. Linking org source of page
 2. Linking issue page and document page
+
+* Hook for updating main file of an issues file
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-6
+:END:
