@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-05-26 Sun 23:42 -->
+<!-- 2019-06-23 Sun 21:28 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Org-links</title>
@@ -305,12 +305,13 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-05-26 Sun 22:06</div>
+  <div class='page-meta'>Last modified:  2019-06-23 Sun 21:27</div>
   <h1>Org-links</h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../emacs/index.html'>emacs</a> / <a href='../org-mode/index.html'>org-mode</a> / links</div>
+<div id='crosslinks'></div>
 <p>
 Org links are links inside org files (though you can also make them work <a href="https://orgmode.org/manual/Using-links-outside-Org.html">outside
 org</a>). I have been using them to maintain a lot of <i>buttons</i>, or things that are
@@ -341,23 +342,23 @@ that list along with the youtube embed trick from Malabarba. Export result for <
                      Playlist: Newest 6 songs <code>[:new 6]</code>
                    </h3>
                    <div class="bbq-list-container"><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/snW8QhjGNNE" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Don't Forget Me - <em>Night Traveler</em></div>
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/s1tAYmMjLdY" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">I Miss you - <em>Blink 182</em></div>
              </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/mH9ffXJmrY4" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Lollipop (Ode To Jim) - <em>Alvvays</em></div>
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/Xt5vXp0IYQA" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">So Smart - <em>Indoor Voices</em></div>
              </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/c-eVmAzx4og" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Miss You Love - <em>Silverchair</em></div>
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/p5Un9GH-Z0Q" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Healthy Moon - <em>DIIV</em></div>
              </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/8eYHvrgPqQ0" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Open Your Eyes - <em>Alter Bridge</em></div>
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/z-cISmtXk1M" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Umi - <em>Pinkshinyultrablast</em></div>
              </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/qcQ3iegpZTc" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">In Loving Memory - <em>Alter Bridge</em></div>
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/JQqFeCCuwW0" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Memories - <em>The Midnight</em></div>
              </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/MUwNvqjRBDo" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Save Me - <em>The Jesus And Mary Chain</em></div>
+               <iframe width="200" height="130" src="https://www.youtube.com/embed/4rJ9z6IXnb8" frameborder="0" allowfullscreen></iframe>
+               <div class="bbq-item-info">Los Angeles - <em>The Midnight</em></div>
              </div></div>
                  </div>
 </p>
@@ -365,29 +366,13 @@ that list along with the youtube embed trick from Malabarba. Export result for <
 <hr>
 
 <p>
-One feature that I would like is to have the ability to get link position in the
-buffer while defining the export function. Right now, the export function has
-the following signature:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">personal-link/export</span> (path desc backend<span class="org-parinfer-pretty-parensXdim-paren">)</span>
-  <span class="org-doc">"PATH and DESC come from the link markup. BACKEND is the export backend"</span>
-  <span class="org-string">"stuff"</span><span class="org-parinfer-pretty-parensXdim-paren">)</span>
-</pre>
-</div>
-
-<p>
-Follow function just allows the <code>path</code> but since you are <i>right there</i> you can just
-use <code>(point)</code> and go from there. This gets useful in cases where you have some
-contextual information about a section in the properties drawer and want a
-certain link type to respond based on that context.
-</p>
-
-<p>
-I keep a simple github issue type link that is defined like <code>[[gh:n]]</code> where <code>n</code> defines
-the issue number. Follow function simply looks in the section's property for a
-value of <code>GITHUB</code>. Works fine inside Emacs, but not in exports.
+One annoyance with links is that the export function looses buffer context (the
+<code>(point)</code> isn't at link's position), making it harder to export links that
+disambiguate based on surrounding information. At a certain point in time, I
+used to have github issue links that looked like <code>[[gh:n]]</code> where <code>n</code> defines the
+issue number. The idea was to look up repository path in the current headline's
+drawer before <i>interpreting</i> the link. This works with follow function but not in
+exports.
 </p>
 
 <p>
@@ -395,7 +380,7 @@ A workaround is to probably just use a snippet which looks up the property
 before creating the link. Since this repeats the url, it hurts portability of
 links (though I don't know why I would want to move these links around). A
 better way might be to have the snippet prepend a uuid and the export can then
-pick up the position. Meh, not that high on priority.
+pick up the position.
 </p>
 </div>
 <div id="postamble" class="status">
