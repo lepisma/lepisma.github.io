@@ -42,27 +42,16 @@ that list along with the youtube embed trick from Malabarba. Export result for ~
 
 -----
 
-One feature that I would like is to have the ability to get link position in the
-buffer while defining the export function. Right now, the export function has
-the following signature:
-
-#+BEGIN_SRC emacs-lisp
-  (defun personal-link/export (path desc backend)
-    "PATH and DESC come from the link markup. BACKEND is the export backend"
-    "stuff")
-#+END_SRC
-
-Follow function just allows the ~path~ but since you are /right there/ you can just
-use ~(point)~ and go from there. This gets useful in cases where you have some
-contextual information about a section in the properties drawer and want a
-certain link type to respond based on that context.
-
-I keep a simple github issue type link that is defined like ~[[gh:n]]~ where ~n~ defines
-the issue number. Follow function simply looks in the section's property for a
-value of ~GITHUB~. Works fine inside Emacs, but not in exports.
+One annoyance with links is that the export function looses buffer context (the
+~(point)~ isn't at link's position), making it harder to export links that
+disambiguate based on surrounding information. At a certain point in time, I
+used to have github issue links that looked like ~[[gh:n]]~ where ~n~ defines the
+issue number. The idea was to look up repository path in the current headline's
+drawer before /interpreting/ the link. This works with follow function but not in
+exports.
 
 A workaround is to probably just use a snippet which looks up the property
 before creating the link. Since this repeats the url, it hurts portability of
 links (though I don't know why I would want to move these links around). A
 better way might be to have the snippet prepend a uuid and the export can then
-pick up the position. Meh, not that high on priority.
+pick up the position.
