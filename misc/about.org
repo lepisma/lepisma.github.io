@@ -13,7 +13,7 @@
   <div id='links'>
     <a href='/'>prose</a>
     <a href='https://github.com/lepisma'>programs</a>
-    <a href='https://keybase.io/lepisma'>prattle</a>
+    <a href='/wiki/misc/contact.html'>prattle</a>
   </div>
 </div>
 #+END_EXPORT
