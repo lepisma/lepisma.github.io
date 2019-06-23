@@ -1,0 +1,8 @@
+#+TITLE: Feeds
+#+SETUPFILE: ../../assets/export.setup
+
+Atom feeds for various streams on this site:
+
+1. [[../../atom.xml][Blog]]
+2. [[../../journal/atom.xml][Journal]]
+3. [[../../log/atom.xml][Log]]
