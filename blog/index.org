@@ -14,9 +14,9 @@ activity [[../log/index.org][/log]].
 Filter by /tags/
 
 #+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
-(princ (pile-archive-tag-cloud))
+(princ (pile-archive-format-tag-cloud))
 #+END_SRC
 
 #+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
-(princ (pile-archive))
+(princ (pile-archive-format))
 #+END_SRC
