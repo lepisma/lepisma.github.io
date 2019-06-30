@@ -5166,6 +5166,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** Walking. A Novella
+:PROPERTIES:
+:AUTHOR:   Thomas Bernhard, Kenneth J. Northcott, Brian Evenson
+:ADDED:    [2019-06-30]
+:GOODREADS: https://www.goodreads.com/book/show/24693181-walking-a-novella
+:END:
+
 *** READ Cat's Cradle
 CLOSED: [2018-12-30 Sun 00:38]
 :PROPERTIES:
