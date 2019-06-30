@@ -55,3 +55,10 @@ separated in chapters and sections. I am following [[https://www.amazon.in/gp/pr
 ** TODO The chemical aspect of growth
 
 ** TODO Of regeneration, or growth and repair
+
+* On The Internal Form and Structure of the Cell
+
+#+begin_quote
+The /things/ which we see in the cell are less important than the /actions/ which we
+recognise in the cell..
+#+end_quote
