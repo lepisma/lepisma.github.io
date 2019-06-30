@@ -7,5 +7,5 @@ either good as a reference or are nice intro to a topic in isolation.
 * Pages in this section
 
 #+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
-(princ (pile-index-generate))
+(princ (pile-index-format))
 #+END_SRC

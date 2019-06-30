@@ -9,5 +9,5 @@ A list of all the pages in this wiki follows. See [[pile:wiki:misc/colophon][col
 these pages are built.
 
 #+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
-(princ (pile-index-generate))
+(princ (pile-index-format))
 #+END_SRC

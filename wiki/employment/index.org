@@ -6,5 +6,5 @@ Notes on my employment and related experiences. Past, current and future (?).
 * Pages in this section
 
 #+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
-(princ (pile-index-generate))
+(princ (pile-index-format))
 #+END_SRC
