@@ -253,6 +253,50 @@ random search.
 
 * AI/ML
 
+** READ Bayesian learning via stochastic gradient Langevin dynamics
+CLOSED: [2019-07-02 Tue 22:52]
+:PROPERTIES:
+:CUSTOM_ID: welling2011bayesian
+:YEAR:     2011
+:AUTHOR:   Welling, Max and Teh, Yee W
+:END:
+
+The update equation here is a minibatched SGD's with a normal noise factor
+$\eta$:
+
+\[ \Delta\theta_{t} = \frac{\epsilon_{t}}{2}  \left(\nabla \log p (\theta_{t})  + \frac{N}{n} \sum_{i=1}^{n} \nabla \log p (x_{ti} | \theta_{t}) \right) + \eta_{t} \]
+
+Main results involve showing that, when the rate $\epsilon$ decays following
+certain properties, the noise due to minibatch dominates in the initial phase
+giving us normal SGD while the $\eta$ noise dominates in the later phase which
+basically lets us sample from the posterior of $\theta$.
+
+The question of when to say we are in the sampling phase (so that we can start
+collecting samples, taking the SGD phase as burn-in) is also answered though I
+am missing some statistical tooling at the moment to appreciate it.
+
+** READ Learning by analogy: Formulating and generalizing plans from past experience
+CLOSED: [2019-07-02 Tue 22:52]
+:PROPERTIES:
+:CUSTOM_ID: carbonell1983learning
+:YEAR:     1983
+:AUTHOR:   Carbonell, Jaime G
+:END:
+
+The summary overall is /solving problems/ $\equiv$ /learning to solve problems/.
+This is probably in general applicable to all analogy based methods but here the
+idea is also to apply /learnings/ from one problem/domain to others. Two key
+components are involved here:
+
+1. Apply a /generic problem solver/ (in the classical planning sense) to higher
+   order problems like reducing a past solution to a new solution for another
+   problem.
+2. A learning system which helps in learning parameters for a memory table which
+   indexes actions based on the effects they produce.
+
+Like in many older papers a lot of deliberations from here too are probably now
+parametrized and learned.
+
 ** READ Large-Scale Long-Tailed Recognition in an Open World
 CLOSED: [2019-06-14 Fri 00:19]
 :PROPERTIES:

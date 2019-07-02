@@ -1,0 +1,50 @@
+#+TITLE: Weekly Review /26-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 26,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Learning by analogy: formulating and generalizing plans from past experience
+  (cite:carbonell1983learning)
+- Bayesian learning via stochastic gradient langevin dynamics
+  (cite:welling2011bayesian)
+- [[https://ecoevoevoeco.blogspot.com/2019/06/eco-evolutionary-dynamics-of-sexual.html][Eco-evolutionary dynamics of sexual selection]]
+- [[https://esoteric.codes/blog/peter-wildman-deconstructing-code][Deconstructing Code with Exceptional Texts]]. Hmm... I need to read /The Story of
+  Art/ sooner.
+- Finished [[https://github.com/clojure-cookbook/clojure-cookbook][Clojure cookbook]].
+- Started using [[https://github.com/ledger/ledger][ledger]] properly this time.
+- Algebraic effects from [[https://www.eff-lang.org/try/][Eff]].
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 26-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://www.stuffyoushouldknow.com/podcasts/sysk-selects-whats-the-deal-with-crop-circles.htm][SYSK Selects: What's the Deal with Crop Circles?]] This reminds me of a book I
+  had with all these /unsolved/ mysteries. I found that pretty interesting when I
+  was younger. Don't really understand why I don't think any of them had any
+  truth, even without being explicitly told about the farce in each.
+- [[https://aeon.co/essays/how-disney-took-to-subverting-its-own-romantic-ideals][How Disney took to subverting its own romantic ideals]]
+- [[https://aeon.co/essays/enlightenment-does-not-demand-disenchantment-with-the-world][Enlightenment does not demand disenchantment with the world]]
+- [[http://m.nautil.us/issue/30/identity/the-strange-persistence-of-first-languages][The Strange Persistence of First Languages]]
+- [[https://aeon.co/ideas/richard-feynman-was-wrong-about-beauty-and-truth-in-science][Richard Feynman was wrong about beauty and truth in science]]

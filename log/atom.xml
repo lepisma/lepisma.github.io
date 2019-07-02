@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>log</title>
   <link href="https://lepisma.xyz/log"/>
-  <updated>2019-06-21</updated>
+  <updated>2019-07-03</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Weekly Review /26-2019/</title>
+    <link href="https://lepisma.xyz/log/2019/07/02/weekly-review/index.html"/>
+    <updated>2019-07-02</updated>
+  </entry>
   <entry>
     <title>Weekly Review /24-2019/</title>
     <link href="https://lepisma.xyz/log/2019/06/18/weekly-review/index.html"/>
