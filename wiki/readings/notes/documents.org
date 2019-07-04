@@ -253,6 +253,21 @@ random search.
 
 * AI/ML
 
+** READ Entity-Aware Language Model as an Unsupervised Reranker
+CLOSED: [2019-07-05 Fri 00:05]
+:PROPERTIES:
+:CUSTOM_ID: rasooli2018entity
+:YEAR:     2018
+:AUTHOR:   Rasooli, Mohammad Sadegh and Parthasarathy, Sarangarajan
+:END:
+
+A few nice ideas. One was to autogenerate n-best list for a certain true text
+using phonetic similarity and subsequent LM reranking. Overall idea is to
+somehow introduce the relation between potential entities in the text while
+ranking alternatives. The exact approach looks a little too much and I would
+like to know more about how and why the decisions were taken even though
+whatever they did sounds intuitive. Backstories people.
+
 ** READ Bayesian learning via stochastic gradient Langevin dynamics
 CLOSED: [2019-07-02 Tue 22:52]
 :PROPERTIES:
