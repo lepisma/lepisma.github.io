@@ -62,3 +62,9 @@ separated in chapters and sections. I am following [[https://www.amazon.in/gp/pr
 The /things/ which we see in the cell are less important than the /actions/ which we
 recognise in the cell..
 #+end_quote
+
+-----
+
+There is a nice description of the process of cell division here. Not sure about
+the exactness of the understanding as per our current knowledge, but the way the
+idea was conveyed using abstractions of forces is beautiful.
