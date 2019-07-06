@@ -64,3 +64,6 @@ quick.
 - [[https://github.com/clibs/entr][entr]] helps in rerunning commands based on file changes.
 - [[https://github.com/MaartenBaert/ssr][SimpleScreenRecorder]] does most of the things I want. A few other fancier tools
   I tried don't work very nicely with tiling systems.
+- I like [[https://github.com/tobimensch/termsql][termsql]] for working with tabular data in terminal. There might be
+  better tools for particular use cases, but in general, just the possibility of
+  using plain sql works nicely.
