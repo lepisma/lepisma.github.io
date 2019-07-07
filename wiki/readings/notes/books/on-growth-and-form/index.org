@@ -56,7 +56,8 @@ separated in chapters and sections. I am following [[https://www.amazon.in/gp/pr
 
 ** TODO Of regeneration, or growth and repair
 
-* On The Internal Form and Structure of the Cell
+* DONE On The Internal Form and Structure of the Cell
+CLOSED: [2019-07-07 Sun 14:40]
 
 #+begin_quote
 The /things/ which we see in the cell are less important than the /actions/ which we
@@ -67,4 +68,24 @@ recognise in the cell..
 
 There is a nice description of the process of cell division here. Not sure about
 the exactness of the understanding as per our current knowledge, but the way the
-idea was conveyed using abstractions of forces is beautiful.
+idea was conveyed using abstractions of forces is beautiful. A point to note is
+that:
+
+#+begin_quote
+... it is not our purpose to /assert/ that some one particular mode of action is
+at work, but merely to shew that there do exist physical forces, or
+distributions of force, which are capable of producing the required result ...
+#+end_quote
+
+-----
+
+A piece that I find interesting is of /Hydrodynamic magnetism/ wherein particles
+in a fluid which are oscillating or pulsating create attractive and repulsive
+fields in the fluid similar to regular magnets. The general idea of /permeability/
+applies here and particles are attracted or repelled depending on their
+permeability with respect to the surrounding fluids.
+
+I am not able to figure out the right sets of words to see what this phenomenon
+is known as at the present.
+
+* TODO The Forms of Cells
