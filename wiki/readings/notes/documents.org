@@ -253,6 +253,25 @@ random search.
 
 * AI/ML
 
+** READ Building a conversational agent overnight with dialogue self-play
+CLOSED: [2019-07-07 Sun 19:48]
+:PROPERTIES:
+:CUSTOM_ID: shah2018building
+:YEAR:     2018
+:AUTHOR:   Shah, Pararth and Hakkani-T{\"u}r, Dilek and T{\"u}r, Gokhan and Rastogi, Abhinav and Bapna, Ankur and Nayak, Neha and Heck, Larry
+:END:
+
+Nice ideas in here plus insights for /practical/ systems like the following,
+
+#+begin_quote
+Covering complex interactions is important when developing datasets to benchmark
+research aimed towards building human-level dialogue systems. However, we argue
+that for consumer-facing chatbots, the primary aim is reliable coverage of
+critical user interactions.
+#+end_quote
+
+The generated dataset is [[https://github.com/google-research-datasets/simulated-dialogue][here]] by the way.
+
 ** READ Entity-Aware Language Model as an Unsupervised Reranker
 CLOSED: [2019-07-05 Fri 00:05]
 :PROPERTIES:
