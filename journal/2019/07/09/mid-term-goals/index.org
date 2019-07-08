@@ -1,0 +1,22 @@
+#+TITLE: Mid Term Goals
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: productivity, personal
+
+Even after doing decent enough scheduling of your day, there are things that
+just don't end up happening unless you switch to a better /framework/. Of course
+in an ideal world, you don't need anything other than interest and effort. But
+it's very noisy out here, so we need frameworks to filter, focus and deliver.
+
+In hindsight, my earlier attempts[fn::A few are mentioned in this journal] have
+been pretty myopic. Long term goals are by design hard to fit in a checklist but
+mid term ones can be covered as completely as short term ones. I have recently
+started to plan my weeks around /monthly targets/, each under one of the four
+major objectives that I have in mind, taking a page from the [[https://en.wikipedia.org/wiki/OKR][OKR]] framework.
+Things that don't push the monthly targets are not supposed to be touched.
+
+An important side-effect of writing down mid term goals is better visibility of
+long term possibilities in various threads that I am touching at the moment. A
+month is still pretty less time to be fair. You can pick up a certain thing and
+totally forget about it in the next month. What I am trying to do is to setup
+overlapping that finish in a sort of pipelined semesters, and see what comes
+out.

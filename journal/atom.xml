@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-07-01</updated>
+  <updated>2019-07-09</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Mid Term Goals</title>
+    <link href="https://lepisma.xyz/journal/2019/07/09/mid-term-goals/index.html"/>
+    <updated>2019-07-09</updated>
+  </entry>
   <entry>
     <title>Pointing at Things</title>
     <link href="https://lepisma.xyz/journal/2019/06/10/pointing-at-things/index.html"/>
