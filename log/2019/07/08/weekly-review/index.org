@@ -1,0 +1,41 @@
+#+TITLE: Weekly Review /27-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 27,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- Entity-aware language model as an unsupervised reranker
+  (cite:rasooli2018entity)
+- Building a conversational agent overnight with dialogue self-play
+  (cite:shah2018building)
+- [[http://www-bcf.usc.edu/~billmann/WMlinguistic/dcoherence.htm][Dialogue Coherence]]
+- [[https://www.theparisreview.org/blog/2018/02/12/absurdist-dialogues-siri/][Absurdist Dialogues with Siri]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 27-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://www.stuffyoushouldknow.com/podcasts/sysk-selects-what-makes-one-hit-wonder.htm][SYSK Selects: What Makes a One-hit Wonder?]]
+
+[[bibliography:./references.bib]]
