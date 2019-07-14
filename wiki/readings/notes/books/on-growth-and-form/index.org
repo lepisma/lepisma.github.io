@@ -89,3 +89,33 @@ I am not able to figure out the right sets of words to see what this phenomenon
 is known as at the present.
 
 * TODO The Forms of Cells
+
+A nice way of looking at inorganic vs organic is mentioned here. Inorganic
+growths mostly happen through depositions, resulting in planes (and thus edges).
+Organic however, happens through imbibition, which makes things more roundish
+because of surface tension and other structural causes which result in spherical
+symmetries.
+
+-----
+
+I like this line:
+
+#+begin_quote
+The principle of least action explains nothing, it tells us nothing of
+causation, yet it illuminates a host of things. Like Maxwell's equations and
+other such flashes of genius it clarifies our knowledge, adds weight to our
+observations, brings order into our stock-in-trade of facts.
+#+end_quote
+
+-----
+
+#+begin_quote
+... the world and all the parts thereof tend ever to pass from less to more
+probable configurations; in which the physicist recognises the principle of
+Clausius, ... with which the biologist must somehow reconcile the whole "theory
+of evolution".
+#+end_quote
+
+Every time the second law comes in context of evolution, it's always presented
+as a contradiction by stating /life is order/. The above line feels much better as
+you focus on a more important concern with /probability of configurations/.
