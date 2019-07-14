@@ -1,0 +1,70 @@
+#+TITLE: /print/ is a debugger
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: programming
+
+I have seen many arguments for and against using a debugger. [[https://lemire.me/blog/2016/06/21/i-do-not-use-a-debugger/][Here]] is a post
+/against/ debuggers[fn::His blog is a nice follow by the way]. I believe it ends
+up feeling wrong by using appeal to authority and comparing debuggers with ~print~
+statements/functions even after ending things like this:
+
+#+begin_quote
+I don’t want to be misunderstood, however. We need to use tools, better tools…
+so that we can program ever more sophisticated software. However, running
+through the code line-by-line checking the values of your variables is no way to
+scale up in complexity and it encourages the wrong kind of designs.
+#+end_quote
+
+The above statement is pretty reasonable, but we also see the following
+statement.
+
+#+begin_quote
+The author of Python, Guido van Rossum has been quoted as saying that uses print
+statements for 90% of his debugging.
+#+end_quote
+
+You either need to check a point error, or you don't. If yes, then ~print~ /is
+still a debugger/. Granted there are better ways to ensure code quality so that
+no random point errors occur but I don't get why people talk about differences
+in situations where the comparands are /fundamentally/ the same. Well, unless we
+are just talking about very specific tools like, say, Python's ~pdb~ vs Python's
+~print~.
+
+Debugger is not a /certain tool/, it's a class covering various abstractions of
+the ~break~, ~step~, ~continue~ cycle. Used in the wrong place, they are not worse
+than prints.
+
+-----
+
+What concerns me however is that these clichés propagate very easily and people
+stop giving respect to the context, environment and various use cases that
+programming as an act lies in.
+
+While I understand the concern of /knowing/ what you are writing[fn::I really do],
+at times I also worry that we overdo this to a level of stigma against /program
+inspection/. From what I have personally felt, working mostly with dynamic
+languages with good REPLs, an inspection tool is just an extension of your
+perceptions and that only helps in exploration. There are whole languages, and
+beautiful languages, built around the idea of exploration in /live/ systems. And
+debuggers /are/ inspection tools. Consider Emacs. After /days/ of up time, I
+regularly am in situations where I don't know everything about the machine
+state. Add to this the fact that Emacs Lisp is a dynamic language, throwing a
+bunch of ~expected string, got null~ type errors. Recently I have been just
+putting in ~edebug~ over things that fail and come to understand so much more
+about everything that goes around the whole event. What had stopped me from
+using ~edebug~ earlier were similar statements which made me confident that I
+should be able to solve the problem with just prints, without respecting the
+philosophy of the system I am working with. In fact, the original title for this
+post (which was started as a draft long before) was 'Don't waste your time, just
+use a debugger'.
+
+Whatever I said still doesn't excuse bad code/design. But I do believe in an
+/untelling/ of such /modi operandi/. Specially when programming is picked up by a
+lot of people without going through a formal education[fn::Not really saying
+that formal education is /required/, just using the phrase as a proxy for more
+complete understanding]. There are systems where the workflow very much involves
+understanding everything and following a rigid program-compile-test,
+program-compile-test cycle. Also there are critical systems where even without
+understanding everything, the same level of quality needs to be ensured. But
+there is so much more to programming than just safety and structure and
+reliability and everything /useful/. There are experiments, there is dynamism,
+there is uncertainty, there is collaboration, there are hacks and there is fun.
