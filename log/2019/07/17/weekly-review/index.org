@@ -30,7 +30,7 @@ width: 100%;
 * Readings/Explorations
 - Got to know about [[https://tabnine.com/][TabNine]]. Nice that someone is doing justice to this idea. I
   might now switch for prose, unless that also happens.
-- Read up [[http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm][Dialog Macrogame Theory]]. Nice idea but there sure looks limit.
+- Read up [[http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm][Dialog Macrogame Theory]]. Nice idea but there sure are limits.
 - Made more progress in /On Growth and Form/. Keeping notes [[pile:wiki:readings/notes/books/on-growth-and-form][here]].
 
 * Programming
