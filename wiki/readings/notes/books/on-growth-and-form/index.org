@@ -119,3 +119,15 @@ of evolution".
 Every time the second law comes in context of evolution, it's always presented
 as a contradiction by stating /life is order/. The above line feels much better as
 you focus on a more important concern with /probability of configurations/.
+
+-----
+
+An interesting footnote:
+
+#+begin_quote
+... The nodoid was represented upside down in the first edition of this book, a
+mistake into which others have fallen, including no less a person than Clerk
+Maxwell, in his article "Capillarity" in the Encycl. Brit. 9th ed.
+#+end_quote
+
+[[https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Capillary_Action][Here]] is a web version of the article. See Figure 12.
