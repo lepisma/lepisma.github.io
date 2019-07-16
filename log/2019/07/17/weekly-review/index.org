@@ -1,0 +1,43 @@
+#+TITLE: Weekly Review /28-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 28,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- As a /mid term goal/, I am working on having better understanding of
+  conversations and how to rewrite them without changing the underlying
+  grounding. There are some interesting ideas here related to incoherent
+  conversations that i will be continuing with further. Probably also a few blog
+  posts.
+
+* Readings/Explorations
+- Got to know about [[https://tabnine.com/][TabNine]]. Nice that someone is doing justice to this idea. I
+  might now switch for prose, unless that also happens.
+- Read up [[http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm][Dialog Macrogame Theory]]. Nice idea but there sure looks limit.
+- Made more progress in /On Growth and Form/. Keeping notes [[pile:wiki:readings/notes/books/on-growth-and-form][here]].
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 28-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://aeon.co/essays/metaphors-grow-the-mind-and-feed-the-soul-dont-lose-them][Metaphors grow the mind and feed the soul. Don’t lose them]]
+- [[https://aeon.co/essays/the-lessons-of-nissho-inoue-and-his-cell-of-zen-terrorists][The lessons of Nissho Inoue and his cell of zen terrorists]]
