@@ -1,0 +1,102 @@
+#+TITLE: Dialog /Veneering/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: ml
+
+A lot of things happen in human-machine dialog systems which don't fit in our
+default definition of dialogs. There are errors from machine's side and loads of
+counter behaviors shown up from the human side. Compared to human-human
+conversations, it's harder to look at these conversations from the viewpoint of
+earlier works in dialog formalization like (say) [[http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm][Dialog Macrogame Theory]].
+
+Overall, badly gone human-machine conversations are read as having certain
+programming or ML-ish /bugs/ instead of being understood as just failed
+conversations, which are not uncommon in human-human situations. Most of these
+/buggish/ dialogs can be /veneered/[fn::Using this term since it shows the initial
+intention of polishing out an error.] in ones which, still holding the same
+underlying parse, look more coherent. Here is an example (~M~ is for machine, ~H~ is
+for human) of a possible veneer:
+
+*A*: A /buggy/ conversation
+
++ ~M~: when do you want to go there?
+  + ~H parse = q(time)~
++ ~H~ 4pm
+  + ~M parse = inform(time=3pm~)
++ ~M~: {{{color-bg(red, okay at 3pm\, what date?)}}}
+  + ~H parse = ack(time=3pm), q(date)~
++ ~H~: {{{color-bg(yellow, not at 3\, 4 I said 4pm)}}}
+  + ~M parse = override(time=4pm)~
++ ~M~: okay at 4pm, and date?
+
+*B*: /Veneered/
+
++ ~M~: when do you want to go there?
+  + ~H parse = q(time)~
++ ~H~ 4pm
+  + ~M parse = inform(time=3pm~)
++ ~M~: okay at 3pm, what date?
+  + ~H parse = ack(time=3pm), q(date)~
++ ~H~: {{{color-bg(#aaffaa, ah I am busy actually let's do 4pm)}}}
+  + ~M parse = override(time=4pm)~
++ ~M~: okay at 4pm, and date?
+
+What might be possible is that for /any/ dialog, we can keep the parse
+constant[fn::You will need to be someone who knows both parties' mental models.
+Here you need to be a human who has worked on the machine.] while moving the
+whole conversation around in a certain /coherence-blame space/ which look like
+this:
+
+#+begin_aside
+You can totally play with context to make dialog A coherent. As an example,
+suppose that there is an internal joke connected to our human and 3pm which the
+machine is trying to pick on. But for all practical purposes, we can safely
+assume the usual common sense understanding of coherence.
+#+end_aside
+
+[[file:./space.svg]]
+
+What we just did is to move the conversation /A/ from a machine blame quadrant to
+user blame (although much less) one, all the while increasing the overall
+coherence.
+
+This space of coherence vs blame is interesting because of many reasons. First
+we would like to know what kinds of movements are possible from an /iso-parse/
+perspective. Is it possible to keep the blame on machine and still increase
+coherence? A better response like ~sorry I heard 3 did you mean 3pm?~ could do
+that[fn::This might look like needing a richer parse, with confidence, but you
+can always act dumb and ask for such confirmations all the time.]. At the
+moment, it seems like there are infinitely many movements but optimizing for
+coherence might turn out to be a nice learning problem.
+
+The space might have a zone of feasibility which forces a reduction in
+blame[fn::I need to define this rigorously. It looks like a measure of things
+that look like /unreasonable errors/ now.] when the coherence goes up as shown
+below. Also when parses become richer and/or more correct the horizontal span
+gets tighter.
+
+[[file:./space-feasible.svg]]
+
+Another interesting point is that the x axis doesn't really put roles to human
+or machine. The dumbest bug is equivalent to a reasonable misunderstanding if we
+are allowed to do veneers. Of course this is no relief since nothing got fixed.
+Taking this idea to human-human, open conversations, one major challenge is to
+identify the underlying parse. Can we really separate utterances from mental
+parses here? We sure have /interpretations/ as intermediate representations so we
+might try that.
+
+-----
+
+A few things that I will try next:
+
+1. Explore possible veneers with various restrictions. This is mostly going to
+   cluster according to the kinds of errors and counter attacks in different
+   types of human machine conversations.
+2. Experiment with few datapoints to see if it's possible to /always/ make a zero
+   blame coherent dialog from any starting point. If yes, can the effort be
+   quantified?
+3. Formalize terms like /blame/, /parse/ etc.
+4. Attempt creating a data set of bad dialogs where the target is to maintain
+   same parses (given a sets of NLU systems for both parties) while increasing
+   overall dialog coherence.
+5. Find actual use cases and interpretations of these things at various levels
+   of representations.

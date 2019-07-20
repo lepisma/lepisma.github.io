@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-07-14</updated>
+  <updated>2019-07-20</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Dialog /Veneering/</title>
+    <link href="https://lepisma.xyz/journal/2019/07/20/dialog-veneering/index.html"/>
+    <updated>2019-07-20</updated>
+  </entry>
   <entry>
     <title>/print/ is a debugger</title>
     <link href="https://lepisma.xyz/journal/2019/07/14/print-is-a-debugger/index.html"/>
