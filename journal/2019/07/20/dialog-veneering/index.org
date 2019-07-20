@@ -96,7 +96,7 @@ A few things that I will try next:
    quantified?
 3. Formalize terms like /blame/, /parse/ etc.
 4. Attempt creating a data set of bad dialogs where the target is to maintain
-   same parses (given a sets of NLU systems for both parties) while increasing
-   overall dialog coherence.
+   same parses (given NLU systems for both parties) while increasing overall
+   dialog coherence.
 5. Find actual use cases and interpretations of these things at various levels
    of representations.
