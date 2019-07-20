@@ -32,7 +32,7 @@ for human) of a possible veneer:
 
 + ~M~: when do you want to go there?
   + ~H parse = q(time)~
-+ ~H~ 4pm
++ ~H~ {{{color-bg(red, 3pm)}}}
   + ~M parse = inform(time=3pm~)
 + ~M~: okay at 3pm, what date?
   + ~H parse = ack(time=3pm), q(date)~
