@@ -48,9 +48,9 @@ this:
 
 #+begin_aside
 You can totally play with context to make dialog A coherent. As an example,
-suppose that there is an internal joke connected to our human and 3pm which the
-machine is trying to pick on. But for all practical purposes, we can safely
-assume the usual common sense understanding of coherence.
+suppose that there is an internal joke connecting our human with 3pm somehow,
+which the machine is trying to pick on. But for all practical purposes, we can
+safely assume the usual common sense understanding of coherence.
 #+end_aside
 
 [[file:./space.svg]]
