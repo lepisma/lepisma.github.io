@@ -41,10 +41,9 @@ for human) of a possible veneer:
 + ~M~: okay at 4pm, and date?
 
 What might be possible is that for /any/ dialogue, we can keep the parse
-constant[fn::You will need to be someone who knows both parties' mental models.
-Here you need to be a human who has worked on the machine.] while moving the
-whole conversation around in a certain /coherence-blame space/ which look like
-this:
+constant[fn::You need to be someone who knows both parties' mental models. Here
+you need to be a human who has worked on the machine.] while moving the whole
+conversation around in a certain /coherence-blame space/ which look like this:
 
 #+begin_aside
 You can totally play with context to make dialogue A coherent. As an example,
