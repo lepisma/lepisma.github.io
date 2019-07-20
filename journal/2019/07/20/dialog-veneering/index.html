@@ -4,7 +4,7 @@
 <!-- 2019-07-20 Sat 23:02 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Dialog Veneering</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -287,251 +287,179 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>Journal</h1>
+  <div class='page-meta'>2019-07-20 Sat 00:00</div>
+  <h1>Dialog <i>Veneering</i></h1>
 </div>
 </div>
 <div id="content">
-<script src="../assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../../..#ml'>ml</a></div>
+<p>
+<span class='dropcap'>A</span> lot of things happen in human-machine dialog systems which don't fit in our
+default definition of dialogs. There are errors from machine's side and loads of
+counter behaviors shown up from the human side. Compared to human-human
+conversations, it's harder to look at these conversations from the viewpoint of
+earlier works in dialog formalization like (say) <a href="http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm">Dialog Macrogame Theory</a>.
+</p>
 
 <p>
-This is an auxiliary blog where I put items which can change because of, say,
-change in my opinion/knowledge etc. This is going to have higher publishing
-frequency than my main blog.
+Overall, badly gone human-machine conversations are read as having certain
+programming or ML-ish <i>bugs</i> instead of being understood as just failed
+conversations, which are not uncommon in human-human situations. Most of these
+<i>buggish</i> dialogs can be <i>veneered</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> in ones which, still holding the same
+underlying parse, look more coherent. Here is an example (<code>M</code> is for machine, <code>H</code> is
+for human) of a possible veneer:
+</p>
+
+<p>
+<b>A</b>: A <i>buggy</i> conversation
+</p>
+
+<ul class="org-ul">
+<li><code>M</code>: when do you want to go there?
+<ul class="org-ul">
+<li><code>H parse = q(time)</code></li>
+</ul></li>
+<li><code>H</code> 4pm
+<ul class="org-ul">
+<li><code>M parse = inform(time=3pm</code>)</li>
+</ul></li>
+<li><code>M</code>: <font style="background-color: red"> okay at 3pm, what date?</font>
+<ul class="org-ul">
+<li><code>H parse = ack(time=3pm), q(date)</code></li>
+</ul></li>
+<li><code>H</code>: <font style="background-color: yellow"> not at 3, 4 I said 4pm</font>
+<ul class="org-ul">
+<li><code>M parse = override(time=4pm)</code></li>
+</ul></li>
+<li><code>M</code>: okay at 4pm, and date?</li>
+</ul>
+
+<p>
+<b>B</b>: <i>Veneered</i>
+</p>
+
+<ul class="org-ul">
+<li><code>M</code>: when do you want to go there?
+<ul class="org-ul">
+<li><code>H parse = q(time)</code></li>
+</ul></li>
+<li><code>H</code> 4pm
+<ul class="org-ul">
+<li><code>M parse = inform(time=3pm</code>)</li>
+</ul></li>
+<li><code>M</code>: okay at 3pm, what date?
+<ul class="org-ul">
+<li><code>H parse = ack(time=3pm), q(date)</code></li>
+</ul></li>
+<li><code>H</code>: <font style="background-color: #aaffaa"> ah I am busy actually let's do 4pm</font>
+<ul class="org-ul">
+<li><code>M parse = override(time=4pm)</code></li>
+</ul></li>
+<li><code>M</code>: okay at 4pm, and date?</li>
+</ul>
+
+<p>
+What might be possible is that for <i>any</i> dialog, we can keep the parse
+constant<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> while moving the
+whole conversation around in a certain <i>coherence-blame space</i> which look like
+this:
+</p>
+
+<aside>
+<p>
+You can totally play with context to make dialog A coherent. As an example,
+suppose that there is an internal joke connected to our human and 3pm which the
+machine is trying to pick on. But for all practical purposes, we can safely
+assume the usual common sense understanding of coherence.
+</p>
+</aside>
+
+
+<figure>
+<object type="image/svg+xml" data="./space.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+
+</figure>
+
+<p>
+What we just did is to move the conversation <i>A</i> from a machine blame quadrant to
+user blame (although much less) one, all the while increasing the overall
+coherence.
+</p>
+
+<p>
+This space of coherence vs blame is interesting because of many reasons. First
+we would like to know what kinds of movements are possible from an <i>iso-parse</i>
+perspective. Is it possible to keep the blame on machine and still increase
+coherence? A better response like <code>sorry I heard 3 did you mean 3pm?</code> could do
+that<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. At the
+moment, it seems like there are infinitely many movements but optimizing for
+coherence might turn out to be a nice learning problem.
+</p>
+
+<p>
+The space might have a zone of feasibility which forces a reduction in
+blame<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup> when the coherence goes up as shown
+below. Also when parses become richer and/or more correct the horizontal span
+gets tighter.
+</p>
+
+
+<figure>
+<object type="image/svg+xml" data="./space-feasible.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+
+</figure>
+
+<p>
+Another interesting point is that the x axis doesn't really put roles to human
+or machine. The dumbest bug is equivalent to a reasonable misunderstanding if we
+are allowed to do veneers. Of course this is no relief since nothing got fixed.
+Taking this idea to human-human, open conversations, one major challenge is to
+identify the underlying parse. Can we really separate utterances from mental
+parses here? We sure have <i>interpretations</i> as intermediate representations so we
+might try that.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+A few things that I will try next:
 </p>
 
-<div class='page-tags'><a href='#books'>books</a> <a href='#emacs'>emacs</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#philosophy'>philosophy</a> <a href='#productivity'>productivity</a> <a href='#programming'>programming</a></div>
+<ol class="org-ol">
+<li>Explore possible veneers with various restrictions. This is mostly going to
+cluster according to the kinds of errors and counter attacks in different
+types of human machine conversations.</li>
+<li>Experiment with few datapoints to see if it's possible to <i>always</i> make a zero
+blame coherent dialog from any starting point. If yes, can the effort be
+quantified?</li>
+<li>Formalize terms like <i>blame</i>, <i>parse</i> etc.</li>
+<li>Attempt creating a data set of bad dialogs where the target is to maintain
+same parses (given a sets of NLU systems for both parties) while increasing
+overall dialog coherence.</li>
+<li>Find actual use cases and interpretations of these things at various levels
+of representations.</li>
+</ol>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2019-07-20</div>
-<p class="archive-title">
-<a href="./2019/07/20/dialog-veneering/index.html" class="archive-title">Dialog <i>Veneering</i></a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">Using this term since it shows the initial
+intention of polishing out an error.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-07-14</div>
-<p class="archive-title">
-<a href="./2019/07/14/print-is-a-debugger/index.html" class="archive-title"><i>print</i> is a debugger</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">You will need to be someone who knows both parties' mental models.
+Here you need to be a human who has worked on the machine.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-07-09</div>
-<p class="archive-title">
-<a href="./2019/07/09/mid-term-goals/index.html" class="archive-title">Mid Term Goals</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">This might look like needing a richer parse, with confidence, but you
+can always act dumb and ask for such confirmations all the time.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-06-10</div>
-<p class="archive-title">
-<a href="./2019/06/10/pointing-at-things/index.html" class="archive-title">Pointing at Things</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">I need to define this rigorously. It looks like a measure of things
+that look like <i>unreasonable errors</i> now.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-05-13</div>
-<p class="archive-title">
-<a href="./2019/05/13/dvc/index.html" class="archive-title">DVC and ML reproducibility</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#ml'>ml</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-02-23</div>
-<p class="archive-title">
-<a href="./2019/02/23/the-human-messiness/index.html" class="archive-title">The Human Messiness</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-01-06</div>
-<p class="archive-title">
-<a href="./2019/01/06/plugins/index.html" class="archive-title">Plugins for the Rest of us</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-30</div>
-<p class="archive-title">
-<a href="./2018/12/30/books-read-in-2018/index.html" class="archive-title">Books Read in 2018</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#books'>books</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-14</div>
-<p class="archive-title">
-<a href="./2018/12/14/buffer-model-gotcha/index.html" class="archive-title">Buffer Model Gotcha</a>
-</p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-05</div>
-<p class="archive-title">
-<a href="./2018/12/05/dataframes-as-shell-intermediates/index.html" class="archive-title">DataFrames as Shell Intermediates</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-11-11</div>
-<p class="archive-title">
-<a href="./2018/11/11/self-contained-org-files/index.html" class="archive-title">Self-contained Org files</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-11-05</div>
-<p class="archive-title">
-<a href="./2018/11/05/interstices/index.html" class="archive-title">Interstices</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-07</div>
-<p class="archive-title">
-<a href="./2018/10/07/lisp-shell-scripts/index.html" class="archive-title">Lisp Shell Scripts</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-30</div>
-<p class="archive-title">
-<a href="./2018/09/30/kde-connect/index.html" class="archive-title">KDE Connect is Awesome!</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-24</div>
-<p class="archive-title">
-<a href="./2018/09/24/analogies/index.html" class="archive-title">Analogies</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-14</div>
-<p class="archive-title">
-<a href="./2018/09/14/weekly-reviews/index.html" class="archive-title">Weekly Reviews</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/jupyter/index.html" class="archive-title">What are Jupyter notebooks for?</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-11</div>
-<p class="archive-title">
-<a href="./2018/08/11/rational-theists.html" class="archive-title">Rational Theists</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-02</div>
-<p class="archive-title">
-<a href="./2018/08/02/really-using-org-mode.html" class="archive-title">Really using Org Mode</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-01</div>
-<p class="archive-title">
-<a href="./2018/08/01/defer.html" class="archive-title">Defer Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-31</div>
-<p class="archive-title">
-<a href="./2018/07/31/bail-out.html" class="archive-title">Bail Out Macro</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-07-18</div>
-<p class="archive-title">
-<a href="./2018/07/18/partial-moq.html" class="archive-title">A Partial Interpretation of <i>Metaphysics‑of‑Quality</i></a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-18</div>
-<p class="archive-title">
-<a href="./2018/06/18/impactful-books.html" class="archive-title">Most Impactful Books</a>
-</p>
-<div class='page-tags'><a href='#books'>books</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-14</div>
-<p class="archive-title">
-<a href="./2018/06/14/irrationalization.html" class="archive-title">Irrationalization and Selfishness</a>
-</p>
-<div class='page-tags'><a href='#philosophy'>philosophy</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-09</div>
-<p class="archive-title">
-<a href="./2018/06/09/functions-as-state.html" class="archive-title">Functions as state</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-05-28</div>
-<p class="archive-title">
-<a href="./2018/05/28/utilities.html" class="archive-title">Utilities pitfall</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-14</div>
-<p class="archive-title">
-<a href="./2018/02/14/lazy-answer.html" class="archive-title">The Lazy Answer to Everything</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-02-12</div>
-<p class="archive-title">
-<a href="./2018/02/12/hours-over-deadline.html" class="archive-title">Schedule Hours not Deadlines</a>
-</p>
-<div class='page-tags'><a href='#productivity'>productivity</a> <a href='#personal'>personal</a></div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
