@@ -4,9 +4,9 @@
 
 A lot of things happen in human-machine dialogue systems which don't fit in our
 default definition of dialogues. There are errors from machine's side and loads
-of counter behaviors shown up from the human side. Compared to human-human
-conversations, it's harder to look at these conversations from the viewpoint of
-earlier works in dialogue formalization like (say) [[http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm][Dialogue Macrogame Theory]].
+of counter behaviors from the human side. Compared to human-human conversations,
+it's harder to look at these conversations from the viewpoint of earlier works
+in dialogue formalization like (say) [[http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm][Dialogue Macrogame Theory]].
 
 Overall, badly gone human-machine conversations are read as having certain
 programming or ML-ish /bugs/ instead of being understood as just failed
