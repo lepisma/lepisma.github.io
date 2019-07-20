@@ -69,9 +69,8 @@ coherence might turn out to be a nice learning problem.
 
 The space might have a zone of feasibility which forces a reduction in
 blame[fn::I need to define this rigorously. It looks like a measure of things
-that look like /unreasonable errors/ now.] when the coherence goes up as shown
-below. Also when parses become richer and/or more correct the horizontal span
-gets tighter.
+that are /unreasonable errors/.] when the coherence goes up as shown below. Also
+when parses become richer and/or more correct the horizontal span gets tighter.
 
 [[file:./space-feasible.svg]]
 
@@ -79,7 +78,7 @@ Another interesting point is that the x axis doesn't really specify roles like
 human or machine. The dumbest bug is equivalent to a reasonable misunderstanding
 if we are allowed to do veneers. Of course this is no relief since nothing got
 fixed. Taking this idea to human-human, open conversations, one major challenge
-is to identify the underlying parse. Can we really separate utterances from
+is to identify the underlying parses. Can we really separate utterances from
 mental parses here? We sure have /interpretations/ as intermediate representations
 so we might try that.
 
