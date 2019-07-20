@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-07-20 Sat 23:34 -->
+<!-- 2019-07-20 Sat 23:36 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dialog Veneering</title>
+<title>Dialogue Veneering</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -288,24 +288,24 @@ for the JavaScript code in this tag.
 
 <div class='page-header'>
   <div class='page-meta'>2019-07-20 Sat 00:00</div>
-  <h1>Dialog <i>Veneering</i></h1>
+  <h1>Dialogue <i>Veneering</i></h1>
 </div>
 </div>
 <div id="content">
 <div class='page-tags'><a href='../../../..#ml'>ml</a></div>
 <p>
-<span class='dropcap'>A</span> lot of things happen in human-machine dialog systems which don't fit in our
-default definition of dialogs. There are errors from machine's side and loads of
-counter behaviors shown up from the human side. Compared to human-human
+<span class='dropcap'>A</span> lot of things happen in human-machine dialogue systems which don't fit in our
+default definition of dialogues. There are errors from machine's side and loads
+of counter behaviors shown up from the human side. Compared to human-human
 conversations, it's harder to look at these conversations from the viewpoint of
-earlier works in dialog formalization like (say) <a href="http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm">Dialog Macrogame Theory</a>.
+earlier works in dialogue formalization like (say) <a href="http://www-bcf.usc.edu/~billmann/dialogue/dmt.htm">Dialogue Macrogame Theory</a>.
 </p>
 
 <p>
 Overall, badly gone human-machine conversations are read as having certain
 programming or ML-ish <i>bugs</i> instead of being understood as just failed
 conversations, which are not uncommon in human-human situations. Most of these
-<i>buggish</i> dialogs can be <i>veneered</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> in ones which, still holding the same
+<i>buggish</i> dialogues can be <i>veneered</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> in ones which, still holding the same
 underlying parse, look more coherent. Here is an example (<code>M</code> is for machine, <code>H</code> is
 for human) of a possible veneer:
 </p>
@@ -359,7 +359,7 @@ for human) of a possible veneer:
 </ul>
 
 <p>
-What might be possible is that for <i>any</i> dialog, we can keep the parse
+What might be possible is that for <i>any</i> dialogue, we can keep the parse
 constant<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> while moving the
 whole conversation around in a certain <i>coherence-blame space</i> which look like
 this:
@@ -367,7 +367,7 @@ this:
 
 <aside>
 <p>
-You can totally play with context to make dialog A coherent. As an example,
+You can totally play with context to make dialogue A coherent. As an example,
 suppose that there is an internal joke connecting our human with 3pm somehow,
 which the machine is trying to pick on. But for all practical purposes, we can
 safely assume the usual common sense understanding of coherence.
@@ -432,12 +432,12 @@ A few things that I will try next:
 cluster according to the kinds of errors and counter attacks in different
 types of human machine conversations.</li>
 <li>Experiment with few datapoints to see if it's possible to <i>always</i> make a zero
-blame coherent dialog from any starting point. If yes, can the effort be
+blame coherent dialogue from any starting point. If yes, can the effort be
 quantified?</li>
 <li>Formalize terms like <i>blame</i>, <i>parse</i> etc.</li>
-<li>Attempt creating a data set of bad dialogs where the target is to maintain
+<li>Attempt creating a data set of bad dialogues where the target is to maintain
 same parses (given NLU systems for both parties) while increasing overall
-dialog coherence.</li>
+dialogue coherence.</li>
 <li>Find actual use cases and interpretations of these things at various levels
 of representations.</li>
 </ol>
