@@ -1,0 +1,52 @@
+#+TITLE: Weekly Review /29-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 29,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- Continued with explorations of dialogue related problems that can potentially
+  turn out to be hard or interesting. A few updates are [[pile:journal:2019/07/20/dialog-veneering][here]]. Works in /dialogue
+  alignment/ have nice threads to follow.
+
+* Readings/Explorations
+- Probing neural network comprehension of natural language arguments
+  (cite:niven2019probing).
+- Alignment in dialogue (cite:garrod2007alignment).
+- Statistical user simulation with a hidden agenda
+  (cite:schatzmann2007statistical).
+- Collaborative Multi-Agent Dialogue Model Training Via Reinforcement Learning
+  (cite:papangelis2019collaborative).
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 29-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+- Finished porting my player to lisp completely. Onto more important things now.
+
+* Media
+- [[https://www.zedbooks.net/blog/posts/free-time-pressures-employability-refusal-work/][Refusal of Work: Free Time and the Pressures of Employability]]. Among other
+  things, I got a nice take on education's purpose here, which is to /enable
+  enjoyment of life's more complex pleasures/.
+-  [[https://aeon.co/essays/what-can-schrodingers-cat-say-about-3d-printers-on-mars][What can Schrödinger’s cat say about 3D printers on Mars?]] Not a lot of new
+  information but I like the way of differentiating the words /life/ (lineage of
+  functional information) and /alive/ (things that maintain themselves).
+
+[[bibliography:./references.bib]]

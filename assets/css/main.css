@@ -1074,6 +1074,7 @@ hr {
 figcaption a,
 p a,
 .page-tags a,
+table a,
 #crosslinks a:not(.highlight),
 li a {
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
@@ -1089,6 +1090,7 @@ li a {
   figcaption a::selection,
   p a::selection,
   .page-tags a::selection,
+  table a::selection,
   #crosslinks a:not(.highlight)::selection,
   li a::selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
@@ -1097,6 +1099,7 @@ li a {
   figcaption a::-moz-selection,
   p a::-moz-selection,
   .page-tags a::-moz-selection,
+  table a::-moz-selection,
   #crosslinks a:not(.highlight)::-moz-selection,
   li a::-moz-selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
@@ -1119,6 +1122,11 @@ li a {
   .page-tags a:after,
   .page-tags a *:before,
   .page-tags a:before,
+  table a *,
+  table a *:after,
+  table a:after,
+  table a *:before,
+  table a:before,
   #crosslinks a:not(.highlight) *,
   #crosslinks a:not(.highlight) *:after,
   #crosslinks a:not(.highlight):after,
@@ -1134,6 +1142,7 @@ li a {
   figcaption a:visited,
   p a:visited,
   .page-tags a:visited,
+  table a:visited,
   #crosslinks a:not(.highlight):visited,
   li a:visited {
     color: #000; }
@@ -1141,6 +1150,7 @@ li a {
   figcaption a:hover,
   p a:hover,
   .page-tags a:hover,
+  table a:hover,
   #crosslinks a:not(.highlight):hover,
   li a:hover {
     text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
@@ -1156,6 +1166,7 @@ li a {
     figcaption a:hover::selection,
     p a:hover::selection,
     .page-tags a:hover::selection,
+    table a:hover::selection,
     #crosslinks a:not(.highlight):hover::selection,
     li a:hover::selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
@@ -1164,6 +1175,7 @@ li a {
     figcaption a:hover::-moz-selection,
     p a:hover::-moz-selection,
     .page-tags a:hover::-moz-selection,
+    table a:hover::-moz-selection,
     #crosslinks a:not(.highlight):hover::-moz-selection,
     li a:hover::-moz-selection {
       text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
@@ -1186,6 +1198,11 @@ li a {
     .page-tags a:hover:after,
     .page-tags a:hover *:before,
     .page-tags a:hover:before,
+    table a:hover *,
+    table a:hover *:after,
+    table a:hover:after,
+    table a:hover *:before,
+    table a:hover:before,
     #crosslinks a:not(.highlight):hover *,
     #crosslinks a:not(.highlight):hover *:after,
     #crosslinks a:not(.highlight):hover:after,
@@ -1201,6 +1218,7 @@ li a {
     figcaption a:hover:visited,
     p a:hover:visited,
     .page-tags a:hover:visited,
+    table a:hover:visited,
     #crosslinks a:not(.highlight):hover:visited,
     li a:hover:visited {
       color: #000; }
