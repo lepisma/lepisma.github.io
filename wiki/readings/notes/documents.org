@@ -4,6 +4,8 @@
 
 This contains notes for paper-ish documents that I read.
 
+#+TOC: headlines 1
+
 * Evolution/Complexity
 
 ** READ Networks and history
@@ -252,6 +254,71 @@ random search.
  :END:
 
 * AI/ML
+
+** READ Probing Neural Network Comprehension of Natural Language Arguments
+CLOSED: [2019-07-22 Mon 23:53]
+:PROPERTIES:
+:CUSTOM_ID: niven2019probing
+:YEAR:     2019
+:AUTHOR:   Niven, Timothy and Kao, Hung-Yu
+:END:
+
+Was up on r/ml. The abstract is short and clear enough. The idea is that ARCT
+tasks have simple statistical cues which contribute in a major way for whatever
+SOTA we are getting. One you balance them out, even strong models like BERT take
+big hits and go to essentially random-ish performance.
+
+** READ Alignment in dialogue
+CLOSED: [2019-07-22 Mon 23:51]
+:PROPERTIES:
+:CUSTOM_ID: garrod2007alignment
+:YEAR:     2007
+:AUTHOR:   Garrod, Simon and Pickering, Martin J
+:END:
+
+Picked up this because I wanted to get general background of /alignment/ as a
+linguistic term. A few points I pulled out:
+
++ Common ground (stuff believed to be shared) is stricter than alignment which
+  only refers to the information that happens to be shared.
++ Ways of alignment:
+  1. via beliefs about one's interlocutor
+  2. via imitation
+  3. via agreements between interlocutors
+  4. via feedback
+  5. via physical co-presence
+
+** READ Statistical user simulation with a hidden agenda
+CLOSED: [2019-07-22 Mon 23:46]
+:PROPERTIES:
+:CUSTOM_ID: schatzmann2007statistical
+:YEAR:     2007
+:AUTHOR:   Schatzmann, Jost and Thomson, Blaise and Young, Steve
+:END:
+
+This was pointed to by cite:papangelis2019collaborative as a way of modeling
+users. Two good ideas here:
+
+1. Stack based agenda and the general decomposition of the process.
+2. Tractability piece where we try to put assumptions on various factors like
+   transition probabilities etc.
+
+** READ Collaborative Multi-Agent Dialogue Model Training Via Reinforcement Learning
+CLOSED: [2019-07-22 Mon 23:42]
+:PROPERTIES:
+:CUSTOM_ID: papangelis2019collaborative
+:YEAR:     2019
+:AUTHOR:   Papangelis, Alexandros and Wang, Yi-Chia and Molino, Piero and Tur, Gokhan
+:END:
+
+This is the paper which came out with Uber's [[https://github.com/uber-research/plato-research-dialogue-system][plato]]'s release. Here is what you
+need to know really:
+
+#+begin_quote
+Using DSTC2 as seed data, we trained NLU and NLG networks for each agent and let
+the agents interact and learn online optimal dialogue policies depending on
+their role (seeker or provider).
+#+end_quote
 
 ** READ Building a conversational agent overnight with dialogue self-play
 CLOSED: [2019-07-07 Sun 19:48]

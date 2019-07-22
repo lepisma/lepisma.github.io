@@ -1,5 +1,18 @@
 #+TITLE: ~:org-mode-export-test/issues~
 #+SETUPFILE: ../assets/export.setup
+#+TODO: TODO IN-PROGRESS | DONE
+
+-----
+
+#+BEGIN: kanban :mirrored nil
+| TODO                        | IN-PROGRESS | DONE                                                 |
+|-----------------------------+-------------+------------------------------------------------------|
+|                             |             | [[#pile-issue-1][Fix styling of TODO]]                                |
+|                             |             | [[#pile-issue-2][z value of ToC not sufficient to cover code blocks]] |
+| [[#pile-issue-3][ToC hover is a little off]] |             |                                                      |
+|                             |             | [[#pile-issue-4][Small button class]]                                 |
+|                             |             | [[#pile-issue-5][Cross link block for wiki pages]]                    |
+#+END:
 
 * DONE Fix styling of TODO
 CLOSED: [2019-06-18 Tue 00:03]
@@ -13,7 +26,7 @@ CLOSED: [2019-06-18 Tue 00:06]
 :CUSTOM_ID: pile-issue-2
 :END:
 
-* ToC hover is a little off
+* TODO ToC hover is a little off
 :PROPERTIES:
 :CUSTOM_ID: pile-issue-3
 :END:
