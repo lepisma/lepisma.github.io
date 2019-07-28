@@ -131,3 +131,23 @@ Maxwell, in his article "Capillarity" in the Encycl. Brit. 9th ed.
 #+end_quote
 
 [[https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Capillary_Action][Here]] is a web version of the article. See Figure 12.
+
+-----
+
+#+begin_quote
+In short, the naturalist admits no exception to the rule that "The fact that we
+are able to classify organisms at all in accordance with the structural
+characteristics which they present is due to the fact of their being related by
+descent."
+#+end_quote
+
+This contrasts with the physicists perspective:;
+
+#+begin_quote
+... regarding these "species" [referring to snowflakes] of his, the physicist
+makes no assumptions: he records them /simpliciter/; he notes, as best he can, the
+circumstances (such as temperature and humidity) under which each occurs, in the
+hope of elucidating the conditions which determine their formation; but above
+all, he does not introduce the element of time, and of succession, or discuss
+their origin and affiliation as an /historical/ sequence of events.
+#+end_quote
