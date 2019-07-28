@@ -141,7 +141,7 @@ characteristics which they present is due to the fact of their being related by
 descent."
 #+end_quote
 
-This contrasts with the physicists perspective:;
+This contrasts with the physicists' perspective:;
 
 #+begin_quote
 ... regarding these "species" [referring to snowflakes] of his, the physicist
