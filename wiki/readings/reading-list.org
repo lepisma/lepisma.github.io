@@ -143,6 +143,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** Good Enough: The Tolerance for Mediocrity in Nature and Society
+:PROPERTIES:
+:AUTHOR:   Daniel S. Milo
+:ADDED:    [2019-07-31]
+:AMAZON:   https://www.amazon.com/Good-Enough-Tolerance-Mediocrity-Society/dp/0674504623
+:END:
+
 *** A Crude Look at the Whole: The Science of Complex Systems in Business, Life, and Society
 :PROPERTIES:
 :AUTHOR:   John H. Miller
