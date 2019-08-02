@@ -1,0 +1,24 @@
+#+TITLE: Conflicting Posts
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+I was just now writing a post which could be perceived as being /against/ hard
+work. I now realize that I could have written a post /for/ hard work a few months
+back. I still believe in the ideas of both texts. The posts are not
+inconsistent, nor my thoughts unstable. But they will look so if I permit a
+comparison to a third party. More because I didn't carefully construct my
+arguments to be coherent and less because of any fundamental switch in my
+stances.
+
+Keeping writing skills aside[fn::Something to improve on.], there is always an
+incompleteness in text. The real spirit of both my arguments were conjured
+within certain contexts. A series of events provoked me to take perceptually
+well defined and distinct poles. While I could try to massage my polarity, I can
+not invalidate the very essence of those posts.
+
+I wonder whether, in the light of this view, it makes more sense to have
+experiences organized in such /argument clusters/ and their networks across time
+rather than a linear series which effectively implies /overrides/. Considering
+these /experiences/ as posts, there are practical proxies for those in usual blogs
+using things like 'tags' and 'categories', but I feel we can experiment with
+something much richer.
