@@ -20,8 +20,8 @@ language understanding units of the original parties.
 The veneering procedure now is something that takes an incoherent dialogue (or
 just sequence of parses) and returns a coherent /polylogue/[fn::Abuse of
 nomenclature mostly.] with the same parses. Here is an extension of the example
-from last post[fn::We probably don't need an explicit intervention but it does
-help.]:
+from last post[fn::We probably don't need an explicit intervention for this but
+it does help.]:
 
 *Input*: A /buggy/ dialogue
 
