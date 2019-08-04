@@ -87,5 +87,6 @@ pathological sequences of parses as they will need most of what we call
 + ~M parse = override(time=4pm)~
 
 This is going towards ideas in [[https://en.wikipedia.org/wiki/Computational_creativity][computational creativity]] and thus comes with
-things like lack of good objective metrics. At the same time, our focus on the
-more abstruse situations like the above makes this interesting.
+things like lack of good objective metrics which makes things a little vague. At
+the same time, our focus on the more abstruse situations like the above makes
+this interesting.
