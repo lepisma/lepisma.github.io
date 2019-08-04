@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-08-03</updated>
+  <updated>2019-08-04</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Interventional Dialogue Veneering</title>
+    <link href="https://lepisma.xyz/journal/2019/08/04/interventional-dialog-veneering/index.html"/>
+    <updated>2019-08-04</updated>
+  </entry>
   <entry>
     <title>Conflicting Posts</title>
     <link href="https://lepisma.xyz/journal/2019/08/03/conflicting-posts/index.html"/>

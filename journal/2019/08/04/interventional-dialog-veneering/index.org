@@ -1,0 +1,91 @@
+#+TITLE: Interventional Dialogue Veneering
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: ml
+
+#+BEGIN_export html
+<style>
+.org-svg {
+  width: auto;
+}
+</style>
+#+END_export
+
+Following the example of entity updation in the post on [[pile:journal:2019/07/20/dialog-veneering][dialogue veneering]], here
+we will try explaining away apparent errors in dialogues by conjuring third
+parties which can observe and /intervene/ in the process. These parties are not
+necessarily separate identities but abstractions that help put context in the
+final output of a veneer which reduces the burden of accurately modeling the
+language understanding units of the original parties.
+
+The veneering procedure now is something that takes an incoherent dialogue (or
+just sequence of parses) and returns a coherent /polylogue/[fn::Abuse of
+nomenclature mostly.] with the same parses. Here is an extension of the example
+from last post[fn::We probably don't need an explicit intervention but it does
+help.]:
+
+*Input*: A /buggy/ dialogue
+
++ ~M → H~: when do you want to go there?
+  + ~H parse = q(time)~
++ ~H → M~: 4pm
+  + ~M parse = inform(time=3pm~)
++ ~M → H~: {{{color-bg(#ffaaaa, okay at 3pm\, what date?)}}}
+  + ~H parse = ack(time=3pm), q(date)~
++ ~H → M~: {{{color-bg(yellow, not at 3\, 4 I said 4pm)}}}
+  + ~M parse = override(time=4pm)~
++ ~M → H~: okay at 4pm, and date?
+
+*Output*: A more reasonable trialogue
++ ~M → H~: when do you want to go there?
+  + ~H parse = q(time)~
++ ~H → M~: {{{color-bg(#ffaaaa, 3pm)}}}
+  + ~M parse = inform(time=3pm~)
++ ~M → H~: okay at 3pm, what date?
+  + ~H parse = ack(time=3pm), q(date)~
++ ~T → H~: {{{color-bg(#ccccff, you have a meeting at 3)}}}
++ ~H → M~: {{{color-bg(#aaffaa, ah I am busy actually let's do 4pm)}}}
+  + ~M parse = override(time=4pm)~
++ ~M → H~: okay at 4pm, and date?
+
+Influences follow the image below. Note that the dotted edges are not important
+for the above example.
+
+[[file:./connections.svg]]
+
+We can also try to /explain/ the error by personifying the actual issue like this:
+
+*Output*: A little less appealing alternative
++ ~M → H~: when do you want to go there?
+  + ~H parse = q(time)~
++ ~H → M~: 4pm
++ ~T → M~: /{{{color-bg(#ccccff, --loud noises--)}}}/
+  + ~M parse = inform(time=3pm~)
++ ~M → H~: {{{color-bg(#ffaaaa, okay at 3pm\, what date?)}}}
+  + ~H parse = ack(time=3pm), q(date)~
++ ~H → M~: {{{color-bg(yellow, not at 3\, 4 I said 4pm)}}}
+  + ~M parse = override(time=4pm)~
++ ~M → H~: okay at 4pm, and date?
+
+-----
+
+The aim is to create more interesting and meaningful /isoparse/ dialogues. This is
+basically asking for dialogue generators conditioned on a given list of parses
+from the two parties while allowing putting in extra context using
+interventional third parties. Should be easy to do for structured agenda based
+dialogues, even with /bugs/ since those will be of certain finite kinds.
+
+The harder part will involve creating systems that generalize on more
+pathological sequences of parses as they will need most of what we call
+/creativity/ to pull out a good story[fn::I still haven't got around to doing this
+/by hand/ so can't say more at the moment.]. A random example:
+
++ ~H parse = ack(time=3pm), q(date)~
++ ~M parse = override(time=4pm)~
++ ~H parse = ack(time=3pm), q(date)~
++ ~M parse = override(time=4pm)~
++ ~H parse = ack(time=3pm), q(date)~
++ ~M parse = override(time=4pm)~
+
+This is going towards ideas in [[https://en.wikipedia.org/wiki/Computational_creativity][computational creativity]] and thus comes with
+things like lack of good objective metrics. At the same time, our focus on the
+more abstruse situations like the above makes this interesting.
