@@ -647,7 +647,7 @@ CLOSED: [2018-09-30 Sun 15:33]
 :GOODREADS: https://www.goodreads.com/book/show/274495.The_Art_of_the_Metaobject_Protocol?from_search=true
 :END:
 
-*** The Mythical Man-Month: Essays on Software Engineering
+*** READING The Mythical Man-Month: Essays on Software Engineering
 :PROPERTIES:
 :AUTHOR:   Frederick P. Brooks Jr.
 :ADDED:    <2018-07-28>
