@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-12-26 Wed 23:31 -->
+<!-- 2019-08-20 Tue 01:19 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Language Exploration</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -213,7 +226,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -274,12 +287,13 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2018-12-26 Wed 23:30</div>
+  <div class='page-meta'>Last modified:  2019-08-20 Tue 01:18</div>
   <h1>Language Exploration</h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../programming/index.html'>programming</a> / languages</div>
+<div id='crosslinks'></div>
 <p>
 One of the parts of programming that I enjoy is learning/exploring new
 languages. This page aims to keep a log of that process (ignoring the languages
@@ -307,8 +321,8 @@ that I do explore for each language.
 </p>
 
 <div id="outline-container-org3ac8863" class="outline-2">
-<h2 id="sec-next-ada"><a id="org3ac8863"></a><span class="section-number-2">1</span> <span class="todo NEXT">NEXT</span> Ada</h2>
-<div class="outline-text-2" id="text-sec-next-ada">
+<h2 id="sec-todo-ada"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Ada</h2>
+<div class="outline-text-2" id="text-sec-todo-ada">
 
 
 <p>
@@ -318,8 +332,8 @@ Specifically, I am interested in its generic system.
 </div>
 
 <div id="outline-container-org159716d" class="outline-2">
-<h2 id="sec-next-apl/j/k"><a id="org159716d"></a><span class="section-number-2">2</span> <span class="todo NEXT">NEXT</span> APL/J/K</h2>
-<div class="outline-text-2" id="text-sec-next-apl/j/k">
+<h2 id="sec-todo-apl/j/k"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> APL/J/K</h2>
+<div class="outline-text-2" id="text-sec-todo-apl/j/k">
 
 
 <p>
@@ -333,7 +347,7 @@ Interested to look at this family because of:
 </div>
 
 <div id="outline-container-org7e466b2" class="outline-2">
-<h2 id="sec-c"><a id="org7e466b2"></a><span class="section-number-2">3</span> C</h2>
+<h2 id="sec-c"><span class="section-number-2">3</span> C</h2>
 <div class="outline-text-2" id="text-sec-c">
 
 
@@ -356,7 +370,7 @@ The following is in my list for C:
 </div>
 
 <div id="outline-container-orga0c4131" class="outline-2">
-<h2 id="sec-c++"><a id="orga0c4131"></a><span class="section-number-2">4</span> C++</h2>
+<h2 id="sec-c++"><span class="section-number-2">4</span> C++</h2>
 <div class="outline-text-2" id="text-sec-c++">
 
 
@@ -368,9 +382,22 @@ try it to learn some design patterns.
 </div>
 </div>
 
+<div id="outline-container-org3f8f51b" class="outline-2">
+<h2 id="sec-clojure"><span class="section-number-2">5</span> Clojure</h2>
+<div class="outline-text-2" id="text-sec-clojure">
+
+
+<p>
+Creating a new section since I somehow have ended up using this more than others
+from the Lisp family. Coming from Emacs Lisp and Common Lisp, <a href="https://github.com/clojure-cookbook/clojure-cookbook">Clojure Cookbook</a>
+was much better resource than the more famous ones like <a href="https://www.braveclojure.com">Brave Clojure</a>. YMMW.
+</p>
+</div>
+</div>
+
 <div id="outline-container-org00fff79" class="outline-2">
-<h2 id="sec-next-cobol"><a id="org00fff79"></a><span class="section-number-2">5</span> <span class="todo NEXT">NEXT</span> COBOL</h2>
-<div class="outline-text-2" id="text-sec-next-cobol">
+<h2 id="sec-todo-cobol"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> COBOL</h2>
+<div class="outline-text-2" id="text-sec-todo-cobol">
 
 
 <p>
@@ -379,9 +406,26 @@ Want to see how <i>English like</i> it really is.
 </div>
 </div>
 
+<div id="outline-container-orgfb26969" class="outline-2">
+<h2 id="sec-common-lisp"><span class="section-number-2">7</span> Common Lisp</h2>
+<div class="outline-text-2" id="text-sec-common-lisp">
+
+
+<p>
+I have been using Common Lisp occasionally and strongly recommend trying. Things
+that I am missing are probably from the popular books that I will try to cover
+soon. Specially <i>Let Over Lambda</i> and <i>The Art of Metaobject Protocol</i>.
+</p>
+
+<p>
+Lack of community hurts though.
+</p>
+</div>
+</div>
+
 <div id="outline-container-org14ab717" class="outline-2">
-<h2 id="sec-next-dylan"><a id="org14ab717"></a><span class="section-number-2">6</span> <span class="todo NEXT">NEXT</span> Dylan</h2>
-<div class="outline-text-2" id="text-sec-next-dylan">
+<h2 id="sec-todo-dylan"><span class="section-number-2">8</span> <span class="todo TODO">TODO</span> Dylan</h2>
+<div class="outline-text-2" id="text-sec-todo-dylan">
 
 
 <p>
@@ -393,8 +437,8 @@ probably be similar to how they feel in R or Julia, or maybe not.
 </div>
 
 <div id="outline-container-org55098c8" class="outline-2">
-<h2 id="sec-next-eiffel"><a id="org55098c8"></a><span class="section-number-2">7</span> <span class="todo NEXT">NEXT</span> Eiffel</h2>
-<div class="outline-text-2" id="text-sec-next-eiffel">
+<h2 id="sec-todo-eiffel"><span class="section-number-2">9</span> <span class="todo TODO">TODO</span> Eiffel</h2>
+<div class="outline-text-2" id="text-sec-todo-eiffel">
 
 
 <p>
@@ -403,9 +447,22 @@ probably be similar to how they feel in R or Julia, or maybe not.
 </div>
 </div>
 
+<div id="outline-container-org9d52ce4" class="outline-2">
+<h2 id="sec-emacs-lisp"><span class="section-number-2">10</span> Emacs Lisp</h2>
+<div class="outline-text-2" id="text-sec-emacs-lisp">
+
+
+<p>
+One of those language that tell you how pleasant programming can be even in a
+badly designed system <i>if</i> the language is well integrated in the environment and
+community is alive.
+</p>
+</div>
+</div>
+
 <div id="outline-container-orga072700" class="outline-2">
-<h2 id="sec-erlang"><a id="orga072700"></a><span class="section-number-2">8</span> Erlang</h2>
-<div class="outline-text-2" id="text-sec-erlang">
+<h2 id="sec-todo-erlang"><span class="section-number-2">11</span> <span class="todo TODO">TODO</span> Erlang</h2>
+<div class="outline-text-2" id="text-sec-todo-erlang">
 
 
 <p>
@@ -426,7 +483,7 @@ won't have much to throw at me if I look into the ML family first.
 </div>
 
 <div id="outline-container-org243205c" class="outline-2">
-<h2 id="sec-factor"><a id="org243205c"></a><span class="section-number-2">9</span> Factor</h2>
+<h2 id="sec-factor"><span class="section-number-2">12</span> Factor</h2>
 <div class="outline-text-2" id="text-sec-factor">
 
 
@@ -441,23 +498,26 @@ and trying to implement the language itself.
 </div>
 
 <div id="outline-container-orgab57162" class="outline-2">
-<h2 id="sec-haskell"><a id="orgab57162"></a><span class="section-number-2">10</span> Haskell</h2>
-<div class="outline-text-2" id="text-sec-haskell">
+<h2 id="sec-todo-haskell"><span class="section-number-2">13</span> <span class="todo TODO">TODO</span> Haskell</h2>
+<div class="outline-text-2" id="text-sec-todo-haskell">
 
 
 <p>
-Picking up Haskell after OCaml. Right now, I am working through the book <a href="http://learnyouahaskell.com/">Learn
-You a Haskell</a> and solving a few problems with it.
+Not sure if I will be using this IRL, but is a nice language to learn a lot of
+ideas from. A few resources that I have touched:
 </p>
 
-<p>
-I am also interested to learn more type theory in the process.
-</p>
+<ol class="org-ol">
+<li>Obviously <a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good!</a> Not sure if this really helped
+though. Too much of someone else controlling the speed made me stop somewhere
+midway.</li>
+<li><a href="https://github.com/soupi/haskell-study-plan">Haskell Study Plan</a>. This one is much more self paced, flexible and practical.</li>
+</ol>
 </div>
 </div>
 
 <div id="outline-container-org0d4d22b" class="outline-2">
-<h2 id="sec-io"><a id="org0d4d22b"></a><span class="section-number-2">11</span> Io</h2>
+<h2 id="sec-io"><span class="section-number-2">14</span> Io</h2>
 <div class="outline-text-2" id="text-sec-io">
 
 
@@ -479,7 +539,7 @@ I am more inclined to try that in Erlang, so nothing much to do here.
 </div>
 
 <div id="outline-container-org8ccb0a7" class="outline-2">
-<h2 id="sec-java"><a id="org8ccb0a7"></a><span class="section-number-2">12</span> Java</h2>
+<h2 id="sec-java"><span class="section-number-2">15</span> Java</h2>
 <div class="outline-text-2" id="text-sec-java">
 
 
@@ -492,7 +552,7 @@ again.
 </div>
 
 <div id="outline-container-orga1e04c2" class="outline-2">
-<h2 id="sec-javascript/typescript"><a id="orga1e04c2"></a><span class="section-number-2">13</span> JavaScript/TypeScript</h2>
+<h2 id="sec-javascript/typescript"><span class="section-number-2">16</span> JavaScript/TypeScript</h2>
 <div class="outline-text-2" id="text-sec-javascript/typescript">
 
 
@@ -506,8 +566,8 @@ runtime there will be some.
 </div>
 
 <div id="outline-container-orgb30fda5" class="outline-2">
-<h2 id="sec-julia"><a id="orgb30fda5"></a><span class="section-number-2">14</span> Julia</h2>
-<div class="outline-text-2" id="text-sec-julia">
+<h2 id="sec-todo-julia"><span class="section-number-2">17</span> <span class="todo TODO">TODO</span> Julia</h2>
+<div class="outline-text-2" id="text-sec-todo-julia">
 
 
 <p>
@@ -518,30 +578,9 @@ soon.
 </div>
 </div>
 
-<div id="outline-container-org1dd3921" class="outline-2">
-<h2 id="sec-lisp"><a id="org1dd3921"></a><span class="section-number-2">15</span> Lisp</h2>
-<div class="outline-text-2" id="text-sec-lisp">
-
-
-<p>
-I have been using a few (Emacs Lisp, Common Lisp, Hy) regularly now and strongly
-recommend trying.
-</p>
-
-<p>
-Things to learn
-</p>
-<ul class="org-ul">
-<li class="off">&#x2610; Reader macros from Common Lisp</li>
-<li class="off">&#x2610; CLOS</li>
-<li class="off">&#x2610; Concurrency constructs from Clojure</li>
-</ul>
-</div>
-</div>
-
 <div id="outline-container-org881926b" class="outline-2">
-<h2 id="sec-next-lua"><a id="org881926b"></a><span class="section-number-2">16</span> <span class="todo NEXT">NEXT</span> Lua</h2>
-<div class="outline-text-2" id="text-sec-next-lua">
+<h2 id="sec-todo-lua"><span class="section-number-2">18</span> <span class="todo TODO">TODO</span> Lua</h2>
+<div class="outline-text-2" id="text-sec-todo-lua">
 
 
 <p>
@@ -552,7 +591,7 @@ engines. Will be trying it while working on a game.
 </div>
 
 <div id="outline-container-orgb04ce50" class="outline-2">
-<h2 id="sec-nim"><a id="orgb04ce50"></a><span class="section-number-2">17</span> Nim</h2>
+<h2 id="sec-nim"><span class="section-number-2">19</span> Nim</h2>
 <div class="outline-text-2" id="text-sec-nim">
 
 
@@ -565,7 +604,7 @@ though so probably won't be jumping deeper here.
 </div>
 
 <div id="outline-container-org7064b25" class="outline-2">
-<h2 id="sec-ocaml"><a id="org7064b25"></a><span class="section-number-2">18</span> OCaml</h2>
+<h2 id="sec-ocaml"><span class="section-number-2">20</span> OCaml</h2>
 <div class="outline-text-2" id="text-sec-ocaml">
 
 
@@ -577,8 +616,8 @@ enough of this since I find Haskell more interesting now.
 </div>
 
 <div id="outline-container-org289c621" class="outline-2">
-<h2 id="sec-prolog"><a id="org289c621"></a><span class="section-number-2">19</span> Prolog</h2>
-<div class="outline-text-2" id="text-sec-prolog">
+<h2 id="sec-todo-prolog"><span class="section-number-2">21</span> <span class="todo TODO">TODO</span> Prolog</h2>
+<div class="outline-text-2" id="text-sec-todo-prolog">
 
 
 <p>
@@ -590,19 +629,19 @@ implementation to see what's missing.
 </div>
 
 <div id="outline-container-orgd92488a" class="outline-2">
-<h2 id="sec-python"><a id="orgd92488a"></a><span class="section-number-2">20</span> Python</h2>
+<h2 id="sec-python"><span class="section-number-2">22</span> Python</h2>
 <div class="outline-text-2" id="text-sec-python">
 
 
 <p>
-Probably my main language as of now. Is pretty practical but has some annoying
+Probably my main language as of now. Is pretty practical so has some annoying
 warts. Not much to dig here.
 </p>
 </div>
 </div>
 
 <div id="outline-container-orgd914baf" class="outline-2">
-<h2 id="sec-r"><a id="orgd914baf"></a><span class="section-number-2">21</span> R</h2>
+<h2 id="sec-r"><span class="section-number-2">23</span> R</h2>
 <div class="outline-text-2" id="text-sec-r">
 
 
@@ -620,13 +659,13 @@ begin.
 </div>
 
 <div id="outline-container-org72b0aea" class="outline-2">
-<h2 id="sec-racket"><a id="org72b0aea"></a><span class="section-number-2">22</span> Racket</h2>
-<div class="outline-text-2" id="text-sec-racket">
+<h2 id="sec-todo-racket"><span class="section-number-2">24</span> <span class="todo TODO">TODO</span> Racket</h2>
+<div class="outline-text-2" id="text-sec-todo-racket">
 
 
 <p>
 Separating this from the Lisp family because its not a Lisp in the strict sense.
-Some reasons for learning it:
+Few reasons for learning this specifically:
 </p>
 <ul class="org-ul">
 <li class="off">&#x2610; Hygienic macros</li>
@@ -635,61 +674,48 @@ Some reasons for learning it:
 </ul>
 
 <p>
-Although I have used it occasionally, I haven't really committed to it. Given
-the modern and beautifully crafted documentation and libraries, I will be soon
-switching to this for the <i>Common Lisp role</i>.
+Although I have used it occasionally, I haven't really committed to it. A piece
+that keeps tempting me here are the carefully crafted documentations and proses
+surrounding this.
 </p>
 </div>
 </div>
 
 <div id="outline-container-orge4da2e3" class="outline-2">
-<h2 id="sec-next-rebol-/-red"><a id="orge4da2e3"></a><span class="section-number-2">23</span> <span class="todo NEXT">NEXT</span> REBOL / Red</h2>
-<div class="outline-text-2" id="text-sec-next-rebol-/-red">
+<h2 id="sec-todo-rebol-/-red"><span class="section-number-2">25</span> <span class="todo TODO">TODO</span> REBOL / Red</h2>
+<div class="outline-text-2" id="text-sec-todo-rebol-/-red">
 
 </div>
 </div>
 
 <div id="outline-container-org2e9dcde" class="outline-2">
-<h2 id="sec-ruby"><a id="org2e9dcde"></a><span class="section-number-2">24</span> Ruby</h2>
+<h2 id="sec-ruby"><span class="section-number-2">26</span> Ruby</h2>
 <div class="outline-text-2" id="text-sec-ruby">
 
 
 <p>
-A better Python. Seriously. It has better lambdas, better shell integration and
-better class system.
-</p>
-
-<p>
-But, I probably will never be switching to it because Python's package ecosystem
-is way ahead for my personal use cases.
+Last I used, it felt like a better Python. Better lambdas, better shell
+integration and better class system. Though Python's package ecosystem is too
+expansive and complete that I mostly won't be doing anything here.
 </p>
 </div>
 </div>
 
 <div id="outline-container-orgdcc035a" class="outline-2">
-<h2 id="sec-rust"><a id="orgdcc035a"></a><span class="section-number-2">25</span> Rust</h2>
-<div class="outline-text-2" id="text-sec-rust">
+<h2 id="sec-todo-rust"><span class="section-number-2">27</span> <span class="todo TODO">TODO</span> Rust</h2>
+<div class="outline-text-2" id="text-sec-todo-rust">
 
 
 <p>
-This is something I will be keeping in my toolbox because of:
-</p>
-<ul class="org-ul">
-<li>Pattern matching</li>
-<li>Type inference</li>
-<li>Macros</li>
-<li>Sane package management</li>
-</ul>
-
-<p>
-Haven't got to use it as of now, but most likely will be moving towards it since
-it is easy to make it work <i>with</i> python.
+A bit of fad at the moment, but has modern features for everything possible with
+something like C++. Not sure if I will be able to start properly without pushing
+this somehow in workplace.
 </p>
 </div>
 </div>
 
 <div id="outline-container-org2cbc761" class="outline-2">
-<h2 id="sec-scala"><a id="org2cbc761"></a><span class="section-number-2">26</span> Scala</h2>
+<h2 id="sec-scala"><span class="section-number-2">28</span> Scala</h2>
 <div class="outline-text-2" id="text-sec-scala">
 
 
@@ -702,9 +728,9 @@ couple <i>practical</i> languages. I am already full.
 </div>
 </div>
 
-<div id="outline-container-org4e0b935" class="outline-2">
-<h2 id="sec-next-shen"><a id="org4e0b935"></a><span class="section-number-2">27</span> <span class="todo NEXT">NEXT</span> Shen</h2>
-<div class="outline-text-2" id="text-sec-next-shen">
+<div id="outline-container-org179778a" class="outline-2">
+<h2 id="sec-todo-shen"><span class="section-number-2">29</span> <span class="todo TODO">TODO</span> Shen</h2>
+<div class="outline-text-2" id="text-sec-todo-shen">
 
 
 <p>
@@ -715,25 +741,26 @@ based type system and strong support for logic programming.
 </div>
 </div>
 
-<div id="outline-container-org779fe76" class="outline-2">
-<h2 id="sec-next-squeak/smalltalk"><a id="org779fe76"></a><span class="section-number-2">28</span> <span class="todo NEXT">NEXT</span> Squeak/Smalltalk</h2>
-<div class="outline-text-2" id="text-sec-next-squeak/smalltalk">
+<div id="outline-container-org81dd830" class="outline-2">
+<h2 id="sec-todo-squeak/smalltalk"><span class="section-number-2">30</span> <span class="todo TODO">TODO</span> Squeak/Smalltalk</h2>
+<div class="outline-text-2" id="text-sec-todo-squeak/smalltalk">
 
 
 <p>
-What else is there in message passing OOP?
+The key <i>experience</i> here might not be Object Oriented Programming but the
+immersive, live IDE(s).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org20e9486" class="outline-2">
-<h2 id="sec-next-webgl/opengl"><a id="org20e9486"></a><span class="section-number-2">29</span> <span class="todo NEXT">NEXT</span> WebGL/OpenGL</h2>
-<div class="outline-text-2" id="text-sec-next-webgl/opengl">
+<div id="outline-container-org92acd04" class="outline-2">
+<h2 id="sec-todo-webassembly"><span class="section-number-2">31</span> <span class="todo TODO">TODO</span> Webassembly</h2>
+<div class="outline-text-2" id="text-sec-todo-webassembly">
 
 
 <p>
-I have no idea how graphics programming. Hopefully, working on a few ideas with
-procedural generation and stuff will help in getting this.
+Not a language to learn as such, but am wanting to get in the compiler side
+using this pathway.
 </p>
 </div>
 </div>
