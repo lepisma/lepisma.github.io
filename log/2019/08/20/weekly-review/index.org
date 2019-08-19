@@ -1,0 +1,63 @@
+#+TITLE: Weekly Review /33-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 33,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+A bunch of missed reviews. Putting only last week stuff for now.
+
+* Experiments
+- Wasn't able to make any progress on dialog veneering work. Mostly not moving
+  my legs to tag data.
+- Spent some time modeling the play logs from my music player to setup a thumbs
+  up-down type recommendation system.
+
+* Readings/Explorations
+- Finished [[https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month][The Mythical Man-Month]].
+- A really nice and popular [[https://developers.google.com/machine-learning/guides/rules-of-ml/][guidebook on ML]] that I was unaware of.
+- Reflections on trusting trust (cite:thompson1984reflections)
+- [[http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html][Practical advice for analysis of large, complex data sets]]. I didn't quite get
+  hooked into many things here. Mostly tells that I am not working with large
+  data sets. Or, more likely, I am not looking at things in the right way.
+- I have been exploring a few project management tools. Things like [[https://github.com/taskjuggler/TaskJuggler][taskjuggler]]
+  look impressive and worth spending some time on. Starting with basic effort
+  and time estimation in org mode itself (try [[https://github.com/rksm/clj-org-analyzer][rksm/clj-org-analyzer]]) though.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 33-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[https://aeon.co/essays/why-do-we-allow-objects-to-become-tainted-by-chance-links][Why do we allow objects to become tainted by chance links?]]
+- [[http://earth.nautil.us/article/429/the-strange-blissfulness-of-storms][Earth on Nautilus: The Strange Blissfulness of Storms]]. Feel pretty biased even
+  after considering that results are not clear. Probably adding confounding
+  factors in the last paragraph would have helped. Also basic arguments like
+  /why do I feel similar when I imagine a storm?/ should be cared for before
+  putting one liners.
+- Finished [[https://www.goodreads.com/book/show/71252.The_Kindly_Ones][The Kindly Ones (The Sandman, #9) by Neil Gaiman]]. This one was really
+  nice. I now like the series much more than earlier when, while coming from
+  Watchmen, I was looking for something to impress me very early on.
+- I have started trying out curio (probably the trial is up by now though) and
+  it looks really nice. Being shorter than podcasts and more user driven helps.
+  Found a few new sources here. Specially The Idler. Here are a few shorts that
+  I liked:
+  - [[https://play.curio.io/track/7OInJPAQNsaUgx3yn0VgoN][The cure for workaholism is philosophy]]
+  - [[https://play.curio.io/track/1jE33IZRVcrswXuGdu7Cy9][Why apps will never save the world]]
+
+[[bibliography:./references.bib]]
