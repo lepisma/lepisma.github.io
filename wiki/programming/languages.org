@@ -1,6 +1,6 @@
 #+TITLE: Language Exploration
 #+SETUPFILE: ../../assets/export.setup
-#+TODO: NEXT | DONE
+#+TODO: TODO | DONE
 
 One of the parts of programming that I enjoy is learning/exploring new
 languages. This page aims to keep a log of that process (ignoring the languages
@@ -20,11 +20,11 @@ languages that I regularly use will have all 4 points covered (eventually).
 Nevertheless, I will try to keep links and documentation for any and all points
 that I do explore for each language.
 
-* NEXT Ada
+* TODO Ada
 
 Specifically, I am interested in its generic system.
 
-* NEXT APL/J/K
+* TODO APL/J/K
 
 Interested to look at this family because of:
 - Dedicated array manipulation functionality
@@ -48,21 +48,41 @@ I have had some experience with C++ and know the general basics. As of now, I
 don't have anything specific to try learning its more advanced features. I /might/
 try it to learn some design patterns.
 
-* NEXT COBOL
+* Clojure
+
+Creating a new section since I somehow have ended up using this more than others
+from the Lisp family. Coming from Emacs Lisp and Common Lisp, [[https://github.com/clojure-cookbook/clojure-cookbook][Clojure Cookbook]]
+was much better resource than the more famous ones like [[https://www.braveclojure.com][Brave Clojure]]. YMMW.
+
+* TODO COBOL
 
 Want to see how /English like/ it really is.
 
-* NEXT Dylan
+* Common Lisp
+
+I have been using Common Lisp occasionally and strongly recommend trying. Things
+that I am missing are probably from the popular books that I will try to cover
+soon. Specially /Let Over Lambda/ and /The Art of Metaobject Protocol/.
+
+Lack of community hurts though.
+
+* TODO Dylan
 
 Have heard a lot about [[https://opendylan.org/articles/macro-system/index.html][dylan macros]]. Considering that its syntax is pretty non
 Lispy, its really interesting to know how macros feel in here. This might
 probably be similar to how they feel in R or Julia, or maybe not.
 
-* NEXT Eiffel
+* TODO Eiffel
 
 /Contracts/ are the basic motivation here.
 
-* Erlang
+* Emacs Lisp
+
+One of those language that tell you how pleasant programming can be even in a
+badly designed system /if/ the language is well integrated in the environment and
+community is alive.
+
+* TODO Erlang
 
 I have been playing with Erlang a little bit recently. The syntax at first looks
 weird but makes much more sense after you try Prolog first. The killer feature,
@@ -81,12 +101,15 @@ clearly the /code is data/ idea translates here. Other than trying out its
 extensive set of libraries, I am interested in learning more about /quotations/
 and trying to implement the language itself.
 
-* Haskell
+* TODO Haskell
 
-Picking up Haskell after OCaml. Right now, I am working through the book [[http://learnyouahaskell.com/][Learn
-You a Haskell]] and solving a few problems with it.
+Not sure if I will be using this IRL, but is a nice language to learn a lot of
+ideas from. A few resources that I have touched:
 
-I am also interested to learn more type theory in the process.
+1. Obviously [[http://learnyouahaskell.com/][Learn You a Haskell for Great Good!]] Not sure if this really helped
+   though. Too much of someone else controlling the speed made me stop somewhere
+   midway.
+2. [[https://github.com/soupi/haskell-study-plan][Haskell Study Plan]]. This one is much more self paced, flexible and practical.
 
 * Io
 
@@ -112,23 +135,13 @@ been using it along with TypeScript and like both a lot. As of now, there is no
 specific language feature on my list. Probably after digging deeper into the
 runtime there will be some.
 
-* Julia
+* TODO Julia
 
 Have used it as a Python user would. Like R, the interesting things here are in
 the language core and how the AST manipulation works. Will be looking into those
 soon.
 
-* Lisp
-
-I have been using a few (Emacs Lisp, Common Lisp, Hy) regularly now and strongly
-recommend trying.
-
-Things to learn
-- [ ] Reader macros from Common Lisp
-- [ ] CLOS
-- [ ] Concurrency constructs from Clojure
-
-* NEXT Lua
+* TODO Lua
 
 Lua probably is pretty well used in the game community and has some really nice
 engines. Will be trying it while working on a game.
@@ -144,7 +157,7 @@ though so probably won't be jumping deeper here.
 OCaml got me into pattern matching and algebraic data types. That's probably
 enough of this since I find Haskell more interesting now.
 
-* Prolog
+* TODO Prolog
 
 I have an okayish understanding of Prolog now but sometimes the programs get
 stuck pretty deep while backtracking. Will need to dig into the language and
@@ -152,7 +165,7 @@ implementation to see what's missing.
 
 * Python
 
-Probably my main language as of now. Is pretty practical but has some annoying
+Probably my main language as of now. Is pretty practical so has some annoying
 warts. Not much to dig here.
 
 * R
@@ -164,38 +177,31 @@ package APIs in R are result of the meta programming support in R.
 [[http://adv-r.had.co.nz/][Advanced R]] has a section on metaprogramming which should be a good place to
 begin.
 
-* Racket
+* TODO Racket
 
 Separating this from the Lisp family because its not a Lisp in the strict sense.
-Some reasons for learning it:
+Few reasons for learning this specifically:
 - [ ] Hygienic macros
 - [ ] First class continuations
 - [ ] Typed racket
 
-Although I have used it occasionally, I haven't really committed to it. Given
-the modern and beautifully crafted documentation and libraries, I will be soon
-switching to this for the /Common Lisp role/.
+Although I have used it occasionally, I haven't really committed to it. A piece
+that keeps tempting me here are the carefully crafted documentations and proses
+surrounding this.
 
-* NEXT REBOL / Red
+* TODO  REBOL / Red
 
 * Ruby
 
-A better Python. Seriously. It has better lambdas, better shell integration and
-better class system.
+Last I used, it felt like a better Python. Better lambdas, better shell
+integration and better class system. Though Python's package ecosystem is too
+expansive and complete that I mostly won't be doing anything here.
 
-But, I probably will never be switching to it because Python's package ecosystem
-is way ahead for my personal use cases.
+* TODO Rust
 
-* Rust
-
-This is something I will be keeping in my toolbox because of:
-- Pattern matching
-- Type inference
-- Macros
-- Sane package management
-
-Haven't got to use it as of now, but most likely will be moving towards it since
-it is easy to make it work /with/ python.
+A bit of fad at the moment, but has modern features for everything possible with
+something like C++. Not sure if I will be able to start properly without pushing
+this somehow in workplace.
 
 * Scala
 
@@ -204,17 +210,18 @@ focused a lot on practicalities and so is more of a mixture of tricks rather
 than having a definite ideological inclination. You can't love more than a
 couple /practical/ languages. I am already full.
 
-* NEXT Shen
+* TODO Shen
 
 So shen is this /ultimate language/ which probably won't be really usable because
 of the lack of community. Even then it is worthy of study because of its sequent
 based type system and strong support for logic programming.
 
-* NEXT Squeak/Smalltalk
+* TODO Squeak/Smalltalk
 
-What else is there in message passing OOP?
+The key /experience/ here might not be Object Oriented Programming but the
+immersive, live IDE(s).
 
-* NEXT WebGL/OpenGL
+* TODO Webassembly
 
-I have no idea how graphics programming. Hopefully, working on a few ideas with
-procedural generation and stuff will help in getting this.
+Not a language to learn as such, but am wanting to get in the compiler side
+using this pathway.

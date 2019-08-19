@@ -67,3 +67,6 @@ quick.
 - I like [[https://github.com/tobimensch/termsql][termsql]] for working with tabular data in terminal. There might be
   better tools for particular use cases, but in general, just the possibility of
   using plain sql works nicely.
+- [[https://www.ledger-cli.org/][ledger]] for accounting.
+- Haven't tried it (am starting soon), but [[http://taskjuggler.org][TaskJuggler]] looks like something that
+  belongs here.
