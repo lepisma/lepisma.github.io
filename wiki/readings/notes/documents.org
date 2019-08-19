@@ -255,6 +255,50 @@ random search.
 
 * AI/ML
 
+** READ Supervising strong learners by amplifying weak experts
+CLOSED: [2019-08-20 Tue 00:32]
+:PROPERTIES:
+:CUSTOM_ID: christiano2018supervising
+:YEAR:     2018
+:AUTHOR:   Christiano, Paul and Shlegeris, Buck and Amodei, Dario
+:END:
+
+This is the Iterated Amplification paper. General idea is that harder problems
+can't be solved directly in a stable way so we want to use expert assistance for
+breaking down things in pieces. Then an interactive process lets the to-be
+trained system learn from both the ways things are broken and answer
+constructed. Since this is one of the initial works, the overall framework might
+change a little.
+
+Simple algorithmic examples are provided. It will be interesting to see attempts
+towards the candidate problems which are beyond human intelligence. Haven't
+really followed the thread so don't know if there already is something done in
+this direction.
+
+** READ Frustratingly easy domain adaptation
+CLOSED: [2019-08-20 Tue 00:31]
+:PROPERTIES:
+:CUSTOM_ID: daume2009frustratingly
+:YEAR:     2009
+:AUTHOR:   Daum{\'e} III, Hal
+:END:
+
+Tells you how far good insights go. The paper is really simple to follow so not
+writing anything here.
+
+** READ Green AI
+CLOSED: [2019-08-20 Tue 00:29]
+:PROPERTIES:
+:CUSTOM_ID: schwartz2019green
+:YEAR:     2019
+:AUTHOR:   Schwartz, Roy and Dodge, Jesse and Smith, Noah A. and Etzioni, Oren
+:END:
+
+A noble idea to push for.
+
+I sometime feel bad that things which are good inherently, need to be pushed out
+in a gamified way for actions to be taken.
+
 ** READ Probing Neural Network Comprehension of Natural Language Arguments
 CLOSED: [2019-07-22 Mon 23:53]
 :PROPERTIES:
@@ -957,6 +1001,23 @@ features.
  :END:
 
 * Computing/Programming
+
+** READ Reflections on trusting trust
+CLOSED: [2019-08-20 Tue 00:42]
+:PROPERTIES:
+:CUSTOM_ID: thompson1984reflections
+:YEAR:     1984
+:AUTHOR:   Thompson, Ken and others
+:END:
+
+I remember reading this or watching the talk 3-4 years earlier but not
+understanding what Ken was trying to say. This time it was fine. I like this top
+blurb:
+
+#+begin_quote
+To what extent should one trust a statement that a program is free of Trojan
+horses? Perhaps it is more important to trust the people who wrote the software.
+#+end_quote
 
 ** READ Online aggregation
 CLOSED: [2019-04-17 Wed 02:12]
