@@ -2,6 +2,13 @@
 #+SETUPFILE: ../../assets/export.setup
 #+TODO: TODO | DONE
 
+#+begin_quote
+Not sure how to go about this page. Earlier I thought to just cover my personal
+exploration and usage, but now feel like probably an encyclopedic coverage might
+be better as I don't and won't go deep in all the languages (and probably don't
+need to go too).
+#+end_quote
+
 One of the parts of programming that I enjoy is learning/exploring new
 languages. This page aims to keep a log of that process (ignoring the languages
 whose interesting features are probably already present in others).
@@ -212,9 +219,8 @@ couple /practical/ languages. I am already full.
 
 * TODO Shen
 
-So shen is this /ultimate language/ which probably won't be really usable because
-of the lack of community. Even then it is worthy of study because of its sequent
-based type system and strong support for logic programming.
+Don't remember where I got the reference from for this. A cursory glance tells
+probably there are a few /novel/ features rather than a compendium.
 
 * TODO Squeak/Smalltalk
 
