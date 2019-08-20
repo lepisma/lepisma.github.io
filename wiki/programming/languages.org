@@ -5,8 +5,7 @@
 #+begin_quote
 Not sure how to go about this page. Earlier I thought to just cover my personal
 exploration and usage, but now feel like probably an encyclopedic coverage might
-be better as I don't and won't go deep in all the languages (and probably don't
-need to go too).
+be better as I don't and won't go deep in all the languages.
 #+end_quote
 
 One of the parts of programming that I enjoy is learning/exploring new
@@ -73,6 +72,10 @@ soon. Specially /Let Over Lambda/ and /The Art of Metaobject Protocol/.
 
 Lack of community hurts though.
 
+* TODO Coq
+
+* TODO D
+
 * TODO Dylan
 
 Have heard a lot about [[https://opendylan.org/articles/macro-system/index.html][dylan macros]]. Considering that its syntax is pretty non
@@ -82,6 +85,10 @@ probably be similar to how they feel in R or Julia, or maybe not.
 * TODO Eiffel
 
 /Contracts/ are the basic motivation here.
+
+* TODO Elm
+
+* TODO Elixir
 
 * Emacs Lisp
 
@@ -117,6 +124,8 @@ ideas from. A few resources that I have touched:
    though. Too much of someone else controlling the speed made me stop somewhere
    midway.
 2. [[https://github.com/soupi/haskell-study-plan][Haskell Study Plan]]. This one is much more self paced, flexible and practical.
+
+* TODO Idris
 
 * Io
 
@@ -227,7 +236,11 @@ probably there are a few /novel/ features rather than a compendium.
 The key /experience/ here might not be Object Oriented Programming but the
 immersive, live IDE(s).
 
+* TODO TeX
+
 * TODO Webassembly
 
 Not a language to learn as such, but am wanting to get in the compiler side
 using this pathway.
+
+* TODO Zig
