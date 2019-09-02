@@ -8,8 +8,8 @@ recently and found the following under a section on /Dangers of optimization/.
 
 [[file:./screenshot-01.png]]
 
-Tukey here was pointing to certain /ossifications/ that are hindering rapid growth
-and novelty in the /then/ field of Data Analysis.
+Tukey here was pointing to certain /ossifications/ hindering rapid growth and
+novelty in the /then/ field of Data Analysis.
 
 Leaving aside the concern of acknowledging all the /stages/, there is something
 about their independence which is a real efficacy booster if pieces from others'
