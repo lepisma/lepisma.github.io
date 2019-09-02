@@ -42,7 +42,7 @@ There are many piecemeal directions already taken here. Consider the popular
 implementations. Similar is sharing of trained models. On the extensibility
 front something like [[https://github.com/google-research/disentanglement_lib#starting-your-own-research][starting your own research]] section in
 =disentanglement_lib=[fn::This specific repository has the advantage of being
-created as a library, but I feel many others can.]
+created as a library, but I feel many others can do similar.]
 (cite:locatello2018challenging) is a nice example.
 
 -----
