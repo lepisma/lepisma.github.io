@@ -7,6 +7,12 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *abnormal hooks*
+
+  There is a naming convention for variables holding hook functions. One such is
+  /abnormal hooks/ which I never thought of as something with specific meaning.
+  [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Hooks.html][The doc]] explains.
+
 + *eval-defun*
 
   While working with elisp, resetting ~defcustom~ like variables using
