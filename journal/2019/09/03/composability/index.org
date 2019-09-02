@@ -1,0 +1,59 @@
+#+TITLE: /Composability/: Beyond reproducibility
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: ml, programming
+
+I was reading /The future of data analysis/ by Tukey (cite:tukey1962future)
+recently and found the following under a section on /Dangers of optimization/.
+[fn::Too long and structured to write, so just clipped.]
+
+[[file:./screenshot-01.png]]
+
+Tukey here was pointing to certain /ossifications/ that are hindering rapid growth
+and novelty in the /then/ field of Data Analysis.
+
+Leaving aside the concern of acknowledging all the /stages/, there is something
+about their independence which is a real efficacy booster if pieces from others'
+work can be /composed/ together easily. For theoretical works, there is nothing
+specific, at the moment, needed other than a will. But for computational works,
+in Machine Learning for example, this translates to nice composability
+properties in research code repositories.
+
+#+BEGIN_aside
+This reminds me a lot of the modular programming hype where everyone will likely
+get the /objects/ representing very high abstractions and build amazing systems /on
+top/ of them quickly.
+#+END_aside
+
+A mild example that I have recently noticed is in [[https://github.com/kaldi-asr/kaldi/tree/master/egs][Kaldi]] where there are lots of
+/recipes/ (egs) sitting in a similar environment (executable binaries stitched in
+bash) so as to allow such /on-top-of/ researches. There are many attempts
+[fn::Thanks to everyone who is contributing here.] in the direction of promoting
+reuse but we can totally do better. Similar to what we have been doing for
+reproducibility, we can try promoting a sort of /composability/ (a strict
+superset) documentation in all our outputs. This of course is related to good
+program structure and consistent vocabulary for input/output. But, more
+importantly, it forces us spend plain thinking time on how a work can be
+composed with others' for possible future results. This has a few implications
+in the way we work, write and share. As a crude example, the /future work/ section
+of papers can more explicitly map to extension points in our programs.
+
+There are many piecemeal directions already taken here. Consider the popular
+/bring-your-own-dataset/ idea, although mostly in third party instead of reference
+implementations. Similar is sharing of trained models. On the extensibility
+front something like [[https://github.com/google-research/disentanglement_lib#starting-your-own-research][starting your own research]] section in
+=disentanglement_lib=[fn::This specific repository has the advantage of being
+created as a library, but I feel many others can.]
+(cite:locatello2018challenging) is a nice example.
+
+-----
+
+The most effective composable systems are philosophically consistent. Examples
+are environments like *nix shell, Lisp machines, Smalltalk images etc.
+Equivalent in effect are labs, groups and communities with pervasive codebases,
+conventions and guidelines. I don't quite believe the utopia where people point
+to some $n$ works/paper/repositories, mix their own ideas at very high level and
+start analysing results is possible, specially for researches since they produce
+prototypes by design. But we might be able go surprisingly far from where we are
+if we align some of our code and prose efforts in this direction.
+
+[[bibliography:./references.bib]]

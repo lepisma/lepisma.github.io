@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-08-04</updated>
+  <updated>2019-09-03</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>/Composability/: Beyond reproducibility</title>
+    <link href="https://lepisma.xyz/journal/2019/09/03/composability/index.html"/>
+    <updated>2019-09-03</updated>
+  </entry>
   <entry>
     <title>Interventional Dialogue Veneering</title>
     <link href="https://lepisma.xyz/journal/2019/08/04/interventional-dialog-veneering/index.html"/>
