@@ -6,6 +6,7 @@ I was reading /The future of data analysis/ by Tukey (cite:tukey1962future)
 recently and found the following under a section on /Dangers of optimization/.
 [fn::Too long and structured to write, so just clipped.]
 
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./screenshot-01.png]]
 
 Tukey here was pointing to certain /ossifications/ hindering rapid growth and
@@ -13,10 +14,11 @@ novelty in the /then/ field of Data Analysis.
 
 Leaving aside the concern of acknowledging all the /stages/, there is something
 about their independence which is a real efficacy booster if pieces from others'
-work can be /composed/ together easily. For theoretical works, there is nothing
-specific, at the moment, needed other than a will. But for computational works,
-in Machine Learning for example, this translates to nice composability
-properties in research code repositories.
+work can be /composed/ together easily. More so if you break these stages in finer
+pieces of /partial works/. For theoretical works, there is nothing specific, at
+the moment, needed other than a will. But for computational works, in Machine
+Learning for example, this translates to nice composability properties in
+research code repositories.
 
 #+BEGIN_aside
 This reminds me a lot of the modular programming hype where everyone will likely
@@ -36,7 +38,7 @@ importantly, it forces us to spend plain thinking time on how our work can be
 composed with others' for possible future results. This has a few implications
 in the way we work, write and share. As a crude example, the /future work/ section
 of papers can more explicitly map to extension points in our programs. We will
-also see more use of forks, submodules and dependencies network.
+also see more use of forks, submodules and dependency networks.
 
 There are many piecemeal directions already taken here. Consider the popular
 /bring-your-own-dataset/ idea, although mostly in third party instead of reference
