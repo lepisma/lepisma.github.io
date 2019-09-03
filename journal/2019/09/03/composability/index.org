@@ -35,7 +35,8 @@ program structure and consistent vocabulary for input/output. But, more
 importantly, it forces us to spend plain thinking time on how our work can be
 composed with others' for possible future results. This has a few implications
 in the way we work, write and share. As a crude example, the /future work/ section
-of papers can more explicitly map to extension points in our programs.
+of papers can more explicitly map to extension points in our programs. We will
+also see more use of forks, submodules and dependencies network.
 
 There are many piecemeal directions already taken here. Consider the popular
 /bring-your-own-dataset/ idea, although mostly in third party instead of reference
@@ -50,10 +51,11 @@ created as a library, but I feel many others can do similar.]
 The most effective composable systems are philosophically consistent. Examples
 are environments like *nix shell, Lisp machines, Smalltalk images etc.
 Equivalent in effect are labs, groups and communities with pervasive codebases,
-conventions and guidelines. I don't quite believe the utopia where people point
-to some $n$ works/paper/repositories, mix their own ideas at very high level and
-start analysing results is possible, specially for researches since they produce
-prototypes by design. But we might be able go surprisingly far from where we are
-if we align some of our code and prose efforts in this direction.
+conventions and guidelines. This is hard to do at scale. I don't quite believe
+the utopia where people point to some $n$ works/paper/repositories, mix their
+own ideas at very high level and start analysing results is possible, specially
+for researches since they produce prototypes by design. But we might be able go
+surprisingly far from where we are if we align some of our code and prose
+efforts in this direction.
 
 [[bibliography:./references.bib]]
