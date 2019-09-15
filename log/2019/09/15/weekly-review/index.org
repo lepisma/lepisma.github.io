@@ -1,0 +1,62 @@
+#+TITLE: Weekly Review /37-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 37,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings/Explorations
+- A little bit on calibration [[http://danielnee.com/2014/10/calibrating-classifier-probabilties/][Calibrating Classifier Probabilties | Daniel Nee]]
+  and [[http://fastml.com/classifier-calibration-with-platts-scaling-and-isotonic-regression/][Classifier calibration with Platt's scaling and isotonic regression -
+  FastML]].
+- [[https://twobithistory.org/2019/08/22/readline.html][Things You Didn't Know About GNU Readline]]
+- Snips voice platform: an embedded spoken language understanding system for
+  private-by-design voice interfaces (cite:coucke2018snips)
+- wav2letter++: The fastest open-source speech recognition system
+  (cite:pratap2018wav2letter)
+- Who needs words? lexicon-free speech recognition (cite:likhomanenko2019needs)
+- Read [[https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers][Bayesian Methods for Hackers]]. Didn't do much hands-on though.
+- Few things on OKRs and this guide → [[https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/][re:Work - Guide: Set goals with OKRs]]
+- Went through [[http://taskjuggler.org/][taskjuggler]] in depth.
+- [[http://ruder.io/state-of-transfer-learning-in-nlp/][The State of Transfer Learning in NLP]]
+- [[https://blog.acolyer.org/2019/08/26/snuba/][Snuba: automating weak supervision to label training data – the morning paper]]
+- [[https://thegradient.pub/nlps-clever-hans-moment-has-arrived/][NLP&#x27;s Clever Hans Moment has Arrived]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 37-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- Finished /The Satanic Verses/.
+- [[https://play.curio.io/?trackId=4T3RDAIdcOW2ntFDBBdHub&s=null&c=null#/get-started][Eros at play]]
+- [[http://www.novelr.com/2008/08/16/vonnegut-how-to-write-with-style][Vonnegut: How To Write With Style – Novelr]]
+- [[http://poetry.nautil.us/article/414/youll-know-her-by-her-foot][Poetry on Nautilus: “You’ll know her by her foot”]]
+- A really beautiful video → [[https://aeon.co/videos/watch-a-single-cell-become-a-complete-organism-in-six-pulsing-minutes-of-timelapse][Watch a single cell become a complete organism in
+  six pulsing minutes of time...]]
+- [[http://www.wnycstudios.org/story/radiolab-right-be-forgotten/][Right to be Forgotten | Radiolab | WNYC Studios]]. I like the ship-is-sailed
+  ideology. We can't forget. Now can we forgive? Can we adapt?
+- [[http://m.nautil.us/issue/75/story/to-fix-the-climate-tell-better-stories-rp][Is There a Narrative Vacuum Surrounding Climate Change?]]
+- [[https://tjcx.me/posts/consumption-distraction/][Consume less, create more]]. This was beautiful. Provides a lot of missing
+  vocabulary. Also a wake up call for consuming less which I had been glorifying
+  recently.
+- [[https://aeon.co/essays/why-meaning-is-more-sunken-into-words-than-we-realise][Why meaning is more sunken into words than we realise | Aeon Essays]]
+
+[[bibliography:./references.bib]]

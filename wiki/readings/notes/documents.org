@@ -269,7 +269,7 @@ a results paper. I like how well ConvLM does though.
 ** READ wav2letter++: The fastest open-source speech recognition system
 CLOSED: [2019-09-15 Sun 22:30]
 :PROPERTIES:
-:CUSTOM_ID: pratap2018wav2letter++
+:CUSTOM_ID: pratap2018wav2letter
 :YEAR:     2018
 :AUTHOR:   Pratap, Vineel and Hannun, Awni and Xu, Qiantong and Cai, Jeff and Kahn, Jacob and Synnaeve, Gabriel and Liptchinsky, Vitaliy and Collobert, Ronan
 :END:
