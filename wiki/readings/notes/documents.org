@@ -255,6 +255,78 @@ random search.
 
 * AI/ML
 
+** READ Who needs words? lexicon-free speech recognition
+CLOSED: [2019-09-15 Sun 22:33]
+:PROPERTIES:
+:CUSTOM_ID: likhomanenko2019needs
+:YEAR:     2019
+:AUTHOR:   Likhomanenko, Tatiana and Synnaeve, Gabriel and Collobert, Ronan
+:END:
+
+Took it from the wav2letter++ repo. Nothing /very/ specific to comment on. Mostly
+a results paper. I like how well ConvLM does though.
+
+** READ wav2letter++: The fastest open-source speech recognition system
+CLOSED: [2019-09-15 Sun 22:30]
+:PROPERTIES:
+:CUSTOM_ID: pratap2018wav2letter++
+:YEAR:     2018
+:AUTHOR:   Pratap, Vineel and Hannun, Awni and Xu, Qiantong and Cai, Jeff and Kahn, Jacob and Synnaeve, Gabriel and Liptchinsky, Vitaliy and Collobert, Ronan
+:END:
+
+Although it might not be as friendly, I like the focus on architecture and types
+based guarantees in general. Kaldi just feels annoying at times.
+
+** READ Snips voice platform: an embedded spoken language understanding system for private-by-design voice interfaces
+CLOSED: [2019-09-15 Sun 22:26]
+:PROPERTIES:
+:CUSTOM_ID: coucke2018snips
+:YEAR:     2018
+:AUTHOR:   Coucke, Alice and Saade, Alaa and Ball, Adrien and Bluche, Th{\'e}odore and Caulier, Alexandre and Leroy, David and Doumouro, Cl{\'e}ment and Gisselbrecht, Thibault and Caltagirone, Francesco and Lavril, Thibaut and others
+:END:
+
+Document on how snips does their SLU in general. A nice thing that I didn't
+expect was focus on the dynamic LM part. It makes sense to make updates easy and
+quick on-premise as compared to keeping things mostly frozen.
+
+** READING The future of data analysis                            :noexport:
+:PROPERTIES:
+:CUSTOM_ID: tukey1962future
+:YEAR:     1962
+:AUTHOR:   Tukey, John W
+:END:
+
+A list from 'How can new data analysis be initiated?'
++ We should seek out wholly new questions to be answered.
++ We need to tackle old problems in a more realistic frameworks.
++ We should seek out unfamiliar summaries of observational material, and
+  establish their useful properties.
++ And still more novelty can come from finding, and evading, still deeper lying
+  constraints.
+
+All these driven by:
+
+#+begin_quote
+How is novelty most likely to begin and grow? Not through work on familiar
+problems, in terms of familiar frameworks, and starting with the results of
+applying familiar processes to the observations.
+#+end_quote
+
+I like this like which clarifies a sort of difference between something which is
+/science/ vs /mathematics/:
+
+#+begin_quote
+Data analysis must use mathematical argument and mathematical results as bases
+for judgement rather than as bases for proof or stamps of validity.
+#+end_quote
+
+A summary of introduction
+
+#+begin_quote
+Far better an approximate answer to the right question, which is often vague,
+than an exact answer to the wrong question, which can always be made precise.
+#+end_quote
+
 ** READ Supervising strong learners by amplifying weak experts
 CLOSED: [2019-08-20 Tue 00:32]
 :PROPERTIES:
