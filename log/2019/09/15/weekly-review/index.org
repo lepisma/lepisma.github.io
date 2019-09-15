@@ -37,7 +37,7 @@ width: 100%;
 - Went through [[http://taskjuggler.org/][taskjuggler]] in depth.
 - [[http://ruder.io/state-of-transfer-learning-in-nlp/][The State of Transfer Learning in NLP]]
 - [[https://blog.acolyer.org/2019/08/26/snuba/][Snuba: automating weak supervision to label training data – the morning paper]]
-- [[https://thegradient.pub/nlps-clever-hans-moment-has-arrived/][NLP&#x27;s Clever Hans Moment has Arrived]]
+- [[https://thegradient.pub/nlps-clever-hans-moment-has-arrived/][NLP's Clever Hans Moment has Arrived]]
 
 * Programming
 #+HTML: <figure> <div id="commit-plot"></div> <figcaption>
