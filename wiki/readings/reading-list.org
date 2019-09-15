@@ -647,12 +647,20 @@ CLOSED: [2018-09-30 Sun 15:33]
 :GOODREADS: https://www.goodreads.com/book/show/274495.The_Art_of_the_Metaobject_Protocol?from_search=true
 :END:
 
-*** READING The Mythical Man-Month: Essays on Software Engineering
+*** READ The Mythical Man-Month: Essays on Software Engineering
+CLOSED: [2019-09-15 Sun 22:37]
 :PROPERTIES:
 :AUTHOR:   Frederick P. Brooks Jr.
 :ADDED:    <2018-07-28>
 :GOODREADS: https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month
 :END:
+
+This is about /team/ software engineering which makes it a book on management more
+than anything. A few essays (e.g. /No Silver Bullet/) and many ideas are pretty
+famous so might not give a POV shift.
+
+I liked the piece on consistency which discussed why single designer systems
+make practical sense.
 
 *** READ The Elements of Programming Style, 2nd Edition
 CLOSED: [2018-12-23 Sun 22:41]
@@ -4380,7 +4388,7 @@ perfect. But at time it felt bloated.
 :GOODREADS: https://www.goodreads.com/book/show/10552338
 :END:
 
-*** Neuromancer
+*** READING Neuromancer
 :PROPERTIES:
 :AUTHOR:    William Gibson
 :ADDED:     <2015-12-05>
@@ -5184,6 +5192,23 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** READ The Satanic Verses
+CLOSED: [2019-09-15 Sun 22:49]
+:PROPERTIES:
+:AUTHOR:   Salman Rushdie
+:ADDED:    [2019-09-15]
+:GOODREADS: https://www.goodreads.com/book/show/12781.The_Satanic_Verses
+:END:
+
+I took a lot of time here, like I did for /The Name of the Rose/. Not exactly sure
+why but I believe the reason is different. Personally, the fastest reads have
+been the ones with really interesting /story/ where you want to know what happens
+next. The story here, while decent, wasn't that strong compared to the many good
+/scenes/. An example is the section on Changez's death with Saladin back at home.
+
+I believe there is a standard way of categorizing such kinds of reading
+experiences that I am unaware of at the moment.
+
 *** Walking. A Novella
 :PROPERTIES:
 :AUTHOR:   Thomas Bernhard, Kenneth J. Northcott, Brian Evenson
