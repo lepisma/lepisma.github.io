@@ -7,6 +7,12 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *Mouse tracking*
+
+  ~track-mouse~ is a neat macro for things that depend on mouse movements.
+  Probably artist mode uses it. I got to know about this from the awesome [[https://github.com/chuntaro/epaint][epaint]]
+  program.
+
 + *abnormal hooks*
 
   There is a naming convention for variables holding hook functions. One such is
