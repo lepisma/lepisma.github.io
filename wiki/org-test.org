@@ -233,6 +233,11 @@ vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci
 ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est
 convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapie
 
+For setting on click zoom, use this above the image
+#+begin_src org
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+#+end_src
+
 * Let's draw tables
 
 #+CAPTION: This is the caption for the next table
