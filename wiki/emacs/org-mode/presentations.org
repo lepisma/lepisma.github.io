@@ -1,6 +1,19 @@
 #+TITLE: Presentations
 #+SETUPFILE: ../../../assets/export.setup
 
-#+BEGIN_QUOTE
-This page is a work in progress
-#+END_QUOTE
+Wherever my laptop can plug in, I try to present stuff in org-mode using
+[[https://github.com/rlister/org-present][org-present]]. There are many benefits of directly using Emacs:
+
+1. Almost every presentation feature is supported. Except fancy
+   animations[fn::Leaving the useless inter slide animations, you can use a
+   webkit frame to get explanatory animations, say, to show up. Also gifs work
+   so maybe things are not that bad.].
+2. Zooming in/out and other view modification features are much more handy.
+3. Having everything in a document makes easy to jump around, show general
+   outline, edit and correct things etc.
+4. Short interactive code demos fit right in as babel blocks. If not, just do a
+   ~split-window-right~ and show things there.
+
+Similar to [[https://revealjs.com/][revealjs]], you can add a nice progress bar in the header line which
+tracks number of headings, lines or anything else. I have one such sample header
+line [[https://github.com/Vernacular-ai/tog/blob/master/tog-progress.el][here]]. Will move it out as a separate package some time.
