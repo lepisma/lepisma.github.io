@@ -143,6 +143,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** Growth: From Microorganisms to Megacities
+:PROPERTIES:
+:AUTHOR:   Vaclav Smil
+:ADDED:    [2019-09-22]
+:GOODREADS: https://www.goodreads.com/book/show/44512537-growth
+:END:
+
 *** Good Enough: The Tolerance for Mediocrity in Nature and Society
 :PROPERTIES:
 :AUTHOR:   Daniel S. Milo
