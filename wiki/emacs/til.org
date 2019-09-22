@@ -7,6 +7,17 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *ede*
+
+  [[https://www.gnu.org/software/emacs/manual/html_node/ede/index.html][EDE]] tries to add IDE like project level abstractions to Emacs. While
+  extensible, going through the README makes me feel as if I am not missing
+  anything substantial by not using it. Probably there are other piecemeal tools
+  which make up for everything EDE tries to support (similar to CEDET).
+
+  One reason I might be wrong in estimating its usefulness is that I personally
+  haven't tried using a lot of IDEish features like debugging etc. in Emacs
+  itself.
+
 + *org-edna*
 
   [[https://www.nongnu.org/org-edna-el/][Edna]] allows adding dependencies in org mode headings. The doc has good
