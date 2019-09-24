@@ -1,0 +1,42 @@
+#+TITLE: Weekly Review /38-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 38,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+I am trying out a longer term (3-4 month) planning methodology which might
+affect the way I look at weekly reviews, specially /Experiments/ section which
+stays quiet on a shorter scale. Will have some thoughts next week.
+
+* Experiments
+
+* Readings/Explorations
+- Mixing dirichlet topic models and word embeddings to make lda2vec
+  (cite:moody2016mixing).
+- [[https://www.youtube.com/watch?v=r-TLSBdHe1A][Performance matters]].
+- A little bit on [[https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/][user]] [[https://agileforall.com/new-to-agile-invest-in-good-user-stories/][stories]].
+- A really exciting [[https://www.scottaaronson.com/blog/?p=4317][Quantum Supremacy update]].
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 38-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- [[http://nautil.us/issue/76/language/this-simple-structure-unites-all-human-languages][This Simple Structure Unites All Human Languages - Issue 76: Language -
+  Nautilus]].
