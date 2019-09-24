@@ -255,6 +255,17 @@ random search.
 
 * AI/ML
 
+** READ Mixing dirichlet topic models and word embeddings to make lda2vec
+CLOSED: [2019-09-25 Wed 00:30]
+:PROPERTIES:
+:CUSTOM_ID: moody2016mixing
+:YEAR:     2016
+:AUTHOR:   Moody, Christopher E
+:END:
+
+While I like the results, I am wondering which pieces were useful, which were
+not and how do things compare to other techniques.
+
 ** READ Who needs words? lexicon-free speech recognition
 CLOSED: [2019-09-15 Sun 22:33]
 :PROPERTIES:
