@@ -5199,6 +5199,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** The Secret Sharer
+:PROPERTIES:
+:AUTHOR:   Joseph Conrad
+:ADDED:    [2019-09-30]
+:GOODREADS: https://www.goodreads.com/book/show/2179336.The_Secret_Sharer
+:END:
+
 *** READ The Satanic Verses
 CLOSED: [2019-09-15 Sun 22:49]
 :PROPERTIES:
