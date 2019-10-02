@@ -1,0 +1,55 @@
+#+TITLE: Acoustic Interfaces
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: programming, ux
+#+PILE: dropcap:nil
+
+#+begin_quote
+Pointing will still be the way to express nouns as we command our machines;
+speech is surely the right way to express the verbs.
+#+end_quote
+
+I found it somewhere in /The Mythical Man-Month/. While the context[fn::I found it
+under /The fate of WIMP: Obsolescence/] sets the line philosophically against
+the idea of a WIMPish interface and pushed for more natural modes, I like the
+blending of pointing with speech which doesn't commit to total conversational
+mode of interaction.
+
+Most of the works in acoustic interfaces these days go completely towards one
+extreme by pitching for full conversational interfaces. These are definitely
+nice but, at least for whatever I do with computers on a regular basis, they are
+inefficient, unless I have assured, exhaustive and complete high level
+abstractions. There is nothing new in the fact that, for a known domain, you can
+create highly expressive and efficient interfaces which look overall
+unintuitive.
+
+-----
+
+Interfaces differ based on the amount of attention needed to get the /real/ task
+done. Asking for weather shouldn't really need attention to be put towards any
+specific device. Nor should accumulating numbers and counts. These are what we
+can call /hands-in-the-batter/ use cases where the focal point is a /working
+mechanism/, like a vessel full of batter, which is separate from the /assisting
+mechanism/, like a laptop listing recipes. The assistance is not inherently bound
+to a certain mode of operation can thus can be made less interfering. This is
+the place where we ended up adding a lot of consumer devices in the past and are
+now making them go away by adopting more /natural/ systems like /conversational/
+assistants.
+
+But there are, and will be, use cases which don't have such separations. Mostly
+in situations involving professionals at work. Unintuitive modes are accepted
+here as they can be made much more expressive for their domain. As an example
+consider operating computers completely with a keyboard. This needs knowledge of
+text-ish capabilities and little training time which is not something everyone
+will want to spend time on. While many of these use cases are not really needed
+if you consider the future, there is a potential /at present/ to sneak in
+unintuitive /acoustic/ input and feedback mechanisms.
+
+-----
+
+The kind of diversity we see in visual interface design is staggering. Many are
+experimental to be fair, but the amount of experiments is much higher than in
+audio where most of the interesting ideas I have seen are in video games and art
+installations. Maybe the pool of possibilities itself is much smaller here, but
+let's try dipping toes around. In this weekend, I will try to make a list of
+possible acoustic interfaces, no speech, that make sense for my use cases and
+see if I can get something useful out of them.
