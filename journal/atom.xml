@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-09-03</updated>
+  <updated>2019-10-02</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Acoustic Interfaces</title>
+    <link href="https://lepisma.xyz/journal/2019/10/02/acoustic-interfaces/index.html"/>
+    <updated>2019-10-02</updated>
+  </entry>
   <entry>
     <title>/Composability/: Beyond reproducibility</title>
     <link href="https://lepisma.xyz/journal/2019/09/03/composability/index.html"/>
