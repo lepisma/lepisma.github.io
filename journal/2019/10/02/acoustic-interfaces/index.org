@@ -47,9 +47,9 @@ unintuitive /acoustic/ input and feedback mechanisms.
 -----
 
 The kind of diversity we see in visual interface design is staggering. Many are
-experimental to be fair, but the amount of experiments is much higher than in
-audio where most of the interesting ideas I have seen are in video games and art
-installations. Maybe the pool of possibilities itself is much smaller here, but
-let's try dipping toes around. In this weekend, I will try to make a list of
+experimental to be fair, but the amount of experimentation is much higher than
+in audio where most of the interesting ideas I have seen are in video games and
+art installations. Maybe the pool of possibilities itself is much smaller here,
+but let's try dipping toes around. In this weekend, I will try to make a list of
 possible acoustic interfaces, no speech, that make sense for my use cases and
 see if I can get something useful out of them.
