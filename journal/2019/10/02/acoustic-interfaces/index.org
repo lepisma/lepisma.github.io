@@ -30,16 +30,16 @@ specific device. Nor should accumulating numbers and counts. These are what we
 can call /hands-in-the-batter/ use cases where the focal point is a /working
 mechanism/, like a vessel full of batter, which is separate from the /assisting
 mechanism/, like a laptop listing recipes. The assistance is not inherently bound
-to a certain mode of operation can thus can be made less interfering. This is
+to a certain mode of operation and thus can be made less interfering. This is
 the place where we ended up adding a lot of consumer devices in the past and are
 now making them go away by adopting more /natural/ systems like /conversational/
 assistants.
 
 But there are, and will be, use cases which don't have such separations. Mostly
 in situations involving professionals at work. Unintuitive modes are accepted
-here as they can be made much more expressive for their domain. As an example
+here as they can be made much more expressive for these domain. As an example
 consider operating computers completely with a keyboard. This needs knowledge of
-text-ish capabilities and little training time which is not something everyone
+text-ish capabilities and a little training time which is not something everyone
 will want to spend time on. While many of these use cases are not really needed
 if you consider the future, there is a potential /at present/ to sneak in
 unintuitive /acoustic/ input and feedback mechanisms.
