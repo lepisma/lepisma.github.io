@@ -1,0 +1,40 @@
+#+TITLE: TaskJuggler
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: productivity
+
+Around a month back, I was looking for tools that can help lay out plans and
+schedules. The idea was mostly to explore different approaches people employ.
+Till that time, I was only using simple Org Mode features[fn::Not using effort,
+clocks etc.] for personal organization and Jira at work.
+
+In the process I found the archetype Office Suite style tool in [[https://www.calligra.org/plan/][Calligra Plan]].
+Groping around a little more, I found [[http://taskjuggler.org/][TaskJuggler]] which is a more bare-metal and
+extensible variant.
+
+#+BEGIN_aside
+TaskJuggler's main mode of operation is mostly text/DSL based so is easier to
+integrate in a programmer's workflow. If you want to give it a try, start from
+[[http://taskjuggler.org/tj3/manual/Tutorial.html][the tutorial]] which is pretty decent.
+#+END_aside
+
+While it is pretty nice and works as advertised, I realized that what I need is
+just a good roadmap for next 2-3 months and something to do seamless time
+logging. Here are my current requirements and the way I am solving them, if I
+am:
+
+1. [X] Deciding what things to work on from a long term perspective. Plain
+   notes. Not imposing a certain tool/ideology here is actually helpful.
+2. [ ] Deciding what to do /at the moment/. Whims. Not sure if I have easy ways to
+   improve this.
+3. [X] Putting should-spend effort estimates. Org. This is supposed to come
+   instinctively so this specific point should become less important.
+4. [X] Clocking. Org.
+5. [X] Looking at what I worked on. [[https://github.com/rksm/clj-org-analyzer][Org analyzer]].
+
+-----
+
+I believe my /personal/ plans don't have the expanse and complexity that tools
+like TaskJuggler are built for. While this is obvious if you know about project
+planning in general, I am saying this more in an attempt to make myself accept
+the fact that if I start needing more powerful tools, I should rethink my spent
+time and start concentrating on what is important.
