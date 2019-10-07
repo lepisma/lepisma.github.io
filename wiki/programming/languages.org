@@ -48,6 +48,8 @@ The following is in my list for C:
 - [ ] Working with threads and other OS features
 - [ ] Network programming
 
+A nice resource for writing a little modern C is [[https://matt.sh/howto-c][How to C]].
+
 * C++
 
 I have had some experience with C++ and know the general basics. As of now, I
