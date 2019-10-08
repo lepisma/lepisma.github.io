@@ -5,35 +5,6 @@ This page houses some programming related resources that I have found useful
 while working on /anything/. It's starting out jumbled but will get more organized
 as I put more things in here.
 
-* Common Lisp
-- Use [[https://github.com/roswell/roswell][roswell]] for building command line tools.
-- [[https://github.com/takagi/lake][lake]] is a neat make alternative.
-- I keep a list of utility packages that I ~:use~ in repl (and shell-ish scripts)
-  [[https://github.com/lepisma/cfg/blob/master/pod/package.lisp][here]]. Probably you could use something like [[https://github.com/cl21/cl21][cl21]] but then you would want to
-  write packages in cl21 too.
-- CL is also great for scripting if you live in the repl. I wrote my workflow
-  [[pile:journal:2018/10/07/lisp-shell-scripts][here]].
-
-* Emacs Lisp
-- Use [[https://github.com/magnars/s.el][s]], [[https://github.com/magnars/dash.el][dash]], [[https://github.com/rejeep/f.el][f]] and [[https://github.com/Wilfred/ht.el][ht]] while programming in elisp for maximum pleasure.
-
-* Python
-- [[https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html][The Definitive Guide to Python import Statements]] is a neat guide explaining
-  the import mess in Python.
-- Want more structure in python programs? Use [[https://github.com/ericvsmith/dataclasses][dataclasses]]/[[https://github.com/python-attrs/attrs][attrs]] and [[https://github.com/python/mypy][mypy]].
-- [[https://github.com/dgilland/pydash][pydash]] has nice set of high level functions.
-- [[https://github.com/mahmoud/glom][glom]] helps in working with nested data.
-- For workflow management, I find [[https://snakemake.readthedocs.io/][snakemake]] really useful. Combining it with
-  [[https://conda.io/][conda]] gives nice pavement for exploratory projects. +For scripts, [[https://github.com/kennethreitz/pipenv/][pipenv]] is
-  probably the cleanest solution+.
-- Use [[https://poetry.eustace.io/][poetry]] for developing python libraries and/or scripts. It avoids ~setup.py~
-  and its brothers altogether.
-- For managing python versions, I have found [[https://github.com/pyenv/pyenv-installer][pyenv]] to be very clean. Along with
-  poetry for managing virtualenvs, this helps in closing the loop.
-- I like [[https://github.com/docopt/docopt][docopt]] for command line parsing. Even though there are probably valid
-  arguments /against/ it, since it's not very popular, I haven't really felt any
-  problem with it til now.
-
 * Tools
 Few nifty tools. Along with the usual *nix pack, they make so many things really
 quick.
@@ -70,3 +41,4 @@ quick.
 - [[https://www.ledger-cli.org/][ledger]] for accounting.
 - Haven't tried it (am starting soon), but [[http://taskjuggler.org][TaskJuggler]] looks like something that
   belongs here.
+  
