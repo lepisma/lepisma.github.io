@@ -1,0 +1,79 @@
+#+TITLE: Weekly Review /40-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 40,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+- I am moving to a more longer scale, semester like personal cycle. Each cycle
+  is of 3-4 months and is pretty similar to OKRs. I am seeing a few positive
+  changes in what I am /able/ to do now but since there are other confounding
+  factors, I won't say anything very clear at the moment.
+- Gave a rough try to speaker embeddings from [[https://github.com/CorentinJ/Real-Time-Voice-Cloning][Real-Time-Voice-Cloning]] models for
+  a tiny internal dataset. Even though the accents are pretty different (US
+  trained, tested on Indian English), the embeddings are pretty informative and
+  useful.
+- I am trying to see how useful I really can make speech/acoustics as a mode of
+  interacting with my machine(s). I have a live list [[pile:wiki:interfaces/acoustic][here]].
+
+* Readings/Explorations
+- What’s your ML Test Score? A rubric for ML production systems
+  (cite:breck2016s)
+- Transfer learning from speaker verification to multispeaker text-to-speech
+  synthesis (cite:jia2018transfer)
+- The Secret Sharer: Evaluating and testing unintended memorization in neural
+  networks (cite:carlini2019secret)
+- Generalized end-to-end loss for speaker verification (cite:wan2018generalized)
+- One neuron is more informative than a deep neural network for aftershock
+  pattern forecasting (cite:mignan2019one)
+- Distributed representations of sentences and documents
+  (cite:le2014distributed)
+- [[https://www.theatlantic.com/technology/archive/2017/12/agile-manifesto-a-history/547715/][Agile Software Development: A History - The Atlantic]]
+- [[https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md][ink/WritingWithInk.md at master · inkle/ink · GitHub]]
+- [[https://www.nature.com/articles/d41586-019-02918-5][Novelist Cormac McCarthy’s tips on how to write a great science paper]]
+- [[https://bair.berkeley.edu/blog/2019/09/26/circuits/][Sample Efficient Evolutionary Algorithm for Analog Circuit Design]]
+- [[https://nullprogram.com/blog/2019/09/25/][No, PHP Doesn't Have Closures « null program]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 40-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+Little less than usual commit counts is an interesting thing to notice. These
+last couple of weeks had me doing the sort of programming I like rather than
+what I am forced to do usually. For earlier weeks, I believe I was still doing
+regular stuff but just a little less.
+
+* Media
+- [[http://www.wnycstudios.org/story/silky-love/][Silky Love | Radiolab]]
+- [[https://samharris.org/podcasts/170-great-uncoupling/][Making Sense Podcast #170 - The Great Uncoupling | Sam Harris]]
+- [[https://aeon.co/ideas/what-did-max-weber-mean-by-the-spirit-of-capitalism?utm_source=Aeon+Newsletter&utm_medium=email&utm_campaign=AD_PRINCETON_SCHNEIDER][What did Max Weber mean by the ‘spirit’ of capitalism? | Aeon Ideas]]
+#+begin_quote
+In a world which could not be grasped as a whole, and where there were no
+universally shared values, most people clung to the particular niche to which
+they were most committed: their job or profession. They treated their work as a
+post-religious calling, ‘an absolute end in itself’, and if the modern ‘ethic’
+or ‘spirit’ had an ultimate foundation, this was it.
+#+end_quote
+- [[https://johncarlosbaez.wordpress.com/2019/09/18/divesting/][Divesting | Azimuth]]
+- [[https://johncarlosbaez.wordpress.com/2019/09/22/rethinking-universities/][Rethinking Universities | Azimuth]]
+- [[https://www.newyorker.com/news/daily-comment/money-is-the-oxygen-on-which-the-fire-of-global-warming-burns][Money Is the Oxygen on Which the Fire of Global Warming Burns | The New Yorker]]
+- [[https://aeon.co/essays/how-smartphones-silence-what-the-urban-landscape-tries-to-say?utm_source=Aeon+Newsletter&utm_medium=email&utm_campaign=AD_PRINCETON_SCHNEIDER][How smartphones silence what the urban landscape tries to say | Aeon Essays]]
+
+[[bibliography:./references.bib]]
