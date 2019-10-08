@@ -255,6 +255,84 @@ random search.
 
 * AI/ML
 
+** READ Distributed representations of sentences and documents
+CLOSED: [2019-10-09 Wed 01:48]
+:PROPERTIES:
+:CUSTOM_ID: le2014distributed
+:YEAR:     2014
+:AUTHOR:   Le, Quoc and Mikolov, Tomas
+:END:
+
+Document vectorization paper following the general series of word2vec ones.
+
+** READ One neuron is more informative than a deep neural network for aftershock pattern forecasting
+CLOSED: [2019-10-09 Wed 01:45]
+:PROPERTIES:
+:CUSTOM_ID: mignan2019one
+:YEAR:     2019
+:AUTHOR:   Mignan, Arnaud and Broccardo, Marco
+:END:
+
+Got from r/MachineLearning. Title kind of says what is there in the paper. Even
+then, I would recommend skimming it just because the model is drastically
+simpler than the neural-net they are comparing to.
+
+** READ Generalized end-to-end loss for speaker verification
+CLOSED: [2019-10-09 Wed 01:43]
+:PROPERTIES:
+:CUSTOM_ID: wan2018generalized
+:YEAR:     2018
+:AUTHOR:   Wan, Li and Wang, Quan and Papir, Alan and Moreno, Ignacio Lopez
+:END:
+
+Leaving the speaker verification part aside, this presents a way to train
+embeddings with membership constraints so that items for one identity are
+grouped together and are easy to separate from the rest.
+
+** READ The Secret Sharer: Evaluating and testing unintended memorization in neural networks
+CLOSED: [2019-10-09 Wed 01:31]
+:PROPERTIES:
+:CUSTOM_ID: carlini2019secret
+:YEAR:     2019
+:AUTHOR:   Carlini, Nicholas and Liu, Chang and Erlingsson, {\'U}lfar and Kos, Jernej and Song, Dawn
+:END:
+
+This tries to formalize the problem of /unintended memorization/ in neural
+networks. Notice the emphasis. There are many different ways to interpret
+/memorization/ and the authors here are only concerned about cases where (say)
+something like a private sequence gets sucked in the memory and Mallory is able
+to extract such pieces with reasonable common attacks.
+
+Important is their metric, called /exposure/, which kind of defines how easy it is
+to get a memorized piece of information out by playing around with the model
+API.
+
+** READ Transfer learning from speaker verification to multispeaker text-to-speech synthesis
+CLOSED: [2019-10-09 Wed 01:20]
+:PROPERTIES:
+:CUSTOM_ID: jia2018transfer
+:YEAR:     2018
+:AUTHOR:   Jia, Ye and Zhang, Yu and Weiss, Ron and Wang, Quan and Shen, Jonathan and Ren, Fei and Nguyen, Patrick and Pang, Ruoming and Moreno, Ignacio Lopez and Wu, Yonghui and others
+:END:
+
+[[https://github.com/CorentinJ/Real-Time-Voice-Cloning][Real-Time-Voice-Cloning]] project pointed me here. Since I don't know much about
+speech synthesis at the moment, this also was a nice intro to the current
+modular breakdown. Three components are involved here:
+
+1. Discriminative speaker encoder. Trained on US English search voice data.
+2. Synthesizer. Takes text to spectrogram, conditioned on speaker encoding.
+3. Vocoder. Takes spectrograms to audio. Wavenet based.
+
+** READ What’s your ML Test Score? A rubric for ML production systems
+CLOSED: [2019-10-09 Wed 01:19]
+:PROPERTIES:
+:CUSTOM_ID: breck2016s
+:YEAR:     2016
+:AUTHOR:   Breck, Eric and Cai, Shanqing and Nielsen, Eric and Salib, Michael and Sculley, D
+:END:
+
+This is a good guide to follow if you work in a production ML setting.
+
 ** READ Mixing dirichlet topic models and word embeddings to make lda2vec
 CLOSED: [2019-09-25 Wed 00:30]
 :PROPERTIES:
