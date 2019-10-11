@@ -7,6 +7,33 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *calling convention docstring*
+
+  At times, you want to specify a different calling function signature to show
+  up when inspecting a function. This is useful in macros (as the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Function-Documentation.html#Function-Documentation][doc says here]])
+  and dynamic module definitions (in C for example) where you don't have a way
+  of specifying lambda list properly. For doing this, you need to extend
+  docstrings as:
+
+#+begin_quote
+The last line of the documentation string can specify calling conventions
+different from the actual function arguments. Write text like this:
+
+~\(fn arglist)~
+
+following a blank line, at the beginning of the line, with no newline following
+it inside the documentation string. (The ‘\’ is used to avoid confusing the
+Emacs motion commands.) The calling convention specified in this way appears in
+help messages in place of the one derived from the actual arguments of the
+function.
+#+end_quote
+
++ *docstring keys*
+
+  When you want up to date keymaps to be shown in docstrings, you can use
+  special sequences as specified [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Keys-in-Documentation.html#Keys-in-Documentation][here]] which are substituted depending on current
+  bindings.
+
 + *ede*
 
   [[https://www.gnu.org/software/emacs/manual/html_node/ede/index.html][EDE]] tries to add IDE like project level abstractions and actions to Emacs.
