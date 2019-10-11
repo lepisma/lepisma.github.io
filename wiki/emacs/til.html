@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-09-22 Sun 11:50 -->
+<!-- 2019-10-12 Sat 00:24 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Today I Learned in Emacs</title>
@@ -287,7 +287,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-09-22 Sun 11:50</div>
+  <div class='page-meta'>Last modified:  2019-10-12 Sat 00:24</div>
   <h1>Today I Learned <i>in Emacs</i></h1>
 </div>
 </div>
@@ -305,6 +305,49 @@ This page <i>used to</i> live in a separate repository <a href="https://github.c
 </aside>
 
 <ul class="org-ul">
+<li><p>
+<b>calling convention docstring</b>
+</p>
+
+<p>
+At times, you want to specify a different calling function signature to show
+up when inspecting a function. This is useful in macros (as the <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Function-Documentation.html#Function-Documentation">doc says here</a>)
+and dynamic module definitions (in C for example) where you don't have a way
+of specifying lambda list properly. For doing this, you need to extend
+docstrings as:
+</p></li>
+</ul>
+
+<blockquote>
+<p>
+The last line of the documentation string can specify calling conventions
+different from the actual function arguments. Write text like this:
+</p>
+
+<p>
+<code>\(fn arglist)</code>
+</p>
+
+<p>
+following a blank line, at the beginning of the line, with no newline following
+it inside the documentation string. (The ‘\’ is used to avoid confusing the
+Emacs motion commands.) The calling convention specified in this way appears in
+help messages in place of the one derived from the actual arguments of the
+function.
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li><p>
+<b>docstring keys</b>
+</p>
+
+<p>
+When you want up to date keymaps to be shown in docstrings, you can use
+special sequences as specified <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Keys-in-Documentation.html#Keys-in-Documentation">here</a> which are substituted depending on current
+bindings.
+</p></li>
+
 <li><p>
 <b>ede</b>
 </p>
