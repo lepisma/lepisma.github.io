@@ -1,0 +1,14 @@
+#+TITLE: Employment State
+#+SETUPFILE: ../../assets/export.setup
+
+#+begin_quote
+This page is not as descriptive as it can be. Will expand if needed.
+#+end_quote
+
+At present, I work as a Machine Learning engineer at [[https://github.com/vernacular-ai/][Vernacular.ai]] (starting
+June 2018). Previously,
+
+1. I worked as part time programmer at [[https://github.com/reichlab][The Reich Lab]] during my Master's
+   (2016-2018) on epidemic forecasting models and tooling.
+2. During my Bachelor's, I interned at Qualcomm Research (2015), Bangalore
+   working with on image quality tuning systems.

@@ -1,10 +1,13 @@
 #+TITLE: Education
 #+SETUPFILE: ../../assets/export.setup
 
+#+begin_quote
+This page is not as descriptive as it can be. Will expand if needed.
+#+end_quote
+
 Notes on education, formal and otherwise.
 
-* Pages in this section
-
-#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
-(princ (pile-index-format))
-#+END_SRC
+As of this writing I have a /Bachelor of Technology/ (2012-2016) degree in
+Electrical Engineering from [[https://www.iitr.ac.in/][Indian Institute of Technology, Roorkee]] and a /Master
+of Science/ (2016-2018) in Computer Science from [[https://www.cics.umass.edu/][CICS, University of
+Massachusetts, Amhert]].
