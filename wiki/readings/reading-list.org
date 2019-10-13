@@ -1906,6 +1906,13 @@ the least the following would be okay:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** Networking for Nerds: Find, Access and Land Hidden Game-Changing Career Opportunities Everywhere
+:PROPERTIES:
+:AUTHOR:   Alaina G. Levine
+:ADDED:    [2019-10-13]
+:AMAZON:   https://www.amazon.com/Networking-Nerds-Game-Changing-Opportunities-Everywhere/dp/1118663586
+:END:
+
 *** Lost in Math: How Beauty Leads Physics Astray
 :PROPERTIES:
 :AUTHOR:   Sabine Hossenfelder
