@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-10-09 Wed 01:50 -->
+<!-- 2019-10-14 Mon 00:27 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Document/Paper Notes</title>
@@ -309,7 +309,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-10-09 Wed 01:49</div>
+  <div class='page-meta'>Last modified:  2019-10-14 Mon 00:27</div>
   <h1>Document/Paper Notes</h1>
 </div>
 </div>
@@ -701,8 +701,78 @@ PAGES: 145--152
 </pre>
 </div>
 
-<div id="outline-container-orgb854459" class="outline-3">
-<h3 id="le2014distributed"><span class="section-number-3">2.1</span> <span class="done READ">READ</span> Distributed representations of sentences and documents</h3>
+<div id="outline-container-org5e0368b" class="outline-3">
+<h3 id="serdyuk2018towards"><span class="section-number-3">2.1</span> <span class="done READ">READ</span> Towards end-to-end spoken language understanding</h3>
+<div class="outline-text-3" id="text-serdyuk2018towards">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-14 Mon 00:15]</span></span></p>
+<pre class="example">
+CUSTOM_ID: serdyuk2018towards
+YEAR: 2018
+AUTHOR: Serdyuk, Dmitriy and Wang, Yongqiang and Fuegen, Christian and Kumar, Anuj and Liu, Baiyang and Bengio, Yoshua
+</pre>
+
+<p>
+Simple results (plain intent-ish classification) on going directly from audio
+features to intent. An important decision, I believe, is to have bigger semantic
+chunks to recur on since audio is very sample heavy.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcbebb3b" class="outline-3">
+<h3 id="schneider2019wav2vec"><span class="section-number-3">2.2</span> <span class="done READ">READ</span> wav2vec: Unsupervised Pre-training for Speech Recognition.</h3>
+<div class="outline-text-3" id="text-schneider2019wav2vec">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-14 Mon 00:15]</span></span></p>
+<pre class="example">
+CUSTOM_ID: schneider2019wav2vec
+YEAR: 2019
+AUTHOR: Steffen {Schneider} and Alexei {Baevski} and Ronan {Collobert} and Michael {Auli}
+</pre>
+
+<p>
+Not exactly what I assumed an x2vec would be with x = audio. Anyway, the idea is
+to have a language model-ish system for audio frames which acts as the
+featurizer for downstream tasks like, here, speech recognition. The gains are
+decent. There are a few good points covered in between which drive decisions
+while working with audio. Though I wonder what were the reasons for not going
+with spectrums<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> if they are replacing log-mel input in regular speech recognizer.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd89c83" class="outline-3">
+<h3 id="varma2018snuba"><span class="section-number-3">2.3</span> <span class="done READ">READ</span> Snuba: automating weak supervision to label training data</h3>
+<div class="outline-text-3" id="text-varma2018snuba">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-14 Mon 00:14]</span></span></p>
+<pre class="example">
+CUSTOM_ID: varma2018snuba
+YEAR: 2018
+AUTHOR: Varma, Paroma and R{\'e}, Christopher
+</pre>
+
+<p>
+This is a logical extension of <a class='org-ref-reference' href="#ratner2017snorkel">ratner2017snorkel</a>. Instead of users writing
+heuristics, we go one level farther and just provide primitives (semantically
+meaningful feature chunks). There are three components:
+</p>
+
+<ol class="org-ol">
+<li>Synthesizer that does heuristic creation based on certain labelled dataset.</li>
+<li>A pruner that picks <i>good</i> heuristics, based on certain definitions and
+constraints.</li>
+<li>A verifier which closes the loop by deciding when to stop, what to feed to
+synthesizer etc.</li>
+</ol>
+
+<p>
+While there are obvious upgrades in how we are doing everything, the general
+architecture reminds me much of classical rule learning systems like <a href="https://en.wikipedia.org/wiki/Learning_classifier_system">LCS</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9539f4b" class="outline-3">
+<h3 id="le2014distributed"><span class="section-number-3">2.4</span> <span class="done READ">READ</span> Distributed representations of sentences and documents</h3>
 <div class="outline-text-3" id="text-le2014distributed">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-09 Wed 01:48]</span></span></p>
 <pre class="example">
@@ -717,8 +787,8 @@ Document vectorization paper following the general series of word2vec ones.
 </div>
 </div>
 
-<div id="outline-container-org2679190" class="outline-3">
-<h3 id="mignan2019one"><span class="section-number-3">2.2</span> <span class="done READ">READ</span> One neuron is more informative than a deep neural network for aftershock pattern forecasting</h3>
+<div id="outline-container-org62372ec" class="outline-3">
+<h3 id="mignan2019one"><span class="section-number-3">2.5</span> <span class="done READ">READ</span> One neuron is more informative than a deep neural network for aftershock pattern forecasting</h3>
 <div class="outline-text-3" id="text-mignan2019one">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-09 Wed 01:45]</span></span></p>
 <pre class="example">
@@ -735,8 +805,8 @@ simpler than the neural-net they are comparing to.
 </div>
 </div>
 
-<div id="outline-container-orgaefc816" class="outline-3">
-<h3 id="wan2018generalized"><span class="section-number-3">2.3</span> <span class="done READ">READ</span> Generalized end-to-end loss for speaker verification</h3>
+<div id="outline-container-orgf8c222a" class="outline-3">
+<h3 id="wan2018generalized"><span class="section-number-3">2.6</span> <span class="done READ">READ</span> Generalized end-to-end loss for speaker verification</h3>
 <div class="outline-text-3" id="text-wan2018generalized">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-09 Wed 01:43]</span></span></p>
 <pre class="example">
@@ -753,8 +823,8 @@ grouped together and are easy to separate from the rest.
 </div>
 </div>
 
-<div id="outline-container-org1e3e9ca" class="outline-3">
-<h3 id="carlini2019secret"><span class="section-number-3">2.4</span> <span class="done READ">READ</span> The Secret Sharer: Evaluating and testing unintended memorization in neural networks</h3>
+<div id="outline-container-orgbd06b63" class="outline-3">
+<h3 id="carlini2019secret"><span class="section-number-3">2.7</span> <span class="done READ">READ</span> The Secret Sharer: Evaluating and testing unintended memorization in neural networks</h3>
 <div class="outline-text-3" id="text-carlini2019secret">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-09 Wed 01:31]</span></span></p>
 <pre class="example">
@@ -779,8 +849,8 @@ API.
 </div>
 </div>
 
-<div id="outline-container-org8173b55" class="outline-3">
-<h3 id="jia2018transfer"><span class="section-number-3">2.5</span> <span class="done READ">READ</span> Transfer learning from speaker verification to multispeaker text-to-speech synthesis</h3>
+<div id="outline-container-org39562af" class="outline-3">
+<h3 id="jia2018transfer"><span class="section-number-3">2.8</span> <span class="done READ">READ</span> Transfer learning from speaker verification to multispeaker text-to-speech synthesis</h3>
 <div class="outline-text-3" id="text-jia2018transfer">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-09 Wed 01:20]</span></span></p>
 <pre class="example">
@@ -803,8 +873,8 @@ modular breakdown. Three components are involved here:
 </div>
 </div>
 
-<div id="outline-container-org9e0f0e7" class="outline-3">
-<h3 id="breck2016s"><span class="section-number-3">2.6</span> <span class="done READ">READ</span> What’s your ML Test Score? A rubric for ML production systems</h3>
+<div id="outline-container-org9ff78e0" class="outline-3">
+<h3 id="breck2016s"><span class="section-number-3">2.9</span> <span class="done READ">READ</span> What’s your ML Test Score? A rubric for ML production systems</h3>
 <div class="outline-text-3" id="text-breck2016s">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-10-09 Wed 01:19]</span></span></p>
 <pre class="example">
@@ -819,8 +889,8 @@ This is a good guide to follow if you work in a production ML setting.
 </div>
 </div>
 
-<div id="outline-container-org7ca0286" class="outline-3">
-<h3 id="moody2016mixing"><span class="section-number-3">2.7</span> <span class="done READ">READ</span> Mixing dirichlet topic models and word embeddings to make lda2vec</h3>
+<div id="outline-container-orgcbd3f11" class="outline-3">
+<h3 id="moody2016mixing"><span class="section-number-3">2.10</span> <span class="done READ">READ</span> Mixing dirichlet topic models and word embeddings to make lda2vec</h3>
 <div class="outline-text-3" id="text-moody2016mixing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-09-25 Wed 00:30]</span></span></p>
 <pre class="example">
@@ -836,8 +906,8 @@ not and how do things compare to other techniques.
 </div>
 </div>
 
-<div id="outline-container-org5848498" class="outline-3">
-<h3 id="likhomanenko2019needs"><span class="section-number-3">2.8</span> <span class="done READ">READ</span> Who needs words? lexicon-free speech recognition</h3>
+<div id="outline-container-org536e092" class="outline-3">
+<h3 id="likhomanenko2019needs"><span class="section-number-3">2.11</span> <span class="done READ">READ</span> Who needs words? lexicon-free speech recognition</h3>
 <div class="outline-text-3" id="text-likhomanenko2019needs">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-09-15 Sun 22:33]</span></span></p>
 <pre class="example">
@@ -853,8 +923,8 @@ a results paper. I like how well ConvLM does though.
 </div>
 </div>
 
-<div id="outline-container-org69eeadc" class="outline-3">
-<h3 id="pratap2018wav2letter"><span class="section-number-3">2.9</span> <span class="done READ">READ</span> wav2letter++: The fastest open-source speech recognition system</h3>
+<div id="outline-container-org7070eb5" class="outline-3">
+<h3 id="pratap2018wav2letter"><span class="section-number-3">2.12</span> <span class="done READ">READ</span> wav2letter++: The fastest open-source speech recognition system</h3>
 <div class="outline-text-3" id="text-pratap2018wav2letter">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-09-15 Sun 22:30]</span></span></p>
 <pre class="example">
@@ -870,8 +940,8 @@ based guarantees in general. Kaldi just feels annoying at times.
 </div>
 </div>
 
-<div id="outline-container-orga66396e" class="outline-3">
-<h3 id="coucke2018snips"><span class="section-number-3">2.10</span> <span class="done READ">READ</span> Snips voice platform: an embedded spoken language understanding system for private-by-design voice interfaces</h3>
+<div id="outline-container-org9a1dde1" class="outline-3">
+<h3 id="coucke2018snips"><span class="section-number-3">2.13</span> <span class="done READ">READ</span> Snips voice platform: an embedded spoken language understanding system for private-by-design voice interfaces</h3>
 <div class="outline-text-3" id="text-coucke2018snips">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-09-15 Sun 22:26]</span></span></p>
 <pre class="example">
@@ -888,8 +958,8 @@ quick on-premise as compared to keeping things mostly frozen.
 </div>
 </div>
 
-<div id="outline-container-org927ebda" class="outline-3">
-<h3 id="christiano2018supervising"><span class="section-number-3">2.11</span> <span class="done READ">READ</span> Supervising strong learners by amplifying weak experts</h3>
+<div id="outline-container-org15e1a36" class="outline-3">
+<h3 id="christiano2018supervising"><span class="section-number-3">2.14</span> <span class="done READ">READ</span> Supervising strong learners by amplifying weak experts</h3>
 <div class="outline-text-3" id="text-christiano2018supervising">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-08-20 Tue 00:32]</span></span></p>
 <pre class="example">
@@ -916,8 +986,8 @@ this direction.
 </div>
 </div>
 
-<div id="outline-container-org6c8a71d" class="outline-3">
-<h3 id="daume2009frustratingly"><span class="section-number-3">2.12</span> <span class="done READ">READ</span> Frustratingly easy domain adaptation</h3>
+<div id="outline-container-orgc2d6560" class="outline-3">
+<h3 id="daume2009frustratingly"><span class="section-number-3">2.15</span> <span class="done READ">READ</span> Frustratingly easy domain adaptation</h3>
 <div class="outline-text-3" id="text-daume2009frustratingly">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-08-20 Tue 00:31]</span></span></p>
 <pre class="example">
@@ -933,8 +1003,8 @@ writing anything here.
 </div>
 </div>
 
-<div id="outline-container-org10ecf82" class="outline-3">
-<h3 id="schwartz2019green"><span class="section-number-3">2.13</span> <span class="done READ">READ</span> Green AI</h3>
+<div id="outline-container-org29a0e25" class="outline-3">
+<h3 id="schwartz2019green"><span class="section-number-3">2.16</span> <span class="done READ">READ</span> Green AI</h3>
 <div class="outline-text-3" id="text-schwartz2019green">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-08-20 Tue 00:29]</span></span></p>
 <pre class="example">
@@ -954,8 +1024,8 @@ in a gamified way for actions to be taken.
 </div>
 </div>
 
-<div id="outline-container-org81c218f" class="outline-3">
-<h3 id="niven2019probing"><span class="section-number-3">2.14</span> <span class="done READ">READ</span> Probing Neural Network Comprehension of Natural Language Arguments</h3>
+<div id="outline-container-org5b3da1a" class="outline-3">
+<h3 id="niven2019probing"><span class="section-number-3">2.17</span> <span class="done READ">READ</span> Probing Neural Network Comprehension of Natural Language Arguments</h3>
 <div class="outline-text-3" id="text-niven2019probing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-22 Mon 23:53]</span></span></p>
 <pre class="example">
@@ -973,8 +1043,8 @@ big hits and go to essentially random-ish performance.
 </div>
 </div>
 
-<div id="outline-container-org6867286" class="outline-3">
-<h3 id="garrod2007alignment"><span class="section-number-3">2.15</span> <span class="done READ">READ</span> Alignment in dialogue</h3>
+<div id="outline-container-orge761be9" class="outline-3">
+<h3 id="garrod2007alignment"><span class="section-number-3">2.18</span> <span class="done READ">READ</span> Alignment in dialogue</h3>
 <div class="outline-text-3" id="text-garrod2007alignment">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-22 Mon 23:51]</span></span></p>
 <pre class="example">
@@ -1003,8 +1073,8 @@ only refers to the information that happens to be shared.</li>
 </div>
 </div>
 
-<div id="outline-container-org70968b8" class="outline-3">
-<h3 id="schatzmann2007statistical"><span class="section-number-3">2.16</span> <span class="done READ">READ</span> Statistical user simulation with a hidden agenda</h3>
+<div id="outline-container-orgaf02a53" class="outline-3">
+<h3 id="schatzmann2007statistical"><span class="section-number-3">2.19</span> <span class="done READ">READ</span> Statistical user simulation with a hidden agenda</h3>
 <div class="outline-text-3" id="text-schatzmann2007statistical">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-22 Mon 23:46]</span></span></p>
 <pre class="example">
@@ -1026,8 +1096,8 @@ transition probabilities etc.</li>
 </div>
 </div>
 
-<div id="outline-container-orga0e43e9" class="outline-3">
-<h3 id="papangelis2019collaborative"><span class="section-number-3">2.17</span> <span class="done READ">READ</span> Collaborative Multi-Agent Dialogue Model Training Via Reinforcement Learning</h3>
+<div id="outline-container-org0db6f9b" class="outline-3">
+<h3 id="papangelis2019collaborative"><span class="section-number-3">2.20</span> <span class="done READ">READ</span> Collaborative Multi-Agent Dialogue Model Training Via Reinforcement Learning</h3>
 <div class="outline-text-3" id="text-papangelis2019collaborative">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-22 Mon 23:42]</span></span></p>
 <pre class="example">
@@ -1051,8 +1121,8 @@ their role (seeker or provider).
 </div>
 </div>
 
-<div id="outline-container-org56568ec" class="outline-3">
-<h3 id="shah2018building"><span class="section-number-3">2.18</span> <span class="done READ">READ</span> Building a conversational agent overnight with dialogue self-play</h3>
+<div id="outline-container-orgcd29efc" class="outline-3">
+<h3 id="shah2018building"><span class="section-number-3">2.21</span> <span class="done READ">READ</span> Building a conversational agent overnight with dialogue self-play</h3>
 <div class="outline-text-3" id="text-shah2018building">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-07 Sun 19:48]</span></span></p>
 <pre class="example">
@@ -1080,8 +1150,8 @@ The generated dataset is <a href="https://github.com/google-research-datasets/si
 </div>
 </div>
 
-<div id="outline-container-org604aa71" class="outline-3">
-<h3 id="rasooli2018entity"><span class="section-number-3">2.19</span> <span class="done READ">READ</span> Entity-Aware Language Model as an Unsupervised Reranker</h3>
+<div id="outline-container-orgc2d2b26" class="outline-3">
+<h3 id="rasooli2018entity"><span class="section-number-3">2.22</span> <span class="done READ">READ</span> Entity-Aware Language Model as an Unsupervised Reranker</h3>
 <div class="outline-text-3" id="text-rasooli2018entity">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-05 Fri 00:05]</span></span></p>
 <pre class="example">
@@ -1101,8 +1171,8 @@ whatever they did sounds intuitive. Backstories people.
 </div>
 </div>
 
-<div id="outline-container-org5ca687e" class="outline-3">
-<h3 id="welling2011bayesian"><span class="section-number-3">2.20</span> <span class="done READ">READ</span> Bayesian learning via stochastic gradient Langevin dynamics</h3>
+<div id="outline-container-orge816277" class="outline-3">
+<h3 id="welling2011bayesian"><span class="section-number-3">2.23</span> <span class="done READ">READ</span> Bayesian learning via stochastic gradient Langevin dynamics</h3>
 <div class="outline-text-3" id="text-welling2011bayesian">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-02 Tue 22:52]</span></span></p>
 <pre class="example">
@@ -1135,8 +1205,8 @@ am missing some statistical tooling at the moment to appreciate it.
 </div>
 </div>
 
-<div id="outline-container-orgd0b1f01" class="outline-3">
-<h3 id="carbonell1983learning"><span class="section-number-3">2.21</span> <span class="done READ">READ</span> Learning by analogy: Formulating and generalizing plans from past experience</h3>
+<div id="outline-container-org0e12d46" class="outline-3">
+<h3 id="carbonell1983learning"><span class="section-number-3">2.24</span> <span class="done READ">READ</span> Learning by analogy: Formulating and generalizing plans from past experience</h3>
 <div class="outline-text-3" id="text-carbonell1983learning">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-07-02 Tue 22:52]</span></span></p>
 <pre class="example">
@@ -1167,8 +1237,8 @@ parametrized and learned.
 </div>
 </div>
 
-<div id="outline-container-org3067e83" class="outline-3">
-<h3 id="liu2019large"><span class="section-number-3">2.22</span> <span class="done READ">READ</span> Large-Scale Long-Tailed Recognition in an Open World</h3>
+<div id="outline-container-org8d583f3" class="outline-3">
+<h3 id="liu2019large"><span class="section-number-3">2.25</span> <span class="done READ">READ</span> Large-Scale Long-Tailed Recognition in an Open World</h3>
 <div class="outline-text-3" id="text-liu2019large">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-06-14 Fri 00:19]</span></span></p>
 <pre class="example">
@@ -1201,8 +1271,8 @@ towards regular classes with large number of training samples.</li>
 </div>
 </div>
 
-<div id="outline-container-org8bd4645" class="outline-3">
-<h3 id="mendis2016parallelizing"><span class="section-number-3">2.23</span> <span class="done READ">READ</span> Parallelizing wfst speech decoders</h3>
+<div id="outline-container-org477df89" class="outline-3">
+<h3 id="mendis2016parallelizing"><span class="section-number-3">2.26</span> <span class="done READ">READ</span> Parallelizing wfst speech decoders</h3>
 <div class="outline-text-3" id="text-mendis2016parallelizing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-06-12 Wed 00:55]</span></span></p>
 <pre class="example">
@@ -1222,8 +1292,8 @@ affected by the domain; in this case using the information about triphones.
 </div>
 </div>
 
-<div id="outline-container-org227659d" class="outline-3">
-<h3 id="bainczyk2017model"><span class="section-number-3">2.24</span> <span class="done READ">READ</span> Model-based testing without models: the TodoMVC case study</h3>
+<div id="outline-container-org6b648ec" class="outline-3">
+<h3 id="bainczyk2017model"><span class="section-number-3">2.27</span> <span class="done READ">READ</span> Model-based testing without models: the TodoMVC case study</h3>
 <div class="outline-text-3" id="text-bainczyk2017model">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-06-04 Tue 10:52]</span></span></p>
 <pre class="example">
@@ -1252,8 +1322,8 @@ overview of the scene and references to a few primary sources.
 </div>
 </div>
 
-<div id="outline-container-org1b238c3" class="outline-3">
-<h3 id="gordon2018morphnet"><span class="section-number-3">2.25</span> <span class="done READ">READ</span> Morphnet: Fast &amp; simple resource-constrained structure learning of deep networks</h3>
+<div id="outline-container-org01dad0f" class="outline-3">
+<h3 id="gordon2018morphnet"><span class="section-number-3">2.28</span> <span class="done READ">READ</span> Morphnet: Fast &amp; simple resource-constrained structure learning of deep networks</h3>
 <div class="outline-text-3" id="text-gordon2018morphnet">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-24 Fri 23:12]</span></span></p>
 <pre class="example">
@@ -1279,8 +1349,8 @@ The regularizer is an \(L1\) over the batch norm &gamma; parameters for neurons.
 </div>
 </div>
 
-<div id="outline-container-org8b8ae37" class="outline-3">
-<h3 id="beygelzimer2016learning"><span class="section-number-3">2.26</span> <span class="done READ">READ</span> Learning reductions that really work</h3>
+<div id="outline-container-org94dcb35" class="outline-3">
+<h3 id="beygelzimer2016learning"><span class="section-number-3">2.29</span> <span class="done READ">READ</span> Learning reductions that really work</h3>
 <div class="outline-text-3" id="text-beygelzimer2016learning">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-22 Wed 00:01]</span></span></p>
 <pre class="example">
@@ -1302,8 +1372,8 @@ elegant.
 </div>
 </div>
 
-<div id="outline-container-orgb481042" class="outline-3">
-<h3 id="asai2019unsupervised"><span class="section-number-3">2.27</span> <span class="done READ">READ</span> Unsupervised Grounding of Plannable First-Order Logic Representation from Images</h3>
+<div id="outline-container-org2ba1f07" class="outline-3">
+<h3 id="asai2019unsupervised"><span class="section-number-3">2.30</span> <span class="done READ">READ</span> Unsupervised Grounding of Plannable First-Order Logic Representation from Images</h3>
 <div class="outline-text-3" id="text-asai2019unsupervised">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-12 Sun 14:10]</span></span></p>
 <pre class="example">
@@ -1338,8 +1408,8 @@ future work involves a bit of supervision to put <i>names</i> on things.
 </div>
 </div>
 
-<div id="outline-container-org9082118" class="outline-3">
-<h3 id="hundman2018detecting"><span class="section-number-3">2.28</span> <span class="done READ">READ</span> Detecting spacecraft anomalies using lstms and nonparametric dynamic thresholding</h3>
+<div id="outline-container-org18c68ce" class="outline-3">
+<h3 id="hundman2018detecting"><span class="section-number-3">2.31</span> <span class="done READ">READ</span> Detecting spacecraft anomalies using lstms and nonparametric dynamic thresholding</h3>
 <div class="outline-text-3" id="text-hundman2018detecting">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-11 Sat 23:22]</span></span></p>
 <pre class="example">
@@ -1368,8 +1438,8 @@ guess.
 </div>
 </div>
 
-<div id="outline-container-org9fa0878" class="outline-3">
-<h3 id="ratner2017snorkel"><span class="section-number-3">2.29</span> <span class="done READ">READ</span> Snorkel: Rapid training data creation with weak supervision</h3>
+<div id="outline-container-org9ac16c9" class="outline-3">
+<h3 id="ratner2017snorkel"><span class="section-number-3">2.32</span> <span class="done READ">READ</span> Snorkel: Rapid training data creation with weak supervision</h3>
 <div class="outline-text-3" id="text-ratner2017snorkel">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-06 Mon 23:49]</span></span></p>
 <pre class="example">
@@ -1396,8 +1466,8 @@ little careful.
 </div>
 </div>
 
-<div id="outline-container-orgf31aa91" class="outline-3">
-<h3 id="mallinar2018bootstrapping"><span class="section-number-3">2.30</span> <span class="done READ">READ</span> Bootstrapping Conversational Agents With Weak Supervision</h3>
+<div id="outline-container-org3432da1" class="outline-3">
+<h3 id="mallinar2018bootstrapping"><span class="section-number-3">2.33</span> <span class="done READ">READ</span> Bootstrapping Conversational Agents With Weak Supervision</h3>
 <div class="outline-text-3" id="text-mallinar2018bootstrapping">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-06 Mon 23:50]</span></span></p>
 <pre class="example">
@@ -1413,8 +1483,8 @@ implementation of a snorkel like system.
 </div>
 </div>
 
-<div id="outline-container-org81c53df" class="outline-3">
-<h3 id="sculley2015hidden"><span class="section-number-3">2.31</span> <span class="done READ">READ</span> Hidden technical debt in machine learning systems</h3>
+<div id="outline-container-orgfa741df" class="outline-3">
+<h3 id="sculley2015hidden"><span class="section-number-3">2.34</span> <span class="done READ">READ</span> Hidden technical debt in machine learning systems</h3>
 <div class="outline-text-3" id="text-sculley2015hidden">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-25 Thu 00:21]</span></span></p>
 <pre class="example">
@@ -1447,8 +1517,8 @@ they are about things that are very likely to be missed.
 </div>
 </div>
 
-<div id="outline-container-org69392aa" class="outline-3">
-<h3 id="vlasov2018few"><span class="section-number-3">2.32</span> <span class="done READ">READ</span> Few-Shot Generalization Across Dialogue Tasks</h3>
+<div id="outline-container-org47872f4" class="outline-3">
+<h3 id="vlasov2018few"><span class="section-number-3">2.35</span> <span class="done READ">READ</span> Few-Shot Generalization Across Dialogue Tasks</h3>
 <div class="outline-text-3" id="text-vlasov2018few">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-21 Sun 01:15]</span></span></p>
 <pre class="example">
@@ -1466,8 +1536,8 @@ so that a new domain can share along a lot of items and get along well.
 </div>
 </div>
 
-<div id="outline-container-orga91f08f" class="outline-3">
-<h3 id="sennrich2015neural"><span class="section-number-3">2.33</span> <span class="done READ">READ</span> Neural machine translation of rare words with subword units</h3>
+<div id="outline-container-org549da7d" class="outline-3">
+<h3 id="sennrich2015neural"><span class="section-number-3">2.36</span> <span class="done READ">READ</span> Neural machine translation of rare words with subword units</h3>
 <div class="outline-text-3" id="text-sennrich2015neural">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-17 Wed 02:17]</span></span></p>
 <pre class="example">
@@ -1483,8 +1553,8 @@ robustness and better learned handling of OOV stuff.
 </div>
 </div>
 
-<div id="outline-container-org3fd5617" class="outline-3">
-<h3 id="kudo2018sentencepiece"><span class="section-number-3">2.34</span> <span class="done READ">READ</span> SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing</h3>
+<div id="outline-container-org633d85f" class="outline-3">
+<h3 id="kudo2018sentencepiece"><span class="section-number-3">2.37</span> <span class="done READ">READ</span> SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing</h3>
 <div class="outline-text-3" id="text-kudo2018sentencepiece">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-10 Wed 00:53]</span></span></p>
 <pre class="example">
@@ -1500,8 +1570,8 @@ is just a short documentation on the methods implemented.
 </div>
 </div>
 
-<div id="outline-container-org5abd148" class="outline-3">
-<h3 id="heinzerling2017bpemb"><span class="section-number-3">2.35</span> <span class="done READ">READ</span> Bpemb: Tokenization-free pre-trained subword embeddings in 275 languages</h3>
+<div id="outline-container-org2771fa0" class="outline-3">
+<h3 id="heinzerling2017bpemb"><span class="section-number-3">2.38</span> <span class="done READ">READ</span> Bpemb: Tokenization-free pre-trained subword embeddings in 275 languages</h3>
 <div class="outline-text-3" id="text-heinzerling2017bpemb">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-10 Wed 00:48]</span></span></p>
 <pre class="example">
@@ -1518,8 +1588,8 @@ paper (<a class='org-ref-reference' href="#gage1994new">gage1994new</a>) should 
 </div>
 </div>
 
-<div id="outline-container-org59b07a2" class="outline-3">
-<h3 id="hahn2012comparison"><span class="section-number-3">2.36</span> <span class="done READ">READ</span> Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries and LVCSR tasks</h3>
+<div id="outline-container-orgbbe82f0" class="outline-3">
+<h3 id="hahn2012comparison"><span class="section-number-3">2.39</span> <span class="done READ">READ</span> Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries and LVCSR tasks</h3>
 <div class="outline-text-3" id="text-hahn2012comparison">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-30 Sat 20:07]</span></span></p>
 <pre class="example">
@@ -1538,8 +1608,8 @@ certain alignment (grapheme to phoneme) algorithm to get what are called
 </div>
 </div>
 
-<div id="outline-container-orgd4add5a" class="outline-3">
-<h3 id="stolcke1996statistical"><span class="section-number-3">2.37</span> <span class="done READ">READ</span> Statistical language modeling for speech disfluencies</h3>
+<div id="outline-container-org8d209ed" class="outline-3">
+<h3 id="stolcke1996statistical"><span class="section-number-3">2.40</span> <span class="done READ">READ</span> Statistical language modeling for speech disfluencies</h3>
 <div class="outline-text-3" id="text-stolcke1996statistical">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-26 Tue 00:01]</span></span></p>
 <pre class="example">
@@ -1564,8 +1634,8 @@ I guess there might be a more recent reference around.
 </div>
 </div>
 
-<div id="outline-container-org3413576" class="outline-3">
-<h3 id="stolcke2002srilm"><span class="section-number-3">2.38</span> <span class="done READ">READ</span> SRILM-an extensible language modeling toolkit</h3>
+<div id="outline-container-orgd3d0e03" class="outline-3">
+<h3 id="stolcke2002srilm"><span class="section-number-3">2.41</span> <span class="done READ">READ</span> SRILM-an extensible language modeling toolkit</h3>
 <div class="outline-text-3" id="text-stolcke2002srilm">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-26 Tue 00:01]</span></span></p>
 <pre class="example">
@@ -1581,8 +1651,8 @@ for something more in-depth, just download the current tarball.
 </div>
 </div>
 
-<div id="outline-container-org0e06dc8" class="outline-3">
-<h3 id="goodman2001bit"><span class="section-number-3">2.39</span> <span class="done READ">READ</span> A bit of progress in language modeling</h3>
+<div id="outline-container-org3bcd4be" class="outline-3">
+<h3 id="goodman2001bit"><span class="section-number-3">2.42</span> <span class="done READ">READ</span> A bit of progress in language modeling</h3>
 <div class="outline-text-3" id="text-goodman2001bit">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-20 Wed 19:02]</span></span></p>
 <pre class="example">
@@ -1615,8 +1685,8 @@ At a higher level we get to know about:
 </div>
 </div>
 
-<div id="outline-container-orgcec4161" class="outline-3">
-<h3 id="he2018streaming"><span class="section-number-3">2.40</span> <span class="done READ">READ</span> Streaming End-to-end Speech Recognition For Mobile Devices</h3>
+<div id="outline-container-org83f3aed" class="outline-3">
+<h3 id="he2018streaming"><span class="section-number-3">2.43</span> <span class="done READ">READ</span> Streaming End-to-end Speech Recognition For Mobile Devices</h3>
 <div class="outline-text-3" id="text-he2018streaming">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-19 Tue 00:12]</span></span></p>
 <pre class="example">
@@ -1640,8 +1710,8 @@ device)</li>
 </div>
 </div>
 
-<div id="outline-container-org7ec784b" class="outline-3">
-<h3 id="akbacak2014rapidly"><span class="section-number-3">2.41</span> <span class="done READ">READ</span> Rapidly building domain-specific entity-centric language models using semantic web knowledge sources</h3>
+<div id="outline-container-org000de1f" class="outline-3">
+<h3 id="akbacak2014rapidly"><span class="section-number-3">2.44</span> <span class="done READ">READ</span> Rapidly building domain-specific entity-centric language models using semantic web knowledge sources</h3>
 <div class="outline-text-3" id="text-akbacak2014rapidly">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-19 Tue 00:12]</span></span></p>
 <pre class="example">
@@ -1659,8 +1729,8 @@ are a few other pieces involved but the general shape of narrowing is the same.
 </div>
 </div>
 
-<div id="outline-container-orge65366b" class="outline-3">
-<h3 id="bottou2008tradeoffs"><span class="section-number-3">2.42</span> The tradeoffs of large scale learning</h3>
+<div id="outline-container-org42c50c9" class="outline-3">
+<h3 id="bottou2008tradeoffs"><span class="section-number-3">2.45</span> The tradeoffs of large scale learning</h3>
 <div class="outline-text-3" id="text-bottou2008tradeoffs">
 <pre class="example">
 CUSTOM_ID: bottou2008tradeoffs
@@ -1670,8 +1740,8 @@ AUTHOR: Bottou, L{\'e}on and Bousquet, Olivier
 </div>
 </div>
 
-<div id="outline-container-org8ca5098" class="outline-3">
-<h3 id="banarescu2013abstract"><span class="section-number-3">2.43</span> <span class="done READ">READ</span> Abstract meaning representation for sembanking</h3>
+<div id="outline-container-org3ae19e4" class="outline-3">
+<h3 id="banarescu2013abstract"><span class="section-number-3">2.46</span> <span class="done READ">READ</span> Abstract meaning representation for sembanking</h3>
 <div class="outline-text-3" id="text-banarescu2013abstract">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-10 Sun 22:43]</span></span></p>
 <pre class="example">
@@ -1689,8 +1759,8 @@ computational language understanding.
 </div>
 </div>
 
-<div id="outline-container-org63dabba" class="outline-3">
-<h3 id="weilhammer2006bootstrapping"><span class="section-number-3">2.44</span> <span class="done READ">READ</span> Bootstrapping language models for dialogue systems</h3>
+<div id="outline-container-orga60213d" class="outline-3">
+<h3 id="weilhammer2006bootstrapping"><span class="section-number-3">2.47</span> <span class="done READ">READ</span> Bootstrapping language models for dialogue systems</h3>
 <div class="outline-text-3" id="text-weilhammer2006bootstrapping">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-10 Sun 22:43]</span></span></p>
 <pre class="example">
@@ -1715,8 +1785,8 @@ some sort of <i>sentence selection</i> to augment the seed LM.
 </div>
 </div>
 
-<div id="outline-container-orgf7c91f2" class="outline-3">
-<h3 id="raghuvanshi2018developing"><span class="section-number-3">2.45</span> <span class="done READ">READ</span> Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing</h3>
+<div id="outline-container-orgdbb3866" class="outline-3">
+<h3 id="raghuvanshi2018developing"><span class="section-number-3">2.48</span> <span class="done READ">READ</span> Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing</h3>
 <div class="outline-text-3" id="text-raghuvanshi2018developing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-15 Tue 01:10]</span></span></p>
 <pre class="example">
@@ -1731,8 +1801,8 @@ Doc on Mindmeld's NLU system.
 </div>
 </div>
 
-<div id="outline-container-org15c6709" class="outline-3">
-<h3 id="lebret2016neural"><span class="section-number-3">2.46</span> <span class="done READ">READ</span> Neural text generation from structured data with application to the biography domain</h3>
+<div id="outline-container-org0705ae0" class="outline-3">
+<h3 id="lebret2016neural"><span class="section-number-3">2.49</span> <span class="done READ">READ</span> Neural text generation from structured data with application to the biography domain</h3>
 <div class="outline-text-3" id="text-lebret2016neural">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-05 Sat 23:22]</span></span></p>
 <pre class="example">
@@ -1750,8 +1820,8 @@ insightful though.
 </div>
 </div>
 
-<div id="outline-container-orgaf712e9" class="outline-3">
-<h3 id="povey2012generating"><span class="section-number-3">2.47</span> Generating exact lattices in the WFST framework</h3>
+<div id="outline-container-org4254d5c" class="outline-3">
+<h3 id="povey2012generating"><span class="section-number-3">2.50</span> Generating exact lattices in the WFST framework</h3>
 <div class="outline-text-3" id="text-povey2012generating">
 <pre class="example">
 CUSTOM_ID: povey2012generating
@@ -1761,8 +1831,8 @@ AUTHOR: Povey, Daniel and Hannemann, Mirko and Boulianne, Gilles and Burget, Luk
 </div>
 </div>
 
-<div id="outline-container-orge0522f8" class="outline-3">
-<h3 id="chen2013quantifying"><span class="section-number-3">2.48</span> <span class="done READ">READ</span> Quantifying the value of pronunciation lexicons for keyword search in lowresource languages</h3>
+<div id="outline-container-org3b11b44" class="outline-3">
+<h3 id="chen2013quantifying"><span class="section-number-3">2.51</span> <span class="done READ">READ</span> Quantifying the value of pronunciation lexicons for keyword search in lowresource languages</h3>
 <div class="outline-text-3" id="text-chen2013quantifying">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-27 Sun 23:55]</span></span></p>
 <pre class="example">
@@ -1785,8 +1855,8 @@ keyword system doesn't work that well.
 </div>
 </div>
 
-<div id="outline-container-orgdc94a21" class="outline-3">
-<h3 id="chiu2018state"><span class="section-number-3">2.49</span> <span class="done READ">READ</span> State-of-the-art speech recognition with sequence-to-sequence models</h3>
+<div id="outline-container-org9b7a46c" class="outline-3">
+<h3 id="chiu2018state"><span class="section-number-3">2.52</span> <span class="done READ">READ</span> State-of-the-art speech recognition with sequence-to-sequence models</h3>
 <div class="outline-text-3" id="text-chiu2018state">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-11-06 Tue 20:52]</span></span></p>
 <pre class="example">
@@ -1803,8 +1873,8 @@ Language Models. Maybe that helps in adding and justifying heuristics.
 </div>
 </div>
 
-<div id="outline-container-org1b45431" class="outline-3">
-<h3 id="mohri2008speech"><span class="section-number-3">2.50</span> Speech recognition with weighted finite-state transducers</h3>
+<div id="outline-container-org7003f89" class="outline-3">
+<h3 id="mohri2008speech"><span class="section-number-3">2.53</span> Speech recognition with weighted finite-state transducers</h3>
 <div class="outline-text-3" id="text-mohri2008speech">
 <pre class="example">
 CUSTOM_ID: mohri2008speech
@@ -1824,8 +1894,8 @@ weight pushing and then running the classical algorithm.</li>
 </div>
 </div>
 
-<div id="outline-container-org5c249eb" class="outline-3">
-<h3 id="ratner2016data"><span class="section-number-3">2.51</span> <span class="done READ">READ</span> Data programming: Creating large training sets, quickly</h3>
+<div id="outline-container-orga083cbd" class="outline-3">
+<h3 id="ratner2016data"><span class="section-number-3">2.54</span> <span class="done READ">READ</span> Data programming: Creating large training sets, quickly</h3>
 <div class="outline-text-3" id="text-ratner2016data">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-06 Mon 23:55]</span></span></p>
 <pre class="example">
@@ -1851,8 +1921,8 @@ iterating on labeling functions than on features.
 </div>
 </div>
 
-<div id="outline-container-org6626b44" class="outline-3">
-<h3 id="jaeger2004harnessing"><span class="section-number-3">2.52</span> <span class="done READ">READ</span> Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication</h3>
+<div id="outline-container-org1be9fe3" class="outline-3">
+<h3 id="jaeger2004harnessing"><span class="section-number-3">2.55</span> <span class="done READ">READ</span> Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication</h3>
 <div class="outline-text-3" id="text-jaeger2004harnessing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-22 Mon 23:48]</span></span></p>
 <pre class="example">
@@ -1869,8 +1939,8 @@ thought about there being separate inputs and outputs.
 </div>
 </div>
 
-<div id="outline-container-orga2d702a" class="outline-3">
-<h3 id="zettlemoyer2012learning"><span class="section-number-3">2.53</span> <span class="done READ">READ</span> Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars</h3>
+<div id="outline-container-org54ccae7" class="outline-3">
+<h3 id="zettlemoyer2012learning"><span class="section-number-3">2.56</span> <span class="done READ">READ</span> Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars</h3>
 <div class="outline-text-3" id="text-zettlemoyer2012learning">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-20 Sat 20:58] </span> <span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-10-16 Tue&gt;</span></span></p>
 <pre class="example">
@@ -1903,8 +1973,8 @@ meaning of the structurally rigid categories like \(S/NP\) using a few tricks.
 </div>
 </div>
 
-<div id="outline-container-orgefc24f0" class="outline-3">
-<h3 id="steedman1996very"><span class="section-number-3">2.54</span> <span class="done READ">READ</span> A very short introduction to CCG</h3>
+<div id="outline-container-orgc839505" class="outline-3">
+<h3 id="steedman1996very"><span class="section-number-3">2.57</span> <span class="done READ">READ</span> A very short introduction to CCG</h3>
 <div class="outline-text-3" id="text-steedman1996very">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-16 Tue 02:21]</span></span></p>
 <pre class="example">
@@ -1922,8 +1992,8 @@ they pull in with themselves.
 </div>
 </div>
 
-<div id="outline-container-org72a09d6" class="outline-3">
-<h3 id="benjelloun2009swoosh"><span class="section-number-3">2.55</span> <span class="done READ">READ</span> Swoosh: a generic approach to entity resolution</h3>
+<div id="outline-container-org8455d6d" class="outline-3">
+<h3 id="benjelloun2009swoosh"><span class="section-number-3">2.58</span> <span class="done READ">READ</span> Swoosh: a generic approach to entity resolution</h3>
 <div class="outline-text-3" id="text-benjelloun2009swoosh">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-07 Sun 20:23] </span> <span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-10-06 Sat&gt;</span></span></p>
 <pre class="example">
@@ -1952,8 +2022,8 @@ reduce the number of calls to matching.
 </div>
 </div>
 
-<div id="outline-container-org8d9ef64" class="outline-3">
-<h3 id="liu2016not"><span class="section-number-3">2.56</span> <span class="done READ">READ</span> How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation</h3>
+<div id="outline-container-org0d442ea" class="outline-3">
+<h3 id="liu2016not"><span class="section-number-3">2.59</span> <span class="done READ">READ</span> How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation</h3>
 <div class="outline-text-3" id="text-liu2016not">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-13 Sat 17:45] </span> <span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-10-06 Sat 15:00&gt;</span></span></p>
 <pre class="example">
@@ -1969,8 +2039,8 @@ sentence similarity.
 </div>
 </div>
 
-<div id="outline-container-orge7393d2" class="outline-3">
-<h3 id="liang2015bringing"><span class="section-number-3">2.57</span> <span class="done READ">READ</span> Bringing machine learning and compositional semantics together</h3>
+<div id="outline-container-org69f2a2b" class="outline-3">
+<h3 id="liang2015bringing"><span class="section-number-3">2.60</span> <span class="done READ">READ</span> Bringing machine learning and compositional semantics together</h3>
 <div class="outline-text-3" id="text-liang2015bringing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-02 Tue 13:26]</span></span></p>
 <pre class="example">
@@ -1989,8 +2059,8 @@ features.
 </div>
 </div>
 
-<div id="outline-container-orgd46202b" class="outline-3">
-<h3 id="freund1997decision"><span class="section-number-3">2.58</span> A decision-theoretic generalization of on-line learning and an application to boosting</h3>
+<div id="outline-container-org8b1db0d" class="outline-3">
+<h3 id="freund1997decision"><span class="section-number-3">2.61</span> A decision-theoretic generalization of on-line learning and an application to boosting</h3>
 <div class="outline-text-3" id="text-freund1997decision">
 <pre class="example">
 Custom_ID: freund1997decision
@@ -2004,14 +2074,14 @@ PAGES: 119--139
 </div>
 </div>
 
-<div id="outline-container-org7162c1a" class="outline-2">
+<div id="outline-container-org72d0077" class="outline-2">
 <h2 id="sec-computing/programming"><span class="section-number-2">3</span> Computing/Programming</h2>
 <div class="outline-text-2" id="text-sec-computing/programming">
 <pre class="example">
 </pre>
 </div>
 
-<div id="outline-container-org16dcaf5" class="outline-3">
+<div id="outline-container-org03a123d" class="outline-3">
 <h3 id="thompson1984reflections"><span class="section-number-3">3.1</span> <span class="done READ">READ</span> Reflections on trusting trust</h3>
 <div class="outline-text-3" id="text-thompson1984reflections">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-08-20 Tue 00:42]</span></span></p>
@@ -2036,7 +2106,7 @@ horses? Perhaps it is more important to trust the people who wrote the software.
 </div>
 </div>
 
-<div id="outline-container-org03ceca8" class="outline-3">
+<div id="outline-container-orgf6b05ae" class="outline-3">
 <h3 id="hellerstein1997online"><span class="section-number-3">3.2</span> <span class="done READ">READ</span> Online aggregation</h3>
 <div class="outline-text-3" id="text-hellerstein1997online">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-17 Wed 02:12]</span></span></p>
@@ -2057,7 +2127,7 @@ involves random sampling and various UX niceties.
 </div>
 </div>
 
-<div id="outline-container-org58f5c09" class="outline-3">
+<div id="outline-container-orgf5c77ad" class="outline-3">
 <h3 id="lindahl2006practical"><span class="section-number-3">3.3</span> <span class="done READ">READ</span> Practical type inference based on success typings</h3>
 <div class="outline-text-3" id="text-lindahl2006practical">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-31 Sun 20:56]</span></span></p>
@@ -2083,7 +2153,7 @@ languages adopting such soft typing systems in some form.
 </div>
 </div>
 
-<div id="outline-container-orge3eefc4" class="outline-3">
+<div id="outline-container-orgaa8de61" class="outline-3">
 <h3 id="tratt2009dynamically"><span class="section-number-3">3.4</span> <span class="done READ">READ</span> Dynamically typed languages</h3>
 <div class="outline-text-3" id="text-tratt2009dynamically">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-19 Tue 00:10]</span></span></p>
@@ -2099,7 +2169,7 @@ A basic and exhaustive intro to dynamic typed languages. Good for beginners.
 </div>
 </div>
 
-<div id="outline-container-org5ecc565" class="outline-3">
+<div id="outline-container-org46e3afd" class="outline-3">
 <h3 id="steele1999growing"><span class="section-number-3">3.5</span> <span class="done READ">READ</span> Growing a language</h3>
 <div class="outline-text-3" id="text-steele1999growing">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-03-12 Tue 11:11]</span></span></p>
@@ -2117,7 +2187,7 @@ the talk itself is structured (its vocabulary mostly) exemplifying the same
 </div>
 </div>
 
-<div id="outline-container-org0f97c76" class="outline-3">
+<div id="outline-container-orgc6b7895" class="outline-3">
 <h3 id="agarwal2013blinkdb"><span class="section-number-3">3.6</span> <span class="done READ">READ</span> BlinkDB: queries with bounded errors and bounded response times on very large data</h3>
 <div class="outline-text-3" id="text-agarwal2013blinkdb">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-04-07 Sun 21:57]</span></span></p>
@@ -2153,7 +2223,7 @@ commonplace, smaller, systems (or already are there).
 </div>
 </div>
 
-<div id="outline-container-orge873e6c" class="outline-3">
+<div id="outline-container-org756afb9" class="outline-3">
 <h3 id="chang2017type"><span class="section-number-3">3.7</span> Type systems as macros</h3>
 <div class="outline-text-3" id="text-chang2017type">
 <pre class="example">
@@ -2164,7 +2234,7 @@ AUTHOR: Chang, Stephen and Knauth, Alex and Greenman, Ben
 </div>
 </div>
 
-<div id="outline-container-org6c0d7b0" class="outline-3">
+<div id="outline-container-org0022743" class="outline-3">
 <h3 id="baez2010physics"><span class="section-number-3">3.8</span> Physics, topology, logic and computation: a Rosetta Stone</h3>
 <div class="outline-text-3" id="text-baez2010physics">
 <pre class="example">
@@ -2175,7 +2245,7 @@ YEAR: 2010
 </div>
 </div>
 
-<div id="outline-container-org7734b45" class="outline-3">
+<div id="outline-container-org9097c6e" class="outline-3">
 <h3 id="o2009genuine"><span class="section-number-3">3.9</span> <span class="done READ">READ</span> The Genuine Sieve of Eratosthenes</h3>
 <div class="outline-text-3" id="text-o2009genuine">
 <pre class="example">
@@ -2211,7 +2281,7 @@ primes = [2, 3, ...] \ [[p², p²+p, ...] for p in primes]
 </div>
 </div>
 
-<div id="outline-container-org422ae5e" class="outline-3">
+<div id="outline-container-orgbc42225" class="outline-3">
 <h3 id="hughes1989functional"><span class="section-number-3">3.10</span> <span class="done READ">READ</span> Why functional programming matters</h3>
 <div class="outline-text-3" id="text-hughes1989functional">
 <pre class="example">
@@ -2242,14 +2312,14 @@ suspect there might be better, recent, articles on these topics now.
 </div>
 </div>
 
-<div id="outline-container-orgc4346b5" class="outline-2">
+<div id="outline-container-org33ba46e" class="outline-2">
 <h2 id="sec-misc"><span class="section-number-2">4</span> Misc</h2>
 <div class="outline-text-2" id="text-sec-misc">
 <pre class="example">
 </pre>
 </div>
 
-<div id="outline-container-org3fd8176" class="outline-3">
+<div id="outline-container-org156d0d6" class="outline-3">
 <h3 id="anderson1972more"><span class="section-number-3">4.1</span> <span class="done READ">READ</span> More is different</h3>
 <div class="outline-text-3" id="text-anderson1972more">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-01-27 Sun 20:55]</span></span></p>
@@ -2297,7 +2367,7 @@ visible from the viewpoint of one science alone.
 </div>
 </div>
 
-<div id="outline-container-org67977bd" class="outline-3">
+<div id="outline-container-orgc16cd9c" class="outline-3">
 <h3 id="spector2012google"><span class="section-number-3">4.2</span> <span class="done READ">READ</span> Google's hybrid approach to research</h3>
 <div class="outline-text-3" id="text-spector2012google">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-30 Tue 02:34]</span></span></p>
@@ -2314,7 +2384,7 @@ various aspects of experiments.
 </div>
 </div>
 
-<div id="outline-container-orgfc2a02c" class="outline-3">
+<div id="outline-container-org2191b20" class="outline-3">
 <h3 id="sculley2014machine"><span class="section-number-3">4.3</span> <span class="done READ">READ</span> Machine learning: The high-interest credit card of technical debt</h3>
 <div class="outline-text-3" id="text-sculley2014machine">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-20 Sat 02:33]</span></span></p>
@@ -2326,7 +2396,7 @@ AUTHOR: Sculley, D and Phillips, Todd and Ebner, Dietmar and Chaudhary, Vinay an
 </div>
 </div>
 
-<div id="outline-container-org337635f" class="outline-3">
+<div id="outline-container-org6a04d55" class="outline-3">
 <h3 id="gabriel2010better"><span class="section-number-3">4.4</span> <span class="done READ">READ</span> Better science through art</h3>
 <div class="outline-text-3" id="text-gabriel2010better">
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-12 Fri 23:16] </span> <span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2018-10-06 Sat&gt;</span></span></p>
@@ -2349,7 +2419,7 @@ and also summarize the document:
 </div>
 </div>
 
-<div id="outline-container-orgba15aed" class="outline-3">
+<div id="outline-container-org30dba6d" class="outline-3">
 <h3 id="verna2018lisp"><span class="section-number-3">4.5</span> <span class="done READ">READ</span> Lisp, Jazz, Aikido&#x2013;Three Expressions of a Single Essence</h3>
 <div class="outline-text-3" id="text-verna2018lisp">
 <pre class="example">
@@ -2396,6 +2466,7 @@ have really been able to connect all the pieces.
 <ul class='org-ref-bib'><li><a id="bak1988self">[bak1988self]</a> <a name="bak1988self"></a>Bak, Tang & Wiesenfeld. 1988. "Self-organized criticality." <i>Physical review A</i>, 38(1), 364. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 <li><a id="packard1988adaptation">[packard1988adaptation]</a> <a name="packard1988adaptation"></a>Packard. 1988. "Adaptation toward the edge of chaos." <i>Dynamic patterns in complex systems</i>, 212, 293-301. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 <li><a id="broido2018scale">[broido2018scale]</a> <a name="broido2018scale"></a>Broido & Clauset. 2018. "Scale-free networks are rare." <i>arXiv preprint arXiv:1801.03400</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="ratner2017snorkel">[ratner2017snorkel]</a> <a name="ratner2017snorkel"></a>Ratner, Bach, Ehrenberg, Fries, Wu & R\'e. 2017. "Snorkel: Rapid training data creation with weak supervision." <i>Proceedings of the VLDB Endowment</i>, 11(3), 269-282. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
 <li><a id="papangelis2019collaborative">[papangelis2019collaborative]</a> <a name="papangelis2019collaborative"></a>@miscpapangelis2019collaborative,
   Author = Papangelis, Alexandros and Wang, Yi-Chia and Molino, Piero and Tur, Gokhan,
   Title = Collaborative Multi-Agent Dialogue Model Training Via Reinforcement Learning,
@@ -2409,7 +2480,16 @@ have really been able to connect all the pieces.
 </div>
 </div>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">Might have missed somewhere or there might be mentions in
+prior works</p></div></div>
+
+
 </div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
