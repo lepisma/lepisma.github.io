@@ -10,5 +10,5 @@ June 2018). Previously,
 
 1. I worked as part time programmer at [[https://github.com/reichlab][The Reich Lab]] during my Master's
    (2016-2018) on epidemic forecasting models and tooling.
-2. During my Bachelor's, I interned at Qualcomm Research (2015), Bangalore
-   working with on image quality tuning systems.
+2. During my Bachelor's, I interned at Qualcomm Research Bangalore (2015),
+   working on image quality tuning systems.
