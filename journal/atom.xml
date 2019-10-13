@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-10-07</updated>
+  <updated>2019-10-13</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>.emacs /bankruptcy/</title>
+    <link href="https://lepisma.xyz/journal/2019/10/13/emacs-bankruptcy/index.html"/>
+    <updated>2019-10-13</updated>
+  </entry>
   <entry>
     <title>TaskJuggler</title>
     <link href="https://lepisma.xyz/journal/2019/10/06/taskjuggler/index.html"/>
