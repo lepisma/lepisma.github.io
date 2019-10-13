@@ -5,7 +5,11 @@ This page houses some programming related resources that I have found useful
 while working on /anything/. It's starting out jumbled but will get more organized
 as I put more things in here.
 
-* Tools
+* LaTeX
+While I haven't tried it yet, a modern solution if you write pure $\LaTeX$ and
+not Org or something is probably [[https://tectonic-typesetting.github.io/en-US/index.html][tectonic]].
+
+* Misc Tools
 Few nifty tools. Along with the usual *nix pack, they make so many things really
 quick.
 
