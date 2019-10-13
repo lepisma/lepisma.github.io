@@ -255,6 +255,55 @@ random search.
 
 * AI/ML
 
+** READ Towards end-to-end spoken language understanding
+CLOSED: [2019-10-14 Mon 00:15]
+:PROPERTIES:
+:CUSTOM_ID: serdyuk2018towards
+:YEAR:     2018
+:AUTHOR:   Serdyuk, Dmitriy and Wang, Yongqiang and Fuegen, Christian and Kumar, Anuj and Liu, Baiyang and Bengio, Yoshua
+:END:
+
+Simple results (plain intent-ish classification) on going directly from audio
+features to intent. An important decision, I believe, is to have bigger semantic
+chunks to recur on since audio is very sample heavy.
+
+** READ wav2vec: Unsupervised Pre-training for Speech Recognition.
+CLOSED: [2019-10-14 Mon 00:15]
+:PROPERTIES:
+:CUSTOM_ID: schneider2019wav2vec
+:YEAR:     2019
+:AUTHOR:   Steffen {Schneider} and Alexei {Baevski} and Ronan {Collobert} and Michael {Auli}
+:END:
+
+Not exactly what I assumed an x2vec would be with x = audio. Anyway, the idea is
+to have a language model-ish system for audio frames which acts as the
+featurizer for downstream tasks like, here, speech recognition. The gains are
+decent. There are a few good points covered in between which drive decisions
+while working with audio. Though I wonder what were the reasons for not going
+with spectrums[fn::Might have missed somewhere or there might be mentions in
+prior works] if they are replacing log-mel input in regular speech recognizer.
+
+** READ Snuba: automating weak supervision to label training data
+CLOSED: [2019-10-14 Mon 00:14]
+:PROPERTIES:
+:CUSTOM_ID: varma2018snuba
+:YEAR:     2018
+:AUTHOR:   Varma, Paroma and R{\'e}, Christopher
+:END:
+
+This is a logical extension of cite:ratner2017snorkel. Instead of users writing
+heuristics, we go one level farther and just provide primitives (semantically
+meaningful feature chunks). There are three components:
+
+1. Synthesizer that does heuristic creation based on certain labelled dataset.
+2. A pruner that picks /good/ heuristics, based on certain definitions and
+   constraints.
+2. A verifier which closes the loop by deciding when to stop, what to feed to
+   synthesizer etc.
+
+While there are obvious upgrades in how we are doing everything, the general
+architecture reminds me much of classical rule learning systems like [[https://en.wikipedia.org/wiki/Learning_classifier_system][LCS]].
+
 ** READ Distributed representations of sentences and documents
 CLOSED: [2019-10-09 Wed 01:48]
 :PROPERTIES:
