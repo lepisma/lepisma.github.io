@@ -3,12 +3,12 @@
 #+TAGS: emacs
 #+PILE: dropcap:nil
 
-Guess it's time.
+Guess it's time and the patchwork is showing its nature.
 
-1. Things have become sluggish
-2. I don't know what loads before what
-3. Wrong splits between packages and config
-4. Unmaintainable colors, themes, and other goodies
+1. Things have become sluggish.
+2. I no longer know what loads before what.
+3. Wrong splits between packages and config.
+4. Unmaintainable colors, themes, and other goodies.
 5. There are many new avenues for making things look pretty which I am not up to
    date with.
 
