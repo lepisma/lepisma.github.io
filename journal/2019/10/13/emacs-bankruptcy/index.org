@@ -3,7 +3,7 @@
 #+TAGS: emacs
 #+PILE: dropcap:nil
 
-Guess it's time and the patchwork is showing its nature.
+Guess it's time. The patchwork is showing its nature.
 
 1. Things have become sluggish.
 2. I no longer know what loads before what.
