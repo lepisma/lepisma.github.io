@@ -4402,7 +4402,8 @@ perfect. But at time it felt bloated.
 :GOODREADS: https://www.goodreads.com/book/show/10552338
 :END:
 
-*** READING Neuromancer
+*** READ Neuromancer
+CLOSED: [2019-10-14 Mon 11:18]
 :PROPERTIES:
 :AUTHOR:    William Gibson
 :ADDED:     <2015-12-05>

@@ -22,6 +22,74 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+“ ‘If God made anything better, he kept it for himself.’
+
+#+HTML:<footer>Neuromancer (William Gibson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Anybody any good at what they do, that’s what they are, right?
+
+#+HTML:<footer>Neuromancer (William Gibson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+he also saw a certain sense in the notion that burgeoning technologies require
+outlaw zones, that Night City wasn’t there for its inhabitants, but as a
+deliberately unsupervised playground for technology itself.
+
+#+HTML:<footer>Neuromancer (William Gibson)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Punches delivered from a deathbed left bruises that never faded.
+
+#+HTML:<footer>The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+we have suffered from a kind of disease: one of detachment, of being unable to
+connect ourselves to things, events, feelings. Most people define themselves by
+their work, or where they come from, or suchlike; we have lived too far inside
+our heads. It makes actuality damn hard to handle.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+these days, character isn’t destiny any more. Economics is destiny. Ideology is
+destiny. Bombs are destiny. What does a famine, a gas chamber, a grenade care
+how you lived your life? Crisis comes, death comes, and your pathetic individual
+self doesn’t have a thing to do with it, only to suffer the effects.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If love is a yearning to be like (even to become) the beloved, then hatred, it
+must be said, can be engendered by the same ambition, when it cannot be
+fulfilled.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Mahound, any new idea is asked two questions. When it’s weak: will it
+compromise? We know the answer to that one. And now, Mahound, on your return to
+Jahilia, time for the second question: How do you behave when you win? When your
+enemies are at your mercy and your power has become absolute: what then?
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The universe was a place of wonders, and only habituation, the anaesthesia of
+the everyday, dulled our sight.
+
+#+HTML:<footer>﻿The Satanic Verses (Salman Rushdie)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Truth is a negotiated average of semi-lies.
 
 #+HTML:<footer>﻿The Psychopath Code (Pieter Hintjens)</footer>
