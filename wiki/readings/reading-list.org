@@ -955,7 +955,8 @@ have already absorbed without realizing it.
 :GOODREADS: https://www.goodreads.com/book/show/33514
 :END:
 
-*** Ernest Hemingway on Writing
+*** READ Ernest Hemingway on Writing
+CLOSED: [2019-10-18 Fri 23:19]
 :PROPERTIES:
 :AUTHOR:    Ernest Hemingway, Larry W. Phillips, Charles Scribner Jr.
 :ADDED:     <2015-02-01>
