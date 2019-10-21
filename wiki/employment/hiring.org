@@ -27,3 +27,10 @@ process in case I need to do something similar again.
   - bias and question level
 - Accepting the mass process of applications
 - Dry run your process on someone before implementing
+- points
+  + knowledge
+  + experience
+  + authenticity
+  + ambitions
+  + learnability
+  + intention to learn
