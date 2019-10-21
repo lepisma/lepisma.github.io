@@ -19,7 +19,6 @@ Nothing really nice or presentable. I just want to learn TikZ more.
 [[http://ctan.imsc.res.in/graphics/pgf/base/doc/pgfmanual.pdf][TikZ manual]].
 
 #+HEADER: :file ./output.png
-#+HEADER: :iminoptions -density 900
 #+BEGIN_SRC latex :results raw file :eval export
   \definecolor{fpink}{RGB}{255, 2, 131}
   \definecolor{fblue}{RGB}{52, 121, 176}
@@ -110,4 +109,4 @@ Nothing really nice or presentable. I just want to learn TikZ more.
 #+END_SRC
 
 #+RESULTS:
-[[file:./output.svg]]
+[[file:./output.png]]

@@ -1,0 +1,47 @@
+#+TITLE: Weekly Review /42-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 42,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+I skipped last week and don't remember which things I covered in last vs this
+week so will not add much in this page.
+
+* Experiments
+- I have been thinking a little about interactive fiction and seeing if I can
+  incorporate ideas from it in my writings. This also goes back to something I
+  hinted some time back [[pile:journal:2019/08/03/conflicting-posts][in journal]]. I found [[https://www.amazon.com/Cybertext-Perspectives-Literature-Espen-Aarseth/dp/0801855799][a book]] on the topic so will be
+  continuing with that before giving this thread a set of actionables.
+
+* Readings/Explorations
+- [[https://lexi-lambda.github.io/blog/2019/10/19/empathy-and-subjective-experience-in-programming-languages/][Empathy and subjective experience in programming languages]]
+- Found a nice library [[https://github.com/andrewrk/libsoundio][libsoundio]] for working with audio devices.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 42-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- Finished [[https://en.wikipedia.org/wiki/Neuromancer][Neuromancer]].
+- Finished [[https://www.goodreads.com/book/show/42683.Ernest_Hemingway_on_Writing][Ernest Hemingway on Writing]].
+- [[https://aeon.co/ideas/do-we-possess-our-possessions-or-do-they-possess-us][Do we possess our possessions or do they possess us? | Aeon Ideas]]. I feel that
+  essentialism is pretty common and drives a lot of what we all do. A lot of
+  arguments about /true value/ of entities that I have had with many of my
+  acquaintances miss out on this piece as if this is /obviously/ not involved
+  (irrational!) even when it is /obviously/ involved.
