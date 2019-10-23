@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-11-25 Sun 03:47 -->
+<!-- 2019-10-23 Wed 23:21 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Utilities pitfall</title>
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -213,7 +226,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -258,30 +271,31 @@ for the JavaScript code in this tag.
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='' href='/'> blog</a>
-                                  <a class='active' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a class='active' href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2018-05-28 Mon 00:00</div>
-                                <h1>Utilities pitfall</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2018-05-28 Mon 00:00</div>
+  <h1>Utilities pitfall</h1>
+</div>
 </div>
 <div id="content">
 <div class='page-tags'><a href='../../..#programming'>programming</a></div>
 <p>
 <span class='dropcap'>E</span>very now and then, I try to package some of my programs in a separate
-module/library. Most of the times, when the outcome is a <i>toolkit</i> of sorts, the
+module/library. Most of the times, when the outcome is a <i>toolkit</i> of sort, the
 package doesn't work. Either it bloats out to become ideologically inconsistent
 or it splatters away in a bunch of small repositories, again rendering <i>them</i> very
 hard to use.
