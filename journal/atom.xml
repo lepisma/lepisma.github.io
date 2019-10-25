@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-10-13</updated>
+  <updated>2019-10-25</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Hard work is misunderstood</title>
+    <link href="https://lepisma.xyz/journal/2019/10/25/hard-work/index.html"/>
+    <updated>2019-10-25</updated>
+  </entry>
   <entry>
     <title>.emacs /bankruptcy/</title>
     <link href="https://lepisma.xyz/journal/2019/10/13/emacs-bankruptcy/index.html"/>
