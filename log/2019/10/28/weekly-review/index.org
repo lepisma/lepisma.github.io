@@ -38,8 +38,8 @@ over a period of time.
 #+end_quote
 - Metaobject protocols: Why we want them and what else they can do
   (cite:kiczales1993metaobject).
-- Explored custom jupyter notebook widgets. The system is really useful and I am
-  now trying to move a lot of internal EDA, tagging etc. systems to these.
+- Explored custom jupyter notebook widgets. The widget framework is really
+  useful. I am now trying to move a lot of EDA, tagging etc. systems to widgets.
 
 * Programming
 #+HTML: <figure> <div id="commit-plot"></div> <figcaption>
