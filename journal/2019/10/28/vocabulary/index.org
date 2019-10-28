@@ -1,0 +1,34 @@
+#+TITLE: Vocabulary
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, books
+
+After starting [[https://www.goodreads.com/book/show/338798.Ulysses][Ulysses]] recently, I am noticing that my speaking, writing and
+expressing (as compared to reading) vocabulary is severely lacking. Now Ulysses
+might not be the best book to draw this conclusion from, but I have other
+reasons too.
+
+Consider this really basic line from the book:
+
+#+begin_quote
+His hands plunged and rummaged in his trunk while he called for a clean
+handkerchief.
+#+end_quote
+
+I don't feel like any other alternative for 'plunged' and 'rummaged' would do.
+But I don't remember actually using these words anywhere till now, even though I
+have expressed sentences in similar, /rummaging,/ contexts. Most of the time I
+just end up fitting in an overloaded and overused word or phrase.
+
+In technical writing, a lot of focus on keeping things simple and avoiding fancy
+words has diluted my opinion of what an extensive vocabulary can help
+communicate. This is not to say that I should start using 10 dollar words more
+often, but to actively look for better words whenever possible.
+
+-----
+
+Facing new words the classical way, I usually miss out on usage and so they only
+remain in my reading vocabulary's most temporary corners [fn::To an extent that
+I look up the same word after 10 pages or so.]. To focus more on self usage, I
+should setup some sort of spaced repetition system that makes me /use/ new words
+and help compare with other usage patterns across books, articles from my
+library.
