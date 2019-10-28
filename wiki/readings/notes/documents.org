@@ -1212,6 +1212,18 @@ features.
 
 * Computing/Programming
 
+** READ Metaobject protocols: Why we want them and what else they can do
+CLOSED: [2019-10-28 Mon 23:08]
+:PROPERTIES:
+:CUSTOM_ID: kiczales1993metaobject
+:YEAR:     1993
+:AUTHOR:   Kiczales, Gregor and Ashley, J Michael and Rodriguez, Luis and Vahdat, Amin and Bobrow, Daniel G
+:END:
+
+This provides a wider perspective on MOP. Specially the sections on Scheme
+extension techniques clarified that MOP is a very general way of creating an
+extension system for something else.
+
 ** READ Reflections on trusting trust
 CLOSED: [2019-08-20 Tue 00:42]
 :PROPERTIES:
