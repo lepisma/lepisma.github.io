@@ -255,6 +255,24 @@ random search.
 
 * AI/ML
 
+** READ On the Cross-lingual Transferability of Monolingual Representations
+CLOSED: [2019-10-29 Tue 11:56]
+:PROPERTIES:
+:CUSTOM_ID: mikel2019cross
+:YEAR:     2019
+:AUTHOR:   Mikel Artetxe and Sebastian Ruder and Dani Yogatama
+:END:
+
+1. The idea of learning embeddings to /fit in/ with a set of layers trained for
+   another language can mostly be used in other kinds of models too.
+2. There was an interesting degradation in Hindi (+ Turkey) with positional
+   embedding on XQuAD (recoverable with added adapters). I am wondering whether
+   this is because
+
+#+begin_quote
+transferring syntactic abstractions is more challenging than semantic abstractions. 
+#+end_quote
+
 ** READ Towards end-to-end spoken language understanding
 CLOSED: [2019-10-14 Mon 00:15]
 :PROPERTIES:
