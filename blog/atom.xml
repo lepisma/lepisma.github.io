@@ -2,8 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
-  <updated>2019-06-30</updated>
+  <updated>2019-10-31</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Github Linguist Colors</title>
+    <link href="https://lepisma.xyz/2019/10/31/github-linguist-colors/index.html"/>
+    <updated>2019-10-31</updated>
+  </entry>
   <entry>
     <title>Blurring Text</title>
     <link href="https://lepisma.xyz/2019/04/09/blurring-text/index.html"/>
