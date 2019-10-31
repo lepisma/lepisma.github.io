@@ -7,19 +7,20 @@
 {{{js(https://cdn.jsdelivr.net/npm/vega-lite@4.0.0-beta.10)}}}
 {{{js(https://cdn.jsdelivr.net/npm/vega-embed@5.1.3)}}}
 
-I was looking at Github Linguist's color [[https://github.github.io/linguist/][page]], trying to see which languages are
-/leaning/ towards purple. Think Haskell, Emacs Lisp, Julia etc. But since their
-sorting order is utterly worthless[fn::Of course it is not meant for that.] for
-this task, here is a better view of all the languages on the HSL scale.
+I was looking at Github Linguist's color [[https://github.github.io/linguist/][page]] today, trying to see which
+languages are /leaning/ towards purple. Think Haskell, Emacs Lisp, Julia etc. But
+since their sorting order is utterly worthless[fn::Of course it is not meant for
+that.] for this task, here is a better view of all the languages on the HSL
+scale.
 
 -----
 
 #+HTML: <div id="viz"></div>
 {{{js(./script.js)}}}
 
-The plot's only use is to reverse lookup languages by shades using pan/zoom
-around the scatters. I don't think any kind of semantic cluster pops here as
-these colors are essentially random (notice the space coverage).
+The plot's only use is to reverse lookup languages by color shades using
+pan/zoom around the scatters. I don't think any kind of semantic cluster pops
+here as these colors are essentially random (also notice the space coverage).
 
 As an aside, I thought purescript's was the darkest color I have seen, but I
 have seen wasm, shen and crystal and never noticed that theirs are, at least, as
@@ -27,6 +28,6 @@ dark as purescript.
 
 -----
 
-/Data note/: Color data is collected using [[https://raw.githubusercontent.com/github/linguist/8cad89ea5b64a26c87278d6e53cbc37bfd7cd177/lib/linguist/languages.yml][this file]] from the linguist repository.
-While processing, I removed items without a ~color~ key making a total of
-@@html:<span id='n-languages'>@@NA@@html:</span>@@ languages.
+/Data note/: Color data comes from [[https://raw.githubusercontent.com/github/linguist/8cad89ea5b64a26c87278d6e53cbc37bfd7cd177/lib/linguist/languages.yml][this file]] in the linguist repository. While
+processing, I removed items without a ~color~ key. Total languages are
+@@html:<span id='n-languages'>@@NA@@html:</span>@@.
