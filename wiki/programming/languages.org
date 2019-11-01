@@ -48,7 +48,9 @@ The following is in my list for C:
 - [ ] Working with threads and other OS features
 - [ ] Network programming
 
-A nice resource for writing a little modern C is [[https://matt.sh/howto-c][How to C]].
+A few resources that I am finding helpful based on whatever background I have:
++ [[https://matt.sh/howto-c][How to C]] and the [[https://modernc.gforge.inria.fr/][Modern C]] book.
++ A few useful nuggets from [[http://c-faq.com/][comp.lang.c Frequently Asked Questions]].
 
 * C++
 
