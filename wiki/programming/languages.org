@@ -43,11 +43,6 @@ working with Emacs Lisp dynamic modules. Its actually much nicer than I
 expected. Although there is no modern-ish package management, the type of
 packages I have been needing at this level are easy to get.
 
-The following is in my list for C:
-- [ ] Maybe follow through an exercise set like [[https://github.com/AllenDowney/ExercisesInC][this one]]
-- [ ] Working with threads and other OS features
-- [ ] Network programming
-
 A few resources that I am finding helpful based on whatever background I have:
 + [[https://matt.sh/howto-c][How to C]] and the [[https://modernc.gforge.inria.fr/][Modern C]] book.
 + A few useful nuggets from [[http://c-faq.com/][comp.lang.c Frequently Asked Questions]].
