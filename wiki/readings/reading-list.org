@@ -5134,12 +5134,15 @@ CLOSED: [2019-08-17 Sat 22:29]
 Even though I don't remember a lot of things that connect pieces together from
 past issues, going through this set was a beautiful experience.
 
-*** The Wake (Sandman, #10)
+*** READ The Wake (Sandman, #10)
+CLOSED: [2019-11-12 Tue 00:17]
 :PROPERTIES:
 :AUTHOR:   Neil Gaiman, Michael Zulli, (Illustrator), Jon J. Muth, (Illustrator), Charles Vess, (Illustrator), Mikal Gilmore, (Introduction)
 :ADDED:    <2017-07-11>
 :GOODREADS: https://www.goodreads.com/book/show/25104.The_Wake
 :END:
+
+The last piece from the main series. What a journey!
 
 *** Endless Nights (Sandman, #11)
 :PROPERTIES:

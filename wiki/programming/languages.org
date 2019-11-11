@@ -106,6 +106,7 @@ community is alive.
 
 General resources:
 - Use [[https://github.com/magnars/s.el][s]], [[https://github.com/magnars/dash.el][dash]], [[https://github.com/rejeep/f.el][f]] and [[https://github.com/Wilfred/ht.el][ht]] while programming in elisp for maximum pleasure.
+- [[https://phst.eu/emacs-modules.html][Here]] is a great documentation for creating and working with dynamic modules.
 
 * TODO Erlang
 

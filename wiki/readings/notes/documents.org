@@ -255,6 +255,19 @@ random search.
 
 * AI/ML
 
+** READ Diarization is Hard: Some Experiences and Lessons Learned for the JHU Team in the Inaugural DIHARD Challenge.
+CLOSED: [2019-11-12 Tue 00:18]
+:PROPERTIES:
+:CUSTOM_ID: sell2018diarization
+:YEAR:     2018
+:AUTHOR:   Sell, Gregory and Snyder, David and McCree, Alan and Garcia-Romero, Daniel and Villalba, Jes{\'u}s and Maciejewski, Matthew and Manohar, Vimal and Dehak, Najim and Povey, Daniel and Watanabe, Shinji and others
+:END:
+
+I have been looking over this to get started and know about diarization a bit.
+Although I got a few concepts and terminologies, this assumes you already know
+your way around. There are probably better pieces if you want to clear up the
+basics. [[https://github.com/wq2012/awesome-diarization][Here]] is a nice resource by the way.
+
 ** READ On the Cross-lingual Transferability of Monolingual Representations
 CLOSED: [2019-10-29 Tue 11:56]
 :PROPERTIES:
