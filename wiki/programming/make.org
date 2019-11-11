@@ -56,6 +56,3 @@ There are many good resources for tutorials like [[https://github.com/danistefan
 + Package managers
 + Version control
 + Quantum programming
-
-
-https://github.com/danistefanovic/build-your-own-x
