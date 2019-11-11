@@ -1,0 +1,61 @@
+#+TITLE: Make
+#+SETUPFILE: ../../assets/export.setup
+
+Here I keep a list of topics for a more breadth first style exploration. The
+idea is to list directions of works which cover various kinds of programming.
+Many items here are vague with reasons ranging from banality to ignorance.
+
+#+BEGIN_aside
+There are many good resources for tutorials like [[https://github.com/danistefanovic/build-your-own-x][this one]].
+#+END_aside
+
++ Programming Language
+  + Static analysis
+  + Type checking
+  + Syntax and form
+  + Lexing/parsing/compiling
+  + Virtual Machines
++ Game Building
+  + Physics
+  + Rendering
+  + Game AI
++ Creative Coding
+  + Procedural
++ Competitive Coding
++ Data Structure & Algorithms
++ Cryptography
++ Security
++ Debuggers
++ Network apps
++ AI/ML
++ Signal Processing
++ HPC / Hardware accelerated computing
+  + GPU
+  + Distributed / MPI
++ Cross compilation to tiny targets
++ Distributed systems
++ High concurrency systems
++ Web applications
++ Android/mobile dev
++ Data visualization
++ CRUD style backends
++ Operating System/Kernels
++ Device Drivers
++ Programming Paradigms
++ Program Verification / Proof systems
++ Automated Testing
++ Rendering fonts/graphics
++ Viruses/Malware etc.
++ Media formats and representations
++ Media players
++ Data compression and storage
++ Databases
++ AR/VR
++ Emulators
++ Text editors
++ Package managers
++ Version control
++ Quantum programming
+
+
+https://github.com/danistefanovic/build-your-own-x
