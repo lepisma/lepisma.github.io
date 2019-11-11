@@ -6,7 +6,7 @@ This page is a work in progress
 #+END_QUOTE
 
 * Reading trails
-- A really extensive guide for *Logic* is [[http://www.logicmatters.net/resources/pdfs/TeachYourselfLogic2017.pdf][Teach Yourself Logic]] by Peter Smith.
+- A really extensive guide for Logic is [[http://www.logicmatters.net/resources/pdfs/TeachYourselfLogic2017.pdf][Teach Yourself Logic]] by Peter Smith.
 
 * Explainers
 - Visual explanation of [[http://maze5.net/?page_id=733][Legendre Transform]]
