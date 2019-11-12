@@ -255,6 +255,21 @@ random search.
 
 * AI/ML
 
+** READ Fully Supervised Speaker Diarization
+CLOSED: [2019-11-12 Tue 21:22]
+:PROPERTIES:
+:CUSTOM_ID: zhang2018fully
+:YEAR:     2018
+:AUTHOR:   Aonan {Zhang} and Quan {Wang} and Zhenyao {Zhu} and John {Paisley} and Chong {Wang}
+:END:
+
+A relatively recent work which has two benefits:
+1. Allows unspecified number of speakers in an audio
+2. Learns the clustering over speaker embeddings in a supervised way
+
+I am not totally clear on the parameter estimation part during my first pass but
+the code, which is [[https://github.com/google/uis-rnn][here]], should help.
+
 ** READ Diarization is Hard: Some Experiences and Lessons Learned for the JHU Team in the Inaugural DIHARD Challenge.
 CLOSED: [2019-11-12 Tue 00:18]
 :PROPERTIES:
