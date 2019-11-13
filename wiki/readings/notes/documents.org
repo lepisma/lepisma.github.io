@@ -254,6 +254,15 @@ random search.
  :END:
 
 * AI/ML
+** READ pyannote.metrics: A Toolkit for Reproducible Evaluation, Diagnostic, and Error Analysis of Speaker Diarization Systems.
+CLOSED: [2019-11-13 Wed 14:32]
+:PROPERTIES:
+:CUSTOM_ID: bredin2017pyannote
+:YEAR:     2017
+:AUTHOR:   Hervé {Bredin}
+:END:
+
+Useful read for knowing metrics used in segmentation and diarization.
 
 ** READ Fully Supervised Speaker Diarization
 CLOSED: [2019-11-12 Tue 21:22]
