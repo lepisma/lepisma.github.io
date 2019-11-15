@@ -254,6 +254,19 @@ random search.
  :END:
 
 * AI/ML
+
+** READ Utterance-level Aggregation for Speaker Recognition in the Wild
+CLOSED: [2019-11-15 Fri 19:56]
+:PROPERTIES:
+:CUSTOM_ID: xie2019utterance
+:YEAR:     2019
+:AUTHOR:   Xie, Weidi and Nagrani, Arsha and Chung, Joon Son and Zisserman, Andrew
+:END:
+
+Approached from more of a background reading perspective. Main idea is to use
+NetVLAD, GhostVLAD style (don't know much about these at the moment) aggregation
+across time instead of regular temporal average pooling.
+
 ** READ pyannote.metrics: A Toolkit for Reproducible Evaluation, Diagnostic, and Error Analysis of Speaker Diarization Systems.
 CLOSED: [2019-11-13 Wed 14:32]
 :PROPERTIES:
