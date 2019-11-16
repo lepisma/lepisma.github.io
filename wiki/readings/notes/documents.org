@@ -255,6 +255,16 @@ random search.
 
 * AI/ML
 
+** READ Speaker diarization with lstm
+CLOSED: [2019-11-16 Sat 14:31]
+:PROPERTIES:
+:CUSTOM_ID: wang2018speaker
+:YEAR:     2018
+:AUTHOR:   Wang, Quan and Downey, Carlton and Wan, Li and Mansfield, Philip Andrew and Moreno, Ignacio Lopz
+:END:
+
+d-vector + spectral clustering.
+
 ** READ Utterance-level Aggregation for Speaker Recognition in the Wild
 CLOSED: [2019-11-15 Fri 19:56]
 :PROPERTIES:
