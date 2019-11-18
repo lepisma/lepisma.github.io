@@ -20,9 +20,9 @@ width: 100%;
 #+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
 #+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
 
-Missed a bunch of these reviews and so will refrain from being elaborate this
-time. I am also starting to add a timestamp in every capture from now on so I
-can clearly say which things happened in /last/ week and which things earlier.
+Missed a bunch of these reviews so will refrain from being elaborate this time.
+I am also starting to add a timestamp in every capture from now on so I can
+clearly say which things happened in /last/ week and which earlier.
 
 * Experiments
 + I have been thinking about a more programmer friendly API for
