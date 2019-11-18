@@ -4,7 +4,7 @@
 <!-- 2019-11-18 Mon 23:03 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Log</title>
+<title>Weekly Review 46-2019</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -287,325 +287,97 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>Log</h1>
+  <div class='page-meta'>2019-11-18 Mon 00:00</div>
+  <h1>Weekly Review <i>46-2019</i></h1>
 </div>
 </div>
 <div id="content">
+<div class='page-tags'></div>
+<script>
+let eventPlotFor = {
+week: 46,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="../../../../../assets/js/commit-plot.js"></script>
+
 <p>
-Periodic activity log.
+Missed a bunch of these reviews and so will refrain from being elaborate this
+time. I am also starting to add a timestamp in every capture from now on so I
+can clearly say which things happened in <i>last</i> week and which things earlier.
 </p>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-11-18</div>
-<p class="archive-title">
-<a href="./2019/11/18/weekly-review/index.html" class="archive-title">Weekly Review <i>46-2019</i></a>
-</p>
+<div id="outline-container-org6e9fc9d" class="outline-2">
+<h2 id="sec-experiments"><span class="section-number-2">1</span> Experiments</h2>
+<div class="outline-text-2" id="text-sec-experiments">
 
+<ul class="org-ul">
+<li>I have been thinking about a more programmer friendly API for
+<a href="https://github.com/lepisma/emacs-speech-input/">emacs-speech-input</a> as I don't really like the boring FSM-ish conversational
+framework. Looking at the whole process as a sort of probabilistic parsing
+running on audio streams can work out. Plus you, probably, get to design flows
+using something like <a href="https://en.wikipedia.org/wiki/Parser_combinator">parser combinators</a>.</li>
+</ul>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-10-28</div>
-<p class="archive-title">
-<a href="./2019/10/28/weekly-review/index.html" class="archive-title">Weekly Review <i>43-2019</i></a>
-</p>
+<div id="outline-container-orgc1a0a26" class="outline-2">
+<h2 id="sec-readings/explorations"><span class="section-number-2">2</span> Readings/Explorations</h2>
+<div class="outline-text-2" id="text-sec-readings/explorations">
 
+<ul class="org-ul">
+<li>A few readings on speaker diarization and connected topics
+<ul class="org-ul">
+<li>Speaker diarization with lstm (<a class='org-ref-reference' href="#wang2018speaker">wang2018speaker</a>)</li>
+<li>Fully Supervised Speaker Diarization (<a class='org-ref-reference' href="#zhang2018fully">zhang2018fully</a>)</li>
+<li>Utterance-level Aggregation for Speaker Recognition in the Wild (<a class='org-ref-reference' href="#xie2019utterance">xie2019utterance</a>)</li>
+</ul></li>
+<li><a href="https://twobithistory.org/2019/11/06/doom-bsp.html">How Much of a Genius-Level Move Was Using Binary Space Partitioning in Doom?</a> A
+post from two-bit history after a long time.</li>
+</ul>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-10-22</div>
-<p class="archive-title">
-<a href="./2019/10/22/weekly-review/index.html" class="archive-title">Weekly Review <i>42-2019</i></a>
-</p>
+<div id="outline-container-orgb261631" class="outline-2">
+<h2 id="sec-programming"><span class="section-number-2">3</span> Programming</h2>
+<div class="outline-text-2" id="text-sec-programming">
 
+<figure> <div id="commit-plot"></div> <figcaption>
+<p>
+Commits for week 46-2019 and 4 previous weeks.
+</p>
+</figcaption></figure>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-10-09</div>
-<p class="archive-title">
-<a href="./2019/10/09/weekly-review/index.html" class="archive-title">Weekly Review <i>40-2019</i></a>
-</p>
+<div id="outline-container-orgfdc2577" class="outline-2">
+<h2 id="sec-media"><span class="section-number-2">4</span> Media</h2>
+<div class="outline-text-2" id="text-sec-media">
 
+<ul class="org-ul">
+<li>Finished <a href="https://www.goodreads.com/series/40372-the-sandman">Sandman</a>.</li>
+<li><a href="https://www.thisamericanlife.org/687/small-things-considered">Small Things Considered - This American Life</a></li>
+<li><a href="http://wakingup.libsyn.com/164-cause-effect">Making Sense with Sam Harris: #164 — Cause &amp; Effect</a>. I have been meaning to
+dive in Pearl's ideas but haven't really gotten time. This specific episode
+wasn't that helpful in that sense.</li>
+</ul>
+
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="wang2018speaker">[wang2018speaker]</a> <a name="wang2018speaker"></a>Wang, Downey, Wan, Mansfield & Moreno. 2018. "Speaker diarization with lstm", 5239-5243, in in: 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), edited by </li>
+<li><a id="zhang2018fully">[zhang2018fully]</a> <a name="zhang2018fully"></a>"Aonan Zhang, Quan Wang, Zhenyao Zhu, John Paisley & Chong Wang". 2018. "Fully Supervised Speaker Diarization." <i>"arXiv preprint arXiv:1810.04719"</i>, , <a class="bib-link" href="https://academic.microsoft.com/paper/2950628382">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+<li><a id="xie2019utterance">[xie2019utterance]</a> <a name="xie2019utterance"></a>Xie, Nagrani, Chung & Zisserman. 2019. "Utterance-level Aggregation for Speaker Recognition in the Wild", 5791-5795, in in: ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), edited by </li>
+</ul>
+</p>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-09-25</div>
-<p class="archive-title">
-<a href="./2019/09/25/weekly-review/index.html" class="archive-title">Weekly Review <i>38-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-09-15</div>
-<p class="archive-title">
-<a href="./2019/09/15/weekly-review/index.html" class="archive-title">Weekly Review <i>37-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-08-20</div>
-<p class="archive-title">
-<a href="./2019/08/20/weekly-review/index.html" class="archive-title">Weekly Review <i>33-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-07-22</div>
-<p class="archive-title">
-<a href="./2019/07/22/weekly-review/index.html" class="archive-title">Weekly Review <i>29-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-07-17</div>
-<p class="archive-title">
-<a href="./2019/07/17/weekly-review/index.html" class="archive-title">Weekly Review <i>28-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-07-08</div>
-<p class="archive-title">
-<a href="./2019/07/08/weekly-review/index.html" class="archive-title">Weekly Review <i>27-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-07-02</div>
-<p class="archive-title">
-<a href="./2019/07/02/weekly-review/index.html" class="archive-title">Weekly Review <i>26-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-06-18</div>
-<p class="archive-title">
-<a href="./2019/06/18/weekly-review/index.html" class="archive-title">Weekly Review <i>24-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-06-12</div>
-<p class="archive-title">
-<a href="./2019/06/12/weekly-review/index.html" class="archive-title">Weekly Review <i>23-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-06-04</div>
-<p class="archive-title">
-<a href="./2019/06/04/weekly-review/index.html" class="archive-title">Weekly Review <i>22-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-05-21</div>
-<p class="archive-title">
-<a href="./2019/05/21/weekly-review/index.html" class="archive-title">Weekly Review <i>20-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-05-14</div>
-<p class="archive-title">
-<a href="./2019/05/14/weekly-review/index.html" class="archive-title">Weekly Review <i>19-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-05-06</div>
-<p class="archive-title">
-<a href="./2019/05/06/weekly-review/index.html" class="archive-title">Weekly Review <i>18-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-04-17</div>
-<p class="archive-title">
-<a href="./2019/04/17/weekly-review/index.html" class="archive-title">Weekly Review <i>15-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-04-10</div>
-<p class="archive-title">
-<a href="./2019/04/10/weekly-review/index.html" class="archive-title">Weekly Review <i>14-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-04-02</div>
-<p class="archive-title">
-<a href="./2019/04/02/weekly-review/index.html" class="archive-title">Weekly Review <i>13-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-03-25</div>
-<p class="archive-title">
-<a href="./2019/03/25/weekly-review/index.html" class="archive-title">Weekly Review <i>12-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-03-19</div>
-<p class="archive-title">
-<a href="./2019/03/19/weekly-review/index.html" class="archive-title">Weekly Review <i>11-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-03-10</div>
-<p class="archive-title">
-<a href="./2019/03/10/weekly-review/index.html" class="archive-title">Weekly Review <i>10-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-01-15</div>
-<p class="archive-title">
-<a href="./2019/01/15/weekly-review/index.html" class="archive-title">Weekly Review <i>02-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-01-08</div>
-<p class="archive-title">
-<a href="./2019/01/08/weekly-review/index.html" class="archive-title">Weekly Review <i>01-2019</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-01-01</div>
-<p class="archive-title">
-<a href="./2019/01/01/weekly-review/index.html" class="archive-title">Weekly Review <i>52-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-25</div>
-<p class="archive-title">
-<a href="./2018/12/25/weekly-review/index.html" class="archive-title">Weekly Review <i>51-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-19</div>
-<p class="archive-title">
-<a href="./2018/12/19/weekly-review/index.html" class="archive-title">Weekly Review <i>50-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-11</div>
-<p class="archive-title">
-<a href="./2018/12/11/weekly-review/index.html" class="archive-title">Weekly Review <i>49-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-12-04</div>
-<p class="archive-title">
-<a href="./2018/12/04/weekly-review/index.html" class="archive-title">Weekly Review <i>48-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-11-27</div>
-<p class="archive-title">
-<a href="./2018/11/27/weekly-review/index.html" class="archive-title">Weekly Review <i>47-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-11-06</div>
-<p class="archive-title">
-<a href="./2018/11/06/weekly-review/index.html" class="archive-title">Weekly Review <i>44-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-30</div>
-<p class="archive-title">
-<a href="./2018/10/30/weekly-review/index.html" class="archive-title">Weekly Review <i>43-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-22</div>
-<p class="archive-title">
-<a href="./2018/10/22/weekly-review/index.html" class="archive-title">Weekly Review <i>42-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-16</div>
-<p class="archive-title">
-<a href="./2018/10/16/weekly-review/index.html" class="archive-title">Weekly Review <i>41-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-08</div>
-<p class="archive-title">
-<a href="./2018/10/08/weekly-review/index.html" class="archive-title">Weekly Review <i>40-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-10-02</div>
-<p class="archive-title">
-<a href="./2018/10/02/weekly-review/index.html" class="archive-title">Weekly Review <i>39-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-25</div>
-<p class="archive-title">
-<a href="./2018/09/25/weekly-review/index.html" class="archive-title">Weekly Review <i>38-2018</i></a>
-</p>
-
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-09-16</div>
-<p class="archive-title">
-<a href="./2018/09/16/weekly-review/index.html" class="archive-title">Weekly Review <i>37-2018</i></a>
-</p>
-
 </div>
 </div>
 <div id="postamble" class="status">
