@@ -1,0 +1,54 @@
+#+TITLE: Weekly Review /46-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 46,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+Missed a bunch of these reviews and so will refrain from being elaborate this
+time. I am also starting to add a timestamp in every capture from now on so I
+can clearly say which things happened in /last/ week and which things earlier.
+
+* Experiments
++ I have been thinking about a more programmer friendly API for
+  [[https://github.com/lepisma/emacs-speech-input/][emacs-speech-input]] as I don't really like the boring FSM-ish conversational
+  framework. Looking at the whole process as a sort of probabilistic parsing
+  running on audio streams can work out. Plus you, probably, get to design flows
+  using something like [[https://en.wikipedia.org/wiki/Parser_combinator][parser combinators]].
+
+* Readings/Explorations
+- A few readings on speaker diarization and connected topics
+  - Speaker diarization with lstm (cite:wang2018speaker)
+  - Fully Supervised Speaker Diarization (cite:zhang2018fully)
+  - Utterance-level Aggregation for Speaker Recognition in the Wild (cite:xie2019utterance)
+- [[https://twobithistory.org/2019/11/06/doom-bsp.html][How Much of a Genius-Level Move Was Using Binary Space Partitioning in Doom?]] A
+  post from two-bit history after a long time.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 46-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+* Media
+- Finished [[https://www.goodreads.com/series/40372-the-sandman][Sandman]].
+- [[https://www.thisamericanlife.org/687/small-things-considered][Small Things Considered - This American Life]]
+- [[http://wakingup.libsyn.com/164-cause-effect][Making Sense with Sam Harris: #164 — Cause & Effect]]. I have been meaning to
+  dive in Pearl's ideas but haven't really gotten time. This specific episode
+  wasn't that helpful in that sense.
+
+[[bibliography:./references.bib]]
