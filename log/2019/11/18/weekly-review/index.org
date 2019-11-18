@@ -27,9 +27,9 @@ clearly say which things happened in /last/ week and which earlier.
 * Experiments
 + I have been thinking about a more programmer friendly API for
   [[https://github.com/lepisma/emacs-speech-input/][emacs-speech-input]] as I don't really like the boring FSM-ish conversational
-  framework. Looking at the whole process as a sort of probabilistic parsing
-  running on audio streams can work out. Plus you, probably, get to design flows
-  using something like [[https://en.wikipedia.org/wiki/Parser_combinator][parser combinators]].
+  framework. Looking at the whole process as a probabilistic parser running on
+  audio streams can work out. Plus you, probably, get to design flows using
+  something like [[https://en.wikipedia.org/wiki/Parser_combinator][parser combinators]].
 
 * Readings/Explorations
 - A few readings on speaker diarization and connected topics
