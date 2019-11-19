@@ -5470,7 +5470,8 @@ power of the transition back to Charlie in this otherwise wonderful story.
 :GOODREADS: https://www.goodreads.com/book/show/4588
 :END:
 
-*** The Bell Jar
+*** READ The Bell Jar
+CLOSED: [2019-11-19 Tue 22:44]
 :PROPERTIES:
 :AUTHOR:    Sylvia Plath
 :ADDED:     <2016-08-12>
