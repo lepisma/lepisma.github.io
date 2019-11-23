@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2019-11-24 Sun 02:44 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Follows</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a class='active' href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>Last modified:  2019-11-24 Sun 02:44</div>
+  <h1>Follows</h1>
+</div>
+</div>
+<div id="content">
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../readings/index.html'>readings</a> / follows</div>
+<div id='crosslinks'></div>
+<p>
+Blogs, podcasts etc. that I tend to follow. I use <a href="https://github.com/skeeto/elfeed/">elfeed</a>, <a href="https://antennapod.org/">AntennaPod</a> and <a href="https://github.com/z-------------/CPod">CPod</a> to
+read/listen. What follows is an <a href="https://github.com/remyhonig/elfeed-org">elfeed-org</a> dump of feed urls.
+</p>
+
+<div id="outline-container-org9ccac4b" class="outline-2">
+<h2 id="sec-magazines-:magazine:"><span class="section-number-2">1</span> Magazines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="magazine">magazine</span></span></h2>
+<div class="outline-text-2" id="text-sec-magazines-:magazine:">
+
+</div>
+</div>
+
+<div id="outline-container-org9f70fd9" class="outline-2">
+<h2 id="sec-comics-:comics:"><span class="section-number-2">2</span> Comics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="comics">comics</span></span></h2>
+<div class="outline-text-2" id="text-sec-comics-:comics:">
+
+</div>
+<div id="outline-container-orgb185e32" class="outline-3">
+<h3 id="sec-comics/[[http://www.existentialcomics.com/rss.xml][existential-comics]]"><span class="section-number-3">2.1</span> <a href="http://www.existentialcomics.com/rss.xml">Existential Comics</a></h3>
+<div class="outline-text-3" id="text-sec-comics/[[http://www.existentialcomics.com/rss.xml][existential-comics]]">
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfef0b7e" class="outline-2">
+<h2 id="sec-papers-:paper:"><span class="section-number-2">3</span> Papers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="paper">paper</span></span></h2>
+<div class="outline-text-2" id="text-sec-papers-:paper:">
+
+</div>
+<div id="outline-container-org26b9e63" class="outline-3">
+<h3 id="sec-papers/[[https://blog.acolyer.org/feed/][the-morning-paper]]"><span class="section-number-3">3.1</span> <a href="https://blog.acolyer.org/feed/">the morning paper</a></h3>
+<div class="outline-text-3" id="text-sec-papers/[[https://blog.acolyer.org/feed/][the-morning-paper]]">
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfdb7fe6" class="outline-2">
+<h2 id="sec-news-:news:"><span class="section-number-2">4</span> News&#xa0;&#xa0;&#xa0;<span class="tag"><span class="news">news</span></span></h2>
+<div class="outline-text-2" id="text-sec-news-:news:">
+
+</div>
+</div>
+
+<div id="outline-container-orgb86ccde" class="outline-2">
+<h2 id="sec-media-:media:"><span class="section-number-2">5</span> Media&#xa0;&#xa0;&#xa0;<span class="tag"><span class="media">media</span></span></h2>
+<div class="outline-text-2" id="text-sec-media-:media:">
+
+</div>
+<div id="outline-container-orgc00e27d" class="outline-3">
+<h3 id="sec-media/podcasts-:podcast:"><span class="section-number-3">5.1</span> Podcasts&#xa0;&#xa0;&#xa0;<span class="tag"><span class="podcast">podcast</span></span></h3>
+<div class="outline-text-3" id="text-sec-media/podcasts-:podcast:">
+
+</div>
+<div id="outline-container-orgccbd479" class="outline-4">
+<h4 id="sec-media/podcasts/[[http://feeds.wnyc.org/radiolab][radiolab]]"><span class="section-number-4">5.1.1</span> <a href="http://feeds.wnyc.org/radiolab">Radiolab</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[http://feeds.wnyc.org/radiolab][radiolab]]">
+
+</div>
+</div>
+<div id="outline-container-org6f09f1e" class="outline-4">
+<h4 id="sec-media/podcasts/[[https://feeds.megaphone.fm/stuffyoushouldknow][stuff-you-should-know]]"><span class="section-number-4">5.1.2</span> <a href="https://feeds.megaphone.fm/stuffyoushouldknow">Stuff You Should Know</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[https://feeds.megaphone.fm/stuffyoushouldknow][stuff-you-should-know]]">
+
+</div>
+</div>
+<div id="outline-container-orgd3d7521" class="outline-4">
+<h4 id="sec-media/podcasts/[[https://youarenotsosmart.com/feed/][you-are-not-so-smart]]"><span class="section-number-4">5.1.3</span> <a href="https://youarenotsosmart.com/feed/">You Are Not So Smart</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[https://youarenotsosmart.com/feed/][you-are-not-so-smart]]">
+
+</div>
+</div>
+<div id="outline-container-org53fdd24" class="outline-4">
+<h4 id="sec-media/podcasts/[[https://commondescentpodcast.podbean.com/feed.xml][the-common-descent-podcast]]"><span class="section-number-4">5.1.4</span> <a href="https://commondescentpodcast.podbean.com/feed.xml">The Common Descent Podcast</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[https://commondescentpodcast.podbean.com/feed.xml][the-common-descent-podcast]]">
+
+</div>
+</div>
+<div id="outline-container-org4433d43" class="outline-4">
+<h4 id="sec-media/podcasts/[[https://wakingup.libsyn.com/rss][making-sense-with-sam-harris]]"><span class="section-number-4">5.1.5</span> <a href="https://wakingup.libsyn.com/rss">Making Sense with Sam Harris</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[https://wakingup.libsyn.com/rss][making-sense-with-sam-harris]]">
+
+</div>
+</div>
+<div id="outline-container-org987f37d" class="outline-4">
+<h4 id="sec-media/podcasts/[[http://feed.thisamericanlife.org/talpodcast][this-american-life]]"><span class="section-number-4">5.1.6</span> <a href="http://feed.thisamericanlife.org/talpodcast">This American Life</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[http://feed.thisamericanlife.org/talpodcast][this-american-life]]">
+
+</div>
+</div>
+<div id="outline-container-orgd0489b5" class="outline-4">
+<h4 id="sec-media/podcasts/[[https://changelog.com/podcast/feed][the-changelog]]"><span class="section-number-4">5.1.7</span> <a href="https://changelog.com/podcast/feed">The Changelog</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[https://changelog.com/podcast/feed][the-changelog]]">
+
+</div>
+</div>
+<div id="outline-container-orgb1d926d" class="outline-4">
+<h4 id="sec-media/podcasts/[[https://feeds.feedburner.com/backstoryradio][backstory]]"><span class="section-number-4">5.1.8</span> <a href="https://feeds.feedburner.com/BackStoryRadio">BackStory</a></h4>
+<div class="outline-text-4" id="text-sec-media/podcasts/[[https://feeds.feedburner.com/backstoryradio][backstory]]">
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org34d8678" class="outline-3">
+<h3 id="sec-media/videos-:video:"><span class="section-number-3">5.2</span> Videos&#xa0;&#xa0;&#xa0;<span class="tag"><span class="video">video</span></span></h3>
+<div class="outline-text-3" id="text-sec-media/videos-:video:">
+
+</div>
+<div id="outline-container-orgcab488d" class="outline-4">
+<h4 id="sec-media/videos/[[https://www.youtube.com/feeds/videos.xml?channel_id=ucyo_jab_esufrv4b17ajtaw][3blue1brown]]"><span class="section-number-4">5.2.1</span> <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></h4>
+<div class="outline-text-4" id="text-sec-media/videos/[[https://www.youtube.com/feeds/videos.xml?channel_id=ucyo_jab_esufrv4b17ajtaw][3blue1brown]]">
+
+</div>
+</div>
+<div id="outline-container-org9ae54dc" class="outline-4">
+<h4 id="sec-media/videos/[[https://www.youtube.com/feeds/videos.xml?channel_id=ucj0-otvpf0wokeqt2z1heta][electroboom]]"><span class="section-number-4">5.2.2</span> <a href="https://www.youtube.com/feeds/videos.xml?channel_id=UCJ0-OtVpF0wOKEqT2Z1HEtA">ElectroBOOM</a></h4>
+<div class="outline-text-4" id="text-sec-media/videos/[[https://www.youtube.com/feeds/videos.xml?channel_id=ucj0-otvpf0wokeqt2z1heta][electroboom]]">
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc774a1b" class="outline-2">
+<h2 id="sec-blogs-:blog:"><span class="section-number-2">6</span> Blogs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="blog">blog</span></span></h2>
+<div class="outline-text-2" id="text-sec-blogs-:blog:">
+
+</div>
+<div id="outline-container-org16acd45" class="outline-3">
+<h3 id="sec-blogs/[[http://blog.stephenwolfram.com/feed/][stephen-wolfram-blog]]"><span class="section-number-3">6.1</span> <a href="http://blog.stephenwolfram.com/feed/">Stephen Wolfram Blog</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://blog.stephenwolfram.com/feed/][stephen-wolfram-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org61bd7e0" class="outline-3">
+<h3 id="sec-blogs/[[https://terrytao.wordpress.com/feed/][what's-new]]"><span class="section-number-3">6.2</span> <a href="https://terrytao.wordpress.com/feed/">What's new</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[https://terrytao.wordpress.com/feed/][what's-new]]">
+
+</div>
+</div>
+<div id="outline-container-orga4cddd7" class="outline-3">
+<h3 id="sec-blogs/[[https://jeremykun.com/feed/][math-∩-programming]]"><span class="section-number-3">6.3</span> <a href="https://jeremykun.com/feed/">Math ∩ Programming</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[https://jeremykun.com/feed/][math-∩-programming]]">
+
+</div>
+</div>
+<div id="outline-container-orge42d903" class="outline-3">
+<h3 id="sec-blogs/[[http://www.scottaaronson.com/blog/?feed=rss2][shtetl-optimized]]"><span class="section-number-3">6.4</span> <a href="http://www.scottaaronson.com/blog/?feed=rss2">Shtetl-Optimized</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://www.scottaaronson.com/blog/?feed=rss2][shtetl-optimized]]">
+
+</div>
+</div>
+<div id="outline-container-org64cb689" class="outline-3">
+<h3 id="sec-blogs/[[https://egtheory.wordpress.com/feed/][theory,-evolution,-and-games-group]]"><span class="section-number-3">6.5</span> <a href="https://egtheory.wordpress.com/feed/">Theory, Evolution, and Games Group</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[https://egtheory.wordpress.com/feed/][theory,-evolution,-and-games-group]]">
+
+</div>
+</div>
+<div id="outline-container-org0e8a854" class="outline-3">
+<h3 id="sec-blogs/[[https://mathbeauty.wordpress.com/feed/][mathbeauty]]"><span class="section-number-3">6.6</span> <a href="https://mathbeauty.wordpress.com/feed/">mathbeauty</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[https://mathbeauty.wordpress.com/feed/][mathbeauty]]">
+
+</div>
+</div>
+<div id="outline-container-orgbad1c1f" class="outline-3">
+<h3 id="sec-blogs/[[https://johncarlosbaez.wordpress.com/feed/][azimuth]]"><span class="section-number-3">6.7</span> <a href="https://johncarlosbaez.wordpress.com/feed/">Azimuth</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[https://johncarlosbaez.wordpress.com/feed/][azimuth]]">
+
+</div>
+</div>
+<div id="outline-container-orgd22a267" class="outline-3">
+<h3 id="sec-blogs/[[http://matt.might.net/articles/feed.rss][matt-might's-blog]]"><span class="section-number-3">6.8</span> <a href="http://matt.might.net/articles/feed.rss">Matt Might's blog</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://matt.might.net/articles/feed.rss][matt-might's-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org372901a" class="outline-3">
+<h3 id="sec-blogs/[[http://bactra.org/weblog/index.rss][three-toed-sloth]]"><span class="section-number-3">6.9</span> <a href="http://bactra.org/weblog/index.rss">Three-Toed Sloth</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://bactra.org/weblog/index.rss][three-toed-sloth]]">
+
+</div>
+</div>
+<div id="outline-container-org59ca359" class="outline-3">
+<h3 id="sec-blogs/[[http://bactra.org/notebooks/index.rss][notebooks]]"><span class="section-number-3">6.10</span> <a href="http://bactra.org/notebooks/index.rss">Notebooks</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://bactra.org/notebooks/index.rss][notebooks]]">
+
+</div>
+</div>
+<div id="outline-container-orga8dcbf3" class="outline-3">
+<h3 id="sec-blogs/[[http://ecoevoevoeco.blogspot.com/feeds/posts/default][eco-evo-evo-eco]]"><span class="section-number-3">6.11</span> <a href="http://ecoevoevoeco.blogspot.com/feeds/posts/default">Eco-Evo Evo-Eco</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://ecoevoevoeco.blogspot.com/feeds/posts/default][eco-evo-evo-eco]]">
+
+</div>
+</div>
+<div id="outline-container-org3b5523a" class="outline-3">
+<h3 id="sec-blogs/[[http://www.aaronsw.com/2002/feeds/pgessays.rss][paul-graham:-essays]]"><span class="section-number-3">6.12</span> <a href="http://www.aaronsw.com/2002/feeds/pgessays.rss">Paul Graham: Essays</a></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[http://www.aaronsw.com/2002/feeds/pgessays.rss][paul-graham:-essays]]">
+
+</div>
+</div>
+<div id="outline-container-org3f03b44" class="outline-3">
+<h3 id="sec-blogs/[[https://dynamicecology.wordpress.com/feed/][dynamic-ecology]]-:freq:"><span class="section-number-3">6.13</span> <a href="https://dynamicecology.wordpress.com/feed/">Dynamic Ecology</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="freq">freq</span></span></h3>
+<div class="outline-text-3" id="text-sec-blogs/[[https://dynamicecology.wordpress.com/feed/][dynamic-ecology]]-:freq:">
+
+</div>
+</div>
+
+<div id="outline-container-orgd4fea83" class="outline-3">
+<h3 id="sec-blogs/ml/stats-:ml:"><span class="section-number-3">6.14</span> ML/Stats&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ml">ml</span></span></h3>
+<div class="outline-text-3" id="text-sec-blogs/ml/stats-:ml:">
+
+</div>
+<div id="outline-container-org25a87ca" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://www.offconvex.org/feed.xml][off-the-convex-path]]"><span class="section-number-4">6.14.1</span> <a href="http://www.offconvex.org/feed.xml">Off the convex path</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://www.offconvex.org/feed.xml][off-the-convex-path]]">
+
+</div>
+</div>
+<div id="outline-container-orgd9bd613" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://www.randalolson.com/feed/][dr.-randal-s.-olson]]"><span class="section-number-4">6.14.2</span> <a href="http://www.randalolson.com/feed/">Dr. Randal S. Olson</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://www.randalolson.com/feed/][dr.-randal-s.-olson]]">
+
+</div>
+</div>
+<div id="outline-container-org498db27" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://feeds.feedburner.com/stanfordnlpresearchblog][stanford-nlp-research-blog]]"><span class="section-number-4">6.14.3</span> <a href="http://feeds.feedburner.com/StanfordNLPResearchBlog">Stanford NLP Research Blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://feeds.feedburner.com/stanfordnlpresearchblog][stanford-nlp-research-blog]]">
+
+</div>
+</div>
+<div id="outline-container-orgb8d910e" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://ruder.io/rss/index.rss][sebastian-ruder]]"><span class="section-number-4">6.14.4</span> <a href="http://ruder.io/rss/index.rss">Sebastian Ruder</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://ruder.io/rss/index.rss][sebastian-ruder]]">
+
+</div>
+</div>
+<div id="outline-container-orged58e3d" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://www.inference.vc/rss/][inference]]"><span class="section-number-4">6.14.5</span> <a href="https://www.inference.vc/rss/">inFERENCe</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://www.inference.vc/rss/][inference]]">
+
+</div>
+</div>
+<div id="outline-container-org6bf3d2a" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://blogs.princeton.edu/imabandit/feed/][i’m-a-bandit]]"><span class="section-number-4">6.14.6</span> <a href="https://blogs.princeton.edu/imabandit/feed/">I’m a bandit</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://blogs.princeton.edu/imabandit/feed/][i’m-a-bandit]]">
+
+</div>
+</div>
+<div id="outline-container-orgcc1cdac" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://www.minimizingregret.com/feeds/posts/default][minimizing-regret]]"><span class="section-number-4">6.14.7</span> <a href="http://www.minimizingregret.com/feeds/posts/default">Minimizing Regret</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://www.minimizingregret.com/feeds/posts/default][minimizing-regret]]">
+
+</div>
+</div>
+<div id="outline-container-org757726a" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://blog.shakirm.com/feed/][the-spectator]]"><span class="section-number-4">6.14.8</span> <a href="http://blog.shakirm.com/feed/">The Spectator</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://blog.shakirm.com/feed/][the-spectator]]">
+
+</div>
+</div>
+<div id="outline-container-orgd06aeb9" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://www.wildml.com/feed/][wildml]]"><span class="section-number-4">6.14.9</span> <a href="http://www.wildml.com/feed/">WildML</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://www.wildml.com/feed/][wildml]]">
+
+</div>
+</div>
+<div id="outline-container-org8429303" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://simplystatistics.org/feed/][simply-statistics]]"><span class="section-number-4">6.14.10</span> <a href="http://simplystatistics.org/feed/">Simply Statistics</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://simplystatistics.org/feed/][simply-statistics]]">
+
+</div>
+</div>
+<div id="outline-container-org10cdca9" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://feeds.feedburner.com/machinelearningtheory?format=xml][machine-learning-(theory)]]"><span class="section-number-4">6.14.11</span> <a href="http://feeds.feedburner.com/MachineLearningtheory?format=xml">Machine Learning (Theory)</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://feeds.feedburner.com/machinelearningtheory?format=xml][machine-learning-(theory)]]">
+
+</div>
+</div>
+<div id="outline-container-org9a796d3" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://nlpers.blogspot.com/feeds/posts/default][natural-language-processing-blog]]"><span class="section-number-4">6.14.12</span> <a href="https://nlpers.blogspot.com/feeds/posts/default">natural language processing blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://nlpers.blogspot.com/feeds/posts/default][natural-language-processing-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org373a68c" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://andrewgelman.com/feed/][statistical-modeling,-causal-inference,-and-social-science]]-:freq:"><span class="section-number-4">6.14.13</span> <a href="https://andrewgelman.com/feed/">Statistical Modeling, Causal Inference, and Social Science</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="freq">freq</span></span></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://andrewgelman.com/feed/][statistical-modeling,-causal-inference,-and-social-science]]-:freq:">
+
+</div>
+</div>
+<div id="outline-container-org5d2120c" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://blog.shakirm.com/feed/][the-spectator]]-2"><span class="section-number-4">6.14.14</span> <a href="http://blog.shakirm.com/feed/">The Spectator</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://blog.shakirm.com/feed/][the-spectator]]-2">
+
+</div>
+</div>
+<div id="outline-container-org7840018" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://distill.pub/rss.xml][distill]]"><span class="section-number-4">6.14.15</span> <a href="https://distill.pub/rss.xml">Distill</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://distill.pub/rss.xml][distill]]">
+
+</div>
+</div>
+<div id="outline-container-org0d57687" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[http://www.argmin.net/feed.xml][arg-min-blog]]"><span class="section-number-4">6.14.16</span> <a href="http://www.argmin.net/feed.xml">arg min blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[http://www.argmin.net/feed.xml][arg-min-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org9c66c06" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://bair.berkeley.edu/blog/feed.xml][the-berkeley-artificial-intelligence-research-blog]]"><span class="section-number-4">6.14.17</span> <a href="https://bair.berkeley.edu/blog/feed.xml">The Berkeley Artificial Intelligence Research Blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://bair.berkeley.edu/blog/feed.xml][the-berkeley-artificial-intelligence-research-blog]]">
+
+</div>
+</div>
+<div id="outline-container-orgc37610c" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://blog.rasa.com/rss/][rasa-blog]]"><span class="section-number-4">6.14.18</span> <a href="https://blog.rasa.com/rss/">Rasa Blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://blog.rasa.com/rss/][rasa-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org3a694c7" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://petewarden.com/feed/][pete-warden's-blog]]"><span class="section-number-4">6.14.19</span> <a href="https://petewarden.com/feed/">Pete Warden's blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://petewarden.com/feed/][pete-warden's-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org2479f75" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://feeds.feedburner.com/professorrobjhyndman][rob-j-hyndman]]"><span class="section-number-4">6.14.20</span> <a href="https://feeds.feedburner.com/ProfessorRobJHyndman">Rob J Hyndman</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://feeds.feedburner.com/professorrobjhyndman][rob-j-hyndman]]">
+
+</div>
+</div>
+<div id="outline-container-org7386efa" class="outline-4">
+<h4 id="sec-blogs/ml/stats/[[https://blog.ml.cmu.edu/feed/][blog-|-machine-learning-|-carnegie-mellon-university]]"><span class="section-number-4">6.14.21</span> <a href="https://blog.ml.cmu.edu/feed/">Blog | Machine Learning | Carnegie Mellon University</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/ml/stats/[[https://blog.ml.cmu.edu/feed/][blog-|-machine-learning-|-carnegie-mellon-university]]">
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc368632" class="outline-3">
+<h3 id="sec-blogs/programming-:programming:"><span class="section-number-3">6.15</span> Programming&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h3>
+<div class="outline-text-3" id="text-sec-blogs/programming-:programming:">
+
+</div>
+<div id="outline-container-org36104bd" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://fare.livejournal.com/data/rss/][cybernethics-/-cybernéthique]]"><span class="section-number-4">6.15.1</span> <a href="https://fare.livejournal.com/data/rss/">Cybernethics / Cybernéthique</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://fare.livejournal.com/data/rss/][cybernethics-/-cybernéthique]]">
+
+</div>
+</div>
+<div id="outline-container-org42e3902" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://lambda-the-ultimate.org/rss.xml][lambda-the-ultimate---programming-languages-weblog]]"><span class="section-number-4">6.15.2</span> <a href="http://lambda-the-ultimate.org/rss.xml">Lambda the Ultimate - Programming Languages Weblog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://lambda-the-ultimate.org/rss.xml][lambda-the-ultimate---programming-languages-weblog]]">
+
+</div>
+</div>
+<div id="outline-container-org208af29" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://lispblog.xach.com/rss][zach-beane-common-lisp]]"><span class="section-number-4">6.15.3</span> <a href="http://lispblog.xach.com/rss">Zach Beane Common Lisp</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://lispblog.xach.com/rss][zach-beane-common-lisp]]">
+
+</div>
+</div>
+<div id="outline-container-org1061ccd" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://feeds2.feedburner.com/stevelosh][steve-losh]]"><span class="section-number-4">6.15.4</span> <a href="http://feeds2.feedburner.com/stevelosh">Steve Losh</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://feeds2.feedburner.com/stevelosh][steve-losh]]">
+
+</div>
+</div>
+<div id="outline-container-org2e6d3b6" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://haskellweekly.news/haskell-weekly.atom][haskell-weekly]]"><span class="section-number-4">6.15.5</span> <a href="https://haskellweekly.news/haskell-weekly.atom">Haskell Weekly</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://haskellweekly.news/haskell-weekly.atom][haskell-weekly]]">
+
+</div>
+</div>
+<div id="outline-container-org3e2e855" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://danluu.com/atom.xml][dan-luu]]"><span class="section-number-4">6.15.6</span> <a href="https://danluu.com/atom.xml">Dan Luu</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://danluu.com/atom.xml][dan-luu]]">
+
+</div>
+</div>
+<div id="outline-container-orgc7a98af" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://tratt.net/laurie/news.rss][laurence-tratt]]"><span class="section-number-4">6.15.7</span> <a href="https://tratt.net/laurie/news.rss">Laurence Tratt</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://tratt.net/laurie/news.rss][laurence-tratt]]">
+
+</div>
+</div>
+<div id="outline-container-orgc2788c3" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://bartoszmilewski.com/feed/][bartosz-milewski's-programming-cafe]]"><span class="section-number-4">6.15.8</span> <a href="https://bartoszmilewski.com/feed/">Bartosz Milewski's Programming Cafe</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://bartoszmilewski.com/feed/][bartosz-milewski's-programming-cafe]]">
+
+</div>
+</div>
+<div id="outline-container-org1caec1a" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://irreal.org/blog/?feed=rss2][irreal]]-:freq:"><span class="section-number-4">6.15.9</span> <a href="http://irreal.org/blog/?feed=rss2">Irreal</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="freq">freq</span></span></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://irreal.org/blog/?feed=rss2][irreal]]-:freq:">
+
+</div>
+</div>
+<div id="outline-container-orgf0f63b8" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://www.joelonsoftware.com/feed/][joel-on-software]]"><span class="section-number-4">6.15.10</span> <a href="https://www.joelonsoftware.com/feed/">Joel on Software</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://www.joelonsoftware.com/feed/][joel-on-software]]">
+
+</div>
+</div>
+<div id="outline-container-orgfc8e459" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://esoteric.codes/rss][esoteric.codes]]"><span class="section-number-4">6.15.11</span> <a href="https://esoteric.codes/rss">esoteric.codes</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://esoteric.codes/rss][esoteric.codes]]">
+
+</div>
+</div>
+<div id="outline-container-orgef72217" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://lemire.me/blog/feed/][daniel-lemire's-blog]]"><span class="section-number-4">6.15.12</span> <a href="https://lemire.me/blog/feed/">Daniel Lemire's blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://lemire.me/blog/feed/][daniel-lemire's-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org088504b" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://simblob.blogspot.com/feeds/posts/default][blobs-in-games]]"><span class="section-number-4">6.15.13</span> <a href="http://simblob.blogspot.com/feeds/posts/default">Blobs in Games</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://simblob.blogspot.com/feeds/posts/default][blobs-in-games]]">
+
+</div>
+</div>
+<div id="outline-container-org6440874" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://esr.ibiblio.org/?feed=rss2][armed-and-dangerous]]"><span class="section-number-4">6.15.14</span> <a href="http://esr.ibiblio.org/?feed=rss2">Armed and Dangerous</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://esr.ibiblio.org/?feed=rss2][armed-and-dangerous]]">
+
+</div>
+</div>
+<div id="outline-container-org3397d5f" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://nullprogram.com/feed][null-program]]"><span class="section-number-4">6.15.15</span> <a href="http://nullprogram.com/feed">null program</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://nullprogram.com/feed][null-program]]">
+
+</div>
+</div>
+<div id="outline-container-orga69d528" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://fuco1.github.io/rss.xml][matus-goljer-(fuco1)]]"><span class="section-number-4">6.15.16</span> <a href="https://fuco1.github.io/rss.xml">Matus Goljer (Fuco1)</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://fuco1.github.io/rss.xml][matus-goljer-(fuco1)]]">
+
+</div>
+</div>
+<div id="outline-container-orgef79742" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://twobithistory.org/feed.xml][two-bit-history]]"><span class="section-number-4">6.15.17</span> <a href="https://twobithistory.org/feed.xml">Two-Bit History</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://twobithistory.org/feed.xml][two-bit-history]]">
+
+</div>
+</div>
+<div id="outline-container-org4796982" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://eli.thegreenplace.net/feeds/all.atom.xml][eli-bendersky's-website]]"><span class="section-number-4">6.15.18</span> <a href="https://eli.thegreenplace.net/feeds/all.atom.xml">Eli Bendersky's website</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://eli.thegreenplace.net/feeds/all.atom.xml][eli-bendersky's-website]]">
+
+</div>
+</div>
+<div id="outline-container-org54cb9b4" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://blog.brownplt.org/feed.xml][the-brown-plt-blog]]"><span class="section-number-4">6.15.19</span> <a href="http://blog.brownplt.org/feed.xml">The Brown PLT Blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://blog.brownplt.org/feed.xml][the-brown-plt-blog]]">
+
+</div>
+</div>
+<div id="outline-container-org9c39b2f" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://blog.veitheller.de/feed.rss][veit's-blog]]"><span class="section-number-4">6.15.20</span> <a href="https://blog.veitheller.de/feed.rss">Veit's Blog</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://blog.veitheller.de/feed.rss][veit's-blog]]">
+
+</div>
+</div>
+<div id="outline-container-orgaf4a74d" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://fexpr.blogspot.com/feeds/posts/default][structural-insight]]"><span class="section-number-4">6.15.21</span> <a href="https://fexpr.blogspot.com/feeds/posts/default">Structural insight</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://fexpr.blogspot.com/feeds/posts/default][structural-insight]]">
+
+</div>
+</div>
+<div id="outline-container-org60a8366" class="outline-4">
+<h4 id="sec-blogs/programming/[[http://250bpm.com/feed/pages/pagename/start/category/blog/t/250bpm-blogs/h/http%3a%2f%2fwww.250bpm.com%2fblog][250bpm-blogs]]"><span class="section-number-4">6.15.22</span> <a href="http://250bpm.com/feed/pages/pagename/start/category/blog/t/250bpm-blogs/h/http://www.250bpm.com/blog">250bpm-blogs</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[http://250bpm.com/feed/pages/pagename/start/category/blog/t/250bpm-blogs/h/http%3a%2f%2fwww.250bpm.com%2fblog][250bpm-blogs]]">
+
+</div>
+</div>
+<div id="outline-container-org982b017" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://captnemo.in/atom.xml][abhay-rana]]"><span class="section-number-4">6.15.23</span> <a href="https://captnemo.in/atom.xml">Abhay Rana</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://captnemo.in/atom.xml][abhay-rana]]">
+
+</div>
+</div>
+<div id="outline-container-org549ef61" class="outline-4">
+<h4 id="sec-blogs/programming/[[https://two-wrongs.com/feed.xml][two-wrongs]]"><span class="section-number-4">6.15.24</span> <a href="https://two-wrongs.com/feed.xml">Two-Wrongs</a></h4>
+<div class="outline-text-4" id="text-sec-blogs/programming/[[https://two-wrongs.com/feed.xml][two-wrongs]]">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>
