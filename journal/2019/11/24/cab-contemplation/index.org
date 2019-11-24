@@ -2,7 +2,7 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
-During the initial months of 2019, our office went farther away from my place
+During the initial months of 2019, our office went further away from my place
 and I had to take longer cab rides. More than an hour on average, one way. I was
 avoiding the thoughts (and involved work) of moving closer by coming up with
 various ways to use the cab time. One of my favorites involved planning a topic
