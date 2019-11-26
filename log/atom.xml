@@ -2,7 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>log</title>
   <link href="https://lepisma.xyz/log"/>
-  <updated>2019-11-26</updated>
+  <link href="https://lepisma.xyz/log/atom.xml" rel="self"/>
+  <updated>2019-11-26T23:42:01+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <entry>
     <title>Weekly Review /47-2019/</title>
