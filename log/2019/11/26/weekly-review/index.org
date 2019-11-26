@@ -1,0 +1,40 @@
+#+TITLE: Weekly Review /47-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 47,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+Minor template change from this week. I am merging a few headings.
+
+* Experiments
+Nothing noteworthy happened last week.
+
+* Readings
+- [[https://humanwhocodes.com/blog/2012/06/12/the-care-and-feeding-of-software-engineers-or-why-engineers-are-grumpy/][The care and feeding of software engineers (or, why engineers are grumpy)]]
+- Finished [[https://www.goodreads.com/book/show/6514.The_Bell_Jar][The Bell Jar]].
+- [[http://www.paulgraham.com/genius.html][The Bus Ticket Theory of Genius]]. Nothing really new but a nice read
+  nevertheless.
+- [[https://www.cs.princeton.edu/~arvindn/talks/MIT-STS-AI-snakeoil.pdf][How to detect AI Snake Oil]]
+- [[https://samharris.org/podcasts/174-life-mind/][Making Sense Podcast #174 - Life & Mind | Sam Harris]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 47-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
