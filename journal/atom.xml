@@ -2,7 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
-  <updated>2019-11-25</updated>
+  <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
+  <updated>2019-11-26T23:37:48+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <entry>
     <title>Cab Contemplation</title>
