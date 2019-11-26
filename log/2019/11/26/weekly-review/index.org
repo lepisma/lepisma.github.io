@@ -20,7 +20,9 @@ width: 100%;
 #+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
 #+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
 
-Minor template change from this week. I am merging a few headings.
+Minor template change from this week. I am merging a few headings. I also fixed
+commit counting code. Turns out the issue was with my understanding of
+=:supersede= vs =:overwrite= in CL's writing mechanism.
 
 * Experiments
 Nothing noteworthy happened last week.
