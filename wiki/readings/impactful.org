@@ -24,3 +24,4 @@ There is no planned order but it might take a chronological shape in some time.
 - [[https://www.goodreads.com/book/show/18373][Flowers for Algernon --- Daniel Keyes]]
 - [[https://www.goodreads.com/book/show/17470674][Fahrenheit 451 --- Ray Bradbury]]
 - [[https://www.goodreads.com/book/show/12086102][Einstein's Dreams --- Alan Lightman]]
+- [[https://www.goodreads.com/series/40372-the-sandman][The Sandman --- Neil Gaiman]]
