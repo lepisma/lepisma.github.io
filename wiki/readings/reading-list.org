@@ -1898,14 +1898,35 @@ CLOSED: [2018-02-05 Mon 01:18]
 :END:
 
 ** Uncategorized
-What sections can I create for these? Gleaning over the list makes me think at
-the least the following would be okay:
+I can probably put items in here under the following categories:
 
 1. Philosophy
 2. Social science/history/politics
 3. Skepticism/rationality
 4. Physics
 5. Popular science (the catch-all section)
+
+*** READ Cybertext: Perspectives on Ergodic Literature
+CLOSED: [2019-12-10 Tue 12:13]
+:PROPERTIES:
+:AUTHOR:   Espen J. Aarseth
+:ADDED:    [2019-12-10]
+:GOODREADS: https://www.goodreads.com/book/show/60071.Cybertext
+:END:
+
+Cybertext explores literature beyond the traditional linear book format. At
+first glance it might signify recent technological upgrades in the medium but
+it's not only that.
+
+I don't think I understand or agree with everything. For example Aarseth talks
+about web publishing in a way where the intention of 'someone' still holds the
+political upper hand whether the medium is paper or, an apparently liberated,
+WWW. While this is true to some extent, I am not sure if we can ignore the
+accessibility aspect completely.
+
+Overall the book explores the relationship and meaning of the classical terms
+'author' and 'reader' in different settings. The style is a little different
+than I am used to but it's a nice read.
 
 *** Networking for Nerds: Find, Access and Land Hidden Game-Changing Career Opportunities Everywhere
 :PROPERTIES:
