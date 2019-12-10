@@ -1,0 +1,35 @@
+#+TITLE: Weekly Review /49-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 49,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+Nothing noteworthy happened last week.
+
+* Readings
+- Finished [[https://www.goodreads.com/book/show/60071.Cybertext][Cybertext]].
+- [[https://www.nytimes.com/2019/11/22/world/asia/the-jungle-prince-of-delhi.html][The Jungle Prince of Delhi - The New York Times]]
+- [[http://www.jimpryor.net/teaching/guidelines/writing.html][Guidelines on Writing a Philosophy Paper]]
+- [[https://www.stuffyoushouldknow.com/podcasts/sysk-selects-have-all-the-good-ideas-already-been-discovered.htm][SYSK Selects: Have all the good ideas already been discovered?]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 49-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
