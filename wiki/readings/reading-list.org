@@ -19,6 +19,13 @@ Some non fiction. Most of the books are still in uncategorized section.
 Books with more mathematical and logical inclinations. Some theoretical computer
 science books might also go in here.
 
+*** The Shape of Space
+:PROPERTIES:
+:AUTHOR:   Jeffrey R. Weeks
+:ADDED:    [2019-12-13]
+:AMAZON:   https://www.amazon.com/Shape-Space-Chapman-Applied-Mathematics/dp/0824707095#reader_0824707095
+:END:
+
 *** The Book of Why: The New Science of Cause and Effect
 :PROPERTIES:
 :AUTHOR:   Judea Pearl, Dana Mackenzie
