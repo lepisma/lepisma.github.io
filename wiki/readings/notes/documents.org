@@ -255,6 +255,50 @@ random search.
 
 * AI/ML
 
+** READ Phoneme Level Language Models for Sequence Based Low Resource ASR
+CLOSED: [2019-12-15 Sun 15:21]
+:PROPERTIES:
+:CUSTOM_ID: dalmia2019phoneme
+:YEAR:     2019
+:AUTHOR:   Siddharth {Dalmia} and Xinjian {Li} and Alan W {Black} and Florian {Metze}
+:END:
+
+They try using a phoneme language model (PLM) for speech recognition decoding.
+There are two important pieces here. They train a single multilingual PLM
+(mapping all languages to IPA) and find it doing good across languages (from
+Babel dataset). Then they plug this in a CTC style model for decoding and find
+that doing better than CLM (character LM) and WFST (I am assuming this is an
+LG.fst) in low data setting.
+
+** READ Bootstrap estimates for confidence intervals in ASR performance evaluation
+CLOSED: [2019-12-15 Sun 15:21]
+:PROPERTIES:
+:CUSTOM_ID: bisani2004bootstrap
+:YEAR:     2004
+:AUTHOR:   M. {Bisani} and H. {Ney}
+:END:
+
+The idea used in [[https://github.com/kaldi-asr/kaldi/blob/master/src/bin/compute-wer-bootci.cc][compute-wer-bootci]]. Useful for comparing modifications in
+speech systems when the deltas are not convincingly different.
+
+** READ Your Classifier is Secretly an Energy Based Model and You Should Treat it Like One
+CLOSED: [2019-12-15 Sun 15:18]
+:PROPERTIES:
+:CUSTOM_ID: grathwohl2019classifier
+:YEAR:     2019
+:AUTHOR:   Will Grathwohl and Kuan-Chieh Wang and Jörn-Henrik Jacobsen and David Duvenaud and Mohammad Norouzi and Kevin Swersky
+:END:
+
+They take a regular classifier, pick out logits before softmax and try to
+formulate an energy based model able to give $P(x, y)$ and $P(x)$. The
+formulation itself is pretty simple with the energy function being $E(x) =
+−LogSumExp_yf_\Theta(x)[y]$. Final loss sums cross entropy (for discriminative part)
+and negative log likelhood of $P(x)$ approximated using SGLD. Check out the repo
+[[https://github.com/wgrathwohl/JEM][here]].
+
+Although the learning mechanism is a little fragile and needs work to be
+generally stable, the results are neat.
+
 ** READ Speaker diarization with lstm
 CLOSED: [2019-11-16 Sat 14:31]
 :PROPERTIES:
@@ -1462,6 +1506,23 @@ The examples are nice and make this is a good read for beginners. Though I
 suspect there might be better, recent, articles on these topics now.
 
 * Misc
+
+** READ How do committees invent
+CLOSED: [2019-12-15 Sun 15:19]
+:PROPERTIES:
+:CUSTOM_ID: conway1968committees
+:YEAR:     1968
+:AUTHOR:   Conway, Melvin E
+:END:
+
+Original paper on Conway's Law. The reasoning used is easy to understand and
+feels trivial in hindsight but there are nice nuggets scattered in between, like
+the following, which makes the reading worthwhile:
+
+#+begin_quote
+A manager knows that he will be vulnerable to the charge of mismanagement if he
+misses his schedule without having applied all his resources.
+#+end_quote
 
 ** READ More is different
 CLOSED: [2019-01-27 Sun 20:55]
