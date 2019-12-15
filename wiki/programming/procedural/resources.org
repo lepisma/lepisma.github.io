@@ -1,0 +1,16 @@
+#+TITLE: Resources
+#+SETUPFILE: ../../../assets/export.setup
+
+A few resources for procedural generation. Also I am putting in creative
+programming stuff here for the lack of a dedicate page.
+
+* Events
++ [[https://nanogenmo.github.io/][NaNoGenMo]]. National Novel Generation Month.
++ [[http://www.procjam.com/][PROCJAM - Make Something That Makes Something]]
+
+* Resources
+- [[http://www-cs-students.stanford.edu/~amitp/gameprog.html][Amit’s Game Programming Information]]
+- [[https://github.com/ellisonleao/magictools#code][GitHub - ellisonleao/magictools: A list of Game Development resources to make
+  magic happen.]]
+- [[https://github.com/terkelg/awesome-creative-coding][terkelg/awesome-creative-coding: Creative Coding: Generative Art, Data
+  visualization, Interaction Design, Resources.]]
