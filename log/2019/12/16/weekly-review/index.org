@@ -1,0 +1,53 @@
+#+TITLE: Weekly Review /50-2019/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 50,
+year: 2019
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+Nothing again. I need to start avoiding a lot of managerial drudgery in work. I
+think there are a few steps I should start taking:
+
+1. Enforce hours and smaller time spans for meetings not related to actual ML
+   work.
+2. Start using simpler tasks management systems wherever needed. I don't mind
+   sticky notes at this moment to be honest. JIRA can fuck right off. Real world
+   project management is so much bike shedding.
+3. Another process eating my time is hiring. I probably should start automating
+   loads of that by structuring the evaluation methodologies.
+
+Seeking perfection in organizational tasks is doomed to screw my real directions
+of work.
+
+* Readings
+- [[https://danluu.com/startup-tradeoffs/][Big companies v. startups]]
+- Bootstrap estimates for confidence intervals in ASR performance evaluation
+  (cite:bisani2004bootstrap)
+- How do committees invent (cite:conway1968committees)
+- Phoneme Level Language Models for Sequence Based Low Resource ASR
+  (cite:dalmia2019phoneme)
+- Your Classifier is Secretly an Energy Based Model and You Should Treat it Like
+  One (cite:grathwohl2019classifier)
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 50-2019 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+[[bibliography:./references.bib]]
