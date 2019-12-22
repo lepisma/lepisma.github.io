@@ -1,0 +1,32 @@
+#+TITLE: Information Janitoring
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, productivity, emacs
+
+From the time I started using [[https://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]], I have stopped thinking about having a
+curated address book. And I don't miss it. The way mu4e contact listing
+mechanism works is, most likely, by running a fuzzy completion system over all
+the email ids seen across all the mail directories (maybe filtering spams). And
+it works. There are other use cases unlocked by having a more complete and
+polished contact management system, like [[https://www.monicahq.com/][monica]], but they are not important most
+of the time. You should be able to identify when they are and have a system
+flexible enough to adapt, but that's a different topic.
+
+The real work, most of the times, involves creating content and not organizing
+them. Higher level tools like Google Drive are good examples of systems which
+embrace this idea. You don't really care about where the files go and are
+focused aggressively on creating. You still need good lookup mechanisms but
+those can be made afterwards too. I don't know anyone who does diligent naming,
+renaming, moving, copying, deleting etc. to keep their Drive neat. If you indeed
+start to do all the bookkeeping, your life will inevitably end up in a mess.
+Never mind the accidental data losses[fn::One of which prompted me to write
+this].
+
+There is a low effort, /works most of the time for most use cases/, system and
+then there is a high effort perfect one. As in many other cases [[https://en.wikipedia.org/wiki/Worse_is_better][Worse is Better]].
+Specially in these janitoring tasks where perfectionism has high cost and low
+value. I have noticed this in many forms of information that I used to manage
+manually at the lowest level. Music, contacts, notes etc. While I still need to
+work on /something/ for contacts, since I am pretty poor at keeping my connections
+happy, I have stopped envisioning grand plans that pay off in long term now. If
+I am not getting a usable feature upgrade within an hour of programming, I
+decide that I have planned too much and should stop.
