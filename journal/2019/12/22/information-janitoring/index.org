@@ -1,6 +1,6 @@
 #+TITLE: Information Janitoring
 #+SETUPFILE: ../../../../../assets/export.setup
-#+TAGS: personal, productivity, emacs
+#+TAGS: personal, productivity
 
 From the time I started using [[https://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]], I have stopped thinking about having a
 curated address book. And I don't miss it. The way mu4e contact listing
