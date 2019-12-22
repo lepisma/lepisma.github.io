@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2019-12-02T23:33:15+0530</updated>
+  <updated>2019-12-22T17:49:51+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Information Janitoring</title>
+    <link href="https://lepisma.xyz/journal/2019/12/22/information-janitoring/index.html"/>
+    <updated>2019-12-22</updated>
+  </entry>
   <entry>
     <title>Cab Contemplation</title>
     <link href="https://lepisma.xyz/journal/2019/11/24/cab-contemplation/index.html"/>
