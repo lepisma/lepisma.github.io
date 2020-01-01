@@ -1,0 +1,7 @@
+#+TITLE: A break
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+These few days have been a little messy and I haven't gotten time to work on the
+content on this site with a regularity that I wanted. I am now consciously
+deciding to take a break from updating pages here, for around a month at least.
