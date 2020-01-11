@@ -255,6 +255,54 @@ random search.
 
 * AI/ML
 
+** READ Parsing English with a link grammar
+CLOSED: [2020-01-11 Sat 22:49]
+:PROPERTIES:
+:CUSTOM_ID: sleator1995parsing
+:YEAR:     1995
+:AUTHOR:   Sleator, Daniel DK and Temperley, Davy
+:END:
+
+Came to here via opencog's [[https://github.com/opencog/learn][learn]] project. I have a patchy information about
+formal grammars so this was also a nice perspective setup. Overall a link
+grammar defines connectors on left and right side of a word with disjunctions
+and conjunctions incorporated which then /link/ together to form a sentence, under
+certain constraints.
+
+This specific paper shows the formulation and creates a parser for English,
+covering many (not all) linguistics phenomena.
+
+** READ Deep Learning-Based Telephony Speech Recognition in the Wild.
+CLOSED: [2020-01-11 Sat 22:49]
+:PROPERTIES:
+:CUSTOM_ID: han2017deep
+:YEAR:     2017
+:AUTHOR:   Kyu J. {Han} and Seongjun {Hahm} and Byung-Hak {Kim} and Jungsuk {Kim} and Ian R. {Lane}
+:END:
+
+Details on CAPIO's call transcription system for 'in the Wild' data. A few nice
+bits of practical information if you are working on something similar. Specially
+the one about adaptation where even 10h of data gave them 5 percent point jump
+(base trained on switchboard) on real data.
+
+** READ SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition.
+CLOSED: [2020-01-11 Sat 22:45]
+:PROPERTIES:
+:CUSTOM_ID: zoph2019specaugment
+:YEAR:     2019
+:AUTHOR:   Barret {Zoph} and Chung-Cheng {Chiu} and Daniel S. {Park} and Ekin Dogus {Cubuk} and Quoc V. {Le} and William {Chan} and Yu {Zhang}
+:END:
+
+From the abstract:
+
+#+begin_quote
+The augmentation policy consists of warping the features, masking blocks of
+frequency channels, and masking blocks of time steps.
+#+end_quote
+
+Kaldi has this supported as a layer (applied on spectrograms) in it's nnet3
+framework.
+
 ** READ Phoneme Level Language Models for Sequence Based Low Resource ASR
 CLOSED: [2019-12-15 Sun 15:21]
 :PROPERTIES:
