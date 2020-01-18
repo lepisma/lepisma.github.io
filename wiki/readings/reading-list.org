@@ -5246,6 +5246,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** The Shadow of the Wind
+:PROPERTIES:
+:AUTHOR:   Carlos Ruiz Zafón, Lucia Graves
+:ADDED:    [2020-01-18]
+:GOODREADS: https://www.goodreads.com/book/show/1232.The_Shadow_of_the_Wind
+:END:
+
 *** The Secret Sharer
 :PROPERTIES:
 :AUTHOR:   Joseph Conrad
