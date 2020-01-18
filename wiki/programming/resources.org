@@ -44,4 +44,4 @@ as a programmer.
 - [[https://www.ledger-cli.org/][ledger]] for accounting.
 - [[https://diffoscope.org/][diffoscope]] helps in diffing much more than just files.
 - Though I don't use it, [[http://taskjuggler.org][TaskJuggler]] looks like something that belongs here.
-  
+- [[https://www.gpsbabel.org/index.html][gpsbabel]] for working with GPS logs and related file formats.
