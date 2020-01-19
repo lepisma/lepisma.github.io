@@ -4,7 +4,7 @@
 <!-- 2020-01-19 Sun 21:39 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>(car nil)</title>
+<title>A REPL for Conversations</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -287,279 +287,138 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>(<i>car</i> nil)</h1>
+  <div class='page-meta'>2020-01-13 Mon 00:00</div>
+  <h1>A REPL for Conversations</h1>
 </div>
 </div>
 <div id="content">
-<script src="assets/js/tag-filter.js"></script>
+<div class='page-tags'><a href='../../../..#ml'>ml</a> <a href='../../../..#programming'>programming</a></div>
+<p>
+<span class='dropcap'>A</span> REPL, in programming, is an interactive environment where a programmer can go
+through the cycle of writing code, getting it <i>Read</i>, <i>Evaluated</i>, output <i>Printed</i>
+and then back in a <i>Loop</i>. Fundamentally, a REPL merges <i>usage</i> and <i>extension</i> of a
+system in a single interface. This merger has been important in providing easy
+extensibility to the end programmers in many programming languages.
+</p>
+
+<div id="outline-container-org36e3a4f" class="outline-2">
+<h2 id="sec-interaction-is-supervision"><span class="section-number-2">1</span> Interaction is supervision</h2>
+<div class="outline-text-2" id="text-sec-interaction-is-supervision">
 
 <p>
-Hello, welcome to my blog! A listing of all the posts follows.
+We can envision a similar merger in human intelligence involving languages.
+After getting to a certain level of language understanding, our interactive
+behavior can be manipulated itself by interactions. Interactions cover all
+possible <i>dialogs</i>. Manipulative interactions or supervision, as we like to call
+it, cover whatever is involved in updating the state of the internal model
+which, in turn, affects the behavior.
 </p>
 
 <p>
-I am now keeping more subjective (and frequent) pieces in <a href="../journal/index.html">/journal</a>. Things that
-are more <i>page</i> like go in my personal <a href="../wiki/index.html">/wiki</a>. I also try to maintain a regular
-activity <a href="../log/index.html">/log</a>.
+Most of the machine dialog platforms aren't designed to expose this equivalence
+explicitly. We have a different <i>language</i> for providing supervision and different
+for building the interaction experiences and that's it. Consider the chatbots
+you see on various websites these days. These have an interaction language which
+is a natural language, and a separate supervision language which stays at the
+programmer's beck in the background. I can't improve my personal interaction
+with the system or extend it's behavior by talking to it. I can do that with a
+human agent easily.
 </p>
+
+<p>
+We definitely are moving towards such systems by adding control knobs piece by
+piece. But still aren't looking very actively for a general framework of <i>user
+initiated supervision</i>. Practically this is not going to be immediately helpful
+for many reasons known to all of us working in the field, but it's helpful to
+define various kinds of platforms for machine dialog involving users on a
+continuum who all <i>program</i> their desired changes using their own interactive
+languages.
+</p>
+
+<p>
+From the technical side, of course there are problems that need to be solved for
+this. Since natural languages are already there, as compared to a language <i>to be
+designed</i>, this needs a lot of work in understanding and creating computational
+models of <a href="https://en.wikipedia.org/wiki/Language_acquisition">language acquisition</a> from one end and works in zero and few shot
+learnings from the other.
+</p>
+
+<p>
+Sublanguages are still going to be the more efficient way for working at a
+certain level, just like mathematical notations are for talking about
+mathematics, but we can target a natural language REPL layer on top of current
+dialog platforms and aim for a sort of interactive malleability for growing the
+system organically afterwards.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org006d1d4" class="outline-2">
+<h2 id="sec-growing-a-conversational-agent"><span class="section-number-2">2</span> Growing a conversational agent</h2>
+<div class="outline-text-2" id="text-sec-growing-a-conversational-agent">
+
+<p>
+This malleability is not a learning<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> but a design problem at the moment. A problem similar to
+designing a programming language. What we want the language user to accomplish
+is our focus right now. How we can let the language itself grow is a problem we
+will be designing systems for in the future. Once this interaction language is
+capable enough, we can have an ecosystem of extensions and libraries making a
+minimal system malleable enough to allow building drastically different
+experiences on top of it.
+</p>
+
+<p>
+And it's important that the system accepts growth at various levels if it has to
+generalize across many use cases. In his talk 'Growing a Language'
+(<a class='org-ref-reference' href="#steele1999growing">steele1999growing</a>), Guy L. Steele cites lack of this growth as the
+difference between APL and Lisp. In APL "there was no way for a user to grow the
+language in a smooth way". The smoothness here focuses on extendibility in terms
+of language primitives. From the same talk:
+</p>
+
+<blockquote>
+<p>
+If I want to help other persons to write all sorts of programs, should I design
+a small programming language or a large one?
+</p>
+<br><br>
+<p>
+I stand on this claim: I should not design a small language, and I should not
+design a large one. I need to design a language that can grow. I need to plan
+ways in which it might grow—but I need, too, to leave some choices so that other
+persons can make those choices at a later time.
+</p>
+</blockquote>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+Conversational systems are interesting from many more angles than just what
+their components look like at the moment, which includes Speech To Text,
+Language Understanding, Dialog Management, Text To Speech etc. Improving metrics
+under the current framework is a decent and important goal but supporting a
+language for others to build on top of, without involving many sublanguages, is
+also an interesting problem.
 </p>
 
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#exploration'>exploration</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#physics'>physics</a> <a href='#programming'>programming</a> <a href='#python'>python</a> <a href='#ramble'>ramble</a> <a href='#ricing'>ricing</a> <a href='#skepticism'>skepticism</a> <a href='#tooling'>tooling</a> <a href='#ux'>ux</a> <a href='#viz'>viz</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-10-31</div>
-<p class="archive-title">
-<a href="./2019/10/31/github-linguist-colors/index.html" class="archive-title">Github Linguist Colors</a>
+<p>
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="steele1999growing">[steele1999growing]</a> <a name="steele1999growing"></a>Steele. 1999. "Growing a language." <i>Higher-Order and Symbolic Computation</i>, 12(3), 221-236. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
+</ul>
 </p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#viz'>viz</a></div>
 </div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2019-04-09</div>
-<p class="archive-title">
-<a href="./2019/04/09/blurring-text/index.html" class="archive-title">Blurring Text</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">Many researches in self learning systems
+are orthogonal here as you can have low generalization and still make a natural
+language REPL.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/tangle-templates.html" class="archive-title">Tangle Templates</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-06-07</div>
-<p class="archive-title">
-<a href="./2018/06/07/wiki-to-blog.html" class="archive-title">Blog ← Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-01-27</div>
-<p class="archive-title">
-<a href="./2018/01/27/blog-to-wiki.html" class="archive-title">Blog → Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-12-20</div>
-<p class="archive-title">
-<a href="./2017/12/20/fancy-lambdas.html" class="archive-title">Fancy Little Lisp λs</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-10-28</div>
-<p class="archive-title">
-<a href="./2017/10/28/ricing-org-mode/index.html" class="archive-title">Ricing up Org Mode</a>
-</p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#ricing'>ricing</a> <a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-08-25</div>
-<p class="archive-title">
-<a href="./2017/08/25/keyboard/index.html" class="archive-title">The point of keyboarding</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-29</div>
-<p class="archive-title">
-<a href="./2017/06/29/leaving-goodreads/index.html" class="archive-title">Leaving Goodreads</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#ramble'>ramble</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-25</div>
-<p class="archive-title">
-<a href="./2017/06/25/simple-time-maps/index.html" class="archive-title">Simpler time map plots</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-05-15</div>
-<p class="archive-title">
-<a href="./2017/05/15/syntactical-macros.html" class="archive-title">The Beauty of Syntactical Macros</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#lisp'>lisp</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-15</div>
-<p class="archive-title">
-<a href="./2017/03/15/projects.html" class="archive-title">Projects</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-05</div>
-<p class="archive-title">
-<a href="./2017/03/05/optional-typing.html" class="archive-title">Optional Typing</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#python'>python</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-11-02</div>
-<p class="archive-title">
-<a href="./2016/11/02/org-babel/index.html" class="archive-title">Cheap polyglot notebooks</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-08-25</div>
-<p class="archive-title">
-<a href="./2016/08/25/evidence-abuse/index.html" class="archive-title">Abusing Evidence: Drought, Deluge and Disregard</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-06-13</div>
-<p class="archive-title">
-<a href="./2016/06/13/genetic-algorithm/index.html" class="archive-title">What is it that Genetic Algorithm does?</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-03-17</div>
-<p class="archive-title">
-<a href="./2016/03/17/org-mode/index.html" class="archive-title">On why you too should give Emacs Org-mode a spin</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-01-23</div>
-<p class="archive-title">
-<a href="./2016/01/23/constitution-de-markov.html" class="archive-title">Constitution De Markov</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-12-21</div>
-<p class="archive-title">
-<a href="./2015/12/21/white-rhino.html" class="archive-title">White Rhinos, irrationality and other tales</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-11-03</div>
-<p class="archive-title">
-<a href="./2015/11/03/the-writers-voice/index.html" class="archive-title">The Writers' Voice</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-07-30</div>
-<p class="archive-title">
-<a href="./2015/07/30/up-with-theano-and-cuda.html" class="archive-title">Up and running with Theano (GPU) + PyCUDA on Windows</a>
-</p>
-<div class='page-tags'><a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-06-27</div>
-<p class="archive-title">
-<a href="./2015/06/27/hot-100/index.html" class="archive-title">Hot 100 over the years</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-23</div>
-<p class="archive-title">
-<a href="./2015/03/23/overtone-jamming.html" class="archive-title">Overtone Jamming</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-20</div>
-<p class="archive-title">
-<a href="./2015/03/20/rowing-a-steamer/index.html" class="archive-title">Rowing a Steamer</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-14</div>
-<p class="archive-title">
-<a href="./2015/01/14/computer-programs-and-zipf-law/index.html" class="archive-title">Computer Programs and Zipf's Law</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-08</div>
-<p class="archive-title">
-<a href="./2015/01/08/firewall-paradox/index.html" class="archive-title">Firewall Paradox and revisiting the Law of Information</a>
-</p>
-<div class='page-tags'><a href='#physics'>physics</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-06</div>
-<p class="archive-title">
-<a href="./2015/01/06/why-i-stopped-recommending-gnome/index.html" class="archive-title">Why I Stopped Recommending GNOME</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-25</div>
-<p class="archive-title">
-<a href="./2014/11/25/interstellar-tesseract/index.html" class="archive-title">The Interstellar's Tesseract</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-02</div>
-<p class="archive-title">
-<a href="./2014/11/02/neural-turing-machines/index.html" class="archive-title">Neural Turing Machines for dummies</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-07-29</div>
-<p class="archive-title">
-<a href="./2014/07/29/flesh-and-metal/index.html" class="archive-title">Flesh and Metal</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-06-21</div>
-<p class="archive-title">
-<a href="./2014/06/21/extreme-learning-machine/index.html" class="archive-title">Extreme Learning Machines with Julia</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
