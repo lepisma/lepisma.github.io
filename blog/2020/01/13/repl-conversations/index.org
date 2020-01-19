@@ -47,14 +47,14 @@ dialog platforms and aim for a sort of interactive malleability for growing the
 system organically afterwards.
 
 * Growing a conversational agent
-This malleability is not a learning[fn::Many researches in self learning systems
-are orthogonal here as you can have low generalization and still make a natural
-language REPL.] but a design problem at the moment. A problem similar to
-designing a programming language. What we want the language user to accomplish
-is our focus right now. How we can let the language itself grow is a problem we
-will be designing systems for in the future. Once this interaction language is
-capable enough, we can have an ecosystem of extensions and libraries making a
-minimal system malleable enough to allow building drastically different
+This malleability is not only a learning[fn::Many researches in self learning
+systems are orthogonal here as you can have low generalization and still make a
+natural language REPL.] but also design problem at the moment. A problem similar
+to designing a programming language. What we want the language user to
+accomplish is our focus right now. How we can let the language itself grow is a
+problem we will be designing systems for in the future. Once this interaction
+language is capable enough, we can have an ecosystem of extensions and libraries
+making a minimal system malleable enough to allow building drastically different
 experiences on top of it.
 
 And it's important that the system accepts growth at various levels if it has to
