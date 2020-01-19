@@ -254,6 +254,24 @@ random search.
  :END:
 
 * AI/ML
+** READ Learning language from a large (unannotated) corpus
+CLOSED: [2020-01-19 Sun 13:16]
+:PROPERTIES:
+:CUSTOM_ID: vepstas2014learning
+:YEAR:     2014
+:AUTHOR:   Vepstas, Linas and Goertzel, Ben
+:END:
+
+Introductory paper on the general approach used in [[https://github.com/opencog/learn][learn]]. The idea is to learn
+various generalizable syntactic and semantic relations from unannotated corpus.
+The relations are expressed using graphs sitting on top of link grammar and
+meaning text theory (MTT). While the general approach is sketched out decently
+enough, there are details to filled in various steps and experiments to run (as
+of the writing in 2014).
+
+On another note, the document is a nice read because of the many interesting
+ways of looking at various ideas in understanding languages and going from
+syntax to reasoning via semantics.
 
 ** READ Parsing English with a link grammar
 CLOSED: [2020-01-11 Sat 22:49]
