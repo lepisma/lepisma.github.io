@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2020-01-20T06:07:59+0530</updated>
+  <updated>2020-01-30T21:52:48+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>A REPL for Conversations</title>
+    <link href="https://lepisma.xyz/2020/01/30/repl-conversations/index.html"/>
+    <updated>2020-01-30</updated>
+  </entry>
   <entry>
     <title>Github Linguist Colors</title>
     <link href="https://lepisma.xyz/2019/10/31/github-linguist-colors/index.html"/>

@@ -1,7 +1,6 @@
 #+TITLE: A REPL for Conversations
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: ml, programming
-#+PILE: draft:t
 
 A REPL, in programming, is an interactive environment where a programmer can go
 through the cycle of writing code, getting it /Read/, /Evaluated/, output /Printed/
@@ -61,7 +60,7 @@ And it's important that the system accepts growth at various levels if it has to
 generalize across many use cases. In his talk 'Growing a Language'
 (cite:steele1999growing), Guy L. Steele cites lack of this growth as the
 difference between APL and Lisp. In APL "there was no way for a user to grow the
-language in a smooth way". The smoothness here focuses on extendibility in terms
+language in a smooth way". The smoothness here focuses on extensibility in terms
 of language primitives. From the same talk:
 
 #+begin_quote
@@ -78,9 +77,9 @@ persons can make those choices at a later time.
 
 Conversational systems are interesting from many more angles than just what
 their components look like at the moment, which includes Speech To Text,
-Language Understanding, Dialog Management, Text To Speech etc. Improving metrics
-under the current framework is a decent and important goal but supporting a
-language for others to build on top of, without involving many sublanguages, is
-also an interesting problem.
+Language Understanding, Dialog Management, Text To Speech, etc. Improving
+metrics under the current framework is a decent and important goal, but there
+are many interesting challenges in the design aspects of how we build and let
+others build conversational experiences themselves.
 
 [[bibliography:./references.bib]]
