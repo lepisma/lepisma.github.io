@@ -1340,6 +1340,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** The Ethics Of Ambiguity
+:PROPERTIES:
+:AUTHOR:   Simone De Beauvoir
+:ADDED:    [2020-02-01]
+:AMAZON:   https://www.amazon.in/gp/product/080650160X/ref=x_gr_mw_bb_sout?ie=UTF8&tag=x_gr_w_bb_in-21&linkCode=as2&camp=3626&creative=24790
+:END:
+
 *** On Bullshit
 :PROPERTIES:
 :AUTHOR:   Harry G. Frankfurt
@@ -4939,6 +4946,13 @@ CLOSED: [2015-04-02]
 :END:
 
 ** Historical Fiction
+*** And the Mountains Echoed
+:PROPERTIES:
+:AUTHOR:   Khaled Hosseini
+:ADDED:    [2020-02-01]
+:GOODREADS: https://www.goodreads.com/book/show/16115612-and-the-mountains-echoed
+:END:
+
 *** Blood Meridian, or the Evening Redness in the West
 :PROPERTIES:
 :AUTHOR:   Cormac McCarthy
@@ -5246,7 +5260,7 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
-*** The Shadow of the Wind
+*** READING The Shadow of the Wind
 :PROPERTIES:
 :AUTHOR:   Carlos Ruiz Zafón, Lucia Graves
 :ADDED:    [2020-01-18]
