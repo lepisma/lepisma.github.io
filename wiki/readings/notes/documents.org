@@ -254,6 +254,22 @@ random search.
  :END:
 
 * AI/ML
+** READ A credit assignment compiler for joint prediction
+CLOSED: [2020-02-05 Wed 12:51]
+:PROPERTIES:
+:CUSTOM_ID: chang2016credit
+:YEAR:     2016
+:AUTHOR:   Chang, Kai-Wei and He, He and Ross, Stephane and Daume III, Hal and Langford, John
+:END:
+
+This talks about an API for framing L2S style search problems in style of an
+imperative program which allows for two optimizations:
+
+1. memoization
+2. forced path collapse, getting losses without going to the last state
+
+Main reduction that happens here is to a cost-sensitive classification problem.
+
 ** READ Learning language from a large (unannotated) corpus
 CLOSED: [2020-01-19 Sun 13:16]
 :PROPERTIES:
