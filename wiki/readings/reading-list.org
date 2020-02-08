@@ -5260,12 +5260,17 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
-*** READING The Shadow of the Wind
+*** READ The Shadow of the Wind
+CLOSED: [2020-02-08 Sat 23:37]
 :PROPERTIES:
 :AUTHOR:   Carlos Ruiz Zafón, Lucia Graves
 :ADDED:    [2020-01-18]
 :GOODREADS: https://www.goodreads.com/book/show/1232.The_Shadow_of_the_Wind
 :END:
+
+Read a mystery after many months!
+
+Thanks to Shraddha for this.
 
 *** The Secret Sharer
 :PROPERTIES:
