@@ -2,6 +2,10 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: ml, programming
 
+#+begin_quote
+This was originally posted on Vernacular.ai's [[https://medium.com/vernacular-ai/a-repl-for-conversations-269ece2dd48f][blog]].
+#+end_quote
+
 A REPL, in programming, is an interactive environment where a programmer can go
 through the cycle of writing code, getting it /Read/, /Evaluated/, output /Printed/
 and then back in a /Loop/. Fundamentally, a REPL merges /usage/ and /extension/ of a
