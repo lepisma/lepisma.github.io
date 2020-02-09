@@ -1,6 +1,7 @@
 #+TITLE: A REPL for Conversations
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: ml, programming
+#+PILE: dropcap:nil
 
 #+begin_quote
 This was originally posted on Vernacular.ai's [[https://medium.com/vernacular-ai/a-repl-for-conversations-269ece2dd48f][blog]].
