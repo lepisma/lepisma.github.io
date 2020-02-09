@@ -254,6 +254,27 @@ random search.
  :END:
 
 * AI/ML
+** READ Learning from Dialogue after Deployment: Feed Yourself, Chatbot!
+CLOSED: [2020-02-09 Sun 21:07]
+:PROPERTIES:
+:CUSTOM_ID: hancock2019learning
+:YEAR:     2019
+:AUTHOR:   Hancock, Braden and Bordes, Antoine and Mazare, Pierre-Emmanuel and Weston, Jason
+:END:
+
+This is an approach to collect supervision signal from deployment data. There
+are three tasks for the system (which is a chat bot doing ranking on candidate
+responses):
+
+1. Dialogue. The main task. Given the turns till now, the bot ranks which
+   response to utter.
+2. Satisfaction. Given turns till now, last being user utterance, predict
+   whether the user is satisfied.
+3. Feedback. After asking for feedback from the user, predict user's response
+   (feedback) based on the turns till now.
+
+The models have shared weights, mostly among task 1 and 3.
+
 ** READ A credit assignment compiler for joint prediction
 CLOSED: [2020-02-05 Wed 12:51]
 :PROPERTIES:
