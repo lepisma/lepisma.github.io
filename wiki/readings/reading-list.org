@@ -2020,12 +2020,18 @@ consequences are more severe.
 :GOODREADS: https://www.goodreads.com/book/show/38315.Fooled_by_Randomness
 :END:
 
-*** The Noonday Demon: An Atlas of Depression
+*** READ The Noonday Demon: An Atlas of Depression
+CLOSED: [2020-02-26 Wed 23:45]
 :PROPERTIES:
 :AUTHOR:   Andrew Solomon
 :ADDED:    <2017-08-08>
 :GOODREADS: https://www.goodreads.com/book/show/13932.The_Noonday_Demon
 :END:
+
+A rather big book. Hard to go through in one go. Less because of the number of
+pages (~500 main body), more due to the intensity of content.
+
+Not the most enjoyable read, but an important one.
 
 *** The Song Of The Dodo: Island Biogeography In An Age Of Extinctions
 :PROPERTIES:
@@ -4946,12 +4952,19 @@ CLOSED: [2015-04-02]
 :END:
 
 ** Historical Fiction
-*** READING And the Mountains Echoed
+*** READ And the Mountains Echoed
+CLOSED: [2020-02-26 Wed 23:41]
 :PROPERTIES:
 :AUTHOR:   Khaled Hosseini
 :ADDED:    [2020-02-01]
 :GOODREADS: https://www.goodreads.com/book/show/16115612-and-the-mountains-echoed
 :END:
+
+More than anything, this is a book about human relations, expressed both along
+time and intensity. There are a lot of beautiful stories in this. And they weave
+together nicely too.
+
+Thanks to Shraddha for the book.
 
 *** Blood Meridian, or the Evening Redness in the West
 :PROPERTIES:
