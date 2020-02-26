@@ -22,6 +22,244 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Every day, I choose, sometimes gamely and sometimes against the moment’s reason,
+to be alive. Is that not a rare joy?
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Thinking seems to me less persuasive evidence of being than does choosing.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+To love is to be vulnerable; to reject or decry vulnerability is to refuse love.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What makes people depressed? You might as well ask what makes people content.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+love and trust can be great justifiers, and the knowledge that someone else
+cares what happens to you is by itself sufficient to affect profoundly what you
+do.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If you reproach yourself, the object of your feeling is always present; if you
+need to reproach someone else, who may die or leave, you are left with no object
+for your feelings. “By taking flight into the ego,” Freud wrote, “love escapes
+annihilation.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The mourner is distressed by an actual death; the melancholiac, by the
+ambivalent experience of imperfect love.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“If children were brought into the world by an act of pure reason alone, would
+the human race continue to exist? Would not a man rather have so much sympathy
+with the coming generation as to spare it the burden of existence?”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The periods of happiness in it are the blank pages of history.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“You cannot possibly have any conception of what it is like to think and yet to
+have no occupation. Add to that a taste that is not easily satisfied and a great
+love of truth and I maintain that it would be better never to have been born.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“The tears of the world are a constant quantity.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“We need, in love, to practice only this: letting each other go. For holding on
+comes easily; we do not need to learn it.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You cannot long for what you do not understand: suicide is a price humans pay
+for self-consciousness, and it does not exist in comparable form among other
+species.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The man who kills a man kills a man The man who kills himself kills all men. As
+far as he is concerned, he wipes out the world.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A living death is not pretty, but unlike a dead death, it offers scope for
+amelioration.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“the incomplete joys of this world will never satisfy the human heart.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+the mind that recognizes itself cannot derecognize itself, and it is contrary to
+introspective life to destroy itself.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Depression is a search for invalidation. And you can always find as much as you
+want. When you’re depressed, you keep seeking to prove that you’re unworthy.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+feelings happen to you for absolutely no reason at all.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+while licit antidepressant meds start off with side effects and build up to
+desirable effects, the substances of abuse usually start with desirable effects
+and build up to side effects.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It’s always a shock, the discrepancy between my self-perception and how I am
+perceived in the world, between my internal vision of myself and the external
+circumstances of my life.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Much religion allows us to see suffering as laudable. It grants us dignity and
+purpose in our helplessness.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Do not go to a therapist whom you dislike. People you dislike, no matter how
+skilled they are, cannot help you. If you think you are smarter than your
+doctor, you are probably right:
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+My goal is to stay safely in between self-analysis and self-destruction.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When you’re hugely self-conscious, it’s hard to be fully happy.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The shape of each person’s normality, however, is unique: normality is perhaps
+an even more private idea than weirdness.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The things that save you are as frequently trivial as monumental.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Depression is a response to past loss, and anxiety is a response to future
+loss.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If I could see the world in nine dimensions, I’d pay a high price to do it. I
+would live forever in the haze of sorrow rather than give up the capacity for
+pain.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+As soon as we have a drug for violence, violence will be an illness.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The sun shines brightly and that’s just chemical too, and it’s chemical that
+rocks are hard, and that the sea is salt, and that certain springtime afternoons
+carry in their gentle breezes a quality of nostalgia that stirs the heart to
+longings and imaginings kept dormant by the snows of a long winter.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“I’m depressed but it’s just chemical” is a sentence equivalent to “I’m
+murderous but it’s just chemical” or “I’m intelligent but it’s just chemical.”
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We live, however, in a time of increasing palliatives; it is easier than ever to
+decide what to feel and what not to feel.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Depression is the flaw in love.
+
+#+HTML:<footer>﻿The Noonday Demon (Solomon, Andrew)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Anytime I can write a good letter Tubby it’s a sign I’m not working.
 
 #+HTML:<footer>﻿Ernest Hemingway on Writing (Ernest Hemingway)</footer>
