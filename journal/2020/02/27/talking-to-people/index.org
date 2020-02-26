@@ -1,0 +1,22 @@
+#+TITLE: Talking to People
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+I have been trying to gain more control over affective aspects of my being
+recently. There are various trivial ways that work out really well to swing your
+mind one way or other. I like grouping them all under 'talking to people'. For
+the why, a line from a recent read, [[https://www.goodreads.com/book/show/13932.The_Noonday_Demon][The Noonday Demon]], comes to my mind:
+
+#+begin_quote
+Thinking seems to me less persuasive evidence of being than does choosing.
+#+end_quote
+
+Many aspects of controlling your mind, under mildly severe circumstances, are
+solved problems. For such problems, we are mostly doing the 'choosing' act by
+selecting whether or not to go ahead with a solution. As an example, you might
+already know writing helps, it goes down to the /choice/ of employing that help.
+
+The 'talking to people' group has a bunch of trivial actions with direct
+affective knobs which are kicked in action just by /choosing/. You /choose/ to talk
+to someone. You /choose/ to go out for a walk. You /choose/ what to feel. Thinking
+here is secondary at best.
