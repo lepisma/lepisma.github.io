@@ -16,7 +16,7 @@ solved problems. For such problems, we are mostly doing the 'choosing' act by
 selecting whether or not to go ahead with a solution. As an example, you might
 already know writing helps, it goes down to the /choice/ of employing that help.
 
-The 'talking to people' group has a bunch of trivial actions with direct
-affective knobs which are kicked in action just by /choosing/. You /choose/ to talk
-to someone. You /choose/ to go out for a walk. You /choose/ what to feel. Thinking
-here is secondary at best.
+The 'talking to people' group has a bunch of trivial acts with direct affective
+knobs which are kicked in action just by /choosing/. You /choose/ to talk to
+someone. You /choose/ to go out for a walk. You /choose/ what to feel. Thinking here
+is secondary at best.
