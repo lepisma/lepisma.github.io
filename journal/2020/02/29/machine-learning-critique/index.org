@@ -1,0 +1,31 @@
+#+TITLE: Machine Learning Critique
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: ml, work
+
+At work, we recently started biweekly /State of Machine Learning/ (SoML) sessions.
+The general idea is to make every ML team member know what problems we are
+working on and what our solution approaches are. During the session we present
+short summaries of current work one by one and gather feedback from the rest.
+
+We have been trying to derive some sort of consistent value from these team wide
+meetings earlier too. Past attempts included a process meeting (talking about
+improvements and automation in our workflow), a problems meeting (listing down
+problems) and many more. Most of these focused on specific aspects that went up
+and down in priority which, perhaps, made them go out of fashion soon.
+
+With SoML, we are looking at something similar to what is called a /Design
+Critique/ in the design world. This is a little different from /review/ as we are
+less focused on being a /step/ in the formal delivery process. We, of course,
+don't go very formal with the critique process in SoML but the general
+decomposition of the session semantics looks similar.
+
+After merging a few ideas, here is the list of things that should happen via
+SoML[fn::We might rename it to /ML Critique/ in time.]:
+
++ General updates for the whole team
++ Discussion of better approaches for current problems
++ Cross project engagement at a higher level of abstraction
++ Learnings
+
+All have durable value. If communicated well, theses sessions should work out
+for longer than our earlier attempts.

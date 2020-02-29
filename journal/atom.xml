@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-02-27T13:35:21+0530</updated>
+  <updated>2020-02-29T21:12:39+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Machine Learning Critique</title>
+    <link href="https://lepisma.xyz/journal/2020/02/29/machine-learning-critique/index.html"/>
+    <updated>2020-02-29</updated>
+  </entry>
   <entry>
     <title>Talking to People</title>
     <link href="https://lepisma.xyz/journal/2020/02/27/talking-to-people/index.html"/>
