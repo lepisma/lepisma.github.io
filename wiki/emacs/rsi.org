@@ -1,0 +1,41 @@
+#+TITLE: Repetitive Strain Injury
+#+SETUPFILE: ../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+begin_quote
+While this page lies under the Emacs section, I don't have strong opinion on
+whether Emacs users have disproportionately high RSI or similar issues.
+#+end_quote
+
+This page is meant to document the state of my [[https://en.wikipedia.org/wiki/Repetitive_strain_injury][RSI]] and what I have tried or am
+trying. I guess a lot of programmers go through this so it might be helpful to
+put more experiences out in the open. Saying that, don't follow any random
+advice on the internet (including anything on this page which might look like an
+advice). RSI is not very well explained medically and you will have to maneuver
+your way through a bunch of experiments yourself.
+
+-----
+
+I started developing RSI symptoms around 2017. I was using my laptop keyboard
+([[https://support.hp.com/us-en/product/HP-Pavilion-dv7-7000-Entertainment-Notebook-PC-series/5226224/model/5305594][HP Pavilion dv7-7012tx]]) and noticed pain in left arm starting from fingers. My
+posture was convincingly bad. I would lie down with my back up and program for
+long sessions. A few months in, I switched to [[https://www.microsoft.com/accessories/en-us/products/keyboards/natural-ergonomic-keyboard-4000/b2m-00012][Microsoft 4000]] and set CTRL on
+CapsLk[fn::This helped with unusual pinky contortion since I am on default Emacs
+bindings.]. That helped for a while but my posture still stayed relatively
+stupid.
+
+Then in early 2019 I got another bout of pain. This kept on for a couple of
+weeks and I was diagnosed with RSI. Told to take breaks. Later in the same year
+I got another hit. After another RSI diagnosis, I realized that using 4000
+specifically was hurting since I had to press harder than I can on my laptop
+keyboard ([[https://www.lenovo.com/in/en/consumer-notebook/lenovo-legion/legion-y700-series/Legion-Y720/p/88GMY700794][Lenovo Legion Y720]] since mid 2018). Another important thing I noticed
+was that the length of the keyboarding session mattered a lot. If I try to
+stretch it beyond a point, I will starting feeling that something is going to go
+bad. I also started using a wrist splint for left hand through those 2-3 weeks
+which helped tremendously.
+
+At the moment, if I know it's a long programming session, I tend to use
+[[https://github.com/marcinkoziej/org-pomodoro][org-pomodoro]] to remind me to pause every 30 mins or so. Also I continue using
+the splint even after the pain is long gone. While it's not needed, it does help
+in setting my left hand straighter. Plus I maintain a better posture now,
+usually a seated-on-a-chair one and not something to do with a bed.
