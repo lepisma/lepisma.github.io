@@ -254,6 +254,27 @@ random search.
  :END:
 
 * AI/ML
+** READ Self-supervised dialogue learning
+CLOSED: [2020-03-01 Sun 13:09]
+:PROPERTIES:
+:CUSTOM_ID: wu2019self
+:YEAR:     2019
+:AUTHOR:   Wu, Jiawei and Wang, Xin and Wang, William Yang
+:END:
+
+The self-supervision signal here is coming from a model which tries to predict
+whether a provided tuple of turns is in order or not. Connecting this as the
+discriminator in generative-discriminative dialog systems they find better
+results.
+
+** READ The unreasonable effectiveness of data
+CLOSED: [2020-03-01 Sun 13:09]
+:PROPERTIES:
+:CUSTOM_ID: halevy2009unreasonable
+:YEAR:     2009
+:AUTHOR:   Halevy, Alon and Norvig, Peter and Pereira, Fernando
+:END:
+
 ** READ Learning from Dialogue after Deployment: Feed Yourself, Chatbot!
 CLOSED: [2020-02-09 Sun 21:07]
 :PROPERTIES:
