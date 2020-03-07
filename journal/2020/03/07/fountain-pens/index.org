@@ -1,0 +1,25 @@
+#+TITLE: A month of /fountain/ pens
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+Last month, I ended up buying a bunch of fountain pens and ink bottles. While I
+can clearly see the rabbit hole that is [[https://www.reddit.com/r/fountainpens/][/r/fountainpens]], I still needed to
+revisit [[https://moxie.org/blog/the-worst/][The Worst]] by Moxie to get a grip on my spending. After an initial rush,
+the left overs include a functional understanding of various components in a
+fountain pen, ways of tweaking the mechanisms and a more balanced love for
+beautiful inks[fn::I will put up some information about my explorations in my
+wiki later.].
+
+While I might have gone overboard, there are a lot of nice side effects. The
+variety of experiences possible in fountain pen world are really enticing. All
+those are making me work more on paper which has a calming effect on me. And I
+am putting more value on words that go down.[fn::And my handwriting is improving
+from the earlier shoddy crap.]
+
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+#+CAPTION: A nice shading ink with flex nib is actually pretty fun to work with. Pardon the ghosting in background.
+[[file:./flex.jpg]]
+
+I /might/ still not really stop spending, but I am looking at these as equivalents
+of things like a cozy sitting place which invite and assist you in doing a more
+important task like reading a book.
