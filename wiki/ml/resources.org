@@ -7,3 +7,6 @@ This page is a work in progress
 
 Guidelines for real world ML:
 - [[https://developers.google.com/machine-learning/guides/rules-of-ml/][Rules of Machine Learning:  |  ML Universal Guides  |  Google Developers]]
+
+* Speech
++ [[https://www.openslr.org/resources.php][openslr.org]] has many good datasets to work with.

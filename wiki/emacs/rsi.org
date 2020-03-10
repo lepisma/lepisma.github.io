@@ -30,7 +30,7 @@ I got another hit. After another RSI diagnosis, I realized that using 4000
 specifically was hurting since I had to press harder than I can on my laptop
 keyboard ([[https://www.lenovo.com/in/en/consumer-notebook/lenovo-legion/legion-y700-series/Legion-Y720/p/88GMY700794][Lenovo Legion Y720]] since mid 2018). Another important thing I noticed
 was that the length of the keyboarding session mattered a lot. If I try to
-stretch it beyond a point, I will starting feeling that something is going to go
+stretch it beyond a point, I will start feeling that something is going to go
 bad. I also started using a wrist splint for left hand through those 2-3 weeks
 which helped tremendously.
 
