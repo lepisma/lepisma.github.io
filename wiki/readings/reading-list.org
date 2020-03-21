@@ -5130,19 +5130,25 @@ CLOSED: [2016-02-09]
 :END:
 
 ** Graphic Novels
-*** Persepolis 2: The Story of a Return
+*** READING Persepolis 2: The Story of a Return
 :PROPERTIES:
 :GOODREADS: https://www.goodreads.com/book/show/9517.Persepolis_2
 :AUTHOR: by Marjane Satrapi, Anjali Singh (Translator)
 :ADDED:    <2020-03-16>
 :END:
 
-*** READING Persepolis: The Story of a Childhood
+*** READ Persepolis: The Story of a Childhood
+CLOSED: [2020-03-21 Sat 23:37]
 :PROPERTIES:
 :GOODREADS: https://www.goodreads.com/book/show/9516.Persepolis
 :AUTHOR: by Marjane Satrapi, Mattias Ripa (Translator)
 :ADDED:    <2020-03-16>
 :END:
+
+I didn't know much about the Islamic revolution. Mostly didn't have a first
+person story to connect nicely to.
+
+Thanks to Shraddha for the recommendation.
 
 *** READ Dream Country (Sandman, #3)
 CLOSED: [2018-10-13 Sat 13:41]
