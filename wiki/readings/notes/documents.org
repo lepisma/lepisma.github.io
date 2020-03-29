@@ -254,6 +254,20 @@ random search.
  :END:
 
 * AI/ML
+** READ Dialog Methods for Improved Alphanumeric String Capture
+CLOSED: [2020-03-29 Sun 13:21]
+:PROPERTIES:
+:CUSTOM_ID: peters2011dialog
+:YEAR:     2011
+:AUTHOR:   Peters, Doug and Stubley, Peter
+:END:
+
+Presents a way for dialog level collection of alpha numeric strings via an ASR.
+Two main ideas:
+
+1. Skip listing over n-best hypothesis across turns (attempts)
+2. Chunking and confirming pieces one by one
+
 ** READ Self-supervised dialogue learning
 CLOSED: [2020-03-01 Sun 13:09]
 :PROPERTIES:
