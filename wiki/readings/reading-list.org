@@ -1941,6 +1941,13 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** The Mind and Heart of the Negotiator (5th Edition)
+:PROPERTIES:
+:AUTHOR:   Leigh Thompson
+:ADDED:    [2020-03-29]
+:AMAZON:   https://www.amazon.com/Mind-Heart-Negotiator-5th/dp/0132543869
+:END:
+
 *** READING The Fifth Discipline: The Art & Practice of The Learning Organization
 :PROPERTIES:
 :AUTHOR:   Peter M. Senge
