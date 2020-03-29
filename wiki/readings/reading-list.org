@@ -1340,6 +1340,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** Heidegger, Habermas and the Mobile Phone (Postmodern Encounters)
+:PROPERTIES:
+:AUTHOR:   George Myerson
+:ADDED:    [2020-03-29]
+:AMAZON:   https://www.amazon.in/Heidegger-Habermas-Mobile-Postmodern-Encounters/dp/1840462361
+:END:
+
 *** The Ethics Of Ambiguity
 :PROPERTIES:
 :AUTHOR:   Simone De Beauvoir
@@ -1919,6 +1926,13 @@ I can probably put items in here under the following categories:
 3. Skepticism/rationality
 4. Physics
 5. Popular science (the catch-all section)
+
+*** READING The Fifth Discipline: The Art & Practice of The Learning Organization
+:PROPERTIES:
+:AUTHOR:   Peter M. Senge
+:ADDED:    [2020-03-29]
+:AMAZON:   https://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/0385517254
+:END:
 
 *** READ Cybertext: Perspectives on Ergodic Literature
 CLOSED: [2019-12-10 Tue 12:13]
