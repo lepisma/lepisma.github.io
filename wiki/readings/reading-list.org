@@ -1340,6 +1340,20 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** The Philosophy of Language
+:PROPERTIES:
+:AUTHOR:   A. P. Martinich
+:ADDED:    [2020-03-29]
+:AMAZON:   https://www.amazon.com/gp/product/0195188306/ref=nosim/?tag=mitopencourse-20
+:END:
+
+*** Philosophy of Language: A Contemporary Introduction, 2nd Edition
+:PROPERTIES:
+:AUTHOR:   William G Lycan, William G. Lycan
+:ADDED:    [2020-03-29]
+:AMAZON:   https://www.amazon.com/gp/product/0415957524/ref=nosim/?tag=mitopencourse-20
+:END:
+
 *** Heidegger, Habermas and the Mobile Phone (Postmodern Encounters)
 :PROPERTIES:
 :AUTHOR:   George Myerson
