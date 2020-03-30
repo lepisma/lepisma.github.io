@@ -1340,6 +1340,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** READING The Myth of Sisyphus and Other Essays
+:PROPERTIES:
+:AUTHOR:   Albert Camus, Justin O'Brien
+:ADDED:    [2020-03-30]
+:GOODREADS: https://www.goodreads.com/book/show/11987.The_Myth_of_Sisyphus_and_Other_Essays
+:END:
+
 *** The Philosophy of Language
 :PROPERTIES:
 :AUTHOR:   A. P. Martinich
