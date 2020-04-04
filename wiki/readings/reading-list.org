@@ -1948,6 +1948,13 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** Notebooks of the Mind : Explorations of Thinking
+:PROPERTIES:
+:AUTHOR:   Vera John-Steiner
+:ADDED:    [2020-04-04]
+:AMAZON:   https://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965#reader_0195108965
+:END:
+
 *** READING Guide to Managerial Communication: Effective Business Writing and Speaking
 :PROPERTIES:
 :AUTHOR:   Mary M. Munter
