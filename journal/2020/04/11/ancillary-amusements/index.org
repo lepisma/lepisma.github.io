@@ -1,0 +1,15 @@
+#+TITLE: Ancillary Amusements
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, philosophy
+
+Originally dated 15th March, 2020, I had this entry lying around without any
+substantial progress. In fact it was empty. By /ancillary/ I mean amusements which
+you can understand and appreciate but which don't drive your actions in the
+main. I am not sure what I wanted to write or think about here but I believe it
+was an attempt to understand /which/ values we consider ancillary and /when/ they
+overcome the primaries.
+
+Recently I saw [[https://aeon.co/videos/how-the-philosophical-paradox-of-aspiration-is-resolved-by-a-new-theory-of-self-creation][a piece]] on aspiration by Agnes Callard. Ideas from there provide
+a more structured way of thinking about this topic now. The theme of my thought
+is now switched to the /hows,/ involving the process of shift, a lot of which
+involves deliberate (at times accidental) aspirations.

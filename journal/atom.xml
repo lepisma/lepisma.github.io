@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-03-07T23:32:18+0530</updated>
+  <updated>2020-04-11T15:25:34+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Ancillary Amusements</title>
+    <link href="https://lepisma.xyz/journal/2020/04/11/ancillary-amusements/index.html"/>
+    <updated>2020-04-11</updated>
+  </entry>
   <entry>
     <title>A month of /fountain/ pens</title>
     <link href="https://lepisma.xyz/journal/2020/03/07/fountain-pens/index.html"/>
