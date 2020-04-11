@@ -1644,6 +1644,19 @@ The examples are nice and make this is a good read for beginners. Though I
 suspect there might be better, recent, articles on these topics now.
 
 * Misc
+** READ How to do research at the MIT AI lab
+CLOSED: [2020-04-11 Sat 22:10]
+:PROPERTIES:
+:CUSTOM_ID: chapman1988research
+:YEAR:     1988
+:AUTHOR:   Chapman, David
+:END:
+
+A bit dated but has nice nuggets of wisdom. I like simple pointers like "writing
+is debugging" which provides a different perspective to the way a few trivial
+things are done.
+
+Thanks to [[https://github.com/jaydeepborkar][Jaydeep]] for pointing me to this.
 
 ** READ How do committees invent
 CLOSED: [2019-12-15 Sun 15:19]
