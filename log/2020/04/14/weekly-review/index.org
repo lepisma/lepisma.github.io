@@ -1,0 +1,36 @@
+#+TITLE: Weekly Review /15-2020/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 15,
+year: 2020
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+Alright, let's roll. Too many days, too many nights. Too many misses, too many
+plights.
+
+* Experiments
+
+* Readings
+- How to do research at the MIT AI lab (cite:chapman1988research)
+- [[https://www.wnycstudios.org/podcasts/radiolab/articles/dispatch-numbers][Dispatch 1: Numbers | Radiolab | WNYC Studios]]. Also check out [[https://www.thisamericanlife.org/698/the-test][The Test - This
+  American Life]] by the way.
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 15-2020 and 4 previous weeks.
+#+HTML: </figcaption></figure>
