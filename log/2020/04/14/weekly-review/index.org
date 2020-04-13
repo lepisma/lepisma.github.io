@@ -34,3 +34,5 @@ plights.
 #+HTML: <figure> <div id="commit-plot"></div> <figcaption>
 Commits for week 15-2020 and 4 previous weeks.
 #+HTML: </figcaption></figure>
+
+[[bibliography:./references.bib]]
