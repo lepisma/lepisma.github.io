@@ -22,6 +22,35 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+It puzzled me rather why what would count as a good point in an ordinary person
+should be used against an accused man as an overwhelming proof of his guilt.
+
+#+HTML:<footer>﻿The Stranger (Albert Camus)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+And so I learned that familiar paths traced in the dusk of summer evenings may
+lead as well to prisons as to innocent, untroubled sleep.
+
+#+HTML:<footer>﻿The Stranger (Albert Camus)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+So I learned that even after a single day’s experience of the outside world a
+man could easily live a hundred years in prison. He’d have laid up enough
+memories never to be bored.
+
+#+HTML:<footer>﻿The Stranger (Albert Camus)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Let’s hope the dogs won’t bark again tonight. I always think it’s mine I hear.
+...”
+
+#+HTML:<footer>﻿The Stranger (Albert Camus)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Every day, I choose, sometimes gamely and sometimes against the moment’s reason,
 to be alive. Is that not a rare joy?
 

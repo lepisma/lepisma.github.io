@@ -5424,7 +5424,8 @@ communicable output. It's one of those. Loved it thoroughly.
 :GOODREADS: https://www.goodreads.com/book/show/49455.Notes_from_Underground
 :END:
 
-*** The Stranger
+*** READ The Stranger
+CLOSED: [2020-04-25 Sat 12:20]
 :PROPERTIES:
 :AUTHOR:   Albert Camus, Stuart Gilbert, Matthew Ward, Leman Sarı
 :ADDED:    <2018-01-07>
