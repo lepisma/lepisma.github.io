@@ -1,0 +1,36 @@
+#+TITLE: Weekly Review /17-2020/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 17,
+year: 2020
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+
+* Readings
+- [[https://www.quantamagazine.org/john-conway-solved-mathematical-problems-with-his-bare-hands-20200420/][John Conway Solved Mathematical Problems With His Bare Hands]]
+- [[https://esoteric.codes/blog/codeart-journal][code::art journal - esoteric.codes]]
+- [[https://www.wnycstudios.org/podcasts/radiolab/articles/dispatch-2-every-day-ignaz-semmelweis-day][Dispatch 2: Every Day is Ignaz Semmelweis Day | Radiolab | WNYC Studios]]
+- Gmail Smart Compose: Real-Time Assisted Writing (cite:andrew2019gmail)
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 17-2020 and 4 previous weeks.
+#+HTML: </figcaption></figure>
+
+[[bibliography:./references.bib]]
