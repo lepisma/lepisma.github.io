@@ -254,6 +254,14 @@ random search.
  :END:
 
 * AI/ML
+** READ Gmail Smart Compose: Real-Time Assisted Writing
+CLOSED: [2020-04-29 Wed 23:39]
+:PROPERTIES:
+:CUSTOM_ID: andrew2019gmail
+:YEAR:     2019
+:AUTHOR:   Andrew Dai and Benjamin Lee and Gagan Bansal and Jackie Tsay and Justin Lu and Mia Chen and Shuyuan Zhang and Tim Sohn and Yinan Wang and Yonghui Wu and Yuan Cao and Zhifeng Chen
+:END:
+
 ** READ Dialog Methods for Improved Alphanumeric String Capture
 CLOSED: [2020-03-29 Sun 13:21]
 :PROPERTIES:
