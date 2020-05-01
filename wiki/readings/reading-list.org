@@ -1955,7 +1955,8 @@ I can probably put items in here under the following categories:
 :AMAZON:   https://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965#reader_0195108965
 :END:
 
-*** READING Guide to Managerial Communication: Effective Business Writing and Speaking
+*** READ Guide to Managerial Communication: Effective Business Writing and Speaking
+CLOSED: [2020-05-01 Fri 15:06]
 :PROPERTIES:
 :AUTHOR:   Mary M. Munter
 :ADDED:    [2020-03-31]
