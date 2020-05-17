@@ -14,7 +14,7 @@ documentations. Sadly, without much of an intention of actually making a native
 addon. In the end, I ended up just writing a stdio based executable and got
 things working.
 
-In most of my recent programming works, I have done direct jumps without setting
+In most of my recent programming works I have done direct jumps without setting
 expectations. These jumps are leaking beyond programming and are making my
 general approach to problem solving very unstructured and /in-my-head/ kind.
 Specially in the managerial aspects of my work where there are tasks whose
