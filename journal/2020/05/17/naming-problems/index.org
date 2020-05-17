@@ -4,7 +4,7 @@
 
 I am realizing that I have been a very slow programmer recently. Slow in terms
 of amount of output that one would normally expect from a given slot of
-/programming/. There are many reasons for this but a strong one is that I have
+programming. There are many reasons for this but a strong one is that I have
 been considering most programming sessions as exploratory and acts of escapism.
 
 Consider a recent example. While working on [[https://github.com/lepisma/compose-language-server][compose-language-server]] I had to
