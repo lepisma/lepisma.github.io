@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-04-11T15:32:54+0530</updated>
+  <updated>2020-05-17T22:03:26+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Naming Problems</title>
+    <link href="https://lepisma.xyz/journal/2020/05/17/naming-problems/index.html"/>
+    <updated>2020-05-17</updated>
+  </entry>
   <entry>
     <title>Ancillary Amusements</title>
     <link href="https://lepisma.xyz/journal/2020/04/11/ancillary-amusements/index.html"/>
