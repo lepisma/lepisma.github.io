@@ -1948,12 +1948,17 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
-*** READING Notebooks of the Mind : Explorations of Thinking
+*** READ Notebooks of the Mind : Explorations of Thinking
+CLOSED: [2020-06-02 Tue 11:34]
 :PROPERTIES:
 :AUTHOR:   Vera John-Steiner
 :ADDED:    [2020-04-04]
 :AMAZON:   https://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965#reader_0195108965
 :END:
+
+This is a nice book but I felt it could have been made much shorter and more to
+the point. Many times, I found repetitions of quotes or concepts which weren't
+really needed.
 
 *** READ Guide to Managerial Communication: Effective Business Writing and Speaking
 CLOSED: [2020-05-01 Fri 15:06]
