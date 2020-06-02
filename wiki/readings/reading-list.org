@@ -1340,7 +1340,7 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
-*** READING The Myth of Sisyphus and Other Essays
+*** The Myth of Sisyphus and Other Essays
 :PROPERTIES:
 :AUTHOR:   Albert Camus, Justin O'Brien
 :ADDED:    [2020-03-30]
@@ -1947,6 +1947,13 @@ I can probably put items in here under the following categories:
 3. Skepticism/rationality
 4. Physics
 5. Popular science (the catch-all section)
+
+*** READING Shape Up: Stop Running in Circles and Ship Work that Matters
+:PROPERTIES:
+:AUTHOR:   Ryan Singer, Jason Fried
+:ADDED:    [2020-06-02]
+:GOODREADS: https://www.goodreads.com/en/book/show/50776459-shape-up
+:END:
 
 *** READ Notebooks of the Mind : Explorations of Thinking
 CLOSED: [2020-06-02 Tue 11:34]
@@ -5192,7 +5199,7 @@ CLOSED: [2016-02-09]
 :END:
 
 ** Graphic Novels
-*** READING Persepolis 2: The Story of a Return
+*** Persepolis 2: The Story of a Return
 :PROPERTIES:
 :GOODREADS: https://www.goodreads.com/book/show/9517.Persepolis_2
 :AUTHOR: by Marjane Satrapi, Anjali Singh (Translator)
@@ -5409,7 +5416,7 @@ CLOSED: [2018-12-30 Sun 00:38]
 Don't know what to write here. A few books are more about the experience than a
 communicable output. It's one of those. Loved it thoroughly.
 
-*** Lord of the Flies
+*** READING Lord of the Flies
 :PROPERTIES:
 :AUTHOR:   William Golding
 :ADDED:    <2018-08-05>
