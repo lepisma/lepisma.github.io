@@ -1948,12 +1948,16 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
-*** READING Shape Up: Stop Running in Circles and Ship Work that Matters
+*** READ Shape Up: Stop Running in Circles and Ship Work that Matters
+CLOSED: [2020-06-04 Thu 17:27]
 :PROPERTIES:
 :AUTHOR:   Ryan Singer, Jason Fried
 :ADDED:    [2020-06-02]
 :GOODREADS: https://www.goodreads.com/en/book/show/50776459-shape-up
 :END:
+
+This is a nice little book. Sort of does rebranding of a few concepts but
+overall nice.
 
 *** READ Notebooks of the Mind : Explorations of Thinking
 CLOSED: [2020-06-02 Tue 11:34]
