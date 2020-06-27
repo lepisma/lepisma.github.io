@@ -6,7 +6,7 @@ I recently got back to a graphics tablet. A [[https://www.wacom.com/en-us/produc
 610 was more featureful, I love the simplicity of One.
 
 Anyway, someone on /r/emacs recently showed a system for keeping images in Emacs
-getting live update from a Mac sketching tool [fn::Not able to find that post.
+getting live updates from a Mac sketching tool [fn::Not able to find that post.
 Not even sure if that was on /r/emacs or /r/orgmode]. I found that really useful
 since keeping images separate from rest of the notes, in Org files, is just a
 useless exercise in bookkeeping. On linux, my best sketching experience has been
@@ -17,8 +17,9 @@ below shows the current system.
 #+caption: Emacs Org mode on left, Krita on right
 [[file:./screen.png]]
 
-At present I can keep images in Org files and switch to Krita for editing.
-Updates happen on saves from Krita. The problem is that export from Krita cli is
-slow since it boots up the program for each run. This could be avoided if I can
-hack around the cli source code and set up a long running process. Or maybe just
-see if I can get something out manually from the =.kra= files.
+At present I can keep images in Org files and switch to Krita for editing on a
+function call, bound to mouse click. Updates happen on saves from Krita. The
+problem is that export from Krita cli is slow since it boots up the program for
+each run. This could be avoided if I can hack around the cli source code and set
+up a long running process. Or maybe just see if I can get something out manually
+from the =.kra= files.
