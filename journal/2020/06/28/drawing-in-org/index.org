@@ -20,5 +20,5 @@ current system.
 At present I can keep images in Org files and switch to Krita for editing.
 Updates happen on saves from Krita. The problem is that export from Krita cli is
 slow since it boots up the program for each run. This could be avoided if I can
-hack around the cli source code and setup a long running process. Or maybe just
+hack around the cli source code and set up a long running process. Or maybe just
 see if I can get something out manually from the =.kra= files.
