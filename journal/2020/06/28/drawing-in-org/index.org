@@ -1,0 +1,24 @@
+#+TITLE: Drawings in Emacs/Org
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: org-mode, emacs
+
+I recently got back to a graphics tablet. A [[https://www.wacom.com/en-us/products/pen-tablets/one-by-wacom][One]] medium. While my earlier HUION
+610 was more feature-y, I love the simplicity of One.
+
+Anyway someone on /r/emacs recently showed a system for keeping images in Emacs
+getting live update from a Mac sketching tool [fn::Not able to find that post.
+Not even sure if that was on /r/emacs or /r/orgmode].
+
+On linux my best sketching experience has been with [[https://krita.org/en/][Krita]]. I am trying to
+connect Krita and Org mode together for note taking. Screen below shows the
+current system.
+
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+#+caption: Emacs Org mode on left, Krita on right
+[[file:./screen.png]]
+
+At present I can keep images in Org files and switch to Krita for editing.
+Updates happen on saves from Krita. The problem is that export from Krita cli is
+slow since it boots up the program for each run. This could be avoided if I can
+hack around the cli source code and setup a long running process. Or maybe just
+see if I can get something out manually from the =.kra= files.
