@@ -10,7 +10,7 @@ getting live update from a Mac sketching tool [fn::Not able to find that post.
 Not even sure if that was on /r/emacs or /r/orgmode].
 
 On linux, my best sketching experience has been with [[https://krita.org/en/][Krita]]. I am trying to
-connect Krita and Org mode together for note taking. Screen below shows the
+connect Krita and Org mode together for note taking now. Screen below shows the
 current system.
 
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
