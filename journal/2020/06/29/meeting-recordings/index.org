@@ -3,8 +3,9 @@
 #+TAGS: personal, work
 
 A clarification. No one watches /post-pandemic/ meeting recordings. Better. No one
-watches /post-pandemic/ work meetings which amass 4-5 hours a day. Working from
-home, purposes of meetings vary a lot. Here are a few that I am finding around:
+watches /post-pandemic/ work meetings recordings which amass 4-5 hours a day.
+Working from home, purposes of meetings vary a lot. Here are a few that I am
+finding around:
 
 1. Brainstorming and attempting to come to a conclusion
 2. Onboarding people on an agenda
