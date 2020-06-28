@@ -1,0 +1,16 @@
+#+TITLE:org-krita
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: org-mode, emacs
+#+PILE: dropcap:nil
+
+Following up from the last post on connecting [[pile:journal:2020/06/28/drawing-in-org/index.org][Krita to Org mode]], I cooked a
+minor mode for Org called [[https://github.com/lepisma/org-krita][org-krita]]. Here is a screen recording:
+
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+#+CAPTION: Editing in Krita and on-save reload in Org mode.
+[[file:./screen.gif]]
+
+It turns out =.kra= files are simple enough to extract the merged png from the
+without invoking Krita itself and so the overall experience is much faster now.
+Future releases will add support for /creating/ new sketch files from within
+Emacs.
