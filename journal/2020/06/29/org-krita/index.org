@@ -10,7 +10,6 @@ minor mode for Org called [[https://github.com/lepisma/org-krita][org-krita]]. H
 #+CAPTION: Editing in Krita and on-save reload in Org mode.
 [[file:./screen.gif]]
 
-It turns out =.kra= files are simple enough to extract the merged png from the
-without invoking Krita itself and so the overall experience is much faster now.
-Future releases will add support for /creating/ new sketch files from within
-Emacs.
+It turns out =.kra= files are simple enough to extract the merged png without
+invoking Krita itself and so the overall experience is much faster now. Future
+releases will add support for /creating/ new sketch files from within Emacs.
