@@ -1,0 +1,47 @@
+#+TITLE: No one watches meeting recordings
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, work
+
+A clarification. No one watches /post-pandemic/ meeting recordings. Better. No one
+watches /post-pandemic/ work meetings which amass 4-5 hours a day. Working from
+home, purposes of meetings vary a lot. Here are a few that I am finding around:
+
+1. Brainstorming and attempting to come to a conclusion
+2. Onboarding people on an agenda
+3. Transferring knowledge to a wider public
+4. Co-working
+
+Most useful meetings are co-working, rest are usually atrocities. These are not
+always bad, it's just that we aren't trained to run them correctly in a remote
+situation. On-site, type 1 and 2 are much easier but remotely they need much
+more than /just a move/ to meet/zoom.
+
+Coming to recordings, we record a lot of meetings from category 1, 2 and 3. Rest
+are archival[fn::I had a reasonable request with a recording for taking a
+screenshot later on to go on a LinkedIn post.] but 3 is something which we tend
+to look as repeatable pieces where we can ask people to watch old recordings
+instead of doing re-runs.
+
+Consider this category again. Let's call them /lessons/. Remember watching video
+lessons on internet? How low our level of tolerance usually is? Only the best of
+the creators survive and become famous. Even people with solid credentials don't
+always fly when it comes to engaging the audience. Assuming a previously on-site
+team is going to be all at that level is just plain folly.
+
+I would probably cut down the /lessons/ to around 30% which actually need more
+than a static pdf. Half of the rest can go better on an interactive web page.
+Rest half are machining videos where you are showing how to work with power
+tools or [[https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA][something much nicer]]. What's missing is not even being developed. The
+best courses/content on the internet just don't talk and record, they use more
+engaging techniques. Consider channels like [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3b1b]] for example.
+
+While I don't know watching stats of meet/zoom recordings, I have the following
+claim:
+
+#+begin_quote
+No one watches meeting recordings. Because they are bad. Specially the /lessons/.
+Feedback won't flow from the watchers to help you here since it's a new
+situation on the surface. But it really is an old situation at it's core.
+#+end_quote
+
+Make better content and stop using recordings as alibis.
