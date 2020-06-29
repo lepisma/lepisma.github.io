@@ -30,10 +30,10 @@ always fly when it comes to engaging the audience. Assuming a previously on-site
 team is going to be all at that level is just plain folly.
 
 I would probably cut down the /lessons/ to around 30% which actually need more
-than a static pdf. Half of the rest can go better on an interactive web page.
-Rest half are machining videos where you are showing how to work with power
-tools or [[https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA][something much nicer]]. What's missing is not even being developed. The
-best courses/content on the internet just don't talk and record, they use more
+than a static pdf. Half of those can go better on an interactive web page. Rest
+are machining videos where you are showing how to work with power tools or
+[[https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA][something much nicer]]. What's missing is not even being developed. The best
+courses/content on the internet just don't talk and record, they use more
 engaging techniques. Consider channels like [[https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw][3b1b]] for example.
 
 While I don't know watching stats of meet/zoom recordings, I have the following
