@@ -45,4 +45,4 @@ Feedback won't flow from the watchers to help you here since it's a new
 situation on the surface. But it really is an old situation at it's core.
 #+end_quote
 
-Make better content and stop using recordings as alibis.
+Make better content and stop using recording hand-offs as alibis.
