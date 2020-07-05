@@ -1,0 +1,23 @@
+#+TITLE: Productivity
+#+SETUPFILE: ../../assets/export.setup
+
+In this tree I will document my time management and related workflow.
+
+If you have been following my blog or journal or log you might know about
+numerous attempts at better time utilization. Most of them failed because of a
+few reasons, also documented.
+
+Recently I have been trying to be more aware of the issues and have come to the
+conclusion that focusing on time and stuff is sorta back-pedalling. I thought a
+little more about it and came with the following summary of the approach I am
+trying to go with next:
+
+#+begin_quote
+Plan like a general, work like an artist.
+#+end_quote
+
+Of course the definitions of 'general' and 'artist' are the stereotypical one.
+
+#+begin_quote
+Work In Progress
+#+end_quote
