@@ -253,18 +253,7 @@ random search.
   :PAGES: 145--152
  :END:
 
-* AI/ML
-** READ Adversarial examples that fool both computer vision and time-limited humans
-CLOSED: [2020-07-18 Sat 00:00]
-:PROPERTIES:
-:CUSTOM_ID: elsayed2018adversarial
-:YEAR:     2018
-:AUTHOR:   Elsayed, Gamaleldin and Shankar, Shreya and Cheung, Brian and Papernot, Nicolas and Kurakin, Alexey and Goodfellow, Ian and Sohl-Dickstein, Jascha
-:END:
-
-This is an interesting one. Specially since it utilizes the multiple passes
-thing that happens in human perception.
-
+* Speech
 ** READ LibriTTS: A corpus derived from librispeech for text-to-speech
 CLOSED: [2020-06-17 Wed 00:00]
 :PROPERTIES:
@@ -315,48 +304,6 @@ CLOSED: [2020-05-29 Fri 23:57]
 :AUTHOR:   Shen, Jonathan and Pang, Ruoming and Weiss, Ron J and Schuster, Mike and Jaitly, Navdeep and Yang, Zongheng and Chen, Zhifeng and Zhang, Yu and Wang, Yuxuan and Skerrv-Ryan, Rj and others
 :END:
 
-** READ Datasheets for datasets
-CLOSED: [2020-05-19 Tue 23:57]
-:PROPERTIES:
-:CUSTOM_ID: gebru2018datasheets
-:YEAR:     2018
-:AUTHOR:   Gebru, Timnit and Morgenstern, Jamie and Vecchione, Briana and Vaughan, Jennifer Wortman and Wallach, Hanna and Daume{\'e} III, Hal and Crawford, Kate
-:END:
-
-I had read this earlier too if I recall, but this time we ended up incorporating
-the idea in our workplace. This has been helpful since the new datasheet
-approach makes it really easy to disentangle problems so that people can work on
-them very cleanly.
-
-** READ NBDT: Neural-Backed Decision Trees
-   CLOSED: [2020-05-11 Mon 23:56]
-   :PROPERTIES:
-   :CUSTOM_ID: wan2020nbdt
-   :YEAR:     2020
-   :AUTHOR:   Wan, Alvin and Dunlap, Lisa and Ho, Daniel and Yin, Jihan and Lee, Scott and Jin, Henry and Petryk, Suzanne and Bargal, Sarah Adel and Gonzalez, Joseph E
-   :END:
-
-This is a nifty trick where we change loss of a regular network to mimic a
-decision tree type interpretation of output. Source [[https://github.com/alvinwan/neural-backed-decision-trees][here]].
-
-** READ Designing and deploying online field experiments
-   CLOSED: [2020-05-08 Fri 23:55]
-   :PROPERTIES:
-   :CUSTOM_ID: bakshy2014designing
-   :YEAR:     2014
-   :AUTHOR:   Bakshy, Eytan and Eckles, Dean and Bernstein, Michael S
-   :END:
-
-Read this to know more about how [[https://github.com/facebook/planout][planout]] is used in real world systems.
-
-** READ Gmail Smart Compose: Real-Time Assisted Writing
-CLOSED: [2020-04-29 Wed 23:39]
-:PROPERTIES:
-:CUSTOM_ID: andrew2019gmail
-:YEAR:     2019
-:AUTHOR:   Andrew Dai and Benjamin Lee and Gagan Bansal and Jackie Tsay and Justin Lu and Mia Chen and Shuyuan Zhang and Tim Sohn and Yinan Wang and Yonghui Wu and Yuan Cao and Zhifeng Chen
-:END:
-
 ** READ Dialog Methods for Improved Alphanumeric String Capture
 CLOSED: [2020-03-29 Sun 13:21]
 :PROPERTIES:
@@ -370,100 +317,6 @@ Two main ideas:
 
 1. Skip listing over n-best hypothesis across turns (attempts)
 2. Chunking and confirming pieces one by one
-
-** READ Self-supervised dialogue learning
-CLOSED: [2020-03-01 Sun 13:09]
-:PROPERTIES:
-:CUSTOM_ID: wu2019self
-:YEAR:     2019
-:AUTHOR:   Wu, Jiawei and Wang, Xin and Wang, William Yang
-:END:
-
-The self-supervision signal here is coming from a model which tries to predict
-whether a provided tuple of turns is in order or not. Connecting this as the
-discriminator in generative-discriminative dialog systems they find better
-results.
-
-** READ The unreasonable effectiveness of data
-CLOSED: [2020-03-01 Sun 13:09]
-:PROPERTIES:
-:CUSTOM_ID: halevy2009unreasonable
-:YEAR:     2009
-:AUTHOR:   Halevy, Alon and Norvig, Peter and Pereira, Fernando
-:END:
-
-** READ Learning from Dialogue after Deployment: Feed Yourself, Chatbot!
-CLOSED: [2020-02-09 Sun 21:07]
-:PROPERTIES:
-:CUSTOM_ID: hancock2019learning
-:YEAR:     2019
-:AUTHOR:   Hancock, Braden and Bordes, Antoine and Mazare, Pierre-Emmanuel and Weston, Jason
-:END:
-
-This is an approach to collect supervision signal from deployment data. There
-are three tasks for the system (which is a chat bot doing ranking on candidate
-responses):
-
-1. Dialogue. The main task. Given the turns till now, the bot ranks which
-   response to utter.
-2. Satisfaction. Given turns till now, last being user utterance, predict
-   whether the user is satisfied.
-3. Feedback. After asking for feedback from the user, predict user's response
-   (feedback) based on the turns till now.
-
-The models have shared weights, mostly among task 1 and 3.
-
-** READ A credit assignment compiler for joint prediction
-CLOSED: [2020-02-05 Wed 12:51]
-:PROPERTIES:
-:CUSTOM_ID: chang2016credit
-:YEAR:     2016
-:AUTHOR:   Chang, Kai-Wei and He, He and Ross, Stephane and Daume III, Hal and Langford, John
-:END:
-
-This talks about an API for framing L2S style search problems in style of an
-imperative program which allows for two optimizations:
-
-1. memoization
-2. forced path collapse, getting losses without going to the last state
-
-Main reduction that happens here is to a cost-sensitive classification problem.
-
-** READ Learning language from a large (unannotated) corpus
-CLOSED: [2020-01-19 Sun 13:16]
-:PROPERTIES:
-:CUSTOM_ID: vepstas2014learning
-:YEAR:     2014
-:AUTHOR:   Vepstas, Linas and Goertzel, Ben
-:END:
-
-Introductory paper on the general approach used in [[https://github.com/opencog/learn][learn]]. The idea is to learn
-various generalizable syntactic and semantic relations from unannotated corpus.
-The relations are expressed using graphs sitting on top of link grammar and
-meaning text theory (MTT). While the general approach is sketched out decently
-enough, there are details to filled in various steps and experiments to run (as
-of the writing in 2014).
-
-On another note, the document is a nice read because of the many interesting
-ways of looking at various ideas in understanding languages and going from
-syntax to reasoning via semantics.
-
-** READ Parsing English with a link grammar
-CLOSED: [2020-01-11 Sat 22:49]
-:PROPERTIES:
-:CUSTOM_ID: sleator1995parsing
-:YEAR:     1995
-:AUTHOR:   Sleator, Daniel DK and Temperley, Davy
-:END:
-
-Came to here via opencog's [[https://github.com/opencog/learn][learn]] project. I have a patchy information about
-formal grammars so this was also a nice perspective setup. Overall a link
-grammar defines connectors on left and right side of a word with disjunctions
-and conjunctions incorporated which then /link/ together to form a sentence, under
-certain constraints.
-
-This specific paper shows the formulation and creates a parser for English,
-covering many (not all) linguistics phenomena.
 
 ** READ Deep Learning-Based Telephony Speech Recognition in the Wild.
 CLOSED: [2020-01-11 Sat 22:49]
@@ -521,24 +374,6 @@ CLOSED: [2019-12-15 Sun 15:21]
 
 The idea used in [[https://github.com/kaldi-asr/kaldi/blob/master/src/bin/compute-wer-bootci.cc][compute-wer-bootci]]. Useful for comparing modifications in
 speech systems when the deltas are not convincingly different.
-
-** READ Your Classifier is Secretly an Energy Based Model and You Should Treat it Like One
-CLOSED: [2019-12-15 Sun 15:18]
-:PROPERTIES:
-:CUSTOM_ID: grathwohl2019classifier
-:YEAR:     2019
-:AUTHOR:   Will Grathwohl and Kuan-Chieh Wang and Jörn-Henrik Jacobsen and David Duvenaud and Mohammad Norouzi and Kevin Swersky
-:END:
-
-They take a regular classifier, pick out logits before softmax and try to
-formulate an energy based model able to give $P(x, y)$ and $P(x)$. The
-formulation itself is pretty simple with the energy function being $E(x) =
-−LogSumExp_yf_\Theta(x)[y]$. Final loss sums cross entropy (for discriminative part)
-and negative log likelhood of $P(x)$ approximated using SGLD. Check out the repo
-[[https://github.com/wgrathwohl/JEM][here]].
-
-Although the learning mechanism is a little fragile and needs work to be
-generally stable, the results are neat.
 
 ** READ Speaker diarization with lstm
 CLOSED: [2019-11-16 Sat 14:31]
@@ -600,24 +435,6 @@ Although I got a few concepts and terminologies, this assumes you already know
 your way around. There are probably better pieces if you want to clear up the
 basics. [[https://github.com/wq2012/awesome-diarization][Here]] is a nice resource by the way.
 
-** READ On the Cross-lingual Transferability of Monolingual Representations
-CLOSED: [2019-10-29 Tue 11:56]
-:PROPERTIES:
-:CUSTOM_ID: mikel2019cross
-:YEAR:     2019
-:AUTHOR:   Mikel Artetxe and Sebastian Ruder and Dani Yogatama
-:END:
-
-1. The idea of learning embeddings to /fit in/ with a set of layers trained for
-   another language can mostly be used in other kinds of models too.
-2. There was an interesting degradation in Hindi (+ Turkey) with positional
-   embedding on XQuAD (recoverable with added adapters). I am wondering whether
-   this is because
-
-#+begin_quote
-transferring syntactic abstractions is more challenging than semantic abstractions. 
-#+end_quote
-
 ** READ Towards end-to-end spoken language understanding
 CLOSED: [2019-10-14 Mon 00:15]
 :PROPERTIES:
@@ -646,49 +463,6 @@ while working with audio. Though I wonder what were the reasons for not going
 with spectrums[fn::Might have missed somewhere or there might be mentions in
 prior works] if they are replacing log-mel input in regular speech recognizer.
 
-** READ Snuba: automating weak supervision to label training data
-CLOSED: [2019-10-14 Mon 00:14]
-:PROPERTIES:
-:CUSTOM_ID: varma2018snuba
-:YEAR:     2018
-:AUTHOR:   Varma, Paroma and R{\'e}, Christopher
-:END:
-
-This is a logical extension of cite:ratner2017snorkel. Instead of users writing
-heuristics, we go one level farther and just provide primitives (semantically
-meaningful feature chunks). There are three components:
-
-1. Synthesizer that does heuristic creation based on certain labelled dataset.
-2. A pruner that picks /good/ heuristics, based on certain definitions and
-   constraints.
-2. A verifier which closes the loop by deciding when to stop, what to feed to
-   synthesizer etc.
-
-While there are obvious upgrades in how we are doing everything, the general
-architecture reminds me much of classical rule learning systems like [[https://en.wikipedia.org/wiki/Learning_classifier_system][LCS]].
-
-** READ Distributed representations of sentences and documents
-CLOSED: [2019-10-09 Wed 01:48]
-:PROPERTIES:
-:CUSTOM_ID: le2014distributed
-:YEAR:     2014
-:AUTHOR:   Le, Quoc and Mikolov, Tomas
-:END:
-
-Document vectorization paper following the general series of word2vec ones.
-
-** READ One neuron is more informative than a deep neural network for aftershock pattern forecasting
-CLOSED: [2019-10-09 Wed 01:45]
-:PROPERTIES:
-:CUSTOM_ID: mignan2019one
-:YEAR:     2019
-:AUTHOR:   Mignan, Arnaud and Broccardo, Marco
-:END:
-
-Got from r/MachineLearning. Title kind of says what is there in the paper. Even
-then, I would recommend skimming it just because the model is drastically
-simpler than the neural-net they are comparing to.
-
 ** READ Generalized end-to-end loss for speaker verification
 CLOSED: [2019-10-09 Wed 01:43]
 :PROPERTIES:
@@ -700,24 +474,6 @@ CLOSED: [2019-10-09 Wed 01:43]
 Leaving the speaker verification part aside, this presents a way to train
 embeddings with membership constraints so that items for one identity are
 grouped together and are easy to separate from the rest.
-
-** READ The Secret Sharer: Evaluating and testing unintended memorization in neural networks
-CLOSED: [2019-10-09 Wed 01:31]
-:PROPERTIES:
-:CUSTOM_ID: carlini2019secret
-:YEAR:     2019
-:AUTHOR:   Carlini, Nicholas and Liu, Chang and Erlingsson, {\'U}lfar and Kos, Jernej and Song, Dawn
-:END:
-
-This tries to formalize the problem of /unintended memorization/ in neural
-networks. Notice the emphasis. There are many different ways to interpret
-/memorization/ and the authors here are only concerned about cases where (say)
-something like a private sequence gets sucked in the memory and Mallory is able
-to extract such pieces with reasonable common attacks.
-
-Important is their metric, called /exposure/, which kind of defines how easy it is
-to get a memorized piece of information out by playing around with the model
-API.
 
 ** READ Transfer learning from speaker verification to multispeaker text-to-speech synthesis
 CLOSED: [2019-10-09 Wed 01:20]
@@ -734,27 +490,6 @@ modular breakdown. Three components are involved here:
 1. Discriminative speaker encoder. Trained on US English search voice data.
 2. Synthesizer. Takes text to spectrogram, conditioned on speaker encoding.
 3. Vocoder. Takes spectrograms to audio. Wavenet based.
-
-** READ What’s your ML Test Score? A rubric for ML production systems
-CLOSED: [2019-10-09 Wed 01:19]
-:PROPERTIES:
-:CUSTOM_ID: breck2016s
-:YEAR:     2016
-:AUTHOR:   Breck, Eric and Cai, Shanqing and Nielsen, Eric and Salib, Michael and Sculley, D
-:END:
-
-This is a good guide to follow if you work in a production ML setting.
-
-** READ Mixing dirichlet topic models and word embeddings to make lda2vec
-CLOSED: [2019-09-25 Wed 00:30]
-:PROPERTIES:
-:CUSTOM_ID: moody2016mixing
-:YEAR:     2016
-:AUTHOR:   Moody, Christopher E
-:END:
-
-While I like the results, I am wondering which pieces were useful, which were
-not and how do things compare to other techniques.
 
 ** READ Who needs words? lexicon-free speech recognition
 CLOSED: [2019-09-15 Sun 22:33]
@@ -790,87 +525,173 @@ Document on how snips does their SLU in general. A nice thing that I didn't
 expect was focus on the dynamic LM part. It makes sense to make updates easy and
 quick on-premise as compared to keeping things mostly frozen.
 
-** READING The future of data analysis                            :noexport:
+** READ Entity-Aware Language Model as an Unsupervised Reranker
+CLOSED: [2019-07-05 Fri 00:05]
 :PROPERTIES:
-:CUSTOM_ID: tukey1962future
-:YEAR:     1962
-:AUTHOR:   Tukey, John W
-:END:
-
-A list from 'How can new data analysis be initiated?'
-+ We should seek out wholly new questions to be answered.
-+ We need to tackle old problems in a more realistic frameworks.
-+ We should seek out unfamiliar summaries of observational material, and
-  establish their useful properties.
-+ And still more novelty can come from finding, and evading, still deeper lying
-  constraints.
-
-All these driven by:
-
-#+begin_quote
-How is novelty most likely to begin and grow? Not through work on familiar
-problems, in terms of familiar frameworks, and starting with the results of
-applying familiar processes to the observations.
-#+end_quote
-
-I like this like which clarifies a sort of difference between something which is
-/science/ vs /mathematics/:
-
-#+begin_quote
-Data analysis must use mathematical argument and mathematical results as bases
-for judgement rather than as bases for proof or stamps of validity.
-#+end_quote
-
-A summary of introduction
-
-#+begin_quote
-Far better an approximate answer to the right question, which is often vague,
-than an exact answer to the wrong question, which can always be made precise.
-#+end_quote
-
-** READ Supervising strong learners by amplifying weak experts
-CLOSED: [2019-08-20 Tue 00:32]
-:PROPERTIES:
-:CUSTOM_ID: christiano2018supervising
+:CUSTOM_ID: rasooli2018entity
 :YEAR:     2018
-:AUTHOR:   Christiano, Paul and Shlegeris, Buck and Amodei, Dario
+:AUTHOR:   Rasooli, Mohammad Sadegh and Parthasarathy, Sarangarajan
 :END:
 
-This is the Iterated Amplification paper. General idea is that harder problems
-can't be solved directly in a stable way so we want to use expert assistance for
-breaking down things in pieces. Then an interactive process lets the to-be
-trained system learn from both the ways things are broken and answer
-constructed. Since this is one of the initial works, the overall framework might
-change a little.
+A few nice ideas. One was to autogenerate n-best list for a certain true text
+using phonetic similarity and subsequent LM reranking. Overall idea is to
+somehow introduce the relation between potential entities in the text while
+ranking alternatives. The exact approach looks a little too much and I would
+like to know more about how and why the decisions were taken even though
+whatever they did sounds intuitive. Backstories people.
 
-Simple algorithmic examples are provided. It will be interesting to see attempts
-towards the candidate problems which are beyond human intelligence. Haven't
-really followed the thread so don't know if there already is something done in
-this direction.
-
-** READ Frustratingly easy domain adaptation
-CLOSED: [2019-08-20 Tue 00:31]
+** READ Parallelizing wfst speech decoders
+CLOSED: [2019-06-12 Wed 00:55]
 :PROPERTIES:
-:CUSTOM_ID: daume2009frustratingly
-:YEAR:     2009
-:AUTHOR:   Daum{\'e} III, Hal
+:CUSTOM_ID: mendis2016parallelizing
+:YEAR:     2016
+:AUTHOR:   Mendis, Charith and Droppo, Jasha and Maleki, Saeed and Musuvathi, Madanlal and Mytkowicz, Todd and Zweig, Geoffrey
 :END:
 
-Tells you how far good insights go. The paper is really simple to follow so not
-writing anything here.
+I didn't get everything here mostly because of the split between AM and LM
+phase. Will probably look over with more background. Overall, the idea is to
+parallelize viterbi as you would think but keeping inter thread communication
+very low by clumping /actions/ which are mostly independent given their thread's
+other actions. This clumping gains by knowledge of the graph structure which is
+affected by the domain; in this case using the information about triphones.
 
-** READ Green AI
-CLOSED: [2019-08-20 Tue 00:29]
+** READ Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries and LVCSR tasks
+CLOSED: [2019-03-30 Sat 20:07]
 :PROPERTIES:
-:CUSTOM_ID: schwartz2019green
+:CUSTOM_ID: hahn2012comparison
+:YEAR:     2012
+:AUTHOR:   Hahn, Stefan and Vozila, Paul and Bisani, Maximilian
+:END:
+
+This is mostly a comparison of statistical g2p models. I think I have a general
+idea now but looks like there is a lot more to see if I start looking into
+individual references. A general thread along all these models was the use of a
+certain alignment (grapheme to phoneme) algorithm to get what are called
+/graphones/ and then train an ngrams-ish sequence model on them.
+
+** READ Statistical language modeling for speech disfluencies
+CLOSED: [2019-03-26 Tue 00:01]
+:PROPERTIES:
+:CUSTOM_ID: stolcke1996statistical
+:YEAR:     1996
+:AUTHOR:   Stolcke, Andreas and Shriberg, Elizabeth
+:END:
+
+Got here from srilm's disfluency (DF) LM. The idea is to have a /cleanup/ model
+which models out certain common DFs, specifically filled pauses, repetitions and
+deletions. Although there was not much gain, an interesting conclusion comes
+with filled pauses where the DF model actually increased perplexity. The
+argument being a filled pause, in most of the cases, linguistically breaks the
+sentence and so the context behind it is not so useful for what follows.
+
+Since the paper is old and also hints at a bunch of improvements in DF modeling,
+I guess there might be a more recent reference around.
+
+** READ Streaming End-to-end Speech Recognition For Mobile Devices
+CLOSED: [2019-03-19 Tue 00:12]
+:PROPERTIES:
+:CUSTOM_ID: he2018streaming
+:YEAR:     2018
+:AUTHOR:   He, Yanzhang and Sainath, Tara N and Prabhavalkar, Rohit and McGraw, Ian and Alvarez, Raziel and Zhao, Ding and Rybach, David and Kannan, Anjuli and Wu, Yonghui and Pang, Ruoming and others
+:END:
+
+From Google's recent on-device character level Speech Recognition system. There
+are a bunch of tricks used in the overall system other than the main model
+itself. A few are:
+
+- parameter quantization (required, of course, for fast computation on mobile
+  device)
+- data augmentation using tts for getting numbers, proper nouns etc. right
+  (instead of doing fancy stuff on the model side)
+
+** Generating exact lattices in the WFST framework
+:PROPERTIES:
+:CUSTOM_ID: povey2012generating
+:YEAR:     2012
+:AUTHOR:   Povey, Daniel and Hannemann, Mirko and Boulianne, Gilles and Burget, Luk{\'a}{\v{s}} and Ghoshal, Arnab and Janda, Milo{\v{s}} and Karafi{\'a}t, Martin and Kombrink, Stefan and Motl{\'\i}{\v{c}}ek, Petr and Qian, Yanmin and others
+:END:
+
+** READ Quantifying the value of pronunciation lexicons for keyword search in lowresource languages
+CLOSED: [2019-01-27 Sun 23:55]
+:PROPERTIES:
+:CUSTOM_ID: chen2013quantifying
+:YEAR:     2013
+:AUTHOR:   Chen, Guoguo and Khudanpur, Sanjeev and Povey, Daniel and Trmal, Jan and Yarowsky, David and Yilmaz, Oguz
+:END:
+
+In a single line, while pronunciation dictionary augmentation doesn't help that
+much in WER of an LVCSR (since the OOV rates are usually low), it helps a lot in
+Keyword Search.
+
+A few other things to note are the ways to generate pronunciation and two ways
+to do KWS if you already have an LVCSR system. Not surprisingly, the proxy
+keyword system doesn't work that well.
+
+** READ State-of-the-art speech recognition with sequence-to-sequence models
+CLOSED: [2018-11-06 Tue 20:52]
+:PROPERTIES:
+:CUSTOM_ID: chiu2018state
+:YEAR:     2018
+:AUTHOR:   Chiu, Chung-Cheng and Sainath, Tara N and Wu, Yonghui and Prabhavalkar, Rohit and Nguyen, Patrick and Chen, Zhifeng and Kannan, Anjuli and Weiss, Ron J and Rao, Kanishka and Gonina, Ekaterina and others
+:END:
+
+Bunch of improvements on top of the LAS architecture. It feels funny that even
+in end-to-end systems, we still look for /modular presence/ of components like
+Language Models. Maybe that helps in adding and justifying heuristics.
+
+** Speech recognition with weighted finite-state transducers
+:PROPERTIES:
+:CUSTOM_ID: mohri2008speech
+:YEAR:     2008
+:AUTHOR:   Mohri, Mehryar and Pereira, Fernando and Riley, Michael
+:END:
+
+Partial notes:
+1. Composition: Transitive-ness.
+2. Determinization: Removing multiple transitions on same input.
+3. Minimization: Compressing to the minimal, /equivalent/ automaton. Done by first
+   weight pushing and then running the classical algorithm.
+
+* Language
+
+** READ On the Cross-lingual Transferability of Monolingual Representations
+CLOSED: [2019-10-29 Tue 11:56]
+:PROPERTIES:
+:CUSTOM_ID: mikel2019cross
 :YEAR:     2019
-:AUTHOR:   Schwartz, Roy and Dodge, Jesse and Smith, Noah A. and Etzioni, Oren
+:AUTHOR:   Mikel Artetxe and Sebastian Ruder and Dani Yogatama
 :END:
 
-A noble idea to push for.
+1. The idea of learning embeddings to /fit in/ with a set of layers trained for
+   another language can mostly be used in other kinds of models too.
+2. There was an interesting degradation in Hindi (+ Turkey) with positional
+   embedding on XQuAD (recoverable with added adapters). I am wondering whether
+   this is because
 
-I sometime feel bad that things which are good inherently, need to be pushed out
-in a gamified way for actions to be taken.
+#+begin_quote
+transferring syntactic abstractions is more challenging than semantic abstractions. 
+#+end_quote
+
+** READ Distributed representations of sentences and documents
+CLOSED: [2019-10-09 Wed 01:48]
+:PROPERTIES:
+:CUSTOM_ID: le2014distributed
+:YEAR:     2014
+:AUTHOR:   Le, Quoc and Mikolov, Tomas
+:END:
+
+Document vectorization paper following the general series of word2vec ones.
+
+** READ Mixing dirichlet topic models and word embeddings to make lda2vec
+CLOSED: [2019-09-25 Wed 00:30]
+:PROPERTIES:
+:CUSTOM_ID: moody2016mixing
+:YEAR:     2016
+:AUTHOR:   Moody, Christopher E
+:END:
+
+While I like the results, I am wondering which pieces were useful, which were
+not and how do things compare to other techniques.
 
 ** READ Probing Neural Network Comprehension of Natural Language Arguments
 CLOSED: [2019-07-22 Mon 23:53]
@@ -956,20 +777,487 @@ critical user interactions.
 
 The generated dataset is [[https://github.com/google-research-datasets/simulated-dialogue][here]] by the way.
 
-** READ Entity-Aware Language Model as an Unsupervised Reranker
-CLOSED: [2019-07-05 Fri 00:05]
+** READ Bootstrapping Conversational Agents With Weak Supervision
+CLOSED: [2019-05-06 Mon 23:50]
 :PROPERTIES:
-:CUSTOM_ID: rasooli2018entity
+:CUSTOM_ID: mallinar2018bootstrapping
 :YEAR:     2018
-:AUTHOR:   Rasooli, Mohammad Sadegh and Parthasarathy, Sarangarajan
+:AUTHOR:   Mallinar, Neil and Shah, Abhishek and Ugrani, Rajendra and Gupta, Ayush and Gurusankar, Manikandan and Ho, Tin Kam and Liao, Q Vera and Zhang, Yunfeng and Bellamy, Rachel KE and Yates, Robert and others
 :END:
 
-A few nice ideas. One was to autogenerate n-best list for a certain true text
-using phonetic similarity and subsequent LM reranking. Overall idea is to
-somehow introduce the relation between potential entities in the text while
-ranking alternatives. The exact approach looks a little too much and I would
-like to know more about how and why the decisions were taken even though
-whatever they did sounds intuitive. Backstories people.
+I like there method of mass tagging. Other than that, this is a practical
+implementation of a snorkel like system.
+
+** READ Few-Shot Generalization Across Dialogue Tasks
+CLOSED: [2019-04-21 Sun 01:15]
+:PROPERTIES:
+:CUSTOM_ID: vlasov2018few
+:YEAR:     2018
+:AUTHOR:   Vlasov, Vladimir and Drissner-Schmid, Akela and Nichol, Alan
+:END:
+
+The idea is to put all the involved pieces in a dialog, i.e. slots, intents and
+actions, in a space and then match with possible actions to do something. The
+/key/ idea is to have the items break into compositional pieces before embedding
+so that a new domain can share along a lot of items and get along well.
+
+** READ Neural machine translation of rare words with subword units
+CLOSED: [2019-04-17 Wed 02:17]
+:PROPERTIES:
+:CUSTOM_ID: sennrich2015neural
+:YEAR:     2015
+:AUTHOR:   Sennrich, Rico and Haddow, Barry and Birch, Alexandra
+:END:
+
+This is the application of subword (BPE based) on NMT. The results mostly show
+robustness and better learned handling of OOV stuff.
+
+** READ SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing
+CLOSED: [2019-04-10 Wed 00:53]
+:PROPERTIES:
+:CUSTOM_ID: kudo2018sentencepiece
+:YEAR:     2018
+:AUTHOR:   Kudo, Taku and Richardson, John
+:END:
+
+A more rewarding read here can be the code in the [[https://github.com/google/sentencepiece][repository]] itself since this
+is just a short documentation on the methods implemented.
+
+** READ Bpemb: Tokenization-free pre-trained subword embeddings in 275 languages
+CLOSED: [2019-04-10 Wed 00:48]
+:PROPERTIES:
+:CUSTOM_ID: heinzerling2017bpemb
+:YEAR:     2017
+:AUTHOR:   Heinzerling, Benjamin and Strube, Michael
+:END:
+
+This is mostly a report on byte-pair embedding results and comparison with other
+models. Tracing back to (cite:sennrich2015neural) and the original compression
+paper (cite:gage1994new) should cover the background.
+
+** READ SRILM-an extensible language modeling toolkit
+CLOSED: [2019-03-26 Tue 00:01]
+:PROPERTIES:
+:CUSTOM_ID: stolcke2002srilm
+:YEAR:     2002
+:AUTHOR:   Stolcke, Andreas
+:END:
+
+This is an early document on SRILM's design and development. If you are looking
+for something more in-depth, just download the current tarball.
+
+** READ A bit of progress in language modeling
+CLOSED: [2019-03-20 Wed 19:02]
+:PROPERTIES:
+:CUSTOM_ID: goodman2001bit
+:YEAR:     2001
+:AUTHOR:   Goodman, Joshua T
+:END:
+
+This has a lot of nice ideas and intuitions behind tricks employed in
+statistical language models. I will just write out the general topics since it's
+a long paper (~73 pages for the extended version):
+
+- Skipping
+- Clustering
+- Caching
+- Sentence Mixture Models
+
+At a higher level we get to know about:
+- ways of combining
+- approaching analysis
+- practical issues
+
+** READ Rapidly building domain-specific entity-centric language models using semantic web knowledge sources
+CLOSED: [2019-03-19 Tue 00:12]
+:PROPERTIES:
+:CUSTOM_ID: akbacak2014rapidly
+:YEAR:     2014
+:AUTHOR:   Akbacak, Murat and Hakkani-T{\"u}r, Dilek and Tur, Gokhan
+:END:
+
+This is focused on filtering search queries for creating language model. The
+filtering that works out for them is to (after identifying a domain) go from
+queries to clicked links then back to queries that went to those links. There
+are a few other pieces involved but the general shape of narrowing is the same.
+
+** READ Gmail Smart Compose: Real-Time Assisted Writing
+CLOSED: [2020-04-29 Wed 23:39]
+:PROPERTIES:
+:CUSTOM_ID: andrew2019gmail
+:YEAR:     2019
+:AUTHOR:   Andrew Dai and Benjamin Lee and Gagan Bansal and Jackie Tsay and Justin Lu and Mia Chen and Shuyuan Zhang and Tim Sohn and Yinan Wang and Yonghui Wu and Yuan Cao and Zhifeng Chen
+:END:
+
+** READ Self-supervised dialogue learning
+CLOSED: [2020-03-01 Sun 13:09]
+:PROPERTIES:
+:CUSTOM_ID: wu2019self
+:YEAR:     2019
+:AUTHOR:   Wu, Jiawei and Wang, Xin and Wang, William Yang
+:END:
+
+The self-supervision signal here is coming from a model which tries to predict
+whether a provided tuple of turns is in order or not. Connecting this as the
+discriminator in generative-discriminative dialog systems they find better
+results.
+
+** READ Learning from Dialogue after Deployment: Feed Yourself, Chatbot!
+CLOSED: [2020-02-09 Sun 21:07]
+:PROPERTIES:
+:CUSTOM_ID: hancock2019learning
+:YEAR:     2019
+:AUTHOR:   Hancock, Braden and Bordes, Antoine and Mazare, Pierre-Emmanuel and Weston, Jason
+:END:
+
+This is an approach to collect supervision signal from deployment data. There
+are three tasks for the system (which is a chat bot doing ranking on candidate
+responses):
+
+1. Dialogue. The main task. Given the turns till now, the bot ranks which
+   response to utter.
+2. Satisfaction. Given turns till now, last being user utterance, predict
+   whether the user is satisfied.
+3. Feedback. After asking for feedback from the user, predict user's response
+   (feedback) based on the turns till now.
+
+The models have shared weights, mostly among task 1 and 3.
+
+** READ Learning language from a large (unannotated) corpus
+CLOSED: [2020-01-19 Sun 13:16]
+:PROPERTIES:
+:CUSTOM_ID: vepstas2014learning
+:YEAR:     2014
+:AUTHOR:   Vepstas, Linas and Goertzel, Ben
+:END:
+
+Introductory paper on the general approach used in [[https://github.com/opencog/learn][learn]]. The idea is to learn
+various generalizable syntactic and semantic relations from unannotated corpus.
+The relations are expressed using graphs sitting on top of link grammar and
+meaning text theory (MTT). While the general approach is sketched out decently
+enough, there are details to filled in various steps and experiments to run (as
+of the writing in 2014).
+
+On another note, the document is a nice read because of the many interesting
+ways of looking at various ideas in understanding languages and going from
+syntax to reasoning via semantics.
+
+** READ Parsing English with a link grammar
+CLOSED: [2020-01-11 Sat 22:49]
+:PROPERTIES:
+:CUSTOM_ID: sleator1995parsing
+:YEAR:     1995
+:AUTHOR:   Sleator, Daniel DK and Temperley, Davy
+:END:
+
+Came to here via opencog's [[https://github.com/opencog/learn][learn]] project. I have a patchy information about
+formal grammars so this was also a nice perspective setup. Overall a link
+grammar defines connectors on left and right side of a word with disjunctions
+and conjunctions incorporated which then /link/ together to form a sentence, under
+certain constraints.
+
+This specific paper shows the formulation and creates a parser for English,
+covering many (not all) linguistics phenomena.
+
+** READ Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars
+CLOSED: [2018-10-20 Sat 20:58] DEADLINE: <2018-10-16 Tue>
+:PROPERTIES:
+:CUSTOM_ID: zettlemoyer2012learning
+:YEAR:     2012
+:AUTHOR:   Zettlemoyer, Luke S and Collins, Michael
+:END:
+
+/Assuming the title clarifies the goal/, there are three basic components here:
+
+1. A _parser_ which takes a sentence $S$, a set of categories $\Lambda$ and weights over
+   features of the derivation (generated from parsing) $\theta$. This then generates
+   logical forms ($L$) with certain probabilities.
+2. Category _generator_ which takes $S$ and its expected logical form $L$ to
+   generate the categories needed to parse it to that form.
+3. An _estimator_ which, given the training set and a set of categories, updates
+   $\theta$ to increase the score of the form getting parsed.
+
+The interesting pieces are the representation of the logical form $L$ (using \lambda
+calculus) and category generation and pruning. Although the generated categories
+can be arbitrary, allowing for wrong grammars and such, I believe, it can be
+made to work better in noisy settings if we generalize /parsing/ and (maybe) the
+meaning of the structurally rigid categories like $S/NP$ using a few tricks.
+
+** READ A very short introduction to CCG
+CLOSED: [2018-10-16 Tue 02:21]
+:PROPERTIES:
+:CUSTOM_ID: steedman1996very
+:YEAR:     1996
+:AUTHOR:   Steedman, Mark
+:END:
+
+A lambda calculus formulation of /verb/ (function) acts in natural text. Not sure
+if I can figure out exact advantages as compared to other approaches. This
+definitely has more appeal to it because of the functional forms and the tooling
+they pull in with themselves.
+
+** READ Swoosh: a generic approach to entity resolution
+CLOSED: [2018-10-07 Sun 20:23] SCHEDULED: <2018-10-06 Sat>
+:PROPERTIES:
+:CUSTOM_ID: benjelloun2009swoosh
+:YEAR:     2009
+:AUTHOR:   Benjelloun, Omar and Garcia-Molina, Hector and Menestrina, David and Su, Qi and Whang, Steven Euijong and Widom, Jennifer
+:END:
+
+The main products are optimal algorithms to do ER which minimize the number of
+calls to the black box functions that actually perform the matching and merging.
+To do this, we first formalize the ER problem using:
+
+1. /Records/ and /features/ as the data structures
+2. /Merging/ and /matching/ functions as the operations
+
+Then we look for certain properties of a particular setting (mostly the effect
+of merge and match functions). Based on whether a few of these are satisfied
+(surprisingly trivial functions might not do what you expect of them), we can
+reduce the number of calls to matching.
+
+** READ How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation
+CLOSED: [2018-10-13 Sat 17:45] SCHEDULED: <2018-10-06 Sat 15:00>
+:PROPERTIES:
+:CUSTOM_ID: liu2016not
+:YEAR:     2016
+:AUTHOR:   Liu, Chia-Wei and Lowe, Ryan and Serban, Iulian V and Noseworthy, Michael and Charlin, Laurent and Pineau, Joelle
+:END:
+
+Other than the usuals, it has decent summaries of a few metrics used for
+sentence similarity.
+
+** READ Bringing machine learning and compositional semantics together
+CLOSED: [2018-10-02 Tue 13:26]
+:PROPERTIES:
+:CUSTOM_ID: liang2015bringing
+:YEAR:     2015
+:AUTHOR:   Liang, Percy and Potts, Christopher
+:END:
+
+Got pointed to this while going through [[https://github.com/wcmac/sippycup][sippycup]]. This presents, in a very
+pedagogical way, a simple framework for ranking semantic parses using supervised
+learning. The important point is that this /framework/ can be applied to a lot of
+problems in nlu involving different ways of structuring the logical forms and
+features.
+
+
+** READ Abstract meaning representation for sembanking
+CLOSED: [2019-03-10 Sun 22:43]
+:PROPERTIES:
+:CUSTOM_ID: banarescu2013abstract
+:YEAR:     2013
+:AUTHOR:   Banarescu, Laura and Bonial, Claire and Cai, Shu and Georgescu, Madalina and Griffitt, Kira and Hermjakob, Ulf and Knight, Kevin and Koehn, Philipp and Palmer, Martha and Schneider, Nathan
+:END:
+
+I found AMR while looking into a way of breaking from the usual intent/entity
+based NLU. While they are [[https://nlpers.blogspot.com/2014/09/amr-not-semantics-but-close-maybe.html][not perfect]], the specification tells you about pieces
+which should (in elaborate situations) be considered at least for practical
+computational language understanding.
+
+** READ Bootstrapping language models for dialogue systems
+CLOSED: [2019-03-10 Sun 22:43]
+:PROPERTIES:
+:CUSTOM_ID: weilhammer2006bootstrapping
+:YEAR:     2006
+:AUTHOR:   Weilhammer, Karl and Stuttle, Matthew N and Young, Steve
+:END:
+
+This is quickly getting /domain specific/ LMs. The idea is to not do a lot of
+manual (and perfect) text collection but start with simple grammars and get a
+seed LM using the generated text. Then for more refinements, get a large LM and
+do sentence selection on /in-the-wild/ data to get sentences with low value of
+$PP_{seed} / PP_{large}$. These sentences and the /rejected/ ones then give two more LMs
+which can then be interpolated based on a validation set.
+
+Exact steps aside, the idea (other than SLMs on grammar generated data) is to do
+some sort of /sentence selection/ to augment the seed LM.
+
+** READ Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing
+CLOSED: [2019-01-15 Tue 01:10]
+:PROPERTIES:
+:CUSTOM_ID: raghuvanshi2018developing
+:YEAR:     2018
+:AUTHOR:   Raghuvanshi, Arushi and Carroll, Lucien and Raghunathan, Karthik
+:END:
+
+Doc on Mindmeld's NLU system.
+
+** READ Neural text generation from structured data with application to the biography domain
+CLOSED: [2019-01-05 Sat 23:22]
+:PROPERTIES:
+:CUSTOM_ID: lebret2016neural
+:YEAR:     2016
+:AUTHOR:   Lebret, R{\'e}mi and Grangier, David and Auli, Michael
+:END:
+
+From wikipedia info entry (a table) for a person, they generate biographical
+sentences. The way to condition on the table while doing $P(w_i | c_{(i-1)})$ is
+just indexing into (learnable) embeddings. I was looking for something more
+insightful though.
+
+* General AI/ML
+
+** READ Your Classifier is Secretly an Energy Based Model and You Should Treat it Like One
+CLOSED: [2019-12-15 Sun 15:18]
+:PROPERTIES:
+:CUSTOM_ID: grathwohl2019classifier
+:YEAR:     2019
+:AUTHOR:   Will Grathwohl and Kuan-Chieh Wang and Jörn-Henrik Jacobsen and David Duvenaud and Mohammad Norouzi and Kevin Swersky
+:END:
+
+They take a regular classifier, pick out logits before softmax and try to
+formulate an energy based model able to give $P(x, y)$ and $P(x)$. The
+formulation itself is pretty simple with the energy function being $E(x) =
+−LogSumExp_yf_\Theta(x)[y]$. Final loss sums cross entropy (for discriminative part)
+and negative log likelhood of $P(x)$ approximated using SGLD. Check out the repo
+[[https://github.com/wgrathwohl/JEM][here]].
+
+Although the learning mechanism is a little fragile and needs work to be
+generally stable, the results are neat.
+
+** READ Snuba: automating weak supervision to label training data
+CLOSED: [2019-10-14 Mon 00:14]
+:PROPERTIES:
+:CUSTOM_ID: varma2018snuba
+:YEAR:     2018
+:AUTHOR:   Varma, Paroma and R{\'e}, Christopher
+:END:
+
+This is a logical extension of cite:ratner2017snorkel. Instead of users writing
+heuristics, we go one level farther and just provide primitives (semantically
+meaningful feature chunks). There are three components:
+
+1. Synthesizer that does heuristic creation based on certain labelled dataset.
+2. A pruner that picks /good/ heuristics, based on certain definitions and
+   constraints.
+2. A verifier which closes the loop by deciding when to stop, what to feed to
+   synthesizer etc.
+
+While there are obvious upgrades in how we are doing everything, the general
+architecture reminds me much of classical rule learning systems like [[https://en.wikipedia.org/wiki/Learning_classifier_system][LCS]].
+
+** READ One neuron is more informative than a deep neural network for aftershock pattern forecasting
+CLOSED: [2019-10-09 Wed 01:45]
+:PROPERTIES:
+:CUSTOM_ID: mignan2019one
+:YEAR:     2019
+:AUTHOR:   Mignan, Arnaud and Broccardo, Marco
+:END:
+
+Got from r/MachineLearning. Title kind of says what is there in the paper. Even
+then, I would recommend skimming it just because the model is drastically
+simpler than the neural-net they are comparing to.
+
+** READ The Secret Sharer: Evaluating and testing unintended memorization in neural networks
+CLOSED: [2019-10-09 Wed 01:31]
+:PROPERTIES:
+:CUSTOM_ID: carlini2019secret
+:YEAR:     2019
+:AUTHOR:   Carlini, Nicholas and Liu, Chang and Erlingsson, {\'U}lfar and Kos, Jernej and Song, Dawn
+:END:
+
+This tries to formalize the problem of /unintended memorization/ in neural
+networks. Notice the emphasis. There are many different ways to interpret
+/memorization/ and the authors here are only concerned about cases where (say)
+something like a private sequence gets sucked in the memory and Mallory is able
+to extract such pieces with reasonable common attacks.
+
+Important is their metric, called /exposure/, which kind of defines how easy it is
+to get a memorized piece of information out by playing around with the model
+API.
+
+** READ What’s your ML Test Score? A rubric for ML production systems
+CLOSED: [2019-10-09 Wed 01:19]
+:PROPERTIES:
+:CUSTOM_ID: breck2016s
+:YEAR:     2016
+:AUTHOR:   Breck, Eric and Cai, Shanqing and Nielsen, Eric and Salib, Michael and Sculley, D
+:END:
+
+This is a good guide to follow if you work in a production ML setting.
+
+** READING The future of data analysis                            :noexport:
+:PROPERTIES:
+:CUSTOM_ID: tukey1962future
+:YEAR:     1962
+:AUTHOR:   Tukey, John W
+:END:
+
+A list from 'How can new data analysis be initiated?'
++ We should seek out wholly new questions to be answered.
++ We need to tackle old problems in a more realistic frameworks.
++ We should seek out unfamiliar summaries of observational material, and
+  establish their useful properties.
++ And still more novelty can come from finding, and evading, still deeper lying
+  constraints.
+
+All these driven by:
+
+#+begin_quote
+How is novelty most likely to begin and grow? Not through work on familiar
+problems, in terms of familiar frameworks, and starting with the results of
+applying familiar processes to the observations.
+#+end_quote
+
+I like this like which clarifies a sort of difference between something which is
+/science/ vs /mathematics/:
+
+#+begin_quote
+Data analysis must use mathematical argument and mathematical results as bases
+for judgement rather than as bases for proof or stamps of validity.
+#+end_quote
+
+A summary of introduction
+
+#+begin_quote
+Far better an approximate answer to the right question, which is often vague,
+than an exact answer to the wrong question, which can always be made precise.
+#+end_quote
+
+** READ Supervising strong learners by amplifying weak experts
+CLOSED: [2019-08-20 Tue 00:32]
+:PROPERTIES:
+:CUSTOM_ID: christiano2018supervising
+:YEAR:     2018
+:AUTHOR:   Christiano, Paul and Shlegeris, Buck and Amodei, Dario
+:END:
+
+This is the Iterated Amplification paper. General idea is that harder problems
+can't be solved directly in a stable way so we want to use expert assistance for
+breaking down things in pieces. Then an interactive process lets the to-be
+trained system learn from both the ways things are broken and answer
+constructed. Since this is one of the initial works, the overall framework might
+change a little.
+
+Simple algorithmic examples are provided. It will be interesting to see attempts
+towards the candidate problems which are beyond human intelligence. Haven't
+really followed the thread so don't know if there already is something done in
+this direction.
+
+** READ Frustratingly easy domain adaptation
+CLOSED: [2019-08-20 Tue 00:31]
+:PROPERTIES:
+:CUSTOM_ID: daume2009frustratingly
+:YEAR:     2009
+:AUTHOR:   Daum{\'e} III, Hal
+:END:
+
+Tells you how far good insights go. The paper is really simple to follow so not
+writing anything here.
+
+** READ Green AI
+CLOSED: [2019-08-20 Tue 00:29]
+:PROPERTIES:
+:CUSTOM_ID: schwartz2019green
+:YEAR:     2019
+:AUTHOR:   Schwartz, Roy and Dodge, Jesse and Smith, Noah A. and Etzioni, Oren
+:END:
+
+A noble idea to push for.
+
+I sometime feel bad that things which are good inherently, need to be pushed out
+in a gamified way for actions to be taken.
 
 ** READ Bayesian learning via stochastic gradient Langevin dynamics
 CLOSED: [2019-07-02 Tue 22:52]
@@ -1036,21 +1324,6 @@ Two are noteworthy:
 2. Memorized feature infusion which comes into picture in task 1 vs 2. Here we
    put more weights for features from a memory which helps in reducing the bias
    towards regular classes with large number of training samples.
-
-** READ Parallelizing wfst speech decoders
-CLOSED: [2019-06-12 Wed 00:55]
-:PROPERTIES:
-:CUSTOM_ID: mendis2016parallelizing
-:YEAR:     2016
-:AUTHOR:   Mendis, Charith and Droppo, Jasha and Maleki, Saeed and Musuvathi, Madanlal and Mytkowicz, Todd and Zweig, Geoffrey
-:END:
-
-I didn't get everything here mostly because of the split between AM and LM
-phase. Will probably look over with more background. Overall, the idea is to
-parallelize viterbi as you would think but keeping inter thread communication
-very low by clumping /actions/ which are mostly independent given their thread's
-other actions. This clumping gains by knowledge of the graph structure which is
-affected by the domain; in this case using the information about triphones.
 
 ** READ Model-based testing without models: the TodoMVC case study
 CLOSED: [2019-06-04 Tue 10:52]
@@ -1166,17 +1439,6 @@ On a side note, while looking at the results you might find that even majority
 voting (which is /very easy/ to implement) might not be that bad if you are a
 little careful.
 
-** READ Bootstrapping Conversational Agents With Weak Supervision
-CLOSED: [2019-05-06 Mon 23:50]
-:PROPERTIES:
-:CUSTOM_ID: mallinar2018bootstrapping
-:YEAR:     2018
-:AUTHOR:   Mallinar, Neil and Shah, Abhishek and Ugrani, Rajendra and Gupta, Ayush and Gurusankar, Manikandan and Ho, Tin Kam and Liao, Q Vera and Zhang, Yunfeng and Bellamy, Rachel KE and Yates, Robert and others
-:END:
-
-I like there method of mass tagging. Other than that, this is a practical
-implementation of a snorkel like system.
-
 ** READ Hidden technical debt in machine learning systems
 CLOSED: [2019-04-25 Thu 00:21]
 :PROPERTIES:
@@ -1201,256 +1463,12 @@ teams.
 There are other things too, but I specifically like the clippings above since
 they are about things that are very likely to be missed.
 
-** READ Few-Shot Generalization Across Dialogue Tasks
-CLOSED: [2019-04-21 Sun 01:15]
-:PROPERTIES:
-:CUSTOM_ID: vlasov2018few
-:YEAR:     2018
-:AUTHOR:   Vlasov, Vladimir and Drissner-Schmid, Akela and Nichol, Alan
-:END:
-
-The idea is to put all the involved pieces in a dialog, i.e. slots, intents and
-actions, in a space and then match with possible actions to do something. The
-/key/ idea is to have the items break into compositional pieces before embedding
-so that a new domain can share along a lot of items and get along well.
-
-** READ Neural machine translation of rare words with subword units
-CLOSED: [2019-04-17 Wed 02:17]
-:PROPERTIES:
-:CUSTOM_ID: sennrich2015neural
-:YEAR:     2015
-:AUTHOR:   Sennrich, Rico and Haddow, Barry and Birch, Alexandra
-:END:
-
-This is the application of subword (BPE based) on NMT. The results mostly show
-robustness and better learned handling of OOV stuff.
-
-** READ SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing
-CLOSED: [2019-04-10 Wed 00:53]
-:PROPERTIES:
-:CUSTOM_ID: kudo2018sentencepiece
-:YEAR:     2018
-:AUTHOR:   Kudo, Taku and Richardson, John
-:END:
-
-A more rewarding read here can be the code in the [[https://github.com/google/sentencepiece][repository]] itself since this
-is just a short documentation on the methods implemented.
-
-** READ Bpemb: Tokenization-free pre-trained subword embeddings in 275 languages
-CLOSED: [2019-04-10 Wed 00:48]
-:PROPERTIES:
-:CUSTOM_ID: heinzerling2017bpemb
-:YEAR:     2017
-:AUTHOR:   Heinzerling, Benjamin and Strube, Michael
-:END:
-
-This is mostly a report on byte-pair embedding results and comparison with other
-models. Tracing back to (cite:sennrich2015neural) and the original compression
-paper (cite:gage1994new) should cover the background.
-
-** READ Comparison of grapheme-to-phoneme methods on large pronunciation dictionaries and LVCSR tasks
-CLOSED: [2019-03-30 Sat 20:07]
-:PROPERTIES:
-:CUSTOM_ID: hahn2012comparison
-:YEAR:     2012
-:AUTHOR:   Hahn, Stefan and Vozila, Paul and Bisani, Maximilian
-:END:
-
-This is mostly a comparison of statistical g2p models. I think I have a general
-idea now but looks like there is a lot more to see if I start looking into
-individual references. A general thread along all these models was the use of a
-certain alignment (grapheme to phoneme) algorithm to get what are called
-/graphones/ and then train an ngrams-ish sequence model on them.
-
-** READ Statistical language modeling for speech disfluencies
-CLOSED: [2019-03-26 Tue 00:01]
-:PROPERTIES:
-:CUSTOM_ID: stolcke1996statistical
-:YEAR:     1996
-:AUTHOR:   Stolcke, Andreas and Shriberg, Elizabeth
-:END:
-
-Got here from srilm's disfluency (DF) LM. The idea is to have a /cleanup/ model
-which models out certain common DFs, specifically filled pauses, repetitions and
-deletions. Although there was not much gain, an interesting conclusion comes
-with filled pauses where the DF model actually increased perplexity. The
-argument being a filled pause, in most of the cases, linguistically breaks the
-sentence and so the context behind it is not so useful for what follows.
-
-Since the paper is old and also hints at a bunch of improvements in DF modeling,
-I guess there might be a more recent reference around.
-
-** READ SRILM-an extensible language modeling toolkit
-CLOSED: [2019-03-26 Tue 00:01]
-:PROPERTIES:
-:CUSTOM_ID: stolcke2002srilm
-:YEAR:     2002
-:AUTHOR:   Stolcke, Andreas
-:END:
-
-This is an early document on SRILM's design and development. If you are looking
-for something more in-depth, just download the current tarball.
-
-** READ A bit of progress in language modeling
-CLOSED: [2019-03-20 Wed 19:02]
-:PROPERTIES:
-:CUSTOM_ID: goodman2001bit
-:YEAR:     2001
-:AUTHOR:   Goodman, Joshua T
-:END:
-
-This has a lot of nice ideas and intuitions behind tricks employed in
-statistical language models. I will just write out the general topics since it's
-a long paper (~73 pages for the extended version):
-
-- Skipping
-- Clustering
-- Caching
-- Sentence Mixture Models
-
-At a higher level we get to know about:
-- ways of combining
-- approaching analysis
-- practical issues
-
-** READ Streaming End-to-end Speech Recognition For Mobile Devices
-CLOSED: [2019-03-19 Tue 00:12]
-:PROPERTIES:
-:CUSTOM_ID: he2018streaming
-:YEAR:     2018
-:AUTHOR:   He, Yanzhang and Sainath, Tara N and Prabhavalkar, Rohit and McGraw, Ian and Alvarez, Raziel and Zhao, Ding and Rybach, David and Kannan, Anjuli and Wu, Yonghui and Pang, Ruoming and others
-:END:
-
-From Google's recent on-device character level Speech Recognition system. There
-are a bunch of tricks used in the overall system other than the main model
-itself. A few are:
-
-- parameter quantization (required, of course, for fast computation on mobile
-  device)
-- data augmentation using tts for getting numbers, proper nouns etc. right
-  (instead of doing fancy stuff on the model side)
-
-** READ Rapidly building domain-specific entity-centric language models using semantic web knowledge sources
-CLOSED: [2019-03-19 Tue 00:12]
-:PROPERTIES:
-:CUSTOM_ID: akbacak2014rapidly
-:YEAR:     2014
-:AUTHOR:   Akbacak, Murat and Hakkani-T{\"u}r, Dilek and Tur, Gokhan
-:END:
-
-This is focused on filtering search queries for creating language model. The
-filtering that works out for them is to (after identifying a domain) go from
-queries to clicked links then back to queries that went to those links. There
-are a few other pieces involved but the general shape of narrowing is the same.
-
 ** The tradeoffs of large scale learning
 :PROPERTIES:
 :CUSTOM_ID: bottou2008tradeoffs
 :YEAR:     2008
 :AUTHOR:   Bottou, L{\'e}on and Bousquet, Olivier
 :END:
-
-** READ Abstract meaning representation for sembanking
-CLOSED: [2019-03-10 Sun 22:43]
-:PROPERTIES:
-:CUSTOM_ID: banarescu2013abstract
-:YEAR:     2013
-:AUTHOR:   Banarescu, Laura and Bonial, Claire and Cai, Shu and Georgescu, Madalina and Griffitt, Kira and Hermjakob, Ulf and Knight, Kevin and Koehn, Philipp and Palmer, Martha and Schneider, Nathan
-:END:
-
-I found AMR while looking into a way of breaking from the usual intent/entity
-based NLU. While they are [[https://nlpers.blogspot.com/2014/09/amr-not-semantics-but-close-maybe.html][not perfect]], the specification tells you about pieces
-which should (in elaborate situations) be considered at least for practical
-computational language understanding.
-
-** READ Bootstrapping language models for dialogue systems
-CLOSED: [2019-03-10 Sun 22:43]
-:PROPERTIES:
-:CUSTOM_ID: weilhammer2006bootstrapping
-:YEAR:     2006
-:AUTHOR:   Weilhammer, Karl and Stuttle, Matthew N and Young, Steve
-:END:
-
-This is quickly getting /domain specific/ LMs. The idea is to not do a lot of
-manual (and perfect) text collection but start with simple grammars and get a
-seed LM using the generated text. Then for more refinements, get a large LM and
-do sentence selection on /in-the-wild/ data to get sentences with low value of
-$PP_{seed} / PP_{large}$. These sentences and the /rejected/ ones then give two more LMs
-which can then be interpolated based on a validation set.
-
-Exact steps aside, the idea (other than SLMs on grammar generated data) is to do
-some sort of /sentence selection/ to augment the seed LM.
-
-** READ Developing Production-Level Conversational Interfaces with Shallow Semantic Parsing
-CLOSED: [2019-01-15 Tue 01:10]
-:PROPERTIES:
-:CUSTOM_ID: raghuvanshi2018developing
-:YEAR:     2018
-:AUTHOR:   Raghuvanshi, Arushi and Carroll, Lucien and Raghunathan, Karthik
-:END:
-
-Doc on Mindmeld's NLU system.
-
-** READ Neural text generation from structured data with application to the biography domain
-CLOSED: [2019-01-05 Sat 23:22]
-:PROPERTIES:
-:CUSTOM_ID: lebret2016neural
-:YEAR:     2016
-:AUTHOR:   Lebret, R{\'e}mi and Grangier, David and Auli, Michael
-:END:
-
-From wikipedia info entry (a table) for a person, they generate biographical
-sentences. The way to condition on the table while doing $P(w_i | c_{(i-1)})$ is
-just indexing into (learnable) embeddings. I was looking for something more
-insightful though.
-
-** Generating exact lattices in the WFST framework
-:PROPERTIES:
-:CUSTOM_ID: povey2012generating
-:YEAR:     2012
-:AUTHOR:   Povey, Daniel and Hannemann, Mirko and Boulianne, Gilles and Burget, Luk{\'a}{\v{s}} and Ghoshal, Arnab and Janda, Milo{\v{s}} and Karafi{\'a}t, Martin and Kombrink, Stefan and Motl{\'\i}{\v{c}}ek, Petr and Qian, Yanmin and others
-:END:
-
-** READ Quantifying the value of pronunciation lexicons for keyword search in lowresource languages
-CLOSED: [2019-01-27 Sun 23:55]
-:PROPERTIES:
-:CUSTOM_ID: chen2013quantifying
-:YEAR:     2013
-:AUTHOR:   Chen, Guoguo and Khudanpur, Sanjeev and Povey, Daniel and Trmal, Jan and Yarowsky, David and Yilmaz, Oguz
-:END:
-
-In a single line, while pronunciation dictionary augmentation doesn't help that
-much in WER of an LVCSR (since the OOV rates are usually low), it helps a lot in
-Keyword Search.
-
-A few other things to note are the ways to generate pronunciation and two ways
-to do KWS if you already have an LVCSR system. Not surprisingly, the proxy
-keyword system doesn't work that well.
-
-** READ State-of-the-art speech recognition with sequence-to-sequence models
-CLOSED: [2018-11-06 Tue 20:52]
-:PROPERTIES:
-:CUSTOM_ID: chiu2018state
-:YEAR:     2018
-:AUTHOR:   Chiu, Chung-Cheng and Sainath, Tara N and Wu, Yonghui and Prabhavalkar, Rohit and Nguyen, Patrick and Chen, Zhifeng and Kannan, Anjuli and Weiss, Ron J and Rao, Kanishka and Gonina, Ekaterina and others
-:END:
-
-Bunch of improvements on top of the LAS architecture. It feels funny that even
-in end-to-end systems, we still look for /modular presence/ of components like
-Language Models. Maybe that helps in adding and justifying heuristics.
-
-** Speech recognition with weighted finite-state transducers
-:PROPERTIES:
-:CUSTOM_ID: mohri2008speech
-:YEAR:     2008
-:AUTHOR:   Mohri, Mehryar and Pereira, Fernando and Riley, Michael
-:END:
-
-Partial notes:
-1. Composition: Transitive-ness.
-2. Determinization: Removing multiple transitions on same input.
-3. Minimization: Compressing to the minimal, /equivalent/ automaton. Done by first
-   weight pushing and then running the classical algorithm.
 
 ** READ Data programming: Creating large training sets, quickly
 CLOSED: [2019-05-06 Mon 23:55]
@@ -1481,87 +1499,74 @@ This is the Echo State Network paper (probably not the original one but
 sufficiently close). I found it to be a /little/ different than what I had earlier
 thought about there being separate inputs and outputs.
 
-** READ Learning to map sentences to logical form: Structured classification with probabilistic categorial grammars
-CLOSED: [2018-10-20 Sat 20:58] DEADLINE: <2018-10-16 Tue>
+** READ Adversarial examples that fool both computer vision and time-limited humans
+CLOSED: [2020-07-18 Sat 00:00]
 :PROPERTIES:
-:CUSTOM_ID: zettlemoyer2012learning
-:YEAR:     2012
-:AUTHOR:   Zettlemoyer, Luke S and Collins, Michael
+:CUSTOM_ID: elsayed2018adversarial
+:YEAR:     2018
+:AUTHOR:   Elsayed, Gamaleldin and Shankar, Shreya and Cheung, Brian and Papernot, Nicolas and Kurakin, Alexey and Goodfellow, Ian and Sohl-Dickstein, Jascha
 :END:
 
-/Assuming the title clarifies the goal/, there are three basic components here:
+This is an interesting one. Specially since it utilizes the multiple passes
+thing that happens in human perception.
 
-1. A _parser_ which takes a sentence $S$, a set of categories $\Lambda$ and weights over
-   features of the derivation (generated from parsing) $\theta$. This then generates
-   logical forms ($L$) with certain probabilities.
-2. Category _generator_ which takes $S$ and its expected logical form $L$ to
-   generate the categories needed to parse it to that form.
-3. An _estimator_ which, given the training set and a set of categories, updates
-   $\theta$ to increase the score of the form getting parsed.
-
-The interesting pieces are the representation of the logical form $L$ (using \lambda
-calculus) and category generation and pruning. Although the generated categories
-can be arbitrary, allowing for wrong grammars and such, I believe, it can be
-made to work better in noisy settings if we generalize /parsing/ and (maybe) the
-meaning of the structurally rigid categories like $S/NP$ using a few tricks.
-
-** READ A very short introduction to CCG
-CLOSED: [2018-10-16 Tue 02:21]
+** READ Datasheets for datasets
+CLOSED: [2020-05-19 Tue 23:57]
 :PROPERTIES:
-:CUSTOM_ID: steedman1996very
-:YEAR:     1996
-:AUTHOR:   Steedman, Mark
+:CUSTOM_ID: gebru2018datasheets
+:YEAR:     2018
+:AUTHOR:   Gebru, Timnit and Morgenstern, Jamie and Vecchione, Briana and Vaughan, Jennifer Wortman and Wallach, Hanna and Daume{\'e} III, Hal and Crawford, Kate
 :END:
 
-A lambda calculus formulation of /verb/ (function) acts in natural text. Not sure
-if I can figure out exact advantages as compared to other approaches. This
-definitely has more appeal to it because of the functional forms and the tooling
-they pull in with themselves.
+I had read this earlier too if I recall, but this time we ended up incorporating
+the idea in our workplace. This has been helpful since the new datasheet
+approach makes it really easy to disentangle problems so that people can work on
+them very cleanly.
 
-** READ Swoosh: a generic approach to entity resolution
-CLOSED: [2018-10-07 Sun 20:23] SCHEDULED: <2018-10-06 Sat>
+** READ NBDT: Neural-Backed Decision Trees
+   CLOSED: [2020-05-11 Mon 23:56]
+   :PROPERTIES:
+   :CUSTOM_ID: wan2020nbdt
+   :YEAR:     2020
+   :AUTHOR:   Wan, Alvin and Dunlap, Lisa and Ho, Daniel and Yin, Jihan and Lee, Scott and Jin, Henry and Petryk, Suzanne and Bargal, Sarah Adel and Gonzalez, Joseph E
+   :END:
+
+This is a nifty trick where we change loss of a regular network to mimic a
+decision tree type interpretation of output. Source [[https://github.com/alvinwan/neural-backed-decision-trees][here]].
+
+** READ Designing and deploying online field experiments
+   CLOSED: [2020-05-08 Fri 23:55]
+   :PROPERTIES:
+   :CUSTOM_ID: bakshy2014designing
+   :YEAR:     2014
+   :AUTHOR:   Bakshy, Eytan and Eckles, Dean and Bernstein, Michael S
+   :END:
+
+Read this to know more about how [[https://github.com/facebook/planout][planout]] is used in real world systems.
+
+** READ The unreasonable effectiveness of data
+CLOSED: [2020-03-01 Sun 13:09]
 :PROPERTIES:
-:CUSTOM_ID: benjelloun2009swoosh
+:CUSTOM_ID: halevy2009unreasonable
 :YEAR:     2009
-:AUTHOR:   Benjelloun, Omar and Garcia-Molina, Hector and Menestrina, David and Su, Qi and Whang, Steven Euijong and Widom, Jennifer
+:AUTHOR:   Halevy, Alon and Norvig, Peter and Pereira, Fernando
 :END:
 
-The main products are optimal algorithms to do ER which minimize the number of
-calls to the black box functions that actually perform the matching and merging.
-To do this, we first formalize the ER problem using:
-
-1. /Records/ and /features/ as the data structures
-2. /Merging/ and /matching/ functions as the operations
-
-Then we look for certain properties of a particular setting (mostly the effect
-of merge and match functions). Based on whether a few of these are satisfied
-(surprisingly trivial functions might not do what you expect of them), we can
-reduce the number of calls to matching.
-
-** READ How not to evaluate your dialogue system: An empirical study of unsupervised evaluation metrics for dialogue response generation
-CLOSED: [2018-10-13 Sat 17:45] SCHEDULED: <2018-10-06 Sat 15:00>
+** READ A credit assignment compiler for joint prediction
+CLOSED: [2020-02-05 Wed 12:51]
 :PROPERTIES:
-:CUSTOM_ID: liu2016not
+:CUSTOM_ID: chang2016credit
 :YEAR:     2016
-:AUTHOR:   Liu, Chia-Wei and Lowe, Ryan and Serban, Iulian V and Noseworthy, Michael and Charlin, Laurent and Pineau, Joelle
+:AUTHOR:   Chang, Kai-Wei and He, He and Ross, Stephane and Daume III, Hal and Langford, John
 :END:
 
-Other than the usuals, it has decent summaries of a few metrics used for
-sentence similarity.
+This talks about an API for framing L2S style search problems in style of an
+imperative program which allows for two optimizations:
 
-** READ Bringing machine learning and compositional semantics together
-CLOSED: [2018-10-02 Tue 13:26]
-:PROPERTIES:
-:CUSTOM_ID: liang2015bringing
-:YEAR:     2015
-:AUTHOR:   Liang, Percy and Potts, Christopher
-:END:
+1. memoization
+2. forced path collapse, getting losses without going to the last state
 
-Got pointed to this while going through [[https://github.com/wcmac/sippycup][sippycup]]. This presents, in a very
-pedagogical way, a simple framework for ranking semantic parses using supervised
-learning. The important point is that this /framework/ can be applied to a lot of
-problems in nlu involving different ways of structuring the logical forms and
-features.
+Main reduction that happens here is to a cost-sensitive classification problem.
 
 ** A decision-theoretic generalization of on-line learning and an application to boosting
  :PROPERTIES:
