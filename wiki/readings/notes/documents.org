@@ -254,6 +254,109 @@ random search.
  :END:
 
 * AI/ML
+** READ Adversarial examples that fool both computer vision and time-limited humans
+CLOSED: [2020-07-18 Sat 00:00]
+:PROPERTIES:
+:CUSTOM_ID: elsayed2018adversarial
+:YEAR:     2018
+:AUTHOR:   Elsayed, Gamaleldin and Shankar, Shreya and Cheung, Brian and Papernot, Nicolas and Kurakin, Alexey and Goodfellow, Ian and Sohl-Dickstein, Jascha
+:END:
+
+This is an interesting one. Specially since it utilizes the multiple passes
+thing that happens in human perception.
+
+** READ LibriTTS: A corpus derived from librispeech for text-to-speech
+CLOSED: [2020-06-17 Wed 00:00]
+:PROPERTIES:
+:CUSTOM_ID: zen2019libritts
+:YEAR:     2019
+:AUTHOR:   Zen, Heiga and Dang, Viet and Clark, Rob and Zhang, Yu and Weiss, Ron J and Jia, Ye and Chen, Zhifeng and Wu, Yonghui
+:END:
+
+** READ Convolutional neural networks for small-footprint keyword spotting
+CLOSED: [2020-06-13 Sat 23:59]
+:PROPERTIES:
+:CUSTOM_ID: sainath2015convolutional
+:YEAR:     2015
+:AUTHOR:   Sainath, Tara N and Parada, Carolina
+:END:
+
+** READ Small-footprint keyword spotting using deep neural networks
+CLOSED: [2020-06-13 Sat 23:59]
+:PROPERTIES:
+:CUSTOM_ID: chen2014small
+:YEAR:     2014
+:AUTHOR:   Chen, Guoguo and Parada, Carolina and Heigold, Georg
+:END:
+
+** READ Practical Application of Domain Dependent Confidence Measurement for Spoken Language Understanding Systems
+CLOSED: [2020-06-11 Thu 23:58]
+:PROPERTIES:
+:CUSTOM_ID: mehrabani2018practical
+:YEAR:     2018
+:AUTHOR:   Mehrabani, Mahnoosh and Thomson, David and Stern, Benjamin
+:END:
+
+Tag noisy data and learn reject. Call center-ish use case.
+
+** READ Nobody ever got fired for buying a cluster
+CLOSED: [2020-06-07 Sun 23:58]
+:PROPERTIES:
+:CUSTOM_ID: appuswamy2013nobody
+:YEAR:     2013
+:AUTHOR:   Appuswamy, Raja and Gkantsidis, Christos and Narayanan, Dushyanth and Hodson, Orion and Rowstron, Ant
+:END:
+
+** READ Audio adversarial examples: Targeted attacks on speech-to-text
+CLOSED: [2020-06-06 Sat 23:58]
+:PROPERTIES:
+:CUSTOM_ID: carlini2018audio
+:YEAR:     2018
+:AUTHOR:   Carlini, Nicholas and Wagner, David
+:END:
+
+** READ Natural tts synthesis by conditioning wavenet on mel spectrogram predictions
+CLOSED: [2020-05-29 Fri 23:57]
+:PROPERTIES:
+:CUSTOM_ID: shen2018natural
+:YEAR:     2018
+:AUTHOR:   Shen, Jonathan and Pang, Ruoming and Weiss, Ron J and Schuster, Mike and Jaitly, Navdeep and Yang, Zongheng and Chen, Zhifeng and Zhang, Yu and Wang, Yuxuan and Skerrv-Ryan, Rj and others
+:END:
+
+** READ Datasheets for datasets
+CLOSED: [2020-05-19 Tue 23:57]
+:PROPERTIES:
+:CUSTOM_ID: gebru2018datasheets
+:YEAR:     2018
+:AUTHOR:   Gebru, Timnit and Morgenstern, Jamie and Vecchione, Briana and Vaughan, Jennifer Wortman and Wallach, Hanna and Daume{\'e} III, Hal and Crawford, Kate
+:END:
+
+I had read this earlier too if I recall, but this time we ended up incorporating
+the idea in our workplace. This has been helpful since the new datasheet
+approach makes it really easy to disentangle problems so that people can work on
+them very cleanly.
+
+** READ NBDT: Neural-Backed Decision Trees
+   CLOSED: [2020-05-11 Mon 23:56]
+   :PROPERTIES:
+   :CUSTOM_ID: wan2020nbdt
+   :YEAR:     2020
+   :AUTHOR:   Wan, Alvin and Dunlap, Lisa and Ho, Daniel and Yin, Jihan and Lee, Scott and Jin, Henry and Petryk, Suzanne and Bargal, Sarah Adel and Gonzalez, Joseph E
+   :END:
+
+This is a nifty trick where we change loss of a regular network to mimic a
+decision tree type interpretation of output. Source [[https://github.com/alvinwan/neural-backed-decision-trees][here]].
+
+** READ Designing and deploying online field experiments
+   CLOSED: [2020-05-08 Fri 23:55]
+   :PROPERTIES:
+   :CUSTOM_ID: bakshy2014designing
+   :YEAR:     2014
+   :AUTHOR:   Bakshy, Eytan and Eckles, Dean and Bernstein, Michael S
+   :END:
+
+Read this to know more about how [[https://github.com/facebook/planout][planout]] is used in real world systems.
+
 ** READ Gmail Smart Compose: Real-Time Assisted Writing
 CLOSED: [2020-04-29 Wed 23:39]
 :PROPERTIES:
