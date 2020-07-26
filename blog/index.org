@@ -3,6 +3,8 @@
 
 #+HTML: <script src="assets/js/tag-filter.js"></script>
 
+@@html:<a href="/atom.xml" class="btn small">✉ | subscribe » atom</a> @@ 
+
 Hello, welcome to my blog! A listing of all the posts follows.
 
 I am now keeping more subjective (and frequent) pieces in [[../journal/index.org][/journal]]. Things that

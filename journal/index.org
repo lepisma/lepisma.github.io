@@ -1,7 +1,8 @@
 #+TITLE: Journal
 #+SETUPFILE: ../assets/export.setup
-
 #+HTML: <script src="../assets/js/tag-filter.js"></script>
+
+@@html:<a href="/journal/atom.xml" class="btn small">✉ | subscribe » atom</a> @@ 
 
 This is an auxiliary blog where I put items which can change because of, say,
 change in my opinion/knowledge etc. This is going to have higher publishing

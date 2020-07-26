@@ -1,6 +1,8 @@
 #+TITLE: Log
 #+SETUPFILE: ../assets/export.setup
 
+@@html:<a href="/log/atom.xml" class="btn small">✉ | subscribe » atom</a> @@ 
+
 Periodic activity log.
 
 #+BEGIN_SRC emacs-lisp :eval export :exports results :results raw
