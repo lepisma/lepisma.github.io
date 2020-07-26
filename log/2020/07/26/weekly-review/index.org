@@ -37,8 +37,8 @@ now. Two changes this time:
    guilty about my actions or lack thereof. This is surprisingly counter
    productive. My current opinion is that it's okay to occasionally ditch your
    'plans' and just enjoy one particular piece of work. As much as it is about
-   discipline, planning is only meant to help you 'enjoy' what you really are
-   into. I am keeping a few notes on these things [[pile:wiki:productivity][here]].
+   discipline, planning is meant to help you 'enjoy' what you really are into. I
+   am keeping a few notes on these ideas [[pile:wiki:productivity][here]].
 
 * Readings
 - [[https://graphdeeplearning.github.io/post/transformers-are-gnns/][Transformers are Graph Neural Networks | NTU Graph Deep Learning Lab]]
