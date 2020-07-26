@@ -299,14 +299,6 @@ CLOSED: [2020-06-11 Thu 23:58]
 
 Tag noisy data and learn reject. Call center-ish use case.
 
-** READ Nobody ever got fired for buying a cluster
-CLOSED: [2020-06-07 Sun 23:58]
-:PROPERTIES:
-:CUSTOM_ID: appuswamy2013nobody
-:YEAR:     2013
-:AUTHOR:   Appuswamy, Raja and Gkantsidis, Christos and Narayanan, Dushyanth and Hodson, Orion and Rowstron, Ant
-:END:
-
 ** READ Audio adversarial examples: Targeted attacks on speech-to-text
 CLOSED: [2020-06-06 Sat 23:58]
 :PROPERTIES:
@@ -1582,6 +1574,14 @@ features.
  :END:
 
 * Computing/Programming
+
+** READ Nobody ever got fired for buying a cluster
+CLOSED: [2020-06-07 Sun 23:58]
+:PROPERTIES:
+:CUSTOM_ID: appuswamy2013nobody
+:YEAR:     2013
+:AUTHOR:   Appuswamy, Raja and Gkantsidis, Christos and Narayanan, Dushyanth and Hodson, Orion and Rowstron, Ant
+:END:
 
 ** READ Metaobject protocols: Why we want them and what else they can do
 CLOSED: [2019-10-28 Mon 23:08]
