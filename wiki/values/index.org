@@ -1,0 +1,31 @@
+#+TITLE: Values
+#+SETUPFILE: ../../assets/export.setup
+
+#+begin_quote
+This page is a work in progress.
+#+end_quote
+
+Set of personal values. In no particular order.
+
+* Strive for Excellence
+This is taken from the [[https://github.com/Vernacular-ai/handbook/blob/master/values.md][list of values]] at Vernacular.ai.
+
+Striving for excellence doesn't mean anything other than what the phrase itself
+points to. It's about /striving/ for excellence. If I follow this value, I think
+about things in the following way:
+
+#+begin_quote
+If I had to do this thing again, what will I change to make it better.
+#+end_quote
+
+If you are writing an email, you /know/ what could have been better. If you are
+talking to someone, you /know/ what could have been done better. Notice that while
+you can still skip /this specific/ email and /that specific/ meeting, for each class
+of work you will know what could have been done better. Taking action is
+secondary.
+
+The key idea is that 'Strive for Excellence' is a cross cutting value. And it's
+okay to admit failure implementing this for certain classes of work instead of
+diluting the value itself by calling it situational[fn::This is also /striving
+for excellence/ by the way.]. These two are /very/ different ways of looking.
+

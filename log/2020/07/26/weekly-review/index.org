@@ -1,0 +1,53 @@
+#+TITLE: Weekly Review /30-2020/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 30,
+year: 2020
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+After another big gap. This makes me think why do I maintain this log at all.
+It's about a certain belief in doing a retrospective lookback on things. The
+question is whether that belief is held strongly by /something/. That something is
+what I am trying to define in the page on personal values [[pile:wiki:values][here]].
+
+* Experiments
+I am trying to get back to use Org Mode more task management extensively for
+now. Two changes this time:
+
+1. I tried to be more clear on the general approach by [[https://github.com/Vernacular-ai/talks/blob/master/vocab-productivity/README.org][talking about it]] with
+   other people. I strongly believe /talking/ put you in a more committed state
+   than just thinking in your own head.
+2. I am trying to be extremely flexible with the system. I realized that my
+   earlier rigidity was, very often, putting me in situations where I will feel
+   guilty about my actions or lack thereof. This is surprisingly counter
+   productive. My current opinion is that it's okay to occasionally ditch your
+   'plans' and just enjoy one particular piece of work. As much as it is about
+   discipline, planning is only meant to help you 'enjoy' what you really are
+   into. I am keeping a few notes on these things [[pile:wiki:productivity][here]].
+
+* Readings
+- [[https://graphdeeplearning.github.io/post/transformers-are-gnns/][Transformers are Graph Neural Networks | NTU Graph Deep Learning Lab]]
+- [[https://thegradient.pub/a-speech-to-text-practitioners-criticisms-of-industry-and-academia/][A Speech-To-Text Practitioner’s Criticisms of Industry and Academia]]
+- [[https://thegradient.pub/shortcuts-neural-networks-love-to-cheat/][Shortcuts: How Neural Networks Love to Cheat]]
+- [[https://thegradient.pub/how-to-stop-worrying-about-compositionality-2/][How to Stop Worrying About Compositionality]]
+- [[https://www.ben-evans.com/benedictevans/2018/06/22/ways-to-think-about-machine-learning-8nefy][Ways to think about machine learning — Benedict Evans]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 30-2020 and 4 previous weeks.
+#+HTML: </figcaption></figure>
