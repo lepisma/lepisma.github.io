@@ -5420,12 +5420,23 @@ CLOSED: [2018-12-30 Sun 00:38]
 Don't know what to write here. A few books are more about the experience than a
 communicable output. It's one of those. Loved it thoroughly.
 
-*** READING Lord of the Flies
+*** READ Lord of the Flies
+CLOSED: [2020-08-02 Sun 23:03]
 :PROPERTIES:
 :AUTHOR:   William Golding
 :ADDED:    <2018-08-05>
 :AMAZON:   https://www.amazon.com/Lord-Flies-William-Golding/dp/0399501487
 :END:
+
+This was a really enjoyable read. When I started, I had a concern that I might
+be able to come up with a different organizational structure given the same
+starting state of few young kids on an island. And I was wondering whether that
+would weaken the impact of what I might read in this book later on. But I was
+blown apart. Starting from the split in the two groups, the progression /feels/ as
+real as it can possibly get. Highly recommended if you are into dystopic
+fiction.
+
+Thanks to one of the most selfless person I know for recommending this.
 
 *** We
 :PROPERTIES:

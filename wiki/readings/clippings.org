@@ -22,6 +22,19 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+One must remember to wake at first light, in order to diddle
+
+#+HTML:<footer>﻿Lord of the Flies (William Golding)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+They walked along, two continents of experience and feeling, unable to
+communicate.
+
+#+HTML:<footer>﻿Lord of the Flies (William Golding)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 It puzzled me rather why what would count as a good point in an ordinary person
 should be used against an accused man as an overwhelming proof of his guilt.
 

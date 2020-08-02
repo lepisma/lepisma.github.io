@@ -1,0 +1,39 @@
+#+TITLE: Weekly Review /31-2020/
+#+SETUPFILE: ../../../../../assets/export.setup
+#+PILE: dropcap:nil
+
+#+BEGIN_EXPORT html
+<script>
+let eventPlotFor = {
+week: 31,
+year: 2020
+}
+</script>
+<style>
+#commit-plot > svg {
+height: 600px;
+width: 100%;
+}
+</style>
+#+END_EXPORT
+
+#+HTML: <script src="https://d3js.org/d3.v5.min.js"></script>
+#+HTML: <script src="../../../../../assets/js/commit-plot.js"></script>
+
+* Experiments
+An issue I found with my approach is that I am too reliant on org-agenda for the
+'view' part of workflow and that makes me look at tasks in relatively flat
+manner instead of organized view considering project heirarchies.
+
+I will try changing this by using separate files or tags or something. For now
+solving this by going to a separate file.
+
+* Readings
+- Finished [[https://www.goodreads.com/book/show/7624.Lord_of_the_Flies][Lord of the Flies]]. It's beautiful.
+- [[https://www.joelonsoftware.com/2002/05/06/five-worlds/][Five Worlds – Joel on Software]]
+- [[https://blog.rasa.com/gpt-3-careful-first-impressions/][GPT-3: Careful First Impressions]]
+
+* Programming
+#+HTML: <figure> <div id="commit-plot"></div> <figcaption>
+Commits for week 31-2020 and 4 previous weeks.
+#+HTML: </figcaption></figure>
