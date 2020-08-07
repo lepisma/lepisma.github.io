@@ -22,7 +22,7 @@ out [[https://github.com/lepisma/conceal][here in conceal]].
 #+CAPTION: Hiding my personal letters and medical notes.
 [[file:./conceal.png]]
 
-Strangely browsers are much less programmable these days so it's tougher to go
+Strangely, browsers are much less programmable these days so it's tougher to go
 with the 3rd approach in applications like Firefox. As far as windows themselves
 are concerned, I feel I can figure out an overlay drawing approach for X11 and
 make the window selection be exposed via [[https://github.com/stumpwm/stumpwm][stumpwm]] config.
