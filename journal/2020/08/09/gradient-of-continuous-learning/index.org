@@ -1,0 +1,44 @@
+#+TITLE: A Gradient of Continuous Learning
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, work
+
+Like in other workplaces, our workplace also has many kinds of higher level
+organizational issues. According to me, lack of continuous learning is one of
+the more fundamental ones. I might be wrong in the particular context but I
+wanted to think more about what I mean by continuous learning.
+
+Usually, my approach has been to think about a few /methods of learning/ in
+isolation and trying to make sure all of them get good coverage among ourselves.
+Here are the methods[fn::No, I don't want to name them as /RIPP/]:
+
+1. Reflect
+2. Improvise
+3. Prepare
+4. Practice
+
+The terms themselves should have obvious enough interpretations so we won't try
+to define them right now.
+
+The question for me is to see how they are all connected. And my hypothesis is
+that they form a gradient (in the same order as the list). A particular person
+or entity lies at one single point in this gradient and everything above that is
+obvious and below that is oblivious. Consider an entity at a value like =1.10=
+(just below =1= but above =2=). This entity realizes the importance of post-hoc
+reflection but struggles to find similar learning opportunities in
+/improvisation/, /preparation/ and /practice/. An entity at something like =3.5=
+understands everything about preparation but won't be able to comprehend how
+deliberate practice is going to help.
+
+If this idea is true, then we can't just ask people to pick one of these methods
+in isolation since it might be out of their current bounds and the exercise /will
+not/ sustain. For example, consider training a person to run a planning meeting.
+If the person is at a =1.x=, the hypothesis says that you can never make them go
+through a process of deliberate practice for planning meetings in a sustainable
+fashion. Instead you need first let them cross the hurdles of improvisation and
+preparation.
+
+A few more thoughts.
+- This gradient doesn't imply difficulty of methods, just a sort of
+  connectedness and dependence.
+- Putting more examples and case studies might be helpful to make things more
+  clear.
