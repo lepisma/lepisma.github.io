@@ -2,7 +2,7 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, work
 
-Like in other workplaces, our workplace has many kinds of higher level
+Like other workplaces, our workplace has many kinds of higher level
 organizational issues. According to me, lack of continuous learning is one of
 the more fundamental ones. I might be wrong in the particular context but I
 wanted to think more about what I mean by continuous learning.
