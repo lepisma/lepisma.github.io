@@ -8,7 +8,7 @@ the more fundamental ones. I might be wrong in the particular context but I
 wanted to think more about what I mean by continuous learning.
 
 Usually, my approach has been to think about a few /methods of learning/ in
-isolation and trying to make sure all of them get good coverage among ourselves.
+isolation and try to make sure all of them get good coverage among ourselves.
 Here are the methods[fn::No, I don't want to name them as /RIPP/]:
 
 1. Reflect
