@@ -2,9 +2,9 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, programming
 
-One of the weirdest thing I have realized in remote work is just how easy it is
-to end up displaying private content while doing screen shared meetings. Even
-being super aware of the sharing context doesn't help. There are many solutions:
+Doing remote work, I have realized that it's very easy to, accidentally, show
+private content while sharing screen. Even being super aware of the sharing
+context doesn't help. There are many solutions:
 
 1. Restrict the scope of what you share. For example share only a tab of the
    browser or a single window.
@@ -26,3 +26,7 @@ Strangely, browsers are much less programmable these days so it's tougher to go
 with the 3rd approach in applications like Firefox. As far as windows themselves
 are concerned, I feel I can figure out an overlay drawing approach for X11 and
 make the window selection be exposed via [[https://github.com/stumpwm/stumpwm][stumpwm]] config.
+
+#+BEGIN_edits
+- Thanks [[https://ltbringer.github.io/blog/about][Amresh]] for pointing out grammatical issues.
+#+END_edits
