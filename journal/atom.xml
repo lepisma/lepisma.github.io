@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-08-09T12:20:51+0530</updated>
+  <updated>2020-08-09T12:49:37+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>A Gradient of Continuous Learning</title>
+    <link href="https://lepisma.xyz/journal/2020/08/09/gradient-of-continuous-learning/index.html"/>
+    <updated>2020-08-09</updated>
+  </entry>
   <entry>
     <title>Private Screen Sharing</title>
     <link href="https://lepisma.xyz/journal/2020/08/07/private-screen-sharing/index.html"/>
