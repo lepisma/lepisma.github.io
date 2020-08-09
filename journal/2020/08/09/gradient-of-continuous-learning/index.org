@@ -34,8 +34,8 @@ in isolation since it might be out of their current bounds and the exercise /wil
 not/ sustain. For example, consider training a person to run a planning meeting.
 If the person is at a =1.x=, the hypothesis says that you can never make them go
 through a process of deliberate practice for planning meetings in a sustainable
-fashion. Instead you need first let them cross the hurdles of improvisation and
-preparation.
+fashion. Instead you need to first let them cross the hurdles of improvisation
+and preparation.
 
 A few more thoughts.
 - This gradient doesn't imply difficulty of methods, just a sort of
