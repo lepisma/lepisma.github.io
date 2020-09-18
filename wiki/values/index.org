@@ -1,13 +1,29 @@
 #+TITLE: Values
 #+SETUPFILE: ../../assets/export.setup
 
-#+begin_quote
-This page is a work in progress.
-#+end_quote
+There are moments when decisions you take define who you are. Most of these
+decisions are hard and can't be taken without imposing biases. A few might be
+able to do, but I can't without breaking myself.
 
-Set of personal values. In no particular order.
+Since it's hard to figure out the right biases /during/ the decisive moments, it's
+helpful to list them down deliberately so these moments don't hurt your sense of
+self in retrospect. These biases are /personal values/ for me.
 
-* Strive for Excellence
+What follows is a list of personal values. In no particular order. This is also
+not exhaustive as of now.
+
+* Courage
+The regular definition. Since at times I become very cautious, I am putting this
+as a value to make me take important decisions that need courage.
+
+* Forgiveness
+My older understanding of forgiveness was conflicting with things like learning
+and striving for excellence. How could you learn from an event if you /forgive/
+yourself? I now feel differently about this. Forgiving---yourself or others---is
+not about forgetting or ignoring, it's about acknowledging the hurt, completely,
+however painful it be. And then saying "/it's alright/".
+
+* Striving for Excellence
 This is taken from the [[https://github.com/Vernacular-ai/handbook/blob/master/values.md][list of values]] at Vernacular.ai.
 
 Striving for excellence doesn't mean anything other than what the phrase itself
