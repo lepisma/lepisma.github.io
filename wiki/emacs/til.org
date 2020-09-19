@@ -7,6 +7,16 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *signals*
+
+  You can bind =SIGUSR1= and =SIGUSR2= to [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Misc-Events.html#Misc-Events][custom functions]]. =SIGUSR2= is also tied to
+  =debug-on-event= that makes it pretty handy.
+
++ *org repeaters*
+
+  There are more types of repeaters for tasks in org mode than just plain =+1d=
+  style. Check [[https://orgmode.org/manual/Repeated-tasks.html][here]].
+
 + *calling convention docstring*
 
   At times, you want to specify a different calling function signature to show
