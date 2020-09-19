@@ -1,3 +1,4 @@
 #+TITLE: lepisma.github.io
 
 Pages and notes. Elisp source is in [[https://github.com/lepisma/pile][pile]], sass files are in [[https://github.com/lepisma/pile-theme][pile-theme]].
+Accessible [[https://lepisma.xyz][here]].
