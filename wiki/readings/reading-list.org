@@ -1948,6 +1948,20 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** TOREAD The Best Service Is No Service: How to Liberate Your Customers from Customer Service, Keep Them Happy, and Control Costs
+:PROPERTIES:
+:AUTHOR:   Bill Price, David Jaffe
+:ADDED:    [2020-09-27]
+:GOODREADS: https://www.goodreads.com/book/show/2410462.The_Best_Service_Is_No_Service
+:END:
+
+*** TOREAD The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You
+:PROPERTIES:
+:AUTHOR:   John C. Maxwell, Zig Ziglar
+:ADDED:    [2020-09-27]
+:GOODREADS: https://www.goodreads.com/book/show/815716.The_21_Irrefutable_Laws_of_Leadership
+:END:
+
 *** READING Democratizing Innovation
 :PROPERTIES:
 :AUTHOR:   Eric Von Hippel
