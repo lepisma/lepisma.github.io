@@ -1948,6 +1948,20 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** READING Democratizing Innovation
+:PROPERTIES:
+:AUTHOR:   Eric Von Hippel
+:ADDED:    [2020-09-27]
+:AMAZON:   https://www.amazon.in/Democratizing-Innovation-Press-Eric-Hippel/dp/0262720477
+:END:
+
+*** READING How to Win Friends and Influence People
+:PROPERTIES:
+:AUTHOR:   Dale Carnegie
+:ADDED:    [2020-09-27]
+:GOODREADS: https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People
+:END:
+
 *** READ Shape Up: Stop Running in Circles and Ship Work that Matters
 CLOSED: [2020-06-04 Thu 17:27]
 :PROPERTIES:
@@ -3464,7 +3478,7 @@ CLOSED: [2015-09-26]
 :GOODREADS: https://www.goodreads.com/book/show/18050143
 :END:
 
-*** The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
+*** TOREAD The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
 :PROPERTIES:
 :AUTHOR:    Ben Horowitz
 :ADDED:     <2015-05-15>
