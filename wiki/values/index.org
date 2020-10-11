@@ -10,8 +10,7 @@ Since it's hard to figure out the right biases /during/ the decisive moments, it
 helpful to list them down deliberately so these moments don't hurt your sense of
 self in retrospect. These biases are /personal values/ for me.
 
-What follows is a list of personal values. In no particular order. This is also
-not exhaustive as of now.
+What follows is a list of personal values. In no particular order.
 
 * Courage
 The regular definition. Since at times I become very cautious, I am putting this
@@ -24,7 +23,8 @@ yourself? I now feel differently about this. Forgiving---yourself or others---is
 not about forgetting or ignoring, it's about acknowledging the hurt, completely,
 however painful it be. And then saying "/it's alright/".
 
-* TODO Compassion
+* Compassion
+Regular definition.
 
 * Striving for Excellence
 This is taken from the [[https://github.com/Vernacular-ai/handbook/blob/master/values.md][list of values]] at Vernacular.ai.
@@ -48,6 +48,5 @@ okay to admit failure implementing this for certain classes of work instead of
 diluting the value itself by calling it situational[fn::This is also /striving
 for excellence/ by the way.]. These two are /very/ different ways of looking.
 
-* TODO Learning
-
-* TODO Innovation
+* Innovation
+Regular definition. More about the novelty side of creativity.
