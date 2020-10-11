@@ -1948,6 +1948,13 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** READING On Writing Well: The Classic Guide to Writing Nonfiction
+:PROPERTIES:
+:AUTHOR:   William Zinsser
+:ADDED:    [2020-10-11]
+:GOODREADS: https://www.goodreads.com/book/show/53343.On_Writing_Well
+:END:
+
 *** TOREAD The Best Service Is No Service: How to Liberate Your Customers from Customer Service, Keep Them Happy, and Control Costs
 :PROPERTIES:
 :AUTHOR:   Bill Price, David Jaffe
@@ -1969,7 +1976,8 @@ I can probably put items in here under the following categories:
 :AMAZON:   https://www.amazon.in/Democratizing-Innovation-Press-Eric-Hippel/dp/0262720477
 :END:
 
-*** READING How to Win Friends and Influence People
+*** READ How to Win Friends and Influence People
+CLOSED: [2020-10-11 Sun 11:19]
 :PROPERTIES:
 :AUTHOR:   Dale Carnegie
 :ADDED:    [2020-09-27]
