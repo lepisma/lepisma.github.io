@@ -1,5 +1,6 @@
 #+TITLE: Values
 #+SETUPFILE: ../../assets/export.setup
+#+OPTIONS: num:nil
 
 There are moments when decisions you take define who you are. Most of these
 decisions are hard and can't be taken without imposing biases. A few might be
@@ -23,6 +24,8 @@ yourself? I now feel differently about this. Forgiving---yourself or others---is
 not about forgetting or ignoring, it's about acknowledging the hurt, completely,
 however painful it be. And then saying "/it's alright/".
 
+* TODO Compassion
+
 * Striving for Excellence
 This is taken from the [[https://github.com/Vernacular-ai/handbook/blob/master/values.md][list of values]] at Vernacular.ai.
 
@@ -45,3 +48,6 @@ okay to admit failure implementing this for certain classes of work instead of
 diluting the value itself by calling it situational[fn::This is also /striving
 for excellence/ by the way.]. These two are /very/ different ways of looking.
 
+* TODO Learning
+
+* TODO Innovation
