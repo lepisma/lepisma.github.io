@@ -22,6 +22,63 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Few people are logical. Most of us are prejudiced and biased. Most of us are
+blighted with preconceived notions, with jealousy, suspicion, fear, envy and
+pride. And most citizens DON’T want to change their minds about their religion
+or their haircut or communism or their favorite movie star.
+
+#+HTML:<footer>How to Win Friends and Influence People (Illustrated) (DALE CARNEGIE)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Anyone who takes the time to disagree with you is interested in the same things
+you are.
+
+#+HTML:<footer>How to Win Friends and Influence People (Illustrated) (DALE CARNEGIE)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A man convinced against his will Is of the same opinion still.
+
+#+HTML:<footer>How to Win Friends and Influence People (Illustrated) (DALE CARNEGIE)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You must have a good time meeting people if you expect them to have a good time
+meeting you.
+
+#+HTML:<footer>How to Win Friends and Influence People (Illustrated) (DALE CARNEGIE)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+You can make more friends in two months by becoming interested in other people
+than you can in two years by trying to get other people interested in you.
+
+#+HTML:<footer>How to Win Friends and Influence People (Illustrated) (DALE CARNEGIE)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+sharp criticisms and rebukes almost invariably end in futility.
+
+#+HTML:<footer>How to Win Friends and Influence People (Illustrated) (DALE CARNEGIE)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+And that really was what made them so exciting—using language in a way I’d not
+used it before, to transcribe such an intimate area of my being that I’d never
+before attempted to linguistically lay bare.
+
+#+HTML:<footer>﻿Pond: Stories (Bennett, Claire-Louise)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I won’t be able to write emails like that again you see—that’s to say I won’t be
+able to write emails like that for the first time again.
+
+#+HTML:<footer>﻿Pond: Stories (Bennett, Claire-Louise)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 They walked along, two continents of experience and feeling, unable to
 communicate.
 
