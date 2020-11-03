@@ -1340,6 +1340,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** Focusing
+:PROPERTIES:
+:AUTHOR:   Eugene T. Gendlin
+:ADDED:    [2020-11-03]
+:AMAZON:   https://www.amazon.com/Focusing-Eugene-T-Gendlin/dp/0553278339/
+:END:
+
 *** The Myth of Sisyphus and Other Essays
 :PROPERTIES:
 :AUTHOR:   Albert Camus, Justin O'Brien
