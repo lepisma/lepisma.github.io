@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-09-27T11:27:14+0530</updated>
+  <updated>2020-10-31T23:27:49+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Actionables</title>
+    <link href="https://lepisma.xyz/journal/2020/10/31/actionables/index.html"/>
+    <updated>2020-10-31</updated>
+  </entry>
   <entry>
     <title>Who is a Philosopher?</title>
     <link href="https://lepisma.xyz/journal/2020/09/20/philosopher/index.html"/>

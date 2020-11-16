@@ -1955,7 +1955,8 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
-*** READING On Writing Well: The Classic Guide to Writing Nonfiction
+*** READ On Writing Well: The Classic Guide to Writing Nonfiction
+CLOSED: [2020-11-16 Mon 13:29]
 :PROPERTIES:
 :AUTHOR:   William Zinsser
 :ADDED:    [2020-10-11]
@@ -5195,7 +5196,7 @@ CLOSED: [2016-02-16]
 :GOODREADS: https://www.goodreads.com/book/show/968
 :END:
 
-*** The Book Thief
+*** TOREAD The Book Thief
 :PROPERTIES:
 :AUTHOR:    Markus Zusak
 :ADDED:     <2015-11-01>
@@ -5409,6 +5410,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** TOREAD House of Leaves: The Remastered Full-Color Edition
+:PROPERTIES:
+:AUTHOR:   Mark Z. Danielewski
+:ADDED:    [2020-11-16]
+:AMAZON:   https://www.amazon.in/gp/product/0375703764/
+:END:
+
 *** READ The Shadow of the Wind
 CLOSED: [2020-02-08 Sat 23:37]
 :PROPERTIES:

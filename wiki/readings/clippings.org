@@ -22,6 +22,12 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Clear thinking becomes clear writing; one can't exist without the other
+
+#+HTML:<footer>On Writing Well, The Classic Guide to Writing Nonfiction - William Zinsser</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Few people are logical. Most of us are prejudiced and biased. Most of us are
 blighted with preconceived notions, with jealousy, suspicion, fear, envy and
 pride. And most citizens DON’T want to change their minds about their religion
