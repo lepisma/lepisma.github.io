@@ -7,6 +7,10 @@
 This page /used to/ live in a separate repository [[https://github.com/lepisma/til-emacs][here]]. Now, well, its here.
 #+END_aside
 
++ *svg screenshots*
+
+  Starting version 27, [[https://www.reddit.com/r/emacs/comments/idz35e/emacs_27_can_take_svg_screenshots_of_itself/][Emacs let's you take svg screenshots of itself]].
+
 + *signals*
 
   You can bind =SIGUSR1= and =SIGUSR2= to [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Misc-Events.html#Misc-Events][custom functions]]. =SIGUSR2= is also tied to
