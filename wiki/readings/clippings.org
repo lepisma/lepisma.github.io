@@ -22,6 +22,30 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+People who watch you judge you on what you do, not how you feel.”
+
+#+HTML:<footer>﻿The Hard Thing About Hard Things (Ben Horowitz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Sometimes an organization doesn’t need a solution; it just needs clarity.
+
+#+HTML:<footer>﻿The Hard Thing About Hard Things (Ben Horowitz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Being a good company is an end in itself.
+
+#+HTML:<footer>﻿The Hard Thing About Hard Things (Ben Horowitz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It taught me that being scared didn’t mean I was gutless.
+
+#+HTML:<footer>﻿The Hard Thing About Hard Things (Ben Horowitz)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Clear thinking becomes clear writing; one can't exist without the other
 
 #+HTML:<footer>On Writing Well, The Classic Guide to Writing Nonfiction - William Zinsser</footer>

@@ -3508,7 +3508,8 @@ CLOSED: [2015-09-26]
 :GOODREADS: https://www.goodreads.com/book/show/18050143
 :END:
 
-*** TOREAD The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
+*** READ The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
+    CLOSED: [2020-11-24 Tue 14:55]
 :PROPERTIES:
 :AUTHOR:    Ben Horowitz
 :ADDED:     <2015-05-15>
