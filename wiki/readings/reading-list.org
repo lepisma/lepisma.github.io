@@ -1340,6 +1340,17 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** READ Causation: A Very Short Introduction (Very Short Introductions)
+CLOSED: [2020-11-29 Sun 12:33]
+:PROPERTIES:
+:AUTHOR:   Stephen Mumford, Rani Lill Anjum
+:ADDED:    [2020-11-29]
+:AMAZON:   https://www.amazon.in/Causation-Very-Short-Introduction-Introductions/dp/019968443X
+:END:
+
+A very nice introduction. I really liked the way concepts were ordered. Whenever
+I started preempting a crisis, an appropriate next idea was within 2-3 pages.
+
 *** Focusing
 :PROPERTIES:
 :AUTHOR:   Eugene T. Gendlin
@@ -3509,7 +3520,7 @@ CLOSED: [2015-09-26]
 :END:
 
 *** READ The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
-    CLOSED: [2020-11-24 Tue 14:55]
+CLOSED: [2020-11-24 Tue 14:55]
 :PROPERTIES:
 :AUTHOR:    Ben Horowitz
 :ADDED:     <2015-05-15>
