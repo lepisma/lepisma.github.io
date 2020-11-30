@@ -8,6 +8,10 @@ team of ML Engineers do on a regular basis. Usually, teams do this by organizing
 periodic, often weekly, paper reading sessions. Here is a snippet from an
 internal work memo by [[https://github.com/janaab11/][Manas]] explaining how [[https://vernacular-ai.github.io/ml/][we]] look at these sessions:
 
+#+begin_aside
+This post is mirrored on our team blog [[https://vernacular-ai.github.io/ml/reading-sessions][here]].
+#+end_aside
+
 #+begin_quote
 Lets start with the basic motivation behind these sessions - we want to read
 more papers. But beyond this individual goal, there is also the simpler driving
