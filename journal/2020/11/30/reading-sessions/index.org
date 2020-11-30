@@ -43,7 +43,7 @@ We revived paper reading after a while. This time everyone picked and presented
 a paper of their own liking. This wasn't supposed to scale up with team size,
 but we went with this for a decent while. While we were free to choose and read
 whatever we wanted, lack of continuity in readings, practical disconnects and
-difference in interests start to reduce the overall engagement.
+difference in interests started to reduce the overall engagement.
 
 After lockdown, the engagement level dropped further. On video calls, you have
 to upgrade the quality of meetings if you want to maintain the same level of
@@ -83,29 +83,30 @@ During the session, you want to:
 Since you want the next sessions to be successful too, you would like to:
 
 + Make sure people are going away with a healthy amount of /thought food/.
-+ Nudge towards the /utilitarian aspects/ of the ideas presented so that audience
-  follow a few threads of experimentation.
++ Nudge towards the /utilitarian aspects/ of the concepts discussed so that
+  audience have a few threads of experimentation to follow in their day to day
+  work.
 
 * People
-With people, we can think in the following terms[fn::Many are derived from an
+For /people/, we can think along the following lines[fn::Many are derived from an
 internal note by [[https://github.com/janaab11/][Manas]]]:
 
 + Resourcefulness.
 + Motivation.
-+ Interests and their depths and varieties.
++ Interests, their depths, and varieties.
 + Style and method of working with new knowledge.
 + Level of comfort with group sessions. Both for presentation and discussion.
-+ Bandwidth. This becomes specially important in industrial settings like ours.
++ Bandwidth. Specially considering industrial settings like ours.
 + Structural assistance and pushes.
 
 -----
 
 Acting on all these factors to deliver a single style of session that works for
 everyone is impossible. Not all factors might be important for a team at a given
-moment of time, but even a minimal set is sufficiently diverse. The key idea is
-accept a pluralistic view on the issue. There is no /single/ fundamentally correct
-way of doing these sessions, and it's better to pick a digestible subset and
-solve for that.
+moment of time, but even a reasonably small set is sufficiently diverse. The key
+idea is accept a pluralistic view on the issue. There is no /single/ fundamentally
+correct way of doing these sessions, and it's better to pick a digestible subset
+and solve for that.
 
 Going ahead with this realization, we started doing /seminars/.
 
@@ -123,7 +124,7 @@ indirectly, this will lead to a better output (from the speaker) and experience
 (for the audience) in the /Paper Reading/ sessions that follow.
 #+end_quote
 
-Seminars cover many of the issues nicely and they clearly don't touch many
+Seminars cover many of the issues nicely and they clearly don't touch a few
 others. For example you can't just bring in any new paper and discuss that in a
 session without setting up a seminar for that field. And that's okay. There are
 other ways of handling that case.
@@ -137,7 +138,7 @@ At the moment, we have the following parallel seminars running:
 + Computational Paralinguistics
 + Learning Theory
 
-Each of these has a plan of what's supposed to be discussed over a period of 1-2
-months. While not perfect, these are developing in decent reading roadmap for
-the topics. Something we would like to open out after a couple of months,
-similar to what we did with the old style [[https://backyard.vernacular.ai/paper-reading/][paper reading]] sessions.
+Each of these has a list of papers or topics to be discussed over a period of
+1-2 months. While not perfect, these are turning out to be decent reading
+roadmaps for these topics. Something we would like to open out after a couple of
+months, similar to the old style [[https://backyard.vernacular.ai/paper-reading/][paper reading]] sessions.
