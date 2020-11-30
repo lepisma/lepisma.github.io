@@ -33,7 +33,7 @@ group.
 
 -----
 
-The very first thing that did was to start asking people for research papers
+The very first thing that we did was to start asking people for research papers
 that they like, weekly. After voting on one, the proposer of the paper presented
 it on a predetermined day. This lost steam away after a while because of various
 reasons. One of them being bandwidth crunch for everyone that time. We were just
