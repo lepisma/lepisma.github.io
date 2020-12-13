@@ -1966,6 +1966,27 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** Resilient: How to Grow an Unshakable Core of Calm, Strength, and Happiness
+:PROPERTIES:
+:AUTHOR:   Forrest Hanson
+:ADDED:    [2020-12-13]
+:AMAZON:   https://www.amazon.in/Resilient-Grow-Unshakable-Strength-Happiness/dp/0451498844
+:END:
+
+*** A Liberated Mind: How to Pivot Toward What Matters
+:PROPERTIES:
+:AUTHOR:   Steven C. Hayes PhD
+:ADDED:    [2020-12-13]
+:AMAZON:   https://www.amazon.in/Liberated-Mind-Pivot-Toward-Matters/dp/073521400X
+:END:
+
+*** Emotional Agility: Get Unstuck, Embrace Change, and Thrive in Work and Life
+:PROPERTIES:
+:AUTHOR:   Susan David
+:ADDED:    [2020-12-13]
+:AMAZON:   https://www.amazon.in/Emotional-Agility-Unstuck-Embrace-Change/dp/1592409490
+:END:
+
 *** READ On Writing Well: The Classic Guide to Writing Nonfiction
 CLOSED: [2020-11-16 Mon 13:29]
 :PROPERTIES:
