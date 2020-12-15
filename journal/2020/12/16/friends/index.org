@@ -1,0 +1,58 @@
+#+TITLE: Friends
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+I have been wondering what friends are for. There are many definitions of
+friendship. Most of them make sense one way or other. But whenever I have been
+questioned on how I look at friendships, I never think on those lines. One of
+the answers that I give is the following:
+
+#+begin_quote
+Friends are those who /share things/ with you that change you psychologically,
+even if only a little, from the way you were before.
+#+end_quote
+
+These things can be stories, ideas, memories, or any physical entity. The key is
+their potential for positive psychological change. So a fruit vendor is not a
+friend[fn::Of course only considering the fruit transaction here] but someone
+who gives you a fruit when you were hungry is.
+
+But I am looking at this again and I believe friendship is not about people but
+about events. Having friends doesn't mean anything. Having friendly encounters
+means everything. We build up countless characteristics like loyalty, affection,
+vulnerability, and so on to ground these acts of sharing on various humans for
+promises of stable supplies. But I don't think that's how things should be.
+
+-----
+
+In any case, in a very fresh friendly encounter, a person shared /invictus/ with
+me. I like it. It changed me, a little. Since it's a small poem, I will paste
+all of it here:
+
+#+begin_quote
+Out of the night that covers me@@html:<br>@@
+Black as the pit from pole to pole,@@html:<br>@@
+I thank whatever gods may be@@html:<br>@@
+For my unconquerable soul.@@html:<br>@@
+
+@@html:<br>@@
+
+In the fell clutch of circumstance,@@html:<br>@@
+I have not winced nor cried aloud.@@html:<br>@@
+Under the bludgeonings of chance@@html:<br>@@
+My head is bloody, but unbowed.@@html:<br>@@
+
+@@html:<br>@@
+
+Beyond this place of wrath and tears@@html:<br>@@
+Looms but the Horror of the shade,@@html:<br>@@
+And yet the menace of the years@@html:<br>@@
+Finds, and shall find, me unafraid.@@html:<br>@@
+
+@@html:<br>@@
+
+It matters not how strait the gate,@@html:<br>@@
+How charged with punishments the scroll,@@html:<br>@@
+I am the master of my fate:@@html:<br>@@
+I am the captain of my soul.
+#+end_quote
