@@ -2,7 +2,7 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
-I have been wondering what friends are for. There are many definitions of
+I have been wondering what friends mean. There are many definitions of
 friendship. Most of them make sense one way or other. But whenever I have been
 questioned on how I look at friendships, I never think on those lines. One of
 the answers that I give is the following:
