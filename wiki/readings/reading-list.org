@@ -280,7 +280,7 @@ nature's algorithms rather than the algorithms themselves.
 :GOODREADS: https://www.goodreads.com/book/show/2296
 :END:
 
-*** Harnessing Complexity
+*** READING Harnessing Complexity
 :PROPERTIES:
 :AUTHOR:    Robert Axelrod, Michael D. Cohen
 :ADDED:     <2017-03-11>
