@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2020-07-06 Mon 00:18 -->
+<!-- 2020-12-20 Sun 16:38 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Productivity</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -222,50 +222,26 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -287,7 +263,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2020-07-06 Mon 00:18</div>
+  <div class='page-meta'>Last modified:  2020-12-20 Sun 16:38</div>
   <h1>Productivity</h1>
 </div>
 </div>
@@ -319,13 +295,34 @@ Plan like a general, work like an artist.
 
 <p>
 Of course the definitions of 'general' and 'artist' are the stereotypical one.
+The idea is to have a good framework for knowing categorizing various acts of
+planning, but still keep the working part very flexible. The framework below
+follows an internal talk on <i>A Vocabulary for Productivity</i> <a href="https://github.com/Vernacular-ai/talks/tree/master/vocab-productivity">here</a>.
 </p>
 
-<blockquote>
 <p>
-Work In Progress
+Inspired by the <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a> structure, I try to look at the following acts while
+working:
 </p>
-</blockquote>
+
+<ol class="org-ol">
+<li>Capture</li>
+<li>Organize</li>
+<li>View</li>
+<li>Work</li>
+<li>Review</li>
+</ol>
+
+<p>
+All of these tie to two other tools that I am trying to use more. One is
+Org-Mode, other is OKRs. Org helps in the working regularly with the 5 steps and
+provides every kind of assistance that I need. OKRs help in setting more long
+term directions to align these acts.
+</p>
+
+<p>
+Here is a <a href="https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/">good document</a> on OKRs.
+</p>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>

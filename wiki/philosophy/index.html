@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-06-17 Mon 01:44 -->
+<!-- 2020-12-20 Sun 16:20 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Philosophy</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -222,50 +222,26 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -287,20 +263,42 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-06-16 Sun 14:16</div>
+  <div class='page-meta'>Last modified:  2020-12-20 Sun 16:20</div>
   <h1>Philosophy</h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../index.html'>≡ index</a> /  philosophy</div>
-<div id="outline-container-org2b56021" class="outline-2">
-<h2 id="sec-pages-in-this-section"><span class="section-number-2">1</span> Pages in this section</h2>
-<div class="outline-text-2" id="text-sec-pages-in-this-section">
+<div id='crosslinks'></div>
+<div id="outline-container-sec-resources" class="outline-2">
+<h2 id="sec-resources"><span class="section-number-2">1</span> Resources</h2>
+<div class="outline-text-2" id="text-sec-resources">
 
+</div>
+<div id="outline-container-sec-resources/where-to-start?" class="outline-3">
+<h3 id="sec-resources/where-to-start?"><span class="section-number-3">1.1</span> Where to start?</h3>
+<div class="outline-text-3" id="text-sec-resources/where-to-start?">
 
 <ul class="org-ul">
-<li><a href="./resources.html">Resources</a></li>
+<li><a href="https://existentialcomics.com/blog/1/H">How to study philosophy as an amateur</a></li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-sec-resources/courses" class="outline-3">
+<h3 id="sec-resources/courses"><span class="section-number-3">1.2</span> Courses</h3>
+<div class="outline-text-3" id="text-sec-resources/courses">
+
+<p>
+A few philosophically inclined courses that I found to be interesting based on
+my current knowledge. I haven't started/finished them though.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.edx.org/course/introduction-to-philosophy-god-knowledge-and-consciousness-2">Introduction to Philosophy: God, Knowledge and Consciousness</a></li>
+<li><a href="https://www.edx.org/course/paradox-and-infinity">Paradox and Infinity</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
