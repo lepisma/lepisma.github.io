@@ -2,7 +2,7 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: work
 
-People at management level usually have a disregard for engineers regarding
+People at management level usually have disregard for engineers regarding
 planning capabilities. The most common argument is that engineers are working at
 lower levels and therefore are not great at observing high level issues, this
 makes them bad at thinking and planning. While this concern is correct in its
