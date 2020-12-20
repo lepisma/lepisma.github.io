@@ -22,6 +22,56 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+For, in the past, nothing is irretrievably lost but everything irrevocably
+stored.
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+In some way, suffering ceases to be suffering at the moment it finds a meaning,
+such as the meaning of a sacrifice.
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Logotherapy deviates from psychoanalysis insofar as it considers man a being
+whose main concern consists in fulfilling a meaning, rather than in the mere
+gratification and satisfaction of drives and instincts, or in merely reconciling
+the conflicting claims of id, ego and superego, or in the mere adaptation and
+adjustment to society and environment.
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Having been is also a kind of being, and perhaps the surest kind.
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Emotion, which is suffering, ceases to be suffering as soon as we form a clear
+and precise picture of it.
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“There is only one thing that I dread: not to be worthy of my sufferings.”
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“There are things which must cause you to lose your reason or you have none to
+lose.”
+
+#+HTML:<footer>﻿Man's Search for Meaning (Viktor Frankl)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 People who watch you judge you on what you do, not how you feel.”
 
 #+HTML:<footer>﻿The Hard Thing About Hard Things (Ben Horowitz)</footer>
