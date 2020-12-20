@@ -1,10 +1,6 @@
 #+TITLE: Employment State
 #+SETUPFILE: ../../assets/export.setup
 
-#+begin_quote
-This page is not as descriptive as it can be. Will expand if needed.
-#+end_quote
-
 At present, I work as a Machine Learning engineer at [[https://github.com/vernacular-ai/][Vernacular.ai]] (starting
 June 2018). Previously,
 

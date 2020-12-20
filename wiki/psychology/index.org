@@ -1,0 +1,6 @@
+#+TITLE: Psychology
+#+SETUPFILE: ../../assets/export.setup
+
+* Resources
++ I find [[https://www.lesswrong.com/posts/xtzvtJBNofk4FPAtt/philosophy-of-therapy][Philosophy of Therapy]] on LessWrong to be a good overview of therapy
+  techniques in general.

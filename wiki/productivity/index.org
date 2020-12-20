@@ -17,7 +17,22 @@ Plan like a general, work like an artist.
 #+end_quote
 
 Of course the definitions of 'general' and 'artist' are the stereotypical one.
+The idea is to have a good framework for knowing categorizing various acts of
+planning, but still keep the working part very flexible. The framework below
+follows an internal talk on /A Vocabulary for Productivity/ [[https://github.com/Vernacular-ai/talks/tree/master/vocab-productivity][here]].
 
-#+begin_quote
-Work In Progress
-#+end_quote
+Inspired by the [[https://en.wikipedia.org/wiki/Getting_Things_Done][GTD]] structure, I try to look at the following acts while
+working:
+
+1. Capture
+2. Organize
+3. View
+4. Work
+5. Review
+
+All of these tie to two other tools that I am trying to use more. One is
+Org-Mode, other is OKRs. Org helps in the working regularly with the 5 steps and
+provides every kind of assistance that I need. OKRs help in setting more long
+term directions to align these acts.
+
+Here is a [[https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/][good document]] on OKRs.

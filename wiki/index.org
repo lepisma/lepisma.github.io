@@ -1,9 +1,9 @@
 #+TITLE: Wiki
 #+SETUPFILE: ../assets/export.setup
 
-This is a personal wiki. Most of the pages here are in /work-in-progress/ phase. I
-will be moving few of the pages here to my journal or, after finishing the work,
-to the blog.
+This is my personal wiki. These pages try to organize resources and thoughts on
+various topics that I tend to get involved with. Many of these pages might not
+be in coherent state, but I will try to keep them sufficiently useful.
 
 A list of all the pages in this wiki follows. See [[pile:wiki:misc/colophon][colophon]] for details on how
 these pages are built.

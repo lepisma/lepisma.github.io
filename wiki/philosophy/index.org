@@ -1,8 +1,13 @@
 #+TITLE: Philosophy
 #+SETUPFILE: ../../assets/export.setup
 
-* Pages in this section
+* Resources
+** Where to start?
+- [[https://existentialcomics.com/blog/1/H][How to study philosophy as an amateur]]
 
-#+BEGIN_SRC emacs-lisp :eval export :results raw :exports results
-(princ (pile-index-format))
-#+END_SRC
+** Courses
+A few philosophically inclined courses that I found to be interesting based on
+my current knowledge. I haven't started/finished them though.
+
+- [[https://www.edx.org/course/introduction-to-philosophy-god-knowledge-and-consciousness-2][Introduction to Philosophy: God, Knowledge and Consciousness]]
+- [[https://www.edx.org/course/paradox-and-infinity][Paradox and Infinity]]

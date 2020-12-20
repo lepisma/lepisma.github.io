@@ -1,0 +1,9 @@
+#+TITLE: Research
+#+SETUPFILE: ../../assets/export.setup
+
+More abstract thoughts about how to work with researches and research groups.
+
+* Links
++ [[http://joschu.net/blog/opinionated-guide-ml-research.html][An Opinionated Guide to ML Research]]
++ [[https://www.youtube.com/watch?v=sT_-owjKIbA][How to Give a Great Research Talk - YouTube]]
++ [[https://research.google/philosophy/][Philosophy – Google Research]]
