@@ -12,7 +12,7 @@ developed once you are working at a higher level of abstraction.
 I have had drastically different experiences. I have seen some of the best acts
 of thinking and planning done among my engineering peers. And it's beyond scale
 of scope, or time, or impact. I am talking about the core techniques. Just based
-on the their training and work, engineers are better positioned to manage
+on their training and work, engineers are better positioned to manage
 complexity, keep promises, understand when and where things are not going well.
 
 I have seen many projects fail because tasks were not tracked properly, people
