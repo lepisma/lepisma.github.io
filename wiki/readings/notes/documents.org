@@ -254,6 +254,55 @@ random search.
  :END:
 
 * Speech
+
+** READ The Zero Resource Speech Challenge 2020: Discovering discrete subword and word units
+CLOSED: [2020-12-20 Sun 16:17]
+:PROPERTIES:
+:CUSTOM_ID: dunbar2020zero
+:YEAR:     2020
+:AUTHOR:   Dunbar, Ewan and Karadayi, Julien and Bernard, Mathieu and Cao, Xuan-Nga and Algayres, Robin and Ondel, Lucas and Besacier, Laurent and Sakti, Sakriani and Dupoux, Emmanuel
+:END:
+
+** READ Word Error Rate Estimation Without ASR Output: e-WER2
+CLOSED: [2020-12-20 Sun 16:17]
+:PROPERTIES:
+:CUSTOM_ID: ali2020word
+:YEAR:     2020
+:AUTHOR:   Ali, Ahmed and Renals, Steve
+:END:
+
+** READ Conformer: Convolution-augmented Transformer for Speech Recognition
+CLOSED: [2020-12-20 Sun 16:15]
+:PROPERTIES:
+:CUSTOM_ID: gulati2020conformer
+:YEAR:     2020
+:AUTHOR:   Gulati, Anmol and Qin, James and Chiu, Chung-Cheng and Parmar, Niki and Zhang, Yu and Yu, Jiahui and Han, Wei and Wang, Shibo and Zhang, Zhengdong and Wu, Yonghui and others
+:END:
+
+** READ Streaming end-to-end bilingual ASR systems with joint language identification
+CLOSED: [2020-12-20 Sun 16:15]
+:PROPERTIES:
+:CUSTOM_ID: punjabi2020streaming
+:YEAR:     2020
+:AUTHOR:   Punjabi, Surabhi and Arsikere, Harish and Raeesy, Zeynab and Chandak, Chander and Bhave, Nikhil and Bansal, Ankish and M{\"u}ller, Markus and Murillo, Sergio and Rastrow, Ariya and Garimella, Sri and others
+:END:
+
+** READ How to Annotate 100 Hours in 45 Minutes.
+CLOSED: [2020-12-20 Sun 16:15]
+:PROPERTIES:
+:CUSTOM_ID: fallgren2019annotate
+:YEAR:     2019
+:AUTHOR:   Fallgren, Per and Malisz, Zofia and Edlund, Jens
+:END:
+
+** READ An investigation of deep neural network architectures for language recognition in indian languages.
+CLOSED: [2020-12-20 Sun 16:14]
+:PROPERTIES:
+:CUSTOM_ID: mounika2016investigation
+:YEAR:     2016
+:AUTHOR:   Mounika, KV and Achanta, Sivanand and Lakshmi, HR and Gangashetty, Suryakanth V and Vuppala, Anil Kumar
+:END:
+
 ** READ LibriTTS: A corpus derived from librispeech for text-to-speech
 CLOSED: [2020-06-17 Wed 00:00]
 :PROPERTIES:
@@ -653,6 +702,22 @@ Partial notes:
    weight pushing and then running the classical algorithm.
 
 * Language
+
+** READ ST-BERT: Cross-modal Language Model Pre-training For End-to-end Spoken Language Understanding
+CLOSED: [2020-12-20 Sun 16:16]
+:PROPERTIES:
+:CUSTOM_ID: kim2020st
+:YEAR:     2020
+:AUTHOR:   Kim, Minjeong and Kim, Gyuwan and Lee, Sang-Woo and Ha, Jung-Woo
+:END:
+
+** READ FastFormers: Highly Efficient Transformer Models for Natural Language Understanding
+CLOSED: [2020-12-20 Sun 16:16]
+:PROPERTIES:
+:CUSTOM_ID: kim2020fastformers
+:YEAR:     2020
+:AUTHOR:   Kim, Young Jin and Awadalla, Hany Hassan
+:END:
 
 ** READ On the Cross-lingual Transferability of Monolingual Representations
 CLOSED: [2019-10-29 Tue 11:56]
