@@ -1975,6 +1975,14 @@ I can probably put items in here under the following categories:
 4. Physics
 5. Popular science (the catch-all section)
 
+*** READ Little Book of Conflict Transformation: Clear Articulation Of The Guiding Principles By A Pioneer In The Field
+CLOSED: [2020-12-25 Fri 23:23]
+:PROPERTIES:
+:AUTHOR:   John Paul Lederach
+:ADDED:    [2020-12-25]
+:GOODREADS: https://www.goodreads.com/book/show/355318.Little_Book_of_Conflict_Transformation
+:END:
+
 *** Resilient: How to Grow an Unshakable Core of Calm, Strength, and Happiness
 :PROPERTIES:
 :AUTHOR:   Forrest Hanson
