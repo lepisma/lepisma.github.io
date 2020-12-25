@@ -22,6 +22,12 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Honesty can never be forced.
+
+#+HTML:<footer>﻿Little Book of Conflict Transformation</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 For, in the past, nothing is irretrievably lost but everything irrevocably
 stored.
 
