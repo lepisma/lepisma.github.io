@@ -1970,6 +1970,13 @@ CLOSED: [2018-02-05 Mon 01:18]
 Creating a new section for psychology. I might have to move few books from
 philosophy section to here.
 
+*** Behave: The Biology of Humans at Our Best and Worst
+:PROPERTIES:
+:AUTHOR:   Robert M. Sapolsky
+:ADDED:    [2020-12-26]
+:AMAZON:   https://www.amazon.in/Behave-Biology-Humans-Best-Worst/dp/1594205078
+:END:
+
 *** The Principles of Psychology, Vol. 2
 :PROPERTIES:
 :AUTHOR:   William James
