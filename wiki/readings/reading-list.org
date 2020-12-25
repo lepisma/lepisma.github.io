@@ -1966,14 +1966,59 @@ CLOSED: [2018-02-05 Mon 01:18]
 :GOODREADS: https://www.goodreads.com/book/show/24113
 :END:
 
-** Uncategorized
-I can probably put items in here under the following categories:
+** Psychology
+Creating a new section for psychology. I might have to move few books from
+philosophy section to here.
 
-1. Philosophy
-2. Social science/history/politics
-3. Skepticism/rationality
-4. Physics
-5. Popular science (the catch-all section)
+*** The Principles of Psychology, Vol. 2
+:PROPERTIES:
+:AUTHOR:   William James
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/Principles-Psychology-Vol-002/dp/0486203824/
+:END:
+
+*** The Principles of Psychology, Vol. 1
+:PROPERTIES:
+:AUTHOR:   William James
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/dp/0486203816
+:END:
+
+*** Describing inner Experience?
+:PROPERTIES:
+:AUTHOR:   Russell T Hurlburt
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/dp/0262083663
+:END:
+
+*** Psychological Types
+:PROPERTIES:
+:AUTHOR:   C G Jung Dr, H G Baynes
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/dp/1614279705
+:END:
+
+*** Emotional Intelligence: 10th Anniversary Edition; Why It Can Matter More Than IQ
+:PROPERTIES:
+:AUTHOR:   Daniel Goleman
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/dp/055380491X
+:END:
+
+*** The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change
+:PROPERTIES:
+:AUTHOR:   Stephen R. Covey
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/dp/0743269519
+:END:
+
+** Uncategorized
+*** Language: An Introduction to the Study of Speech
+:PROPERTIES:
+:AUTHOR:   Edward Sapir
+:ADDED:    [2020-12-25]
+:AMAZON:   https://www.amazon.in/dp/1108063780
+:END:
 
 *** READ Little Book of Conflict Transformation: Clear Articulation Of The Guiding Principles By A Pioneer In The Field
 CLOSED: [2020-12-25 Fri 23:23]
