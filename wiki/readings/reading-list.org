@@ -1340,7 +1340,7 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
-*** READ Causation: A Very Short Introduction (Very Short Introductions)
+*** READ Causation: A Very Short Introduction
 CLOSED: [2020-11-29 Sun 12:33]
 :PROPERTIES:
 :AUTHOR:   Stephen Mumford, Rani Lill Anjum
