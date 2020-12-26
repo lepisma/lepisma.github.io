@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-12-26T12:06:10+0530</updated>
+  <updated>2020-12-26T13:06:46+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Books Read in 2020</title>
+    <link href="https://lepisma.xyz/journal/2020/12/26/books-read-in-2020/index.html"/>
+    <updated>2020-12-26</updated>
+  </entry>
   <entry>
     <title>Plan like an Engineer</title>
     <link href="https://lepisma.xyz/journal/2020/12/20/plan-like-an-engineer/index.html"/>
