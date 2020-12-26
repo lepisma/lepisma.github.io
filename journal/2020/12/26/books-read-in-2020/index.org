@@ -1,0 +1,44 @@
+#+TITLE: Books Read in 2020
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, books
+
+Obligatory year end post on books I read. Very dull year overall. I am targeting
+my best for the next year, it's been around 2 years of slump. The list of books
+read in 2020 follows. Highlighted ones are my picks for the year:
+
+#+BEGIN_SRC emacs-lisp :exports results :results value list
+  (defun org-get-closed-time-str ()
+    "Return closed time of the current entry as a string."
+    (let ((ent-body (buffer-substring-no-properties (org-entry-beginning-position) (org-entry-end-position))))
+      (if (string-match org-closed-time-regexp ent-body)
+          (match-string-no-properties 1 ent-body))))
+
+  (with-current-buffer (find-file-noselect user-books-file)
+    (let ((items
+           (org-map-entries
+            (lambda () (cons (nth 4 (org-heading-components)) (org-get-closed-time-str)))))
+          (year "2020"))
+      (->> items
+         (-remove (lambda (it)
+                    (or (null (cdr it))
+                        (not (string-prefix-p year (cdr it))))))
+         (-sort (lambda (a b) (string-lessp (cdr a) (cdr b))))
+         (-map #'car))))
+#+END_SRC
+
+#+RESULTS:
+1. {{{color-bg(yellow, The Shadow of the Wind)}}}
+2. And the Mountains Echoed
+3. {{{color-bg(yellow, The Noonday Demon: An Atlas of Depression)}}}
+4. Persepolis: The Story of a Childhood
+5. The Stranger
+6. Guide to Managerial Communication: Effective Business Writing and Speaking
+7. Notebooks of the Mind : Explorations of Thinking
+8. Shape Up: Stop Running in Circles and Ship Work that Matters
+9. {{{color-bg(yellow, Lord of the Flies)}}}
+10. How to Win Friends and Influence People
+11. On Writing Well: The Classic Guide to Writing Nonfiction
+12. The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers
+13. Causation: A Very Short Introduction
+14. Man's Search for Meaning
+15. Little Book of Conflict Transformation
