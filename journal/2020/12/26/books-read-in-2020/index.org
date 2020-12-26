@@ -3,8 +3,8 @@
 #+TAGS: personal, books
 #+PILE: dropcap:nil
 
-Obligatory year end post on books I read. The list of books read in 2020
-follows. Highlighted ones are my picks for the year.
+Obligatory year end post on books I read this year. Highlighted ones are my
+favorites.
 
 #+BEGIN_SRC emacs-lisp :exports results :results value list
   (defun org-get-closed-time-str ()
