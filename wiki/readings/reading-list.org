@@ -1977,7 +1977,7 @@ philosophy section to here.
 :AMAZON:   https://www.amazon.in/Introducing-Psychology-Brain-Person-Group/dp/9332544905/
 :END:
 
-*** Behave: The Biology of Humans at Our Best and Worst
+*** TOREAD Behave: The Biology of Humans at Our Best and Worst
 :PROPERTIES:
 :AUTHOR:   Robert M. Sapolsky
 :ADDED:    [2020-12-26]
@@ -2027,6 +2027,27 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** Linguistic Bodies: The Continuity Between Life and Language
+:PROPERTIES:
+:AUTHOR:   Ezequiel A. Di Paolo, Elena Clare Cuffari, Hanne De Jaegher
+:ADDED:    [2020-12-26]
+:GOODREADS: https://www.goodreads.com/book/show/39644139-linguistic-bodies
+:END:
+
+*** Speaking Our Minds: Why human communication is different, and how language evolved to make it special
+:PROPERTIES:
+:AUTHOR:   Thom Scott-Phillips
+:ADDED:    [2020-12-26]
+:GOODREADS: https://www.goodreads.com/book/show/22609703-speaking-our-minds
+:END:
+
+*** TOREAD Causality
+:PROPERTIES:
+:AUTHOR:   Judea Pearl
+:ADDED:    [2020-12-26]
+:AMAZON:   https://www.amazon.in/Causality-Judea-Pearl/dp/052189560X
+:END:
+
 *** Language: An Introduction to the Study of Speech
 :PROPERTIES:
 :AUTHOR:   Edward Sapir
@@ -2071,7 +2092,7 @@ CLOSED: [2020-11-16 Mon 13:29]
 :GOODREADS: https://www.goodreads.com/book/show/53343.On_Writing_Well
 :END:
 
-*** TOREAD The Best Service Is No Service: How to Liberate Your Customers from Customer Service, Keep Them Happy, and Control Costs
+*** The Best Service Is No Service: How to Liberate Your Customers from Customer Service, Keep Them Happy, and Control Costs
 :PROPERTIES:
 :AUTHOR:   Bill Price, David Jaffe
 :ADDED:    [2020-09-27]
