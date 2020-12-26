@@ -2034,6 +2034,20 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** The Death and Life of Great American Cities
+:PROPERTIES:
+:AUTHOR:   Jane Jacobs
+:ADDED:    [2020-12-26]
+:AMAZON:   https://www.amazon.in/Death-Life-Great-American-Cities/dp/067974195X
+:END:
+
+*** Getting What You Came For: The Smart Student's Guide to Earning an M.A. or a Ph.D.
+:PROPERTIES:
+:AUTHOR:   Robert Peters
+:ADDED:    [2020-12-26]
+:AMAZON:   https://www.amazon.in/Getting-What-You-Came-Students/dp/0374524777
+:END:
+
 *** Linguistic Bodies: The Continuity Between Life and Language
 :PROPERTIES:
 :AUTHOR:   Ezequiel A. Di Paolo, Elena Clare Cuffari, Hanne De Jaegher
