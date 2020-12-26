@@ -1,10 +1,10 @@
 #+TITLE: Books Read in 2020
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, books
+#+PILE: dropcap:nil
 
-Obligatory year end post on books I read. Very dull year overall. I am targeting
-my best for the next year, it's been around 2 years of slump. The list of books
-read in 2020 follows. Highlighted ones are my picks for the year:
+Obligatory year end post on books I read. The list of books read in 2020
+follows. Highlighted ones are my picks for the year.
 
 #+BEGIN_SRC emacs-lisp :exports results :results value list
   (defun org-get-closed-time-str ()
@@ -42,3 +42,7 @@ read in 2020 follows. Highlighted ones are my picks for the year:
 13. Causation: A Very Short Introduction
 14. Man's Search for Meaning
 15. Little Book of Conflict Transformation
+
+Very dull year overall, both in terms of how much I read and how many concepts I
+was able to explore. I am targeting my best for the next year, it's been around
+2 years of slump.
