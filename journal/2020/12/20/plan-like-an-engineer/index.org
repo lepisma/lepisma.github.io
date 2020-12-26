@@ -2,12 +2,12 @@
 #+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: work
 
-People at management level usually have disregard for engineers regarding
-planning capabilities. The most common argument is that engineers are working at
-lower levels and therefore are not great at observing high level issues, this
-makes them bad at thinking and planning. While this concern is correct in its
-own way, it implies that thinking and planning are skills that are only
-developed once you are working at a higher level of abstraction.
+People at management level usually disregard engineers' planning capabilities.
+They say engineers /work/ at lower levels and therefore are not great at observing
+high level issues, this makes them bad at thinking and planning. While this
+argument is correct in its own way, it implies that thinking and planning are
+skills that are only developed once you are working at a higher level of
+abstraction.
 
 I have had drastically different experiences. I have seen some of the best acts
 of thinking and planning done among my engineering peers. And it's beyond scale
