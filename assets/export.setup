@@ -47,4 +47,5 @@
 #+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
 #+MACRO: color @@html:<font color="$1">$2</font>@@
 #+MACRO: color-bg @@html:<font style="background-color: $1">$2</font>@@
+#+MACRO: color-both @@html:<font color="$1" style="background-color: $2">$3</font>@@
 #+MACRO: wavy @@html:<span style="text-decoration-line: underline; text-decoration-style: wavy">$1</span>@@

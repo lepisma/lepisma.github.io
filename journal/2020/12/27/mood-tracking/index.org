@@ -1,0 +1,141 @@
+#+TITLE: Mood Tracking
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+Since September 12th, 2020, I started keeping mood logs. The entries are spread
+across various files for quick accessibility. Here is an example from my phone
+log:
+
+#+begin_example
+ * log
+:PROPERTIES:
+:CREATED:  [2020-11-29 Sun 02:05]
+:ID:       030e99b6-5e1d-4d69-b3ab-7f3e333aa185
+:END:
+
+I like this book. #mood(0) +reading 
+#+end_example
+
+I started tracking mood to better understand connections of various events with
+my internal states. The hope is to manage a few of those internal states better.
+I have been doing a lot more than mood tracking but I find this to be the
+simplest habit to build and a good way to move towards fancier interventions.
+Whenever I feel something is happening, I make a note of the event along with a
+mood tag that lies in ={-2, -1, 0, +1, +2}=. {{{color-bg(#dddddd, 0 means
+neutral)}}} . {{{color-bg(#9ad3bc, +1 maps to being happy)}}}.
+{{{color-both(white, #16a596, +2 is a state where I can't be happier\, these are
+special moments that I keep in my memory)}}}. On the negative side,
+{{{color-bg(#ffa62b, -1 maps to states that I can recover from after taking some
+time)}}}. {{{color-both(white, #ec5858, -2 maps to terrible meltdowns\, either
+based on externalities or internal aberrations.)}}}
+
+Since my way of tracking mood is event based, I have days where there are no
+entries, and days where there are many entries. Aggregation becomes a problem
+but I believe a small multiple based on min, mean, and max works. Below is one
+such view:
+
+#+CAPTION: Min, mean and max statistics of mood scores. Mean values are rounded to integers. Click to zoom.
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./mood.png]]
+
+After tracking for a month or so, I went to a feeling wheel and tried getting
+more granular view. Here is the tree mapped to mood score colors from the plot.
+Not coloring the neutral items:
+
+1. {{{color-bg(#ffa62b, Fearful 》 Scared 》 Helpless)}}}
+2. {{{color-bg(#ffa62b, Fearful 》 Scared 》 Frightened)}}}
+3. {{{color-bg(#ffa62b, Fearful 》 Anxious 》 Overwhelmed)}}}
+4. Fearful 》 Anxious 》 Worried
+5. Fearful 》 Insecure 》 Inadequate
+6. {{{color-bg(#ffa62b, Fearful 》 Insecure 》 Inferior)}}}
+7. Fearful 》 Weak 》 Worthless
+8. Fearful 》 Weak 》 Insignificant
+9. {{{color-bg(#ffa62b, Fearful 》 Rejected 》 Excluded)}}}
+10. {{{color-bg(#ffa62b, Fearful 》 Rejected 》 Persecuted)}}}
+11. Fearful 》 Threatened 》 Nervous
+12. {{{color-bg(#ffa62b, Fearful 》 Threatened 》 Exposed)}}}
+13. Angry 》 Let down 》 Betrayed
+14. {{{color-bg(#ffa62b, Angry 》 Let down 》 Resentful)}}}
+15. {{{color-bg(#ffa62b, Angry 》 Humiliated 》 Disrespected)}}}
+16. Angry 》 Humiliated 》 Ridiculed
+17. Angry 》 Bitter 》 Indignant
+18. Angry 》 Bitter 》 Violated
+19. Angry 》 Mad 》 Furious
+20. {{{color-bg(#ffa62b, Angry 》 Mad 》 Jealous)}}}
+21. Angry 》 Aggressive 》 Provoked
+22. Angry 》 Aggressive 》 Hostile
+23. Angry 》 Frustrated 》 Infuriated
+24. Angry 》 Frustrated 》 Annoyed
+25. Angry 》 Distant 》 Withdrawn
+26. Angry 》 Distant 》 Numb
+27. Angry 》 Critical 》 Skeptical
+28. Angry 》 Critical 》 Dismissive
+29. Disgusted 》 Disapproving 》 Judgmental
+30. Disgusted 》 Disapproving 》 Embarrassed
+31. Disgusted 》 Disappointed 》 Appalled
+32. Disgusted 》 Disappointed 》 Revolted
+33. Disgusted 》 Awful 》 Nauseated
+34. Disgusted 》 Awful 》 Detestable
+35. Disgusted 》 Repelled 》 Horrified
+36. Disgusted 》 Repelled 》 Hesitant
+37. Sad 》 Hurt 》 Embarrassed
+38. {{{color-bg(#ffa62b, Sad 》 Hurt 》 Disappointed)}}}
+39. {{{color-bg(#ffa62b, Sad 》 Depressed 》 Inferior)}}}
+40. Sad 》 Depressed 》 Empty
+41. {{{color-bg(#ffa62b, Sad 》 Guilty 》 Remorseful)}}}
+42. {{{color-bg(#ffa62b, Sad 》 Guilty 》 Ashamed)}}}
+43. {{{color-bg(#ffa62b, Sad 》 Despair 》 Grief)}}}
+44. {{{color-bg(#ffa62b, Sad 》 Despair 》 Powerless)}}}
+45. {{{color-bg(#ffa62b, Sad 》 Vulnerable 》 Victimized)}}}
+46. Sad 》 Vulnerable 》 Fragile
+47. {{{color-bg(#ffa62b, Sad 》 Lonely 》 Isolated)}}}
+48. {{{color-both(white, #ec5858, Sad 》 Lonely 》 Abandoned)}}}
+49. Happy 》 Optimistic 》 Inspired
+50. Happy 》 Optimistic 》 Hopeful
+51. {{{color-bg(#9ad3bc, Happy 》 Trusting 》 Intimate)}}}
+52. Happy 》 Trusting 》 Sensitive
+53. Happy 》 Peaceful 》 Thankful
+54. {{{color-bg(#9ad3bc, Happy 》 Peaceful 》 Loving)}}}
+55. {{{color-bg(#9ad3bc, Happy 》 Powerful 》 Creative)}}}
+56. {{{color-bg(#9ad3bc, Happy 》 Powerful 》 Courageous)}}}
+57. {{{color-bg(#9ad3bc, Happy 》 Accepted 》 Valued)}}}
+58. Happy 》 Accepted 》 Respected
+59. Happy 》 Proud 》 Confident
+60. Happy 》 Proud 》 Successful
+61. Happy 》 Interested 》 Inquisitive
+62. Happy 》 Interested 》 Curious
+63. Happy 》 Content 》 Joyful
+64. Happy 》 Content 》 Free
+65. {{{color-bg(#9ad3bc, Happy 》 Playful 》 Aroused)}}}
+66. {{{color-bg(#9ad3bc, Happy 》 Playful 》 Cheeky)}}}
+67. Surprised 》 Excited 》 Energetic
+68. Surprised 》 Excited 》 Eager
+69. {{{color-bg(#9ad3bc, Surprised 》 Amazed 》 Awe)}}}
+70. {{{color-bg(#9ad3bc, Surprised 》 Amazed 》 Astonished)}}}
+71. Surprised 》 Confused 》 Perplexed
+72. Surprised 》 Confused 》 Disillusioned
+73. Surprised 》 Startled 》 Dismayed
+74. Surprised 》 Startled 》 Shocked
+75. Bad 》 Tired 》 Unfocused
+76. Bad 》 Tired 》 Sleepy
+77. Bad 》 Stressed 》 Out of control
+78. Bad 》 Stressed 》 Overwhelmed
+79. Bad 》 Busy 》 Rushed
+80. Bad 》 Busy 》 Pressured
+81. Bad 》 Bored 》 Apathetic
+82. Bad 》 Bored 》 Indifferent
+
+-----
+
+A few observations:
++ The =0= and =+1= feelings interfere constructively to get to =+2=
++ I am clumping a lot of items under =0=. This needs to change in some form since
+  I don't think the current score definition will be consistent for long term.
++ Feelings don't represent all of what is tracked in mood score. Or they don't
+  help to completely understand the score trends. There is a lot of context
+  missing.
+
+I feel mood tracking has not been helping me in a direct way but it definitely
+is impacting things indirectly. If you want a hackable solution for yourself,
+start with [[https://nomie.app/][nomie]]. Its data format is simple to parse and allows building custom
+workflows and tools very easily.
