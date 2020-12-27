@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2020-12-26T13:12:14+0530</updated>
+  <updated>2020-12-27T16:01:08+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Mood Tracking</title>
+    <link href="https://lepisma.xyz/journal/2020/12/27/mood-tracking/index.html"/>
+    <updated>2020-12-27</updated>
+  </entry>
   <entry>
     <title>Books Read in 2020</title>
     <link href="https://lepisma.xyz/journal/2020/12/26/books-read-in-2020/index.html"/>
