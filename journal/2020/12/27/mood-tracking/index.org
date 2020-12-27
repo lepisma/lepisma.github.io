@@ -39,8 +39,8 @@ such view:
 [[file:./mood.png]]
 
 After tracking for a month or so, I went to a feeling wheel and tried getting
-more granular view. Here is the tree mapped to mood score colors from the plot,
-not coloring the neutral items:
+more granular view. Here is the tree mapped to mood score colors from the plot
+without coloring the neutral items:
 
 1. {{{color-bg(#ffa62b, Fearful 》 Scared 》 Helpless)}}}
 2. {{{color-bg(#ffa62b, Fearful 》 Scared 》 Frightened)}}}
@@ -111,7 +111,7 @@ not coloring the neutral items:
 67. Surprised 》 Excited 》 Energetic
 68. Surprised 》 Excited 》 Eager
 69. {{{color-bg(#9ad3bc, Surprised 》 Amazed 》 Awe)}}}
-70. {{{color-bg(#9ad3bc, Surprised 》 Amazed 》 Astonished)}}}
+70. Surprised 》 Amazed 》 Astonished
 71. Surprised 》 Confused 》 Perplexed
 72. Surprised 》 Confused 》 Disillusioned
 73. Surprised 》 Startled 》 Dismayed
