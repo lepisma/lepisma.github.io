@@ -22,6 +22,25 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+leadership silences the anxiety of followers.
+
+#+HTML:<footer>﻿Leadership: A Very Short Introduction (Grint, Keith)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+it only takes the good follower to do nothing for leadership to fail.
+
+#+HTML:<footer>﻿Leadership: A Very Short Introduction (Grint, Keith)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+‘the real voyage of discovery consists not in seeking new landscapes but in
+having new eyes’.
+
+#+HTML:<footer>﻿Leadership: A Very Short Introduction (Grint, Keith)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Honesty can never be forced.
 
 #+HTML:<footer>﻿Little Book of Conflict Transformation</footer>

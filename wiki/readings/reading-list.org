@@ -2041,6 +2041,16 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** READ Leadership: A Very Short Introduction (Very Short Introductions)
+CLOSED: [2021-01-01 Fri 21:55]
+:PROPERTIES:
+:AUTHOR:   Keith Grint
+:ADDED:    [2021-01-01]
+:AMAZON:   https://www.amazon.in/Leadership-Very-Short-Introduction-Introductions/dp/0199569916
+:END:
+
+Another VSI that I liked.
+
 *** The Death and Life of Great American Cities
 :PROPERTIES:
 :AUTHOR:   Jane Jacobs
