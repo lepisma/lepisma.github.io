@@ -9,7 +9,7 @@ effective. Everywhere. Something that might help? Identifying lies.
 
 In case you didn't know '/there are only 3 northern white rhinos left on the
 planet/'. There were 5 since I started counting. One died [[http://edition.cnn.com/2015/07/29/world/northern-rhino-dies/][earlier this year]].
-Another one, [[http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/][last month]]. It's closer relative, southern white rhino, is
+Another one, [[http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/][last month]]. Its closer relative, southern white rhino, is
 relatively safe as of this writing but you never know. Rhinos are ominously
 popular targets for poachers. Along with Bengal Tiger (skin) and Elephant
 (teeth), this animal (horns) is one of the first that comes to mind when I hear
@@ -53,7 +53,7 @@ statements like this (not disclosing the source)
   vegetarian food reduces domestic violence.
 #+END_QUOTE
 
-Now, its not about the people who can /cure/ homosexuality, the one who can tell
+Now, it's not about the people who can /cure/ homosexuality, the one who can tell
 we are going to die in future, the one who can guarantee 700% reduction in fat
 or the realists with a conservative 100%. It is about how /we/ see these events
 and infer. I will be willing to believe the given statement if the person who is
@@ -131,10 +131,10 @@ judgment in one particular direction or another.
 #+HTML:<footer>Richard P. Feynman</footer>
 #+END_QUOTE
 
-Many argue that its important to use dumbed down logic to reach a mass audience.
-But, there is a difference between /dumbed down/ and /simplified/. One misleads
-people in thinking /they know the actual thing/ while the other make them realize
-/what they don't know/.
+Many argue that it's important to use dumbed down logic to reach a mass
+audience. But, there is a difference between /dumbed down/ and /simplified/. One
+misleads people in thinking /they know the actual thing/ while the other make them
+realize /what they don't know/.
 
 The major problems with the propagators are probably not the numerous questions
 raised, but the ones unanswered because their claims are /unfalsifiable/. This
@@ -146,7 +146,7 @@ Many a times, you /can't avoid/ irrationality. But, sometimes you /can't afford/
 There is a huge responsibility on you when you are touching dead serious topics
 involving lives, deaths and crowd emotions. We can't afford statements like
 /"AIDS can be cured through yoga"/, but while we can, let's ask if these
-statements have enough evidences to answer the questions.
+statements have enough evidence to answer the questions.
 
 --------------
 
