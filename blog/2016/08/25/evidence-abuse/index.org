@@ -18,7 +18,7 @@ related to science.
 #+END_page-intro
 
 #+BEGIN_QUOTE
-  Warning: This post contains strong language at places. Its also long.
+  Warning: This post contains strong language at places. It's also long.
 #+END_QUOTE
 
 Weird things happen when you are at home. You get to talk to /real/ people and get
@@ -37,12 +37,12 @@ about. Consider vegetarian and non-vegetarian eating habits. Simplest of the
 arguments will split opinions among factions. The neutrals are easy to get
 baptized to either side. Only when you give enough time, the fog begins to
 clear. Till then, the arguments go on like meteor showers. Never hitting
-anything. Its not necessary that one side is ultimately right and other is
+anything. It's not necessary that one side is ultimately right and other is
 wrong. But there is something special about the ways bad arguments work here,
 which makes it easy to know who is putting real arguments and who is shuffling
 flip-flops. Meanwhile the flip-flop guy isn't aware of things and has trust on
 the points of virtue of his / her cause. This makes it hard. /"Hey you are being
-good, but its not the right way"/, ever heard this work?
+good, but it's not the right way"/, ever heard this work?
 
 Things boil down to poor journalism and communication. Information communication
 is how you learn about things and use them to make arguments. Poor examples of
@@ -52,7 +52,7 @@ here that I repeatedly face.
 Before I begin, I want to specifically focus on the point that the topic of my
 interest in all these cases, for this post, is the /presentation of information/
 and not the information itself. This post might also look like doing undue
-exaggeration of the issue, I will try to convince you its not the case. Also, I
+exaggeration of the issue, I will try to convince you it's not the case. Also, I
 am no expert on many things and have been involved in stupidity pretty much
 regularly. So don't take things here as absolute truths, but opinions of sort.
 
@@ -112,7 +112,7 @@ it as a /'vaccine for cancer'/. Go on. Mail me papers. Convince me. At least an
 otherwise whats stopping them from solving the whole world's cancer with a
 [[https://duckduckgo.com/?t=lm&q=buy+melatonin+online][cheap, over-the-counter medicine]]?
 
-Oh, and you can also find pretty damn sure articles that say its a miraculous
+Oh, and you can also find pretty damn sure articles that say it's a miraculous
 thing against cancer. We will talk about those cases in section 2.
 
 How do you communicate a research which is not strongly established? Obviously
@@ -166,7 +166,7 @@ a system, he / she uses a model which is approachable by the /target audience/.
 - Here is the actual documentation with mechanisms and /'assumptions'/.
 
 Notice the quoted words. You can't abstract away models without allowing
-uncertainties, its a myth loved by most of the promoters of ancient-wisdom and
+uncertainties, it's a myth loved by most of the promoters of ancient-wisdom and
 preachers that I know of. If you are able to, you model was fat and bloated. A
 good communication lets you know at what level of abstraction you are reading
 and how to shift up gears if you can afford it. More importantly, it makes you
@@ -179,7 +179,7 @@ about these. The assumptions are laid bare and the competing ideas are visible
 to naked eyes. The person responsible for popularizing the model passes these on
 faithfully to a higher abstraction level. The results are not statistically
 significant? No issue. /"Mate, the scientists tried to compare this. The results
-are slightly negative but more inconclusive. Though its nice to be safe"/.
+are slightly negative but more inconclusive. Though it's nice to be safe"/.
 
 Whenever you see an absolute truth walking down, descending from heaven itself
 to grace the internet with its aura, you got a task at hand. Fish out for
@@ -230,7 +230,7 @@ sender), despite my respect for the concern of the sender:
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./cell_phones.png]] 
 
-Evidence keeps wild information mutations in check. Its not so much about
+Evidence keeps wild information mutations in check. It's not so much about
 actually putting up the citations before passing the message. Citations can also
 be successfully abstracted. More important is to ensure that there is no drought
 of evidence. Ensure that there are sufficient amount of them before passing on
@@ -264,7 +264,7 @@ food items. The issues included bad effects of microwave on food and
 carcinogenic quality of plastic + microwave interaction. Without touching the
 topic, let me tell you the state of the final facebook post. There are around 20
 citations floating around. Many of which are not going to affect the arguments.
-Sadly, the original link shared was enough to convince most of us that its good
+Sadly, the original link shared was enough to convince most of us that it's good
 science. Citations, references, geeky words, what else do you need? I am sure
 not more than 5 (not sure about the number) guys actually went through, or
 needed to look at the citations. Also, I can assure you, many adventurous people
@@ -277,7 +277,7 @@ Let John Oliver [[https://youtu.be/0Rnq1NpHdmw][explain]] to you what kind of ca
 #+HTML: <iframe src="https://www.youtube.com/embed/0Rnq1NpHdmw" frameborder="0" allowfullscreen class="video-iframe"></iframe>
 #+END_aside
 
-Its different from the first situation. You ask for evidence and the first guy
+It's different from the first situation. You ask for evidence and the first guy
 will realize the lack and would go on the defensive. This case will throw so
 many of them, however shallow, you will get almost convinced of the argument
 because you can't gather enough time to accept / refute them. The evidence feels
@@ -295,12 +295,12 @@ spilling from the mouths of promoters. Of course not all of them.
 Take that microwave oven case. Here is the [[http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145][link]] that was shared. If you actually
 read that link, you might have already reached [[http://articles.mercola.com/sites/articles/archive/2010/05/18/microwave-hazards.aspx][this article]]. See how the content
 itself is similar to the melatonin message, but the presentation is different.
-Obviously, this link will also get to its level of WhatsApp forward, but its all
-pro-science in the article. This one is trying hard to stand on the shoulders of
-giants. Evidence, references, articles, numbers, bio-photons? food value?
-bio-information from sun? Microwave ban in Russia? dioxins? Most of the times,
-these get convincing because of the jargons, our fear to look beyond them and
-cherry picked exaggerations from quacks.
+Obviously, this link will also get to its level of WhatsApp forward, but it's
+all pro-science in the article. This one is trying hard to stand on the
+shoulders of giants. Evidence, references, articles, numbers, bio-photons? food
+value? bio-information from sun? Microwave ban in Russia? dioxins? Most of the
+times, these get convincing because of the jargons, our fear to look beyond them
+and cherry picked exaggerations from quacks.
 
 Go to some skeptic forums, they have good sources of information to read from
 and they welcome heavy skepticism. Go to [[http://rationalwiki.org/wiki/Microwave_oven][RationalWiki]], search [[https://www.reddit.com/r/skeptic/search?q=microwave&restrict_sr=on&sort=relevance&t=all][/r/skeptic]] and
@@ -313,9 +313,9 @@ arguments. Hell! I don't even want to link so many articles debunking this. It
 would be sad. And ironic. You might say well, how do you know which links are
 right, which links are wrong? I don't. You can never accept any content just as
 it is. But, you can have a prior belief about certain kind of content which
-makes you focus your skepticism where its most needed. Go on, read all the links
-you find. I am assured, after a while you can tell whether an article has a
-higher chance of pseudo-science just by looking at its CSS. Its like finding
+makes you focus your skepticism where it's most needed. Go on, read all the
+links you find. I am assured, after a while you can tell whether an article has
+a higher chance of pseudo-science just by looking at its CSS. It's like finding
 your perfect life partner. A beautiful breeze will touch you and put a smile on
 your face (No kidding!).
 
@@ -330,8 +330,8 @@ a pinch of skepticism and the house of cards is destroyed.
 Consider homeopathy. Something that's still pretty much established because
 people didn't try, or weren't able to go through the 'science' thrown at them.
 In case you are missing out, please read the [[https://en.wikipedia.org/wiki/Homeopathic_dilutions][basic principle]] of homeopathy. Same
-case. Many of us claim its the real thing, without actually knowing how and why,
-just because we were somehow 'convinced' of its sciency-ness.
+case. Many of us claim it's the real thing, without actually knowing how and
+why, just because we were somehow 'convinced' of its sciency-ness.
 
 #+BEGIN_QUOTE
 Water, water, every where, Nor any drop to drink
@@ -399,7 +399,7 @@ Anyway, I see this message promoting two things
 - You shouldn't feel a need to question anything if you are supportive of the
   first point.
 
-You could argue that its just an example of healthy rivalry. But, do you see
+You could argue that it's just an example of healthy rivalry. But, do you see
 this message driving people to go for the real knowledge about what should they
 use for cleaning teeth, and in which form (/buy our toothpastes/)? I don't see it.
 Maybe you could pry it out if someone is willing to reveal it. But do you think
@@ -456,8 +456,9 @@ you can get American?"/ (I read this on billboards in Varanasi and Lucknow, can'
 seem to find it on internet. So, can't assure if it was put by the company or
 some local store. In case you have read it too, please send me a pic for
 inclusion). Is this a good reason? Since I am not touching anything sensitive,
-we can get neutral and reasonable answers for this particular advertisement. Its
-no. You can have certain tendencies, but you don't make decisions using them.
+we can get neutral and reasonable answers for this particular advertisement.
+It's a no. You can have certain tendencies, but you don't make decisions using
+them.
 
 The models we talked about, there can be many kinds that work. There are many
 lapses in almost all the backing frameworks. Some accept the lapses, make way
@@ -544,12 +545,12 @@ arguments.
 - Scientists[1] say, this leads[2] to[3] that[4]. References.
 - This, because [/insert your cult leader's wet dream/]
 
-Ask yourself, if these contents pass through you unchecked, will you be
-able to shed the guilt of depriving kids of genuine 'curiosity'? Guilt
-of fooling people into believing they are 'scientists'? Guilt of closing
-your eyes to the truth just because you are too lazy and want to be
-spoon fed by some know-it-all? Or maybe its all meaningless and you
-already are in a cult with mechanisms for redemption in place.
+Ask yourself, if these contents pass through you unchecked, will you be able to
+shed the guilt of depriving kids of genuine 'curiosity'? Guilt of fooling people
+into believing they are 'scientists'? Guilt of closing your eyes to the truth
+just because you are too lazy and want to be spoon fed by some know-it-all? Or
+maybe it's all meaningless and you already are in a cult with mechanisms for
+redemption in place.
 
 #+BEGIN_edits
 - Changed 'evidences' to 'evidence'. Thanks Rushil Nagda.
