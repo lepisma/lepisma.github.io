@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-07 Sun 21:04 -->
+<!-- 2021-01-03 Sun 14:25 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>White Rhinos, irrationality and other tales</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -209,77 +222,54 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2015-12-21 Mon 00:00</div>
-                                <h1>White Rhinos, irrationality and other tales</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2015-12-21 Mon 00:00</div>
+  <h1>White Rhinos, irrationality and other tales</h1>
+</div>
 </div>
 <div id="content">
 <div class='page-tags'><a href='../../..#ramble'>ramble</a> <a href='../../..#skepticism'>skepticism</a></div>
-<div class="page-intro">
+<div class="page-intro" id="orgc19f887">
 <p>
 White rhinos are down to a few just because irrational persuasions are
 effective. Everywhere. Something that might help? Identifying lies.
@@ -290,7 +280,7 @@ effective. Everywhere. Something that might help? Identifying lies.
 <p>
 <span class='dropcap'>I</span>n case you didn't know '<i>there are only 3 northern white rhinos left on the
 planet</i>'. There were 5 since I started counting. One died <a href="http://edition.cnn.com/2015/07/29/world/northern-rhino-dies/">earlier this year</a>.
-Another one, <a href="http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/">last month</a>. It's closer relative, southern white rhino, is
+Another one, <a href="http://www.wired.com/2015/11/death-endangered-rhino-leaves-three-world/">last month</a>. Its closer relative, southern white rhino, is
 relatively safe as of this writing but you never know. Rhinos are ominously
 popular targets for poachers. Along with Bengal Tiger (skin) and Elephant
 (teeth), this animal (horns) is one of the first that comes to mind when I hear
@@ -318,8 +308,8 @@ are not so important, but because <i>this</i> specific reason is prevalent in ev
 other area to an extent you would probably always underestimate.
 </p>
 
-<div id="outline-container-orgb2ba4bc" class="outline-2">
-<h2 id="sec-quacks,-advertisements-and-lies"><a id="orgb2ba4bc"></a><span class="section-number-2">1</span> Quacks, Advertisements and Lies</h2>
+<div id="outline-container-sec-quacks,-advertisements-and-lies" class="outline-2">
+<h2 id="sec-quacks,-advertisements-and-lies"><span class="section-number-2">1</span> Quacks, Advertisements and Lies</h2>
 <div class="outline-text-2" id="text-sec-quacks,-advertisements-and-lies">
 
 <p>
@@ -355,7 +345,7 @@ vegetarian food reduces domestic violence.
 </blockquote>
 
 <p>
-Now, its not about the people who can <i>cure</i> homosexuality, the one who can tell
+Now, it's not about the people who can <i>cure</i> homosexuality, the one who can tell
 we are going to die in future, the one who can guarantee 700% reduction in fat
 or the realists with a conservative 100%. It is about how <i>we</i> see these events
 and infer. I will be willing to believe the given statement if the person who is
@@ -364,8 +354,8 @@ promoting this <i>knowledge</i> can answer following questions affirmatively.
 </div>
 </div>
 
-<div id="outline-container-org8ad22ba" class="outline-2">
-<h2 id="sec-few-simple-questions"><a id="org8ad22ba"></a><span class="section-number-2">2</span> Few Simple Questions</h2>
+<div id="outline-container-sec-few-simple-questions" class="outline-2">
+<h2 id="sec-few-simple-questions"><span class="section-number-2">2</span> Few Simple Questions</h2>
 <div class="outline-text-2" id="text-sec-few-simple-questions">
 
 
@@ -388,8 +378,8 @@ testings, these are not exactly valid for <i>any</i> research.
 </p>
 </div>
 
-<div id="outline-container-org0454f38" class="outline-3">
-<h3 id="sec-few-simple-questions/what-do-the-numbers-mean?"><a id="org0454f38"></a><span class="section-number-3">2.1</span> What do the numbers mean?</h3>
+<div id="outline-container-sec-few-simple-questions/what-do-the-numbers-mean?" class="outline-3">
+<h3 id="sec-few-simple-questions/what-do-the-numbers-mean?"><span class="section-number-3">2.1</span> What do the numbers mean?</h3>
 <div class="outline-text-3" id="text-sec-few-simple-questions/what-do-the-numbers-mean?">
 
 <p>
@@ -414,8 +404,8 @@ than for B guys (next N/2)?</li>
 </div>
 </div>
 
-<div id="outline-container-orgd4c38f1" class="outline-3">
-<h3 id="sec-few-simple-questions/can-i-reproduce-the-numbers?"><a id="orgd4c38f1"></a><span class="section-number-3">2.2</span> Can I reproduce the numbers?</h3>
+<div id="outline-container-sec-few-simple-questions/can-i-reproduce-the-numbers?" class="outline-3">
+<h3 id="sec-few-simple-questions/can-i-reproduce-the-numbers?"><span class="section-number-3">2.2</span> Can I reproduce the numbers?</h3>
 <div class="outline-text-3" id="text-sec-few-simple-questions/can-i-reproduce-the-numbers?">
 
 <p>
@@ -431,8 +421,8 @@ but most of the times Q1 and Q2 hit it right.</i>
 </div>
 </div>
 
-<div id="outline-container-org2663583" class="outline-3">
-<h3 id="sec-few-simple-questions/is-the-process-fair?"><a id="org2663583"></a><span class="section-number-3">2.3</span> Is the process fair?</h3>
+<div id="outline-container-sec-few-simple-questions/is-the-process-fair?" class="outline-3">
+<h3 id="sec-few-simple-questions/is-the-process-fair?"><span class="section-number-3">2.3</span> Is the process fair?</h3>
 <div class="outline-text-3" id="text-sec-few-simple-questions/is-the-process-fair?">
 
 <p>
@@ -482,10 +472,10 @@ judgment in one particular direction or another.
 </blockquote>
 
 <p>
-Many argue that its important to use dumbed down logic to reach a mass audience.
-But, there is a difference between <i>dumbed down</i> and <i>simplified</i>. One misleads
-people in thinking <i>they know the actual thing</i> while the other make them realize
-<i>what they don't know</i>.
+Many argue that it's important to use dumbed down logic to reach a mass
+audience. But, there is a difference between <i>dumbed down</i> and <i>simplified</i>. One
+misleads people in thinking <i>they know the actual thing</i> while the other make them
+realize <i>what they don't know</i>.
 </p>
 
 <p>
@@ -501,7 +491,7 @@ Many a times, you <i>can't avoid</i> irrationality. But, sometimes you <i>can't 
 There is a huge responsibility on you when you are touching dead serious topics
 involving lives, deaths and crowd emotions. We can't afford statements like
 <i>"AIDS can be cured through yoga"</i>, but while we can, let's ask if these
-statements have enough evidences to answer the questions.
+statements have enough evidence to answer the questions.
 </p>
 
 <hr>
@@ -531,7 +521,7 @@ for me.</li>
 And sadly, the rhinoceros count is not the only thing thats going down.
 </p>
 
-<div class="edits">
+<div class="edits" id="orgd20a37c">
 <ul class="org-ul">
 <li>Thanks Gopal Sharma for suggesting ammendments to the list and other <a href="https://github.com/lepisma/lepisma.github.io/commit/c7aede536fbd2306e6172ccf35499b17e9807518">fixes</a>.</li>
 </ul>
