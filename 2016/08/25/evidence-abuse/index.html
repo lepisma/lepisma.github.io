@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-08 Fri 10:03 -->
+<!-- 2021-01-03 Sun 14:28 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abusing Evidence: Drought, Deluge and Disregard</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -159,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -209,73 +222,50 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2016-08-25 Thu 00:00</div>
-                                <h1>Abusing Evidence: Drought, Deluge and Disregard</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2016-08-25 Thu 00:00</div>
+  <h1>Abusing Evidence: Drought, Deluge and Disregard</h1>
+</div>
 </div>
 <div id="content">
 <div class='page-tags'><a href='../../../..#ramble'>ramble</a> <a href='../../../..#skepticism'>skepticism</a></div>
@@ -286,7 +276,7 @@ for the JavaScript code in this tag.
 }
 </style>
 
-<div class="page-intro">
+<div class="page-intro" id="org3baa38e">
 <p>
 Three recent events. Each trying to push psuedo-science using different
 approaches. But with a common element of grayness in how they discuss topics
@@ -297,7 +287,7 @@ related to science.
 
 <blockquote>
 <p>
-Warning: This post contains strong language at places. Its also long.
+Warning: This post contains strong language at places. It's also long.
 </p>
 </blockquote>
 
@@ -320,12 +310,12 @@ about. Consider vegetarian and non-vegetarian eating habits. Simplest of the
 arguments will split opinions among factions. The neutrals are easy to get
 baptized to either side. Only when you give enough time, the fog begins to
 clear. Till then, the arguments go on like meteor showers. Never hitting
-anything. Its not necessary that one side is ultimately right and other is
+anything. It's not necessary that one side is ultimately right and other is
 wrong. But there is something special about the ways bad arguments work here,
 which makes it easy to know who is putting real arguments and who is shuffling
 flip-flops. Meanwhile the flip-flop guy isn't aware of things and has trust on
 the points of virtue of his / her cause. This makes it hard. <i>"Hey you are being
-good, but its not the right way"</i>, ever heard this work?
+good, but it's not the right way"</i>, ever heard this work?
 </p>
 
 <p>
@@ -339,18 +329,18 @@ here that I repeatedly face.
 Before I begin, I want to specifically focus on the point that the topic of my
 interest in all these cases, for this post, is the <i>presentation of information</i>
 and not the information itself. This post might also look like doing undue
-exaggeration of the issue, I will try to convince you its not the case. Also, I
+exaggeration of the issue, I will try to convince you it's not the case. Also, I
 am no expert on many things and have been involved in stupidity pretty much
 regularly. So don't take things here as absolute truths, but opinions of sort.
 </p>
 
-<div id="outline-container-orgfa202c5" class="outline-2">
-<h2 id="drought"><a id="orgfa202c5"></a><span class="section-number-2">1</span> Drought</h2>
-<div class="outline-text-2" id="text-drought">
+<div id="outline-container-sec-drought" class="outline-2">
+<h2 id="sec-drought"><span class="section-number-2">1</span> Drought</h2>
+<div class="outline-text-2" id="text-sec-drought">
 
 
 
-<figure>
+<figure id="orgd5962bd">
 <img src="./wikipedian_protester.png" alt="wikipedian_protester.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span><a href="https://xkcd.com/285">xkcd 285</a></figcaption>
@@ -419,7 +409,7 @@ otherwise whats stopping them from solving the whole world's cancer with a
 </p>
 
 <p>
-Oh, and you can also find pretty damn sure articles that say its a miraculous
+Oh, and you can also find pretty damn sure articles that say it's a miraculous
 thing against cancer. We will talk about those cases in section 2.
 </p>
 
@@ -439,13 +429,13 @@ Hey kiddo! We simplify things so people get it, get it?
 </blockquote>
 </div>
 
-<div id="outline-container-org5e23079" class="outline-3">
-<h3 id="drought/simplification."><a id="org5e23079"></a><span class="section-number-3">1.1</span> Simplification.</h3>
-<div class="outline-text-3" id="text-drought/simplification.">
+<div id="outline-container-sec-drought/simplification." class="outline-3">
+<h3 id="sec-drought/simplification."><span class="section-number-3">1.1</span> Simplification.</h3>
+<div class="outline-text-3" id="text-sec-drought/simplification.">
 
 
 
-<figure>
+<figure id="org9e6da64">
 <img src="./simple.png" alt="simple.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 2: </span><a href="https://xkcd.com/547/">xkcd 547</a></figcaption>
@@ -496,7 +486,7 @@ different and <i>'an established theory'</i> explains the observed lift. Want mo
 
 <p>
 Notice the quoted words. You can't abstract away models without allowing
-uncertainties, its a myth loved by most of the promoters of ancient-wisdom and
+uncertainties, it's a myth loved by most of the promoters of ancient-wisdom and
 preachers that I know of. If you are able to, you model was fat and bloated. A
 good communication lets you know at what level of abstraction you are reading
 and how to shift up gears if you can afford it. More importantly, it makes you
@@ -511,7 +501,7 @@ about these. The assumptions are laid bare and the competing ideas are visible
 to naked eyes. The person responsible for popularizing the model passes these on
 faithfully to a higher abstraction level. The results are not statistically
 significant? No issue. <i>"Mate, the scientists tried to compare this. The results
-are slightly negative but more inconclusive. Though its nice to be safe"</i>.
+are slightly negative but more inconclusive. Though it's nice to be safe"</i>.
 </p>
 
 <p>
@@ -572,19 +562,19 @@ content creator).</li>
 </div>
 </div>
 
-<div id="outline-container-org56a9a1b" class="outline-3">
-<h3 id="drought/evidence"><a id="org56a9a1b"></a><span class="section-number-3">1.2</span> Evidence</h3>
-<div class="outline-text-3" id="text-drought/evidence">
+<div id="outline-container-sec-drought/evidence" class="outline-3">
+<h3 id="sec-drought/evidence"><span class="section-number-3">1.2</span> Evidence</h3>
+<div class="outline-text-3" id="text-sec-drought/evidence">
 
 
-<figure>
+<figure id="org57d0830">
 <img src="./cell_phones.png" alt="cell_phones.png" class="zoomTarget" data-closeclick="true"> 
 
 <figcaption><span class="figure-number">Figure 3: </span><a href="https://xkcd.com/925/">xkcd 925</a></figcaption>
 </figure>
 
 <p>
-Evidence keeps wild information mutations in check. Its not so much about
+Evidence keeps wild information mutations in check. It's not so much about
 actually putting up the citations before passing the message. Citations can also
 be successfully abstracted. More important is to ensure that there is no drought
 of evidence. Ensure that there are sufficient amount of them before passing on
@@ -616,12 +606,12 @@ hell lot!
 </div>
 </div>
 
-<div id="outline-container-org07923c4" class="outline-2">
-<h2 id="deluge"><a id="org07923c4"></a><span class="section-number-2">2</span> Deluge</h2>
-<div class="outline-text-2" id="text-deluge">
+<div id="outline-container-sec-deluge" class="outline-2">
+<h2 id="sec-deluge"><span class="section-number-2">2</span> Deluge</h2>
+<div class="outline-text-2" id="text-sec-deluge">
 
 
-<figure>
+<figure id="orgc0ce3e2">
 <img src="./citations.png" alt="citations.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 4: </span><a href="https://xkcd.com/906/">xkcd 906</a></figcaption>
@@ -633,7 +623,7 @@ food items. The issues included bad effects of microwave on food and
 carcinogenic quality of plastic + microwave interaction. Without touching the
 topic, let me tell you the state of the final facebook post. There are around 20
 citations floating around. Many of which are not going to affect the arguments.
-Sadly, the original link shared was enough to convince most of us that its good
+Sadly, the original link shared was enough to convince most of us that it's good
 science. Citations, references, geeky words, what else do you need? I am sure
 not more than 5 (not sure about the number) guys actually went through, or
 needed to look at the citations. Also, I can assure you, many adventurous people
@@ -642,7 +632,7 @@ To put it straight, many of us believe that there is no such thing as poor
 science.
 </p>
 
-<aside>
+<aside id="org82389ab">
 <p>
 Let John Oliver <a href="https://youtu.be/0Rnq1NpHdmw">explain</a> to you what kind of cases I am talking about.
 </p>
@@ -650,7 +640,7 @@ Let John Oliver <a href="https://youtu.be/0Rnq1NpHdmw">explain</a> to you what k
 </aside>
 
 <p>
-Its different from the first situation. You ask for evidence and the first guy
+It's different from the first situation. You ask for evidence and the first guy
 will realize the lack and would go on the defensive. This case will throw so
 many of them, however shallow, you will get almost convinced of the argument
 because you can't gather enough time to accept / refute them. The evidence feels
@@ -668,20 +658,20 @@ spilling from the mouths of promoters. Of course not all of them.
 </p>
 </div>
 
-<div id="outline-container-org986c809" class="outline-3">
-<h3 id="deluge/pseudo-science"><a id="org986c809"></a><span class="section-number-3">2.1</span> Pseudo Science</h3>
-<div class="outline-text-3" id="text-deluge/pseudo-science">
+<div id="outline-container-sec-deluge/pseudo-science" class="outline-3">
+<h3 id="sec-deluge/pseudo-science"><span class="section-number-3">2.1</span> Pseudo Science</h3>
+<div class="outline-text-3" id="text-sec-deluge/pseudo-science">
 
 <p>
 Take that microwave oven case. Here is the <a href="http://www.medicaldaily.com/microwaves-are-bad-you-5-reasons-why-microwave-oven-cooking-harming-your-health-250145">link</a> that was shared. If you actually
 read that link, you might have already reached <a href="http://articles.mercola.com/sites/articles/archive/2010/05/18/microwave-hazards.aspx">this article</a>. See how the content
 itself is similar to the melatonin message, but the presentation is different.
-Obviously, this link will also get to its level of WhatsApp forward, but its all
-pro-science in the article. This one is trying hard to stand on the shoulders of
-giants. Evidence, references, articles, numbers, bio-photons? food value?
-bio-information from sun? Microwave ban in Russia? dioxins? Most of the times,
-these get convincing because of the jargons, our fear to look beyond them and
-cherry picked exaggerations from quacks.
+Obviously, this link will also get to its level of WhatsApp forward, but it's
+all pro-science in the article. This one is trying hard to stand on the
+shoulders of giants. Evidence, references, articles, numbers, bio-photons? food
+value? bio-information from sun? Microwave ban in Russia? dioxins? Most of the
+times, these get convincing because of the jargons, our fear to look beyond them
+and cherry picked exaggerations from quacks.
 </p>
 
 <p>
@@ -696,9 +686,9 @@ arguments. Hell! I don't even want to link so many articles debunking this. It
 would be sad. And ironic. You might say well, how do you know which links are
 right, which links are wrong? I don't. You can never accept any content just as
 it is. But, you can have a prior belief about certain kind of content which
-makes you focus your skepticism where its most needed. Go on, read all the links
-you find. I am assured, after a while you can tell whether an article has a
-higher chance of pseudo-science just by looking at its CSS. Its like finding
+makes you focus your skepticism where it's most needed. Go on, read all the
+links you find. I am assured, after a while you can tell whether an article has
+a higher chance of pseudo-science just by looking at its CSS. It's like finding
 your perfect life partner. A beautiful breeze will touch you and put a smile on
 your face (No kidding!).
 </p>
@@ -710,7 +700,7 @@ a pinch of skepticism and the house of cards is destroyed.
 </p>
 
 
-<figure>
+<figure id="org856b02b">
 <img src="./dilution.png" alt="dilution.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 5: </span><a href="https://xkcd.com/765/">xkcd 765</a></figcaption>
@@ -720,8 +710,8 @@ a pinch of skepticism and the house of cards is destroyed.
 Consider homeopathy. Something that's still pretty much established because
 people didn't try, or weren't able to go through the 'science' thrown at them.
 In case you are missing out, please read the <a href="https://en.wikipedia.org/wiki/Homeopathic_dilutions">basic principle</a> of homeopathy. Same
-case. Many of us claim its the real thing, without actually knowing how and why,
-just because we were somehow 'convinced' of its sciency-ness.
+case. Many of us claim it's the real thing, without actually knowing how and
+why, just because we were somehow 'convinced' of its sciency-ness.
 </p>
 
 <blockquote>
@@ -781,9 +771,9 @@ simple reminder of photosynthesis will do.
 </div>
 </div>
 
-<div id="outline-container-org0f7023a" class="outline-2">
-<h2 id="disregard"><a id="org0f7023a"></a><span class="section-number-2">3</span> Disregard</h2>
-<div class="outline-text-2" id="text-disregard">
+<div id="outline-container-sec-disregard" class="outline-2">
+<h2 id="sec-disregard"><span class="section-number-2">3</span> Disregard</h2>
+<div class="outline-text-2" id="text-sec-disregard">
 
 <blockquote>
 <p>
@@ -819,7 +809,7 @@ first point.</li>
 </ul>
 
 <p>
-You could argue that its just an example of healthy rivalry. But, do you see
+You could argue that it's just an example of healthy rivalry. But, do you see
 this message driving people to go for the real knowledge about what should they
 use for cleaning teeth, and in which form (<i>buy our toothpastes</i>)? I don't see it.
 Maybe you could pry it out if someone is willing to reveal it. But do you think
@@ -847,7 +837,7 @@ about evidence, because they are talking much above these petty issues.
 </p>
 
 
-<figure>
+<figure id="org8383516">
 <img src="./beliefs.jpg" alt="beliefs.jpg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 6: </span><a href="https://xkcd.com/154/">xkcd 154</a></figcaption>
@@ -885,9 +875,9 @@ control of your life decisions.
 </p>
 </div>
 
-<div id="outline-container-org0e8b4d9" class="outline-3">
-<h3 id="disregard/cults"><a id="org0e8b4d9"></a><span class="section-number-3">3.1</span> Cults</h3>
-<div class="outline-text-3" id="text-disregard/cults">
+<div id="outline-container-sec-disregard/cults" class="outline-3">
+<h3 id="sec-disregard/cults"><span class="section-number-3">3.1</span> Cults</h3>
+<div class="outline-text-3" id="text-sec-disregard/cults">
 
 <p>
 I have absolutely no problem with product promotion based on actual quality.
@@ -897,8 +887,9 @@ you can get American?"</i> (I read this on billboards in Varanasi and Lucknow, c
 seem to find it on internet. So, can't assure if it was put by the company or
 some local store. In case you have read it too, please send me a pic for
 inclusion). Is this a good reason? Since I am not touching anything sensitive,
-we can get neutral and reasonable answers for this particular advertisement. Its
-no. You can have certain tendencies, but you don't make decisions using them.
+we can get neutral and reasonable answers for this particular advertisement.
+It's a no. You can have certain tendencies, but you don't make decisions using
+them.
 </p>
 
 <p>
@@ -915,7 +906,7 @@ would have happened if they had to popularize their ideas before 1920s).
 </p>
 
 
-<figure>
+<figure id="orgcf604d6">
 <img src="./fastest_growing.png" alt="fastest_growing.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 7: </span><a href="https://xkcd.com/1102">xkcd 1102</a></figcaption>
@@ -965,14 +956,14 @@ before making decisions.
 </blockquote>
 
 <hr>
-<aside>
+<aside id="orgaa04a8b">
 <p>
 Another comic to balance the amount of text. Thanks <a href="https://www.xkcd.com">xkcd</a> for making our lives
 easier.
 </p>
 
 
-<figure>
+<figure id="org954c765">
 <img src="./significant.png" alt="significant.png" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -1014,15 +1005,15 @@ arguments.
 </ul>
 
 <p>
-Ask yourself, if these contents pass through you unchecked, will you be
-able to shed the guilt of depriving kids of genuine 'curiosity'? Guilt
-of fooling people into believing they are 'scientists'? Guilt of closing
-your eyes to the truth just because you are too lazy and want to be
-spoon fed by some know-it-all? Or maybe its all meaningless and you
-already are in a cult with mechanisms for redemption in place.
+Ask yourself, if these contents pass through you unchecked, will you be able to
+shed the guilt of depriving kids of genuine 'curiosity'? Guilt of fooling people
+into believing they are 'scientists'? Guilt of closing your eyes to the truth
+just because you are too lazy and want to be spoon fed by some know-it-all? Or
+maybe it's all meaningless and you already are in a cult with mechanisms for
+redemption in place.
 </p>
 
-<div class="edits">
+<div class="edits" id="org8797134">
 <ul class="org-ul">
 <li>Changed 'evidences' to 'evidence'. Thanks Rushil Nagda.</li>
 </ul>
