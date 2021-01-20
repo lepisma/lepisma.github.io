@@ -2041,6 +2041,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** TOREAD The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses
+:PROPERTIES:
+:AUTHOR:   Eric Ries
+:ADDED:    [2021-01-20]
+:AMAZON:   https://www.amazon.in/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898
+:END:
+
 *** READ Leadership: A Very Short Introduction (Very Short Introductions)
 CLOSED: [2021-01-01 Fri 21:55]
 :PROPERTIES:
