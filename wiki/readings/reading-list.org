@@ -2041,6 +2041,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** The Road Less Traveled: A New Psychology of Love, Traditional Values and Spiritual Growth
+:PROPERTIES:
+:AUTHOR:   M. Scott Peck
+:ADDED:    [2021-01-24]
+:GOODREADS: https://www.goodreads.com/book/show/347852.The_Road_Less_Traveled
+:END:
+
 *** Blitzscaling: The Lightning-Fast Path to Building Massively: The Lightning-Fast Path to Building Massively Valuable Companies
 :PROPERTIES:
 :AUTHOR:   Reid Hoffman, Chris Yeh
