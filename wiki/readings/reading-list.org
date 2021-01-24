@@ -2041,6 +2041,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** Blitzscaling: The Lightning-Fast Path to Building Massively: The Lightning-Fast Path to Building Massively Valuable Companies
+:PROPERTIES:
+:AUTHOR:   Reid Hoffman, Chris Yeh
+:ADDED:    [2021-01-24]
+:AMAZON:   https://www.amazon.in/dp/0008303630/
+:END:
+
 *** TOREAD The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses
 :PROPERTIES:
 :AUTHOR:   Eric Ries
