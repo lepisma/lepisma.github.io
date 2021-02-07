@@ -12,41 +12,9 @@ self in retrospect. These biases are /personal values/ for me.
 
 What follows is a list of personal values. In no particular order.
 
-* Courage
-The regular definition. Since at times I become very cautious, I am putting this
-as a value to make me take important decisions that need courage.
-
-* Forgiveness
-My older understanding of forgiveness was conflicting with things like learning
-and striving for excellence. How could you learn from an event if you /forgive/
-yourself? I now feel differently about this. Forgiving---yourself or others---is
-not about forgetting or ignoring, it's about acknowledging the hurt, completely,
-however painful it be. And then saying "/it's alright/".
-
-* Compassion
-Regular definition.
-
-* Striving for Excellence
-This is taken from the [[https://github.com/Vernacular-ai/handbook/blob/master/values.md][list of values]] at Vernacular.ai.
-
-Striving for excellence doesn't mean anything other than what the phrase itself
-points to. It's about /striving/ for excellence. If I follow this value, I think
-about things in the following way:
-
-#+begin_quote
-If I had to do this thing again, what will I change to make it better.
-#+end_quote
-
-If you are writing an email, you /know/ what could have been better. If you are
-talking to someone, you /know/ what could have been done better. Notice that while
-you can still skip /this specific/ email and /that specific/ meeting, for each class
-of work you will know what could have been done better. Taking action is
-secondary.
-
-The key idea is that 'Strive for Excellence' is a cross cutting value. And it's
-okay to admit failure implementing this for certain classes of work instead of
-diluting the value itself by calling it situational[fn::This is also /striving
-for excellence/ by the way.]. These two are /very/ different ways of looking.
-
-* Innovation
-Regular definition. More about the novelty side of creativity.
++ Courage
++ Forgiveness
++ Trustworthiness
++ Compassion
++ Striving for Excellence
++ Innovation
