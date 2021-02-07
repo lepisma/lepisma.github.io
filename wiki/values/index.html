@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2020-10-11 Sun 23:43 -->
+<!-- 2021-02-07 Sun 23:39 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Values</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -222,50 +222,26 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -287,7 +263,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2020-10-11 Sun 23:43</div>
+  <div class='page-meta'>Last modified:  2021-02-07 Sun 23:39</div>
   <h1>Values</h1>
 </div>
 </div>
@@ -310,96 +286,15 @@ self in retrospect. These biases are <i>personal values</i> for me.
 What follows is a list of personal values. In no particular order.
 </p>
 
-<div id="outline-container-orgdea4b87" class="outline-2">
-<h2 id="sec-courage">Courage</h2>
-<div class="outline-text-2" id="text-sec-courage">
-
-<p>
-The regular definition. Since at times I become very cautious, I am putting this
-as a value to make me take important decisions that need courage.
-</p>
+<ul class="org-ul">
+<li>Courage</li>
+<li>Forgiveness</li>
+<li>Trustworthiness</li>
+<li>Compassion</li>
+<li>Striving for Excellence</li>
+<li>Innovation</li>
+</ul>
 </div>
-</div>
-
-<div id="outline-container-org39043ee" class="outline-2">
-<h2 id="sec-forgiveness">Forgiveness</h2>
-<div class="outline-text-2" id="text-sec-forgiveness">
-
-<p>
-My older understanding of forgiveness was conflicting with things like learning
-and striving for excellence. How could you learn from an event if you <i>forgive</i>
-yourself? I now feel differently about this. Forgiving&#x2014;yourself or others&#x2014;is
-not about forgetting or ignoring, it's about acknowledging the hurt, completely,
-however painful it be. And then saying "<i>it's alright</i>".
-</p>
-</div>
-</div>
-
-<div id="outline-container-org1514519" class="outline-2">
-<h2 id="sec-compassion">Compassion</h2>
-<div class="outline-text-2" id="text-sec-compassion">
-
-<p>
-Regular definition.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgf7bb68c" class="outline-2">
-<h2 id="sec-striving-for-excellence">Striving for Excellence</h2>
-<div class="outline-text-2" id="text-sec-striving-for-excellence">
-
-<p>
-This is taken from the <a href="https://github.com/Vernacular-ai/handbook/blob/master/values.md">list of values</a> at Vernacular.ai.
-</p>
-
-<p>
-Striving for excellence doesn't mean anything other than what the phrase itself
-points to. It's about <i>striving</i> for excellence. If I follow this value, I think
-about things in the following way:
-</p>
-
-<blockquote>
-<p>
-If I had to do this thing again, what will I change to make it better.
-</p>
-</blockquote>
-
-<p>
-If you are writing an email, you <i>know</i> what could have been better. If you are
-talking to someone, you <i>know</i> what could have been done better. Notice that while
-you can still skip <i>this specific</i> email and <i>that specific</i> meeting, for each class
-of work you will know what could have been done better. Taking action is
-secondary.
-</p>
-
-<p>
-The key idea is that 'Strive for Excellence' is a cross cutting value. And it's
-okay to admit failure implementing this for certain classes of work instead of
-diluting the value itself by calling it situational<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. These two are <i>very</i> different ways of looking.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org45723a4" class="outline-2">
-<h2 id="sec-innovation">Innovation</h2>
-<div class="outline-text-2" id="text-sec-innovation">
-
-<p>
-Regular definition. More about the novelty side of creativity.
-</p>
-</div>
-</div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">This is also <i>striving
-for excellence</i> by the way.</p></div></div>
-
-
-</div>
-</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
