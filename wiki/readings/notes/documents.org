@@ -703,6 +703,42 @@ Partial notes:
 
 * Language
 
+** READ Real conversations with artificial intelligence: A comparison between human--human online conversations and human--chatbot conversations
+CLOSED: [2021-02-07 Sun 16:24]
+:PROPERTIES:
+:CUSTOM_ID: hill2015real
+:YEAR:     2015
+:AUTHOR:   Hill, Jennifer and Ford, W Randolph and Farreras, Ingrid G
+:END:
+
+#+begin_quote
+The most reasonable explanation for this finding – combined with the unexpected
+finding of greater messages to chatbots – seems to be not that people were
+tentative in their communication with chatbots, but rather that they were
+modeling their communication to match that of the chatbot’s, in the same way
+that people adapt their language when conversing with children (Bloom,
+Rocissano, & Hood, 1976; Hausendorf, 1992) or non-native speakers (Ferguson,
+1975).
+#+end_quote
+
+We can and should do a similar analysis with voice conversations. Since ours are
+goal oriented systems, we can define a different set of factors to compare. Few
+examples:
+
++ Non-standard queries asked. Even if the goal is to book a table, with a bot,
+  we might see less deviations from a script and more with humans.
++ General conversation metrics like words per utterance, intents per utterance,
+  number of utterances, etc.
++ Voice conversation specific metrics like interjections, acknowledgements, etc.
+
+This should be doable on deployments where we have human-human and human-bot
+data.
+
+I also feel doing this kind of analysis is a way of knowing current state our
+systems. If we really are human-like, then there will be no difference (except
+when we declare that "you are talking to an automated assistant"). This analysis
+might give us better metrics and pathways for building more human like systems.
+
 ** READ ST-BERT: Cross-modal Language Model Pre-training For End-to-end Spoken Language Understanding
 CLOSED: [2020-12-20 Sun 16:16]
 :PROPERTIES:
