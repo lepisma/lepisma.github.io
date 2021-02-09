@@ -2041,6 +2041,20 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** TOREAD Good Strategy Bad Strategy: The Difference and Why It Matters
+:PROPERTIES:
+:AUTHOR:   Richard P. Rumelt
+:ADDED:    [2021-02-09]
+:GOODREADS: https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategy
+:END:
+
+*** TOREAD Extreme You: Step up. Stand out. Kick ass. Repeat.
+:PROPERTIES:
+:AUTHOR:   Sarah Robb O'Hagan
+:ADDED:    [2021-02-09]
+:AMAZON:   https://www.amazon.in/dp/0349412308
+:END:
+
 *** The Road Less Traveled: A New Psychology of Love, Traditional Values and Spiritual Growth
 :PROPERTIES:
 :AUTHOR:   M. Scott Peck
