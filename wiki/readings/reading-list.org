@@ -1340,6 +1340,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** Thinking to some purpose: A manual of first-aid to clear thinking, showing how to detect illogicalities in other people's mental processes and avoid them in our own.
+:PROPERTIES:
+:AUTHOR:   L. Susan Stebbing
+:ADDED:    [2021-02-15]
+:GOODREADS: https://www.goodreads.com/book/show/6924873-thinking-to-some-purpose
+:END:
+
 *** READ Causation: A Very Short Introduction
 CLOSED: [2020-11-29 Sun 12:33]
 :PROPERTIES:
