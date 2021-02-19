@@ -150,6 +150,13 @@ nature. I am not sure which exact fields to look at for answers to questions
 about natural order and its emergence, therefore this section might stay a
 hodgepodge for a while.
 
+*** The Major Transitions in Evolution
+:PROPERTIES:
+:AUTHOR:   John Maynard Smith
+:ADDED:    [2021-02-19]
+:AMAZON:   https://www.amazon.in/Major-Transitions-Evolution-Maynard-Smith-ebook/dp/B001KVZZYE
+:END:
+
 *** Growth: From Microorganisms to Megacities
 :PROPERTIES:
 :AUTHOR:   Vaclav Smil
