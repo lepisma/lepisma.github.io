@@ -22,6 +22,26 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+mindreading is often less like thinking, and more like perception i.e. something
+that we do unconsciously, as part of the background cognition that manages much
+of our daily lives
+
+#+HTML:<footer>﻿Speaking Our Minds: Why human communication is different, and how language evolved to make it special (Thom Scott-Phillips)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+He will need to learn that love is a skill rather than an enthusiasm.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Ask 100 linguists what a language is and you’ll get 120 different answers.
+
+#+HTML:<footer>﻿Speaking Our Minds: Why human communication is different, and how language evolved to make it special (Thom Scott-Phillips)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 leadership silences the anxiety of followers.
 
 #+HTML:<footer>﻿Leadership: A Very Short Introduction (Grint, Keith)</footer>

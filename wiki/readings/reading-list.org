@@ -2121,12 +2121,15 @@ Another VSI that I liked.
 :GOODREADS: https://www.goodreads.com/book/show/39644139-linguistic-bodies
 :END:
 
-*** Speaking Our Minds: Why human communication is different, and how language evolved to make it special
+*** READ Speaking Our Minds: Why human communication is different, and how language evolved to make it special
+CLOSED: [2021-02-21 Sun 23:30]
 :PROPERTIES:
 :AUTHOR:   Thom Scott-Phillips
 :ADDED:    [2020-12-26]
 :GOODREADS: https://www.goodreads.com/book/show/22609703-speaking-our-minds
 :END:
+
+Introduced me to few threads in evolution of language. Good read overall.
 
 *** TOREAD Causality
 :PROPERTIES:
