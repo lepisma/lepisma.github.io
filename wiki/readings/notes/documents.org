@@ -703,6 +703,16 @@ Partial notes:
 
 * Language
 
+** READ Optimize the obvious: automatic call flow generation
+CLOSED: [2021-02-24 Wed 02:33]
+:PROPERTIES:
+:CUSTOM_ID: suendermann2010optimize
+:YEAR:     2010
+:AUTHOR:   Suendermann, David and Liscombe, Jackson and Pieraccini, Roberto
+:END:
+
+Building flow of questions based on entropy reduction.
+
 ** READ What makes a good conversation? how controllable attributes affect human judgments
 CLOSED: [2021-02-24 Wed 00:34]
 :PROPERTIES:
