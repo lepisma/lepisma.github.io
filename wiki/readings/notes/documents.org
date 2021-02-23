@@ -703,6 +703,61 @@ Partial notes:
 
 * Language
 
+** READ What makes a good conversation? how controllable attributes affect human judgments
+CLOSED: [2021-02-24 Wed 00:34]
+:PROPERTIES:
+:CUSTOM_ID: see2019makes
+:YEAR:     2019
+:AUTHOR:   See, Abigail and Roller, Stephen and Kiela, Douwe and Weston, Jason
+:END:
+
+The following image summarizes the paper's approach:
+
+[[file:./images/see2019makes-01.png]]
+
+** READ Towards a human-like open-domain chatbot
+CLOSED: [2021-02-24 Wed 00:34]
+:PROPERTIES:
+:CUSTOM_ID: adiwardana2020towards
+:YEAR:     2020
+:AUTHOR:   Adiwardana, Daniel and Luong, Minh-Thang and So, David R and Hall, Jamie and Fiedel, Noah and Thoppilan, Romal and Yang, Zi and Kulshreshtha, Apoorv and Nemade, Gaurav and Lu, Yifeng and others
+:END:
+
+Meena paper. I like the idea of measuring Sensibleness and Specificity as
+metrics for evaluation of dialogs in terms of human likeness.
+
+** READ Beyond accuracy: Behavioral testing of NLP models with CheckList
+CLOSED: [2021-02-24 Wed 00:34]
+:PROPERTIES:
+:CUSTOM_ID: ribeiro2020beyond
+:YEAR:     2020
+:AUTHOR:   Ribeiro, Marco Tulio and Wu, Tongshuang and Guestrin, Carlos and Singh, Sameer
+:END:
+
+More metrics that also cover various aspects of different /capabilities/. This is
+an open source toolkit that has some approaches for assisting generation of test
+cases too.
+
+** READ PARADISE: A framework for evaluating spoken dialogue agents
+CLOSED: [2021-02-24 Wed 00:33]
+:PROPERTIES:
+:CUSTOM_ID: walker1997paradise
+:YEAR:     1997
+:AUTHOR:   Walker, Marilyn A and Litman, Diane J and Kamm, Candace A and Abella, Alicia
+:END:
+
+General point to use a metric for task success (they use kappa over all possible
+parse-ables in the situation) and separate metrics for dialog costs (things like
+number of turns, number of repairs, etc.) and run regression from here to
+predict CSAT like scores. Once this model is learnt, this is used later on
+without relying on tagging CSAT. The regression weights also give insight in
+what is impacting CSAT in what way.
+
+Another key idea was to tag turns using a technique that makes it easy to
+extract subdialogs which themselves are score-able on the same scales as above.
+This makes it easy to know what is going wrong (e.g. which entity parsing
+strategy is screwing up) and how to compare two strategies for the same goal.
+
 ** READ Real conversations with artificial intelligence: A comparison between human--human online conversations and human--chatbot conversations
 CLOSED: [2021-02-07 Sun 16:24]
 :PROPERTIES:
