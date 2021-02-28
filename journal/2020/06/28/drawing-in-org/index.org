@@ -6,12 +6,11 @@ I recently got back to a graphics tablet. A [[https://www.wacom.com/en-us/produc
 610 was more featureful, I love the simplicity of One.
 
 Anyway, someone on /r/emacs recently showed a system for keeping images in Emacs
-getting live updates from a Mac sketching tool [fn::Not able to find that post.
-Not even sure if that was on /r/emacs or /r/orgmode]. I found that really useful
-since keeping images separate from rest of the notes, in Org files, is just a
-useless exercise in bookkeeping. On linux, my best sketching experience has been
-with [[https://krita.org/en/][Krita]] so I am trying to connect it with Org mode for note taking. Screen
-below shows the current system.
+getting live updates from a Mac sketching tool [fn::[[https://www.reddit.com/r/emacs/comments/hafn69/drawings_in_org_mode_with_ipad/][Here]] is the post. Thanks to
+[[https://github.com/lepisma/org-krita/issues/11][Accacio]] for helping.]. I found that really useful since keeping images separate
+from rest of the notes, in Org files, is just a useless exercise in bookkeeping.
+On linux, my best sketching experience has been with [[https://krita.org/en/][Krita]] so I am trying to
+connect it with Org mode for note taking. Screen below shows the current system.
 
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
 #+caption: Emacs Org mode on left, Krita on right
