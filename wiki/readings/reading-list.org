@@ -2055,6 +2055,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
+:PROPERTIES:
+:AUTHOR:   Sönke Ahrens
+:ADDED:    [2021-03-05]
+:GOODREADS: https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes
+:END:
+
 *** TOREAD Good Strategy Bad Strategy: The Difference and Why It Matters
 :PROPERTIES:
 :AUTHOR:   Richard P. Rumelt
