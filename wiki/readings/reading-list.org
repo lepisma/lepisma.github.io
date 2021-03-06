@@ -2055,6 +2055,41 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** The Horizontal Organization: What the Organization of the Future Actually Looks Like and How It Delivers Value to Customers
+:PROPERTIES:
+:AUTHOR:   Frank Ostroff
+:ADDED:    [2021-03-06]
+:AMAZON:   https://www.amazon.in/Horizontal-Organization-Actually-Delivers-Customers-ebook/dp/B00WBN4NPC
+:END:
+
+*** Leadership on the Line: Staying Alive Through the Dangers of Leading
+:PROPERTIES:
+:AUTHOR:   Heifetz
+:ADDED:    [2021-03-06]
+:AMAZON:   https://www.amazon.in/Leadership-Line-Staying-Through-Dangers/dp/1578514371
+:END:
+
+*** Structure in Fives: Designing Effective Organizations (Prentice Hall International Editions)
+:PROPERTIES:
+:AUTHOR:   Henry Mintzberg
+:ADDED:    [2021-03-06]
+:AMAZON:   https://www.amazon.in/Structure-Fives-Designing-Organizations-International/dp/013855479X
+:END:
+
+*** The Strategy-Focused Organization: How Balanced Scorecard Companies Thrive in the New Business Environment
+:PROPERTIES:
+:AUTHOR:   Kaplan
+:ADDED:    [2021-03-06]
+:AMAZON:   https://www.amazon.in/Strategy-Focused-Organization-Scorecard-Companies-Environment/dp/1578512506
+:END:
+
+*** Built to Last: Successful Habits of Visionary Companies (Good to Great Book 2)
+:PROPERTIES:
+:AUTHOR:   Jim Collins, Jerry I. Porras
+:ADDED:    [2021-03-06]
+:AMAZON:   https://www.amazon.in/Built-Last-Successful-Visionary-Essentials-ebook/dp/B0058DRSHW
+:END:
+
 *** How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
 :PROPERTIES:
 :AUTHOR:   Sönke Ahrens
