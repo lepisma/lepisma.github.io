@@ -2055,6 +2055,20 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** It's Better to Be a Good Machine Than a Bad Person: Speech Recognition and Other Exotic User Interfaces in the Twilight of the Jetsonian Age
+:PROPERTIES:
+:AUTHOR:   Bruce Balentine, Leslie Degler
+:ADDED:    [2021-03-11]
+:AMAZON:   https://www.amazon.in/Better-Good-Machine-Than-Person/dp/1932558098
+:END:
+
+*** Cognitive Gadgets – The Cultural Evolution of Thinking
+:PROPERTIES:
+:AUTHOR:   Cecilia Heyes
+:ADDED:    [2021-03-11]
+:AMAZON:   https://www.amazon.in/Cognitive-Gadgets-Cultural-Evolution-Thinking/dp/0674980158
+:END:
+
 *** The Horizontal Organization: What the Organization of the Future Actually Looks Like and How It Delivers Value to Customers
 :PROPERTIES:
 :AUTHOR:   Frank Ostroff
