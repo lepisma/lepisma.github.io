@@ -260,6 +260,6 @@ below but rest still need some work.
 [[file:./journal.png]]
 
 * Resources
-+ Here is a [[https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/][good guideline]] that we use to onboard people on OKRs at work.
++ Here is a [[https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/][good guidebook]] that we use to onboard people on OKRs at work.
 + Todoist has good documents on many productivity methods [[https://todoist.com/productivity-methods][here]]. I haven't read
   all of them. A few things in this document might change after that reading.
