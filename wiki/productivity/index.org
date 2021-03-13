@@ -252,8 +252,8 @@ was too strict since, as mentioned before, I don't do everything on a clock.
 This means I can't estimate where my time goes at a very fine level but that's
 okay as long as I am balancing my scopes periodically.
 
-For a few items, I have made decent reviewing tools and workflows like shown
-below but rest still need some work.
+For a few items, I have built decent reviewing dashboards like below but rest
+need more work.
 
 #+CAPTION: Mood tracking over personal journal
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
