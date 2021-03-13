@@ -11,21 +11,21 @@ becomes clear to see which approach can help in what way. My approach is to
 organize things in /nouns/ and /verbs/ and they see which productivity technique
 helps in what. My current repertoire follows.
 
-** Nouns
+* Nouns
 Items here are not organized in a mutually exclusive manner. I feel it's hard to
 do that and so I am just going with whatever feels natural at the moment.
 
-*** Scopes
+** Scopes
 /Scopes/ are aspects of work. I tend to organize them in a two level heirarchy.
 First specifies very broad /scope/ like ~work~ or ~personal~. Second goes deeper in
 the directions of work.
 
-*** Targets
+** Targets
 /Targets/ are checkpoints that define various goals for /scopes/. Many times they
 come with a deadline. As an example, you might want to target a certain body
 weight value by a certain date.
 
-*** Tasks
+** Tasks
 /Tasks/ lie under certain =scope= and usually have the following optional properties
 attached to them:
 
@@ -35,17 +35,17 @@ attached to them:
   tells how much time I /want/ to spend on the task.
 + /Deadline/ and /scheduled/ date times.
 
-*** Rituals
+** Rituals
 /Rituals/ are habits, processes, and recurring events. The motivation for them can
 come from /targets/ or from promises of pleasure in the act.
 
 Reading an hour everyday is an example of a /ritual/.
 
-*** Events
+** Events
 /Events/ are calendar bound items, like meetings. Sometimes items not strictly on
 calendar also get projected there and become /events/.
 
-*** Time
+** Time
 /Time/ is the currency you pay for execution.
 
 The canonical unit here is number of hours but I like to think about different
@@ -53,17 +53,17 @@ The canonical unit here is number of hours but I like to think about different
 same as the ones during weekdays. Same /task/ can have incredibly different
 execution efficiency in these two slots.
 
-*** Notes
+** Notes
 These are your unshaped ideas, reading notes, feedback, drafts, write-ups, and
 everything else text-like.
 
-*** Interrupts
+** Interrupts
 All external /interrupts/ like incoming emails, notifications, etc.
 
-** Verbs
+* Verbs
 Here are my /verbs/, inspired by [[https://en.wikipedia.org/wiki/Getting_Things_Done][GTD]]:
 
-*** Capture and Organize
+** Capture and Organize
 /Capturing/ means saving items in your system. If the items are /tasks/, then your
 list management tool's workflow will handle this. Good capture mechanisms cover
 all properties of the captured items, are efficient, well integrated with other
@@ -74,7 +74,7 @@ More so if the capture mechanism is clumsy. /Organizing/ comes to rescue here. I
 refers to massaging your collections so that the next stage of /viewing/ becomes
 efficient and effective.
 
-*** View and Work
+** View and Work
 /Viewing/ means bringing up items from collections to do something about them.
 Effective /viewing/, for most part, involves smart usage of item properties and
 good filtering mechanisms.
@@ -82,11 +82,11 @@ good filtering mechanisms.
 For /task/ like items, /working/ covers everything involved from picking to
 executing them effectively.
 
-*** Review
+** Review
 /Reviews/ are periodic retrospectives. These are assisted by work logging methods
 and helpful dashboards.
 
-** Methods
+* Methods
 Thoughts on a few common productivity methods. These are not all comparable but
 are also not all compose-able. So, like with nouns, I have kept them in a flat
 structure.
@@ -95,14 +95,14 @@ No single method works well for /all aspects/ of your life and you will need to
 adapt a mixture of them for your own requirements. I have tried documenting my
 personal mixture in the next section.
 
-*** [[https://en.wikipedia.org/wiki/Timeblocking][Time Blocking]]
+** [[https://en.wikipedia.org/wiki/Timeblocking][Time Blocking]]
 Here you block you calendar with tasks. You /calendar/ becomes your capturing,
 viewing, and working tool.
 
 This is helpful for a lot of people, but doesn't work that well for me. I
 usually like a lot of flexibility and time blocking doesn't allow that.
 
-*** [[https://en.wikipedia.org/wiki/OKR][Objectives and Key Results (OKRs)]]
+** [[https://en.wikipedia.org/wiki/OKR][Objectives and Key Results (OKRs)]]
 A famous high level goal setting method. Usually good for /teams/ since the /scope/
 is restricted and /targets/ are important than /rituals/. Is good for organizing and
 reviewing.
@@ -110,46 +110,46 @@ reviewing.
 I tried using OKRs for personal scope but I don't think they work well for
 situations where targets aren't everything.
 
-*** [[https://en.wikipedia.org/wiki/Getting_Things_Done][Getting Things Done (GTD)]]
+** [[https://en.wikipedia.org/wiki/Getting_Things_Done][Getting Things Done (GTD)]]
 GTD provides a really solid way to think about personal productivity and
 planning. GTD covers almost every noun and verb.
 
 Even though I can never go full GTD, I keep taking inspiration from this
 workflow.
 
-*** [[https://bulletjournal.com/][Bullet Journal]]
+** [[https://bulletjournal.com/][Bullet Journal]]
 Another framework that knits together most of the verbs and nouns. I haven't
 really tried it but I believe it's not adding anything new to my current
 workflow. Other than being completely analog, of course.
 
-*** Ivy Lee Method
+** Ivy Lee Method
 A short term method of picking and /working/ on tasks. You write down few
 important things to do every day and do them. There are many variations and
 names for this. The one I like and currently use is defined in the section on
 personal methods.
 
-*** [[https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method][Eisenhower Matrix]]
+** [[https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method][Eisenhower Matrix]]
 Simple way of organizing tasks in important and urgent matrix. I find this too
 simplistic for my purpose but this can work really well under restricted scopes.
 
-*** [[https://en.wikipedia.org/wiki/Hipster_PDA][Hipster PDA]]
+** [[https://en.wikipedia.org/wiki/Hipster_PDA][Hipster PDA]]
 One of the analog ways of writing down things to do. I used to use this by
 mixing bullet journal and Ivy Lee type restrictions on a daily basis.
 
-*** [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]]
+** [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]]
 Mostly for note capturing, organizing, and viewing. I tried this via [[https://github.com/org-roam/org-roam][org-roam]]
 but didn't go further. Maybe because I still haven't figured out that I need to
 improve my note taking workflow.
 
-*** Inbox Zero
+** Inbox Zero
 Way to capture and organize interrupts. I don't have any strong views here since
 I do a few things to automatically capture items from my inbox.
 
-*** [[https://en.wikipedia.org/wiki/Pomodoro_Technique][Pomodoro]]
+** [[https://en.wikipedia.org/wiki/Pomodoro_Technique][Pomodoro]]
 A /working/ technique that helps you stay focused and healthier. I use this mostly
 for appetite bound tasks where I don't want to spend more than a certain time.
 
-** Personal methods
+* Personal methods
 At the very top level, I maintain a /plans/ file that defines my time allocation
 for various scopes. Allocation here is not strict and is mostly for helping me
 strike a balance between scopes.
@@ -173,7 +173,7 @@ In the same file, I keep two more items:
    fine as a ritual. But if you want to /improve/ programming, you might want to
    look at adding things that explicitly make you learn new concepts.
 
-*** Capturing and Organizing
+** Capturing and Organizing
 For capturing and organizing tasks, I stick to [[https://orgmode.org/][Org Mode]]. The setup is based on
 Org Captures and can be found [[https://github.com/lepisma/rogue/blob/master/local/r-org/r-org.el][here]]. I also use [[www.orgzly.com][orgzly]] for capturing items on the
 go. Here are my current capture templates:
@@ -192,7 +192,7 @@ go. Here are my current capture templates:
 External events are captured on my work calendar. I do little bit of time
 blocking and reminders for rituals also on the same calendar.
 
-**** Notes
+*** Notes
 Capturing notes is a weak spot at the moment. I have [[https://github.com/lepisma/org-team/][something]] for logging team
 notes and am looking to build something similar for book notes in [[https://github.com/lepisma/org-books][org-books]]. But
 general note capturing is not that accessible or well effective. My recent focus
@@ -207,7 +207,7 @@ teams are starting to use now.
 One other form of capture is private journals where I keep notes on events and
 track moods and other events. I wrote more about that [[pile:journal:2020/12/27/mood-tracking/][here]].
 
-**** Interrupts
+*** Interrupts
 Interrupts for me are mostly emails and Slack messages. There are other places
 like Github notifications but I go there only occasionally. I handle emails
 using [[https://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]]. While I try to keep inbox clear, I don't do it too aggressively
@@ -218,7 +218,7 @@ agenda so missing properties of email tasks like 'priorities' are also handled.
 I have no good way for working with Slack interrupts other using slackbot
 reminders and cleaning them periodically.
 
-*** Viewing and Working
+** Viewing and Working
 On a daily basis, I open up my Org agenda and take out the following on my
 analog notebook:
 
@@ -242,7 +242,7 @@ For managing time, I tend to use [[https://github.com/marcinkoziej/org-pomodoro]
 timers only for setting restrictions on a few kinds of tasks. Everything else
 flows unrestricted.
 
-*** Review
+** Review
 I used to do personal weekly review but that was mostly for my, inactive, [[pile:log:][log]].
 Most of what was happening there is going to be automated and I will try doing
 proper retrospectives instead.
@@ -259,7 +259,7 @@ below but rest still need some work.
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./journal.png]]
 
-** Resources
+* Resources
 + Here is a [[https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/][good guideline]] that we use to onboard people on OKRs at work.
 + Todoist has good documents on many productivity methods [[https://todoist.com/productivity-methods][here]]. I haven't read
   all of them. A few things in this document might change after that reading.
