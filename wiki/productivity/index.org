@@ -175,7 +175,7 @@ In the same file, I keep two more items:
 
 ** Capturing and Organizing
 For capturing and organizing tasks, I stick to [[https://orgmode.org/][Org Mode]]. The setup is based on
-Org Captures and can be found [[https://github.com/lepisma/rogue/blob/master/local/r-org/r-org.el][here]]. I also use [[www.orgzly.com][orgzly]] for capturing items on the
+Org Captures and can be found [[https://github.com/lepisma/rogue/blob/master/local/r-org/r-org.el][here]]. I also use [[http://www.orgzly.com][orgzly]] for capturing items on the
 go. Here are my current capture templates:
 
 #+begin_src emacs-lisp
