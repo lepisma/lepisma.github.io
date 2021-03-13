@@ -238,9 +238,9 @@ also reduces . Not surprisingly, this actually helps me do more.
 For tasks with set date time, reminders on [[http://www.orgzly.com/][orgzly]] help in bringing them to
 front, along with calendar popups for captured events.
 
-For managing time, I tend to use [[https://github.com/marcinkoziej/org-pomodoro][org-pomodoro]], [[https://github.com/adrcotfas/Goodtime][goodtime]], and [[https://github.com/dxknight/chronos][chronos]]. I tend to
-use timers only for setting restrictions on a few kinds of tasks. Everything
-else flows unrestricted.
+For managing time, I tend to use [[https://github.com/marcinkoziej/org-pomodoro][org-pomodoro]], [[https://github.com/adrcotfas/Goodtime][goodtime]], and [[https://github.com/dxknight/chronos][chronos]]. I use
+timers only for setting restrictions on a few kinds of tasks. Everything else
+flows unrestricted.
 
 *** Review
 I used to do personal weekly review but that was mostly for my, inactive, [[pile:log:][log]].
