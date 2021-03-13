@@ -5,11 +5,11 @@ If you have been following my blog or journal or log you might know about
 numerous attempts at better time utilization. Most of them failed because of a
 few reasons, also documented.
 
-After many experiments (still ongoing), I have realized it's important to define
-the personal core concepts that /productivity/ breaks into. Once that's done, it
-becomes clear to see which approach can help in what way. My approach is to
-organize things in /nouns/ and /verbs/ and they see which productivity technique
-helps in what. My current repertoire follows.
+After many experiments (still ongoing), I have realized that it's important to
+define the personal core concepts that /productivity/ breaks into. Once that's
+done, it becomes clear to see which approach can help in what way. My approach
+is to organize things in /nouns/ and /verbs/ and they see which productivity
+technique helps in what. My current repertoire follows.
 
 * Nouns
 Items here are not organized in a mutually exclusive manner. I feel it's hard to
