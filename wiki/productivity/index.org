@@ -186,7 +186,7 @@ go. Here are my current capture templates:
      ("l" "Weekly log" item (file+olp ,(concat user-notes-dir "<>") "Weekly review" "Done")
       "- %U %?" :empty-lines-after 1)
      ("t" "Team log" item (function org-team-visit-person-log)
-      "- %U %?" :prepend t)))
+      "- %U %?" :prepend t))
 #+end_src
 
 External events are captured on my work calendar. I do little bit of time
@@ -195,9 +195,9 @@ blocking and reminders for rituals also on the same calendar.
 *** Notes
 Capturing notes is a weak spot at the moment. I have [[https://github.com/lepisma/org-team/][something]] for logging team
 notes and am looking to build something similar for book notes in [[https://github.com/lepisma/org-books][org-books]]. But
-general note capturing is not that accessible or well effective. My recent focus
-on tasks have made older notes related files go stale. I might try looking at
-this wiki itself for notes or might just give in to [[https://github.com/org-roam/org-roam][org-roam]].
+general note capturing is not that accessible or effective. My recent focus on
+tasks have made older notes related files go stale. I might try looking at this
+wiki itself for notes or might just give in to [[https://github.com/org-roam/org-roam][org-roam]].
 
 I am also missing a way to capture smaller pieces like articles read or videos
 watched. For heavier documents, I keep annotations in pdfs and in my [[pile:wiki:readings/notes/documents][documents]]
