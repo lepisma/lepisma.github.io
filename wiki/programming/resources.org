@@ -22,7 +22,7 @@ as a programmer.
 - [[https://www.graphviz.org/][graphviz]] and [[http://ditaa.sourceforge.net/][ditaa]] for making graphs, flowcharts etc. Both go really nicely in
   org-babel.
 - [[https://harelba.github.io/q/][q]] allows running SQL over CSVs.
-- [[https://stedolan.github.io/jq/][jq]] for working with json strings in command line.
+- [[https://stedolan.github.io/jq/][jq]] for working with json strings in command line. Also see [[https://github.com/simeji/jid][jid]].
 - +[[https://httpie.org/][HTTPie]] as HTTP client.+ Just use ~curl~. In Emacs, try [[https://github.com/pashky/restclient.el][restclient]] and [[https://github.com/alf/ob-restclient.el][ob-restclient]].
 - [[https://github.com/ericchiang/pup][pup]] for working with html strings.
 - [[https://rg3.github.io/youtube-dl/][youtube-dl]] for downloading media.
