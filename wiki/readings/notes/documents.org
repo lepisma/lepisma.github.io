@@ -703,6 +703,22 @@ Partial notes:
 
 * Language
 
+** READ Optimizing dialogue management with reinforcement learning: Experiments with the NJFun system
+CLOSED: [2021-04-18 Sun 23:15]
+:PROPERTIES:
+:CUSTOM_ID: singh2002optimizing
+:YEAR:     2002
+:AUTHOR:   Singh, Satinder and Litman, Diane and Kearns, Michael and Walker, Marilyn
+:END:
+
+Early use of RL (MDP) in dialog management. This is not about learning the
+actual conversational flow but few high level policies like confirmation,
+initiation, etc.
+
+They show increase task completion rate with their learned policy. Main
+contribution is in the formulation of the problem including states, actions, and
+rewards.
+
 ** READ Optimize the obvious: automatic call flow generation
 CLOSED: [2021-02-24 Wed 02:33]
 :PROPERTIES:
