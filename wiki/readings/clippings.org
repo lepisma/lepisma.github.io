@@ -22,6 +22,121 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Compatibility is an achievement of love; it shouldn’t be its precondition.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Ordinary life rewards a practical, unintrospective outlook.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Repression, a degree of restraint, and a little dedication to self-editing
+belong to love just as surely as a capacity for explicit confession.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+To be wise is to recognize when wisdom will simply not be an option.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It takes a superhuman wisdom to avoid the consoling conclusion that one has the
+harder life.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+From one perspective, it can seem pathetic to have to concoct fantasies rather
+than to try to build a life in which daydreams can reliably become realities.
+But fantasies are often the best thing we can make of our multiple and
+contradictory wishes: they allow us to inhabit one reality without destroying
+the other. Fantasizing spares those we care about from the full irresponsibility
+and scary strangeness of our urges. It is, in its own way, an achievement, an
+emblem of civilization—and an act of kindness.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+One needs a degree of autonomy before being undressed by someone else can feel
+like a treat.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Insecurity may even be a peculiar sign of well-being. It means we haven’t
+allowed ourselves to take other people for granted, that we remain realistic
+enough to see that things could genuinely turn out badly—and that we are
+invested enough to care.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The average home appliance comes with more detailed instructions than a baby,
+society maintaining a touching belief that there is nothing much that one
+generation can, in the end, reasonably tell another about life.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Maturity means acknowledging that Romantic love might only constitute a narrow
+and perhaps rather mean-minded aspect of emotional life, one principally focused
+on a quest to find love rather than to give it, to be loved rather than to love.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+it takes a certain strength to cry, the confidence that one will eventually be
+able to staunch the tears. She doesn’t have the luxury of feeling just a little
+sad. The danger is that she might fall apart and never know how to put the
+pieces back together.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What makes people good communicators is, in essence, an ability not to be fazed
+by the more problematic or offbeat aspects of their own characters.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We should add: it is a privilege to be the recipient of a sulk; it means the
+other person respects and trusts us enough to think we should understand their
+unspoken hurt. It is one of the odder gifts of love.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Oh, come on!” she says, raising her voice to be heard. “At least tell me what’s
+going on.” To which he replies, “Fuck you, leave me alone.” Which is sometimes
+how fear can sound.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+she is curious because she knows, better than most, that there is no one more
+likely to destroy us than the person we marry.
+
+#+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 mindreading is often less like thinking, and more like perception i.e. something
 that we do unconsciously, as part of the background cognition that manages much
 of our daily lives

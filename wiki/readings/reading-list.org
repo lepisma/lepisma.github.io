@@ -5881,7 +5881,8 @@ CLOSED: [2017-06-07]
 :GOODREADS: https://www.goodreads.com/book/show/160149
 :END:
 
-*** The Course of Love
+*** READ The Course of Love
+CLOSED: [2021-04-19 Mon 17:57]
 :PROPERTIES:
 :AUTHOR:    Alain de Botton
 :ADDED:     <2016-12-15>
