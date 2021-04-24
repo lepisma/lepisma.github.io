@@ -2062,6 +2062,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** The Score Takes Care of Itself: My Philosophy of Leadership
+:PROPERTIES:
+:AUTHOR:   Bill Walsh, Steve Jamison
+:ADDED:    [2021-04-24]
+:AMAZON:   https://www.amazon.com/Score-Takes-Care-Itself-Philosophy/dp/1591843472
+:END:
+
 *** READING The Voice in the Machine: Building Computers That Understand Speech (The MIT Press)
 :PROPERTIES:
 :AUTHOR:   Roberto Pieraccini
