@@ -287,7 +287,7 @@ nature's algorithms rather than the algorithms themselves.
 :GOODREADS: https://www.goodreads.com/book/show/2296
 :END:
 
-*** READING Harnessing Complexity
+*** Harnessing Complexity
 :PROPERTIES:
 :AUTHOR:    Robert Axelrod, Michael D. Cohen
 :ADDED:     <2017-03-11>
@@ -596,6 +596,13 @@ CLOSED: [2014-03-23]
 ** Programming
 Books about the craft itself. More theoretical computer science is going to go
 in the math section.
+
+*** READING Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
+:PROPERTIES:
+:AUTHOR:   Martin Kleppmann
+:ADDED:    [2021-04-24]
+:AMAZON:   https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321
+:END:
 
 *** Clean Architecture: A Craftsman's Guide to Software Structure and Design
 :PROPERTIES:
@@ -2055,6 +2062,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** READING Death in the Afternoon
+:PROPERTIES:
+:AUTHOR:   Ernest Hemingway
+:ADDED:    [2021-04-24]
+:GOODREADS: https://www.goodreads.com/book/show/4648.Death_in_the_Afternoon
+:END:
+
 *** It's Better to Be a Good Machine Than a Bad Person: Speech Recognition and Other Exotic User Interfaces in the Twilight of the Jetsonian Age
 :PROPERTIES:
 :AUTHOR:   Bruce Balentine, Leslie Degler
@@ -2334,7 +2348,7 @@ Overall the book explores the relationship and meaning of the classical terms
 'author' and 'reader' in different settings. The style is a little different
 than I am used to but it's a nice read.
 
-*** Networking for Nerds: Find, Access and Land Hidden Game-Changing Career Opportunities Everywhere
+*** READING Networking for Nerds: Find, Access and Land Hidden Game-Changing Career Opportunities Everywhere
 :PROPERTIES:
 :AUTHOR:   Alaina G. Levine
 :ADDED:    [2019-10-13]
@@ -6115,7 +6129,7 @@ CLOSED: [2017-03-31]
 :GOODREADS: https://www.goodreads.com/book/show/52036
 :END:
 
-*** READING Pond
+*** Pond
 :PROPERTIES:
 :AUTHOR:    Claire-Louise Bennett
 :ADDED:     <2016-07-14>
