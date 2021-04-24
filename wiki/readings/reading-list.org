@@ -2062,6 +2062,13 @@ philosophy section to here.
 :END:
 
 ** Uncategorized
+*** READING The Voice in the Machine: Building Computers That Understand Speech (The MIT Press)
+:PROPERTIES:
+:AUTHOR:   Roberto Pieraccini
+:ADDED:    [2021-04-24]
+:AMAZON:   https://www.amazon.in/Voice-Machine-Building-Computers-Understand/dp/0262533294
+:END:
+
 *** READING Death in the Afternoon
 :PROPERTIES:
 :AUTHOR:   Ernest Hemingway
