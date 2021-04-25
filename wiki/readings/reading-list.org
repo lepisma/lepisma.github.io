@@ -6143,7 +6143,7 @@ CLOSED: [2017-03-31]
 :GOODREADS: https://www.goodreads.com/book/show/52036
 :END:
 
-*** Pond
+*** READING Pond
 :PROPERTIES:
 :AUTHOR:    Claire-Louise Bennett
 :ADDED:     <2016-07-14>
