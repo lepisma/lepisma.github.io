@@ -22,6 +22,29 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+And didn’t I immediately discover that melancholia brought something out in me
+that felt more authentic and effortless than anything I’d previously alchemised.
+
+#+HTML:<footer>﻿Pond: Stories (Bennett, Claire-Louise)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Everybody knows deep down that life is as much about the things that do not
+happen as the things that do and that’s not something that ought to be glossed
+over or denied because without frustration there would hardly be any need to
+daydream.
+
+#+HTML:<footer>﻿Pond: Stories (Bennett, Claire-Louise)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+If we have lost the knack of living, I thought, it is a safe bet to presume we
+have forfeited the magic of dying.
+
+#+HTML:<footer>﻿Pond: Stories (Bennett, Claire-Louise)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 Compatibility is an achievement of love; it shouldn’t be its precondition.
 
 #+HTML:<footer>﻿The Course of Love: A Novel (Alain de Botton)</footer>
