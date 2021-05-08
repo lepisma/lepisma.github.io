@@ -6143,12 +6143,16 @@ CLOSED: [2017-03-31]
 :GOODREADS: https://www.goodreads.com/book/show/52036
 :END:
 
-*** READING Pond
+*** READ Pond
+CLOSED: [2021-05-08 Sat 13:42]
 :PROPERTIES:
 :AUTHOR:    Claire-Louise Bennett
 :ADDED:     <2016-07-14>
 :GOODREADS: https://www.goodreads.com/book/show/25333047
 :END:
+
+No strong thoughts. But this is calming read. I have used this many times to
+escape situations.
 
 *** The Night Circus
 :PROPERTIES:
