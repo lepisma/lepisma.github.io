@@ -5714,6 +5714,39 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** Shake the Bottle and Other Stories
+:PROPERTIES:
+:AUTHOR:   Ashapurna Debi
+:ADDED:    [2021-05-08]
+:AMAZON:   https://www.amazon.in/Shake-Bottle-Other-Stories-Ashapurna/dp/9383202122
+:END:
+
+*** Blow-Up: And Other Stories
+:PROPERTIES:
+:AUTHOR:   Julio Cortazar
+:ADDED:    [2021-05-08]
+:AMAZON:   https://www.amazon.in/Blow-Up-Other-Stories-Julio-Cortazar/dp/0394728815/ref=sr_1_1?dchild=1&keywords=Blow-up+by+Julio+Cortazar&qid=1620464196&s=books&
+:END:
+
+*** Collected Fictions
+:PROPERTIES:
+:AUTHOR:   Jorge Luis Borges, Andrew Hurley
+:ADDED:    [2021-05-08]
+:AMAZON:   https://www.amazon.in/Collected-Fictions-Jorge-Luis-Borges/dp/0140286802/ref=sr_1_1?dchild=1&keywords=Collected+Fictions+by+Jorge+Luis+Borges&qid=1620464235&s=books&sr=1-1
+:END:
+
+*** Dubliners
+:PROPERTIES:
+:AUTHOR:   James Joyce
+:ADDED:    [2021-05-08]
+:AMAZON:   https://www.amazon.in/Dubliners-James-Joyce/dp/9350330946
+:END:*** Blow-Up: And Other Stories
+:PROPERTIES:
+:AUTHOR:   Julio Cortazar
+:ADDED:    [2021-05-08]
+:AMAZON:   https://www.amazon.in/Blow-Up-Other-Stories-Julio-Cortazar/dp/0394728815/ref=sr_1_1?dchild=1&keywords=Blow-up+by+Julio+Cortazar&qid=1620464196&s=books&
+:END:
+
 *** TOREAD House of Leaves: The Remastered Full-Color Edition
 :PROPERTIES:
 :AUTHOR:   Mark Z. Danielewski
