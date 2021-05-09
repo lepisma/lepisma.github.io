@@ -1,0 +1,96 @@
+#+TITLE: Ambivalence
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+#+PILE: dropcap:nil
+#+OPTIONS: num:nil
+
+{{{js(./script.js)}}}
+{{{css(./style.css)}}}
+
+In the end of 2020, I was going to write a short annual review post here. I was
+definitely not going to do a structured review of my goals and plans in it.
+Perhaps, a fluid expression of how I felt about the whole year. Exploring these
+feelings comes down to the two states of mind I was in during the whole year.
+
+I am trying to see if I can bring out a cohesive stream of thoughts by mixing
+these two extremes of my perceptions|I am trying to see how posts written in two
+of my writing states would look like when mixed. My original idea for content of
+this post was to summarize my 2020 from these two perspectives. Now 2020 is long
+gone and I wonder if this is the right time to write this|Now 2020 is long gone
+but maybe I can write with more emotional distance. While I am mixing these two
+states, at this very moment, I am wondering if I can clearly identify these
+states|While writing these two forms, I am trying to understand and name the two
+states better. This paragraph, till now, looks unclear|This paragraph keeps
+sentence variations which are emotional and logical respectively.
+
+# Not using begin block since wanted html control with the current js script
+<aside>
+<div id='slider-container'>
+You can control the rough pace of text update with this slider<br><br>
+<input type="range" min="1" max="100" value="10" class="slider" id="update-slider">
+</div>
+</aside>
+
+I am not sure if mixing would help and should I provide a button for going with
+first or the second variation completely|I feel mixing sentences should be the
+key since I haven't lived the whole year in one state and looking at one state
+in a sequence will be unfaithful.
+
+Talking about emotional distance in writing makes me feel the second variation
+is overpowering|Looks like second variation is overpowering because of being
+grounded in logic, but that might mean I am not splitting the variations
+correctly.
+
+-----
+
+* 2020
+
+2020 was the worst year|2020 was the best year. I actually don't feel it was the
+worst year|I actually don't feel it was the best year. But it's a nice starting
+point in any case. It helps set scopes for my inhibitions|It helps clarify what
+is okay to talk about.
+
+I did a lot of journaling that year, tried to introspect a lot and found my
+deepest fears|I did a lot of journaling that year, introspected a lot and
+understood myself more clearly. I found that getting too deep into journaling
+exacerbates my fears and provokes triggers for unwanted situations|I found that
+getting too deep into journaling helped me finally get closures on few events.
+Sometimes, the process of getting closures is hard.
+
+I am wondering if I should be looking at transition mechanism for this post
+right now|I am wondering if I should be looking at transition mechanism for this
+post right now, I guess it will help me with the later content too. I wonder if
+I would go with second variation from the previous line|I wonder if I should mix
+the decision from the previous line. I should make the transition as I keep
+writing. There are two speakers and their authorship should be acknowledged.
+
+@@html:<div id='authorship-coloring-start'></div>@@
+
+Here is the first variation|Here is the second variation.
+
+I had been much closer to a few people emotionally that year, almost breaching
+my comfort zone. I wonder if the pandemic was involved here|I don't think the
+pandemic was involved here. Other people took important positions in my life and
+I wasn't able to understand the limits of my own sovereignty|Finally, other
+people came in pockets of my life that were mostly isolated and abandoned.
+
+Intellectually, I have been stuck throughout the last year|Intellectually, I
+have taken new turns in the last year. I haven't been able to grow myself
+outside of my tangles|No long term vision, but multiple rushes from new kinds of
+work. I could have done much more. I have mostly been running away from
+situations, an act that feels more authentic and effortless|I have mostly been
+running towards new things, even if they are outside of my core competency. I
+realize that am afraid of freedom|I realize that I get anxious when secure.
+
+I feel the first variation is driven by fear|I feel the second variation is
+driven by fear. First variation works with fear by trying to introspect the
+inherent uncertainty, it's brave in its own way|Second variation works with fear
+by doing what others have done. Maybe the second variation is actually not
+logical|Maybe no variation is logical. Thinking more about it, I believe there
+is no dichotomy of emotions and logic in our lives, we mix everything in a sort
+of ambivalence. The two variations I have been perceiving are two of those
+mixtures, separated based on familiarity. The perceptions from second are
+familiar, from first, not so much. Familiarity is the key differentiator.
+
+And I believe the second variation is the true attractor for me|And I believe
+the first variation is the true attactor for me.
