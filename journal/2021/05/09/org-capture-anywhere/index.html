@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-04-25 Sun 21:12 -->
+<!-- 2021-05-09 Sun 22:13 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>(car nil)</title>
+<title>Org Capture Anywhere</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -253,8 +253,8 @@
     </a>
   </div>
   <div class='site-nav'>
-    <a class='active' href='/'> blog</a>
-    <a  href='/journal'> journal</a>
+    <a  href='/'> blog</a>
+    <a class='active' href='/journal'> journal</a>
     <a  href='/log'> log</a>
     <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
@@ -263,291 +263,48 @@
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>(<i>car</i> nil)</h1>
+  <div class='page-meta'>2021-05-09 Sun 00:00</div>
+  <h1>Org Capture Anywhere</h1>
 </div>
 </div>
 <div id="content">
-<script src="assets/js/tag-filter.js"></script>
-
+<div class='page-tags'><a href='../../../..#org-mode'>org-mode</a> <a href='../../../..#emacs'>emacs</a> <a href='../../../..#productivity'>productivity</a></div>
 <p>
-<a href="/atom.xml" class="btn small">✉ | subscribe » atom</a>  
-</p>
-
-<p>
-Hello, welcome to my blog! A listing of all the posts follows.
+<span class='dropcap'>R</span>ecently, I realized that my note taking workflow is not that easy and
+accessible. Whether I want to capture thoughts about a book that I am reading,
+feedback for a team member, or a video that I just watched. I don't have a
+unified <i>capture</i> interface.
 </p>
 
 <p>
-I am now keeping more subjective (and frequent) pieces in <a href="../journal/index.html">/journal</a>. Things that
-are more <i>page</i> like go in my personal <a href="../wiki/index.html">/wiki</a>. I also try to maintain a regular
-activity <a href="../log/index.html">/log</a>.
+Knowing that <a href="https://orgmode.org/manual/Capture.html">org capture</a> provides a unified interface helped me to migrate few
+of the workflows. But there is still a limitation. Org Capture only captures to
+Org mode files. So if you want to capture an item in a cloud application like
+Google Calendar, you will have to set up a separate syncing mechanism from the
+Org file.
 </p>
-
-<hr>
 
 <p>
-Filter by <i>tags</i>
+Instead of this, we can skip the Org sink and directly trigger the, say, Google
+Calendar API<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. This is exactly what happens in <a href="https://github.com/lepisma/oca">oca</a>. The README specifies
+details on how to use it.
 </p>
 
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#exploration'>exploration</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#physics'>physics</a> <a href='#programming'>programming</a> <a href='#python'>python</a> <a href='#ramble'>ramble</a> <a href='#ricing'>ricing</a> <a href='#skepticism'>skepticism</a> <a href='#tooling'>tooling</a> <a href='#ux'>ux</a> <a href='#viz'>viz</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2020-01-30</div>
-<p class="archive-title">
-<a href="./2020/01/30/repl-conversations/index.html" class="archive-title">A REPL for Conversations</a>
+<p>
+As of now, I have been using this to quickly create Jira tickets. But its most
+powerful use will be to capture calendar reminders for me since I use Google
+Calendar for few temporary reminders during the course of a day.
 </p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2019-10-31</div>
-<p class="archive-title">
-<a href="./2019/10/31/github-linguist-colors/index.html" class="archive-title">Github Linguist Colors</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#viz'>viz</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">I mean, the implementation still works by using a temporary Org
+buffer but whatever.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2019-04-09</div>
-<p class="archive-title">
-<a href="./2019/04/09/blurring-text/index.html" class="archive-title">Blurring Text</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/tangle-templates.html" class="archive-title">Tangle Templates</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#programming'>programming</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-06-07</div>
-<p class="archive-title">
-<a href="./2018/06/07/wiki-to-blog.html" class="archive-title">Blog ← Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-01-27</div>
-<p class="archive-title">
-<a href="./2018/01/27/blog-to-wiki.html" class="archive-title">Blog → Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-12-20</div>
-<p class="archive-title">
-<a href="./2017/12/20/fancy-lambdas.html" class="archive-title">Fancy Little Lisp λs</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-10-28</div>
-<p class="archive-title">
-<a href="./2017/10/28/ricing-org-mode/index.html" class="archive-title">Ricing up Org Mode</a>
-</p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#ricing'>ricing</a> <a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-08-25</div>
-<p class="archive-title">
-<a href="./2017/08/25/keyboard/index.html" class="archive-title">The point of keyboarding</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a> <a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-29</div>
-<p class="archive-title">
-<a href="./2017/06/29/leaving-goodreads/index.html" class="archive-title">Leaving Goodreads</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#ramble'>ramble</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-06-25</div>
-<p class="archive-title">
-<a href="./2017/06/25/simple-time-maps/index.html" class="archive-title">Simpler time map plots</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-05-15</div>
-<p class="archive-title">
-<a href="./2017/05/15/syntactical-macros.html" class="archive-title">The Beauty of Syntactical Macros</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#lisp'>lisp</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-15</div>
-<p class="archive-title">
-<a href="./2017/03/15/projects.html" class="archive-title">Projects</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2017-03-05</div>
-<p class="archive-title">
-<a href="./2017/03/05/optional-typing.html" class="archive-title">Optional Typing</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#python'>python</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-11-02</div>
-<p class="archive-title">
-<a href="./2016/11/02/org-babel/index.html" class="archive-title">Cheap polyglot notebooks</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-08-25</div>
-<p class="archive-title">
-<a href="./2016/08/25/evidence-abuse/index.html" class="archive-title">Abusing Evidence: Drought, Deluge and Disregard</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-06-13</div>
-<p class="archive-title">
-<a href="./2016/06/13/genetic-algorithm/index.html" class="archive-title">What is it that Genetic Algorithm does?</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-03-17</div>
-<p class="archive-title">
-<a href="./2016/03/17/org-mode/index.html" class="archive-title">On why you too should give Emacs Org-mode a spin</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-01-23</div>
-<p class="archive-title">
-<a href="./2016/01/23/constitution-de-markov.html" class="archive-title">Constitution De Markov</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-12-21</div>
-<p class="archive-title">
-<a href="./2015/12/21/white-rhino.html" class="archive-title">White Rhinos, irrationality and other tales</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-11-03</div>
-<p class="archive-title">
-<a href="./2015/11/03/the-writers-voice/index.html" class="archive-title">The Writers' Voice</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-07-30</div>
-<p class="archive-title">
-<a href="./2015/07/30/up-with-theano-and-cuda.html" class="archive-title">Up and running with Theano (GPU) + PyCUDA on Windows</a>
-</p>
-<div class='page-tags'><a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-06-27</div>
-<p class="archive-title">
-<a href="./2015/06/27/hot-100/index.html" class="archive-title">Hot 100 over the years</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-23</div>
-<p class="archive-title">
-<a href="./2015/03/23/overtone-jamming.html" class="archive-title">Overtone Jamming</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-20</div>
-<p class="archive-title">
-<a href="./2015/03/20/rowing-a-steamer/index.html" class="archive-title">Rowing a Steamer</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-14</div>
-<p class="archive-title">
-<a href="./2015/01/14/computer-programs-and-zipf-law/index.html" class="archive-title">Computer Programs and Zipf's Law</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-08</div>
-<p class="archive-title">
-<a href="./2015/01/08/firewall-paradox/index.html" class="archive-title">Firewall Paradox and revisiting the Law of Information</a>
-</p>
-<div class='page-tags'><a href='#physics'>physics</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-06</div>
-<p class="archive-title">
-<a href="./2015/01/06/why-i-stopped-recommending-gnome/index.html" class="archive-title">Why I Stopped Recommending GNOME</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-25</div>
-<p class="archive-title">
-<a href="./2014/11/25/interstellar-tesseract/index.html" class="archive-title">The Interstellar's Tesseract</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-02</div>
-<p class="archive-title">
-<a href="./2014/11/02/neural-turing-machines/index.html" class="archive-title">Neural Turing Machines for dummies</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-07-29</div>
-<p class="archive-title">
-<a href="./2014/07/29/flesh-and-metal/index.html" class="archive-title">Flesh and Metal</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-06-21</div>
-<p class="archive-title">
-<a href="./2014/06/21/extreme-learning-machine/index.html" class="archive-title">Extreme Learning Machines with Julia</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
