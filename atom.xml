@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2021-04-25T21:12:56+0530</updated>
+  <updated>2021-05-09T23:19:05+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Ambivalence</title>
+    <link href="https://lepisma.xyz/2021/05/09/ambivalence/index.html"/>
+    <updated>2021-05-09</updated>
+  </entry>
   <entry>
     <title>A REPL for Conversations</title>
     <link href="https://lepisma.xyz/2020/01/30/repl-conversations/index.html"/>

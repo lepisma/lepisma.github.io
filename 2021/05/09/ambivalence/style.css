@@ -1,0 +1,19 @@
+.text-v1, .text-v2 {
+  transition: opacity 1s;
+}
+
+#slider-container {
+  width: 100%;
+}
+
+#update-slider {
+  width: 100%;
+}
+
+#authorship-coloring-start ~ p > .text-v1 {
+  color: #206a5d;
+}
+
+#authorship-coloring-start ~ p > .text-v2 {
+  color: #325288;
+}
