@@ -4,14 +4,14 @@
 
 Recently, I realized that my note taking workflow is not that easy and
 accessible. Whether I want to capture thoughts about a book that I am reading,
-feedback for a team member, or a video that I just watched. I don't have a
+feedback for a team member, or a video that I just watched, I don't have a
 unified /capture/ interface.
 
-Knowing that [[https://orgmode.org/manual/Capture.html][org capture]] provides a unified interface helped me to migrate few
-of the workflows. But there is still a limitation. Org Capture only captures to
-Org mode files. So if you want to capture an item in a cloud application like
-Google Calendar, you will have to set up a separate syncing mechanism from the
-Org file.
+Knowing that [[https://orgmode.org/manual/Capture.html][org capture]] provides such an interface helped me to migrate few of
+the workflows. But there is still a limitation. Org Capture only captures to Org
+mode files. So if you want to capture an item in a cloud application like Google
+Calendar, you will have to set up a separate syncing mechanism from the Org
+file.
 
 Instead of this, we can skip the Org sink and directly trigger the, say, Google
 Calendar API[fn::I mean, the implementation still works by using a temporary Org
