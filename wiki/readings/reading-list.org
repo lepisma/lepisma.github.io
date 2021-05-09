@@ -122,7 +122,7 @@ Prove It: A Structured Approach/ by Daniel J. Velleman.
 :GOODREADS: https://www.goodreads.com/book/show/265415
 :END:
 
-*** Surreal Numbers
+*** READING Surreal Numbers
 :PROPERTIES:
 :AUTHOR:    Donald Ervin Knuth
 :ADDED:     <2016-07-25>
@@ -1990,6 +1990,13 @@ CLOSED: [2018-02-05 Mon 01:18]
 ** Psychology
 Creating a new section for psychology. I might have to move few books from
 philosophy section to here.
+
+*** READING Intelligence: A Very Short Introduction: 39 (Very Short Introductions)
+:PROPERTIES:
+:AUTHOR:   Ian Deary
+:ADDED:    [2021-05-09]
+:AMAZON:   https://www.amazon.in/Intelligence-Very-Short-Introduction-Introductions/dp/0192893211
+:END:
 
 *** The 48 Laws of Power
 :PROPERTIES:
