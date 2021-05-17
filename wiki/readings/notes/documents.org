@@ -255,6 +255,20 @@ random search.
 
 * Speech
 
+** READ Conversational End-to-End TTS for Voice Agents
+CLOSED: [2021-05-18 Tue 01:00]
+:PROPERTIES:
+:CUSTOM_ID: guo2021conversational
+:YEAR:     2021
+:AUTHOR:   Guo, Haohan and Zhang, Shaofei and Soong, Frank K and He, Lei and Xie, Lei
+:END:
+
+Two key ideas:
+
+1. Collect data by letting people play out scripts and further transcribe to fix
+   and add spontaneous acts.
+2. Pass the conversational context (text) to the model while training.
+
 ** READ The Zero Resource Speech Challenge 2020: Discovering discrete subword and word units
 CLOSED: [2020-12-20 Sun 16:17]
 :PROPERTIES:
