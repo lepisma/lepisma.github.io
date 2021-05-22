@@ -1354,6 +1354,13 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** On Deconstruction: Theory and Criticism after Structuralism
+:PROPERTIES:
+:AUTHOR:   Jonathan Culler
+:ADDED:    [2021-05-22]
+:AMAZON:   https://www.amazon.in/Deconstruction-Theory-Criticism-after-Structuralism/dp/0801474051
+:END:
+
 *** Thinking to some purpose: A manual of first-aid to clear thinking, showing how to detect illogicalities in other people's mental processes and avoid them in our own.
 :PROPERTIES:
 :AUTHOR:   L. Susan Stebbing
