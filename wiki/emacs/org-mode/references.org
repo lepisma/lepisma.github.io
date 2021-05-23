@@ -12,9 +12,9 @@ We still keep annotated bibliographies in documents and wikis at work but per
 item notes are kept in Zotero.
 #+END_aside
 
-With Zotero, one issue had been of citekeys which didn't work out well with my
+With Zotero, one issue had been of cite-keys which didn't work out well with my
 older Emacs only setup. But I found [[https://github.com/retorquere/zotero-better-bibtex][BBT]] that solves all these problems. I use
-the following citekey format for BBT:
+the following cite-key format for BBT:
 =[auth:lower][year][veryshorttitle1_0:lower]=.
 
 * Capture
@@ -39,9 +39,7 @@ it:
 
 - The main bibliography file, ~org-ref-default-bibliography~. The helm functions
   from org-ref make it really easy to search and add citations.
-- Notes file, ~org-ref-bibliography-notes~. I am starting to keep a notes file
-  (lives [[pile:wiki:readings/notes/documents][here]]) which will help me trace/organize ideas and also make the
-  citations more meaningful rather than just pushing a ~[1], [2], [3], [4]~ list.
+- Notes file, ~org-ref-bibliography-notes~. This is published as a page [[pile:wiki:readings/notes/documents][here]].
 - PDFs in ~org-ref-pdf-directory~. PDFs kept here are picked up by org-ref
   allowing you to open/send email etc. Since pdf download features requires more
   metadata (at least DOI, if I read it right), I am keeping it a bit manual as
