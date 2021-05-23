@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-05-23 Sun 22:08 -->
+<!-- 2021-05-23 Sun 22:11 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reference Management</title>
@@ -263,7 +263,7 @@
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2021-05-23 Sun 22:08</div>
+  <div class='page-meta'>Last modified:  2021-05-23 Sun 22:11</div>
   <h1>Reference Management</h1>
 </div>
 </div>
@@ -278,7 +278,7 @@ other people. I am still trying to iron out a few issues while working with
 these two systems at the moment, specially maintaining pdfs and syncing notes.
 </p>
 
-<aside id="org676fe4f">
+<aside id="orga3a0651">
 <p>
 We still keep annotated bibliographies in documents and wikis at work but per
 item notes are kept in Zotero.
@@ -286,9 +286,9 @@ item notes are kept in Zotero.
 </aside>
 
 <p>
-With Zotero, one issue had been of citekeys which didn't work out well with my
+With Zotero, one issue had been of cite-keys which didn't work out well with my
 older Emacs only setup. But I found <a href="https://github.com/retorquere/zotero-better-bibtex">BBT</a> that solves all these problems. I use
-the following citekey format for BBT:
+the following cite-key format for BBT:
 <code>[auth:lower][year][veryshorttitle1_0:lower]</code>.
 </p>
 
@@ -336,9 +336,7 @@ it:
 <ul class="org-ul">
 <li>The main bibliography file, <code>org-ref-default-bibliography</code>. The helm functions
 from org-ref make it really easy to search and add citations.</li>
-<li>Notes file, <code>org-ref-bibliography-notes</code>. I am starting to keep a notes file
-(lives <a class="pile-link" href="/wiki/readings/notes/documents.html">here</a>) which will help me trace/organize ideas and also make the
-citations more meaningful rather than just pushing a <code>[1], [2], [3], [4]</code> list.</li>
+<li>Notes file, <code>org-ref-bibliography-notes</code>. This is published as a page <a class="pile-link" href="/wiki/readings/notes/documents.html">here</a>.</li>
 <li>PDFs in <code>org-ref-pdf-directory</code>. PDFs kept here are picked up by org-ref
 allowing you to open/send email etc. Since pdf download features requires more
 metadata (at least DOI, if I read it right), I am keeping it a bit manual as
