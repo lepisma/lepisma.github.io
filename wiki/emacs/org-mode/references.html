@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-06-17 Mon 00:22 -->
+<!-- 2021-05-23 Sun 22:08 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reference Management</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -50,7 +50,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -222,50 +222,26 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -287,88 +263,50 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-06-17 Mon 00:22</div>
+  <div class='page-meta'>Last modified:  2021-05-23 Sun 22:08</div>
   <h1>Reference Management</h1>
 </div>
 </div>
 <div id="content">
 <div id='breadcrumbs'><a href='./../../index.html'>≡ index</a> / <a href='../../emacs/index.html'>emacs</a> / <a href='../org-mode/index.html'>org-mode</a> / references</div>
+<div id='crosslinks'></div>
 <p>
-I used to rely on <a href="http://www.mendeley.com/">mendeley</a> for working with BibTeX related things. After
-switching mostly to Emacs, I find mendeley a bit confining. This page documents
-my Emacs based setup as of now. I will be updating it with new things that I
-try.
+This page documents my Emacs + <a href="https://www.zotero.org/">Zotero</a> based setup for working with references
+and bibliographies. I maintain and organize libraries in Zotero. Earlier I used
+to keep a local BibTeX file but switching to Zotero helps while working with
+other people. I am still trying to iron out a few issues while working with
+these two systems at the moment, specially maintaining pdfs and syncing notes.
 </p>
 
+<aside id="org676fe4f">
 <p>
-There are a few pieces in the process of managing references.
+We still keep annotated bibliographies in documents and wikis at work but per
+item notes are kept in Zotero.
 </p>
-<ol class="org-ol">
-<li>Searching/adding papers/documents</li>
-<li>Using the BibTeX entries</li>
-<li>Working with pdf annotations/notes</li>
-</ol>
-
-<div id="outline-container-org6fd47eb" class="outline-2">
-<h2 id="sec-searching"><span class="section-number-2">1</span> Searching</h2>
-<div class="outline-text-2" id="text-sec-searching">
+</aside>
 
 <p>
-Mendeley and similar tools have decent support for step 1 and 2. The way I had
-been using mendeley was to use its <i>capture</i> feature and make it output a single
-<code>~/library.bib</code> file which can then be read by Emacs.
+With Zotero, one issue had been of citekeys which didn't work out well with my
+older Emacs only setup. But I found <a href="https://github.com/retorquere/zotero-better-bibtex">BBT</a> that solves all these problems. I use
+the following citekey format for BBT:
+<code>[auth:lower][year][veryshorttitle1_0:lower]</code>.
 </p>
 
-<p>
-The literature search feature from mendeley can be replicated if you get an
-interface to Google Scholar and few other aggregators. Turns out there is a
-package exactly for that, <a href="https://github.com/cute-jumper/gscholar-bibtex">gscholar-bibtex</a>, which lets you search documents and
-add BibTeX entries in a single file as you would have been doing with mendeley.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org8962f57" class="outline-2">
-<h2 id="sec-using-references"><span class="section-number-2">2</span> Using references</h2>
-<div class="outline-text-2" id="text-sec-using-references">
+<div id="outline-container-sec-capture" class="outline-2">
+<h2 id="sec-capture"><span class="section-number-2">1</span> Capture</h2>
+<div class="outline-text-2" id="text-sec-capture">
 
 <p>
-Not much to say here. <a href="https://github.com/jkitchin/org-ref">org-ref</a> is a very feature complete solution for working
-with references in Org files. I am managing the following three locations using
-it:
-</p>
-
-<ul class="org-ul">
-<li>The main bibliography file, <code>org-ref-default-bibliography</code>. The helm functions
-from org-ref make it really easy to search and add citations.</li>
-</ul>
-
-
-<ul class="org-ul">
-<li>Notes file, <code>org-ref-bibliography-notes</code>. I am starting to keep a notes file
-(lives <a class="pile-link" href="/wiki/readings/notes/documents.html">here</a>) which will help me trace/organize ideas and also make the
-citations more meaningful rather than just pushing a <code>[1], [2], [3], [4]</code> list.</li>
-</ul>
-
-
-<ul class="org-ul">
-<li>PDFs in <code>org-ref-pdf-directory</code>. PDFs kept here are picked up by org-ref
-allowing you to open/send email etc. Since pdf download features requires more
-metadata (at least DOI, if I read it right), I am keeping it a bit manual as
-of now.</li>
-</ul>
-
-<p>
-Cross linking items is easy since they all are keyed by their cite-keys. Plus
-there are functions to extract document specific bibliographies so that I can
-keep pages here self contained.
+Saving items to library is very easy thanks to <a href="https://www.zotero.org/download/connectors">Zotero connectors</a>. Syncing this
+to Emacs is also easy because of BBT's <a href="https://retorque.re/zotero-better-bibtex/exporting/pull/">pull feature</a>. <a href="https://github.com/lepisma/cfg/blob/master/scripts/bin/export-zotero">Here is the script</a> I use
+for that.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7e9be5a" class="outline-2">
-<h2 id="sec-annotations"><span class="section-number-2">3</span> Annotations</h2>
-<div class="outline-text-2" id="text-sec-annotations">
+<div id="outline-container-sec-reading-and-annotations" class="outline-2">
+<h2 id="sec-reading-and-annotations"><span class="section-number-2">2</span> Reading and annotations</h2>
+<div class="outline-text-2" id="text-sec-reading-and-annotations">
 
 <p>
 Although Emacs has a really decent pdf reading facility in <a href="https://github.com/politza/pdf-tools">pdf-tools</a> now, it
@@ -385,36 +323,33 @@ really useful.
 </div>
 </div>
 
-<div id="outline-container-orgaf787ef" class="outline-2">
-<h2 id="sec-missing-pieces"><span class="section-number-2">4</span> Missing pieces</h2>
-<div class="outline-text-2" id="text-sec-missing-pieces">
+<div id="outline-container-sec-using-references" class="outline-2">
+<h2 id="sec-using-references"><span class="section-number-2">3</span> Using references</h2>
+<div class="outline-text-2" id="text-sec-using-references">
 
 <p>
-Here are a few things that I would like to setup when I have some time. Most
-likely there already are tools for these which I am unaware of.
+Not much to say here. <a href="https://github.com/jkitchin/org-ref">org-ref</a> is a very feature complete solution for working
+with references in Org files. I am managing the following three locations using
+it:
 </p>
 
-<ol class="org-ol">
-<li><p>
-<i>Browser capture</i>
-</p>
+<ul class="org-ul">
+<li>The main bibliography file, <code>org-ref-default-bibliography</code>. The helm functions
+from org-ref make it really easy to search and add citations.</li>
+<li>Notes file, <code>org-ref-bibliography-notes</code>. I am starting to keep a notes file
+(lives <a class="pile-link" href="/wiki/readings/notes/documents.html">here</a>) which will help me trace/organize ideas and also make the
+citations more meaningful rather than just pushing a <code>[1], [2], [3], [4]</code> list.</li>
+<li>PDFs in <code>org-ref-pdf-directory</code>. PDFs kept here are picked up by org-ref
+allowing you to open/send email etc. Since pdf download features requires more
+metadata (at least DOI, if I read it right), I am keeping it a bit manual as
+of now.</li>
+</ul>
 
 <p>
-Capturing papers from browser one of the most useful features of mendeley.
-Shouldn't be that hard to cook considering the <a href="https://github.com/jkitchin/org-ref#some-other-useful-libraries-in-org-ref">many utilities</a> for working
-with different websites available in org-ref.
-</p></li>
-
-<li><p>
-<i>PDF management</i>
+Cross linking items is easy since they all are keyed by their cite-keys. Plus
+there are functions to extract document specific bibliographies so that I can
+keep pages here self contained.
 </p>
-
-<p>
-I tried <a href="https://github.com/alejandrogallo/papis">papis</a> but it doesn't provide a lot if you already have a bib thing
-going. Since most of the pdfs will be (somewhat) curated, I think a few basic
-functions would do just fine.
-</p></li>
-</ol>
 </div>
 </div>
 </div>
