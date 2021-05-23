@@ -255,6 +255,32 @@ random search.
 
 * Speech
 
+** READ Three Recent Trends in Paralinguistics on the Way to Omniscient Machine Intelligence
+CLOSED: [2021-05-23 Sun 22:41]
+:PROPERTIES:
+:CUSTOM_ID: schuller2018three
+:KEYWORDS: paralinguistics
+:DATE:     2018-12-01
+:AUTHOR:   Schuller, Björn W. and Zhang, Yue and Weninger, Felix
+:END:
+
+1. Large scale data collection and automated annotations. This covers
+   unsupervised and semi-supervised tracks.
+2. Deep and representational learning.
+3. Multi-modality and multi-task learning.
+
+** READ Is Spoken Language All-or-Nothing? Implications for Future Speech-Based Human-Machine Interaction
+CLOSED: [2021-05-23 Sun 22:41]
+:PROPERTIES:
+:CUSTOM_ID: moore2017spoken
+:KEYWORDS: slu
+:DATE:     2017
+:AUTHOR:   Moore, Roger K.
+:END:
+
+Habitability gap in speech systems. The argument is that because of the missing
+context and many other things, there is no such thing as half a language.
+
 ** READ Conversational End-to-End TTS for Voice Agents
 CLOSED: [2021-05-18 Tue 01:00]
 :PROPERTIES:
@@ -1775,6 +1801,16 @@ Main reduction that happens here is to a cost-sensitive classification problem.
  :END:
 
 * Computing/Programming
+
+** READ Lakehouse: A New Generation of Open Platforms That Unify Data Warehousing and Advanced Analytics
+CLOSED: [2021-05-23 Sun 22:38]
+:PROPERTIES:
+:CUSTOM_ID: armbrust2021lakehouse
+:DATE:     2021
+:AUTHOR:   Armbrust, Michael and Ghodsi, Ali and Xin, Reynold and Zaharia, Matei
+:END:
+
+Got some high level idea about the concept of [[https://delta.io/][delta lake]] here.
 
 ** READ Nobody ever got fired for buying a cluster
 CLOSED: [2020-06-07 Sun 23:58]
