@@ -22,6 +22,23 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+“it is ill arguing against the use of anything from its abuse”
+
+#+HTML:<footer>﻿Intelligence: A Very Short Introduction (Deary, Ian J.)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We simply aren’t as impressed by computers that understand spoken commands as we
+are by computers that talk in a more or less natural and human-sounding voice.
+And we’re generally more attracted by people who speak well than by people who
+understand well. There’s no obvious way to add flourishes to understanding, to
+make it charismatic, as some of us can make speech. Indeed, we often take
+speaking as a reflection of intelligence
+
+#+HTML:<footer>﻿Voice in the Machine, The - Roberto Pieraccini & Lawrence Rabiner</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 And didn’t I immediately discover that melancholia brought something out in me
 that felt more authentic and effortless than anything I’d previously alchemised.
 

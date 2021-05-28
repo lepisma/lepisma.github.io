@@ -1998,7 +1998,8 @@ CLOSED: [2018-02-05 Mon 01:18]
 Creating a new section for psychology. I might have to move few books from
 philosophy section to here.
 
-*** READING Intelligence: A Very Short Introduction: 39 (Very Short Introductions)
+*** READ Intelligence: A Very Short Introduction
+CLOSED: [2021-05-29 Sat 00:24]
 :PROPERTIES:
 :AUTHOR:   Ian Deary
 :ADDED:    [2021-05-09]
