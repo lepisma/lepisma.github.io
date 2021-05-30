@@ -2084,6 +2084,14 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** READ The Manager's Handbook
+CLOSED: [2021-05-30 Sun 21:27]
+:PROPERTIES:
+:AUTHOR:   Alex MacCaw 
+:ADDED:    [2021-05-30]
+:URL:   https://themanagershandbook.com/
+:END:
+
 *** Features of Naturalness in Conversation: 152 (Pragmatics & Beyond New Series)
 :PROPERTIES:
 :AUTHOR:   Martin Warren
