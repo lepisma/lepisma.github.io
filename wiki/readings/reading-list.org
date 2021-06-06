@@ -1998,7 +1998,14 @@ CLOSED: [2018-02-05 Mon 01:18]
 Creating a new section for psychology. I might have to move few books from
 philosophy section to here.
 
-*** Flow: The Psychology of Optimal Experience
+*** READING Psychology: A Very Short Introduction (Very Short Introductions)
+:PROPERTIES:
+:AUTHOR:   Gillian Butler
+:ADDED:    [2021-06-06]
+:AMAZON:   https://www.amazon.in/Psychology-Very-Short-Introduction-Introductions/dp/0199670420
+:END:
+
+*** READING Flow: The Psychology of Optimal Experience
 :PROPERTIES:
 :AUTHOR:   Mihaly Csikszentmihalyi
 :ADDED:    [2021-05-30]
