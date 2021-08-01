@@ -12,6 +12,7 @@ here:
 #+CAPTION: Mood plot. This shows mean mood for a day. The
 #+CAPTION: calendar allows navigating through the journal on
 #+CAPTION: the right pane.
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./screens/mood-plot.png]]
 
 #+HTML: <br>
@@ -20,11 +21,13 @@ here:
 #+CAPTION: new feature and I am not very sure if it's helpful.
 #+CAPTION: But I think few other trackers (non mood) might
 #+CAPTION: show something more.
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./screens/mood-plot-polar.png]]
 
 #+HTML: <br>
 
 #+CAPTION: Total entry counts
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./screens/counts.png]]
 
 -----
