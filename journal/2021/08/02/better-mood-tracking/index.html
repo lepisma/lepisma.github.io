@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2021-07-25 Sun 19:17 -->
+<!-- 2021-08-02 Mon 00:16 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Questions</title>
+<title>Better Mood Tracking</title>
 <meta name="generator" content="Org mode">
 <meta name="author" content="Abhinav Tushar">
 <style type="text/css">
@@ -254,29 +254,63 @@
   </div>
   <div class='site-nav'>
     <a  href='/'> blog</a>
-    <a  href='/journal'> journal</a>
+    <a class='active' href='/journal'> journal</a>
     <a  href='/log'> log</a>
-    <a class='active' href='/wiki'> wiki</a>
+    <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
   </div>
   <div class='clearfix'></div>
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2021-07-25 Sun 19:17</div>
-  <h1>Questions</h1>
+  <div class='page-meta'>2021-08-02 Mon 00:00</div>
+  <h1>Better Mood Tracking</h1>
 </div>
 </div>
 <div id="content">
-<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> /  questions</div>
-<div id='crosslinks'></div>
+<div class='page-tags'><a href='../../../..#personal'>personal</a></div>
 <p>
-Questions I would want to get answers of.
+<span class='dropcap'>L</span>ast year I wrote about my mood tracking technique <a class="pile-link" href="/journal/2020/12/27/mood-tracking/index.html">here</a>. While I still have
+similar approach of logging, over months I made a better visualizer for the
+entries. It's called <code>mento</code> and is <a href="https://github.com/lepisma/mento">here</a>. Pulling the screenshots from repository
+here:
 </p>
 
-<ul class="org-ul">
-<li>Which questions to put here?</li>
-</ul>
+<br>
+
+
+<figure id="org6c9e099">
+<img src="./screens/mood-plot.png" alt="mood-plot.png">
+
+<figcaption><span class="figure-number">Figure 1: </span>Mood plot. This shows mean mood for a day. The calendar allows navigating through the journal on the right pane.</figcaption>
+</figure>
+
+<br>
+
+
+<figure id="orgf2a562a">
+<img src="./screens/mood-plot-polar.png" alt="mood-plot-polar.png">
+
+<figcaption><span class="figure-number">Figure 2: </span>Mood scores plotted on 24 hours wheel. This is a new feature and I am not very sure if it's helpful. But I think few other trackers (non mood) might show something more.</figcaption>
+</figure>
+
+<br>
+
+
+<figure id="orgdba42c1">
+<img src="./screens/counts.png" alt="counts.png">
+
+<figcaption><span class="figure-number">Figure 3: </span>Total entry counts</figcaption>
+</figure>
+
+<hr>
+
+<p>
+The project lives on a commit-on-need basis so I might not try to generalize the
+approach of logging and visualization, but I am interested in building a
+correlation finding mechanism in <code>mento</code>. My entries have a lot of variables and
+trackers that could have interesting relations.
+</p>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
