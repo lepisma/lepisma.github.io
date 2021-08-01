@@ -32,7 +32,6 @@ here:
 
 -----
 
-The project lives on a commit-on-need basis so I might not try to generalize the
-approach of logging and visualization, but I am interested in building a
-correlation finding mechanism in ~mento~. My entries have a lot of variables and
-trackers that could have interesting relations.
+I might not try to generalize the approach of logging and visualization, but I
+am interested in building a correlation finding mechanism in ~mento~. My entries
+have a lot of variables and trackers that could have interesting relations.
