@@ -1,0 +1,35 @@
+#+TITLE: Better Mood Tracking
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal
+
+Last year I wrote about my mood tracking technique [[pile:journal:2020/12/27/mood-tracking][here]]. While I still have
+similar approach of logging, over months I made a better visualizer for the
+entries. It's called ~mento~ and is [[https://github.com/lepisma/mento][here]]. Pulling the screenshots from repository
+here:
+
+#+HTML: <br>
+
+#+CAPTION: Mood plot. This shows mean mood for a day. The
+#+CAPTION: calendar allows navigating through the journal on
+#+CAPTION: the right pane.
+[[file:./screens/mood-plot.png]]
+
+#+HTML: <br>
+
+#+CAPTION: Mood scores plotted on 24 hours wheel. This is a
+#+CAPTION: new feature and I am not very sure if it's helpful.
+#+CAPTION: But I think few other trackers (non mood) might
+#+CAPTION: show something more.
+[[file:./screens/mood-plot-polar.png]]
+
+#+HTML: <br>
+
+#+CAPTION: Total entry counts
+[[file:./screens/counts.png]]
+
+-----
+
+The project lives on a commit-on-need basis so I might not try to generalize the
+approach of logging and visualization, but I am interested in building a
+correlation finding mechanism in ~mento~. My entries have a lot of variables and
+trackers that could have interesting relations.
