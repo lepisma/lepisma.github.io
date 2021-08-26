@@ -2091,6 +2091,13 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** ReOrg: How to Get it Right
+:PROPERTIES:
+:AUTHOR:   Stephen Heidari-Robinson
+:ADDED:    [2021-08-26]
+:AMAZON:   https://www.amazon.in/ReOrg-How-Right-Stephen-Heidari-Robinson/dp/163369223X
+:END:
+
 *** Work Rules!: Insights from Inside Google That Will Transform How You Live and Lead
 :PROPERTIES:
 :AUTHOR:   Laszlo Bock
