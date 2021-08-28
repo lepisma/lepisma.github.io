@@ -2091,6 +2091,20 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** Conversational Style: Analyzing Talk among Friends
+:PROPERTIES:
+:AUTHOR:   Deborah Tannen
+:ADDED:    [2021-08-28]
+:AMAZON:   https://www.amazon.in/Conversational-Style-Analyzing-among-Friends-ebook/dp/B005254HJ8
+:END:
+
+*** The First 90 Days, Updated and Expanded: Proven Strategies for Getting Up to Speed Faster and Smarter
+:PROPERTIES:
+:AUTHOR:   Michael Watkins
+:ADDED:    [2021-08-27]
+:AMAZON:   https://www.amazon.com/dp/B00B6U63ZE/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+:END:
+
 *** ReOrg: How to Get it Right
 :PROPERTIES:
 :AUTHOR:   Stephen Heidari-Robinson
