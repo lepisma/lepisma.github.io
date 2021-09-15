@@ -30,7 +30,7 @@ get sufficient momentum to impact my workflows.
 
 These shutdowns are equivalent to change of environments. Changing environment
 changes the rules that you can play with, and that helps. My attempt is to
-define these environments, and a plan for forcing myself to move among these.
+define these environments, and a plan for forcing myself to move among them.
 Here is my current list:
 
 + ~Work/Full~ On my desk with my main machine, available on IMs, calls, and
