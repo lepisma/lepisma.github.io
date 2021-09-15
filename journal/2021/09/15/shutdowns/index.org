@@ -1,0 +1,50 @@
+#+TITLE: Ritualistic Shutdowns
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, work
+
+I tend to say, to whoever asks, that I cooked at home more /before/ the pandemic
+than /during/ it. This is interesting[fn::I don't think it's that interesting or
+unique /now/.] since it's the opposite of the usual pattern where people, being
+locked down at home, cook more than before. The reason I cite is of ritualistic
+/shutdowns/. Before the pandemic, I would /shutdown/ the laptop during the walk back
+home and in those gaps I would get chance to do things that would be hard to do
+with the laptop open. While this can be framed as a self control and
+prioritization problem, we all need external help from time to time.
+
+-----
+
+Looking at my calendar these days, I think I need to simulate such shutdowns
+again. This was also pointed to me by a friend recently who does work in a
+priority order and attempts to cut off after a planned time. Acknowledging the
+inadequacy of working hours is healthy and makes you optimize your approach.
+Even though this is not something really new, I want to note it down here so I
+get sufficient momentum to impact my workflows.
+
+#+HTML: <br>
+
+#+CAPTION: My current work calendar is peppered with meetings.
+#+CAPTION: You can't add value just by talking, if you don't
+#+CAPTION: keep time to think.
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./calendar.png]]
+
+These shutdowns are equivalent to change of environments. Changing environment
+changes the rules that you can play with, and that helps. My attempt is to
+define these environments, and a plan for forcing myself to move among these.
+Here is my current list:
+
++ ~Work/Full~ On my desk with my main machine, available on IMs, calls, and
+  virtual meetings.
++ ~Work/Reduced~ IM and calendar closed. Writing is the major portion of work
+  here.
++ ~Work/Minimal~ Secondary machine, not on desk. Restricted agenda and browser
+  access. Drawing and studying form the major section of work in this.
++ ~Personal/Full~ Main machine. Writing, programming, and other creative work
+  setup.
++ ~Personal/Reduced~ Devices closed. Reading, pen and paper work, etc.
++ ~Personal/Misc~ Rest of my life.
+
+I have been force switching in various environments in the last few weeks by
+putting shutdown times of various kinds and it's turning out to be nice. The
+feeling of loss of time to do a certain kind of work is clearly getting offset
+by having value coming out from something else that I wasn't able to do earlier.
