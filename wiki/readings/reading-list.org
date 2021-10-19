@@ -2006,7 +2006,7 @@ philosophy section to here.
 :END:
 
 *** READ Flow: The Psychology of Optimal Experience
-    CLOSED: [2021-10-19 Tue 20:50]
+CLOSED: [2021-10-19 Tue 20:50]
 :PROPERTIES:
 :AUTHOR:   Mihaly Csikszentmihalyi
 :ADDED:    [2021-05-30]
