@@ -2005,12 +2005,17 @@ philosophy section to here.
 :AMAZON:   https://www.amazon.in/Psychology-Very-Short-Introduction-Introductions/dp/0199670420
 :END:
 
-*** READING Flow: The Psychology of Optimal Experience
+*** READ Flow: The Psychology of Optimal Experience
+    CLOSED: [2021-10-19 Tue 20:50]
 :PROPERTIES:
 :AUTHOR:   Mihaly Csikszentmihalyi
 :ADDED:    [2021-05-30]
 :AMAZON:   https://www.amazon.in/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202
 :END:
+
+Long pending book. I think the ideas have been dissipated enough so not too many
+of those revelatory moments. Overall a good read, but you can probably get a
+denser summary somewhere else.
 
 *** READ Intelligence: A Very Short Introduction
 CLOSED: [2021-05-29 Sat 00:24]
