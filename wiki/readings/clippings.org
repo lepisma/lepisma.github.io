@@ -22,6 +22,81 @@ The button below shuffles items.
 
 #+HTML:<div class="epigraph">
 #+BEGIN_QUOTE
+Once the fruit is plucked from the tree of knowledge, the way back to Eden is
+barred forever.
+
+#+HTML:<footer>Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+But the point of writing is to create information, not simply to pass it along.
+
+#+HTML:<footer>Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+philosophy and science were invented and flourished because thinking is
+pleasurable.
+
+#+HTML:<footer>Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Entropy is the normal state of consciousness—a condition that is neither useful
+nor enjoyable.
+
+#+HTML:<footer>Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+enjoyment, as we have seen, does not depend on what you do, but rather on how
+you do it.
+
+#+HTML:<footer>Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Cultures are defensive constructions against chaos, designed to reduce the
+impact of randomness on experience.
+
+#+HTML:<footer>Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+It would be senseless, however, to ignore a source of energy because it can be
+misused.
+
+#+HTML:<footer>﻿Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Pleasure helps to maintain order, but by itself cannot create new order in
+consciousness.
+
+#+HTML:<footer>﻿Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+What an individual yogi can do is amazing—but so is what a plumber can do, or a
+good mechanic.
+
+#+HTML:<footer>﻿Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Control over consciousness cannot be institutionalized.
+
+#+HTML:<footer>﻿Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We cannot deny the facts of nature, but we should certainly try to improve on
+them.
+
+#+HTML:<footer>﻿Flow (Mihaly Csikszentmihalyi)</footer>
+#+END_QUOTE
+
+#+BEGIN_QUOTE
 “it is ill arguing against the use of anything from its abuse”
 
 #+HTML:<footer>﻿Intelligence: A Very Short Introduction (Deary, Ian J.)</footer>
