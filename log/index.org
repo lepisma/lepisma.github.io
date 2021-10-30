@@ -1,7 +1,12 @@
 #+TITLE: Log
 #+SETUPFILE: ../assets/export.setup
 
-@@html:<a href="/log/atom.xml" class="btn small">✉ | subscribe » atom</a> @@ 
+@@html:<a href="/log/atom.xml" class="btn small">✉ | subscribe » atom</a> @@
+
+#+begin_quote
+I have paused this log for an undefined amount of time. Keeping older entries
+for archival purpose.
+#+end_quote
 
 Periodic activity log.
 
