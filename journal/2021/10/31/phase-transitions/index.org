@@ -1,0 +1,64 @@
+#+TITLE: Phase Transitions
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: productivity, work
+
+While reading Dan's post on productivity [[https://danluu.com/productivity-velocity/][here]], I found a phrase for a concept
+that I relate a lot to. I will put the relevant snippet here:
+
+#+begin_quote
+More generally, Fabian Giesen has noted that this kind of non-linear impact of
+velocity is common:
+
+@@html:<br><br>@@
+
+There are "phase changes" as you cross certain thresholds (details depend on
+the problem to some extent) where your entire way of working changes. ...
+​​There's a lot of things I could in theory do at any speed but in practice
+cannot, because as iteration time increases it first becomes so frustrating that
+I can't do it for long and eventually it takes so long that it literally drops
+out of my short-term memory, so I need to keep notes or otherwise organize it or
+I can't do it at all.
+
+@@html:<br><br>@@
+
+Certainly if I can do an experiment in an interactive UI by dragging on a slider
+and see the result in a fraction of a second, at that point it's very "no
+filter", if you want to try something you just do it.
+
+@@html:<br><br>@@
+
+Once you're at iteration times in the low seconds (say a compile-link cycle with
+a statically compiled lang) you don't just try stuff anymore, you also spend
+time thinking about whether it's gonna tell you anything because it takes long
+enough that you'd rather not waste a run.
+
+@@html:<br><br>@@
+
+Once you get into several-minute or multi-hour iteration times there's a lot of
+planning to not waste runs, and context switching because you do other stuff
+while you wait, and note-taking/bookkeeping; also at this level mistakes are
+both more expensive (because a wasted run wastes more time) and more common
+(because your attention is so divided).
+
+@@html:<br><br>@@
+
+As you scale that up even more you might now take significant resources for a
+noticeable amount of time and need to get that approved and budgeted, which
+takes its own meetings etc.
+#+end_quote
+
+There are many examples where I have experienced such phase at work or
+otherwise. All of them have been very interesting, including the inverse
+functions[fn::I have an old phone that runs modern apps excruciatingly slowly.
+This helps a lot in avoiding distracting behaviors.].
+
+/Real-time/ upgrades of compile-cycle systems is a very common pattern here. We
+used to have our team wiki on a git repository. While git had its own benefits,
+switching to real-time editor based wikis helped us increase the amount of
+content written and shared with a non-linear dependency on time taken to push
+the page to display.
+
+For teams focusing on productivity and efficiency, phase transitions have
+important implications. While transition-agnostic metric improvements are
+important, it pays hugely to spend time on the ROI curve for each metric and
+take team level goals based on potential of transitions.

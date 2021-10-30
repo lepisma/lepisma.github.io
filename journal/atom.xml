@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2021-09-18T23:57:55+0530</updated>
+  <updated>2021-10-31T01:51:08+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Phase Transitions</title>
+    <link href="https://lepisma.xyz/journal/2021/10/31/phase-transitions/index.html"/>
+    <updated>2021-10-31</updated>
+  </entry>
   <entry>
     <title>Ritualistic Shutdowns</title>
     <link href="https://lepisma.xyz/journal/2021/09/15/shutdowns/index.html"/>
