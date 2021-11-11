@@ -2096,6 +2096,20 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** A Crack in Creation: Gene Editing and the Unthinkable Power to Control Evolution
+:PROPERTIES:
+:AUTHOR:   Jennifer A. Doudna, Samuel H. Sternberg
+:ADDED:    [2021-11-11]
+:GOODREADS: https://www.goodreads.com/book/show/30971755-a-crack-in-creation
+:END:
+
+*** The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race
+:PROPERTIES:
+:AUTHOR:   Walter Isaacson
+:ADDED:    [2021-11-11]
+:GOODREADS: https://www.goodreads.com/book/show/54968118-the-code-breaker
+:END:
+
 *** Conversational Style: Analyzing Talk among Friends
 :PROPERTIES:
 :AUTHOR:   Deborah Tannen
