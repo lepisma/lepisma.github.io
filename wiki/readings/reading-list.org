@@ -5805,6 +5805,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** Eleanor & Park
+:PROPERTIES:
+:AUTHOR:   Rainbow Rowell
+:ADDED:    [2021-11-19]
+:GOODREADS: https://www.goodreads.com/book/show/15745753-eleanor-park
+:END:
+
 *** Shake the Bottle and Other Stories
 :PROPERTIES:
 :AUTHOR:   Ashapurna Debi
