@@ -2096,6 +2096,13 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** Wired for Speech – How Voice Activates and Advances the Human–Computer Relationship (The MIT Press)
+:PROPERTIES:
+:AUTHOR:   Clifford Nass, Scott Brave
+:ADDED:    [2021-12-11]
+:AMAZON:   https://www.amazon.in/gp/product/0262640651/ref=ox_sc_saved_title_5?smid=A34N6JGI0BMD4A&psc=1
+:END:
+
 *** A Crack in Creation: Gene Editing and the Unthinkable Power to Control Evolution
 :PROPERTIES:
 :AUTHOR:   Jennifer A. Doudna, Samuel H. Sternberg
