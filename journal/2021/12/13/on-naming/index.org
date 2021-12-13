@@ -1,0 +1,61 @@
+#+TITLE: On Naming
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: work
+
+I am a big fan of naming things[fn::Fun fact, I set up the process for renaming
+Vernacular.ai to [[https://skit.ai][Skit]]. I would write something on that in a later post since
+that's an interesting story, at least for a lunch chat.]. By this, I am
+referring to spending time on naming an idea, a problem, a solution, a team, or
+anything that could be named.
+
+At work, I often find people arguing against the names I pick—which I admit, can
+get ornate at times—but I still stand by the importance of it. You would usually
+adopt different approaches for naming different classes of name-ables. And this
+would result in different types of names but they all help in the following
+three ways:
+
+1. Naming fences out the scope,
+2. it lets you compose with past and future work better, and
+3. it helps you market the idea well.
+
+* Scoping
+I have written a milder note on this earlier [[pile:journal:2020/05/17/naming-problems/index][here]] but want to extend the
+thought. The time you spend in naming helps in clarifying what the thing is
+supposed to be and what it's not. It makes you think about the project
+specification, not unlike [[https://tom.preston-werner.com/2010/08/23/readme-driven-development.html][Readme Driven Development]]. Once you name something,
+you position that /thing/ on a map with related /things/ and get a better sense of
+boundaries.
+
+In many of my personal and work related projects, I have tried building vague
+things and failed. Whenever I have tried to identify and name them before, I
+have been more successful. The time spent in naming let's you identify
+components and structures within and without.
+
+* Composing
+Once you name something appropriately, you unlock a whole world of adjacent
+ideas that can compose with yours.
+
+Before I knew it, I would struggle with ideas that match with what we in Machine
+Learning call /imitation learning/ (IL). I would try to retrofit my thoughts with
+Reinforcement Learning and use weird descriptions that didn't give me or others
+any clarity. Once I tried naming it, and found the right name of /imitation
+learning/[fn::Naming is not only inventing a new name, it's also finding
+something similar from the past. Just like research.], I got access to all other
+symbols around IL and have deeper understanding of the fundamental components
+like /rewards/, /demonstrations/, /guidance/, etc. My thoughts on the original problem
+have progressed drastically.
+
+In fact, that's what names are for. You name things so they can be reused and
+referred to by others. Good names command strong referential power.
+
+* Marketing
+Finally, naming helps in marketing the idea. Both to the outer world and inner,
+if such a concept is relevant. At work, among all the projects, ones with /better/
+names have more engagement than ones that are nebulously named. Poorly named
+systems live solely based on their utility, but the better named items form
+their own identities and attract guardians and caretakers.
+
+If you know about the [[https://youtu.be/sh3EPjhhd40?t=2300][Winston Star]], you can connect this with how Prof. Patrick
+Winston talks about packaging ideas. The star covers 5 aspects to focus on,
+Symbol, Slogan, Surprise, Salient, and Story. Good naming helps you to get the
+first two right.
