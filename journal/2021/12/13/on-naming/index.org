@@ -11,8 +11,8 @@ anything that could be named.
 At work, I often find people arguing against the names I pick—which I admit, can
 get ornate at times—but I still stand by the importance of it. You would usually
 adopt different approaches for naming different classes of name-ables, and this
-would result in different types of names. In any case, they all help in the
-following three ways:
+would result in different types of names. In any case, they all help in three
+ways.
 
 1. Naming fences out the scope,
 2. it lets you compose with past and future work better, and
