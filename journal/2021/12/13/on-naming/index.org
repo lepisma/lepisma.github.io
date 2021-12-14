@@ -28,8 +28,8 @@ boundaries.
 
 In many of my personal and work related projects, I have tried building vague
 things and failed. Whenever I have tried to identify and name them before, I
-have been more successful. The time spent in naming let's you identify
-components and structures within and without.
+have been more successful. The time spent in naming lets you identify components
+and structures within and without.
 
 * Composing
 Once you name something appropriately, you unlock a whole world of adjacent
