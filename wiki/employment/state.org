@@ -1,8 +1,8 @@
 #+TITLE: Employment State
 #+SETUPFILE: ../../assets/export.setup
 
-At present, I work as a Machine Learning engineer at [[https://github.com/vernacular-ai/][Vernacular.ai]] (starting
-June 2018). Previously,
+At present, I work in the Machine Learning team at [[https://skit.ai][Skit]] (starting June 2018).
+Previously,
 
 1. I worked as part time programmer at [[https://github.com/reichlab][The Reich Lab]] during my Master's
    (2016-2018) on epidemic forecasting models and tooling.
