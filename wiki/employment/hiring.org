@@ -1,136 +1,139 @@
 #+TITLE: Hiring
 #+SETUPFILE: ../../assets/export.setup
 
-At work I have been involved in hiring processes and execution across levels.
-Here are a few notes that might be helpful for others. In case you are starting
-with hiring processes at your own place, start with the section on [[https://themanagershandbook.com/hiring-and-onboarding/hiring-101][hiring]] from
-[[https://themanagershandbook.com/][The Manager's Handbook]] which covers a lot of best practices.
+At work I have been involved in hiring processes and execution across multiple
+levels. This document keeps a few notes coming from my experience that might be
+helpful for others. In case you are starting hiring processes at your own
+workplace, I would recommend starting with the section on [[https://themanagershandbook.com/hiring-and-onboarding/hiring-101][hiring]] from [[https://themanagershandbook.com/][The
+Manager's Handbook]] which covers a lot of best practices.
 
-I have been primarily responsible for hiring people in the Machine Learning
-function at Skit. There are various things we do differently here which involve
-many interesting technical rounds, that I will document later as and when I get
-time to dump items .
+I have been primarily responsible for hiring people in the Machine Learning (ML)
+function at [[https://skit.ai][Skit]]. There are many things we do differently here, including many
+interesting technical rounds. I will try to document these later as and when I
+get free.
 
 * TODO Structure
 ...
 
-* Values
-During interview process for role in ML, we evaluate a few traits across various
-rounds. At times there is a separate call for evaluating a few of these. Here
-are these traits that we look at:
+* Traits
+During the interview process for ML roles, we evaluate a few traits that are
+important for us[fn::The list has evolved from the time we started building the
+ML team to now.].
 
 ** Learning Attitude
-This is essential to any person in our function. Our field changes and
-technologies get outdated rapidly and a good candidate is always learning. You
-will find candidates who try to offset this by their /experience/, specially in
-senior roles. But we don't let that distract us from evaluation.
+Our field evolves and technologies get outdated rapidly. A good candidate is
+always learning. You will find people who try to offset this by their
+/experience/, specially in senior roles. But that should be kept independent
+from this.
 
-There are two aspects to this, /ability/ and /intention/. Ability can be noted
-in their history or via rounds like paper reading. Intention can be covered via
-few specific questions. Here are a few examples:
+There are two aspects here, /ability/ and /intention/. Ability can be noted in
+their history or via rounds like paper reading[fn::Here we ask the candidate to
+pick a research paper from a bunch, read up, and then have a discussion on that.
+This tells a lot about how deeply they can pick up new concepts.]. Intention can
+be covered via a few specific questions like the ones below:
 
 #+BEGIN_aside
-Note that the learning could be on non-technical front also. For example a
-person might want to learn how to do goal setting well.
+Note that learning, as referred here, could be on the non-technical front also.
+For example a person might want to learn how to do goal setting well.
 #+END_aside
 
-1. /How do you learn?/ Going deep in this tells whether they have spent time in
-   learning new things on their own. As follow ups, ask /how did they pick up
-   something recently/ and /what would they like to learn if given a free month
-   or year right now/.
+1. /How do you learn?/ Going deep in these tells whether they have spent time in
+   learning new things on their own. Follow up with questions like /how did they
+   pick up the last thing they learnt/ and /what would they like to learn if
+   given a free month or year/.
 2. /What new learning would you apply on a past project?/
-3. /What non work objects do you study or are interested in studying?/ While not
-   absolutely essential, being a philomath is a heavy plus.
+3. /What non-work entities do you study or are interested in studying?/ While
+   not absolutely essential, being a philomath is a heavy plus and an answer to
+   this question helps in establishing that.
 
 ** Love for Craft
-For most of the roles in our function, the person will have to produce artifacts
-of some form. For Researchers, this could be papers, for Engineers this could be
+As a member in our ML team, the person will have to produce artifacts of some
+form. For Researchers, this could be papers, for Engineers this could be
 programs and systems. People who love their craft are fastidious about the
 quality of their produce and are self-motivated to improve them.
 
-A good first start is to /look at their portfolio/. Depending on the work, it
-could be on GitHub, Google Scholar, personal webpages, etc. If you are aware of
-the field of work, this is sufficient most of the times. Else, and additionally,
-follow the way of criticism. /Ask them to criticize/ their or someone else's
-output. Here are a few examples conversations that you could have with the
-candidate along these lines:
+A good first start to evaluate this love is to /look at the candidate's
+portfolio/. Depending on the work, it could be on GitHub, Google Scholar,
+personal webpages, etc. This is sufficient most of the time. Else, and
+additionally, follow the way of criticism. /Ask them to criticize/ their or
+someone else's output. Here are a few examples conversations that you could have
+with the candidate for this:
 
 1. This repository looks like it was hacked around quickly under certain
    deadlines. What would you do if you have more time to work on this?
 2. How is the future release plan looking like for this project?
 3. The arguments in final section don't match the once used in abstract, what do
    you think about that?
-4. Introduction section has bits of inconsistencies and it seems like the core
-   idea has changed a lot over the process of writing. If you had to make this
-   cleaner, what would you do?
+4. Introduction section has inconsistencies, and it seems like the core idea has
+   changed a lot over the process of writing. What would you do to make this
+   cleaner?
 5. Here is a blog post written by one of our interns (let the intern also join
    the call), could you critique the writing and flow of arguments?
 6. Here is an old repository from our work, let's run through it and see what
-   all would you change if you would have to revive and start maintaining this.
+   all would you change if you have to revive and start maintaining this.
 
 ** Ownership and Agency
 We want people who can own the problems they work on, and do whatever is
-necessary to get them solved. For various levels, teams, and skills, this could
-map to different actions. One common pattern is where someone goes beyond their
-core expertise to get something out in the field even though their skill set
-lies in a smaller part of the whole process. There are more patterns that cut
-different borders than this but in all the cases, the person takes ownership of
-solving a problem and does so in a relatively self-reliant way.
+necessary to get them solved. This maps to different actions based on the
+levels, teams, and skills. A common pattern is of where someone goes beyond
+their core expertise to ship something. There are more patterns that cut
+different borders, but in all the cases, the person takes ownership of solving a
+problem and takes initiatives beyond what was planned, in a relatively
+self-reliant way.
 
 Few questions that could help in assessing this part:
 
-1. Have you built something that's not yet delivered the value it's supposed to
-   deliver because of something outside your control? This tells how they
-   perceive work and their own agency over it.
+1. Have you built something that's not yet delivered the value because of
+   something outside your control? This tells how they perceive work and their
+   own agency over it.
 2. How is your scope connected to top level company or team goals? To solve a
-   problem in ways that's different than a /handed-over-plan/, you need to
+   problem in ways that's different from a /handed-over-plan/, you need to
    understand how it's connected to other pieces around it. Knowing the goal
    hierarchy helps here.
 3. How has your scope changed over the past few months or years? People who take
    ownership well naturally grow faster.
-4. Can you tell about a situation where you had to do something outside of your
+4. Can you tell about a situation where you had to do something outside your
    scope to solve a problem?
 
 ** Ambitiousness
 We want candidates who have something in front of them that they /can see/ and
-have ambitions to get there. People with ambitions understand their goals more
-deeply and don't /only/ have generic statements like "I want to understand how
-human consciousness works".
+have ambitions to get there. People with ambitions understand their goals deeply
+and don't /only/ have generic statements like "I want to understand how human
+consciousness works".
 
-To understand depth here, you might find the 'admiration scale' pretty handy. In
-short, you ask them what one (or few) work(s) they admire the most in their
-field, what would they like to do in near future as the next milestone, and
-where they currently lie. People who have more veracious ambitions will be able
-to describe many milestones to reach the final aim, which itself will be highly
-ambitious.
+To understand depth, you might find the 'admiration scale' handy. In short, you
+ask them what one (or few) work(s) they admire the most in their field, what
+would they like to do in near future as the next milestone, and where they
+currently lie. People who have more veracious ambitions will be able to describe
+many milestones to reach the final aim, which itself will be highly ambitious.
 
 ** Ability to create and organize Knowledge
-A lot has been written about /accidental/ and /essential/ complexity in
-programming so I would assume familiarity with these phrases. Working on a
-complex product with dynamic team structure, it's important to understand the
-enormous accidental complexity that comes from poor information organization.
+Working on a complex product with dynamic team structure, it's important to
+understand the enormous accidental complexity[fn::A lot has been written about
+/accidental/ and /essential/ complexity in programming, so I would assume
+familiarity with these phrases.] that comes from poor information organization.
 Almost all /true failures/ that we have ever had can be traced to this. Our
-systems have miss-performed, we had delays, expectation setting has been wrong,
+systems have performed poorly, we had delays, expectation setting was wrong,
 etc. all because of implicit information not being explicated and communicated
-well.
+clearly. This is basically the problem of knowledge creation.
 
 We want candidates who can /create and organize knowledge/. This translates,
-very safely, to "we need good and articulate writers". As Zissner says:
+safely, to "we need good and articulate writers". As Zissner says:
 
 #+begin_quote
 /Clear thinking/ becomes /clear writing/; one can't exist without the other.
 #+end_quote
 
-You will find that these people are fastidious about representing knowledge in
-various forms. This can be seen in their blogs, project documentations, ticket
-descriptions, questions, answers, and arguments.
+We find people who are fastidious about representing knowledge in various forms.
+This can be seen in their blogs, project documentations, ticket descriptions,
+questions, answers, and arguments.
 
 For people who have worked with other people and teams in industries, it's
 instructive to ask how information flows and knowledge gets created in their
 environment, and what part they play in it. As usual, people who love doing this
-also have developed views on things like organizing wikis, promoting
-communication etc. They would also know /common health signs for a workplace's
-knowledge repository/.
+also have well-formed views on things like organizing wikis, promoting
+communication etc. They would also know common /health signs/ for a workplace's
+knowledge repository and asking about that is also helpful.
 
 * TODO Technical Rounds
 ...
