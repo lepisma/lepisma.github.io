@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2020-12-20 Sun 16:41 -->
+<!-- 2021-12-18 Sat 15:42 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hiring</title>
@@ -50,7 +50,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -222,7 +222,7 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
      function CodeHighlightOn(elem, id)
      {
@@ -263,7 +263,7 @@
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2020-12-20 Sun 16:41</div>
+  <div class='page-meta'>Last modified:  2021-12-18 Sat 15:42</div>
   <h1>Hiring</h1>
 </div>
 </div>
@@ -271,15 +271,222 @@
 <div id='breadcrumbs'><a href='./../index.html'>≡ index</a> / <a href='../employment/index.html'>employment</a> / hiring</div>
 <div id='crosslinks'></div>
 <p>
-While working at Vernacular.ai, I have been involved in hiring processes and
-execution across levels. I have a few notes that might be helpful for others.
+At work I have been involved in hiring processes and execution across levels.
+Here are a few notes that might be helpful for others. In case you are starting
+with hiring processes at your own place, start with the section on <a href="https://themanagershandbook.com/hiring-and-onboarding/hiring-101">hiring</a> from
+<a href="https://themanagershandbook.com/">The Manager's Handbook</a> which covers a lot of best practices.
+</p>
+
+<p>
+I have been primarily responsible for hiring people in the Machine Learning
+function at Skit. There are various things we do differently here which involve
+many interesting technical rounds, that I will document later as and when I get
+time to dump items .
+</p>
+
+<div id="outline-container-sec-todo-structure" class="outline-2">
+<h2 id="sec-todo-structure"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Structure</h2>
+<div class="outline-text-2" id="text-sec-todo-structure">
+
+<p>
+&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-values" class="outline-2">
+<h2 id="sec-values"><span class="section-number-2">2.</span> Values</h2>
+<div class="outline-text-2" id="text-sec-values">
+
+<p>
+During interview process for role in ML, we evaluate a few traits across various
+rounds. At times there is a separate call for evaluating a few of these. Here
+are these traits that we look at:
+</p>
+</div>
+
+<div id="outline-container-sec-values/learning-attitude" class="outline-3">
+<h3 id="sec-values/learning-attitude"><span class="section-number-3">2.1.</span> Learning Attitude</h3>
+<div class="outline-text-3" id="text-sec-values/learning-attitude">
+
+<p>
+This is essential to any person in our function. Our field changes and
+technologies get outdated rapidly and a good candidate is always learning. You
+will find candidates who try to offset this by their <i>experience</i>, specially in
+senior roles. But we don't let that distract us from evaluation.
+</p>
+
+<p>
+There are two aspects to this, <i>ability</i> and <i>intention</i>. Ability can be noted
+in their history or via rounds like paper reading. Intention can be covered via
+few specific questions. Here are a few examples:
+</p>
+
+<aside id="org51e6bc2">
+<p>
+Note that the learning could be on non-technical front also. For example a
+person might want to learn how to do goal setting well.
+</p>
+</aside>
+
+<ol class="org-ol">
+<li><i>How do you learn?</i> Going deep in this tells whether they have spent time in
+learning new things on their own. As follow ups, ask <i>how did they pick up
+something recently</i> and <i>what would they like to learn if given a free month
+or year right now</i>.</li>
+<li><i>What new learning would you apply on a past project?</i></li>
+<li><i>What non work objects do you study or are interested in studying?</i> While not
+absolutely essential, being a philomath is a heavy plus.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-values/love-for-craft" class="outline-3">
+<h3 id="sec-values/love-for-craft"><span class="section-number-3">2.2.</span> Love for Craft</h3>
+<div class="outline-text-3" id="text-sec-values/love-for-craft">
+
+<p>
+For most of the roles in our function, the person will have to produce artifacts
+of some form. For Researchers, this could be papers, for Engineers this could be
+programs and systems. People who love their craft are fastidious about the
+quality of their produce and are self-motivated to improve them.
+</p>
+
+<p>
+A good first start is to <i>look at their portfolio</i>. Depending on the work, it
+could be on GitHub, Google Scholar, personal webpages, etc. If you are aware of
+the field of work, this is sufficient most of the times. Else, and additionally,
+follow the way of criticism. <i>Ask them to criticize</i> their or someone else's
+output. Here are a few examples conversations that you could have with the
+candidate along these lines:
+</p>
+
+<ol class="org-ol">
+<li>This repository looks like it was hacked around quickly under certain
+deadlines. What would you do if you have more time to work on this?</li>
+<li>How is the future release plan looking like for this project?</li>
+<li>The arguments in final section don't match the once used in abstract, what do
+you think about that?</li>
+<li>Introduction section has bits of inconsistencies and it seems like the core
+idea has changed a lot over the process of writing. If you had to make this
+cleaner, what would you do?</li>
+<li>Here is a blog post written by one of our interns (let the intern also join
+the call), could you critique the writing and flow of arguments?</li>
+<li>Here is an old repository from our work, let's run through it and see what
+all would you change if you would have to revive and start maintaining this.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-values/ownership-and-agency" class="outline-3">
+<h3 id="sec-values/ownership-and-agency"><span class="section-number-3">2.3.</span> Ownership and Agency</h3>
+<div class="outline-text-3" id="text-sec-values/ownership-and-agency">
+
+<p>
+We want people who can own the problems they work on, and do whatever is
+necessary to get them solved. For various levels, teams, and skills, this could
+map to different actions. One common pattern is where someone goes beyond their
+core expertise to get something out in the field even though their skill set
+lies in a smaller part of the whole process. There are more patterns that cut
+different borders than this but in all the cases, the person takes ownership of
+solving a problem and does so in a relatively self-reliant way.
+</p>
+
+<p>
+Few questions that could help in assessing this part:
+</p>
+
+<ol class="org-ol">
+<li>Have you built something that's not yet delivered the value it's supposed to
+deliver because of something outside your control? This tells how they
+perceive work and their own agency over it.</li>
+<li>How is your scope connected to top level company or team goals? To solve a
+problem in ways that's different than a <i>handed-over-plan</i>, you need to
+understand how it's connected to other pieces around it. Knowing the goal
+hierarchy helps here.</li>
+<li>How has your scope changed over the past few months or years? People who take
+ownership well naturally grow faster.</li>
+<li>Can you tell about a situation where you had to do something outside of your
+scope to solve a problem?</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-values/ambitiousness" class="outline-3">
+<h3 id="sec-values/ambitiousness"><span class="section-number-3">2.4.</span> Ambitiousness</h3>
+<div class="outline-text-3" id="text-sec-values/ambitiousness">
+
+<p>
+We want candidates who have something in front of them that they <i>can see</i> and
+have ambitions to get there. People with ambitions understand their goals more
+deeply and don't <i>only</i> have generic statements like "I want to understand how
+human consciousness works".
+</p>
+
+<p>
+To understand depth here, you might find the 'admiration scale' pretty handy. In
+short, you ask them what one (or few) work(s) they admire the most in their
+field, what would they like to do in near future as the next milestone, and
+where they currently lie. People who have more veracious ambitions will be able
+to describe many milestones to reach the final aim, which itself will be highly
+ambitious.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-values/ability-to-create-and-organize-knowledge" class="outline-3">
+<h3 id="sec-values/ability-to-create-and-organize-knowledge"><span class="section-number-3">2.5.</span> Ability to create and organize Knowledge</h3>
+<div class="outline-text-3" id="text-sec-values/ability-to-create-and-organize-knowledge">
+
+<p>
+A lot has been written about <i>accidental</i> and <i>essential</i> complexity in
+programming so I would assume familiarity with these phrases. Working on a
+complex product with dynamic team structure, it's important to understand the
+enormous accidental complexity that comes from poor information organization.
+Almost all <i>true failures</i> that we have ever had can be traced to this. Our
+systems have miss-performed, we had delays, expectation setting has been wrong,
+etc. all because of implicit information not being explicated and communicated
+well.
+</p>
+
+<p>
+We want candidates who can <i>create and organize knowledge</i>. This translates,
+very safely, to "we need good and articulate writers". As Zissner says:
 </p>
 
 <blockquote>
 <p>
-This page is a work in progress.
+<i>Clear thinking</i> becomes <i>clear writing</i>; one can't exist without the other.
 </p>
 </blockquote>
+
+<p>
+You will find that these people are fastidious about representing knowledge in
+various forms. This can be seen in their blogs, project documentations, ticket
+descriptions, questions, answers, and arguments.
+</p>
+
+<p>
+For people who have worked with other people and teams in industries, it's
+instructive to ask how information flows and knowledge gets created in their
+environment, and what part they play in it. As usual, people who love doing this
+also have developed views on things like organizing wikis, promoting
+communication etc. They would also know <i>common health signs for a workplace's
+knowledge repository</i>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-todo-technical-rounds" class="outline-2">
+<h2 id="sec-todo-technical-rounds"><span class="section-number-2">3.</span> <span class="todo TODO">TODO</span> Technical Rounds</h2>
+<div class="outline-text-2" id="text-sec-todo-technical-rounds">
+
+<p>
+&#x2026;
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
