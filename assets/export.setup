@@ -39,10 +39,13 @@
 #+HTML_HEAD: <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 #+HTML_HEAD: <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 
+# Analytics
+#+HTML_HEAD: <script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+
 # Org babel default headers
 #+PROPERTY: header-args :eval never-export :exports both :results output
 
-# Some handy macros
+# Few handy macros
 #+MACRO: js #+HTML_HEAD: <script src="$1"></script>
 #+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
 #+MACRO: color @@html:<font color="$1">$2</font>@@
