@@ -2460,12 +2460,18 @@ Overall the book explores the relationship and meaning of the classical terms
 'author' and 'reader' in different settings. The style is a little different
 than I am used to but it's a nice read.
 
-*** READING Networking for Nerds: Find, Access and Land Hidden Game-Changing Career Opportunities Everywhere
+*** READ Networking for Nerds: Find, Access and Land Hidden Game-Changing Career Opportunities Everywhere
+CLOSED: [2022-03-03 Thu 23:28]
 :PROPERTIES:
 :AUTHOR:   Alaina G. Levine
 :ADDED:    [2019-10-13]
 :AMAZON:   https://www.amazon.com/Networking-Nerds-Game-Changing-Opportunities-Everywhere/dp/1118663586
 :END:
+
+I don't know if I finished this but I don't care. This could have a much better
+book. The bits about professionalism were too normative and prescriptive. Many
+of the examples very cheesy and could have been avoided to focus on abstract
+ideas.
 
 *** Lost in Math: How Beauty Leads Physics Astray
 :PROPERTIES:
