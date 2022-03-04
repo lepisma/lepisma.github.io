@@ -4395,7 +4395,8 @@ CLOSED: [2016-05-17]
 :GOODREADS: https://www.goodreads.com/book/show/1381851
 :END:
 
-*** Hackers & Painters: Big Ideas from the Computer Age
+*** READ Hackers & Painters: Big Ideas from the Computer Age
+CLOSED: [2022-03-04 Fri 11:00]
 :PROPERTIES:
 :AUTHOR:    Paul Graham, Allen Noren, Matt Hutchinson
 :ADDED:     <2015-01-14>
