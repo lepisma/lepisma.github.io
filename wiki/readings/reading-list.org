@@ -5819,6 +5819,19 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** READ Our Trees Still Grow in Dehra
+CLOSED: [2022-03-04 Fri 11:14]
+:PROPERTIES:
+:AUTHOR:   Ruskin Bond
+:ADDED:    [2022-03-04]
+:AMAZON:   https://www.amazon.in/Our-Trees-Still-Grow-Dehra/dp/0140169024
+:END:
+
+I remember reading a few of these when I was younger. His stories are very
+observational and have these child-like sense of wonder about everything. Even
+when the characters are grown (and the reader), the same awe comes through. It's
+beautiful.
+
 *** Eleanor & Park
 :PROPERTIES:
 :AUTHOR:   Rainbow Rowell
