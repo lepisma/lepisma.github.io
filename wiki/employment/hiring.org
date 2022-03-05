@@ -12,7 +12,7 @@ function at [[https://skit.ai][Skit]]. There are many things we do differently h
 interesting technical rounds. I will try to document these later as and when I
 get free.
 
-* TODO Structure
+* TODO General Structure
 ...
 
 * Traits
@@ -142,3 +142,12 @@ knowledge repository and asking about that is also helpful.
 * TODO Technical Rounds
 ...
 
+
+* Miscellaneous
+Few other questions I like to ask:
+
++ /If you absolutely have to hire a complementary person to help with this work,
+  what would that role look like?/ I have found this to be a better way of asking
+  about their weaknesses. Going for the description of the role also gives
+  strong information about their level of self-awareness, something that's
+  essential for leadership roles.
