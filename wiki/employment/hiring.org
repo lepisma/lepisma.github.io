@@ -45,6 +45,10 @@ For example a person might want to learn how to do goal setting well.
 3. /What non-work entities do you study or are interested in studying?/ While
    not absolutely essential, being a philomath is a heavy plus and an answer to
    this question helps in establishing that.
+4. /Which concept was the most difficult to study or grasp?/ Identifying where
+   people struggle tells a lot about their capabilities and persistence. Follow
+   up with asking about what they still don't understand and are learning. Life
+   long learners always have a list somewhere.
 
 ** Love for Craft
 As a member in our ML team, the person will have to produce artifacts of some
