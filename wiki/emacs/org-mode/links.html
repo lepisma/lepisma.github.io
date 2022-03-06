@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-06-23 Sun 21:28 -->
+<!-- 2022-03-06 Sun 23:11 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Org-links</title>
@@ -38,7 +38,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -50,7 +50,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -221,6 +221,7 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 <style>
 .bbq-list-info {
 margin-bottom: 20px;
@@ -240,50 +241,26 @@ color: #7b7b7b;
 }
 </style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -305,7 +282,7 @@ for the JavaScript code in this tag.
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2019-06-23 Sun 21:27</div>
+  <div class='page-meta'>Last modified:  2022-03-06 Sun 23:11</div>
   <h1>Org-links</h1>
 </div>
 </div>
@@ -332,35 +309,7 @@ org capture also are just org-links.
 If your org files have links that have a usable export view, they get a whole
 lot better. For example, I keep an org file with search based playlists for <a href="https://github.com/lepisma/bbq">my
 music player</a>. Clicking fires the playlist and exporting lays out the items from
-that list along with the youtube embed trick from Malabarba. Export result for <code>[[bbq::new
- 6][Newest 6 songs]]</code> follows:
-</p>
-
-<p>
-<div class="bbq-list">
-                   <h3 class="bbq-list-info">
-                     Playlist: Newest 6 songs <code>[:new 6]</code>
-                   </h3>
-                   <div class="bbq-list-container"><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/s1tAYmMjLdY" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">I Miss you - <em>Blink 182</em></div>
-             </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/Xt5vXp0IYQA" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">So Smart - <em>Indoor Voices</em></div>
-             </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/p5Un9GH-Z0Q" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Healthy Moon - <em>DIIV</em></div>
-             </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/z-cISmtXk1M" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Umi - <em>Pinkshinyultrablast</em></div>
-             </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/JQqFeCCuwW0" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Memories - <em>The Midnight</em></div>
-             </div><div class="bbq-item">
-               <iframe width="200" height="130" src="https://www.youtube.com/embed/4rJ9z6IXnb8" frameborder="0" allowfullscreen></iframe>
-               <div class="bbq-item-info">Los Angeles - <em>The Midnight</em></div>
-             </div></div>
-                 </div>
+that list along with the youtube embed trick from Malabarba.
 </p>
 
 <hr>
