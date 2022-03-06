@@ -35,10 +35,7 @@ org capture also are just org-links.
 If your org files have links that have a usable export view, they get a whole
 lot better. For example, I keep an org file with search based playlists for [[https://github.com/lepisma/bbq][my
 music player]]. Clicking fires the playlist and exporting lays out the items from
-that list along with the youtube embed trick from Malabarba. Export result for ~[[bbq::new
- 6][Newest 6 songs]]~ follows:
-
-[[bbq::new 6][Newest 6 songs]]
+that list along with the youtube embed trick from Malabarba.
 
 -----
 
