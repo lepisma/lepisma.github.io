@@ -1,0 +1,6 @@
+#+TITLE: Predictions
+#+SETUPFILE: ../../assets/export.setup
+
+I keep predictions for the future here. I am still figuring out how to organize
+them. We probably need a date when the prediction was made, the rough time for
+which the prediction is made. The prediction itself and a journal with reviews.
