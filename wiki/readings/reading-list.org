@@ -2104,9 +2104,8 @@ CLOSED: [2022-03-10 Thu 11:10]
 :GOODREADS: https://www.goodreads.com/book/show/3828902-thinking-in-systems
 :END:
 
-Good primer on systems thinking. The length was perfect. I would have liked more
-example of systems analysis in the mathematical way, and not just high level
-sketches.
+The length was perfect though I would have liked more example of systems
+analysis in the mathematical way, and not just high level sketches.
 
 *** Wired for Speech – How Voice Activates and Advances the Human–Computer Relationship (The MIT Press)
 :PROPERTIES:
