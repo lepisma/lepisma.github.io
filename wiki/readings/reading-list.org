@@ -1354,6 +1354,20 @@ CLOSED: [2018-02-05 Mon 01:16]
 :END:
 
 ** Philosophy
+*** What Computers Still Can't Do: A Critique of Artificial Reason
+:PROPERTIES:
+:AUTHOR:   Hubert L. Dreyfus
+:ADDED:    [2022-03-21]
+:GOODREADS: https://www.goodreads.com/book/show/796506.What_Computers_Still_Can_t_Do
+:END:
+
+*** What Computers Can't Do: A Critique of Artificial Reason
+:PROPERTIES:
+:AUTHOR:   Hubert L. Dreyfus
+:ADDED:    [2022-03-21]
+:GOODREADS: https://www.goodreads.com/book/show/1039575.What_Computers_Can_t_Do
+:END:
+
 *** On Deconstruction: Theory and Criticism after Structuralism
 :PROPERTIES:
 :AUTHOR:   Jonathan Culler
