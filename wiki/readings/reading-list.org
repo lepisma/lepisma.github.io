@@ -2012,6 +2012,27 @@ CLOSED: [2018-02-05 Mon 01:18]
 Creating a new section for psychology. I might have to move few books from
 philosophy section to here.
 
+*** Creativity: Flow and the Psychology of Discovery and Invention
+:PROPERTIES:
+:AUTHOR:   Mihaly Csikszentmihalyi
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Creativity-Psychology-Discovery-Invention-Perennial-ebook/dp/B000TG1X9C/ref=sr_1_3?crid=1DDSUTKX0IN56&keywords=creativity+flow&qid=1650129997&sprefix=creativity+flo%2Caps%2C202&sr=8-3
+:END:
+
+*** The Paradox of Choice: Why More Is Less, Revised Edition
+:PROPERTIES:
+:AUTHOR:   Barry Schwartz
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Paradox-Choice-More-Less-Revised/dp/0062449923/ref=sr_1_3?crid=3I2XVBLIFRHJM&keywords=The+Paradox+of+Choice&qid=1650131262&sprefix=%2Caps%2C263&sr=8-3
+:END:
+
+*** Attached: The New Science of Adult Attachment and How It Can Help You Find and Keep Love
+:PROPERTIES:
+:AUTHOR:   Amir Levine, Rachel Heller
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.com/Attached-Science-Adult-Attachment-YouFind/dp/1585429139/ref=tmm_pap_title_0
+:END:
+
 *** READING Psychology: A Very Short Introduction (Very Short Introductions)
 :PROPERTIES:
 :AUTHOR:   Gillian Butler
@@ -2110,6 +2131,90 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** Who: The A Method for Hiring
+:PROPERTIES:
+:AUTHOR:   Geoff Smart, Randy Street
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Who-Method-Hiring-Geoff-Smart-ebook/dp/B001EL6RWY
+:END:
+
+*** An Elegant Puzzle: Systems of Engineering Management
+:PROPERTIES:
+:AUTHOR:   Will Larson
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186
+:END:
+
+*** The Five Dysfunctions of a Team, Enhanced Edition: A Leadership Fable
+:PROPERTIES:
+:AUTHOR:   Patrick M. Lencioni
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Five-Dysfunctions-Team-Leadership-Lencioni-ebook/dp/B006960LQW
+:END:
+
+*** The Effective Executive: The Definitive Guide to Getting the Right Things Done
+:PROPERTIES:
+:AUTHOR:   Peter F. Drucker
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Effective-Executive-Definitive-Harperbusiness-Essentials/dp/0060833459
+:END:
+
+*** Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity
+:PROPERTIES:
+:AUTHOR:   Kim Scott
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Radical-Candor-Kick-Ass-Without-Humanity/dp/1250103509
+:END:
+
+*** Accelerate: Building and Scaling High Performing Technology Organizations
+:PROPERTIES:
+:AUTHOR:   Nicole Forsgren PhD, Jez Humble, Gene Kim, Nicole Forsgren, IT Revolution Press, Nicole Forsgren PhD, Jez Humble, Gene Kim, Nicole Forsgren, IT Revolution Press, Nicole Forsgren PhD, Jez Humble, Gene Kim, Nicole Forsgren, IT Revolution Press
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Accelerate-Building-Performing-Technology-Organizations/dp/B07BMCFBWY
+:END:
+
+*** The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change
+:PROPERTIES:
+:AUTHOR:   Camille Fournier
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Managers-Path-Leaders-Navigating-Growth/dp/9352135474
+:END:
+
+*** High Output Management
+:PROPERTIES:
+:AUTHOR:   Andrew S. Grove
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/High-Output-Management-Andrew-Grove/dp/0679762884
+:END:
+
+*** What You Do Is Who You Are : How to Create Your Business Culture
+:PROPERTIES:
+:AUTHOR:   Ben Horowitz
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/What-You-Do-Who-Are/dp/0008356114
+:END:
+
+*** Innovator's Dilemma: When New Technologies Cause Great Firms to Fail
+:PROPERTIES:
+:AUTHOR:   Christensen
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Innovators-Dilemma-Technologies-Management-Innovation/dp/142219602X/ref=sr_1_1?crid=T28887K0KHI8&keywords=innovators+dilemma&qid=1650129954&sprefix=innovator%2Caps%2C209&sr=8-1
+:END:
+
+*** Escaping the Build Trap: How Effective Product Management Creates Real Value
+:PROPERTIES:
+:AUTHOR:   Melissa Perri
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.in/Escaping-Build-Trap-Melissa-Perri/dp/149197379X/ref=sr_1_2?crid=2FCBZV1AQC9KW&keywords=escaping+the+build+trap&qid=1650129976&sprefix=escaping+the+%2Caps%2C206&sr=8-2
+:END:
+
+*** This Is How Your Marriage Ends: A Hopeful Approach to Saving Relationships
+:PROPERTIES:
+:AUTHOR:   Matthew Fray
+:ADDED:    [2022-04-20]
+:AMAZON:   https://www.amazon.com/This-Your-Marriage-Ends-Relationships-ebook/dp/B097RPC1SD
+:END:
+
 *** READ Thinking in Systems: A Primer
 CLOSED: [2022-03-10 Thu 11:10]
 :PROPERTIES:
@@ -2121,7 +2226,7 @@ CLOSED: [2022-03-10 Thu 11:10]
 The length was perfect though I would have liked more example of systems
 analysis in the mathematical way, and not just high level sketches.
 
-*** Wired for Speech – How Voice Activates and Advances the Human–Computer Relationship (The MIT Press)
+*** Wired for Speech – How Voice Activates and Advances the Human–Computer Relationship
 :PROPERTIES:
 :AUTHOR:   Clifford Nass, Scott Brave
 :ADDED:    [2021-12-11]
@@ -2192,7 +2297,7 @@ CLOSED: [2021-05-30 Sun 21:27]
 :AMAZON:   https://www.amazon.com/Score-Takes-Care-Itself-Philosophy/dp/1591843472
 :END:
 
-*** READING The Voice in the Machine: Building Computers That Understand Speech (The MIT Press)
+*** READING The Voice in the Machine: Building Computers That Understand Speech
 :PROPERTIES:
 :AUTHOR:   Roberto Pieraccini
 :ADDED:    [2021-04-24]
@@ -4219,12 +4324,20 @@ CLOSED: [2015-02-17]
 :GOODREADS: https://www.goodreads.com/book/show/162120
 :END:
 
-*** How to Read a Book: The Classic Guide to Intelligent Reading
+*** READING How to Read a Book: The Classic Guide to Intelligent Reading
 :PROPERTIES:
 :AUTHOR:    Mortimer J. Adler, Charles Van Doren
 :ADDED:     <2015-02-01>
 :GOODREADS: https://www.goodreads.com/book/show/567610
 :END:
+
+Why am I reading this book? Recently both my reading quality and quantity have
+gone down. I feel the depth I used to go through for any reading was more
+before. There are many reasons for that and I don't want to go there in this
+note. But one strong way of recovery is to do some structured reading. Similar
+to how to write a thesis, this book seems like covering a certain way of reading
+deeply. I don't know if the exact approach will work for me but I am hoping to
+be able to build my own /better/ approach.
 
 *** The Fourth Paradigm: Data-Intensive Scientific Discovery
 :PROPERTIES:
@@ -5652,12 +5765,17 @@ CLOSED: [2016-02-09]
 :GOODREADS: https://www.goodreads.com/book/show/119073
 :END:
 
-*** To Kill a Mockingbird
+*** READ To Kill a Mockingbird
+CLOSED: [2022-04-19 Tue 13:13]
 :PROPERTIES:
 :AUTHOR:    Harper Lee
 :ADDED:     <2015-04-09>
 :GOODREADS: https://www.goodreads.com/book/show/2657
 :END:
+
+TODO Thoughts.
+
+Thanks to Unnu for this book.
 
 *** A Passage to India
 :PROPERTIES:
