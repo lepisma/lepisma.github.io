@@ -2152,7 +2152,8 @@ CLOSED: [2021-05-29 Sat 00:24]
 :AMAZON:   https://www.amazon.in/Five-Dysfunctions-Team-Leadership-Lencioni-ebook/dp/B006960LQW
 :END:
 
-*** The Effective Executive: The Definitive Guide to Getting the Right Things Done
+*** READ The Effective Executive: The Definitive Guide to Getting the Right Things Done
+CLOSED: [2022-05-20 Fri 14:05]
 :PROPERTIES:
 :AUTHOR:   Peter F. Drucker
 :ADDED:    [2022-04-20]
@@ -5773,7 +5774,14 @@ CLOSED: [2022-04-19 Tue 13:13]
 :GOODREADS: https://www.goodreads.com/book/show/2657
 :END:
 
-TODO Thoughts.
+I always wanted to read this book but never got around to it, and that increased
+the expectations in some way. The version I read now was a graphics novel. So
+mostly different in texts that do the world building, which I don't know how to
+compare without reading the /text/ only version.
+
+I found it to be simpler than what I had made it in my mind before reading. But
+there were many powerful /scenes/—one of the most enjoyable things for me in
+works of fiction—peppered along the story.
 
 Thanks to Unnu for this book.
 
