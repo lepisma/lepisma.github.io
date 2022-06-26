@@ -1,0 +1,24 @@
+#+TITLE: Breaks
+#+SETUPFILE: ../../../../../assets/export.setup
+#+TAGS: personal, work
+
+Sometime back I took a break from work. After conversations with people about
+it, I realized that I don't really have a good point of view on such breaks. If
+someone talks to you about a break, it's common to understand the situation as
+[[https://en.wikipedia.org/wiki/Occupational_burnout][occupational burnout]] and point to various retreats for managing stress. But I
+believe there are many other things in life needing breaks that don't exactly
+fit in the burnout or stress category.
+
+There are /breaks from/ something and there are /breaks for/ something. As an
+example of the second kind, if you need to boost your writing mind, you could go
+somewhere in isolation with a journal and incessantly write for a whole week.
+
+Because of the baggage associated with the /break-from/ definition, I have shied
+away from taking long work breaks. There have either been external pushes around
+reorienting myself or genuine burnout that has led me to breaks. But thinking
+about breaks from the /break-for/ perspective gets rid of the said baggage. I
+would still take breaks /from work/ but I can take breaks /for/ so many other things
+too, like working on this website, finishing a pet project, writing long forms,
+or learning a complex concept. This is exactly what I am planning to do from now
+on after moving to a quarterly break cycle as compared to my earlier—and
+incidental—annual cycle.
