@@ -2131,6 +2131,41 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** Through the Language Glass: Why the World Looks Different in Other Languages
+:PROPERTIES:
+:AUTHOR:   Guy Deutscher
+:ADDED:    [2022-07-10]
+:AMAZON:   https://www.amazon.com/exec/obidos/ASIN/080508195X/radiolabbooks-20/
+:END:
+
+*** The Back of the Napkin (Expanded Edition): Solving Problems and Selling Ideas with Pictures
+:PROPERTIES:
+:AUTHOR:   Dan Roam
+:ADDED:    [2022-07-10]
+:AMAZON:   https://www.amazon.in/Back-Napkin-Expanded-Problems-Pictures/dp/1591842697/ref=sr_1_2?crid=1CR8LR21BTE3P&keywords=The+Back+of+the+Napkin&qid=1657449664&sprefix=the+back+of+the+napkin%2Caps%2C210&sr=8-2
+:END:
+
+*** Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers
+:PROPERTIES:
+:AUTHOR:   Dave Gray, Sunni Brown, James Macanufo
+:ADDED:    [2022-07-10]
+:AMAZON:   https://www.amazon.in/Gamestorming-Playbook-Innovators-Rulebreakers-Changemakers-ebook/dp/B003XDUCLS/ref=sr_1_1?crid=4PZCIFVT1AVJ&keywords=Gamestorming%3A&qid=1657449529&sprefix=%2Caps%2C193&sr=8-1
+:END:
+
+*** Thinkertoys: A Handbook of Creative-Thinking Techniques
+:PROPERTIES:
+:AUTHOR:   Michael Michalko
+:ADDED:    [2022-07-10]
+:AMAZON:   https://www.amazon.in/Thinkertoys-Creative-Thinking-Techniques-Michael-Michalko/dp/1580087736/ref=sr_1_1?keywords=thinkertoys&qid=1657449500&sprefix=thinkerto%2Caps%2C219&sr=8-1
+:END:
+
+*** Think Better: An Innovator's Guide to Productive Thinking
+:PROPERTIES:
+:AUTHOR:   Tim Hurson
+:ADDED:    [2022-07-10]
+:AMAZON:   https://www.amazon.in/Think-Better-Innovators-Productive-Thinking/dp/0071494936
+:END:
+
 *** Who: The A Method for Hiring
 :PROPERTIES:
 :AUTHOR:   Geoff Smart, Randy Street
