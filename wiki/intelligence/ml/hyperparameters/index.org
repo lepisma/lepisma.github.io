@@ -1,0 +1,33 @@
+#+TITLE: Hyperparameters
+#+SETUPFILE: ../../../assets/export.setup
+
+#+BEGIN_QUOTE
+This page is a work in progress
+#+END_QUOTE
+
+Tuning hyperparameters gets you question your life decisions. Maybe its not that
+painful to some but it doesn't feel right if you have been developing softwares
+in some capacity. Doing this manually just goes against everything you learn to
+apprehend in computer programs. Or at least the following:
+
+- modularity
+- reproducibility
+- optimality
+
+Other than the fallback random search, I believe something that might really
+help in cases that I have been involved with is to do partial optimization using
+a subset of data. If the loss is at least subadditive (? confirm) and the
+runtime highly dependent on the number of samples, this combined with some sort
+of upper confidence bound should provide some theoretical guarantees on the
+problem.
+
+Before digging in that though, let's check in on some already available
+techniques.
+
+* TODO Read
+- Random search (SoC?, Evo?)
+- Spearmint, TPE
+- SH, Hyperband (these mostly replace the dataset subsetting thing with number
+  of iterations. I guess these work can be generalized to use any /proxy/ metric
+  for the loss value)
+- Harmonica

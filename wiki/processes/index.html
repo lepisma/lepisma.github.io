@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-08-02 Tue 01:10 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Processes</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a class='active' href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>Last modified:  2022-08-02 Tue 01:10</div>
+  <h1>Processes</h1>
+</div>
+</div>
+<div id="content" class="content">
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> /  processes</div>
+<div id='crosslinks'></div>
+<p>
+If you have been following my blog or journal or log you might know about
+numerous attempts at better time utilization. Most of them failed because of a
+few reasons, also documented.
+</p>
+
+<p>
+After many experiments (still ongoing), I have realized that it's important to
+define the personal core concepts that <i>productivity</i> breaks into. Once that's
+done, it becomes clear to see which approach can help in what way. My approach
+is to organize things in <i>nouns</i> and <i>verbs</i> and they see which productivity
+technique helps in what. My current repertoire follows.
+</p>
+
+<div id="outline-container-sec-nouns" class="outline-2">
+<h2 id="sec-nouns"><span class="section-number-2">1.</span> Nouns</h2>
+<div class="outline-text-2" id="text-sec-nouns">
+
+<p>
+Items here are not organized in a mutually exclusive manner. I feel it's hard to
+do that and so I am just going with whatever feels natural at the moment.
+</p>
+</div>
+
+<div id="outline-container-sec-nouns/scopes" class="outline-3">
+<h3 id="sec-nouns/scopes"><span class="section-number-3">1.1.</span> Scopes</h3>
+<div class="outline-text-3" id="text-sec-nouns/scopes">
+
+<p>
+<i>Scopes</i> are aspects of work. I tend to organize them in a two level heirarchy.
+First specifies very broad <i>scope</i> like <code>work</code> or <code>personal</code>. Second goes deeper in
+the directions of work.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/targets" class="outline-3">
+<h3 id="sec-nouns/targets"><span class="section-number-3">1.2.</span> Targets</h3>
+<div class="outline-text-3" id="text-sec-nouns/targets">
+
+<p>
+<i>Targets</i> are checkpoints that define various goals for <i>scopes</i>. Many times they
+come with a deadline. As an example, you might want to target a certain body
+weight value by a certain date.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/tasks" class="outline-3">
+<h3 id="sec-nouns/tasks"><span class="section-number-3">1.3.</span> Tasks</h3>
+<div class="outline-text-3" id="text-sec-nouns/tasks">
+
+<p>
+<i>Tasks</i> lie under certain <code>scope</code> and usually have the following optional properties
+attached to them:
+</p>
+
+<ul class="org-ul">
+<li>Task <i>kind</i>. Programming, reviewing, reading, thinking, etc.</li>
+<li><i>Priority</i>. Important, not important, and all gradations in between.</li>
+<li><i>Effort</i> and <i>appetite</i>. Efforts are estimate of time needed for task, appetite
+tells how much time I <i>want</i> to spend on the task.</li>
+<li><i>Deadline</i> and <i>scheduled</i> date times.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/rituals" class="outline-3">
+<h3 id="sec-nouns/rituals"><span class="section-number-3">1.4.</span> Rituals</h3>
+<div class="outline-text-3" id="text-sec-nouns/rituals">
+
+<p>
+<i>Rituals</i> are habits, processes, and recurring events. The motivation for them can
+come from <i>targets</i> or from promises of pleasure in the act.
+</p>
+
+<p>
+Reading an hour everyday is an example of a <i>ritual</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/events" class="outline-3">
+<h3 id="sec-nouns/events"><span class="section-number-3">1.5.</span> Events</h3>
+<div class="outline-text-3" id="text-sec-nouns/events">
+
+<p>
+<i>Events</i> are calendar bound items, like meetings. Sometimes items not strictly on
+calendar also get projected there and become <i>events</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/time" class="outline-3">
+<h3 id="sec-nouns/time"><span class="section-number-3">1.6.</span> Time</h3>
+<div class="outline-text-3" id="text-sec-nouns/time">
+
+<p>
+<i>Time</i> is the currency you pay for execution.
+</p>
+
+<p>
+The canonical unit here is number of hours but I like to think about different
+<i>kinds</i> of hours differently. Morning 1 hour slots during weekends are not the
+same as the ones during weekdays. Same <i>task</i> can have incredibly different
+execution efficiency in these two slots.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/notes" class="outline-3">
+<h3 id="sec-nouns/notes"><span class="section-number-3">1.7.</span> Notes</h3>
+<div class="outline-text-3" id="text-sec-nouns/notes">
+
+<p>
+These are your unshaped ideas, reading notes, feedback, drafts, write-ups, and
+everything else text-like.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-nouns/interrupts" class="outline-3">
+<h3 id="sec-nouns/interrupts"><span class="section-number-3">1.8.</span> Interrupts</h3>
+<div class="outline-text-3" id="text-sec-nouns/interrupts">
+
+<p>
+All external <i>interrupts</i> like incoming emails, notifications, etc.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-verbs" class="outline-2">
+<h2 id="sec-verbs"><span class="section-number-2">2.</span> Verbs</h2>
+<div class="outline-text-2" id="text-sec-verbs">
+
+<p>
+Here are my <i>verbs</i>, inspired by <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">GTD</a>:
+</p>
+</div>
+
+<div id="outline-container-sec-verbs/capture-and-organize" class="outline-3">
+<h3 id="sec-verbs/capture-and-organize"><span class="section-number-3">2.1.</span> Capture and Organize</h3>
+<div class="outline-text-3" id="text-sec-verbs/capture-and-organize">
+
+<p>
+<i>Capturing</i> means saving items in your system. If the items are <i>tasks</i>, then your
+list management tool's workflow will handle this. Good capture mechanisms cover
+all properties of the captured items, are efficient, well integrated with other
+verbs, and highly accessible.
+</p>
+
+<p>
+Collection of items of all forms tend to move towards state of high entropy.
+More so if the capture mechanism is clumsy. <i>Organizing</i> comes to rescue here. It
+refers to massaging your collections so that the next stage of <i>viewing</i> becomes
+efficient and effective.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-verbs/view-and-work" class="outline-3">
+<h3 id="sec-verbs/view-and-work"><span class="section-number-3">2.2.</span> View and Work</h3>
+<div class="outline-text-3" id="text-sec-verbs/view-and-work">
+
+<p>
+<i>Viewing</i> means bringing up items from collections to do something about them.
+Effective <i>viewing</i>, for most part, involves smart usage of item properties and
+good filtering mechanisms.
+</p>
+
+<p>
+For <i>task</i> like items, <i>working</i> covers everything involved from picking to
+executing them effectively.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-verbs/review" class="outline-3">
+<h3 id="sec-verbs/review"><span class="section-number-3">2.3.</span> Review</h3>
+<div class="outline-text-3" id="text-sec-verbs/review">
+
+<p>
+<i>Reviews</i> are periodic retrospectives. These are assisted by work logging methods
+and helpful dashboards.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-methods" class="outline-2">
+<h2 id="sec-methods"><span class="section-number-2">3.</span> Methods</h2>
+<div class="outline-text-2" id="text-sec-methods">
+
+<p>
+Thoughts on a few common productivity methods. These are not all comparable but
+are also not all compose-able. So, like with nouns, I have kept them in a flat
+structure.
+</p>
+
+<p>
+No single method works well for <i>all aspects</i> of your life and you will need to
+adapt a mixture of them for your own requirements. I have tried documenting my
+personal mixture in the next section.
+</p>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/timeblocking][time-blocking]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/timeblocking][time-blocking]]"><span class="section-number-3">3.1.</span> <a href="https://en.wikipedia.org/wiki/Timeblocking">Time Blocking</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/timeblocking][time-blocking]]">
+
+<p>
+Here you block you calendar with tasks. You <i>calendar</i> becomes your capturing,
+viewing, and working tool.
+</p>
+
+<p>
+This is helpful for a lot of people, but doesn't work that well for me. I
+usually like a lot of flexibility and time blocking doesn't allow that.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/okr][objectives-and-key-results-(okrs)]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/okr][objectives-and-key-results-(okrs)]]"><span class="section-number-3">3.2.</span> <a href="https://en.wikipedia.org/wiki/OKR">Objectives and Key Results (OKRs)</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/okr][objectives-and-key-results-(okrs)]]">
+
+<p>
+A famous high level goal setting method. Usually good for <i>teams</i> since the <i>scope</i>
+is restricted and <i>targets</i> are important than <i>rituals</i>. Is good for organizing and
+reviewing.
+</p>
+
+<p>
+I tried using OKRs for personal scope but I don't think they work well for
+situations where targets aren't everything.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/getting_things_done][getting-things-done-(gtd)]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/getting_things_done][getting-things-done-(gtd)]]"><span class="section-number-3">3.3.</span> <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done (GTD)</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/getting_things_done][getting-things-done-(gtd)]]">
+
+<p>
+GTD provides a really solid way to think about personal productivity and
+planning. GTD covers almost every noun and verb.
+</p>
+
+<p>
+Even though I can never go full GTD, I keep taking inspiration from this
+workflow.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://bulletjournal.com/][bullet-journal]]" class="outline-3">
+<h3 id="sec-methods/[[https://bulletjournal.com/][bullet-journal]]"><span class="section-number-3">3.4.</span> <a href="https://bulletjournal.com/">Bullet Journal</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://bulletjournal.com/][bullet-journal]]">
+
+<p>
+Another framework that knits together most of the verbs and nouns. I haven't
+really tried it but I believe it's not adding anything new to my current
+workflow. Other than being completely analog, of course.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/ivy-lee-method" class="outline-3">
+<h3 id="sec-methods/ivy-lee-method"><span class="section-number-3">3.5.</span> Ivy Lee Method</h3>
+<div class="outline-text-3" id="text-sec-methods/ivy-lee-method">
+
+<p>
+A short term method of picking and <i>working</i> on tasks. You write down few
+important things to do every day and do them. There are many variations and
+names for this. The one I like and currently use is defined in the section on
+personal methods.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/time_management#the_eisenhower_method][eisenhower-matrix]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/time_management#the_eisenhower_method][eisenhower-matrix]]"><span class="section-number-3">3.6.</span> <a href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method">Eisenhower Matrix</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/time_management#the_eisenhower_method][eisenhower-matrix]]">
+
+<p>
+Simple way of organizing tasks in important and urgent matrix. I find this too
+simplistic for my purpose but this can work really well under restricted scopes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/hipster_pda][hipster-pda]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/hipster_pda][hipster-pda]]"><span class="section-number-3">3.7.</span> <a href="https://en.wikipedia.org/wiki/Hipster_PDA">Hipster PDA</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/hipster_pda][hipster-pda]]">
+
+<p>
+One of the analog ways of writing down things to do. I used to use this by
+mixing bullet journal and Ivy Lee type restrictions on a daily basis.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/zettelkasten][zettelkasten]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/zettelkasten][zettelkasten]]"><span class="section-number-3">3.8.</span> <a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/zettelkasten][zettelkasten]]">
+
+<p>
+Mostly for note capturing, organizing, and viewing. I tried this via <a href="https://github.com/org-roam/org-roam">org-roam</a>
+but didn't go further. Maybe because I still haven't figured out that I need to
+improve my note taking workflow.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/inbox-zero" class="outline-3">
+<h3 id="sec-methods/inbox-zero"><span class="section-number-3">3.9.</span> Inbox Zero</h3>
+<div class="outline-text-3" id="text-sec-methods/inbox-zero">
+
+<p>
+Way to capture and organize interrupts. I don't have any strong views here since
+I do a few things to automatically capture items from my inbox.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-methods/[[https://en.wikipedia.org/wiki/pomodoro_technique][pomodoro]]" class="outline-3">
+<h3 id="sec-methods/[[https://en.wikipedia.org/wiki/pomodoro_technique][pomodoro]]"><span class="section-number-3">3.10.</span> <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro</a></h3>
+<div class="outline-text-3" id="text-sec-methods/[[https://en.wikipedia.org/wiki/pomodoro_technique][pomodoro]]">
+
+<p>
+A <i>working</i> technique that helps you stay focused and healthier. I use this mostly
+for appetite bound tasks where I don't want to spend more than a certain time.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-personal-methods" class="outline-2">
+<h2 id="sec-personal-methods"><span class="section-number-2">4.</span> Personal methods</h2>
+<div class="outline-text-2" id="text-sec-personal-methods">
+
+<p>
+At the very top level, I maintain a <i>plans</i> file that defines my time allocation
+for various scopes. Allocation here is not strict and is mostly for helping me
+strike a balance between scopes.
+</p>
+
+<aside id="org14ac2d5">
+<p>
+I am missing long term planning at the moment. I am moving towards that by
+defining the scopes more clearly and building responsibilities and future plan
+documents.
+</p>
+</aside>
+
+
+<figure id="org0bbd46a">
+<img src="./time-allocation.png" alt="time-allocation.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>Current <i>plans</i> file</figcaption>
+</figure>
+
+<p>
+In the same file, I keep two more items:
+</p>
+<ol class="org-ol">
+<li>Targets with date logs keeping current states. As mentioned earlier, not all
+scopes have targets.</li>
+<li>Notes about various things to be done in <i>rituals</i>. Breaking the ritual is
+important specially when it's not just a <i>pleasure process</i> but also involves
+learning of some sort. For example, 'programming your pet projects' could be
+fine as a ritual. But if you want to <i>improve</i> programming, you might want to
+look at adding things that explicitly make you learn new concepts.</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-personal-methods/capturing-and-organizing" class="outline-3">
+<h3 id="sec-personal-methods/capturing-and-organizing"><span class="section-number-3">4.1.</span> Capturing and Organizing</h3>
+<div class="outline-text-3" id="text-sec-personal-methods/capturing-and-organizing">
+
+<p>
+For capturing and organizing tasks, I stick to <a href="https://orgmode.org/">Org Mode</a>. The setup is based on
+Org Captures and can be found <a href="https://github.com/lepisma/rogue/blob/master/local/r-org/r-org.el">here</a>. I also use <a href="http://www.orgzly.com">orgzly</a> for capturing items on the
+go. Here are my current capture templates:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"p"</span> <span class="org-string">"Personal task"</span> entry <span class="org-rainbow-delimiters-depth-3">(</span>file ,<span class="org-rainbow-delimiters-depth-4">(</span>concat user-notes-dir <span class="org-string">"&lt;&gt;"</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span>
+  <span class="org-string">"* %?\nSCHEDULED: %^t\n%a"</span> <span class="org-builtin">:empty-lines</span> <span class="org-highlight-numbers-number">1</span> <span class="org-builtin">:prepend</span> t<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span>
+ <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"w"</span> <span class="org-string">"Work task"</span> entry <span class="org-rainbow-delimiters-depth-3">(</span>file ,<span class="org-rainbow-delimiters-depth-4">(</span>concat user-notes-dir <span class="org-string">"&lt;&gt;"</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span>
+  <span class="org-string">"* %?\nSCHEDULED: %^t%^{effort}p\n%a"</span> <span class="org-builtin">:empty-lines</span> <span class="org-highlight-numbers-number">1</span> <span class="org-builtin">:prepend</span> t<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span>
+ <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"l"</span> <span class="org-string">"Weekly log"</span> item <span class="org-rainbow-delimiters-depth-3">(</span>file+olp ,<span class="org-rainbow-delimiters-depth-4">(</span>concat user-notes-dir <span class="org-string">"&lt;&gt;"</span><span class="org-rainbow-delimiters-depth-4">)</span> <span class="org-string">"Weekly review"</span> <span class="org-string">"Done"</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span>
+  <span class="org-string">"- %U %?"</span> <span class="org-builtin">:empty-lines-after</span> <span class="org-highlight-numbers-number">1</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span>
+ <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"t"</span> <span class="org-string">"Team log"</span> item <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">function</span> org-team-visit-person-log<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span>
+  <span class="org-string">"- %U %?"</span> <span class="org-builtin">:prepend</span> t<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+</pre>
+</div>
+
+<p>
+External events are captured on my work calendar. I do little bit of time
+blocking and reminders for rituals also on the same calendar.
+</p>
+</div>
+
+<div id="outline-container-sec-personal-methods/capturing-and-organizing/notes" class="outline-4">
+<h4 id="sec-personal-methods/capturing-and-organizing/notes"><span class="section-number-4">4.1.1.</span> Notes</h4>
+<div class="outline-text-4" id="text-sec-personal-methods/capturing-and-organizing/notes">
+
+<p>
+Capturing notes is a weak spot at the moment. I have <a href="https://github.com/lepisma/org-team/">something</a> for logging team
+notes and am looking to build something similar for book notes in <a href="https://github.com/lepisma/org-books">org-books</a>. But
+general note capturing is not that accessible or effective. My recent focus on
+tasks have made older notes related files go stale. I might try looking at this
+wiki itself for notes or might just give in to <a href="https://github.com/org-roam/org-roam">org-roam</a>.
+</p>
+
+<p>
+I am also missing a way to capture smaller pieces like articles read or videos
+watched. For heavier documents, I keep annotations in pdfs and in my <a class="pile-link" href="/wiki/readings/notes/documents.html">documents</a>
+page but am trying to do something to merge with <a href="https://www.zotero.org/">Zotero</a> since that's what our
+teams are starting to use now.
+</p>
+
+<p>
+One other form of capture is private journals where I keep notes on events and
+track moods and other events. I wrote more about that <a class="pile-link" href="/journal/2020/12/27/mood-tracking/index.html">here</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-personal-methods/capturing-and-organizing/interrupts" class="outline-4">
+<h4 id="sec-personal-methods/capturing-and-organizing/interrupts"><span class="section-number-4">4.1.2.</span> Interrupts</h4>
+<div class="outline-text-4" id="text-sec-personal-methods/capturing-and-organizing/interrupts">
+
+<p>
+Interrupts for me are mostly emails and Slack messages. There are other places
+like Github notifications but I go there only occasionally. I handle emails
+using <a href="https://www.djcbsoftware.nl/code/mu/mu4e.html">mu4e</a>. While I try to keep inbox clear, I don't do it too aggressively
+since I think mailboxes can be tamed easily with flexible systems like mu4e .
+Additionally, unattended emails automatically get captured and show up in my Org
+agenda so missing properties of email tasks like 'priorities' are also handled.
+</p>
+
+<p>
+I have no good way for working with Slack interrupts other using slackbot
+reminders and cleaning them periodically.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-personal-methods/viewing-and-working" class="outline-3">
+<h3 id="sec-personal-methods/viewing-and-working"><span class="section-number-3">4.2.</span> Viewing and Working</h3>
+<div class="outline-text-3" id="text-sec-personal-methods/viewing-and-working">
+
+<p>
+On a daily basis, I open up my Org agenda and take out the following on my
+analog notebook:
+</p>
+
+<ul class="org-ul">
+<li>Things I will to do today</li>
+<li>2 of the above things that I want to do <i>really well</i></li>
+</ul>
+
+<p>
+The second set of 2 items are either things that make me uncomfortable (and I am
+inherently slacking on them) or things where I have potential to learn a lot
+more. Maybe these two categories are the same but I like to think about them
+separately. Doing well on these 2 tasks make me more satisfied from the day and
+also reduces . Not surprisingly, this actually helps me do more.
+</p>
+
+
+<figure id="orga5d2cc6">
+<img src="./agenda.png" alt="agenda.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span>Day's agenda</figcaption>
+</figure>
+
+<p>
+For tasks with set date time, reminders on <a href="http://www.orgzly.com/">orgzly</a> help in bringing them to
+front, along with calendar popups for captured events.
+</p>
+
+<p>
+For managing time, I tend to use <a href="https://github.com/marcinkoziej/org-pomodoro">org-pomodoro</a>, <a href="https://github.com/adrcotfas/Goodtime">goodtime</a>, and <a href="https://github.com/dxknight/chronos">chronos</a>. I use
+timers only for setting restrictions on a few kinds of tasks. Everything else
+flows unrestricted.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-personal-methods/review" class="outline-3">
+<h3 id="sec-personal-methods/review"><span class="section-number-3">4.3.</span> Review</h3>
+<div class="outline-text-3" id="text-sec-personal-methods/review">
+
+<p>
+I used to do personal weekly review but that was mostly for my, inactive, <a class="pile-link" href="/log/index.html">log</a>.
+Most of what was happening there is going to be automated and I will try doing
+proper retrospectives instead.
+</p>
+
+<p>
+Additionally, I used to track time spent on tasks using <a href="https://github.com/rksm/clj-org-analyzer">org-analyzer</a> but that
+was too strict since, as mentioned before, I don't do everything on a clock.
+This means I can't estimate where my time goes at a very fine level but that's
+okay as long as I am balancing my scopes periodically.
+</p>
+
+<p>
+For a few items, I have built decent reviewing dashboards like below but rest
+need more work.
+</p>
+
+
+<figure id="org9522fdd">
+<img src="./journal.png" alt="journal.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 3: </span>Mood tracking over personal journal</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-resources" class="outline-2">
+<h2 id="sec-resources"><span class="section-number-2">5.</span> Resources</h2>
+<div class="outline-text-2" id="text-sec-resources">
+
+<ul class="org-ul">
+<li>Here is a <a href="https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/">good guidebook</a> that we use to onboard people on OKRs at work.</li>
+<li>Todoist has good documents on many productivity methods <a href="https://todoist.com/productivity-methods">here</a>. I haven't read
+all of them. A few things in this document might change after that reading.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

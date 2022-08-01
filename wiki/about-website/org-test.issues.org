@@ -1,0 +1,55 @@
+#+TITLE: ~:org-mode-export-test/issues~
+#+SETUPFILE: ../assets/export.setup
+#+TODO: TODO IN-PROGRESS | DONE
+
+-----
+
+#+BEGIN: kanban :mirrored nil
+| TODO                        | IN-PROGRESS | DONE                                                 |
+|-----------------------------+-------------+------------------------------------------------------|
+|                             |             | [[#pile-issue-1][Fix styling of TODO]]                                |
+|                             |             | [[#pile-issue-2][z value of ToC not sufficient to cover code blocks]] |
+| [[#pile-issue-3][ToC hover is a little off]] |             |                                                      |
+|                             |             | [[#pile-issue-4][Small button class]]                                 |
+|                             |             | [[#pile-issue-5][Cross link block for wiki pages]]                    |
+#+END:
+
+* DONE Fix styling of TODO
+CLOSED: [2019-06-18 Tue 00:03]
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-1
+:END:
+
+* DONE z value of ToC not sufficient to cover code blocks
+CLOSED: [2019-06-18 Tue 00:06]
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-2
+:END:
+
+* TODO ToC hover is a little off
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-3
+:END:
+
+* DONE Small button class
+CLOSED: [2019-06-18 Tue 00:36]
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-4
+:END:
+
+As of now, there is only one ~.btn~ class which is used for everything.
+
+* DONE Cross link block for wiki pages
+CLOSED: [2019-06-21 Fri 03:03]
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-5
+:END:
+
+Possible use cases are:
+1. Linking org source of page
+2. Linking issue page and document page
+
+* Hook for updating main file of an issues file
+:PROPERTIES:
+:CUSTOM_ID: pile-issue-6
+:END:

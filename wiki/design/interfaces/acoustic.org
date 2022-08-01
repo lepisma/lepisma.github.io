@@ -1,0 +1,54 @@
+#+TITLE: Acoustic Interfaces
+#+SETUPFILE: ../../assets/export.setup
+
+#+BEGIN_QUOTE
+This page is a work in progress
+#+END_QUOTE
+
+List of possible places to hook in speech/sounds in computer interactions.
+
+* Entry
+** Main
+*** Lexical
++ Speech entry for other languages.
++ Speech assistance:
+  + Choose among contextual choices. Consider tagging in tog.
+  + Automate pieces involved around the main entry. For example, wrapping up
+    a text body, snippets, clocking in. Anything that reduces hand movement.
++ Story telling, blogging.
++ Find something (text-ish, defuns etc.) in page, images, buffer, buffers etc.
+*** Non-lexical
++ Defined sounds mapped to something. Snaps etc.
++ Music fingerprinting style use cases. Humming etc.
+** Side
+*** Lexical
++ Monitoring and analyzing.
++ Side evaluations. Compilation, check email etc.
++ Recording discussions.
++ Char by char dictionary.
+*** Non-lexical
++ Monitoring and analyzing acoustics, ambience.
++ Collecting various event types and humans involved.
++ Watching for defined events. Cooker whistles, doorbells etc.
+
+* Feedback
+** Main
+*** Lexical
++ Text to speech for whatever I am writing. If I am at the end of a sentence,
+  play that. This is really useful for me personally.
++ Commentary about pages and positions I am looking at.
+*** Non-lexical
++ Live feedback. For example, something defining number of errors in currently
+  worked-on system.
++ Something that changes as I change certain knobs. This can work for certain
+  kinds of visualizations.
++ Background ambience in voice blogging.
+** Side
+*** Lexical
++ Regular Notifications.
++ Email read outs after filters.
++ Personal voices for messages, emails.
+*** Non-lexical
++ Regular Notifications.
++ Changing tone, falling rising or something.
++ Background ambience + music based on task.

@@ -1,0 +1,11 @@
+#+TITLE: Learning
+#+SETUPFILE: ../../../assets/export.setup
+
+#+BEGIN_QUOTE
+This page is a work in progress. Most likely, the ideas here are already out
+there in some form. After an initial dump, my attempt here would be to merge it
+with other works and make this a live document about the steps involved in
+learning.
+#+END_QUOTE
+
+Notes on what I understand presently about /learning/.
