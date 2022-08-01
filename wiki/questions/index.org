@@ -1,6 +1,0 @@
-#+TITLE: Questions
-#+SETUPFILE: ../../assets/export.setup
-
-Questions I would want to get answers of.
-
-+ Which questions to put here?

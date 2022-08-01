@@ -1,4 +1,4 @@
-#+TITLE: Programming
+#+TITLE: Computers and Programming
 #+SETUPFILE: ../../assets/export.setup
 
 * Pages in this section

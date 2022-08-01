@@ -1,7 +1,7 @@
-#+TITLE: Visual Arts
+#+TITLE: Design
 #+SETUPFILE: ../../assets/export.setup
-#+TAGS: 
 
 #+BEGIN_QUOTE
 This page is a work in progress
 #+END_QUOTE
+

@@ -1,6 +1,8 @@
 #+TITLE: Philosophy
 #+SETUPFILE: ../../assets/export.setup
 
+TBD: Notes on aesthetics
+
 * Resources
 ** Where to start?
 - [[https://existentialcomics.com/blog/1/H][How to study philosophy as an amateur]]

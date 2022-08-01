@@ -1,7 +1,5 @@
-#+TITLE: Miscellaneous
+#+TITLE: About
 #+SETUPFILE: ../../assets/export.setup
-
-Miscellaneous pages.
 
 * Pages in this section
 

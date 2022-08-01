@@ -1,8 +1,7 @@
-#+TITLE: Visualizations
+#+TITLE: Intelligence
 #+SETUPFILE: ../../assets/export.setup
 
 #+BEGIN_QUOTE
 This page is a work in progress
 #+END_QUOTE
 
-Resources for data visualization.
