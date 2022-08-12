@@ -27,7 +27,7 @@ I have heard a lot about /value alignment/. This is something I have employed as
 tool to understand fits of various kinds, mostly in professional setting. I have
 always found it to be limited, but didn't have good alternative to think
 towards. I believe I have a better answer now, /aesthetic alignment/. People or
-systems that are aesthetically aligned with you share common frameworks
+systems that are aesthetically aligned with you share common framework for
 aesthetic appreciation.
 
 #+BEGIN_aside
