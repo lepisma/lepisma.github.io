@@ -19,7 +19,8 @@ source of aesthetic appreciation.
 There is a famous Feynman video about beauty of a flower that I find connected
 to this idea:
 
-#+HTML: <iframe width="650" height="315" src="https://www.youtube-nocookie.com/embed/ZbFM3rn4ldo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+HTML: <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ZbFM3rn4ldo' frameborder='0' allowfullscreen></iframe></div>
+#+HTML: <br>
 
 I have heard a lot about /value alignment/. This is something I have employed as a
 tool to understand fits of various kinds, mostly in professional setting. I have
