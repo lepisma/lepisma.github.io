@@ -21,8 +21,6 @@ to this idea:
 
 #+HTML: <iframe width="650" height="315" src="https://www.youtube-nocookie.com/embed/ZbFM3rn4ldo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
------
-
 I have heard a lot about /value alignment/. This is something I have employed as a
 tool to understand fits of various kinds, mostly in professional setting. I have
 always found it to be limited, but didn't have good alternative to think
