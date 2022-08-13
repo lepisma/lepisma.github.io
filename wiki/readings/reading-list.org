@@ -2131,6 +2131,14 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** READ A Thousand Brains: A New Theory of Intelligence
+CLOSED: [2022-08-13 Sat 11:32]
+:PROPERTIES:
+:AUTHOR:   Jeff Hawkins
+:ADDED:    [2022-08-13]
+:AMAZON:   https://www.amazon.com/Thousand-Brains-New-Theory-Intelligence/dp/1541675819
+:END:
+
 *** Through the Language Glass: Why the World Looks Different in Other Languages
 :PROPERTIES:
 :AUTHOR:   Guy Deutscher
