@@ -5,6 +5,7 @@
 #+OPTIONS: d:t date:t e:t email:nil f:t H:6 inline:t num:t p:t
 #+OPTIONS: pri:t prop:t stat:t tasks:t tex:t timestamp:t toc:nil
 #+OPTIONS: todo:t |:t title:nil
+#+OPTIONS: tags:not-in-toc
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
