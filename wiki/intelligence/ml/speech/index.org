@@ -1,5 +1,4 @@
 #+TITLE: Speech
-#+SETUPFILE: ../../../assets/export.setup
 
 All things related to speech technology.
 

@@ -1,5 +1,4 @@
 #+TITLE: Presentations
-#+SETUPFILE: ../../../assets/export.setup
 
 Wherever my laptop can plug in, I try to present stuff in org-mode using
 [[https://github.com/rlister/org-present][org-present]]. There are many benefits of directly using Emacs:

@@ -1,5 +1,4 @@
 #+TITLE: Book Notes
-#+SETUPFILE: ../../../../assets/export.setup
 
 General short notes on books are in my [[pile:wiki:readings/reading-list][reading-list]]. Here I keep notes from
 /biggish/ books like textbooks and monographs. The notes are not exhaustive and

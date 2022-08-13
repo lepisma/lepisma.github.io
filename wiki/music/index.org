@@ -1,5 +1,4 @@
 #+TITLE: Music
-#+SETUPFILE: ../../assets/export.setup
 
 There will be a lot more to put here but right now I am using this place only
 for onboarding people on shoegaze.

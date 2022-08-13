@@ -1,5 +1,4 @@
 #+TITLE: Values
-#+SETUPFILE: ../../assets/export.setup
 #+OPTIONS: num:nil
 
 There are moments when decisions you take define who you are. Most of these

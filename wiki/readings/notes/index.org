@@ -1,5 +1,4 @@
 #+TITLE: Notes
-#+SETUPFILE: ../../../assets/export.setup
 
 Notes from reading.
 

@@ -1,5 +1,4 @@
 #+TITLE: Follows
-#+SETUPFILE: ../../assets/export.setup
 
 Blogs, podcasts etc. that I tend to follow. I use [[https://github.com/skeeto/elfeed/][elfeed]], [[https://antennapod.org/][AntennaPod]] and [[https://github.com/z-------------/CPod][CPod]] to
 read/listen. What follows is an [[https://github.com/remyhonig/elfeed-org][elfeed-org]] dump of feed urls.

@@ -1,5 +1,4 @@
 #+TITLE: On Growth and Form
-#+SETUPFILE: ../../../../../assets/export.setup
 
 Notes from [[https://www.goodreads.com/book/show/460984.On_Growth_and_Form][On Growth and Form]]. This piece is /so/ enticing to read. Though I wish
 there were translations for the many Latin, French quotes scattered liberally in

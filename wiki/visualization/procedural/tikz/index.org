@@ -1,5 +1,4 @@
 #+TITLE: TikZ
-#+SETUPFILE: ../../../../assets/export.setup
 
 #+OPTIONS: toc:nil
 

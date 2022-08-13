@@ -1,5 +1,4 @@
 #+TITLE: Research
-#+SETUPFILE: ../../assets/export.setup
 
 More abstract thoughts about how to work with researches and research groups.
 

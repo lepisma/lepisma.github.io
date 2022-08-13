@@ -1,5 +1,4 @@
 #+TITLE: Mathematics
-#+SETUPFILE: ../../assets/export.setup
 
 * Pages in this section
 

@@ -1,5 +1,4 @@
 #+TITLE: Hiring
-#+SETUPFILE: ../../assets/export.setup
 
 At work I have been involved in hiring processes and execution across multiple
 levels. This document keeps a few notes coming from my experience that might be

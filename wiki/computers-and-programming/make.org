@@ -1,5 +1,4 @@
 #+TITLE: Make
-#+SETUPFILE: ../../assets/export.setup
 
 Here I keep a list of topics for a more breadth first style exploration. The
 idea is to list directions of works which cover various kinds of programming.

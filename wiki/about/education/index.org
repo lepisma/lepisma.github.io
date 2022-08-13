@@ -1,5 +1,4 @@
 #+TITLE: Education
-#+SETUPFILE: ../../assets/export.setup
 
 Notes on education, formal and otherwise.
 

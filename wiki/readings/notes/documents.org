@@ -1,5 +1,4 @@
 #+TITLE: Document/Paper Notes
-#+SETUPFILE: ../../../assets/export.setup
 #+TODO: TOREAD READING | READ
 
 This contains notes for paper-ish documents that I read.

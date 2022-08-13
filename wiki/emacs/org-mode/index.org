@@ -1,5 +1,4 @@
 #+TITLE: Org Mode
-#+SETUPFILE: ../../../assets/export.setup
 
 Org mode stuff needed a separate section.
 

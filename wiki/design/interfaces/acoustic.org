@@ -1,5 +1,4 @@
 #+TITLE: Acoustic Interfaces
-#+SETUPFILE: ../../assets/export.setup
 
 #+BEGIN_QUOTE
 This page is a work in progress

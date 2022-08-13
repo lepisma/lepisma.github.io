@@ -1,5 +1,4 @@
 #+TITLE: Macros
-#+SETUPFILE: ../../../assets/export.setup
 
 A few org-mode macros.
 

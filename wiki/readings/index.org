@@ -1,5 +1,4 @@
 #+TITLE: Readings
-#+SETUPFILE: ../../assets/export.setup
 
 Here I keep more general /archivable/ reading items and resources that I feel are
 either good as a reference or are nice intro to a topic in isolation.

@@ -1,5 +1,4 @@
 #+TITLE: Emacs
-#+SETUPFILE: ../../assets/export.setup
 
 Some notes/texts related to Emacs and Org Mode.
 

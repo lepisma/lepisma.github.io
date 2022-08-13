@@ -1,5 +1,4 @@
 #+TITLE: Processes
-#+SETUPFILE: ../../assets/export.setup
 
 If you have been following my blog or journal or log you might know about
 numerous attempts at better time utilization. Most of them failed because of a

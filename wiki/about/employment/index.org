@@ -1,5 +1,4 @@
 #+TITLE: Employment
-#+SETUPFILE: ../../assets/export.setup
 
 Notes on my employment and related experiences. Past, current and future (?).
 

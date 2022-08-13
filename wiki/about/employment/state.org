@@ -1,5 +1,4 @@
 #+TITLE: Employment State
-#+SETUPFILE: ../../assets/export.setup
 
 At present, I work in the Machine Learning team at [[https://skit.ai][Skit]] (starting June 2018).
 Previously,

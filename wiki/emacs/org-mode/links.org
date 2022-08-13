@@ -1,5 +1,4 @@
 #+TITLE: Org-links
-#+SETUPFILE: ../../../assets/export.setup
 
 #+HTML_HEAD: <style>
 #+HTML_HEAD: .bbq-list-info {

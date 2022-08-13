@@ -1,5 +1,4 @@
 #+TITLE: Pesky Little Things
-#+SETUPFILE: ../../assets/export.setup
 
 From whatever I have experienced, there are two kind of mental models provided
 by programming tools, /simple/ (e.g. [[http://dplyr.tidyverse.org/][dplyr]]) and /complex/ (e.g. [[https://pandas.pydata.org/][pandas]]). If used

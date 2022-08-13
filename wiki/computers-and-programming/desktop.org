@@ -1,5 +1,4 @@
 #+TITLE: Desktop
-#+SETUPFILE: ../../assets/export.setup
 
 A few of my desktop rices. My Emacs config lies [[https://github.com/lepisma/rogue][here]]. Other dotfiles are [[https://github.com/lepisma/cfg][here]].
 

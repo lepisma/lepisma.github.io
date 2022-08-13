@@ -1,5 +1,4 @@
 #+TITLE: Philosophy
-#+SETUPFILE: ../../assets/export.setup
 
 TBD: Notes on aesthetics
 

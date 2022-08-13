@@ -1,5 +1,4 @@
 #+TITLE: Repetitive Strain Injury
-#+SETUPFILE: ../../assets/export.setup
 #+PILE: dropcap:nil
 
 #+begin_quote

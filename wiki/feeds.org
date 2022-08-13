@@ -1,5 +1,4 @@
 #+TITLE: Feeds
-#+SETUPFILE: ../assets/export.setup
 
 Atom feeds for various streams on this site:
 

@@ -1,5 +1,4 @@
 #+TITLE: Colophon
-#+SETUPFILE: ../../assets/export.setup
 
 I have used jekyll in the past to maintain my [[https://github.com/lepisma/lepisma.github.io][home page]]. It's been nice really,
 but extending jekyll was painful. At times, working directly on the system is

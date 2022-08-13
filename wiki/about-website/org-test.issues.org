@@ -1,5 +1,4 @@
 #+TITLE: ~:org-mode-export-test/issues~
-#+SETUPFILE: ../assets/export.setup
 #+TODO: TODO IN-PROGRESS | DONE
 
 -----

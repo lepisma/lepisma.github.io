@@ -1,5 +1,4 @@
 #+TITLE: Articles I like
-#+SETUPFILE: ../../assets/export.setup
 
 I am not sure what kind of /liked/ articles I should keep a log of here (by using
 the term /articles/, I am restricting myself to essays, blog posts and the likes).

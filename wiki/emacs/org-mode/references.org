@@ -1,5 +1,4 @@
 #+TITLE: Reference Management
-#+SETUPFILE: ../../../assets/export.setup
 
 This page documents my Emacs + [[https://www.zotero.org/][Zotero]] based setup for working with references
 and bibliographies. I maintain and organize libraries in Zotero. Earlier I used

@@ -1,5 +1,4 @@
 #+TITLE: Wiki
-#+SETUPFILE: ../assets/export.setup
 
 This is my personal wiki. These pages try to organize resources and thoughts on
 various topics that I tend to get involved with. Many of these pages might not

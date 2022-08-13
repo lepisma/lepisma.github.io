@@ -1,5 +1,4 @@
 #+TITLE: Language Exploration
-#+SETUPFILE: ../../assets/export.setup
 #+TODO: TODO | DONE
 
 #+begin_quote

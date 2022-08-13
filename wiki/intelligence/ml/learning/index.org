@@ -1,5 +1,4 @@
 #+TITLE: Learning
-#+SETUPFILE: ../../../assets/export.setup
 
 #+BEGIN_QUOTE
 This page is a work in progress. Most likely, the ideas here are already out

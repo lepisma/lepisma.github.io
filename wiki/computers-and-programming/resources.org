@@ -1,5 +1,4 @@
 #+TITLE: Resources
-#+SETUPFILE: ../../assets/export.setup
 
 This page houses some programming related resources that I have found useful
 while working on /anything/. It's starting out jumbled but will get more organized

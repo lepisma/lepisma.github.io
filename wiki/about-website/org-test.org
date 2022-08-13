@@ -1,5 +1,4 @@
 #+TITLE: Org Mode Export Test
-#+SETUPFILE: ../assets/export.setup
 
 #+TOC: headlines 2
 

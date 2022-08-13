@@ -1,5 +1,4 @@
 #+TITLE: Clippings
-#+SETUPFILE: ../../assets/export.setup
 #+HTML_HEAD_EXTRA: <style>blockquote { margin: 50px 0; }</style>
 
 #+BEGIN_EXPORT html

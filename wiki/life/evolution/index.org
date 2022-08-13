@@ -1,5 +1,4 @@
 #+TITLE: Evolution
-#+SETUPFILE: ../../assets/export.setup
 
 * Pages in this section
 

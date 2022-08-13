@@ -1,5 +1,4 @@
 #+TITLE: ~:desktop/issues~
-#+SETUPFILE: ../../assets/export.setup
 
 * Switch to non-imgur image hosting
 :PROPERTIES:

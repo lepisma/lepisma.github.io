@@ -1,5 +1,4 @@
 #+TITLE: About
-#+SETUPFILE: ../../assets/export.setup
 
 * Pages in this section
 
