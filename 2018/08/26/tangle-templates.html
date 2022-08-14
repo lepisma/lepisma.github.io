@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-08-26 Sun 12:36 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2022-08-14 Sun 11:20 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tangle Templates</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -159,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -176,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -208,77 +221,33 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2018-08-26 Sun 00:00</div>
-                                <h1>Tangle Templates</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2018-08-26 Sun 00:00</div>
+  <h1>Tangle Templates</h1>
 </div>
-<div id="content">
-<div class='page-tags'><a href='../../..#org-mode'>org-mode</a> <a href='../../..#programming'>programming</a> <a href='../../..#emacs'>emacs</a> <a href='../../..#tooling'>tooling</a></div>
+</div>
+<div id="content" class="content">
+<div class='page-tags'></div>
 <p>
 <span class='dropcap'>L</span>ooking recently at <a href="https://github.com/commercialhaskell/stack-templates/blob/master/simple.hsfiles">hsfiles</a> template made me fiddle around with a relatively old
 script for <i>project template management</i> using <code>org-babel</code>. If you have used any
@@ -308,9 +277,9 @@ variable. Almost all other scaffolding tools are horrifically bad in this
 situation because of their terminal centered approach.</li>
 </ol>
 
-<div id="outline-container-org2030a35" class="outline-2">
-<h2 id="obtt"><a id="org2030a35"></a><span class="section-number-2">1</span> obtt</h2>
-<div class="outline-text-2" id="text-obtt">
+<div id="outline-container-sec-obtt" class="outline-2">
+<h2 id="sec-obtt"><span class="section-number-2">1.</span> obtt</h2>
+<div class="outline-text-2" id="text-sec-obtt">
 
 
 <p>
@@ -335,7 +304,7 @@ external tool. For example if you use <a href="https://github.com/generate/gener
 the following block with <code>:obtt eval</code> in the header.
 </p>
 
-<pre class="example">
+<pre class="example" id="org84ba768">
 #+BEGIN_SRC shell :obtt eval
 gen license:gpl-3.0
 #+END_SRC
@@ -360,9 +329,9 @@ inconsistencies.
 </div>
 </div>
 
-<div id="outline-container-org36a9ba4" class="outline-2">
-<h2 id="a-sample-template"><a id="org36a9ba4"></a><span class="section-number-2">2</span> A sample template</h2>
-<div class="outline-text-2" id="text-a-sample-template">
+<div id="outline-container-sec-a-sample-template" class="outline-2">
+<h2 id="sec-a-sample-template"><span class="section-number-2">2.</span> A sample template</h2>
+<div class="outline-text-2" id="text-sec-a-sample-template">
 
 
 <p>
@@ -372,7 +341,7 @@ idea though.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-org"><span class="org-comment"># -- mode: org --</span>
+<pre class="src src-org"><span class="org-comment"># -*- mode: org -*-</span>
 <span class="org-org-document-info-keyword">#+TITLE:</span> <span class="org-org-document-title">obtt-experiment</span>
 
 This is a snakemake + poetry based template for experimental projects. Heavily
@@ -380,56 +349,57 @@ inspired by other <span class="org-italic">data science</span> templates. Most o
 based setup but this template just uses poetry for now. I will tune this when
 needed.
 
-<span class="org-org-level-1">* Variables</span>
+<span class="org-org-level-1"><span class="org-org-superstar-header-bullet">*</span></span><span class="org-org-level-1"> Variables</span>
 
-<span class="org-org-list-dt">-</span> <span class="org-org-list-dt">Name ::</span> $1
-<span class="org-org-list-dt">-</span> <span class="org-org-list-dt">Description ::</span> $2
+<span class="org-org-list-dt"><span class="org-org-variable-pitch-fixed">-</span></span><span class="org-org-indent"><span class="org-org-variable-pitch-fixed"> </span></span><span class="org-org-list-dt">Name ::</span> $1
+<span class="org-org-list-dt"><span class="org-org-variable-pitch-fixed">-</span></span><span class="org-org-indent"><span class="org-org-variable-pitch-fixed"> </span></span><span class="org-org-list-dt">Description ::</span> $2
 
-<span class="org-org-level-1">* README</span>
+<span class="org-org-level-1"><span class="org-org-superstar-header-bullet">*</span></span><span class="org-org-level-1"> README</span>
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC org :tangle ./README.org</span>
-<span class="custom">#+TITLE: $1</span>
+<span class="org-org-block"><span class="org-org-document-info-keyword">#+TITLE:</span></span><span class="org-org-block"> </span><span class="org-org-block"><span class="org-org-document-title">$1</span></span>
 
-<span class="custom">$2</span>
+<span class="org-org-block">$2</span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 
-<span class="org-org-level-1">* toml file</span>
+<span class="org-org-level-1"><span class="org-org-superstar-header-bullet">*</span></span><span class="org-org-level-1"> toml file</span>
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC toml :tangle ./pyproject.toml</span>
-<span class="custom">[tool.poetry]</span>
-<span class="custom">name = "$1"</span>
-<span class="custom">version = "0.1.0"</span>
-<span class="custom">description = "$2"</span>
-<span class="custom">authors = []</span>
+<span class="org-org-block">[</span><span class="org-org-block"><span class="org-type">tool.poetry</span></span><span class="org-org-block">]</span>
+<span class="org-org-block"><span class="org-variable-name">name</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"$1"</span></span>
+<span class="org-org-block"><span class="org-variable-name">version</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"0.1.0"</span></span>
+<span class="org-org-block"><span class="org-variable-name">description</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"$2"</span></span>
+<span class="org-org-block"><span class="org-variable-name">authors</span></span><span class="org-org-block"> = []</span>
 
-<span class="custom">[tool.poetry.dependencies]</span>
-<span class="custom">python = "^3.6"</span>
-<span class="custom">snakemake = "^5.2"</span>
+<span class="org-org-block">[</span><span class="org-org-block"><span class="org-type">tool.poetry.dependencies</span></span><span class="org-org-block">]</span>
+<span class="org-org-block"><span class="org-variable-name">python</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"^3.6"</span></span>
+<span class="org-org-block"><span class="org-variable-name">snakemake</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"^5.2"</span></span>
 
-<span class="custom">[tool.poetry.dev-dependencies]</span>
-<span class="custom">pytest = "^3.0"</span>
-<span class="custom">mypy = "^0.620.0"</span>
+<span class="org-org-block">[</span><span class="org-org-block"><span class="org-type">tool.poetry.dev-dependencies</span></span><span class="org-org-block">]</span>
+<span class="org-org-block"><span class="org-variable-name">pytest</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"^3.0"</span></span>
+<span class="org-org-block"><span class="org-variable-name">mypy</span></span><span class="org-org-block"> = </span><span class="org-org-block"><span class="org-string">"^0.620.0"</span></span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 
-<span class="org-org-level-1">* General structure</span>
+<span class="org-org-level-1"><span class="org-org-superstar-header-bullet">*</span></span><span class="org-org-level-1"> General structure</span>
 
 We have a <span class="org-org-code">data</span> directory with external and processed sub dirs. A <span class="org-org-code">src</span> directory
 keeps the modules that we build and use. <span class="org-org-code">scripts</span> keep snakemake scripts.
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC shell :obtt eval</span>
-<span class="custom">mkdir -p data/external data/processed</span>
-<span class="custom">mkdir scripts</span>
-<span class="custom">touch ./src/__init__.py</span>
+<span class="org-org-block">mkdir -p data/external data/processed</span>
+<span class="org-org-block">mkdir scripts</span>
+<span class="org-org-block">mkdir src</span>
+<span class="org-org-block">touch ./src/__init__.py</span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 
 The snakefile rules now bind everything together.
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC python :tangle ./Snakefile</span>
-<span class="custom">rule all:</span>
-<span class="custom">    shell: "echo 'hi'"</span>
+<span class="org-org-block">rule </span><span class="org-org-block"><span class="org-builtin">all</span></span><span class="org-org-block">:</span>
+<span class="org-org-block">    shell: </span><span class="org-org-block"><span class="org-string">"echo 'hi'"</span></span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 
-<span class="org-org-level-1">* Testing</span>
+<span class="org-org-level-1"><span class="org-org-superstar-header-bullet">*</span></span><span class="org-org-level-1"> Testing</span>
 
 Tests are important even in experimental code, blah blah...
 
@@ -437,36 +407,36 @@ Tests are important even in experimental code, blah blah...
 <span class="org-org-block-end-line">#+END_SRC</span>
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC python :tangle ./mypy.ini</span>
-<span class="custom">[mypy]</span>
-<span class="custom">ignore_missing_imports=True</span>
+<span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">[</span></span><span class="org-org-block">mypy</span><span class="org-org-block"><span class="org-rainbow-delimiters-depth-1">]</span></span>
+<span class="org-org-block"><span class="org-variable-name">ignore_missing_imports</span></span><span class="org-org-block">=</span><span class="org-org-block"><span class="org-constant">True</span></span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC text :tangle ./tox.ini</span>
-<span class="custom">[tox]</span>
-<span class="custom">skipsdist = True</span>
-<span class="custom">envlist = py36</span>
+<span class="org-org-block">[tox]</span>
+<span class="org-org-block">skipsdist = True</span>
+<span class="org-org-block">envlist = py36</span>
 
-<span class="custom">[testenv]</span>
-<span class="custom">whitelist_externals = poetry</span>
-<span class="custom">skip_install = true</span>
-<span class="custom">commands =</span>
-<span class="custom">    poetry install -v</span>
-<span class="custom">    poetry run pytest tests/</span>
+<span class="org-org-block">[testenv]</span>
+<span class="org-org-block">whitelist_externals = poetry</span>
+<span class="org-org-block">skip_install = true</span>
+<span class="org-org-block">commands =</span>
+<span class="org-org-block">    poetry install -v</span>
+<span class="org-org-block">    poetry run pytest tests/</span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 
-<span class="org-org-level-1">* License</span>
+<span class="org-org-level-1"><span class="org-org-superstar-header-bullet">*</span></span><span class="org-org-level-1"> License</span>
 
 <span class="org-org-block-begin-line">#+BEGIN_SRC shell :obtt eval</span>
-<span class="custom">gen license:gpl-3.0</span>
+<span class="org-org-block">gen license:gpl-3.0</span>
 <span class="org-org-block-end-line">#+END_SRC</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9c8c827" class="outline-2">
-<h2 id="the-package"><a id="org9c8c827"></a><span class="section-number-2">3</span> The package</h2>
-<div class="outline-text-2" id="text-the-package">
+<div id="outline-container-sec-the-package" class="outline-2">
+<h2 id="sec-the-package"><span class="section-number-2">3.</span> The package</h2>
+<div class="outline-text-2" id="text-sec-the-package">
 
 
 <p>

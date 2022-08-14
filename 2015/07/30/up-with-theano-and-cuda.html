@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-08 Fri 10:03 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2022-08-14 Sun 11:14 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Up and running with Theano (GPU) + PyCUDA on Windows</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -159,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -176,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -208,76 +221,32 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2015-07-30 Thu 00:00</div>
-                                <h1>Up and running with Theano (GPU) + PyCUDA on Windows</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2015-07-30 Thu 00:00</div>
+  <h1>Up and running with Theano (GPU) + PyCUDA on Windows</h1>
 </div>
-<div id="content">
+</div>
+<div id="content" class="content">
 <div class='page-tags'><a href='../../..#tooling'>tooling</a></div>
 <p>
 <span class='dropcap'>G</span>etting CUDA to work with python on Windows is really frustrating. Its not
@@ -292,9 +261,9 @@ working with GPU acceleration and PyCUDA for general access to GPU from python.
 Hopefully, it will help if you haven't found the sweet spot yet.
 </p>
 
-<div id="outline-container-org6657277" class="outline-2">
-<h2 id="setting-up"><a id="org6657277"></a><span class="section-number-2">1</span> Setting up</h2>
-<div class="outline-text-2" id="text-setting-up">
+<div id="outline-container-sec-setting-up" class="outline-2">
+<h2 id="sec-setting-up"><span class="section-number-2">1.</span> Setting up</h2>
+<div class="outline-text-2" id="text-sec-setting-up">
 
 <p>
 Starting with my machine, it is a <i>Pavilion DV6 7012tx</i> Laptop with Nvidia GeForce
@@ -304,9 +273,9 @@ scientific python stack will provide that.
 </p>
 </div>
 
-<div id="outline-container-org369fe69" class="outline-3">
-<h3 id="setting-up/install-visual-studio"><a id="org369fe69"></a><span class="section-number-3">1.1</span> Install Visual Studio</h3>
-<div class="outline-text-3" id="text-setting-up/install-visual-studio">
+<div id="outline-container-sec-setting-up/install-visual-studio" class="outline-3">
+<h3 id="sec-setting-up/install-visual-studio"><span class="section-number-3">1.1.</span> Install Visual Studio</h3>
+<div class="outline-text-3" id="text-sec-setting-up/install-visual-studio">
 
 <p>
 This is needed to get Nvidia's CUDA compiler (<code>nvcc</code>) working. For choosing the
@@ -331,9 +300,9 @@ might be using it.
 </div>
 </div>
 
-<div id="outline-container-org790de3c" class="outline-3">
-<h3 id="setting-up/install-cuda-toolkit"><a id="org790de3c"></a><span class="section-number-3">1.2</span> Install CUDA toolkit</h3>
-<div class="outline-text-3" id="text-setting-up/install-cuda-toolkit">
+<div id="outline-container-sec-setting-up/install-cuda-toolkit" class="outline-3">
+<h3 id="sec-setting-up/install-cuda-toolkit"><span class="section-number-3">1.2.</span> Install CUDA toolkit</h3>
+<div class="outline-text-3" id="text-sec-setting-up/install-cuda-toolkit">
 
 <p>
 This should be easy, get the latest CUDA and install it. Keep the samples while
@@ -342,9 +311,9 @@ installing, they are nice for checking if things are working fine.
 </div>
 </div>
 
-<div id="outline-container-orgd4a9354" class="outline-3">
-<h3 id="setting-up/setup-python"><a id="orgd4a9354"></a><span class="section-number-3">1.3</span> Setup Python</h3>
-<div class="outline-text-3" id="text-setting-up/setup-python">
+<div id="outline-container-sec-setting-up/setup-python" class="outline-3">
+<h3 id="sec-setting-up/setup-python"><span class="section-number-3">1.3.</span> Setup Python</h3>
+<div class="outline-text-3" id="text-sec-setting-up/setup-python">
 
 <p>
 This is where most of the trouble is. Its easy to get lost while setting up
@@ -372,22 +341,22 @@ like <code>numpy</code> on top of it.
 Once you install Anaconda, install additional dependencies.
 </p>
 
-<pre class="example">
+<pre class="example" id="org4caea9b">
 conda install mingw libpython
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org256ca7e" class="outline-3">
-<h3 id="setting-up/install-theano"><a id="org256ca7e"></a><span class="section-number-3">1.4</span> Install theano</h3>
-<div class="outline-text-3" id="text-setting-up/install-theano">
+<div id="outline-container-sec-setting-up/install-theano" class="outline-3">
+<h3 id="sec-setting-up/install-theano"><span class="section-number-3">1.4.</span> Install theano</h3>
+<div class="outline-text-3" id="text-sec-setting-up/install-theano">
 
 <p>
 Install theano using <code>pip install theano</code> and create a <code>.theanorc</code> file in your <code>HOME</code>
 directory with following contents.
 </p>
 
-<pre class="example">
+<pre class="example" id="orgea22e7c">
 [global]
 floatX = float32
 device = gpu
@@ -404,9 +373,9 @@ directory and <code>compiler_bindir</code> to the path with <code>cl.exe</code> 
 </div>
 </div>
 
-<div id="outline-container-org79a1c2b" class="outline-3">
-<h3 id="setting-up/install-pycuda"><a id="org79a1c2b"></a><span class="section-number-3">1.5</span> Install PyCUDA</h3>
-<div class="outline-text-3" id="text-setting-up/install-pycuda">
+<div id="outline-container-sec-setting-up/install-pycuda" class="outline-3">
+<h3 id="sec-setting-up/install-pycuda"><span class="section-number-3">1.5.</span> Install PyCUDA</h3>
+<div class="outline-text-3" id="text-sec-setting-up/install-pycuda">
 
 <p>
 Best way to install PyCUDA is to get the Unofficial Windows Binaries by
@@ -418,7 +387,7 @@ For quick setup, you can use <a href="https://github.com/lepisma/pipwin">pipwin<
 installing Gohlke's packages.
 </p>
 
-<pre class="example">
+<pre class="example" id="org0bdd08f">
 pip install pipwin
 pipwin install pycuda
 </pre>
@@ -426,9 +395,9 @@ pipwin install pycuda
 </div>
 </div>
 
-<div id="outline-container-org5bdd87c" class="outline-2">
-<h2 id="test-it-out"><a id="org5bdd87c"></a><span class="section-number-2">2</span> Test it out</h2>
-<div class="outline-text-2" id="text-test-it-out">
+<div id="outline-container-sec-test-it-out" class="outline-2">
+<h2 id="sec-test-it-out"><span class="section-number-2">2.</span> Test it out</h2>
+<div class="outline-text-2" id="text-sec-test-it-out">
 
 <p>
 A very basic test is to simply import theano.
@@ -466,17 +435,17 @@ For a more extensive test, try the following snippet taken from <a href="http://
 <span class="org-variable-name">rng</span> = numpy.random.RandomState<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">22</span><span class="org-rainbow-delimiters-depth-1">)</span>
 <span class="org-variable-name">x</span> = shared<span class="org-rainbow-delimiters-depth-1">(</span>numpy.asarray<span class="org-rainbow-delimiters-depth-2">(</span>rng.rand<span class="org-rainbow-delimiters-depth-3">(</span>vlen<span class="org-rainbow-delimiters-depth-3">)</span>, config.floatX<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 <span class="org-variable-name">f</span> = function<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[]</span>, T.exp<span class="org-rainbow-delimiters-depth-2">(</span>x<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-keyword">print</span> f.maker.fgraph.toposort<span class="org-rainbow-delimiters-depth-1">()</span>
+<span class="org-builtin">print</span> f.maker.fgraph.toposort<span class="org-rainbow-delimiters-depth-1">()</span>
 <span class="org-variable-name">t0</span> = time.time<span class="org-rainbow-delimiters-depth-1">()</span>
 <span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-builtin">xrange</span><span class="org-rainbow-delimiters-depth-1">(</span>iters<span class="org-rainbow-delimiters-depth-1">)</span>:
     <span class="org-variable-name">r</span> = f<span class="org-rainbow-delimiters-depth-1">()</span>
 <span class="org-variable-name">t1</span> = time.time<span class="org-rainbow-delimiters-depth-1">()</span>
-<span class="org-keyword">print</span> <span class="org-string">'Looping %d times took'</span> % iters, t1 - t0, <span class="org-string">'seconds'</span>
-<span class="org-keyword">print</span> <span class="org-string">'Result is'</span>, r
+<span class="org-builtin">print</span> <span class="org-string">'Looping %d times took'</span> % iters, t1 - t0, <span class="org-string">'seconds'</span>
+<span class="org-builtin">print</span> <span class="org-string">'Result is'</span>, r
 <span class="org-keyword">if</span> numpy.<span class="org-builtin">any</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[</span><span class="org-builtin">isinstance</span><span class="org-rainbow-delimiters-depth-3">(</span>x.op, T.Elemwise<span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-keyword">for</span> x <span class="org-keyword">in</span> f.maker.fgraph.toposort<span class="org-rainbow-delimiters-depth-3">()</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>:
-    <span class="org-keyword">print</span> <span class="org-string">'Used the cpu'</span>
+    <span class="org-builtin">print</span> <span class="org-string">'Used the cpu'</span>
 <span class="org-keyword">else</span>:
-    <span class="org-keyword">print</span> <span class="org-string">'Used the gpu'</span>
+    <span class="org-builtin">print</span> <span class="org-string">'Used the gpu'</span>
 </pre>
 </div>
 
@@ -484,7 +453,7 @@ For a more extensive test, try the following snippet taken from <a href="http://
 You should see something like this.
 </p>
 
-<pre class="example">
+<pre class="example" id="orga9d34b2">
 Using gpu device 0: GeForce GT 630M (CNMeM is disabled)
 [GpuElemwise{exp,no_inplace}(&lt;CudaNdarrayType(float32, vector)&gt;), HostFromGpu(GpuElemwise{exp,no_inplace}.0)]
 Looping 1000 times took 1.42199993134 seconds
@@ -511,17 +480,17 @@ For PyCUDA, here is a quick test snippet from their <a href="http://documen.tici
 <span class="org-string">}</span>
 <span class="org-string">"""</span><span class="org-rainbow-delimiters-depth-1">)</span>
 
-<span class="org-variable-name">multiply_them</span> = mod.get_function<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"multiply_them"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+multiply_them = mod.get_function<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"multiply_them"</span><span class="org-rainbow-delimiters-depth-1">)</span>
 
-<span class="org-variable-name">a</span> = numpy.random.randn<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">400</span><span class="org-rainbow-delimiters-depth-1">)</span>.astype<span class="org-rainbow-delimiters-depth-1">(</span>numpy.float32<span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-variable-name">b</span> = numpy.random.randn<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">400</span><span class="org-rainbow-delimiters-depth-1">)</span>.astype<span class="org-rainbow-delimiters-depth-1">(</span>numpy.float32<span class="org-rainbow-delimiters-depth-1">)</span>
+a = numpy.random.randn<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">400</span><span class="org-rainbow-delimiters-depth-1">)</span>.astype<span class="org-rainbow-delimiters-depth-1">(</span>numpy.float32<span class="org-rainbow-delimiters-depth-1">)</span>
+b = numpy.random.randn<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">400</span><span class="org-rainbow-delimiters-depth-1">)</span>.astype<span class="org-rainbow-delimiters-depth-1">(</span>numpy.float32<span class="org-rainbow-delimiters-depth-1">)</span>
 
-<span class="org-variable-name">dest</span> = numpy.zeros_like<span class="org-rainbow-delimiters-depth-1">(</span>a<span class="org-rainbow-delimiters-depth-1">)</span>
+dest = numpy.zeros_like<span class="org-rainbow-delimiters-depth-1">(</span>a<span class="org-rainbow-delimiters-depth-1">)</span>
 multiply_them<span class="org-rainbow-delimiters-depth-1">(</span>
         drv.Out<span class="org-rainbow-delimiters-depth-2">(</span>dest<span class="org-rainbow-delimiters-depth-2">)</span>, drv.In<span class="org-rainbow-delimiters-depth-2">(</span>a<span class="org-rainbow-delimiters-depth-2">)</span>, drv.In<span class="org-rainbow-delimiters-depth-2">(</span>b<span class="org-rainbow-delimiters-depth-2">)</span>,
         block=<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">400</span>,<span class="org-highlight-numbers-number">1</span>,<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">)</span>, grid=<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">1</span>,<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 
-<span class="org-keyword">print</span> dest-a*b
+<span class="org-builtin">print</span> dest-a*b
 </pre>
 </div>
 

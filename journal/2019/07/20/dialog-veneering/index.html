@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-07-21 Sun 01:38 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dialogue Veneering</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<!-- 2022-08-14 Sun 11:30 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dialogue /Veneering/</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -189,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -221,52 +221,7 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -291,7 +246,7 @@ for the JavaScript code in this tag.
   <h1>Dialogue <i>Veneering</i></h1>
 </div>
 </div>
-<div id="content">
+<div id="content" class="content">
 <div class='page-tags'><a href='../../../..#ml'>ml</a></div>
 <p>
 <span class='dropcap'>A</span> lot of things happen in human-machine dialogue systems which don't fit in our
@@ -305,7 +260,7 @@ in dialogue formalization like (say) <a href="http://www-bcf.usc.edu/~billmann/d
 Overall, badly gone human-machine conversations are read as having certain
 programming or ML-ish <i>bugs</i> instead of being understood as just failed
 conversations, which are not uncommon in human-human situations. Most of these
-<i>buggish</i> dialogues can be <i>veneered</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> in ones which, still holding the same
+<i>buggish</i> dialogues can be <i>veneered</i><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> in ones which, still holding the same
 underlying parse, look more coherent. Here is an example (<code>M</code> is for machine, <code>H</code> is
 for human) of a possible veneer:
 </p>
@@ -360,11 +315,11 @@ for human) of a possible veneer:
 
 <p>
 What might be possible is that for <i>any</i> dialogue, we can keep the parse
-constant<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> while moving the whole
+constant<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> while moving the whole
 conversation around in a certain <i>coherence-blame space</i> which look like this:
 </p>
 
-<aside>
+<aside id="org8a98dea">
 <p>
 You can totally play with context to make dialogue A coherent. As an example,
 suppose that there is an internal joke connecting our human with 3pm somehow,
@@ -374,9 +329,8 @@ safely assume the usual common sense understanding of coherence.
 </aside>
 
 
-<figure>
-<object type="image/svg+xml" data="./space.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
+<figure id="orgc2350dd">
+<img src="./space.svg" alt="space.svg" class="org-svg">
 
 </figure>
 
@@ -391,21 +345,20 @@ This space of coherence vs blame is interesting because of many reasons. First
 we would like to know what kinds of movements are possible from an <i>iso-parse</i>
 perspective. Is it possible to keep the blame on machine and still increase
 coherence? A better response like <code>sorry I heard 3 did you mean 3pm?</code> could do
-that<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. At the
+that<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>. At the
 moment, it seems like there are infinitely many movements but optimizing for
 coherence might turn out to be a nice learning problem.
 </p>
 
 <p>
 The space might have a zone of feasibility which forces a reduction in
-blame<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup> when the coherence goes up as shown below. Also
+blame<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup> when the coherence goes up as shown below. Also
 when parses become richer and/or more correct the horizontal span gets tighter.
 </p>
 
 
-<figure>
-<object type="image/svg+xml" data="./space-feasible.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
+<figure id="org4025e89">
+<img src="./space-feasible.svg" alt="space-feasible.svg" class="org-svg">
 
 </figure>
 
@@ -443,16 +396,16 @@ of representations.</li>
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">Using this term since it shows the initial
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Using this term since it shows the initial
 intention of polishing out an error.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">You need to be someone who knows both parties' mental models. Here
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">You need to be someone who knows both parties' mental models. Here
 you need to be a human who has worked on the machine.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">This might look like needing a richer parse, with confidence, but you
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This might look like needing a richer parse, with confidence, but you
 can always act dumb and ask for such confirmations all the time.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">I need to define this rigorously. It looks like a measure of things
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">I need to define this rigorously. It looks like a measure of things
 that are <i>unreasonable errors</i>.</p></div></div>
 
 

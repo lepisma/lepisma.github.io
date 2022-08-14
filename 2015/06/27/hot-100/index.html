@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-07 Sun 21:05 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2022-08-14 Sun 11:14 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hot 100 over the years</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -159,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -176,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -208,78 +221,34 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2015-06-27 Sat 00:00</div>
-                                <h1>Hot 100 over the years</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2015-06-27 Sat 00:00</div>
+  <h1>Hot 100 over the years</h1>
 </div>
-<div id="content">
+</div>
+<div id="content" class="content">
 <div class='page-tags'><a href='../../../..#exploration'>exploration</a> <a href='../../../..#viz'>viz</a></div>
-<div class="page-intro">
+<div class="page-intro" id="orgfc0cb96">
 <p>
 Exploration of trends in Billboard Hot 100 songs using echonest's acoustic
 features.
@@ -299,7 +268,7 @@ songs (taken from Billboard).
 </p>
 
 
-<figure>
+<figure id="org7f7222f">
 <img src="./method.png" alt="method.png" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -319,8 +288,8 @@ Little Fool, Ricky Nelson) to June 06, 2015 (Bad Blood, Taylor Swift) to see
 what else is interesting here and there apart from the obvious records.
 </p>
 
-<div id="outline-container-org2778978" class="outline-2">
-<h2 id="sec-stays"><a id="org2778978"></a><span class="section-number-2">1</span> Stays</h2>
+<div id="outline-container-sec-stays" class="outline-2">
+<h2 id="sec-stays"><span class="section-number-2">1.</span> Stays</h2>
 <div class="outline-text-2" id="text-sec-stays">
 
 <p>
@@ -374,8 +343,8 @@ disparities in popularity.
 </div>
 </div>
 
-<div id="outline-container-org3e87350" class="outline-2">
-<h2 id="sec-words"><a id="org3e87350"></a><span class="section-number-2">2</span> Words</h2>
+<div id="outline-container-sec-words" class="outline-2">
+<h2 id="sec-words"><span class="section-number-2">2.</span> Words</h2>
 <div class="outline-text-2" id="text-sec-words">
 
 <p>
@@ -402,8 +371,8 @@ words, nothing really interesting came out. Let's move on.
 </div>
 </div>
 
-<div id="outline-container-org94e5ba1" class="outline-2">
-<h2 id="sec-acoustics"><a id="org94e5ba1"></a><span class="section-number-2">3</span> Acoustics</h2>
+<div id="outline-container-sec-acoustics" class="outline-2">
+<h2 id="sec-acoustics"><span class="section-number-2">3.</span> Acoustics</h2>
 <div class="outline-text-2" id="text-sec-acoustics">
 
 <p>
@@ -433,8 +402,8 @@ attributes.
 </p>
 </div>
 
-<div id="outline-container-org63fda2f" class="outline-3">
-<h3 id="sec-acoustics/acousticness"><a id="org63fda2f"></a><span class="section-number-3">3.1</span> Acousticness</h3>
+<div id="outline-container-sec-acoustics/acousticness" class="outline-3">
+<h3 id="sec-acoustics/acousticness"><span class="section-number-3">3.1.</span> Acousticness</h3>
 <div class="outline-text-3" id="text-sec-acoustics/acousticness">
 
 <p>
@@ -451,8 +420,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-org610ded1" class="outline-3">
-<h3 id="sec-acoustics/loudness"><a id="org610ded1"></a><span class="section-number-3">3.2</span> Loudness</h3>
+<div id="outline-container-sec-acoustics/loudness" class="outline-3">
+<h3 id="sec-acoustics/loudness"><span class="section-number-3">3.2.</span> Loudness</h3>
 <div class="outline-text-3" id="text-sec-acoustics/loudness">
 
 <p>
@@ -469,8 +438,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-orgad4354c" class="outline-3">
-<h3 id="sec-acoustics/danceability"><a id="orgad4354c"></a><span class="section-number-3">3.3</span> Danceability</h3>
+<div id="outline-container-sec-acoustics/danceability" class="outline-3">
+<h3 id="sec-acoustics/danceability"><span class="section-number-3">3.3.</span> Danceability</h3>
 <div class="outline-text-3" id="text-sec-acoustics/danceability">
 
 <p>
@@ -487,8 +456,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-orge854238" class="outline-3">
-<h3 id="sec-acoustics/liveness"><a id="orge854238"></a><span class="section-number-3">3.4</span> Liveness</h3>
+<div id="outline-container-sec-acoustics/liveness" class="outline-3">
+<h3 id="sec-acoustics/liveness"><span class="section-number-3">3.4.</span> Liveness</h3>
 <div class="outline-text-3" id="text-sec-acoustics/liveness">
 
 <p>
@@ -506,8 +475,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-orgf4aee22" class="outline-3">
-<h3 id="sec-acoustics/tempo"><a id="orgf4aee22"></a><span class="section-number-3">3.5</span> Tempo</h3>
+<div id="outline-container-sec-acoustics/tempo" class="outline-3">
+<h3 id="sec-acoustics/tempo"><span class="section-number-3">3.5.</span> Tempo</h3>
 <div class="outline-text-3" id="text-sec-acoustics/tempo">
 
 <p>
@@ -524,8 +493,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-orga5c2db0" class="outline-3">
-<h3 id="sec-acoustics/valence"><a id="orga5c2db0"></a><span class="section-number-3">3.6</span> Valence</h3>
+<div id="outline-container-sec-acoustics/valence" class="outline-3">
+<h3 id="sec-acoustics/valence"><span class="section-number-3">3.6.</span> Valence</h3>
 <div class="outline-text-3" id="text-sec-acoustics/valence">
 
 <p>
@@ -543,8 +512,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-org6d928db" class="outline-3">
-<h3 id="sec-acoustics/speechiness"><a id="org6d928db"></a><span class="section-number-3">3.7</span> Speechiness</h3>
+<div id="outline-container-sec-acoustics/speechiness" class="outline-3">
+<h3 id="sec-acoustics/speechiness"><span class="section-number-3">3.7.</span> Speechiness</h3>
 <div class="outline-text-3" id="text-sec-acoustics/speechiness">
 
 <p>
@@ -561,8 +530,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-orgae170e8" class="outline-3">
-<h3 id="sec-acoustics/instrumentalness"><a id="orgae170e8"></a><span class="section-number-3">3.8</span> Instrumentalness</h3>
+<div id="outline-container-sec-acoustics/instrumentalness" class="outline-3">
+<h3 id="sec-acoustics/instrumentalness"><span class="section-number-3">3.8.</span> Instrumentalness</h3>
 <div class="outline-text-3" id="text-sec-acoustics/instrumentalness">
 
 <p>
@@ -579,8 +548,8 @@ async></script>
 </div>
 </div>
 
-<div id="outline-container-org0938d1c" class="outline-3">
-<h3 id="sec-acoustics/energy"><a id="org0938d1c"></a><span class="section-number-3">3.9</span> Energy</h3>
+<div id="outline-container-sec-acoustics/energy" class="outline-3">
+<h3 id="sec-acoustics/energy"><span class="section-number-3">3.9.</span> Energy</h3>
 <div class="outline-text-3" id="text-sec-acoustics/energy">
 
 <p>

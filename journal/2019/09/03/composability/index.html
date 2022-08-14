@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-09-03 Tue 22:46 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Composability: Beyond reproducibility</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<!-- 2022-08-14 Sun 11:31 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>/Composability/: Beyond reproducibility</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -189,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -221,52 +221,7 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -287,8 +242,7 @@ for the JavaScript code in this tag.
              }
 });
 </script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -313,16 +267,16 @@ for the JavaScript code in this tag.
   <h1><i>Composability</i>: Beyond reproducibility</h1>
 </div>
 </div>
-<div id="content">
+<div id="content" class="content">
 <div class='page-tags'><a href='../../../..#ml'>ml</a> <a href='../../../..#programming'>programming</a></div>
 <p>
-<span class='dropcap'>I</span> was reading <i>The future of data analysis</i> by Tukey (<a class='org-ref-reference' href="#tukey1962future">tukey1962future</a>)
+<span class='dropcap'>I</span> was reading <i>The future of data analysis</i> by Tukey (<a href="tukey1962future">tukey1962future</a>)
 recently and found the following under a section on <i>Dangers of optimization</i>.
-<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
 </p>
 
 
-<figure>
+<figure id="org72e0c64">
 <img src="./screenshot-01.png" alt="screenshot-01.png" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -342,7 +296,7 @@ Learning for example, this translates to nice composability properties in
 research code repositories.
 </p>
 
-<aside>
+<aside id="orgbbe8e6c">
 <p>
 This reminds me a lot of the modular programming hype where everyone will likely
 get the <i>objects</i> representing very high abstractions and build amazing systems <i>on
@@ -354,7 +308,7 @@ top</i> of them quickly.
 A mild example that I have recently noticed is in <a href="https://github.com/kaldi-asr/kaldi/tree/master/egs">Kaldi</a> where there are lots of
 <i>recipes</i> (egs) sitting in a similar environment (executable binaries stitched in
 bash) so as to allow such <i>on-top-of</i> researches. There are many attempts
-<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> in the direction of promoting
+<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> in the direction of promoting
 reuse but we can totally do better. Similar to what we have been doing for
 reproducibility, we can try promoting a sort of <i>composability</i> (a strict
 superset) documentation in all our outputs. This of course is related to good
@@ -371,8 +325,8 @@ There are many piecemeal directions already taken here. Consider the popular
 <i>bring-your-own-dataset</i> idea, although mostly in third party instead of reference
 implementations. Similar is sharing of trained models. On the extensibility
 front something like <a href="https://github.com/google-research/disentanglement_lib#starting-your-own-research">starting your own research</a> section in
-<code>disentanglement_lib</code><sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
-(<a class='org-ref-reference' href="#locatello2018challenging">locatello2018challenging</a>) is a nice example.
+<code>disentanglement_lib</code><sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+(<a href="locatello2018challenging">locatello2018challenging</a>) is a nice example.
 </p>
 
 <hr>
@@ -390,20 +344,17 @@ prose efforts in this direction.
 </p>
 
 <p>
-<h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="tukey1962future">[tukey1962future]</a> <a name="tukey1962future"></a>Tukey. 1962. "The future of data analysis." <i>The annals of mathematical statistics</i>, 33(1), 1-67. <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-<li><a id="locatello2018challenging">[locatello2018challenging]</a> <a name="locatello2018challenging"></a>Locatello, Bauer, Lucic, Gelly, Sch\"olkopf & Bachem. 2018. "Challenging common assumptions in the unsupervised learning of disentangled representations." <i>arXiv preprint arXiv:1811.12359</i>, , <a class="bib-link" href="">link</a>. <a class="bib-link" href="http://dx.doi.org/">doi</a>.</li>
-</ul>
+<a href="./references.bib">./references.bib</a>
 </p>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">Too long and structured to write, so just clipped.</p></div></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Too long and structured to write, so just clipped.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">Thanks to everyone who is contributing here.</p></div></div>
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Thanks to everyone who is contributing here.</p></div></div>
 
-<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">This specific repository has the advantage of being
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This specific repository has the advantage of being
 created as a library, but I feel many others can do similar.</p></div></div>
 
 

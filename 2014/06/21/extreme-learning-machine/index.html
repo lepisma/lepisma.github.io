@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-10-07 Sun 21:07 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2022-08-14 Sun 11:10 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Extreme Learning Machines with Julia</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -159,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -176,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -208,52 +221,7 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -274,34 +242,34 @@ for the JavaScript code in this tag.
              }
 });
 </script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2014-06-21 Sat 00:00</div>
-                                <h1>Extreme Learning Machines with Julia</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2014-06-21 Sat 00:00</div>
+  <h1>Extreme Learning Machines with Julia</h1>
 </div>
-<div id="content">
+</div>
+<div id="content" class="content">
 <div class='page-tags'><a href='../../../..#exploration'>exploration</a> <a href='../../../..#ml'>ml</a></div>
-<div class="page-intro">
+<div class="page-intro" id="org674e70d">
 <p>
 Simple comparison of training time and performance of Extreme Learning Machines
 and regular feed forward network using Julia language.
@@ -330,8 +298,8 @@ works by <a href="http://www.cs.toronto.edu/~hinton/">Hinton</a> and others in u
 lift to deep learning.
 </p>
 
-<div id="outline-container-orgf5c7146" class="outline-2">
-<h2 id="sec-reservoirs"><a id="orgf5c7146"></a><span class="section-number-2">1</span> Reservoirs</h2>
+<div id="outline-container-sec-reservoirs" class="outline-2">
+<h2 id="sec-reservoirs"><span class="section-number-2">1.</span> Reservoirs</h2>
 <div class="outline-text-2" id="text-sec-reservoirs">
 
 <p>
@@ -361,8 +329,8 @@ very similar in concept is the topic of this post, <i>Extreme Learning Machine</
 </div>
 </div>
 
-<div id="outline-container-orgb87e588" class="outline-2">
-<h2 id="sec-extreme-learning"><a id="orgb87e588"></a><span class="section-number-2">2</span> Extreme Learning</h2>
+<div id="outline-container-sec-extreme-learning" class="outline-2">
+<h2 id="sec-extreme-learning"><span class="section-number-2">2.</span> Extreme Learning</h2>
 <div class="outline-text-2" id="text-sec-extreme-learning">
 
 <p>
@@ -377,7 +345,7 @@ weighted sum of hidden nodes.
 </p>
 
 
-<figure>
+<figure id="orgce402f2">
 <img src="./elm.jpg" alt="elm.jpg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span>ELM architecture</figcaption>
@@ -450,7 +418,7 @@ process takes the following steps
 <li>Solve \(Y = W' \times H\) for \(W'\)</li>
 </ul>
 
-<aside>
+<aside id="org8de780e">
 <p>
 Mathematically inclined readers can refer to
 <a href="http://www3.ntu.edu.sg/home/EGBHuang/pdf/ELM_IJCNN2004.PDF">this</a> paper. More
@@ -476,8 +444,8 @@ generalization.
 </div>
 </div>
 
-<div id="outline-container-orgb3c86c1" class="outline-2">
-<h2 id="sec-performance"><a id="orgb3c86c1"></a><span class="section-number-2">3</span> Performance</h2>
+<div id="outline-container-sec-performance" class="outline-2">
+<h2 id="sec-performance"><span class="section-number-2">3.</span> Performance</h2>
 <div class="outline-text-2" id="text-sec-performance">
 
 <p>
@@ -532,10 +500,10 @@ Starting off by installing required libraries
 </p>
 
 <div class="org-src-container">
-<pre class="src src-julia">Pkg.clone<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"git://github.com/lepisma/ELM.jl.git"</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-Pkg.clone<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"git://github.com/EricChiang/ANN.jl.git"</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+<pre class="src src-julia">Pkg.clone("git://github.com/lepisma/ELM.jl.git");
+Pkg.clone("git://github.com/EricChiang/ANN.jl.git");
 
-<span class="org-keyword">import</span> ELM, ANN;
+import ELM, ANN;
 </pre>
 </div>
 
@@ -545,30 +513,30 @@ Since, both libraries have few functions with same names, so its better to use
 </p>
 </div>
 
-<div id="outline-container-org4a4d0b7" class="outline-3">
-<h3 id="sec-performance/reading-data"><a id="org4a4d0b7"></a><span class="section-number-3">3.1</span> Reading data</h3>
+<div id="outline-container-sec-performance/reading-data" class="outline-3">
+<h3 id="sec-performance/reading-data"><span class="section-number-3">3.1.</span> Reading data</h3>
 <div class="outline-text-3" id="text-sec-performance/reading-data">
 
 
 <div class="org-src-container">
-<pre class="src src-julia">Pkg.add<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"DataFrames"</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-<span class="org-keyword">using</span> DataFrames;
+<pre class="src src-julia">Pkg.add("DataFrames");
+using DataFrames;
 
-<span class="org-comment-delimiter"># </span><span class="org-comment">No column names here :(</span>
-dat = readtable<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"data_banknote_authentication.txt"</span>, header = <span class="org-constant">false</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-head<span class="org-rainbow-delimiters-depth-1">(</span>dat<span class="org-rainbow-delimiters-depth-1">)</span>
+# No column names here :(
+dat = readtable("data_banknote_authentication.txt", header = false);
+head(dat)
 </pre>
 </div>
 
 <div class="org-src-container">
-<pre class="src src-julia"><span class="org-highlight-numbers-number">6</span>x5 DataFrame:
+<pre class="src src-julia">6x5 DataFrame:
              x1      x2      x3       x4 x5
-<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">1</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">3.6216</span>  <span class="org-highlight-numbers-number">8.6661</span> -<span class="org-highlight-numbers-number">2.8073</span> -<span class="org-highlight-numbers-number">0.44699</span>  <span class="org-highlight-numbers-number">0</span>
-<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">2</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">4.5459</span>  <span class="org-highlight-numbers-number">8.1674</span> -<span class="org-highlight-numbers-number">2.4586</span>  -<span class="org-highlight-numbers-number">1.4621</span>  <span class="org-highlight-numbers-number">0</span>
-<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">3</span>,<span class="org-rainbow-delimiters-depth-1">]</span>      <span class="org-highlight-numbers-number">3.866</span> -<span class="org-highlight-numbers-number">2.6383</span>  <span class="org-highlight-numbers-number">1.9242</span>  <span class="org-highlight-numbers-number">0.10645</span>  <span class="org-highlight-numbers-number">0</span>
-<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">4</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">3.4566</span>  <span class="org-highlight-numbers-number">9.5228</span> -<span class="org-highlight-numbers-number">4.0112</span>  -<span class="org-highlight-numbers-number">3.5944</span>  <span class="org-highlight-numbers-number">0</span>
-<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">5</span>,<span class="org-rainbow-delimiters-depth-1">]</span>    <span class="org-highlight-numbers-number">0.32924</span> -<span class="org-highlight-numbers-number">4.4552</span>  <span class="org-highlight-numbers-number">4.5718</span>  -<span class="org-highlight-numbers-number">0.9888</span>  <span class="org-highlight-numbers-number">0</span>
-<span class="org-rainbow-delimiters-depth-1">[</span><span class="org-highlight-numbers-number">6</span>,<span class="org-rainbow-delimiters-depth-1">]</span>     <span class="org-highlight-numbers-number">4.3684</span>  <span class="org-highlight-numbers-number">9.6718</span> -<span class="org-highlight-numbers-number">3.9606</span>  -<span class="org-highlight-numbers-number">3.1625</span>  <span class="org-highlight-numbers-number">0</span>
+[1,]     3.6216  8.6661 -2.8073 -0.44699  0
+[2,]     4.5459  8.1674 -2.4586  -1.4621  0
+[3,]      3.866 -2.6383  1.9242  0.10645  0
+[4,]     3.4566  9.5228 -4.0112  -3.5944  0
+[5,]    0.32924 -4.4552  4.5718  -0.9888  0
+[6,]     4.3684  9.6718 -3.9606  -3.1625  0
 </pre>
 </div>
 
@@ -579,8 +547,8 @@ authentication.
 </div>
 </div>
 
-<div id="outline-container-orgc561987" class="outline-3">
-<h3 id="sec-performance/scaling-columns"><a id="orgc561987"></a><span class="section-number-3">3.2</span> Scaling columns</h3>
+<div id="outline-container-sec-performance/scaling-columns" class="outline-3">
+<h3 id="sec-performance/scaling-columns"><span class="section-number-3">3.2.</span> Scaling columns</h3>
 <div class="outline-text-3" id="text-sec-performance/scaling-columns">
 
 
@@ -590,11 +558,11 @@ doesn't overshadow others.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-julia"><span class="org-comment-delimiter"># </span><span class="org-comment">For all four columns</span>
-<span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-highlight-numbers-number">1</span>:<span class="org-highlight-numbers-number">4</span>
-    <span class="org-comment-delimiter"># </span><span class="org-comment">Subtracting the mean and dividing by standard deviation</span>
-    dat<span class="org-rainbow-delimiters-depth-1">[</span>i<span class="org-rainbow-delimiters-depth-1">]</span> = <span class="org-rainbow-delimiters-depth-1">(</span>dat<span class="org-rainbow-delimiters-depth-2">[</span>i<span class="org-rainbow-delimiters-depth-2">]</span> - mean<span class="org-rainbow-delimiters-depth-2">(</span>dat<span class="org-rainbow-delimiters-depth-3">[</span>i<span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span> / std<span class="org-rainbow-delimiters-depth-1">(</span>dat<span class="org-rainbow-delimiters-depth-2">[</span>i<span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-<span class="org-keyword">end</span>
+<pre class="src src-julia"># For all four columns
+for i in 1:4
+    # Subtracting the mean and dividing by standard deviation
+    dat[i] = (dat[i] - mean(dat[i])) / std(dat[i]);
+end
 </pre>
 </div>
 
@@ -603,17 +571,17 @@ Keeping 20% of data for testing
 </p>
 
 <div class="org-src-container">
-<pre class="src src-julia">n_test = int<span class="org-rainbow-delimiters-depth-1">(</span>length<span class="org-rainbow-delimiters-depth-2">(</span>dat<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span> * <span class="org-highlight-numbers-number">0.2</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-train_rows = shuffle<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">[</span><span class="org-highlight-numbers-number">1</span>:length<span class="org-rainbow-delimiters-depth-3">(</span>dat<span class="org-rainbow-delimiters-depth-4">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-4">]</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">]</span> .&gt; n_test<span class="org-rainbow-delimiters-depth-1">)</span>;
+<pre class="src src-julia">n_test = int(length(dat[end]) * 0.2);
+train_rows = shuffle([1:length(dat[end])] .&gt; n_test);
 
-dat_train, dat_test = dat<span class="org-rainbow-delimiters-depth-1">[</span>train_rows, :<span class="org-rainbow-delimiters-depth-1">]</span>, dat<span class="org-rainbow-delimiters-depth-1">[</span>!train_rows, :<span class="org-rainbow-delimiters-depth-1">]</span>;
+dat_train, dat_test = dat[train_rows, :], dat[!train_rows, :];
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orge69886d" class="outline-3">
-<h3 id="sec-performance/training"><a id="orge69886d"></a><span class="section-number-3">3.3</span> Training</h3>
+<div id="outline-container-sec-performance/training" class="outline-3">
+<h3 id="sec-performance/training"><span class="section-number-3">3.3.</span> Training</h3>
 <div class="outline-text-3" id="text-sec-performance/training">
 
 <p>
@@ -621,11 +589,11 @@ Let's create the models for training.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-julia">ann = ANN.ArtificialNeuralNetwork<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-<span class="org-comment-delimiter">#</span><span class="org-comment">10 hidden neurons, single hidden layer</span>
+<pre class="src src-julia">ann = ANN.ArtificialNeuralNetwork(10);
+#10 hidden neurons, single hidden layer
 
-elm = ELM.ExtremeLearningMachine<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-<span class="org-comment-delimiter">#</span><span class="org-comment">10 hidden neurons</span>
+elm = ELM.ExtremeLearningMachine(10);
+#10 hidden neurons
 </pre>
 </div>
 
@@ -642,30 +610,30 @@ libraries return values in different ways)
 </p>
 
 <div class="org-src-container">
-<pre class="src src-julia"><span class="org-comment-delimiter"># </span><span class="org-comment">For ANN</span>
-<span class="org-keyword">function</span> <span class="org-function-name">accu</span><span class="org-rainbow-delimiters-depth-1">(</span>model<span class="org-default">::</span><span class="org-type">ANN</span>.ArtificialNeuralNetwork,
-                      x_test<span class="org-default">::</span><span class="org-type">Matrix</span><span class="org-rainbow-delimiters-depth-2">{</span><span class="org-type">Float64</span><span class="org-rainbow-delimiters-depth-2">}</span>,
-                      y_test<span class="org-default">::</span><span class="org-type">Vector</span><span class="org-rainbow-delimiters-depth-2">{</span><span class="org-type">Int64</span><span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-julia"># For ANN
+function accu(model::ANN.ArtificialNeuralNetwork,
+                      x_test::Matrix{Float64},
+                      y_test::Vector{Int64})
 
-    outputs = ANN.predict<span class="org-rainbow-delimiters-depth-1">(</span>model, x_test<span class="org-rainbow-delimiters-depth-1">)</span>;
-    predictions = <span class="org-type">Array</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-type">Int64</span>, length<span class="org-rainbow-delimiters-depth-2">(</span>y_test<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>;
+    outputs = ANN.predict(model, x_test);
+    predictions = Array(Int64, length(y_test));
 
-    <span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-highlight-numbers-number">1</span>:length<span class="org-rainbow-delimiters-depth-1">(</span>y_test<span class="org-rainbow-delimiters-depth-1">)</span>
-        predictions<span class="org-rainbow-delimiters-depth-1">[</span>i<span class="org-rainbow-delimiters-depth-1">]</span> = model.classes<span class="org-rainbow-delimiters-depth-1">[</span>indmax<span class="org-rainbow-delimiters-depth-2">(</span>outputs<span class="org-rainbow-delimiters-depth-3">[</span>i, :<span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">]</span>;
-    <span class="org-keyword">end</span>
+    for i in 1:length(y_test)
+        predictions[i] = model.classes[indmax(outputs[i, :])];
+    end
 
-    mean<span class="org-rainbow-delimiters-depth-1">(</span>predictions .== y_test<span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-keyword">end</span>
+    mean(predictions .== y_test)
+end
 
-<span class="org-comment-delimiter"># </span><span class="org-comment">For ELM</span>
-<span class="org-keyword">function</span> <span class="org-function-name">accu</span><span class="org-rainbow-delimiters-depth-1">(</span>model<span class="org-default">::</span><span class="org-type">ELM</span>.ExtremeLearningMachine,
-                         data_test<span class="org-default">::</span><span class="org-type">DataFrame</span><span class="org-rainbow-delimiters-depth-1">)</span>
+# For ELM
+function accu(model::ELM.ExtremeLearningMachine,
+                         data_test::DataFrame)
 
-    <span class="org-comment-delimiter">#</span><span class="org-comment">ELM.jl supports DataFrames now !</span>
+    #ELM.jl supports DataFrames now !
 
-    predictions = ELM.predict<span class="org-rainbow-delimiters-depth-1">(</span>model, data_test<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>;
-    mean<span class="org-rainbow-delimiters-depth-1">(</span>int<span class="org-rainbow-delimiters-depth-2">(</span>predictions<span class="org-rainbow-delimiters-depth-2">)</span> .== data_test<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>
-<span class="org-keyword">end</span>
+    predictions = ELM.predict(model, data_test[1:end-1]);
+    mean(int(predictions) .== data_test[end])
+end
 </pre>
 </div>
 
@@ -683,37 +651,37 @@ speed of julia.
 </div>
 </div>
 
-<div id="outline-container-org38a2c15" class="outline-3">
-<h3 id="sec-performance/ann"><a id="org38a2c15"></a><span class="section-number-3">3.4</span> ANN</h3>
+<div id="outline-container-sec-performance/ann" class="outline-3">
+<h3 id="sec-performance/ann"><span class="section-number-3">3.4.</span> ANN</h3>
 <div class="outline-text-3" id="text-sec-performance/ann">
 
 
 <div class="org-src-container">
-<pre class="src src-julia">tic<span class="org-rainbow-delimiters-depth-1">()</span>; ANN.fit!<span class="org-rainbow-delimiters-depth-1">(</span>ann, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_train<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span>, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_train<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span>, epochs =
-                <span class="org-highlight-numbers-number">16</span>, lambda = <span class="org-highlight-numbers-number">1e-5</span><span class="org-rainbow-delimiters-depth-1">)</span>; toc<span class="org-rainbow-delimiters-depth-1">()</span>
-accu<span class="org-rainbow-delimiters-depth-1">(</span>ann, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_test<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span>, array<span class="org-rainbow-delimiters-depth-2">(</span>dat_test<span class="org-rainbow-delimiters-depth-3">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-3">]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-julia">tic(); ANN.fit!(ann, array(dat_train[1:end-1]), array(dat_train[end]), epochs =
+                16, lambda = 1e-5); toc()
+accu(ann, array(dat_test[1:end-1]), array(dat_test[end]))
 </pre>
 </div>
 
-<pre class="example">
+<pre class="example" id="org7fcfc2f">
 elapsed time: 0.238218045 seconds
 0.9708029197080292
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org541a432" class="outline-3">
-<h3 id="sec-performance/elm"><a id="org541a432"></a><span class="section-number-3">3.5</span> ELM</h3>
+<div id="outline-container-sec-performance/elm" class="outline-3">
+<h3 id="sec-performance/elm"><span class="section-number-3">3.5.</span> ELM</h3>
 <div class="outline-text-3" id="text-sec-performance/elm">
 
 
 <div class="org-src-container">
-<pre class="src src-julia">tic<span class="org-rainbow-delimiters-depth-1">()</span>; ELM.fit!<span class="org-rainbow-delimiters-depth-1">(</span>elm, dat_train<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-highlight-numbers-number">1</span>:<span class="org-keyword">end</span>-<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-2">]</span>, dat_train<span class="org-rainbow-delimiters-depth-2">[</span><span class="org-keyword">end</span><span class="org-rainbow-delimiters-depth-2">]</span><span class="org-rainbow-delimiters-depth-1">)</span>; toc<span class="org-rainbow-delimiters-depth-1">()</span>
-accu<span class="org-rainbow-delimiters-depth-1">(</span>elm, dat_test<span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-julia">tic(); ELM.fit!(elm, dat_train[1:end-1], dat_train[end]); toc()
+accu(elm, dat_test)
 </pre>
 </div>
 
-<pre class="example">
+<pre class="example" id="org6649559">
 elapsed time: 0.003801902 seconds
 0.9817518248175182
 </pre>
@@ -721,8 +689,8 @@ elapsed time: 0.003801902 seconds
 </div>
 </div>
 
-<div id="outline-container-orge5e02d7" class="outline-2">
-<h2 id="sec-wut?"><a id="orge5e02d7"></a><span class="section-number-2">4</span> WUT?</h2>
+<div id="outline-container-sec-wut?" class="outline-2">
+<h2 id="sec-wut?"><span class="section-number-2">4.</span> WUT?</h2>
 <div class="outline-text-2" id="text-sec-wut?">
 
 <p>
@@ -731,7 +699,7 @@ faster than <i>ANN</i>! (Which kind of isn't actually surprising since the hidde
 connections are untouched).
 </p>
 
-<div class="edits">
+<div class="edits" id="org7d874ca">
 <ul class="org-ul">
 <li>As pointed out by Jeremy Gore, the current code throws error due to
 changes in Julia version. The original post was tested and written for

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2018-06-08 Fri 10:03 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2022-08-14 Sun 11:13 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Overtone Jamming</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Abhinav Tushar">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -159,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -176,7 +190,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -208,76 +221,32 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
-                                <div class='site-title'>
-                                  <a href='/'>
-                                    <img src='/assets/images/avatar32.png'>
-                                  </a>
-                                </div>
-                                <div class='site-nav'>
-                                  <a class='active' href='/'> blog</a>
-                                  <a class='' href='/journal'> journal</a>
-                                  <a class='' href='/wiki'> wiki</a>
-                                  <a href='/about'> about</a>
-                                </div>
-                                <div class='clearfix'></div>
-                              </header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
 
-                              <div class='page-header'>
-                                <div class='page-meta'>2015-03-23 Mon 00:00</div>
-                                <h1>Overtone Jamming</h1>
-                              </div>
+<div class='page-header'>
+  <div class='page-meta'>2015-03-23 Mon 00:00</div>
+  <h1>Overtone Jamming</h1>
 </div>
-<div id="content">
+</div>
+<div id="content" class="content">
 <div class='page-tags'><a href='../../..#ramble'>ramble</a></div>
 <blockquote>
 <p>
@@ -308,9 +277,9 @@ Looking for alternatives, I found <a href="http://sonic-pi.net/">Sonic Pi</a>. T
 sounds on their website. But, the coolest thing was <a href="http://overtone.github.io/">Overtone</a>.
 </p>
 
-<div id="outline-container-org109d08c" class="outline-2">
-<h2 id="overtone"><a id="org109d08c"></a><span class="section-number-2">1</span> Overtone</h2>
-<div class="outline-text-2" id="text-overtone">
+<div id="outline-container-sec-overtone" class="outline-2">
+<h2 id="sec-overtone"><span class="section-number-2">1.</span> Overtone</h2>
+<div class="outline-text-2" id="text-sec-overtone">
 
 <p>
 Overtone allows you to [live] code (and compose music) inx <a href="http://clojure.org">Clojure</a>, which is a
@@ -322,14 +291,14 @@ started with overtone.
 <div class="org-src-container">
 <pre class="src src-clojure">--&gt; Booting external SuperCollider server...
 
---&gt; Connecting to external SuperCollider server: 127.0.0.1:31214
+--&gt; Connecting to external SuperCollider server: <span class="org-highlight-numbers-number">127.0.0.1:31214</span>
 
 
     _____                 __
    / __  /_  _____  _____/ /_____  ____  ___
-  / / / / | / / _ \/ ___/ __/ __ \/ __ \/ _ \
+  / / / / | / / _ <span class="org-clojure-character">\/</span> ___/ __/ __ <span class="org-clojure-character">\/</span> __ <span class="org-clojure-character">\/</span> _ \
  / /_/ /| |/ /  __/ /  / /_/ /_/ / / / /  __/
- \____/ |___/\___/_/   \__/\____/_/ /_/\___/
+ \____/ |___/\<span class="org-type">___</span>/_/   \__/\<span class="org-type">____</span>/_/ /_/\___/
 
    Collaborative Programmable Music. v0.9.1
 
@@ -359,26 +328,26 @@ much everything like bpms, scales. A simple example is here.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure">;; the 'kick' instrument
-;; taken from https://github.com/overtone/overtone/wiki/Live-coding
+<pre class="src src-clojure"><span class="org-comment-delimiter">;; </span><span class="org-comment">the 'kick' instrument</span>
+<span class="org-comment-delimiter">;; </span><span class="org-comment">taken from https://github.com/overtone/overtone/wiki/Live-coding</span>
 
-(definst kick [freq 120 dur 0.3 width 0.5]
-  (let [freq-env (* freq (env-gen (perc 0 (* 0.99 dur))))
-        env (env-gen (perc 0.01 dur) 1 1 0 1 FREE)
-        sqr (* (env-gen (perc 0 0.01)) (pulse (* 2 freq) width))
-        src (sin-osc freq-env)
-        drum (+ sqr (* env src))]
-    (compander drum drum 0.2 1 0.1 0.01 0.01)))
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">definst</span> <span class="org-function-name">kick</span> <span class="org-rainbow-delimiters-depth-2">[</span>freq <span class="org-highlight-numbers-number">120</span> dur <span class="org-highlight-numbers-number">0.3</span> width <span class="org-highlight-numbers-number">0.5</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">]</span></span>
+  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">let</span> <span class="org-rainbow-delimiters-depth-3">[</span>freq-env <span class="org-rainbow-delimiters-depth-4">(</span>* freq <span class="org-rainbow-delimiters-depth-5">(</span>env-gen <span class="org-rainbow-delimiters-depth-6">(</span>perc <span class="org-highlight-numbers-number">0</span> <span class="org-rainbow-delimiters-depth-7">(</span>* <span class="org-highlight-numbers-number">0.99</span> dur<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-7">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-6">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-5">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span>
+        env <span class="org-rainbow-delimiters-depth-4">(</span>env-gen <span class="org-rainbow-delimiters-depth-5">(</span>perc <span class="org-highlight-numbers-number">0.01</span> dur<span class="org-rainbow-delimiters-depth-5">)</span> <span class="org-highlight-numbers-number">1</span> <span class="org-highlight-numbers-number">1</span> <span class="org-highlight-numbers-number">0</span> <span class="org-highlight-numbers-number">1</span> FREE<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span>
+        sqr <span class="org-rainbow-delimiters-depth-4">(</span>* <span class="org-rainbow-delimiters-depth-5">(</span>env-gen <span class="org-rainbow-delimiters-depth-6">(</span>perc <span class="org-highlight-numbers-number">0</span> <span class="org-highlight-numbers-number">0.01</span><span class="org-rainbow-delimiters-depth-6">)</span><span class="org-rainbow-delimiters-depth-5">)</span> <span class="org-rainbow-delimiters-depth-5">(</span>pulse <span class="org-rainbow-delimiters-depth-6">(</span>* <span class="org-highlight-numbers-number">2</span> freq<span class="org-rainbow-delimiters-depth-6">)</span> width<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-5">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span>
+        src <span class="org-rainbow-delimiters-depth-4">(</span>sin-osc freq-env<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span>
+        drum <span class="org-rainbow-delimiters-depth-4">(</span>+ sqr <span class="org-rainbow-delimiters-depth-5">(</span>* env src<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-5">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">]</span></span>
+    <span class="org-rainbow-delimiters-depth-3">(</span>compander drum drum <span class="org-highlight-numbers-number">0.2</span> <span class="org-highlight-numbers-number">1</span> <span class="org-highlight-numbers-number">0.1</span> <span class="org-highlight-numbers-number">0.01</span> <span class="org-highlight-numbers-number">0.01</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
 
-;; use it on a loop with metronome; 128 bpm
-(def metro (metronome 128))
+<span class="org-comment-delimiter">;; </span><span class="org-comment">use it on a loop with metronome; 128 bpm</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">def</span> <span class="org-variable-name">metro</span> <span class="org-rainbow-delimiters-depth-2">(</span>metronome <span class="org-highlight-numbers-number">128</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
 
-(defn player [beat]
-  (at (metro beat) (kick))
-  (apply-by (metro (inc beat)) #'player (inc beat) []))
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">defn</span> <span class="org-function-name">player</span> <span class="org-rainbow-delimiters-depth-2">[</span>beat<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">]</span></span>
+  <span class="org-rainbow-delimiters-depth-2">(</span>at <span class="org-rainbow-delimiters-depth-3">(</span>metro beat<span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-rainbow-delimiters-depth-3">(</span>kick<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span>
+  <span class="org-rainbow-delimiters-depth-2">(</span>apply-by <span class="org-rainbow-delimiters-depth-3">(</span>metro <span class="org-rainbow-delimiters-depth-4">(</span>inc beat<span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span> #'player <span class="org-rainbow-delimiters-depth-3">(</span>inc beat<span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">]</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
 
-;; play
-(player (metro))
+<span class="org-comment-delimiter">;; </span><span class="org-comment">play</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>player <span class="org-rainbow-delimiters-depth-2">(</span>metro<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
 </pre>
 </div>
 
