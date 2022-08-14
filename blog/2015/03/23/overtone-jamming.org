@@ -1,6 +1,5 @@
 #+TITLE: Overtone Jamming
 #+TAGS: ramble
-#+SETUPFILE: ../../../../assets/export.setup
 
 #+BEGIN_QUOTE
   The writer knows /shit/ about music composition. So, no questions on

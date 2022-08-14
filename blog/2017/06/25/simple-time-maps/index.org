@@ -1,6 +1,5 @@
 #+TITLE: Simpler time map plots
 #+TAGS: exploration, viz
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Proposing a one dimensional version of [[https://districtdatalabs.silvrback.com/time-maps-visualizing-discrete-events-across-many-timescales][time map]] plots that doesn't lose any

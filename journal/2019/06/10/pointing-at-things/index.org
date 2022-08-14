@@ -1,5 +1,4 @@
 #+TITLE: Pointing at Things
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: programming
 
 Here is a /permalink/ to something → http://existentialcomics.com/comic/268. What

@@ -1,5 +1,4 @@
 #+TITLE: Buffer Model Gotcha
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: emacs, programming
 
 So I have this [[pile:wiki:readings/books][reading list]] which has around 750 org entries. My org publish

@@ -1,6 +1,5 @@
 #+TITLE:  On why you too should give Emacs Org-mode a spin
 #+TAGS: org-mode, emacs, tooling
-#+SETUPFILE: ../../../../../assets/export.setup
 
 Just came across a hackernews [[https://news.ycombinator.com/item?id=11296843][post]] on [[http://orgmode.org/][Org-mode]]. Its beautiful to know people
 settling into various states of equilibrium with Org for different needs. The

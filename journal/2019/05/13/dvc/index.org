@@ -1,5 +1,4 @@
 #+TITLE: DVC and ML reproducibility
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: programming, ml
 
 I have started using [[https://git-lfs.github.com/][git-lfs]] more. It's been really helpful for keeping a bunch

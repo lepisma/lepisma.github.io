@@ -1,5 +1,4 @@
 #+TITLE: Hard work is misunderstood
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, productivity
 
 We confuse two kinds of hard work a little more than what should be an innocuous

@@ -1,6 +1,5 @@
 #+TITLE: Cheap polyglot notebooks
 #+TAGS: org-mode, emacs, tooling, programming
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 As compared to json based jupyter notebooks, Emacs org-mode provides a much more

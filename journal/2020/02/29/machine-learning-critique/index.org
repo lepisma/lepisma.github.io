@@ -1,5 +1,4 @@
 #+TITLE: Machine Learning Critique
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: ml, work
 
 At work, we recently started biweekly /State of Machine Learning/ (SoML) sessions.

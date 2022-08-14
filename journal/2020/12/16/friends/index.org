@@ -1,5 +1,4 @@
 #+TITLE: Friends
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 I have been wondering what friends mean. There are many definitions of

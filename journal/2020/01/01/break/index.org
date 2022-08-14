@@ -1,5 +1,4 @@
 #+TITLE: A break
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 These few days have been a little messy and I haven't gotten time to work on the

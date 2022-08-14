@@ -1,6 +1,5 @@
 #+TITLE: Firewall Paradox and revisiting the Law of Information
 #+TAGS: physics
-#+SETUPFILE: ../../../../../assets/export.setup
 
 It's been another year in the life of our fellow human, Stephen Hawking and I
 was just revisiting his idea about the infamous Firewall paradox. Hawking is one

@@ -1,6 +1,5 @@
 #+TITLE: Optional Typing
 #+TAGS: programming, python
-#+SETUPFILE: ../../../../assets/export.setup
 
 #+BEGIN_page-intro
 My experiences with static type checking. More specifically, I try to

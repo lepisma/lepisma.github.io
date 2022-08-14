@@ -1,5 +1,4 @@
 #+TITLE: Ancillary Amusements
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, philosophy
 
 Originally dated 15th March, 2020, I had this entry lying around without any

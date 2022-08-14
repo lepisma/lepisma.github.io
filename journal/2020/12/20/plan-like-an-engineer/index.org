@@ -1,5 +1,4 @@
 #+TITLE: Plan like an Engineer
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: work
 
 People at management level usually disregard engineers' planning capabilities.

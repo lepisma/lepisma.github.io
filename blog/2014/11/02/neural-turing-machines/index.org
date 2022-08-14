@@ -1,6 +1,5 @@
 #+TITLE: Neural Turing Machines for dummies
 #+TAGS: ml
-#+SETUPFILE: ../../../../../assets/export.setup
 
 Recently, DeepMind (Oops ! [[http://deepmind.com/][/Google/ DeepMind]]) revealed a paper titled '/Neural
 Turing Machines/'. Interesting name.

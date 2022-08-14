@@ -1,5 +1,4 @@
 #+TITLE: /Composability/: Beyond reproducibility
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: ml, programming
 
 I was reading /The future of data analysis/ by Tukey (cite:tukey1962future)

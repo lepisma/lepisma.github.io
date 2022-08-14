@@ -1,6 +1,5 @@
 #+TITLE: Abusing Evidence: Drought, Deluge and Disregard
 #+TAGS: ramble, skepticism
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_EXPORT html
   <style>

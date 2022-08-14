@@ -1,6 +1,5 @@
 #+TITLE: Extreme Learning Machines with Julia
 #+TAGS: exploration, ml
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Simple comparison of training time and performance of Extreme Learning Machines

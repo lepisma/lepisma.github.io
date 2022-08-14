@@ -1,5 +1,4 @@
 #+TITLE: Talking to People
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 I have been trying to gain more control over affective aspects of my being

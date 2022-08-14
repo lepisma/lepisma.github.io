@@ -1,6 +1,5 @@
 #+TITLE: The point of keyboarding
 #+TAGS: ux, personal
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Asking myself whats important in the keyboard vs mouse debate. Is it really just

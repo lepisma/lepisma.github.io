@@ -1,5 +1,4 @@
 #+TITLE: On Naming
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: work
 
 I am a big fan of naming things[fn::Fun fact, I set up the process for renaming

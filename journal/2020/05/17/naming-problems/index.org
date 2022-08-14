@@ -1,5 +1,4 @@
 #+TITLE: Naming Problems
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: programming, personal
 
 I am realizing that I have been a very slow programmer recently. Slow in terms

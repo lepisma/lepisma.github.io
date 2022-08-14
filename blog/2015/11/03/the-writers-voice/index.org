@@ -1,6 +1,5 @@
 #+TITLE: The Writers' Voice
 #+TAGS: ml, exploration, viz
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+HTML: <script src="https://d3js.org/d3.v3.min.js"></script>
 

@@ -1,6 +1,5 @@
 #+TITLE: Leaving Goodreads
 #+TAGS: personal, ramble, emacs, org-mode
-#+SETUPFILE: ../../../../../assets/export.setup
 
 Goodreads feels like a project with a lost focus. I can list a dozen (about
 right) things that don't justify the prefix of the project's name. Don't get me

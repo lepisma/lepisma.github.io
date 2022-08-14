@@ -1,6 +1,5 @@
 #+TITLE: Projects
 #+TAGS: personal, emacs, org-mode, tooling
-#+SETUPFILE: ../../../../assets/export.setup
 
 My lists of /things-to-do/ have been monotonically increasing since the time I
 started maintaining such lists. There are many plans to execute, things to learn

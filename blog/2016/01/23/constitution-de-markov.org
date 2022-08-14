@@ -1,6 +1,5 @@
 #+TITLE: Constitution De Markov
 #+TAGS: exploration
-#+SETUPFILE: ../../../../assets/export.setup
 
 Recently I came across [[https://www.constituteproject.org/][Constitute]] project that provides '/the World's
 Constitutions to read, search, and compare/'. Now, 194 constitutions have enough

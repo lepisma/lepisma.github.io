@@ -1,5 +1,4 @@
 #+TITLE: What are Jupyter notebooks for?
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: programming
 
 You might have seen [[https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/][this recent deck]] by Joel Grus on Jupyter notebooks. If you

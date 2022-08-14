@@ -1,6 +1,5 @@
 #+TITLE: Blog → Wiki
 #+TAGS: personal
-#+SETUPFILE: ../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Maintaining a blog has certain disadvantages, mostly due to linearity of post

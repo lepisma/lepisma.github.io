@@ -1,6 +1,5 @@
 #+TITLE: The Lazy Answer to Everything
 #+TAGS: personal
-#+SETUPFILE: ../../../../assets/export.setup
 
 Linus Torvalds is notoriously famous for being direct/upfront/harsh/rude etc.
 Here is a recent [[https://news.ycombinator.com/item?id=16202205][news]] where he blasts on the Intel fiasco with meltdown patches.

@@ -1,6 +1,5 @@
 #+TITLE: Most Impactful Books
 #+TAGS: books, personal
-#+SETUPFILE: ../../../../assets/export.setup
 
 Recently there was a [[https://www.reddit.com/r/books/comments/8rqki3/what_are_your_top_ten_books_that_are_either_your/][thread]] on /r/books asking "What are your top ten books that
 are either your favorite or that made the greatest impact?" I feel that this

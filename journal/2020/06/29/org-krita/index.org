@@ -1,5 +1,4 @@
 #+TITLE:org-krita
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: org-mode, emacs
 #+PILE: dropcap:nil
 

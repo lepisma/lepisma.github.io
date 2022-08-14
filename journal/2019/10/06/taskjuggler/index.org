@@ -1,5 +1,4 @@
 #+TITLE: TaskJuggler
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: productivity
 
 Around a month back, I was looking for tools that can help lay out plans and

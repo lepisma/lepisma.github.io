@@ -1,5 +1,4 @@
 #+TITLE: Books Read in 2018
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, books
 
 Since I stopped using Goodreads, I didn't have any of the /finish-n-books/ this

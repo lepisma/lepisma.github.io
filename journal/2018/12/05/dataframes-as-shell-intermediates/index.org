@@ -1,5 +1,4 @@
 #+TITLE: DataFrames as Shell Intermediates
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: programming, org-mode
 #+PILE: dropcap:nil
 

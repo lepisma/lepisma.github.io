@@ -1,5 +1,4 @@
 #+TITLE: No one watches meeting recordings
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, work
 
 A clarification. No one watches /post-pandemic/ meeting recordings. Better. No one

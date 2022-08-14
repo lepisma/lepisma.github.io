@@ -1,6 +1,5 @@
 #+TITLE: A Partial Interpretation of /Metaphysics‑of‑Quality/
 #+TAGS: philosophy
-#+SETUPFILE: ../../../../assets/export.setup
 
 I am mid way through the second book, 'Lila: An Inquiry into Morals', by Pirsig
 on his Metaphysics of Quality. Although the first book (Zen and the Art of

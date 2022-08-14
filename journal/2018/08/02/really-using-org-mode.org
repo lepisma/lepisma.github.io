@@ -1,5 +1,4 @@
 #+TITLE: Really using Org Mode
-#+SETUPFILE: ../../../../assets/export.setup
 #+TAGS: productivity
 
 Irrespective of what I tell myself, I have not been using Org mode in its full

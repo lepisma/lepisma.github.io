@@ -1,5 +1,4 @@
 #+TITLE: Conflicting Posts
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 I was just now writing a post which could be perceived as being /against/ hard

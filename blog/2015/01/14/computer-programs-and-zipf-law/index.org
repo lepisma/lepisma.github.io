@@ -1,6 +1,5 @@
 #+TITLE: Computer Programs and Zipf's Law
 #+TAGS: exploration
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Exploration of software projects with large code base looking at keyword

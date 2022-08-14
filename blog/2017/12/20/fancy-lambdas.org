@@ -1,6 +1,5 @@
 #+TITLE: Fancy Little Lisp λs
 #+TAGS: lisp, programming
-#+SETUPFILE: ../../../../assets/export.setup
 
 This year, I am trying to get my hands on [[https://adventofcode.com/][Advent of Code]]. One of my aims is to
 try out programming languages with varying paradigms. As of now, I have

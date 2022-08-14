@@ -1,5 +1,4 @@
 #+TITLE: Better Mood Tracking
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 Last year I wrote about my mood tracking technique [[pile:journal:2020/12/27/mood-tracking][here]]. While I still have

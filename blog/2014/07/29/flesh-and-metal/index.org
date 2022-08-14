@@ -1,6 +1,5 @@
 #+TITLE: Flesh and Metal
 #+TAGS: ramble
-#+SETUPFILE: ../../../../../assets/export.setup
 
 It isn't long before we get to see [[http://www.imdb.com/title/tt1340138/][another installment]] of one of the classic
 /cyborg/ movies. [[http://www.imdb.com/title/tt0088247/][The Terminator (1984)]] inspired many AI junkies of our times (at

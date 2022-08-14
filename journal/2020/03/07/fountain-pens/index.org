@@ -1,5 +1,4 @@
 #+TITLE: A month of /fountain/ pens
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 Last month, I ended up buying a bunch of fountain pens and ink bottles. While I

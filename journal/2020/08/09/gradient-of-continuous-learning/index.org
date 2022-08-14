@@ -1,5 +1,4 @@
 #+TITLE: A Gradient of Continuous Learning
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, work
 
 Like other workplaces, our workplace has many kinds of higher level

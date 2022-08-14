@@ -1,6 +1,5 @@
 #+TITLE: Functions as state
 #+TAGS: ml, programming
-#+SETUPFILE: ../../../../assets/export.setup
 
 A machine learning model is, for the most part, an stateful object. There is a
 bundle of state, call ~{}~, packed in an object which changes as you call methods

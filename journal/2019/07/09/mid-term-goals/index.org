@@ -1,5 +1,4 @@
 #+TITLE: Mid Term Goals
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: productivity, personal
 
 Even after doing decent enough scheduling of your day, there are things that

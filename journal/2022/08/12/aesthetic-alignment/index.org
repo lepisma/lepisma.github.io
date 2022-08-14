@@ -1,5 +1,4 @@
 #+TITLE: Aesthetic Alignment
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, work
 
 I have spent a fare share of time on a personal interpretation for /meaning of

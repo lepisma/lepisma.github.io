@@ -1,5 +1,4 @@
 #+TITLE: Information Janitoring
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, productivity
 
 From the time I started using [[https://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]], I have stopped thinking about having a

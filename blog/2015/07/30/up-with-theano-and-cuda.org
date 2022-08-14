@@ -1,6 +1,5 @@
 #+TITLE: Up and running with Theano (GPU) + PyCUDA on Windows
 #+TAGS: tooling
-#+SETUPFILE: ../../../../assets/export.setup
 #+OPTIONS: num:t
 
 Getting CUDA to work with python on Windows is really frustrating. Its not

@@ -1,5 +1,4 @@
 #+TITLE: Who is a Philosopher?
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 Somewhere in class 2, 3 or 4 [fn::Indian Education system. I remember the school

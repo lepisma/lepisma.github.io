@@ -1,5 +1,4 @@
 #+TITLE: Plugins for the Rest of us
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 Rant time. I downloaded my Google data using [[https://takeout.google.com/][takeout]] a few days back and was

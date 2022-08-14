@@ -1,5 +1,4 @@
 #+TITLE: Org Capture Anywhere
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: org-mode, emacs, productivity
 
 Recently, I realized that my note taking workflow is not that easy and

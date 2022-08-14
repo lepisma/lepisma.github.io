@@ -1,5 +1,4 @@
 #+TITLE: Ritualistic Shutdowns
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, work
 
 I tend to say, to whoever asks, that I cooked at home more /before/ the pandemic

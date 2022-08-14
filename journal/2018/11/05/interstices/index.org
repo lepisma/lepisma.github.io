@@ -1,5 +1,4 @@
 #+TITLE: Interstices
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, productivity
 
 Last weekend, I had one of those longer stays at an airport and was pleasantly

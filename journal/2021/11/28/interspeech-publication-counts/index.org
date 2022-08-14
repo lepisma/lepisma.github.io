@@ -1,5 +1,4 @@
 #+TITLE: Interspeech Publication Counts
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: work, viz
 
 I was trying to get number of publications for various research group in

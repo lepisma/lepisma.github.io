@@ -1,5 +1,4 @@
 #+TITLE: Cab Contemplation
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal
 
 During the initial months of 2019, our office went further away from my place

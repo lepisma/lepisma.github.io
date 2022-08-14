@@ -1,5 +1,4 @@
 #+TITLE: Acoustic Interfaces
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: programming, ux
 #+PILE: dropcap:nil
 

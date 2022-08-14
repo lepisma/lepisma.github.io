@@ -1,5 +1,4 @@
 #+TITLE: Rational Theists
-#+SETUPFILE: ../../../../assets/export.setup
 #+TAGS: philosophy, personal
 
 A lot of times, I have been baffled by the fact that many people who work with

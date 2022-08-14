@@ -1,6 +1,5 @@
 #+TITLE: Irrationalization and Selfishness
 #+TAGS: philosophy
-#+SETUPFILE: ../../../../assets/export.setup
 
 I am going through Bertrand Russell's /Sceptical Essays/ and found a /successful/
 strategy called 'irrationalization' where,

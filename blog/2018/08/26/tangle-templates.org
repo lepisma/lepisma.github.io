@@ -1,6 +1,5 @@
 #+TITLE: Tangle Templates
 #+SETUPFILE: ../../../../assets/export.setup
-#+TAGS: org-mode, programming, emacs, tooling
 
 Looking recently at [[https://github.com/commercialhaskell/stack-templates/blob/master/simple.hsfiles][hsfiles]] template made me fiddle around with a relatively old
 script for /project template management/ using ~org-babel~. If you have used any

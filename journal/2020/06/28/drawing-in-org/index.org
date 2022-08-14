@@ -1,5 +1,4 @@
 #+TITLE: Drawings in Emacs/Org
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: org-mode, emacs
 
 I recently got back to a graphics tablet. A [[https://www.wacom.com/en-us/products/pen-tablets/one-by-wacom][One]] medium. While my earlier HUION

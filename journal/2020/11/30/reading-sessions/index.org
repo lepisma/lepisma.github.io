@@ -1,5 +1,4 @@
 #+TITLE: Reading Sessions
-#+SETUPFILE: ../../../../../assets/export.setup
 #+OPTIONS: num:nil
 #+TAGS: work, ml
 

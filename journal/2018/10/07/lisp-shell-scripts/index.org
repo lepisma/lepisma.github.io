@@ -1,5 +1,4 @@
 #+TITLE: Lisp Shell Scripts
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: lisp, programming
 
 Even after using a relatively friendly shell [fn::fish shell], I find writing

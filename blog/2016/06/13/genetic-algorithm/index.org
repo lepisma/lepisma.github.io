@@ -1,6 +1,5 @@
 #+TITLE: What is it that Genetic Algorithm does?
 #+TAGS: ml
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Genetic Algorithms face a ton of criticism. Rather than being a general purpose

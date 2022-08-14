@@ -1,6 +1,5 @@
 #+TITLE: Blog ← Wiki
 #+TAGS: personal
-#+SETUPFILE: ../../../../assets/export.setup
 
 Some time back I tried to move almost completely to a wiki based writing system.
 Arguments in favour of that are [[file:../../01/27/blog-to-wiki.org][here]]. I have, since then, reverted my views on

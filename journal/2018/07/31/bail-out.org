@@ -1,6 +1,5 @@
 #+TITLE: Bail Out Macro
 #+SETUPFILE: ../../../../assets/export.setup
-#+TAGS: lisp, programming
 
 #+BEGIN_QUOTE
 Since we already have ~block~ and ~return~ macro in elisp (from cl-lib), this post

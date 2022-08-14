@@ -1,5 +1,4 @@
 #+TITLE: Defer Macro
-#+SETUPFILE: ../../../../assets/export.setup
 #+TAGS: lisp, programming
 
 I recently had to touch [[https://golang.org/][go]] and came to know about ~defer~ statements which let you

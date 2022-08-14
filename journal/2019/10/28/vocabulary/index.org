@@ -1,5 +1,4 @@
 #+TITLE: Vocabulary
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, books
 
 After starting [[https://www.goodreads.com/book/show/338798.Ulysses][Ulysses]] recently, I am noticing that my speaking, writing and

@@ -1,5 +1,4 @@
 #+TITLE: Private Screen Sharing
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, programming
 
 Doing remote work, I have realized that it's very easy to, accidentally, show

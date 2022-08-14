@@ -1,6 +1,5 @@
 #+TITLE: Why I Stopped Recommending GNOME
 #+TAGS: ux
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Approachability and potential of customization are important parts of a user

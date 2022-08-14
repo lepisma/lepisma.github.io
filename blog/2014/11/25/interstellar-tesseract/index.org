@@ -1,6 +1,5 @@
 #+TITLE: The Interstellar's Tesseract
 #+TAGS: ramble
-#+SETUPFILE: ../../../../../assets/export.setup
 
 Just watched [[http://www.imdb.com/title/tt0816692][Interstellar]] and boy! It was beauty. From flawlessly getting away
 with the paradoxes every sci fi movie (specially related to time travel) faces,

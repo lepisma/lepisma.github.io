@@ -1,6 +1,5 @@
 #+TITLE: Ricing up Org Mode
 #+TAGS: emacs, org-mode, ricing, ux
-#+SETUPFILE: ../../../../../assets/export.setup
 
 This is a short post pulling in [[https://www.reddit.com/r/unixporn/comments/73vwpa/stumpwm_light_colors_with_purple_accent/dnvqwt8/?context=1][my comment]] on a /r/unixporn submission where I
 document my Org mode dotfiles for a word processor like interface. The aim is to

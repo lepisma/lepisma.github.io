@@ -1,5 +1,4 @@
 #+TITLE: Phase Transitions
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: productivity, work
 
 While reading Dan's post on productivity [[https://danluu.com/productivity-velocity/][here]], I found a phrase for a concept

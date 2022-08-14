@@ -1,5 +1,4 @@
 #+TITLE: Analogies
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: books
 
 This weekend I finished [[https://www.goodreads.com/book/show/1280983.True_Names][True Names]]. The core of its cyberspace lies in the

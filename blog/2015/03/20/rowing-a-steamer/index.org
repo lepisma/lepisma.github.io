@@ -1,6 +1,5 @@
 #+TITLE: Rowing a Steamer
 #+TAGS: ramble
-#+SETUPFILE: ../../../../../assets/export.setup
 
 Many of us who do calculus using computers know the alternatives we have for
 differentiation.

@@ -1,5 +1,4 @@
 #+TITLE: .emacs /bankruptcy/
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: emacs
 #+PILE: dropcap:nil
 

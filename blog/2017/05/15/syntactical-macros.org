@@ -1,6 +1,5 @@
 #+TITLE: The Beauty of Syntactical Macros
 #+TAGS: programming, lisp
-#+SETUPFILE: ../../../../assets/export.setup
 
 #+BEGIN_page-intro
 On the importance of code as first class citizen after my first 'got it'

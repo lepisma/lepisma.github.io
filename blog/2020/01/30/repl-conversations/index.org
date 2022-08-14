@@ -1,5 +1,4 @@
 #+TITLE: A REPL for Conversations
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: ml, programming
 #+PILE: dropcap:nil
 

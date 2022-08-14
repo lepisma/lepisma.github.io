@@ -1,5 +1,4 @@
 #+TITLE: Breaks
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, work
 
 Sometime back I took a break from work. After conversations with people about

@@ -1,6 +1,5 @@
 #+TITLE: Hot 100 over the years
 #+TAGS: exploration, viz
-#+SETUPFILE: ../../../../../assets/export.setup
 
 #+BEGIN_page-intro
 Exploration of trends in Billboard Hot 100 songs using echonest's acoustic

@@ -1,5 +1,5 @@
+
 #+TITLE: Self-contained Org files
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: org-mode, programming
 
 I tend to keep occasional image clippings from pdf documents, images or internet

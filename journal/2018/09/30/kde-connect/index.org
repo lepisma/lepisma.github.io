@@ -1,5 +1,4 @@
 #+TITLE: KDE Connect is Awesome!
-#+SETUPFILE: ../../../../../assets/export.setup
 #+TAGS: personal, productivity
 
 I have mostly avoided playing around with my android phone /programmatically/
