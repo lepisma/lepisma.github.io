@@ -1,14 +1,14 @@
 #+TITLE: Processes
 
 If you have been following my blog or journal or log you might know about
-numerous attempts at better time utilization. Most of them failed because of a
-few reasons, also documented.
+numerous attempts at doing effective and efficient work. Most of them failed
+because of a few reasons, also documented. This document covers my most recent
+processes of working.
 
 After many experiments (still ongoing), I have realized that it's important to
-define the personal core concepts that /productivity/ breaks into. Once that's
-done, it becomes clear to see which approach can help in what way. My approach
-is to organize things in /nouns/ and /verbs/ and they see which productivity
-technique helps in what. My current repertoire follows.
+define the core concepts to deconstruct /productivity/. I try to organize things
+in /nouns/ and /verbs/ and they see which techniques help in what. My current
+repertoire follows.
 
 * Nouns
 Items here are not organized in a mutually exclusive manner. I feel it's hard to
@@ -81,9 +81,9 @@ good filtering mechanisms.
 For /task/ like items, /working/ covers everything involved from picking to
 executing them effectively.
 
-** Review
-/Reviews/ are periodic retrospectives. These are assisted by work logging methods
-and helpful dashboards.
+** Reflections
+/Reflections/ are periodic retrospectives. These are assisted by work logging
+methods and helpful dashboards.
 
 * Methods
 Thoughts on a few common productivity methods. These are not all comparable but
@@ -153,17 +153,12 @@ At the very top level, I maintain a /plans/ file that defines my time allocation
 for various scopes. Allocation here is not strict and is mostly for helping me
 strike a balance between scopes.
 
-#+BEGIN_aside
-I am missing long term planning at the moment. I am moving towards that by
-defining the scopes more clearly and building responsibilities and future plan
-documents.
-#+END_aside
-
 #+CAPTION: Current /plans/ file
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
 [[file:./time-allocation.png]]
 
 In the same file, I keep two more items:
+
 1. Targets with date logs keeping current states. As mentioned earlier, not all
    scopes have targets.
 2. Notes about various things to be done in /rituals/. Breaking the ritual is
@@ -218,17 +213,15 @@ I have no good way for working with Slack interrupts other using slackbot
 reminders and cleaning them periodically.
 
 ** Viewing and Working
-On a daily basis, I open up my Org agenda and take out the following on my
-analog notebook:
+On a daily basis, I open up my Org note files and revisit the dates keeping
+weekly goals in mind.
 
-+ Things I will to do today
-+ 2 of the above things that I want to do /really well/
-
-The second set of 2 items are either things that make me uncomfortable (and I am
-inherently slacking on them) or things where I have potential to learn a lot
-more. Maybe these two categories are the same but I like to think about them
-separately. Doing well on these 2 tasks make me more satisfied from the day and
-also reduces . Not surprisingly, this actually helps me do more.
+Also I mark out one of the items that I want to do /really well/. This could
+either be a thing that make me uncomfortable---and I am inherently slacking on
+them---or things where I have potential to learn a lot more. Maybe these two
+categories are the same but I like to think about them separately. Doing well on
+this task makes me more satisfied from the day. Not surprisingly, this actually
+helps me do more.
 
 #+CAPTION: Day's agenda
 #+ATTR_HTML: :class zoomTarget :data-closeclick true
@@ -241,18 +234,26 @@ For managing time, I tend to use [[https://github.com/marcinkoziej/org-pomodoro]
 timers only for setting restrictions on a few kinds of tasks. Everything else
 flows unrestricted.
 
-** Review
-I used to do personal weekly review but that was mostly for my, inactive, [[pile:log:][log]].
-Most of what was happening there is going to be automated and I will try doing
-proper retrospectives instead.
+** Reflection
+I use a GTD inspired reflection workflow. Key idea is to have layered goals and
+a checklist of basic things to run through. Here is a sketch of what happens:
 
-Additionally, I used to track time spent on tasks using [[https://github.com/rksm/clj-org-analyzer][org-analyzer]] but that
-was too strict since, as mentioned before, I don't do everything on a clock.
-This means I can't estimate where my time goes at a very fine level but that's
-okay as long as I am balancing my scopes periodically.
+1. Capture everything that came up from last week.
+2. Reflect and write reflection notes for items at each level, starting with
+   weekly goals to /life/.
+3. Write or modify plans going the other way, from life to weekly goals.
+4. Set up dates for weekly tasks to be done in the week.
 
-For a few items, I have built decent reviewing dashboards like below but rest
-need more work.
+Earlier, I used to do an open weekly review [[pile:log:][here]]. Additionally, I used to track
+time spent on tasks using [[https://github.com/rksm/clj-org-analyzer][org-analyzer]] but that was too strict for me.
+
+For a few items, like for moods, I have built decent reviewing dashboards like
+below but rest need more work.
+
+#+BEGIN_aside
+I have stopped digital mood tracking from some time. I like using analog daily
+journal for this now.
+#+END_aside
 
 #+CAPTION: Mood tracking over personal journal
 #+ATTR_HTML: :class zoomTarget :data-closeclick true

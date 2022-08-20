@@ -6058,7 +6058,9 @@ beautiful.
 :AUTHOR:   James Joyce
 :ADDED:    [2021-05-08]
 :AMAZON:   https://www.amazon.in/Dubliners-James-Joyce/dp/9350330946
-:END:*** Blow-Up: And Other Stories
+:END:
+
+*** Blow-Up: And Other Stories
 :PROPERTIES:
 :AUTHOR:   Julio Cortazar
 :ADDED:    [2021-05-08]
