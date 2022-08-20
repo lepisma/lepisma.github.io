@@ -1,9 +1,16 @@
-#+TITLE: Processes
+#+TITLE: Productivity
 
 If you have been following my blog or journal or log you might know about
-numerous attempts at doing effective and efficient work. Most of them failed
-because of a few reasons, also documented. This document covers my most recent
-processes of working.
+numerous attempts at doing effective and efficient work. This document covers my
+most recent processes.
+
+#+BEGIN_aside
+Many people frown on the idea of productivity hacking. I understand where they
+are coming from. I have some thoughts on all that [[pile:journal:2019/10/25/hard-work/][here]].
+
+I feel people should be free to experiment with their workflow to get the most
+of life as long as they understand that same things might not work for others.
+#+END_aside
 
 After many experiments (still ongoing), I have realized that it's important to
 define the core concepts to deconstruct /productivity/. I try to organize things
@@ -85,70 +92,17 @@ executing them effectively.
 /Reflections/ are periodic retrospectives. These are assisted by work logging
 methods and helpful dashboards.
 
-* Methods
+* Day to day method
 Thoughts on a few common productivity methods. These are not all comparable but
 are also not all compose-able. So, like with nouns, I have kept them in a flat
 structure.
 
 No single method works well for /all aspects/ of your life and you will need to
 adapt a mixture of them for your own requirements. I have tried documenting my
-personal mixture in the next section.
+personal mixture next.
 
-** [[https://en.wikipedia.org/wiki/Timeblocking][Time Blocking]]
-Here you block you calendar with tasks. You /calendar/ becomes your capturing,
-viewing, and working tool.
+-----
 
-This is helpful for a lot of people, but doesn't work that well for me. I
-usually like a lot of flexibility and time blocking doesn't allow that.
-
-** [[https://en.wikipedia.org/wiki/OKR][Objectives and Key Results (OKRs)]]
-A famous high level goal setting method. Usually good for /teams/ since the /scope/
-is restricted and /targets/ are important than /rituals/. Is good for organizing and
-reviewing.
-
-I tried using OKRs for personal scope but I don't think they work well for
-situations where targets aren't everything.
-
-** [[https://en.wikipedia.org/wiki/Getting_Things_Done][Getting Things Done (GTD)]]
-GTD provides a really solid way to think about personal productivity and
-planning. GTD covers almost every noun and verb.
-
-Even though I can never go full GTD, I keep taking inspiration from this
-workflow.
-
-** [[https://bulletjournal.com/][Bullet Journal]]
-Another framework that knits together most of the verbs and nouns. I haven't
-really tried it but I believe it's not adding anything new to my current
-workflow. Other than being completely analog, of course.
-
-** Ivy Lee Method
-A short term method of picking and /working/ on tasks. You write down few
-important things to do every day and do them. There are many variations and
-names for this. The one I like and currently use is defined in the section on
-personal methods.
-
-** [[https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method][Eisenhower Matrix]]
-Simple way of organizing tasks in important and urgent matrix. I find this too
-simplistic for my purpose but this can work really well under restricted scopes.
-
-** [[https://en.wikipedia.org/wiki/Hipster_PDA][Hipster PDA]]
-One of the analog ways of writing down things to do. I used to use this by
-mixing bullet journal and Ivy Lee type restrictions on a daily basis.
-
-** [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]]
-Mostly for note capturing, organizing, and viewing. I tried this via [[https://github.com/org-roam/org-roam][org-roam]]
-but didn't go further. Maybe because I still haven't figured out that I need to
-improve my note taking workflow.
-
-** Inbox Zero
-Way to capture and organize interrupts. I don't have any strong views here since
-I do a few things to automatically capture items from my inbox.
-
-** [[https://en.wikipedia.org/wiki/Pomodoro_Technique][Pomodoro]]
-A /working/ technique that helps you stay focused and healthier. I use this mostly
-for appetite bound tasks where I don't want to spend more than a certain time.
-
-* Personal methods
 At the very top level, I maintain a /plans/ file that defines my time allocation
 for various scopes. Allocation here is not strict and is mostly for helping me
 strike a balance between scopes.
@@ -263,3 +217,62 @@ journal for this now.
 + Here is a [[https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/][good guidebook]] that we use to onboard people on OKRs at work.
 + Todoist has good documents on many productivity methods [[https://todoist.com/productivity-methods][here]]. I haven't read
   all of them. A few things in this document might change after that reading.
+
+I have gone through many of the common methods and have few thoughts written
+next:
+
+** [[https://en.wikipedia.org/wiki/Timeblocking][Time Blocking]]
+Here you block you calendar with tasks. You /calendar/ becomes your capturing,
+viewing, and working tool.
+
+This is helpful for a lot of people, but doesn't work that well for me. I
+usually like a lot of flexibility and time blocking doesn't allow that.
+
+** [[https://en.wikipedia.org/wiki/OKR][Objectives and Key Results (OKRs)]]
+A famous high level goal setting method. Usually good for /teams/ since the /scope/
+is restricted and /targets/ are important than /rituals/. Is good for organizing and
+reviewing. It's important to know the high level aspect of this. OKRs don't work
+well if you start shoving it down teams that are lower in the heirarchy.
+
+I tried using OKRs for personal scope but I don't think they work well for
+situations where targets aren't everything.
+
+** [[https://en.wikipedia.org/wiki/Getting_Things_Done][Getting Things Done (GTD)]]
+GTD provides a really solid way to think about personal productivity and
+planning. GTD covers almost every noun and verb.
+
+Even though I can never go full GTD, I keep taking inspiration from this
+workflow.
+
+** [[https://bulletjournal.com/][Bullet Journal]]
+Another framework that knits together most of the verbs and nouns. I haven't
+really tried it but I believe it's not adding anything new to my current
+workflow. Other than being completely analog, of course.
+
+** Ivy Lee Method
+A short term method of picking and /working/ on tasks. You write down few
+important things to do every day and do them. There are many variations and
+names for this. The one I like and currently use is defined in the section on
+personal methods.
+
+** [[https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method][Eisenhower Matrix]]
+Simple way of organizing tasks in important and urgent matrix. I find this too
+simplistic for my purpose but this can work really well under restricted scopes.
+
+** [[https://en.wikipedia.org/wiki/Hipster_PDA][Hipster PDA]]
+One of the analog ways of writing down things to do. I used to use this by
+mixing bullet journal and Ivy Lee type restrictions on a daily basis.
+
+** [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]]
+Mostly for note capturing, organizing, and viewing. I tried this via [[https://github.com/org-roam/org-roam][org-roam]]
+but didn't go further. Maybe because I still haven't figured out that I need to
+improve my note taking workflow.
+
+** Inbox Zero
+Way to capture and organize interrupts. I don't have any strong views here since
+I do a few things to automatically capture items from my inbox.
+
+** [[https://en.wikipedia.org/wiki/Pomodoro_Technique][Pomodoro]]
+A /working/ technique that helps you stay focused and healthier. I use this mostly
+for appetite bound tasks where I don't want to spend more than a certain time.
+
