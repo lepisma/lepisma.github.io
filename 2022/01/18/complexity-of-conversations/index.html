@@ -4,7 +4,7 @@
 <!-- 2022-09-18 Sun 18:32 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>(/car/ nil)</title>
+<title>Complexity of Conversations - I</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -222,6 +222,27 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -242,307 +263,188 @@
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'></div>
-  <h1>(<i>car</i> nil)</h1>
+  <div class='page-meta'>2022-01-18 Tue 00:00</div>
+  <h1>Complexity of Conversations - I</h1>
 </div>
 </div>
 <div id="content" class="content">
-<script src="assets/js/tag-filter.js"></script>
-
+<div class='page-tags'><a href='../../../..#ml'>ml</a> <a href='../../../..#work'>work</a></div>
+<div class="page-intro" id="orge602227">
 <p>
-<a href="/atom.xml" class="btn small">✉ | subscribe » atom</a>  
+This was posted first on Skit's Tech blog <a href="https://tech.skit.ai/complexity-of-conversations/">here</a>.
 </p>
 
-<p>
-Hello, welcome to my blog! A listing of all the posts follows.
-</p>
+</div>
 
 <p>
-I am now keeping more subjective (and frequent) pieces in <a href="../journal/index.html">/journal</a>. Things that
-are more <i>page</i> like go in my personal <a href="../wiki/index.html">/wiki</a>. I also try to maintain a regular
-activity <a href="../log/index.html">/log</a>.
+<span class='dropcap'>C</span>onsider a restaurant booking voice bot built using a frames and slots approach.
+While this can easily <i>solve the problem</i> of booking with high automation
+accuracy, such slot-filling framework can't carry on a meaningful conversation
+in a debate unless you over-engineer the frames and slots to monstrous
+complexity. Booking a restaurant is a form of conversation that's innately
+simpler than arguing with someone in a debate competition. We can roughly say
+that these two conversations lie in different complexity classes. In this first
+post of a series, we will lay down a few factors that will help us define a map
+of conversations arranged according to their complexities.
 </p>
 
 <hr>
 
 <p>
-Filter by <i>tags</i>
+At <a href="https://skit.ai">Skit</a> we build many kinds of task-oriented dialog systems for call center
+automation. A very crude categorization of such systems, for us, is based on the
+interaction with a sibling call handling system and the direction of intention,
+user or agent initiation.
 </p>
 
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#exploration'>exploration</a> <a href='#lisp'>lisp</a> <a href='#ml'>ml</a> <a href='#org-mode'>org-mode</a> <a href='#personal'>personal</a> <a href='#physics'>physics</a> <a href='#programming'>programming</a> <a href='#python'>python</a> <a href='#ramble'>ramble</a> <a href='#ricing'>ricing</a> <a href='#skepticism'>skepticism</a> <a href='#tooling'>tooling</a> <a href='#ux'>ux</a> <a href='#viz'>viz</a> <a href='#work'>work</a></div>
-
-<div class='archive-item'>
-<div class='page-meta'>2022-01-18</div>
-<p class="archive-title">
-<a href="./2022/01/18/complexity-of-conversations/index.html" class="archive-title">Complexity of Conversations - I</a>
+<aside id="org0fc196a">
+<p>
+The <i>sibling call handling system</i> could be non-existent, or backend human agents
+who can take over the more complex conversations, or complex parts of running
+conversations.
 </p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#work'>work</a></div>
-</div>
+</aside>
 
-<div class='archive-item'>
-<div class='page-meta'>2021-05-09</div>
-<p class="archive-title">
-<a href="./2021/05/09/ambivalence/index.html" class="archive-title">Ambivalence</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2020-01-30</div>
-<p class="archive-title">
-<a href="./2020/01/30/repl-conversations/index.html" class="archive-title">A REPL for Conversations</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#programming'>programming</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-10-31</div>
-<p class="archive-title">
-<a href="./2019/10/31/github-linguist-colors/index.html" class="archive-title">Github Linguist Colors</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2019-04-09</div>
-<p class="archive-title">
-<a href="./2019/04/09/blurring-text/index.html" class="archive-title">Blurring Text</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2018-08-26</div>
-<p class="archive-title">
-<a href="./2018/08/26/tangle-templates.html" class="archive-title">Tangle Templates</a>
+<p>
+While we have used many approaches to measure difficulty of conversations for
+our product delivery purposes, it's interesting to see if a purer framework
+could be built around this. Similar to computational complexity, this can tell
+us which problems are tractable under an algorithm. It can also help in
+identifying the path towards the next generation of human machine conversational
+systems.
 </p>
 
+<p>
+We will cover a few thoughts around a few core constructs of the framework next.
+First is the definition of success in a conversation, second around the
+difficulty of doing so, and third about the algorithms and their complexities.
+</p>
+
+<div id="outline-container-sec-success" class="outline-2">
+<h2 id="sec-success"><span class="section-number-2">1.</span> Success</h2>
+<div class="outline-text-2" id="text-sec-success">
+
+
+<p>
+The definition of success of a conversation depends on alignment between goals
+of the involved parties.
+</p>
+
+<p>
+A regular goal oriented conversation with user initiation has a simple success
+definition. For example, a call with user asking for temperature of a place can
+be called successful if the temperature is provided. The metric here could be
+something like the following:
+</p>
+
+<p>
+\[ \text{Resolution%} = \frac{\text{Calls where user goals were met}}{\text{Total calls}} \]
+</p>
+
+<p>
+This simple formulation becomes tricky as the alignment between user and bot
+goals becomes inexact. For example when the <i>bot is calling</i> the user for
+payment reminders, it might not just want to remind and collect next reminder
+time, but also want to persuade the users to pay as early as possible. In such
+cases, you might want to use another rate for <i>favorable outcomes</i>:
+</p>
+
+<p>
+\[ \text{Favorable%} = \frac{\text{Calls with favorable outcomes}}{\text{Resolved calls}} \]
+</p>
+
+<p>
+Another example where this works is in <i>argumentative</i> conversations where
+holding a reasonable conversation and reaching conclusion is important
+(<i>resolution</i>), but winning the argument (the favorable outcome) is what defines
+success.
+</p>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-06-07</div>
-<p class="archive-title">
-<a href="./2018/06/07/wiki-to-blog.html" class="archive-title">Blog ← Wiki</a>
+<div id="outline-container-sec-difficulty" class="outline-2">
+<h2 id="sec-difficulty"><span class="section-number-2">2.</span> Difficulty</h2>
+<div class="outline-text-2" id="text-sec-difficulty">
+
+
+<p>
+We can look at difficulty of conversations from multiple levels. For the
+smallest unit of dialog, a turn<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, parsing and generating every utterance in a
+conversation can be rated for difficulty. Here are a few factors that drive
+difficulty for a turn:
 </p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
+
+<ol class="org-ol">
+<li>Knowledge needed for understanding an entity. This could be general or
+specific to a situation, involving connection with a dynamic or static
+knowledge source.</li>
+<li>Speech Acts. Simpler acts like <i>greeting</i> are easier to handle, while
+something like <i>pleading</i> is hard.</li>
+<li>Expression complexity, intentional or unintentional. For speech systems, this
+is even more varied because of the richness of acoustic signals that adds to
+the underlying text. For example sarcasm could be expressed by changing the
+tone of speech and not just via textual constructs.</li>
+</ol>
+
+<p>
+But these are not sufficient since higher order behaviors across multiple turns
+also make conversations difficult. As an example, consider negotiation for the
+price in a market. In this situation, you need to use the conversational context
+across turns to decide your next steps in a way that's harder than situations
+where context dependency is lesser.
+</p>
+</div>
 </div>
 
-<div class='archive-item'>
-<div class='page-meta'>2018-01-27</div>
-<p class="archive-title">
-<a href="./2018/01/27/blog-to-wiki.html" class="archive-title">Blog → Wiki</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a></div>
-</div>
+<div id="outline-container-sec-algorithms" class="outline-2">
+<h2 id="sec-algorithms"><span class="section-number-2">3.</span> Algorithms</h2>
+<div class="outline-text-2" id="text-sec-algorithms">
 
-<div class='archive-item'>
-<div class='page-meta'>2017-12-20</div>
-<p class="archive-title">
-<a href="./2017/12/20/fancy-lambdas.html" class="archive-title">Fancy Little Lisp λs</a>
-</p>
-<div class='page-tags'><a href='#lisp'>lisp</a> <a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-10-28</div>
-<p class="archive-title">
-<a href="./2017/10/28/ricing-org-mode/index.html" class="archive-title">Ricing up Org Mode</a>
+<p>
+The frameworks of developing, and running, voice bots are the last pieces that
+will help us to map out the tractability of problems. A common method in the
+industry is the frame-filling model that roughly needs learning <i>intents</i> and
+<i>entities</i> for each utterance.
 </p>
-<div class='page-tags'><a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#ricing'>ricing</a> <a href='#ux'>ux</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-08-25</div>
-<p class="archive-title">
-<a href="./2017/08/25/keyboard/index.html" class="archive-title">The point of keyboarding</a>
+<p>
+These frameworks, or algorithms, can be measured on their resource consumption.
+We can start with sample complexity of conversations as the resource and create
+statements like the following:
 </p>
-<div class='page-tags'><a href='#ux'>ux</a> <a href='#personal'>personal</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-06-29</div>
-<p class="archive-title">
-<a href="./2017/06/29/leaving-goodreads/index.html" class="archive-title">Leaving Goodreads</a>
+<blockquote>
+<p>
+Under framework \(f\), you need an order of \(N\) data points to supervise a voice
+bot of class \(k\) to achieve a success rate of \(R(N)\)<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>.
 </p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#ramble'>ramble</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a></div>
-</div>
+</blockquote>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-06-25</div>
-<p class="archive-title">
-<a href="./2017/06/25/simple-time-maps/index.html" class="archive-title">Simpler time map plots</a>
+<p>
+This can be mapped to the statistical learning problem and abstractions can be
+translated from there.
 </p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-05-15</div>
-<p class="archive-title">
-<a href="./2017/05/15/syntactical-macros.html" class="archive-title">The Beauty of Syntactical Macros</a>
+<p>
+Having set the groundwork here, we will tackle the more interesting problem of
+complexity class definitions in a later post.
 </p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#lisp'>lisp</a></div>
 </div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div class='archive-item'>
-<div class='page-meta'>2017-03-15</div>
-<p class="archive-title">
-<a href="./2017/03/15/projects.html" class="archive-title">Projects</a>
-</p>
-<div class='page-tags'><a href='#personal'>personal</a> <a href='#emacs'>emacs</a> <a href='#org-mode'>org-mode</a> <a href='#tooling'>tooling</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">We can cover backchannel events also in a
+kind of <i>background</i> turn.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2017-03-05</div>
-<p class="archive-title">
-<a href="./2017/03/05/optional-typing.html" class="archive-title">Optional Typing</a>
-</p>
-<div class='page-tags'><a href='#programming'>programming</a> <a href='#python'>python</a></div>
-</div>
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Including the other
+factors around PAC learning.</p></div></div>
 
-<div class='archive-item'>
-<div class='page-meta'>2016-11-02</div>
-<p class="archive-title">
-<a href="./2016/11/02/org-babel/index.html" class="archive-title">Cheap polyglot notebooks</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a> <a href='#programming'>programming</a></div>
-</div>
 
-<div class='archive-item'>
-<div class='page-meta'>2016-08-25</div>
-<p class="archive-title">
-<a href="./2016/08/25/evidence-abuse/index.html" class="archive-title">Abusing Evidence: Drought, Deluge and Disregard</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
 </div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-06-13</div>
-<p class="archive-title">
-<a href="./2016/06/13/genetic-algorithm/index.html" class="archive-title">What is it that Genetic Algorithm does?</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-03-17</div>
-<p class="archive-title">
-<a href="./2016/03/17/org-mode/index.html" class="archive-title">On why you too should give Emacs Org-mode a spin</a>
-</p>
-<div class='page-tags'><a href='#org-mode'>org-mode</a> <a href='#emacs'>emacs</a> <a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2016-01-23</div>
-<p class="archive-title">
-<a href="./2016/01/23/constitution-de-markov.html" class="archive-title">Constitution De Markov</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-12-21</div>
-<p class="archive-title">
-<a href="./2015/12/21/white-rhino.html" class="archive-title">White Rhinos, irrationality and other tales</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a> <a href='#skepticism'>skepticism</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-11-03</div>
-<p class="archive-title">
-<a href="./2015/11/03/the-writers-voice/index.html" class="archive-title">The Writers' Voice</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a> <a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-07-30</div>
-<p class="archive-title">
-<a href="./2015/07/30/up-with-theano-and-cuda.html" class="archive-title">Up and running with Theano (GPU) + PyCUDA on Windows</a>
-</p>
-<div class='page-tags'><a href='#tooling'>tooling</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-06-27</div>
-<p class="archive-title">
-<a href="./2015/06/27/hot-100/index.html" class="archive-title">Hot 100 over the years</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#viz'>viz</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-23</div>
-<p class="archive-title">
-<a href="./2015/03/23/overtone-jamming.html" class="archive-title">Overtone Jamming</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-03-20</div>
-<p class="archive-title">
-<a href="./2015/03/20/rowing-a-steamer/index.html" class="archive-title">Rowing a Steamer</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-14</div>
-<p class="archive-title">
-<a href="./2015/01/14/computer-programs-and-zipf-law/index.html" class="archive-title">Computer Programs and Zipf's Law</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-08</div>
-<p class="archive-title">
-<a href="./2015/01/08/firewall-paradox/index.html" class="archive-title">Firewall Paradox and revisiting the Law of Information</a>
-</p>
-<div class='page-tags'><a href='#physics'>physics</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2015-01-06</div>
-<p class="archive-title">
-<a href="./2015/01/06/why-i-stopped-recommending-gnome/index.html" class="archive-title">Why I Stopped Recommending GNOME</a>
-</p>
-<div class='page-tags'><a href='#ux'>ux</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-25</div>
-<p class="archive-title">
-<a href="./2014/11/25/interstellar-tesseract/index.html" class="archive-title">The Interstellar's Tesseract</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-11-02</div>
-<p class="archive-title">
-<a href="./2014/11/02/neural-turing-machines/index.html" class="archive-title">Neural Turing Machines for dummies</a>
-</p>
-<div class='page-tags'><a href='#ml'>ml</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-07-29</div>
-<p class="archive-title">
-<a href="./2014/07/29/flesh-and-metal/index.html" class="archive-title">Flesh and Metal</a>
-</p>
-<div class='page-tags'><a href='#ramble'>ramble</a></div>
-</div>
-
-<div class='archive-item'>
-<div class='page-meta'>2014-06-21</div>
-<p class="archive-title">
-<a href="./2014/06/21/extreme-learning-machine/index.html" class="archive-title">Extreme Learning Machines with Julia</a>
-</p>
-<div class='page-tags'><a href='#exploration'>exploration</a> <a href='#ml'>ml</a></div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>

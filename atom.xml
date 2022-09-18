@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2022-08-14T11:22:40+0530</updated>
+  <updated>2022-09-18T18:32:45+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Complexity of Conversations - I</title>
+    <link href="https://lepisma.xyz/2022/01/18/complexity-of-conversations/index.html"/>
+    <updated>2022-01-18</updated>
+  </entry>
   <entry>
     <title>Ambivalence</title>
     <link href="https://lepisma.xyz/2021/05/09/ambivalence/index.html"/>
