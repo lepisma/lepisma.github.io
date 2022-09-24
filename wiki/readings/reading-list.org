@@ -2130,6 +2130,13 @@ CLOSED: [2021-05-29 Sat 00:24]
 :END:
 
 ** Uncategorized
+*** Bullshit Jobs: The Rise of Pointless Work and What we can do About it
+:PROPERTIES:
+:AUTHOR:   David Graeber
+:ADDED:    [2022-09-24]
+:AMAZON:   https://www.amazon.in/Bullshit-Jobs-David-Graeber/dp/0141983477/ref=sr_1_1?crid=2PQ77E7PMA8BV&keywords=bullshit+jobs&qid=1661945037&sprefix=bullshit+jobs%2Caps%2C213&sr=8-1
+:END:
+
 *** READ A Thousand Brains: A New Theory of Intelligence
 CLOSED: [2022-08-13 Sat 11:32]
 :PROPERTIES:
@@ -6012,6 +6019,13 @@ CLOSED: [2016-05-24]
 :END:
 
 ** Uncategorized
+*** Last Evenings on Earth
+:PROPERTIES:
+:GOODREADS: https://www.goodreads.com/book/show/537640.Last_Evenings_on_Earth
+:AUTHOR:   Roberto Bolaño
+:ADDED:    [2022-09-24]
+:END:
+
 *** READ Our Trees Still Grow in Dehra
 CLOSED: [2022-03-04 Fri 11:14]
 :PROPERTIES:
