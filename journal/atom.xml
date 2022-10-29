@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2022-08-20T19:17:26+0530</updated>
+  <updated>2022-10-29T15:35:39+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Removing Reading Biases</title>
+    <link href="https://lepisma.xyz/journal/2022/10/29/removing-reading-biases/index.html"/>
+    <updated>2022-10-29</updated>
+  </entry>
   <entry>
     <title>Aesthetic Alignment</title>
     <link href="https://lepisma.xyz/journal/2022/08/12/aesthetic-alignment/index.html"/>
