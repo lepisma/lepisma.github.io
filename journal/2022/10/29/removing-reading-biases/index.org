@@ -1,0 +1,37 @@
+#+TITLE: Removing Reading Biases
+#+TAGS: personal
+
+I have noticed myself responding differently to same Slack requests depending on
+the messenger. This heuristic to focus attention is not /wrong/, but it makes me
+biased in an uncomfortable way. An idea I have considered is to patch the CSS
+for Slack so that I don't see user names at all. But I found that to have more
+disadvantages than advantages.
+
+There are many similar cases where I have developed primitive reading biases
+depending on the source of content, other people's opinions etc. And what I have
+realized is that a lot of those can be trimmed off easily.
+
+I have started reading Hacker News again and found the default settings in most
+Android apps to be full of factors that could bias me. I used to look at the
+source, number of comments, scores, etc. to decide which item to read and up to
+what depth. I am experimenting with removing all these from the post listing
+view as shown below.
+
+#+HTML: <br>
+
+#+CAPTION: Default list (left) of stories and a /bias-reduced/ list (right). It's extremely easy to get biased by number of comments, points, source, etc. Screenshot from [[https://play.google.com/store/apps/details?id=com.simon.harmonichackernews&hl=en&gl=US][Harmonic]].
+#+ATTR_HTML: :class zoomTarget :data-closeclick true
+[[file:./comparison.jpg]]
+
+#+HTML: <br>
+
+As a result of this, I have slowed down, been reading deliberately, thinking
+more and arguing with myself, rather than trying to find a summary or pre-formed
+views. Earlier I would probably rush through 15 articles in one sitting. Now
+it's just 1 or 2. But the reading is rewarding. It's deeper, I start from the
+title, try to understand what I should be getting out, then go in, validate the
+claims, and everything else that is part of a healthy reading practice.
+
+Doing this has exposed the reading-depth continuum for every category of reading
+I do. And there are /personal sweet spots/ in all. I believe I am a little closer
+to the spot in one of the categories now.
