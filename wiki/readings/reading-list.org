@@ -2011,6 +2011,13 @@ CLOSED: [2018-02-05 Mon 01:18]
 Creating a new section for psychology. I might have to move few books from
 philosophy section to here.
 
+*** The Wisdom of Insecurity: A Message for an Age of Anxiety
+:PROPERTIES:
+:AUTHOR:   Alan W. Watts
+:ADDED:    [2022-11-28]
+:GOODREADS:   https://www.goodreads.com/book/show/551520.The_Wisdom_of_Insecurity
+:END:
+
 *** Creativity: Flow and the Psychology of Discovery and Invention
 :PROPERTIES:
 :AUTHOR:   Mihaly Csikszentmihalyi
