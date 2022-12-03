@@ -811,6 +811,24 @@ This section is more general than what the title proclaims. Here I have tried to
 keep books which talk about a way of /presenting/ information, interfaces and
 ideas.
 
+*** READ Seeing with Fresh Eyes: Meaning, Space, Data, Truth
+CLOSED: [2022-12-03 Sat 15:57]
+:PROPERTIES:
+:AUTHOR:   Edward R. Tufte
+:ADDED:    [2022-12-03]
+:AMAZON:   https://www.amazon.com/Seeing-Fresh-Eyes-Meaning-Space/dp/1930824009
+:END:
+
+Fifth the ET's series. This one felt a little incoherent and little less
+thematic. But once you set up the right mood to read then it's enjoyable. I
+found it to be a little less informative as compared to previous ones but that
+might be an artifact of me reading the previous four more or less together so I
+might not be the best judge of /information per book/.
+
+I read this in a hardbound version and I came to know about the category of
+coffee table books. That made me read it also like a coffee table book, in a
+slower than usual pace with a little bit of jumping around through chapters.
+
 *** READ Designing Voice User Interfaces: Principles of Conversational Experiences
 CLOSED: [2018-07-21 Sat 00:42]
 :PROPERTIES:
