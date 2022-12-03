@@ -17,7 +17,7 @@ making my parser robust.], broken based on the order of appearance of the
 artifact on the conference website.
 
 #+NAME: ungrouped
-#+begin_src sh :exports results :results output :dir /home/lepisma/Desktop
+#+begin_src sh :exports results :results output :dir /home/lepisma/Desktop :eval never-export
   pip install pydash
   python parse.py ungrouped
 #+end_src
@@ -25,6 +25,7 @@ artifact on the conference website.
 #+ATTR_HTML: :style font-family: monospace
 #+RESULTS: ungrouped
 #+begin_example
+
          █████████████████████ [42] Google, USA
              ░████████████████ [33] Amazon, USA
                ░██████████████ [29] Johns Hopkins University, USA
@@ -643,7 +644,7 @@ And following are the values summed over countries for the same group. For
 example ~Amazon~ now includes all the country specific Amazon groups.
 
 #+NAME: grouped
-#+begin_src sh :exports results :results output :dir /home/lepisma/Desktop
+#+begin_src sh :exports results :results output :dir /home/lepisma/Desktop :eval never-export
   pip install pydash
   python parse.py grouped
 #+end_src
@@ -651,6 +652,7 @@ example ~Amazon~ now includes all the country specific Amazon groups.
 #+ATTR_HTML: :style font-family: monospace
 #+RESULTS: grouped
 #+begin_example
+
 ░█████████████████████████████ [59] Amazon
    ███████████████████████████ [54] Google
          ░████████████████████ [41] Microsoft
