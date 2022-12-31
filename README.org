@@ -1,4 +1,10 @@
 #+TITLE: lepisma.github.io
 
-Pages and notes. Elisp source is in [[https://github.com/lepisma/pile][pile]], sass files are in [[https://github.com/lepisma/pile-theme][pile-theme]].
-Accessible [[https://lepisma.xyz][here]].
+Pages and notes for my website. Elisp source is in [[https://github.com/lepisma/pile][pile]], sass files are in
+[[https://github.com/lepisma/pile-theme][pile-theme]]. The webpage is accessible [[https://lepisma.xyz][here]].
+
+I am not longer maintaining notes in Git based version control here. Since I
+have been working on multiple machines from multiple places---and have struggled
+with git hygiene for writing prose---I am syncing notes to a dropbox style
+storage and publishing in this repository's gh-pages branch. This might mean
+that the Org files here are frozen in time around [2022-12-31 Sat].
