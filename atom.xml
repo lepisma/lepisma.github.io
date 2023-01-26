@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2022-12-04T22:08:11+0530</updated>
+  <updated>2023-01-26T19:43:29+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Speech-First Conversational AI</title>
+    <link href="https://lepisma.xyz/2022/02/02/speech-first-conversational-ai/index.html"/>
+    <updated>2022-02-02</updated>
+  </entry>
   <entry>
     <title>Complexity of Conversations - I</title>
     <link href="https://lepisma.xyz/2022/01/18/complexity-of-conversations/index.html"/>
