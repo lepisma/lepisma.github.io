@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2022-12-03T19:47:06+0530</updated>
+  <updated>2023-01-26T19:39:41+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Books Read in 2022</title>
+    <link href="https://lepisma.xyz/journal/2023/01/09/books-read-in-2022/index.html"/>
+    <updated>2023-01-09</updated>
+  </entry>
   <entry>
     <title>Removing Reading Biases</title>
     <link href="https://lepisma.xyz/journal/2022/10/29/removing-reading-biases/index.html"/>
