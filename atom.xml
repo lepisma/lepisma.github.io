@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2023-01-31T00:39:41+0530</updated>
+  <updated>2023-01-31T01:02:07+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Death of Documentation</title>
+    <link href="https://lepisma.xyz/2023/01/26/future-of-documentation-systems/index.html"/>
+    <updated>2023-01-26</updated>
+  </entry>
   <entry>
     <title>Speech-First Conversational AI</title>
     <link href="https://lepisma.xyz/2022/02/02/speech-first-conversational-ai/index.html"/>
