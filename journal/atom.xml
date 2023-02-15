@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2023-01-28T14:35:15+0530</updated>
+  <updated>2023-02-16T00:23:38+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Multifarious Values</title>
+    <link href="https://lepisma.xyz/journal/2023/02/15/multifarious-values/index.html"/>
+    <updated>2023-02-15</updated>
+  </entry>
   <entry>
     <title>Favorite Words</title>
     <link href="https://lepisma.xyz/journal/2023/01/28/favorite-words/index.html"/>
