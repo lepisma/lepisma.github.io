@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-03-29 Wed 00:30 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Making Inks</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a  href='/'> blog</a>
+    <a class='active' href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>2023-03-28 Tue 00:00</div>
+  <h1>Making Inks</h1>
+</div>
+</div>
+<div id="content" class="content">
+<div class='page-tags'><a href='../../../..#personal'>personal</a> <a href='../../../..#ai-assisted-post'>ai-assisted-post</a></div>
+<div class="page-intro" id="orgd54bb03">
+<p>
+I am trying to augment my personal blogging workflow with an LLM based AI
+assistance. My belief is that this should help in reducing the friction in
+drafting posts, at the very least. But I was not sure if this would work well
+for experiential posts that we usually put up on <i>personal websites</i>.
+</p>
+
+<p>
+I recently started making my own inks and wanted to write about it. I am not
+sure what I was expecting from an LLM here but I gave it a few tries through a
+chain of prompts and finally gave up continuing. It feels the effort from
+sequence of thoughts to manual writing here is lesser than what I got from the
+AI-mediated workflow. This is not to say that LLMs are not capable, just that I
+don't think my expectations were correct. Probably there is more value add for
+me in editing assistance than drafting assistance here.
+</p>
+
+<p>
+Unless there is some sort of true <i>second brain</i> LLM system that mirrors your
+thinking process (good idea to work on) or better brain-computer interfaces, it
+seems difficult to truly disrupt the process for writing posts like this.
+</p>
+
+<p>
+In any case, I thought to post the not-so-successful series of prompts and
+responses (trimmed) from ChatGPT (<span class="timestamp-wrapper"><span class="timestamp">[2023-03-14 Tue] </span></span> version) in this first
+<code>ai-assisted-post</code>.
+</p>
+
+</div>
+
+<blockquote>
+<p>
+can you write a blog post on how i discovered the joy of making inks after being
+a long time fountain pen and ink fan? also add that i will be keeping inks in a
+github repository lepisma/ink-recipes.
+</p>
+</blockquote>
+
+<p>
+As a long-time fountain pen and ink fan, I never thought about making my own inks. I was always content with buying pre-made inks from my favorite brands and using them to write my thoughts and ideas. However, my curiosity got the best of me one day, and I decided to experiment with making my own inks. To my surprise, the process was easy and fun, and I discovered a whole new world of creativity.
+</p>
+
+<p>
+My journey began with researching different ink-making methods and ingredients. I read blogs and watched videos on ink making, and I was fascinated by the different colors and textures that could be achieved with different ingredients. I also learned about the history of ink making and how ink was made in ancient times using natural materials like berries, roots, and minerals.
+</p>
+
+<p>
+Armed with this knowledge, I started experimenting with making my own inks. I sourced different ingredients from local stores and online suppliers, and I started playing around with different combinations of dyes, pigments, and binders. It was a lot of trial and error, but it was also a lot of fun.
+</p>
+
+<p>
+One of the things I loved about making my own inks was the ability to create custom colors. I could mix different pigments and dyes to achieve the exact shade I wanted, and I could tweak the formula until I got the perfect consistency. I also loved the fact that I could experiment with different textures, adding in things like glitter or shimmer to make my inks really unique.
+</p>
+
+<p>
+Another thing I loved about making my own inks was the ability to control the quality of the ink. I knew exactly what was going into my ink, and I could make sure that the ingredients were high-quality and safe for use in my fountain pens. I also found that my homemade inks flowed better and wrote smoother than some of the commercial inks I had been using.
+</p>
+
+<p>
+As I continued to experiment with making inks, I decided to create a repository on GitHub to keep track of my recipes. I called it "lepisma/ink-recipes," and I started adding all of my successful ink formulas to the repository. It's been a great way to keep track of my experiments and to share my creations with other ink enthusiasts.
+</p>
+
+<p>
+In conclusion, my journey into ink making has been a rewarding and enjoyable experience. I never would have thought that making my own inks could be so much fun, but it has opened up a whole new world of creativity for me. If you're a fountain pen lover like me, I encourage you to try making your own inks. You might just discover a whole new passion for the craft.
+</p>
+
+<hr>
+
+<blockquote>
+<p>
+Can you make it more about making organic inks by foraging natural materials? I
+read that from a book (no videos etc.). One of my goals with this is also to
+make inks that are made from objects important to my life history (like soil of
+places I have been to).
+</p>
+</blockquote>
+
+<p>
+As a long-time fountain pen and ink fan, I never thought about making my own inks from natural materials. I was always content with buying pre-made inks from my favorite brands and using them to write my thoughts and ideas. However, my curiosity got the best of me one day, and I decided to experiment with making my own organic inks from foraged materials. To my surprise, the process was easy, rewarding, and deeply personal.
+</p>
+
+<p>
+My journey began with reading a book on ink making from natural materials. I was fascinated by the history of ink making and how ink was made in ancient times using natural materials like berries, roots, and minerals. I also learned about the art of foraging and how to identify plants and materials that could be used to make ink.
+</p>
+
+<p>
+Armed with this knowledge, I started exploring the natural environment around me, searching for materials to use in my ink making. I collected berries, leaves, flowers, and other organic materials from the forest, parks, and even my own backyard. I also collected soil and sand from places that were important to my life history, such as the soil from the backyard of my childhood home.
+</p>
+
+<p>
+Using a mortar and pestle, I ground the materials into a fine powder and mixed them with water and other natural binders, such as gum arabic or honey. It was a lot of trial and error, but it was also a lot of fun. I discovered that different materials produced different colors and textures, and that the process of making ink from natural materials was deeply satisfying.
+</p>
+
+<p>
+One of the things I loved about making organic inks from foraged materials was the personal connection I felt with the materials I used. Each material had its own story and significance, and by using them to make ink, I felt like I was creating something deeply personal and meaningful. For example, using the soil from my childhood home in my ink making was a way to connect with my past and to create something that was uniquely mine.
+</p>
+
+<p>
+Another thing I loved about making organic inks from foraged materials was the connection to nature. By exploring the natural environment around me and collecting materials to use in my ink making, I felt a deeper appreciation for the natural world and the beauty that can be found in even the most ordinary of places.
+</p>
+
+<p>
+In conclusion, my journey into making organic inks from foraged materials has been a rewarding and enjoyable experience. It has allowed me to connect with nature and my own personal history in a way that I never thought was possible. If you're interested in ink making or foraging, I encourage you to try making your own organic inks from natural materials. You might just discover a whole new world of creativity and personal connection.
+</p>
+
+<hr>
+
+<blockquote>
+<p>
+Okay, the only inks I have made are from a few dried roses and a tree bark that
+grows outside my house right now. Please update the facts.
+</p>
+</blockquote>
+
+<p>
+As a long-time fountain pen and ink fan, I never thought about making my own inks from natural materials. I was always content with buying pre-made inks from my favorite brands and using them to write my thoughts and ideas. However, my curiosity got the best of me one day, and I decided to experiment with making my own organic inks from foraged materials. To my surprise, the process was easy, rewarding, and deeply personal.
+</p>
+
+<p>
+My journey began with using dried roses and tree bark from a tree that grows outside my house. I was excited to try making inks from these materials, and curious to see what kind of colors they would produce.
+</p>
+
+<p>
+Using a mortar and pestle, I ground the materials into a fine powder and mixed them with water and gum arabic to create a binder. I experimented with different ratios of materials to water to achieve the desired consistency and color.
+</p>
+
+<p>
+The dried roses produced a beautiful pink ink that was perfect for writing love letters or journaling about my favorite memories. The tree bark produced a rich brown ink that reminded me of the earthy smell of the forest after a rainstorm.
+</p>
+
+<p>
+I also collected soil and sand from places that were important to my life history, such as the soil from the backyard of my childhood home. Using these materials to make ink was a way to connect with my past and to create something that was uniquely mine.
+</p>
+
+<p>
+One of the things I loved about making organic inks from foraged materials was the personal connection I felt with the materials I used. Each material had its own story and significance, and by using them to make ink, I felt like I was creating something deeply personal and meaningful.
+</p>
+
+<p>
+Another thing I loved about making organic inks from foraged materials was the connection to nature. By exploring the natural environment around me and collecting materials to use in my ink making, I felt a deeper appreciation for the natural world and the beauty that can be found in even the most ordinary of places.
+</p>
+
+<p>
+In conclusion, my journey into making organic inks from foraged materials has been a rewarding and enjoyable experience. It has allowed me to connect with nature and my own personal history in a way that I never thought was possible. If you're interested in ink making or foraging, I encourage you to try making your own organic inks from natural materials. You might just discover a whole new world of creativity and personal connection.
+</p>
+
+<hr>
+
+<blockquote>
+<p>
+Update the process to be simple boiling with vinegar adding gum arabic and
+adding a natural preservative (like clove or wintergreen oil). Also add that I
+read the book 'Make Ink' by Jason Logan.
+</p>
+</blockquote>
+
+<p>
+As a long-time fountain pen and ink fan, I never thought about making my own inks from natural materials. However, after reading the book "Make Ink" by Jason Logan, I was inspired to try making my own organic inks from foraged materials. I found that the process was simple, rewarding, and deeply personal.
+</p>
+
+<p>
+I began by foraging materials like dried roses, tree bark, and soil from places that were important to my life history. I then boiled these materials in a pot with water and a splash of vinegar for about an hour, until the water was reduced to about half.
+</p>
+
+<p>
+Once the mixture had cooled, I added gum arabic to thicken and bind the ink. Gum arabic is a natural binder that helps the ink adhere to paper and creates a smooth writing experience.
+</p>
+
+<p>
+To preserve the ink and prevent mold growth, I added a few drops of a natural preservative, like clove or wintergreen oil. This helps the ink last longer and ensures that it's safe to use.
+</p>
+
+<p>
+The dried roses produced a beautiful pink ink, while the tree bark produced a rich brown ink. I also experimented with other materials like berries, leaves, and even rusted metal to create unique and unexpected colors.
+</p>
+
+<p>
+One of the things I loved about making organic inks from foraged materials was the personal connection I felt with the materials I used. Each material had its own story and significance, and by using them to make ink, I felt like I was creating something deeply personal and meaningful.
+</p>
+
+<p>
+Another thing I loved about making organic inks from foraged materials was the connection to nature. By exploring the natural environment around me and collecting materials to use in my ink making, I felt a deeper appreciation for the natural world and the beauty that can be found in even the most ordinary of places.
+</p>
+
+<p>
+In conclusion, my journey into making organic inks from foraged materials has been a rewarding and enjoyable experience. If you're interested in ink making or foraging, I encourage you to try making your own organic inks from natural materials. It's a simple process that can yield beautiful and meaningful results, and it's a wonderful way to connect with nature and your own personal history.
+</p>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

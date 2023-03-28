@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2023-03-15T20:38:35+0530</updated>
+  <updated>2023-03-29T00:30:34+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Making Inks</title>
+    <link href="https://lepisma.xyz/journal/2023/03/28/making-inks-gen/index.html"/>
+    <updated>2023-03-28</updated>
+  </entry>
   <entry>
     <title>The Magic of How</title>
     <link href="https://lepisma.xyz/journal/2023/03/15/the-magic-of-how/index.html"/>
