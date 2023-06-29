@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-06-29 Thu 11:18 -->
+<!-- 2023-06-29 Thu 11:52 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>/mu4e-snooze/ and adventures with AI co‑programming</title>
@@ -265,7 +265,7 @@ Knowing that I can follow the <a href="https://www.shortwave.com/method/">shortw
 decided to implement snoozing in my favorite email tool, <a href="https://www.djcbsoftware.nl/code/mu/">mu4e</a>.
 </p>
 
-<aside id="org80135f5">
+<aside id="org85f44b0">
 <p>
 The implementation is <a href="https://github.com/lepisma/mu4e-snooze/tree/master">here</a> in case you also want to use snoozing in mu4e.
 </p>
@@ -314,7 +314,7 @@ Email setups based on mu4e are made up of three components:
 
 <ol class="org-ol">
 <li>A <a href="https://en.wikipedia.org/wiki/Maildir">Maildir</a> syncing setup using, say, <a href="https://www.offlineimap.org/">OfflineIMAP</a>. This maps your remote email
-directories in your local filesystem in the Maildir format.</li>
+directories to your local filesystem in the Maildir format.</li>
 <li>A CLI tool <code>mu</code> for indexing and searching over a Maildir.</li>
 <li>An elisp package (<code>mu4e</code>) to wrap around <code>mu</code> so that you can <i>do email</i> inside
 Emacs.</li>
