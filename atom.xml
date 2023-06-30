@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2023-06-29T11:18:39+0530</updated>
+  <updated>2023-06-30T22:49:07+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Speech-First Conversational AI Revisited</title>
+    <link href="https://lepisma.xyz/2023/06/30/speech-first-conversational-ai-revisited/index.html"/>
+    <updated>2023-06-30</updated>
+  </entry>
   <entry>
     <title>/mu4e-snooze/ and adventures with AI co‑programming</title>
     <link href="https://lepisma.xyz/2023/06/29/mu4e-snooze/index.html"/>
