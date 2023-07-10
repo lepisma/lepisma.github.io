@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2023-04-16T17:51:14+0530</updated>
+  <updated>2023-07-10T11:19:30+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>21 Pen Questions</title>
+    <link href="https://lepisma.xyz/journal/2023/07/10/21-pen-questions/index.html"/>
+    <updated>2023-07-10</updated>
+  </entry>
   <entry>
     <title>Aleatory Assistance</title>
     <link href="https://lepisma.xyz/journal/2023/04/16/aleatory-assistance/index.html"/>
