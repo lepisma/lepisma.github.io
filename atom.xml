@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2023-06-30T22:49:07+0530</updated>
+  <updated>2023-07-22T00:46:42+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Learning Colemak-DH</title>
+    <link href="https://lepisma.xyz/2023/07/22/learning-colemak-dh/index.html"/>
+    <updated>2023-07-22</updated>
+  </entry>
   <entry>
     <title>Speech-First Conversational AI Revisited</title>
     <link href="https://lepisma.xyz/2023/06/30/speech-first-conversational-ai-revisited/index.html"/>
