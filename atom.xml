@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2023-07-22T00:48:59+0530</updated>
+  <updated>2023-07-25T23:32:22+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Muse: An Experiment in Music Exploration</title>
+    <link href="https://lepisma.xyz/2023/07/25/muse/index.html"/>
+    <updated>2023-07-25</updated>
+  </entry>
   <entry>
     <title>Learning Colemak-DH</title>
     <link href="https://lepisma.xyz/2023/07/22/learning-colemak-dh/index.html"/>
