@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-07-25 Tue 23:32 -->
+<!-- 2023-07-26 Wed 09:57 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Muse: An Experiment in Music Exploration</title>
@@ -266,7 +266,7 @@ you get.</li>
 <br><br>
 
 
-<figure id="org22533b5">
+<figure id="orgbeb2ac0">
 <img src="screen.png" alt="screen.png" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -276,20 +276,28 @@ you get.</li>
 <p>
 There are two models, one for describing image, <a href="https://replicate.com/salesforce/blip">salesforce/bilp</a> as of this
 writing, and one for parsing and generating song lists, currently <code>gpt-3.5-turbo</code>.
-There are surely many improvements to be done here. Most important is to have a
-proper search so that the listing is not cut off by LLM's data timeline. But
-it's still pretty usable without complicating things too much.
+There are surely many improvements to be done here.
 </p>
 
 <p>
-You can find the app accessible <a href="https://lepisma-muse.streamlit.app/">here</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>. The source code is <a href="https://github.com/lepisma/muse">here</a>.
+The image describer is unaware of the context so it doesn't do really well on
+few categories of songs. For example, we weren't able to get 'Where the streets
+have no name' via this pipeline. I am assuming multimodal systems like GPT4 with
+images should do much better here. Secondly to have a proper search so that the
+listing is not cut off by LLM's data timeline. But it's still pretty usable
+without complicating things too much.
+</p>
+
+<p>
+The app is accessible <a href="https://lepisma-muse.streamlit.app/">here</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>. The source code is <a href="https://github.com/lepisma/muse">here</a>.
 </p>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Sorry you still have to provide your
-own keys.</p></div></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Sorry you would have to provide your own keys.
+Replicate is used for image description model, OpenAI for parsing and generating
+songs.</p></div></div>
 
 
 </div>
