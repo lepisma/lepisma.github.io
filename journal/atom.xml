@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2023-12-16T20:42:22+0530</updated>
+  <updated>2023-12-23T18:09:29+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Books Read in 2023</title>
+    <link href="https://lepisma.xyz/journal/2023/12/23/books-read-in-2023/index.html"/>
+    <updated>2023-12-23</updated>
+  </entry>
   <entry>
     <title>State of offline-first Apps</title>
     <link href="https://lepisma.xyz/journal/2023/12/16/offline-first-apps/index.html"/>
