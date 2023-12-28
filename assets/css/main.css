@@ -8,12 +8,9 @@
  *    IE on Windows Phone and in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -54,8 +51,7 @@ h1 {
  */
 figcaption,
 figure,
-main {
-  /* 1 */
+main { /* 1 */
   display: block;
 }
 
@@ -71,12 +67,9 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -84,10 +77,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -97,10 +88,8 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
 }
 
 /**
@@ -108,12 +97,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -139,10 +125,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -230,14 +214,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -245,8 +225,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -255,8 +234,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -269,8 +247,7 @@ button,
 html [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
-  /* 2 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -308,18 +285,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -327,10 +298,8 @@ legend {
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -346,10 +315,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -365,10 +332,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -384,10 +349,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -590,7 +553,6 @@ header > div {
     margin-left: 164px;
     max-width: 720px;
   }
-
   header .site-title {
     float: left;
   }
@@ -799,10 +761,10 @@ aside pre, .aside pre {
     margin-right: -52%;
   }
   aside figcaption a,
-aside li a,
-aside p a, .aside figcaption a,
-.aside li a,
-.aside p a {
+  aside li a,
+  aside p a, .aside figcaption a,
+  .aside li a,
+  .aside p a {
     text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
     background-image: linear-gradient(#444, #444);
     background-size: 1px 1px;
@@ -814,60 +776,60 @@ aside p a, .aside figcaption a,
     text-decoration: none;
   }
   aside figcaption a::selection,
-aside li a::selection,
-aside p a::selection, .aside figcaption a::selection,
-.aside li a::selection,
-.aside p a::selection {
+  aside li a::selection,
+  aside p a::selection, .aside figcaption a::selection,
+  .aside li a::selection,
+  .aside p a::selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8;
   }
   aside figcaption a::-moz-selection,
-aside li a::-moz-selection,
-aside p a::-moz-selection, .aside figcaption a::-moz-selection,
-.aside li a::-moz-selection,
-.aside p a::-moz-selection {
+  aside li a::-moz-selection,
+  aside p a::-moz-selection, .aside figcaption a::-moz-selection,
+  .aside li a::-moz-selection,
+  .aside p a::-moz-selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8;
   }
   aside figcaption a *,
-aside figcaption a *:after, aside figcaption a:after,
-aside figcaption a *:before, aside figcaption a:before,
-aside li a *,
-aside li a *:after,
-aside li a:after,
-aside li a *:before,
-aside li a:before,
-aside p a *,
-aside p a *:after,
-aside p a:after,
-aside p a *:before,
-aside p a:before, .aside figcaption a *,
-.aside figcaption a *:after, .aside figcaption a:after,
-.aside figcaption a *:before, .aside figcaption a:before,
-.aside li a *,
-.aside li a *:after,
-.aside li a:after,
-.aside li a *:before,
-.aside li a:before,
-.aside p a *,
-.aside p a *:after,
-.aside p a:after,
-.aside p a *:before,
-.aside p a:before {
+  aside figcaption a *:after, aside figcaption a:after,
+  aside figcaption a *:before, aside figcaption a:before,
+  aside li a *,
+  aside li a *:after,
+  aside li a:after,
+  aside li a *:before,
+  aside li a:before,
+  aside p a *,
+  aside p a *:after,
+  aside p a:after,
+  aside p a *:before,
+  aside p a:before, .aside figcaption a *,
+  .aside figcaption a *:after, .aside figcaption a:after,
+  .aside figcaption a *:before, .aside figcaption a:before,
+  .aside li a *,
+  .aside li a *:after,
+  .aside li a:after,
+  .aside li a *:before,
+  .aside li a:before,
+  .aside p a *,
+  .aside p a *:after,
+  .aside p a:after,
+  .aside p a *:before,
+  .aside p a:before {
     text-shadow: none;
   }
   aside figcaption a:visited,
-aside li a:visited,
-aside p a:visited, .aside figcaption a:visited,
-.aside li a:visited,
-.aside p a:visited {
+  aside li a:visited,
+  aside p a:visited, .aside figcaption a:visited,
+  .aside li a:visited,
+  .aside p a:visited {
     color: #444;
   }
   aside figcaption a:hover,
-aside li a:hover,
-aside p a:hover, .aside figcaption a:hover,
-.aside li a:hover,
-.aside p a:hover {
+  aside li a:hover,
+  aside p a:hover, .aside figcaption a:hover,
+  .aside li a:hover,
+  .aside p a:hover {
     text-shadow: 0.03em 0 #efefef, -0.03em 0 #efefef, 0 0.03em #efefef, 0 -0.03em #efefef, 0.06em 0 #efefef, -0.06em 0 #efefef, 0.09em 0 #efefef, -0.09em 0 #efefef, 0.12em 0 #efefef, -0.12em 0 #efefef, 0.15em 0 #efefef, -0.15em 0 #efefef;
     background-image: linear-gradient(#444, #444);
     background-size: 1px 1px;
@@ -879,53 +841,53 @@ aside p a:hover, .aside figcaption a:hover,
     text-decoration: none;
   }
   aside figcaption a:hover::selection,
-aside li a:hover::selection,
-aside p a:hover::selection, .aside figcaption a:hover::selection,
-.aside li a:hover::selection,
-.aside p a:hover::selection {
+  aside li a:hover::selection,
+  aside p a:hover::selection, .aside figcaption a:hover::selection,
+  .aside li a:hover::selection,
+  .aside p a:hover::selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8;
   }
   aside figcaption a:hover::-moz-selection,
-aside li a:hover::-moz-selection,
-aside p a:hover::-moz-selection, .aside figcaption a:hover::-moz-selection,
-.aside li a:hover::-moz-selection,
-.aside p a:hover::-moz-selection {
+  aside li a:hover::-moz-selection,
+  aside p a:hover::-moz-selection, .aside figcaption a:hover::-moz-selection,
+  .aside li a:hover::-moz-selection,
+  .aside p a:hover::-moz-selection {
     text-shadow: 0.03em 0 #c8c8c8, -0.03em 0 #c8c8c8, 0 0.03em #c8c8c8, 0 -0.03em #c8c8c8, 0.06em 0 #c8c8c8, -0.06em 0 #c8c8c8, 0.09em 0 #c8c8c8, -0.09em 0 #c8c8c8, 0.12em 0 #c8c8c8, -0.12em 0 #c8c8c8, 0.15em 0 #c8c8c8, -0.15em 0 #c8c8c8;
     background: #c8c8c8;
   }
   aside figcaption a:hover *,
-aside figcaption a:hover *:after, aside figcaption a:hover:after,
-aside figcaption a:hover *:before, aside figcaption a:hover:before,
-aside li a:hover *,
-aside li a:hover *:after,
-aside li a:hover:after,
-aside li a:hover *:before,
-aside li a:hover:before,
-aside p a:hover *,
-aside p a:hover *:after,
-aside p a:hover:after,
-aside p a:hover *:before,
-aside p a:hover:before, .aside figcaption a:hover *,
-.aside figcaption a:hover *:after, .aside figcaption a:hover:after,
-.aside figcaption a:hover *:before, .aside figcaption a:hover:before,
-.aside li a:hover *,
-.aside li a:hover *:after,
-.aside li a:hover:after,
-.aside li a:hover *:before,
-.aside li a:hover:before,
-.aside p a:hover *,
-.aside p a:hover *:after,
-.aside p a:hover:after,
-.aside p a:hover *:before,
-.aside p a:hover:before {
+  aside figcaption a:hover *:after, aside figcaption a:hover:after,
+  aside figcaption a:hover *:before, aside figcaption a:hover:before,
+  aside li a:hover *,
+  aside li a:hover *:after,
+  aside li a:hover:after,
+  aside li a:hover *:before,
+  aside li a:hover:before,
+  aside p a:hover *,
+  aside p a:hover *:after,
+  aside p a:hover:after,
+  aside p a:hover *:before,
+  aside p a:hover:before, .aside figcaption a:hover *,
+  .aside figcaption a:hover *:after, .aside figcaption a:hover:after,
+  .aside figcaption a:hover *:before, .aside figcaption a:hover:before,
+  .aside li a:hover *,
+  .aside li a:hover *:after,
+  .aside li a:hover:after,
+  .aside li a:hover *:before,
+  .aside li a:hover:before,
+  .aside p a:hover *,
+  .aside p a:hover *:after,
+  .aside p a:hover:after,
+  .aside p a:hover *:before,
+  .aside p a:hover:before {
     text-shadow: none;
   }
   aside figcaption a:hover:visited,
-aside li a:hover:visited,
-aside p a:hover:visited, .aside figcaption a:hover:visited,
-.aside li a:hover:visited,
-.aside p a:hover:visited {
+  aside li a:hover:visited,
+  aside p a:hover:visited, .aside figcaption a:hover:visited,
+  .aside li a:hover:visited,
+  .aside p a:hover:visited {
     color: #444;
   }
   aside::before, .aside::before {
@@ -1121,6 +1083,10 @@ img.zoomTarget:hover {
   cursor: default !important;
 }
 
+img {
+  border-radius: 5px;
+}
+
 #footnotes {
   margin-top: 70px;
   padding-top: 30px;
@@ -1196,11 +1162,11 @@ h3, h4, h5, h6 {
 }
 @media (min-width: 1000px) {
   .section-number-1,
-.section-number-2,
-.section-number-3,
-.section-number-4,
-.section-number-5,
-.section-number-6 {
+  .section-number-2,
+  .section-number-3,
+  .section-number-4,
+  .section-number-5,
+  .section-number-6 {
     position: absolute;
     transform: translateX(-100%) translateX(-10px);
   }
@@ -1678,6 +1644,7 @@ pre.src:hover::before {
   line-height: 1.9;
   color: #7b7b7b;
   text-transform: uppercase;
+  font-family: "Fira Mono";
 }
 
 .todo, .done {
@@ -1954,8 +1921,8 @@ nav#table-of-contents li a:hover:visited {
     background: #c8c8c8;
   }
   nav#table-of-contents li a *,
-nav#table-of-contents li a *:after, nav#table-of-contents li a:after,
-nav#table-of-contents li a *:before, nav#table-of-contents li a:before {
+  nav#table-of-contents li a *:after, nav#table-of-contents li a:after,
+  nav#table-of-contents li a *:before, nav#table-of-contents li a:before {
     text-shadow: none;
   }
   nav#table-of-contents li a:visited {
@@ -1981,8 +1948,8 @@ nav#table-of-contents li a *:before, nav#table-of-contents li a:before {
     background: #c8c8c8;
   }
   nav#table-of-contents li a:hover *,
-nav#table-of-contents li a:hover *:after, nav#table-of-contents li a:hover:after,
-nav#table-of-contents li a:hover *:before, nav#table-of-contents li a:hover:before {
+  nav#table-of-contents li a:hover *:after, nav#table-of-contents li a:hover:after,
+  nav#table-of-contents li a:hover *:before, nav#table-of-contents li a:hover:before {
     text-shadow: none;
   }
   nav#table-of-contents li a:hover:visited {
