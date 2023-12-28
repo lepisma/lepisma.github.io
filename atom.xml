@@ -3,12 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2023-12-28T18:45:23+0530</updated>
+  <updated>2023-12-28T18:48:27+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <entry>
     <title>/2023/: The longest year of my life</title>
-    <link href="https://lepisma.xyz/2023/12/27/2023-review/index.html"/>
-    <updated>2023-12-27</updated>
+    <link href="https://lepisma.xyz/2023/12/28/2023-review/index.html"/>
+    <updated>2023-12-28</updated>
+  </entry>
   </entry>
   <entry>
     <title>MatplotLLM: An /LLM assisted/ Data Visualization Framework</title>
