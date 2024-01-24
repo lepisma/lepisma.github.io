@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-01-06T18:28:12+0530</updated>
+  <updated>2024-01-24T22:09:33+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Kindle Photoframe</title>
+    <link href="https://lepisma.xyz/journal/2024/01/24/kindle-photoframe/index.html"/>
+    <updated>2024-01-24</updated>
+  </entry>
   <entry>
     <title>Tasks /off-the-list/</title>
     <link href="https://lepisma.xyz/journal/2024/01/06/tasks-off-the-lists/index.html"/>
