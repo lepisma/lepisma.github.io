@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-01-28T22:10:46+0530</updated>
+  <updated>2024-02-04T01:24:22+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Separating Task Manager for Work</title>
+    <link href="https://lepisma.xyz/journal/2024/02/03/separating-task-managers/index.html"/>
+    <updated>2024-02-03</updated>
+  </entry>
   <entry>
     <title>Conversational AI won&#39;t help you if you don&#39;t wanna talk</title>
     <link href="https://lepisma.xyz/journal/2024/01/28/conversational-ai/index.html"/>
