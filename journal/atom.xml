@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-02-10T15:38:52+0530</updated>
+  <updated>2024-04-17T23:17:44+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Space Hacking and Play</title>
+    <link href="https://lepisma.xyz/journal/2024/04/17/space-hacking-and-play/index.html"/>
+    <updated>2024-04-17</updated>
+  </entry>
   <entry>
     <title>100 Days To Offload</title>
     <link href="https://lepisma.xyz/journal/2024/02/10/100-days-to-offload/index.html"/>
