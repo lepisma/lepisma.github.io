@@ -3,13 +3,22 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2023-12-28T18:48:27+0530</updated>
+  <updated>2024-05-10T01:08:32+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Speech LLMs for Conversations</title>
+    <link href="https://lepisma.xyz/2024/05/09/speech-llms-for-conversations/index.html"/>
+    <updated>2024-05-09</updated>
+  </entry>
   <entry>
     <title>/2023/: The longest year of my life</title>
     <link href="https://lepisma.xyz/2023/12/28/2023-review/index.html"/>
     <updated>2023-12-28</updated>
   </entry>
+  <entry>
+    <title>Remote work discussions are /cultural rifts/ in disguise</title>
+    <link href="https://lepisma.xyz/2023/10/29/on-remote-work/index.html"/>
+    <updated>2023-10-29</updated>
   </entry>
   <entry>
     <title>MatplotLLM: An /LLM assisted/ Data Visualization Framework</title>
