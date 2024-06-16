@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-06-16T18:15:30+0530</updated>
+  <updated>2024-06-16T20:53:19+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Raindrop to Org-Roam</title>
+    <link href="https://lepisma.xyz/journal/2024/06/16/raindrop-to-org-roam/index.html"/>
+    <updated>2024-06-16</updated>
+  </entry>
   <entry>
     <title>Swatching Inks</title>
     <link href="https://lepisma.xyz/journal/2024/06/16/swatching-all-inks/index.html"/>
