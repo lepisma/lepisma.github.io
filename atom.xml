@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2024-05-10T01:08:32+0530</updated>
+  <updated>2024-06-22T15:48:47+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>10 years of blogging</title>
+    <link href="https://lepisma.xyz/2024/06/22/10-years-of-blogging/index.html"/>
+    <updated>2024-06-22</updated>
+  </entry>
   <entry>
     <title>Speech LLMs for Conversations</title>
     <link href="https://lepisma.xyz/2024/05/09/speech-llms-for-conversations/index.html"/>
