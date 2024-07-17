@@ -3,7 +3,7 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2024-07-17T16:30:20+0530</updated>
+  <updated>2024-07-17T16:32:19+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <entry>
     <title>How good are General ASR APIs for Indian English?</title>
@@ -24,11 +24,6 @@
     <title>/2023/: The longest year of my life</title>
     <link href="https://lepisma.xyz/2023/12/28/2023-review/index.html"/>
     <updated>2023-12-28</updated>
-  </entry>
-  <entry>
-    <title>Remote work discussions are /cultural rifts/ in disguise</title>
-    <link href="https://lepisma.xyz/2023/10/29/on-remote-work/index.html"/>
-    <updated>2023-10-29</updated>
   </entry>
   <entry>
     <title>MatplotLLM: An /LLM assisted/ Data Visualization Framework</title>
