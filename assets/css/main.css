@@ -2033,4 +2033,33 @@ nav#table-of-contents li a:hover:visited {
   color: #000;
 }
 
+.watermark {
+  color: #efefef;
+  font-family: "Open Sans";
+  font-weight: bold;
+  z-index: -100;
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .watermark {
+    font-size: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+}
+@media (min-width: 1001px) {
+  .watermark {
+    margin-left: 60px;
+    font-size: 160px;
+    top: 50%;
+    transform: translate(0%, 20%) rotate(-45deg);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
