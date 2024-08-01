@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-08-01 Thu 18:12 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hierarchical Event Bus for Spoken Dialog Systems</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>2024-08-01 Thu 00:00</div>
+  <h1>Hierarchical Event Bus for Spoken Dialog Systems</h1>
+</div>
+</div>
+<div id="content" class="content">
+<div class='page-tags'><a href='../../../..#100daystooffload'>100daystooffload</a> <a href='../../../..#programming'>programming</a> <a href='../../../..#ml'>ml</a> <a href='../../../..#speech'>speech</a> <a href='../../../..#conversational-ai'>conversational-ai</a></div>
+<p>
+<span class='dropcap'>D</span>uring the past few years, I have worked on design and modeling of Spoken Dialog
+Systems (SDS). After LLMs came in, the ML sided work has gone down along with
+some complexity of the architecture. But I still feel like most of the current
+designs are sub-optimal considering the true north of natural<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+conversations. This post is an attempt to cover an event based system that
+allows high degree of flexibility and is future proof enough to support all the
+conversational features that we would expect from machine conversationalists.
+It's mostly a high level <i>everything-is-an-event</i> design idea rather than details
+of implementation at the time being.
+</p>
+
+<div id="outline-container-sec-turn-taking" class="outline-2">
+<h2 id="sec-turn-taking"><span class="section-number-2">1.</span> Turn-Taking</h2>
+<div class="outline-text-2" id="text-sec-turn-taking">
+
+<p>
+When we talk about the design or architecture of an SDS, we refer to the
+implementation of turn-taking dynamics between humans and the machine. In
+earlier systems we used to have <a href="https://en.wikipedia.org/wiki/Duplex_(telecommunications)">half-duplex</a> conversations based on a Finite
+State Machine (FSM) that looked like the following simple loop:
+</p>
+
+
+<figure id="org3b69c5d">
+<img src="./loop.svg" alt="loop.svg" class="zoomTarget" data-closeclick="true">
+
+</figure>
+
+<br>
+
+<p>
+To implement this, you would normally not follow the loop's flow (like in a
+stream-processing system) but build a central orchestrator that coordinates
+everything from audio in to audio out. As ML models improved we started moving
+towards accepting streams and allowing interruptions in some places within the
+orchestrator to allow barge-ins and other backchannels. Systems like <a href="https://github.com/vocodedev/vocode-core">vocode</a> do
+something like this.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-embracing-events" class="outline-2">
+<h2 id="sec-embracing-events"><span class="section-number-2">2.</span> Embracing Events</h2>
+<div class="outline-text-2" id="text-sec-embracing-events">
+
+<p>
+While the designs used till now are pretty practical and not overly
+complicated<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>, their are many accidental complexities that pop
+up once you start adding more advanced features like supporting multiple
+speakers, <i>short-circuit</i> processing, <i>deliberation</i>, etc.
+</p>
+
+<aside id="org5802d5a">
+<p>
+<b>Short-circuiting</b> refers to fast and early semantic processing of utterance (or
+milestones therein) without waiting for the final computation at the end of the
+turn. In conversations, you use this to <i>take over</i> turns in between utterances,
+or start mulling over something. For example you might interrupt someone's rant
+as soon as you realize it's a rant, or you could kick off a process to pull up a
+detail as soon as a person utters something that would need that info later.
+</p>
+
+<p>
+By <b>deliberation</b> I mean any processing or thinking in the background. This
+happens a lot in regular conversations where you improve your current or next
+utterances not just because of what's coming to you directly from the other
+side, but your own mulling that could include&#x2014;for machines specifically&#x2014;some
+data collected from other sources.
+</p>
+</aside>
+
+<p>
+A more natural design is to organize processing units on <i>a hierarchical event
+bus</i> allowing distributed, concurrent, and modular processing. This is a little
+like <a href="https://en.wikipedia.org/wiki/Actor_model">Actor model</a><sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>. There are two core concepts in this
+design, the <i>event buses</i>, and the <i>actors</i>. The buses lay down the foundation of
+all categories of signals that we care about in a machine conversation. On top
+of this, you add actors to do actual processing.
+</p>
+</div>
+
+<div id="outline-container-sec-embracing-events/buses" class="outline-3">
+<h3 id="sec-embracing-events/buses"><span class="section-number-3">2.1.</span> Buses</h3>
+<div class="outline-text-3" id="text-sec-embracing-events/buses">
+
+<p>
+Here you have various levels of buses that work with events like audio signals
+at the bottom, go to text, semantics, and come back to emit audio signals <i>from</i>
+the SDS.
+</p>
+
+<br>
+
+
+<figure id="orgcb8eff8">
+<img src="./buses.svg" alt="buses.svg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>A few buses relevant for an SDS</figcaption>
+</figure>
+
+<br>
+
+<p>
+These buses can be subscribed to for listening and emitting events by <i>Actors</i>. At
+times there will be concurrency bottlenecks which effectively will look like
+interruptible priority queues. For example the audio coming from the SDS will
+have a single concurrency constraint. If someone pushes a higher priority
+signal&#x2014;say a background computation has finished and the SDS has to speak the
+audio coming from processing that computation&#x2014;the device plays that before
+playing something else. The decision to get back to the original interrupted
+audio is something that will depend on the context and will be taken up by
+another Actor.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-embracing-events/actors" class="outline-3">
+<h3 id="sec-embracing-events/actors"><span class="section-number-3">2.2.</span> Actors</h3>
+<div class="outline-text-3" id="text-sec-embracing-events/actors">
+
+<p>
+Actors subscribe to buses, process information, and emit messages. There is no
+restriction on input and output levels. Although there will be a natural
+organization of actors up and down the hierarchy, there could be an actor that
+listens to audio segment events <i>and</i> lexical events both.
+</p>
+
+<br>
+
+
+<figure id="orgcd31f74">
+<img src="./actors.svg" alt="actors.svg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span>A few common actors. Notice that every actor is working in streaming fashion with packets emitted at the lowest practical granularity possible. You can emulate a classical FSM style SDS using a handful of actors, and add more to keep advancing it.</figcaption>
+</figure>
+
+<br>
+
+<p>
+The set of actors you use is all that defines your stack. And working with
+individual actors is really easy. Here are a few examples:
+</p>
+
+<ol class="org-ol">
+<li>For short circuiting, add an actor that listens to stream from lexical bus
+and runs a small model to detect milestones of interest (<i>partial SLU</i>). Once
+the actor decides something should be done, it can send an interrupt.</li>
+<li>Multiple speakers are just <i>color-coded</i> events handled concurrently with
+actors till the point you need aggregating actors to coordinate the merged
+output.</li>
+<li>Responding to user interruptions and using other backchannels is also easier
+here since events are given first class citizenship. For example an actor
+could just listen all audio channels for audience silence and then signal
+something that makes the SDS pause and say "umm &#x2026; are you all with me?
+should I clarify the last part a little more?".</li>
+<li>Running background <i>thinking</i> process involves just invoking another actor by
+putting some message on the appropriate bus.</li>
+<li>Any kind of async paralinguistic analysis or self-checks are again just
+actors added to the stack.</li>
+<li>If you want to move to an ASR free system, just remove your current ASR-bound
+actors, make an actor that uses Speech LLMs, then listen and emit in the
+right channels.</li>
+</ol>
+
+<p>
+Other than these, you can also do things like mini-batch processing at an actor
+level, which will help in utilizing resources like GPUs better. This system is
+also more experiment friendly as you can try out new actors in shadow mode much
+more easily.
+</p>
+
+<hr>
+
+<p>
+There will, of course, be some trade-offs here. But my hunch is that the gains
+are more than what's needed to offset any loss. Further insights can only come
+once there is a working implementation, but I have not been able to work on
+this. In fact writing this post was a way to make some progress rather than
+staying at zero. I have some more free time now so I might be able to do
+something beyond this, relatively, abstract article.
+</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">I believe
+naturalness has more to do with ergonomics than likeness to humans.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Thanks in part to the simplification brought in from LLMs
+handling most of SLU and DST.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Probably also a little inspired by Minsky's <a href="https://en.wikipedia.org/wiki/Society_of_Mind">Society of
+Mind</a>, but that's <i>inspiration</i> at best.</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

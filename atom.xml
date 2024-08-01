@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2024-07-18T18:03:55+0530</updated>
+  <updated>2024-08-01T18:13:00+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Hierarchical Event Bus for Spoken Dialog Systems</title>
+    <link href="https://lepisma.xyz/2024/08/01/hierarchical-event-bus-for-spoken-conversational-systems/index.html"/>
+    <updated>2024-08-01</updated>
+  </entry>
   <entry>
     <title>How good are General ASR APIs for Indian English?</title>
     <link href="https://lepisma.xyz/2024/07/17/how-good-are-general-asr-apis-for-indian-english/index.html"/>
