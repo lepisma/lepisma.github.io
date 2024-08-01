@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-08-01 Thu 18:12 -->
+<!-- 2024-08-01 Thu 19:53 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hierarchical Event Bus for Spoken Dialog Systems</title>
@@ -257,7 +257,7 @@ conversations. This post is an attempt to cover an event based system that
 allows high degree of flexibility and is future proof enough to support all the
 conversational features that we would expect from machine conversationalists.
 It's mostly a high level <i>everything-is-an-event</i> design idea rather than details
-of implementation at the time being.
+of implementation.
 </p>
 
 <div id="outline-container-sec-turn-taking" class="outline-2">
@@ -272,7 +272,7 @@ State Machine (FSM) that looked like the following simple loop:
 </p>
 
 
-<figure id="org3b69c5d">
+<figure id="org6053d5e">
 <img src="./loop.svg" alt="loop.svg" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -301,7 +301,7 @@ up once you start adding more advanced features like supporting multiple
 speakers, <i>short-circuit</i> processing, <i>deliberation</i>, etc.
 </p>
 
-<aside id="org5802d5a">
+<aside id="orgd6b8fd3">
 <p>
 <b>Short-circuiting</b> refers to fast and early semantic processing of utterance (or
 milestones therein) without waiting for the final computation at the end of the
@@ -343,7 +343,7 @@ the SDS.
 <br>
 
 
-<figure id="orgcb8eff8">
+<figure id="org2078d16">
 <img src="./buses.svg" alt="buses.svg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span>A few buses relevant for an SDS</figcaption>
@@ -379,7 +379,7 @@ listens to audio segment events <i>and</i> lexical events both.
 <br>
 
 
-<figure id="orgcd31f74">
+<figure id="orgac60cdc">
 <img src="./actors.svg" alt="actors.svg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 2: </span>A few common actors. Notice that every actor is working in streaming fashion with packets emitted at the lowest practical granularity possible. You can emulate a classical FSM style SDS using a handful of actors, and add more to keep advancing it.</figcaption>
