@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2024-08-08T18:49:44+0530</updated>
+  <updated>2024-09-12T15:29:56+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Dictation Mode for Emacs</title>
+    <link href="https://lepisma.xyz/2024/09/12/emacs-dictation-mode/index.html"/>
+    <updated>2024-09-12</updated>
+  </entry>
   <entry>
     <title>Hierarchical Event Bus for Spoken Dialog Systems</title>
     <link href="https://lepisma.xyz/2024/08/01/hierarchical-event-bus-for-spoken-conversational-systems/index.html"/>
