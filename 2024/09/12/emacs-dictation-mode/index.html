@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-09-12 Thu 15:29 -->
+<!-- 2024-09-12 Thu 15:39 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dictation Mode for Emacs</title>
@@ -277,7 +277,7 @@ which is where I do all of my writings.
 <h2 id="sec-esi-dictate.el"><span class="section-number-2">1.</span> esi-dictate.el</h2>
 <div class="outline-text-2" id="text-sec-esi-dictate.el">
 
-<aside id="orgc097086">
+<aside id="orgfc8eb5c">
 <p>
 The package prefix is coming from <a href="https://github.com/lepisma/emacs-speech-input">emacs-speech-input</a>, <i>esi</i>, where I used to keep
 my Emacs speech interaction ideas. A lot of the older partial works can be seen
@@ -342,9 +342,10 @@ generally good enough to detect what's an instruction and what's not.
 
 <p>
 From UX perspective<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>, I think
-this flow is good enough for me. At this point, main gains will come from
-latency improvements in both ASR and LLM. Some of that is achievable by making
-good use of asynchronous calls, caching, etc.
+this flow is good enough for me but I suspect that I am not at the sweet spot
+yet. A major gain at this point will come from latency improvements in both ASR
+and LLM. Some of that is achievable by making good use of asynchronous calls,
+caching, etc.
 </p>
 
 <p>
