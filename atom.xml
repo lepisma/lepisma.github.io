@@ -3,8 +3,13 @@
   <title>blog</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2024-09-12T15:29:56+0530</updated>
+  <updated>2024-09-13T16:50:20+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>/mu4e-snooze/ and Cognitive Heuristics</title>
+    <link href="https://lepisma.xyz/2024/09/13/mu4e-snooze-with-o1-preview/index.html"/>
+    <updated>2024-09-13</updated>
+  </entry>
   <entry>
     <title>Dictation Mode for Emacs</title>
     <link href="https://lepisma.xyz/2024/09/12/emacs-dictation-mode/index.html"/>
