@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-09-25T10:53:45+0530</updated>
+  <updated>2024-09-27T00:50:19+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Dictation with small LLMs and linguistic pragmatics</title>
+    <link href="https://lepisma.xyz/journal/2024/09/27/dictation-with-small-llms-and-linguistic-pragmatics/index.html"/>
+    <updated>2024-09-27</updated>
+  </entry>
   <entry>
     <title>More thoughts on /blending/ Voice and Text input</title>
     <link href="https://lepisma.xyz/journal/2024/09/25/more-thoughts-on-blending-voice-and-text-input/index.html"/>
