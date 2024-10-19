@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-10-19 Sat 11:06 -->
+<!-- 2024-10-19 Sat 15:30 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Interventional Debates for Studying Gray Topics</title>
@@ -249,60 +249,61 @@
 <div id="content" class="content">
 <div class='page-tags'><a href='../../../..#learning'>learning</a> <a href='../../../..#llm'>llm</a> <a href='../../../..#100daystooffload'>100daystooffload</a></div>
 <p>
-<span class='dropcap'>A</span> lot of people these days are talking about <a href="https://notebooklm.google.com/">NotebookLM</a>, specially the audio
-overview feature that pulls out a podcast style recording from your
+<span class='dropcap'>A</span> lot of people these days are talking about <a href="https://notebooklm.google.com/">NotebookLM</a>, specially its audio
+overview feature that generates a podcast style audio recording from your
 sources. While I understand this is more engaging than calling a <code>summary</code>
 function on the content, I am not a fan.
 </p>
 
 <p>
-Most of what I like about learning with LLMs is about being more <i>actively</i>
-involved in the process by asking narrow and specific questions than taking a
-prepared information dump. Podcasts definitely use questioning a lot but you can
-also simulate that by, say, more <i>active</i> reading, which I prefer. But this
-changes for topics that are gray, where you don't know all aspects well enough
-to explore the whole territory just based on your own questions. At present,
-whatever is happening between <i>Israel and Palestine</i> is under this category for
-me.
+Most of what I like about learning about new topics using LLMs involves being
+<i>active</i> in the process by asking narrow and specific questions than ingesting a
+prepared information dump. Interview style podcasts use questions too but since
+they are not <i>your questions</i> you can instead go read (which I prefer) an article,
+probably more actively.
 </p>
 
 <p>
-I don't much like passive listening so avoid podcasts but I still need some
-assistance in asking the right questions and details to understand all aspects
-of these topics. Let's say I want to study 'Capitalism in India'. I can't do
-much by only asking questions since I don't have a good sense what all context
-to ask about, which era of the country to study more, how to compare Indian
-Capitalism to Western, etc. I also can't just open Wikipedia and read everything
-around it since I might have specific inclinations around my motivation.
+For topics that are gray&#x2014;where you don't know all aspects well enough to
+explore the whole territory just based on your own questions&#x2014;you need
+interactivity <b>but also</b> assistance. Let's say I want to study 'Capitalism in
+India'. I can't do much by only asking questions to an LLM since I don't have a
+good sense what all context to cover, which era of the country to study more,
+how to compare Indian Capitalism to Western, etc. I also can't just open
+Wikipedia and read everything around Indian Economics since I might have
+specific inclinations around my motivation which will not be met with
+inefficient hops on wiki pages.  Another example topic is the whole <i>Israel vs
+Palestine</i> tension. Here too I need expert assistance in asking the right
+questions to understand everything.
 </p>
 
 <p>
-There are many techniques to attack such topics. Here is a rough map that,
-according to me, shows involvement of a student (active to passive) and the
-effectiveness of study for ambiguous and multifaceted gray topics:
+There are many techniques to attack such ambiguous and multifaceted gray
+topics. Here is a rough map that, according to me, shows involvement of a
+student (active to passive) and the effectiveness of study:
 </p>
 
 
-<figure id="org8b3f782">
+<figure id="org00e0081">
 <img src="./map.svg" alt="map.svg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span>Map of techniques for studying a gray topic</figcaption>
 </figure>
 
 <p>
-But we can do better. Looking at the graph, the best way to efficiently study
-here would be to sit as a moderator in a debate by experts. I don't have experts
-for everything but I can have cheap copies via LLMs. Because of this dirty
+We can do better. Looking at the graph, the best way to efficiently study here
+would be to sit as a moderator in a debate of experts. I don't have experts for
+everything but I can have cheap copies via LLMs. Because of this dirty
 approximation I would have to be more <i>intervening</i> in this debate as a
 moderator. I am calling this technique <i>Interventional Debate (ID)</i> and would put
-it on the more active side of the spectrum like this:
+it on the more active side of the spectrum like shown below:
 </p>
 
 
-<figure id="orgbc58e39">
+<figure id="orgb24c924">
 <img src="./id.svg" alt="id.svg" class="zoomTarget" data-closeclick="true">
 
-<figcaption><span class="figure-number">Figure 2: </span>I will put true (with real experts) interventional debate at the highest efficiency but made it a larger blob for now since I am using LLMs. I still kept it higher than talking to one expert since coverage of stances is something I would value more in topics new to me than depth of one particular idea.</figcaption>
+<figcaption><span class="figure-number">Figure 2: </span>I will put true (with real experts) Interventional Debate at the highest efficiency but made it a vague blob for now since I am using LLM proxies. I still kept it higher than talking to one single expert since coverage of stances is something I would value more than depth for topics new to me.</figcaption>
 </figure>
 
 <p>
@@ -316,16 +317,16 @@ how, so take this with a pinch of salt.
 
 <p>
 To try out ID, I made a small tool called <a href="https://github.com/lepisma/idli/">idli</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> that lets me set up a debate on a topic
-between auto-generated debators where I can intervene at any point and do things
+between auto-generated debaters where I can intervene at any point and do things
 like steer the conversation in a direction, check facts (pretty important since
-LLMs can bluff), call out logical fallacies, ask for clarifications, pause and
-read about something that was brought up in the debate, etc.
+LLMs will bluff), call out logical fallacies, ask for clarifications, read about
+something that was brought up in the debate, etc.
 </p>
 
 <p>
-Here is a log of my conversation on a dummy topic 'Dark vs Light theme for
-programming' to show how this works. Note that only the topic and texts under
-'Moderator' are written by me:
+Here is a log of and ID on a dummy topic 'Dark vs Light theme for programming'
+to show how this works. Note that only the topic and texts under 'Moderator' are
+written by me:
 </p>
 
 <div class="org-src-container">
@@ -434,9 +435,9 @@ Show me the studies that support your claims.
 </div>
 
 <p>
-There is still a bunch of fluff which can be fixed with better
+There is still a bunch of fluff that can be fixed with better
 prompts. Additionally there will be model biases for which I am still figuring
-out if just being more aggressive about debator diversity should be enough. I
+out if just being more aggressive about debater diversity should be enough. I
 also need to get more rigor in claims by getting citations and real data
 points. But overall, in the main, ID feels like a neutral and holistic way of
 doing introductory studies as compared to what I have been doing till now.
