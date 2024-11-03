@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidetone Demo with Volume Control</title>
+    <title>Sidetone Demo with Volume and Delay Control</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -20,11 +20,12 @@
         }
         .controls {
             display: flex;
+            flex-wrap: wrap;
             gap: 1.5rem;
             margin: 1.5rem 0;
-            align-items: center;
+            align-items: flex-start;
         }
-        .volume-control {
+        .volume-control, .delay-control {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -38,6 +39,7 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 1rem;
+            white-space: nowrap;
         }
         button:hover {
             background: #1d4ed8;
@@ -100,11 +102,11 @@
             margin: 0.5rem 0;
             padding-left: 1.5rem;
         }
-        .volume-slider {
+        .volume-slider, .delay-slider {
             width: 100%;
             margin: 0;
         }
-        .volume-label {
+        .volume-label, .delay-label {
             display: flex;
             justify-content: space-between;
             font-size: 0.875rem;
@@ -158,12 +160,26 @@
                     High volume may cause distortion
                 </div>
             </div>
+
+            <div class="delay-control">
+                <div class="delay-label">
+                    <span>Extra Delay:</span>
+                    <span id="delayValue">0ms</span>
+                </div>
+                <input type="range" 
+                       id="delaySlider" 
+                       class="delay-slider"
+                       min="0" 
+                       max="500" 
+                       value="0" 
+                       disabled>
+            </div>
         </div>
 
         <div class="status" id="status">Status: Waiting for microphone access...</div>
 
         <div class="latency-info">
-            Note: Web browsers typically have 15-50ms audio latency. This is higher than phone systems (< 5ms) due to Web Audio API limitations.
+            Note: Base latency is 15-50ms due to Web Audio API. The delay slider adds extra latency on top of this.
         </div>
 
         <div class="instructions">
@@ -172,7 +188,7 @@
                 <li>Click "Start Microphone" and allow microphone access when prompted</li>
                 <li>Speak into your microphone/headset</li>
                 <li>Toggle sidetone on/off to hear the difference</li>
-                <li>Adjust the volume slider to control sidetone level (up to 300%)</li>
+                <li>Adjust volume (up to 300%) and delay (0-500ms)</li>
                 <li>⚠️ Important: Use headphones to prevent audio feedback!</li>
             </ul>
         </div>
@@ -183,6 +199,7 @@
         let micStream = null;
         let sourceNode = null;
         let gainNode = null;
+        let delayNode = null;
         let isRecording = false;
 
         const micButton = document.getElementById('micButton');
@@ -190,6 +207,8 @@
         const volumeSlider = document.getElementById('volumeSlider');
         const volumeValue = document.getElementById('volumeValue');
         const volumeWarning = document.getElementById('volumeWarning');
+        const delaySlider = document.getElementById('delaySlider');
+        const delayValue = document.getElementById('delayValue');
         const statusDiv = document.getElementById('status');
 
         async function startMicrophone() {
@@ -205,18 +224,23 @@
                 
                 sourceNode = audioContext.createMediaStreamSource(micStream);
                 gainNode = audioContext.createGain();
+                delayNode = audioContext.createDelay(1.0); // Max 1 second delay
                 
-                sourceNode.connect(gainNode);
+                // Connect the nodes
+                sourceNode.connect(delayNode);
+                delayNode.connect(gainNode);
                 gainNode.connect(audioContext.destination);
                 
-                // Set initial gain based on slider and toggle
+                // Set initial values
                 const volume = volumeSlider.value / 100;
                 gainNode.gain.value = sidetoneToggle.checked ? volume : 0;
+                delayNode.delayTime.value = delaySlider.value / 1000; // Convert ms to seconds
                 
                 isRecording = true;
                 micButton.textContent = 'Stop Microphone';
                 sidetoneToggle.disabled = false;
                 volumeSlider.disabled = false;
+                delaySlider.disabled = false;
                 statusDiv.textContent = 'Status: Microphone active';
             } catch (err) {
                 statusDiv.textContent = 'Error: ' + err.message;
@@ -236,6 +260,7 @@
             micButton.textContent = 'Start Microphone';
             sidetoneToggle.disabled = true;
             volumeSlider.disabled = true;
+            delaySlider.disabled = true;
             statusDiv.textContent = 'Status: Microphone inactive';
             volumeWarning.classList.remove('show');
         }
@@ -262,11 +287,18 @@
                 gainNode.gain.value = volume / 100;
             }
             
-            // Show warning for high volumes
             if (volume > 150) {
                 volumeWarning.classList.add('show');
             } else {
                 volumeWarning.classList.remove('show');
+            }
+        });
+
+        delaySlider.addEventListener('input', (e) => {
+            const delay = e.target.value;
+            delayValue.textContent = `${delay}ms`;
+            if (delayNode) {
+                delayNode.delayTime.value = delay / 1000; // Convert ms to seconds
             }
         });
     </script>
