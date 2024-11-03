@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidetone Demo with Volume Control</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .controls {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+            align-items: center;
+        }
+        .volume-control {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            min-width: 150px;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        button:disabled {
+            background: #93c5fd;
+            cursor: not-allowed;
+        }
+        .status {
+            padding: 0.5rem;
+            border-radius: 4px;
+            background: #f3f4f6;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2563eb;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .instructions {
+            margin-top: 2rem;
+            background: #f3f4f6;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        .instructions ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        .volume-slider {
+            width: 100%;
+            margin: 0;
+        }
+        .volume-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+        }
+        .latency-info {
+            margin-top: 1rem;
+            padding: 0.5rem;
+            background: #fef3c7;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+        .warning {
+            color: #991b1b;
+            display: none;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        .warning.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Sidetone Demo</h1>
+        
+        <div class="controls">
+            <button id="micButton">Start Microphone</button>
+            
+            <div>
+                <label class="switch">
+                    <input type="checkbox" id="sidetoneToggle" checked disabled>
+                    <span class="slider"></span>
+                </label>
+                <div>Sidetone</div>
+            </div>
+
+            <div class="volume-control">
+                <div class="volume-label">
+                    <span>Volume:</span>
+                    <span id="volumeValue">100%</span>
+                </div>
+                <input type="range" 
+                       id="volumeSlider" 
+                       class="volume-slider"
+                       min="0" 
+                       max="300" 
+                       value="100" 
+                       disabled>
+                <div id="volumeWarning" class="warning">
+                    High volume may cause distortion
+                </div>
+            </div>
+        </div>
+
+        <div class="status" id="status">Status: Waiting for microphone access...</div>
+
+        <div class="latency-info">
+            Note: Web browsers typically have 15-50ms audio latency. This is higher than phone systems (< 5ms) due to Web Audio API limitations.
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Click "Start Microphone" and allow microphone access when prompted</li>
+                <li>Speak into your microphone/headset</li>
+                <li>Toggle sidetone on/off to hear the difference</li>
+                <li>Adjust the volume slider to control sidetone level (up to 300%)</li>
+                <li>⚠️ Important: Use headphones to prevent audio feedback!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let audioContext = null;
+        let micStream = null;
+        let sourceNode = null;
+        let gainNode = null;
+        let isRecording = false;
+
+        const micButton = document.getElementById('micButton');
+        const sidetoneToggle = document.getElementById('sidetoneToggle');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const volumeValue = document.getElementById('volumeValue');
+        const volumeWarning = document.getElementById('volumeWarning');
+        const statusDiv = document.getElementById('status');
+
+        async function startMicrophone() {
+            try {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                micStream = await navigator.mediaDevices.getUserMedia({ 
+                    audio: {
+                        echoCancellation: false,
+                        noiseSuppression: false,
+                        autoGainControl: false
+                    }
+                });
+                
+                sourceNode = audioContext.createMediaStreamSource(micStream);
+                gainNode = audioContext.createGain();
+                
+                sourceNode.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                // Set initial gain based on slider and toggle
+                const volume = volumeSlider.value / 100;
+                gainNode.gain.value = sidetoneToggle.checked ? volume : 0;
+                
+                isRecording = true;
+                micButton.textContent = 'Stop Microphone';
+                sidetoneToggle.disabled = false;
+                volumeSlider.disabled = false;
+                statusDiv.textContent = 'Status: Microphone active';
+            } catch (err) {
+                statusDiv.textContent = 'Error: ' + err.message;
+                console.error('Error accessing microphone:', err);
+            }
+        }
+
+        function stopMicrophone() {
+            if (micStream) {
+                micStream.getTracks().forEach(track => track.stop());
+            }
+            if (audioContext) {
+                audioContext.close();
+            }
+            
+            isRecording = false;
+            micButton.textContent = 'Start Microphone';
+            sidetoneToggle.disabled = true;
+            volumeSlider.disabled = true;
+            statusDiv.textContent = 'Status: Microphone inactive';
+            volumeWarning.classList.remove('show');
+        }
+
+        micButton.addEventListener('click', () => {
+            if (!isRecording) {
+                startMicrophone();
+            } else {
+                stopMicrophone();
+            }
+        });
+
+        sidetoneToggle.addEventListener('change', () => {
+            if (gainNode) {
+                const volume = volumeSlider.value / 100;
+                gainNode.gain.value = sidetoneToggle.checked ? volume : 0;
+            }
+        });
+
+        volumeSlider.addEventListener('input', (e) => {
+            const volume = e.target.value;
+            volumeValue.textContent = `${volume}%`;
+            if (gainNode && sidetoneToggle.checked) {
+                gainNode.gain.value = volume / 100;
+            }
+            
+            // Show warning for high volumes
+            if (volume > 150) {
+                volumeWarning.classList.add('show');
+            } else {
+                volumeWarning.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
