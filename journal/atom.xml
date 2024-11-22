@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-10-27T19:52:40+0530</updated>
+  <updated>2024-11-22T13:49:06+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Reading Clubs for Introverts</title>
+    <link href="https://lepisma.xyz/journal/2024/11/22/reading-clubs-for-introverts/index.html"/>
+    <updated>2024-11-22</updated>
+  </entry>
   <entry>
     <title>Header Progress Bar for Emacs</title>
     <link href="https://lepisma.xyz/journal/2024/10/27/header-progress-bar/index.html"/>
