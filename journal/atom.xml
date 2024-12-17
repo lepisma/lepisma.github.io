@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-12-12T16:05:24+0530</updated>
+  <updated>2024-12-17T22:28:18+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Roles in a System</title>
+    <link href="https://lepisma.xyz/journal/2024/12/17/roles-in-a-system/index.html"/>
+    <updated>2024-12-17</updated>
+  </entry>
   <entry>
     <title>Struggles with Common Cold</title>
     <link href="https://lepisma.xyz/journal/2024/12/12/common-cold/index.html"/>
