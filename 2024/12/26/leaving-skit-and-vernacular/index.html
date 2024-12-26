@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-12-26 Thu 21:44 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leaving Skit, and Vernacular</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>2024-12-26 Thu 00:00</div>
+  <h1>Leaving <i>Skit</i>, and <i>Vernacular</i></h1>
+</div>
+</div>
+<div id="content" class="content">
+<div class='page-tags'><a href='../../../..#personal'>personal</a> <a href='../../../..#work'>work</a> <a href='../../../..#100daystooffload'>100daystooffload</a></div>
+<p>
+<span class='dropcap'>N</span>ow that there is enough emotional distance from the event, I can write with
+more clarity about the fact that I left my company <a href="https://skit.ai/">Skit.ai</a> around the middle of
+this year. This post is a reflection on my decision to exit and some incomplete
+thoughts on what I plan to do next.
+</p>
+
+<p>
+While I will try to be respectful, I will not worry too much about censoring my
+words or offending someone. That's not how I want to operate. If some parts of
+this post doesn't seem right to you <a class="pile-link" href="/wiki/about/contact.html">contact me</a> and we can discuss them at
+length.
+</p>
+
+<div id="outline-container-sec-the-last-6-years" class="outline-2">
+<h2 id="sec-the-last-6-years"><span class="section-number-2">1.</span> The last 6 years</h2>
+<div class="outline-text-2" id="text-sec-the-last-6-years">
+
+<p>
+I joined Vernacular (Skit's old name) in the middle of 2018. I had just
+completed my <a class="pile-link" href="/wiki/about/education/index.html">Masters</a> then and was looking for what next to do. I had considered
+pursuing studies further but wasn't able to commit to any specific area at that
+moment. As far as work was concerned, the only constraint I had was to do
+Machine Learning (ML) in a place that gives me a lot of freedom and agency. I
+didn't know much about startups in general but I took a bet with Vernacular
+which was started by my undergrad roommate (who continues as the CTO of the
+company), and the leadership team was primarily my batch's (IIT Roorkee
+2016). With a promise of freedom along with some interesting work involving NLP
+and speech, I moved back to India and started living in Bengaluru.
+</p>
+
+<p>
+I think of the next 6 years in three phases, each with roughly 2 years duration.
+</p>
+</div>
+
+<div id="outline-container-sec-the-last-6-years/2018-2020:-finding-my-feet" class="outline-3">
+<h3 id="sec-the-last-6-years/2018-2020:-finding-my-feet"><span class="section-number-3">1.1.</span> 2018-2020: Finding my feet</h3>
+<div class="outline-text-3" id="text-sec-the-last-6-years/2018-2020:-finding-my-feet">
+
+<p>
+When I joined the company, we were pivoting from building enterprise chatbots
+(the kinds you see on websites) to call center voicebots. I was still an
+academic at the core and had to spend a lot time just to learn working with
+real-world users and customers. But during this phase, I also spent a lot of
+energy on work so I was still able to produce quite a good amount of value for
+the company.
+</p>
+
+<p>
+Most of our focus went in shipping speech recognition systems in Indian
+languages and, in parallel, going live with voicebots at scale serving real
+callers, a feat that feels easy to do now, but needed a lot from the few young
+and naive kids trying to build a product whose core and peripheral technologies
+both were completely new to them.
+</p>
+
+<p>
+This is the same phase where I started taking managerial responsibilities and we
+made a more formal ML team where I did everything involved in an Engineer's,
+Researcher's, and Team's life cycle. We built solid processes to hire ML
+engineers and got some really great folks onboard. Almost everyone was extremely
+passionate about their core skill set and a lot of novel ideas got implemented
+quickly and provided immediate benefits. Overall I feel this phase had really
+great grounding for building a stellar brand for our ML and Tech team, something
+that was lost in the later years.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-the-last-6-years/2020-2022:-locked-down-in-my-head" class="outline-3">
+<h3 id="sec-the-last-6-years/2020-2022:-locked-down-in-my-head"><span class="section-number-3">1.2.</span> 2020-2022: Locked-down in my head</h3>
+<div class="outline-text-3" id="text-sec-the-last-6-years/2020-2022:-locked-down-in-my-head">
+
+<p>
+Unlike a few companies, COVID wasn't disastrous for us. Which is obvious if you
+think about what we do, which is automating human labour. While working
+remotely, we hired extensively and got a lot of things right. The company kept
+scaling up well.
+</p>
+
+<p>
+This was the phase where I did not do much tech work but learnt a lot about
+people and, as a side effect, myself. Being in my home all day reduced the
+environmental spontaneity to near zero. As a result, no thought went away on its
+own, and needed proper escorting via thinking and reflection. Not that I usually
+go out much anyway, but change of scene was a strong tool for managing
+stickiness of thoughts which we didn't have in those years. This was both good
+and bad for me.
+</p>
+
+<p>
+On the good side, lockdown gave me a lot of time with myself allowing me to go
+deep in any idea, as well as acted as an equalizer (all conversations happened
+at reduced modalities) which helped me preserve confidence in my skills even
+with a variety of people of all levels coming in at rapid pace.
+</p>
+
+<p>
+I got a chance to think deeply about how I want to work, what it means to build
+teams, how to interact with people. I also <i>played</i> with a lot with novel ideas
+around leadership, management, ML, and technology in general.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-the-last-6-years/2022-2024:-disenchantment" class="outline-3">
+<h3 id="sec-the-last-6-years/2022-2024:-disenchantment"><span class="section-number-3">1.3.</span> 2022-2024: Disenchantment</h3>
+<div class="outline-text-3" id="text-sec-the-last-6-years/2022-2024:-disenchantment">
+
+<p>
+After COVID, a lot changed. Not primarily because of direct effects like people
+coming back and seeing each other in office for the first time, but because the
+indirect effects around economy rendered some <i>value faultlines</i> to be more
+visible than before. Additionally lockdown allowed me (and others) to explore my
+values and philosophy of life more deeply and I was able to connect my inner
+conflicts more cleanly with how things were happening, say, at work. So even
+when a crisis of old gravity came in, you could see more visible differences in
+reactions. With the benefit of hindsight, I believe this was a phase where we
+should have done a lot of work to build cultural cohesion. This was also the
+phase during which we had a layoff, which was&#x2014;in my opinion&#x2014;managed well but
+learnings from the events that lead to it could've been handled better.
+</p>
+
+<p>
+In any case, slowly a lot of passion towards <i>making</i> tech and product
+diluted. Part of this was because we had to do more <i>scaling</i> than <i>building</i> at
+this time. But this transition wasn't compensated well with from other
+dimensions. And when the time came to wear our <i>maker hat</i> again, (at least) I
+wasn't able to find one in the locker.
+</p>
+
+<p>
+While visibly different, the company was not in a bad state (financially, it was
+bouncing back well and kept doing better than before) in this phase. But I had
+been personally accumulating a sort of disenchantment that made me consider more
+seriously my life outside of Skit.
+</p>
+
+<hr>
+
+<p>
+Overall while a lot of what we did could have been done in lesser time, I am
+happy about what we ended up doing. We were the first in market across many
+dimensions. Some of our tech work is in our <a href="https://tech.skit.ai/">blog here</a>. A few open sourced
+projects are <a href="https://github.com/skit-ai/">here on GitHub</a>. I have compiled our research publications in <a class="pile-link" href="/wiki/about/publications.html">my
+wiki here</a>.
+</p>
+
+<p>
+Additionally, as an early employee and someone interested in problems beyond
+just technology, I was involved in a lot of things that no one else would touch,
+including running initiatives across HR and marketing. I attempted many&#x2014;and
+failed at many&#x2014;org wide transformations and setting up core processes and
+standards. I also ran the initiative to rename the company from Vernacular to
+<i>Skit</i><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>.
+</p>
+
+<p>
+Then there are things that I have regrets for. Not in the sense that they eat me
+up everyday, but more like "If I had another chance, I will work on &#x2026;". A few
+important ones are listed here:
+</p>
+
+<ol class="org-ol">
+<li>Our core product is a voicebot that converses with callers to solve their
+problem. But we are a B2B SaaS selling this software <i>to businesses</i> running
+call centers, so <b>caller experience</b> becomes a secondary metric. This makes it
+harder to optimize for but I believe we should have made more impact than
+what we did. I wrote some of my views around this <a class="pile-link" href="/journal/2024/01/28/conversational-ai/index.html">here</a>.</li>
+<li>I would like to improve my <b>decisiveness</b> in general. This, at times, led me to
+not make significant progress in directions, technical and non-technical,
+that I had un-validated positive hunches about.</li>
+<li>I have historically not given much value to <b>marketing and PR</b>. This is okay at
+a personal level, but at my position and in the competitive startup scene
+this led to some disadvantages for our team and company. While I tried to
+counter this bias, I could have done more and handled this smartly.</li>
+</ol>
+
+<p>
+I am tempted to write a deeper retrospective but that probably should be done in
+a separate post. For now, I will move on to the next question.
+</p>
+
+<br>
+
+<figure>
+  <video autoplay muted loop playsinline width="100%"><source src="./office.mp4" type="video/mp4" /></video>
+  <figcaption>
+  Most of my work memories are from the pre-COVID Indiranagar office. Timelapse by <a href="https://vipul.xyz/">Vipul Sharma</a>.
+  </figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-why-did-i-leave?" class="outline-2">
+<h2 id="sec-why-did-i-leave?"><span class="section-number-2">2.</span> Why did I leave?</h2>
+<div class="outline-text-2" id="text-sec-why-did-i-leave?">
+
+<p>
+Leaving a company after spending ~6 years working as an early employee is a
+complex event. People can talk about it however they want to, but there is no
+way I could pin this decision down to a single event or day. When I joined
+Vernacular, I gave myself 2 years tenure as a naive estimate since I really
+wasn't very sure about whether I have finalized what I want to do in life. But I
+got hooked in an it took around 5 years to have my first serious exit
+discussion.
+</p>
+
+<p>
+Here are some directions that, collectively, made me move out.
+</p>
+</div>
+
+<div id="outline-container-sec-why-did-i-leave?/misalignment-with-the-source-of-value-creation" class="outline-3">
+<h3 id="sec-why-did-i-leave?/misalignment-with-the-source-of-value-creation"><span class="section-number-3">2.1.</span> Misalignment with the source of Value Creation</h3>
+<div class="outline-text-3" id="text-sec-why-did-i-leave?/misalignment-with-the-source-of-value-creation">
+
+<p>
+Like any other company, there were a few business decisions that we took that
+made me uncomfortable. But working in debt collections with an automation tech
+(voicebots) was the hardest for me. <a href="https://www.vice.com/en/article/bvjmm5/debt-collectors-want-to-use-ai-chatbots-to-hustle-people-for-money">Here is Vice's coverage</a> on us and this
+domain in general if you want to understand the use case.
+</p>
+
+<p>
+Beyond this specific decision I learnt that it's hard for a B2B SaaS to focus on
+end-users (not our direct clients) which then mutes out a lot of passion for the
+product since, while it interfaces with end-users, the evaluation framework is
+held by clients.
+</p>
+
+<p>
+I am not an idealist in this regard and I can't believe that businesses are
+either black and white, with primarily capital seeking businesses being always
+black. I believe there are different components that play <a class="pile-link" href="/journal/2024/12/17/roles-in-a-system/index.html">different roles in a
+system</a>. But I also eventually realized that Skit's was not the role I wanted
+to play. If I want to indeed work on Spoken Conversational AI, I would rather
+work on user-sided tech<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> like spam deflection than something
+that makes money for large companies at the cost (mental and monetary) of the
+masses.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-why-did-i-leave?/conflicts-with-core-values-and-principles" class="outline-3">
+<h3 id="sec-why-did-i-leave?/conflicts-with-core-values-and-principles"><span class="section-number-3">2.2.</span> Conflicts with core Values and Principles</h3>
+<div class="outline-text-3" id="text-sec-why-did-i-leave?/conflicts-with-core-values-and-principles">
+
+<p>
+For all 6 years, I led the ML team and worked in a core leadership position.
+Working this closely at top gives you a good view on how the company operates
+and, importantly, <i>will operate in the future</i>. And this is a good opportunity to
+figure out whether a team will work for you. In my case, I realized that the
+leadership circle and their philosophy of working wouldn't gel with me for the
+long term. Usually this is where conflicts in core values and principles come in
+picture. For a young startup though, such conflicts could take time to show up
+since everyone is growing and the true values are not what's written down in the
+beginning, but what you see visible year on year, specially during crises.
+</p>
+
+<p>
+I understand that details of such conflicts are very contextual and it's not
+important to talk about them since they risk misunderstanding. But I believe
+that acknowledging differences and conflicts as a reason of exit is a healthy
+part of growing up so I do not want to hide this factor.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-why-did-i-leave?/leadership-role-&-beauty" class="outline-3">
+<h3 id="sec-why-did-i-leave?/leadership-role-&-beauty"><span class="section-number-3">2.3.</span> Leadership Role &amp; Beauty</h3>
+<div class="outline-text-3" id="text-sec-why-did-i-leave?/leadership-role-&-beauty">
+
+<p>
+I found that spending my effort and time in abstract leadership roles was not
+putting me in a state of <i>flow</i> day on day. I am primarily motivated by technical
+innovation and problem solving and the opportunity to dive deep. More broadly I
+believe that roles that allow me to create <i>things of beauty</i> using my skills are
+what make me happy. It's not that heading the ML function at Skit didn't allow
+this <i>at all</i>, but the added responsibilities as an early employee along with
+being in an early stage startup kept me less free for such 'wants'.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-why-did-i-leave?/startups" class="outline-3">
+<h3 id="sec-why-did-i-leave?/startups"><span class="section-number-3">2.4.</span> Startups</h3>
+<div class="outline-text-3" id="text-sec-why-did-i-leave?/startups">
+
+<p>
+Throughout my stay, I learnt more about startups and the reasons they
+exist&#x2014;which is primarily to make money&#x2014;, but I stayed unmotivated by the
+prospect of making huge amount of money. This made me more prone to
+disconnection as the company took turns in the tides of market. While my peers
+could anchor themselves on the future prospects and take compromises here and
+there, I slowly realized that I was unable to do so.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-why-did-i-leave?/beyond-skit" class="outline-3">
+<h3 id="sec-why-did-i-leave?/beyond-skit"><span class="section-number-3">2.5.</span> Beyond Skit</h3>
+<div class="outline-text-3" id="text-sec-why-did-i-leave?/beyond-skit">
+
+<p>
+But it would be a lie to say that I left only because of the above. I also left
+because I wanted to move on and do some other things. I am a big believer that
+<i>free time</i> is essential for truly novel outcomes, and I couldn't get any if I was
+working in the same way as before. Among other things I wanted to:
+</p>
+
+<ol class="org-ol">
+<li>Study many topics at depth. The list includes intelligent systems, but also
+languages, evolution of life, complex systems, and more.</li>
+<li>Study philosophy and come out with something that I can call my own
+'philosophy of life'. This has become increasingly important for me.</li>
+<li>Figure out areas that fit in my way of life and produce impact that I could
+be happier about.</li>
+<li>Work on my body, mind, and cultivate other interests, including my tech
+hobbies beyond programming.</li>
+</ol>
+
+<p>
+Working on these with any form of seriousness needs time (working and leisure)
+which I can't get in a regular full time employment. Adding to the fact that
+having free time right now, when my brain is active, is immensely more helpful,
+I decided to take a long <a class="pile-link" href="/journal/2022/06/27/breaks/index.html">break-for</a>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-next" class="outline-2">
+<h2 id="sec-next"><span class="section-number-2">3.</span> Next</h2>
+<div class="outline-text-2" id="text-sec-next">
+
+<p>
+The post title says that I am leaving <i>Skit</i>, as well as <i>Vernacular</i>. I believe
+both were different companies. For me, Skit refers to a more ossified, late
+stage startup, while Vernacular refers to a loosely directed hackathon group by
+a few friends.  I am not leaving Skit-style companies because I want to go back
+to Vernacular-style companies. In fact, I am not going to join any classical
+'work' provider for some time.
+</p>
+
+<p>
+I feel like taking time off from the 'working society' to reflect on life and
+future is good and more people should get this privilege. Even taking a year off
+for, say, spending time reading is hugely respectable in my books. I have been
+out of employment for 5 months now and it's been great! There have been weeks of
+busyness because of personal commitments but other days I have liked waking up
+to no work, occasionally meeting and talking to people who are passionate about
+technology and other topics in pure ways, reading and writing whatever I feel
+interested in, and, if nothing, just having fun with computers.
+</p>
+
+<p>
+I want to optimize for similar <i>freedom to play</i> as I move ahead<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>. Staying outside institutions for
+some time is a conscious decision that can help me let go of some learnt but
+meaningless behaviours and biases. I want to let myself sleep-in during days or
+stay awake during nights and ignore anything related to <i>career</i>.
+</p>
+
+<p>
+For a while I am going to prefer <i>art</i> over <i>engineering</i> projects. You would see me
+working on playful prototypes more often as compared to polished products. As
+far as sustenance goes, I have some options for ensuring income, but for now I
+am going to save them in a stash and revisit them later in the next year. I am
+in an active writing phase these days so you can always get to know what I am
+working on by following <a class="pile-link" href="/wiki/feeds.html">my feeds here</a>.
+</p>
+
+<p>
+In these last years at Skit I have developed most of my <i>adult form</i> and whatever
+gives me a sense of identity. I also found many close friends, and lost a
+few. Most importantly, I found my partner (we worked together at Skit briefly)
+with whom I have gone through most of my recent life changes. None of these can
+be done in ways that don't also leave some memories that are less than ideal. So
+don't let the nature of this post deceive you from the fact that, all said and
+done, I am really grateful for the time at Skit, and Vernacular.
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">There is an amusing mistake that I overlooked here. Search for what
+'Skit' means in Swedish to know what. The only way I redeem myself is by saying
+that phonetically Skit in English is not the same as in Swedish.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This is something I want to explore. But, even after
+having free time, I haven't done much yet.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This is also
+what pulled me to join Vernacular, in a way.</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>
