@@ -3,8 +3,13 @@
   <title>journal</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2024-12-17T22:28:18+0530</updated>
+  <updated>2024-12-30T15:21:57+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <entry>
+    <title>Books Read in 2024</title>
+    <link href="https://lepisma.xyz/journal/2024/12/30/books-read-in-2024/index.html"/>
+    <updated>2024-12-30</updated>
+  </entry>
   <entry>
     <title>Roles in a System</title>
     <link href="https://lepisma.xyz/journal/2024/12/17/roles-in-a-system/index.html"/>
