@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2025-01-07 Tue 16:46 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2024: A lot of Changes</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> log</a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>2025-01-07 Tue 00:00</div>
+  <h1>2024: A lot of Changes</h1>
+</div>
+</div>
+<div id="content" class="content">
+<div class='page-tags'><a href='../../../..#personal'>personal</a></div>
+<p>
+<span class='dropcap'>2</span>024 was a turbulent and difficult year for me. I went through a lot of changes
+which resulted in me staying a little tense throughout the year and made me
+constantly struggle to keep any kind of rhythm.
+</p>
+
+<p>
+Like the year before, I had a rough plan for this year which I can look back
+to. The plan was vague in the beginning but got clearer as time went by. This is
+natural as I want to plan in ways that allow room for a lot of changes as the
+year goes by. This post is my year end review with respect to the said plan.
+</p>
+<div id="outline-container-sec-what-i-worked-on?" class="outline-2">
+<h2 id="sec-what-i-worked-on?"><span class="section-number-2">1.</span> What I worked on?</h2>
+<div class="outline-text-2" id="text-sec-what-i-worked-on?">
+
+<p>
+At my workplace (Skit.ai) I primarily led shipping LLM based voicebots to our
+customers earlier in the year. On the sidelines, we built an <a class="pile-link" href="/2024/05/09/speech-llms-for-conversations/index.html">experimental
+multi-modal LLM</a>. An important discussion that happened was around the <i>moat</i> of
+our product since the Conversational AI stack was getting democratized at a fast
+pace. This discussion around product differentiation went to a conclusion which,
+I believe, is the right way to go forward. But around mid of the year <a class="pile-link" href="/2024/12/26/leaving-skit-and-vernacular/index.html">I left my
+job</a>, so I can't comment more on this.
+</p>
+
+<p>
+After leaving my work, I mostly did small personal projects in an attempt to get
+back my tech fluency. I worked on <a class="pile-link" href="/2024/07/17/how-good-are-general-asr-apis-for-indian-english/index.html">a few</a> <a class="pile-link" href="/2024/08/01/hierarchical-event-bus-for-spoken-conversational-systems/index.html">ideas</a> <a href="https://github.com/lepisma/evdm">around conversations</a> that were
+active in my mind but then quickly lost interest, probably because of some
+mental fatigue around this field.
+</p>
+
+
+<figure id="org46eb6f5">
+<img src="./heatmap.png" alt="heatmap.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>GitHub's heatmap for my 2024. This is not complete since not all of my commits are on GitHub, but the general trend is true.</figcaption>
+</figure>
+
+<p>
+Since I had time, I spent (wasted) some of it on redoing my <a href="https://github.com/lepisma/rogue">Emacs config</a> and
+theme from scratch. This further led me to an Emacs Lisp rabbit hole where I
+picked up some of my old ideas. One of them was around <a class="pile-link" href="/2024/09/12/emacs-dictation-mode/index.html">dictation</a> which came up
+on <a href="https://news.ycombinator.com/item?id=41528919">HN frontpage</a> and led me to a few threads of work around it. Additionally,
+based on some work on my note-taking workflow in Emacs, I ended up giving a <a href="https://emacsconf.org/2024/talks/links/">talk
+in EmacsConf</a> which led me to play around with <a href="https://github.com/lepisma/onnx.el">a bit of C</a> later. In turn, working
+with C revived my interest in Rust, which is something I am carrying forward.
+</p>
+
+<p>
+Other than Emacs, another time-sinkhole was <i>self-hosting</i>. After solving my needs
+via <a class="pile-link" href="/journal/2024/07/20/self-hosting/index.html">self-hosted apps</a> on DigitalOcean, I got an N100 based mini-PC where I moved
+all of my data and applications. I am still setting up backups and might write a
+post later once things are stabilized.
+</p>
+
+<p>
+I wanted to experiment with a few ideas in my <a href="https://github.com/lepisma/pile-android">app for note taking</a> since I
+believe the state of text editing interfaces on phone is dismal. But I was not
+able to do much around that. Now since the app also needs some refresh, and I
+have time to study Kotlin more, I will start work on this again. None of the
+hardware related ideas saw light of day. I specifically was planning to work on
+an alternative energy setup (mostly pedalling based) to power my workstation,
+and to make my pi-zero <i>writerdeck</i> usable.
+</p>
+
+<p>
+A few more things that I worked on can be seen on my <a class="pile-link" href="/index.html">blog</a> and <a class="pile-link" href="/journal//index.html">journal</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-reading-and-writing-and-studying" class="outline-2">
+<h2 id="sec-reading-and-writing-and-studying"><span class="section-number-2">2.</span> Reading and Writing and Studying</h2>
+<div class="outline-text-2" id="text-sec-reading-and-writing-and-studying">
+
+<p>
+One of the signs that I was feeling stuck at work was that I was not needed to
+learn something truly challenging. After leaving, I started getting back to some
+philosophy, a few ideas in linguistics, and some evolutionary biology. Although
+none of the <i>study</i> was deep enough, they have set me up for further work.
+</p>
+
+<p>
+Other than that, I had a decent year of <a class="pile-link" href="/journal/2024/12/30/books-read-in-2024/index.html">reading</a> and <a class="pile-link" href="/journal/2024/12/31/closing-100-days-to-offload/index.html">writing</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-a-few-hobbies" class="outline-2">
+<h2 id="sec-a-few-hobbies"><span class="section-number-2">3.</span> A few Hobbies</h2>
+<div class="outline-text-2" id="text-sec-a-few-hobbies">
+
+<p>
+I made some non-trivial progress towards a few of my hobbies this year.
+</p>
+
+<p>
+Firstly, I cooked a lot&#x2013;mostly Indian cuisine. I made things that I earlier
+thought to be super complex and learnt a lot by making variations of the base
+recipes. I want to experiment more since I find cooking to be populated with a
+lot of <i>follow-these-exact-instructions</i> tropes that I absolutely detest. A lot of
+knowledge in this field has been either <i>non-scientific</i> or <i>non-scientifically
+acquired</i>.
+</p>
+
+<aside id="orgd89ebb1">
+<p>
+With a friend I tried running a <i>Cooking Club</i>, where the plan was to meet at one
+kitchen at a given time, order your ingredients beforehand, and cook something
+based on a theme. Then we all eat and, of course, have conversation around and
+about the cooking.
+</p>
+
+<p>
+We ran just one session though. This was at midnight, to make whatever we can
+interpret as midnight snack. I want to revive the club this year.
+</p>
+</aside>
+
+<p>
+I used to do art (mostly sketching) when I was younger. This year, for around a
+month, I tried following <a href="https://www.reddit.com/r/SketchDaily/">/r/SketchDaily</a> and it was very meditative. My main
+motivation was to learn watercolor and I had a lot of fun while doing so. I
+spent around 30-60 minutes per day for around a month.
+</p>
+
+
+<figure id="orgbc8785b">
+<img src="./sketches.png" alt="sketches.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span>Some of what I made during the month of sketching and painting</figcaption>
+</figure>
+
+<p>
+I also somehow ended up spending a healthy amount of time on fountain
+pens. Earlier in the year I bought a restored Waterman Ideal No. 52 from
+<a href="https://fountainpenhospital.com/">Fountain Pen Hospital</a>. Later this year I attended a pen show in Bengaluru and
+got a handmade pen from <a href="https://rangapens.com/">Ranga Pens</a>. After that I found a book that told more
+about the history of pen manufacturing industry in India, which led me to <a href="https://www.instagram.com/thepenco_india/?hl=en">The
+Pen Co</a> in my hometown of Varanasi. In a nearby town of Kanpur, I found <a href="https://kanpurwriters.com/">Kanwrite</a>
+making interesting nibs, of which a got a few. I also <a class="pile-link" href="/journal/2024/09/09/fixing-lamy-2k/index.html">fixed</a> one of my regular
+use pens, <a class="pile-link" href="/journal/2024/06/16/swatching-all-inks/index.html">swatched my inks</a>, and spent time journaling and sketching with more of
+my pens.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-personal" class="outline-2">
+<h2 id="sec-personal"><span class="section-number-2">4.</span> Personal</h2>
+<div class="outline-text-2" id="text-sec-personal">
+
+<p>
+I moved house around October. That took a <i>lot</i> of energy and halted some
+documentation-dependent work since my address proof was in limbo for a
+while. With this move, I also had to leave my old area where I have been staying
+for the past 5 years.
+</p>
+
+<p>
+Work was pretty dry. Primarily because of discussions around <a class="pile-link" href="/2024/12/26/leaving-skit-and-vernacular/index.html">my exit</a>. A few
+months before and few months after that were just messy. Additionally, I went
+through a mini identity crisis since it took some time to develop my sense of
+worth without a formal role and some serious responsibilities.
+</p>
+
+<p>
+One nice thing after leaving my job was me finding a sweet spot for meeting
+people. I have looked at words like 'networking' extremely cynically, but when I
+had no constraints and incentives, I enjoyed occasional meetings with friends
+and interesting people around me, either individually or in meetups and
+events. I occasionally started showing up at <a href="https://captnemo.in/cowork/">Nemo's cowork</a> and that's been a
+pretty good anchoring point too.
+</p>
+
+<p>
+Like the previous year, I travelled well in 2024. A bunch of friends got wed so
+I attended a few weddings. My sister got wed too, that kept me busy at the tail
+end of the year. While at Skit, I travelled to NYC, Vegas, and Valley earlier in
+the year. I also went to Kochi again and did a short horse riding lesson in
+Coonoor which was really memorable.
+</p>
+
+
+<figure id="org92b67d1">
+<img src="./travel.png" alt="travel.png" class="zoomTarget" data-closeclick="true">
+
+</figure>
+
+<hr>
+
+<p>
+Very similar to last year, I wasn't able to make any progress towards learning
+<a href="https://en.wikipedia.org/wiki/Kannada">Kannada</a>. Though unlike last year, I made a few hits towards learning to
+drive. With my partner I registered in a driving school and started taking a few
+lessons and am continuing to do so. I wanted to be more mindful about health but
+this year was not that great health-wise.
+</p>
+
+<p>
+Just after leaving, I planned to do some tech activism work. But that energy got
+lost. The only <i>for-cause</i> thing I did was maybe a few donations but nothing
+substantial. I also didn't think much about my professional future. Although I
+was planning to come to that problem in 2025 anyway.
+</p>
+
+<p>
+I have more free time now and am getting more clarity with every passing day on
+directions I want to work in. As I am letting spontaneity seep in my life, my
+plans document is becoming a loose directional document rather than a goal
+document. I read this as a positive change since very strict planning has not
+led me to interesting results. And I want to have an <i>interesting</i> next year.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>
