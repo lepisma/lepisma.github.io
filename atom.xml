@@ -1,263 +1,388 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>blog</title>
+  <title>(car nil)</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2025-01-07T16:46:48+0530</updated>
+  <updated>2025-01-11T17:47:47+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <generator>pile</generator>
   <entry>
     <title>2024: A lot of Changes</title>
     <link href="https://lepisma.xyz/2025/01/07/2024-review/index.html"/>
     <updated>2025-01-07</updated>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>Leaving /Skit/, and /Vernacular/</title>
     <link href="https://lepisma.xyz/2024/12/26/leaving-skit-and-vernacular/index.html"/>
     <updated>2024-12-26</updated>
+    <category term="personal"/>
+    <category term="work"/>
+    <category term="100daystooffload"/>
   </entry>
   <entry>
     <title>Interventional Debates for Studying /Gray/ Topics</title>
     <link href="https://lepisma.xyz/2024/10/19/interventional-debates-for-studying-gray-topics/index.html"/>
     <updated>2024-10-19</updated>
+    <category term="learning"/>
+    <category term="llm"/>
+    <category term="100daystooffload"/>
   </entry>
   <entry>
     <title>/mu4e-snooze/ and Cognitive Heuristics</title>
     <link href="https://lepisma.xyz/2024/09/13/mu4e-snooze-with-o1-preview/index.html"/>
     <updated>2024-09-13</updated>
+    <category term="ml"/>
+    <category term="emacs"/>
+    <category term="programming"/>
+    <category term="productivity"/>
+    <category term="100daystooffload"/>
+    <category term="llm"/>
   </entry>
   <entry>
     <title>Dictation Mode for Emacs</title>
     <link href="https://lepisma.xyz/2024/09/12/emacs-dictation-mode/index.html"/>
     <updated>2024-09-12</updated>
+    <category term="emacs"/>
+    <category term="programming"/>
+    <category term="100daystooffload"/>
+    <category term="writing"/>
+    <category term="llm"/>
+    <category term="speech"/>
   </entry>
   <entry>
     <title>Hierarchical Event Bus for Spoken Dialog Systems</title>
     <link href="https://lepisma.xyz/2024/08/01/hierarchical-event-bus-for-spoken-conversational-systems/index.html"/>
     <updated>2024-08-01</updated>
+    <category term="100daystooffload"/>
+    <category term="programming"/>
+    <category term="ml"/>
+    <category term="speech"/>
+    <category term="conversational-ai"/>
   </entry>
   <entry>
     <title>How good are General ASR APIs for Indian English?</title>
     <link href="https://lepisma.xyz/2024/07/17/how-good-are-general-asr-apis-for-indian-english/index.html"/>
     <updated>2024-07-17</updated>
+    <category term="speech"/>
+    <category term="ml"/>
+    <category term="100daystooffload"/>
   </entry>
   <entry>
     <title>10 years of blogging</title>
     <link href="https://lepisma.xyz/2024/06/22/10-years-of-blogging/index.html"/>
     <updated>2024-06-22</updated>
+    <category term="personal"/>
+    <category term="100daystooffload"/>
+    <category term="writing"/>
   </entry>
   <entry>
     <title>Speech LLMs for Conversations</title>
     <link href="https://lepisma.xyz/2024/05/09/speech-llms-for-conversations/index.html"/>
     <updated>2024-05-09</updated>
+    <category term="work"/>
+    <category term="ml"/>
+    <category term="conversational-ai"/>
+    <category term="llm"/>
+    <category term="speech"/>
+    <category term="100daystooffload"/>
   </entry>
   <entry>
     <title>/2023/: The longest year of my life</title>
     <link href="https://lepisma.xyz/2023/12/28/2023-review/index.html"/>
     <updated>2023-12-28</updated>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>MatplotLLM: An /LLM assisted/ Data Visualization Framework</title>
     <link href="https://lepisma.xyz/2023/08/20/matplotllm:-an-llm-assisted-data-visualization-framework/index.html"/>
     <updated>2023-08-20</updated>
+    <category term="ml"/>
+    <category term="programming"/>
+    <category term="emacs"/>
+    <category term="viz"/>
   </entry>
   <entry>
     <title>Muse: An Experiment in Music Exploration</title>
     <link href="https://lepisma.xyz/2023/07/25/muse/index.html"/>
     <updated>2023-07-25</updated>
+    <category term="ml"/>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>Learning Colemak-DH</title>
     <link href="https://lepisma.xyz/2023/07/22/learning-colemak-dh/index.html"/>
     <updated>2023-07-22</updated>
+    <category term="tooling"/>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>Speech-First Conversational AI Revisited</title>
     <link href="https://lepisma.xyz/2023/06/30/speech-first-conversational-ai-revisited/index.html"/>
     <updated>2023-06-30</updated>
+    <category term="ml"/>
+    <category term="work"/>
+    <category term="conversational-ai"/>
+    <category term="llm"/>
+    <category term="speech"/>
   </entry>
   <entry>
     <title>/mu4e-snooze/ and adventures with AI co‑programming</title>
     <link href="https://lepisma.xyz/2023/06/29/mu4e-snooze/index.html"/>
     <updated>2023-06-29</updated>
+    <category term="ml"/>
+    <category term="emacs"/>
+    <category term="programming"/>
+    <category term="productivity"/>
   </entry>
   <entry>
     <title>Death of Documentation</title>
     <link href="https://lepisma.xyz/2023/01/26/future-of-documentation-systems/index.html"/>
     <updated>2023-01-26</updated>
+    <category term="ml"/>
+    <category term="work"/>
   </entry>
   <entry>
     <title>Speech-First Conversational AI</title>
     <link href="https://lepisma.xyz/2022/02/02/speech-first-conversational-ai/index.html"/>
     <updated>2022-02-02</updated>
+    <category term="work"/>
+    <category term="ml"/>
   </entry>
   <entry>
     <title>Complexity of Conversations - I</title>
     <link href="https://lepisma.xyz/2022/01/18/complexity-of-conversations/index.html"/>
     <updated>2022-01-18</updated>
+    <category term="ml"/>
+    <category term="work"/>
   </entry>
   <entry>
     <title>Ambivalence</title>
     <link href="https://lepisma.xyz/2021/05/09/ambivalence/index.html"/>
     <updated>2021-05-09</updated>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>A REPL for Conversations</title>
     <link href="https://lepisma.xyz/2020/01/30/repl-conversations/index.html"/>
     <updated>2020-01-30</updated>
+    <category term="ml"/>
+    <category term="programming"/>
   </entry>
   <entry>
     <title>Github Linguist Colors</title>
     <link href="https://lepisma.xyz/2019/10/31/github-linguist-colors/index.html"/>
     <updated>2019-10-31</updated>
+    <category term="programming"/>
+    <category term="viz"/>
   </entry>
   <entry>
     <title>Blurring Text</title>
     <link href="https://lepisma.xyz/2019/04/09/blurring-text/index.html"/>
     <updated>2019-04-09</updated>
+    <category term="exploration"/>
+    <category term="ml"/>
   </entry>
   <entry>
     <title>Tangle Templates</title>
     <link href="https://lepisma.xyz/2018/08/26/tangle-templates.html"/>
     <updated>2018-08-26</updated>
+    <category term="org-mode"/>
+    <category term="programming"/>
+    <category term="emacs"/>
+    <category term="tooling"/>
   </entry>
   <entry>
     <title>Blog ← Wiki</title>
     <link href="https://lepisma.xyz/2018/06/07/wiki-to-blog.html"/>
     <updated>2018-06-07</updated>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>Blog → Wiki</title>
     <link href="https://lepisma.xyz/2018/01/27/blog-to-wiki.html"/>
     <updated>2018-01-27</updated>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>Fancy Little Lisp λs</title>
     <link href="https://lepisma.xyz/2017/12/20/fancy-lambdas.html"/>
     <updated>2017-12-20</updated>
+    <category term="lisp"/>
+    <category term="programming"/>
   </entry>
   <entry>
     <title>Ricing up Org Mode</title>
     <link href="https://lepisma.xyz/2017/10/28/ricing-org-mode/index.html"/>
     <updated>2017-10-28</updated>
+    <category term="emacs"/>
+    <category term="org-mode"/>
+    <category term="ricing"/>
+    <category term="ux"/>
   </entry>
   <entry>
     <title>The point of keyboarding</title>
     <link href="https://lepisma.xyz/2017/08/25/keyboard/index.html"/>
     <updated>2017-08-25</updated>
+    <category term="ux"/>
+    <category term="personal"/>
   </entry>
   <entry>
     <title>Leaving Goodreads</title>
     <link href="https://lepisma.xyz/2017/06/29/leaving-goodreads/index.html"/>
     <updated>2017-06-29</updated>
+    <category term="personal"/>
+    <category term="ramble"/>
+    <category term="emacs"/>
+    <category term="org-mode"/>
   </entry>
   <entry>
     <title>Simpler time map plots</title>
     <link href="https://lepisma.xyz/2017/06/25/simple-time-maps/index.html"/>
     <updated>2017-06-25</updated>
+    <category term="exploration"/>
+    <category term="viz"/>
   </entry>
   <entry>
     <title>The Beauty of Syntactical Macros</title>
     <link href="https://lepisma.xyz/2017/05/15/syntactical-macros.html"/>
     <updated>2017-05-15</updated>
+    <category term="programming"/>
+    <category term="lisp"/>
   </entry>
   <entry>
     <title>Projects</title>
     <link href="https://lepisma.xyz/2017/03/15/projects.html"/>
     <updated>2017-03-15</updated>
+    <category term="personal"/>
+    <category term="emacs"/>
+    <category term="org-mode"/>
+    <category term="tooling"/>
   </entry>
   <entry>
     <title>Optional Typing</title>
     <link href="https://lepisma.xyz/2017/03/05/optional-typing.html"/>
     <updated>2017-03-05</updated>
+    <category term="programming"/>
+    <category term="python"/>
   </entry>
   <entry>
     <title>Cheap polyglot notebooks</title>
     <link href="https://lepisma.xyz/2016/11/02/org-babel/index.html"/>
     <updated>2016-11-02</updated>
+    <category term="org-mode"/>
+    <category term="emacs"/>
+    <category term="tooling"/>
+    <category term="programming"/>
   </entry>
   <entry>
     <title>Abusing Evidence: Drought, Deluge and Disregard</title>
     <link href="https://lepisma.xyz/2016/08/25/evidence-abuse/index.html"/>
     <updated>2016-08-25</updated>
+    <category term="ramble"/>
+    <category term="skepticism"/>
   </entry>
   <entry>
     <title>What is it that Genetic Algorithm does?</title>
     <link href="https://lepisma.xyz/2016/06/13/genetic-algorithm/index.html"/>
     <updated>2016-06-13</updated>
+    <category term="ml"/>
   </entry>
   <entry>
     <title>On why you too should give Emacs Org-mode a spin</title>
     <link href="https://lepisma.xyz/2016/03/17/org-mode/index.html"/>
     <updated>2016-03-17</updated>
+    <category term="org-mode"/>
+    <category term="emacs"/>
+    <category term="tooling"/>
   </entry>
   <entry>
     <title>Constitution De Markov</title>
     <link href="https://lepisma.xyz/2016/01/23/constitution-de-markov.html"/>
     <updated>2016-01-23</updated>
+    <category term="exploration"/>
   </entry>
   <entry>
     <title>White Rhinos, irrationality and other tales</title>
     <link href="https://lepisma.xyz/2015/12/21/white-rhino.html"/>
     <updated>2015-12-21</updated>
+    <category term="ramble"/>
+    <category term="skepticism"/>
   </entry>
   <entry>
     <title>The Writers&#39; Voice</title>
     <link href="https://lepisma.xyz/2015/11/03/the-writers-voice/index.html"/>
     <updated>2015-11-03</updated>
+    <category term="ml"/>
+    <category term="exploration"/>
+    <category term="viz"/>
   </entry>
   <entry>
     <title>Up and running with Theano (GPU) + PyCUDA on Windows</title>
     <link href="https://lepisma.xyz/2015/07/30/up-with-theano-and-cuda.html"/>
     <updated>2015-07-30</updated>
+    <category term="tooling"/>
   </entry>
   <entry>
     <title>Hot 100 over the years</title>
     <link href="https://lepisma.xyz/2015/06/27/hot-100/index.html"/>
     <updated>2015-06-27</updated>
+    <category term="exploration"/>
+    <category term="viz"/>
   </entry>
   <entry>
     <title>Overtone Jamming</title>
     <link href="https://lepisma.xyz/2015/03/23/overtone-jamming.html"/>
     <updated>2015-03-23</updated>
+    <category term="ramble"/>
   </entry>
   <entry>
     <title>Rowing a Steamer</title>
     <link href="https://lepisma.xyz/2015/03/20/rowing-a-steamer/index.html"/>
     <updated>2015-03-20</updated>
+    <category term="ramble"/>
   </entry>
   <entry>
     <title>Computer Programs and Zipf&#39;s Law</title>
     <link href="https://lepisma.xyz/2015/01/14/computer-programs-and-zipf-law/index.html"/>
     <updated>2015-01-14</updated>
+    <category term="exploration"/>
   </entry>
   <entry>
     <title>Firewall Paradox and revisiting the Law of Information</title>
     <link href="https://lepisma.xyz/2015/01/08/firewall-paradox/index.html"/>
     <updated>2015-01-08</updated>
+    <category term="physics"/>
   </entry>
   <entry>
     <title>Why I Stopped Recommending GNOME</title>
     <link href="https://lepisma.xyz/2015/01/06/why-i-stopped-recommending-gnome/index.html"/>
     <updated>2015-01-06</updated>
+    <category term="ux"/>
   </entry>
   <entry>
     <title>The Interstellar&#39;s Tesseract</title>
     <link href="https://lepisma.xyz/2014/11/25/interstellar-tesseract/index.html"/>
     <updated>2014-11-25</updated>
+    <category term="ramble"/>
   </entry>
   <entry>
     <title>Neural Turing Machines for dummies</title>
     <link href="https://lepisma.xyz/2014/11/02/neural-turing-machines/index.html"/>
     <updated>2014-11-02</updated>
+    <category term="ml"/>
   </entry>
   <entry>
     <title>Flesh and Metal</title>
     <link href="https://lepisma.xyz/2014/07/29/flesh-and-metal/index.html"/>
     <updated>2014-07-29</updated>
+    <category term="ramble"/>
   </entry>
   <entry>
     <title>Extreme Learning Machines with Julia</title>
     <link href="https://lepisma.xyz/2014/06/21/extreme-learning-machine/index.html"/>
     <updated>2014-06-21</updated>
+    <category term="exploration"/>
+    <category term="ml"/>
   </entry>
 </feed>
