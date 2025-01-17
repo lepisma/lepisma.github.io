@@ -3,9 +3,16 @@
   <title>(car nil)</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2025-01-11T17:47:47+0530</updated>
+  <updated>2025-01-17T10:41:31+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>Semantic Search and /On-Device ML/ in Emacs</title>
+    <link href="https://lepisma.xyz/2025/01/17/emacs-on-device-ml/index.html"/>
+    <updated>2025-01-17</updated>
+    <category term="emacs"/>
+    <category term="ml"/>
+  </entry>
   <entry>
     <title>2024: A lot of Changes</title>
     <link href="https://lepisma.xyz/2025/01/07/2024-review/index.html"/>
