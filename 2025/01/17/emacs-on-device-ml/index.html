@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-17 Fri 10:41 -->
+<!-- 2025-01-24 Fri 18:50 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Semantic Search and On-Device ML in Emacs</title>
@@ -271,7 +271,7 @@ lancedb gives all that I needed, out of the box.
 <p>
 To test that everything works reasonably, I tried making a semantic search
 version of <code>apropos-documentation</code> command in Emacs. This
-<code>apropos-documentation-sem</code> is simpler in that does semantic search only on
+<code>apropos-documentation-sem</code> is simpler in that it does semantic search only on
 function (not variable) documentations from symbols in <i>obarray</i>. To do this,
 firstly we need to set up a store for vectors and push all the symbols with
 documentation there:
@@ -361,7 +361,7 @@ Now we can run searches and produce output like any other apropos command:
 </div>
 
 
-<figure id="org6c07165">
+<figure id="orgefa2d99">
 <img src="screen.png" alt="screen.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span>Results for "hex to rgb" in apropos output buffer</figcaption>
