@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-08-14 Sun 02:28 -->
+<!-- 2025-01-30 Thu 13:09 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>TikZ</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -189,7 +189,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -234,15 +234,16 @@
   <div class='site-nav'>
     <a  href='/'> blog</a>
     <a  href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/log'> <s>log</s></a>
     <a class='active' href='/wiki'> wiki</a>
     <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small primary'>$ support </a>
   </div>
   <div class='clearfix'></div>
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2022-08-14 Sun 02:28</div>
+  <div class='page-meta'>Last modified:  2024-11-04 Mon 15:56</div>
   <h1>TikZ</h1>
 </div>
 </div>
@@ -258,11 +259,95 @@ Nothing really nice or presentable. I just want to learn TikZ more.
 <a href="http://ctan.imsc.res.in/graphics/pgf/base/doc/pgfmanual.pdf">TikZ manual</a>.
 </p>
 
+<div class="org-src-container">
+<pre class="src src-latex"><span class="org-keyword">\definecolor</span>{fpink}{RGB}{255, 2, 131}
+<span class="org-keyword">\definecolor</span>{fblue}{RGB}{52, 121, 176}
+<span class="org-keyword">\definecolor</span>{fback}{RGB}{16, 40, 64}
+<span class="org-keyword">\definecolor</span>{fdark}{RGB}{12, 4, 15}
+<span class="org-keyword">\definecolor</span>{fbluedark}{RGB}{35, 83, 119}
+<span class="org-keyword">\definecolor</span>{forange}{RGB}{233, 122, 69}
+<span class="org-keyword">\immediate\write</span>18{yes | cp -r ./fonts /tmp}
+<span class="org-keyword">\newfontfamily\stfont</span>{LeviBrush}[Path = /tmp/fonts/]
+<span class="org-keyword">\newfontfamily\fcfont</span>{FarCry}[Path = /tmp/fonts/]
 
-<figure id="org43359c3">
-<img src="./output.png" alt="output.png">
+<span class="org-keyword">\pgfplotsset</span>{ticks=none}
+<span class="org-keyword">\pgfplotsset</span>{<span class="org-comment">%</span>
+  colormap={blackblue}{color(0cm)=(fblue!!20!!black);
+  color(1cm)=(fblue!!80!!white)}
+}
+<span class="org-keyword">\begin</span>{<span class="org-function-name">center</span>}
+<span class="org-keyword">\begin</span>{<span class="org-function-name">tikzpicture</span>}[
+  declare function = {
+   normal(<span class="org-keyword">\ma</span>,<span class="org-keyword">\sa</span>,<span class="org-keyword">\mb</span>,<span class="org-keyword">\sb</span>,<span class="org-keyword">\w</span>) =
+     <span class="org-keyword">\w</span> * 1/(2*pi*<span class="org-keyword">\sa*\sb</span>) * exp(-((x-<span class="org-keyword">\ma</span>)^2/<span class="org-keyword">\sa</span>^2 + (y-<span class="org-keyword">\mb</span>)^2/<span class="org-keyword">\sb</span>^2))/2;
+  }
+]
 
-</figure>
+<span class="org-keyword">\coordinate</span> (BL) at (0,0);
+<span class="org-keyword">\coordinate</span> (BR) at (11,0);
+<span class="org-keyword">\coordinate</span> (TR) at (11,8);
+<span class="org-keyword">\coordinate</span> (TL) at (0,8);
+
+<span class="org-keyword">\path</span> (BL) -- (BR) -- (TR) -- (TL) -- cycle;
+<span class="org-keyword">\fill</span>[inner color=fback!85, outer color=fdark] (BL) rectangle (TR);
+
+<span class="org-comment-delimiter">% </span><span class="org-comment">grid lines</span>
+<span class="org-keyword">\begin</span>{<span class="org-function-name">scope</span>}
+<span class="org-keyword">\clip</span> (0, 0) rectangle (11, 4);
+<span class="org-keyword">\foreach</span> <span class="org-keyword">\i</span> in {-15, ..., 25}
+{
+  <span class="org-keyword">\draw</span>[color=fpink, opacity=0.7] (<span class="org-keyword">\i</span>,0) -- (5.5,6);
+}
+
+<span class="org-keyword">\foreach</span> <span class="org-keyword">\i</span> in {1, ..., 12}
+{
+  <span class="org-keyword">\draw</span>[color=fpink, opacity=0.7]
+    (<span class="org-tex-math">$ (0, {0.67 * pow(\i, 0.7)})$</span>) -- (<span class="org-tex-math">$ (11, {0.67 * pow(\i, 0.7)})$</span>);
+}
+<span class="org-keyword">\end</span>{<span class="org-function-name">scope</span>}
+
+<span class="org-keyword">\shade</span>[top color=fback!10!black, bottom color=fblue!70!black] (0,4) rectangle (11,8);
+<span class="org-keyword">\begin</span>{<span class="org-function-name">scope</span>}[yshift=4cm]
+<span class="org-keyword">\begin</span>{<span class="org-function-name">axis</span>}[
+  colormap name  = blackblue,
+  width          = 12.5cm,
+  height         = 3.0cm,
+  view           = {-140}{0},
+  enlargelimits  = false,
+  domain         = -1:4,
+  y domain       = -1:4,
+  samples        = 13,
+  axis line style={draw=none},
+  no markers
+]
+  <span class="org-comment">% These should be automatically (randomly) generated.</span>
+  <span class="org-keyword">\addplot</span>3 [surf, draw=fblue, draw opacity=0.3, fill opacity=0.1, shader=flat]
+    {normal(1, 1.5, 3.5, 1.0, 1.5)};
+  <span class="org-keyword">\addplot</span>3 [surf, draw=fblue!85!white, fill opacity=0.1, shader=flat]
+    {normal(1, 0.7, 4, 1, 0.7)};
+  <span class="org-keyword">\addplot</span>3 [surf, draw=fblue!90!white, fill opacity=0.1, shader=flat]
+    {normal(0, 1, 2, 0.8, 0.9)};
+<span class="org-keyword">\end</span>{<span class="org-function-name">axis</span>}
+<span class="org-keyword">\end</span>{<span class="org-function-name">scope</span>}
+
+<span class="org-keyword">\node</span> at (5.5, 4) {<span class="org-keyword">\Huge</span> <span class="org-keyword">\fcfont</span> TIKZ};
+
+<span class="org-keyword">\begin</span>{<span class="org-function-name">scope</span>}
+<span class="org-keyword">\clip</span> (0, 0) rectangle (11, 4);
+<span class="org-keyword">\node</span> at (5.5, 4.1) {<span class="org-keyword">\color</span>{forange} <span class="org-keyword">\Huge</span> <span class="org-keyword">\fcfont</span> TIKZ};
+<span class="org-keyword">\end</span>{<span class="org-function-name">scope</span>}
+
+<span class="org-keyword">\begin</span>{<span class="org-function-name">scope</span>}
+<span class="org-keyword">\clip</span> (0, 4) rectangle (11, 8);
+<span class="org-keyword">\node</span> at (5.5, 4.1) {<span class="org-keyword">\color</span>{fback} <span class="org-keyword">\Huge</span> <span class="org-keyword">\fcfont</span> TIKZ};
+<span class="org-keyword">\end</span>{<span class="org-function-name">scope</span>}
+
+<span class="org-keyword">\node</span> at (5.5, 3) {<span class="org-keyword">\color</span>{black} <span class="org-keyword">\HUGE</span> <span class="org-keyword">\stfont</span> BLOOD DRAGON};
+<span class="org-keyword">\node</span> at (5.5, 3.1) {<span class="org-keyword">\color</span>{fpink} <span class="org-keyword">\HUGE</span> <span class="org-keyword">\stfont</span> BLOOD DRAGON};
+<span class="org-keyword">\end</span>{<span class="org-function-name">tikzpicture</span>}
+<span class="org-keyword">\end</span>{<span class="org-function-name">center</span>}
+</pre>
+</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>

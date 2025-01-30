@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-08-14 Sun 02:13 -->
+<!-- 2025-01-30 Thu 13:06 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Resources</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -189,7 +189,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
@@ -222,27 +222,38 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -255,15 +266,16 @@
   <div class='site-nav'>
     <a  href='/'> blog</a>
     <a  href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/log'> <s>log</s></a>
     <a class='active' href='/wiki'> wiki</a>
     <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small primary'>$ support </a>
   </div>
   <div class='clearfix'></div>
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2022-08-14 Sun 02:13</div>
+  <div class='page-meta'>Last modified:  2024-11-04 Mon 15:56</div>
   <h1>Resources</h1>
 </div>
 </div>
@@ -275,7 +287,6 @@ This page houses some programming related resources that I have found useful
 while working on <i>anything</i>. It's starting out jumbled but will get more organized
 as I put more things in here.
 </p>
-
 <div id="outline-container-sec-latex" class="outline-2">
 <h2 id="sec-latex"><span class="section-number-2">1.</span> LaTeX</h2>
 <div class="outline-text-2" id="text-sec-latex">
@@ -286,7 +297,6 @@ not Org or something is probably <a href="https://tectonic-typesetting.github.io
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-tools" class="outline-2">
 <h2 id="sec-tools"><span class="section-number-2">2.</span> Tools</h2>
 <div class="outline-text-2" id="text-sec-tools">

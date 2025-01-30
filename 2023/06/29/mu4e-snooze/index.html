@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-09-13 Fri 17:05 -->
+<!-- 2025-01-30 Thu 13:01 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>mu4e-snooze and adventures with AI co‑programming</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -234,9 +234,10 @@
   <div class='site-nav'>
     <a class='active' href='/'> blog</a>
     <a  href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/log'> <s>log</s></a>
     <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small primary'>$ support </a>
   </div>
   <div class='clearfix'></div>
 </header>
@@ -271,7 +272,7 @@ Knowing that I can follow the <a href="https://www.shortwave.com/method/">shortw
 decided to implement snoozing in my favorite email tool, <a href="https://www.djcbsoftware.nl/code/mu/">mu4e</a>.
 </p>
 
-<aside id="org16b2fbe">
+<aside id="org9362400">
 <p>
 The implementation is <a href="https://github.com/lepisma/mu4e-snooze/tree/master">here</a> in case you also want to use snoozing in mu4e.
 </p>
@@ -291,7 +292,6 @@ Overall, there is nothing new here that hasn't been discussed already in the
 community. But nevertheless it was fun to understand the current state and build
 insights on my own.
 </p>
-
 <div id="outline-container-sec-email-snoozing" class="outline-2">
 <h2 id="sec-email-snoozing"><span class="section-number-2">1.</span> Email Snoozing</h2>
 <div class="outline-text-2" id="text-sec-email-snoozing">
@@ -309,7 +309,6 @@ things out of sight that you can't attend to right now anyway. This maps to
 get out-of-the-box in email servers, or clients for that matter.
 </p>
 </div>
-
 <div id="outline-container-sec-email-snoozing/mu4e-and-the-setup" class="outline-3">
 <h3 id="sec-email-snoozing/mu4e-and-the-setup"><span class="section-number-3">1.1.</span> Mu4e and the Setup</h3>
 <div class="outline-text-3" id="text-sec-email-snoozing/mu4e-and-the-setup">
@@ -344,7 +343,6 @@ like data organization here.</li>
 </ol>
 </div>
 </div>
-
 <div id="outline-container-sec-email-snoozing/design" class="outline-3">
 <h3 id="sec-email-snoozing/design"><span class="section-number-3">1.2.</span> Design</h3>
 <div class="outline-text-3" id="text-sec-email-snoozing/design">
@@ -376,7 +374,6 @@ they have gone beyond the planned time.</li>
 </div>
 </div>
 </div>
-
 <div id="outline-container-sec-gpt4" class="outline-2">
 <h2 id="sec-gpt4"><span class="section-number-2">2.</span> GPT4</h2>
 <div class="outline-text-2" id="text-sec-gpt4">
@@ -434,7 +431,6 @@ You can see my interaction log in the <a href="#sec-appendix">Appendix</a>.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-patterns" class="outline-2">
 <h2 id="sec-patterns"><span class="section-number-2">3.</span> Patterns</h2>
 <div class="outline-text-2" id="text-sec-patterns">
@@ -460,7 +456,6 @@ assistance (GPT4 via ChatGPT is obviously not) would utilize this a lot.</li>
 </ol>
 </div>
 </div>
-
 <div id="outline-container-sec-future" class="outline-2">
 <h2 id="sec-future"><span class="section-number-2">4.</span> Future</h2>
 <div class="outline-text-2" id="text-sec-future">
@@ -518,7 +513,6 @@ Good Engineer</i> pattern soon, but there are a few more steps to get there.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-appendix" class="outline-2">
 <h2 id="sec-appendix"><span class="section-number-2">5.</span> Appendix</h2>
 <div class="outline-text-2" id="text-sec-appendix">

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-04-15 Mon 21:01 -->
+<!-- 2025-01-30 Thu 12:55 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ricing up Org Mode</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -234,9 +234,10 @@
   <div class='site-nav'>
     <a class='active' href='/'> blog</a>
     <a  href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/log'> <s>log</s></a>
     <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small primary'>$ support </a>
   </div>
   <div class='clearfix'></div>
 </header>
@@ -255,7 +256,7 @@ recreate a <a href="https://www.reddit.com/r/unixporn/comments/6lj3h3/stumpwmkde
 of what the thing actually looks like.
 </p>
 
-<aside id="org0da6454">
+<aside id="org2317095">
 <p>
 Following screencast shows the setup in action.
 </p>
@@ -264,7 +265,7 @@ Following screencast shows the setup in action.
 </aside>
 
 
-<figure id="orgb03345f">
+<figure id="org7032ad9">
 <img src="./demo.png" alt="demo.png" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -277,7 +278,7 @@ the font <a href="https://edwardtufte.github.io/et-book">ET Book</a> which is an
 </p>
 
 
-<figure id="org1f4756d">
+<figure id="org593ad1a">
 <img src="./et-book.png" alt="et-book.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 2: </span>Et Book font</figcaption>
@@ -298,7 +299,6 @@ basic steps involved from here:
 <li>Padding and stuff</li>
 <li>Other Org-mode visual and usability tweaks</li>
 </ul>
-
 <div id="outline-container-sec-faces" class="outline-2">
 <h2 id="sec-faces"><span class="section-number-2">1.</span> Faces</h2>
 <div class="outline-text-2" id="text-sec-faces">
@@ -319,7 +319,6 @@ non-monospace font, so you might not want to miss that.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-padding" class="outline-2">
 <h2 id="sec-padding"><span class="section-number-2">2.</span> Padding</h2>
 <div class="outline-text-2" id="text-sec-padding">
@@ -359,9 +358,9 @@ the buffer to make the change visible. Here is a function that does that:
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">lambda</span> <span class="org-rainbow-delimiters-depth-2">()</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">progn</span>
-  <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">setq</span> left-margin-width <span class="org-highlight-numbers-number">2</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span>
-  <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">setq</span> right-margin-width <span class="org-highlight-numbers-number">2</span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span>
-  <span class="org-rainbow-delimiters-depth-3">(</span>set-window-buffer nil <span class="org-rainbow-delimiters-depth-4">(</span>current-buffer<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-4">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-3">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-2">)</span></span><span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+  <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">setq</span> left-margin-width 2<span class="org-rainbow-delimiters-depth-3">)</span>
+  <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">setq</span> right-margin-width 2<span class="org-rainbow-delimiters-depth-3">)</span>
+  <span class="org-rainbow-delimiters-depth-3">(</span>set-window-buffer nil <span class="org-rainbow-delimiters-depth-4">(</span>current-buffer<span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div></li>
 </ul>
@@ -380,7 +379,6 @@ is some config</a> for writeroom.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-other-tweaks" class="outline-2">
 <h2 id="sec-other-tweaks"><span class="section-number-2">3.</span> Other tweaks</h2>
 <div class="outline-text-2" id="text-sec-other-tweaks">
@@ -402,7 +400,7 @@ your org hook. Some other minor settings follow:
       org-agenda-block-separator <span class="org-string">""</span>
       org-fontify-whole-heading-line t
       org-fontify-done-headline t
-      org-fontify-quote-and-verse-blocks t<span class="org-parinfer-rust-dim-parens"><span class="org-rainbow-delimiters-depth-1">)</span></span>
+      org-fontify-quote-and-verse-blocks t<span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 

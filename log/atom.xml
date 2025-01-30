@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>log</title>
+  <title>log | lepisma</title>
   <link href="https://lepisma.xyz/log"/>
   <link href="https://lepisma.xyz/log/atom.xml" rel="self"/>
-  <updated>2024-10-28T08:27:38+0530</updated>
+  <updated>2025-01-30T13:11:03+0530</updated>
   <author><name>Abhinav Tushar</name></author>
+  <generator>pile</generator>
   <entry>
     <title>Weekly Review /31-2020/</title>
     <link href="https://lepisma.xyz/log/2020/08/02/weekly-review/index.html"/>

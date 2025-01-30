@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-08-01 Thu 19:53 -->
+<!-- 2025-01-30 Thu 12:59 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hierarchical Event Bus for Spoken Dialog Systems</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -234,9 +234,10 @@
   <div class='site-nav'>
     <a class='active' href='/'> blog</a>
     <a  href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/log'> <s>log</s></a>
     <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small primary'>$ support </a>
   </div>
   <div class='clearfix'></div>
 </header>
@@ -259,7 +260,6 @@ conversational features that we would expect from machine conversationalists.
 It's mostly a high level <i>everything-is-an-event</i> design idea rather than details
 of implementation.
 </p>
-
 <div id="outline-container-sec-turn-taking" class="outline-2">
 <h2 id="sec-turn-taking"><span class="section-number-2">1.</span> Turn-Taking</h2>
 <div class="outline-text-2" id="text-sec-turn-taking">
@@ -272,7 +272,7 @@ State Machine (FSM) that looked like the following simple loop:
 </p>
 
 
-<figure id="org6053d5e">
+<figure id="org39ba287">
 <img src="./loop.svg" alt="loop.svg" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -289,7 +289,6 @@ something like this.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-embracing-events" class="outline-2">
 <h2 id="sec-embracing-events"><span class="section-number-2">2.</span> Embracing Events</h2>
 <div class="outline-text-2" id="text-sec-embracing-events">
@@ -301,7 +300,7 @@ up once you start adding more advanced features like supporting multiple
 speakers, <i>short-circuit</i> processing, <i>deliberation</i>, etc.
 </p>
 
-<aside id="orgd6b8fd3">
+<aside id="orgea07ca7">
 <p>
 <b>Short-circuiting</b> refers to fast and early semantic processing of utterance (or
 milestones therein) without waiting for the final computation at the end of the
@@ -329,7 +328,6 @@ all categories of signals that we care about in a machine conversation. On top
 of this, you add actors to do actual processing.
 </p>
 </div>
-
 <div id="outline-container-sec-embracing-events/buses" class="outline-3">
 <h3 id="sec-embracing-events/buses"><span class="section-number-3">2.1.</span> Buses</h3>
 <div class="outline-text-3" id="text-sec-embracing-events/buses">
@@ -343,7 +341,7 @@ the SDS.
 <br>
 
 
-<figure id="org2078d16">
+<figure id="org2f07d6a">
 <img src="./buses.svg" alt="buses.svg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span>A few buses relevant for an SDS</figcaption>
@@ -364,7 +362,6 @@ another Actor.
 </p>
 </div>
 </div>
-
 <div id="outline-container-sec-embracing-events/actors" class="outline-3">
 <h3 id="sec-embracing-events/actors"><span class="section-number-3">2.2.</span> Actors</h3>
 <div class="outline-text-3" id="text-sec-embracing-events/actors">
@@ -379,7 +376,7 @@ listens to audio segment events <i>and</i> lexical events both.
 <br>
 
 
-<figure id="orgac60cdc">
+<figure id="orga2667c8">
 <img src="./actors.svg" alt="actors.svg" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 2: </span>A few common actors. Notice that every actor is working in streaming fashion with packets emitted at the lowest practical granularity possible. You can emulate a classical FSM style SDS using a handful of actors, and add more to keep advancing it.</figcaption>
