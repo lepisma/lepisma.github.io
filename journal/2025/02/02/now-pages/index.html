@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-30 Thu 23:27 -->
+<!-- 2025-02-02 Sun 02:31 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Wiki</title>
+<title>Do people update now pages?</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -222,6 +222,9 @@
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
 <script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -233,9 +236,9 @@
   </div>
   <div class='site-nav'>
     <a  href='/'> blog</a>
-    <a  href='/journal'> journal</a>
+    <a class='active' href='/journal'> journal</a>
     <a  href='/log'> <s>log</s></a>
-    <a class='active' href='/wiki'> wiki</a>
+    <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
     <a href='/wiki/support.html' class='btn small primary'>$ support </a>
   </div>
@@ -243,107 +246,254 @@
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2024-11-04 Mon 15:56</div>
-  <h1>Wiki</h1>
+  <div class='page-meta'>2025-02-02 Sun 00:00</div>
+  <h1>Do people update <i>now</i> pages?</h1>
 </div>
 </div>
 <div id="content" class="content">
-<div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  home</div>
-<div id='crosslinks'></div>
+<div class='page-tags'><a href='../../../..#viz'>viz</a> <a href='../../../..#writing'>writing</a></div>
 <p>
-This is my personal wiki that's supposed to work as collection of evolving pages
-on various topics, not unlike a <i>digital garden</i>. It's not wiki in strict sense
-since it doesn't allow anyone else to make edits. But I believe prefixing with
-<i>personal</i> resolves the tension.
+<span class='dropcap'>I</span>n a past life I used to maintain a <a class="pile-link" href="/log/index.html">public weekly log</a>. I had seen people
+maintaining it and thought to do the same. While I wrote logs for many weeks, it
+was hard for me to sustain the habit for long term.
 </p>
 
 <p>
-After switching to <a href="https://en.wikipedia.org/wiki/Zettelkasten">zettelkasten</a>, I have been developing most of my notes in
-private. This wiki now keeps generic pages about me and this website. At some
-later point in time I will also partially publish my zettelkasten which should
-show up here.
+Other than periodic logs, many people also maintain a <code>/now</code> page. If you are not
+aware of this, check <a href="https://nownownow.com/about">this page</a> and come back. According to <a href="https://indieweb.org/now#Criticism">indieweb</a>, one
+criticism of the <i>now</i> page is that many people don't update it after setting
+up. I have similar views. Unless there is an automated mechanism or some easy
+way to update them, my <i>now</i> page is very likely to get stale.
 </p>
 
 <p>
-Here is the list of all the pages here. See <a class="pile-link" href="/wiki/about-website/colophon.html">colophon</a> for details on how these
-are built.
+But since this was just my hunch, I tried to see if I can collect some data
+around this. Thankfully, <a href="https://nownownow.com">nownownow.com</a> has a list of many <i>now</i> pages along with
+<i>created</i> and last <i>updated</i> date. Here are these two dates plotted on a
+scatter. You can select rectagular regions and see the selection on marginals:
 </p>
 
-<ul class="org-ul">
-<li><a href="./feeds.html">Feeds</a></li>
-<li><a href="./support.html">Support</a></li>
-<li><a href="./about/index.html">About</a>
-<ul class="org-ul">
-<li><a href="./about/contact.html">Contact</a></li>
-<li><a href="./about/projects.html">Projects</a></li>
-<li><a href="./about/publications.html">Publications</a></li>
-<li><a href="./about/talks.html">Talks</a></li>
-<li><a href="./about/education/index.html">Education</a></li>
-<li><a href="./about/employment/index.html">Employment</a></li>
-<li><a href="./about/values/index.html">Values</a></li>
-</ul></li>
-<li><a href="./about-website/index.html">About this Wiki</a>
-<ul class="org-ul">
-<li><a href="./about-website/colophon.html">Colophon</a></li>
-<li><a href="./about-website/org-test.html">Org Mode Export Test</a> | <a href="./about-website/org-test.issues.html" title="open issues page">ⓘ </a></li>
-</ul></li>
-<li><a href="./computers-and-programming/index.html">Computers and Programming</a>
-<ul class="org-ul">
-<li><a href="./computers-and-programming/desktop.html">Desktop</a> | <a href="./computers-and-programming/desktop.issues.html" title="open issues page">ⓘ </a></li>
-<li><a href="./computers-and-programming/make.html">Make</a></li>
-<li><a href="./computers-and-programming/resources.html">Resources</a></li>
-</ul></li>
-<li><a href="./emacs/index.html">Emacs</a>
-<ul class="org-ul">
-<li><a href="./emacs/resources.html">Resources</a></li>
-<li><a href="./emacs/rsi.html">Repetitive Strain Injury</a></li>
-<li><a href="./emacs/til.html">Today I Learned <i>in Emacs</i></a></li>
-<li><a href="./emacs/org-mode/index.html">Org Mode</a>
-<ul class="org-ul">
-<li><a href="./emacs/org-mode/links.html">Org-links</a></li>
-<li><a href="./emacs/org-mode/macros.html">Macros</a></li>
-<li><a href="./emacs/org-mode/presentations.html">Presentations</a></li>
-<li><a href="./emacs/org-mode/references.html">Reference Management</a></li>
-</ul></li>
-</ul></li>
-<li><a href="./food/index.html">Food and Cooking</a></li>
-<li><a href="./management-and-leadership/index.html">Management and Leadership</a>
-<ul class="org-ul">
-<li><a href="./management-and-leadership/hiring.html">Hiring</a></li>
-</ul></li>
-<li><a href="./productivity/index.html">Productivity</a>
-<ul class="org-ul">
-<li><a href="./productivity/calmness.html">Calmness</a></li>
-</ul></li>
-<li><a href="./readings/index.html">Readings</a>
-<ul class="org-ul">
-<li><a href="./readings/clippings.html">Clippings</a></li>
-<li><a href="./readings/impactful.html">Impactful Books</a></li>
-<li><a href="./readings/likes.html">Articles I like</a></li>
-<li><a href="./readings/reading-list.html">Reading List</a></li>
-<li><a href="./readings/notes/index.html">Notes</a>
-<ul class="org-ul">
-<li><a href="./readings/notes/documents.html">Document/Paper Notes</a></li>
-</ul></li>
-</ul></li>
-<li><a href="./technology/index.html">Technology</a>
-<ul class="org-ul">
-<li><a href="./technology/predictions.html">Predictions</a></li>
-</ul></li>
-<li><a href="./visualization/index.html">Visualization</a>
-<ul class="org-ul">
-<li><a href="./visualization/procedural/index.html">Procedural</a>
-<ul class="org-ul">
-<li><a href="./visualization/procedural/resources.html">Resources</a></li>
-<li><a href="./visualization/procedural/tikz/index.html">TikZ</a></li>
-</ul></li>
-</ul></li>
-<li><a href="./writing/index.html">Writing</a>
-<ul class="org-ul">
-<li><a href="./writing/fountain-pens-and-inks/index.html">Fountain Pens and Inks</a></li>
-</ul></li>
-</ul>
+<br><div id="viz"></div><br>
+
+<p>
+It's definitely not the case that all now pages are up to date. But there is
+also a non-trivial number of people who keep their pages relatively fresh, many
+of which have started doing this long back.
+</p>
+
+<p>
+In case you want to zoom, pan, and explore individual pages, here is the same
+scatter but clicks here will take you to individual <code>/now</code> pages.
+</p>
+
+<br><div id="viz-zoom"></div><br>
+
+<p>
+Since I was not able to get jitters in temporal axis in <a href="https://vega.github.io/vega-lite/">vega-lite</a><sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, few nodes are overlapping. Therefore,
+to access every page, you will have to check out the data file snapshot (as of
+<span class="timestamp-wrapper"><span class="timestamp">[2025-02-02 Sun]</span></span>) directly <a href="./nownownow.txt">here</a>. A more up to date version is kept on the
+nownownow site <a href="https://nownownow.com/nownownow.txt">here</a>.
+</p>
+
+<p>
+During data exploration I realized that the <i>checked on</i> date is not really fresh
+and there are websites with newer 'last updated' date than what's listed in the
+dataset. I am not sure how the data is collected around last update and there
+doesn't seem to be a standard answer. Sites could have <code>&lt;meta&gt;</code> property around
+article update, but not all do. The body text around last update date is also
+very inconsistent. I have asked the author around the details here and should be
+able to provide an update on this once I know more.
+</p>
+
+<style>
+@media (min-width: 1000px) {
+  #viz {
+    width: 620px;
+    height: 600px;
+  }
+}
+
+#viz {
+  height: 600px;
+}
+
+#viz-zoom {
+  width: 100%;
+  height: 600px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function (event) {
+
+    let sideGraphWidth = 60;
+    document.getElementById('viz').style.width = (document.getElementById('content').offsetWidth - sideGraphWidth - 40) + 'px';
+
+    let specInt = {
+        '$schema': 'https://vega.github.io/schema/vega-lite/v5.json',
+        'data': {
+            'url': './nownownow.txt',
+            'format': { 'type': 'tsv' }
+        },
+        'width': 'container',
+        'vconcat': [{
+            layer: [{
+                'mark': { 'type': 'bar', 'color': '#eee' },
+                'height': sideGraphWidth,
+                'width': 'container',
+                'view': { 'cornerRadius': 10 },
+                'encoding': {
+                    'x': {
+                        'field': 'updated',
+                        'bin': { 'maxbins': 100 },
+                        'axis': null
+                    },
+                    'y': {
+                        'aggregate': 'count',
+                        'title': '',
+                        'axis': null
+                    }
+                }
+            }, {
+                'mark': { 'type': 'bar' },
+                'transform': [{ 'filter': { 'param': 'grid' }}],
+                'height': sideGraphWidth,
+                'width': 'container',
+                'view': { 'cornerRadius': 10 },
+                'encoding': {
+                    'x': {
+                        'field': 'updated',
+                        'bin': { 'maxbins': 100 },
+                        'axis': null
+                    },
+                    'y': {
+                        'aggregate': 'count',
+                        'title': '',
+                        'axis': null
+                    }
+                }
+            }],
+        }, {
+            'hconcat': [{
+                'params': [{
+                    'name': 'grid',
+                    'select': 'interval'
+                }],
+                'width': 'container',
+                'height': 500,
+                'mark': {
+                    'type': 'circle',
+                    'opacity': 0.4
+                },
+                'encoding': {
+                    'x': {
+                        'field': 'updated',
+                        'type': 'temporal',
+                        'axis': { 'title': 'Last Updated' }
+                    },
+                    'y': {
+                        'field': 'created',
+                        'type': 'temporal',
+                        'axis': { 'title': 'Page Created' }
+                    },
+                    'color': {
+                        'condition': {
+                            'param': 'grid'
+                        },
+                        'value': '#bbb'
+                    }
+
+                }
+            },
+                {
+                    'layer': [{
+                        'mark': { 'type': 'bar', 'color': '#eee' },
+                        'width': sideGraphWidth,
+                        'height': 500,
+                        'view': { 'cornerRadius': 10 },
+                        'encoding': {
+                            'y': {
+                                'field': 'created',
+                                'bin': { 'maxbins': 100 },
+                                'axis': null,
+                            },
+                            'x': {
+                                'aggregate': 'count',
+                                'title': '',
+                                'axis': null,
+                            }
+                        }
+                    }, {
+                        'mark': { 'type': 'bar' },
+                        'transform': [{ 'filter': { 'param': 'grid' }}],
+                        'width': sideGraphWidth,
+                        'height': 500,
+                        'view': { 'cornerRadius': 10 },
+                        'encoding': {
+                            'y': {
+                                'field': 'created',
+                                'bin': { 'maxbins': 100 },
+                                'axis': null,
+                            },
+                            'x': {
+                                'aggregate': 'count',
+                                'title': '',
+                                'axis': null,
+                            }
+                        }
+                    }]
+                }],
+        }],
+    };
+
+    let specZoom = {
+        '$schema': 'https://vega.github.io/schema/vega-lite/v5.json',
+        'data': {
+            'url': './nownownow.txt',
+            'format': { 'type': 'tsv' }
+        },
+        'width': 'container',
+        'height': 'container',
+        'params': [{
+            'name': 'grid',
+            'select': 'interval',
+            'bind': 'scales'
+        }],
+        'mark': {
+            'type': 'point',
+            'strokeWidth': 6,
+            'opacity': 0.4,
+            'size': 100
+        },
+        'encoding': {
+            'x': {
+                'field': 'updated',
+                'type': 'temporal',
+                'axis': { 'title': 'Last Updated' }
+            },
+            'y': {
+                'field': 'created',
+                'type': 'temporal',
+                'axis': { 'title': 'Page Created'  }
+            },
+            'tooltip': { 'field': 'name', 'type': 'nominal' },
+            'href': { 'field': 'url', 'type': 'nominal' }
+        }
+    };
+    vegaEmbed('#viz', specInt);
+    vegaEmbed('#viz-zoom', specZoom);
+})
+</script>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Maybe
+falling back to <a href="https://vega.github.io/vega/">Vega</a> should solve this.</p></div></div>
+
+
 </div>
+</div></div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
 </div>
