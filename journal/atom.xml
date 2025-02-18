@@ -3,7 +3,7 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-02-19T01:22:20+0530</updated>
+  <updated>2025-02-19T01:23:23+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
   <entry>
@@ -84,7 +84,7 @@
     <category term="100daystooffload"/>
     <category term="emacs"/>
     <category term="writing"/>
-    <category term="progamming"/>
+    <category term="programming"/>
     <category term="speech"/>
     <category term="interface"/>
   </entry>
