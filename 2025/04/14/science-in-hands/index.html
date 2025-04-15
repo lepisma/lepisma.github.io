@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2025-04-15 Tue 15:58 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Science, in Hands: Celebrating Written Thoughts</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> <s>log</s></a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small'>$ support oss</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>2025-04-14 Mon 00:00</div>
+  <h1>Science, <i>in Hands</i>: Celebrating Written Thoughts</h1>
+</div>
+</div>
+<div id="content" class="content">
+<div class="watermark">DRAFT</div>
+<div class='page-tags'><a href='../../../..#science'>science</a> <a href='../../../..#writing'>writing</a></div>
+<p>
+<span class='dropcap'>I</span> <a href="https://mathstodon.xyz/@PercyButtons3/114329126246073631">recently found</a> AMS <a href="https://bookstore.ams.org/mbk-151">Daily Epsilon of Math Calendar</a> which got me thinking about
+making custom calendars. I wasn't able to find a theme for a daily calendar, but
+I made an interesting monthly one, or so I think.
+</p>
+
+
+<figure id="org4f6135c">
+<img src="./calendar.png" alt="calendar.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>TODO Photo calendar with 12 snapshots of handwritten notes from a pick of important people in Science</figcaption>
+</figure>
+
+<hr>
+
+<p>
+With more and more digitization in my life, I have kept my love and respect for
+handwritten notes intact. In past few years, this led me to an interest in
+fountain pens, nibs, inks, and paper journals. Part of why I got started was
+because of some faint memories of handwritten manuscripts by revered people of
+Science. Specifically I recall looking at images from da Vinci's journal, full
+of beautifully written texts and machine diagrams. They were beautiful not only
+in how they looked, but also how each page captures thoughts in a way that a
+low-dimensional body of text via keyboard can not.
+</p>
+
+<br>
+
+<figure id="org20dc80f">
+<img src="./Leonardo_da_Vinci_-_RCIN_919000,_Verso_The_bones_and_muscles_of_the_arm_c.1510-11.jpg" alt="Leonardo_da_Vinci_-_RCIN_919000,_Verso_The_bones_and_muscles_of_the_arm_c.1510-11.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span>Anatomy of Arm (<a href="https://en.wikipedia.org/wiki/File:Studies_of_the_Arm_showing_the_Movements_made_by_the_Biceps.jpg">source</a>). Leonardo famously used mirror-script in his personal writings. I love the sketches and the use of hatching.</figcaption>
+</figure>
+<br>
+
+<p>
+In addition to the non-linearity of the inked spots, which themselves convey
+more than words, these pages also maintain a sort of frozen-in-time snapshots of
+moments of awe. Consider this page from Rosalind Franklin's journal that
+captures the discovery of Helix structure for DNA:
+</p>
+
+<br>
+
+<figure id="orgef7e1e6">
+<img src="./helix.png" alt="helix.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 3: </span>Note the left tilt (⦦) in letters here. I wonder what the skull (☠) means. <a href="https://www.bayer.com/en/rosalind-franklin-the-unsung-hero-of-the-dna-double-helix">Source</a>.</figcaption>
+</figure>
+<br>
+
+<p>
+Anyway I thought to collect a few of these and make a desk calendar. My choices
+follow.
+</p>
+<div id="outline-container-sec-the-images" class="outline-2">
+<h2 id="sec-the-images"><span class="section-number-2">1.</span> The Images</h2>
+<div class="outline-text-2" id="text-sec-the-images">
+
+<p>
+Here is my selection of 12 images of handwritten notes from important people in
+Science, in no particular order.
+</p>
+</div>
+<div id="outline-container-sec-the-images/notebook-b---charles-robert-darwin,-1837-1838" class="outline-3">
+<h3 id="sec-the-images/notebook-b---charles-robert-darwin,-1837-1838"><span class="section-number-3">1.1.</span> Notebook B - Charles Robert Darwin, 1837-1838</h3>
+<div class="outline-text-3" id="text-sec-the-images/notebook-b---charles-robert-darwin,-1837-1838">
+
+<p>
+I just <i>had</i> to start with Darwin's notes. I find his work to be exemplary of how
+Science is done and his notebooks are wonderful journey of the process. For the
+calendar I picked this famous image showing a rudimentary tree of life:
+</p>
+
+<br>
+
+<figure id="org0d644fa">
+<img src="./DarwinArchive_1837_NotebookB_CUL-DAR121.-_038.jpg" alt="DarwinArchive_1837_NotebookB_CUL-DAR121.-_038.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 4: </span>Darwin's Tree of Life (<a href="https://darwin-online.org.uk/content/frameset?viewtype=side&amp;itemID=CUL-DAR121.-&amp;pageseq=38">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+You can check out more of his works in <a href="https://darwin-online.org.uk/">Darwin Online</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-images/letters-to-royal-society---isaac-newton,-1672" class="outline-3">
+<h3 id="sec-the-images/letters-to-royal-society---isaac-newton,-1672"><span class="section-number-3">1.2.</span> Letters to Royal Society - Isaac Newton, 1672</h3>
+<div class="outline-text-3" id="text-sec-the-images/letters-to-royal-society---isaac-newton,-1672">
+
+<p>
+Then there is Newton, one of whose letters with a reference to prism is what I
+am going with. Probably unlike many, my first introduction to Newton was was the
+splitting of colors using prism, not gravity.
+</p>
+
+<br>
+
+<figure id="orgf838786">
+<img src="./Newton-Papers-Letters-Royal-Society-and-its-Fellows.png" alt="Newton-Papers-Letters-Royal-Society-and-its-Fellows.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 5: </span>Isaac Newton, to Henry Oldenburg (<a href="https://cudl.lib.cam.ac.uk/view/MS-ROYALSOCIETY-EL-N-00001-000035-00065/7">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+Find more in <a href="https://cudl.lib.cam.ac.uk/">Cambridge Digital Library</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-images/of-things-that-float-on-water---galileo-galilei,-1611-1612" class="outline-3">
+<h3 id="sec-the-images/of-things-that-float-on-water---galileo-galilei,-1611-1612"><span class="section-number-3">1.3.</span> Of Things that Float on Water - Galileo Galilei, 1611-1612</h3>
+<div class="outline-text-3" id="text-sec-the-images/of-things-that-float-on-water---galileo-galilei,-1611-1612">
+
+<p>
+I remember Galileo more for his non-astronomical, classical physics work
+involving pendulums, free fall, motion, etc. Maybe this is because of a
+biography I read in childhood where I found his Earthly exploits to be more
+understandable.
+</p>
+
+<aside id="org3ad70f8">
+<p>
+While researching Galileo's notebooks, I found an interesting bit of history
+around manuscript forgery. Check out <a href="https://www.theguardian.com/us-news/2022/aug/23/galileo-manuscript-fake-university-of-michigan">this Guardian article</a>. The page in question
+follows:
+</p>
+
+<br>
+
+<figure id="org8cc2d0e">
+<img src="./galileo.webp" alt="galileo.webp" class="zoomTarget" data-closeclick="true">
+
+</figure>
+</aside>
+
+<br>
+
+<figure id="orgb00d2f2">
+<img src="./of-things-that-float-on-water.png" alt="of-things-that-float-on-water.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 6: </span>Notes on buoyancy and floatation (<a href="https://www.loc.gov/resource/gdcwdl.wdl_04182/?sp=38&amp;r=-0.089,0.024,1.057,0.847,0">source</a>). I can't understand Italian but the writing is pretty with the ink pooling in the right places.</figcaption>
+</figure>
+<br>
+</div>
+</div>
+<div id="outline-container-sec-the-images/mass-energy-equivalence---albert-einstein,-1905" class="outline-3">
+<h3 id="sec-the-images/mass-energy-equivalence---albert-einstein,-1905"><span class="section-number-3">1.4.</span> Mass Energy Equivalence - Albert Einstein, 1905</h3>
+<div class="outline-text-3" id="text-sec-the-images/mass-energy-equivalence---albert-einstein,-1905">
+
+<p>
+Probably cliche to include this, but also hard to skip.
+</p>
+
+<br>
+
+<figure id="org6502aaa">
+<img src="./4888908959_6d7f215ef8_o.jpg" alt="4888908959_6d7f215ef8_o.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 7: </span>Another relatively beautiful handwriting. Photo <a href="https://www.flickr.com/photos/mistermoss/4888908959/in/photostream/">credit</a>.</figcaption>
+</figure>
+<br>
+</div>
+</div>
+<div id="outline-container-sec-the-images/codex-forster-ii---leonardo-da-vinci,-1495-1497" class="outline-3">
+<h3 id="sec-the-images/codex-forster-ii---leonardo-da-vinci,-1495-1497"><span class="section-number-3">1.5.</span> Codex Forster II - Leonardo da Vinci, 1495-1497</h3>
+<div class="outline-text-3" id="text-sec-the-images/codex-forster-ii---leonardo-da-vinci,-1495-1497">
+
+<p>
+For da Vinci, I picked this illustration that has a bit of everything, even a
+flower, probably connected with the rotating machine's blades below.
+</p>
+
+<br>
+
+<figure id="orga96d11f">
+<img src="./codex-forster-II-V&amp;A.png" alt="codex-forster-II-V&amp;A.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 8: </span>His notebooks are really fun to look into just because of the sheer diversity of content (<a href="https://www.vam.ac.uk/articles/explore-leonardo-da-vincis-notebook-codex-forster-ii">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+Once you see the following description of Codex Forster II&#x2014;the source of the
+image above&#x2014;, you begin to see why Leonardo passes on as a true Polymath.
+</p>
+
+<blockquote>
+<p>
+Codex Forster II is made of two notebooks bound together. Both were compiled in
+Milan, while Leonardo was in the service of the duke of Milan, Ludovico Sforza
+(1452 – 1508). The first notebook (up to folio 63, about 1495) contains notes
+and diagrams on the theory of proportions, but also miscellaneous sketches,
+including frames for weaving (folios 49 verso – 50 recto), architecture (as on
+folio 52 recto) and some figurative drawings such as a Virgin and Child (folio
+37 recto). The second notebook (from folio 64, about 1495 – 97) includes notes
+on the theory of weights and balances, as well as sketches on perpetual motion
+(as on folios 90 verso – 91 recto), drawings of helmets (folio 65 recto), and a
+recipe for making paints (folio 159 recto).
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-sec-the-images/π---srinivasa-ramanujan,-1913" class="outline-3">
+<h3 id="sec-the-images/π---srinivasa-ramanujan,-1913"><span class="section-number-3">1.6.</span> π - Srinivasa Ramanujan, 1913</h3>
+<div class="outline-text-3" id="text-sec-the-images/π---srinivasa-ramanujan,-1913">
+
+<p>
+Even though it's a known impossible problem, we have had some approximate
+constructions for <a href="https://en.wikipedia.org/wiki/Squaring_the_circle">squaring the circle</a>. I picked this image that uses the \(π \approx
+\frac{355}{113}\) approximation for building the square.
+</p>
+
+<br>
+
+<figure id="orgdc3e635">
+<img src="./Squaring_the_Circle-Ramanujan-2000x2300.jpg" alt="Squaring_the_Circle-Ramanujan-2000x2300.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 9: </span>Squaring the Circle (<a href="https://en.wikipedia.org/wiki/Squaring_the_circle#/media/File:Squaring_the_circle-Ramanujan-1913.png">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+I never got to really appreciate Ramanujan since I never got that deep in pure
+Mathematics during my formal education and outside of it. This is something I
+would like to change in the future.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-images/a-fountain-pen---alan-turing,-c1923" class="outline-3">
+<h3 id="sec-the-images/a-fountain-pen---alan-turing,-c1923"><span class="section-number-3">1.7.</span> A Fountain Pen - Alan Turing, c1923</h3>
+<div class="outline-text-3" id="text-sec-the-images/a-fountain-pen---alan-turing,-c1923">
+
+<p>
+Unlike others, for Turing I picked this note from his hand made fountain pen at
+the age of 11. You can see the varieties of strokes, nib problems, and his
+fingerprint on this. Here is a <a href="https://fountainpenhistory.blogspot.com/2014/06/alan-turings-fountain-pen.html">bit of history</a>.
+</p>
+
+<br>
+
+<figure id="org88d9756">
+<img src="./amt-k-1-01-a_fountain-pen-letter-672x1024.webp" alt="amt-k-1-01-a_fountain-pen-letter-672x1024.webp" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 10: </span>Seems like the nib flexes well (<a href="https://kingscollege.shorthandstories.com/trueforalanturing/">source</a>)</figcaption>
+</figure>
+<br>
+</div>
+</div>
+<div id="outline-container-sec-the-images/lectures---richard-feynman,-1961-64" class="outline-3">
+<h3 id="sec-the-images/lectures---richard-feynman,-1961-64"><span class="section-number-3">1.8.</span> Lectures - Richard Feynman, 1961-64</h3>
+<div class="outline-text-3" id="text-sec-the-images/lectures---richard-feynman,-1961-64">
+
+<p>
+Feynman was someone who a lot of us grew reading. Other than his works, I always
+found him a great educator and communicator. For this reason, I took a page from
+his lecture notes.
+</p>
+
+<br>
+
+<figure id="org37c361d">
+<img src="./FLP.png" alt="FLP.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 11: </span>I like this page since it could be from any Physics student's notebook (<a href="https://www.feynmanlectures.caltech.edu/RPF_2_4_A_40_4.html">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+You can find more of his lecture notes <a href="https://www.feynmanlectures.caltech.edu/">here</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-images/purkinje-cells---santiago-ramón-y-cajal,-early-1900s" class="outline-3">
+<h3 id="sec-the-images/purkinje-cells---santiago-ramón-y-cajal,-early-1900s"><span class="section-number-3">1.9.</span> Purkinje Cells - Santiago Ramón y Cajal, early 1900s</h3>
+<div class="outline-text-3" id="text-sec-the-images/purkinje-cells---santiago-ramón-y-cajal,-early-1900s">
+
+<p>
+Cajal gave us extremely detailed and beautiful illustrations of neurons and
+neural pathways that form the basis biological intelligence. These images have
+been part of neuroscience ever since.
+</p>
+
+<br>
+
+<figure id="org4ffd94f">
+<img src="./3034.jpg" alt="3034.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 12: </span>Development of climbing fibers on Purkinje Cells (<a href="https://history.nih.gov/pages/viewpage.action?pageId=1016727">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+You can get a <a href="https://www.goodreads.com/book/show/28818275-the-beautiful-brain">physical collection</a> to check them out at leisure.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-images/radioactive-notebook---marie-curie,-1899-1902" class="outline-3">
+<h3 id="sec-the-images/radioactive-notebook---marie-curie,-1899-1902"><span class="section-number-3">1.10.</span> Radioactive Notebook - Marie Curie, 1899-1902</h3>
+<div class="outline-text-3" id="text-sec-the-images/radioactive-notebook---marie-curie,-1899-1902">
+
+<p>
+Her experiments notebooks were the obvious place to take images from, specially
+when you know that they literally are radioactive and will continue to do so for
+many thousands of years.
+</p>
+
+<br>
+
+<figure id="org670b27e">
+<img src="./cu.jpg" alt="cu.jpg" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 13: </span>Notes of her experiments on radioactive substances (<a href="https://wellcomecollection.org/works/cywqefw4/items">source</a>)</figcaption>
+</figure>
+<br>
+</div>
+</div>
+<div id="outline-container-sec-the-images/helix---rosalind-franklin,-1951-1954" class="outline-3">
+<h3 id="sec-the-images/helix---rosalind-franklin,-1951-1954"><span class="section-number-3">1.11.</span> Helix - Rosalind Franklin, 1951-1954</h3>
+<div class="outline-text-3" id="text-sec-the-images/helix---rosalind-franklin,-1951-1954">
+
+
+<p>
+I picked the page already covered in the beginning of this post <a href="#orgef7e1e6">above</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-images/bat---carl-linnaeus,-1727-1730" class="outline-3">
+<h3 id="sec-the-images/bat---carl-linnaeus,-1727-1730"><span class="section-number-3">1.12.</span> Bat - Carl Linnaeus, 1727-1730</h3>
+<div class="outline-text-3" id="text-sec-the-images/bat---carl-linnaeus,-1727-1730">
+
+<p>
+Linnaeus' work and its repercussions were one of the reasons why a lot of us
+school kids reduced biology merely to the science of observation and naming
+species. This seemed daunting earlier, but wondrous now. Finding patterns,
+abstraction, and categorization is what we do in studying any object. And if you
+want a challenge, do this with living objects.
+</p>
+
+<br>
+
+<figure id="org5a277ec">
+<img src="./bat-page.png" alt="bat-page.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 14: </span>Sketch of bat from Carl's student-time notebook (<a href="https://linnean.access.preservica.com/uncategorized/IO_edf87dfe-fb1e-4045-8d58-b5976033d842/">source</a>)</figcaption>
+</figure>
+<br>
+
+<p>
+Even after 300 years of this study,
+</p>
+
+<blockquote>
+<p>
+&#x2026; the taxonomy and phylogeny of bats has been tweaked a fair amount, and even
+today there’s still ongoing discussion on their evolutionary timeline.
+</p>
+
+<p>
+<a href="https://www.linnean.org/news/2024/06/28/manuscripta-medica-tom-1">source</a>
+</p>
+</blockquote>
+
+<hr>
+
+<p>
+That's twelve months, and a calendar! It's truly wonderful that most of these
+old artefacts are open access now and you can make your own set from pages and
+illustrations of your choice. And I hope you do. We romanticize a lot of things
+and hang all kinds of posters in our homes but usually keep Science locked away
+in the museums. Probably since it is not something that's thought to bring awe
+or pleasure. But, the truth couldn't be farther from it.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>
