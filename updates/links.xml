@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>recommended-links</id>
+  <title>lepisma's recommended links</title>
+  <subtitle>Recommendations from lepisma's list of read articles and bookmarks</subtitle>
+  <updated>2025-04-28T10:52:52.742888510Z</updated>
+  <link rel="self" href="/recommended-links" />
+  <author>
+  <name>Abhinav Tushar</name>
+  <email>abhinav@lepisma.xyz</email>
+  <uri>lepisma.xyz</uri>
+</author>
+  <generator>journalist</generator>
+<entry>
+  <title>Pluralistic: Circular battery self-sufficiency (06 Aug 2024) – Pluralistic: Daily links from Cory Doctorow</title>
+  <link href="https://pluralistic.net/2024/08/06/with-great-power/" />
+  <id>urn:uuid:60de6488-4bf0-433f-af36-ffc255921391</id>
+  <updated>2024-08-11T05:53:08Z</updated>
+  <published>2024-08-11T05:53:08Z</published>
+  <summary type="text">:PROPERTIES:
+:ID:      60de6488-4bf0-433f-af36-ffc255921391
+:ROAM_REFS: https://pluralistic.net/2024/08/06/with-great-power/
+:END:
+#+TAGS: cleantech, battery, recommend
+#+TITLE: Pluralistic: Circular battery self-sufficiency (06 Aug 2024) – Pluralistic: Daily links from Cory Doctorow
+
+Some good points. I came to know about the trade material with energy concept which makes sense. Basically we need to think of energy as infinite and material as limited. We should be able to make use energy to recycle a lot of material back.
+
+Also [[id:7c66e34d-35e4-45ba-81ae-8fe8abfdc41d][Gravity Battery]].
+</summary>
+  <category term="cleantech" />
+  <category term="battery" />
+  <category term="recommend" />
+</entry>
+</feed>
