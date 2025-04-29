@@ -3,7 +3,7 @@
   <id>recommended-links</id>
   <title>lepisma's recommended links</title>
   <subtitle>Recommendations from lepisma's list of read articles and bookmarks</subtitle>
-  <updated>2025-04-28T10:52:52.742888510Z</updated>
+  <updated>2025-04-29T05:10:22.880890808Z</updated>
   <link rel="self" href="/recommended-links" />
   <author>
   <name>Abhinav Tushar</name>
@@ -11,6 +11,23 @@
   <uri>lepisma.xyz</uri>
 </author>
   <generator>journalist</generator>
+<entry>
+  <title>Pluralistic: The enshittification of tech jobs (27 Apr 2025) – Pluralistic: Daily links from Cory Doctorow</title>
+  <link href="https://pluralistic.net/2025/04/27/some-animals/" />
+  <id>urn:uuid:12b1c384-3f21-411e-9eec-1921a8a12151</id>
+  <updated>2025-04-29T04:02:56Z</updated>
+  <published>2025-04-29T04:02:56Z</published>
+  <summary type="text">:PROPERTIES:
+:ID:      12b1c384-3f21-411e-9eec-1921a8a12151
+:ROAM_REFS: https://pluralistic.net/2025/04/27/some-animals/
+:END:
+#+TAGS: recommend, enshittification, tech
+#+TITLE: Pluralistic: The enshittification of tech jobs (27 Apr 2025) – Pluralistic: Daily links from Cory Doctorow
+</summary>
+  <category term="recommend" />
+  <category term="enshittification" />
+  <category term="tech" />
+</entry>
 <entry>
   <title>Pluralistic: Circular battery self-sufficiency (06 Aug 2024) – Pluralistic: Daily links from Cory Doctorow</title>
   <link href="https://pluralistic.net/2024/08/06/with-great-power/" />
