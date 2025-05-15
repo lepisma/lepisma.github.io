@@ -3,9 +3,15 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-04-11T01:49:11+0530</updated>
+  <updated>2025-05-15T15:04:40+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>Hello IndieWeb Club</title>
+    <link href="https://lepisma.xyz/journal/2025/05/15/indieweb-club/index.html"/>
+    <updated>2025-05-15</updated>
+    <category term="writing"/>
+  </entry>
   <entry>
     <title>COnstrained WORKing</title>
     <link href="https://lepisma.xyz/journal/2025/04/11/constrained-working-spaces/index.html"/>
