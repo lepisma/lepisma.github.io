@@ -3,9 +3,16 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-05-26T22:54:44+0530</updated>
+  <updated>2025-06-03T01:58:21+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>Just for Fun?</title>
+    <link href="https://lepisma.xyz/journal/2025/06/03/just-for-fun/index.html"/>
+    <updated>2025-06-03</updated>
+    <category term="programming"/>
+    <category term="personal"/>
+  </entry>
   <entry>
     <title>Decay</title>
     <link href="https://lepisma.xyz/journal/2025/05/26/decay/index.html"/>
