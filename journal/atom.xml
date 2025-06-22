@@ -3,9 +3,16 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-06-15T02:54:07+0530</updated>
+  <updated>2025-06-22T23:58:20+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>/Text/ Kitchen: MSG</title>
+    <link href="https://lepisma.xyz/journal/2025/06/22/test-kitchen-msg/index.html"/>
+    <updated>2025-06-22</updated>
+    <category term="cooking"/>
+    <category term="text-kitchen"/>
+  </entry>
   <entry>
     <title>This website is ~/.config for my Identity</title>
     <link href="https://lepisma.xyz/journal/2025/06/15/why-am-i-on-the-internet/index.html"/>
