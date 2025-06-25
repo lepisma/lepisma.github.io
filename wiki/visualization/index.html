@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-30 Thu 13:09 -->
+<!-- 2025-06-25 Wed 18:43 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Visualization</title>
@@ -237,24 +237,324 @@
     <a  href='/log'> <s>log</s></a>
     <a class='active' href='/wiki'> wiki</a>
     <a href='/about'> about</a>
-    <a href='/wiki/support.html' class='btn small primary'>$ support </a>
+    <a href='/wiki/support.html' class='btn small'>$ support oss</a>
   </div>
   <div class='clearfix'></div>
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2024-11-04 Mon 15:56</div>
+  <div class='page-meta'>Last modified:  2025-06-25 Wed 18:43</div>
   <h1>Visualization</h1>
 </div>
 </div>
 <div id="content" class="content">
 <div id='breadcrumbs'><a href='./../index.html'>≡ index</a> /  visualization</div>
 <div id='crosslinks'></div>
-<blockquote>
 <p>
-This page is a work in progress
+I am not a visualization professional but have always enjoyed opportunities to
+work on them. These opportunities have mostly come as distractions from some
+main line of work that I have been doing so I have not been able to spend as
+much time as I could.
 </p>
-</blockquote>
+
+<p>
+This page lists a few tools around visualization that I have built. Most of
+these are old items and kept here for completeness and archival purpose. There
+are a few projects spread around my writings if you follow the tag <code>viz</code> on my
+<a class="pile-link" href="/index.html">blog</a> and on the <a class="pile-link" href="/journal/index.html">journal</a>.
+</p>
+
+<style>
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    border: 1px solid #eee;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 1.6em;
+    font-family: "et-book";
+    margin-bottom: 8px;
+  }
+
+  .card-year {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 12px;
+    font-family: "et-book";
+    font-style: italic;
+  }
+
+  .card-description {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    flex-grow: 1;
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: auto;
+  }
+
+  #filterTags {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 769px) {
+    .card-container:has(.card:only-child) {
+      grid-template-columns: minmax(300px, 0.5fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr;
+      justify-items: stretch;
+    }
+  }
+</style>
+
+<!--
+<div class="page-tags" id="filterTags">
+</div>
+-->
+
+<div class="card-container" id="cardContainer">
+  <div class="card" data-tags="matplotlib,llm,emacs,library">
+    <img class="card-image" src="./images/matplotllm.png" alt="MatplotLLM banner image">
+    <div class="card-content">
+      <div class="card-year">2023</div>
+      <div class="card-title">MatplotLLM</div>
+      <div class="page-tags">
+        <a>matplotlib</a>
+        <a>llm</a>
+        <a>emacs</a>
+        <a>library</a>
+      </div>
+      <div class="card-description">
+        A natural language layer over Matplotlib to visualize data using an LLM.
+      </div>
+      <div class="card-actions">
+        <a href="https://github.com/lepisma/matplotllm"><button class="btn small">Source</button></a>
+        <a href="/2023/08/20/matplotllm:-an-llm-assisted-data-visualization-framework"><button class="btn small">Blog Post</button></a>
+        <a href="https://emacsconf.org/2023/talks/matplotllm/"><button class="btn small">EmacsConf</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" data-tags="python,d3,library,graph">
+    <img class="card-image" src="./images/dagre.png" alt="dagre-py banner image">
+    <div class="card-content">
+      <div class="card-year">2019</div>
+      <div class="card-title">dagre-py</div>
+      <div class="page-tags">
+        <a>d3</a>
+        <a>python</a>
+        <a>library</a>
+        <a>graph</a>
+      </div>
+      <div class="card-description">
+        Thin python wrapper around <a href="https://github.com/dagrejs/dagre-d3">dagre-d3</a> for building interactive dags with tooltips and a
+  few other niceties.
+      </div>
+      <a href="https://pypi.org/project/dagre-py/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/dagre-py"></a>
+      <div class="card-actions">
+        <a href="https://github.com/skit-ai/dagre-py"><button class="btn small">Source</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" data-tags="js,library,web,d3">
+    <img class="card-image" src="./images/foresight.png" alt="d3-foresight banner image">
+    <div class="card-content">
+      <div class="card-year">2018</div>
+      <div class="card-title">D3 Foresight</div>
+      <div class="page-tags">      
+        <a>js</a>
+        <a>library</a>
+        <a>web</a>
+        <a>d3</a>
+      </div>
+      <div class="card-description">
+        A JS library for building epidemiological forecast visualizations. This was used in showing flu visualizations by <a href="https://reichlab.io/">Reichlab</a> and US <a href="https://www.cdc.gov/">CDC</a>.
+      </div>
+      <a href="https://www.npmjs.com/package/d3-foresight"><img alt="NPM Version" src="https://img.shields.io/npm/v/d3-foresight"></a>
+      <div class="card-actions">
+        <a href="https://github.com/reichlab/d3-foresight"><button class="btn small">Source</button></a>
+        <a href="https://reichlab.io/d3-foresight/"><button class="btn small">Homepage</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" data-tags="emacs,library">
+    <img class="card-image" src="./images/colormaps.png" alt="colormaps.el banner image">
+    <div class="card-content">
+      <div class="card-year">2017</div>
+      <div class="card-title">colormaps.el</div>
+      <div class="page-tags">
+        <a>emacs</a>
+        <a>library</a>
+      </div>
+      <div class="card-description">
+        colormaps.el lets you use color schemes from popular plotting libraries inside Emacs.
+      </div>
+      <a href="https://stable.melpa.org/#/colormaps"><img alt="MELPA Stable" src="https://stable.melpa.org/packages/colormaps-badge.svg"/></a>
+      <div class="card-actions">
+        <a href="https://github.com/lepisma/colormap.el"><button class="btn small">Source</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" data-tags="js,library,web,d3">
+    <img class="card-image" src="./images/tufte.png" alt="tufte.js banner image">
+    <div class="card-content">
+      <div class="card-year">2017</div>
+      <div class="card-title">tufte.js</div>
+      <div class="page-tags">      
+        <a>js</a>
+        <a>library</a>
+        <a>web</a>
+        <a>d3</a>
+      </div>
+      <div class="card-description">
+        A JS library for building minimal plots for the browser inspired by the work of Edward Tufte
+      </div>
+      <div class="card-actions">
+        <a href="https://github.com/lepisma/matplotllm"><button class="btn small">Source</button></a>
+        <a href="https://lepisma.xyz/tufte.js/"><button class="btn small">Homepage</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" data-tags="julia,tk,library">
+    <img class="card-image" src="./images/hinton.png" alt="hinton.jl banner image">
+    <div class="card-content">
+      <div class="card-year">2014</div>
+      <div class="card-title">hinton.jl</div>
+      <div class="page-tags">      
+        <a>julia</a>
+        <a>tk</a>
+        <a>library</a>
+      </div>
+      <div class="card-description">
+        Julia library for drawing Hinton diagrams for visualizing neural network weight matrices.
+      </div>
+      <div class="card-actions">
+        <a href="https://github.com/lepisma/hinton.jl"><button class="btn small">Source</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cardContainer = document.getElementById('cardContainer');
+    const filterTagsContainer = document.getElementById('filterTags');
+    const allCards = Array.from(document.querySelectorAll('.card'));
+    let activeTags = new Set();
+
+    const allUniqueTags = new Set();
+    allCards.forEach(card => {
+      const tags = card.dataset.tags ? card.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [];
+      tags.forEach(tag => allUniqueTags.add(tag));
+    });
+
+    // Create filter buttons
+    const createFilterButtons = () => {
+      filterTagsContainer.innerHTML = ''; // Clear existing tags
+      const sortedTags = Array.from(allUniqueTags).sort(); // Sort tags alphabetically
+
+      sortedTags.forEach(tag => {
+        const button = document.createElement('a');
+        button.href = '#';
+        button.textContent = tag.charAt(0).toUpperCase() + tag.slice(1); // Capitalize first letter
+        button.dataset.tag = tag;
+
+        if (activeTags.has(tag)) {
+          button.classList.add('active');
+        }
+
+        button.addEventListener('click', () => {
+          if (activeTags.has(tag)) {
+            activeTags.delete(tag);
+            button.classList.remove('active');
+          } else {
+            activeTags.add(tag);
+            button.classList.add('active');
+          }
+          filterCards();
+        });
+        filterTagsContainer.appendChild(button);
+      });
+    };
+
+    // Filter cards based on active tags
+    const filterCards = () => {
+      allCards.forEach(card => {
+        const cardTags = card.dataset.tags ? card.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [];
+        const matchesAllActiveTags = Array.from(activeTags).every(activeTag => cardTags.includes(activeTag));
+
+        if (activeTags.size === 0 || matchesAllActiveTags) {
+          card.style.display = 'flex'; // Show the card (using flex display)
+        } else {
+          card.style.display = 'none'; // Hide the card
+        }
+      });
+    };
+
+    // Initial setup
+    createFilterButtons();
+    filterCards();
+  });
+</script>
+
+<br>
+<div id="outline-container-sec-pages-under-this-section" class="outline-2">
+<h2 id="sec-pages-under-this-section"><span class="section-number-2">1.</span> Pages under this section</h2>
+<div class="outline-text-2" id="text-sec-pages-under-this-section">
+
+
+<ul class="org-ul">
+<li><a href="./procedural/index.html">Procedural</a>
+<ul class="org-ul">
+<li><a href="./procedural/resources.html">Resources</a></li>
+<li><a href="./procedural/tikz/index.html">TikZ</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
