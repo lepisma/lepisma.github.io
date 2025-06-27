@@ -3,9 +3,17 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-06-23T12:46:00+0530</updated>
+  <updated>2025-06-28T02:54:49+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>Listening to Books ≫Audiobooks</title>
+    <link href="https://lepisma.xyz/journal/2025/06/28/listening-to-books/index.html"/>
+    <updated>2025-06-28</updated>
+    <category term="books"/>
+    <category term="llm"/>
+    <category term="speech"/>
+  </entry>
   <entry>
     <title>/Text/ Kitchen: MSG</title>
     <link href="https://lepisma.xyz/journal/2025/06/22/test-kitchen-msg/index.html"/>
