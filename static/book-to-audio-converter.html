@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book to Audio Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .section h3 {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid rgba(102, 126, 234, 0.2);
+            color: #333;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .capture-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+        }
+
+        .process-btn {
+            background: linear-gradient(135deg, #FF6B6B 0%, #ee5a24 100%);
+        }
+
+        .save-btn {
+            background: linear-gradient(135deg, #4ECDC4 0%, #26d0ce 100%);
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .photo-item {
+            position: relative;
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-item .remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 12px;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .status.success {
+            background: rgba(76, 175, 80, 0.1);
+            color: #4CAF50;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+
+        .status.error {
+            background: rgba(244, 67, 54, 0.1);
+            color: #f44336;
+            border: 1px solid rgba(244, 67, 54, 0.3);
+        }
+
+        .status.info {
+            background: rgba(33, 150, 243, 0.1);
+            color: #2196F3;
+            border: 1px solid rgba(33, 150, 243, 0.3);
+        }
+
+        #videoContainer {
+            position: relative;
+            margin: 15px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .voice-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .voice-btn {
+            padding: 8px 12px;
+            font-size: 14px;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+        }
+
+        .voice-btn.selected {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book to Audio</h1>
+        
+        <div class="section">
+            <h3>🔑 OpenAI API Key</h3>
+            <input type="password" id="apiKey" placeholder="Enter your OpenAI API key">
+        </div>
+
+        <div class="section">
+            <h3>📸 Capture Book Pages</h3>
+            <div id="videoContainer" class="hidden">
+                <video id="video" autoplay playsinline></video>
+            </div>
+            <button id="startCamera" class="capture-btn">Start Camera</button>
+            <button id="capturePhoto" class="capture-btn hidden">Capture Page</button>
+            <button id="stopCamera" class="capture-btn hidden">Stop Camera</button>
+            
+            <div id="photoGrid" class="photo-grid"></div>
+        </div>
+
+        <div class="section">
+            <h3>🎙️ Voice Options</h3>
+            <div class="voice-options">
+                <button class="voice-btn selected" data-voice="alloy">Alloy</button>
+                <button class="voice-btn" data-voice="echo">Echo</button>
+                <button class="voice-btn" data-voice="fable">Fable</button>
+                <button class="voice-btn" data-voice="onyx">Onyx</button>
+                <button class="voice-btn" data-voice="nova">Nova</button>
+                <button class="voice-btn" data-voice="shimmer">Shimmer</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🔄 Process to Audio</h3>
+            <button id="processBtn" class="process-btn">Convert to Audio</button>
+            <div id="status"></div>
+        </div>
+
+        <div class="section">
+            <h3>🎵 Generated Audio</h3>
+            <audio id="audioPlayer" controls class="hidden"></audio>
+            <button id="saveBtn" class="save-btn hidden">Save Audio File</button>
+        </div>
+    </div>
+
+    <script>
+        let photos = [];
+        let stream = null;
+        let selectedVoice = 'alloy';
+        let generatedAudio = null;
+
+        const elements = {
+            apiKey: document.getElementById('apiKey'),
+            startCamera: document.getElementById('startCamera'),
+            capturePhoto: document.getElementById('capturePhoto'),
+            stopCamera: document.getElementById('stopCamera'),
+            video: document.getElementById('video'),
+            videoContainer: document.getElementById('videoContainer'),
+            photoGrid: document.getElementById('photoGrid'),
+            processBtn: document.getElementById('processBtn'),
+            status: document.getElementById('status'),
+            audioPlayer: document.getElementById('audioPlayer'),
+            saveBtn: document.getElementById('saveBtn')
+        };
+
+        // Voice selection
+        document.querySelectorAll('.voice-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.voice-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                selectedVoice = btn.dataset.voice;
+            });
+        });
+
+        // Camera controls
+        elements.startCamera.addEventListener('click', async () => {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { facingMode: 'environment' } 
+                });
+                elements.video.srcObject = stream;
+                elements.videoContainer.classList.remove('hidden');
+                elements.startCamera.classList.add('hidden');
+                elements.capturePhoto.classList.remove('hidden');
+                elements.stopCamera.classList.remove('hidden');
+            } catch (err) {
+                showStatus('Camera access denied or not available', 'error');
+            }
+        });
+
+        elements.stopCamera.addEventListener('click', () => {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+            elements.videoContainer.classList.add('hidden');
+            elements.startCamera.classList.remove('hidden');
+            elements.capturePhoto.classList.add('hidden');
+            elements.stopCamera.classList.add('hidden');
+        });
+
+        elements.capturePhoto.addEventListener('click', () => {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.width = elements.video.videoWidth;
+            canvas.height = elements.video.videoHeight;
+            context.drawImage(elements.video, 0, 0);
+            
+            canvas.toBlob(blob => {
+                const photoUrl = URL.createObjectURL(blob);
+                photos.push({ blob, url: photoUrl });
+                updatePhotoGrid();
+                showStatus(`Page ${photos.length} captured!`, 'success');
+            }, 'image/jpeg', 0.8);
+        });
+
+        function updatePhotoGrid() {
+            elements.photoGrid.innerHTML = '';
+            photos.forEach((photo, index) => {
+                const div = document.createElement('div');
+                div.className = 'photo-item';
+                div.innerHTML = `
+                    <img src="${photo.url}" alt="Page ${index + 1}">
+                    <button class="remove-btn" onclick="removePhoto(${index})">×</button>
+                `;
+                elements.photoGrid.appendChild(div);
+            });
+        }
+
+        function removePhoto(index) {
+            URL.revokeObjectURL(photos[index].url);
+            photos.splice(index, 1);
+            updatePhotoGrid();
+        }
+
+        // Process to audio
+        elements.processBtn.addEventListener('click', async () => {
+            const apiKey = elements.apiKey.value.trim();
+            if (!apiKey) {
+                showStatus('Please enter your OpenAI API key', 'error');
+                return;
+            }
+            if (photos.length === 0) {
+                showStatus('Please capture at least one page', 'error');
+                return;
+            }
+
+            elements.processBtn.disabled = true;
+            elements.processBtn.innerHTML = '<span class="loading"></span> Processing...';
+            
+            try {
+                // Step 1: Convert images to text
+                showStatus('Converting images to text...', 'info');
+                let combinedText = '';
+                
+                for (let i = 0; i < photos.length; i++) {
+                    const base64 = await blobToBase64(photos[i].blob);
+                    
+                    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${apiKey}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            model: 'gpt-4o',
+                            messages: [{
+                                role: 'user',
+                                content: [
+                                    {
+                                        type: 'text',
+                                        text: 'Extract all the text from this book page. Return only the text content, maintaining paragraph breaks. Do not add any commentary or descriptions.'
+                                    },
+                                    {
+                                        type: 'image_url',
+                                        image_url: { url: base64 }
+                                    }
+                                ]
+                            }],
+                            max_tokens: 1000
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`OCR failed for page ${i + 1}: ${response.statusText}`);
+                    }
+
+                    const data = await response.json();
+                    const pageText = data.choices[0].message.content;
+                    combinedText += pageText + '\n\n';
+                    
+                    showStatus(`Processed page ${i + 1}/${photos.length}...`, 'info');
+                }
+
+                // Step 2: Convert text to speech
+                showStatus('Converting text to speech...', 'info');
+                const ttsResponse = await fetch('https://api.openai.com/v1/audio/speech', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        model: 'tts-1',
+                        input: combinedText,
+                        voice: selectedVoice,
+                        response_format: 'mp3'
+                    })
+                });
+
+                if (!ttsResponse.ok) {
+                    throw new Error(`TTS failed: ${ttsResponse.statusText}`);
+                }
+
+                generatedAudio = await ttsResponse.blob();
+                const audioUrl = URL.createObjectURL(generatedAudio);
+                
+                elements.audioPlayer.src = audioUrl;
+                elements.audioPlayer.classList.remove('hidden');
+                elements.saveBtn.classList.remove('hidden');
+                
+                showStatus('Audio generated successfully! 🎉', 'success');
+                
+            } catch (error) {
+                showStatus(`Error: ${error.message}`, 'error');
+            } finally {
+                elements.processBtn.disabled = false;
+                elements.processBtn.textContent = 'Convert to Audio';
+            }
+        });
+
+        // Save audio
+        elements.saveBtn.addEventListener('click', () => {
+            if (generatedAudio) {
+                const url = URL.createObjectURL(generatedAudio);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `book-audio-${Date.now()}.mp3`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                showStatus('Audio file saved!', 'success');
+            }
+        });
+
+        function blobToBase64(blob) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        function showStatus(message, type) {
+            elements.status.textContent = message;
+            elements.status.className = `status ${type}`;
+        }
+    </script>
+</body>
+</html>
