@@ -3,9 +3,17 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-07-05T19:30:27+0530</updated>
+  <updated>2025-07-15T16:35:14+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>AI Programming should capitalize on Diligence</title>
+    <link href="https://lepisma.xyz/journal/2025/07/15/ai-programming-procrastination/index.html"/>
+    <updated>2025-07-15</updated>
+    <category term="llm"/>
+    <category term="programming"/>
+    <category term="productivity"/>
+  </entry>
   <entry>
     <title>Totems</title>
     <link href="https://lepisma.xyz/journal/2025/07/05/totem/index.html"/>
