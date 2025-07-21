@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2025-07-21 Mon 21:59 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Problem with Modelling Subjectivity</title>
+<meta name="author" content="Abhinav Tushar" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/pace.min.js"></script>
+<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
+<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+  <div class='site-title'>
+    <a href='/'>
+      <img src='/assets/images/avatar32.png'>
+    </a>
+  </div>
+  <div class='site-nav'>
+    <a class='active' href='/'> blog</a>
+    <a  href='/journal'> journal</a>
+    <a  href='/log'> <s>log</s></a>
+    <a  href='/wiki'> wiki</a>
+    <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small'>$ support oss</a>
+  </div>
+  <div class='clearfix'></div>
+</header>
+
+<div class='page-header'>
+  <div class='page-meta'>2025-07-21 Mon 00:00</div>
+  <h1>The Problem with Modelling <i>Subjectivity</i></h1>
+</div>
+</div>
+<div id="content" class="content">
+<div class='page-tags'><a href='../../../..#ml'>ml</a> <a href='../../../..#llm'>llm</a> <a href='../../../..#writing'>writing</a></div>
+<p>
+<span class='dropcap'>M</span>odelling a subjective variable mapping human opinions or creativity is
+<i>objectively</i> more difficult than objective entities like correctness of logical
+arguments, result of a numerical computation, etc. Aggregating and using
+agreement scores among raters can help but only in cases where the aggregate
+itself makes any sense. And many times we don't think <i>making sense</i> makes sense.
+</p>
+<div id="outline-container-sec-subjectivity" class="outline-2">
+<h2 id="sec-subjectivity"><span class="section-number-2">1.</span> Subjectivity</h2>
+<div class="outline-text-2" id="text-sec-subjectivity">
+
+<p>
+In Machine Learning practice, we often overload the term <i>subjectivity</i>. Sometimes
+disagreements in ground truth is assumed to be caused by subjectivity. Other
+times just plain uncertainty in a variable makes people invoke subjectivity. Of
+course the actual <i>subjective</i> entities like human preferences and interpretations
+are also called subjective.
+</p>
+
+<p>
+When there is an underlying objective truth, these difference-of-opinion
+subjectivities are just estimation errors. Disagreements and voting usually
+helps to get rid of these errors on both sides and you tend to get closer to the
+truth in the classic <a href="https://en.wikipedia.org/wiki/Wisdom_of_the_crowd">Wisdom of the Crowd</a> style. Here is one of the origin
+stories around this (from the Wikipedia page):
+</p>
+
+<blockquote>
+<p>
+The classic wisdom-of-the-crowds finding involves point estimation of a
+continuous quantity. At a 1906 country fair in Plymouth, 800 people participated
+in a contest to estimate the weight of a slaughtered and dressed
+ox. Statistician Francis Galton observed that the median guess, 1207 pounds, was
+accurate within 1% of the true weight of 1198 pounds.[7] This has contributed to
+the insight in cognitive science that a crowd's individual judgments can be
+modeled as a probability distribution of responses with the median centered near
+the true value of the quantity to be estimated.[8]
+</p>
+</blockquote>
+
+<p>
+Now consider a case like figuring out emotions from a spoken utterance. While
+you could be in the ballpark when you say a speech utterance is sounding \(80\%\)
+happy, \(20\%\) confused, and \(0\%\) sad, you can't be exactly right since the
+truth itself is a probability distribution over emotions. Asking many people to
+listen to the audio and giving their own estimates could make your aggregate
+output more robust but it still doesn't change the inner fuzziness of the truth
+which you will have to account for in the interpretation anyway.
+</p>
+
+
+<figure id="orgc2ae24f">
+<img src="./contour.png" alt="contour.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 1: </span>Emotions in a human speech can be approximated by sampling opinions of many other human listeners. But the truth is still an unknown high-dimensional distribution (contour images from <a href="https://reference.wolfram.com/language/ref/ContourPlot.html">Wolfram Alpha</a>).</figcaption>
+</figure>
+
+<p>
+Aggregates still make sense here if you spell them out correctly. For example,
+100 people voting and giving an audio a mean score (assuming the spread is
+reasonably low) of 70% sadness means that people, more or less, believe the
+audio is sad. But probably nothing more than that.
+</p>
+
+<p>
+Keep making the truth hazier, and you move more and more towards actual
+subjectivity. These are cases where we start using words like <i>preferences</i> and
+<i>interpretations</i>. Favorite color of various people is one such thing. There are a
+lot of context that goes behind people's choices of colors and even with strong
+cross-cultural commonalities, it will be stupid to say that there is a single
+hidden true favorite color. You can again make a probability distribution over
+colors like in the case of emotions, but that will be very different since you
+will then be studying the aggregate itself and not the individual favorites.
+</p>
+
+<p>
+The last two cases involve different <i>subjectivities</i> as one is about color
+preference of <i>all humans</i> and the other is about perceived emotions of <i>one single
+human</i> utterance. The latter having more <i>objective</i> look and feel to it. In
+reality things fall somewhere in between, but we tend to push them on one side.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-the-/average-human/" class="outline-2">
+<h2 id="sec-the-/average-human/"><span class="section-number-2">2.</span> The <i>Average Human</i></h2>
+<div class="outline-text-2" id="text-sec-the-/average-human/">
+
+<p>
+I recently found out about <a href="https://arxiv.org/abs/2507.00769">LitBench</a> (Fein, Daniel and Russo, Sebastian and Xiang, Violet and Jolly, Kabir and Rafailov, Rafael and Haber, Nick, 2025) that attempts to
+set up a benchmark of <i>creativity in writing</i> by trying to use upvotes by users on
+the content from <a href="https://huggingface.co/datasets/euclaise/writingprompts">/r/WritingPrompts</a> subreddit. Now while they do acknowledge that
+creativity is subjective, they make the human-collective view the only object of
+study and don't give much attention to individual views that, in my opinion, are
+the source of subjectivity in this case. Of course broadly an article \(A\) could
+be more creative than article \(B\) according to most of the humans, but using a
+collective vote as the only representation, specially for ambiguous cases,
+misinterprets the subjectivity involved in <i>creativity</i>.
+</p>
+
+<p>
+To make a caricature of this, it's like saying the batsmen in cricket play at a
+60-100° angle instead of either 0° or 180° since 30-50% of batsmen are
+left-handed<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>. It doesn't make sense. The ratio of left-handed batsmen is a
+meaningful variable, but projecting that ratio to the angle of stance is absurd.
+</p>
+
+
+<figure id="org79bc83d">
+<img src="./stance.png" alt="stance.png" class="zoomTarget" data-closeclick="true">
+
+<figcaption><span class="figure-number">Figure 2: </span>The average cricketer stands like this while facing the ball. <a href="https://www.reddit.com/r/Cricket/comments/9swt4e/interesting_batting_stance_from_bailey/">Source</a>.</figcaption>
+</figure>
+</div>
+<div id="outline-container-sec-the-/average-human//distributions-are-important" class="outline-3">
+<h3 id="sec-the-/average-human//distributions-are-important"><span class="section-number-3">2.1.</span> Distributions are important</h3>
+<div class="outline-text-3" id="text-sec-the-/average-human//distributions-are-important">
+
+<p>
+To be fair to LitBench team, they do state in places that they are trying to
+model the popularity of reddit posts using the upvotes as the proxy for
+creativity evaluation. Here is a clip from the limitations section of the paper:
+</p>
+
+<blockquote>
+<p>
+A key limitation of our work stems from the assumption, inherited from
+[Ethayarajh et al., 2023], that upvotes on Reddit contain information about
+human preferences. Though we experimentally validate our dataset via human
+evaluation, it is unclear what other underlying factors may be encoded in upvote
+information. For example, [Kassaeyan, 2016] report that the decision to upvote a
+post on social networks is at least partially driven by personal and social
+mechanisms, including individuation, perceived behavioral control, and altruism.
+</p>
+
+<br><br>
+
+<p>
+Our extension of human preferences to determine writing quality is further
+complicated by the question of subjectivity in writing evaluation. There is a
+body of work showing how measured features of writing can correlate with human
+ratings in aggregate [Zedelius et al., 2019, McNamara et al., 2010]. Moreover,
+authorship on fair writing evaluation in a classroom setting establishes
+precedent for objectivity in writing [Weigle, 2002].
+</p>
+</blockquote>
+
+<p>
+This makes more sense, but then I find it the title of the paper, "LitBench: A
+Benchmark and Dataset for Reliable Evaluation of Creative Writing", to be
+misleading at best, and clickbait at worst.
+</p>
+
+<p>
+If you make a model that does perfectly on LitBench, it's not likely to be a
+supremely humanlike judge of creative writing. Even keeping aside what reddit
+upvotes mean, in my opinion, such cases need us to learn individual
+distributions. Upvotes are not independent in the sense that each user on that
+subreddit votes in a certain pattern that projects<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> their preferences and understanding of creativity or whatever
+that subreddit upvotes map to. And an aggregation of these doesn't imply any
+truer estimate of creativity, unless creativity is actually an objective value
+like the weight of the Galtonian Ox. And creativity is not the weight of an
+Ox. It involves probabilistic perception of a probability distribution. Consider
+<i>novelty</i>, one of the core component of perceived creativity, which is heavily
+dependent on historical context of the reader. For a joke to land well on the
+novelty dimension and be considered creative in that way, the listeners
+shouldn't have heard similar jokes a thousand times before already. Now think
+how to judge a joke completely based on voting over the textual content.
+</p>
+
+<hr>
+
+<p>
+Assume \(c_{ix}\) is the variable representing creativity attributed by person \(i\) to
+a writing \(x\). This variable has its own distribution.
+</p>
+
+<p>
+Models that understand creative writing similar to humans will be good at
+modelling \(P_i = \mathop{\mathbb{E}}_x [c_{ix}]\) and not \(P(x) = \mathop{\mathbb{E}}_i
+[c_{ix}]\). An ideal AI creativity rater will gel well in the list of \(i\) human
+raters (or a subset of them to engage expertise). This could be done by either
+passing a unique id to the model or some individual context and history. You
+should basically be able to swap out all users on the subreddit with rating bots
+and there should be no change in the feed ranking. And this is because the bots
+are acting similarly to humans in their diverse and subjective preference of
+writings.
+</p>
+
+<p>
+In the legacy <a href="https://arxiv.org/abs/2312.06281">EQ-Bench paper</a> (Samuel J. Paech, 2023), emotions were rated
+based on similarity to the scores given by one person (the author). In some
+ways, models doing good on that are capturing truer human subjectivity&#x2014;of that
+author, in this case&#x2014;than a smoothed out collective scores.
+</p>
+
+<hr>
+
+<p>
+In the end, maybe the collective creativity ratings are what is needed to make
+<i>useful products</i>. Many practically systems work on aggregates of human votes in
+the real world. But that's not the complete picture. Models can interface better
+with individual humans when their consistency or inconsistency follows that of
+other humans. And that's going to be important in building helpful and
+understandable AI assistance.
+</p>
+
+<p>
+In the meantime I hope these differences are called out and used wisely in
+communication, technical or otherwise, lest we end up degrading the semantics of
+core human abilities like creativity and emotions. I believe research in AI
+should help us gain deeper insights by spending a lot of time questioning the
+foundational objects of study as compared to merely running GPUs and placing
+scores in a table.
+</p>
+
+<hr>
+
+<p>
+<b>References</b>
+</p>
+
+<p>
+Fein, Daniel and Russo, Sebastian and Xiang, Violet and Jolly, Kabir and Rafailov, Rafael and Haber, Nick (2025). <i>LitBench: A Benchmark and Dataset for Reliable Evaluation of Creative Writing</i>, arXiv preprint arXiv:2507.00769.</p>
+
+<p>
+Samuel J. Paech (2023). <i>EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models</i>, ArXiv.</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This is based on me noticing the most common Cricket playing-11
+distributions.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">This is still an
+approximation.</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<footer id='footer'></footer>
+</div>
+</body>
+</html>

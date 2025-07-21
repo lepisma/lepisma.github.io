@@ -3,11 +3,19 @@
   <title>(car nil)</title>
   <link href="https://lepisma.xyz/"/>
   <link href="https://lepisma.xyz//atom.xml" rel="self"/>
-  <updated>2025-06-16T19:44:48+0530</updated>
+  <updated>2025-07-21T21:59:34+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
   <entry>
-    <title>How to Identify Human-Generated Content? First ask /Why/</title>
+    <title>The Problem with Modelling Subjectivity</title>
+    <link href="https://lepisma.xyz/2025/07/21/the-problem-with-modelling-subjectivity/index.html"/>
+    <updated>2025-07-21</updated>
+    <category term="ml"/>
+    <category term="llm"/>
+    <category term="writing"/>
+  </entry>
+  <entry>
+    <title>How to Identify Human-Generated Content? First ask Why</title>
     <link href="https://lepisma.xyz/2025/06/16/how-to-identify-human-content/index.html"/>
     <updated>2025-06-16</updated>
     <category term="ai"/>
