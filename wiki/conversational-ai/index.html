@@ -4,7 +4,7 @@
 <!-- 2025-07-23 Wed 14:59 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Wiki</title>
+<title>Conversational AI</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -243,109 +243,130 @@
 </header>
 
 <div class='page-header'>
-  <div class='page-meta'>Last modified:  2025-07-17 Thu 13:21</div>
-  <h1>Wiki</h1>
+  <div class='page-meta'>Last modified:  2025-07-23 Wed 14:59</div>
+  <h1>Conversational AI</h1>
 </div>
 </div>
 <div id="content" class="content">
-<div id='breadcrumbs'><a href='./index.html'>≡ index</a> /  home</div>
+<div id='breadcrumbs'><a href='./../index.html'>≡ index</a> /  conversational-ai</div>
 <div id='crosslinks'></div>
 <p>
-This is my personal wiki that's supposed to work as collection of evolving pages
-on various topics, not unlike a <i>digital garden</i>. It's not wiki in strict sense
-since it doesn't allow anyone else to make edits. But I believe prefixing with
-<i>personal</i> resolves the tension.
+From around 2018 to 2024 I worked on telephonic conversational voicebots. We
+focused on building <a class="pile-link" href="/2022/02/02/speech-first-conversational-ai/index.html">speech-first systems</a> and thus covered the full spectrum of
+ML from Speech to Text, SLU, Dialog Management, and back to speech via Speech
+Synthesis.
 </p>
 
 <p>
-After switching to <a href="https://en.wikipedia.org/wiki/Zettelkasten">zettelkasten</a>, I have been developing most of my notes in
-private. This wiki now keeps generic pages about me and this website. At some
-later point in time I will also partially publish my zettelkasten which should
-show up here.
+This page hosts a few notes around Conversational Voicebots that I think could
+be helpful for people working on similar systems.
+</p>
+<div id="outline-container-sec-introductory-readings" class="outline-2">
+<h2 id="sec-introductory-readings"><span class="section-number-2">1.</span> Introductory Readings</h2>
+<div class="outline-text-2" id="text-sec-introductory-readings">
+
+<p>
+While the technology powering the models have changed rapidly, a few core ideas
+have stayed the same. Here are a few introductory readings for the area that
+might be helpful even if they are not completely up to date:
+</p>
+
+<ol class="org-ol">
+<li><a href="https://books.google.co.in/books/about/Designing_Voice_User_Interfaces.html?id=MmnEDQAAQBAJ&amp;source=kp_book_description&amp;redir_esc=y">Designing Voice User Interfaces</a> by <a href="https://www.cathypearl.com/">Cathy Pearl</a> is something we used to
+recommend to everyone joining teams that work on Conversational AI. There
+might be more extensive and modern resources now, but this book gets you
+introduced very quickly at the right level of abstraction.</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9781119992691">Spoken Language Understanding</a>: Systems for Extracting Semantic Information
+from Speech by Tur and Mori is a dated book but it will open you up to
+understanding what all levers you could employ if you are stuck in a
+production situation. This is more technical so probably not very useful for
+people outside the ML or Engineering teams.</li>
+<li>In case you want a more Pop-Science treatment of the history of voice tech,
+check out <a href="https://mitpress.mit.edu/9780262533294/the-voice-in-the-machine/">The Voice in the Machine</a> by Pieraccini.</li>
+</ol>
+
+<p>
+I also recommend spending time on the following directions for people on the
+ground:
+</p>
+
+<ol class="org-ol">
+<li>Digital Audio Representation. To ensure you don't get stuck because of
+unawareness of encoding decoding involved somewhere in your product. You can
+pick videos like <a href="https://www.youtube.com/watch?v=FG9jemV1T7I">this</a> as good starting points.</li>
+<li>Task Oriented Dialog (TOD) systems. Most production systems are called Task
+or Goal Oriented Dialog Systems. They are different than open systems like
+ChatGPT where you can discuss anything in any way. Knowing the difference
+here and various constraints and frameworks you can impose on the design and
+evaluation is a prioritization superpower.</li>
+<li>A few more academic ideas like <a href="https://en.wikipedia.org/wiki/Paralanguage">Paralinguistics</a> and <a href="https://en.wikipedia.org/wiki/Pragmatics">Pragmatics</a> that show up on
+the fringes of conversational systems. While they don't directly contribute
+to your product performance, they give you good frameworks to deconstruct
+problems in conversations.</li>
+<li>In 2025, it seems like the best way to make production ready voicebots is
+standardized enough and you can use frameworks like <a href="https://www.pipecat.ai/">pipecat</a> or <a href="https://livekit.io/">livekit</a> (for
+more low-level control) and follow guides <a href="https://voiceaiandvoiceagents.com/">like this</a> to get something out in
+production. You will still need to work on the assisting systems <i>around</i> the
+bot so as to report, monitor, understand, debug, and improve the bot after
+and before going live. Some fluency with <a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">MLOps concepts</a> will be helpful to
+think about these properly.</li>
+</ol>
+
+<p>
+For keeping up with the field in general here are a few conferences you should
+follow:
+</p>
+
+<ol class="org-ol">
+<li><a href="https://www.interspeech2025.org/">Interspeech</a>, probably the most important one for the field. If you can only
+cover one conference, cover this.</li>
+<li><a href="https://2025.ieeeicassp.org/">ICASSP</a></li>
+<li><a href="https://2025.emnlp.org/">EMNLP</a></li>
+<li><a href="https://2025.aclweb.org/">ACL</a></li>
+</ol>
+
+<p>
+Of course you should skim through the general ones like <a href="https://neurips.cc/">NeurIPS</a>. Sometimes music
+and audio conferences like <a href="https://ismir2024.ismir.net/">ISMIR</a>, <a href="https://audio.dev/">ADC</a>, etc. are also fun to follow. If, like me,
+you don't like <a href="https://x.com/">twittering noises</a>, you can follow <a href="https://huggingface.co/papers">Daily Papers from huggingface</a>
+which can provide feeds at weekly or monthly frequency.
 </p>
 
 <p>
-Here is the list of all the pages here. See <a class="pile-link" href="/wiki/about-website/colophon.html">colophon</a> for details on how these
-are built.
+For a more industrial side of this, there used to be a conference called
+<a href="https://www.speechtechmag.com/Conferences/">SpeechTEK</a> that's inactive now. From the content that I saw there, it was very
+helpful to find right use-cases, markets, people, and solutions to industry
+specific issues.  I am not sure if there is an equivalent of this now a days.
 </p>
 
-<ul class="org-ul">
-<li><a href="./events.html">Events</a></li>
-<li><a href="./feeds.html">Feeds</a></li>
-<li><a href="./support.html">Support OSS</a></li>
-<li><a href="./about/index.html">About</a>
-<ul class="org-ul">
-<li><a href="./about/contact.html">Contact</a></li>
-<li><a href="./about/projects.html">Projects</a></li>
-<li><a href="./about/publications.html">Publications</a></li>
-<li><a href="./about/talks.html">Talks</a></li>
-<li><a href="./about/education/index.html">Education</a></li>
-<li><a href="./about/employment/index.html">Employment</a></li>
-<li><a href="./about/values/index.html">Values</a></li>
-</ul></li>
-<li><a href="./about-website/index.html">About this Wiki</a>
-<ul class="org-ul">
-<li><a href="./about-website/colophon.html">Colophon</a></li>
-<li><a href="./about-website/org-test.html">Org Mode Export Test</a> | <a href="./about-website/org-test.issues.html" title="open issues page">ⓘ </a></li>
-</ul></li>
-<li><a href="./computers-and-programming/index.html">Computers and Programming</a>
-<ul class="org-ul">
-<li><a href="./computers-and-programming/desktop.html">Desktop</a> | <a href="./computers-and-programming/desktop.issues.html" title="open issues page">ⓘ </a></li>
-<li><a href="./computers-and-programming/make.html">Make</a></li>
-<li><a href="./computers-and-programming/resources.html">Resources</a></li>
-</ul></li>
-<li><a href="./conversational-ai/index.html">Conversational AI</a></li>
-<li><a href="./emacs/index.html">Emacs</a>
-<ul class="org-ul">
-<li><a href="./emacs/resources.html">Resources</a></li>
-<li><a href="./emacs/rsi.html">Repetitive Strain Injury</a></li>
-<li><a href="./emacs/til.html">Today I Learned <i>in Emacs</i></a></li>
-<li><a href="./emacs/org-mode/index.html">Org Mode</a>
-<ul class="org-ul">
-<li><a href="./emacs/org-mode/links.html">Org-links</a></li>
-<li><a href="./emacs/org-mode/macros.html">Macros</a></li>
-<li><a href="./emacs/org-mode/presentations.html">Presentations</a></li>
-<li><a href="./emacs/org-mode/references.html">Reference Management</a></li>
-</ul></li>
-</ul></li>
-<li><a href="./food/index.html">Food and Cooking</a></li>
-<li><a href="./management-and-leadership/index.html">Management and Leadership</a>
-<ul class="org-ul">
-<li><a href="./management-and-leadership/hiring.html">Hiring</a></li>
-</ul></li>
-<li><a href="./mathematics/index.html">Mathematics</a></li>
-<li><a href="./productivity/index.html">Productivity</a>
-<ul class="org-ul">
-<li><a href="./productivity/calmness.html">Calmness</a></li>
-</ul></li>
-<li><a href="./readings/index.html">Readings</a>
-<ul class="org-ul">
-<li><a href="./readings/clippings.html">Clippings</a></li>
-<li><a href="./readings/impactful.html">Impactful Books</a></li>
-<li><a href="./readings/likes.html">Articles I like</a></li>
-<li><a href="./readings/reading-list.html">Reading List</a></li>
-<li><a href="./readings/notes/index.html">Notes</a>
-<ul class="org-ul">
-<li><a href="./readings/notes/documents.html">Document/Paper Notes</a></li>
-</ul></li>
-</ul></li>
-<li><a href="./technology/index.html">Technology</a>
-<ul class="org-ul">
-<li><a href="./technology/predictions.html">Predictions</a></li>
-</ul></li>
-<li><a href="./visualization/index.html">Visualization</a>
-<ul class="org-ul">
-<li><a href="./visualization/procedural/index.html">Procedural</a>
-<ul class="org-ul">
-<li><a href="./visualization/procedural/resources.html">Resources</a></li>
-<li><a href="./visualization/procedural/tikz/index.html">TikZ</a></li>
-</ul></li>
-</ul></li>
-<li><a href="./writing/index.html">Writing</a>
-<ul class="org-ul">
-<li><a href="./writing/fountain-pens-and-inks/index.html">Fountain Pens and Inks</a></li>
-</ul></li>
-</ul>
+<p>
+Note that the recommendations above might be outdated and I am planning to do
+some work to find current best-practices (<span class="timestamp-wrapper"><span class="timestamp">&lt;2025-07-23 Wed&gt;</span></span>). Once I have done
+the updates, I will update this note. Specifically I see more books around
+Conversational AI, blogs by platform companies, <a href="https://www.conversationdesigninstitute.com/">courses</a>, etc. But since I have
+not gone through them yet, I can't recommend them. You can find many of them by
+doing simple web/llm searches.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-todo-evaluation" class="outline-2">
+<h2 id="sec-todo-evaluation"><span class="section-number-2">2.</span> <span class="todo TODO">TODO</span> Evaluation</h2>
+<div class="outline-text-2" id="text-sec-todo-evaluation">
+
+<p>
+&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-todo-systems-to-build-for-production" class="outline-2">
+<h2 id="sec-todo-systems-to-build-for-production"><span class="section-number-2">3.</span> <span class="todo TODO">TODO</span> Systems to Build for Production</h2>
+<div class="outline-text-2" id="text-sec-todo-systems-to-build-for-production">
+
+<p>
+&#x2026;
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <footer id='footer'></footer>
