@@ -3,9 +3,16 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-07-15T16:35:14+0530</updated>
+  <updated>2025-08-05T00:45:02+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>Private is Good</title>
+    <link href="https://lepisma.xyz/journal/2025/08/04/private-is-good/index.html"/>
+    <updated>2025-08-04</updated>
+    <category term="technology"/>
+    <category term="personal"/>
+  </entry>
   <entry>
     <title>AI Programming should capitalize on Diligence</title>
     <link href="https://lepisma.xyz/journal/2025/07/15/ai-programming-procrastination/index.html"/>
