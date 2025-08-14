@@ -3,9 +3,16 @@
   <title>journal | lepisma</title>
   <link href="https://lepisma.xyz/journal"/>
   <link href="https://lepisma.xyz/journal/atom.xml" rel="self"/>
-  <updated>2025-08-13T13:01:11+0530</updated>
+  <updated>2025-08-14T12:58:00+0530</updated>
   <author><name>Abhinav Tushar</name></author>
   <generator>pile</generator>
+  <entry>
+    <title>Migrating from GitHub</title>
+    <link href="https://lepisma.xyz/journal/2025/08/14/if-not-github/index.html"/>
+    <updated>2025-08-14</updated>
+    <category term="personal"/>
+    <category term="programming"/>
+  </entry>
   <entry>
     <title>There might be limits on Intelligence Consumption</title>
     <link href="https://lepisma.xyz/journal/2025/08/13/limit-on-intelligence-consumption/index.html"/>
