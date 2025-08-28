@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-08-20 Sun 16:10 -->
+<!-- 2025-08-28 Thu 16:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MatplotLLM: An /LLM assisted/ Data Visualization Framework</title>
+<title>MatplotLLM: An LLM assisted Data Visualization Framework</title>
 <meta name="author" content="Abhinav Tushar" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -191,16 +191,10 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel="stylesheet" type="text/css" href="/assets/css/pace.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="/assets/js/pace.min.js"></script>
-<script src="/assets/js/jquery.zoomooz.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic|Open+Sans:400,300,800|Fira+Mono&display=swap">
+<script defer src="https://cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+<script defer src="/assets/js/jquery.zoomooz.min.js"></script>
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
@@ -221,7 +215,6 @@
 <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
-<script defer data-domain="lepisma.xyz" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -234,9 +227,10 @@
   <div class='site-nav'>
     <a class='active' href='/'> blog</a>
     <a  href='/journal'> journal</a>
-    <a  href='/log'> log</a>
+    <a  href='/log'> <s>log</s></a>
     <a  href='/wiki'> wiki</a>
     <a href='/about'> about</a>
+    <a href='/wiki/support.html' class='btn small'>$ support oss</a>
   </div>
   <div class='clearfix'></div>
 </header>
@@ -272,7 +266,7 @@ Here is me trying to replicate a plot from <a class="pile-link" href="/2023/07/2
 <br>
 
 <figure style="width: 80%;">
-  <video controls src="matplotllm-wpm.mp4" style="width: 100%; height: auto;"></video>
+  <video controls src="https://static.lepisma.xyz/matplotllm-wpm.mp4" style="width: 100%; height: auto;"></video>
   <figcaption>LLM calls are heavily sped up for the purpose of these videos. Also I mistakingly annotated WPM values while I wanted to annotate accuracies.</figcaption>
 </figure>
 
@@ -301,7 +295,7 @@ could be, given a couple months of dedicated effort. But extending it to <i>cust
 visualizations</i> with good user experience will take a lot more work.
 </p>
 
-<aside id="org574613e">
+<aside id="orgb92cc4c">
 <p>
 By the way, with GPT4, latency is also a problem. Here is the latency histogram
 (click to zoom) for LLM requests collected during a few trials while making the
@@ -310,7 +304,7 @@ videos in this post. Most meaningful iterations on complex charts take above
 </p>
 
 
-<figure id="orgf9532cb">
+<figure id="org8c966ce">
 <img src="latency.png" alt="latency.png" class="zoomTarget" data-closeclick="true">
 
 </figure>
@@ -326,7 +320,7 @@ MatplotLLM right now at all.
 <br>
 
 
-<figure id="org3819ecd">
+<figure id="org5e60776">
 <img src="ls.png" alt="ls.png" class="zoomTarget" data-closeclick="true">
 
 <figcaption><span class="figure-number">Figure 1: </span>Custom plots I made (in 2021 I think) using Matplotlib for presenting calendar busyness of various teams in our company. While you can click to zoom, the recommended way to study this is to open the image in new tab.</figcaption>
