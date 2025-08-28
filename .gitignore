@@ -1,2 +1,3 @@
 */auto/*.el
 *.el
+/node_modules/
